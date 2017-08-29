@@ -31,7 +31,7 @@ export function parseQueryString(url: string): { [key: string]: string[] | undef
 }
 
 
-export async function get<T>(url: string, params: object) {
+export async function get<T>(url: string, params?: object) {
     return new Promise<T>((resolve, reject) => {
         $.ajax({
             url: url,

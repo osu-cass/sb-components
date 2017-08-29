@@ -10,54 +10,32 @@ import * as AboutItem from './AboutItem';
 import * as ItemTable from './ItemTable';
 import * as ItemSearchDropdown from './ItemSearchDropdown';
 import * as PageTabs from './PageTabs'
+import { get } from "./ApiModels";
+
+
+const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCard.ItemCardViewModel[]>("http://10.162.136.49:5000/ScoringGuide/Search", params);
+const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://10.162.136.49:5000/ScoringGuide/ScoringGuideViewModel");
 
 export interface State {
     searchParams: ItemModels.ScoreSearchParams;
     itemSearchResult: ApiModels.Resource<ItemCard.ItemCardViewModel[]>;
     selectedItem: ApiModels.Resource<AboutItem.AboutThisItem>;
-    selectedRow?: ItemCard.ItemCardViewModel; // Show only MCRs with this row number. This doesn't refer to a single MCR.
+    selectedRow?: ItemCard.ItemCardViewModel; 
     sorts: ItemTable.HeaderSort[];
+    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
+}
 
+export interface ItemsSearchViewModel {
     interactionTypes: ItemSearchDropdown.InteractionType[];
     subjects: ItemSearchDropdown.Subject[];
 }
-
-export interface Props {
-    interactionTypes: ItemSearchDropdown.InteractionType[];
-    subjects: ItemSearchDropdown.Subject[];
-    apiClient: ItemsSearchClient;
-}
-
-interface ItemsSearchViewModel {
-    interactionTypes: ItemSearchDropdown.InteractionType[];
-    subjects: ItemSearchDropdown.Subject[];
-}
-
-export interface ItemsSearchClient {
-    itemsSearch(params: ItemSearchDropdown.SearchAPIParams,
-        onSuccess: (data: ItemCard.ItemCardViewModel[]) => void,
-        onError?: (jqXHR: JQueryXHR, textStatus: string, errorThrown: string) => any): any;
-}
-
-const client: ItemsSearchClient = {
-    itemsSearch: (params, onSuccess, onError) => {
-        $.ajax({
-            dataType: "json",
-            url: "/ScoringGuide/search",
-            traditional: true, // causes arrays to be serialized in a way supported by MVC
-            data: params,
-            success: onSuccess,
-            error: onError
-        });
-    }
-};
-
-export class ScoringGuidePage extends React.Component<Props, State> {
+ 
+export class ScoringGuidePage extends React.Component<{}, State> {
     private headerColumns = ItemTable.headerColumns;
     private dataTableRef: HTMLTableElement;
 
-    constructor(props: Props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             searchParams: {
                 gradeLevels: GradeLevels.GradeLevels.NA,
@@ -67,10 +45,27 @@ export class ScoringGuidePage extends React.Component<Props, State> {
             itemSearchResult: { kind: "loading" },
             selectedItem: { kind: "loading" },
             sorts: [],
-
-            subjects: props.subjects,
-            interactionTypes: props.interactionTypes,
+            scoringGuideViewModel: {kind: "loading"}
         }
+
+        this.loadScoringGuideViewModel();
+    }
+
+    loadScoringGuideViewModel(){
+        ScoreGuideViewModelClient()
+        .then(result => this.onSuccessLoadScoringGuideViewModel(result))
+        .catch(err => this.onErrorLoadScoringGuideViewModel(err));
+
+    }
+
+    onSuccessLoadScoringGuideViewModel(result: ItemsSearchViewModel){
+        this.setState({
+            scoringGuideViewModel: {kind:"success", content: result}
+        })
+    }
+
+    onErrorLoadScoringGuideViewModel(err: any){
+        console.error(err);
     }
 
     //row is selected passed from item table
@@ -212,20 +207,29 @@ export class ScoringGuidePage extends React.Component<Props, State> {
             });
         }
 
-        this.props.apiClient.itemsSearch(params, this.onSearch.bind(this), this.onError.bind(this));
+        SearchClient(params)
+        .then(data => this.onSearchSuccess(data))
+        .catch(err => this.onSearchError(err));
     }
+
     renderSearchControls(isLoading: boolean) {
-        return (
-            <div className="search-controls">
-                <a>Print Items</a>
-                <ItemSearchDropdown.ItemSearchDropdown
-                    interactionTypes={this.state.interactionTypes}
-                    subjects={this.state.subjects}
-                    onChange={(params) => this.beginSearch(params)}
-                    selectSingleResult={() => this.selectSingleResult()}
-                    isLoading={isLoading} />
-            </div>
-        );
+        const vmState = this.state.scoringGuideViewModel;
+        if((vmState.kind == "success" || vmState.kind == "reloading") && vmState.content != undefined){
+            return (
+                <div className="search-controls">
+                    <a>Print Items</a>
+                    <ItemSearchDropdown.ItemSearchDropdown
+                        interactionTypes={vmState.content.interactionTypes}
+                        subjects={vmState.content.subjects}
+                        onChange={(params) => this.beginSearch(params)}
+                        selectSingleResult={() => this.selectSingleResult()}
+                        isLoading={isLoading} />
+                </div>
+            );
+        }else{
+            return null;
+        }
+    
     }
 
     renderSearch() {
@@ -275,7 +279,7 @@ export class ScoringGuidePage extends React.Component<Props, State> {
     }
 }
 
-export function initializePage(viewModel: ItemsSearchViewModel) {
-    const container = document.getElementById("react-container");
-    ReactDOM.render(<ScoringGuidePage apiClient={client} {...viewModel}  />, container);
+export function initScoreGuidePage(){
+    ReactDOM.render(<ScoringGuidePage />, document.getElementById("react-container"));
 }
+
