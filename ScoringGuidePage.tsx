@@ -10,17 +10,19 @@ import * as AboutItem from './AboutItem';
 import * as ItemTable from './ItemTable';
 import * as ItemSearchDropdown from './ItemSearchDropdown';
 import * as PageTabs from './PageTabs'
+import * as ItemCardViewModel from './ItemCardViewModel'
+import * as ItemCardFields from './ItemCardFields'
 import { get } from "./ApiModels";
 
 
-const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCard.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
+const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
 
 export interface State {
     searchParams: ItemModels.ScoreSearchParams;
-    itemSearchResult: ApiModels.Resource<ItemCard.ItemCardViewModel[]>;
+    itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>;
     selectedItem: ApiModels.Resource<AboutItem.AboutThisItem>;
-    selectedRow?: ItemCard.ItemCardViewModel; 
+    selectedRow?: ItemCardViewModel.ItemCardViewModel; 
     sorts: ItemTable.HeaderSort[];
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
 }
@@ -69,7 +71,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
     }
 
     //row is selected passed from item table
-    onSelectItem = (item: ItemCard.ItemCardViewModel) => {
+    onSelectItem = (item: ItemCardViewModel.ItemCardViewModel) => {
         this.setState({
             selectedRow: item
         });
@@ -90,7 +92,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         console.error(err);
     }
 
-    onSearchSuccess(result: ItemCard.ItemCardViewModel[]) {
+    onSearchSuccess(result: ItemCardViewModel.ItemCardViewModel[]) {
         const searchParams = this.state.searchParams;
         const items = result;
         this.setState({
@@ -155,7 +157,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         this.setState({ sorts: newSorts });
     }
 
-    invokeMultiSort(lhs: ItemCard.ItemCardViewModel, rhs: ItemCard.ItemCardViewModel): number {
+    invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
         const sorts = this.state.sorts || [];
         for (const sort of sorts) {
             const diff = sort.col.compare(lhs, rhs) * sort.direction;
@@ -167,7 +169,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
     }
 
     //Post sorted table data.
-    getTableData(data: ItemCard.ItemCardViewModel[]): ItemCard.ItemCardViewModel[] {
+    getTableData(data: ItemCardViewModel.ItemCardViewModel[]): ItemCardViewModel.ItemCardViewModel[] {
         const sortedData = this.state.sorts && this.state.sorts.length !== 0
             ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
             : data;
@@ -175,7 +177,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         return sortedData;
     }
 
-    onSearch(results: ItemCard.ItemCardViewModel[]) {
+    onSearch(results: ItemCardViewModel.ItemCardViewModel[]) {
         this.setState({ itemSearchResult: { kind: "success", content: results } });
     }
 
@@ -188,7 +190,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         const searchResults = this.state.itemSearchResult;
         if (searchResults.kind === "success" && searchResults.content!.length === 1) {
             const searchResult = searchResults.content![0];
-            ItemCard.itemPageLink(searchResult.bankKey, searchResult.itemKey);
+            ItemCardFields.itemPageLink(searchResult.bankKey, searchResult.itemKey);
         }
     }
 

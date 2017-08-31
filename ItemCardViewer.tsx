@@ -28,6 +28,37 @@ export class ItemCardViewer extends React.Component<Props, State> {
         });
     }
 
+    renderViewer(url: string) {
+        return (
+            <div className="item-content">
+                <ItemViewerFrame.ItemFrame url={url} />
+            </div>
+        );
+    }
+
+    renderRubric() {
+        const rubrics = this.props.aboutItem.rubrics.map((ru, i) => <Rubric.RubricComponent {...ru } key={String(i)} />)
+        return (
+            <div className="item-content">{rubrics}</div>
+        );
+    }
+
+    renderInformation() {
+        const aboutItem = this.props.aboutItem;
+        return (
+            <div className="item-content">
+                <div><ItemInformation.ItemInformationDetail
+                    itemCardViewModel={aboutItem.itemCardViewModel}
+                    depthOfKnowledge={aboutItem.depthOfKnowledge}
+                    commonCoreStandardsDescription={aboutItem.commonCoreStandardsDescription}
+                    targetDescription={aboutItem.targetDescription}
+                    educationalDifficulty={aboutItem.educationalDifficulty}
+                    evidenceStatement={aboutItem.evidenceStatement} />
+                </div>
+            </div>
+        );
+    }
+
     renderChosen() {
         const selectedTab = this.state.selectedTab;
         const itemCard = this.props.aboutItem.itemCardViewModel;
@@ -35,29 +66,23 @@ export class ItemCardViewer extends React.Component<Props, State> {
         if (selectedTab == "viewer") {
             const url = "http://ivs.smarterbalanced.org/items?ids=" + itemCard.bankKey.toString() + "-" + itemCard.itemKey.toString();
             return (
-                <div className="item-content">
-                    <ItemViewerFrame.ItemFrame url={url} />
+                <div>
+                    {this.renderViewer(url)}
                 </div>
             );
         }
         else if (selectedTab == "rubric") {
-            const rubrics = this.props.aboutItem.rubrics.map((ru, i) => <Rubric.RubricComponent {...ru } key={String(i)} />)
             return (
-                <div className="item-content">{rubrics}</div>
+                <div>
+                    {this.renderRubric()}
+                </div>
             );
         }
         else if (selectedTab == "information") {
-            return (
-                <div className="item-content">
-                    <div><ItemInformation.ItemInformationDetail
-                        itemCardViewModel={this.props.aboutItem.itemCardViewModel}
-                        depthOfKnowledge={this.props.aboutItem.depthOfKnowledge}
-                        commonCoreStandardsDescription={this.props.aboutItem.commonCoreStandardsDescription}
-                        targetDescription={this.props.aboutItem.targetDescription}
-                        educationalDifficulty={this.props.aboutItem.educationalDifficulty}
-                        evidenceStatement={this.props.aboutItem.evidenceStatement}/>
-                    </div>
-                </div>
+            return(
+            <div>
+                {this.renderInformation()}
+            </div>
             );
         }
     }

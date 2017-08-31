@@ -1,8 +1,9 @@
 ﻿import * as React from 'react';
 import * as ItemCard from './ItemCard';
+import * as ItemCardViewModel from './ItemCardViewModel'
 
 export interface Props {
-    itemCardViewModel: ItemCard.ItemCardViewModel;
+    itemCardViewModel: ItemCardViewModel.ItemCardViewModel;
     depthOfKnowledge: string;
     targetDescription: string;
     commonCoreStandardsDescription: string;
@@ -48,7 +49,7 @@ export class ItemInformationDetail extends React.Component<Props, {}> {
 
         return (
             <p className={`card-text ${className}`} tabIndex={0}>
-                <span className="card-text-label">{label}:</span>
+                <span className="card-text-label">{label}</span>
                 <span className="card-text-value"> {value}</span>
             </p>
         );
@@ -69,7 +70,6 @@ export class ItemInformationDetail extends React.Component<Props, {}> {
                 {this.renderField("Target Description", this.props.targetDescription, "target-description")}
                 {this.renderField("Educational Difficulty", this.props.educationalDifficulty, "educational-difficulty")}
                 {this.renderField("Evidence Statement", this.props.evidenceStatement, "evidence-statement")}
-
             </div>
         );
     }

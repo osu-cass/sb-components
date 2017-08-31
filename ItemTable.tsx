@@ -1,4 +1,5 @@
 ﻿import * as ItemCard from "./ItemCard";
+import * as ItemCardViewModel from './ItemCardViewModel';
 import * as React from "react";
 
 export type Header = "Item" | "Claim/Target" | "Subject" | "Grade" | "Item Type";
@@ -18,8 +19,8 @@ export interface HeaderSort {
 export interface SortColumn {
     header: Header;
     className: string;
-    accessor: (label: ItemCard.ItemCardViewModel) => string | number;
-    compare: (a: ItemCard.ItemCardViewModel, b: ItemCard.ItemCardViewModel) => number;
+    accessor: (label: ItemCardViewModel.ItemCardViewModel) => string | number;
+    compare: (a: ItemCardViewModel.ItemCardViewModel, b: ItemCardViewModel.ItemCardViewModel) => number;
 }
 
 const invokeResetSortLimit = 2;
@@ -90,7 +91,7 @@ export class HeaderTable extends React.Component<HeaderProps, {}> {
         super(props);
     }
 
-    compareColumn(lhs: ItemCard.ItemCardViewModel, rhs: ItemCard.ItemCardViewModel): number {
+    compareColumn(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
         const sorts = this.props.sorts || [];
         for (const sort of sorts) {
             const diff = sort.col.compare(lhs, rhs) * sort.direction;
@@ -145,11 +146,11 @@ export class HeaderTable extends React.Component<HeaderProps, {}> {
 
 interface Props {
     tableRef?: (ref: HTMLTableElement) => void;
-    mapRows: ItemCard.ItemCardViewModel[];
-    rowOnClick: (item: ItemCard.ItemCardViewModel) => void;
+    mapRows: ItemCardViewModel.ItemCardViewModel[];
+    rowOnClick: (item: ItemCardViewModel.ItemCardViewModel) => void;
     sort: HeaderSort[];
     columns: SortColumn[];
-    selectedRow?: ItemCard.ItemCardViewModel;
+    selectedRow?: ItemCardViewModel.ItemCardViewModel;
 }
 
 export class DataTable extends React.Component<Props, {}> {
@@ -159,7 +160,7 @@ export class DataTable extends React.Component<Props, {}> {
 
    
 
-    renderCell(col: SortColumn, cellData: ItemCard.ItemCardViewModel): JSX.Element {
+    renderCell(col: SortColumn, cellData: ItemCardViewModel.ItemCardViewModel): JSX.Element {
         return (
             <td key={col.header}
                 className={col.className}>
@@ -171,7 +172,7 @@ export class DataTable extends React.Component<Props, {}> {
     }
 
     //TODO replace X with checkmark icon 
-    renderRow(rowData: ItemCard.ItemCardViewModel, index: number): JSX.Element {
+    renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number): JSX.Element {
         let isSelected = false;
         if (this.props.selectedRow) {
             isSelected = rowData.itemKey === this.props.selectedRow.itemKey
@@ -200,7 +201,6 @@ export class DataTable extends React.Component<Props, {}> {
         return (
             <table className="item-table table table-striped mapcomponent-table"
                 ref={this.props.tableRef}>
-
                 {this.renderRows()}
             </table>
         );

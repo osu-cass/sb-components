@@ -1,11 +1,12 @@
 ﻿import * as React from 'react';
 import * as Rubric from "./Rubric";
 import * as ItemCard from './ItemCard';
+import * as ItemCardViewModel from './ItemCardViewModel';
 import * as API from './ApiModels';
 
 export interface AboutThisItem {
     rubrics: Rubric.Rubric[];
-    itemCardViewModel: ItemCard.ItemCardViewModel;
+    itemCardViewModel: ItemCardViewModel.ItemCardViewModel;
     depthOfKnowledge: string;
     targetDescription: string;
     commonCoreStandardsDescription: string;
