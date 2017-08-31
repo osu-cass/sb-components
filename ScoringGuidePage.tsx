@@ -13,8 +13,8 @@ import * as PageTabs from './PageTabs'
 import { get } from "./ApiModels";
 
 
-const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCard.ItemCardViewModel[]>("http://10.162.136.49:5000/ScoringGuide/Search", params);
-const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://10.162.136.49:5000/ScoringGuide/ScoringGuideViewModel");
+const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCard.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
+const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
 
 export interface State {
     searchParams: ItemModels.ScoreSearchParams;

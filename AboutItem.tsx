@@ -14,4 +14,4 @@ export interface AboutThisItem {
 }
 
 
-export const ScoreSearchClient = (params: {bankKey: number, itemKey: number}) => API.get<AboutThisItem>("http://10.162.136.49:5000/ScoringGuide/AboutThisItem", params) 
+export const ScoreSearchClient = (params: {bankKey: number, itemKey: number}) => API.get<AboutThisItem>("http://is-score.cass.oregonstate.edu/ScoringGuide/AboutThisItem", params) 

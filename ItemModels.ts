@@ -9,4 +9,4 @@ export interface ScoreSearchParams {
     techType: string[];
 }
 
-export const ScoreSearchClient = (params: ScoreSearchParams) => API.get<ItemCard.ItemCardViewModel[]>("http://10.162.136.49:5000/ScoringGuide/Search", params) 
+export const ScoreSearchClient = (params: ScoreSearchParams) => API.get<ItemCard.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params) 
