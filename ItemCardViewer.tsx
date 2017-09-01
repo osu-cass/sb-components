@@ -4,6 +4,7 @@ import * as AboutItem from './AboutItem';
 import * as PageTabs from './PageTabs';
 import * as ItemViewerFrame from './ItemViewerFrame';
 import * as ItemInformation from './ItemInformation';
+import * as ItemInformationDetail from './ItemInformationDetail';
 
 
 export interface Props {
@@ -47,7 +48,7 @@ export class ItemCardViewer extends React.Component<Props, State> {
         const aboutItem = this.props.aboutItem;
         return (
             <div className="item-content">
-                <div><ItemInformation.ItemInformationDetail
+                <div><ItemInformationDetail.ItemInformationDetail
                     itemCardViewModel={aboutItem.itemCardViewModel}
                     depthOfKnowledge={aboutItem.depthOfKnowledge}
                     commonCoreStandardsDescription={aboutItem.commonCoreStandardsDescription}
@@ -62,29 +63,18 @@ export class ItemCardViewer extends React.Component<Props, State> {
     renderChosen() {
         const selectedTab = this.state.selectedTab;
         const itemCard = this.props.aboutItem.itemCardViewModel;
-
+        let resultElement: JSX.Element[] | JSX.Element | undefined;
         if (selectedTab == "viewer") {
             const url = "http://ivs.smarterbalanced.org/items?ids=" + itemCard.bankKey.toString() + "-" + itemCard.itemKey.toString();
-            return (
-                <div>
-                    {this.renderViewer(url)}
-                </div>
-            );
+            resultElement = <div> {this.renderViewer(url)} </div>
         }
         else if (selectedTab == "rubric") {
-            return (
-                <div>
-                    {this.renderRubric()}
-                </div>
-            );
+                resultElement = <div> {this.renderRubric()} </div>
         }
         else if (selectedTab == "information") {
-            return(
-            <div>
-                {this.renderInformation()}
-            </div>
-            );
+            resultElement = <div> {this.renderInformation()}</div>
         }
+        return resultElement;
     }
 
     render() {
