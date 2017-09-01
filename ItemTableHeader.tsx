@@ -150,7 +150,6 @@ export class HeaderTable extends React.Component<Props, State> {
             <table className="item-table table mapcomponent-table">
                 <thead>
                     <tr className="primary">
-                        <th></th>
                         {this.props.columns.map(col => this.renderHeader(col))}
                     </tr>
                 </thead>

@@ -13,6 +13,7 @@ import * as PageTabs from './PageTabs';
 import * as ItemCardViewModel from './ItemCardViewModel';
 import * as ItemCardFields from './ItemCardFields';
 import * as ItemTableHeader from './ItemTableHeader';
+import * as ItemPageSearch from './ItemPageSearch';
 import { get } from "./ApiModels";
 
 
@@ -23,7 +24,7 @@ export interface State {
     searchParams: ItemModels.ScoreSearchParams;
     itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>;
     selectedItem: ApiModels.Resource<AboutItem.AboutThisItem>;
-    selectedRow?: ItemCardViewModel.ItemCardViewModel; 
+    selectedRow?: ItemCardViewModel.ItemCardViewModel;
     sorts: ItemTableHeader.HeaderSort[];
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
 }
@@ -32,7 +33,7 @@ export interface ItemsSearchViewModel {
     interactionTypes: ItemSearchDropdown.InteractionType[];
     subjects: ItemSearchDropdown.Subject[];
 }
- 
+
 export class ScoringGuidePage extends React.Component<{}, State> {
     private headerColumns = ItemTableHeader.headerColumns;
     private dataTableRef: HTMLTableElement;
@@ -48,26 +49,26 @@ export class ScoringGuidePage extends React.Component<{}, State> {
             itemSearchResult: { kind: "loading" },
             selectedItem: { kind: "loading" },
             sorts: [],
-            scoringGuideViewModel: {kind: "loading"}
+            scoringGuideViewModel: { kind: "loading" }
         }
 
         this.loadScoringGuideViewModel();
     }
 
-    loadScoringGuideViewModel(){
+    loadScoringGuideViewModel() {
         ScoreGuideViewModelClient()
-        .then(result => this.onSuccessLoadScoringGuideViewModel(result))
-        .catch(err => this.onErrorLoadScoringGuideViewModel(err));
+            .then(result => this.onSuccessLoadScoringGuideViewModel(result))
+            .catch(err => this.onErrorLoadScoringGuideViewModel(err));
 
     }
 
-    onSuccessLoadScoringGuideViewModel(result: ItemsSearchViewModel){
+    onSuccessLoadScoringGuideViewModel(result: ItemsSearchViewModel) {
         this.setState({
-            scoringGuideViewModel: {kind:"success", content: result}
+            scoringGuideViewModel: { kind: "success", content: result }
         })
     }
 
-    onErrorLoadScoringGuideViewModel(err: any){
+    onErrorLoadScoringGuideViewModel(err: any) {
         console.error(err);
     }
 
@@ -93,42 +94,8 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         console.error(err);
     }
 
-    onSearchSuccess(result: ItemCardViewModel.ItemCardViewModel[]) {
-        const searchParams = this.state.searchParams;
-        const items = result;
-        this.setState({
-            itemSearchResult: { kind: "success", content: items },
-        });
-    }
-
-    onSearchError(err: any) {
-        console.log(err);
-    }
-
-    async callSearch() {
-        const searchParams = this.state.searchParams;
-        return ItemModels.ScoreSearchClient(searchParams)
-            .then((data) => this.onSearchSuccess(data))
-            .catch((err) => this.onSearchError(err));
-    }
-
     isLoading() {
         return this.state.itemSearchResult.kind === "loading" || this.state.itemSearchResult.kind === "reloading";
-    }
-
-    renderAboutItemDetails() {
-        const selectedResult = this.state.selectedItem;
-        if (selectedResult.kind == "success" && selectedResult.content) {
-            const itemCard = selectedResult.content.itemCardViewModel;
-            return (
-                <div>
-                    <ItemCardViewer.ItemCardViewer aboutItem= {selectedResult.content} />
-                </div>
-            );
-        } else {
-            return (<div></div>);
-        }
-
     }
 
     onClickHeader = (col: ItemTableHeader.SortColumn) => {
@@ -151,7 +118,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
             const newSort: ItemTableHeader.HeaderSort = {
                 col: col,
                 direction: ItemTableHeader.SortDirection.Ascending,
-                resetSortCount:0
+                resetSortCount: 0
             };
             newSorts.push(newSort);
         }
@@ -178,102 +145,72 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         return sortedData;
     }
 
-    onSearch(results: ItemCardViewModel.ItemCardViewModel[]) {
-        this.setState({ itemSearchResult: { kind: "success", content: results } });
-    }
-
-    onError(err: any) {
-        this.setState({ itemSearchResult: { kind: "failure" } });
-        console.error(err);
-    }
-
-    selectSingleResult() {
-        const searchResults = this.state.itemSearchResult;
-        if (searchResults.kind === "success" && searchResults.content!.length === 1) {
-            const searchResult = searchResults.content![0];
-            ItemCardFields.itemPageLink(searchResult.bankKey, searchResult.itemKey);
-        }
-    }
-
-    beginSearch(params: ItemSearchDropdown.SearchAPIParams) {
-        const searchResults = this.state.itemSearchResult;
-        if (searchResults.kind === "success") {
-            this.setState({
-                itemSearchResult: {
-                    kind: "reloading",
-                    content: searchResults.content
-                }
-            });
-        } else if (searchResults.kind === "failure") {
-            this.setState({
-                itemSearchResult: { kind: "loading" }
-            });
-        }
-
-        SearchClient(params)
-        .then(data => this.onSearchSuccess(data))
-        .catch(err => this.onSearchError(err));
-    }
-
-    renderSearchControls(isLoading: boolean) {
-        const vmState = this.state.scoringGuideViewModel;
-        if((vmState.kind == "success" || vmState.kind == "reloading") && vmState.content != undefined){
+    renderAboutItemDetails() {
+        const selectedResult = this.state.selectedItem;
+        if (selectedResult.kind == "success" && selectedResult.content) {
+            const itemCard = selectedResult.content.itemCardViewModel;
             return (
-                <div className="search-controls">
-                    <a>Print Items</a>
-                    <ItemSearchDropdown.ItemSearchDropdown
-                        interactionTypes={vmState.content.interactionTypes}
-                        subjects={vmState.content.subjects}
-                        onChange={(params) => this.beginSearch(params)}
-                        selectSingleResult={() => this.selectSingleResult()}
-                        isLoading={isLoading} />
+                <div>
+                    <ItemCardViewer.ItemCardViewer aboutItem={selectedResult.content} />
                 </div>
             );
-        }else{
-            return null;
+        } else {
+            return (<div></div>);
         }
-    
+
     }
 
-    renderSearch() {
-        const searchResults = this.state.itemSearchResult;
+    renderTableHeader() {
+        return (
+            <ItemTableHeader.HeaderTable
+                sorts={this.state.sorts}
+                onHeaderClick={this.onClickHeader}
+                columns={this.headerColumns} />
+        );
+    }
 
+    renderTable() {
         let resultElement: JSX.Element[] | JSX.Element | undefined;
-        if (searchResults.kind === "success" || searchResults.kind === "reloading") {
-            if (searchResults.content == null || searchResults.content.length === 0) {
+        if (this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
+            if (this.state.itemSearchResult.content == null || this.state.itemSearchResult.content.length === 0) {
                 resultElement = <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
+            } else {
+                return (
+                    <ItemTable.DataTable
+                        mapRows={this.getTableData(this.state.itemSearchResult.content)}
+                        rowOnClick={this.onSelectItem}
+                        sort={this.state.sorts}
+                        tableRef={ref => this.dataTableRef = ref}
+                        columns={this.headerColumns}
+                        selectedRow={this.state.selectedRow} />
+                );
             }
-            else {
-                resultElement =
-                    <div className="search-results">
-
-                        <ItemTableHeader.HeaderTable
-                            sorts={this.state.sorts}
-                            onHeaderClick={this.onClickHeader}
-                            columns={this.headerColumns} />
-                        <ItemTable.DataTable
-                            mapRows={this.getTableData(searchResults.content)}
-                            rowOnClick={this.onSelectItem}
-                            sort={this.state.sorts}
-                            tableRef={ref => this.dataTableRef = ref}
-                            columns={this.headerColumns}
-                            selectedRow={this.state.selectedRow} />
-                    </div>
-            }
-        } else if (searchResults.kind === "failure") {
+        } else {
             resultElement = <div className="placeholder-text" role="alert">An error occurred. Please try again later.</div>;
         }
-
         return resultElement;
     }
 
-    render() {
+    renderSearch() {
+        return (
+            <div className="search-results">
+                {this.renderTableHeader()};
+                {this.renderTable()};
+            </div>
+        );
+    }
 
+
+    render() {
         const isLoading = this.isLoading();
         return (
             <div className="search-page">
                 <div className="search-container">
-                    {this.renderSearchControls(isLoading)}
+                    <ItemPageSearch.ItemPageSearch 
+                        scoringGuideViewModel={this.state.scoringGuideViewModel}
+                        itemSearchResult={this.state.itemSearchResult}
+                        searchParams={this.state.searchParams}
+                    />
                     {this.renderSearch()}
                 </div>
                 {this.renderAboutItemDetails()}
@@ -282,7 +219,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
     }
 }
 
-export function initScoreGuidePage(){
+export function initScoreGuidePage() {
     ReactDOM.render(<ScoringGuidePage />, document.getElementById("react-container"));
 }
 
