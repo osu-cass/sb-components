@@ -165,28 +165,6 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
         }
     }
 
-    render() {
-        history.replaceState(null, "", this.encodeQuery());
-
-        return (
-            <div className="search-params">
-                <div className="search-header">
-                    <h1 className="search-title" tabIndex={0}>Browse Items</h1>
-                    <div className="search-status">
-                        {this.props.isLoading ? <img src="images/spin.gif" className="spin" /> : undefined}
-                        <div><a onClick={() => this.resetFilters()} onKeyPress={e => this.keyPressResetFilters(e)} tabIndex={0}>Reset filters</a></div>
-                    </div>
-                </div>
-                <div className="search-categories" aria-live="polite" aria-relevant="additions removals">
-                    {this.renderGrades()}
-                    {this.renderSubjects()}
-                    {this.renderClaims()}
-                    {this.renderInteractionTypes()}
-                </div>
-            </div>
-        );
-    }
-
     toggleGrades = (event: React.FormEvent<HTMLSelectElement>) => {
         this.setState({
             // Exclusive OR to flip just the bits for the input grades
@@ -316,5 +294,27 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
         this.setState({
             interactionTypes: newInteractionType
         }, () => this.beginChangeTimeout());
+    }
+
+    render() {
+        history.replaceState(null, "", this.encodeQuery());
+
+        return (
+            <div className="search-params">
+                <div className="search-header">
+                    <h1 className="search-title" tabIndex={0}>Browse Items</h1>
+                    <div className="search-status">
+                        {this.props.isLoading ? <img src="images/spin.gif" className="spin" /> : undefined}
+                        <div><a onClick={() => this.resetFilters()} onKeyPress={e => this.keyPressResetFilters(e)} tabIndex={0}>Reset filters</a></div>
+                    </div>
+                </div>
+                <div className="search-categories" aria-live="polite" aria-relevant="additions removals">
+                    {this.renderGrades()}
+                    {this.renderSubjects()}
+                    {this.renderClaims()}
+                    {this.renderInteractionTypes()}
+                </div>
+            </div>
+        );
     }
 }

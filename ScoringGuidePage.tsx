@@ -9,9 +9,10 @@ import * as ItemCardViewer from './ItemCardViewer';
 import * as AboutItem from './AboutItem';
 import * as ItemTable from './ItemTable';
 import * as ItemSearchDropdown from './ItemSearchDropdown';
-import * as PageTabs from './PageTabs'
-import * as ItemCardViewModel from './ItemCardViewModel'
-import * as ItemCardFields from './ItemCardFields'
+import * as PageTabs from './PageTabs';
+import * as ItemCardViewModel from './ItemCardViewModel';
+import * as ItemCardFields from './ItemCardFields';
+import * as ItemTableHeader from './ItemTableHeader';
 import { get } from "./ApiModels";
 
 
@@ -23,7 +24,7 @@ export interface State {
     itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>;
     selectedItem: ApiModels.Resource<AboutItem.AboutThisItem>;
     selectedRow?: ItemCardViewModel.ItemCardViewModel; 
-    sorts: ItemTable.HeaderSort[];
+    sorts: ItemTableHeader.HeaderSort[];
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
 }
 
@@ -33,7 +34,7 @@ export interface ItemsSearchViewModel {
 }
  
 export class ScoringGuidePage extends React.Component<{}, State> {
-    private headerColumns = ItemTable.headerColumns;
+    private headerColumns = ItemTableHeader.headerColumns;
     private dataTableRef: HTMLTableElement;
 
     constructor() {
@@ -130,26 +131,26 @@ export class ScoringGuidePage extends React.Component<{}, State> {
 
     }
 
-    onClickHeader = (col: ItemTable.SortColumn) => {
+    onClickHeader = (col: ItemTableHeader.SortColumn) => {
         const newSorts = (this.state.sorts || []).slice();
         const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
         if (headIdx !== -1) {
             const newSort = Object.assign({}, newSorts[headIdx]);
-            if (newSort.direction == ItemTable.SortDirection.Ascending) {
-                newSort.direction = ItemTable.SortDirection.Descending;
+            if (newSort.direction == ItemTableHeader.SortDirection.Ascending) {
+                newSort.direction = ItemTableHeader.SortDirection.Descending;
             }
-            else if (newSort.direction == ItemTable.SortDirection.Descending) {
-                newSort.direction = ItemTable.SortDirection.NoSort;
+            else if (newSort.direction == ItemTableHeader.SortDirection.Descending) {
+                newSort.direction = ItemTableHeader.SortDirection.NoSort;
             }
             else {
-                newSort.direction = ItemTable.SortDirection.Ascending;
+                newSort.direction = ItemTableHeader.SortDirection.Ascending;
             }
 
             newSorts[headIdx] = newSort;
         } else {
-            const newSort: ItemTable.HeaderSort = {
+            const newSort: ItemTableHeader.HeaderSort = {
                 col: col,
-                direction: ItemTable.SortDirection.Ascending,
+                direction: ItemTableHeader.SortDirection.Ascending,
                 resetSortCount:0
             };
             newSorts.push(newSort);
@@ -246,7 +247,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
                 resultElement =
                     <div className="search-results">
 
-                        <ItemTable.HeaderTable
+                        <ItemTableHeader.HeaderTable
                             sorts={this.state.sorts}
                             onHeaderClick={this.onClickHeader}
                             columns={this.headerColumns} />
