@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Item } from '../Models';
-import * as ItemPage from './ItemPage';
+import { ItemPage } from './ItemPage';
 
 interface Props {
     items: Item[];
 }
 
-export class Component extends React.Component<undefined, undefined> {
+export class PdfComponent extends React.Component<undefined, undefined> {
     render() {
         let itemData = {
             item: 'item',
@@ -26,8 +26,8 @@ export class Component extends React.Component<undefined, undefined> {
                     <link rel='stylesheet' href='css/pdf.css' />
                 </head>
                 <body>
-                    <ItemPage.Component tableData={itemData} title={title} />
-                    <ItemPage.Component tableData={itemData} title={title} />
+                    <ItemPage tableData={itemData} title={title} />
+                    <ItemPage tableData={itemData} title={title} />
                 </body>
             </html>
         );

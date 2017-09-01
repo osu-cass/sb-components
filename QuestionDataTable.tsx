@@ -5,7 +5,7 @@ interface Props {
     tableData: QuestionTableData;
 }
 
-export class Component extends React.Component<Props, undefined> {
+export class QuestionDataTable extends React.Component<Props, undefined> {
     render() {
         return (
             <table className='item-data-table'>
