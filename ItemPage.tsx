@@ -7,7 +7,7 @@ interface Props {
     title: string
 }
 
-export class ItemPage extends React.Component<Props, undefined> {
+export class ItemPage extends React.Component<Props, {}> {
     render() {
         return (
             <div className='item-page'>
