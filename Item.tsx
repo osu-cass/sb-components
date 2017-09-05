@@ -19,7 +19,7 @@ export class ItemComponent extends React.Component<Props, undefined> {
         }
 
         return (
-            <div>
+            <div className='item'>
                 {item}
             </div>
         );
