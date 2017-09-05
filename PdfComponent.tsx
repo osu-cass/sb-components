@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Item } from '../Models';
+import { ItemGroup } from '../Models';
 import { ItemPage } from './ItemPage';
 
 interface Props {
-    items: Item[];
+    items: ItemGroup[];
 }
 
 export class PdfComponent extends React.Component<undefined, undefined> {
