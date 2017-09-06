@@ -57,7 +57,6 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.onChange();
     }
-    //this looks at the url for the search params on pageload
     encodeQuery(): string {
         let pairs: string[] = [];
         if (this.state.claims && this.state.claims.length !== 0) {
@@ -94,7 +93,6 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.timeoutToken = setTimeout(() => this.onChange(), 200);
     }
-    //this gets called each time a component did something I think.
     onChange() {
         const params: SearchAPIParams = {
             itemId: this.state.itemId || "",
@@ -104,7 +102,6 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
             interactionTypes: this.state.interactionTypes || [],
             performanceOnly: this.state.performanceOnly || false
         };
-        //this will call scorepage or whatever
         //TOOD: fix this 
         const scoreParams: ItemModels.ScoreSearchParams = {
             techType: [],

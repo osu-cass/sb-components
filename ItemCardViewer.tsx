@@ -105,7 +105,6 @@ export class ItemCardViewer extends React.Component<Props, State> {
             return resultElement;
         }
     }
-    //so this will render tabs and also render the details 
     render() {
         const tabs = PageTabs.ItemTabs;
         return (

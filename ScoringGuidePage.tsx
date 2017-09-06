@@ -52,7 +52,7 @@ export class ScoringGuidePage extends React.Component<Props, State> {
             searchParams: paramsDefault
         }
 
-        this.loadScoringGuideViewModel(); //this should be back in search page
+        this.loadScoringGuideViewModel(); 
 
     }
 
@@ -80,7 +80,6 @@ export class ScoringGuidePage extends React.Component<Props, State> {
     }
 
     onRowSelection(item: {itemKey: number; bankKey: number}){
-        //set state of row selection
         this.setState({
             selectedItem: item
         })

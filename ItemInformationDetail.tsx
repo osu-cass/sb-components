@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as ItemCardViewModel from './ItemCardViewModel';
 
-
-//TODO: shoudl this be aboutthisitem? most likely. 
 export interface Props {
     itemCardViewModel: ItemCardViewModel.ItemCardViewModel;
     depthOfKnowledge: string;
