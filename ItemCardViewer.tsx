@@ -16,6 +16,7 @@ export interface State {
     selectedTab: PageTabs.Tabs;
 }
 
+//TODO: Updating item from selection won't work. unless component did receive props or get the item in scoreguide
 export class ItemCardViewer extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
@@ -104,7 +105,7 @@ export class ItemCardViewer extends React.Component<Props, State> {
             return resultElement;
         }
     }
-
+    //so this will render tabs and also render the details 
     render() {
         const tabs = PageTabs.ItemTabs;
         return (

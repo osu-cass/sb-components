@@ -1,5 +1,4 @@
-﻿import * as ItemCard from "./ItemCard";
-import * as $ from 'jquery';
+﻿import * as $ from 'jquery';
 import * as GradeLevels from './GradeLevels';
 import * as API from './ApiModels';
 import * as ItemCardViewModel from './ItemCardViewModel';

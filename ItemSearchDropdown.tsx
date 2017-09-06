@@ -1,5 +1,6 @@
 ﻿import * as React from 'react';
 import * as GradeLevels from "./GradeLevels";
+import * as ItemModels from './ItemModels';
 import { parseQueryString } from "./ApiModels";
 
 export interface InteractionType {
@@ -31,19 +32,13 @@ export interface SearchAPIParams {
 export interface Props {
     interactionTypes: InteractionType[];
     subjects: Subject[];
-    onChange: (params: SearchAPIParams) => void;
+    onChange: (params: ItemModels.ScoreSearchParams) => void;
     isLoading: boolean;
 }
 
-export interface State {
-    itemId: string;
-    gradeLevels: GradeLevels.GradeLevels;
-    subjects: string[];
-    claims: string[];
-    interactionTypes: string[];
-    performanceOnly: boolean;
+export interface State extends SearchAPIParams{
+    
 }
-
 
 export class ItemSearchDropdown extends React.Component<Props, State>{
     timeoutToken?: number;
@@ -51,29 +46,18 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
 
-        const queryObject = parseQueryString(location.search);
-        const itemId = (queryObject["itemID"] || [])[0] || "";
-
-        const gradeString = (queryObject["gradeLevels"] || [])[0];
-        const gradeLevels: GradeLevels.GradeLevels = parseInt(gradeString, 10) || GradeLevels.GradeLevels.NA;
-
-        const subjects = queryObject["subjects"] || [];
-        const claims = queryObject["claims"] || [];
-        const interactionTypes = queryObject["interactionTypes"] || [];
-        const performanceOnly = (queryObject["performanceOnly"] || [])[0] === "true";
-
         this.state = {
-            itemId: itemId,
-            gradeLevels: gradeLevels,
-            subjects: subjects,
-            claims: claims,
-            interactionTypes: interactionTypes,
-            performanceOnly: performanceOnly
+            itemId: "",
+            gradeLevels: GradeLevels.GradeLevels.All,
+            subjects: [],
+            claims: [],
+            interactionTypes: [],
+            performanceOnly: false
         };
 
         this.onChange();
     }
-
+    //this looks at the url for the search params on pageload
     encodeQuery(): string {
         let pairs: string[] = [];
         if (this.state.claims && this.state.claims.length !== 0) {
@@ -110,7 +94,7 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.timeoutToken = setTimeout(() => this.onChange(), 200);
     }
-
+    //this gets called each time a component did something I think.
     onChange() {
         const params: SearchAPIParams = {
             itemId: this.state.itemId || "",
@@ -120,7 +104,15 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
             interactionTypes: this.state.interactionTypes || [],
             performanceOnly: this.state.performanceOnly || false
         };
-        this.props.onChange(params);
+        //this will call scorepage or whatever
+        //TOOD: fix this 
+        const scoreParams: ItemModels.ScoreSearchParams = {
+            techType: [],
+            subjects: params.subjects,
+            gradeLevels: params.gradeLevels
+            
+        };
+        this.props.onChange(scoreParams);
     }
 
     onItemIDInput(e: React.FormEvent<HTMLInputElement>) {
@@ -132,12 +124,6 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
             }, () => this.beginChangeTimeout());
         }
     }
-
-    // onItemIDKeyUp(e: React.KeyboardEvent<HTMLInputElement>) {
-    //     if (e.keyCode === 13) {
-    //         this.props.selectSingleResult();
-    //     }
-    // }
 
     togglePerformanceOnly() {
         this.setState({
@@ -242,7 +228,7 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         return (<option key={claim.code} value={claim.code}>{claim.label}</option>);
     }
-
+    
     renderClaims() {
         // If no subjects are selected, use the entire list of subjects
         const selectedSubjectCodes = this.state.subjects;

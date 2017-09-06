@@ -1,51 +1,35 @@
 import * as React from 'react'
 import * as ItemTableHeader from './ItemTableHeader'
 import * as ItemTable from './ItemTable'
-import * as ApiModels from './ApiModels'
 import * as ItemCardViewModel from './ItemCardViewModel'
 import * as AboutItem from './AboutItem'
 import * as GradeLevels from "./GradeLevels";
-import { get } from "./ApiModels";
-import { ItemsSearchViewModel } from "./ItemPageSearch";
+import { ItemsSearchViewModel } from "./ItemSearchContainer";
 import * as ItemModels from './ItemModels';
 import * as ItemSearchDropdown from './ItemSearchDropdown';
 
 
-
-const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
-
 export interface Props {
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    scoringGuideViewModel?: ItemsSearchViewModel; //what do we need this for in this file?
+    itemCards?: ItemCardViewModel.ItemCardViewModel[]; //I've been asking myself that.  I think there are a few things messed up about the design
 }
 
 export interface State {
-    searchParams: ItemModels.ScoreSearchParams; //nah dawg 
     sorts: ItemTableHeader.HeaderSort[]; //should this be state?
-    itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>; //I've been asking myself that.  I think there are a few things messed up about the design
     selectedRow?: ItemCardViewModel.ItemCardViewModel; //I did not like this implementation but whatever
     
 }
+
 export class ItemPageTable extends React.Component<Props, State>{
     private headerColumns = ItemTableHeader.headerColumns;
     private dataTableRef: HTMLTableElement;
 
-    constructor() {
-        super(); 
+    constructor(props: Props) {
+        super(props); 
         this.state = {
-            searchParams: {
-                gradeLevels: GradeLevels.GradeLevels.NA,
-                subjects: [],
-                techType: []
-            },
-            itemSearchResult: { kind: "none" },
-            sorts: [],
+            sorts: []
         }
-
-        //court, add the search method to get items. 
-
     }
-   
 
     onClickHeader = (col: ItemTableHeader.SortColumn) => {
         const newSorts = (this.state.sorts || []).slice();
@@ -84,8 +68,6 @@ export class ItemPageTable extends React.Component<Props, State>{
      
     };
 
-  
-
     invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
         const sorts = this.state.sorts || [];
         for (const sort of sorts) {
@@ -97,12 +79,16 @@ export class ItemPageTable extends React.Component<Props, State>{
         return 0;
     }
 
-    getTableData(data: ItemCardViewModel.ItemCardViewModel[]): ItemCardViewModel.ItemCardViewModel[] {
-        const sortedData = this.state.sorts && this.state.sorts.length !== 0
-            ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
-            : data;
-
-        return sortedData;
+    getTableData(): ItemCardViewModel.ItemCardViewModel[] | undefined {
+        const data = this.props.itemCards; //we had a bad case here lol
+        if(data != undefined){
+            const sortedData = this.state.sorts && this.state.sorts.length !== 0
+                ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
+                : data;
+        }
+        else{
+            return undefined;
+        }
     }
 
     renderTableHeader() {
@@ -115,15 +101,15 @@ export class ItemPageTable extends React.Component<Props, State>{
     }
 
     renderTable() {
-        const result = this.state.itemSearchResult;
-        let resultElement: JSX.Element[] | JSX.Element | undefined;
-        if (result.kind == "success" || result.kind == "reloading") {
-            if (result.content == null || result.content.length === 0) {
-                resultElement = <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
+        const itemCards = this.getTableData();
+        if (itemCards != undefined) {
+            //if no items are returned we want to return a friendly message
+            if (itemCards.length === 0) {
+                return <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
             } else {
                 return (
                     <ItemTable.DataTable
-                        mapRows={this.getTableData(result.content)}
+                        mapRows={itemCards}
                         rowOnClick={this.onSelectItem}
                         sort={this.state.sorts}
                         tableRef={ref => this.dataTableRef = ref}
@@ -131,10 +117,8 @@ export class ItemPageTable extends React.Component<Props, State>{
                         selectedRow={this.state.selectedRow} />
                 );
             }
-        } else {
-            resultElement = <div className="placeholder-text" role="alert">An error occurred. Please try again later.</div>;
         }
-        return resultElement;
+        return <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
     }
 
     render() {

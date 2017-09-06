@@ -3,7 +3,6 @@ import * as ReactDOM from 'react-dom';
 import * as ItemViewerFrame from './ItemViewerFrame';
 import * as ItemModels from './ItemModels';
 import * as ApiModels from './ApiModels';
-import * as ItemCard from './ItemCard';
 import * as GradeLevels from './GradeLevels';
 import * as ItemCardViewer from './ItemCardViewer';
 import * as AboutItem from './AboutItem';
@@ -11,43 +10,53 @@ import * as ItemTable from './ItemTable';
 import * as ItemSearchDropdown from './ItemSearchDropdown';
 import * as PageTabs from './PageTabs';
 import * as ItemCardViewModel from './ItemCardViewModel';
-import * as ItemCardFields from './ItemCardFields';
 import * as ItemTableHeader from './ItemTableHeader';
-import * as ItemPageSearch from './ItemPageSearch';
+import * as ItemSearchContainer from './ItemSearchContainer';
 import * as ItemPageTable from './ItemPageTable';
 import { get } from "./ApiModels";
+import { parseQueryString } from "./ApiModels";
 
 
-const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
-export interface Props {
-}
+export interface Props {}
 
 export interface State {
     selectedItem?: {itemKey: number; bankKey: number}; // we will need this to extract key and bank
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>; //leave. I think this is the drop-downs. this could be a new file
-    
+    searchParams: ItemModels.ScoreSearchParams; //this is the start of the page. url and defaults 
 }
 
-//TODO: diagram with components, events, and props to pass
 export interface ItemsSearchViewModel {
     interactionTypes: ItemSearchDropdown.InteractionType[];
     subjects: ItemSearchDropdown.Subject[];
 }
 
 export class ScoringGuidePage extends React.Component<Props, State> {
-
     constructor(props: Props) {
         super(props);
+
+        const queryObject = parseQueryString(location.search);
+        const gradeString = (queryObject["gradeLevels"] || [])[0];
+        const gradeLevels: GradeLevels.GradeLevels = parseInt(gradeString, 10) || GradeLevels.GradeLevels.NA;
+        const subjects = queryObject["subjects"] || [];
+        const techType = queryObject["techType"] || [];
+
+        const paramsDefault = {
+            gradeLevels: gradeLevels,
+            subjects: subjects,
+            techType: techType
+        };
+
         this.state = {
-            scoringGuideViewModel: {kind: "loading"}
+            scoringGuideViewModel: {kind: "loading"},
+            searchParams: paramsDefault
         }
 
         this.loadScoringGuideViewModel(); //this should be back in search page
 
     }
 
-       loadScoringGuideViewModel() {
+    loadScoringGuideViewModel() {
         ScoreGuideViewModelClient()
             .then(result => this.onSuccessLoadScoringGuideViewModel(result))
             .catch(err => this.onErrorLoadScoringGuideViewModel(err));
@@ -65,21 +74,31 @@ export class ScoringGuidePage extends React.Component<Props, State> {
     }
 
     onSearchParamsChange(params: ItemModels.ScoreSearchParams){
-        //TODO
+       this.setState({
+            searchParams: params
+       });
     }
-    onRowSelection(item: {itemKey: number; bankKey: number}){
-        //so the table was clicked and now we want to handle the event.
-        //we want to pass this to the thing rendering the about item. which should be a new component
-        //TODO
 
+    onRowSelection(item: {itemKey: number; bankKey: number}){
+        //set state of row selection
+        this.setState({
+            selectedItem: item
+        })
     }
-        //TODO: render the page tabs and pass the new state of selected row attributes
-    renderAboutItemDetails() {
-        return (
-            <div>
-                <ItemCardViewer.ItemCardViewer />
-            </div>
-        );
+    
+    renderTabsContainer() {
+        if(this.state.selectedItem != undefined){
+            return (
+                <div>
+                    <ItemCardViewer.ItemCardViewer
+                        item={this.state.selectedItem}
+                     />
+                </div>
+            );
+        }else{
+            return <div></div>
+        }
+     
     }
 
     render() {
@@ -89,15 +108,13 @@ export class ScoringGuidePage extends React.Component<Props, State> {
             return (
                 <div className="search-page">
                     <div className="search-container">
-                        <ItemPageSearch.ItemPageSearch
+                        <ItemSearchContainer.ItemSearchContainer
                             scoringGuideViewModel={scoringVMState.content}
-                            onSearch={(params) => this.onSearchParamsChange(params)} 
-                        />
-                        <ItemPageTable.ItemPageTable
-                        onRowSelection={(item) => this.onRowSelection(item) }
+                            onRowSelection={(item) => this.onRowSelection(item)}
+                            searchParams={this.state.searchParams} 
                         />
                     </div>
-                    {this.renderAboutItemDetails()} 
+                    {this.renderTabsContainer()} 
                 </div>
             );
         }
@@ -107,6 +124,7 @@ export class ScoringGuidePage extends React.Component<Props, State> {
      
     }
 }
+
 
 export function initScoreGuidePage(pageVM: Props) {
     ReactDOM.render(<ScoringGuidePage {...pageVM} />, document.getElementById("react-container"));

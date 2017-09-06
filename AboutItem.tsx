@@ -1,6 +1,5 @@
 ﻿import * as React from 'react';
 import * as Rubric from "./Rubric";
-import * as ItemCard from './ItemCard';
 import * as ItemCardViewModel from './ItemCardViewModel';
 import * as API from './ApiModels';
 
@@ -27,6 +26,7 @@ export const ScoreSearchClient = (params: { bankKey: number, itemKey: number }) 
 export class ScoringGuidePage extends React.Component<Props, State> {
 
 
+    //TODO: render the item information
     render() {
         return (
             <div>

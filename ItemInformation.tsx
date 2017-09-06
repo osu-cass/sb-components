@@ -1,5 +1,4 @@
 ﻿import * as React from 'react';
-import * as ItemCard from './ItemCard';
 import * as ItemCardViewModel from './ItemCardViewModel'
 import * as ItemInformationDetail from './ItemInformationDetail';
 
