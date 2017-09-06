@@ -1,10 +1,10 @@
 ﻿import * as React from 'react';
-import * as Rubric from './Rubric';
-import * as AboutItem from './AboutItem';
-import * as PageTabs from './PageTabs';
+import * as Rubric from './PageTabs/Rubric';
+import * as AboutItem from './AboutItem/AboutItem';
+import * as PageTabs from './PageTabs/PageTabs';
 import * as ItemViewerFrame from './ItemViewerFrame';
-import * as ItemInformation from './ItemInformation';
-import * as ItemInformationDetail from './ItemInformationDetail';
+import * as ItemInformation from './PageTabs/ItemInformation';
+import * as ItemInformationDetail from './PageTabs/ItemInformationDetail';
 import * as ApiModels from './ApiModels';
 
 export interface Props {

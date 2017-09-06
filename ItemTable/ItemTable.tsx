@@ -1,4 +1,4 @@
-﻿import * as ItemCardViewModel from './ItemCardViewModel';
+﻿import * as ItemCardViewModel from '../ItemCardViewModel';
 import * as React from "react";
 import * as ItemTableHeader from './ItemTableHeader';
 

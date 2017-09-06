@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
-import * as GradeLevels from "./GradeLevels";
-import * as ItemModels from './ItemModels';
-import { parseQueryString } from "./ApiModels";
+import * as GradeLevels from "../GradeLevels";
+import * as ItemModels from '../ItemModels';
+import { parseQueryString } from "../ApiModels";
 
 export interface InteractionType {
     code: string;

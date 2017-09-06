@@ -1,4 +1,4 @@
-import * as ItemCardViewModel from './ItemCardViewModel';
+import * as ItemCardViewModel from '../ItemCardViewModel';
 import * as React from "react";
 
 export type Header = "Item" | "Claim/Target" | "Subject" | "Grade" | "Item Type";
