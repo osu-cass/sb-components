@@ -2,6 +2,10 @@
     kind: "loading";
 }
 
+interface NotLoaded {
+    kind: "none";
+}
+
 interface Success<T> {
     kind: "success";
     content: T | undefined;
@@ -16,7 +20,7 @@ interface Reloading<T> {
     content: T | undefined;
 }
 
-export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure
+export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure | NotLoaded
 
 export function parseQueryString(url: string): { [key: string]: string[] | undefined } {
     let queryObject: { [key: string]: string[] | undefined } = {};

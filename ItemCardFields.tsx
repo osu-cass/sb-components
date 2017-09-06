@@ -6,6 +6,7 @@ import * as ItemCardViewModel from './ItemCardViewModel'
 
 export interface Props {
     aboutItem: ItemCardViewModel.ItemCardViewModel;
+    selectedItem: API.Resource<AboutItem.AboutThisItem>;
 }
 
 export function itemPageLink(bankKey: number, itemKey: number){

@@ -28,6 +28,7 @@ export class ItemCard extends React.Component<Props, {}> {
     }
 
     renderCard(bankKey: number, itemKey: number) {
+        const item = {bankKey, itemKey};
         return (
             <div className={`card card-block ${this.props.aboutItem.subjectCode.toLowerCase()}`}
                 onClick={e => ItemCardFields.itemPageLink(bankKey, itemKey)}

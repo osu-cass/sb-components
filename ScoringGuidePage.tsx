@@ -14,48 +14,40 @@ import * as ItemCardViewModel from './ItemCardViewModel';
 import * as ItemCardFields from './ItemCardFields';
 import * as ItemTableHeader from './ItemTableHeader';
 import * as ItemPageSearch from './ItemPageSearch';
+import * as ItemPageTable from './ItemPageTable';
 import { get } from "./ApiModels";
 
 
 const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
-
-export interface State {
-    searchParams: ItemModels.ScoreSearchParams;
-    itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>;
-    selectedItem: ApiModels.Resource<AboutItem.AboutThisItem>;
-    selectedRow?: ItemCardViewModel.ItemCardViewModel;
-    sorts: ItemTableHeader.HeaderSort[];
-    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
+export interface Props {
 }
 
+export interface State {
+    selectedItem?: {itemKey: number; bankKey: number}; // we will need this to extract key and bank
+    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>; //leave. I think this is the drop-downs. this could be a new file
+    
+}
+
+//TODO: diagram with components, events, and props to pass
 export interface ItemsSearchViewModel {
     interactionTypes: ItemSearchDropdown.InteractionType[];
     subjects: ItemSearchDropdown.Subject[];
 }
 
-export class ScoringGuidePage extends React.Component<{}, State> {
-    private headerColumns = ItemTableHeader.headerColumns;
-    private dataTableRef: HTMLTableElement;
+export class ScoringGuidePage extends React.Component<Props, State> {
 
-    constructor() {
-        super();
+    constructor(props: Props) {
+        super(props);
         this.state = {
-            searchParams: {
-                gradeLevels: GradeLevels.GradeLevels.NA,
-                subjects: [],
-                techType: []
-            },
-            itemSearchResult: { kind: "loading" },
-            selectedItem: { kind: "loading" },
-            sorts: [],
-            scoringGuideViewModel: { kind: "loading" }
+            scoringGuideViewModel: {kind: "loading"}
         }
 
-        this.loadScoringGuideViewModel();
+        this.loadScoringGuideViewModel(); //this should be back in search page
+
     }
 
-    loadScoringGuideViewModel() {
+       loadScoringGuideViewModel() {
         ScoreGuideViewModelClient()
             .then(result => this.onSuccessLoadScoringGuideViewModel(result))
             .catch(err => this.onErrorLoadScoringGuideViewModel(err));
@@ -72,154 +64,51 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         console.error(err);
     }
 
-    //row is selected passed from item table
-    onSelectItem = (item: ItemCardViewModel.ItemCardViewModel) => {
-        this.setState({
-            selectedRow: item
-        });
-
-        AboutItem.ScoreSearchClient({ bankKey: item.bankKey, itemKey: item.itemKey })
-            .then((data) => this.onAboutItemSuccess(data))
-            .catch((err) => this.onAboutItemError(err));
-    };
-
-    //on load success, after row is selected
-    onAboutItemSuccess(item: AboutItem.AboutThisItem) {
-        this.setState({
-            selectedItem: { kind: "success", content: item }
-        });
+    onSearchParamsChange(params: ItemModels.ScoreSearchParams){
+        //TODO
     }
+    onRowSelection(item: {itemKey: number; bankKey: number}){
+        //so the table was clicked and now we want to handle the event.
+        //we want to pass this to the thing rendering the about item. which should be a new component
+        //TODO
 
-    onAboutItemError(err: any) {
-        console.error(err);
     }
-
-    isLoading() {
-        return this.state.itemSearchResult.kind === "loading" || this.state.itemSearchResult.kind === "reloading";
-    }
-
-    onClickHeader = (col: ItemTableHeader.SortColumn) => {
-        const newSorts = (this.state.sorts || []).slice();
-        const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
-        if (headIdx !== -1) {
-            const newSort = Object.assign({}, newSorts[headIdx]);
-            if (newSort.direction == ItemTableHeader.SortDirection.Ascending) {
-                newSort.direction = ItemTableHeader.SortDirection.Descending;
-            }
-            else if (newSort.direction == ItemTableHeader.SortDirection.Descending) {
-                newSort.direction = ItemTableHeader.SortDirection.NoSort;
-            }
-            else {
-                newSort.direction = ItemTableHeader.SortDirection.Ascending;
-            }
-
-            newSorts[headIdx] = newSort;
-        } else {
-            const newSort: ItemTableHeader.HeaderSort = {
-                col: col,
-                direction: ItemTableHeader.SortDirection.Ascending,
-                resetSortCount: 0
-            };
-            newSorts.push(newSort);
-        }
-        this.setState({ sorts: newSorts });
-    }
-
-    invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
-        const sorts = this.state.sorts || [];
-        for (const sort of sorts) {
-            const diff = sort.col.compare(lhs, rhs) * sort.direction;
-            if (diff !== 0) {
-                return diff;
-            }
-        }
-        return 0;
-    }
-
-    //Post sorted table data.
-    getTableData(data: ItemCardViewModel.ItemCardViewModel[]): ItemCardViewModel.ItemCardViewModel[] {
-        const sortedData = this.state.sorts && this.state.sorts.length !== 0
-            ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
-            : data;
-
-        return sortedData;
-    }
-
+        //TODO: render the page tabs and pass the new state of selected row attributes
     renderAboutItemDetails() {
-        const selectedResult = this.state.selectedItem;
-        if (selectedResult.kind == "success" && selectedResult.content) {
-            const itemCard = selectedResult.content.itemCardViewModel;
-            return (
-                <div>
-                    <ItemCardViewer.ItemCardViewer aboutItem={selectedResult.content} />
-                </div>
-            );
-        } else {
-            return (<div></div>);
-        }
-
-    }
-
-    renderTableHeader() {
         return (
-            <ItemTableHeader.HeaderTable
-                sorts={this.state.sorts}
-                onHeaderClick={this.onClickHeader}
-                columns={this.headerColumns} />
-        );
-    }
-
-    renderTable() {
-        let resultElement: JSX.Element[] | JSX.Element | undefined;
-        if (this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
-            if (this.state.itemSearchResult.content == null || this.state.itemSearchResult.content.length === 0) {
-                resultElement = <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
-            } else {
-                return (
-                    <ItemTable.DataTable
-                        mapRows={this.getTableData(this.state.itemSearchResult.content)}
-                        rowOnClick={this.onSelectItem}
-                        sort={this.state.sorts}
-                        tableRef={ref => this.dataTableRef = ref}
-                        columns={this.headerColumns}
-                        selectedRow={this.state.selectedRow} />
-                );
-            }
-        } else {
-            resultElement = <div className="placeholder-text" role="alert">An error occurred. Please try again later.</div>;
-        }
-        return resultElement;
-    }
-
-    renderSearch() {
-        return (
-            <div className="search-results">
-                {this.renderTableHeader()};
-                {this.renderTable()};
+            <div>
+                <ItemCardViewer.ItemCardViewer />
             </div>
         );
     }
-
 
     render() {
-        const isLoading = this.isLoading();
-        return (
-            <div className="search-page">
-                <div className="search-container">
-                    <ItemPageSearch.ItemPageSearch 
-                        scoringGuideViewModel={this.state.scoringGuideViewModel}
-                        itemSearchResult={this.state.itemSearchResult}
-                        searchParams={this.state.searchParams}
-                    />
-                    {this.renderSearch()}
+        const scoringVMState = this.state.scoringGuideViewModel;
+
+        if((scoringVMState.kind == "success" || scoringVMState.kind == "reloading") && scoringVMState.content != undefined){
+            return (
+                <div className="search-page">
+                    <div className="search-container">
+                        <ItemPageSearch.ItemPageSearch
+                            scoringGuideViewModel={scoringVMState.content}
+                            onSearch={(params) => this.onSearchParamsChange(params)} 
+                        />
+                        <ItemPageTable.ItemPageTable
+                        onRowSelection={(item) => this.onRowSelection(item) }
+                        />
+                    </div>
+                    {this.renderAboutItemDetails()} 
                 </div>
-                {this.renderAboutItemDetails()}
-            </div>
-        );
+            );
+        }
+        else{
+            return <div></div>;
+        }
+     
     }
 }
 
-export function initScoreGuidePage() {
-    ReactDOM.render(<ScoringGuidePage />, document.getElementById("react-container"));
+export function initScoreGuidePage(pageVM: Props) {
+    ReactDOM.render(<ScoringGuidePage {...pageVM} />, document.getElementById("react-container"));
 }
 

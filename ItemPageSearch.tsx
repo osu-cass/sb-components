@@ -4,18 +4,16 @@ import * as ItemSearchDropdown from './ItemSearchDropDown'
 import * as ItemCardViewModel from './ItemCardViewModel'
 import * as ItemModels from './ItemModels'
 import * as ItemCardFields from './ItemCardFields'
+import * as ItemTable from './ItemTable'
 import { get } from "./ApiModels"
 
 
 export interface Props {
-    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
-    itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>;
-    searchParams: ItemModels.ScoreSearchParams;
+    scoringGuideViewModel?: ItemsSearchViewModel;
+    onSearch: (params: ItemModels.ScoreSearchParams) => void;//this iwll be the event to fire. send it to scoringuidepage then the taable thingy
 }
 
 export interface State {
-    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
-    itemSearchResult: ApiModels.Resource<ItemCardViewModel.ItemCardViewModel[]>;
     searchParams: ItemModels.ScoreSearchParams;
 }
 
@@ -24,61 +22,64 @@ export interface ItemsSearchViewModel {
     subjects: ItemSearchDropdown.Subject[];
 }
 
-const SearchClient = (params: ItemSearchDropdown.SearchAPIParams) => get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
 
 export class ItemPageSearch extends React.Component<Props, State> {
 
-    beginSearch(params: ItemSearchDropdown.SearchAPIParams) {
-        const searchResults = this.props.itemSearchResult;
-        if (searchResults.kind === "success") {
-            this.setState({
-                itemSearchResult: {
-                    kind: "reloading",
-                    content: searchResults.content
-                }
-            });
-        } else if (searchResults.kind === "failure") {
-            this.setState({
-                itemSearchResult: { kind: "loading" }
-            });
-        }
-
-        SearchClient(params)
-            .then(data => this.onSearchSuccess(data))
-            .catch(err => this.onSearchError(err));
+    beginSearch(){
+        //we could add a timeout function so we limit the amount of requests
+        const searchParams = this.state.searchParams;
+        this.props.onSearch(searchParams);
     }
 
-    onSearchSuccess(result: ItemCardViewModel.ItemCardViewModel[]) {
-        const searchParams = this.props.searchParams;
-        const items = result;
-        this.setState({
-            itemSearchResult: { kind: "success", content: items },
-        });
-    }
+    // beginSearch(params: ItemSearchDropdown.SearchAPIParams) {
+    //     const searchResults = this.state.itemSearchResult;
+    //     if (searchResults.kind === "success") {
+    //         this.setState({
+    //             itemSearchResult: {
+    //                 kind: "reloading",
+    //                 content: searchResults.content
+    //             }
+    //         });
+    //     } else if (searchResults.kind === "failure") {
+    //         this.setState({
+    //             itemSearchResult: { kind: "loading" }
+    //         });
+    //     }
 
-    onSearchError(err: any) {
-        console.log(err);
-    }
+    //     SearchClient(params)
+    //         .then(data => this.onSearchSuccess(data))
+    //         .catch(err => this.onSearchError(err));
+    // }
 
-    selectSingleResult() {
-        const searchResults = this.props.itemSearchResult;
-        if (searchResults.kind === "success" && searchResults.content!.length === 1) {
-            const searchResult = searchResults.content![0];
-            ItemCardFields.itemPageLink(searchResult.bankKey, searchResult.itemKey);
-        }
-    }
+    // onSearchSuccess(result: ItemCardViewModel.ItemCardViewModel[]) {
+    //     const searchParams = this.props.searchParams;
+    //     const items = result;
+    //     this.setState({
+    //         itemSearchResult: { kind: "success", content: items },
+    //     });
+    // }
 
+    // onSearchError(err: any) {
+    //     console.log(err);
+    // }
+
+    // selectSingleResult() {
+    //     const searchResults = this.state.itemSearchResult;
+    //     if (searchResults.kind === "success" && searchResults.content!.length === 1) {
+    //         const searchResult = searchResults.content![0];
+    //         ItemCardFields.itemPageLink(searchResult.bankKey, searchResult.itemKey);
+    //     }
+    // }
     render() {
-        const vmState = this.props.scoringGuideViewModel;
-        if ((vmState.kind == "success" || vmState.kind == "reloading") && vmState.content != undefined) {
+        const scoringVM = this.props.scoringGuideViewModel;
+        if ( scoringVM != undefined) {
             return (
                 <div className="search-controls">
                     <a>Print Items</a>
                     <ItemSearchDropdown.ItemSearchDropdown
-                        interactionTypes={vmState.content.interactionTypes}
-                        subjects={vmState.content.subjects}
-                        onChange={(params) => this.beginSearch(params)}
-                        selectSingleResult={() => this.selectSingleResult()}
+                        interactionTypes={scoringVM.interactionTypes}
+                        subjects={scoringVM.subjects}
+                        onChange={() => this.beginSearch()}
                         isLoading={false} />
                 </div>
             );

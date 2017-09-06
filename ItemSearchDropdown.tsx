@@ -28,15 +28,13 @@ export interface SearchAPIParams {
     performanceOnly: boolean;
 }
 
-//passed in props, all options
 export interface Props {
     interactionTypes: InteractionType[];
     subjects: Subject[];
     onChange: (params: SearchAPIParams) => void;
-    selectSingleResult: () => void;
     isLoading: boolean;
 }
-//selected items
+
 export interface State {
     itemId: string;
     gradeLevels: GradeLevels.GradeLevels;
@@ -135,11 +133,11 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
         }
     }
 
-    onItemIDKeyUp(e: React.KeyboardEvent<HTMLInputElement>) {
-        if (e.keyCode === 13) {
-            this.props.selectSingleResult();
-        }
-    }
+    // onItemIDKeyUp(e: React.KeyboardEvent<HTMLInputElement>) {
+    //     if (e.keyCode === 13) {
+    //         this.props.selectSingleResult();
+    //     }
+    // }
 
     togglePerformanceOnly() {
         this.setState({
