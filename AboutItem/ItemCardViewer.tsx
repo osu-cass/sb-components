@@ -1,11 +1,11 @@
 ﻿import * as React from 'react';
-import * as Rubric from './PageTabs/Rubric';
-import * as AboutItem from './AboutItem/AboutItem';
-import * as PageTabs from './PageTabs/PageTabs';
+import * as Rubric from '../PageTabs/Rubric';
+import * as AboutItem from './AboutItem';
+import * as PageTabs from '../PageTabs/PageTabs';
 import * as ItemViewerFrame from './ItemViewerFrame';
-import * as ItemInformation from './PageTabs/ItemInformation';
-import * as ItemInformationDetail from './PageTabs/ItemInformationDetail';
-import * as ApiModels from './ApiModels';
+import * as ItemInformation from '../PageTabs/ItemInformation';
+import * as ItemInformationDetail from '../PageTabs/ItemInformationDetail';
+import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
     item?: { bankKey: number, itemKey: number }

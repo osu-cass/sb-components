@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as ItemCardViewModel from '../ItemCardViewModel';
+import * as ItemCardViewModel from '../Models/ItemCardViewModel';
 
 export interface Props {
     itemCardViewModel: ItemCardViewModel.ItemCardViewModel;

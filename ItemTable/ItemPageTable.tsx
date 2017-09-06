@@ -1,11 +1,11 @@
 import * as React from 'react'
 import * as ItemTableHeader from './ItemTableHeader'
 import * as ItemTable from './ItemTable'
-import * as ItemCardViewModel from '../ItemCardViewModel'
+import * as ItemCardViewModel from '../Models/ItemCardViewModel'
 import * as AboutItem from '../AboutItem/AboutItem'
-import * as GradeLevels from "../GradeLevels";
-import { ItemsSearchViewModel } from "../ItemSearchContainer";
-import * as ItemModels from '../ItemModels';
+import * as GradeLevels from "../Models/GradeLevels";
+import { ItemsSearchViewModel } from "../ScoreGuide/ItemSearchContainer";
+import * as ItemModels from '../Models/ItemModels';
 import * as ItemSearchDropdown from '../DropDown/ItemSearchDropdown';
 
 

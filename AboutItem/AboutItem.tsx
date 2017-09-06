@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import * as Rubric from "../PageTabs/Rubric";
-import * as ItemCardViewModel from '../ItemCardViewModel';
-import * as API from '../ApiModels';
+import * as ItemCardViewModel from '../Models/ItemCardViewModel';
+import * as API from '../Models/ApiModels';
 
 export interface Props {
 
