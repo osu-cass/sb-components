@@ -1,9 +1,12 @@
 import * as React from 'react';
 import { ItemGroup } from '../Models';
 import { ItemPage } from './ItemPage';
+import { FirstPage } from "./FirstPage";
 
 interface Props {
     items: ItemGroup[];
+    grade: string;
+    subject: string;
 }
 
 export class PdfComponent extends React.Component<Props, undefined> {
@@ -11,7 +14,7 @@ export class PdfComponent extends React.Component<Props, undefined> {
         const port = process.env.PORT || 3000;
         
         const itemPages = this.props.items.map(item => (
-            <ItemPage itemData={item} />
+            <ItemPage itemData={item} key={item.questions[0].id}/>
         ));
 
         return (
@@ -21,6 +24,7 @@ export class PdfComponent extends React.Component<Props, undefined> {
                     <link rel='stylesheet' href='css/pdf.css' />
                 </head>
                 <body>
+                    <FirstPage grade={this.props.grade} subject={this.props.subject} />
                     {itemPages}
                 </body>
             </html>

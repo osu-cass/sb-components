@@ -19,7 +19,7 @@ export class ItemPage extends React.Component<Props, {}> {
 
     renderQuestions() {
         return this.props.itemData.questions.map(q => (
-            <div>
+            <div key={q.id} >
                 {q.tableData ? (<QuestionDataTable tableData={q.tableData}/>) : null}
                 <h2>Question #{q.id.split('-').pop()}</h2>
                 <ItemComponent view={q.view} />
@@ -29,7 +29,7 @@ export class ItemPage extends React.Component<Props, {}> {
 
     render() {
         return (
-            <div className='item-page'>
+            <div className='page'>
                 {this.renderPassage()}
                 {this.renderQuestions()}
             </div>
