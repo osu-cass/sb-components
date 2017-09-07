@@ -120,8 +120,8 @@ export class ItemPageTable extends React.Component<Props, State>{
     render() {
         return (
             <div>
-                {this.renderTableHeader()};
-                {this.renderTable()};
+                {this.renderTableHeader()}
+                {this.renderTable()}
             </div>
         );
     }
