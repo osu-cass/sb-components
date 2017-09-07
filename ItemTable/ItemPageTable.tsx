@@ -2,7 +2,6 @@ import * as React from 'react'
 import * as ItemTableHeader from './ItemTableHeader'
 import * as ItemTable from './ItemTable'
 import * as ItemCardViewModel from '../Models/ItemCardViewModel'
-import * as AboutItem from '../AboutItem/AboutItem'
 import * as GradeLevels from "../Models/GradeLevels";
 import { ItemsSearchViewModel } from "../ScoreGuide/ItemSearchContainer";
 import * as ItemModels from '../Models/ItemModels';
@@ -78,19 +77,16 @@ export class ItemPageTable extends React.Component<Props, State>{
         }
         return 0;
     }
-
-    getTableData(): ItemCardViewModel.ItemCardViewModel[] | undefined {
-        const data = this.props.itemCards; 
+    getTableData = (): ItemCardViewModel.ItemCardViewModel[] | undefined => {
+        let data = this.props.itemCards; 
         if(data != undefined){
-            const sortedData = this.state.sorts && this.state.sorts.length !== 0
+            data = this.state.sorts && this.state.sorts.length !== 0
                 ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
                 : data;
         }
-        else{
-            return undefined;
-        }
+        return data; 
     }
-
+    
     renderTableHeader() {
         return (
             <ItemTableHeader.HeaderTable
@@ -101,7 +97,7 @@ export class ItemPageTable extends React.Component<Props, State>{
     }
 
     renderTable() {
-        const itemCards = this.getTableData();
+        const itemCards = this.getTableData(); //this returns undefined but in the method it has data. that's w
         if (itemCards != undefined) {
             //if no items are returned we want to return a friendly message
             if (itemCards.length === 0) {

@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import * as Rubric from '../PageTabs/Rubric';
-import * as AboutItem from './AboutItem';
+import * as AboutItemVM from '../Models/AboutItemVM';
 import * as PageTabs from '../PageTabs/PageTabs';
 import * as ItemViewerFrame from './ItemViewerFrame';
 import * as ItemInformation from '../PageTabs/ItemInformation';
@@ -8,40 +8,19 @@ import * as ItemInformationDetail from '../PageTabs/ItemInformationDetail';
 import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
-    item?: { bankKey: number, itemKey: number }
+    item?: AboutItemVM.AboutThisItem;
 }
 
 export interface State {
-    aboutItem: ApiModels.Resource<AboutItem.AboutThisItem>;
     selectedTab: PageTabs.Tabs;
 }
 
-//TODO: Updating item from selection won't work. unless component did receive props or get the item in scoreguide
 export class ItemCardViewer extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {
             selectedTab: "viewer",
-            aboutItem: { kind: "loading" }
         }
-    }
-
-    getAboutItem() {
-        if (this.props.item) {
-            AboutItem.ScoreSearchClient(this.props.item)
-                .then((data) => this.onSearchSuccess(data))
-                .catch((err) => this.onSearchError(err));
-        }
-    }
-
-    onSearchSuccess(data: AboutItem.AboutThisItem) {
-        this.setState({
-            aboutItem: { kind: "success", content: data }
-        })
-    }
-
-    onSearchError(err: ExceptionInformation) {
-        console.log(err);
     }
 
     onTabChange(tab: PageTabs.Tabs) {
@@ -57,10 +36,10 @@ export class ItemCardViewer extends React.Component<Props, State> {
             </div>
         );
     }
-
-    renderRubric() {
-        if (this.state.aboutItem.kind == "success" && this.state.aboutItem.content) {
-            const rubrics = this.state.aboutItem.content.rubrics.map((ru, i) => <Rubric.RubricComponent {...ru } key={String(i)} />)
+    
+    renderRubric() { 
+        if (this.props.item) {
+            const rubrics = this.props.item.rubrics.map((ru, i) => <Rubric.RubricComponent {...ru } key={String(i)} />)
             return (
                 <div className="item-content">{rubrics}</div>
             );
@@ -68,8 +47,8 @@ export class ItemCardViewer extends React.Component<Props, State> {
     }
 
     renderInformation() {
-        if (this.state.aboutItem.kind == "success" && this.state.aboutItem.content) {
-            const aboutItem = this.state.aboutItem.content;
+        if (this.props.item) {
+            const aboutItem = this.props.item;
             return (
                 <div className="item-content">
                     <div><ItemInformationDetail.ItemInformationDetail
@@ -87,9 +66,9 @@ export class ItemCardViewer extends React.Component<Props, State> {
 
     renderChosen() {
         let selectedTab = null;
-        if (this.state.aboutItem.kind == "success" && this.state.aboutItem.content) {
+        if (this.props.item) {
             const selectedTab = this.state.selectedTab;
-            const itemCard = this.state.aboutItem.content.itemCardViewModel;
+            const itemCard = this.props.item.itemCardViewModel;
 
             let resultElement: JSX.Element[] | JSX.Element | undefined;
             if (selectedTab == "viewer") {

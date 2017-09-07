@@ -5,7 +5,7 @@ import * as ItemModels from '../Models/ItemModels';
 import * as ApiModels from '../Models/ApiModels';
 import * as GradeLevels from '../Models/GradeLevels';
 import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
-import * as AboutItem from '../AboutItem/AboutItem';
+import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemTable from '../ItemTable/ItemTable';
 import * as ItemSearchDropdown from '../DropDown/ItemSearchDropdown';
 import * as PageTabs from '../PageTabs/PageTabs';
@@ -18,10 +18,9 @@ import { parseQueryString } from "../Models/ApiModels";
 
 
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
-export interface Props {}
 
 export interface State {
-    selectedItem?: {itemKey: number; bankKey: number};
+    item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
     searchParams: ItemModels.ScoreSearchParams;
 }
@@ -31,9 +30,9 @@ export interface ItemsSearchViewModel {
     subjects: ItemSearchDropdown.Subject[];
 }
 
-export class ScoringGuidePage extends React.Component<Props, State> {
-    constructor(props: Props) {
-        super(props);
+export class ScoringGuidePage extends React.Component<{}, State> {
+    constructor() {
+        super();
 
         const queryObject = parseQueryString(location.search);
         const gradeString = (queryObject["gradeLevels"] || [])[0];
@@ -48,12 +47,32 @@ export class ScoringGuidePage extends React.Component<Props, State> {
         };
 
         this.state = {
-            scoringGuideViewModel: {kind: "loading"},
-            searchParams: paramsDefault
+            scoringGuideViewModel: { kind: "loading" },
+            searchParams: paramsDefault,
+            item: {kind:"none"}
         }
 
-        this.loadScoringGuideViewModel(); 
+        this.loadScoringGuideViewModel();
 
+    }
+
+    getAboutItem(item: { itemKey: number; bankKey: number }) {
+        AboutItemVM.ScoreSearchClient(item)
+            .then((data) => this.onSearchSuccess(data))
+            .catch((err) => this.onSearchError(err));
+    }
+
+    onSearchSuccess(data: AboutItemVM.AboutThisItem) {
+        this.setState({
+            item: { kind: "success", content: data }
+        });
+    }
+
+    onSearchError(err: any) {
+        console.error(err);
+        this.setState({
+            item: { kind: "failure" }
+        })
     }
 
     loadScoringGuideViewModel() {
@@ -73,59 +92,59 @@ export class ScoringGuidePage extends React.Component<Props, State> {
         console.error(err);
     }
 
-    onSearchParamsChange(params: ItemModels.ScoreSearchParams){
-       this.setState({
+    onSearchParamsChange(params: ItemModels.ScoreSearchParams) {
+        this.setState({
             searchParams: params
-       });
+        });
     }
 
-    onRowSelection(item: {itemKey: number; bankKey: number}){
-        this.setState({
-            selectedItem: item
-        })
+    onRowSelection(item: { bankKey: number, itemKey: number }) {
+        this.getAboutItem(item);
     }
-    
+
     renderTabsContainer() {
-        if(this.state.selectedItem != undefined){
+        if (this.state.item.kind == "success" || this.state.item.kind == "reloading") {
+            const newItem = this.state.item.content;
             return (
                 <div>
                     <ItemCardViewer.ItemCardViewer
-                        item={this.state.selectedItem}
-                     />
+                        item={newItem}
+                    />
                 </div>
             );
-        }else{
+
+        } else {
             return <div></div>
         }
-     
+
     }
 
     render() {
         const scoringVMState = this.state.scoringGuideViewModel;
 
-        if((scoringVMState.kind == "success" || scoringVMState.kind == "reloading") && scoringVMState.content != undefined){
+        if ((scoringVMState.kind == "success" || scoringVMState.kind == "reloading") && scoringVMState.content != undefined) {
             return (
                 <div className="search-page">
                     <div className="search-container">
                         <ItemSearchContainer.ItemSearchContainer
                             scoringGuideViewModel={scoringVMState.content}
                             onRowSelection={(item) => this.onRowSelection(item)}
-                            searchParams={this.state.searchParams} 
+                            searchParams={this.state.searchParams}
                         />
                     </div>
-                    {this.renderTabsContainer()} 
+                    {this.renderTabsContainer()}
                 </div>
             );
         }
-        else{
+        else {
             return <div></div>;
         }
-     
+
     }
 }
 
 
-export function initScoreGuidePage(pageVM: Props) {
-    ReactDOM.render(<ScoringGuidePage {...pageVM} />, document.getElementById("react-container"));
+export function initScoreGuidePage() {
+    ReactDOM.render(<ScoringGuidePage />, document.getElementById("react-container"));
 }
 

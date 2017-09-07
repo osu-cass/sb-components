@@ -75,7 +75,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
                 <ItemPageTable.ItemPageTable 
                 onRowSelection={this.props.onRowSelection} 
                 itemCards={cardsResult.content}/>
-            );
+            ); 
             
         }
         else if(cardsResult.kind == "failure"){

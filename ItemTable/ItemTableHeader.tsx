@@ -132,7 +132,7 @@ export class HeaderTable extends React.Component<Props, State> {
     renderHeader(col: SortColumn): JSX.Element {
         const headerSort = this.props.sorts.find(hs => hs.col.header === col.header);
         if (headerSort) {
-            this.setDirElem(headerSort);
+            this.setDirElem(headerSort); 
         }
 
         return (
