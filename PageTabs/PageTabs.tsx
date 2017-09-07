@@ -17,12 +17,12 @@ export class ItemTabs extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            selectedTab: this.props.selectedTab
+            selectedTab: this.props.selectedTab,
         }
     }
 
     onClick = (selectedVal: Tabs) => {
-          this.props.changedTab(selectedVal);
+        this.props.changedTab(selectedVal);
     }
 
     render() {

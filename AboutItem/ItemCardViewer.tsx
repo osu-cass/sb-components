@@ -88,7 +88,7 @@ export class ItemCardViewer extends React.Component<Props, State> {
         const tabs = PageTabs.ItemTabs;
         return (
             <div className="item-card">
-                <PageTabs.ItemTabs changedTab={(tab) => this.onTabChange(tab)} selectedTab={this.state.selectedTab} />
+                <PageTabs.ItemTabs changedTab={(tab) => this.onTabChange(tab)} selectedTab={this.state.selectedTab}/>
                 {this.renderChosen()}
             </div>
         );
