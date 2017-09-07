@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { QuestionTableData, ItemGroup } from "../Models";
+import { ItemViewModel, ItemGroup } from "../Models";
 import { QuestionDataTable } from './QuestionDataTable';
 import { ItemComponent } from "./Item";
 
@@ -20,7 +20,7 @@ export class ItemPage extends React.Component<Props, {}> {
     renderQuestions() {
         return this.props.itemData.questions.map(q => (
             <div key={q.id} >
-                {q.tableData ? (<QuestionDataTable tableData={q.tableData}/>) : null}
+                {q.data ? (<QuestionDataTable tableData={q.data}/>) : null}
                 <h2>Question #{q.id.split('-').pop()}</h2>
                 <ItemComponent view={q.view} />
             </div>
