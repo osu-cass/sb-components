@@ -24,7 +24,7 @@ export class QuestionDataTable extends React.Component<Props, {}> {
                         <td>{this.props.tableData.bankKey}-{this.props.tableData.itemKey}</td>
                         <td>{this.props.tableData.claimCode}</td>
                         <td>{this.props.tableData.domain}</td>
-                        <td>{this.props.tableData.target}</td>
+                        <td>{this.props.tableData.targetId}</td>
                         <td>{this.props.tableData.depthOfKnowledge}</td>
                         <td>{this.props.tableData.commonCoreStandardId}</td>
                     </tr>
