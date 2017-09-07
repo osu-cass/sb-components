@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ItemGroup } from '../Models';
 import { ItemPage } from './ItemPage';
 import { FirstPage } from "./FirstPage";
+import { getConfig } from "../Config";
 
 interface Props {
     items: ItemGroup[];
@@ -11,7 +12,7 @@ interface Props {
 
 export class PdfComponent extends React.Component<Props, undefined> {
     render() {
-        const port = process.env.PORT || 3000;
+        const port = getConfig().port;
         
         const itemPages = this.props.items.map(item => (
             <ItemPage itemData={item} key={item.questions[0].id}/>
