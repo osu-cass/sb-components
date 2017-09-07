@@ -1,7 +1,7 @@
 ﻿var path = require('path');
 
 module.exports = {
-  entry: './ScoringGuidePage',
+  entry: './ScoreGuide/ScoringGuidePage',
 
   output: {
     path: path.join(__dirname, "../dist/js"),

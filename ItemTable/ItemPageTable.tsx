@@ -11,12 +11,12 @@ import * as ItemSearchDropdown from '../DropDown/ItemSearchDropdown';
 
 export interface Props {
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    itemCards?: ItemCardViewModel.ItemCardViewModel[]; //I've been asking myself that.  I think there are a few things messed up about the design
+    itemCards?: ItemCardViewModel.ItemCardViewModel[]; 
 }
 
 export interface State {
-    sorts: ItemTableHeader.HeaderSort[]; //should this be state?
-    selectedRow?: ItemCardViewModel.ItemCardViewModel; //I did not like this implementation but whatever
+    sorts: ItemTableHeader.HeaderSort[]; 
+    selectedRow?: ItemCardViewModel.ItemCardViewModel; 
     
 }
 
@@ -80,7 +80,7 @@ export class ItemPageTable extends React.Component<Props, State>{
     }
 
     getTableData(): ItemCardViewModel.ItemCardViewModel[] | undefined {
-        const data = this.props.itemCards; //we had a bad case here lol
+        const data = this.props.itemCards; 
         if(data != undefined){
             const sortedData = this.state.sorts && this.state.sorts.length !== 0
                 ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))

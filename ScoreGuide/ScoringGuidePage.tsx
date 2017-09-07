@@ -21,9 +21,9 @@ const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-sco
 export interface Props {}
 
 export interface State {
-    selectedItem?: {itemKey: number; bankKey: number}; // we will need this to extract key and bank
-    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>; //leave. I think this is the drop-downs. this could be a new file
-    searchParams: ItemModels.ScoreSearchParams; //this is the start of the page. url and defaults 
+    selectedItem?: {itemKey: number; bankKey: number};
+    scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
+    searchParams: ItemModels.ScoreSearchParams;
 }
 
 export interface ItemsSearchViewModel {

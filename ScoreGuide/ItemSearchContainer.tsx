@@ -25,7 +25,6 @@ export interface ItemsSearchViewModel {
     subjects: ItemSearchDropdown.Subject[];
 }
 
-
 export class ItemSearchContainer extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props); 
@@ -35,8 +34,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
 
         this.callSearch(props.searchParams);
     }
-   
-    //so now everytime we update the params we will call search. when the drop-down changes we will call this method. 
+ 
     callSearch(params: ItemModels.ScoreSearchParams){
         SearchClient(params)
          .then((data) => this.onSearchSuccess(data))
@@ -70,7 +68,6 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         }
     }
 
-    //we need to check for content and do something. This makes sense. what do we want to ddo when we are 1) loading, 2) reloading, 3) error, 4) success
     renderTableComponent(){
         const cardsResult = this.state.itemSearchResult;
         if(cardsResult.kind == "success" || cardsResult.kind == "reloading"){

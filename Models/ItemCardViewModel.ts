@@ -1,4 +1,5 @@
 import * as GradeLevels from './GradeLevels'
+
 export interface ItemCardViewModel {
     bankKey: number;
     itemKey: number;
@@ -13,5 +14,3 @@ export interface ItemCardViewModel {
     interactionTypeCode: string;
     interactionTypeLabel: string;
 }
-
-//TODO: move me to itemmodels
