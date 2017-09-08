@@ -113,7 +113,7 @@ export class HeaderTable extends React.Component<Props, State> {
     }
 
     setDirElem(headerSort: HeaderSort) {
-        let dirElem = undefined;
+        let dirElem: JSX.Element;
         if (!headerSort) {
             dirElem = noSort;
         } else if (headerSort.direction === SortDirection.Ascending) {
