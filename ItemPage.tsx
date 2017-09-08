@@ -21,7 +21,7 @@ export class ItemPage extends React.Component<Props, {}> {
         return this.props.itemData.questions.map(q => (
             <div key={q.id} >
                 {q.data ? (<QuestionDataTable tableData={q.data}/>) : null}
-                <h2>Question #{q.id.split('-').pop()}</h2>
+                <h2>Question #{q.questionNumber}</h2>
                 <ItemComponent view={q.view} />
             </div>
         ));
