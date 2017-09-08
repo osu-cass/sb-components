@@ -5,7 +5,7 @@ import * as ItemCardViewModel from '../Models/ItemCardViewModel'
 import * as GradeLevels from "../Models/GradeLevels";
 import { ItemsSearchViewModel } from "../ScoreGuide/ItemSearchContainer";
 import * as ItemModels from '../Models/ItemModels';
-import * as ItemSearchDropdown from '../DropDown/ItemSearchDropdown';
+import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown';
 
 
 export interface Props {

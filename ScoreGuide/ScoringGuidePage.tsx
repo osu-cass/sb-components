@@ -7,7 +7,7 @@ import * as GradeLevels from '../Models/GradeLevels';
 import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
 import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemTable from '../ItemTable/ItemTable';
-import * as ItemSearchDropdown from '../DropDown/ItemSearchDropdown';
+import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown';
 import * as PageTabs from '../PageTabs/PageTabs';
 import * as ItemCardViewModel from '../Models/ItemCardViewModel';
 import * as ItemTableHeader from '../ItemTable/ItemTableHeader';
