@@ -20,7 +20,7 @@ export class ItemPage extends React.Component<Props, {}> {
     renderQuestions() {
         return this.props.itemData.questions.map(q => (
             <div key={q.id} >
-                {q.data ? (<QuestionDataTable tableData={q.data}/>) : null}
+                {q.data ? (<QuestionDataTable tableData={q.data.itemCardViewModel}/>) : null}
                 <h2>Question #{q.questionNumber}</h2>
                 <ItemComponent view={q.view} />
             </div>
