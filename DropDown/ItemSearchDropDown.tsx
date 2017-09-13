@@ -3,22 +3,7 @@ import * as GradeLevels from "../Models/GradeLevels";
 import * as ItemModels from '../Models/ItemModels';
 import { parseQueryString } from "../Models/ApiModels";
 
-export interface InteractionType {
-    code: string;
-    label: string;
-}
 
-export interface Claim {
-    code: string;
-    label: string;
-}
-
-export interface Subject {
-    code: string;
-    label: string;
-    claims: Claim[];
-    interactionTypeCodes: string[];
-}
 
 export interface SearchAPIParams {
     itemId: string;
@@ -30,13 +15,12 @@ export interface SearchAPIParams {
 }
 
 export interface Props {
-    interactionTypes: InteractionType[];
-    subjects: Subject[];
-    onChange: (params: ItemModels.ScoreSearchParams) => void;
+    filterOptions: ItemModels.FilterOptions;
+    onChange: (params: ItemModels.ItemFilter) => void;
     isLoading: boolean;
 }
 
-export interface State extends SearchAPIParams{
+export interface State extends ItemModels.ItemFilter {
     
 }
 
@@ -46,40 +30,25 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
 
-        this.state = {
-            itemId: "",
-            gradeLevels: GradeLevels.GradeLevels.All,
-            subjects: [],
-            claims: [],
-            interactionTypes: [],
-            performanceOnly: false
-        };
+        this.state = { };
 
         this.onChange();
     }
+
     encodeQuery(): string {
         let pairs: string[] = [];
-        if (this.state.claims && this.state.claims.length !== 0) {
-            pairs.push("claims=" + this.state.claims.join(","));
+        if (this.state.grade && this.state.grade !== GradeLevels.GradeLevels.All) {
+            pairs.push("gradeLevels=" + this.state.grade);
         }
-        if (this.state.gradeLevels !== GradeLevels.GradeLevels.NA) {
-            pairs.push("gradeLevels=" + this.state.gradeLevels);
+        if (this.state.subject) {
+            pairs.push("itemID=" + this.state.subject.code);
         }
-        if (this.state.interactionTypes && this.state.interactionTypes.length !== 0) {
-            pairs.push("interactionTypes=" + this.state.interactionTypes.join(","));
-        }
-        if (this.state.itemId) {
-            pairs.push("itemID=" + this.state.itemId);
-        }
-        if (this.state.subjects && this.state.subjects.length !== 0) {
-            pairs.push("subjects=" + this.state.subjects.join(","));
-        }
-        if (this.state.performanceOnly) {
+        if (this.state.techType && this.state.techType.code == "PT") {
             pairs.push("performanceOnly=true");
         }
 
         if (pairs.length === 0) {
-            return "/ScoringGuide";
+            return "/";
         }
 
         const query = "?" + pairs.join("&");
@@ -93,51 +62,13 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.timeoutToken = setTimeout(() => this.onChange(), 200);
     }
+    
     onChange() {
-        const params: SearchAPIParams = {
-            itemId: this.state.itemId || "",
-            gradeLevels: this.state.gradeLevels || GradeLevels.GradeLevels.All,
-            subjects: this.state.subjects || [],
-            claims: this.state.claims || [],
-            interactionTypes: this.state.interactionTypes || [],
-            performanceOnly: this.state.performanceOnly || false
-        };
-        //TOOD: fix this 
-        const scoreParams: ItemModels.ScoreSearchParams = {
-            techType: [],
-            subjects: params.subjects,
-            gradeLevels: params.gradeLevels
-            
-        };
-        this.props.onChange(scoreParams);
+        this.props.onChange(this.state);
     }
-
-    onItemIDInput(e: React.FormEvent<HTMLInputElement>) {
-        const newValue = e.currentTarget.value;
-        const isInputOK = /^\d{0,4}$/.test(newValue);
-        if (isInputOK) {
-            this.setState({
-                itemId: newValue
-            }, () => this.beginChangeTimeout());
-        }
-    }
-
-    togglePerformanceOnly() {
-        this.setState({
-            performanceOnly: !this.state.performanceOnly
-        }, () => this.beginChangeTimeout());
-    }
-
-
 
     resetFilters() {
-        this.setState({
-            itemId: "",
-            gradeLevels: GradeLevels.GradeLevels.NA,
-            subjects: [],
-            claims: [],
-            interactionTypes: []
-        }, () => this.beginChangeTimeout());
+        this.setState({ }, () => this.beginChangeTimeout());
     }
 
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -148,21 +79,20 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
     toggleGrades = (event: React.FormEvent<HTMLSelectElement>) => {
         this.setState({
-            // Exclusive OR to flip just the bits for the input grades
-            gradeLevels: Number(event.currentTarget.value) // tslint:disable-line:no-bitwise
+            grade: Number(event.currentTarget.value)
         }, () => this.beginChangeTimeout());
     }
 
     renderGrades() {
         
-        const tags = [
-            <option key={1} value={GradeLevels.GradeLevels.NA}>NA</option>,
-            <option key={2} value={GradeLevels.GradeLevels.Elementary}>Elementary</option>,
-            <option key={3} value={GradeLevels.GradeLevels.Middle}>Middle</option>,
-            <option key={4} value={GradeLevels.GradeLevels.High}>High</option>,
+        let tags = [
+            <option key={1} value={GradeLevels.GradeLevels.All}>All</option>
         ];
+        this.props.filterOptions.grades.forEach((g, i) => tags.push(
+            <option key={i + 2} value={g}>{GradeLevels.caseToString(g)}</option>
+        ));
 
-        return (<select value={this.state.gradeLevels} onChange={this.toggleGrades}>{tags}</select>);
+        return (<select value={this.state.grade || GradeLevels.GradeLevels.All} onChange={this.toggleGrades}>{tags}</select>);
     }
 
     toggleSubject = (event: React.FormEvent<HTMLSelectElement>) => {

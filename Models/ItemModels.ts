@@ -1,12 +1,25 @@
 ﻿import * as $ from 'jquery';
-import * as GradeLevels from './GradeLevels';
+import { GradeLevels } from './GradeLevels';
 import * as API from './ApiModels';
 import * as ItemCardViewModel from './ItemCardViewModel';
 
-export interface ScoreSearchParams {
-    gradeLevels: GradeLevels.GradeLevels;
-    subjects: string[];
-    techType: string[];
+export interface Subject {
+    code: string;
+    label: string;
 }
 
-export const ScoreSearchClient = (params: ScoreSearchParams) => API.get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params) 
+export interface TechType extends Subject { }
+
+export interface ItemFilter {
+    subject?: Subject;
+    grade?: GradeLevels;
+    techType?: TechType; 
+}
+
+export interface FilterOptions {
+    subjects: Subject[];
+    grades: GradeLevels[];
+    techTypes: TechType[];
+}
+
+export const ScoreSearchClient = () => API.get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search") 
