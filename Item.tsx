@@ -16,9 +16,8 @@ export class ItemComponent extends React.Component<Props, undefined> {
         if (this.props.view.type === ViewType.html) {
             item = (<div dangerouslySetInnerHTML={{__html: this.props.view.html}} />);
         } else {
-            const source = this.props.view.picturePath.split(Path.sep);
-            source.splice(0, 2);
-            item = (<img src={source.join('/')} />);
+            const fileName = Path.basename(this.props.view.picturePath);
+            item = (<img src={'images/screenshots/' + fileName} />);
         }
 
         if (this.props.data && this.props.data.evidenceStatement) {
