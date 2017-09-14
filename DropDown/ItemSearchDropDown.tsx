@@ -77,134 +77,65 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
         }
     }
 
-    toggleGrades = (event: React.FormEvent<HTMLSelectElement>) => {
+    changeGrade = (event: React.FormEvent<HTMLSelectElement>) => {
         this.setState({
             grade: Number(event.currentTarget.value)
         }, () => this.beginChangeTimeout());
     }
 
     renderGrades() {
-        
         let tags = [
-            <option key={1} value={GradeLevels.GradeLevels.All}>All</option>
+            <option key={1} value="All">All</option>
         ];
         this.props.filterOptions.grades.forEach((g, i) => tags.push(
             <option key={i + 2} value={g}>{GradeLevels.caseToString(g)}</option>
         ));
 
-        return (<select value={this.state.grade || GradeLevels.GradeLevels.All} onChange={this.toggleGrades}>{tags}</select>);
+        return (<select value={this.state.grade || "All"} onChange={this.changeGrade}>{tags}</select>);
     }
 
-    toggleSubject = (event: React.FormEvent<HTMLSelectElement>) => {
-        const subject = event.currentTarget.value;
+    changeSubject = (event: React.FormEvent<HTMLSelectElement>) => {
+        const selectedCode = event.currentTarget.value;
+        const selectedSubject = this.props.filterOptions.subjects.find(s => s.code == selectedCode);
 
-        const subjectCodes = this.state.subjects || [];
-
-        let newSubjectCodes: string[] = [];
-        if (subject !== "NA") {
-            newSubjectCodes = [subject];
-        }
-
-        const newSubjects = this.props.subjects.filter(s => subject.indexOf(s.code) !== -1);
-
-        // Remove all claims not contained by the newly selected subjects
-        const subjectClaimCodes = newSubjects.reduce((prev: string[], cur: Subject) => prev.concat(cur.claims.map(c => c.code)), []);
-        const newClaimCodes = this.state.claims.filter(c => subjectClaimCodes.indexOf(c) !== -1);
-
-        const subjectInteractionCodes = newSubjects.reduce((prev: string[], cur: Subject) => prev.concat(cur.interactionTypeCodes), []);
-        const newInteractionCodes = this.state.interactionTypes.filter(i => subjectInteractionCodes.indexOf(i) !== -1);
-
-        this.setState({ 
-            subjects: newSubjectCodes,
-            claims: newClaimCodes,
-            interactionTypes: newInteractionCodes
+        this.setState({
+            subject: selectedSubject
         }, () => this.beginChangeTimeout());
-    }
-
-    renderSingleSubject(subject: Subject) {
-        const subjects = this.state.subjects;
-        const containsSubject = subjects.indexOf(subject.code) !== -1;
-        const className = (containsSubject ? "selected" : "") + " tag";
-
-        return (<option key={subject.code} value={subject.code} >{subject.label}</option>);
+        
+        const subjectCodes = this.state.subject || [];
     }
 
     renderSubjects() {
-        const tags = [<option key={0}>NA</option>, this.props.subjects.map(s => this.renderSingleSubject(s))];
+        let tags = [
+            <option key={1} value="All">All</option>
+        ];
+        this.props.filterOptions.subjects.forEach((s, i) => tags.push(
+            <option key={i + 2} value={s.code}>{s.label}</option>
+        ));
 
-        return (<select value={this.state.subjects} onChange={this.toggleSubject}>{tags}</select>);
+        const val = this.state.subject ? this.state.subject.code : "All";
+        return (<select value={val} onChange={this.changeSubject}>{tags}</select>);
     }
 
-    toggleClaim = (event: React.FormEvent<HTMLSelectElement>) => {
-        const claim = event.currentTarget.value;
-        const allClaims = this.state.claims;
-
-        let newClaims:string[] = [];
-        if (claim !== "NA") {
-            newClaims = [claim];
-        }
+    changeTechType = (event: React.FormEvent<HTMLSelectElement>) => {
+        const selectedCode = event.currentTarget.value;
+        const selectedType = this.props.filterOptions.techTypes.find(t => t.code == selectedCode);
 
         this.setState({
-            claims: newClaims
+            techType: selectedType
         }, () => this.beginChangeTimeout());
     }
 
-    renderSingleClaim(claim: Claim) {
-        const selectedClaims = this.state.claims;
-        let containsClaim = selectedClaims.indexOf(claim.code) !== -1;
+    renderTechTypes() {
+        let tags = [
+            <option key={1} value="All">All</option>
+        ];
+        this.props.filterOptions.techTypes.forEach((t, i) => tags.push(
+            <option key={i + 2} value={t.code}>{t.label}</option>
+        ));
 
-        return (<option key={claim.code} value={claim.code}>{claim.label}</option>);
-    }
-    
-    renderClaims() {
-        // If no subjects are selected, use the entire list of subjects
-        const selectedSubjectCodes = this.state.subjects;
-        const subjects = selectedSubjectCodes.length !== 0
-            ? this.props.subjects.filter(s => selectedSubjectCodes.indexOf(s.code) !== -1)
-            : [];
-
-        const tags = [<option key={0}>NA</option>,
-            subjects
-            .reduce((cs: Claim[], s: Subject) => cs.concat(s.claims), [])
-            .map(c => this.renderSingleClaim(c))]
-
-        return (<select value={this.state.claims} onChange={this.toggleClaim}>{tags}</select>);
-    }
-
-    renderSingleInteractionType(it: InteractionType) {
-        const selectedInteractionTypes = this.state.interactionTypes;
-        let containsInteractionType = selectedInteractionTypes.indexOf(it.code) !== -1;
-
-        return (<option key={it.code} value={it.code} >{it.label}</option>);
-    }
-
-    renderInteractionTypes() {
-        const selectedSubjectCodes = this.state.subjects;
-        const selectedSubjects = selectedSubjectCodes.length !== 0
-            ? this.props.subjects.filter(subj => selectedSubjectCodes.indexOf(subj.code) !== -1)
-            : [];
-
-        const visibleInteractionTypes = selectedSubjects.length !== 0
-            ? this.props.interactionTypes.filter(it => selectedSubjects.some(subj => subj.interactionTypeCodes.indexOf(it.code) !== -1))
-            : [];
-
-        const tags = [<option key={0}>NA</option>, visibleInteractionTypes.map(vit => this.renderSingleInteractionType(vit))];
-
-        return (<select value={this.state.interactionTypes} onChange={this.toggleInteractionType}>{tags}</select>);
-    }
-
-    toggleInteractionType = (event: React.FormEvent<HTMLSelectElement>) => {
-        const code = event.currentTarget.value;
-        const allInteractionTypes = this.state.interactionTypes;
-        let newInteractionType: string[] = [];
-
-        if (code !== "NA") {
-            newInteractionType = [code];
-        }
-
-        this.setState({
-            interactionTypes: newInteractionType
-        }, () => this.beginChangeTimeout());
+        const val = this.state.techType ? this.state.techType.code : "All";
+        return (<select value={val} onChange={this.changeTechType}>{tags}</select>);
     }
 
     render() {
@@ -222,8 +153,7 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
                 <div className="search-categories" aria-live="polite" aria-relevant="additions removals">
                     {this.renderGrades()}
                     {this.renderSubjects()}
-                    {this.renderClaims()}
-                    {this.renderInteractionTypes()}
+                    {this.renderTechTypes()}
                 </div>
             </div>
         );
