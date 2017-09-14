@@ -10,7 +10,6 @@ export interface Props {
     evidenceStatement: string;
 }
 
-
 export class ItemInformationDetail extends React.Component<Props, {}> {
     renderField(label: string, value: string | number, className: string): JSX.Element | null {
         if (!value) {

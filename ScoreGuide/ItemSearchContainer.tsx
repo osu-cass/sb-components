@@ -1,9 +1,7 @@
 import * as React from 'react'
-import * as ApiModels from '../Models/ApiModels'
 import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown'
 import * as ItemCardViewModel from '../Models/ItemCardViewModel'
 import * as ItemModels from '../Models/ItemModels'
-import * as ItemTable from '../ItemTable/ItemTable'
 import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "./FilterHelper";

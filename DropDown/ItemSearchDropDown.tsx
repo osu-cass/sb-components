@@ -1,7 +1,6 @@
 ﻿import * as React from 'react';
 import * as GradeLevels from "../Models/GradeLevels";
 import * as ItemModels from '../Models/ItemModels';
-import { parseQueryString } from "../Models/ApiModels";
 
 export interface SearchAPIParams {
     itemId: string;
