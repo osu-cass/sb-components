@@ -4,6 +4,8 @@ import * as GradeLevels from '../Models/GradeLevels';
 import { parseQueryString } from "../Models/ApiModels";
 
 export class FilterHelper {    
+
+    //TODO: Get this from the server
     static getFilterOptions() {
         return {
             subjects: [

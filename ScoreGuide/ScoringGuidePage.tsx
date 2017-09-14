@@ -7,8 +7,9 @@ import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
 import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemSearchContainer from './ItemSearchContainer';
 import { get } from "../Models/ApiModels";
-import { FilterHelper } from "./FilterHelper";
+import { FilterHelper } from "../Models/FilterHelper";
 
+//TODO: Change this to a relative url, add to API
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
 
 export interface State {
@@ -32,7 +33,6 @@ export class ScoringGuidePage extends React.Component<{}, State> {
         }
 
         this.loadScoringGuideViewModel();
-
     }
 
     getAboutItem(item: { itemKey: number; bankKey: number }) {
