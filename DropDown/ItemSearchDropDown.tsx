@@ -3,8 +3,6 @@ import * as GradeLevels from "../Models/GradeLevels";
 import * as ItemModels from '../Models/ItemModels';
 import { parseQueryString } from "../Models/ApiModels";
 
-
-
 export interface SearchAPIParams {
     itemId: string;
     gradeLevels: GradeLevels.GradeLevels;
@@ -20,9 +18,7 @@ export interface Props {
     isLoading: boolean;
 }
 
-export interface State extends ItemModels.ItemFilter {
-    
-}
+export interface State extends ItemModels.ItemFilter { }
 
 export class ItemSearchDropdown extends React.Component<Props, State>{
     timeoutToken?: number;

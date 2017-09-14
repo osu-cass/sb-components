@@ -6,23 +6,23 @@ import * as ItemModels from '../Models/ItemModels'
 import * as ItemTable from '../ItemTable/ItemTable'
 import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
+import { FilterHelper } from "./FilterHelper";
 
-const SearchClient = (params: ItemModels.ScoreSearchParams) => Api.get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search", params);
+const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search");
 
 export interface Props {
     scoringGuideViewModel?: ItemsSearchViewModel;
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    searchParams: ItemModels.ScoreSearchParams;
-    
+    filterOptions: ItemModels.FilterOptions;
 }
 
 export interface State {
     itemSearchResult: Api.Resource<ItemCardViewModel.ItemCardViewModel[]>;
+    visibleItems?: ItemCardViewModel.ItemCardViewModel[];
 }
 
 export interface ItemsSearchViewModel {
-    interactionTypes: ItemSearchDropdown.InteractionType[];
-    subjects: ItemSearchDropdown.Subject[];
+    subjects: ItemModels.Subject[];
 }
 
 export class ItemSearchContainer extends React.Component<Props, State> {
@@ -32,11 +32,11 @@ export class ItemSearchContainer extends React.Component<Props, State> {
             itemSearchResult: { kind: "none" }
         }
 
-        this.callSearch(props.searchParams);
+        this.callSearch();
     }
  
-    callSearch(params: ItemModels.ScoreSearchParams){
-        SearchClient(params)
+    callSearch(){
+        SearchClient()
          .then((data) => this.onSearchSuccess(data))
          .catch((err) => this.onSearchFailure(err));
     }
@@ -44,27 +44,34 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     onSearchSuccess(data: ItemCardViewModel.ItemCardViewModel[]): void{
         this.setState({
             itemSearchResult: { kind: "success", content: data }
-        })
+        });
     }
 
     onSearchFailure(err: any){
         console.error(err);
         this.setState({
             itemSearchResult: { kind: "failure" } 
-        })
+        });
+    }
+
+    filterItems = (filter: ItemModels.ItemFilter) => {
+        if(this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
+            const filtered = FilterHelper.filter(this.state.itemSearchResult.content || [], filter);
+            this.setState({
+                visibleItems: filtered
+            });
+        }
     }
 
     renderDropDownComponent(){
         const scoringVM = this.props.scoringGuideViewModel;
         if ( scoringVM != undefined) {
             return (
-               < ItemSearchDropdown.ItemSearchDropdown
-                interactionTypes={scoringVM.interactionTypes}
-                subjects={scoringVM.subjects}
-                onChange={(params) => this.callSearch(params)}
-                isLoading={false} />
+                <ItemSearchDropdown.ItemSearchDropdown
+                    filterOptions={this.props.filterOptions}
+                    onChange={this.filterItems}
+                    isLoading={false} />
             );
-    
         }
     }
 
@@ -73,8 +80,8 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         if(cardsResult.kind == "success" || cardsResult.kind == "reloading"){
             return (
                 <ItemPageTable.ItemPageTable 
-                onRowSelection={this.props.onRowSelection} 
-                itemCards={cardsResult.content}/>
+                    onRowSelection={this.props.onRowSelection} 
+                    itemCards={cardsResult.content}/>
             ); 
             
         }

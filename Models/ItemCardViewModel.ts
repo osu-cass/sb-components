@@ -13,4 +13,5 @@ export interface ItemCardViewModel {
     target: string;
     interactionTypeCode: string;
     interactionTypeLabel: string;
+    isPerformanceItem: boolean;
 }
