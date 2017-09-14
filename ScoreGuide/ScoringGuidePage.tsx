@@ -7,6 +7,7 @@ import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
 import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemSearchContainer from './ItemSearchContainer';
 import { get } from "../Models/ApiModels";
+import { FilterHelper } from "./FilterHelper";
 
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
 
@@ -26,24 +27,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
 
         this.state = {
             scoringGuideViewModel: { kind: "loading" },
-            filterOptions: {
-                subjects: [],
-                grades: [
-                    GradeLevels.GradeLevels.Elementary,
-                    GradeLevels.GradeLevels.Middle,
-                    GradeLevels.GradeLevels.High    
-                ],
-                techTypes: [
-                    {
-                        code: "CAT",
-                        label: "CAT"
-                    },
-                    {
-                        code: "PT",
-                        label: "Performance Items"
-                    }
-                ]
-            },
+            filterOptions: FilterHelper.getFilterOptions(),
             item: {kind:"none"}
         }
 

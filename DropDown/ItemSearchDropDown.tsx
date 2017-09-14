@@ -15,6 +15,7 @@ export interface Props {
     filterOptions: ItemModels.FilterOptions;
     onChange: (params: ItemModels.ItemFilter) => void;
     isLoading: boolean;
+    itemFilter: ItemModels.ItemFilter
 }
 
 export interface State extends ItemModels.ItemFilter { }
@@ -25,29 +26,9 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
 
-        this.state = { };
+        this.state = props.itemFilter;
 
         this.onChange();
-    }
-
-    encodeQuery(): string {
-        let pairs: string[] = [];
-        if (this.state.grade && this.state.grade !== GradeLevels.GradeLevels.All) {
-            pairs.push("gradeLevels=" + this.state.grade);
-        }
-        if (this.state.subject) {
-            pairs.push("itemID=" + this.state.subject.code);
-        }
-        if (this.state.techType && this.state.techType.code == "PT") {
-            pairs.push("performanceOnly=true");
-        }
-
-        if (pairs.length === 0) {
-            return "/";
-        }
-
-        const query = "?" + pairs.join("&");
-        return query;
     }
 
     beginChangeTimeout() {
@@ -134,8 +115,6 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
     }
 
     render() {
-        history.replaceState(null, "", this.encodeQuery());
-
         return (
             <div className="search-params">
                 <div className="search-header">

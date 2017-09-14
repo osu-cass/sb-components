@@ -22,13 +22,13 @@ interface Reloading<T> {
 
 export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure | NotLoaded
 
-export function parseQueryString(url: string): { [key: string]: string[] | undefined } {
-    let queryObject: { [key: string]: string[] | undefined } = {};
+export function parseQueryString(url: string): { [key: string]: string | undefined } {
+    let queryObject: { [key: string]: string | undefined } = {};
     const pairs = url.slice(url.indexOf("?") + 1).split("&");
     for (const pair of pairs) {
         const pairParts = pair.split("=");
         if (pairParts[0] && pairParts[1]) {
-            queryObject[pairParts[0]] = pairParts[1].split(",");
+            queryObject[pairParts[0]] = pairParts[1];
         }
     }
     return queryObject;

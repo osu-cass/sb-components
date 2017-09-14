@@ -16,6 +16,7 @@ export interface Props {
 export interface State {
     itemSearchResult: Api.Resource<ItemCardViewModel.ItemCardViewModel[]>;
     visibleItems?: ItemCardViewModel.ItemCardViewModel[];
+    itemFilter: ItemModels.ItemFilter;
 }
 
 export interface ItemsSearchViewModel {
@@ -26,8 +27,9 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props); 
         this.state = {
-            itemSearchResult: { kind: "none" }
-        }
+            itemSearchResult: { kind: "none" },
+            itemFilter: FilterHelper.readUrl(props.filterOptions)
+        };
 
         this.callSearch();
     }
@@ -52,12 +54,13 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         });
     }
 
-    filterItems = (filter: ItemModels.ItemFilter) => {
+    onFilterApplied = (filter: ItemModels.ItemFilter) => {
         if(this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
             const filtered = FilterHelper.filter(this.state.itemSearchResult.content || [], filter);
             this.setState({
                 visibleItems: filtered
             });
+            FilterHelper.updateUrl(filter);
         }
     }
 
@@ -65,8 +68,9 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         return (
             <ItemSearchDropdown.ItemSearchDropdown
                 filterOptions={this.props.filterOptions}
-                onChange={this.filterItems}
-                isLoading={false} />
+                onChange={this.onFilterApplied}
+                isLoading={false}
+                itemFilter={this.state.itemFilter} />
         );
     }
 
