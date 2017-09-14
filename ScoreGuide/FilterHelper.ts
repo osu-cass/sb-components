@@ -18,6 +18,6 @@ export class FilterHelper {
     }
 
     static updateUrl(filter: ItemFilter) {
-
+        
     }
 }

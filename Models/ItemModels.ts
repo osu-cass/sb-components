@@ -21,5 +21,3 @@ export interface FilterOptions {
     grades: GradeLevels[];
     techTypes: TechType[];
 }
-
-export const ScoreSearchClient = () => API.get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search") 

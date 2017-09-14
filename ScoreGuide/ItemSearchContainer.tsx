@@ -8,10 +8,9 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "./FilterHelper";
 
-const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("http://is-score.cass.oregonstate.edu/ScoringGuide/Search");
+const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
 export interface Props {
-    scoringGuideViewModel?: ItemsSearchViewModel;
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
     filterOptions: ItemModels.FilterOptions;
 }
@@ -64,28 +63,24 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
 
     renderDropDownComponent(){
-        const scoringVM = this.props.scoringGuideViewModel;
-        if ( scoringVM != undefined) {
-            return (
-                <ItemSearchDropdown.ItemSearchDropdown
-                    filterOptions={this.props.filterOptions}
-                    onChange={this.filterItems}
-                    isLoading={false} />
-            );
-        }
+        return (
+            <ItemSearchDropdown.ItemSearchDropdown
+                filterOptions={this.props.filterOptions}
+                onChange={this.filterItems}
+                isLoading={false} />
+        );
     }
 
     renderTableComponent(){
-        const cardsResult = this.state.itemSearchResult;
-        if(cardsResult.kind == "success" || cardsResult.kind == "reloading"){
+        if(this.state.visibleItems){
             return (
                 <ItemPageTable.ItemPageTable 
                     onRowSelection={this.props.onRowSelection} 
-                    itemCards={cardsResult.content}/>
+                    itemCards={this.state.visibleItems}/>
             ); 
             
         }
-        else if(cardsResult.kind == "failure"){
+        else if(this.state.itemSearchResult.kind == "failure"){
             return <div className="placeholder-text" role="alert">An error occurred. Please try again later.</div>
         }
         else{

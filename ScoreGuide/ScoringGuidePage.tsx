@@ -22,33 +22,37 @@ const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-sco
 export interface State {
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
-    searchParams: ItemModels.ScoreSearchParams;
+    filterOptions: ItemModels.FilterOptions;
 }
 
 export interface ItemsSearchViewModel {
-    interactionTypes: ItemSearchDropdown.InteractionType[];
-    subjects: ItemSearchDropdown.Subject[];
+    subjects: ItemModels.Subject[];
 }
 
 export class ScoringGuidePage extends React.Component<{}, State> {
     constructor() {
         super();
 
-        const queryObject = parseQueryString(location.search);
-        const gradeString = (queryObject["gradeLevels"] || [])[0];
-        const gradeLevels: GradeLevels.GradeLevels = parseInt(gradeString, 10) || GradeLevels.GradeLevels.NA;
-        const subjects = queryObject["subjects"] || [];
-        const techType = queryObject["techType"] || [];
-
-        const paramsDefault = {
-            gradeLevels: gradeLevels,
-            subjects: subjects,
-            techType: techType
-        };
-
         this.state = {
             scoringGuideViewModel: { kind: "loading" },
-            searchParams: paramsDefault,
+            filterOptions: {
+                subjects: [],
+                grades: [
+                    GradeLevels.GradeLevels.Elementary,
+                    GradeLevels.GradeLevels.Middle,
+                    GradeLevels.GradeLevels.High    
+                ],
+                techTypes: [
+                    {
+                        code: "CAT",
+                        label: "CAT"
+                    },
+                    {
+                        code: "PT",
+                        label: "Performance Items"
+                    }
+                ]
+            },
             item: {kind:"none"}
         }
 
@@ -58,17 +62,17 @@ export class ScoringGuidePage extends React.Component<{}, State> {
 
     getAboutItem(item: { itemKey: number; bankKey: number }) {
         AboutItemVM.ScoreSearchClient(item)
-            .then((data) => this.onSearchSuccess(data))
-            .catch((err) => this.onSearchError(err));
+            .then((data) => this.onAboutItemSuccess(data))
+            .catch((err) => this.onAboutItemError(err));
     }
 
-    onSearchSuccess(data: AboutItemVM.AboutThisItem) {
+    onAboutItemSuccess(data: AboutItemVM.AboutThisItem) {
         this.setState({
             item: { kind: "success", content: data }
         });
     }
 
-    onSearchError(err: any) {
+    onAboutItemError(err: any) {
         console.error(err);
         this.setState({
             item: { kind: "failure" }
@@ -84,17 +88,18 @@ export class ScoringGuidePage extends React.Component<{}, State> {
 
     onSuccessLoadScoringGuideViewModel(result: ItemsSearchViewModel) {
         this.setState({
-            scoringGuideViewModel: { kind: "success", content: result }
-        })
+            scoringGuideViewModel: { kind: "success", content: result },
+            filterOptions: {
+                ...this.state.filterOptions,
+                subjects: result.subjects
+            }
+        });
     }
 
     onErrorLoadScoringGuideViewModel(err: any) {
         console.error(err);
-    }
-
-    onSearchParamsChange(params: ItemModels.ScoreSearchParams) {
         this.setState({
-            searchParams: params
+            scoringGuideViewModel: { kind: "failure" }
         });
     }
 
@@ -127,9 +132,8 @@ export class ScoringGuidePage extends React.Component<{}, State> {
                 <div className="search-page">
                     <div className="search-container">
                         <ItemSearchContainer.ItemSearchContainer
-                            scoringGuideViewModel={scoringVMState.content}
                             onRowSelection={(item) => this.onRowSelection(item)}
-                            searchParams={this.state.searchParams}
+                            filterOptions={this.state.filterOptions}
                         />
                     </div>
                     {this.renderTabsContainer()}
