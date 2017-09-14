@@ -21,7 +21,6 @@ export interface Props {
 export interface State extends ItemModels.ItemFilter { }
 
 export class ItemSearchDropdown extends React.Component<Props, State>{
-    timeoutToken?: number;
 
     constructor(props: Props) {
         super(props);
@@ -30,21 +29,17 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.onChange();
     }
-
-    beginChangeTimeout() {
-        if (this.timeoutToken !== undefined) {
-            clearTimeout(this.timeoutToken);
-        }
-
-        this.timeoutToken = setTimeout(() => this.onChange(), 200);
-    }
     
     onChange() {
         this.props.onChange(this.state);
     }
 
     resetFilters() {
-        this.setState({ }, () => this.beginChangeTimeout());
+        this.setState({ 
+            grade: undefined,
+            subject: undefined,
+            techType: undefined
+        }, () => this.onChange());
     }
 
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -56,7 +51,7 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
     changeGrade = (event: React.FormEvent<HTMLSelectElement>) => {
         this.setState({
             grade: Number(event.currentTarget.value)
-        }, () => this.beginChangeTimeout());
+        }, () => this.onChange());
     }
 
     renderGrades() {
@@ -76,7 +71,7 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.setState({
             subject: selectedSubject
-        }, () => this.beginChangeTimeout());
+        }, () => this.onChange());
         
         const subjectCodes = this.state.subject || [];
     }
@@ -99,7 +94,7 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
         this.setState({
             techType: selectedType
-        }, () => this.beginChangeTimeout());
+        }, () => this.onChange());
     }
 
     renderTechTypes() {
