@@ -92,14 +92,16 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
  
     render() {
-    
         return (
             <div className="search-controls">
-                <a>Print Items</a>
+                <form action="/api/pdf" method="post" id="print-items-form">
+                    <input type="hidden" name="items" value={JSON.stringify(this.state.visibleItems)} />
+                    <input type="submit" value="Print Items" />
+                </form>
                 {this.renderDropDownComponent()}
                 {this.renderTableComponent()}
+                
             </div>
         );
     }
-
 }
