@@ -140,7 +140,7 @@ export class HeaderTable extends React.Component<Props, State> {
                 className={col.className}
                 onClick={() => this.headerEventHandler(col, headerSort)}>
                 <div className={col.className}>
-                    {this.state.dirElem} {col.header}
+                    {col.header} {this.state.dirElem} 
                 </div>
             </th>
         );
