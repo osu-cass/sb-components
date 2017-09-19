@@ -1,12 +1,11 @@
 import * as React from "react";
-import * as GradeLevels from "../Models/GradeLevels";
 import * as ItemModels from '../Models/ItemModels';
 
 export interface selection {
     fieldName: string;
     infoDescription: string;
     selectedValue?: string;
-    options: [{label: string, code: string}];
+    options: [{label: string, code: string|number}];
 }
 
 interface Props {
