@@ -2,15 +2,6 @@
 import * as GradeLevels from "../Models/GradeLevels";
 import * as ItemModels from '../Models/ItemModels';
 
-export interface SearchAPIParams {
-    itemId: string;
-    gradeLevels: GradeLevels.GradeLevels;
-    subjects: string[];
-    claims: string[];
-    interactionTypes: string[];
-    performanceOnly: boolean;
-}
-
 export interface Props {
     filterOptions: ItemModels.FilterOptions;
     onChange: (params: ItemModels.ItemFilter) => void;

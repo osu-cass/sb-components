@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 
+
 export interface selection {
     fieldName: string;
     infoDescription: string;
@@ -52,7 +53,7 @@ export class Filter extends React.Component<Props, State>{
         ));
 
         return (
-                <div id={(item.fieldName+"-filter").toLocaleLowerCase()} className="block-child">
+                <div id={(item.fieldName + "-filter").toLocaleLowerCase()} className="block-child">
                     <label>
                         <span info-label>{item.fieldName}}</span>
                         <div className="tooltip">info
