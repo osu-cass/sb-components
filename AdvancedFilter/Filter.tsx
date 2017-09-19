@@ -2,7 +2,7 @@ import * as React from "react";
 import * as GradeLevels from "../Models/GradeLevels";
 import * as ItemModels from '../Models/ItemModels';
 
-interface selection {
+export interface selection {
     fieldName: string;
     infoDescription: string;
     selectedValue?: string;
@@ -18,7 +18,7 @@ interface Props {
 
 interface State extends ItemModels.ItemFilter { }
 
-export class Filter extends React.Component<Props,State>{
+export class Filter extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
 

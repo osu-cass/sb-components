@@ -6,6 +6,8 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
 
+import * as AdvancedFilter from "../AdvancedFilter/Filter";
+
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
 export interface Props {
@@ -66,9 +68,15 @@ export class ItemSearchContainer extends React.Component<Props, State> {
 
     renderDropDownComponent(){
         return (
-            <ItemSearchDropdown.ItemSearchDropdown
+            // <ItemSearchDropdown.ItemSearchDropdown
+            //     filterOptions={this.props.filterOptions}
+            //     onChange={this.onFilterApplied}
+            //     isLoading={false}
+            //     itemFilter={this.state.itemFilter} />
+
+            <AdvancedFilter.Filter
                 filterOptions={this.props.filterOptions}
-                onChange={this.onFilterApplied}
+                onClick={this.onFilterApplied}
                 isLoading={false}
                 itemFilter={this.state.itemFilter} />
         );
