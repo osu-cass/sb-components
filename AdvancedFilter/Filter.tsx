@@ -11,7 +11,7 @@ interface selection {
 
 interface Props {
     filterOptions: ItemModels.FilterOptions;
-    onChange: (params: ItemModels.ItemFilter) => void;
+    onClick: (params: ItemModels.ItemFilter) => void;
     isLoading: boolean;
     itemFilter: ItemModels.ItemFilter
 }
@@ -23,11 +23,11 @@ export class Filter extends React.Component<Props,State>{
         super(props);
 
         this.state = props.itemFilter;
-        this.onChange();
+        this.onClick();
     }
     
-    onChange() {
-        this.props.onChange(this.state);
+    onClick() {
+        this.props.onClick(this.state);
     }
 
     resetFilters() {
@@ -35,7 +35,7 @@ export class Filter extends React.Component<Props,State>{
             grade: undefined,
             subject: undefined,
             techType: undefined
-        }, () => this.onChange());
+        }, () => this.onClick());
     }
     
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -49,19 +49,20 @@ export class Filter extends React.Component<Props,State>{
         const tags:JSX.Element[] = [];
         
         item.options.forEach((t, i) => tags.push(
-            <button key={i} value={t.code}>{t.label}</button>
+            <button key={i} value={t.code} onClick={this.onClick}>{t.label}</button>
         ));
 
         return (
-                <div className="block-child">
+                <div id={(item.fieldName+"-filter").toLocaleLowerCase()} className="block-child">
                     <label>
                         <span info-label>{item.fieldName}}</span>
-                        <button>Info Button</button>
+                        <div className="tooltip">info
+                            {/*w3schools basic tooltip*/}
+                            <span className="tooltiptext">{item.infoDescription}</span>
+                        </div>
                     </label>
                     <div className="child-filter-options">
-                        <button key={0} value={0}>All</button>
-                        <button key={1} value={1}>Option 1</button>
-                        <button key={2} value={2}>Option 2</button>
+                        {tags}
                     </div>
                 </div>
         );
@@ -69,9 +70,9 @@ export class Filter extends React.Component<Props,State>{
 
     render() {
         return (
-            <div className="search-params">
-                <div className="search-header">
-                    <div className="search-status">
+            <div className="filter-params">
+                <div className="filter-header">
+                    <div className="filter-status">
                         {this.props.isLoading ? <img src="images/spin.gif" className="spin" /> : undefined}
                     </div>
                     <div>
@@ -80,7 +81,7 @@ export class Filter extends React.Component<Props,State>{
                             tabIndex={0}>Reset filters</a>
                     </div>
                 </div>
-                <div className="search-categories" aria-live="polite" aria-relevant="additions removals">
+                <div className="filter-categories" aria-live="polite" aria-relevant="additions removals">
                     {/* {this.renderGrades()}
                     {this.renderSubjects()}
                     {this.renderTechTypes()} */}
