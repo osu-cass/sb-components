@@ -12,7 +12,7 @@ interface Props {
     options: LabelValue[];
  };
 
-interface State extends Selection { };
+interface State { };
 
 export class AdvancedFilter extends React.Component<Props, State>{
     constructor(props: Props) {
@@ -23,19 +23,19 @@ export class AdvancedFilter extends React.Component<Props, State>{
     render() {
         const tags:JSX.Element[] = [];
         
-        this.state.options.forEach((t, i) => tags.push(
+        this.props.options.forEach((t, i) => tags.push(
             <button key={i} value={t.value} onClick={() => this.props.onClick(t.value)}>{t.label}</button>
         ));
 
         return (
-                <div id={(this.state.fieldName + "-filter").toLocaleLowerCase()} className="block-child">
+                <div id={(this.props.fieldName + "-filter").toLocaleLowerCase()} className="block-child">
                     <label>
-                        <span info-label>{this.state.fieldName}}</span>
+                        <span info-label>{this.props.fieldName}}</span>
 
                         {/* seperate tooltip into its own react componenet */}
                         <div className="tooltip">info
                             {/*w3schools basic tooltip*/}
-                            <span className="tooltiptext">{this.state.infoDescription}</span>
+                            <span className="tooltiptext">{this.props.infoDescription}</span>
                         </div>
 
                     </label>

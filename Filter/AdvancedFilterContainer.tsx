@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
-import { Selection } from './AdvancedFilterModel';
+import * as GradeLevels from '../Models/GradeLevels';
+import { Selection,LabelValue } from './AdvancedFilterModel';
 import { AdvancedFilter} from './AdvancedFilter';
 
 interface Props {
@@ -38,12 +39,31 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
+    changeGrade = (code: number) => {
+        this.setState({
+            grade: code
+        }, () => this.onClick());
+    }
+
+    renderGradeFilter() {
+        let gradeOptions:LabelValue[] = this.props.filterOptions.grades.map((g,i) => {
+            return {label:GradeLevels.caseToString(g),value: Number(g)}
+        });
+
+        return (
+            <AdvancedFilter 
+            isMultiSelect={true}
+            onClick={this.changeGrade}
+            fieldName={"Grade"}
+            infoDescription={"description asdasdasd"}
+            options={gradeOptions}/>
+        );
+    }
+
     renderFilterComponents() {
         return (
             <div className="filter-categories" aria-live="polite" aria-relevant="additions removals">
-                {/* {this.renderGrades()}
-                {this.renderSubjects()}
-                {this.renderTechTypes()} */}
+                {this.renderGradeFilter()}
             </div>
         );
 
