@@ -3,6 +3,7 @@ import { GradeLevels } from "../Models/GradeLevels";
 export interface LabelValue {
     label:string;
     value: string | number;
+    selected?: boolean;
 }
 
 export interface Selection {

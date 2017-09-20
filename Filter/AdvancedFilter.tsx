@@ -19,16 +19,23 @@ export class AdvancedFilter extends React.Component<Props, State>{
         super(props);
     }
 
-    //generic filter
     render() {
         const tags:JSX.Element[] = [];
         
-        this.props.options.forEach((t, i) => tags.push(
-            <button key={i} value={t.value} onClick={() => this.props.onClick(t.value)}>{t.label}</button>
-        ));
+        this.props.options.forEach((t, i) =>{ 
+            let classname = "";
+
+            if(this.props.defaultValue === t.value || t.selected){
+                classname = "selected";
+            }
+
+            tags.push(
+                <button className={classname} key={i} value={t.value} onClick={() => this.props.onClick(t.value)}>{t.label}</button>
+            );
+    });
 
         return (
-                <div id={(this.props.fieldName + "-filter").toLocaleLowerCase()} className="block-child">
+                <div id={(this.props.fieldName + "-filter").toLocaleLowerCase()} className="filter-selection">
                     <label>
                         <span info-label>{this.props.fieldName}</span>
 
