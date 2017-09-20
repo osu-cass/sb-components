@@ -6,7 +6,7 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
 
-import * as AdvancedFilter from "../Filter/AdvancedFilter";
+import { AdvancedFilterContainer} from "../Filter/AdvancedFilterContainer";
 
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
@@ -74,7 +74,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
             //     isLoading={false}
             //     itemFilter={this.state.itemFilter} />
 
-            <AdvancedFilter.Filter
+            <AdvancedFilterContainer
                 filterOptions={this.props.filterOptions}
                 onClick={this.onFilterApplied}
                 isLoading={false}

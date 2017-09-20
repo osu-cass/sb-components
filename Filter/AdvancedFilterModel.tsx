@@ -10,8 +10,26 @@ export interface LabelValue {
 export interface Selection {
     fieldName: string;
     infoDescription: string;
-    selectedValue?: string;
     options: LabelValue[];
+}
+
+export interface TechType extends Subject { }
+
+export interface Subject {
+    code: string;
+    label: string;
+}
+
+export interface ItemFilter {
+    subject?: Subject;
+    grade?: GradeLevels;
+    techType?: TechType; 
+}
+
+export interface FilterOptions {
+    subjects: Subject[];
+    grades: GradeLevels[];
+    techTypes: TechType[];
 }
 
 // TODO: optimize options (look at ItemSearchDropDown)
