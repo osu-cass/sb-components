@@ -13,16 +13,19 @@ export class ItemPage extends React.Component<Props, {}> {
             return null;
         }
         return (
-            <ItemComponent view={this.props.itemData.passage} />
+            <ItemComponent 
+                view={this.props.itemData.passage} 
+                data={this.props.itemData.questions[0].data} />
         );
     }
 
     renderQuestions() {
         return this.props.itemData.questions.map(q => (
-            <div key={q.id} >
-                <h2>Question #{q.questionNumber}</h2>
-                <ItemComponent view={q.view} data={q.data} />
-            </div>
+            <ItemComponent 
+                view={q.view} 
+                data={q.data} 
+                questionNumber={q.questionNumber} 
+                key={q.questionNumber} />
         ));
     }
 
