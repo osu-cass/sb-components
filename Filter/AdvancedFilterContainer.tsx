@@ -18,10 +18,10 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         super(props);
 
         this.state = props.itemFilter;
-        this.onClick();
+        this.onClickHandler();
     }
 
-    onClick() {
+    onClickHandler() {
         this.props.onClick(this.state);
     }
 
@@ -30,7 +30,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
             grade: undefined,
             subject: undefined,
             techType: undefined
-        }, () => this.onClick());
+        }, () => this.onClickHandler());
     }
 
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -42,7 +42,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     changeGrade = (code: number) => {
         this.setState({
             grade: code
-        }, () => this.onClick());
+        }, () => this.onClickHandler());
     }
 
     renderGradeFilter() {

@@ -30,7 +30,7 @@ export class AdvancedFilter extends React.Component<Props, State>{
         return (
                 <div id={(this.props.fieldName + "-filter").toLocaleLowerCase()} className="block-child">
                     <label>
-                        <span info-label>{this.props.fieldName}}</span>
+                        <span info-label>{this.props.fieldName}</span>
 
                         {/* seperate tooltip into its own react componenet */}
                         <div className="tooltip">info
