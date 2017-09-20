@@ -32,11 +32,12 @@ export class AdvancedFilter extends React.Component<Props, State>{
                     <label>
                         <span info-label>{this.props.fieldName}</span>
 
-                        {/* seperate tooltip into its own react componenet */}
+                        {/*
+                        w3schools basic tooltip
                         <div className="tooltip">info
-                            {/*w3schools basic tooltip*/}
                             <span className="tooltiptext">{this.props.infoDescription}</span>
                         </div>
+                        */}
 
                     </label>
                     <div className="child-filter-options">

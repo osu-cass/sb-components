@@ -62,7 +62,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     renderFilterComponents() {
         return (
-            <div className="filter-categories" aria-live="polite" aria-relevant="additions removals">
+            <div className="filter-body" aria-live="polite" aria-relevant="additions removals">
                 {this.renderGradeFilter()}
             </div>
         );
@@ -71,7 +71,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     render() {
         return (
-            <div className="filter-params">
+            <div className="advanced-filter">
                 <div className="filter-header">
                     <div className="filter-status">
                         {this.props.isLoading ? <img src="images/spin.gif" className="spin" /> : undefined}

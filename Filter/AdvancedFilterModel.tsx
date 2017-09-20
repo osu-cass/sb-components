@@ -29,15 +29,3 @@ export interface FilterOptions {
     grades: GradeLevels[];
     techTypes: TechType[];
 }
-
-// TODO: optimize options (look at ItemSearchDropDown)
-export const Grades:Selection = {
-    fieldName:"Grade",
-    infoDescription:"Grade level for stuffasdasd",
-    options: [
-        {label:"All", value:GradeLevels.All},
-        {label:"HighSchool", value:GradeLevels.High},
-        {label:"MiddleSchool", value:GradeLevels.Middle},
-        {label:"Elementary", value:GradeLevels.Elementary}
-    ]
-};
