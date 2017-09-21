@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 import * as GradeLevels from '../Models/GradeLevels';
-import { Selection,LabelValue } from './AdvancedFilterModel';
+import {AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
 import { AdvancedFilter} from './AdvancedFilter';
 
 interface Props {
@@ -39,24 +39,35 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
-    changeGrade = (code: number) => {
+    // changeGrade = (code: number) => {
+    //     this.setState({
+    //         grade: code
+    //     }, () => this.onClickHandler());
+    // }
+
+    changeGrade = () => {
         this.setState({
-            grade: code
         }, () => this.onClickHandler());
     }
 
     renderGradeFilter() {
-        let gradeOptions:LabelValue[] = this.props.filterOptions.grades.map((g,i) => {
-            return {label:GradeLevels.caseToString(g),value: Number(g)}
+        let gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
+            return {
+                    label:GradeLevels.caseToString(g),
+                    key: g.toString(),
+                    order: i.toString(),
+                    selected: this.changeGrade,
+                    type: OptionType.button
+                   };
         });
 
         return (
             <AdvancedFilter 
-            isMultiSelect={true}
-            onClick={this.changeGrade}
-            fieldName={"Grade"}
-            infoDescription={"description asdasdasd"}
-            options={gradeOptions}/>
+            disabled={false}
+            isMultiSelect={false}
+            label={"Grade"}
+            helpText={"description here."}
+            filterOptions={gradeOptions}/>
         );
     }
 

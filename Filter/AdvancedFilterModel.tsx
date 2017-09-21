@@ -1,6 +1,6 @@
 import { GradeLevels } from "../Models/GradeLevels";
 
-enum OptionType {
+export enum OptionType {
     input = 0,
     button = 1
 };
@@ -9,7 +9,7 @@ export interface AdvancedFilterOption {
     label:string;
     key:string;
     order:string;
-    selected: () => void;
+    selected: (val:any) => void;
     type: OptionType;
 }
 
