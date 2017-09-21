@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
-import { Selection, LabelValue } from './AdvancedFilterModel';
+import { AdvancedFilterCategory, AdvancedFilterOption } from './AdvancedFilterModel';
 
 interface Props {
     isMultiSelect: boolean;
@@ -9,7 +9,7 @@ interface Props {
     fieldName: string;
     infoDescription:string;
     defaultValue?: string|number;
-    options: LabelValue[];
+    options: AdvancedFilterOption[];
  };
 
 interface State { };
@@ -25,12 +25,12 @@ export class AdvancedFilter extends React.Component<Props, State>{
         this.props.options.forEach((t, i) =>{ 
             let classname = "";
 
-            if(this.props.defaultValue === t.value || t.selected){
-                classname = "selected";
-            }
+            // if(this.props.defaultValue === t.value || t.selected){
+            //     classname = "selected";
+            // }
 
             tags.push(
-                <button className={classname} key={i} value={t.value} onClick={() => this.props.onClick(t.value)}>{t.label}</button>
+                <button className={classname} key={i} onClick={() => t.selected()}>{t.label}</button>
             );
     });
 
