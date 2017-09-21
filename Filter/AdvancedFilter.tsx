@@ -2,15 +2,7 @@ import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 import { AdvancedFilterCategory, AdvancedFilterOption } from './AdvancedFilterModel';
 
-interface Props {
-    isMultiSelect: boolean;
-    onClick: (val: string|number) => void;
-    
-    fieldName: string;
-    infoDescription:string;
-    defaultValue?: string|number;
-    options: AdvancedFilterOption[];
- };
+interface Props extends AdvancedFilterCategory { };
 
 interface State { };
 
@@ -21,23 +13,22 @@ export class AdvancedFilter extends React.Component<Props, State>{
 
     render() {
         const tags:JSX.Element[] = [];
+        const sortedOptions = this.props.filterOptions.sort((a,b)=> a.order.localeCompare(b.order));
         
-        this.props.options.forEach((t, i) =>{ 
+        sortedOptions.forEach((t, i) =>{ 
             let classname = "";
 
-            // if(this.props.defaultValue === t.value || t.selected){
-            //     classname = "selected";
-            // }
+            //check if option is selected in the filter.
 
             tags.push(
-                <button className={classname} key={i} onClick={() => t.selected()}>{t.label}</button>
+                <button className={classname} key={t.key} onClick={() => t.selected()}>{t.label}</button>
             );
-    });
+        });
 
         return (
-                <div id={(this.props.fieldName + "-filter").toLocaleLowerCase()} className="filter-selection">
+                <div id={(this.props.label + "-filter").toLocaleLowerCase()} className="filter-selection">
                     <label>
-                        <span info-label>{this.props.fieldName}</span>
+                        <span info-label>{this.props.label}</span>
 
                         {/*
                         w3schools basic tooltip
