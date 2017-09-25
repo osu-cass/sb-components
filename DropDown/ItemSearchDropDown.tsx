@@ -36,9 +36,9 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
     resetFilters() {
         this.setState({ 
-            grade: undefined,
-            subject: undefined,
-            techType: undefined
+            grades: [],
+            subjects: [],
+            techTypes: []
         }, () => this.onChange());
     }
 
@@ -49,9 +49,18 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
     }
 
     changeGrade = (event: React.FormEvent<HTMLSelectElement>) => {
-        this.setState({
-            grade: Number(event.currentTarget.value)
-        }, () => this.onChange());
+        const newGrade = Number(event.currentTarget.value) as GradeLevels.GradeLevels;
+        const newGradeIndex = this.state.grades.indexOf(newGrade)
+        if (newGradeIndex === -1) {
+            this.setState({
+                grades: [...this.state.grades, newGrade]
+            }, () => this.onChange());
+        } else {
+            this.state.grades.splice(newGradeIndex, 1);
+            this.setState({
+                grades: [...this.state.grades]
+            }, () => this.onChange());
+        }
     }
 
     renderGrades() {
