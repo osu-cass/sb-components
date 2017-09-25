@@ -10,14 +10,10 @@ export interface Subject {
 
 export interface TechType extends Subject { }
 
-export interface ItemFilter {
-    subject?: Subject;
-    grade?: GradeLevels;
-    techType?: TechType; 
-}
-
 export interface FilterOptions {
     subjects: Subject[];
     grades: GradeLevels[];
     techTypes: TechType[];
 }
+
+export interface ItemFilter extends FilterOptions { };

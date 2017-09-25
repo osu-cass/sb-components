@@ -19,9 +19,13 @@ export class FilterHelper {
                 }
             ],
             grades: [
-                GradeLevels.GradeLevels.Elementary,
-                GradeLevels.GradeLevels.Middle,
-                GradeLevels.GradeLevels.High    
+                GradeLevels.GradeLevels.Grade3,
+                GradeLevels.GradeLevels.Grade4,
+                GradeLevels.GradeLevels.Grade5,
+                GradeLevels.GradeLevels.Grade6,
+                GradeLevels.GradeLevels.Grade7,
+                GradeLevels.GradeLevels.Grade8,
+                GradeLevels.GradeLevels.High  
             ],
             techTypes: [
                 {
@@ -37,29 +41,39 @@ export class FilterHelper {
     }
 
     static filter(itemCards: ItemCardViewModel[], filter: ItemFilter) {
-        if (filter.grade) {
-            itemCards = itemCards.filter(i => GradeLevels.contains(filter.grade!, i.grade));
+        if (filter.grades) {
+            filter.grades.forEach(gradeFilter => 
+                itemCards = itemCards.filter(i => GradeLevels.contains(gradeFilter, i.grade))
+            );
         }
-        if (filter.subject) {
-            itemCards = itemCards.filter(i => i.subjectCode === filter.subject!.code);
+        if (filter.subjects) {
+            const subjectCodes = filter.subjects.map(s => s.code);
+            itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
         }
         //TODO: What is CAT technology? Filter? Ignore?
-        if (filter.techType && filter.techType.code.toUpperCase() === "PT") {
-            itemCards = itemCards.filter(i => i.isPerformanceItem);
+        if (filter.techTypes && filter.techTypes.length > 0) {
+            if (filter.techTypes[0].code.toUpperCase() === "PT") {
+                itemCards = itemCards.filter(i => i.isPerformanceItem);
+            } else if (filter.techTypes[0].code.toUpperCase() === "CAT") {
+                itemCards = itemCards.filter(i => !i.isPerformanceItem);
+            }
         }
         return itemCards;
     }
 
     static updateUrl(filter: ItemFilter) {
         let pairs: string[] = [];
-        if (filter.grade && filter.grade !== GradeLevels.GradeLevels.All) {
-            pairs.push("gradeLevel=" + filter.grade);
+        if (filter.grades && filter.grades.length > 0) {
+            const gradeString = filter.grades.map(g => g.toString()).join(',');
+            pairs.push("gradeLevels=" + gradeString);
         }
-        if (filter.subject) {
-            pairs.push("subject=" + filter.subject.code);
+        if (filter.subjects && filter.subjects.length > 0) {
+            const subjString = filter.subjects.map(s => s.code).join(',');
+            pairs.push("subjects=" + subjString);
         }
-        if (filter.techType) {
-            pairs.push("techType=" + filter.techType.code);
+        if (filter.techTypes && filter.techTypes.length > 0) {
+            const techTypesString = filter.techTypes.map(t => t.code).join(',');
+            pairs.push("techTypes=" + techTypesString);
         }
 
         let query: string;
@@ -73,14 +87,23 @@ export class FilterHelper {
 
     static readUrl(filterOptions: FilterOptions) {
         const queryObject = parseQueryString(window.location.href);
-        const subject = filterOptions.subjects.find(s => s.code == queryObject["subject"]);
-        const grade = Number(queryObject["gradeLevel"]) as GradeLevels.GradeLevels;
-        const techType = filterOptions.techTypes.find(t => t.code == queryObject["techType"]);
+        const subjects = queryObject["subjects"]
+            ? queryObject["subjects"]!.map(subjCode => filterOptions.subjects.find(s => s.code === subjCode))
+            : [];
+
+        const grades = queryObject["grades"]
+            ? queryObject["grades"]!
+                .map(gradeCode => Number(gradeCode) as GradeLevels.GradeLevels)
+            : [];
+
+        const techTypes = queryObject["techTypes"]
+            ? queryObject["techTypes"]!.map(typeCode => filterOptions.techTypes.find(t => t.code === typeCode))
+            : [];
 
         return {
-            subject: subject,
-            grade: grade,
-            techType: techType
+            subjects: subjects,
+            grades: grades,
+            techTypes: techTypes
         } as ItemFilter;
     }
 }
