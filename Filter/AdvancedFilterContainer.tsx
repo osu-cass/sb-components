@@ -40,8 +40,9 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     changeGrade = (data:AdvancedFilterInfo) => {
+        let selectedGrades:GradeLevels.GradeLevels[] = []; // this.state.grades
 
-
+        // if(selectedGrades.find())
 
         this.setState({
             grade: Number(data.key)
