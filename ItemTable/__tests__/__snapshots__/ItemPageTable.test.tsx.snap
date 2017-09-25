@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemPageTable matches snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <HeaderTable
+        columns={
+            Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "item",
+                  "compare": [Function],
+                  "header": "Item",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "claimAndTarget",
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "subject",
+                  "compare": [Function],
+                  "header": "Subject",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "grade",
+                  "compare": [Function],
+                  "header": "Grade",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "interactionType",
+                  "compare": [Function],
+                  "header": "Item Type",
+                },
+              ]
+        }
+        onHeaderClick={[Function]}
+        sorts={Array []}
+    />
+    <span
+        className="placeholder-text"
+        role="alert"
+    >
+        No results found for the given search terms.
+    </span>
+</div>,
+  "nodes": Array [
+    <div>
+      <HeaderTable
+            columns={
+                  Array [
+                        Object {
+                          "accessor": [Function],
+                          "className": "item",
+                          "compare": [Function],
+                          "header": "Item",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "claimAndTarget",
+                          "compare": [Function],
+                          "header": "Claim/Target",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "subject",
+                          "compare": [Function],
+                          "header": "Subject",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "grade",
+                          "compare": [Function],
+                          "header": "Grade",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "interactionType",
+                          "compare": [Function],
+                          "header": "Item Type",
+                        },
+                      ]
+            }
+            onHeaderClick={[Function]}
+            sorts={Array []}
+      />
+      <span
+            className="placeholder-text"
+            role="alert"
+      >
+            No results found for the given search terms.
+      </span>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemPageTable
+        itemCards={Array []}
+        onRowSelection={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemPageTable {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "getTableData": [Function],
+        "headerColumns": Array [
+          Object {
+            "accessor": [Function],
+            "className": "item",
+            "compare": [Function],
+            "header": "Item",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "claimAndTarget",
+            "compare": [Function],
+            "header": "Claim/Target",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "subject",
+            "compare": [Function],
+            "header": "Subject",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "grade",
+            "compare": [Function],
+            "header": "Grade",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "interactionType",
+            "compare": [Function],
+            "header": "Item Type",
+          },
+        ],
+        "onClickHeader": [Function],
+        "onSelectItem": [Function],
+        "props": Object {
+          "itemCards": Array [],
+          "onRowSelection": [Function],
+        },
+        "refs": Object {},
+        "state": Object {
+          "sorts": Array [],
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <HeaderTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    onHeaderClick={[Function]}
+                    sorts={Array []}
+          />
+          <span
+                    className="placeholder-text"
+                    role="alert"
+          >
+                    No results found for the given search terms.
+          </span>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          <HeaderTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    onHeaderClick={[Function]}
+                    sorts={Array []}
+          />
+          <span
+                    className="placeholder-text"
+                    role="alert"
+          >
+                    No results found for the given search terms.
+          </span>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemPageTable
+    itemCards={Array []}
+    onRowSelection={[Function]}
+/>,
+}
+`;

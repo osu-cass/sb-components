@@ -1,0 +1,472 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemInformationDetail matches snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <div
+        className="item-information-content"
+    >
+        <p
+            className="card-text subject"
+            tabIndex={0}
+        >
+            <span
+                className="card-text-label"
+            >
+                Subject
+            </span>
+            <span
+                className="card-text-value"
+            >
+                 
+                MTH
+            </span>
+        </p>
+        <p
+            className="card-text grade"
+            tabIndex={0}
+        >
+            <span
+                className="card-text-label"
+            >
+                Grade
+            </span>
+            <span
+                className="card-text-value"
+            >
+                 
+                1
+            </span>
+        </p>
+        <p
+            className="card-text claim"
+            tabIndex={0}
+        >
+            <span
+                className="card-text-label"
+            >
+                Claim
+            </span>
+            <span
+                className="card-text-value"
+            >
+                 
+                claim_math
+            </span>
+        </p>
+        <p
+            className="card-text interaction-type"
+            tabIndex={0}
+        >
+            <span
+                className="card-text-label"
+            >
+                Item Type
+            </span>
+            <span
+                className="card-text-value"
+            >
+                 
+                type01label
+            </span>
+        </p>
+        <p
+            className="card-text item-id"
+            tabIndex={0}
+        >
+            <span
+                className="card-text-label"
+            >
+                Item Id
+            </span>
+            <span
+                className="card-text-value"
+            >
+                 
+                123
+            </span>
+        </p>
+    </div>
+</div>,
+  "nodes": Array [
+    <div>
+      <div
+            className="item-information-content"
+      >
+            <p
+                  className="card-text subject"
+                  tabIndex={0}
+            >
+                  <span
+                        className="card-text-label"
+                  >
+                        Subject
+                  </span>
+                  <span
+                        className="card-text-value"
+                  >
+                         
+                        MTH
+                  </span>
+            </p>
+            <p
+                  className="card-text grade"
+                  tabIndex={0}
+            >
+                  <span
+                        className="card-text-label"
+                  >
+                        Grade
+                  </span>
+                  <span
+                        className="card-text-value"
+                  >
+                         
+                        1
+                  </span>
+            </p>
+            <p
+                  className="card-text claim"
+                  tabIndex={0}
+            >
+                  <span
+                        className="card-text-label"
+                  >
+                        Claim
+                  </span>
+                  <span
+                        className="card-text-value"
+                  >
+                         
+                        claim_math
+                  </span>
+            </p>
+            <p
+                  className="card-text interaction-type"
+                  tabIndex={0}
+            >
+                  <span
+                        className="card-text-label"
+                  >
+                        Item Type
+                  </span>
+                  <span
+                        className="card-text-value"
+                  >
+                         
+                        type01label
+                  </span>
+            </p>
+            <p
+                  className="card-text item-id"
+                  tabIndex={0}
+            >
+                  <span
+                        className="card-text-label"
+                  >
+                        Item Id
+                  </span>
+                  <span
+                        className="card-text-value"
+                  >
+                         
+                        123
+                  </span>
+            </p>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemInformationDetail
+        commonCoreStandardsDescription=""
+        depthOfKnowledge=""
+        educationalDifficulty=""
+        evidenceStatement=""
+        itemCardViewModel={
+                Object {
+                        "bankKey": 1,
+                        "claimCode": "claim_1234",
+                        "claimLabel": "claim_math",
+                        "grade": 1,
+                        "gradeLabel": "1",
+                        "interactionTypeCode": "type01",
+                        "interactionTypeLabel": "type01label",
+                        "isPerformanceItem": false,
+                        "itemKey": 123,
+                        "subjectCode": "Math",
+                        "subjectLabel": "MTH",
+                        "target": "",
+                        "title": "test_title",
+                      }
+        }
+        targetDescription=""
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemInformationDetail {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "commonCoreStandardsDescription": "",
+          "depthOfKnowledge": "",
+          "educationalDifficulty": "",
+          "evidenceStatement": "",
+          "itemCardViewModel": Object {
+            "bankKey": 1,
+            "claimCode": "claim_1234",
+            "claimLabel": "claim_math",
+            "grade": 1,
+            "gradeLabel": "1",
+            "interactionTypeCode": "type01",
+            "interactionTypeLabel": "type01label",
+            "isPerformanceItem": false,
+            "itemKey": 123,
+            "subjectCode": "Math",
+            "subjectLabel": "MTH",
+            "target": "",
+            "title": "test_title",
+          },
+          "targetDescription": "",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <div
+                    className="item-information-content"
+          >
+                    <p
+                              className="card-text subject"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Subject
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        MTH
+                              </span>
+                    </p>
+                    <p
+                              className="card-text grade"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Grade
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        1
+                              </span>
+                    </p>
+                    <p
+                              className="card-text claim"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Claim
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        claim_math
+                              </span>
+                    </p>
+                    <p
+                              className="card-text interaction-type"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Item Type
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        type01label
+                              </span>
+                    </p>
+                    <p
+                              className="card-text item-id"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Item Id
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        123
+                              </span>
+                    </p>
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          <div
+                    className="item-information-content"
+          >
+                    <p
+                              className="card-text subject"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Subject
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        MTH
+                              </span>
+                    </p>
+                    <p
+                              className="card-text grade"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Grade
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        1
+                              </span>
+                    </p>
+                    <p
+                              className="card-text claim"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Claim
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        claim_math
+                              </span>
+                    </p>
+                    <p
+                              className="card-text interaction-type"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Item Type
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        type01label
+                              </span>
+                    </p>
+                    <p
+                              className="card-text item-id"
+                              tabIndex={0}
+                    >
+                              <span
+                                        className="card-text-label"
+                              >
+                                        Item Id
+                              </span>
+                              <span
+                                        className="card-text-value"
+                              >
+                                         
+                                        123
+                              </span>
+                    </p>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemInformationDetail
+    commonCoreStandardsDescription=""
+    depthOfKnowledge=""
+    educationalDifficulty=""
+    evidenceStatement=""
+    itemCardViewModel={
+        Object {
+            "bankKey": 1,
+            "claimCode": "claim_1234",
+            "claimLabel": "claim_math",
+            "grade": 1,
+            "gradeLabel": "1",
+            "interactionTypeCode": "type01",
+            "interactionTypeLabel": "type01label",
+            "isPerformanceItem": false,
+            "itemKey": 123,
+            "subjectCode": "Math",
+            "subjectLabel": "MTH",
+            "target": "",
+            "title": "test_title",
+          }
+    }
+    targetDescription=""
+/>,
+}
+`;
