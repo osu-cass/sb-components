@@ -40,10 +40,10 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     changeGrade = (data:AdvancedFilterInfo) => {
-        let selectedGrades:GradeLevels.GradeLevels[] = []; // this.state.grades
+        let selectedGrades:GradeLevels.GradeLevels[] = this.state.grades;
 
         if(data.isMultiSelect){
-            //working on multi-select
+            // TODO: do an xor bitwise toggle
         }
         else{
             selectedGrades = [Number(data.key)];
