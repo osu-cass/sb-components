@@ -5,11 +5,16 @@ export enum OptionType {
     button = 1
 };
 
+export interface AdvancedFilterInfo {
+    key:string;
+    isMultiSelect:boolean;
+}
+
 export interface AdvancedFilterOption {
     label:string;
     key:string;
     order:string;
-    selected: (val:any) => void;
+    selected: (data:AdvancedFilterInfo) => void;
     type: OptionType;
 }
 

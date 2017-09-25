@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 import * as GradeLevels from '../Models/GradeLevels';
-import {AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
+import {AdvancedFilterOption, OptionType, AdvancedFilterInfo } from './AdvancedFilterModel';
 import { AdvancedFilter} from './AdvancedFilter';
 
 interface Props {
@@ -39,14 +39,12 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
-    // changeGrade = (code: number) => {
-    //     this.setState({
-    //         grade: code
-    //     }, () => this.onClickHandler());
-    // }
+    changeGrade = (data:AdvancedFilterInfo) => {
 
-    changeGrade = () => {
+
+
         this.setState({
+            grade: Number(data.key)
         }, () => this.onClickHandler());
     }
 

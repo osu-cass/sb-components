@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
-import { AdvancedFilterCategory, AdvancedFilterOption } from './AdvancedFilterModel';
+import { AdvancedFilterCategory, AdvancedFilterOption, AdvancedFilterInfo } from './AdvancedFilterModel';
 
 interface Props extends AdvancedFilterCategory { };
 
@@ -17,11 +17,15 @@ export class AdvancedFilter extends React.Component<Props, State>{
         
         sortedOptions.forEach((t, i) =>{ 
             let classname = "";
-
             //check if option is selected in the filter.
 
+            const data:AdvancedFilterInfo = {
+                key: t.key,
+                isMultiSelect: this.props.isMultiSelect
+            }
+
             tags.push(
-                <button className={classname} key={t.key} onClick={() => t.selected()}>{t.label}</button>
+                <button className={classname} key={t.key} onClick={() => t.selected(data)}>{t.label}</button>
             );
         });
 
