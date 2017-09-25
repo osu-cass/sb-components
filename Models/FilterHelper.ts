@@ -41,12 +41,12 @@ export class FilterHelper {
     }
 
     static filter(itemCards: ItemCardViewModel[], filter: ItemFilter) {
-        if (filter.grades) {
+        if (filter.grades && filter.grades.length > 0) {
             filter.grades.forEach(gradeFilter => 
                 itemCards = itemCards.filter(i => GradeLevels.contains(gradeFilter, i.grade))
             );
         }
-        if (filter.subjects) {
+        if (filter.subjects && filter.subjects.length > 0) {
             const subjectCodes = filter.subjects.map(s => s.code);
             itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
         }

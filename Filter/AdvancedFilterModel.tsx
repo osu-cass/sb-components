@@ -33,12 +33,6 @@ export interface Subject {
     label: string;
 }
 
-export interface ItemFilter {
-    subject?: Subject;
-    grade?: GradeLevels;
-    techType?: TechType; 
-}
-
 export interface FilterOptions {
     subjects: Subject[];
     grades: GradeLevels[];

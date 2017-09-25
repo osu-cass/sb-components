@@ -5,7 +5,6 @@ import * as ItemModels from '../Models/ItemModels'
 import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
-
 import { AdvancedFilterContainer} from "../Filter/AdvancedFilterContainer";
 
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");

@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 import * as GradeLevels from '../Models/GradeLevels';
-import {AdvancedFilterOption, OptionType, AdvancedFilterInfo } from './AdvancedFilterModel';
+import { AdvancedFilterOption, OptionType, AdvancedFilterInfo, FilterOptions } from './AdvancedFilterModel';
 import { AdvancedFilter} from './AdvancedFilter';
 
 interface Props {
-    filterOptions: ItemModels.FilterOptions;
-    onClick: (params: ItemModels.ItemFilter) => void;
+    filterOptions: ItemModels.ItemFilter;
+    onClick: (params: FilterOptions) => void;
     isLoading: boolean;
     itemFilter: ItemModels.ItemFilter
 }
@@ -27,9 +27,9 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     resetFilters() {
         this.setState({ 
-            grade: undefined,
-            subject: undefined,
-            techType: undefined
+            grades: [],
+            subjects: [],
+            techTypes: []
         }, () => this.onClickHandler());
     }
 
@@ -42,10 +42,15 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     changeGrade = (data:AdvancedFilterInfo) => {
         let selectedGrades:GradeLevels.GradeLevels[] = []; // this.state.grades
 
-        // if(selectedGrades.find())
+        if(data.isMultiSelect){
+            //working on multi-select
+        }
+        else{
+            selectedGrades = [Number(data.key)];
+        }
 
         this.setState({
-            grade: Number(data.key)
+            grades: selectedGrades
         }, () => this.onClickHandler());
     }
 
