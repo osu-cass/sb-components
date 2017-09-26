@@ -27,7 +27,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     resetFilters() {
         this.setState({ 
-            grades: [],
+            grades: [GradeLevels.GradeLevels.All],
             subjects: [],
             techTypes: []
         }, () => this.onClickHandler());
@@ -43,10 +43,15 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         let selectedGrades:GradeLevels.GradeLevels[] = this.state.grades;
 
         if(data.isMultiSelect){
-            // TODO: do an xor bitwise toggle
+            selectedGrades = [Number(data.key) ^ Number(this.state.grades)]; //bitwise xor
         }
         else{
             selectedGrades = [Number(data.key)];
+        }
+
+        //edge case deselecting all grades
+        if(selectedGrades[0] === 0){
+            selectedGrades = [];
         }
 
         this.setState({
@@ -68,7 +73,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         return (
             <AdvancedFilter 
             disabled={false}
-            isMultiSelect={false}
+            isMultiSelect={true}
             label={"Grade"}
             helpText={"description here."}
             filterOptions={gradeOptions}/>
