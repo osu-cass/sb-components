@@ -6,8 +6,6 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
 
-const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
-
 export interface Props {
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
     filterOptions: ItemModels.FilterOptions;
