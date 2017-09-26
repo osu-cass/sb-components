@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Grade Levels returns each individual string correctly 1`] = `"NA"`;
+exports[`Grade Levels caseTostring () returns strings correctly 1`] = `"NA"`;
 
-exports[`Grade Levels returns each individual string correctly 2`] = `"Grade 3"`;
+exports[`Grade Levels caseTostring () returns strings correctly 2`] = `"Grade 3"`;
 
-exports[`Grade Levels returns each individual string correctly 3`] = `"Grade 4"`;
+exports[`Grade Levels caseTostring () returns strings correctly 3`] = `"Grade 4"`;
 
-exports[`Grade Levels returns each individual string correctly 4`] = `"Grade 5"`;
+exports[`Grade Levels caseTostring () returns strings correctly 4`] = `"Grade 5"`;
 
-exports[`Grade Levels returns each individual string correctly 5`] = `"Grade 6"`;
+exports[`Grade Levels caseTostring () returns strings correctly 5`] = `"Grade 6"`;
 
-exports[`Grade Levels returns each individual string correctly 6`] = `"Grade 7"`;
+exports[`Grade Levels caseTostring () returns strings correctly 6`] = `"Grade 7"`;
 
-exports[`Grade Levels returns each individual string correctly 7`] = `"Grade 8"`;
+exports[`Grade Levels caseTostring () returns strings correctly 7`] = `"Grade 8"`;
 
-exports[`Grade Levels returns each individual string correctly 8`] = `"Grade 9"`;
+exports[`Grade Levels caseTostring () returns strings correctly 8`] = `"Grade 9"`;
 
-exports[`Grade Levels returns each individual string correctly 9`] = `"Grade 10"`;
+exports[`Grade Levels caseTostring () returns strings correctly 9`] = `"Grade 10"`;
 
-exports[`Grade Levels returns each individual string correctly 10`] = `"Grade 11"`;
+exports[`Grade Levels caseTostring () returns strings correctly 10`] = `"Grade 11"`;
 
-exports[`Grade Levels returns each individual string correctly 11`] = `"Grade 12"`;
+exports[`Grade Levels caseTostring () returns strings correctly 11`] = `"Grade 12"`;
 
-exports[`Grade Levels returns each individual string correctly 12`] = `"Elementary"`;
+exports[`Grade Levels caseTostring () returns strings correctly 12`] = `"Elementary"`;
 
-exports[`Grade Levels returns each individual string correctly 13`] = `"Middle"`;
+exports[`Grade Levels caseTostring () returns strings correctly 13`] = `"Middle"`;
 
-exports[`Grade Levels returns each individual string correctly 14`] = `"High"`;
+exports[`Grade Levels caseTostring () returns strings correctly 14`] = `"High"`;
 
 exports[`Grade Levels toString() returns a comma delineated string 1`] = `"Grade 3, Grade 4, Grade 5, Grade 6, Grade 7, Grade 8, Grade 9, Grade 10, Grade 11, Grade 12"`;

@@ -1,7 +1,7 @@
 import * as GradeLevels from '../GradeLevels';
 
 describe("Grade Levels", () => {
-    it("returns each individual string correctly", () => {
+    it("caseTostring () returns strings correctly", () => {
         expect(GradeLevels.caseToString(GradeLevels.GradeLevels.NA)).toMatchSnapshot();
         expect(GradeLevels.caseToString(GradeLevels.GradeLevels.Grade3)).toMatchSnapshot();
         expect(GradeLevels.caseToString(GradeLevels.GradeLevels.Grade4)).toMatchSnapshot();
@@ -20,5 +20,9 @@ describe("Grade Levels", () => {
 
     it("toString() returns a comma delineated string", () => {
         expect(GradeLevels.toString(GradeLevels.GradeLevels.All)).toMatchSnapshot();
+    })
+
+    it("boolean check for GradeLevels contents", () => {
+        expect(GradeLevels.contains(GradeLevels.GradeLevels.All, GradeLevels.GradeLevels.Grade3)).toBe(true);
     })
 })

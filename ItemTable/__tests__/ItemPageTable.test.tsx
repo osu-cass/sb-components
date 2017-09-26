@@ -7,6 +7,8 @@ import * as TestUtils from 'react-dom/test-utils';
 import { shallow, mount, render } from 'enzyme';
 
 describe("ItemPageTable", () => {
+    const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"]
+
     const itemCards: ItemCardViewModel.ItemCardViewModel[]  = [{
         bankKey: 1,
         itemKey: 3,
@@ -24,7 +26,7 @@ describe("ItemPageTable", () => {
     }]
     
     const props: Props = {
-        onRowSelection: jest.fn(),
+        onRowSelection: jest.fn((item: {itemKey: number; bankKey: number}) => {return null}),
         itemCards 
     }
 
@@ -32,10 +34,22 @@ describe("ItemPageTable", () => {
         expect(shallow(<ItemPageTable {...props}/>)).toMatchSnapshot();;
     })
 
-    // it("sorts list on header click", () => {
-    //     let wrapper = mount(<ItemPageTable {...props}/>);
-    //     wrapper.find('th.item').simulate('click');
-    //     expect(wrapper.state('dirElem')).toEqual('')
+    it("sorts list on header click", () => {
+        let wrapper = mount(<ItemPageTable {...props}/>);
+        tabs.forEach(tab => {
+            const className = `th.${tab}`;
+            wrapper.find(className).simulate('click');
+            expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+            wrapper.find(className).simulate('click');
+            expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+            wrapper.find(className).simulate('click');
+            expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+        })
+    })
 
-    // })
+    it("calls onRowSelection()", ()  => {
+        let wrapper = mount(<ItemPageTable {...props}/>);
+        wrapper.find('td.item').simulate('click');
+        expect(props.onRowSelection).toHaveBeenCalled();
+    })
 })

@@ -95,17 +95,6 @@ export class HeaderTable extends React.Component<Props, State> {
         }
     }
 
-    compareColumn(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
-        const sorts = this.props.sorts || [];
-        for (const sort of sorts) {
-            const diff = sort.col.compare(lhs, rhs) * sort.direction;
-            if (diff !== 0) {
-                return diff;
-            }
-        }
-        return 0;
-    }
-
     headerEventHandler(scol: SortColumn, hcol: HeaderSort | undefined) {
         this.props.onHeaderClick(scol);
     }
