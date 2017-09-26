@@ -34,11 +34,9 @@ export class ScoringGuidePage extends React.Component<Props, State> {
             filterOptions: FilterHelper.getFilterOptions(),
             item: {kind:"none"}
         }
-    }
-
-    componentWillWount(){
         this.loadScoringGuideViewModel();
     }
+        
 
     getAboutItem(item: { itemKey: number; bankKey: number }) {
         AboutItemVM.ScoreSearchClient(item)
