@@ -7,10 +7,21 @@ import { shallow, mount } from 'enzyme';
 describe("ItemViewerFrame", () => {
     const obj = {
         url: "http://test.com",
-        loading:  false
     }
 
-    it("matches snapshot", () => {
-        expect(shallow(<ItemFrame {...obj}/>)).toMatchSnapshot();;
+    it("matches snapshot while loading", () => {
+        let wrapper = shallow(<ItemFrame {...obj}/>);
+        wrapper.setState({loading: true});
+        expect(wrapper).toMatchSnapshot();
+    })
+
+    it("after page content is loaded", () => {
+        let wrapper = shallow(<ItemFrame {...obj}/>);
+        wrapper.setState({loading: false});
+        expect(wrapper).toMatchSnapshot();
+    })
+
+    it("no item found", () => {
+        expect(shallow(<ItemFrame url=""/>)).toMatchSnapshot();
     })
 })
