@@ -47,12 +47,65 @@ ShallowWrapper {
         onHeaderClick={[Function]}
         sorts={Array []}
     />
-    <span
-        className="placeholder-text"
-        role="alert"
-    >
-        No results found for the given search terms.
-    </span>
+    <DataTable
+        columns={
+            Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "item",
+                  "compare": [Function],
+                  "header": "Item",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "claimAndTarget",
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "subject",
+                  "compare": [Function],
+                  "header": "Subject",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "grade",
+                  "compare": [Function],
+                  "header": "Grade",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "interactionType",
+                  "compare": [Function],
+                  "header": "Item Type",
+                },
+              ]
+        }
+        mapRows={
+            Array [
+                Object {
+                  "bankKey": 1,
+                  "claimCode": "",
+                  "claimLabel": "",
+                  "grade": 1023,
+                  "gradeLabel": "",
+                  "interactionTypeCode": "",
+                  "interactionTypeLabel": "",
+                  "isPerformanceItem": true,
+                  "itemKey": 3,
+                  "subjectCode": "",
+                  "subjectLabel": "",
+                  "target": "",
+                  "title": "",
+                },
+              ]
+        }
+        rowOnClick={[Function]}
+        selectedRow={undefined}
+        sort={Array []}
+        tableRef={[Function]}
+    />
 </div>,
   "nodes": Array [
     <div>
@@ -94,12 +147,65 @@ ShallowWrapper {
             onHeaderClick={[Function]}
             sorts={Array []}
       />
-      <span
-            className="placeholder-text"
-            role="alert"
-      >
-            No results found for the given search terms.
-      </span>
+      <DataTable
+            columns={
+                  Array [
+                        Object {
+                          "accessor": [Function],
+                          "className": "item",
+                          "compare": [Function],
+                          "header": "Item",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "claimAndTarget",
+                          "compare": [Function],
+                          "header": "Claim/Target",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "subject",
+                          "compare": [Function],
+                          "header": "Subject",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "grade",
+                          "compare": [Function],
+                          "header": "Grade",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "interactionType",
+                          "compare": [Function],
+                          "header": "Item Type",
+                        },
+                      ]
+            }
+            mapRows={
+                  Array [
+                        Object {
+                          "bankKey": 1,
+                          "claimCode": "",
+                          "claimLabel": "",
+                          "grade": 1023,
+                          "gradeLabel": "",
+                          "interactionTypeCode": "",
+                          "interactionTypeLabel": "",
+                          "isPerformanceItem": true,
+                          "itemKey": 3,
+                          "subjectCode": "",
+                          "subjectLabel": "",
+                          "target": "",
+                          "title": "",
+                        },
+                      ]
+            }
+            rowOnClick={[Function]}
+            selectedRow={undefined}
+            sort={Array []}
+            tableRef={[Function]}
+      />
 </div>,
   ],
   "options": Object {},
@@ -109,7 +215,25 @@ ShallowWrapper {
       "_compositeType": 0,
       "_context": Object {},
       "_currentElement": <ItemPageTable
-        itemCards={Array []}
+        itemCards={
+                Array [
+                        Object {
+                          "bankKey": 1,
+                          "claimCode": "",
+                          "claimLabel": "",
+                          "grade": 1023,
+                          "gradeLabel": "",
+                          "interactionTypeCode": "",
+                          "interactionTypeLabel": "",
+                          "isPerformanceItem": true,
+                          "itemKey": 3,
+                          "subjectCode": "",
+                          "subjectLabel": "",
+                          "target": "",
+                          "title": "",
+                        },
+                      ]
+        }
         onRowSelection={[Function]}
 />,
       "_debugID": 1,
@@ -154,7 +278,23 @@ ShallowWrapper {
         "onClickHeader": [Function],
         "onSelectItem": [Function],
         "props": Object {
-          "itemCards": Array [],
+          "itemCards": Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "target": "",
+              "title": "",
+            },
+          ],
           "onRowSelection": [Function],
         },
         "refs": Object {},
@@ -218,12 +358,65 @@ ShallowWrapper {
                     onHeaderClick={[Function]}
                     sorts={Array []}
           />
-          <span
-                    className="placeholder-text"
-                    role="alert"
-          >
-                    No results found for the given search terms.
-          </span>
+          <DataTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    mapRows={
+                              Array [
+                                        Object {
+                                          "bankKey": 1,
+                                          "claimCode": "",
+                                          "claimLabel": "",
+                                          "grade": 1023,
+                                          "gradeLabel": "",
+                                          "interactionTypeCode": "",
+                                          "interactionTypeLabel": "",
+                                          "isPerformanceItem": true,
+                                          "itemKey": 3,
+                                          "subjectCode": "",
+                                          "subjectLabel": "",
+                                          "target": "",
+                                          "title": "",
+                                        },
+                                      ]
+                    }
+                    rowOnClick={[Function]}
+                    selectedRow={undefined}
+                    sort={Array []}
+                    tableRef={[Function]}
+          />
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div>
@@ -265,12 +458,65 @@ ShallowWrapper {
                     onHeaderClick={[Function]}
                     sorts={Array []}
           />
-          <span
-                    className="placeholder-text"
-                    role="alert"
-          >
-                    No results found for the given search terms.
-          </span>
+          <DataTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    mapRows={
+                              Array [
+                                        Object {
+                                          "bankKey": 1,
+                                          "claimCode": "",
+                                          "claimLabel": "",
+                                          "grade": 1023,
+                                          "gradeLabel": "",
+                                          "interactionTypeCode": "",
+                                          "interactionTypeLabel": "",
+                                          "isPerformanceItem": true,
+                                          "itemKey": 3,
+                                          "subjectCode": "",
+                                          "subjectLabel": "",
+                                          "target": "",
+                                          "title": "",
+                                        },
+                                      ]
+                    }
+                    rowOnClick={[Function]}
+                    selectedRow={undefined}
+                    sort={Array []}
+                    tableRef={[Function]}
+          />
 </div>,
       },
       "_renderedNodeType": 0,
@@ -284,7 +530,25 @@ ShallowWrapper {
   },
   "root": [Circular],
   "unrendered": <ItemPageTable
-    itemCards={Array []}
+    itemCards={
+        Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "target": "",
+              "title": "",
+            },
+          ]
+    }
     onRowSelection={[Function]}
 />,
 }
