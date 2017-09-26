@@ -6,8 +6,11 @@ import * as GradeLevels from '../Models/GradeLevels';
 import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
 import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemSearchContainer from './ItemSearchContainer';
+import * as ItemCardViewModel from '../Models/ItemCardViewModel'
 import { get } from "../Models/ApiModels";
 import { FilterHelper } from "../Models/FilterHelper";
+
+const SearchClient = () => get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
 export interface Props {
     scoreGuideViewModelClient: () => Promise<ItemsSearchViewModel>;
@@ -111,6 +114,7 @@ export class ScoringGuidePage extends React.Component<Props, State> {
                         <ItemSearchContainer.ItemSearchContainer
                             onRowSelection={(item) => this.onRowSelection(item)}
                             filterOptions={this.state.filterOptions}
+                            searchClient={SearchClient}
                         />
                     </div>
                     {this.renderTabsContainer()}

@@ -81,6 +81,7 @@ ShallowWrapper {
                       }
         }
         onRowSelection={[Function]}
+        searchClient={[Function]}
 />,
       "_debugID": 1,
       "_hostContainerInfo": null,
@@ -96,6 +97,7 @@ ShallowWrapper {
             "techTypes": Array [],
           },
           "onRowSelection": [Function],
+          "searchClient": [Function],
         },
         "refs": Object {},
         "state": Object {
@@ -203,6 +205,7 @@ ShallowWrapper {
           }
     }
     onRowSelection={[Function]}
+    searchClient={[Function]}
 />,
 }
 `;

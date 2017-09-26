@@ -11,6 +11,7 @@ const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/s
 export interface Props {
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
     filterOptions: ItemModels.FilterOptions;
+    searchClient: () => Promise<ItemCardViewModel.ItemCardViewModel[]>;  
 }
 
 export interface State {
@@ -35,7 +36,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
  
     callSearch(){
-        SearchClient()
+        this.props.searchClient()
          .then((data) => this.onSearchSuccess(data))
          .catch((err) => this.onSearchFailure(err));
     }
