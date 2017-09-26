@@ -1,8 +1,9 @@
 import { GradeLevels } from "../Models/GradeLevels";
 
 export enum OptionType {
-    input = 0,
-    button = 1
+    inputBox = 0,
+    button = 1,
+    defaultButton = 2
 };
 
 export interface AdvancedFilterInfo {

@@ -33,14 +33,7 @@ export class AdvancedFilter extends React.Component<Props, State>{
                 <div id={(this.props.label + "-filter").toLocaleLowerCase()} className="filter-selection">
                     <label>
                         <span info-label>{this.props.label}</span>
-
-                        {/*
-                        w3schools basic tooltip
-                        <div className="tooltip">info
-                            <span className="tooltiptext">{this.props.infoDescription}</span>
-                        </div>
-                        */}
-
+                        <span data-tooltip={this.props.helpText} data-tooltip-position="top">ℹ</span>
                     </label>
                     <div className="child-filter-options">
                         {tags}

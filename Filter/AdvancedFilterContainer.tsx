@@ -27,7 +27,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     resetFilters() {
         this.setState({ 
-            grades: [GradeLevels.GradeLevels.All],
+            grades: [],
             subjects: [],
             techTypes: []
         }, () => this.onClickHandler());
