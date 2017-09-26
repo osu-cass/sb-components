@@ -18,6 +18,9 @@ export class AdvancedFilter extends React.Component<Props, State>{
         sortedOptions.forEach((t, i) =>{ 
             let classname = "";
             //check if option is selected in the filter.
+            if(this.props.selectedFilterOptions.find(i => i == t.key)){
+                classname="selected";
+            }
 
             const data:AdvancedFilterInfo = {
                 key: t.key,

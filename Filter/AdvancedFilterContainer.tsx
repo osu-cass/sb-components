@@ -42,16 +42,11 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     changeGrade = (data:AdvancedFilterInfo) => {
         let selectedGrades:GradeLevels.GradeLevels[] = this.state.grades;
 
-        if(data.isMultiSelect){
-            selectedGrades = [Number(data.key) ^ Number(this.state.grades)]; //bitwise xor
-        }
-        else{
-            selectedGrades = [Number(data.key)];
-        }
-
-        //edge case deselecting all grades
         if(selectedGrades[0] === 0){
             selectedGrades = [];
+        } else {
+            // TODO redo to account for selecting method.
+            selectedGrades = (data.isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
         }
 
         this.setState({
@@ -60,14 +55,16 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     renderGradeFilter() {
-        let gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
-            return {
-                    label:GradeLevels.caseToString(g),
+        const gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
+            return {label:GradeLevels.caseToString(g),
                     key: g.toString(),
                     order: i.toString(),
                     selected: this.changeGrade,
-                    type: OptionType.button
-                   };
+                    type: OptionType.button };
+        });
+
+        const selectedGrades = this.state.grades.map(g => {
+            return g.toString();
         });
 
         return (
@@ -75,8 +72,9 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
             disabled={false}
             isMultiSelect={true}
             label={"Grade"}
-            helpText={"description here."}
-            filterOptions={gradeOptions}/>
+            helpText={"Grade description here."}
+            filterOptions={gradeOptions}
+            selectedFilterOptions={selectedGrades}/>
         );
     }
 
@@ -86,7 +84,6 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
                 {this.renderGradeFilter()}
             </div>
         );
-
     }
 
     render() {

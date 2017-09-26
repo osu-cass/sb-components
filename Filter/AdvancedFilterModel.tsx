@@ -24,6 +24,7 @@ export interface AdvancedFilterCategory {
     isMultiSelect:boolean;
     label: string;
     helpText: string;
+    selectedFilterOptions: string[]; // use keys
     filterOptions: AdvancedFilterOption[];
 }
 
