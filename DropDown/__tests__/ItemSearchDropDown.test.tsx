@@ -28,7 +28,7 @@ describe("ItemFileDropDown", () => {
     const props = {
         filterOptions,
         onChange: jest.fn((params: ItemModels.ItemFilter) => {return null}),
-        isLoading: false;
+        isLoading: false,
         itemFilter,
     }
 

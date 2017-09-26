@@ -110,7 +110,7 @@ export class HeaderTable extends React.Component<Props, State> {
         this.props.onHeaderClick(scol);
     }
 
-    setDirElem(headerSort: HeaderSort):JSX.Element {
+    setDirElem(headerSort: HeaderSort | undefined):JSX.Element {
         let dirElem = noSort;
         if (!headerSort) {
             return dirElem;
