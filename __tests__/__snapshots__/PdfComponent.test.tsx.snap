@@ -1,0 +1,591 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PdfComponent matches snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <html>
+    <head>
+        <base
+            href="http://localhost:3000"
+        />
+        <link
+            href="css/pdf.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <FirstPage
+            grade="3"
+            subject="math"
+        />
+        <ItemPage
+            itemData={
+                Object {
+                    "passage": null,
+                    "questions": Array [
+                      Object {
+                        "data": Object {
+                          "associatedItems": "string",
+                          "commonCoreStandardsDescription": "string",
+                          "depthOfKnowledge": "string",
+                          "educationalDifficulty": "string",
+                          "evidenceStatement": "string",
+                          "itemCardViewModel": Object {
+                            "bankKey": 1,
+                            "claimCode": "234536",
+                            "commonCoreStandardId": "",
+                            "depthOfKnowledge": "",
+                            "domain": "MATH",
+                            "gradeLabel": "grade 3",
+                            "itemKey": 1,
+                            "subjectLabel": "math",
+                            "targetId": "23463467",
+                          },
+                          "rubrics": Array [
+                            Object {
+                              "language": "english",
+                              "rubricEntries": Array [
+                                Object {
+                                  "name": "",
+                                  "scorepoint": "",
+                                  "value": "",
+                                },
+                              ],
+                              "samples": Array [
+                                Object {
+                                  "maxValue": "",
+                                  "minValue": "",
+                                  "sampleResponses": Array [
+                                    Object {
+                                      "name": "",
+                                      "purpose": "",
+                                      "sampleContent": "",
+                                      "scorePoint": "",
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                          "targetDescription": "string",
+                        },
+                        "id": "12334",
+                        "questionNumber": 1,
+                        "view": Object {
+                          "captured": true,
+                          "html": null,
+                          "id": "12334",
+                          "picturePath": null,
+                          "type": 1,
+                        },
+                      },
+                    ],
+                  }
+            }
+        />
+    </body>
+</html>,
+  "nodes": Array [
+    <html>
+      <head>
+            <base
+                  href="http://localhost:3000"
+            />
+            <link
+                  href="css/pdf.css"
+                  rel="stylesheet"
+            />
+      </head>
+      <body>
+            <FirstPage
+                  grade="3"
+                  subject="math"
+            />
+            <ItemPage
+                  itemData={
+                        Object {
+                              "passage": null,
+                              "questions": Array [
+                                Object {
+                                  "data": Object {
+                                    "associatedItems": "string",
+                                    "commonCoreStandardsDescription": "string",
+                                    "depthOfKnowledge": "string",
+                                    "educationalDifficulty": "string",
+                                    "evidenceStatement": "string",
+                                    "itemCardViewModel": Object {
+                                      "bankKey": 1,
+                                      "claimCode": "234536",
+                                      "commonCoreStandardId": "",
+                                      "depthOfKnowledge": "",
+                                      "domain": "MATH",
+                                      "gradeLabel": "grade 3",
+                                      "itemKey": 1,
+                                      "subjectLabel": "math",
+                                      "targetId": "23463467",
+                                    },
+                                    "rubrics": Array [
+                                      Object {
+                                        "language": "english",
+                                        "rubricEntries": Array [
+                                          Object {
+                                            "name": "",
+                                            "scorepoint": "",
+                                            "value": "",
+                                          },
+                                        ],
+                                        "samples": Array [
+                                          Object {
+                                            "maxValue": "",
+                                            "minValue": "",
+                                            "sampleResponses": Array [
+                                              Object {
+                                                "name": "",
+                                                "purpose": "",
+                                                "sampleContent": "",
+                                                "scorePoint": "",
+                                              },
+                                            ],
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                    "targetDescription": "string",
+                                  },
+                                  "id": "12334",
+                                  "questionNumber": 1,
+                                  "view": Object {
+                                    "captured": true,
+                                    "html": null,
+                                    "id": "12334",
+                                    "picturePath": null,
+                                    "type": 1,
+                                  },
+                                },
+                              ],
+                            }
+                  }
+            />
+      </body>
+</html>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <PdfComponent
+        grade="3"
+        items={
+                Array [
+                        Object {
+                          "passage": null,
+                          "questions": Array [
+                            Object {
+                              "data": Object {
+                                "associatedItems": "string",
+                                "commonCoreStandardsDescription": "string",
+                                "depthOfKnowledge": "string",
+                                "educationalDifficulty": "string",
+                                "evidenceStatement": "string",
+                                "itemCardViewModel": Object {
+                                  "bankKey": 1,
+                                  "claimCode": "234536",
+                                  "commonCoreStandardId": "",
+                                  "depthOfKnowledge": "",
+                                  "domain": "MATH",
+                                  "gradeLabel": "grade 3",
+                                  "itemKey": 1,
+                                  "subjectLabel": "math",
+                                  "targetId": "23463467",
+                                },
+                                "rubrics": Array [
+                                  Object {
+                                    "language": "english",
+                                    "rubricEntries": Array [
+                                      Object {
+                                        "name": "",
+                                        "scorepoint": "",
+                                        "value": "",
+                                      },
+                                    ],
+                                    "samples": Array [
+                                      Object {
+                                        "maxValue": "",
+                                        "minValue": "",
+                                        "sampleResponses": Array [
+                                          Object {
+                                            "name": "",
+                                            "purpose": "",
+                                            "sampleContent": "",
+                                            "scorePoint": "",
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                ],
+                                "targetDescription": "string",
+                              },
+                              "id": "12334",
+                              "questionNumber": 1,
+                              "view": Object {
+                                "captured": true,
+                                "html": null,
+                                "id": "12334",
+                                "picturePath": null,
+                                "type": 1,
+                              },
+                            },
+                          ],
+                        },
+                      ]
+        }
+        subject="math"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": PdfComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "grade": "3",
+          "items": Array [
+            Object {
+              "passage": null,
+              "questions": Array [
+                Object {
+                  "data": Object {
+                    "associatedItems": "string",
+                    "commonCoreStandardsDescription": "string",
+                    "depthOfKnowledge": "string",
+                    "educationalDifficulty": "string",
+                    "evidenceStatement": "string",
+                    "itemCardViewModel": Object {
+                      "bankKey": 1,
+                      "claimCode": "234536",
+                      "commonCoreStandardId": "",
+                      "depthOfKnowledge": "",
+                      "domain": "MATH",
+                      "gradeLabel": "grade 3",
+                      "itemKey": 1,
+                      "subjectLabel": "math",
+                      "targetId": "23463467",
+                    },
+                    "rubrics": Array [
+                      Object {
+                        "language": "english",
+                        "rubricEntries": Array [
+                          Object {
+                            "name": "",
+                            "scorepoint": "",
+                            "value": "",
+                          },
+                        ],
+                        "samples": Array [
+                          Object {
+                            "maxValue": "",
+                            "minValue": "",
+                            "sampleResponses": Array [
+                              Object {
+                                "name": "",
+                                "purpose": "",
+                                "sampleContent": "",
+                                "scorePoint": "",
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                    "targetDescription": "string",
+                  },
+                  "id": "12334",
+                  "questionNumber": 1,
+                  "view": Object {
+                    "captured": true,
+                    "html": null,
+                    "id": "12334",
+                    "picturePath": null,
+                    "type": 1,
+                  },
+                },
+              ],
+            },
+          ],
+          "subject": "math",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <html>
+          <head>
+                    <base
+                              href="http://localhost:3000"
+                    />
+                    <link
+                              href="css/pdf.css"
+                              rel="stylesheet"
+                    />
+          </head>
+          <body>
+                    <FirstPage
+                              grade="3"
+                              subject="math"
+                    />
+                    <ItemPage
+                              itemData={
+                                        Object {
+                                                  "passage": null,
+                                                  "questions": Array [
+                                                    Object {
+                                                      "data": Object {
+                                                        "associatedItems": "string",
+                                                        "commonCoreStandardsDescription": "string",
+                                                        "depthOfKnowledge": "string",
+                                                        "educationalDifficulty": "string",
+                                                        "evidenceStatement": "string",
+                                                        "itemCardViewModel": Object {
+                                                          "bankKey": 1,
+                                                          "claimCode": "234536",
+                                                          "commonCoreStandardId": "",
+                                                          "depthOfKnowledge": "",
+                                                          "domain": "MATH",
+                                                          "gradeLabel": "grade 3",
+                                                          "itemKey": 1,
+                                                          "subjectLabel": "math",
+                                                          "targetId": "23463467",
+                                                        },
+                                                        "rubrics": Array [
+                                                          Object {
+                                                            "language": "english",
+                                                            "rubricEntries": Array [
+                                                              Object {
+                                                                "name": "",
+                                                                "scorepoint": "",
+                                                                "value": "",
+                                                              },
+                                                            ],
+                                                            "samples": Array [
+                                                              Object {
+                                                                "maxValue": "",
+                                                                "minValue": "",
+                                                                "sampleResponses": Array [
+                                                                  Object {
+                                                                    "name": "",
+                                                                    "purpose": "",
+                                                                    "sampleContent": "",
+                                                                    "scorePoint": "",
+                                                                  },
+                                                                ],
+                                                              },
+                                                            ],
+                                                          },
+                                                        ],
+                                                        "targetDescription": "string",
+                                                      },
+                                                      "id": "12334",
+                                                      "questionNumber": 1,
+                                                      "view": Object {
+                                                        "captured": true,
+                                                        "html": null,
+                                                        "id": "12334",
+                                                        "picturePath": null,
+                                                        "type": 1,
+                                                      },
+                                                    },
+                                                  ],
+                                                }
+                              }
+                    />
+          </body>
+</html>,
+        "_debugID": 2,
+        "_renderedOutput": <html>
+          <head>
+                    <base
+                              href="http://localhost:3000"
+                    />
+                    <link
+                              href="css/pdf.css"
+                              rel="stylesheet"
+                    />
+          </head>
+          <body>
+                    <FirstPage
+                              grade="3"
+                              subject="math"
+                    />
+                    <ItemPage
+                              itemData={
+                                        Object {
+                                                  "passage": null,
+                                                  "questions": Array [
+                                                    Object {
+                                                      "data": Object {
+                                                        "associatedItems": "string",
+                                                        "commonCoreStandardsDescription": "string",
+                                                        "depthOfKnowledge": "string",
+                                                        "educationalDifficulty": "string",
+                                                        "evidenceStatement": "string",
+                                                        "itemCardViewModel": Object {
+                                                          "bankKey": 1,
+                                                          "claimCode": "234536",
+                                                          "commonCoreStandardId": "",
+                                                          "depthOfKnowledge": "",
+                                                          "domain": "MATH",
+                                                          "gradeLabel": "grade 3",
+                                                          "itemKey": 1,
+                                                          "subjectLabel": "math",
+                                                          "targetId": "23463467",
+                                                        },
+                                                        "rubrics": Array [
+                                                          Object {
+                                                            "language": "english",
+                                                            "rubricEntries": Array [
+                                                              Object {
+                                                                "name": "",
+                                                                "scorepoint": "",
+                                                                "value": "",
+                                                              },
+                                                            ],
+                                                            "samples": Array [
+                                                              Object {
+                                                                "maxValue": "",
+                                                                "minValue": "",
+                                                                "sampleResponses": Array [
+                                                                  Object {
+                                                                    "name": "",
+                                                                    "purpose": "",
+                                                                    "sampleContent": "",
+                                                                    "scorePoint": "",
+                                                                  },
+                                                                ],
+                                                              },
+                                                            ],
+                                                          },
+                                                        ],
+                                                        "targetDescription": "string",
+                                                      },
+                                                      "id": "12334",
+                                                      "questionNumber": 1,
+                                                      "view": Object {
+                                                        "captured": true,
+                                                        "html": null,
+                                                        "id": "12334",
+                                                        "picturePath": null,
+                                                        "type": 1,
+                                                      },
+                                                    },
+                                                  ],
+                                                }
+                              }
+                    />
+          </body>
+</html>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <PdfComponent
+    grade="3"
+    items={
+        Array [
+            Object {
+              "passage": null,
+              "questions": Array [
+                Object {
+                  "data": Object {
+                    "associatedItems": "string",
+                    "commonCoreStandardsDescription": "string",
+                    "depthOfKnowledge": "string",
+                    "educationalDifficulty": "string",
+                    "evidenceStatement": "string",
+                    "itemCardViewModel": Object {
+                      "bankKey": 1,
+                      "claimCode": "234536",
+                      "commonCoreStandardId": "",
+                      "depthOfKnowledge": "",
+                      "domain": "MATH",
+                      "gradeLabel": "grade 3",
+                      "itemKey": 1,
+                      "subjectLabel": "math",
+                      "targetId": "23463467",
+                    },
+                    "rubrics": Array [
+                      Object {
+                        "language": "english",
+                        "rubricEntries": Array [
+                          Object {
+                            "name": "",
+                            "scorepoint": "",
+                            "value": "",
+                          },
+                        ],
+                        "samples": Array [
+                          Object {
+                            "maxValue": "",
+                            "minValue": "",
+                            "sampleResponses": Array [
+                              Object {
+                                "name": "",
+                                "purpose": "",
+                                "sampleContent": "",
+                                "scorePoint": "",
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                    "targetDescription": "string",
+                  },
+                  "id": "12334",
+                  "questionNumber": 1,
+                  "view": Object {
+                    "captured": true,
+                    "html": null,
+                    "id": "12334",
+                    "picturePath": null,
+                    "type": 1,
+                  },
+                },
+              ],
+            },
+          ]
+    }
+    subject="math"
+/>,
+}
+`;
