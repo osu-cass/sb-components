@@ -15,7 +15,8 @@ export interface AdvancedFilterOption {
     label:string;
     key:string;
     order:string;
-    selected: (data:AdvancedFilterInfo) => void;
+    selectedHandler: (data:AdvancedFilterInfo) => void;
+    isSelected:boolean;
     type: OptionType;
 }
 
