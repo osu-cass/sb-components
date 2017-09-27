@@ -39,8 +39,8 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
-    changeGrade = (data:AdvancedFilterInfo) => {
-        let selectedGrades = (data.isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
+    changeGrade = (data:AdvancedFilterInfo,isMultiSelect:boolean) => {
+        let selectedGrades = (isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
 
         if(selectedGrades[0] === 0){
             selectedGrades = [];
@@ -55,12 +55,14 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         const gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
             const gradeSelected = GradeLevels.contains(this.state.grades[0],g);
 
-            return {label:GradeLevels.caseToString(g),
-                    key: g.toString(),
-                    order: i.toString(),
-                    selectedHandler: this.changeGrade,
-                    type: OptionType.button,
-                    isSelected: gradeSelected};
+            return {
+                label:GradeLevels.caseToString(g),
+                key: g.toString(),
+                order: i.toString(),
+                selectedHandler: this.changeGrade,
+                type: OptionType.button,
+                isSelected: gradeSelected
+            };
         });
 
         const selectedGrades = this.state.grades.map(g => {
@@ -69,12 +71,12 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
         return (
             <AdvancedFilter 
-            disabled={false}
-            isMultiSelect={true}
-            label={"Grade"}
-            helpText={"Grade description here."}
-            filterOptions={gradeOptions}
-            selectedFilterOptions={selectedGrades}/>
+                disabled={false}
+                isMultiSelect={true}
+                label={"Grade"}
+                helpText={"Grade description here."}
+                filterOptions={gradeOptions}
+                selectedFilterOptions={selectedGrades}/>
         );
     }
 
