@@ -40,14 +40,10 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     changeGrade = (data:AdvancedFilterInfo) => {
-        const dataKey = Number(data.key)
-        let selectedGrades:GradeLevels.GradeLevels[] = this.state.grades;
-        const selectedIdx = selectedGrades.findIndex(x => x === dataKey);
+        let selectedGrades = (data.isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
 
         if(selectedGrades[0] === 0){
             selectedGrades = [];
-        } else {
-            selectedGrades = (data.isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
         }
 
         this.setState({
@@ -58,7 +54,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     renderGradeFilter() {
         const gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
             const gradeSelected = GradeLevels.contains(this.state.grades[0],g);
-            
+
             return {label:GradeLevels.caseToString(g),
                     key: g.toString(),
                     order: i.toString(),
