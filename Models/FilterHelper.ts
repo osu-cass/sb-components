@@ -5,11 +5,20 @@ import { parseQueryString } from "../Models/ApiModels";
 import { AdvancedFilterCategory, FilterOptions } from "../filter/AdvancedFilterModel";
 
 export class FilterHelper {    
+    // {
+    //     code: "CAT",
+    //     label: "CAT"
+    // },
+    // {
+    //     code: "PT",
+    //     label: "Performance Items"
+    // }
+
 
     //TODO: Get this from the server
     static getFilterOptions() {
         return {
-            subjects: [
+            subjects: 
                 {
                     disabled: false,
                     isMultiSelect: false,
@@ -18,30 +27,23 @@ export class FilterHelper {
                     filterOptions: [],
                     displayAllButton: true
                 },
-                {
-                    code: "MATH",
-                    label: "Mathematics"
-                }
-            ],
-            grades: [
-                GradeLevels.GradeLevels.Grade3,
-                GradeLevels.GradeLevels.Grade4,
-                GradeLevels.GradeLevels.Grade5,
-                GradeLevels.GradeLevels.Grade6,
-                GradeLevels.GradeLevels.Grade7,
-                GradeLevels.GradeLevels.Grade8,
-                GradeLevels.GradeLevels.High  
-            ],
-            techTypes: [
-                {
-                    code: "CAT",
-                    label: "CAT"
-                },
-                {
-                    code: "PT",
-                    label: "Performance Items"
-                }
-            ]
+            grades: {
+                disabled: false,
+                isMultiSelect: true,
+                label: "Grade filter",
+                helpText: "Grade HelpText here.",
+                filterOptions: [],
+                displayAllButton: true
+            },
+            techTypes:
+            {
+                disabled: false,
+                isMultiSelect: false,
+                label: "TechType filter",
+                helpText: "TechType HelpText here.",
+                filterOptions: [],
+                displayAllButton: true
+            }
         } as FilterOptions;
     }
 
