@@ -8,7 +8,6 @@ export enum OptionType {
 export interface AdvancedFilterOption {
     label: string;
     key: string;
-    order: string;
     isSelected: boolean;
     type: OptionType;
 }

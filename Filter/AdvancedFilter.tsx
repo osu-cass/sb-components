@@ -13,7 +13,6 @@ export class AdvancedFilter extends React.Component<Props, {}> {
 
     render() {
         const tags:JSX.Element[] = [];
-        const sortedOptions = this.props.filterOptions.sort((a,b)=> a.order.localeCompare(b.order));
 
         if (this.props.displayAllButton) {
             tags.push(
@@ -21,7 +20,7 @@ export class AdvancedFilter extends React.Component<Props, {}> {
             );
         }
 
-        sortedOptions.forEach((t, i) => { 
+        this.props.filterOptions.forEach((t, i) => { 
             let classname = "";
             
             if (t.isSelected){
