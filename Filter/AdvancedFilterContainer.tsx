@@ -53,11 +53,14 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     resetFilters() {
-        // this.setState({ 
-        //     grades: [],
-        //     subjects: [],
-        //     techTypes: []
-        // }, () => this.onClickHandler());
+        let newFilters = [...this.state.filters];
+        newFilters.forEach(cate => {
+            cate.filterOptions.map(opt => {return {...opt, isSelected: false}});
+        });
+
+        this.setState({
+            filters: newFilters
+        });
     }
 
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -66,53 +69,11 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
-    // changeGrade = (data:AdvancedFilterInfo[],isMultiSelect:boolean) => {
-    //     let selectedGrades = (isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
-
-    //     if(selectedGrades[0] === 0){
-    //         selectedGrades = [];
-    //     }
-
-    //     this.setState({
-    //         grades: selectedGrades
-    //     }, () => this.onClickHandler());
-    // }
-
-    // renderGradeFilter() {
-    //     const gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
-    //         const gradeSelected = GradeLevels.contains(this.state.grades[0],g);
-
-    //         return {
-    //             label:GradeLevels.caseToString(g),
-    //             key: g.toString(),
-    //             order: i.toString(),
-    //             selectedHandler: this.changeGrade,
-    //             type: OptionType.button,
-    //             isSelected: gradeSelected
-    //         };
-    //     });
-
-    //     const selectedGrades = this.state.grades.map(g => {
-    //         return g.toString();
-    //     });
-
-    //     return (
-    //         <AdvancedFilter 
-    //             disabled={false}
-    //             isMultiSelect={true}
-    //             label={"Grade"}
-    //             helpText={"Grade description here."}
-    //             filterOptions={gradeOptions}
-    //             selectedFilterOptions={selectedGrades}/>
-    //     );
-    // }
-
     renderFilterComponents() {
         const filterTags = this.state.filters.map((fil, i) => {
             return(
-                <AdvancedFilter {...fil} />
+                <AdvancedFilter {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
             );
-
         });
 
         return (
@@ -138,5 +99,4 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
             </div>
         );
     }
-
 }
