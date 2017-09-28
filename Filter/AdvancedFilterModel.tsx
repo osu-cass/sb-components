@@ -29,7 +29,7 @@ export interface Subject {
 }
 
 export interface FilterOptions {
-    subjects: Subject[];
-    grades: GradeLevels[];
-    techTypes: TechType[];
+    subjects: AdvancedFilterCategory[];
+    grades: AdvancedFilterCategory[];
+    techTypes: AdvancedFilterCategory[];
 }

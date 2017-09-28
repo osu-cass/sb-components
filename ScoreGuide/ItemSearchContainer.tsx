@@ -6,12 +6,13 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
 import { AdvancedFilterContainer} from "../Filter/AdvancedFilterContainer";
+import { FilterOptions } from "../Filter/AdvancedFilterModel";
 
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
 export interface Props {
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    filterOptions: ItemModels.FilterOptions;
+    filterOptions: FilterOptions;
 }
 
 export interface State {
@@ -65,21 +66,11 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         }
     }
 
-    renderDropDownComponent(){
-
-        
+    renderfilterComponent(){
         return (
-            // <ItemSearchDropdown.ItemSearchDropdown
-            //     filterOptions={this.props.filterOptions}
-            //     onChange={this.onFilterApplied}
-            //     isLoading={false}
-            //     itemFilter={this.state.itemFilter} />
-
             <AdvancedFilterContainer
                 filterOptions={this.props.filterOptions}
-                onClick={this.onFilterApplied}
-                isLoading={false}
-                itemFilter={this.state.itemFilter} />
+                onClick={this.onFilterApplied} />
         );
     }
 
@@ -90,7 +81,6 @@ export class ItemSearchContainer extends React.Component<Props, State> {
                     onRowSelection={this.props.onRowSelection} 
                     itemCards={this.state.visibleItems}/>
             ); 
-            
         }
         else if(this.state.itemSearchResult.kind == "failure"){
             return <div className="placeholder-text" role="alert">An error occurred. Please try again later.</div>
@@ -101,11 +91,10 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
  
     render() {
-    
         return (
             <div className="search-controls">
                 <a>Print Items</a>
-                {this.renderDropDownComponent()}
+                {this.renderfilterComponent()}
                 {this.renderTableComponent()}
             </div>
         );

@@ -1,7 +1,8 @@
 import { ItemCardViewModel } from "../Models/ItemCardViewModel";
-import { ItemFilter, FilterOptions } from "../Models/ItemModels";
+import { ItemFilter } from "../Models/ItemModels";
 import * as GradeLevels from '../Models/GradeLevels';
 import { parseQueryString } from "../Models/ApiModels";
+import { AdvancedFilterCategory, FilterOptions } from "../filter/AdvancedFilterModel";
 
 export class FilterHelper {    
 
@@ -10,8 +11,12 @@ export class FilterHelper {
         return {
             subjects: [
                 {
-                    code: "ELA",
-                    label: "English language arts / Literacy"
+                    disabled: false,
+                    isMultiSelect: false,
+                    label: "Subjects filter",
+                    helpText: "Subjects HelpText here.",
+                    filterOptions: [],
+                    displayAllButton: true
                 },
                 {
                     code: "MATH",
