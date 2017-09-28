@@ -1,32 +1,25 @@
 import { GradeLevels } from "../Models/GradeLevels";
 
 export enum OptionType {
-    inputBox = 0,
-    button = 1,
-    defaultButton = 2
-};
-
-export interface AdvancedFilterInfo {
-    key:string;
-    isMultiSelect:boolean;
+    inputBox,
+    button
 }
 
 export interface AdvancedFilterOption {
-    label:string;
-    key:string;
-    order:string;
-    selectedHandler: (data:AdvancedFilterInfo) => void;
-    isSelected:boolean;
+    label: string;
+    key: string;
+    order: string;
+    isSelected: boolean;
     type: OptionType;
 }
 
 export interface AdvancedFilterCategory {
-    disabled:boolean;
-    isMultiSelect:boolean;
+    disabled: boolean;
+    isMultiSelect: boolean;
     label: string;
     helpText: string;
-    selectedFilterOptions: string[]; // use keys
     filterOptions: AdvancedFilterOption[];
+    displayAllButton: boolean;
 }
 
 export interface TechType extends Subject { }

@@ -1,36 +1,63 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 import * as GradeLevels from '../Models/GradeLevels';
-import { AdvancedFilterOption, OptionType, AdvancedFilterInfo, FilterOptions } from './AdvancedFilterModel';
-import { AdvancedFilter} from './AdvancedFilter';
+import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, FilterOptions } from './AdvancedFilterModel';
+import { AdvancedFilter } from './AdvancedFilter';
 
 interface Props {
-    filterOptions: ItemModels.ItemFilter;
-    onClick: (params: FilterOptions) => void;
-    isLoading: boolean;
-    itemFilter: ItemModels.ItemFilter
+    filterOptions: AdvancedFilterCategory[];
+    onClick: (selected: AdvancedFilterCategory[]) => void;
 }
 
-interface State extends ItemModels.ItemFilter { };
+interface State {
+    filters: AdvancedFilterCategory[];
+}
 
 export class AdvancedFilterContainer extends React.Component<Props,State>{
     constructor(props:Props){
         super(props);
 
-        this.state = props.itemFilter;
-        this.onClickHandler();
+        this.state = {
+            filters: props.filterOptions
+        }
     }
 
-    onClickHandler() {
-        this.props.onClick(this.state);
+    onSelect(category: AdvancedFilterCategory, option?: AdvancedFilterOption) {
+        const index = this.state.filters.indexOf(category);
+        const newFilters = [...this.state.filters];
+        let newOptions: AdvancedFilterOption[] = [];
+
+        if (!option) { // all pressed
+            newOptions = newFilters[index].filterOptions
+                .map(opt => {return {...opt, isSelected: false}});
+        } else {
+            const optionIdx = newFilters[index].filterOptions.indexOf(option);
+            if(category.isMultiSelect){
+                const optionSelect = newOptions[optionIdx].isSelected;
+                //XOR for boolean.
+                newOptions[optionIdx].isSelected = newOptions[optionIdx].isSelected ? !optionSelect : optionSelect;
+            }
+            else {
+                newOptions[optionIdx].isSelected = !option.isSelected;
+            }
+
+            newFilters[index] = {
+                ...newFilters[index],
+                filterOptions: newOptions
+            };
+
+            this.setState({
+                filters: newFilters
+            });
+        }
     }
 
     resetFilters() {
-        this.setState({ 
-            grades: [],
-            subjects: [],
-            techTypes: []
-        }, () => this.onClickHandler());
+        // this.setState({ 
+        //     grades: [],
+        //     subjects: [],
+        //     techTypes: []
+        // }, () => this.onClickHandler());
     }
 
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -39,51 +66,58 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
-    changeGrade = (data:AdvancedFilterInfo,isMultiSelect:boolean) => {
-        let selectedGrades = (isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
+    // changeGrade = (data:AdvancedFilterInfo[],isMultiSelect:boolean) => {
+    //     let selectedGrades = (isMultiSelect ? [Number(data.key) ^ Number(this.state.grades)] : [Number(data.key)]);
 
-        if(selectedGrades[0] === 0){
-            selectedGrades = [];
-        }
+    //     if(selectedGrades[0] === 0){
+    //         selectedGrades = [];
+    //     }
 
-        this.setState({
-            grades: selectedGrades
-        }, () => this.onClickHandler());
-    }
+    //     this.setState({
+    //         grades: selectedGrades
+    //     }, () => this.onClickHandler());
+    // }
 
-    renderGradeFilter() {
-        const gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
-            const gradeSelected = GradeLevels.contains(this.state.grades[0],g);
+    // renderGradeFilter() {
+    //     const gradeOptions:AdvancedFilterOption[] = this.props.filterOptions.grades.map((g,i) => {
+    //         const gradeSelected = GradeLevels.contains(this.state.grades[0],g);
 
-            return {
-                label:GradeLevels.caseToString(g),
-                key: g.toString(),
-                order: i.toString(),
-                selectedHandler: this.changeGrade,
-                type: OptionType.button,
-                isSelected: gradeSelected
-            };
-        });
+    //         return {
+    //             label:GradeLevels.caseToString(g),
+    //             key: g.toString(),
+    //             order: i.toString(),
+    //             selectedHandler: this.changeGrade,
+    //             type: OptionType.button,
+    //             isSelected: gradeSelected
+    //         };
+    //     });
 
-        const selectedGrades = this.state.grades.map(g => {
-            return g.toString();
-        });
+    //     const selectedGrades = this.state.grades.map(g => {
+    //         return g.toString();
+    //     });
 
-        return (
-            <AdvancedFilter 
-                disabled={false}
-                isMultiSelect={true}
-                label={"Grade"}
-                helpText={"Grade description here."}
-                filterOptions={gradeOptions}
-                selectedFilterOptions={selectedGrades}/>
-        );
-    }
+    //     return (
+    //         <AdvancedFilter 
+    //             disabled={false}
+    //             isMultiSelect={true}
+    //             label={"Grade"}
+    //             helpText={"Grade description here."}
+    //             filterOptions={gradeOptions}
+    //             selectedFilterOptions={selectedGrades}/>
+    //     );
+    // }
 
     renderFilterComponents() {
+        const filterTags = this.state.filters.map((fil, i) => {
+            return(
+                <AdvancedFilter {...fil} />
+            );
+
+        });
+
         return (
             <div className="filter-body" aria-live="polite" aria-relevant="additions removals">
-                {this.renderGradeFilter()}
+                {filterTags}
             </div>
         );
     }
@@ -93,7 +127,6 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
             <div className="advanced-filter">
                 <div className="filter-header">
                     <div className="filter-status">
-                        {this.props.isLoading ? <img src="images/spin.gif" className="spin" /> : undefined}
                     </div>
                     <div>
                         <a onClick={() => this.resetFilters()} 
