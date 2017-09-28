@@ -92,10 +92,16 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
  
     render() {
+        const itemsValue = (this.state.visibleItems || []).map(card => {
+            return {
+                itemKey: card.itemKey,
+                bankKey: card.bankKey
+            };
+        })
         return (
             <div className="search-controls">
                 <form action="/api/pdf" method="post" id="print-items-form">
-                    <input type="hidden" name="items" value={JSON.stringify(this.state.visibleItems)} />
+                    <input type="hidden" name="items" value={JSON.stringify(itemsValue)} />
                     <input type="submit" value="Print Items" />
                 </form>
                 {this.renderDropDownComponent()}
