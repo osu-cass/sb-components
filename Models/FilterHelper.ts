@@ -95,7 +95,7 @@ export class FilterHelper {
     static readUrl(filterOptions: FilterOptions) {
         const queryObject = parseQueryString(window.location.href);
         const subjects = queryObject["subjects"]
-            ? queryObject["subjects"]!.map(subjCode => filterOptions.subjects.find(s => s.code === subjCode))
+            ? queryObject["subjects"]!.map(subjCode => filterOptions.subjects.filterOptions.find(s => s.key === subjCode && s.isSelected)) // might want to remove selected flag
             : [];
 
         const grades = queryObject["grades"]
@@ -104,7 +104,7 @@ export class FilterHelper {
             : [];
 
         const techTypes = queryObject["techTypes"]
-            ? queryObject["techTypes"]!.map(typeCode => filterOptions.techTypes.find(t => t.code === typeCode))
+            ? queryObject["techTypes"]!.map(typeCode => filterOptions.techTypes.filterOptions.find(t => t.key === typeCode && t.isSelected))
             : [];
 
         return {
