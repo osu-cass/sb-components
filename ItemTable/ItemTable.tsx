@@ -57,7 +57,7 @@ export class DataTable extends React.Component<Props, {}> {
 
     render() {
         return (
-            <table className="item-table table table-striped mapcomponent-table"
+            <table className="item-table mapcomponent-table"
                 ref={this.props.tableRef}>
                 {this.renderRows()}
             </table>

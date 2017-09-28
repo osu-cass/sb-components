@@ -9,9 +9,7 @@ export interface Props {
     sorts: HeaderSort[];
 }
 
-export interface State {
-    dirElem: string | undefined | JSX.Element;
-}
+export interface State {}
 
 export enum SortDirection {
     NoSort = 0,
@@ -112,21 +110,16 @@ export class HeaderTable extends React.Component<Props, State> {
         this.props.onHeaderClick(scol);
     }
 
-    setDirElem(headerSort: HeaderSort) {
-        let dirElem: JSX.Element;
+    setDirElem(headerSort: HeaderSort):JSX.Element {
+        let dirElem = noSort;
         if (!headerSort) {
-            dirElem = noSort;
+            return dirElem;
         } else if (headerSort.direction === SortDirection.Ascending) {
             dirElem = acendingArrow;
         } else if (headerSort.direction === SortDirection.Descending) {
             dirElem = decendingArrow;
-        } else {
-            dirElem = noSort;
-        }
-
-        this.setState({
-            dirElem: dirElem
-        })
+        } 
+        return dirElem;
     }
 
     renderHeader(col: SortColumn): JSX.Element {
@@ -140,7 +133,7 @@ export class HeaderTable extends React.Component<Props, State> {
                 className={col.className}
                 onClick={() => this.headerEventHandler(col, headerSort)}>
                 <div className={col.className}>
-                    {this.state.dirElem} {col.header}
+                    {col.header} {this.setDirElem(headerSort)} 
                 </div>
             </th>
         );
@@ -148,9 +141,10 @@ export class HeaderTable extends React.Component<Props, State> {
 
     render() {
         return (
-            <table className="item-table table mapcomponent-table">
+            <table className="item-table mapcomponent-table item-table-header">
                 <thead>
                     <tr className="primary">
+                        <th></th>
                         {this.props.columns.map(col => this.renderHeader(col))}
                     </tr>
                 </thead>
