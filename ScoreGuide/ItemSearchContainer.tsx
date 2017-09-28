@@ -92,21 +92,17 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
  
     render() {
-        const itemsValue = (this.state.visibleItems || []).map(card => {
-            return {
-                itemKey: card.itemKey,
-                bankKey: card.bankKey
-            };
-        })
+        const itemsValue = (this.state.visibleItems || [])
+            .map(card => card.bankKey + "-"+ card.itemKey)
+            .join(',');
         return (
             <div className="search-controls">
+                {this.renderDropDownComponent()}
                 <form action="/api/pdf" method="post" id="print-items-form">
-                    <input type="hidden" name="items" value={JSON.stringify(itemsValue)} />
+                    <input type="hidden" name="items" value={itemsValue} />
                     <input type="submit" value="Print Items" />
                 </form>
-                {this.renderDropDownComponent()}
                 {this.renderTableComponent()}
-                
             </div>
         );
     }
