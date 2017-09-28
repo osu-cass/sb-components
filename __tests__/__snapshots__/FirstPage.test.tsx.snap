@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EvidenceStatement matches snapshot 1`] = `
+exports[`First page matches snapshot 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
     "buildPredicate": [Function],
@@ -31,9 +31,9 @@ ShallowWrapper {
     <div
         className="first-page-date"
     >
-        8
+        01
         /
-        27
+        12
         /
         2017
     </div>
@@ -62,9 +62,9 @@ ShallowWrapper {
       <div
             className="first-page-date"
       >
-            8
+            01
             /
-            27
+            12
             /
             2017
       </div>
@@ -77,6 +77,13 @@ ShallowWrapper {
       "_compositeType": 0,
       "_context": Object {},
       "_currentElement": <FirstPage
+        date={
+                Object {
+                        "getDate": [Function],
+                        "getFullYear": [Function],
+                        "getMonth": [Function],
+                      }
+        }
         grade="grade 3"
         subject="math"
 />,
@@ -87,6 +94,11 @@ ShallowWrapper {
         "_reactInternalInstance": [Circular],
         "context": Object {},
         "props": Object {
+          "date": Object {
+            "getDate": [Function],
+            "getFullYear": [Function],
+            "getMonth": [Function],
+          },
           "grade": "grade 3",
           "subject": "math",
         },
@@ -133,9 +145,9 @@ ShallowWrapper {
           <div
                     className="first-page-date"
           >
-                    8
+                    01
                     /
-                    27
+                    12
                     /
                     2017
           </div>
@@ -164,9 +176,9 @@ ShallowWrapper {
           <div
                     className="first-page-date"
           >
-                    8
+                    01
                     /
-                    27
+                    12
                     /
                     2017
           </div>
@@ -183,6 +195,13 @@ ShallowWrapper {
   },
   "root": [Circular],
   "unrendered": <FirstPage
+    date={
+        Object {
+            "getDate": [Function],
+            "getFullYear": [Function],
+            "getMonth": [Function],
+          }
+    }
     grade="grade 3"
     subject="math"
 />,

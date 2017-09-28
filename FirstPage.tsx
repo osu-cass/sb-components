@@ -3,11 +3,17 @@ import * as React from 'react';
 interface Props {
     subject: string;
     grade: string;
+    date?: {
+        getMonth: () => string;
+        getDate: ()  => string;
+        getFullYear:  () => string;
+    }
 }
 
 export class FirstPage extends React.Component<Props, undefined> {
     render() {
-        const today = new Date();
+        // the data prop is for snapshot testing
+        const today = this.props.date ? this.props.date : new Date();
         return (
             <div className="page first-page">
                 <div className="first-page-title">

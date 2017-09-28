@@ -3,8 +3,15 @@ import * as ReactDOM from 'react-dom';
 import { FirstPage } from '../FirstPage';
 import { shallow } from 'enzyme';
 
-describe("EvidenceStatement", () => {
+const date = {
+    getMonth: () => "01",
+    getDate: ()  => "12",
+    getFullYear:  () => "2017"
+}
+
+describe("First page", () => {
     it("matches snapshot", () => {
-        expect(shallow(<FirstPage subject="math" grade="grade 3" />)).toMatchSnapshot()
+        let wrapper = shallow(<FirstPage subject="math" grade="grade 3" date={date}/>);
+        expect(wrapper).toMatchSnapshot();
     })
 })
