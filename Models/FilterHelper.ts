@@ -47,24 +47,24 @@ export class FilterHelper {
         } as FilterOptions;
     }
 
-    static filter(itemCards: ItemCardViewModel[], filter: ItemFilter) {
-        if (filter.grades && filter.grades.length > 0) {
-            filter.grades.forEach(gradeFilter => 
-                itemCards = itemCards.filter(i => GradeLevels.contains(gradeFilter, i.grade))
-            );
-        }
-        if (filter.subjects && filter.subjects.length > 0) {
-            const subjectCodes = filter.subjects.map(s => s.code);
-            itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
-        }
+    static filter(itemCards: ItemCardViewModel[], filter: FilterOptions) {
+        //Grades
+        filter.grades.filterOptions.forEach(gradeFilter => {
+            itemCards = itemCards.filter(g => gradeFilter.isSelected && GradeLevels.contains(Number(gradeFilter.key), g.grade));
+        });
+    
+        //Subjects
+        const subjectCodes = filter.subjects.filterOptions.map(s => s.isSelected ? s.key : "");
+        itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
+
         //TODO: What is CAT technology? Filter? Ignore?
-        if (filter.techTypes && filter.techTypes.length > 0) {
-            if (filter.techTypes[0].code.toUpperCase() === "PT") {
-                itemCards = itemCards.filter(i => i.isPerformanceItem);
-            } else if (filter.techTypes[0].code.toUpperCase() === "CAT") {
-                itemCards = itemCards.filter(i => !i.isPerformanceItem);
-            }
+        //Techtype
+        if (filter.techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "PT" && t.isSelected)) {
+            itemCards = itemCards.filter(i => i.isPerformanceItem);
+        } else if (filter.techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "CAT" && t.isSelected)) {
+            itemCards = itemCards.filter(i => !i.isPerformanceItem);
         }
+
         return itemCards;
     }
 
@@ -111,6 +111,6 @@ export class FilterHelper {
             subjects: subjects,
             grades: grades,
             techTypes: techTypes
-        } as ItemFilter;
+        } as FilterOptions;
     }
 }
