@@ -11,9 +11,6 @@ ShallowWrapper {
   "node": <div
     className="search-controls"
 >
-    <a>
-        Print Items
-    </a>
     <ItemSearchDropdown
         filterOptions={
             Object {
@@ -39,6 +36,31 @@ ShallowWrapper {
         }
         onChange={[Function]}
     />
+    <form
+        action="/api/pdf"
+        id="print-items-form"
+        method="post"
+    >
+        <input
+            name="items"
+            type="hidden"
+            value=""
+        />
+        <input
+            type="submit"
+            value="Print Items"
+        />
+        <input
+            name="grade"
+            type="hidden"
+            value="All Grades"
+        />
+        <input
+            name="subject"
+            type="hidden"
+            value="All Subjects"
+        />
+    </form>
     <div>
         Loading...
     </div>
@@ -47,9 +69,6 @@ ShallowWrapper {
     <div
       className="search-controls"
 >
-      <a>
-            Print Items
-      </a>
       <ItemSearchDropdown
             filterOptions={
                   Object {
@@ -75,6 +94,31 @@ ShallowWrapper {
             }
             onChange={[Function]}
       />
+      <form
+            action="/api/pdf"
+            id="print-items-form"
+            method="post"
+      >
+            <input
+                  name="items"
+                  type="hidden"
+                  value=""
+            />
+            <input
+                  type="submit"
+                  value="Print Items"
+            />
+            <input
+                  name="grade"
+                  type="hidden"
+                  value="All Grades"
+            />
+            <input
+                  name="subject"
+                  type="hidden"
+                  value="All Subjects"
+            />
+      </form>
       <div>
             Loading...
       </div>
@@ -159,9 +203,6 @@ ShallowWrapper {
         "_currentElement": <div
           className="search-controls"
 >
-          <a>
-                    Print Items
-          </a>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -187,6 +228,31 @@ ShallowWrapper {
                     }
                     onChange={[Function]}
           />
+          <form
+                    action="/api/pdf"
+                    id="print-items-form"
+                    method="post"
+          >
+                    <input
+                              name="items"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              type="submit"
+                              value="Print Items"
+                    />
+                    <input
+                              name="grade"
+                              type="hidden"
+                              value="All Grades"
+                    />
+                    <input
+                              name="subject"
+                              type="hidden"
+                              value="All Subjects"
+                    />
+          </form>
           <div>
                     Loading...
           </div>
@@ -195,9 +261,6 @@ ShallowWrapper {
         "_renderedOutput": <div
           className="search-controls"
 >
-          <a>
-                    Print Items
-          </a>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -223,6 +286,31 @@ ShallowWrapper {
                     }
                     onChange={[Function]}
           />
+          <form
+                    action="/api/pdf"
+                    id="print-items-form"
+                    method="post"
+          >
+                    <input
+                              name="items"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              type="submit"
+                              value="Print Items"
+                    />
+                    <input
+                              name="grade"
+                              type="hidden"
+                              value="All Grades"
+                    />
+                    <input
+                              name="subject"
+                              type="hidden"
+                              value="All Subjects"
+                    />
+          </form>
           <div>
                     Loading...
           </div>
@@ -270,9 +358,6 @@ ShallowWrapper {
   "node": <div
     className="search-controls"
 >
-    <a>
-        Print Items
-    </a>
     <ItemSearchDropdown
         filterOptions={
             Object {
@@ -298,6 +383,31 @@ ShallowWrapper {
         }
         onChange={[Function]}
     />
+    <form
+        action="/api/pdf"
+        id="print-items-form"
+        method="post"
+    >
+        <input
+            name="items"
+            type="hidden"
+            value=""
+        />
+        <input
+            type="submit"
+            value="Print Items"
+        />
+        <input
+            name="grade"
+            type="hidden"
+            value="All Grades"
+        />
+        <input
+            name="subject"
+            type="hidden"
+            value="All Subjects"
+        />
+    </form>
     <div>
         Loading...
     </div>
@@ -306,9 +416,6 @@ ShallowWrapper {
     <div
       className="search-controls"
 >
-      <a>
-            Print Items
-      </a>
       <ItemSearchDropdown
             filterOptions={
                   Object {
@@ -334,6 +441,31 @@ ShallowWrapper {
             }
             onChange={[Function]}
       />
+      <form
+            action="/api/pdf"
+            id="print-items-form"
+            method="post"
+      >
+            <input
+                  name="items"
+                  type="hidden"
+                  value=""
+            />
+            <input
+                  type="submit"
+                  value="Print Items"
+            />
+            <input
+                  name="grade"
+                  type="hidden"
+                  value="All Grades"
+            />
+            <input
+                  name="subject"
+                  type="hidden"
+                  value="All Subjects"
+            />
+      </form>
       <div>
             Loading...
       </div>
@@ -418,9 +550,6 @@ ShallowWrapper {
         "_currentElement": <div
           className="search-controls"
 >
-          <a>
-                    Print Items
-          </a>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -446,6 +575,31 @@ ShallowWrapper {
                     }
                     onChange={[Function]}
           />
+          <form
+                    action="/api/pdf"
+                    id="print-items-form"
+                    method="post"
+          >
+                    <input
+                              name="items"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              type="submit"
+                              value="Print Items"
+                    />
+                    <input
+                              name="grade"
+                              type="hidden"
+                              value="All Grades"
+                    />
+                    <input
+                              name="subject"
+                              type="hidden"
+                              value="All Subjects"
+                    />
+          </form>
           <div>
                     Loading...
           </div>
@@ -454,9 +608,6 @@ ShallowWrapper {
         "_renderedOutput": <div
           className="search-controls"
 >
-          <a>
-                    Print Items
-          </a>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -482,6 +633,31 @@ ShallowWrapper {
                     }
                     onChange={[Function]}
           />
+          <form
+                    action="/api/pdf"
+                    id="print-items-form"
+                    method="post"
+          >
+                    <input
+                              name="items"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              type="submit"
+                              value="Print Items"
+                    />
+                    <input
+                              name="grade"
+                              type="hidden"
+                              value="All Grades"
+                    />
+                    <input
+                              name="subject"
+                              type="hidden"
+                              value="All Subjects"
+                    />
+          </form>
           <div>
                     Loading...
           </div>
