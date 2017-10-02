@@ -5,6 +5,7 @@ import * as ItemModels from '../Models/ItemModels'
 import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
+import * as GradeLevels from '../Models/GradeLevels';
 
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
@@ -95,12 +96,21 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         const itemsValue = (this.state.visibleItems || [])
             .map(card => card.bankKey + "-"+ card.itemKey)
             .join(',');
+        const subject = this.state.itemFilter.subject 
+            ? this.state.itemFilter.subject.label
+            : "All Subjects";
+        const grade = this.state.itemFilter.grade 
+            ? GradeLevels.toString(this.state.itemFilter.grade)
+            : "All Grades";
+        
         return (
             <div className="search-controls">
                 {this.renderDropDownComponent()}
                 <form action="/api/pdf" method="post" id="print-items-form">
                     <input type="hidden" name="items" value={itemsValue} />
                     <input type="submit" value="Print Items" />
+                    <input type="hidden" name="grade" value={grade} />
+                    <input type="hidden" name="subject" value={subject} />
                 </form>
                 {this.renderTableComponent()}
             </div>
