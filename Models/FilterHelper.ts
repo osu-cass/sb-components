@@ -55,7 +55,7 @@ export class FilterHelper {
                 {
                     disabled: false,
                     isMultiSelect: false,
-                    label: "Subjects filter",
+                    label: "Subjects",
                     helpText: "Subjects HelpText here.",
                     filterOptions: [...subjectsFilterOptions],
                     displayAllButton: true
@@ -63,7 +63,7 @@ export class FilterHelper {
             grades: {
                 disabled: false,
                 isMultiSelect: true,
-                label: "Grade filter",
+                label: "Grade",
                 helpText: "Grade HelpText here.",
                 filterOptions: [...gradesFilterOptions],
                 displayAllButton: true
@@ -72,7 +72,7 @@ export class FilterHelper {
             {
                 disabled: false,
                 isMultiSelect: false,
-                label: "TechType filter",
+                label: "TechType",
                 helpText: "TechType HelpText here.",
                 filterOptions: [...techTypesFilterOptions],
                 displayAllButton: true
@@ -148,16 +148,21 @@ export class FilterHelper {
 
     static updateUrl(filter: AdvancedFilterCategory[]) {
         let pairs: string[] = [];
-        if (filter.grades && filter.grades.length > 0) {
-            const gradeString = filter.grades.map(g => g.toString()).join(',');
+        const grades = filter.find(afc => afc.label.toLocaleUpperCase() === "GRADE");
+        const subjects = filter.find(afc => afc.label.toLocaleUpperCase() === "SUBJECTS");
+        const techTypes = filter.find(afc => afc.label.toLocaleUpperCase() === "TECHTYPE");
+
+        if (grades && !grades.disabled) {
+            const gradeString = grades.filterOptions.map(g => g.key +(','));
             pairs.push("gradeLevels=" + gradeString);
         }
-        if (filter.subjects && filter.subjects.length > 0) {
-            const subjString = filter.subjects.map(s => s.code).join(',');
+
+        if (subjects && !subjects.disabled) {
+            const subjString = subjects.filterOptions.map(s => s.key) +(',');
             pairs.push("subjects=" + subjString);
         }
-        if (filter.techTypes && filter.techTypes.length > 0) {
-            const techTypesString = filter.techTypes.map(t => t.code).join(',');
+        if (techTypes && !techTypes.disabled) {
+            const techTypesString = techTypes.filterOptions.map(t => t.key) +(',');
             pairs.push("techTypes=" + techTypesString);
         }
 
