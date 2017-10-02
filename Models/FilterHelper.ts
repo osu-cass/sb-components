@@ -47,7 +47,7 @@ export class FilterHelper {
         } as FilterOptions;
     }
 
-    static filter(itemCards: ItemCardViewModel[], filter: FilterOptions) {
+    static filter(itemCards: ItemCardViewModel[], filter: FilterOptions):ItemCardViewModel[] {
         //Grades
         filter.grades.filterOptions.forEach(gradeFilter => {
             itemCards = itemCards.filter(g => gradeFilter.isSelected && GradeLevels.contains(Number(gradeFilter.key), g.grade));
@@ -92,25 +92,30 @@ export class FilterHelper {
         history.replaceState(null, "", query);
     }
 
-    static readUrl(filterOptions: FilterOptions) {
+    static readUrl(filterOptions: FilterOptions):FilterOptions {
         const queryObject = parseQueryString(window.location.href);
         const subjects = queryObject["subjects"]
-            ? queryObject["subjects"]!.map(subjCode => filterOptions.subjects.filterOptions.find(s => s.key === subjCode && s.isSelected)) // might want to remove selected flag
-            : [];
+            ? queryObject["subjects"]!.map(subjCode => {
+                return filterOptions.subjects.filterOptions.find(s => s.key === subjCode && s.isSelected)
+
+            }): []; // might want to remove selected flag
 
         const grades = queryObject["grades"]
             ? queryObject["grades"]!
-                .map(gradeCode => Number(gradeCode) as GradeLevels.GradeLevels)
-            : [];
+                .map(gradeCode => {
+
+                    return filterOptions.grades.filterOptions.find(s => GradeLevels.contains(Number(s.key), Number(gradeCode)) && s.isSelected);
+                }): [];
 
         const techTypes = queryObject["techTypes"]
-            ? queryObject["techTypes"]!.map(typeCode => filterOptions.techTypes.filterOptions.find(t => t.key === typeCode && t.isSelected))
-            : [];
+            ? queryObject["techTypes"]!.map(typeCode => {
+                return filterOptions.techTypes.filterOptions.find(t => t.key === typeCode && t.isSelected)
+            }): [];
 
         return {
             subjects: subjects,
             grades: grades,
             techTypes: techTypes
-        } as FilterOptions;
+        };
     }
 }
