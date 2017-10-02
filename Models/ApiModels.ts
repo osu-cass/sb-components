@@ -1,4 +1,6 @@
-﻿interface Loading {
+﻿import * as $ from "jquery";
+
+interface Loading {
     kind: "loading";
 }
 

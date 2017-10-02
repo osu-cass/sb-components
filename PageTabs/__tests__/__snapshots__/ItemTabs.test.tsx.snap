@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTabs matches snapshot for each tab 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="tabs"
+>
+    <div
+        className="selected-tab"
+        onClick={[Function]}
+    >
+        Item Viewer
+    </div>
+    <div
+        className="tab-not-selected"
+        onClick={[Function]}
+    >
+        Rubric and Exemplar
+    </div>
+    <div
+        className="tab-not-selected"
+        onClick={[Function]}
+    >
+        Item Information
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="tabs"
+>
+      <div
+            className="selected-tab"
+            onClick={[Function]}
+      >
+            Item Viewer
+      </div>
+      <div
+            className="tab-not-selected"
+            onClick={[Function]}
+      >
+            Rubric and Exemplar
+      </div>
+      <div
+            className="tab-not-selected"
+            onClick={[Function]}
+      >
+            Item Information
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemTabs
+        changedTab={[Function]}
+        selectedTab="viewer"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemTabs {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "onClick": [Function],
+        "props": Object {
+          "changedTab": [Function],
+          "selectedTab": "viewer",
+        },
+        "refs": Object {},
+        "state": Object {
+          "selectedTab": "viewer",
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="tabs"
+>
+          <div
+                    className="selected-tab"
+                    onClick={[Function]}
+          >
+                    Item Viewer
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Rubric and Exemplar
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Information
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="tabs"
+>
+          <div
+                    className="selected-tab"
+                    onClick={[Function]}
+          >
+                    Item Viewer
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Rubric and Exemplar
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Information
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemTabs
+    changedTab={[Function]}
+    selectedTab="viewer"
+/>,
+}
+`;
+
+exports[`PageTabs matches snapshot for each tab 2`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="tabs"
+>
+    <div
+        className="tab-not-selected"
+        onClick={[Function]}
+    >
+        Item Viewer
+    </div>
+    <div
+        className="selected-tab"
+        onClick={[Function]}
+    >
+        Rubric and Exemplar
+    </div>
+    <div
+        className="tab-not-selected"
+        onClick={[Function]}
+    >
+        Item Information
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="tabs"
+>
+      <div
+            className="tab-not-selected"
+            onClick={[Function]}
+      >
+            Item Viewer
+      </div>
+      <div
+            className="selected-tab"
+            onClick={[Function]}
+      >
+            Rubric and Exemplar
+      </div>
+      <div
+            className="tab-not-selected"
+            onClick={[Function]}
+      >
+            Item Information
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemTabs
+        changedTab={[Function]}
+        selectedTab="rubric"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemTabs {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "onClick": [Function],
+        "props": Object {
+          "changedTab": [Function],
+          "selectedTab": "rubric",
+        },
+        "refs": Object {},
+        "state": Object {
+          "selectedTab": "viewer",
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="tabs"
+>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Viewer
+          </div>
+          <div
+                    className="selected-tab"
+                    onClick={[Function]}
+          >
+                    Rubric and Exemplar
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Information
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="tabs"
+>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Viewer
+          </div>
+          <div
+                    className="selected-tab"
+                    onClick={[Function]}
+          >
+                    Rubric and Exemplar
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Information
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemTabs
+    changedTab={[Function]}
+    selectedTab="rubric"
+/>,
+}
+`;
+
+exports[`PageTabs matches snapshot for each tab 3`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="tabs"
+>
+    <div
+        className="tab-not-selected"
+        onClick={[Function]}
+    >
+        Item Viewer
+    </div>
+    <div
+        className="tab-not-selected"
+        onClick={[Function]}
+    >
+        Rubric and Exemplar
+    </div>
+    <div
+        className="selected-tab"
+        onClick={[Function]}
+    >
+        Item Information
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="tabs"
+>
+      <div
+            className="tab-not-selected"
+            onClick={[Function]}
+      >
+            Item Viewer
+      </div>
+      <div
+            className="tab-not-selected"
+            onClick={[Function]}
+      >
+            Rubric and Exemplar
+      </div>
+      <div
+            className="selected-tab"
+            onClick={[Function]}
+      >
+            Item Information
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemTabs
+        changedTab={[Function]}
+        selectedTab="information"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemTabs {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "onClick": [Function],
+        "props": Object {
+          "changedTab": [Function],
+          "selectedTab": "information",
+        },
+        "refs": Object {},
+        "state": Object {
+          "selectedTab": "viewer",
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="tabs"
+>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Viewer
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Rubric and Exemplar
+          </div>
+          <div
+                    className="selected-tab"
+                    onClick={[Function]}
+          >
+                    Item Information
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="tabs"
+>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Item Viewer
+          </div>
+          <div
+                    className="tab-not-selected"
+                    onClick={[Function]}
+          >
+                    Rubric and Exemplar
+          </div>
+          <div
+                    className="selected-tab"
+                    onClick={[Function]}
+          >
+                    Item Information
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemTabs
+    changedTab={[Function]}
+    selectedTab="information"
+/>,
+}
+`;

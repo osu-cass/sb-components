@@ -98,12 +98,11 @@ export class ItemPageTable extends React.Component<Props, State>{
 
     renderTable() {
         const itemCards = this.getTableData(); //this returns undefined but in the method it has data. that's w
+        let content = (<span className="placeholder-text" role="alert">No results found for the given search terms.</span>);
         if (itemCards != undefined) {
             //if no items are returned we want to return a friendly message
-            if (itemCards.length === 0) {
-                return <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
-            } else {
-                return (
+            if (itemCards.length !== 0) {
+                content = (
                     <ItemTable.DataTable
                         mapRows={itemCards}
                         rowOnClick={this.onSelectItem}
@@ -114,7 +113,7 @@ export class ItemPageTable extends React.Component<Props, State>{
                 );
             }
         }
-        return <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
+        return content;
     }
 
     render() {

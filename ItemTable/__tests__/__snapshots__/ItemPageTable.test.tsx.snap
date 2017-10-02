@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemPageTable matches snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <HeaderTable
+        columns={
+            Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "item",
+                  "compare": [Function],
+                  "header": "Item",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "claimAndTarget",
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "subject",
+                  "compare": [Function],
+                  "header": "Subject",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "grade",
+                  "compare": [Function],
+                  "header": "Grade",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "interactionType",
+                  "compare": [Function],
+                  "header": "Item Type",
+                },
+              ]
+        }
+        onHeaderClick={[Function]}
+        sorts={Array []}
+    />
+    <DataTable
+        columns={
+            Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "item",
+                  "compare": [Function],
+                  "header": "Item",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "claimAndTarget",
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "subject",
+                  "compare": [Function],
+                  "header": "Subject",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "grade",
+                  "compare": [Function],
+                  "header": "Grade",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "interactionType",
+                  "compare": [Function],
+                  "header": "Item Type",
+                },
+              ]
+        }
+        mapRows={
+            Array [
+                Object {
+                  "bankKey": 1,
+                  "claimCode": "",
+                  "claimLabel": "",
+                  "grade": 1023,
+                  "gradeLabel": "",
+                  "interactionTypeCode": "",
+                  "interactionTypeLabel": "",
+                  "isPerformanceItem": true,
+                  "itemKey": 3,
+                  "subjectCode": "",
+                  "subjectLabel": "",
+                  "target": "",
+                  "title": "",
+                },
+              ]
+        }
+        rowOnClick={[Function]}
+        selectedRow={undefined}
+        sort={Array []}
+        tableRef={[Function]}
+    />
+</div>,
+  "nodes": Array [
+    <div>
+      <HeaderTable
+            columns={
+                  Array [
+                        Object {
+                          "accessor": [Function],
+                          "className": "item",
+                          "compare": [Function],
+                          "header": "Item",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "claimAndTarget",
+                          "compare": [Function],
+                          "header": "Claim/Target",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "subject",
+                          "compare": [Function],
+                          "header": "Subject",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "grade",
+                          "compare": [Function],
+                          "header": "Grade",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "interactionType",
+                          "compare": [Function],
+                          "header": "Item Type",
+                        },
+                      ]
+            }
+            onHeaderClick={[Function]}
+            sorts={Array []}
+      />
+      <DataTable
+            columns={
+                  Array [
+                        Object {
+                          "accessor": [Function],
+                          "className": "item",
+                          "compare": [Function],
+                          "header": "Item",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "claimAndTarget",
+                          "compare": [Function],
+                          "header": "Claim/Target",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "subject",
+                          "compare": [Function],
+                          "header": "Subject",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "grade",
+                          "compare": [Function],
+                          "header": "Grade",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "interactionType",
+                          "compare": [Function],
+                          "header": "Item Type",
+                        },
+                      ]
+            }
+            mapRows={
+                  Array [
+                        Object {
+                          "bankKey": 1,
+                          "claimCode": "",
+                          "claimLabel": "",
+                          "grade": 1023,
+                          "gradeLabel": "",
+                          "interactionTypeCode": "",
+                          "interactionTypeLabel": "",
+                          "isPerformanceItem": true,
+                          "itemKey": 3,
+                          "subjectCode": "",
+                          "subjectLabel": "",
+                          "target": "",
+                          "title": "",
+                        },
+                      ]
+            }
+            rowOnClick={[Function]}
+            selectedRow={undefined}
+            sort={Array []}
+            tableRef={[Function]}
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemPageTable
+        itemCards={
+                Array [
+                        Object {
+                          "bankKey": 1,
+                          "claimCode": "",
+                          "claimLabel": "",
+                          "grade": 1023,
+                          "gradeLabel": "",
+                          "interactionTypeCode": "",
+                          "interactionTypeLabel": "",
+                          "isPerformanceItem": true,
+                          "itemKey": 3,
+                          "subjectCode": "",
+                          "subjectLabel": "",
+                          "target": "",
+                          "title": "",
+                        },
+                      ]
+        }
+        onRowSelection={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemPageTable {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "getTableData": [Function],
+        "headerColumns": Array [
+          Object {
+            "accessor": [Function],
+            "className": "item",
+            "compare": [Function],
+            "header": "Item",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "claimAndTarget",
+            "compare": [Function],
+            "header": "Claim/Target",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "subject",
+            "compare": [Function],
+            "header": "Subject",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "grade",
+            "compare": [Function],
+            "header": "Grade",
+          },
+          Object {
+            "accessor": [Function],
+            "className": "interactionType",
+            "compare": [Function],
+            "header": "Item Type",
+          },
+        ],
+        "onClickHeader": [Function],
+        "onSelectItem": [Function],
+        "props": Object {
+          "itemCards": Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "target": "",
+              "title": "",
+            },
+          ],
+          "onRowSelection": [Function],
+        },
+        "refs": Object {},
+        "state": Object {
+          "sorts": Array [],
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <HeaderTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    onHeaderClick={[Function]}
+                    sorts={Array []}
+          />
+          <DataTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    mapRows={
+                              Array [
+                                        Object {
+                                          "bankKey": 1,
+                                          "claimCode": "",
+                                          "claimLabel": "",
+                                          "grade": 1023,
+                                          "gradeLabel": "",
+                                          "interactionTypeCode": "",
+                                          "interactionTypeLabel": "",
+                                          "isPerformanceItem": true,
+                                          "itemKey": 3,
+                                          "subjectCode": "",
+                                          "subjectLabel": "",
+                                          "target": "",
+                                          "title": "",
+                                        },
+                                      ]
+                    }
+                    rowOnClick={[Function]}
+                    selectedRow={undefined}
+                    sort={Array []}
+                    tableRef={[Function]}
+          />
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          <HeaderTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    onHeaderClick={[Function]}
+                    sorts={Array []}
+          />
+          <DataTable
+                    columns={
+                              Array [
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "item",
+                                          "compare": [Function],
+                                          "header": "Item",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "claimAndTarget",
+                                          "compare": [Function],
+                                          "header": "Claim/Target",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "subject",
+                                          "compare": [Function],
+                                          "header": "Subject",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "grade",
+                                          "compare": [Function],
+                                          "header": "Grade",
+                                        },
+                                        Object {
+                                          "accessor": [Function],
+                                          "className": "interactionType",
+                                          "compare": [Function],
+                                          "header": "Item Type",
+                                        },
+                                      ]
+                    }
+                    mapRows={
+                              Array [
+                                        Object {
+                                          "bankKey": 1,
+                                          "claimCode": "",
+                                          "claimLabel": "",
+                                          "grade": 1023,
+                                          "gradeLabel": "",
+                                          "interactionTypeCode": "",
+                                          "interactionTypeLabel": "",
+                                          "isPerformanceItem": true,
+                                          "itemKey": 3,
+                                          "subjectCode": "",
+                                          "subjectLabel": "",
+                                          "target": "",
+                                          "title": "",
+                                        },
+                                      ]
+                    }
+                    rowOnClick={[Function]}
+                    selectedRow={undefined}
+                    sort={Array []}
+                    tableRef={[Function]}
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemPageTable
+    itemCards={
+        Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "target": "",
+              "title": "",
+            },
+          ]
+    }
+    onRowSelection={[Function]}
+/>,
+}
+`;
+
+exports[`ItemPageTable sorts list on header click 1`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 2`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"Decend\\\\\\">▼</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 3`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 4`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 5`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"Decend\\\\\\">▼</span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 6`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 7`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 8`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"Decend\\\\\\">▼</span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 9`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 10`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 11`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"Decend\\\\\\">▼</span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 12`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 13`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 14`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"Decend\\\\\\">▼</span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+
+exports[`ItemPageTable sorts list on header click 15`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 8 -->Item<!-- /react-text --><!-- react-text: 9 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 13 -->Claim/Target<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 18 -->Subject<!-- /react-text --><!-- react-text: 19 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 23 -->Grade<!-- /react-text --><!-- react-text: 24 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 28 -->Item Type<!-- /react-text --><!-- react-text: 29 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><tbody><tr class=\\\\\\"\\\\\\"><td></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;

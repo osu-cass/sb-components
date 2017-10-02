@@ -6,11 +6,15 @@ import * as GradeLevels from '../Models/GradeLevels';
 import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
 import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemSearchContainer from './ItemSearchContainer';
+import * as ItemCardViewModel from '../Models/ItemCardViewModel'
 import { get } from "../Models/ApiModels";
 import { FilterHelper } from "../Models/FilterHelper";
 
-//TODO: Change this to a relative url, add to API
-const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
+const SearchClient = () => get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
+
+export interface Props {
+    scoreGuideViewModelClient: () => Promise<ItemsSearchViewModel>;
+}
 
 export interface State {
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
@@ -22,18 +26,17 @@ export interface ItemsSearchViewModel {
     subjects: ItemModels.Subject[];
 }
 
-export class ScoringGuidePage extends React.Component<{}, State> {
-    constructor() {
-        super();
-
+export class ScoringGuidePage extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
         this.state = {
             scoringGuideViewModel: { kind: "loading" },
             filterOptions: FilterHelper.getFilterOptions(),
             item: {kind:"none"}
         }
-
         this.loadScoringGuideViewModel();
     }
+        
 
     getAboutItem(item: { itemKey: number; bankKey: number }) {
         AboutItemVM.ScoreSearchClient(item)
@@ -55,7 +58,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
     }
 
     loadScoringGuideViewModel() {
-        ScoreGuideViewModelClient()
+        this.props.scoreGuideViewModelClient()
             .then(result => this.onSuccessLoadScoringGuideViewModel(result))
             .catch(err => this.onErrorLoadScoringGuideViewModel(err));
 
@@ -109,6 +112,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
                         <ItemSearchContainer.ItemSearchContainer
                             onRowSelection={(item) => this.onRowSelection(item)}
                             filterOptions={this.state.filterOptions}
+                            searchClient={SearchClient}
                         />
                     </div>
                     {this.renderTabsContainer()}
@@ -122,8 +126,4 @@ export class ScoringGuidePage extends React.Component<{}, State> {
     }
 }
 
-
-export function initScoreGuidePage() {
-    ReactDOM.render(<ScoringGuidePage />, document.getElementById("react-container"));
-}
 

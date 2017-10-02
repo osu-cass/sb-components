@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import * as Rubric from '../PageTabs/Rubric';
 import * as AboutItemVM from '../Models/AboutItemVM';
-import * as PageTabs from '../PageTabs/PageTabs';
+import * as PageTabs from '../PageTabs/ItemTabs';
 import * as ItemViewerFrame from './ItemViewerFrame';
 import * as ItemInformation from '../PageTabs/ItemInformation';
 import * as ItemInformationDetail from '../PageTabs/ItemInformationDetail';

@@ -16,8 +16,6 @@ export class DataTable extends React.Component<Props, {}> {
         super(props);
     }
 
-   
-
     renderCell(col: ItemTableHeader.SortColumn, cellData: ItemCardViewModel.ItemCardViewModel): JSX.Element {
         return (
             <td key={col.header}
