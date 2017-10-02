@@ -30,6 +30,35 @@ export class FilterHelper {
             type: OptionType.button
         }];
 
+        const gradesFilterOptions = [{
+            label: "Elementary",
+            key: String(GradeLevels.GradeLevels.Elementary),
+            isSelected: false,
+            type: OptionType.button
+        },{
+            label: "Grade 3",
+            key: String(GradeLevels.GradeLevels.Grade3),
+            isSelected: false,
+            type: OptionType.button
+        },{
+            label: "Grade 4",
+            key: String(GradeLevels.GradeLevels.Grade4),
+            isSelected: false,
+            type: OptionType.button
+        }];
+
+        const techTypesFilterOptions = [{
+            label: "CAT",
+            key: "CAT",
+            isSelected: false,
+            type: OptionType.button
+        },{
+            label: "Performance Items",
+            key: "PT",
+            isSelected: false,
+            type: OptionType.button
+        }];
+
 
         return {
             subjects: 
@@ -46,7 +75,7 @@ export class FilterHelper {
                 isMultiSelect: true,
                 label: "Grade filter",
                 helpText: "Grade HelpText here.",
-                filterOptions: [],
+                filterOptions: [...gradesFilterOptions],
                 displayAllButton: true
             },
             techTypes:
@@ -55,7 +84,7 @@ export class FilterHelper {
                 isMultiSelect: false,
                 label: "TechType filter",
                 helpText: "TechType HelpText here.",
-                filterOptions: [],
+                filterOptions: [...techTypesFilterOptions],
                 displayAllButton: true
             }
         } as FilterOptions;
