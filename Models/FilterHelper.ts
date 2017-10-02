@@ -2,7 +2,7 @@ import { ItemCardViewModel } from "../Models/ItemCardViewModel";
 import { ItemFilter } from "../Models/ItemModels";
 import * as GradeLevels from '../Models/GradeLevels';
 import { parseQueryString } from "../Models/ApiModels";
-import { AdvancedFilterCategory, FilterOptions } from "../filter/AdvancedFilterModel";
+import { AdvancedFilterCategory, FilterOptions,OptionType } from "../filter/AdvancedFilterModel";
 
 export class FilterHelper {    
     // {
@@ -17,6 +17,20 @@ export class FilterHelper {
 
     //TODO: Get this from the server
     static getFilterOptions() {
+        const subjectsFilterOptions = [{
+            label: "Mathematics",
+            key: "MATH",
+            isSelected: false,
+            type: OptionType.button
+        },
+        {
+            label: "English",
+            key: "ELA",
+            isSelected: false,
+            type: OptionType.button
+        }];
+
+
         return {
             subjects: 
                 {
@@ -24,7 +38,7 @@ export class FilterHelper {
                     isMultiSelect: false,
                     label: "Subjects filter",
                     helpText: "Subjects HelpText here.",
-                    filterOptions: [],
+                    filterOptions: [...subjectsFilterOptions],
                     displayAllButton: true
                 },
             grades: {
