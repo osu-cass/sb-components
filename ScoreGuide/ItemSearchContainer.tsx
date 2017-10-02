@@ -6,7 +6,7 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
 import { AdvancedFilterContainer} from "../Filter/AdvancedFilterContainer";
-import { FilterOptions } from "../Filter/AdvancedFilterModel";
+import { FilterOptions,AdvancedFilterCategory } from "../Filter/AdvancedFilterModel";
 
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
@@ -56,7 +56,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         });
     }
 
-    onFilterApplied = (filter: ItemModels.ItemFilter) => {
+    onFilterApplied = (filter: AdvancedFilterCategory[]) => {
         if(this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
             const filtered = FilterHelper.filter(this.state.itemSearchResult.content || [], filter);
             this.setState({
