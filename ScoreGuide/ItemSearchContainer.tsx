@@ -44,7 +44,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     onSearchSuccess(data: ItemCardViewModel.ItemCardViewModel[]): void{
         this.setState({
             itemSearchResult: { kind: "success", content: data },
-            visibleItems: data
+            visibleItems: FilterHelper.filter(data, this.state.itemFilter)
         });
     }
 
