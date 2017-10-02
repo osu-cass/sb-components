@@ -94,23 +94,30 @@ export class FilterHelper {
 
     static readUrl(filterOptions: FilterOptions):FilterOptions {
         const queryObject = parseQueryString(window.location.href);
-        const subjects = queryObject["subjects"]
+        const subjectsFilterOptions = queryObject["subjects"]
             ? queryObject["subjects"]!.map(subjCode => {
                 return filterOptions.subjects.filterOptions.find(s => s.key === subjCode && s.isSelected)
-
             }): []; // might want to remove selected flag
 
-        const grades = queryObject["grades"]
+        const gradesFilterOptions = queryObject["grades"]
             ? queryObject["grades"]!
                 .map(gradeCode => {
-
-                    return filterOptions.grades.filterOptions.find(s => GradeLevels.contains(Number(s.key), Number(gradeCode)) && s.isSelected);
+                    return filterOptions.grades.filterOptions.find(g => GradeLevels.contains(Number(g.key), Number(gradeCode)) && g.isSelected);
                 }): [];
 
-        const techTypes = queryObject["techTypes"]
+        const techTypesFilterOptions = queryObject["techTypes"]
             ? queryObject["techTypes"]!.map(typeCode => {
                 return filterOptions.techTypes.filterOptions.find(t => t.key === typeCode && t.isSelected)
             }): [];
+
+        const subjects = {...filterOptions.subjects};
+        subjects.filterOptions = [...subjectsFilterOptions];
+
+        const grades = {...filterOptions.grades};
+        grades.filterOptions = [...gradesFilterOptions];
+
+        const techTypes = {...filterOptions.techTypes};
+        techTypes.filterOptions = [...techTypesFilterOptions];
 
         return {
             subjects: subjects,
