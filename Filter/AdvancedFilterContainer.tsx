@@ -25,37 +25,36 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     onSelect(category: AdvancedFilterCategory, option?: AdvancedFilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions = newFilters[index].filterOptions
-            .map(opt => {return {...opt, isSelected: false}});
+        let newOptions:AdvancedFilterOption[] = [];
 
+        //TODO Refactor
         if (!option) { // all pressed
-            
+            newOptions = newFilters[index].filterOptions
+                .map(opt => {return {...opt, isSelected: false}});
         } else {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);
             if(category.isMultiSelect){
                 newOptions = newFilters[index].filterOptions
                     .map(opt => {return {...opt}});
-
-                console.log(newOptions[optionIdx].isSelected);
-                newOptions[optionIdx].isSelected = !newOptions[optionIdx].isSelected;
-
-                console.log(newOptions[optionIdx].isSelected);
             }
             else {
                 newOptions = newFilters[index].filterOptions
                     .map(opt => {return {...opt, isSelected: false}});
-                newOptions[optionIdx].isSelected = !option.isSelected;
             }
 
-            newFilters[index] = {
-                ...newFilters[index],
-                filterOptions: newOptions
-            };
-
-            this.setState({
-                filters: newFilters
-            });
+            newOptions[optionIdx].isSelected = !option.isSelected;
         }
+
+        newFilters[index] = {
+            ...newFilters[index],
+            filterOptions: newOptions
+        };
+
+        this.setState({
+            filters: newFilters
+        });
+
+        this.props.onClick(this.props.filterOptions);
     }
 
     resetFilters() {

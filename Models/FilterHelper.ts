@@ -81,9 +81,9 @@ export class FilterHelper {
     }
 
     static filter(itemCards: ItemCardViewModel[], filter: AdvancedFilterCategory[]):ItemCardViewModel[] {
-        const grades = filter.find(afc => afc.label.toLocaleUpperCase() === "GRADE");
-        const subjects = filter.find(afc => afc.label.toLocaleUpperCase() === "SUBJECTS");
-        const techTypes = filter.find(afc => afc.label.toLocaleUpperCase() === "TECHTYPE");
+        const grades = filter.find(afc => afc.label === "Grade");
+        const subjects = filter.find(afc => afc.label === "Subjects");
+        const techTypes = filter.find(afc => afc.label === "TechType"); 
 
         if(grades && grades.filterOptions){
             grades.filterOptions.forEach(gradeFilter => {
@@ -97,9 +97,9 @@ export class FilterHelper {
         }
         //TODO: What is CAT technology? Filter? Ignore?
         if(techTypes && techTypes.filterOptions){
-            if (techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "PT" && t.isSelected)) {
+            if (techTypes.filterOptions.find(t => t.key === "PT" && t.isSelected)) {
                 itemCards = itemCards.filter(i => i.isPerformanceItem);
-            } else if (techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "CAT" && t.isSelected)) {
+            } else if (techTypes.filterOptions.find(t => t.key === "CAT" && t.isSelected)) {
                 itemCards = itemCards.filter(i => !i.isPerformanceItem);
             }
         }
@@ -154,9 +154,10 @@ export class FilterHelper {
 
     static updateUrl(filter: AdvancedFilterCategory[]) {
         let pairs: string[] = [];
-        const grades = filter.find(afc => afc.label.toLocaleUpperCase() === "GRADE");
-        const subjects = filter.find(afc => afc.label.toLocaleUpperCase() === "SUBJECTS");
-        const techTypes = filter.find(afc => afc.label.toLocaleUpperCase() === "TECHTYPE");
+        
+        const grades = filter.find(afc => afc.label === "Grade");
+        const subjects = filter.find(afc => afc.label === "Subjects");
+        const techTypes = filter.find(afc => afc.label === "TechType"); 
 
         if (grades && !grades.disabled) {
             const gradeString = grades.filterOptions.map(g => g.key +(','));

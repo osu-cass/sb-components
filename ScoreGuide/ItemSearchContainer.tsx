@@ -57,6 +57,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
 
     onFilterApplied = (filter: AdvancedFilterCategory[]) => {
+        console.log("onFilterApplied");
         if(this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
             const filtered = FilterHelper.filter(this.state.itemSearchResult.content || [], filter);
             this.setState({
