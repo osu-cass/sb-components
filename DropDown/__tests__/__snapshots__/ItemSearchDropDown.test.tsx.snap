@@ -17,15 +17,6 @@ ShallowWrapper {
         <div
             className="search-status"
         />
-        <div>
-            <a
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                tabIndex={0}
-            >
-                Reset filters
-            </a>
-        </div>
     </div>
     <div
         aria-live="polite"
@@ -75,6 +66,15 @@ ShallowWrapper {
                 234509383405
             </option>
         </select>
+        <div>
+            <button
+                onClick={[Function]}
+                onKeyPress={[Function]}
+                tabIndex={0}
+            >
+                Reset filters
+            </button>
+        </div>
     </div>
 </div>,
   "nodes": Array [
@@ -87,15 +87,6 @@ ShallowWrapper {
             <div
                   className="search-status"
             />
-            <div>
-                  <a
-                        onClick={[Function]}
-                        onKeyPress={[Function]}
-                        tabIndex={0}
-                  >
-                        Reset filters
-                  </a>
-            </div>
       </div>
       <div
             aria-live="polite"
@@ -145,6 +136,15 @@ ShallowWrapper {
                         234509383405
                   </option>
             </select>
+            <div>
+                  <button
+                        onClick={[Function]}
+                        onKeyPress={[Function]}
+                        tabIndex={0}
+                  >
+                        Reset filters
+                  </button>
+            </div>
       </div>
 </div>,
   ],
@@ -270,15 +270,6 @@ ShallowWrapper {
                     <div
                               className="search-status"
                     />
-                    <div>
-                              <a
-                                        onClick={[Function]}
-                                        onKeyPress={[Function]}
-                                        tabIndex={0}
-                              >
-                                        Reset filters
-                              </a>
-                    </div>
           </div>
           <div
                     aria-live="polite"
@@ -328,6 +319,15 @@ ShallowWrapper {
                                         234509383405
                               </option>
                     </select>
+                    <div>
+                              <button
+                                        onClick={[Function]}
+                                        onKeyPress={[Function]}
+                                        tabIndex={0}
+                              >
+                                        Reset filters
+                              </button>
+                    </div>
           </div>
 </div>,
         "_debugID": 2,
@@ -340,15 +340,6 @@ ShallowWrapper {
                     <div
                               className="search-status"
                     />
-                    <div>
-                              <a
-                                        onClick={[Function]}
-                                        onKeyPress={[Function]}
-                                        tabIndex={0}
-                              >
-                                        Reset filters
-                              </a>
-                    </div>
           </div>
           <div
                     aria-live="polite"
@@ -398,6 +389,15 @@ ShallowWrapper {
                                         234509383405
                               </option>
                     </select>
+                    <div>
+                              <button
+                                        onClick={[Function]}
+                                        onKeyPress={[Function]}
+                                        tabIndex={0}
+                              >
+                                        Reset filters
+                              </button>
+                    </div>
           </div>
 </div>,
       },

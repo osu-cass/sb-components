@@ -11,9 +11,16 @@ ShallowWrapper {
   "node": <div
     className="search-controls"
 >
-    <a>
+    <button
+        style={
+            Object {
+                "margin": "2px",
+                "paddingRight": "5px",
+              }
+        }
+    >
         Print Items
-    </a>
+    </button>
     <ItemSearchDropdown
         filterOptions={
             Object {
@@ -47,9 +54,16 @@ ShallowWrapper {
     <div
       className="search-controls"
 >
-      <a>
+      <button
+            style={
+                  Object {
+                        "margin": "2px",
+                        "paddingRight": "5px",
+                      }
+            }
+      >
             Print Items
-      </a>
+      </button>
       <ItemSearchDropdown
             filterOptions={
                   Object {
@@ -159,9 +173,16 @@ ShallowWrapper {
         "_currentElement": <div
           className="search-controls"
 >
-          <a>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
                     Print Items
-          </a>
+          </button>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -195,9 +216,16 @@ ShallowWrapper {
         "_renderedOutput": <div
           className="search-controls"
 >
-          <a>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
                     Print Items
-          </a>
+          </button>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -270,9 +298,16 @@ ShallowWrapper {
   "node": <div
     className="search-controls"
 >
-    <a>
+    <button
+        style={
+            Object {
+                "margin": "2px",
+                "paddingRight": "5px",
+              }
+        }
+    >
         Print Items
-    </a>
+    </button>
     <ItemSearchDropdown
         filterOptions={
             Object {
@@ -306,9 +341,16 @@ ShallowWrapper {
     <div
       className="search-controls"
 >
-      <a>
+      <button
+            style={
+                  Object {
+                        "margin": "2px",
+                        "paddingRight": "5px",
+                      }
+            }
+      >
             Print Items
-      </a>
+      </button>
       <ItemSearchDropdown
             filterOptions={
                   Object {
@@ -418,9 +460,16 @@ ShallowWrapper {
         "_currentElement": <div
           className="search-controls"
 >
-          <a>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
                     Print Items
-          </a>
+          </button>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
@@ -454,9 +503,16 @@ ShallowWrapper {
         "_renderedOutput": <div
           className="search-controls"
 >
-          <a>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
                     Print Items
-          </a>
+          </button>
           <ItemSearchDropdown
                     filterOptions={
                               Object {
