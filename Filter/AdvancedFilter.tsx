@@ -20,17 +20,19 @@ export class AdvancedFilter extends React.Component<Props, {}> {
             );
         }
 
-        this.props.filterOptions.forEach((t, i) => { 
-            let classname = "";
-            
-            if (t.isSelected){
-                classname = "selected";
-            }
+        if(this.props.filterOptions){
+            this.props.filterOptions.forEach((t, i) => { 
+                let classname = "";
+                
+                if (t.isSelected){
+                    classname = "selected";
+                }
 
-            tags.push(
-                <button className={classname} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
-            );
-        });
+                tags.push(
+                    <button className={classname} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
+                );
+            });
+        }
 
         return (
             <div id={(this.props.label + "-filter").toLocaleLowerCase()} className="filter-selection">
