@@ -33,11 +33,17 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         } else {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);
             if(category.isMultiSelect){
-                const optionSelect = newOptions[optionIdx].isSelected;
-                //XOR for boolean.
-                newOptions[optionIdx].isSelected = newOptions[optionIdx].isSelected ? !optionSelect : optionSelect;
+                newOptions = newFilters[index].filterOptions
+                    .map(opt => {return {...opt}});
+
+                console.log(newOptions[optionIdx].isSelected);
+                newOptions[optionIdx].isSelected = !newOptions[optionIdx].isSelected;
+
+                console.log(newOptions[optionIdx].isSelected);
             }
             else {
+                newOptions = newFilters[index].filterOptions
+                    .map(opt => {return {...opt, isSelected: false}});
                 newOptions[optionIdx].isSelected = !option.isSelected;
             }
 
