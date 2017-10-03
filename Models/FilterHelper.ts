@@ -85,21 +85,23 @@ export class FilterHelper {
         const subjects = filter.find(afc => afc.label.toLocaleUpperCase() === "SUBJECTS");
         const techTypes = filter.find(afc => afc.label.toLocaleUpperCase() === "TECHTYPE");
 
-        //Grades
-        grades.filterOptions.forEach(gradeFilter => {
-            itemCards = itemCards.filter(g => gradeFilter.isSelected && GradeLevels.contains(Number(gradeFilter.key), g.grade));
-        });
+        if(grades && grades.filterOptions){
+            grades.filterOptions.forEach(gradeFilter => {
+                itemCards = itemCards.filter(g => gradeFilter.isSelected && GradeLevels.contains(Number(gradeFilter.key), g.grade));
+            });
+        }
     
-        //Subjects
-        const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
-        itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
-
+        if(subjects && subjects.filterOptions){
+            const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
+            itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
+        }
         //TODO: What is CAT technology? Filter? Ignore?
-        //Techtype
-        if (techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "PT" && t.isSelected)) {
-            itemCards = itemCards.filter(i => i.isPerformanceItem);
-        } else if (techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "CAT" && t.isSelected)) {
-            itemCards = itemCards.filter(i => !i.isPerformanceItem);
+        if(techTypes && techTypes.filterOptions){
+            if (techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "PT" && t.isSelected)) {
+                itemCards = itemCards.filter(i => i.isPerformanceItem);
+            } else if (techTypes.filterOptions.find(t => t.key.toLocaleUpperCase() === "CAT" && t.isSelected)) {
+                itemCards = itemCards.filter(i => !i.isPerformanceItem);
+            }
         }
 
         return itemCards;
