@@ -25,11 +25,11 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     onSelect(category: AdvancedFilterCategory, option?: AdvancedFilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions: AdvancedFilterOption[] = [];
+        let newOptions = newFilters[index].filterOptions
+            .map(opt => {return {...opt, isSelected: false}});
 
         if (!option) { // all pressed
-            newOptions = newFilters[index].filterOptions
-                .map(opt => {return {...opt, isSelected: false}});
+            
         } else {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);
             if(category.isMultiSelect){
