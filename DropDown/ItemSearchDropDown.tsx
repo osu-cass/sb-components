@@ -116,16 +116,17 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
                     <div className="search-status">
                         {this.props.isLoading ? <img src="images/spin.gif" className="spin" /> : undefined}
                     </div>
-                    <div>
-                        <a onClick={() => this.resetFilters()} 
-                            onKeyPress={e => this.keyPressResetFilters(e)} 
-                            tabIndex={0}>Reset filters</a>
-                    </div>
+
                 </div>
                 <div className="search-categories" aria-live="polite" aria-relevant="additions removals">
                     {this.renderGrades()}
                     {this.renderSubjects()}
                     {this.renderTechTypes()}
+                    <div>
+                        <button onClick={() => this.resetFilters()} 
+                            onKeyPress={e => this.keyPressResetFilters(e)} 
+                            tabIndex={0}>Reset filters</button>
+                    </div>
                 </div>
             </div>
         );

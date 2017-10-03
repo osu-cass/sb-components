@@ -91,10 +91,14 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     }
  
     render() {
+        const style={
+            paddingRight: "5px",
+            margin: "2px"
+        }
     
         return (
             <div className="search-controls">
-                <a>Print Items</a>
+                <button style={style}>Print Items</button>
                 {this.renderDropDownComponent()}
                 {this.renderTableComponent()}
             </div>

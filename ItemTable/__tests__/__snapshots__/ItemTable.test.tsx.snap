@@ -8,21 +8,13 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <table
-    className="item-table mapcomponent-table"
->
-    <tbody>
-        
-    </tbody>
-</table>,
+  "node": <tbody>
+    
+</tbody>,
   "nodes": Array [
-    <table
-      className="item-table mapcomponent-table"
->
-      <tbody>
-            
-      </tbody>
-</table>,
+    <tbody>
+      
+</tbody>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -102,21 +94,13 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <table
-          className="item-table mapcomponent-table"
->
-          <tbody>
-                    
-          </tbody>
-</table>,
+        "_currentElement": <tbody>
+          
+</tbody>,
         "_debugID": 2,
-        "_renderedOutput": <table
-          className="item-table mapcomponent-table"
->
-          <tbody>
-                    
-          </tbody>
-</table>,
+        "_renderedOutput": <tbody>
+          
+</tbody>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,

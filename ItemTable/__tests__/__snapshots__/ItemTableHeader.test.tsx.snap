@@ -8,173 +8,165 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <table
-    className="item-table mapcomponent-table item-table-header"
->
-    <thead>
-        <tr
-            className="primary"
+  "node": <thead>
+    <tr
+        className="primary"
+    >
+        <th />
+        <th
+            className="item"
+            onClick={[Function]}
         >
+            <div
+                className="item"
+            >
+                Item
+                 
+                <span
+                    aria-label="Ascend"
+                >
+                    ▲
+                </span>
+            </div>
+        </th>
+        <th
+            className="claimAndTarget"
+            onClick={[Function]}
+        >
+            <div
+                className="claimAndTarget"
+            >
+                Claim/Target
+                 
+                <span
+                    aria-label="NoSort"
+                />
+            </div>
+        </th>
+        <th
+            className="subject"
+            onClick={[Function]}
+        >
+            <div
+                className="subject"
+            >
+                Subject
+                 
+                <span
+                    aria-label="NoSort"
+                />
+            </div>
+        </th>
+        <th
+            className="grade"
+            onClick={[Function]}
+        >
+            <div
+                className="grade"
+            >
+                Grade
+                 
+                <span
+                    aria-label="NoSort"
+                />
+            </div>
+        </th>
+        <th
+            className="interactionType"
+            onClick={[Function]}
+        >
+            <div
+                className="interactionType"
+            >
+                Item Type
+                 
+                <span
+                    aria-label="NoSort"
+                />
+            </div>
+        </th>
+    </tr>
+</thead>,
+  "nodes": Array [
+    <thead>
+      <tr
+            className="primary"
+      >
             <th />
             <th
-                className="item"
-                onClick={[Function]}
+                  className="item"
+                  onClick={[Function]}
             >
-                <div
-                    className="item"
-                >
-                    Item
-                     
-                    <span
-                        aria-label="Ascend"
-                    >
-                        ▲
-                    </span>
-                </div>
-            </th>
-            <th
-                className="claimAndTarget"
-                onClick={[Function]}
-            >
-                <div
-                    className="claimAndTarget"
-                >
-                    Claim/Target
-                     
-                    <span
-                        aria-label="NoSort"
-                    />
-                </div>
-            </th>
-            <th
-                className="subject"
-                onClick={[Function]}
-            >
-                <div
-                    className="subject"
-                >
-                    Subject
-                     
-                    <span
-                        aria-label="NoSort"
-                    />
-                </div>
-            </th>
-            <th
-                className="grade"
-                onClick={[Function]}
-            >
-                <div
-                    className="grade"
-                >
-                    Grade
-                     
-                    <span
-                        aria-label="NoSort"
-                    />
-                </div>
-            </th>
-            <th
-                className="interactionType"
-                onClick={[Function]}
-            >
-                <div
-                    className="interactionType"
-                >
-                    Item Type
-                     
-                    <span
-                        aria-label="NoSort"
-                    />
-                </div>
-            </th>
-        </tr>
-    </thead>
-</table>,
-  "nodes": Array [
-    <table
-      className="item-table mapcomponent-table item-table-header"
->
-      <thead>
-            <tr
-                  className="primary"
-            >
-                  <th />
-                  <th
+                  <div
                         className="item"
-                        onClick={[Function]}
                   >
-                        <div
-                              className="item"
+                        Item
+                         
+                        <span
+                              aria-label="Ascend"
                         >
-                              Item
-                               
-                              <span
-                                    aria-label="Ascend"
-                              >
-                                    ▲
-                              </span>
-                        </div>
-                  </th>
-                  <th
+                              ▲
+                        </span>
+                  </div>
+            </th>
+            <th
+                  className="claimAndTarget"
+                  onClick={[Function]}
+            >
+                  <div
                         className="claimAndTarget"
-                        onClick={[Function]}
                   >
-                        <div
-                              className="claimAndTarget"
-                        >
-                              Claim/Target
-                               
-                              <span
-                                    aria-label="NoSort"
-                              />
-                        </div>
-                  </th>
-                  <th
+                        Claim/Target
+                         
+                        <span
+                              aria-label="NoSort"
+                        />
+                  </div>
+            </th>
+            <th
+                  className="subject"
+                  onClick={[Function]}
+            >
+                  <div
                         className="subject"
-                        onClick={[Function]}
                   >
-                        <div
-                              className="subject"
-                        >
-                              Subject
-                               
-                              <span
-                                    aria-label="NoSort"
-                              />
-                        </div>
-                  </th>
-                  <th
+                        Subject
+                         
+                        <span
+                              aria-label="NoSort"
+                        />
+                  </div>
+            </th>
+            <th
+                  className="grade"
+                  onClick={[Function]}
+            >
+                  <div
                         className="grade"
-                        onClick={[Function]}
                   >
-                        <div
-                              className="grade"
-                        >
-                              Grade
-                               
-                              <span
-                                    aria-label="NoSort"
-                              />
-                        </div>
-                  </th>
-                  <th
+                        Grade
+                         
+                        <span
+                              aria-label="NoSort"
+                        />
+                  </div>
+            </th>
+            <th
+                  className="interactionType"
+                  onClick={[Function]}
+            >
+                  <div
                         className="interactionType"
-                        onClick={[Function]}
                   >
-                        <div
-                              className="interactionType"
-                        >
-                              Item Type
-                               
-                              <span
-                                    aria-label="NoSort"
-                              />
-                        </div>
-                  </th>
-            </tr>
-      </thead>
-</table>,
+                        Item Type
+                         
+                        <span
+                              aria-label="NoSort"
+                        />
+                  </div>
+            </th>
+      </tr>
+</thead>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -308,173 +300,165 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <table
-          className="item-table mapcomponent-table item-table-header"
->
-          <thead>
-                    <tr
-                              className="primary"
+        "_currentElement": <thead>
+          <tr
+                    className="primary"
+          >
+                    <th />
+                    <th
+                              className="item"
+                              onClick={[Function]}
                     >
-                              <th />
-                              <th
+                              <div
                                         className="item"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="item"
+                                        Item
+                                         
+                                        <span
+                                                  aria-label="Ascend"
                                         >
-                                                  Item
-                                                   
-                                                  <span
-                                                            aria-label="Ascend"
-                                                  >
-                                                            ▲
-                                                  </span>
-                                        </div>
-                              </th>
-                              <th
+                                                  ▲
+                                        </span>
+                              </div>
+                    </th>
+                    <th
+                              className="claimAndTarget"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="claimAndTarget"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="claimAndTarget"
-                                        >
-                                                  Claim/Target
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                              <th
+                                        Claim/Target
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="subject"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="subject"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="subject"
-                                        >
-                                                  Subject
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                              <th
+                                        Subject
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="grade"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="grade"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="grade"
-                                        >
-                                                  Grade
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                              <th
+                                        Grade
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="interactionType"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="interactionType"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="interactionType"
-                                        >
-                                                  Item Type
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                    </tr>
-          </thead>
-</table>,
+                                        Item Type
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+          </tr>
+</thead>,
         "_debugID": 2,
-        "_renderedOutput": <table
-          className="item-table mapcomponent-table item-table-header"
->
-          <thead>
-                    <tr
-                              className="primary"
+        "_renderedOutput": <thead>
+          <tr
+                    className="primary"
+          >
+                    <th />
+                    <th
+                              className="item"
+                              onClick={[Function]}
                     >
-                              <th />
-                              <th
+                              <div
                                         className="item"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="item"
+                                        Item
+                                         
+                                        <span
+                                                  aria-label="Ascend"
                                         >
-                                                  Item
-                                                   
-                                                  <span
-                                                            aria-label="Ascend"
-                                                  >
-                                                            ▲
-                                                  </span>
-                                        </div>
-                              </th>
-                              <th
+                                                  ▲
+                                        </span>
+                              </div>
+                    </th>
+                    <th
+                              className="claimAndTarget"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="claimAndTarget"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="claimAndTarget"
-                                        >
-                                                  Claim/Target
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                              <th
+                                        Claim/Target
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="subject"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="subject"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="subject"
-                                        >
-                                                  Subject
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                              <th
+                                        Subject
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="grade"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="grade"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="grade"
-                                        >
-                                                  Grade
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                              <th
+                                        Grade
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="interactionType"
+                              onClick={[Function]}
+                    >
+                              <div
                                         className="interactionType"
-                                        onClick={[Function]}
                               >
-                                        <div
-                                                  className="interactionType"
-                                        >
-                                                  Item Type
-                                                   
-                                                  <span
-                                                            aria-label="NoSort"
-                                                  />
-                                        </div>
-                              </th>
-                    </tr>
-          </thead>
-</table>,
+                                        Item Type
+                                         
+                                        <span
+                                                  aria-label="NoSort"
+                                        />
+                              </div>
+                    </th>
+          </tr>
+</thead>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
@@ -540,32 +524,32 @@ ShallowWrapper {
 }
 `;
 
-exports[`ItemTableHeader sorts list on header click 1`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 1`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 2`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 2`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 3`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 3`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 4`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 4`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 5`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 5`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 6`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 6`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 7`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 7`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 8`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 8`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 9`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 9`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 10`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 10`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 11`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 11`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 12`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 12`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 13`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 13`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 14`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 14`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 15`] = `"\\"<table class=\\\\\\"item-table mapcomponent-table item-table-header\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 7 -->Item<!-- /react-text --><!-- react-text: 8 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 12 -->Claim/Target<!-- /react-text --><!-- react-text: 13 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 17 -->Subject<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 22 -->Grade<!-- /react-text --><!-- react-text: 23 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 27 -->Item Type<!-- /react-text --><!-- react-text: 28 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead></table>\\""`;
+exports[`ItemTableHeader sorts list on header click 15`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
