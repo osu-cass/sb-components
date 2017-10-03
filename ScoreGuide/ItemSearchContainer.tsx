@@ -58,7 +58,8 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         if(this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
             const filtered = FilterHelper.filter(this.state.itemSearchResult.content || [], filter);
             this.setState({
-                visibleItems: filtered
+                visibleItems: filtered,
+                itemFilter: filter
             });
             FilterHelper.updateUrl(filter);
         }
@@ -95,21 +96,20 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         const itemsValue = (this.state.visibleItems || [])
             .map(card => card.bankKey + "-"+ card.itemKey)
             .join(',');
-        const subject = this.state.itemFilter.subject 
-            ? this.state.itemFilter.subject.label
-            : "All Subjects";
-        const grade = this.state.itemFilter.grade 
-            ? GradeLevels.toString(this.state.itemFilter.grade)
-            : "All Grades";
+        const subjectCode = this.state.itemFilter.subject 
+            ? this.state.itemFilter.subject.code
+            : "";
+        const gradeCode = this.state.itemFilter.grade 
+            ? this.state.itemFilter.grade.toString()
+            : "";
         
         return (
             <div className="search-controls">
                 {this.renderDropDownComponent()}
-                <form action="/api/pdf" method="post" id="print-items-form">
-                    <input type="hidden" name="items" value={itemsValue} />
+                <form action="/api/pdf" method="get" id="print-items-form">
+                    <input type="hidden" name="grade" value={gradeCode} />
+                    <input type="hidden" name="subject" value={subjectCode} />
                     <input type="submit" value="Print Items" />
-                    <input type="hidden" name="grade" value={grade} />
-                    <input type="hidden" name="subject" value={subject} />
                 </form>
                 {this.renderTableComponent()}
             </div>

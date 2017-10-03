@@ -67,8 +67,12 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
     changeSubject = (event: React.FormEvent<HTMLSelectElement>) => {
         const selectedCode = event.currentTarget.value;
-        const selectedSubject = this.props.filterOptions.subjects.find(s => s.code == selectedCode);
+        let selectedSubject = this.props.filterOptions.subjects.find(s => s.code == selectedCode);
 
+        if (selectedSubject) {
+            selectedSubject = {...selectedSubject}
+        }
+        
         this.setState({
             subject: selectedSubject
         }, () => this.onChange());
@@ -90,7 +94,11 @@ export class ItemSearchDropdown extends React.Component<Props, State>{
 
     changeTechType = (event: React.FormEvent<HTMLSelectElement>) => {
         const selectedCode = event.currentTarget.value;
-        const selectedType = this.props.filterOptions.techTypes.find(t => t.code == selectedCode);
+        let selectedType = this.props.filterOptions.techTypes.find(t => t.code == selectedCode);
+
+        if (selectedType) {
+            selectedType = {...selectedType}
+        }
 
         this.setState({
             techType: selectedType
