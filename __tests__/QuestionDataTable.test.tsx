@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { QuestionDataTable } from '../QuestionDataTable';
 import * as Models from "../../Models";
 import { shallow } from 'enzyme';
+import { GradeLevels } from '../../../../client/src/Models/GradeLevels';
 
 const itemVM: Models.ItemViewModel = {
     bankKey: 1,
@@ -13,7 +14,15 @@ const itemVM: Models.ItemViewModel = {
     targetId: "23463467",
     domain: "MATH",
     depthOfKnowledge: "",
-    commonCoreStandardId: ""
+    commonCoreStandardId: "",
+    title: "",
+    grade: GradeLevels.Grade6,
+    subjectCode: "MATH",
+    claimLabel: "Math Claim",
+    target: "1-3",
+    interactionTypeCode: "",
+    interactionTypeLabel: "",
+    isPerformanceItem: false
 }
 
 describe("QuestionDataTable", () => {

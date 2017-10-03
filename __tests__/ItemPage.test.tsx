@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { ItemPage } from '../ItemPage';
 import * as Models from "../../Models";
 import { shallow } from 'enzyme';
+import { GradeLevels } from '../../../../client/src/Models/GradeLevels';
 
 
 const rubric:  Models.Rubric = {
@@ -33,7 +34,15 @@ const itemVM: Models.ItemViewModel = {
     targetId: "23463467",
     domain: "MATH",
     depthOfKnowledge: "",
-    commonCoreStandardId: ""
+    commonCoreStandardId: "",
+    title: "",
+    grade: GradeLevels.Grade6,
+    subjectCode: "MATH",
+    claimLabel: "Math Claim",
+    target: "1-3",
+    interactionTypeCode: "",
+    interactionTypeLabel: "",
+    isPerformanceItem: false
 }
 
 const aboutItemVM: Models.AboutItemViewModel = {
