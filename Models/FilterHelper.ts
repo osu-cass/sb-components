@@ -221,10 +221,12 @@ export class FilterHelper {
             ? queryObject["subjects"]!.map(
                 subjCode => { 
                     let subject = filterOptions.subjects.filterOptions.find(s => s.key === subjCode);
-                    return {
-                        code: subject.key,
-                        label:subject.label
-                    } 
+                    if(subject){
+                        return {
+                            code: subject.key,
+                            label:subject.label
+                        } 
+                    }
                 }): [];
 
         const grades = queryObject["grades"]
@@ -235,9 +237,11 @@ export class FilterHelper {
         const techTypes = queryObject["techTypes"]
             ? queryObject["techTypes"]!.map(typeCode => {
                 let techType = filterOptions.techTypes.filterOptions.find(t => t.key === typeCode);
-                return {
-                    code: techType.key,
-                    label:techType.label
+                if(techType){
+                    return {
+                        code: techType.key,
+                        label:techType.label
+                    }
                 }
             }): [];
 
