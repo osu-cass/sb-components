@@ -9,14 +9,14 @@ import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown';
 
 
 export interface Props {
-    onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    itemCards?: ItemCardViewModel.ItemCardViewModel[]; 
+    onRowSelection: (item: { itemKey: number; bankKey: number }) => void;
+    itemCards?: ItemCardViewModel.ItemCardViewModel[];
 }
 
 export interface State {
-    sorts: ItemTableHeader.HeaderSort[]; 
-    selectedRow?: ItemCardViewModel.ItemCardViewModel; 
-    
+    sorts: ItemTableHeader.HeaderSort[];
+    selectedRow?: ItemCardViewModel.ItemCardViewModel;
+
 }
 
 export class ItemPageTable extends React.Component<Props, State>{
@@ -24,7 +24,7 @@ export class ItemPageTable extends React.Component<Props, State>{
     private dataTableRef: HTMLTableElement;
 
     constructor(props: Props) {
-        super(props); 
+        super(props);
         this.state = {
             sorts: []
         }
@@ -61,10 +61,10 @@ export class ItemPageTable extends React.Component<Props, State>{
         this.setState({
             selectedRow: item
         });
-        const card = {itemKey: item.itemKey, bankKey: item.bankKey}
+        const card = { itemKey: item.itemKey, bankKey: item.bankKey }
 
         this.props.onRowSelection(card);
-     
+
     };
 
     invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
@@ -78,15 +78,15 @@ export class ItemPageTable extends React.Component<Props, State>{
         return 0;
     }
     getTableData = (): ItemCardViewModel.ItemCardViewModel[] | undefined => {
-        let data = this.props.itemCards; 
-        if(data != undefined){
+        let data = this.props.itemCards;
+        if (data != undefined) {
             data = this.state.sorts && this.state.sorts.length !== 0
                 ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
                 : data;
         }
-        return data; 
+        return data;
     }
-    
+
     renderTableHeader() {
         return (
             <ItemTableHeader.HeaderTable
@@ -119,8 +119,10 @@ export class ItemPageTable extends React.Component<Props, State>{
     render() {
         return (
             <div>
-                {this.renderTableHeader()}
-                {this.renderTable()}
+                <table className="item-table mapcomponent-table">
+                    {this.renderTableHeader()}
+                    {this.renderTable()}
+                </table>
             </div>
         );
     }

@@ -27,7 +27,7 @@ export class DataTable extends React.Component<Props, {}> {
         );
     }
 
-    //TODO replace X with checkmark icon 
+    //TODO replace X with a > that specifies that  the table  row can  be expanded
     renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number): JSX.Element {
         let isSelected = false;
         if (this.props.selectedRow) {
@@ -46,19 +46,8 @@ export class DataTable extends React.Component<Props, {}> {
         );
     }
 
-    renderRows(): JSX.Element {
-        const rows = this.props.mapRows.map((rowData,idx) => this.renderRow(rowData,idx));
-        return (
-            <tbody>{rows}</tbody>
-        );
-    }
-
     render() {
-        return (
-            <table className="item-table mapcomponent-table"
-                ref={this.props.tableRef}>
-                {this.renderRows()}
-            </table>
-        );
+        const rows = this.props.mapRows.map((rowData,idx) => this.renderRow(rowData,idx));
+        return (<tbody>{rows}</tbody>);
     }
 }
