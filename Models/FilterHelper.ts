@@ -136,32 +136,46 @@ export class FilterHelper {
         const techTypes = filter.find(afc => afc.label === "TechType"); 
 
         if (grades && !grades.disabled) {
-            const gradeString = grades.filterOptions.map(g => {
-                console.log(g)
-                if(g.isSelected){
-                    return g.key.toString();
-                }
-            }).join(',');
-            pairs.push("gradeLevels=" + gradeString);
-        }
-        // if (subjects && !subjects.disabled) {
-        //     const subjString = subjects.filterOptions.map(s => {
-        //         if(s.isSelected){
-        //             return s.key;
-        //         }
-        //     }).join(',');
-        //     pairs.push("subjects=" + subjString);
-        // }
-        // if (techTypes && !techTypes.disabled) {
-        //     const techTypesString = techTypes.filterOptions.map(t => {
-        //         if(t.isSelected){
-        //             return t.key;
-        //         }
-        //     }).join(',');
-        //     pairs.push("techTypes=" + techTypesString);
-        // }
+            const gradeString:string[] = [];
 
-        console.log(pairs);
+            grades.filterOptions.forEach(g => {
+                if(g.isSelected){
+                    gradeString.push(g.key.toString());
+                }
+            });
+
+            if(gradeString.length !== 0){
+                gradeString.join(',');
+                pairs.push("gradeLevels=" + gradeString);
+            }
+        }
+        if (subjects && !subjects.disabled) {
+            const subjString:string[] = [];
+
+            subjects.filterOptions.forEach(s => {
+                if(s.isSelected){
+                    subjString.push(s.key);
+                }
+            });
+
+            if(subjString.length !== 0){
+                subjString.join(',');
+                pairs.push("subjects=" + subjString);
+            }
+        }
+        if (techTypes && !techTypes.disabled) {
+            const techTypesString:string[] = [];
+
+            techTypes.filterOptions.forEach(t => {
+                if(t.isSelected){
+                    techTypesString.push(t.key);
+                }
+            });
+            if(techTypesString.length !== 0){
+                techTypesString.join(',');
+                pairs.push("techTypes=" + techTypesString);
+            }
+        }
 
         let query: string;
         if (pairs.length === 0) {
