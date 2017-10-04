@@ -16,7 +16,7 @@ export class EvidenceStatement extends React.Component<Props, {}> {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>this.props.statement</td>
+                            <td>{this.props.statement}</td>
                         </tr>
                     </tbody>
                 </table>

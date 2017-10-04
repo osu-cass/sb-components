@@ -23,9 +23,7 @@ ShallowWrapper {
         </thead>
         <tbody>
             <tr>
-                <td>
-                    this.props.statement
-                </td>
+                <td />
             </tr>
         </tbody>
     </table>
@@ -46,9 +44,7 @@ ShallowWrapper {
             </thead>
             <tbody>
                   <tr>
-                        <td>
-                              this.props.statement
-                        </td>
+                        <td />
                   </tr>
             </tbody>
       </table>
@@ -107,9 +103,7 @@ ShallowWrapper {
                     </thead>
                     <tbody>
                               <tr>
-                                        <td>
-                                                  this.props.statement
-                                        </td>
+                                        <td />
                               </tr>
                     </tbody>
           </table>
@@ -130,9 +124,7 @@ ShallowWrapper {
                     </thead>
                     <tbody>
                               <tr>
-                                        <td>
-                                                  this.props.statement
-                                        </td>
+                                        <td />
                               </tr>
                     </tbody>
           </table>
