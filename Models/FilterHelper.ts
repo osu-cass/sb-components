@@ -85,24 +85,33 @@ export class FilterHelper {
         const subjects = filter.find(afc => afc.label === "Subjects");
         const techTypes = filter.find(afc => afc.label === "TechType"); 
 
-        if(grades && grades.filterOptions){
+        if(grades && grades.filterOptions){            
+            let selectedGrades = GradeLevels.GradeLevels.NA;
+
             grades.filterOptions.forEach(gradeFilter => {
-                itemCards = itemCards.filter(g => gradeFilter.isSelected && GradeLevels.contains(Number(gradeFilter.key), g.grade));
+                if(gradeFilter.isSelected){
+                    selectedGrades = selectedGrades | Number(gradeFilter.key);
+                }
             });
+            if(selectedGrades === GradeLevels.GradeLevels.NA){
+                selectedGrades = GradeLevels.GradeLevels.All;
+            }
+
+            itemCards = itemCards.filter(g => GradeLevels.contains(selectedGrades, g.grade));
         }
     
-        if(subjects && subjects.filterOptions){
-            const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
-            itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
-        }
-        //TODO: What is CAT technology? Filter? Ignore?
-        if(techTypes && techTypes.filterOptions){
-            if (techTypes.filterOptions.find(t => t.key === "PT" && t.isSelected)) {
-                itemCards = itemCards.filter(i => i.isPerformanceItem);
-            } else if (techTypes.filterOptions.find(t => t.key === "CAT" && t.isSelected)) {
-                itemCards = itemCards.filter(i => !i.isPerformanceItem);
-            }
-        }
+        // if(subjects && subjects.filterOptions){
+        //     const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
+        //     itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
+        // }
+        // //TODO: What is CAT technology? Filter? Ignore?
+        // if(techTypes && techTypes.filterOptions){
+        //     if (techTypes.filterOptions.find(t => t.key === "PT" && t.isSelected)) {
+        //         itemCards = itemCards.filter(i => i.isPerformanceItem);
+        //     } else if (techTypes.filterOptions.find(t => t.key === "CAT" && t.isSelected)) {
+        //         itemCards = itemCards.filter(i => !i.isPerformanceItem);
+        //     }
+        // }
 
         return itemCards;
     }
@@ -144,7 +153,7 @@ export class FilterHelper {
                 }
             });
 
-            if(gradeString.length !== 0){
+            if(gradeString.length !== 0) {
                 gradeString.join(',');
                 pairs.push("gradeLevels=" + gradeString);
             }
