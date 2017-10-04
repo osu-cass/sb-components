@@ -39,26 +39,21 @@ ShallowWrapper {
     <form
         action="/api/pdf"
         id="print-items-form"
-        method="post"
+        method="get"
     >
         <input
-            name="items"
+            name="grade"
+            type="hidden"
+            value=""
+        />
+        <input
+            name="subject"
             type="hidden"
             value=""
         />
         <input
             type="submit"
             value="Print Items"
-        />
-        <input
-            name="grade"
-            type="hidden"
-            value="All Grades"
-        />
-        <input
-            name="subject"
-            type="hidden"
-            value="All Subjects"
         />
     </form>
     <div>
@@ -97,26 +92,21 @@ ShallowWrapper {
       <form
             action="/api/pdf"
             id="print-items-form"
-            method="post"
+            method="get"
       >
             <input
-                  name="items"
+                  name="grade"
+                  type="hidden"
+                  value=""
+            />
+            <input
+                  name="subject"
                   type="hidden"
                   value=""
             />
             <input
                   type="submit"
                   value="Print Items"
-            />
-            <input
-                  name="grade"
-                  type="hidden"
-                  value="All Grades"
-            />
-            <input
-                  name="subject"
-                  type="hidden"
-                  value="All Subjects"
             />
       </form>
       <div>
@@ -231,26 +221,21 @@ ShallowWrapper {
           <form
                     action="/api/pdf"
                     id="print-items-form"
-                    method="post"
+                    method="get"
           >
                     <input
-                              name="items"
+                              name="grade"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              name="subject"
                               type="hidden"
                               value=""
                     />
                     <input
                               type="submit"
                               value="Print Items"
-                    />
-                    <input
-                              name="grade"
-                              type="hidden"
-                              value="All Grades"
-                    />
-                    <input
-                              name="subject"
-                              type="hidden"
-                              value="All Subjects"
                     />
           </form>
           <div>
@@ -289,26 +274,21 @@ ShallowWrapper {
           <form
                     action="/api/pdf"
                     id="print-items-form"
-                    method="post"
+                    method="get"
           >
                     <input
-                              name="items"
+                              name="grade"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              name="subject"
                               type="hidden"
                               value=""
                     />
                     <input
                               type="submit"
                               value="Print Items"
-                    />
-                    <input
-                              name="grade"
-                              type="hidden"
-                              value="All Grades"
-                    />
-                    <input
-                              name="subject"
-                              type="hidden"
-                              value="All Subjects"
                     />
           </form>
           <div>
@@ -386,26 +366,21 @@ ShallowWrapper {
     <form
         action="/api/pdf"
         id="print-items-form"
-        method="post"
+        method="get"
     >
         <input
-            name="items"
+            name="grade"
+            type="hidden"
+            value=""
+        />
+        <input
+            name="subject"
             type="hidden"
             value=""
         />
         <input
             type="submit"
             value="Print Items"
-        />
-        <input
-            name="grade"
-            type="hidden"
-            value="All Grades"
-        />
-        <input
-            name="subject"
-            type="hidden"
-            value="All Subjects"
         />
     </form>
     <div>
@@ -444,26 +419,21 @@ ShallowWrapper {
       <form
             action="/api/pdf"
             id="print-items-form"
-            method="post"
+            method="get"
       >
             <input
-                  name="items"
+                  name="grade"
+                  type="hidden"
+                  value=""
+            />
+            <input
+                  name="subject"
                   type="hidden"
                   value=""
             />
             <input
                   type="submit"
                   value="Print Items"
-            />
-            <input
-                  name="grade"
-                  type="hidden"
-                  value="All Grades"
-            />
-            <input
-                  name="subject"
-                  type="hidden"
-                  value="All Subjects"
             />
       </form>
       <div>
@@ -578,26 +548,21 @@ ShallowWrapper {
           <form
                     action="/api/pdf"
                     id="print-items-form"
-                    method="post"
+                    method="get"
           >
                     <input
-                              name="items"
+                              name="grade"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              name="subject"
                               type="hidden"
                               value=""
                     />
                     <input
                               type="submit"
                               value="Print Items"
-                    />
-                    <input
-                              name="grade"
-                              type="hidden"
-                              value="All Grades"
-                    />
-                    <input
-                              name="subject"
-                              type="hidden"
-                              value="All Subjects"
                     />
           </form>
           <div>
@@ -636,26 +601,21 @@ ShallowWrapper {
           <form
                     action="/api/pdf"
                     id="print-items-form"
-                    method="post"
+                    method="get"
           >
                     <input
-                              name="items"
+                              name="grade"
+                              type="hidden"
+                              value=""
+                    />
+                    <input
+                              name="subject"
                               type="hidden"
                               value=""
                     />
                     <input
                               type="submit"
                               value="Print Items"
-                    />
-                    <input
-                              name="grade"
-                              type="hidden"
-                              value="All Grades"
-                    />
-                    <input
-                              name="subject"
-                              type="hidden"
-                              value="All Subjects"
                     />
           </form>
           <div>
