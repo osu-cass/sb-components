@@ -99,7 +99,6 @@ export class ScoringGuidePage extends React.Component<Props, State> {
         } else {
             return <div></div>
         }
-
     }
 
     render() {
@@ -113,9 +112,9 @@ export class ScoringGuidePage extends React.Component<Props, State> {
                             onRowSelection={(item) => this.onRowSelection(item)}
                             filterOptions={this.state.filterOptions}
                             searchClient={SearchClient}
+                            item={this.state.item}
                         />
                     </div>
-                    {this.renderTabsContainer()}
                 </div>
             );
         }

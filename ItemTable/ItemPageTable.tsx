@@ -6,11 +6,13 @@ import * as GradeLevels from "../Models/GradeLevels";
 import { ItemsSearchViewModel } from "../ScoreGuide/ItemSearchContainer";
 import * as ItemModels from '../Models/ItemModels';
 import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown';
-
+import * as AboutItemVM from '../Models/AboutItemVM';
+import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
     onRowSelection: (item: { itemKey: number; bankKey: number }) => void;
     itemCards?: ItemCardViewModel.ItemCardViewModel[];
+    item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
 }
 
 export interface State {
@@ -109,7 +111,9 @@ export class ItemPageTable extends React.Component<Props, State>{
                         sort={this.state.sorts}
                         tableRef={ref => this.dataTableRef = ref}
                         columns={this.headerColumns}
-                        selectedRow={this.state.selectedRow} />
+                        selectedRow={this.state.selectedRow}
+                        item={this.props.item}
+                    />
                 );
             }
         }

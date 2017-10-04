@@ -33,19 +33,19 @@ export interface SortColumn {
 const invokeResetSortLimit = 2;
 
 const style = {
-    marginLeft: "0"
+    color: "gray"
 }
 
 const decendingArrow = (
-    <span style={{style}} className="fa fa-sort-desc" aria-hidden="true" />
+    <span style={style} className="fa fa-sort-desc" aria-hidden="true" />
 );
 
 const acendingArrow = (
-    <span style={{style}} className="fa fa-sort-asc" aria-hidden="true" />
+    <span style={style} className="fa fa-sort-asc" aria-hidden="true" />
 );
 
 const noSort = (
-    <span style={{style}} className="fa fa-sort" aria-hidden="true" />
+    <span style={style} className="fa fa-sort" aria-hidden="true" />
 );
 
 export const headerColumns: SortColumn[] = [

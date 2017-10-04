@@ -1,15 +1,18 @@
-import * as React from 'react'
-import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown'
-import * as ItemCardViewModel from '../Models/ItemCardViewModel'
-import * as ItemModels from '../Models/ItemModels'
-import * as ItemPageTable from '../ItemTable/ItemPageTable'
-import * as Api from "../Models/ApiModels"
-import { FilterHelper } from "../Models/FilterHelper";
+import * as React from 'react';
+import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown';
+import * as ItemCardViewModel from '../Models/ItemCardViewModel';
+import * as ItemModels from '../Models/ItemModels';
+import * as ItemPageTable from '../ItemTable/ItemPageTable';
+import * as Api from '../Models/ApiModels';
+import { FilterHelper } from '../Models/FilterHelper';
+import * as AboutItemVM from '../Models/AboutItemVM';
+import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
-    onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
+    onRowSelection: (item: { itemKey: number; bankKey: number }) => void;
     filterOptions: ItemModels.FilterOptions;
-    searchClient: () => Promise<ItemCardViewModel.ItemCardViewModel[]>;  
+    searchClient: () => Promise<ItemCardViewModel.ItemCardViewModel[]>;
+    item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
 }
 
 export interface State {
@@ -24,7 +27,7 @@ export interface ItemsSearchViewModel {
 
 export class ItemSearchContainer extends React.Component<Props, State> {
     constructor(props: Props) {
-        super(props); 
+        super(props);
         this.state = {
             itemSearchResult: { kind: "none" },
             itemFilter: FilterHelper.readUrl(props.filterOptions)
@@ -32,29 +35,29 @@ export class ItemSearchContainer extends React.Component<Props, State> {
 
         this.callSearch();
     }
- 
-    callSearch(){
+
+    callSearch() {
         this.props.searchClient()
-         .then((data) => this.onSearchSuccess(data))
-         .catch((err) => this.onSearchFailure(err));
+            .then((data) => this.onSearchSuccess(data))
+            .catch((err) => this.onSearchFailure(err));
     }
 
-    onSearchSuccess(data: ItemCardViewModel.ItemCardViewModel[]): void{
+    onSearchSuccess(data: ItemCardViewModel.ItemCardViewModel[]): void {
         this.setState({
             itemSearchResult: { kind: "success", content: data },
             visibleItems: data
         });
     }
 
-    onSearchFailure(err: any){
+    onSearchFailure(err: any) {
         console.error(err);
         this.setState({
-            itemSearchResult: { kind: "failure" } 
+            itemSearchResult: { kind: "failure" }
         });
     }
 
     onFilterApplied = (filter: ItemModels.ItemFilter) => {
-        if(this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
+        if (this.state.itemSearchResult.kind == "success" || this.state.itemSearchResult.kind == "reloading") {
             const filtered = FilterHelper.filter(this.state.itemSearchResult.content || [], filter);
             this.setState({
                 visibleItems: filtered
@@ -63,7 +66,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         }
     }
 
-    renderDropDownComponent(){
+    renderDropDownComponent() {
         return (
             <ItemSearchDropdown.ItemSearchDropdown
                 filterOptions={this.props.filterOptions}
@@ -73,29 +76,30 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         );
     }
 
-    renderTableComponent(){
-        if(this.state.visibleItems){
+    renderTableComponent() {
+        if (this.state.visibleItems) {
             return (
-                <ItemPageTable.ItemPageTable 
-                    onRowSelection={this.props.onRowSelection} 
-                    itemCards={this.state.visibleItems}/>
-            ); 
-            
+                <ItemPageTable.ItemPageTable
+                    onRowSelection={this.props.onRowSelection}
+                    itemCards={this.state.visibleItems}
+                    item={this.props.item} />
+            );
+
         }
-        else if(this.state.itemSearchResult.kind == "failure"){
+        else if (this.state.itemSearchResult.kind == "failure") {
             return <div className="placeholder-text" role="alert">An error occurred. Please try again later.</div>
         }
-        else{
+        else {
             return <div>Loading...</div>
         }
     }
- 
+
     render() {
-        const style={
+        const style = {
             paddingRight: "5px",
             margin: "2px"
         }
-    
+
         return (
             <div className="search-controls">
                 <button style={style}>Print Items</button>
