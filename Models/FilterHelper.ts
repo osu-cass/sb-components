@@ -128,50 +128,40 @@ export class FilterHelper {
     //     return itemCards;
     // }
 
-    // static updateUrl(filter: ItemFilter) {
-    //     let pairs: string[] = [];
-    //     if (filter.grades && filter.grades.length > 0) {
-    //         const gradeString = filter.grades.map(g => g.toString()).join(',');
-    //         pairs.push("gradeLevels=" + gradeString);
-    //     }
-    //     if (filter.subjects && filter.subjects.length > 0) {
-    //         const subjString = filter.subjects.map(s => s.code).join(',');
-    //         pairs.push("subjects=" + subjString);
-    //     }
-    //     if (filter.techTypes && filter.techTypes.length > 0) {
-    //         const techTypesString = filter.techTypes.map(t => t.code).join(',');
-    //         pairs.push("techTypes=" + techTypesString);
-    //     }
-
-    //     let query: string;
-    //     if (pairs.length === 0) {
-    //         query =  "/";
-    //     } else {
-    //         query = "?" + pairs.join("&");
-    //     }
-    //     history.replaceState(null, "", query);
-    // }
-
     static updateUrl(filter: AdvancedFilterCategory[]) {
         let pairs: string[] = [];
-        
+
         const grades = filter.find(afc => afc.label === "Grade");
         const subjects = filter.find(afc => afc.label === "Subjects");
         const techTypes = filter.find(afc => afc.label === "TechType"); 
 
         if (grades && !grades.disabled) {
-            const gradeString = grades.filterOptions.map(g => g.key +(','));
+            const gradeString = grades.filterOptions.map(g => {
+                console.log(g)
+                if(g.isSelected){
+                    return g.key.toString();
+                }
+            }).join(',');
             pairs.push("gradeLevels=" + gradeString);
         }
+        // if (subjects && !subjects.disabled) {
+        //     const subjString = subjects.filterOptions.map(s => {
+        //         if(s.isSelected){
+        //             return s.key;
+        //         }
+        //     }).join(',');
+        //     pairs.push("subjects=" + subjString);
+        // }
+        // if (techTypes && !techTypes.disabled) {
+        //     const techTypesString = techTypes.filterOptions.map(t => {
+        //         if(t.isSelected){
+        //             return t.key;
+        //         }
+        //     }).join(',');
+        //     pairs.push("techTypes=" + techTypesString);
+        // }
 
-        if (subjects && !subjects.disabled) {
-            const subjString = subjects.filterOptions.map(s => s.key) +(',');
-            pairs.push("subjects=" + subjString);
-        }
-        if (techTypes && !techTypes.disabled) {
-            const techTypesString = techTypes.filterOptions.map(t => t.key) +(',');
-            pairs.push("techTypes=" + techTypesString);
-        }
+        console.log(pairs);
 
         let query: string;
         if (pairs.length === 0) {

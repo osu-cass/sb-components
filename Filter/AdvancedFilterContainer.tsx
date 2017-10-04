@@ -54,7 +54,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
             filters: newFilters
         });
 
-        this.props.onClick(this.props.filterOptions);
+        this.props.onClick(newFilters);
     }
 
     resetFilters() {
