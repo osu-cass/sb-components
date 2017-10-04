@@ -78,7 +78,8 @@ const itemGroup : Models.ItemGroup = {
 const props = {
     items:  [itemGroup],
     grade: "3",
-    subject: "math"
+    subject: "math",
+    baseUrl: "http://example.com"
 }
 
 describe("PdfComponent", () => {
