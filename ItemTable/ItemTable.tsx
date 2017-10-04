@@ -29,8 +29,8 @@ export class DataTable extends React.Component<Props, {}> {
 
     //TODO replace X with a > that specifies that  the table  row can  be expanded
     renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number): JSX.Element {
-        const collapse = (<i className="fa fa-chevron-right" aria-hidden="true"></i>)
-        const expand = (<i className="fa fa-chevron-down" aria-hidden="true"></i>)
+        const collapse = (<i className="fa fa-chevron-right fa-sm" aria-hidden="true"></i>)
+        const expand = (<i className="fa fa-chevron-down fa-sm" aria-hidden="true"></i>)
         let isSelected = false;
         if (this.props.selectedRow) {
             isSelected = rowData.itemKey === this.props.selectedRow.itemKey

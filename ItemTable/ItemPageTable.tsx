@@ -118,7 +118,7 @@ export class ItemPageTable extends React.Component<Props, State>{
 
     render() {
         return (
-            <div style={{height: "500px"}}>
+            <div>
                 <table className="item-table mapcomponent-table">
                     {this.renderTableHeader()}
                     {this.renderTable()}
