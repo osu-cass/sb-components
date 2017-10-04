@@ -24,6 +24,34 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <DataTable
         columns={Array []}
+        item={
+                Object {
+                        "content": Object {
+                          "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+                          "depthOfKnowledge": "depthOfKnowledge",
+                          "educationalDifficulty": "educationalDifficulty",
+                          "evidenceStatement": "evidenceStatement",
+                          "itemCardViewModel": Object {
+                            "bankKey": 1,
+                            "claimCode": "",
+                            "claimLabel": "",
+                            "grade": 1023,
+                            "gradeLabel": "",
+                            "interactionTypeCode": "",
+                            "interactionTypeLabel": "",
+                            "isPerformanceItem": true,
+                            "itemKey": 3,
+                            "subjectCode": "",
+                            "subjectLabel": "",
+                            "target": "",
+                            "title": "",
+                          },
+                          "rubrics": Array [],
+                          "targetDescription": "targetDescription",
+                        },
+                        "kind": "none",
+                      }
+        }
         mapRows={Array []}
         rowOnClick={[Function]}
         selectedRow={
@@ -54,6 +82,32 @@ ShallowWrapper {
         "context": Object {},
         "props": Object {
           "columns": Array [],
+          "item": Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "target": "",
+                "title": "",
+              },
+              "rubrics": Array [],
+              "targetDescription": "targetDescription",
+            },
+            "kind": "none",
+          },
           "mapRows": Array [],
           "rowOnClick": [Function],
           "selectedRow": Object {
@@ -114,6 +168,34 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <DataTable
     columns={Array []}
+    item={
+        Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "target": "",
+                "title": "",
+              },
+              "rubrics": Array [],
+              "targetDescription": "targetDescription",
+            },
+            "kind": "none",
+          }
+    }
     mapRows={Array []}
     rowOnClick={[Function]}
     selectedRow={
