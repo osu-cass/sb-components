@@ -3,8 +3,10 @@ import * as $ from 'jquery'
 import * as ReactDOM from 'react-dom';
 import { ItemSearchContainer } from '../ItemSearchContainer';
 import { ItemCardViewModel } from '../../Models/ItemCardViewModel';
-import { DataTable } from '../../ItemTable/ItemTable'
-import * as GradeLevels from '../../Models/GradeLevels'
+import { DataTable } from '../../ItemTable/ItemTable';
+import * as AboutItemVM from '../../Models/AboutItemVM';
+import * as ApiModels from '../../Models/ApiModels';
+import * as GradeLevels from '../../Models/GradeLevels';
 import { shallow, mount } from 'enzyme';
 
 const subject = {
@@ -41,6 +43,12 @@ const searchClientErr = jest.fn(() => {
     })
 })
 
+const item: ApiModels.Resource<AboutItemVM.AboutThisItem> = {
+    kind: "none"
+}
+
+
+
 describe("ItemSearchContainer", () => {
 
     const props = {
@@ -50,7 +58,8 @@ describe("ItemSearchContainer", () => {
             subjects: [subject],
             grades: [GradeLevels.GradeLevels.Grade3],
             techTypes: []
-        }
+        },
+        item
     }
 
     it("matches snapshot", () => {
