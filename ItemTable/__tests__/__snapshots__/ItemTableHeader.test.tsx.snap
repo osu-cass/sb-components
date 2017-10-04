@@ -20,13 +20,20 @@ ShallowWrapper {
             <div
                 className="item"
             >
-                Item
-                 
-                <span
-                    aria-label="Ascend"
-                >
-                    ▲
+                <span>
+                    Item
                 </span>
+                <span
+                    aria-hidden="true"
+                    className="fa fa-sort-asc"
+                    style={
+                        Object {
+                            "style": Object {
+                              "marginLeft": "0",
+                            },
+                          }
+                    }
+                />
             </div>
         </th>
         <th
@@ -36,10 +43,19 @@ ShallowWrapper {
             <div
                 className="claimAndTarget"
             >
-                Claim/Target
-                 
+                <span>
+                    Claim/Target
+                </span>
                 <span
-                    aria-label="NoSort"
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "style": Object {
+                              "marginLeft": "0",
+                            },
+                          }
+                    }
                 />
             </div>
         </th>
@@ -50,10 +66,19 @@ ShallowWrapper {
             <div
                 className="subject"
             >
-                Subject
-                 
+                <span>
+                    Subject
+                </span>
                 <span
-                    aria-label="NoSort"
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "style": Object {
+                              "marginLeft": "0",
+                            },
+                          }
+                    }
                 />
             </div>
         </th>
@@ -64,10 +89,19 @@ ShallowWrapper {
             <div
                 className="grade"
             >
-                Grade
-                 
+                <span>
+                    Grade
+                </span>
                 <span
-                    aria-label="NoSort"
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "style": Object {
+                              "marginLeft": "0",
+                            },
+                          }
+                    }
                 />
             </div>
         </th>
@@ -78,10 +112,19 @@ ShallowWrapper {
             <div
                 className="interactionType"
             >
-                Item Type
-                 
+                <span>
+                    Item Type
+                </span>
                 <span
-                    aria-label="NoSort"
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "style": Object {
+                              "marginLeft": "0",
+                            },
+                          }
+                    }
                 />
             </div>
         </th>
@@ -100,13 +143,20 @@ ShallowWrapper {
                   <div
                         className="item"
                   >
-                        Item
-                         
-                        <span
-                              aria-label="Ascend"
-                        >
-                              ▲
+                        <span>
+                              Item
                         </span>
+                        <span
+                              aria-hidden="true"
+                              className="fa fa-sort-asc"
+                              style={
+                                    Object {
+                                          "style": Object {
+                                            "marginLeft": "0",
+                                          },
+                                        }
+                              }
+                        />
                   </div>
             </th>
             <th
@@ -116,10 +166,19 @@ ShallowWrapper {
                   <div
                         className="claimAndTarget"
                   >
-                        Claim/Target
-                         
+                        <span>
+                              Claim/Target
+                        </span>
                         <span
-                              aria-label="NoSort"
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "style": Object {
+                                            "marginLeft": "0",
+                                          },
+                                        }
+                              }
                         />
                   </div>
             </th>
@@ -130,10 +189,19 @@ ShallowWrapper {
                   <div
                         className="subject"
                   >
-                        Subject
-                         
+                        <span>
+                              Subject
+                        </span>
                         <span
-                              aria-label="NoSort"
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "style": Object {
+                                            "marginLeft": "0",
+                                          },
+                                        }
+                              }
                         />
                   </div>
             </th>
@@ -144,10 +212,19 @@ ShallowWrapper {
                   <div
                         className="grade"
                   >
-                        Grade
-                         
+                        <span>
+                              Grade
+                        </span>
                         <span
-                              aria-label="NoSort"
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "style": Object {
+                                            "marginLeft": "0",
+                                          },
+                                        }
+                              }
                         />
                   </div>
             </th>
@@ -158,10 +235,19 @@ ShallowWrapper {
                   <div
                         className="interactionType"
                   >
-                        Item Type
-                         
+                        <span>
+                              Item Type
+                        </span>
                         <span
-                              aria-label="NoSort"
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "style": Object {
+                                            "marginLeft": "0",
+                                          },
+                                        }
+                              }
                         />
                   </div>
             </th>
@@ -312,13 +398,20 @@ ShallowWrapper {
                               <div
                                         className="item"
                               >
-                                        Item
-                                         
-                                        <span
-                                                  aria-label="Ascend"
-                                        >
-                                                  ▲
+                                        <span>
+                                                  Item
                                         </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort-asc"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
+                                        />
                               </div>
                     </th>
                     <th
@@ -328,10 +421,19 @@ ShallowWrapper {
                               <div
                                         className="claimAndTarget"
                               >
-                                        Claim/Target
-                                         
+                                        <span>
+                                                  Claim/Target
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -342,10 +444,19 @@ ShallowWrapper {
                               <div
                                         className="subject"
                               >
-                                        Subject
-                                         
+                                        <span>
+                                                  Subject
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -356,10 +467,19 @@ ShallowWrapper {
                               <div
                                         className="grade"
                               >
-                                        Grade
-                                         
+                                        <span>
+                                                  Grade
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -370,10 +490,19 @@ ShallowWrapper {
                               <div
                                         className="interactionType"
                               >
-                                        Item Type
-                                         
+                                        <span>
+                                                  Item Type
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -392,13 +521,20 @@ ShallowWrapper {
                               <div
                                         className="item"
                               >
-                                        Item
-                                         
-                                        <span
-                                                  aria-label="Ascend"
-                                        >
-                                                  ▲
+                                        <span>
+                                                  Item
                                         </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort-asc"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
+                                        />
                               </div>
                     </th>
                     <th
@@ -408,10 +544,19 @@ ShallowWrapper {
                               <div
                                         className="claimAndTarget"
                               >
-                                        Claim/Target
-                                         
+                                        <span>
+                                                  Claim/Target
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -422,10 +567,19 @@ ShallowWrapper {
                               <div
                                         className="subject"
                               >
-                                        Subject
-                                         
+                                        <span>
+                                                  Subject
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -436,10 +590,19 @@ ShallowWrapper {
                               <div
                                         className="grade"
                               >
-                                        Grade
-                                         
+                                        <span>
+                                                  Grade
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -450,10 +613,19 @@ ShallowWrapper {
                               <div
                                         className="interactionType"
                               >
-                                        Item Type
-                                         
+                                        <span>
+                                                  Item Type
+                                        </span>
                                         <span
-                                                  aria-label="NoSort"
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "style": Object {
+                                                                        "marginLeft": "0",
+                                                                      },
+                                                                    }
+                                                  }
                                         />
                               </div>
                     </th>
@@ -524,32 +696,32 @@ ShallowWrapper {
 }
 `;
 
-exports[`ItemTableHeader sorts list on header click 1`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 1`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 2`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 2`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 3`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 3`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 4`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 4`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 5`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 5`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 6`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 6`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 7`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 7`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 8`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 8`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 9`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 9`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 10`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 10`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 11`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 11`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 12`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 12`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 13`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 13`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 14`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 14`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
 
-exports[`ItemTableHeader sorts list on header click 15`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><!-- react-text: 6 -->Item<!-- /react-text --><!-- react-text: 7 --> <!-- /react-text --><span aria-label=\\\\\\"Ascend\\\\\\">▲</span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><!-- react-text: 11 -->Claim/Target<!-- /react-text --><!-- react-text: 12 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><!-- react-text: 16 -->Subject<!-- /react-text --><!-- react-text: 17 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><!-- react-text: 21 -->Grade<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><!-- react-text: 26 -->Item Type<!-- /react-text --><!-- react-text: 27 --> <!-- /react-text --><span aria-label=\\\\\\"NoSort\\\\\\"></span></div></th></tr></thead>\\""`;
+exports[`ItemTableHeader sorts list on header click 15`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead>\\""`;
