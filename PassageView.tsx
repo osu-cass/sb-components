@@ -7,7 +7,7 @@ interface Props {
     associatedItems: string;
 }
 
-export class PassageView extends React.Component<Props, undefined> {
+export class PassageView extends React.Component<Props, {}> {
     render() {
         const items = this.props.associatedItems.split(',');
         return (

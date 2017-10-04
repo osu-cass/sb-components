@@ -8,7 +8,7 @@ interface Props {
     question: Question
 }
 
-export class QuestionView extends React.Component<Props, undefined> {
+export class QuestionView extends React.Component<Props, {}> {
     render() {
         const data = this.props.question.data;
 

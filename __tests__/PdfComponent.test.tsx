@@ -57,8 +57,8 @@ const aboutItemVM: Models.AboutItemViewModel = {
 
 const itemView: Models.ItemView = {
     id: "12334",
-    html: null,
-    picturePath: null,
+    html: undefined,
+    picturePath: undefined,
     captured: true,
     type: Models.ViewType.html
 }
@@ -71,7 +71,7 @@ const question: Models.Question = {
 }
 
 const itemGroup : Models.ItemGroup = {
-    passage: null,
+    passage: undefined,
     questions: [question]
 }
 

@@ -4,7 +4,7 @@ interface Props {
     statement: string;
 }
 
-export class EvidenceStatement extends React.Component<Props, undefined> {
+export class EvidenceStatement extends React.Component<Props, {}> {
     render() {
         return (
             <div className="centered-table-container">

@@ -10,7 +10,7 @@ interface Props {
     subject: string;
 }
 
-export class PdfComponent extends React.Component<Props, undefined> {
+export class PdfComponent extends React.Component<Props, {}> {
     render() {
         const port = getConfig().port;
         

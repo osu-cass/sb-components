@@ -5,7 +5,7 @@ interface Props {
     grade: string;
 }
 
-export class FirstPage extends React.Component<Props, undefined> {
+export class FirstPage extends React.Component<Props, {}> {
     render() {
         const today = new Date();
         return (
