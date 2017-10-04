@@ -100,18 +100,18 @@ export class FilterHelper {
             itemCards = itemCards.filter(g => GradeLevels.contains(selectedGrades, g.grade));
         }
     
-        // if(subjects && subjects.filterOptions){
-        //     const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
-        //     itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
-        // }
-        // //TODO: What is CAT technology? Filter? Ignore?
-        // if(techTypes && techTypes.filterOptions){
-        //     if (techTypes.filterOptions.find(t => t.key === "PT" && t.isSelected)) {
-        //         itemCards = itemCards.filter(i => i.isPerformanceItem);
-        //     } else if (techTypes.filterOptions.find(t => t.key === "CAT" && t.isSelected)) {
-        //         itemCards = itemCards.filter(i => !i.isPerformanceItem);
-        //     }
-        // }
+        if(subjects && subjects.filterOptions){
+            const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
+            itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
+        }
+        //TODO: What is CAT technology? Filter? Ignore?
+        if(techTypes && techTypes.filterOptions){
+            if (techTypes.filterOptions.find(t => t.key === "PT" && t.isSelected)) {
+                itemCards = itemCards.filter(i => i.isPerformanceItem);
+            } else if (techTypes.filterOptions.find(t => t.key === "CAT" && t.isSelected)) {
+                itemCards = itemCards.filter(i => !i.isPerformanceItem);
+            }
+        }
 
         return itemCards;
     }
