@@ -69,8 +69,6 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     renderfilterComponent(){
         // TODO: refactor for more elegant solution. 
         const propfil = this.props.filterOptions;
-        console.log(propfil);
-        console.log(propfil.subjects);
         const filterOpt = [propfil.grades,propfil.techTypes,propfil.subjects]; 
 
         return (

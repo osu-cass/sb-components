@@ -92,6 +92,9 @@ export class FilterHelper {
                     selectedGrades = selectedGrades | Number(gradeFilter.key);
                 }
             });
+
+            console.log(selectedGrades);
+
             if (selectedGrades === GradeLevels.GradeLevels.NA) {
                 selectedGrades = GradeLevels.GradeLevels.All;
             }
@@ -100,8 +103,16 @@ export class FilterHelper {
         }
 
         if (subjects && subjects.filterOptions) {
-            const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
-            itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
+            let subjectCode:string|undefined;
+
+            subjects.filterOptions.forEach(s => {
+                if(s.isSelected){
+                    subjectCode = s.key;
+                }
+            });
+            if(subjectCode !== undefined){
+                itemCards = itemCards.filter(i => subjectCode === i.subjectCode);
+            }
         }
         //TODO: What is CAT technology? Filter? Ignore?
         if (techTypes && techTypes.filterOptions) {
