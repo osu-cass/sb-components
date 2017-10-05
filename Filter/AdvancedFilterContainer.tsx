@@ -74,6 +74,26 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         }
     }
 
+    renderFilterIndicators() {
+        //flatten filter options accross all filter containers.
+        let allfilterOpts:AdvancedFilterOption[] = [] 
+        this.state.filters.forEach(f => {
+            if(!f.disabled){
+                allfilterOpts = allfilterOpts.concat(f.filterOptions);
+            }
+        });
+
+        const tags = allfilterOpts.map((opt,i) => {
+            if(opt.isSelected){
+                return(
+                    <div className="filter-indicator">{opt.label}</div>
+                );
+            }
+        });
+
+        return tags;
+    }
+
     renderFilterComponents() {
         const filterTags = this.state.filters.map((fil, i) => {
             return(
@@ -93,6 +113,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
             <div className="advanced-filter">
                 <div className="filter-header">
                     <div className="filter-status">
+                        {this.renderFilterIndicators()}
                     </div>
                     <div>
                         <a onClick={() => this.resetFilters()} 

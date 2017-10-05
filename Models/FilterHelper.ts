@@ -93,8 +93,6 @@ export class FilterHelper {
                 }
             });
 
-            console.log(selectedGrades);
-
             if (selectedGrades === GradeLevels.GradeLevels.NA) {
                 selectedGrades = GradeLevels.GradeLevels.All;
             }
