@@ -6,13 +6,13 @@ import * as ItemPageTable from '../ItemTable/ItemPageTable'
 import * as Api from "../Models/ApiModels"
 import { FilterHelper } from "../Models/FilterHelper";
 import { AdvancedFilterContainer} from "../Filter/AdvancedFilterContainer";
-import { FilterOptions,AdvancedFilterCategory } from "../Filter/AdvancedFilterModel";
+import { AdvancedFilters,AdvancedFilterCategory } from "../Filter/AdvancedFilterModel";
 
 const SearchClient = () => Api.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
 export interface Props {
     onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    filterOptions: FilterOptions;
+    filterOptions: AdvancedFilters;
 }
 
 export interface State {
@@ -68,8 +68,10 @@ export class ItemSearchContainer extends React.Component<Props, State> {
 
     renderfilterComponent(){
         // TODO: refactor for more elegant solution. 
-        const propfil = this.props.filterOptions
-        const filterOpt = [propfil.grades,propfil.subjects,propfil.techTypes]; 
+        const propfil = this.props.filterOptions;
+        console.log(propfil);
+        console.log(propfil.subjects);
+        const filterOpt = [propfil.grades,propfil.techTypes,propfil.subjects]; 
 
         return (
             <AdvancedFilterContainer

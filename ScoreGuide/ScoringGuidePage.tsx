@@ -8,6 +8,7 @@ import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ItemSearchContainer from './ItemSearchContainer';
 import { get } from "../Models/ApiModels";
 import { FilterHelper } from "../Models/FilterHelper";
+import * as AdvancedFilterModel from "../Filter/AdvancedFilterModel";
 
 //TODO: Change this to a relative url, add to API
 const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-score.cass.oregonstate.edu/ScoringGuide/ScoringGuideViewModel");
@@ -15,7 +16,7 @@ const ScoreGuideViewModelClient = () => get<ItemsSearchViewModel>("http://is-sco
 export interface State {
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
-    filterOptions: ItemModels.FilterOptions;
+    filterOptions: AdvancedFilterModel.AdvancedFilters;
 }
 
 export interface ItemsSearchViewModel {
@@ -25,10 +26,10 @@ export interface ItemsSearchViewModel {
 export class ScoringGuidePage extends React.Component<{}, State> {
     constructor() {
         super();
-
+        const filterOptions = FilterHelper.getFilterOptions();
         this.state = {
             scoringGuideViewModel: { kind: "loading" },
-            filterOptions: FilterHelper.getFilterOptions(),
+            filterOptions,
             item: {kind:"none"}
         }
 
@@ -63,11 +64,7 @@ export class ScoringGuidePage extends React.Component<{}, State> {
 
     onSuccessLoadScoringGuideViewModel(result: ItemsSearchViewModel) {
         this.setState({
-            scoringGuideViewModel: { kind: "success", content: result },
-            filterOptions: {
-                ...this.state.filterOptions,
-                subjects: result.subjects
-            }
+            scoringGuideViewModel: { kind: "success", content: result }
         });
     }
 

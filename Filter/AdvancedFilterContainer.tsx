@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ItemModels from '../Models/ItemModels';
 import * as GradeLevels from '../Models/GradeLevels';
-import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, FilterOptions } from './AdvancedFilterModel';
+import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 
 interface Props {

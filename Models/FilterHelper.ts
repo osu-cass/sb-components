@@ -1,13 +1,13 @@
 import { ItemCardViewModel } from "../Models/ItemCardViewModel";
-import { ItemFilter } from "../Models/ItemModels";
+import { ItemFilter, FilterOptions } from "../Models/ItemModels";
 import * as GradeLevels from '../Models/GradeLevels';
 import { parseQueryString } from "../Models/ApiModels";
-import { AdvancedFilterCategory, FilterOptions,OptionType } from "../filter/AdvancedFilterModel";
+import { AdvancedFilterCategory, AdvancedFilters, OptionType, AdvancedFilterOption } from "../filter/AdvancedFilterModel";
 
-export class FilterHelper {    
+export class FilterHelper {
     //TODO: Get this from the server
-    static getFilterOptions() {
-        const subjectsFilterOptions = [{
+    static getFilterOptions(): AdvancedFilters {
+        const subjectsFilterOptions: AdvancedFilterOption[] = [{
             label: "Mathematics",
             key: "MATH",
             isSelected: false,
@@ -20,92 +20,91 @@ export class FilterHelper {
             type: OptionType.button
         }];
 
-        const gradesFilterOptions = [{
+        const gradesFilterOptions: AdvancedFilterOption[] = [{
             label: "Elementary",
             key: String(GradeLevels.GradeLevels.Elementary),
             isSelected: false,
             type: OptionType.button
-        },{
+        }, {
             label: "Grade 3",
             key: String(GradeLevels.GradeLevels.Grade3),
             isSelected: false,
             type: OptionType.button
-        },{
+        }, {
             label: "Grade 4",
             key: String(GradeLevels.GradeLevels.Grade4),
             isSelected: false,
             type: OptionType.button
         }];
 
-        const techTypesFilterOptions = [{
+        const techTypesFilterOptions: AdvancedFilterOption[] = [{
             label: "CAT",
             key: "CAT",
             isSelected: false,
             type: OptionType.button
-        },{
+        }, {
             label: "Performance Items",
             key: "PT",
             isSelected: false,
             type: OptionType.button
         }];
 
+        const subjects: AdvancedFilterCategory = {
+            disabled: false,
+            isMultiSelect: false,
+            label: "Subjects",
+            helpText: "Subjects HelpText here.",
+            filterOptions: [...subjectsFilterOptions],
+            displayAllButton: true
+        }
 
-        return {
-            subjects: 
-                {
-                    disabled: false,
-                    isMultiSelect: false,
-                    label: "Subjects",
-                    helpText: "Subjects HelpText here.",
-                    filterOptions: [...subjectsFilterOptions],
-                    displayAllButton: true
-                },
-            grades: {
-                disabled: false,
-                isMultiSelect: true,
-                label: "Grade",
-                helpText: "Grade HelpText here.",
-                filterOptions: [...gradesFilterOptions],
-                displayAllButton: true
-            },
-            techTypes:
-            {
-                disabled: false,
-                isMultiSelect: false,
-                label: "TechType",
-                helpText: "TechType HelpText here.",
-                filterOptions: [...techTypesFilterOptions],
-                displayAllButton: true
-            }
-        } as FilterOptions;
+        const grades: AdvancedFilterCategory = {
+            disabled: false,
+            isMultiSelect: false,
+            label: "Grade",
+            helpText: "Grade HelpText here.",
+            filterOptions: [...gradesFilterOptions],
+            displayAllButton: true
+        }
+
+        const techTypes: AdvancedFilterCategory = {
+            disabled: false,
+            isMultiSelect: false,
+            label: "TechType",
+            helpText: "TechType HelpText here.",
+            filterOptions: [...techTypesFilterOptions],
+            displayAllButton: true
+        }
+
+        return { subjects, grades, techTypes };
     }
 
-    static filter(itemCards: ItemCardViewModel[], filter: AdvancedFilterCategory[]):ItemCardViewModel[] {
+    static filter(itemCards: ItemCardViewModel[], filter: AdvancedFilterCategory[]): ItemCardViewModel[] {
         const grades = filter.find(afc => afc.label === "Grade");
         const subjects = filter.find(afc => afc.label === "Subjects");
-        const techTypes = filter.find(afc => afc.label === "TechType"); 
+        const techTypes = filter.find(afc => afc.label === "TechType");
 
-        if(grades && grades.filterOptions){            
+        if (grades && grades.filterOptions) {
             let selectedGrades = GradeLevels.GradeLevels.NA;
 
             grades.filterOptions.forEach(gradeFilter => {
-                if(gradeFilter.isSelected){
+                if (gradeFilter.isSelected) {
                     selectedGrades = selectedGrades | Number(gradeFilter.key);
                 }
             });
-            if(selectedGrades === GradeLevels.GradeLevels.NA){
+            if (selectedGrades === GradeLevels.GradeLevels.NA) {
                 selectedGrades = GradeLevels.GradeLevels.All;
             }
 
             itemCards = itemCards.filter(g => GradeLevels.contains(selectedGrades, g.grade));
         }
-    
-        if(subjects && subjects.filterOptions){
+
+        if (subjects && subjects.filterOptions) {
             const subjectCodes = subjects.filterOptions.map(s => s.isSelected ? s.key : "");
             itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
         }
         //TODO: What is CAT technology? Filter? Ignore?
-        if(techTypes && techTypes.filterOptions){
+        if (techTypes && techTypes.filterOptions) {
             if (techTypes.filterOptions.find(t => t.key === "PT" && t.isSelected)) {
                 itemCards = itemCards.filter(i => i.isPerformanceItem);
             } else if (techTypes.filterOptions.find(t => t.key === "CAT" && t.isSelected)) {
@@ -142,45 +141,45 @@ export class FilterHelper {
 
         const grades = filter.find(afc => afc.label === "Grade");
         const subjects = filter.find(afc => afc.label === "Subjects");
-        const techTypes = filter.find(afc => afc.label === "TechType"); 
+        const techTypes = filter.find(afc => afc.label === "TechType");
 
         if (grades && !grades.disabled) {
-            const gradeString:string[] = [];
+            const gradeString: string[] = [];
 
             grades.filterOptions.forEach(g => {
-                if(g.isSelected){
+                if (g.isSelected) {
                     gradeString.push(g.key.toString());
                 }
             });
 
-            if(gradeString.length !== 0) {
+            if (gradeString.length !== 0) {
                 gradeString.join(',');
                 pairs.push("gradeLevels=" + gradeString);
             }
         }
         if (subjects && !subjects.disabled) {
-            const subjString:string[] = [];
+            const subjString: string[] = [];
 
             subjects.filterOptions.forEach(s => {
-                if(s.isSelected){
+                if (s.isSelected) {
                     subjString.push(s.key);
                 }
             });
 
-            if(subjString.length !== 0){
+            if (subjString.length !== 0) {
                 subjString.join(',');
                 pairs.push("subjects=" + subjString);
             }
         }
         if (techTypes && !techTypes.disabled) {
-            const techTypesString:string[] = [];
+            const techTypesString: string[] = [];
 
             techTypes.filterOptions.forEach(t => {
-                if(t.isSelected){
+                if (t.isSelected) {
                     techTypesString.push(t.key);
                 }
             });
-            if(techTypesString.length !== 0){
+            if (techTypesString.length !== 0) {
                 techTypesString.join(',');
                 pairs.push("techTypes=" + techTypesString);
             }
@@ -188,7 +187,7 @@ export class FilterHelper {
 
         let query: string;
         if (pairs.length === 0) {
-            query =  "/";
+            query = "/";
         } else {
             query = "?" + pairs.join("&");
         }
@@ -229,19 +228,19 @@ export class FilterHelper {
     //     };
     // }
 
-    static readUrl(filterOptions: FilterOptions) {
+    static readUrl(filterOptions: AdvancedFilters) {
         const queryObject = parseQueryString(window.location.href);
         const subjects = queryObject["subjects"]
             ? queryObject["subjects"]!.map(
-                subjCode => { 
+                subjCode => {
                     let subject = filterOptions.subjects.filterOptions.find(s => s.key === subjCode);
-                    if(subject){
+                    if (subject) {
                         return {
                             code: subject.key,
-                            label:subject.label
-                        } 
+                            label: subject.label
+                        }
                     }
-                }): [];
+                }) : [];
 
         const grades = queryObject["grades"]
             ? queryObject["grades"]!
@@ -251,13 +250,13 @@ export class FilterHelper {
         const techTypes = queryObject["techTypes"]
             ? queryObject["techTypes"]!.map(typeCode => {
                 let techType = filterOptions.techTypes.filterOptions.find(t => t.key === typeCode);
-                if(techType){
+                if (techType) {
                     return {
                         code: techType.key,
-                        label:techType.label
+                        label: techType.label
                     }
                 }
-            }): [];
+            }) : [];
 
         return {
             subjects: subjects,

@@ -28,7 +28,7 @@ export interface Subject {
     label: string;
 }
 
-export interface FilterOptions {
+export interface AdvancedFilters {
     subjects: AdvancedFilterCategory;
     grades: AdvancedFilterCategory;
     techTypes: AdvancedFilterCategory;
