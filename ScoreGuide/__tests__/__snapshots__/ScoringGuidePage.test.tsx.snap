@@ -27,10 +27,18 @@ ShallowWrapper {
       "_instance": ScoringGuidePage {
         "_reactInternalInstance": [Circular],
         "context": Object {},
+        "getAboutItem": [Function],
+        "loadScoringGuideViewModel": [Function],
+        "onAboutItemError": [Function],
+        "onAboutItemSuccess": [Function],
+        "onErrorLoadScoringGuideViewModel": [Function],
+        "onRowSelection": [Function],
+        "onSuccessLoadScoringGuideViewModel": [Function],
         "props": Object {
           "scoreGuideViewModelClient": [Function],
         },
         "refs": Object {},
+        "renderTabsContainer": [Function],
         "state": Object {
           "filterOptions": Object {
             "grades": Array [

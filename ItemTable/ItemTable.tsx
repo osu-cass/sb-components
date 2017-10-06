@@ -84,8 +84,6 @@ export class DataTable extends React.Component<Props, {}> {
     }
 
     render() {
-        console.log(JSON.stringify(this.props.item));
-        console.log(JSON.stringify(this.props.selectedRow))
         return (<tbody>{this.renderRows()}</tbody>);
     }
 }

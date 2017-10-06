@@ -133,7 +133,7 @@ ShallowWrapper {
                   ]
             }
             rowOnClick={[Function]}
-            selectedRow={undefined}
+            selectedRow={null}
             sort={Array []}
             tableRef={[Function]}
         />
@@ -265,7 +265,7 @@ ShallowWrapper {
                             ]
                   }
                   rowOnClick={[Function]}
-                  selectedRow={undefined}
+                  selectedRow={null}
                   sort={Array []}
                   tableRef={[Function]}
             />
@@ -417,6 +417,7 @@ ShallowWrapper {
         },
         "refs": Object {},
         "state": Object {
+          "selectedRow": null,
           "sorts": Array [],
         },
         "updater": Object {
@@ -562,7 +563,7 @@ ShallowWrapper {
                                                 ]
                               }
                               rowOnClick={[Function]}
-                              selectedRow={undefined}
+                              selectedRow={null}
                               sort={Array []}
                               tableRef={[Function]}
                     />
@@ -694,7 +695,7 @@ ShallowWrapper {
                                                 ]
                               }
                               rowOnClick={[Function]}
-                              selectedRow={undefined}
+                              selectedRow={null}
                               sort={Array []}
                               tableRef={[Function]}
                     />
