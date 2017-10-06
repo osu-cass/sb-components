@@ -32,39 +32,39 @@ export class ScoringGuidePage extends React.Component<Props, State> {
         this.state = {
             scoringGuideViewModel: { kind: "loading" },
             filterOptions: FilterHelper.getFilterOptions(),
-            item: {kind:"none"}
+            item: { kind: "none" }
         }
         this.loadScoringGuideViewModel();
     }
-        
 
-    getAboutItem(item: { itemKey: number; bankKey: number }) {
+
+    getAboutItem = (item: { itemKey: number; bankKey: number }) => {
         AboutItemVM.ScoreSearchClient(item)
             .then((data) => this.onAboutItemSuccess(data))
             .catch((err) => this.onAboutItemError(err));
     }
 
-    onAboutItemSuccess(data: AboutItemVM.AboutThisItem) {
+    onAboutItemSuccess = (data: AboutItemVM.AboutThisItem) => {
         this.setState({
             item: { kind: "success", content: data }
         });
     }
 
-    onAboutItemError(err: any) {
+    onAboutItemError = (err: any) => {
         console.error(err);
         this.setState({
             item: { kind: "failure" }
         })
     }
 
-    loadScoringGuideViewModel() {
+    loadScoringGuideViewModel = () => {
         this.props.scoreGuideViewModelClient()
             .then(result => this.onSuccessLoadScoringGuideViewModel(result))
             .catch(err => this.onErrorLoadScoringGuideViewModel(err));
 
     }
 
-    onSuccessLoadScoringGuideViewModel(result: ItemsSearchViewModel) {
+    onSuccessLoadScoringGuideViewModel = (result: ItemsSearchViewModel) => {
         this.setState({
             scoringGuideViewModel: { kind: "success", content: result },
             filterOptions: {
@@ -74,18 +74,23 @@ export class ScoringGuidePage extends React.Component<Props, State> {
         });
     }
 
-    onErrorLoadScoringGuideViewModel(err: any) {
+    onErrorLoadScoringGuideViewModel = (err: any) => {
         console.error(err);
         this.setState({
             scoringGuideViewModel: { kind: "failure" }
         });
     }
 
-    onRowSelection(item: { bankKey: number, itemKey: number }) {
-        this.getAboutItem(item);
+    onRowSelection = (item: { bankKey: number, itemKey: number }, reset: boolean) => {
+        if (reset === false) {
+            this.getAboutItem(item);
+        }else {
+            let state: ApiModels.Resource<AboutItemVM.AboutThisItem> = { kind: "none" };
+            this.setState({ item: state })
+        }
     }
 
-    renderTabsContainer() {
+    renderTabsContainer = () => {
         if (this.state.item.kind == "success" || this.state.item.kind == "reloading") {
             const newItem = this.state.item.content;
             return (
@@ -109,7 +114,7 @@ export class ScoringGuidePage extends React.Component<Props, State> {
                 <div className="search-page">
                     <div className="search-container">
                         <ItemSearchContainer.ItemSearchContainer
-                            onRowSelection={(item) => this.onRowSelection(item)}
+                            onRowSelection={this.onRowSelection}
                             filterOptions={this.state.filterOptions}
                             searchClient={SearchClient}
                             item={this.state.item}

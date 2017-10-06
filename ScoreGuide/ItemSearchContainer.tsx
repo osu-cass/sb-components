@@ -9,7 +9,7 @@ import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
-    onRowSelection: (item: { itemKey: number; bankKey: number }) => void;
+    onRowSelection: (item: { itemKey: number; bankKey: number }, reset: boolean) => void;
     filterOptions: ItemModels.FilterOptions;
     searchClient: () => Promise<ItemCardViewModel.ItemCardViewModel[]>;
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;

@@ -11,7 +11,7 @@ interface Props {
     rowOnClick: (item: ItemCardViewModel.ItemCardViewModel) => void;
     sort: ItemTableHeader.HeaderSort[];
     columns: ItemTableHeader.SortColumn[];
-    selectedRow?: ItemCardViewModel.ItemCardViewModel;
+    selectedRow?: ItemCardViewModel.ItemCardViewModel | null;
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
 }
 
@@ -33,9 +33,8 @@ export class DataTable extends React.Component<Props, {}> {
 
     //TODO replace X with a > that specifies that  the table  row can  be expanded
     renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number, isSelected?: boolean): JSX.Element {
-        const style = { color: "gray" }
-        const collapse = (<i style={style} className="fa fa-chevron-right fa-sm" aria-hidden="true"></i>)
-        const expand = (<i style={style} className="fa fa-chevron-down fa-sm" aria-hidden="true"></i>)
+        const collapse = (<i style={{color: "gray" }} className="fa fa-chevron-right fa-sm" aria-hidden="true"></i>)
+        const expand = (<i style={{color: "white"}} className="fa fa-chevron-down fa-sm" aria-hidden="true"></i>)
         let tab = null;
 
         return (
@@ -47,22 +46,6 @@ export class DataTable extends React.Component<Props, {}> {
                 {this.props.columns.map(col => this.renderCell(col, rowData))}
             </tr>
         );
-    }
-
-    renderTabsContainer() {
-        let content = null;
-        if (this.props.item.kind == "success" || this.props.item.kind == "reloading") {
-            const newItem = this.props.item.content;
-            return (
-                <div>
-                    <ItemCardViewer.ItemCardViewer
-                        item={newItem}
-                    />
-                </div>
-            );
-
-        }
-        return content;
     }
 
     renderRows(): JSX.Element[] {
@@ -101,6 +84,8 @@ export class DataTable extends React.Component<Props, {}> {
     }
 
     render() {
+        console.log(JSON.stringify(this.props.item));
+        console.log(JSON.stringify(this.props.selectedRow))
         return (<tbody>{this.renderRows()}</tbody>);
     }
 }

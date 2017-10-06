@@ -10,15 +10,14 @@ import * as AboutItemVM from '../Models/AboutItemVM';
 import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
-    onRowSelection: (item: { itemKey: number; bankKey: number }) => void;
+    onRowSelection: (item: { itemKey: number; bankKey: number }, reset: boolean) => void;
     itemCards?: ItemCardViewModel.ItemCardViewModel[];
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
 }
 
 export interface State {
     sorts: ItemTableHeader.HeaderSort[];
-    selectedRow?: ItemCardViewModel.ItemCardViewModel;
-
+    selectedRow?: ItemCardViewModel.ItemCardViewModel | null;
 }
 
 export class ItemPageTable extends React.Component<Props, State>{
@@ -28,7 +27,8 @@ export class ItemPageTable extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
         this.state = {
-            sorts: []
+            sorts: [],
+            selectedRow: null
         }
     }
 
@@ -46,7 +46,6 @@ export class ItemPageTable extends React.Component<Props, State>{
             else {
                 newSort.direction = ItemTableHeader.SortDirection.Ascending;
             }
-
             newSorts[headIdx] = newSort;
         } else {
             const newSort: ItemTableHeader.HeaderSort = {
@@ -60,13 +59,18 @@ export class ItemPageTable extends React.Component<Props, State>{
     }
 
     onSelectItem = (item: ItemCardViewModel.ItemCardViewModel) => {
-        this.setState({
-            selectedRow: item
-        });
         const card = { itemKey: item.itemKey, bankKey: item.bankKey }
-
-        this.props.onRowSelection(card);
-
+        if(item === this.state.selectedRow){
+            this.setState({
+                selectedRow: null
+            })
+            this.props.onRowSelection(card, true)
+        }else{
+            this.setState({
+                selectedRow: item
+            });
+            this.props.onRowSelection(card, false);
+        }
     };
 
     invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
