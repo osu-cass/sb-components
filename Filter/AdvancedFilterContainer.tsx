@@ -76,18 +76,19 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     renderFilterIndicators() {
         //flatten filter options accross all filter containers.
-        let allfilterOpts:AdvancedFilterOption[] = [] 
-        this.state.filters.forEach(f => {
-            if(!f.disabled){
-                allfilterOpts = allfilterOpts.concat(f.filterOptions);
-            }
-        });
+        let tags:JSX.Element[] = []
 
-        const tags = allfilterOpts.map((opt,i) => {
-            if(opt.isSelected){
-                return(
-                    <div className="filter-indicator">{opt.label}</div>
-                );
+        this.state.filters.forEach(fil => {
+            if(!fil.disabled){
+                fil.filterOptions.forEach(opt => {
+                    if(opt.isSelected){
+                        tags.push(
+                        <div className="filter-indicator" key={opt.key}>
+                            {opt.label}<span onClick={() => this.onSelect(fil,opt)}>X</span>
+                        </div>
+                        );
+                    }
+                });     
             }
         });
 
@@ -112,13 +113,13 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         return (
             <div className="advanced-filter">
                 <div className="filter-header">
-                    <div className="filter-status">
-                        {this.renderFilterIndicators()}
-                    </div>
                     <div>
                         <a onClick={() => this.resetFilters()} 
                             onKeyPress={e => this.keyPressResetFilters(e)} 
                             tabIndex={0}>Reset filters</a>
+                    </div>
+                    <div className="filter-status">
+                        {this.renderFilterIndicators()}
                     </div>
                 </div>
                 {this.renderFilterComponents()}
