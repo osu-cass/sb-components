@@ -75,7 +75,6 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     renderFilterIndicators() {
-        //flatten filter options accross all filter containers.
         let tags:JSX.Element[] = []
 
         this.state.filters.forEach(fil => {
@@ -95,7 +94,22 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         return tags;
     }
 
-    renderFilterComponents() {
+    renderFilterHeader() {
+        return(
+            <div className="filter-header">
+                <div>
+                    <a onClick={() => this.resetFilters()} 
+                        onKeyPress={e => this.keyPressResetFilters(e)} 
+                        tabIndex={0}>Reset filters</a>
+                </div>
+                <div className="filter-status">
+                    {this.renderFilterIndicators()}
+                </div>
+            </div>
+        );
+    }
+
+    renderFilterBody() {
         const filterTags = this.state.filters.map((fil, i) => {
             return(
                 <AdvancedFilter {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
@@ -112,17 +126,8 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     render() {
         return (
             <div className="advanced-filter">
-                <div className="filter-header">
-                    <div>
-                        <a onClick={() => this.resetFilters()} 
-                            onKeyPress={e => this.keyPressResetFilters(e)} 
-                            tabIndex={0}>Reset filters</a>
-                    </div>
-                    <div className="filter-status">
-                        {this.renderFilterIndicators()}
-                    </div>
-                </div>
-                {this.renderFilterComponents()}
+                {this.renderFilterHeader()}
+                {this.renderFilterBody()}
             </div>
         );
     }
