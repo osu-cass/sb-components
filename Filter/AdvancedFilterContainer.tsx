@@ -126,7 +126,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     render() {
         return (
-            <div className="advanced-filter">
+            <div className="advanced-filter-container">
                 {this.renderFilterHeader()}
                 {this.renderFilterBody()}
             </div>
