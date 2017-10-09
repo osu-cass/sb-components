@@ -58,14 +58,15 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     resetFilters() {
-        let newFilters = [...this.state.filters];
+        let newFilters = this.state.filters;
         newFilters.forEach(cate => {
-            cate.filterOptions.map(opt => {return {...opt, isSelected: false}});
+            cate.filterOptions.map(opt => opt.isSelected = false);
         });
 
         this.setState({
-            filters: newFilters
+            filters: [...newFilters]
         });
+        this.props.onClick(newFilters);
     }
 
     keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {

@@ -21,18 +21,43 @@ export class FilterHelper {
         }];
 
         const gradesFilterOptions: AdvancedFilterOption[] = [{
-            label: "Elementary",
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Elementary),
             key: String(GradeLevels.GradeLevels.Elementary),
             isSelected: false,
             type: OptionType.button
         }, {
-            label: "Grade 3",
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade3),
             key: String(GradeLevels.GradeLevels.Grade3),
             isSelected: false,
             type: OptionType.button
         }, {
-            label: "Grade 4",
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade4),
             key: String(GradeLevels.GradeLevels.Grade4),
+            isSelected: false,
+            type: OptionType.button
+        }, {
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade5),
+            key: String(GradeLevels.GradeLevels.Grade5),
+            isSelected: false,
+            type: OptionType.button
+        }, {
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade6),
+            key: String(GradeLevels.GradeLevels.Grade6),
+            isSelected: false,
+            type: OptionType.button
+        }, {
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade7),
+            key: String(GradeLevels.GradeLevels.Grade7),
+            isSelected: false,
+            type: OptionType.button
+        }, {
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade8),
+            key: String(GradeLevels.GradeLevels.Grade8),
+            isSelected: false,
+            type: OptionType.button
+        }, {
+            label: GradeLevels.caseToString(GradeLevels.GradeLevels.High),
+            key: String(GradeLevels.GradeLevels.High),
             isSelected: false,
             type: OptionType.button
         }];
@@ -73,7 +98,7 @@ export class FilterHelper {
             label: "TechType",
             helpText: "TechType HelpText here.",
             filterOptions: [...techTypesFilterOptions],
-            displayAllButton: true
+            displayAllButton: false
         }
 
         return { subjects, grades, techTypes };
@@ -123,27 +148,6 @@ export class FilterHelper {
 
         return itemCards;
     }
-
-    // static filter(itemCards: ItemCardViewModel[], filter: ItemFilter) {
-    // if (filter.grades) {
-    //     filter.grades.forEach(gradeFilter => 
-    //         itemCards = itemCards.filter(i => GradeLevels.contains(gradeFilter, i.grade))
-    //     );
-    //     }
-    // if (filter.subjects) {
-    //     const subjectCodes = filter.subjects.map(s => s.code);
-    //     itemCards = itemCards.filter(i => subjectCodes.indexOf(i.subjectCode) !== -1);
-    //     }
-    //     //TODO: What is CAT technology? Filter? Ignore?
-    // if (filter.techTypes && filter.techTypes.length > 0) {
-    //     if (filter.techTypes[0].code.toUpperCase() === "PT") {
-    //         itemCards = itemCards.filter(i => i.isPerformanceItem);
-    //     } else if (filter.techTypes[0].code.toUpperCase() === "CAT") {
-    //         itemCards = itemCards.filter(i => !i.isPerformanceItem);
-    //     }
-    //     }
-    //     return itemCards;
-    // }
 
     static updateUrl(filter: AdvancedFilterCategory[]) {
         let pairs: string[] = [];
@@ -202,40 +206,6 @@ export class FilterHelper {
         }
         history.replaceState(null, "", query);
     }
-
-    // static readUrl(filterOptions: FilterOptions):FilterOptions {
-    //     const queryObject = parseQueryString(window.location.href);
-    //     const subjectsFilterOptions = queryObject["subjects"]
-    //         ? queryObject["subjects"]!.map(subjCode => {
-    //             return filterOptions.subjects.filterOptions.find(s => s.key === subjCode && s.isSelected)
-    //         }): []; // might want to remove selected flag
-
-    //     const gradesFilterOptions = queryObject["grades"]
-    //         ? queryObject["grades"]!
-    //             .map(gradeCode => {
-    //                 return filterOptions.grades.filterOptions.find(g => GradeLevels.contains(Number(g.key), Number(gradeCode)) && g.isSelected);
-    //             }): [];
-
-    //     const techTypesFilterOptions = queryObject["techTypes"]
-    //         ? queryObject["techTypes"]!.map(typeCode => {
-    //             return filterOptions.techTypes.filterOptions.find(t => t.key === typeCode && t.isSelected)
-    //         }): [];
-
-    //     const subjects = {...filterOptions.subjects};
-    //     subjects.filterOptions = [...subjectsFilterOptions];
-
-    //     const grades = {...filterOptions.grades};
-    //     grades.filterOptions = [...gradesFilterOptions];
-
-    //     const techTypes = {...filterOptions.techTypes};
-    //     techTypes.filterOptions = [...techTypesFilterOptions];
-
-    //     return {
-    //         subjects: subjects,
-    //         grades: grades,
-    //         techTypes: techTypes
-    //     };
-    // }
 
     static readUrl(filterOptions: AdvancedFilters) {
         const queryObject = parseQueryString(window.location.href);
