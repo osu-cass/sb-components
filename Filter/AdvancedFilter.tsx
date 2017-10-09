@@ -13,12 +13,8 @@ export class AdvancedFilter extends React.Component<Props, {}> {
 
     render() {
         const tags:JSX.Element[] = [];
-
-        if (this.props.displayAllButton) {
-            tags.push(
-                <button className="all-button" key="all" onClick={() => this.props.selectedHandler()}>All</button>
-            );
-        }
+        let anySelected:boolean = false;
+        
 
         if(this.props.filterOptions){
             this.props.filterOptions.forEach((t, i) => { 
@@ -26,12 +22,23 @@ export class AdvancedFilter extends React.Component<Props, {}> {
                 
                 if (t.isSelected){
                     classname = "selected";
+                    anySelected = true;
                 }
 
                 tags.push(
                     <button className={classname} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
                 );
             });
+        }
+
+        if (this.props.displayAllButton) {
+            let classname = "";
+            if(!anySelected){
+                classname = " selected";
+            }
+            tags.unshift(
+                <button className={"all-button" + classname} key="all" onClick={() => this.props.selectedHandler()}>All</button>
+            );
         }
 
         return (
