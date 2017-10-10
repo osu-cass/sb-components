@@ -80,7 +80,8 @@ const props = {
     grade: "3",
     subject: "math",
     pageBaseUrl: "http://example.com",
-    ivsBaseUrl: "http://example.com"
+    ivsBaseUrl: "http://example.com",
+    displayTitlePage: true
 }
 
 describe("PdfComponent", () => {

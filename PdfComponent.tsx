@@ -9,6 +9,7 @@ interface Props {
     subject: string;
     pageBaseUrl: string;
     ivsBaseUrl: string;
+    displayTitlePage: boolean;
 }
 
 export class PdfComponent extends React.Component<Props, {}> {
@@ -24,10 +25,11 @@ export class PdfComponent extends React.Component<Props, {}> {
                     <link rel='stylesheet' href='css/pdf.css' />
                     <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Shared/CSS/Universal/items.css"} />
                     <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Projects/SBAC/css/modernItems.css"} />
-                    
                 </head>
                 <body>
-                    <FirstPage grade={this.props.grade} subject={this.props.subject} />
+                    {this.props.displayTitlePage 
+                        ? <FirstPage grade={this.props.grade} subject={this.props.subject} /> 
+                        : null}
                     {itemPages}
                 </body>
             </html>
