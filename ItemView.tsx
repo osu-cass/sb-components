@@ -8,7 +8,7 @@ interface Props {
     view: ItemView;
 }
 
-export class ItemViewComponent extends React.Component<Props, undefined> {
+export class ItemViewComponent extends React.Component<Props, {}> {
     render() {
         let item, evidence: JSX.Element;
         if (this.props.view.type === ViewType.html) {

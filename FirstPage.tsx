@@ -10,7 +10,7 @@ interface Props {
     }
 }
 
-export class FirstPage extends React.Component<Props, undefined> {
+export class FirstPage extends React.Component<Props, {}> {
     render() {
         // the data prop is for snapshot testing
         const today = this.props.date ? this.props.date : new Date();

@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { PdfComponent } from '../PdfComponent';
 import * as Models from "../../Models";
 import { shallow } from 'enzyme';
+import { GradeLevels } from '../../../../client/src/Models/GradeLevels';
 
 const rubric:  Models.Rubric = {
     language: "english",
@@ -32,7 +33,15 @@ const itemVM: Models.ItemViewModel = {
     targetId: "23463467",
     domain: "MATH",
     depthOfKnowledge: "",
-    commonCoreStandardId: ""
+    commonCoreStandardId: "",
+    title: "",
+    grade: GradeLevels.Grade6,
+    subjectCode: "MATH",
+    claimLabel: "Math Claim",
+    target: "1-3",
+    interactionTypeCode: "",
+    interactionTypeLabel: "",
+    isPerformanceItem: false
 }
 
 const aboutItemVM: Models.AboutItemViewModel = {
@@ -48,8 +57,8 @@ const aboutItemVM: Models.AboutItemViewModel = {
 
 const itemView: Models.ItemView = {
     id: "12334",
-    html: null,
-    picturePath: null,
+    html: undefined,
+    picturePath: undefined,
     captured: true,
     type: Models.ViewType.html
 }
@@ -62,14 +71,15 @@ const question: Models.Question = {
 }
 
 const itemGroup : Models.ItemGroup = {
-    passage: null,
+    passage: undefined,
     questions: [question]
 }
 
 const props = {
     items:  [itemGroup],
     grade: "3",
-    subject: "math"
+    subject: "math",
+    baseUrl: "http://example.com"
 }
 
 describe("PdfComponent", () => {
