@@ -7,7 +7,8 @@ interface Props {
     items: ItemGroup[];
     grade: string;
     subject: string;
-    baseUrl: string;
+    pageBaseUrl: string;
+    ivsBaseUrl: string;
 }
 
 export class PdfComponent extends React.Component<Props, {}> {
@@ -19,8 +20,11 @@ export class PdfComponent extends React.Component<Props, {}> {
         return (
             <html>
                 <head>
-                    <base href={this.props.baseUrl} />
+                    <base href={this.props.pageBaseUrl} />
                     <link rel='stylesheet' href='css/pdf.css' />
+                    <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Shared/CSS/Universal/items.css"} />
+                    <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Projects/SBAC/css/modernItems.css"} />
+                    
                 </head>
                 <body>
                     <FirstPage grade={this.props.grade} subject={this.props.subject} />
