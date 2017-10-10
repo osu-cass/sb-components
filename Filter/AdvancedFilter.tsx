@@ -14,7 +14,6 @@ export class AdvancedFilter extends React.Component<Props, {}> {
     render() {
         const tags:JSX.Element[] = [];
         let anySelected:boolean = false;
-        
 
         if(this.props.filterOptions){
             this.props.filterOptions.forEach((t, i) => { 
@@ -24,7 +23,6 @@ export class AdvancedFilter extends React.Component<Props, {}> {
                     classname = "selected";
                     anySelected = true;
                 }
-
                 tags.push(
                     <button className={classname} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
                 );
@@ -48,7 +46,6 @@ export class AdvancedFilter extends React.Component<Props, {}> {
                     <span data-tooltip={this.props.helpText} data-tooltip-position="top">ℹ</span>
                 </label>
                 <div className="child-filter-options">
-                    
                     {tags}
                 </div>
             </div>
