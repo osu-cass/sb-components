@@ -19,8 +19,12 @@ export class FilterHelper {
                 }
             ],
             grades: [
-                GradeLevels.GradeLevels.Elementary,
-                GradeLevels.GradeLevels.Middle,
+                GradeLevels.GradeLevels.Grade3,
+                GradeLevels.GradeLevels.Grade4,
+                GradeLevels.GradeLevels.Grade5,
+                GradeLevels.GradeLevels.Grade6,
+                GradeLevels.GradeLevels.Grade7,
+                GradeLevels.GradeLevels.Grade8,
                 GradeLevels.GradeLevels.High    
             ],
             techTypes: [

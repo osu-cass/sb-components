@@ -20,6 +20,10 @@ export class DataTable extends React.Component<Props, {}> {
         super(props);
     }
 
+    handleRowClick = (rowData: ItemCardViewModel.ItemCardViewModel) => {
+        this.props.rowOnClick(rowData)
+    }
+
     renderCell(col: ItemTableHeader.SortColumn, cellData: ItemCardViewModel.ItemCardViewModel): JSX.Element {
         return (
             <td key={col.header}
@@ -40,7 +44,7 @@ export class DataTable extends React.Component<Props, {}> {
         return (
             <tr key={index} className={isSelected ? "selected" : ""}
                 onClick={() => {
-                    this.props.rowOnClick(rowData);
+                    this.handleRowClick(rowData);
                 }}>
                 <td>{isSelected ? expand : collapse}</td>
                 {this.props.columns.map(col => this.renderCell(col, rowData))}
@@ -59,8 +63,9 @@ export class DataTable extends React.Component<Props, {}> {
                         && mapRows[i].bankKey === this.props.selectedRow.bankKey;
                     rows.push(this.renderRow(mapRows[i], i, isSelected))
                     if (isSelected) {
+                        console.log("inserting card row")
                         rows.push(
-                            <tr>
+                            <tr key={i+1}>
                                 <td colSpan={6}>
                                     <ItemCardViewer.ItemCardViewer
                                         item={this.props.item.content}
@@ -77,6 +82,7 @@ export class DataTable extends React.Component<Props, {}> {
 
             }
         } else {
+            console.log("no card row")
             rows = this.props.mapRows.map((rowData, idx) => this.renderRow(rowData, idx, false))
         }
         return rows;

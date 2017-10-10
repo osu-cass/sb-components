@@ -42,8 +42,12 @@ ShallowWrapper {
         "state": Object {
           "filterOptions": Object {
             "grades": Array [
-              7,
-              56,
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
               960,
             ],
             "subjects": Array [
