@@ -22,33 +22,36 @@ export class RubricComponent extends React.Component<Props, {}> {
         }
 
         const rows = rubric.rubricEntries.map(entry => {
-            const sample = (rubric.samples.find(s => 
-                    s.sampleResponses[0] && s.sampleResponses[0].scorePoint == entry.scorepoint
-                ).sampleResponses || [])
-                .map(sr => sr.sampleContent)
-                .join('<br/>');
+            const sample = rubric.samples.find(s => 
+                s.sampleResponses[0] && s.sampleResponses[0].scorePoint == entry.scorepoint
+            )
+            const sampleHtml = sample
+                ? sample.sampleResponses.map(sr => sr.sampleContent).join('<br/>')
+                : "";
             return {
                 score: entry.scorepoint,
                 rationale: entry.value,
-                sample: sample
+                sample: sampleHtml
             } as TableRow;
         });
+
+        const showSample = rubric.samples.length !== 0;
 
         const rowsJsx = rows.map(row => 
             <tr>
                 <td>{row.score}</td>
                 <td dangerouslySetInnerHTML={{__html: row.rationale}}></td>
-                <td dangerouslySetInnerHTML={{__html: row.score}}></td>
+                {showSample ? <td dangerouslySetInnerHTML={{__html: row.sample}}></td> : null}
             </tr>
         );
-        
+
         return (
             <table className='item-data-table'>
                 <thead>
                     <tr>
                         <th>Score</th>
                         <th>Rationale</th>
-                        <th>{purpose}</th>
+                        {showSample ? <th>{purpose}</th> : null}
                     </tr>
                 </thead>
                 <tbody>

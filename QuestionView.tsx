@@ -3,6 +3,7 @@ import { Question } from '../Models';
 import { ItemViewComponent } from './ItemView';
 import { EvidenceStatement } from './EvidenceStatement';
 import { QuestionDataTable } from './QuestionDataTable';
+import { RubricComponent } from './Rubric';
 
 interface Props {
     question: Question
@@ -26,6 +27,7 @@ export class QuestionView extends React.Component<Props, {}> {
                 {dataTable}
                 {evidenceStatement}
                 <ItemViewComponent view={this.props.question.view} />
+                <RubricComponent rubrics={this.props.question.data.rubrics} />
             </div>
         );
     }
