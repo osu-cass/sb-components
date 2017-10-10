@@ -61,11 +61,9 @@ export class ItemPageTable extends React.Component<Props, State>{
     onSelectItem = (item: ItemCardViewModel.ItemCardViewModel) => {
         const card = { itemKey: item.itemKey, bankKey: item.bankKey }
         if(item === this.state.selectedRow){
-            console.log("reset selected row")
             this.props.onRowSelection(card, true)
             this.setState({selectedRow: null})
         }else{
-            console.log("assign selected row")
             this.props.onRowSelection(card, false)
             this.setState({selectedRow: item})
         }
@@ -81,6 +79,7 @@ export class ItemPageTable extends React.Component<Props, State>{
         }
         return 0;
     }
+    
     getTableData = (): ItemCardViewModel.ItemCardViewModel[] | undefined => {
         let data = this.props.itemCards;
         if (data != undefined) {

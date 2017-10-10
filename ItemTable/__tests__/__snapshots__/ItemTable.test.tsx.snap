@@ -80,6 +80,7 @@ ShallowWrapper {
       "_instance": DataTable {
         "_reactInternalInstance": [Circular],
         "context": Object {},
+        "handleRowClick": [Function],
         "props": Object {
           "columns": Array [],
           "item": Object {

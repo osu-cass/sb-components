@@ -41,11 +41,9 @@ export class ScoringGuidePage extends React.Component<Props, State> {
     getAboutItem = (item: { itemKey: number, bankKey: number }) => {
         AboutItemVM.ScoreSearchClient(item)
             .then((data) => {
-                console.log("success")
                 this.onAboutItemSuccess(data)
             })
             .catch((err) => {
-                console.log("failure " + err)
                 this.onAboutItemError(err)
             });
     }
@@ -88,10 +86,8 @@ export class ScoringGuidePage extends React.Component<Props, State> {
 
     onRowSelection = (item: { bankKey: number, itemKey: number }, reset: boolean) => {
         if (reset === false) {
-            console.log("getting about item")
             this.getAboutItem(item);
         } else {
-            console.log("resetting item to none")
             let item: ApiModels.Resource<AboutItemVM.AboutThisItem> = { kind: "none" };
             this.setState({ item });
         }

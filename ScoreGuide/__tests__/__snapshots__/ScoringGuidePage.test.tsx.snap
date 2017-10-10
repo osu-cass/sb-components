@@ -38,7 +38,6 @@ ShallowWrapper {
           "scoreGuideViewModelClient": [Function],
         },
         "refs": Object {},
-        "renderTabsContainer": [Function],
         "state": Object {
           "filterOptions": Object {
             "grades": Array [

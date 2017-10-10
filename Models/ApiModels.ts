@@ -38,10 +38,6 @@ export function parseQueryString(url: string): { [key: string]: string | undefin
 
 
 export async function get<T>(url: string, params?: object) {
-    if(params){
-        console.log(JSON.stringify(params))
-    }
-    
     return new Promise<T>((resolve, reject) => {
         $.ajax({
             url: url,

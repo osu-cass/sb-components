@@ -36,12 +36,19 @@ export class DataTable extends React.Component<Props, {}> {
     }
 
     //TODO replace X with a > that specifies that  the table  row can  be expanded
-    renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number, isSelected?: boolean): JSX.Element {
-        const collapse = (<i style={{color: "gray" }} className="fa fa-chevron-right fa-sm" aria-hidden="true"></i>)
-        const expand = (<i style={{color: "white"}} className="fa fa-chevron-down fa-sm" aria-hidden="true"></i>)
+    renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number): JSX.Element {
+        const collapse = (<i style={{ color: "gray" }} className="fa fa-chevron-right fa-sm" aria-hidden="true"></i>)
+        const expand = (<i style={{ color: "white" }} className="fa fa-chevron-down fa-sm" aria-hidden="true"></i>)
+        const style={
+            display: "block",
+            padding: "0px"
+        }
         let tab = null;
-
-        return (
+        let isSelected = false;
+        if (this.props.selectedRow) {
+            isSelected = rowData.itemKey === this.props.selectedRow.itemKey && rowData.bankKey === this.props.selectedRow.bankKey;
+        }
+        let row = (
             <tr key={index} className={isSelected ? "selected" : ""}
                 onClick={() => {
                     this.handleRowClick(rowData);
@@ -50,46 +57,31 @@ export class DataTable extends React.Component<Props, {}> {
                 {this.props.columns.map(col => this.renderCell(col, rowData))}
             </tr>
         );
-    }
-
-    renderRows(): JSX.Element[] {
-        let rows: JSX.Element[] = [];
-        if (this.props.item.kind === "success" || this.props.item.kind === "reloading") {
-            const mapRows = this.props.mapRows;
-            let isSelected = false;
-            for (let i = 0; i < mapRows.length + 1; i++) {
-                if (this.props.selectedRow) {
-                    isSelected = mapRows[i].itemKey === this.props.selectedRow.itemKey
-                        && mapRows[i].bankKey === this.props.selectedRow.bankKey;
-                    rows.push(this.renderRow(mapRows[i], i, isSelected))
-                    if (isSelected) {
-                        console.log("inserting card row")
-                        rows.push(
-                            <tr key={i+1}>
-                                <td colSpan={6}>
-                                    <ItemCardViewer.ItemCardViewer
-                                        item={this.props.item.content}
-                                    />
-                                </td>
-                            </tr>
-                        )
-                    }
-                    i++;
-                }
-                else {
-                    rows.push(this.renderRow(mapRows[i], i, isSelected))
-                }
-
-            }
-        } else {
-            console.log("no card row")
-            rows = this.props.mapRows.map((rowData, idx) => this.renderRow(rowData, idx, false))
+        if (this.props.item.kind === "success" && isSelected){
+                row = (
+                    <tr key={index}>
+                        <td colSpan={6}>
+                            <table className="item-table mapcomponent-table" style={style}>
+                                <tbody>
+                                    {row}
+                                    <tr>
+                                        <td colSpan={6}>
+                                            <ItemCardViewer.ItemCardViewer
+                                                item={this.props.item.content}
+                                            />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                )
         }
-        return rows;
 
+        return row;
     }
 
-    render() {
-        return (<tbody>{this.renderRows()}</tbody>);
+        render() {
+            return (<tbody>{this.props.mapRows.map((rowData, idx) => this.renderRow(rowData, idx))}</tbody>);
+        }
     }
-}
