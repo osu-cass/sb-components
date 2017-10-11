@@ -105,9 +105,9 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         return (
             <div className="filter-header">
                 <div style={{ display: "flex", flexflow: "row nowrap", justifyContent: "space-between" }}>
-                    <a onClick={() => this.resetFilters()}
+                    <button className="filter-reset-btn" onClick={() => this.resetFilters()}
                         onKeyPress={e => this.keyPressResetFilters(e)}
-                        tabIndex={0}>Reset filters</a>
+                        tabIndex={0}>Reset filters</button>
                 </div>
                 <div className="filter-status">
                     {this.renderFilterIndicators()}
