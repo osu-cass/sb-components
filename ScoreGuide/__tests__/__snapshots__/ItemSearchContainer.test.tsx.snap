@@ -1,0 +1,601 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemSearchContainer calls api which returns an error 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="search-controls"
+>
+    <button
+        style={
+            Object {
+                "margin": "2px",
+                "paddingRight": "5px",
+              }
+        }
+    >
+        Print Items
+    </button>
+    <ItemSearchDropdown
+        filterOptions={
+            Object {
+                "grades": Array [
+                  1,
+                ],
+                "subjects": Array [
+                  Object {
+                    "code": "subjectCode",
+                    "label": "subjectLabel",
+                  },
+                ],
+                "techTypes": Array [],
+              }
+        }
+        isLoading={false}
+        itemFilter={
+            Object {
+                "grade": NaN,
+                "subject": undefined,
+                "techType": undefined,
+              }
+        }
+        onChange={[Function]}
+    />
+    <div>
+        Loading...
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="search-controls"
+>
+      <button
+            style={
+                  Object {
+                        "margin": "2px",
+                        "paddingRight": "5px",
+                      }
+            }
+      >
+            Print Items
+      </button>
+      <ItemSearchDropdown
+            filterOptions={
+                  Object {
+                        "grades": Array [
+                          1,
+                        ],
+                        "subjects": Array [
+                          Object {
+                            "code": "subjectCode",
+                            "label": "subjectLabel",
+                          },
+                        ],
+                        "techTypes": Array [],
+                      }
+            }
+            isLoading={false}
+            itemFilter={
+                  Object {
+                        "grade": NaN,
+                        "subject": undefined,
+                        "techType": undefined,
+                      }
+            }
+            onChange={[Function]}
+      />
+      <div>
+            Loading...
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemSearchContainer
+        filterOptions={
+                Object {
+                        "grades": Array [
+                          1,
+                        ],
+                        "subjects": Array [
+                          Object {
+                            "code": "subjectCode",
+                            "label": "subjectLabel",
+                          },
+                        ],
+                        "techTypes": Array [],
+                      }
+        }
+        item={
+                Object {
+                        "kind": "none",
+                      }
+        }
+        onRowSelection={[Function]}
+        searchClient={[Function]}
+/>,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemSearchContainer {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "onFilterApplied": [Function],
+        "props": Object {
+          "filterOptions": Object {
+            "grades": Array [
+              1,
+            ],
+            "subjects": Array [
+              Object {
+                "code": "subjectCode",
+                "label": "subjectLabel",
+              },
+            ],
+            "techTypes": Array [],
+          },
+          "item": Object {
+            "kind": "none",
+          },
+          "onRowSelection": [Function],
+          "searchClient": [Function],
+        },
+        "refs": Object {},
+        "state": Object {
+          "itemFilter": Object {
+            "grade": NaN,
+            "subject": undefined,
+            "techType": undefined,
+          },
+          "itemSearchResult": Object {
+            "kind": "none",
+          },
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="search-controls"
+>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
+                    Print Items
+          </button>
+          <ItemSearchDropdown
+                    filterOptions={
+                              Object {
+                                        "grades": Array [
+                                          1,
+                                        ],
+                                        "subjects": Array [
+                                          Object {
+                                            "code": "subjectCode",
+                                            "label": "subjectLabel",
+                                          },
+                                        ],
+                                        "techTypes": Array [],
+                                      }
+                    }
+                    isLoading={false}
+                    itemFilter={
+                              Object {
+                                        "grade": NaN,
+                                        "subject": undefined,
+                                        "techType": undefined,
+                                      }
+                    }
+                    onChange={[Function]}
+          />
+          <div>
+                    Loading...
+          </div>
+</div>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          className="search-controls"
+>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
+                    Print Items
+          </button>
+          <ItemSearchDropdown
+                    filterOptions={
+                              Object {
+                                        "grades": Array [
+                                          1,
+                                        ],
+                                        "subjects": Array [
+                                          Object {
+                                            "code": "subjectCode",
+                                            "label": "subjectLabel",
+                                          },
+                                        ],
+                                        "techTypes": Array [],
+                                      }
+                    }
+                    isLoading={false}
+                    itemFilter={
+                              Object {
+                                        "grade": NaN,
+                                        "subject": undefined,
+                                        "techType": undefined,
+                                      }
+                    }
+                    onChange={[Function]}
+          />
+          <div>
+                    Loading...
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemSearchContainer
+    filterOptions={
+        Object {
+            "grades": Array [
+              1,
+            ],
+            "subjects": Array [
+              Object {
+                "code": "subjectCode",
+                "label": "subjectLabel",
+              },
+            ],
+            "techTypes": Array [],
+          }
+    }
+    item={
+        Object {
+            "kind": "none",
+          }
+    }
+    onRowSelection={[Function]}
+    searchClient={[Function]}
+/>,
+}
+`;
+
+exports[`ItemSearchContainer matches snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="search-controls"
+>
+    <button
+        style={
+            Object {
+                "margin": "2px",
+                "paddingRight": "5px",
+              }
+        }
+    >
+        Print Items
+    </button>
+    <ItemSearchDropdown
+        filterOptions={
+            Object {
+                "grades": Array [
+                  1,
+                ],
+                "subjects": Array [
+                  Object {
+                    "code": "subjectCode",
+                    "label": "subjectLabel",
+                  },
+                ],
+                "techTypes": Array [],
+              }
+        }
+        isLoading={false}
+        itemFilter={
+            Object {
+                "grade": NaN,
+                "subject": undefined,
+                "techType": undefined,
+              }
+        }
+        onChange={[Function]}
+    />
+    <div>
+        Loading...
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="search-controls"
+>
+      <button
+            style={
+                  Object {
+                        "margin": "2px",
+                        "paddingRight": "5px",
+                      }
+            }
+      >
+            Print Items
+      </button>
+      <ItemSearchDropdown
+            filterOptions={
+                  Object {
+                        "grades": Array [
+                          1,
+                        ],
+                        "subjects": Array [
+                          Object {
+                            "code": "subjectCode",
+                            "label": "subjectLabel",
+                          },
+                        ],
+                        "techTypes": Array [],
+                      }
+            }
+            isLoading={false}
+            itemFilter={
+                  Object {
+                        "grade": NaN,
+                        "subject": undefined,
+                        "techType": undefined,
+                      }
+            }
+            onChange={[Function]}
+      />
+      <div>
+            Loading...
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <ItemSearchContainer
+        filterOptions={
+                Object {
+                        "grades": Array [
+                          1,
+                        ],
+                        "subjects": Array [
+                          Object {
+                            "code": "subjectCode",
+                            "label": "subjectLabel",
+                          },
+                        ],
+                        "techTypes": Array [],
+                      }
+        }
+        item={
+                Object {
+                        "kind": "none",
+                      }
+        }
+        onRowSelection={[Function]}
+        searchClient={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": ItemSearchContainer {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "onFilterApplied": [Function],
+        "props": Object {
+          "filterOptions": Object {
+            "grades": Array [
+              1,
+            ],
+            "subjects": Array [
+              Object {
+                "code": "subjectCode",
+                "label": "subjectLabel",
+              },
+            ],
+            "techTypes": Array [],
+          },
+          "item": Object {
+            "kind": "none",
+          },
+          "onRowSelection": [Function],
+          "searchClient": [Function],
+        },
+        "refs": Object {},
+        "state": Object {
+          "itemFilter": Object {
+            "grade": NaN,
+            "subject": undefined,
+            "techType": undefined,
+          },
+          "itemSearchResult": Object {
+            "kind": "none",
+          },
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="search-controls"
+>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
+                    Print Items
+          </button>
+          <ItemSearchDropdown
+                    filterOptions={
+                              Object {
+                                        "grades": Array [
+                                          1,
+                                        ],
+                                        "subjects": Array [
+                                          Object {
+                                            "code": "subjectCode",
+                                            "label": "subjectLabel",
+                                          },
+                                        ],
+                                        "techTypes": Array [],
+                                      }
+                    }
+                    isLoading={false}
+                    itemFilter={
+                              Object {
+                                        "grade": NaN,
+                                        "subject": undefined,
+                                        "techType": undefined,
+                                      }
+                    }
+                    onChange={[Function]}
+          />
+          <div>
+                    Loading...
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="search-controls"
+>
+          <button
+                    style={
+                              Object {
+                                        "margin": "2px",
+                                        "paddingRight": "5px",
+                                      }
+                    }
+          >
+                    Print Items
+          </button>
+          <ItemSearchDropdown
+                    filterOptions={
+                              Object {
+                                        "grades": Array [
+                                          1,
+                                        ],
+                                        "subjects": Array [
+                                          Object {
+                                            "code": "subjectCode",
+                                            "label": "subjectLabel",
+                                          },
+                                        ],
+                                        "techTypes": Array [],
+                                      }
+                    }
+                    isLoading={false}
+                    itemFilter={
+                              Object {
+                                        "grade": NaN,
+                                        "subject": undefined,
+                                        "techType": undefined,
+                                      }
+                    }
+                    onChange={[Function]}
+          />
+          <div>
+                    Loading...
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ItemSearchContainer
+    filterOptions={
+        Object {
+            "grades": Array [
+              1,
+            ],
+            "subjects": Array [
+              Object {
+                "code": "subjectCode",
+                "label": "subjectLabel",
+              },
+            ],
+            "techTypes": Array [],
+          }
+    }
+    item={
+        Object {
+            "kind": "none",
+          }
+    }
+    onRowSelection={[Function]}
+    searchClient={[Function]}
+/>,
+}
+`;

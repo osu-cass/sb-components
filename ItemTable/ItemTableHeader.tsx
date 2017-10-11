@@ -9,7 +9,7 @@ export interface Props {
     sorts: HeaderSort[];
 }
 
-export interface State {}
+export interface State { }
 
 export enum SortDirection {
     NoSort = 0,
@@ -32,16 +32,20 @@ export interface SortColumn {
 
 const invokeResetSortLimit = 2;
 
+const style = {
+    color: "gray"
+}
+
 const decendingArrow = (
-    <span aria-label="Decend">▼</span>
+    <span style={style} className="fa fa-sort-desc" aria-hidden="true" />
 );
 
 const acendingArrow = (
-    <span aria-label="Ascend">▲</span>
+    <span style={style} className="fa fa-sort-asc" aria-hidden="true" />
 );
 
 const noSort = (
-    <span aria-label="NoSort"></span>
+    <span style={style} className="fa fa-sort" aria-hidden="true" />
 );
 
 export const headerColumns: SortColumn[] = [
@@ -95,22 +99,11 @@ export class HeaderTable extends React.Component<Props, State> {
         }
     }
 
-    compareColumn(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
-        const sorts = this.props.sorts || [];
-        for (const sort of sorts) {
-            const diff = sort.col.compare(lhs, rhs) * sort.direction;
-            if (diff !== 0) {
-                return diff;
-            }
-        }
-        return 0;
-    }
-
     headerEventHandler(scol: SortColumn, hcol: HeaderSort | undefined) {
         this.props.onHeaderClick(scol);
     }
 
-    setDirElem(headerSort: HeaderSort | undefined):JSX.Element {
+    setDirElem(headerSort: HeaderSort | undefined): JSX.Element {
         let dirElem = noSort;
         if (!headerSort) {
             return dirElem;
@@ -118,14 +111,14 @@ export class HeaderTable extends React.Component<Props, State> {
             dirElem = acendingArrow;
         } else if (headerSort.direction === SortDirection.Descending) {
             dirElem = decendingArrow;
-        } 
+        }
         return dirElem;
     }
 
     renderHeader(col: SortColumn): JSX.Element {
         const headerSort = this.props.sorts.find(hs => hs.col.header === col.header);
         if (headerSort) {
-            this.setDirElem(headerSort); 
+            this.setDirElem(headerSort);
         }
 
         return (
@@ -133,7 +126,8 @@ export class HeaderTable extends React.Component<Props, State> {
                 className={col.className}
                 onClick={() => this.headerEventHandler(col, headerSort)}>
                 <div className={col.className}>
-                    {col.header} {this.setDirElem(headerSort)} 
+                    <span>{col.header}</span> 
+                    {this.setDirElem(headerSort)} 
                 </div>
             </th>
         );
@@ -141,14 +135,12 @@ export class HeaderTable extends React.Component<Props, State> {
 
     render() {
         return (
-            <table className="item-table mapcomponent-table item-table-header">
-                <thead>
-                    <tr className="primary">
-                        <th></th>
-                        {this.props.columns.map(col => this.renderHeader(col))}
-                    </tr>
-                </thead>
-            </table>
+            <thead>
+                <tr className="primary">
+                    <th></th>
+                    {this.props.columns.map(col => this.renderHeader(col))}
+                </tr>
+            </thead>
         );
     }
 }

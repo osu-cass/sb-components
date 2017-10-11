@@ -1,0 +1,687 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemTableHeader matches snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <thead>
+    <tr
+        className="primary"
+    >
+        <th />
+        <th
+            className="item"
+            onClick={[Function]}
+        >
+            <div
+                className="item"
+            >
+                <span>
+                    Item
+                </span>
+                <span
+                    aria-hidden="true"
+                    className="fa fa-sort-asc"
+                    style={
+                        Object {
+                            "color": "gray",
+                          }
+                    }
+                />
+            </div>
+        </th>
+        <th
+            className="claimAndTarget"
+            onClick={[Function]}
+        >
+            <div
+                className="claimAndTarget"
+            >
+                <span>
+                    Claim/Target
+                </span>
+                <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "color": "gray",
+                          }
+                    }
+                />
+            </div>
+        </th>
+        <th
+            className="subject"
+            onClick={[Function]}
+        >
+            <div
+                className="subject"
+            >
+                <span>
+                    Subject
+                </span>
+                <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "color": "gray",
+                          }
+                    }
+                />
+            </div>
+        </th>
+        <th
+            className="grade"
+            onClick={[Function]}
+        >
+            <div
+                className="grade"
+            >
+                <span>
+                    Grade
+                </span>
+                <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "color": "gray",
+                          }
+                    }
+                />
+            </div>
+        </th>
+        <th
+            className="interactionType"
+            onClick={[Function]}
+        >
+            <div
+                className="interactionType"
+            >
+                <span>
+                    Item Type
+                </span>
+                <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                        Object {
+                            "color": "gray",
+                          }
+                    }
+                />
+            </div>
+        </th>
+    </tr>
+</thead>,
+  "nodes": Array [
+    <thead>
+      <tr
+            className="primary"
+      >
+            <th />
+            <th
+                  className="item"
+                  onClick={[Function]}
+            >
+                  <div
+                        className="item"
+                  >
+                        <span>
+                              Item
+                        </span>
+                        <span
+                              aria-hidden="true"
+                              className="fa fa-sort-asc"
+                              style={
+                                    Object {
+                                          "color": "gray",
+                                        }
+                              }
+                        />
+                  </div>
+            </th>
+            <th
+                  className="claimAndTarget"
+                  onClick={[Function]}
+            >
+                  <div
+                        className="claimAndTarget"
+                  >
+                        <span>
+                              Claim/Target
+                        </span>
+                        <span
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "color": "gray",
+                                        }
+                              }
+                        />
+                  </div>
+            </th>
+            <th
+                  className="subject"
+                  onClick={[Function]}
+            >
+                  <div
+                        className="subject"
+                  >
+                        <span>
+                              Subject
+                        </span>
+                        <span
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "color": "gray",
+                                        }
+                              }
+                        />
+                  </div>
+            </th>
+            <th
+                  className="grade"
+                  onClick={[Function]}
+            >
+                  <div
+                        className="grade"
+                  >
+                        <span>
+                              Grade
+                        </span>
+                        <span
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "color": "gray",
+                                        }
+                              }
+                        />
+                  </div>
+            </th>
+            <th
+                  className="interactionType"
+                  onClick={[Function]}
+            >
+                  <div
+                        className="interactionType"
+                  >
+                        <span>
+                              Item Type
+                        </span>
+                        <span
+                              aria-hidden="true"
+                              className="fa fa-sort"
+                              style={
+                                    Object {
+                                          "color": "gray",
+                                        }
+                              }
+                        />
+                  </div>
+            </th>
+      </tr>
+</thead>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <HeaderTable
+        columns={
+                Array [
+                        Object {
+                          "accessor": [Function],
+                          "className": "item",
+                          "compare": [Function],
+                          "header": "Item",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "claimAndTarget",
+                          "compare": [Function],
+                          "header": "Claim/Target",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "subject",
+                          "compare": [Function],
+                          "header": "Subject",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "grade",
+                          "compare": [Function],
+                          "header": "Grade",
+                        },
+                        Object {
+                          "accessor": [Function],
+                          "className": "interactionType",
+                          "compare": [Function],
+                          "header": "Item Type",
+                        },
+                      ]
+        }
+        onHeaderClick={[Function]}
+        sorts={
+                Array [
+                        Object {
+                          "col": Object {
+                            "accessor": [Function],
+                            "className": "item",
+                            "compare": [Function],
+                            "header": "Item",
+                          },
+                          "direction": 1,
+                          "resetSortCount": 1,
+                        },
+                      ]
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": HeaderTable {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "columns": Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ],
+          "onHeaderClick": [Function],
+          "sorts": Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 1,
+            },
+          ],
+        },
+        "refs": Object {},
+        "state": Object {
+          "dirElem": undefined,
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <thead>
+          <tr
+                    className="primary"
+          >
+                    <th />
+                    <th
+                              className="item"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="item"
+                              >
+                                        <span>
+                                                  Item
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort-asc"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="claimAndTarget"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="claimAndTarget"
+                              >
+                                        <span>
+                                                  Claim/Target
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="subject"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="subject"
+                              >
+                                        <span>
+                                                  Subject
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="grade"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="grade"
+                              >
+                                        <span>
+                                                  Grade
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="interactionType"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="interactionType"
+                              >
+                                        <span>
+                                                  Item Type
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+          </tr>
+</thead>,
+        "_debugID": 2,
+        "_renderedOutput": <thead>
+          <tr
+                    className="primary"
+          >
+                    <th />
+                    <th
+                              className="item"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="item"
+                              >
+                                        <span>
+                                                  Item
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort-asc"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="claimAndTarget"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="claimAndTarget"
+                              >
+                                        <span>
+                                                  Claim/Target
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="subject"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="subject"
+                              >
+                                        <span>
+                                                  Subject
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="grade"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="grade"
+                              >
+                                        <span>
+                                                  Grade
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+                    <th
+                              className="interactionType"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="interactionType"
+                              >
+                                        <span>
+                                                  Item Type
+                                        </span>
+                                        <span
+                                                  aria-hidden="true"
+                                                  className="fa fa-sort"
+                                                  style={
+                                                            Object {
+                                                                      "color": "gray",
+                                                                    }
+                                                  }
+                                        />
+                              </div>
+                    </th>
+          </tr>
+</thead>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <HeaderTable
+    columns={
+        Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+    }
+    onHeaderClick={[Function]}
+    sorts={
+        Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 1,
+            },
+          ]
+    }
+/>,
+}
+`;
+
+exports[`ItemTableHeader sorts list on header click 1`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 2`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 3`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 4`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 5`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 6`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 7`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 8`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 9`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 10`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 11`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 12`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 13`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 14`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;
+
+exports[`ItemTableHeader sorts list on header click 15`] = `"\\"<thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\" style=\\\\\\"color: gray;\\\\\\"></span></div></th></tr></thead>\\""`;

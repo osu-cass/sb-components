@@ -6,17 +6,18 @@ import * as GradeLevels from "../Models/GradeLevels";
 import { ItemsSearchViewModel } from "../ScoreGuide/ItemSearchContainer";
 import * as ItemModels from '../Models/ItemModels';
 import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown';
-
+import * as AboutItemVM from '../Models/AboutItemVM';
+import * as ApiModels from '../Models/ApiModels';
 
 export interface Props {
-    onRowSelection: (item: {itemKey: number; bankKey: number}) => void;
-    itemCards?: ItemCardViewModel.ItemCardViewModel[]; 
+    onRowSelection: (item: { itemKey: number; bankKey: number }, reset: boolean) => void;
+    itemCards?: ItemCardViewModel.ItemCardViewModel[];
+    item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
 }
 
 export interface State {
-    sorts: ItemTableHeader.HeaderSort[]; 
-    selectedRow?: ItemCardViewModel.ItemCardViewModel; 
-    
+    sorts: ItemTableHeader.HeaderSort[];
+    selectedRow?: ItemCardViewModel.ItemCardViewModel | null;
 }
 
 export class ItemPageTable extends React.Component<Props, State>{
@@ -24,9 +25,10 @@ export class ItemPageTable extends React.Component<Props, State>{
     private dataTableRef: HTMLTableElement;
 
     constructor(props: Props) {
-        super(props); 
+        super(props);
         this.state = {
-            sorts: []
+            sorts: [],
+            selectedRow: null
         }
     }
 
@@ -44,7 +46,6 @@ export class ItemPageTable extends React.Component<Props, State>{
             else {
                 newSort.direction = ItemTableHeader.SortDirection.Ascending;
             }
-
             newSorts[headIdx] = newSort;
         } else {
             const newSort: ItemTableHeader.HeaderSort = {
@@ -58,13 +59,14 @@ export class ItemPageTable extends React.Component<Props, State>{
     }
 
     onSelectItem = (item: ItemCardViewModel.ItemCardViewModel) => {
-        this.setState({
-            selectedRow: item
-        });
-        const card = {itemKey: item.itemKey, bankKey: item.bankKey}
-
-        this.props.onRowSelection(card);
-     
+        const card = { itemKey: item.itemKey, bankKey: item.bankKey }
+        if(item === this.state.selectedRow){
+            this.props.onRowSelection(card, true)
+            this.setState({selectedRow: null})
+        }else{
+            this.props.onRowSelection(card, false)
+            this.setState({selectedRow: item})
+        }
     };
 
     invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
@@ -77,16 +79,17 @@ export class ItemPageTable extends React.Component<Props, State>{
         }
         return 0;
     }
+    
     getTableData = (): ItemCardViewModel.ItemCardViewModel[] | undefined => {
-        let data = this.props.itemCards; 
-        if(data != undefined){
+        let data = this.props.itemCards;
+        if (data != undefined) {
             data = this.state.sorts && this.state.sorts.length !== 0
                 ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
                 : data;
         }
-        return data; 
+        return data;
     }
-    
+
     renderTableHeader() {
         return (
             <ItemTableHeader.HeaderTable
@@ -98,30 +101,33 @@ export class ItemPageTable extends React.Component<Props, State>{
 
     renderTable() {
         const itemCards = this.getTableData(); //this returns undefined but in the method it has data. that's w
+        let content = (<span className="placeholder-text" role="alert">No results found for the given search terms.</span>);
         if (itemCards != undefined) {
             //if no items are returned we want to return a friendly message
-            if (itemCards.length === 0) {
-                return <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
-            } else {
-                return (
+            if (itemCards.length !== 0) {
+                content = (
                     <ItemTable.DataTable
                         mapRows={itemCards}
                         rowOnClick={this.onSelectItem}
                         sort={this.state.sorts}
                         tableRef={ref => this.dataTableRef = ref}
                         columns={this.headerColumns}
-                        selectedRow={this.state.selectedRow} />
+                        selectedRow={this.state.selectedRow}
+                        item={this.props.item}
+                    />
                 );
             }
         }
-        return <span className="placeholder-text" role="alert">No results found for the given search terms.</span>
+        return content;
     }
 
     render() {
         return (
             <div>
-                {this.renderTableHeader()}
-                {this.renderTable()}
+                <table className="item-table mapcomponent-table">
+                    {this.renderTableHeader()}
+                    {this.renderTable()}
+                </table>
             </div>
         );
     }
