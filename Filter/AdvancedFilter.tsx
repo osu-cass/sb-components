@@ -11,34 +11,39 @@ export class AdvancedFilter extends React.Component<Props, {}> {
         super(props);
     }
 
-    render() {
-        const tags:JSX.Element[] = [];
-        let anySelected:boolean = false;
+    renderAllbtnContainer (){
+        let allBtnContainer:JSX.Element|undefined;
+        let classname = "";
+        let anySelected = this.props.filterOptions.some(fo => fo.isSelected)
 
+        if (this.props.displayAllButton) {
+            classname = anySelected ? "" : " selected";
+            
+            allBtnContainer = (
+                <div className="filter-all-btn-container">
+                    <button className={"filter-all-btn" + classname} key="all" onClick={() => this.props.selectedHandler()}>All</button>
+                </div>
+            );
+        }
+        return allBtnContainer;
+    }
+
+    renderTags() {
+        const tags:JSX.Element[] = [];
+        let classname = "";
         if(this.props.filterOptions){
-            this.props.filterOptions.forEach((t, i) => { 
-                let classname = "";
-                
-                if (t.isSelected){
-                    classname = "selected";
-                    anySelected = true;
-                }
+            this.props.filterOptions.forEach((t, i) => {                 
+                classname = t.isSelected ? "selected" : "";
+
                 tags.push(
                     <button className={classname} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
                 );
             });
         }
+        return tags;
+    }
 
-        if (this.props.displayAllButton) {
-            let classname = "";
-            if(!anySelected){
-                classname = " selected";
-            }
-            tags.unshift(
-                <button className={"all-button" + classname} key="all" onClick={() => this.props.selectedHandler()}>All</button>
-            );
-        }
-
+    render() {
         return (
             <div id={(this.props.label + "-filter").toLocaleLowerCase()} className="filter-selection">
                 <label>
@@ -46,7 +51,10 @@ export class AdvancedFilter extends React.Component<Props, {}> {
                     <span data-tooltip={this.props.helpText} data-tooltip-position="top">ℹ</span>
                 </label>
                 <div className="child-filter-options">
-                    {tags}
+                    {this.renderAllbtnContainer()}
+                    <div>
+                        {this.renderTags()}
+                    </div>
                 </div>
             </div>
         );
