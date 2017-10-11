@@ -108,6 +108,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
         return (
             <div className="search-controls">
                 <button style={style}>Print Items</button>
+                {this.renderfilterComponent()}
                 {this.renderTableComponent()}
             </div>
         );
