@@ -135,7 +135,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         const buttonText = this.state.expanded ? "Collapse " : "Expand ";
         return (
             <div style={{ display: "flex", flexFlow: "row nowrap", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-                <h1><span className="fa fa-tasks fa-lg" /> Advanced Filters</h1>
+                <h2><span className="fa fa-tasks fa-lg" /> Advanced Filters</h2>
                 <button onClick={this.handleClick} className="filter-button">{buttonText}<span className={className} /></button>
             </div>
         )
