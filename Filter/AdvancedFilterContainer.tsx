@@ -11,35 +11,41 @@ interface Props {
 
 interface State {
     filters: AdvancedFilterCategory[];
+    expanded: boolean
 }
 
-export class AdvancedFilterContainer extends React.Component<Props,State>{
-    constructor(props:Props){
+export class AdvancedFilterContainer extends React.Component<Props, State>{
+    constructor(props: Props) {
         super(props);
 
         this.state = {
-            filters: props.filterOptions
+            filters: props.filterOptions,
+            expanded: false
         }
+    }
+
+    handleClick = () => {
+        this.setState({ expanded: !this.state.expanded })
     }
 
     onSelect(category: AdvancedFilterCategory, option?: AdvancedFilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions:AdvancedFilterOption[] = [];
+        let newOptions: AdvancedFilterOption[] = [];
 
         //TODO Refactor
         if (!option) { // all pressed
             newOptions = newFilters[index].filterOptions
-                .map(opt => {return {...opt, isSelected: false}});
+                .map(opt => { return { ...opt, isSelected: false } });
         } else {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);
-            if(category.isMultiSelect){
+            if (category.isMultiSelect) {
                 newOptions = newFilters[index].filterOptions
-                    .map(opt => {return {...opt}});
+                    .map(opt => { return { ...opt } });
             }
             else {
                 newOptions = newFilters[index].filterOptions
-                    .map(opt => {return {...opt, isSelected: false}});
+                    .map(opt => { return { ...opt, isSelected: false } });
             }
 
             newOptions[optionIdx].isSelected = !option.isSelected;
@@ -76,19 +82,19 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     renderFilterIndicators() {
-        let tags:JSX.Element[] = []
+        let tags: JSX.Element[] = []
 
         this.state.filters.forEach(fil => {
-            if(!fil.disabled){
+            if (!fil.disabled) {
                 fil.filterOptions.forEach(opt => {
-                    if(opt.isSelected){
+                    if (opt.isSelected) {
                         tags.push(
-                        <div className="filter-indicator" key={opt.key}>
-                            {opt.label}<span onClick={() => this.onSelect(fil,opt)}>X</span>
-                        </div>
+                            <div className="filter-indicator" key={opt.key}>
+                                {opt.label}<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times fa-small" />
+                            </div>
                         );
                     }
-                });     
+                });
             }
         });
 
@@ -96,11 +102,11 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
     }
 
     renderFilterHeader() {
-        return(
+        return (
             <div className="filter-header">
-                <div>
-                    <a onClick={() => this.resetFilters()} 
-                        onKeyPress={e => this.keyPressResetFilters(e)} 
+                <div style={{ display: "flex", flexflow: "row nowrap", justifyContent: "space-between" }}>
+                    <a onClick={() => this.resetFilters()}
+                        onKeyPress={e => this.keyPressResetFilters(e)}
                         tabIndex={0}>Reset filters</a>
                 </div>
                 <div className="filter-status">
@@ -112,7 +118,7 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
 
     renderFilterBody() {
         const filterTags = this.state.filters.map((fil, i) => {
-            return(
+            return (
                 <AdvancedFilter {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
             );
         });
@@ -124,11 +130,28 @@ export class AdvancedFilterContainer extends React.Component<Props,State>{
         );
     }
 
+    renderCollapsedFilterContainer = () => {
+        const className = this.state.expanded ? "fa fa-chevron-up" : "fa fa-chevron-down";
+        const buttonText = this.state.expanded ? "Collapse " : "Expand ";
+        return (
+            <div style={{ display: "flex", flexFlow: "row nowrap", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
+                <h1><span className="fa fa-tasks fa-lg" /> Advanced Filters</h1>
+                <button onClick={this.handleClick} className="filter-button">{buttonText}<span className={className} /></button>
+            </div>
+        )
+    }
+
+
     render() {
+        let content = null;
+        if(this.state.expanded){
+            content = (<div className="advanced-filter-container-expanded">{this.renderFilterHeader()}{this.renderFilterBody()}</div>)
+        }
+
         return (
             <div className="advanced-filter-container">
-                {this.renderFilterHeader()}
-                {this.renderFilterBody()}
+                {this.renderCollapsedFilterContainer()}
+                {content}
             </div>
         );
     }

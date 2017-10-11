@@ -5,8 +5,9 @@ import { parseQueryString } from "../Models/ApiModels";
 import { AdvancedFilterCategory, AdvancedFilters, OptionType, AdvancedFilterOption } from "../filter/AdvancedFilterModel";
 
 export class FilterHelper {
+
     //TODO: Get this from the server
-    static getFilterOptions(): AdvancedFilters {
+    static getFilterOptions(): AdvancedFilters  {
         const subjectsFilterOptions: AdvancedFilterOption[] = [{
             label: "Mathematics",
             key: "MATH",
@@ -101,7 +102,9 @@ export class FilterHelper {
             displayAllButton: false
         }
 
-        return { subjects, grades, techTypes };
+        const value: AdvancedFilters = {subjects, grades, techTypes};
+        
+        return value;
     }
 
     static filter(itemCards: ItemCardViewModel[], filter: AdvancedFilterCategory[]): ItemCardViewModel[] {

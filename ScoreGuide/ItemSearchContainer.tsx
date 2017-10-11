@@ -72,7 +72,7 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     renderfilterComponent(){
         // TODO: refactor for more elegant solution. 
         const propfil = this.props.filterOptions;
-        const filterOpt = [propfil.grades,propfil.techTypes,propfil.subjects]; 
+        const filterOpt = [propfil.grades, propfil.subjects, propfil.techTypes]; 
 
         return (
             <AdvancedFilterContainer
@@ -102,7 +102,8 @@ export class ItemSearchContainer extends React.Component<Props, State> {
     render() {
         const style = {
             paddingRight: "5px",
-            margin: "2px"
+            margin: "2px",
+            height: "20%"
         }
 
         return (

@@ -6,6 +6,8 @@ interface Props extends AdvancedFilterCategory {
     selectedHandler: (data?: AdvancedFilterOption) => void;
 }
 
+const style={margin: "1px", borderRadius: "3px", border: "0"}
+
 export class AdvancedFilter extends React.Component<Props, {}> {
     constructor(props: Props) {
         super(props);
@@ -17,11 +19,11 @@ export class AdvancedFilter extends React.Component<Props, {}> {
         let anySelected = this.props.filterOptions.some(fo => fo.isSelected)
 
         if (this.props.displayAllButton) {
-            classname = anySelected ? "" : " selected";
+            classname = anySelected ? "" : " selected-button";
             
             allBtnContainer = (
                 <div className="filter-all-btn-container">
-                    <button className={"filter-all-btn" + classname} key="all" onClick={() => this.props.selectedHandler()}>All</button>
+                    <button className={"filter-all-btn " + classname + " filter-button"} key="all" onClick={() => this.props.selectedHandler()}>All</button>
                 </div>
             );
         }
@@ -33,10 +35,10 @@ export class AdvancedFilter extends React.Component<Props, {}> {
         let classname = "";
         if(this.props.filterOptions){
             this.props.filterOptions.forEach((t, i) => {                 
-                classname = t.isSelected ? "selected" : "";
+                classname = t.isSelected ? "selected-button" : "";
 
                 tags.push(
-                    <button className={classname} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
+                    <button className={classname + " filter-button"} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</button>
                 );
             });
         }
@@ -50,9 +52,9 @@ export class AdvancedFilter extends React.Component<Props, {}> {
                     <span info-label>{this.props.label}</span>
                     <span data-tooltip={this.props.helpText} data-tooltip-position="top">ℹ</span>
                 </label>
-                <div className="child-filter-options">
+                <div className="child-filter-container">
                     {this.renderAllbtnContainer()}
-                    <div>
+                    <div className="filter-button-container">
                         {this.renderTags()}
                     </div>
                 </div>
