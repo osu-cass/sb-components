@@ -6,13 +6,13 @@
       "removeComments": false,
       "sourceMap": true,
       "module": "commonjs",
-      "target": "es6",
+      "target": "es5",
       "outDir": "./build",
       "jsx": "react",
       "strictNullChecks": true,
       "allowSyntheticDefaultImports": true,
       "lib": [
-        "es5",
+        "es6",
         "dom"
       ],
       "typeRoots": [
