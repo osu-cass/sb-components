@@ -1,5 +1,3 @@
-import { GradeLevels } from "../Models/GradeLevels";
-
 export enum OptionType {
     inputBox,
     button
