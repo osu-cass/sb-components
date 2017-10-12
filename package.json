@@ -1,0 +1,30 @@
+{
+  "name": "react-advanced-filter",
+  "version": "1.0.0",
+  "description": "A component that filters item results for Smarter Balanced.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cass/react-advanced-filter.git"
+  },
+  "authors": [
+    "Dan Van Horn",
+    "Kevin Turkington"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cass/react-advanced-filter/issues"
+  },
+  "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
+  "dependencies": {
+    "@storybook/cli": "^3.2.12"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.34",
+    "@types/react": "^16.0.10",
+    "@types/storybook__react": "^3.0.5"
+  }
+}
