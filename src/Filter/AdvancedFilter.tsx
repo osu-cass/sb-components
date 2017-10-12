@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as ItemModels from '../Models/ItemModels';
 import { AdvancedFilterCategory, AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
 
 interface Props extends AdvancedFilterCategory { 
