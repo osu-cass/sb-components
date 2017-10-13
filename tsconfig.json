@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "dist/",
+        "module": "commonjs",
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noEmitOnError": false,
+        "removeComments": false,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": false,
+        "sourceMap": true,
+        "jsx": "react",
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+          ],
+        "types": [
+            "storybook__react",
+            "storybook__addon-actions"
+          ],
+          "typeRoots": [
+            "./node_modules/@types"
+          ]
+    }
+}
