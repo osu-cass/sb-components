@@ -50,7 +50,7 @@ export class AdvancedFilter extends React.Component<Props, {}> {
             <div id={(this.props.label + "-filter").toLocaleLowerCase()} className="filter-selection">
                 <label>
                     <span info-label>{this.props.label}</span>
-                    <span data-tooltip={this.props.helpText} data-tooltip-position="top">ℹ</span>
+                    <span data-tooltip={this.props.helpText} data-tooltip-position="top"><span className="fa fa-info-circle fa-sm"/></span>
                 </label>
                 <div className="child-filter-container">
                     {this.renderAllbtnContainer()}

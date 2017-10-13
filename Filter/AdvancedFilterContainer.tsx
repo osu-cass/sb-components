@@ -90,7 +90,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
                     if (opt.isSelected) {
                         tags.push(
                             <div className="filter-indicator" key={opt.key}>
-                                {opt.label}<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times fa-small" />
+                                {opt.label}&nbsp;<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times fa-small" />
                             </div>
                         );
                     }
@@ -135,7 +135,10 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         const buttonText = this.state.expanded ? "Collapse " : "Expand ";
         return (
             <div style={{ display: "flex", flexFlow: "row nowrap", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-                <h1><span className="fa fa-tasks fa-lg" /> Advanced Filters</h1>
+                <div style={{ display: "flex", flexFlow: "row nowrap", color: "gray", alignItems: "center" }}>
+                    <h2 style={{ color: "#63666A" }}><span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters</h2>
+                    <span>&nbsp;Click on an item to remove it.</span>
+                </div>
                 <button onClick={this.handleClick} className="filter-button">{buttonText}<span className={className} /></button>
             </div>
         )
@@ -144,7 +147,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
 
     render() {
         let content = null;
-        if(this.state.expanded){
+        if (this.state.expanded) {
             content = (<div className="advanced-filter-container-expanded">{this.renderFilterHeader()}{this.renderFilterBody()}</div>)
         }
 
