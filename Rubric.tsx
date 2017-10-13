@@ -12,14 +12,7 @@ interface TableRow {
 }
 
 export class RubricComponent extends React.Component<Props, {}> {
-    renderRubric(rubric: Rubric) {
-        let purpose = "Exemplar";
-        if (rubric.samples[0] && 
-            rubric.samples[0].sampleResponses[0] && 
-            rubric.samples[0].sampleResponses[0].purpose) {
-
-            purpose = rubric.samples[0].sampleResponses[0].purpose;
-        }
+    renderRubric(rubric: Rubric, index: number) {
 
         const rows = rubric.rubricEntries.map(entry => {
             const sample = rubric.samples.find(s => 
@@ -37,21 +30,25 @@ export class RubricComponent extends React.Component<Props, {}> {
 
         const showSample = rubric.samples.length !== 0;
 
+        const leftAlign = {
+            textAlign: "left"
+        }
+
         const rowsJsx = rows.map(row => 
-            <tr>
+            <tr key={row.score}>
                 <td>{row.score}</td>
-                <td dangerouslySetInnerHTML={{__html: row.rationale}}></td>
-                {showSample ? <td dangerouslySetInnerHTML={{__html: row.sample}}></td> : null}
+                <td dangerouslySetInnerHTML={{__html: row.rationale}} style={leftAlign}></td>
+                {showSample ? <td dangerouslySetInnerHTML={{__html: row.sample}} style={leftAlign}></td> : null}
             </tr>
         );
 
         return (
-            <table className='item-data-table'>
+            <table className='item-data-table' key={index}>
                 <thead>
                     <tr>
                         <th>Score</th>
                         <th>Rationale</th>
-                        {showSample ? <th>{purpose}</th> : null}
+                        {showSample ? <th>Exemplar</th> : null}
                     </tr>
                 </thead>
                 <tbody>
@@ -64,7 +61,7 @@ export class RubricComponent extends React.Component<Props, {}> {
     render() {
         return (
             <div>
-                {this.props.rubrics.map(r => this.renderRubric(r))}
+                {this.props.rubrics.map((r, i) => this.renderRubric(r, i))}
             </div>
         );
     }

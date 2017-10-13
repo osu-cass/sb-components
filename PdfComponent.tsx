@@ -22,6 +22,7 @@ export class PdfComponent extends React.Component<Props, {}> {
             <html>
                 <head>
                     <base href={this.props.pageBaseUrl} />
+                    <meta charSet="UTF-8" />
                     <link rel='stylesheet' href='css/pdf.css' />
                     <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Shared/CSS/Universal/items.css"} />
                     <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Projects/SBAC/css/modernItems.css"} />
