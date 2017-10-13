@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "alwaysStrict": true,
+      "noImplicitAny": true,
+      "noEmitOnError": false,
+      "removeComments": false,
+      "sourceMap": true,
+      "module": "commonjs",
+      "target": "es5",
+      "outDir": "./build",
+      "jsx": "react",
+      "strictNullChecks": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": [
+        "es6",
+        "dom"
+      ],
+      "typeRoots": [
+        "./node_modules/@types"
+      ]
+    },
+    "exclude": [
+      "node_modules",
+      "wwwroot"
+    ],
+    "jest": {
+      "moduleDirectories": [
+        "node_modules"
+      ]
+    }
+  }
