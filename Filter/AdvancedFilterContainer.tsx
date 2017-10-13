@@ -101,13 +101,13 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         return tags;
     }
 
-    renderFilterHeader() {
+    renderFilterSubHeader() {
         return (
             <div className="filter-header">
                 <div style={{ display: "flex", flexflow: "row nowrap", justifyContent: "space-between" }}>
-                    <a onClick={() => this.resetFilters()}
+                    <button className="filter-reset-btn" onClick={() => this.resetFilters()}
                         onKeyPress={e => this.keyPressResetFilters(e)}
-                        tabIndex={0}>Reset filters</a>
+                        tabIndex={0}>Reset filters</button>
                 </div>
                 <div className="filter-status">
                     {this.renderFilterIndicators()}
@@ -130,7 +130,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         );
     }
 
-    renderCollapsedFilterContainer = () => {
+    renderFilterContainerHeader = () => {
         const className = this.state.expanded ? "fa fa-chevron-up" : "fa fa-chevron-down";
         const buttonText = this.state.expanded ? "Collapse " : "Expand ";
         return (
@@ -147,13 +147,18 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
 
     render() {
         let content = null;
-        if (this.state.expanded) {
-            content = (<div className="advanced-filter-container-expanded">{this.renderFilterHeader()}{this.renderFilterBody()}</div>)
+        if(this.state.expanded){
+            content = (
+                <div className="advanced-filter-container-expanded">
+                    {this.renderFilterSubHeader()}
+                    {this.renderFilterBody()}
+                </div>
+            );
         }
 
         return (
             <div className="advanced-filter-container">
-                {this.renderCollapsedFilterContainer()}
+                {this.renderFilterContainerHeader()}
                 {content}
             </div>
         );
