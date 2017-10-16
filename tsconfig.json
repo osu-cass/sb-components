@@ -10,8 +10,9 @@
       "outDir": "./build",
       "jsx": "react",
       "strictNullChecks": true,
-      "allowSyntheticDefaultImports": true,
+      "allowSyntheticDefaultImports": false,
       "lib": [
+        "es5",
         "es6",
         "dom"
       ],

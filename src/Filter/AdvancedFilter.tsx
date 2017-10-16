@@ -1,7 +1,7 @@
 import * as React from "react";
 import { AdvancedFilterCategory, AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
 
-interface Props extends AdvancedFilterCategory { 
+export interface Props extends AdvancedFilterCategory { 
     selectedHandler: (data?: AdvancedFilterOption) => void;
 }
 

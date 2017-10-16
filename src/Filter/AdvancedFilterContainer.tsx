@@ -2,10 +2,10 @@ import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 
-interface Props {
+export interface Props {
     filterOptions: AdvancedFilterCategory[];
     onClick: (selected: AdvancedFilterCategory[]) => void;
-}
+}  
 
 interface State {
     filters: AdvancedFilterCategory[];
