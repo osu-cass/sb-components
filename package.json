@@ -23,17 +23,13 @@
     "url": "https://github.com/osu-cass/react-advanced-filter/issues"
   },
   "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
-  "dependencies": {
-    "react": "16.0.0",
-    "react-dom": "16.0.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "@storybook/addon-actions": "^3.2.12ks",
+    "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/addons": "^3.2.12",
     "@storybook/channels": "^3.2.12",
@@ -51,7 +47,9 @@
     "jest": "^21.2.1",
     "react-test-renderer": "^16.0.0",
     "ts-jest": "^21.1.2",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
   },
   "jest": {
     "transform": {
