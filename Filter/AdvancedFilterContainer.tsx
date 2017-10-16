@@ -103,8 +103,8 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
 
     renderFilterSubHeader() {
         return (
-            <div className="filter-header">
-                <div style={{ display: "flex", flexflow: "row nowrap", justifyContent: "space-between" }}>
+            <div className="filter-subheader">
+                <div>
                     <button className="filter-reset-btn" onClick={() => this.resetFilters()}
                         onKeyPress={e => this.keyPressResetFilters(e)}
                         tabIndex={0}>Reset filters</button>
@@ -133,11 +133,12 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     renderFilterContainerHeader = () => {
         const className = this.state.expanded ? "fa fa-chevron-up" : "fa fa-chevron-down";
         const buttonText = this.state.expanded ? "Collapse " : "Expand ";
+        const helpText = this.state.expanded ? <span>&nbsp;Click on an item to remove it.</span> : "";
         return (
-            <div style={{ display: "flex", flexFlow: "row nowrap", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-                <div style={{ display: "flex", flexFlow: "row nowrap", color: "gray", alignItems: "center" }}>
-                    <h2 style={{ color: "#63666A" }}><span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters</h2>
-                    <span>&nbsp;Click on an item to remove it.</span>
+            <div className="filter-header">
+                <div>
+                    <h2><span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters</h2>
+                    {helpText}
                 </div>
                 <button onClick={this.handleClick} className="filter-button">{buttonText}<span className={className} /></button>
             </div>
