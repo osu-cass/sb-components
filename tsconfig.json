@@ -10,10 +10,15 @@
       "outDir": "./build",
       "jsx": "react",
       "strictNullChecks": true,
-      "allowSyntheticDefaultImports": true,
+      "allowSyntheticDefaultImports": false,
       "lib": [
+        "es5",
         "es6",
         "dom"
+      ],
+      "types": [
+        "storybook__react",
+        "storybook__addon-actions"
       ],
       "typeRoots": [
         "./node_modules/@types"
