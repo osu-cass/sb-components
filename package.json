@@ -1,8 +1,9 @@
 {
   "name": "react-advanced-filter",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "A component that filters item results for Smarter Balanced.",
   "main": "index.js",
+  "files": ["/build"],
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",

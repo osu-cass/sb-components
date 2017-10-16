@@ -2,7 +2,7 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { AdvancedFilter, Props } from '../src/Filter/AdvancedFilter';
-import { AdvancedFilterOption, OptionType, AdvancedFilterCategory } from '../AdvancedFilterModel';
+import { AdvancedFilterOption, OptionType, AdvancedFilterCategory } from '../src/Filter/AdvancedFilterModel';
 
 const advancedFilterOption: AdvancedFilterOption = {
     label: "Grade 3",
