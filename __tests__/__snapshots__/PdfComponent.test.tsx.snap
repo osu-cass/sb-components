@@ -13,6 +13,9 @@ ShallowWrapper {
         <base
             href="http://example.com"
         />
+        <meta
+            charSet="UTF-8"
+        />
         <link
             href="css/pdf.css"
             rel="stylesheet"
@@ -111,6 +114,9 @@ ShallowWrapper {
       <head>
             <base
                   href="http://example.com"
+            />
+            <meta
+                  charSet="UTF-8"
             />
             <link
                   href="css/pdf.css"
@@ -401,6 +407,9 @@ ShallowWrapper {
                     <base
                               href="http://example.com"
                     />
+                    <meta
+                              charSet="UTF-8"
+                    />
                     <link
                               href="css/pdf.css"
                               rel="stylesheet"
@@ -499,6 +508,9 @@ ShallowWrapper {
           <head>
                     <base
                               href="http://example.com"
+                    />
+                    <meta
+                              charSet="UTF-8"
                     />
                     <link
                               href="css/pdf.css"
