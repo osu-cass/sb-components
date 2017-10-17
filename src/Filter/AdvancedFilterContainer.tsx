@@ -1,6 +1,8 @@
+/// <reference path="../styles/AdvancedFilter.css.d.ts" />
 import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
+import * as s from "../styles/AdvancedFilter.css";
 
 export interface Props {
     filterOptions: AdvancedFilterCategory[];
@@ -142,12 +144,14 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         )
     }
 
+    
 
     render() {
         let content = null;
         if (this.state.expanded) {
             content = (<div className="advanced-filter-container-expanded">{this.renderFilterHeader()}{this.renderFilterBody()}</div>)
         }
+        console.log(JSON.stringify(s))
 
         return (
             <div className="advanced-filter-container">
