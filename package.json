@@ -10,7 +10,7 @@
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "node_modules/.bin/webpack --config build.config.js"
+    "build": "node_modules/.bin/tsc && cp -r ./src/styles  ./build/styles"
   },
   "repository": {
     "type": "git",
