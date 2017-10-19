@@ -2,7 +2,7 @@
 import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
-import * as s from "../styles/AdvancedFilter.css";
+import "../styles/AdvancedFilter.css";
 import "../../node_modules/font-awesome/css/font-awesome.css";
 
 

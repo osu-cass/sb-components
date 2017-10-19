@@ -1,7 +1,7 @@
 /// <reference path="../styles/AdvancedFilter.css.d.ts" />
 import * as React from "react";
 import { AdvancedFilterCategory, AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
-import *  as s from "../styles/AdvancedFilter.css";
+import "../styles/AdvancedFilter.css";
 import "../../node_modules/font-awesome/css/font-awesome.css";
 
 
