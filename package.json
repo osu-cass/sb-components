@@ -25,6 +25,9 @@
     "url": "https://github.com/osu-cass/react-advanced-filter/issues"
   },
   "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-storyshots": "^3.2.12",
@@ -47,7 +50,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.7",
-    "font-awesome": "^4.7.0",
     "jest": "^21.2.1",
     "postcss-loader": "^2.0.8",
     "react": "16.0.0",
