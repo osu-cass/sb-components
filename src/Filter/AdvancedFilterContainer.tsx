@@ -3,7 +3,9 @@ import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 import * as s from "../styles/AdvancedFilter.css";
-import "font-awesome/css/font-awesome.min.css";
+import "../../node_modules/font-awesome/css/font-awesome.css";
+
+
 
 export interface Props {
     filterOptions: AdvancedFilterCategory[];
@@ -152,7 +154,6 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         if (this.state.expanded) {
             content = (<div className="advanced-filter-container-expanded">{this.renderFilterHeader()}{this.renderFilterBody()}</div>)
         }
-        console.log(JSON.stringify(s))
 
         return (
             <div className="advanced-filter-container">

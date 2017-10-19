@@ -49,6 +49,7 @@
     "css-loader": "^0.28.7",
     "font-awesome": "^4.7.0",
     "jest": "^21.2.1",
+    "postcss-loader": "^2.0.8",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-test-renderer": "^16.0.0",
@@ -57,6 +58,7 @@
     "ts-jest": "^21.1.2",
     "typescript": "^2.5.3",
     "typings-for-css-modules-loader": "^1.7.0",
+    "url-loader": "^0.6.2",
     "webpack": "^3.8.1"
   },
   "jest": {
@@ -75,6 +77,7 @@
       },
       "babelConfig": {
         "presets": [
+          "es2015",
           "env",
           "react"
         ],
@@ -89,9 +92,11 @@
       "json",
       "js",
       "jsx"
-    ]
-  },
-  "dependencies": {
-    "postcss-loader": "^2.0.8"
+    ],
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^.+\\.css$": "identity-obj-proxy",
+      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
+    }
   }
 }

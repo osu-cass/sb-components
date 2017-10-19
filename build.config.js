@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: ['./src/index.ts'],
 
   output: {
     path: path.join(__dirname, "build"),
@@ -31,7 +31,7 @@ module.exports = {
         test: /\.css$/,
         include: path.join(__dirname, 'src'),
         use: [
-          'style-loader',
+          'style-loader!css-loader?sourceMap',
           {
             loader: 'typings-for-css-modules-loader',
             options: {
@@ -42,9 +42,9 @@ module.exports = {
           }
         ]
       },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader" },
-
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
+ 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
