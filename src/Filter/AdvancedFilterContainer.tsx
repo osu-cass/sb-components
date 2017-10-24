@@ -3,8 +3,7 @@ import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 import "../styles/AdvancedFilter.css";
-import "../../node_modules/font-awesome/css/font-awesome.css";
-
+import 'font-awesome/css/font-awesome.css';
 
 
 export interface Props {
@@ -12,7 +11,7 @@ export interface Props {
     onClick: (selected: AdvancedFilterCategory[]) => void;
 }  
 
-interface State {
+export interface State {
     filters: AdvancedFilterCategory[];
     expanded: boolean
 }

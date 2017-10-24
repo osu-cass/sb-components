@@ -10,22 +10,6 @@ module.exports = (baseConfig, env) => {
             loader: require.resolve('awesome-typescript-loader')
         });
 
-        // // generate typings for css modules
-        // config.module.rules.push({
-        //     test: /\.css$/,
-        //     use: [
-        //         'style-loader',
-        //         {
-        //           loader: 'typings-for-css-modules-loader',
-        //           options: {
-        //             modules: true,
-        //             namedExport: true,
-
-        //           }
-        //         }
-        //       ]
-        // })
-
         config.resolve.extensions.push('.ts', '.tsx');
 
         return config;
