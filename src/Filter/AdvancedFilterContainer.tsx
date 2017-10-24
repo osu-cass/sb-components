@@ -75,7 +75,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
 
                 newErrorMsgs.push({
                     categoryName:cate.label,
-                    Message: (`Atleast  one ${cate.label} must be selected.`)
+                    Message: (`At least  one ${cate.label} must be selected.`)
                 } as ErrorMessage);
             }
         });
@@ -131,7 +131,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
 
         this.state.errorMessageLog.forEach( (err,i) => {
             tags.push(
-                <div className="filter-indicator" key={i}>
+                <div className="filter-error" key={i}>
                     {err.Message}&nbsp;<span className="fa fa-exclamation-triangle fa-small" />
                 </div>
             );

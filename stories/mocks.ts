@@ -99,6 +99,6 @@ export const mockAdvancedFilterCategories = [
         }
       ],
       "displayAllButton": false,
-      "isRequired": false
+      "isRequired": true
     }
   ]

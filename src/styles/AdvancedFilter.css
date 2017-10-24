@@ -25,7 +25,6 @@
     border: 1px solid #D5D5D5;
     border-radius: 6px;
     background-color: #2d7bbd;
-    color: #ffffff;
 }
 
 .filter-error {
@@ -34,8 +33,7 @@
     color: #ffffff;
     border: 1px solid #D5D5D5;
     border-radius: 6px;
-    background-color: red;
-    color: #ffffff;
+    background-color: #BD2D2D;
 }
 
 .filter-error > span {
