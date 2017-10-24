@@ -3,8 +3,7 @@ import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 import "../styles/AdvancedFilter.css";
-import "../../node_modules/font-awesome/css/font-awesome.css";
-
+import 'font-awesome/css/font-awesome.css';
 
 
 export interface Props {
@@ -12,12 +11,16 @@ export interface Props {
     onClick: (selected: AdvancedFilterCategory[]) => void;
 }  
 
+<<<<<<< HEAD
 interface ErrorMessage {
     categoryName?: string;
     Message:string;
 }
 
 interface State {
+=======
+export interface State {
+>>>>>>> 6e804479454350646cdfe26a0255caf97aa05c5c
     filters: AdvancedFilterCategory[];
     expanded: boolean
     errorMessageLog: ErrorMessage[];
