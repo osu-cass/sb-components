@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+.filter-errorlog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .filter-body {
     display: inline-flex;
     justify-content: space-between;
@@ -15,12 +21,21 @@
 .filter-indicator{
     padding: 5px;
     margin: 2px;
-    color: #fff;
-    background-color: #1f67a1;
+    color: #ffffff;
     border: 1px solid #D5D5D5;
     border-radius: 6px;
     background-color: #2d7bbd;
-    color: white;
+    color: #ffffff;
+}
+
+.filter-error {
+    padding: 5px;
+    margin: 2px;
+    color: #ffffff;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    background-color: red;
+    color: #ffffff;
 }
 
 .filter-indicator:hover{

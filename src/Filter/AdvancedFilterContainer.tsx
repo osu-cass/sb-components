@@ -127,6 +127,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     }
 
     renderErrorMessages() {
+
         return "heyyyoo"
     }
 
@@ -141,7 +142,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
                 <div className="filter-status">
                     {this.renderFilterIndicators()}
                 </div>
-                <div>
+                <div className="filter-errorlog">
                     {this.renderErrorMessages()}
                 </div>
             </div>
