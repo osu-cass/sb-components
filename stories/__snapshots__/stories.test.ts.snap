@@ -24,16 +24,6 @@ exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
     className="child-filter-container"
   >
     <div
-      className="filter-all-btn-container"
-    >
-      <button
-        className="filter-all-btn  selected-button filter-button"
-        onClick={[Function]}
-      >
-        All
-      </button>
-    </div>
-    <div
       className="filter-button-container"
     >
       <button
@@ -88,16 +78,6 @@ exports[`Storyshots AdvancedFilter one filter item 1`] = `
   <div
     className="child-filter-container"
   >
-    <div
-      className="filter-all-btn-container"
-    >
-      <button
-        className="filter-all-btn  selected-button filter-button"
-        onClick={[Function]}
-      >
-        All
-      </button>
-    </div>
     <div
       className="filter-button-container"
     >
