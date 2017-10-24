@@ -17,6 +17,7 @@ export interface AdvancedFilterCategory {
     helpText: string;
     filterOptions: AdvancedFilterOption[];
     displayAllButton: boolean;
+    isRequired:boolean;
 }
 
 export interface TechType extends Subject { }

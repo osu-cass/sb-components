@@ -24,7 +24,8 @@ const advancedFilterCategory: AdvancedFilterCategory  = {
     label: "Grade 3",
     helpText: "Grade 3",
     filterOptions: [advancedFilterOption],
-    displayAllButton: true
+    displayAllButton: false,
+    isRequired:true
 }
 
 const selectedHandler = action("clicked filter");

@@ -12,9 +12,15 @@ export interface Props {
     onClick: (selected: AdvancedFilterCategory[]) => void;
 }  
 
+interface ErrorMessage {
+    categoryName?: string;
+    Message:string;
+}
+
 interface State {
     filters: AdvancedFilterCategory[];
     expanded: boolean
+    errorMessageLog: ErrorMessage[];
 }
 
 export class AdvancedFilterContainer extends React.Component<Props, State>{
@@ -23,7 +29,8 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
 
         this.state = {
             filters: props.filterOptions,
-            expanded: false
+            expanded: false,
+            errorMessageLog:[]
         }
     }
 
@@ -35,6 +42,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
         let newOptions: AdvancedFilterOption[] = [];
+        let newErrorMsgs:ErrorMessage[] = [];
 
         //TODO Refactor
         if (!option) { // all pressed
@@ -59,8 +67,22 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
             filterOptions: newOptions
         };
 
+        //checking for is  required
+        newFilters.forEach(cate => {
+            if(cate.isRequired 
+                && !cate.displayAllButton 
+                && cate.filterOptions.every(fo => !fo.isSelected)){
+
+                newErrorMsgs.push({
+                    categoryName:cate.label,
+                    Message: (`Atleast  one ${cate.label} must be selected.`)
+                } as ErrorMessage);
+            }
+        });
+
         this.setState({
-            filters: newFilters
+            filters: newFilters,
+            errorMessageLog:newErrorMsgs
         });
 
         this.props.onClick(newFilters);
@@ -104,6 +126,10 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         return tags;
     }
 
+    renderErrorMessages() {
+        return "heyyyoo"
+    }
+
     renderFilterHeader() {
         return (
             <div className="filter-header">
@@ -114,6 +140,9 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
                 </div>
                 <div className="filter-status">
                     {this.renderFilterIndicators()}
+                </div>
+                <div>
+                    {this.renderErrorMessages()}
                 </div>
             </div>
         );

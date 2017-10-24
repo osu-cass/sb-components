@@ -54,7 +54,8 @@ export const mockAdvancedFilterCategories = [
           "type": 1
         }
       ],
-      "displayAllButton": true
+      "displayAllButton": true,
+      "isRequired": false
     },
     {
       "disabled": false,
@@ -75,7 +76,8 @@ export const mockAdvancedFilterCategories = [
           "type": 1
         }
       ],
-      "displayAllButton": true
+      "displayAllButton": true,
+      "isRequired": false
     },
     {
       "disabled": false,
@@ -96,6 +98,7 @@ export const mockAdvancedFilterCategories = [
           "type": 1
         }
       ],
-      "displayAllButton": false
+      "displayAllButton": false,
+      "isRequired": false
     }
   ]
