@@ -38,6 +38,10 @@
     color: #ffffff;
 }
 
+.filter-error > span {
+    padding: 2px;
+}
+
 .filter-indicator:hover{
     background-color: #63666A;
 }

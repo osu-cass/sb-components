@@ -127,8 +127,17 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     }
 
     renderErrorMessages() {
+        let tags:JSX.Element[] = [];
 
-        return "heyyyoo"
+        this.state.errorMessageLog.forEach( (err,i) => {
+            tags.push(
+                <div className="filter-indicator" key={i}>
+                    {err.Message}&nbsp;<span className="fa fa-exclamation-triangle fa-small" />
+                </div>
+            );
+        });
+
+        return tags;
     }
 
     renderFilterHeader() {
