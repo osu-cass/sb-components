@@ -6,8 +6,6 @@ export interface Props extends AdvancedFilterCategory {
     selectedHandler: (data?: AdvancedFilterOption) => void;
 }
 
-const style={margin: "1px", borderRadius: "3px", border: "0"}
-
 export class AdvancedFilter extends React.Component<Props, {}> {
     constructor(props: Props) {
         super(props);
