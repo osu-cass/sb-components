@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/react-advanced-filter",
-  "version": "1.0.1-beta",
+  "version": "1.0.2-beta",
   "description": "A component that filters item results for Smarter Balanced.",
   "main": "build/index",
   "files": [
