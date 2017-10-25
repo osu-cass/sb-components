@@ -11,6 +11,7 @@
       "jsx": "react",
       "strictNullChecks": true,
       "allowSyntheticDefaultImports": false,
+      "moduleResolution": "node",
       "lib": [
         "es5",
         "es6",
@@ -26,7 +27,8 @@
     },
     "exclude": [
       "node_modules",
-      "wwwroot"
+      "wwwroot",
+      "stories/*"
     ],
     "jest": {
       "moduleDirectories": [
