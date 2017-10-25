@@ -1,7 +1,6 @@
 import * as React from "react";
 import { AdvancedFilterCategory, AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
 import "../styles/AdvancedFilter.css";
-import "font-awesome/css/font-awesome.min.css";
 
 export interface Props extends AdvancedFilterCategory { 
     selectedHandler: (data?: AdvancedFilterOption) => void;
