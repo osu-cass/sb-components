@@ -1,3 +1,4 @@
-export { AdvancedFilterContainer } from "./Filter/AdvancedFilterContainer";
-export { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './Filter/AdvancedFilterModel';
+import "babel-polyfill";
+import * as AdvancedFilterContainer from "./Filter/AdvancedFilterContainer";
 
+export default AdvancedFilterContainer;

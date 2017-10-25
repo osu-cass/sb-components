@@ -1,4 +1,0 @@
-# We only want to publish the build directory
-src
-.storybook
-stories
