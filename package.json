@@ -1,0 +1,100 @@
+{
+  "name": "@osu-cass/react-advanced-filter",
+  "version": "1.0.0-beta",
+  "description": "A component that filters item results for Smarter Balanced.",
+  "main": "build/index",
+  "files": [
+    "build"
+  ],
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "start": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "node_modules/.bin/tsc && cp -r ./src/styles/ ./build/styles/ && cp ./src/index.d.ts ./build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cass/react-advanced-filter.git"
+  },
+  "authors": [
+    "Dan Van Horn (danvanhorn)",
+    "Kevin Turkington (zainkai)"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cass/react-advanced-filter/issues"
+  },
+  "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-storyshots": "^3.2.12",
+    "@storybook/addons": "^3.2.12",
+    "@storybook/channels": "^3.2.12",
+    "@storybook/cli": "^3.2.12",
+    "@storybook/react": "^3.2.12",
+    "@types/jest": "^21.1.2",
+    "@types/node": "^8.0.34",
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "@types/storybook__addon-actions": "^3.0.1",
+    "@types/storybook__react": "^3.0.5",
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "ts-jest": "^21.1.2",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/stories/.*(test)\\.(js|ts|tsx?)$",
+    "collectCoverageFrom": [
+      "src/**/*.tsx",
+      "!src/**/__tests__/*",
+      "!src/index.tsx"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "./tsconfig.json"
+      },
+      "babelConfig": {
+        "presets": [
+          "es2015",
+          "env",
+          "react"
+        ],
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "json",
+      "js",
+      "jsx"
+    ],
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^.+\\.css$": "identity-obj-proxy",
+      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
+    }
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

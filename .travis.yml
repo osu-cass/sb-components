@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '8'
+install:
+- yarn install
+script:
+- yarn run build-ts
+- yarn run test
+deploy:
+  provider: npm
+  email: npm@cass.oregonstate.edu
+  api_key:
+    secure: SLlAL6p15NCvH82gISMfdkGi7MSq1NUHLA7TpHhJLgCeQymdsjxtkQOSuMYU4l+dymLsM1gA9njZREeQIJBG+HuQ/wHC/ZDoZqdfxDwlOV+OhZcmrN/tJTkzXMQhRYSSBS1djNZksjo7C9VMAJyNFMpAc9zJWSll5YiBbjRINBZ8kG/otWzfU1zuNmyJNRMWx+w9mIXCUhrGMeyArodz0IYXr2dpTmpEQ/nNQvbviQsnbVQ0FJ5bjRLdb1JZK7j5eQNXAudOrWTtwnmZkMbww2pwhZ9DiiApJ22/WTQkU/ROsSzkgWsVuhkGDhWadpDBo8UCuULmFB2pQyfjYjaATVtLklPGqCU0qFWddH+Zon/L+PYMQY4gqzl9pA/YM0Ln0d4WECcUBmZBlqb7+XfJ3DNQOugT3QahBqOYzEY9lX5PWP4BLhyxItkKNX176akKU0Hv/nNNCjLA0M+MmfQcFL6emWibrq9qnVLUOxatAOT5uCf6h/5Ew+6A2mvtLT1eNtN87t5o75h6dKB81gFi6AsW4OPC+FFQvhIBsr/ygDKqXBgGk+M7o4ANqfQZ/wgCTpKKtKcqQyg7lTW11lVGQs6FpFs7xRBdEuhVB2iul3NuTI5yqK+lDrSnH/Fu8Fv8jqrWSzedeXdeZ3WTjyhn85qtuVxYl2nvLMg2YWwpQ04=
+  script: echo "Deploying package to npm."
+  skip_cleanup: true
+  on:
+    branch: master

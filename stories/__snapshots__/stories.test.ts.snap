@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
+<div
+  className="filter-selection"
+  id="grade 3-filter"
+>
+  <label>
+    <span
+      info-label={true}
+    >
+      Grade 3
+    </span>
+    <span
+      data-tooltip="Grade 3"
+      data-tooltip-position="top"
+    >
+      <span
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+  </label>
+  <div
+    className="child-filter-container"
+  >
+    <div
+      className="filter-all-btn-container"
+    >
+      <button
+        className="filter-all-btn  selected-button filter-button"
+        onClick={[Function]}
+      >
+        All
+      </button>
+    </div>
+    <div
+      className="filter-button-container"
+    >
+      <button
+        className=" filter-button"
+        onClick={[Function]}
+      >
+        Grade 1
+      </button>
+      <button
+        className=" filter-button"
+        onClick={[Function]}
+      >
+        Grade 2
+      </button>
+      <button
+        className=" filter-button"
+        onClick={[Function]}
+      >
+        Grade 3
+      </button>
+      <button
+        className=" filter-button"
+        onClick={[Function]}
+      >
+        Grade 4
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter one filter item 1`] = `
+<div
+  className="filter-selection"
+  id="grade 3-filter"
+>
+  <label>
+    <span
+      info-label={true}
+    >
+      Grade 3
+    </span>
+    <span
+      data-tooltip="Grade 3"
+      data-tooltip-position="top"
+    >
+      <span
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+  </label>
+  <div
+    className="child-filter-container"
+  >
+    <div
+      className="filter-all-btn-container"
+    >
+      <button
+        className="filter-all-btn  selected-button filter-button"
+        onClick={[Function]}
+      >
+        All
+      </button>
+    </div>
+    <div
+      className="filter-button-container"
+    >
+      <button
+        className=" filter-button"
+        onClick={[Function]}
+      >
+        Grade 3
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilterContainer normal render 1`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexFlow": "row nowrap",
+        "justifyContent": "space-between",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "color": "gray",
+          "display": "flex",
+          "flexFlow": "row nowrap",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "color": "#63666A",
+          }
+        }
+      >
+        <span
+          className="fa fa-tasks fa-lg"
+        />
+         Advanced Filters
+      </h2>
+      <span>
+         Click on an item to remove it.
+      </span>
+    </div>
+    <button
+      className="filter-button"
+      onClick={[Function]}
+    >
+      Expand 
+      <span
+        className="fa fa-chevron-down"
+      />
+    </button>
+  </div>
+</div>
+`;
