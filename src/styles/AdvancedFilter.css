@@ -1,3 +1,8 @@
+/*
+When you add a new class to this file 
+add a const string type for the classname
+in AdvancedFilter.css.d.ts for storybook
+*/
 .filter-status {
     display: flex;
     flex-direction: row;
