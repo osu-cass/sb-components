@@ -1,4 +1,3 @@
-/// <reference path="../styles/AdvancedFilter.css.d.ts" />
 import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
