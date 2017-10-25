@@ -3,15 +3,13 @@ const genDefaultConfig = require('@storybook/react/dist/server/config/defaults/w
 
 module.exports = (baseConfig, env) => {
     const config = genDefaultConfig(baseConfig, env);
-    {
-        // add typescript loader:
-        config.module.rules.push({
-            test: /\.(ts|tsx)$/,
-            loader: require.resolve('awesome-typescript-loader')
-        });
 
-        config.resolve.extensions.push('.ts', '.tsx');
+    // add typescript loader:
+    config.module.rules.push({
+        test: /\.(ts|tsx)$/,
+        loader: require.resolve('awesome-typescript-loader')
+    });
+    config.resolve.extensions.push('.ts', '.tsx');
 
-        return config;
-    }
+    return config;
 };

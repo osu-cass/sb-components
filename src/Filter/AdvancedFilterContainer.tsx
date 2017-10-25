@@ -1,16 +1,13 @@
 import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
-import "../styles/AdvancedFilter.css";
-import 'font-awesome/css/font-awesome.css';
-
 
 export interface Props {
     filterOptions: AdvancedFilterCategory[];
     onClick: (selected: AdvancedFilterCategory[]) => void;
 }  
 
-export interface State {
+interface State {
     filters: AdvancedFilterCategory[];
     expanded: boolean
 }
@@ -145,7 +142,6 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         )
     }
 
-    
 
     render() {
         let content = null;
