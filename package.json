@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/react-advanced-filter",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "description": "A component that filters item results for Smarter Balanced.",
   "main": "build/index",
   "files": [
@@ -9,7 +9,7 @@
   "types": "./build/index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/jest",
-    "start": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "node_modules/.bin/tsc && cp -r ./src/styles/ ./build/styles/ && cp ./src/index.d.ts ./build/"
   },
