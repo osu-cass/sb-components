@@ -46,6 +46,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "font-awesome": "^4.7.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
@@ -93,8 +94,5 @@
       "^.+\\.css$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
     }
-  },
-  "dependencies": {
-    "font-awesome": "^4.7.0"
   }
 }
