@@ -1,22 +1,11 @@
-## React-advanced-filter
-Make sure you have the latest version of node and npm `npm i -g npm@latest node@latest`.
+# react-advanced-filter
+> For use in SmarterBalanced
 
-To build vefore publishing to npm.
-```
-npm install
-```
+Make sure you have the latest version of Node.js and npm.
 
-Begin development evnvironment.
-```
-npm run storybook
-```
+## Contributing
 
-To run snapshot tests. (Do this before you check in changes)
-```
-npm run test
-```
-
-Don't forget to update the snapshot tests if the results of the test are expeccted, and push the *.snap files to source control.
-```
-npm run test -- -u
-```
+- `npm install` to setup development environment.
+- `npm run storybook` to launch the live demo.
+- `npm run test` to run snapshot tests (do this before you check in changes).
+- `npm run test -- -u` to update snapshot tests with new results (commit the *.snap* files).
