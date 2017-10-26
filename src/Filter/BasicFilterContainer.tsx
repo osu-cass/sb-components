@@ -22,21 +22,23 @@ export class BasicFilterContainer extends React.Component<Props, State>{
     }
 
     //multiSelect not an option right now.
-    onSelect(category: BasicFilterCategory, option: BasicFilterOption) {
+    onSelect(category: BasicFilterCategory, option?: BasicFilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
         let newOptions: BasicFilterOption[] = [];
 
-        const optionIdx = newFilters[index].filterOptions.indexOf(option);
-        newOptions = newFilters[index].filterOptions
-            .map(opt => { return { ...opt, isSelected: false } });
-        
-        newOptions[optionIdx].isSelected = !option.isSelected;
+        if(option){
+            const optionIdx = newFilters[index].filterOptions.indexOf(option);
+            newOptions = newFilters[index].filterOptions
+                .map(opt => { return { ...opt, isSelected: false } });
+            
+            newOptions[optionIdx].isSelected = !option.isSelected;
 
-        newFilters[index] = {
-            ...newFilters[index],
-            filterOptions: newOptions
-        };
+            newFilters[index] = {
+                ...newFilters[index],
+                filterOptions: newOptions
+            };
+        }
 
         this.setState({
             filters: newFilters

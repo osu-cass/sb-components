@@ -3,7 +3,7 @@ import { BasicFilterCategory, BasicFilterOption, OptionType } from './AdvancedFi
 import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 
 export interface Props extends BasicFilterCategory { 
-    selectedHandler: (data: BasicFilterOption) => void;
+    selectedHandler: (data?: BasicFilterOption) => void;
 }
 
 export class BasicFilter extends React.Component<Props, {}> {
@@ -16,15 +16,12 @@ export class BasicFilter extends React.Component<Props, {}> {
         let classname = "";
         if(this.props.filterOptions){
             this.props.filterOptions.forEach((t, i) => {                 
-
                 if(this.props.type == OptionType.DropDown){
                     tags.push(
-                        <option  key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</option>
+                        <option  key={t.key} value={t.key}>{t.label}</option>
                     );
                 }
                 else if(this.props.type == OptionType.radioBtn){
-                    //selected flag
-
                     tags.push(
                         <label><input checked={t.isSelected} type='radio' value={t.key} key={t.key} onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
                     );
@@ -34,28 +31,33 @@ export class BasicFilter extends React.Component<Props, {}> {
         return tags;
     }
 
-    render() {
-        let filterBody:JSX.Element; 
+    findFilterOption(key:string) {
+        return this.props.filterOptions.find(fil => fil.key == key);
+    }
 
+    renderFilterBody() {
+        let tag:JSX.Element; 
+        
         if(this.props.type == OptionType.DropDown){
-            filterBody = (
-                <select>
-                    {this.renderTags()}
-                </select>
-            );
+            tag = (<select onChange={(e) => this.props.selectedHandler(this.findFilterOption(e.target.value))}>
+                {this.renderTags()}</select>);
         }
         else {
-            filterBody = (
-                <form>
-                    {this.renderTags()}
-                </form>
-            );
+            tag = (<form>{this.renderTags()}</form>);
         }
 
-
         return(
-            <div className="basic-filter">
-                {filterBody}
+            <div className="basic-filter-body">{tag}</div>
+        );
+    }
+
+    render() {
+        return(
+            <div id={(this.props.label + "-basic-filter").toLocaleLowerCase()} className="basic-filter-selection">
+                <label>
+                    {this.props.label}
+                </label>
+                {this.renderFilterBody()}
             </div>
         );
     }
