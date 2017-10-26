@@ -16,17 +16,16 @@ export class BasicFilter extends React.Component<Props, {}> {
         let classname = "";
         if(this.props.filterOptions){
             this.props.filterOptions.forEach((t, i) => {                 
-                classname = t.isSelected ? "selected-Basic-Filter" : "";
 
                 if(this.props.type == OptionType.DropDown){
                     tags.push(
-                        <option  className={classname + " filter-button"} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</option>
+                        <option  key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</option>
                     );
                 }
                 else if(this.props.type == OptionType.radioBtn){
                     //selected flag
                     tags.push(
-                        <input type='radio' className={classname + " filter-button"} key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</input>
+                        <input type='radio' key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</input>
                     );
                 }
             });
@@ -35,8 +34,28 @@ export class BasicFilter extends React.Component<Props, {}> {
     }
 
     render() {
+        let filterBody:JSX.Element; 
+
+        if(this.props.type == OptionType.DropDown){
+            filterBody = (
+                <select>
+                    {this.renderTags()}
+                </select>
+            );
+        }
+        else {
+            filterBody = (
+                <div>
+                    {this.renderTags()}
+                </div>
+            );
+        }
+
+
         return(
-            <div></div>
+            <div className="basic-filter">
+                {filterBody}
+            </div>
         );
     }
 
