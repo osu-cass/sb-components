@@ -10,5 +10,5 @@ const props: Props  = {
     onClick: action("clicked")
 }
 
-storiesOf("BasicFilterContainer",module)
+storiesOf("BasicFilterContainer", module)
     .add("normal render", () => <BasicFilterContainer {...props}/>)

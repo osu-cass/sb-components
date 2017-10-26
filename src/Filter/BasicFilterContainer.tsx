@@ -1,6 +1,7 @@
 import * as React from "react";
 import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 import {BasicFilterCategory, BasicFilterOption} from "./AdvancedFilterModel";
+import { BasicFilter } from "./BasicFilter";
 
 export interface Props {
     filterOptions: BasicFilterCategory[];
@@ -15,8 +16,12 @@ export class BasicFilterContainer extends React.Component<Props, State>{
     constructor(props:Props){
         super(props);
 
+        this.state = {
+            filters:props.filterOptions
+        }
     }
 
+    //multiSelect not an option right now.
     onSelect(category: BasicFilterCategory, option: BasicFilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
@@ -58,11 +63,21 @@ export class BasicFilterContainer extends React.Component<Props, State>{
         }
     }
 
+    renderFilters(){
+        const filterTags = this.state.filters.map((fil,i) => {
+            return (
+                <BasicFilter {...fil} selectedHandler={(opt) => this.onSelect(fil,opt)} />
+            );
+        });
+
+        return filterTags;
+    }
+
     render() {
 
         return (
             <div>
-                filter goes here
+                {this.renderFilters()}
             </div>
         );
     }
