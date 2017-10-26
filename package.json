@@ -26,7 +26,9 @@
     "url": "https://github.com/osu-cass/react-advanced-filter/issues"
   },
   "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
+  "dependencies": {},
   "devDependencies": {
+    "@osu-cass/smarter-balanced-styles": "^1.0.1",
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/addons": "^3.2.12",
@@ -55,7 +57,12 @@
     "react-test-renderer": "^16.0.0",
     "ts-jest": "^21.1.2",
     "typescript": "^2.5.3",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "css-loader": "^0.28.7",
+    "less-loader": "^4.0.5",
+    "less": "^2.7.3",
+    "style-loader": "^0.19.0",
+    "postcss-loader": "^2.0.8"
   },
   "jest": {
     "transform": {
@@ -90,7 +97,7 @@
     ],
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "^.+\\.css$": "identity-obj-proxy",
+      "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
     }
   }

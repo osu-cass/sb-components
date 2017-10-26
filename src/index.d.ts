@@ -5,13 +5,23 @@ import {Component} from 'react';
 
 export enum OptionType {
     inputBox,
-    button
+    button,
+    radioBtn,
+    DropDown
 }
+
+export interface BasicFilterOption extends AdvancedFilterOption { }
 
 export interface AdvancedFilterOption {
     label: string;
     key: string;
     isSelected: boolean;
+}
+
+export interface BasicFilterCategory{
+    disabled: boolean;
+    label: string;
+    filterOptions: BasicFilterOption[];
     type: OptionType;
 }
 

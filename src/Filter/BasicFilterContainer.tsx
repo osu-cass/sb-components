@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../styles/AdvancedFilter.css";
+import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 import {BasicFilterCategory, BasicFilterOption} from "./AdvancedFilterModel";
 
 export interface Props {

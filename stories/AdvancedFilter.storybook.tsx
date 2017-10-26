@@ -7,8 +7,7 @@ import { AdvancedFilterOption, OptionType, AdvancedFilterCategory } from '../src
 const advancedFilterOption: AdvancedFilterOption = {
     label: "Grade 3",
     key: "12345",
-    isSelected: false,
-    type: OptionType.button,
+    isSelected: false
 }
 
 const advancedFilterOptionsArray: AdvancedFilterOption[] = [
