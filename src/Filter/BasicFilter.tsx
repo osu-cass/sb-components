@@ -24,8 +24,9 @@ export class BasicFilter extends React.Component<Props, {}> {
                 }
                 else if(this.props.type == OptionType.radioBtn){
                     //selected flag
+
                     tags.push(
-                        <input type='radio' key={t.key} onClick={() => this.props.selectedHandler(t)}>{t.label}</input>
+                        <label><input checked={t.isSelected} type='radio' value={t.key} key={t.key} onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
                     );
                 }
             });
@@ -45,9 +46,9 @@ export class BasicFilter extends React.Component<Props, {}> {
         }
         else {
             filterBody = (
-                <div>
+                <form>
                     {this.renderTags()}
-                </div>
+                </form>
             );
         }
 
