@@ -1,4 +1,5 @@
 export {AdvancedFilterContainer} from "./Filter/AdvancedFilterContainer";
+export {BasicFilterContainer} from "./Filter/BasicFilterContainer";
 export {
     OptionType, 
     AdvancedFilterOption, 

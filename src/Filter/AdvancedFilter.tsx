@@ -1,12 +1,10 @@
 import * as React from "react";
 import { AdvancedFilterCategory, AdvancedFilterOption, OptionType } from './AdvancedFilterModel';
-import "../styles/AdvancedFilter.css";
+import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 
 export interface Props extends AdvancedFilterCategory { 
     selectedHandler: (data?: AdvancedFilterOption) => void;
 }
-
-const style={margin: "1px", borderRadius: "3px", border: "0"}
 
 export class AdvancedFilter extends React.Component<Props, {}> {
     constructor(props: Props) {
