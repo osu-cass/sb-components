@@ -2,64 +2,78 @@
 
 exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
 <div
-  className="filter-selection"
-  id="grade 3-filter"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <label>
-    <span
-      info-label={true}
-    >
-      Grade 3
-    </span>
-    <span
-      data-tooltip="Grade 3"
-      data-tooltip-position="top"
-    >
-      <span
-        className="fa fa-info-circle fa-sm"
-      />
-    </span>
-  </label>
   <div
-    className="child-filter-container"
+    className="filter-selection"
+    id="grade 3-filter"
   >
-    <div
-      className="filter-all-btn-container"
-    >
-      <button
-        className="filter-all-btn  selected-button filter-button"
-        onClick={[Function]}
-      >
-        All
-      </button>
-    </div>
-    <div
-      className="filter-button-container"
-    >
-      <button
-        className=" filter-button"
-        onClick={[Function]}
-      >
-        Grade 1
-      </button>
-      <button
-        className=" filter-button"
-        onClick={[Function]}
-      >
-        Grade 2
-      </button>
-      <button
-        className=" filter-button"
-        onClick={[Function]}
+    <label>
+      <span
+        info-label={true}
       >
         Grade 3
-      </button>
-      <button
-        className=" filter-button"
-        onClick={[Function]}
+      </span>
+      <span
+        data-tooltip="Grade 3"
+        data-tooltip-position="top"
       >
-        Grade 4
-      </button>
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-all-btn-container"
+      >
+        <button
+          className="filter-all-btn  selected-button filter-button"
+          onClick={[Function]}
+        >
+          All
+        </button>
+      </div>
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Grade 1
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Grade 2
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Grade 3
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Grade 4
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -67,46 +81,60 @@ exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
 
 exports[`Storyshots AdvancedFilter one filter item 1`] = `
 <div
-  className="filter-selection"
-  id="grade 3-filter"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <label>
-    <span
-      info-label={true}
-    >
-      Grade 3
-    </span>
-    <span
-      data-tooltip="Grade 3"
-      data-tooltip-position="top"
-    >
-      <span
-        className="fa fa-info-circle fa-sm"
-      />
-    </span>
-  </label>
   <div
-    className="child-filter-container"
+    className="filter-selection"
+    id="grade 3-filter"
   >
-    <div
-      className="filter-all-btn-container"
-    >
-      <button
-        className="filter-all-btn  selected-button filter-button"
-        onClick={[Function]}
-      >
-        All
-      </button>
-    </div>
-    <div
-      className="filter-button-container"
-    >
-      <button
-        className=" filter-button"
-        onClick={[Function]}
+    <label>
+      <span
+        info-label={true}
       >
         Grade 3
-      </button>
+      </span>
+      <span
+        data-tooltip="Grade 3"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-all-btn-container"
+      >
+        <button
+          className="filter-all-btn  selected-button filter-button"
+          onClick={[Function]}
+        >
+          All
+        </button>
+      </div>
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Grade 3
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -168,142 +196,198 @@ exports[`Storyshots AdvancedFilterContainer normal render 1`] = `
 
 exports[`Storyshots BasicFilter DropDown: multiple filter items 1`] = `
 <div
-  className="basic-filter-selection"
-  id="grade 3-basic-filter"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <label>
-    Grade 3
-  </label>
   <div
-    className="basic-filter-body"
+    className="basic-filter-selection"
+    id="grade 3-basic-filter"
   >
-    <select
-      onChange={[Function]}
+    <label>
+      Grade 3
+    </label>
+    <div
+      className="basic-filter-body"
     >
-      <option
-        value="12346"
+      <select
+        onChange={[Function]}
       >
-        Grade 1
-      </option>
-      <option
-        value="12347"
-      >
-        Grade 2
-      </option>
-      <option
-        value="12345"
-      >
-        Grade 3
-      </option>
-      <option
-        value="12348"
-      >
-        Grade 4
-      </option>
-    </select>
+        <option
+          value="12346"
+        >
+          Grade 1
+        </option>
+        <option
+          value="12347"
+        >
+          Grade 2
+        </option>
+        <option
+          value="12345"
+        >
+          Grade 3
+        </option>
+        <option
+          value="12348"
+        >
+          Grade 4
+        </option>
+      </select>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots BasicFilter DropDown: one filter item 1`] = `
 <div
-  className="basic-filter-selection"
-  id="grade 3-basic-filter"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <label>
-    Grade 3
-  </label>
   <div
-    className="basic-filter-body"
+    className="basic-filter-selection"
+    id="grade 3-basic-filter"
   >
-    <select
-      onChange={[Function]}
+    <label>
+      Grade 3
+    </label>
+    <div
+      className="basic-filter-body"
     >
-      <option
-        value="12345"
+      <select
+        onChange={[Function]}
       >
-        Grade 3
-      </option>
-    </select>
+        <option
+          value="12345"
+        >
+          Grade 3
+        </option>
+      </select>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots BasicFilter RadioBtn: multiple filter items 1`] = `
 <div
-  className="basic-filter-selection"
-  id="grade 3-basic-filter"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <label>
-    Grade 3
-  </label>
   <div
-    className="basic-filter-body"
+    className="basic-filter-selection"
+    id="grade 3-basic-filter"
   >
-    <form>
-      <label>
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="radio"
-          value="12346"
-        />
-        Grade 1
-      </label>
-      <label>
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="radio"
-          value="12347"
-        />
-        Grade 2
-      </label>
-      <label>
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="radio"
-          value="12345"
-        />
-        Grade 3
-      </label>
-      <label>
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="radio"
-          value="12348"
-        />
-        Grade 4
-      </label>
-    </form>
+    <label>
+      Grade 3
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <form>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12346"
+          />
+          Grade 1
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12347"
+          />
+          Grade 2
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade 3
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12348"
+          />
+          Grade 4
+        </label>
+      </form>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
 <div
-  className="basic-filter-selection"
-  id="grade 3-basic-filter"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <label>
-    Grade 3
-  </label>
   <div
-    className="basic-filter-body"
+    className="basic-filter-selection"
+    id="grade 3-basic-filter"
   >
-    <form>
-      <label>
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="radio"
-          value="12345"
-        />
-        Grade 3
-      </label>
-    </form>
+    <label>
+      Grade 3
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <form>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade 3
+        </label>
+      </form>
+    </div>
   </div>
 </div>
 `;

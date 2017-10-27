@@ -18,12 +18,12 @@ export class BasicFilter extends React.Component<Props, {}> {
             this.props.filterOptions.forEach((t, i) => {                 
                 if(this.props.type == OptionType.DropDown){
                     tags.push(
-                        <option  key={t.key} value={t.key}>{t.label}</option>
+                        <option key={t.key} value={t.key}>{t.label}</option>
                     );
                 }
                 else if(this.props.type == OptionType.radioBtn){
                     tags.push(
-                        <label><input checked={t.isSelected} type='radio' key={t.key} value={t.key}  onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
+                        <label key={t.key}><input checked={t.isSelected} type='radio' key={t.key} value={t.key}  onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
                     );
                 }
             });

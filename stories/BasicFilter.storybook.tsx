@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { BasicFilter, Props } from '../src/Filter/BasicFilter';
 import { BasicFilterOption, OptionType, BasicFilterCategory } from '../src/Filter/AdvancedFilterModel';
+import {CenterDecorator} from  './CenterDecorator';
 
 const basicFilterOption:BasicFilterOption = {
     label: "Grade 3",
@@ -44,6 +45,7 @@ const propsRadioBtn: Props = {
 }
 
 storiesOf("BasicFilter", module)
+.addDecorator(CenterDecorator)
 .add("DropDown: one filter item", () => <BasicFilter {...propsDropDown} />)
 .add("DropDown: multiple filter items", () => <BasicFilter {...propsDropDown} filterOptions={advancedFilterOptionsArray}/>)
 .add("RadioBtn: one filter item", () => <BasicFilter {...propsRadioBtn} />)

@@ -1,4 +1,6 @@
-import { OptionType } from '../src/Filter/AdvancedFilterModel';
+import { Props } from '../src/Filter/AdvancedFilter';
+import { AdvancedFilterOption, OptionType, AdvancedFilterCategory } from '../src/Filter/AdvancedFilterModel';
+import { action } from '@storybook/addon-actions';
 
 export const mockAdvancedFilterCategories = [
     {
@@ -162,3 +164,33 @@ export const mockAdvancedFilterCategories = [
       "type": OptionType.radioBtn
     }
   ];
+
+  
+const advancedFilterOption: AdvancedFilterOption = {
+    label: "Grade 3",
+    key: "12345",
+    isSelected: false
+}
+
+const advancedFilterCategory: AdvancedFilterCategory  = {
+    disabled: false,
+    isMultiSelect: false,
+    label: "Grade 3",
+    helpText: "Grade 3",
+    filterOptions: [advancedFilterOption],
+    displayAllButton: true
+}
+
+const selectedHandler = action("clicked filter");
+
+export const advancedFilterOptionsArray: AdvancedFilterOption[] = [
+  {...advancedFilterOption, label: "Grade 1", key: "12346"},
+  {...advancedFilterOption, label: "Grade 2", key: "12347"},
+  {...advancedFilterOption},
+  {...advancedFilterOption, label: "Grade 4", key: "12348"}
+]
+
+export const advancedFilterProps: Props = {
+    ...advancedFilterCategory,
+    selectedHandler
+}
