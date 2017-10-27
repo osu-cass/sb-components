@@ -58,3 +58,5 @@ export interface State {
 }
 
 export class AdvancedFilterContainer extends Component<Props, State> { }
+
+export class BasicFilterContainer extends Component<Props, State> { }
