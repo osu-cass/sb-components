@@ -68,7 +68,7 @@ export class BasicFilterContainer extends React.Component<Props, State>{
     renderFilters(){
         const filterTags = this.state.filters.map((fil,i) => {
             return (
-                <BasicFilter {...fil} selectedHandler={(opt) => this.onSelect(fil,opt)} />
+                <BasicFilter key={i} {...fil} selectedHandler={(opt) => this.onSelect(fil,opt)} />
             );
         });
 

@@ -23,7 +23,7 @@ export class BasicFilter extends React.Component<Props, {}> {
                 }
                 else if(this.props.type == OptionType.radioBtn){
                     tags.push(
-                        <label><input checked={t.isSelected} type='radio' value={t.key} key={t.key} onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
+                        <label><input checked={t.isSelected} type='radio' key={t.key} value={t.key}  onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
                     );
                 }
             });
