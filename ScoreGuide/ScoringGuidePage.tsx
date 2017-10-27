@@ -9,7 +9,7 @@ import * as ItemSearchContainer from './ItemSearchContainer';
 import * as ItemCardViewModel from '../Models/ItemCardViewModel'
 import { get } from "../Models/ApiModels";
 import { FilterHelper } from "../Models/FilterHelper";
-import * as AdvancedFilterModel from "../Filter/AdvancedFilterModel";
+import { AdvancedFilters } from "@osu-cass/react-advanced-filter";
 
 const SearchClient = () => get<ItemCardViewModel.ItemCardViewModel[]>("api/search");
 
@@ -20,7 +20,7 @@ export interface Props {
 export interface State {
     item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
     scoringGuideViewModel: ApiModels.Resource<ItemsSearchViewModel>;
-    filterOptions: AdvancedFilterModel.AdvancedFilters;
+    filterOptions: AdvancedFilters;
 }
 
 export interface ItemsSearchViewModel {

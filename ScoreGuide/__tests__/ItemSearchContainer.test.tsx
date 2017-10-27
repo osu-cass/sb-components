@@ -1,15 +1,19 @@
+import 'jsdom-global/register';
 import * as React from 'react';
 import * as $ from 'jquery'
 import * as ReactDOM from 'react-dom';
 import { ItemSearchContainer } from '../ItemSearchContainer';
 import { ItemCardViewModel } from '../../Models/ItemCardViewModel';
-import { AdvancedFilters, AdvancedFilterCategory } from "../../Filter/AdvancedFilterModel";
+import { AdvancedFilters, AdvancedFilterCategory } from "@osu-cass/react-advanced-filter";
 import {FilterHelper} from "../../Models/FilterHelper"
 import { DataTable } from '../../ItemTable/ItemTable';
 import * as AboutItemVM from '../../Models/AboutItemVM';
 import * as ApiModels from '../../Models/ApiModels';
 import * as GradeLevels from '../../Models/GradeLevels';
-import { shallow, mount } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 const subject = {
     code: "subjectCode",

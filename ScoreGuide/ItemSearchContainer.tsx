@@ -1,12 +1,10 @@
-import * as React from 'react'
-import * as ItemSearchDropdown from '../DropDown/ItemSearchDropDown'
-import * as ItemCardViewModel from '../Models/ItemCardViewModel'
-import * as ItemModels from '../Models/ItemModels'
-import * as ItemPageTable from '../ItemTable/ItemPageTable'
-import * as ApiModels from "../Models/ApiModels"
+import * as React from 'react';
+import * as ItemCardViewModel from '../Models/ItemCardViewModel';
+import * as ItemModels from '../Models/ItemModels';
+import * as ItemPageTable from '../ItemTable/ItemPageTable';
+import * as ApiModels from "../Models/ApiModels";
 import { FilterHelper } from "../Models/FilterHelper";
-import { AdvancedFilterContainer} from "../Filter/AdvancedFilterContainer";
-import { AdvancedFilters,AdvancedFilterCategory } from "../Filter/AdvancedFilterModel";
+import {AdvancedFilterContainer ,AdvancedFilterCategory, AdvancedFilters} from "@osu-cass/react-advanced-filter";
 import * as AboutItemVM from '../Models/AboutItemVM';
 
 const SearchClient = () => ApiModels.get<ItemCardViewModel.ItemCardViewModel[]>("api/search");

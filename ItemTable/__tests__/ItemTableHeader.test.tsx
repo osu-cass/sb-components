@@ -3,7 +3,10 @@ import * as ReactDOM from 'react-dom';
 import { HeaderTable, headerColumns, HeaderSort, SortColumn, SortDirection } from '../ItemTableHeader';
 import { ItemCardViewModel  } from '../../Models/ItemCardViewModel';
 import * as TestUtils from 'react-dom/test-utils';
-import { shallow, mount } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("ItemTableHeader", () => {
     const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"]
@@ -25,7 +28,7 @@ describe("ItemTableHeader", () => {
     })
 
     it("calls onHeaderClick", () => {
-        let wrapper = mount(<HeaderTable {...props}/>);
+        let wrapper = shallow(<HeaderTable {...props}/>);
         tabs.forEach(tab =>  {
             wrapper.find(`th.${tab}`).simulate('click');
             expect(props.onHeaderClick).toHaveBeenCalled();
@@ -33,14 +36,13 @@ describe("ItemTableHeader", () => {
     })
 
     it("sorts list on header click", () => {
-        let wrapper = mount(<HeaderTable {...props}/>);
+        let wrapper = shallow(<HeaderTable {...props}/>);
         tabs.forEach(tab => {
-            const className = `th.${tab}`;
-            wrapper.find(className).simulate('click');
+            wrapper.find(`th.${tab}`).simulate('click');
             expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
-            wrapper.find(className).simulate('click');
+            wrapper.find(`th.${tab}`).simulate('click');
             expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
-            wrapper.find(className).simulate('click');
+            wrapper.find(`th.${tab}`).simulate('click');
             expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
         })
     })

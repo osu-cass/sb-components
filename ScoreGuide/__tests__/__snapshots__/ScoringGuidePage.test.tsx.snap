@@ -2,185 +2,44 @@
 
 exports[`ScoringGuidePage matches snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <div />,
-  "nodes": Array [
-    <div />,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <ScoringGuidePage
-        scoreGuideViewModelClient={[Function]}
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": ScoringGuidePage {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "getAboutItem": [Function],
-        "loadScoringGuideViewModel": [Function],
-        "onAboutItemError": [Function],
-        "onAboutItemSuccess": [Function],
-        "onErrorLoadScoringGuideViewModel": [Function],
-        "onRowSelection": [Function],
-        "onSuccessLoadScoringGuideViewModel": [Function],
-        "props": Object {
-          "scoreGuideViewModelClient": [Function],
-        },
-        "refs": Object {},
-        "state": Object {
-          "filterOptions": Object {
-            "grades": Object {
-              "disabled": false,
-              "displayAllButton": true,
-              "filterOptions": Array [
-                Object {
-                  "isSelected": false,
-                  "key": "7",
-                  "label": "Elementary",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "1",
-                  "label": "Grade 3",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "2",
-                  "label": "Grade 4",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "4",
-                  "label": "Grade 5",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "8",
-                  "label": "Grade 6",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "16",
-                  "label": "Grade 7",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "32",
-                  "label": "Grade 8",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "960",
-                  "label": "High",
-                  "type": 1,
-                },
-              ],
-              "helpText": "Grade HelpText here.",
-              "isMultiSelect": false,
-              "label": "Grade",
-            },
-            "subjects": Object {
-              "disabled": false,
-              "displayAllButton": true,
-              "filterOptions": Array [
-                Object {
-                  "isSelected": false,
-                  "key": "MATH",
-                  "label": "Mathematics",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "ELA",
-                  "label": "English",
-                  "type": 1,
-                },
-              ],
-              "helpText": "Subjects HelpText here.",
-              "isMultiSelect": false,
-              "label": "Subjects",
-            },
-            "techTypes": Object {
-              "disabled": false,
-              "displayAllButton": false,
-              "filterOptions": Array [
-                Object {
-                  "isSelected": false,
-                  "key": "CAT",
-                  "label": "CAT",
-                  "type": 1,
-                },
-                Object {
-                  "isSelected": false,
-                  "key": "PT",
-                  "label": "Performance Items",
-                  "type": 1,
-                },
-              ],
-              "helpText": "TechType HelpText here.",
-              "isMultiSelect": false,
-              "label": "TechType",
-            },
-          },
-          "item": Object {
-            "kind": "none",
-          },
-          "scoringGuideViewModel": Object {
-            "kind": "loading",
-          },
-        },
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div />,
-        "_debugID": 2,
-        "_renderedOutput": <div />,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ScoringGuidePage
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ScoringGuidePage
     scoreGuideViewModelClient={[Function]}
-/>,
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

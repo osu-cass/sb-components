@@ -2,7 +2,10 @@ import * as React from 'react';
 import * as $ from 'jquery'
 import { ScoringGuidePage, ItemsSearchViewModel } from '../ScoringGuidePage';
 import * as ItemModels from '../../Models/ItemModels';
-import { shallow, mount } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 const func = jest.fn(() => {
     const subjects: ItemModels.Subject[] = [{code: "12648456",  label: "_label_"}];

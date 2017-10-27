@@ -1,3 +1,4 @@
+import 'jsdom-global/register'
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ItemPageTable, Props } from '../ItemPageTable';
@@ -7,7 +8,10 @@ import * as ApiModels from '../../Models/ApiModels';
 import * as Rubric from '../../PageTabs/Rubric';
 import * as AboutItemVM from '../../Models/AboutItemVM';
 import * as TestUtils from 'react-dom/test-utils';
-import { shallow, mount, render } from 'enzyme';
+import Enzyme, { shallow, mount, render } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("ItemPageTable", () => {
     const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"]
@@ -58,12 +62,7 @@ describe("ItemPageTable", () => {
     it("sorts list on header click", () => {
         let wrapper = mount(<ItemPageTable {...props} />);
         tabs.forEach(tab => {
-            const className = `th.${tab}`;
-            wrapper.find(className).simulate('click');
-            expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
-            wrapper.find(className).simulate('click');
-            expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
-            wrapper.find(className).simulate('click');
+            wrapper.find(`th.${tab}`).simulate('click');
             expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
         })
     })

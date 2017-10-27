@@ -5,10 +5,13 @@ import * as AboutItemVM from '../../Models/AboutItemVM';
 import * as ItemCardViewModel from '../../Models/ItemCardViewModel'
 import * as Rubric from '../../PageTabs/Rubric';
 import * as TestUtils from 'react-dom/test-utils';
-import { shallow, mount } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("ItemCardViewer", () => {
-    const itemCardViewModel: ItemCardViewModel.ItemCardViewModel =  {
+    const itemCardViewModel: ItemCardViewModel.ItemCardViewModel = {
         bankKey: 1,
         itemKey: 123,
         title: "test_title",
@@ -37,20 +40,20 @@ describe("ItemCardViewer", () => {
     }
 
     it("renders viewer tab", () => {
-        let wrapper = shallow(<ItemCardViewer item={item}/>);
-        wrapper.setState({selectedTab: "viewer"});
+        let wrapper = shallow(<ItemCardViewer item={item} />);
+        wrapper.setState({ selectedTab: "viewer" });
         expect(wrapper).toMatchSnapshot();
     })
 
-    it("renders rubric tab", () =>  {
-        let wrapper = shallow(<ItemCardViewer item={item}/>);
-        wrapper.setState({selectedTab: "rubric"});
+    it("renders rubric tab", () => {
+        let wrapper = shallow(<ItemCardViewer item={item} />);
+        wrapper.setState({ selectedTab: "rubric" });
         expect(wrapper).toMatchSnapshot();
     })
 
-    it("renders information tab", () =>  {
-        let wrapper = shallow(<ItemCardViewer item={item}/>);
-        wrapper.setState({selectedTab: "information"});
+    it("renders information tab", () => {
+        let wrapper = shallow(<ItemCardViewer item={item} />);
+        wrapper.setState({ selectedTab: "information" });
         expect(wrapper).toMatchSnapshot();
     })
 })

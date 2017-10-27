@@ -1,7 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ItemTabs, Tabs } from '../ItemTabs';
-import { shallow, mount } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("PageTabs", () => {
     let tabs: Tabs[] = ["viewer", "rubric", "information"];
@@ -19,7 +22,7 @@ describe("PageTabs", () => {
     })
 
     it("changes tabs", () => {
-        let wrapper = mount(<ItemTabs {...props}/>);
+        let wrapper = shallow(<ItemTabs {...props}/>);
         wrapper.find('div.tabs').childAt(0).simulate('click');
         expect(props.changedTab).toHaveBeenCalled();
     })

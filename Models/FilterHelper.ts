@@ -2,7 +2,7 @@ import { ItemCardViewModel } from "../Models/ItemCardViewModel";
 import { ItemFilter, FilterOptions } from "../Models/ItemModels";
 import * as GradeLevels from '../Models/GradeLevels';
 import { parseQueryString } from "../Models/ApiModels";
-import { AdvancedFilterCategory, AdvancedFilters, OptionType, AdvancedFilterOption } from "../filter/AdvancedFilterModel";
+import { OptionType, AdvancedFilters, AdvancedFilterOption, AdvancedFilterCategory } from "@osu-cass/react-advanced-filter";
 
 export class FilterHelper {
 
@@ -11,68 +11,56 @@ export class FilterHelper {
         const subjectsFilterOptions: AdvancedFilterOption[] = [{
             label: "Mathematics",
             key: "MATH",
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         },
         {
             label: "English",
             key: "ELA",
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }];
 
         const gradesFilterOptions: AdvancedFilterOption[] = [{
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Elementary),
             key: String(GradeLevels.GradeLevels.Elementary),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade3),
             key: String(GradeLevels.GradeLevels.Grade3),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade4),
             key: String(GradeLevels.GradeLevels.Grade4),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade5),
             key: String(GradeLevels.GradeLevels.Grade5),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade6),
             key: String(GradeLevels.GradeLevels.Grade6),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade7),
             key: String(GradeLevels.GradeLevels.Grade7),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.Grade8),
             key: String(GradeLevels.GradeLevels.Grade8),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: GradeLevels.caseToString(GradeLevels.GradeLevels.High),
             key: String(GradeLevels.GradeLevels.High),
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }];
 
         const techTypesFilterOptions: AdvancedFilterOption[] = [{
             label: "CAT",
             key: "CAT",
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }, {
             label: "Performance Items",
             key: "PT",
-            isSelected: false,
-            type: OptionType.button
+            isSelected: false
         }];
 
         const subjects: AdvancedFilterCategory = {

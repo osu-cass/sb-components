@@ -2,222 +2,97 @@
 
 exports[`ItemTable matches snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <tbody>
-    
-</tbody>,
-  "nodes": Array [
-    <tbody>
-      
-</tbody>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <DataTable
-        columns={Array []}
-        item={
-                Object {
-                        "content": Object {
-                          "commonCoreStandardsDescription": "commonCoreStandardsDescription",
-                          "depthOfKnowledge": "depthOfKnowledge",
-                          "educationalDifficulty": "educationalDifficulty",
-                          "evidenceStatement": "evidenceStatement",
-                          "itemCardViewModel": Object {
-                            "bankKey": 1,
-                            "claimCode": "",
-                            "claimLabel": "",
-                            "grade": 1023,
-                            "gradeLabel": "",
-                            "interactionTypeCode": "",
-                            "interactionTypeLabel": "",
-                            "isPerformanceItem": true,
-                            "itemKey": 3,
-                            "subjectCode": "",
-                            "subjectLabel": "",
-                            "target": "",
-                            "title": "",
-                          },
-                          "rubrics": Array [],
-                          "targetDescription": "targetDescription",
-                        },
-                        "kind": "none",
-                      }
-        }
-        mapRows={Array []}
-        rowOnClick={[Function]}
-        selectedRow={
-                Object {
-                        "bankKey": 1,
-                        "claimCode": "claim_1234",
-                        "claimLabel": "claim_math",
-                        "grade": 1,
-                        "gradeLabel": "1",
-                        "interactionTypeCode": "type01",
-                        "interactionTypeLabel": "type01label",
-                        "isPerformanceItem": false,
-                        "itemKey": 123,
-                        "subjectCode": "Math",
-                        "subjectLabel": "MTH",
-                        "target": "",
-                        "title": "test_title",
-                      }
-        }
-        sort={Array []}
-        tableRef={[Function]}
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": DataTable {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "handleRowClick": [Function],
-        "props": Object {
-          "columns": Array [],
-          "item": Object {
-            "content": Object {
-              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
-              "depthOfKnowledge": "depthOfKnowledge",
-              "educationalDifficulty": "educationalDifficulty",
-              "evidenceStatement": "evidenceStatement",
-              "itemCardViewModel": Object {
-                "bankKey": 1,
-                "claimCode": "",
-                "claimLabel": "",
-                "grade": 1023,
-                "gradeLabel": "",
-                "interactionTypeCode": "",
-                "interactionTypeLabel": "",
-                "isPerformanceItem": true,
-                "itemKey": 3,
-                "subjectCode": "",
-                "subjectLabel": "",
-                "target": "",
-                "title": "",
-              },
-              "rubrics": Array [],
-              "targetDescription": "targetDescription",
-            },
-            "kind": "none",
-          },
-          "mapRows": Array [],
-          "rowOnClick": [Function],
-          "selectedRow": Object {
-            "bankKey": 1,
-            "claimCode": "claim_1234",
-            "claimLabel": "claim_math",
-            "grade": 1,
-            "gradeLabel": "1",
-            "interactionTypeCode": "type01",
-            "interactionTypeLabel": "type01label",
-            "isPerformanceItem": false,
-            "itemKey": 123,
-            "subjectCode": "Math",
-            "subjectLabel": "MTH",
-            "target": "",
-            "title": "test_title",
-          },
-          "sort": Array [],
-          "tableRef": [Function],
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <tbody>
-          
-</tbody>,
-        "_debugID": 2,
-        "_renderedOutput": <tbody>
-          
-</tbody>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <DataTable
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DataTable
     columns={Array []}
     item={
-        Object {
-            "content": Object {
-              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
-              "depthOfKnowledge": "depthOfKnowledge",
-              "educationalDifficulty": "educationalDifficulty",
-              "evidenceStatement": "evidenceStatement",
-              "itemCardViewModel": Object {
-                "bankKey": 1,
-                "claimCode": "",
-                "claimLabel": "",
-                "grade": 1023,
-                "gradeLabel": "",
-                "interactionTypeCode": "",
-                "interactionTypeLabel": "",
-                "isPerformanceItem": true,
-                "itemKey": 3,
-                "subjectCode": "",
-                "subjectLabel": "",
-                "target": "",
-                "title": "",
-              },
-              "rubrics": Array [],
-              "targetDescription": "targetDescription",
-            },
-            "kind": "none",
-          }
+      Object {
+        "content": Object {
+          "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+          "depthOfKnowledge": "depthOfKnowledge",
+          "educationalDifficulty": "educationalDifficulty",
+          "evidenceStatement": "evidenceStatement",
+          "itemCardViewModel": Object {
+            "bankKey": 1,
+            "claimCode": "",
+            "claimLabel": "",
+            "grade": 1023,
+            "gradeLabel": "",
+            "interactionTypeCode": "",
+            "interactionTypeLabel": "",
+            "isPerformanceItem": true,
+            "itemKey": 3,
+            "subjectCode": "",
+            "subjectLabel": "",
+            "target": "",
+            "title": "",
+          },
+          "rubrics": Array [],
+          "targetDescription": "targetDescription",
+        },
+        "kind": "none",
+      }
     }
     mapRows={Array []}
     rowOnClick={[Function]}
     selectedRow={
-        Object {
-            "bankKey": 1,
-            "claimCode": "claim_1234",
-            "claimLabel": "claim_math",
-            "grade": 1,
-            "gradeLabel": "1",
-            "interactionTypeCode": "type01",
-            "interactionTypeLabel": "type01label",
-            "isPerformanceItem": false,
-            "itemKey": 123,
-            "subjectCode": "Math",
-            "subjectLabel": "MTH",
-            "target": "",
-            "title": "test_title",
-          }
+      Object {
+        "bankKey": 1,
+        "claimCode": "claim_1234",
+        "claimLabel": "claim_math",
+        "grade": 1,
+        "gradeLabel": "1",
+        "interactionTypeCode": "type01",
+        "interactionTypeLabel": "type01label",
+        "isPerformanceItem": false,
+        "itemKey": 123,
+        "subjectCode": "Math",
+        "subjectLabel": "MTH",
+        "target": "",
+        "title": "test_title",
+      }
     }
     sort={Array []}
     tableRef={[Function]}
-/>,
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [],
+    },
+    "ref": null,
+    "rendered": Array [],
+    "type": "tbody",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [],
+      },
+      "ref": null,
+      "rendered": Array [],
+      "type": "tbody",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

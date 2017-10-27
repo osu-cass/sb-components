@@ -7,7 +7,10 @@ import * as GradeLevels from '../../Models/GradeLevels';
 import * as Rubric from '../../PageTabs/Rubric';
 import * as AboutItemVM from '../../Models/AboutItemVM';
 import * as ApiModels from '../../Models/ApiModels';
-import { shallow, mount } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("ItemTable", () => {
     const itemCards: ItemCardViewModel.ItemCardViewModel[] = [{
