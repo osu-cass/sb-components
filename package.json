@@ -11,7 +11,7 @@
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "node_modules/.bin/tsc && cp -r ./src/styles/ ./build/styles/ && cp ./src/index.d.ts ./build/"
+    "build": "node_modules/.bin/tsc && cp ./src/index.d.ts ./build/"
   },
   "repository": {
     "type": "git",
