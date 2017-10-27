@@ -31,6 +31,7 @@ export class BasicFilter extends React.Component<Props, {}> {
         return tags;
     }
 
+
     findFilterOption(key:string) {
         return this.props.filterOptions.find(fil => fil.key == key);
     }
@@ -39,8 +40,10 @@ export class BasicFilter extends React.Component<Props, {}> {
         let tag:JSX.Element; 
         
         if(this.props.type == OptionType.DropDown){
-            tag = (<select onChange={(e) => this.props.selectedHandler(this.findFilterOption(e.target.value))}>
-                {this.renderTags()}</select>);
+            tag = (
+                <select onChange={(e) => this.props.selectedHandler(this.findFilterOption(e.target.value))}>
+                    {this.renderTags()}
+                </select>);
         }
         else {
             tag = (<form>{this.renderTags()}</form>);
