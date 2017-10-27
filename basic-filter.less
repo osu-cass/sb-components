@@ -1,0 +1,35 @@
+@import 'constants.less';
+
+div.basic-filter-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    padding:5px;
+    border: 1px solid @grey-border-color;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    margin-bottom: 1em;
+
+    font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
+}
+
+div.basic-filter-container > .basic-filter-selection {
+    padding: 10px;
+}
+
+.basic-filter-body > label {
+}
+
+.basic-filter-body > select {
+    min-width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid @grey-border-color;
+    padding:5px;
+}
+
+.basic-filter-body > form {
+    display: flex;
+    flex-flow: column;
+}
+
