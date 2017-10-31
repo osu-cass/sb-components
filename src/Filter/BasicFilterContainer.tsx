@@ -1,5 +1,5 @@
 import * as React from "react";
-import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
+import "@osu-cass/smarter-balanced-styles/styles/basic-filter.less";
 import {BasicFilterCategory, BasicFilterOption} from "./AdvancedFilterModel";
 import { BasicFilter } from "./BasicFilter";
 
@@ -77,7 +77,7 @@ export class BasicFilterContainer extends React.Component<Props, State>{
 
     render() {
         return (
-            <div>
+            <div className="basic-filter-container">
                 {this.renderFilters()}
             </div>
         );

@@ -393,7 +393,9 @@ exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
 `;
 
 exports[`Storyshots BasicFilterContainer normal render 1`] = `
-<div>
+<div
+  className="basic-filter-container"
+>
   <div
     className="basic-filter-selection"
     id="grades-basic-filter"
