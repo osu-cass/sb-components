@@ -44,8 +44,8 @@ describe("ItemPageTable", () => {
         evidenceStatement: "evidenceStatement"
     }
 
-    const item: ApiModels.Resource<AboutItemVM.AboutThisItem> = {
-        kind: "none",
+    const item: ApiModels.Resource<AboutItemVM.AboutThisItem>= {
+        kind: "success",
         content
     }
 

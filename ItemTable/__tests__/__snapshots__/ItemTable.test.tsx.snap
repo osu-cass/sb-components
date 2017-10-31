@@ -31,7 +31,7 @@ ShallowWrapper {
           "rubrics": Array [],
           "targetDescription": "targetDescription",
         },
-        "kind": "none",
+        "kind": "success",
       }
     }
     mapRows={Array []}

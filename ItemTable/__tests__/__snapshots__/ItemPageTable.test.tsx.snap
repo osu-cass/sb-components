@@ -30,7 +30,7 @@ ShallowWrapper {
           "rubrics": Array [],
           "targetDescription": "targetDescription",
         },
-        "kind": "none",
+        "kind": "success",
       }
     }
     itemCards={
@@ -167,7 +167,7 @@ ShallowWrapper {
                 "rubrics": Array [],
                 "targetDescription": "targetDescription",
               },
-              "kind": "none",
+              "kind": "success",
             }
           }
           mapRows={
@@ -301,7 +301,7 @@ ShallowWrapper {
                   "rubrics": Array [],
                   "targetDescription": "targetDescription",
                 },
-                "kind": "none",
+                "kind": "success",
               }
             }
             mapRows={
@@ -438,7 +438,7 @@ ShallowWrapper {
                 "rubrics": Array [],
                 "targetDescription": "targetDescription",
               },
-              "kind": "none",
+              "kind": "success",
             },
             "mapRows": Array [
               Object {
@@ -578,7 +578,7 @@ ShallowWrapper {
                   "rubrics": Array [],
                   "targetDescription": "targetDescription",
                 },
-                "kind": "none",
+                "kind": "success",
               }
             }
             mapRows={
@@ -712,7 +712,7 @@ ShallowWrapper {
                     "rubrics": Array [],
                     "targetDescription": "targetDescription",
                   },
-                  "kind": "none",
+                  "kind": "success",
                 }
               }
               mapRows={
@@ -849,7 +849,7 @@ ShallowWrapper {
                   "rubrics": Array [],
                   "targetDescription": "targetDescription",
                 },
-                "kind": "none",
+                "kind": "success",
               },
               "mapRows": Array [
                 Object {

@@ -42,7 +42,7 @@ describe("ItemTable", () => {
     }
 
     const item: ApiModels.Resource<AboutItemVM.AboutThisItem> = {
-        kind: "none",
+        kind: "success",
         content
     }
     
