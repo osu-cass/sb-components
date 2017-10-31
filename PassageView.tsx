@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ItemView } from '../Models';
 import { ItemViewComponent } from './ItemView';
 
+
 interface Props {
     view: ItemView;
     associatedItems: string;

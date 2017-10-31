@@ -1,7 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { FirstPage } from '../FirstPage';
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import * as Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 const date = {
     getMonth: () => "01",

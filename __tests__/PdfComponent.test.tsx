@@ -2,8 +2,11 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { PdfComponent } from '../PdfComponent';
 import * as Models from "../../Models";
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
 import { GradeLevels } from '../../../../client/src/Models/GradeLevels';
+import * as Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 const rubric:  Models.Rubric = {
     language: "english",
