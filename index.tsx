@@ -10,6 +10,7 @@ export class App extends React.Component<{},{}>{
     render() {
         return (<ScoringGuidePage scoreGuideViewModelClient={this.client}/>);
     }
+    
 }
 
 ReactDOM.render(<App/>, document.getElementById("react-container"));
