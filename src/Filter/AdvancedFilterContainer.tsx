@@ -1,7 +1,6 @@
 import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
-import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 
 export interface Props {
     filterOptions: AdvancedFilterCategory[];
