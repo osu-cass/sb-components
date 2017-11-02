@@ -9,6 +9,8 @@ import * as Models from './ItemsSearchModels';
 import { Resource, get } from '../ApiModel';
 import * as ItemSearchModels from './ItemsSearchModels';
 import { RouteComponentProps } from 'react-router';
+import { BasicFilterContainer, BasicFilterCategory } from '@osu-cass/react-advanced-filter';
+import { mockBasicFilterCategories } from './filterModels';
 
 
 export const ItemsSearchClient = (params: ItemSearchModels.SearchAPIParams) =>
@@ -128,6 +130,12 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
         }
 
        
+    }
+
+    renderfilters() {
+        //return (
+        //    <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={} />
+        //    );
     }
 
     render() {
