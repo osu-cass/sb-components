@@ -4,17 +4,39 @@ div.basic-filter-container {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding:5px;
     border: 1px solid @grey-border-color;
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
     margin-bottom: 1em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
+}
 
+div.basic-filter-container-expanded{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid @grey-border-color;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
     font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
 }
 
 div.basic-filter-container > .basic-filter-selection {
     padding: 10px;
+}
+
+.basic-filter-button-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    padding-right:5px;
 }
 
 .basic-filter-body > label {
@@ -31,5 +53,11 @@ div.basic-filter-container > .basic-filter-selection {
 .basic-filter-body > form {
     display: flex;
     flex-flow: column;
+}
+
+.basic-filter{
+    display: flex;
+    flex-flow: row nowrap;   
+    margin-left: 10px;
 }
 

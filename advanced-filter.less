@@ -1,21 +1,50 @@
 @import 'constants.less';
 
-div.advanced-filter-container {
+.advanced-filter-container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
     border: 1px solid @grey-border-color;
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
     margin-bottom: 1em;
-
     font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
 }
 
 div.advanced-filter-container *:not(span){
     font-family: inherit;
+}
+
+div.filter-header-container{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    z-index: 1;
+}
+
+div.filter-title-container{ 
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16); 
+     
+}
+
+div.filter-title-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.advanced-filter-title{
+    display: flex; 
+    flex-flow: row nowrap; 
+    color: gray; 
+    align-items: center;
+    margin-left: 10px;
 }
 
 button.filter-reset-btn {
@@ -35,7 +64,6 @@ div.advanced-filter-container-expanded {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5px;
     background-color: #e6e6e6;
 }
 
@@ -44,12 +72,14 @@ div.filter-header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%; 
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);  
 }
 div.filter-header > div {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center; 
+    align-items: center;
+    margin: 3px;
 }
 div.filter-header > div > span {
     color: #63666A;
@@ -66,6 +96,7 @@ div.filter-header > div > span {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 10px;
 }
 
 .filter-body {
@@ -78,7 +109,7 @@ div.filter-header > div > span {
 
 .filter-indicator{
     padding: 5px;
-    margin: 2px;
+    margin-right: 15px; 
     color: #ffffff;
     border: 1px solid @grey-border-color;
     border-radius: 6px;
@@ -129,23 +160,10 @@ div.filter-header > div > span {
     padding: 10px;
 }
 
-.advanced-filter-container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid lightgray;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
-    margin-bottom: 1em;
-}
-
 .advanced-filter-container-expanded {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5px;
     background-color: #e6e6e6;
 }
 
