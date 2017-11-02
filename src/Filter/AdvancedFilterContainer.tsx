@@ -88,7 +88,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
                     if (opt.isSelected) {
                         tags.push(
                             <div className="filter-indicator" key={opt.key}>
-                                {opt.label}&nbsp;<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times fa-small" />
+                                {opt.label}&nbsp;<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times-circle fa-small" />
                             </div>
                         );
                     }

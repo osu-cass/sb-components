@@ -392,97 +392,215 @@ exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
 </div>
 `;
 
-exports[`Storyshots BasicFilterContainer normal render 1`] = `
+exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
 <div
   className="basic-filter-container"
 >
   <div
-    className="basic-filter-selection"
-    id="grades-basic-filter"
+    className="basic-filter"
   >
-    <label>
-      Grades
-    </label>
     <div
-      className="basic-filter-body"
+      className="basic-filter-selection"
+      id="grades-basic-filter"
     >
-      <select
-        onChange={[Function]}
+      <label>
+        Grades
+      </label>
+      <div
+        className="basic-filter-body"
       >
-        <option
-          value="7"
+        <select
+          onChange={[Function]}
         >
-          Elementary
-        </option>
-        <option
-          value="1"
-        >
-          Grade 3
-        </option>
-        <option
-          value="2"
-        >
-          Grade 4
-        </option>
-        <option
-          value="4"
-        >
-          Grade 5
-        </option>
-        <option
-          value="8"
-        >
-          Grade 6
-        </option>
-        <option
-          value="16"
-        >
-          Grade 7
-        </option>
-        <option
-          value="32"
-        >
-          Grade 8
-        </option>
-        <option
-          value="960"
-        >
-          High
-        </option>
-      </select>
+          <option
+            value="7"
+          >
+            Elementary
+          </option>
+          <option
+            value="1"
+          >
+            Grade 3
+          </option>
+          <option
+            value="2"
+          >
+            Grade 4
+          </option>
+          <option
+            value="4"
+          >
+            Grade 5
+          </option>
+          <option
+            value="8"
+          >
+            Grade 6
+          </option>
+          <option
+            value="16"
+          >
+            Grade 7
+          </option>
+          <option
+            value="32"
+          >
+            Grade 8
+          </option>
+          <option
+            value="960"
+          >
+            High
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="basic-filter-selection"
+      id="techtype-basic-filter"
+    >
+      <label>
+        TechType
+      </label>
+      <div
+        className="basic-filter-body"
+      >
+        <form>
+          <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+              value="CAT"
+            />
+            CAT
+          </label>
+          <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+              value="PT"
+            />
+            Performance Items
+          </label>
+        </form>
+      </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expansion button 1`] = `
+<div
+  className="basic-filter-container"
+>
   <div
-    className="basic-filter-selection"
-    id="techtype-basic-filter"
+    className="basic-filter"
   >
-    <label>
-      TechType
-    </label>
     <div
-      className="basic-filter-body"
+      className="basic-filter-selection"
+      id="grades-basic-filter"
     >
-      <form>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="CAT"
-          />
-          CAT
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="PT"
-          />
-          Performance Items
-        </label>
-      </form>
+      <label>
+        Grades
+      </label>
+      <div
+        className="basic-filter-body"
+      >
+        <select
+          onChange={[Function]}
+        >
+          <option
+            value="7"
+          >
+            Elementary
+          </option>
+          <option
+            value="1"
+          >
+            Grade 3
+          </option>
+          <option
+            value="2"
+          >
+            Grade 4
+          </option>
+          <option
+            value="4"
+          >
+            Grade 5
+          </option>
+          <option
+            value="8"
+          >
+            Grade 6
+          </option>
+          <option
+            value="16"
+          >
+            Grade 7
+          </option>
+          <option
+            value="32"
+          >
+            Grade 8
+          </option>
+          <option
+            value="960"
+          >
+            High
+          </option>
+        </select>
+      </div>
     </div>
+    <div
+      className="basic-filter-selection"
+      id="techtype-basic-filter"
+    >
+      <label>
+        TechType
+      </label>
+      <div
+        className="basic-filter-body"
+      >
+        <form>
+          <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+              value="CAT"
+            />
+            CAT
+          </label>
+          <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="radio"
+              value="PT"
+            />
+            Performance Items
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Advanced Filters
+    </div>
+    <button
+      className="filter-button"
+      onClick={[Function]}
+    >
+      Show
+       
+      <span
+        className="fa fa-chevron-right"
+      />
+    </button>
   </div>
 </div>
 `;
