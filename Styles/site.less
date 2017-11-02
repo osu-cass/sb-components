@@ -1,0 +1,234 @@
+﻿@import "constants.less";
+@import "nav.less";
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: #f3f3f3;
+}
+
+.container {
+    flex: 1 0 auto;
+    max-width: 1400px;
+    margin: 0 1em 1em 1em;
+    align-self: center;
+}
+
+@media (max-width: @small) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.btn-primary { // SB
+    background-color: @sb-blue;
+    border-color: @sb-blue;
+    box-shadow: @sb-shadow;
+}
+.btn-primary:hover { // SB
+    background-color: @sb-blue-hover;
+    border-color: @sb-blue-hover;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+.btn-success { // SB
+    background-color: @sb-green;
+    border-color: @sb-green;
+    box-shadow: @sb-shadow;
+}
+.btn-success:hover { // SB
+    background-color: @sb-green-hover;
+    border-color: @sb-green-hover;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.itemViewerFrame {
+    position: relative;
+    background-color: #ffffff;
+    overflow: auto;
+    -webkit-overflow-scrolling:touch;
+    height: 70vh;
+    width: 100%;
+}
+
+.itemviewer-iframe {
+    height: 100%;
+    max-height: 99%;
+    width: 100%;
+}
+
+.itemviewer-iframe-spinner {
+    position: absolute;
+    top: calc(~'50% - 60px');
+    left: calc(~'50% - 60px');
+    z-index: 1;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute !important;
+}
+
+.card {
+    border: 2px solid;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #444444;
+    width: 300px;
+    -webkit-transition-duration: 0.2s; // Safari
+    transition-duration: 0.2s;
+    cursor: pointer;
+    margin: 26px;
+    font-size: @font-size-base;
+    box-shadow: @card-shadow;
+}
+
+.card:hover {
+    box-shadow: @card-shadow;
+}
+
+.card:focus {
+    box-shadow: @card-shadow;
+}
+
+.card.ela {
+    border-color: @sb-blue;
+}
+
+.card.condensed {
+    margin: 10px;
+    width: 215px;
+    font-size: 95%; // SB
+}
+    
+.card.condensed h4.card-title {
+    padding: 10px;
+}
+    
+.card.condensed .card-contents p {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 5px 0px;
+}
+
+.card.condensed .card-contents p:first-of-type {
+    padding-top: 5px;
+}
+
+.card-static {
+    cursor: default;
+}
+
+.card-static:hover {
+    box-shadow: @card-shadow;
+}
+
+.ela h4.card-title {
+    background-color: @sb-blue;
+}
+
+.card.math {
+    border-color: @sb-green;
+}
+
+.math h4.card-title {
+    background-color: @sb-green;
+}
+
+h4.card-title {
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+@media (max-width: 370px) {
+    h4.card-title {
+        font-size: 86%;
+    }
+}
+
+.card-text-label {
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: bold;
+    color: #727477;
+    padding-right: .25em;
+}
+
+.card-text-value {
+    color: #000000;
+}
+
+.card-contents p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-contents p:first-of-type {
+    padding-top: 5px;
+}
+
+.tag {
+    padding: 5px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-align: left;
+    user-select: none; /* So they can't select text */
+    cursor: pointer;
+}
+
+.tag:hover {
+    background-color: #efefef;
+}
+
+.tag:focus:not(.selected) {
+    background-color: #efefef;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.collapsible-body {
+    padding-left: 14px;
+}
+
+.link-button, a.link-button:hover, a.link-button:active, a.link-button:visited {
+    color: black;
+    text-decoration: none !important;
+}
+
+.collapsible-label, a.collapsible-label:hover, a.collapsible-label:active, a.collapsible-label:visited {
+    font-size: 1.2em;
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "PT Sans", Times, serif;
+}
+
+

@@ -1,0 +1,88 @@
+﻿@import "constants.less";
+
+h1 {
+    letter-spacing: @sb-letter-spacing;
+}
+
+/*body {
+    background-image: none;
+    background-repeat: unset;
+    background-size: unset;
+}*/
+
+.container {
+    align-self: center;
+    width: auto;
+}
+
+.aboutitems-parents {
+    padding: 1.5em;
+    background-color: @sb-white; // SB
+    border-radius: 6px; // SB
+    box-shadow: @sb-shadow; // SB
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: @phone-portrait) {
+    .aboutitems-parents {
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+.aboutitems-info {
+    vertical-align: middle;
+    flex: 1 300px;
+    margin: 1.5em;
+}
+
+.aboutitem-iframe, .no-item {
+    flex: 1 800px;
+    margin: 1.5em;
+}
+
+.aboutitems-dropdown {
+    width: inherit;
+    padding-top: 10px;
+}
+
+.aboutitems-dropdown .form-control {
+    padding: 10px;
+    font-size: @font-size-base;
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutitems-desc {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px; // SB
+}
+
+.aboutitems-text {
+    align-content: center;
+    font-size: @font-size-larger; // SB
+}
+
+.about-this-item-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-nav-btn {
+    margin-top: auto;
+    font-size: @font-size-smaller;
+    padding: 5px 0px; //SB
+    color: black;
+}
+
+.no-item {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: @font-size-larger
+}
