@@ -59,4 +59,13 @@ export interface State {
 
 export class AdvancedFilterContainer extends Component<Props, State> { }
 
-export class BasicFilterContainer extends Component<Props, State> { }
+export interface BasicFilterProps {
+    filterOptions: BasicFilterCategory[];
+    onClick: (selected: BasicFilterCategory[]) => void;
+}
+
+export interface BasicFilterState {
+    filters: BasicFilterCategory[];
+}
+
+export class BasicFilterContainer extends Component<BasicFilterProps, BasicFilterState> { }
