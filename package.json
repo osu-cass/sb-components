@@ -28,7 +28,7 @@
   "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
   "dependencies": {},
   "devDependencies": {
-    "@osu-cass/smarter-balanced-styles": "^1.0.4",
+    "@osu-cass/smarter-balanced-styles": "^1.0.5",
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/addons": "^3.2.12",
