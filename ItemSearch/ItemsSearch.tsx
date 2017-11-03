@@ -132,10 +132,57 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
        
     }
 
+    translateBasicFilterCate(categorys: BasicFilterCategory[]): Models.SearchAPIParams {
+        let model: Models.SearchAPIParams = {
+            itemId: "",
+            gradeLevels: GradeLevels.GradeLevels.All,
+            subjects: [],
+            claims: [],
+            interactionTypes: [],
+            performanceOnly: false,
+            targets:[]
+        };
+
+        const gradeCategory = categorys.find(c => c.label.toLowerCase() === 'grades');
+        if (gradeCategory && !gradeCategory.disabled) {
+            model.gradeLevels = GradeLevels.GradeLevels.NA;
+            gradeCategory.filterOptions.forEach(fo => {
+                model.gradeLevels ^= (fo.isSelected? Number(fo.key): model.gradeLevels);
+            });
+        }
+
+        return model;
+    }
+
+    beginSearchFilter( categorys:BasicFilterCategory[] ) {
+        const searchResults = this.state.searchResults;
+        if (searchResults.kind === "success") {
+            this.setState({
+                searchResults: {
+                    kind: "reloading",
+                    content: searchResults.content
+                }
+            });
+        } else if (searchResults.kind === "failure") {
+            this.setState({
+                searchResults: { kind: "loading" }
+            });
+        }
+
+        const params = this.translateBasicFilterCate(categorys);
+
+        this.props.itemsSearchClient(params)
+            .then((data) => this.onSearch(data))
+            .catch((err) => this.onError(err));
+    }
+
+
     renderfilters() {
         //return (
         //    <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={} />
         //    );
+
+        const mock = mockBasicFilterCategories;
     }
 
     render() {
