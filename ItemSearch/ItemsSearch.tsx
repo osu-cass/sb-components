@@ -147,9 +147,10 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
 
         const gradeCategory = categorys.find(c => c.label.toLowerCase() === 'grades');
         if (gradeCategory && !gradeCategory.disabled) {
+            model.gradeLevels = GradeLevels.GradeLevels.All;
             const selectedGrade = gradeCategory.filterOptions.find(fo => fo.isSelected);
             if (selectedGrade) {
-                model.gradeLevels = Number(selectedGrade.key) | GradeLevels.GradeLevels.All;
+                model.gradeLevels = Number(selectedGrade.key);
             }
         }
 
@@ -174,7 +175,7 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
         return model;
     }
 
-    beginSearchFilter( categorys:BasicFilterCategory[] ) {
+    beginSearchFilter = (categorys: BasicFilterCategory[]) => {
         const searchResults = this.state.searchResults;
         if (searchResults.kind === "success") {
             this.setState({
@@ -198,14 +199,27 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
 
 
     renderfilters() {
-        return (
-            <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={this.beginSearchFilter} />
-            );
+        const isLoading = this.isLoading();
+        const searchVm = this.state.itemSearch;
+
+        if (searchVm.kind == "success" || searchVm.kind == "reloading") {
+            if (searchVm.content) {
+                return (
+                    <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={this.beginSearchFilter} />
+                );
+            }
+            else {
+                return <p><em>Loading...</em></p>
+            }
+        }
+        else {
+            return <p><em>Loading...</em></p>
+        }
     }
 
     render() {
         return (
-            <div className="search-container">
+            <div className="search-container" style={{ "marginTop": "100px","backgroundColor":"white"}}>
                 {this.renderfilters()}
                 <div className="search-results" >
                     {this.renderResultElement()}
