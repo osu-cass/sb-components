@@ -73,6 +73,20 @@ export class AdvancedFilterContainer extends React.Component<AdvancedProps, Adva
         this.props.onClick(newFilters);
     }
 
+    hasActiveFilterIndicators(){
+        let active = false;
+        this.state.filters.forEach(fil => {
+            if(!fil.disabled){
+                fil.filterOptions.forEach(opt => {
+                    if(opt.isSelected){
+                        active = true;
+                    }
+                })
+            }
+        })
+        return active;
+    }
+
     renderFilterIndicators() {
         let tags: JSX.Element[] = []
 
@@ -106,7 +120,7 @@ export class AdvancedFilterContainer extends React.Component<AdvancedProps, Adva
     renderFilterBody() {
         const filterTags = this.state.filters.map((fil, i) => {
             return (
-                <AdvancedFilter {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
+                <AdvancedFilter key={i} {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
             );
         });
 
@@ -122,15 +136,15 @@ export class AdvancedFilterContainer extends React.Component<AdvancedProps, Adva
         const className = this.state.expanded ? "fa fa-chevron-down" : "fa fa-chevron-right";
         const buttonText = this.state.expanded ? "Collapse " : "Expand ";
         return (
-            <div className="filter-header-container">
-                <div className="filter-title-header">
-                    <div className="advanced-filter-title">
+            <div className="filter-sub-header-container">
+                <div className="filter-advanced-filter-header">
+                    <div className="filter-advanced-filter-title">
                         <h2 style={{ color: "#63666A" }}><span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters</h2>
                         <span style={{marginTop: "6px"}}>&nbsp;Click on an item to remove it from the list</span>
                     </div>
-                    <div style={{ display: "flex", marginRight: "5px"}}>
+                    <div style={{ display: "flex", marginRight: "10px"}}>
                         {
-                            filters !== null && filters.length > 0 ?
+                            this.hasActiveFilterIndicators() ?
                                 <button onClick={() => this.resetFilters()} className="filter-button">Reset Filters</button> :
                                 null}
                         <button onClick={() => this.handleClick()} className="filter-button">{buttonText}<span className={className} /></button>
