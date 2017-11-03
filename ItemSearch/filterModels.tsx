@@ -55,6 +55,28 @@ export const mockBasicFilterCategories: BasicFilterCategory[] = [
     },
     {
         "disabled": false,
+        "label": "Subjects",
+        "filterOptions": [
+            //{
+            //    "label": "All",
+            //    "key": "",
+            //    "isSelected": false
+            //},
+            {
+                "label": "Math",
+                "key": "MATH",
+                "isSelected": false
+            },
+            {
+                "label": "English",
+                "key": "ELA",
+                "isSelected": false
+            }
+        ],
+        "type": OptionType.radioBtn
+    },
+    {
+        "disabled": false,
         "label": "TechType",
         "filterOptions": [
             {
