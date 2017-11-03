@@ -6,6 +6,11 @@ export const mockBasicFilterCategories: BasicFilterCategory[] = [
         "label": "Grades",
         "filterOptions": [
             {
+                "label": "All",
+                "key": "1023",
+                "isSelected": false
+            },
+            {
                 "label": "Elementary",
                 "key": "7",
                 "isSelected": false

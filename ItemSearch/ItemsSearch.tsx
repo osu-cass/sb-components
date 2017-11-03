@@ -132,6 +132,8 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
        
     }
 
+
+    // TODO: Optimize this 
     translateBasicFilterCate(categorys: BasicFilterCategory[]): Models.SearchAPIParams {
         let model: Models.SearchAPIParams = {
             itemId: "",
@@ -145,9 +147,27 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
 
         const gradeCategory = categorys.find(c => c.label.toLowerCase() === 'grades');
         if (gradeCategory && !gradeCategory.disabled) {
-            model.gradeLevels = GradeLevels.GradeLevels.NA;
-            gradeCategory.filterOptions.forEach(fo => {
-                model.gradeLevels ^= (fo.isSelected? Number(fo.key): model.gradeLevels);
+            const selectedGrade = gradeCategory.filterOptions.find(fo => fo.isSelected);
+            if (selectedGrade) {
+                model.gradeLevels = Number(selectedGrade.key) | GradeLevels.GradeLevels.All;
+            }
+        }
+
+        const subjectsCategory = categorys.find(c => c.label.toLowerCase() === 'subjects');
+        if (subjectsCategory && !subjectsCategory.disabled) {
+            subjectsCategory.filterOptions.forEach(fo => {
+                if (fo.isSelected) {
+                    model.subjects.push(fo.key);
+                }
+            });
+        }
+
+        const techTypesCategory = categorys.find(c => c.label.toLowerCase() === 'TechType');
+        if (techTypesCategory && !techTypesCategory.disabled) {
+            techTypesCategory.filterOptions.forEach(fo => {
+                if (fo.isSelected) {
+                    model.interactionTypes.push(fo.key);
+                }
             });
         }
 
@@ -178,17 +198,15 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
 
 
     renderfilters() {
-        //return (
-        //    <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={} />
-        //    );
-
-        const mock = mockBasicFilterCategories;
+        return (
+            <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={this.beginSearchFilter} />
+            );
     }
 
     render() {
         return (
             <div className="search-container">
-                {this.renderISPComponent()}
+                {this.renderfilters()}
                 <div className="search-results" >
                     {this.renderResultElement()}
                 </div>
