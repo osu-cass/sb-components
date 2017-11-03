@@ -163,13 +163,13 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
             });
         }
 
+        //look up techtype options
         const techTypesCategory = categorys.find(c => c.label.toLowerCase() === 'TechType');
         if (techTypesCategory && !techTypesCategory.disabled) {
-            techTypesCategory.filterOptions.forEach(fo => {
-                if (fo.isSelected) {
-                    model.interactionTypes.push(fo.key);
-                }
-            });
+            const selectedTechType = techTypesCategory.filterOptions.find(fo => fo.key.toLowerCase() === 'pt');
+            if (selectedTechType) {
+                model.performanceOnly = selectedTechType.isSelected;
+            }
         }
 
         return model;
