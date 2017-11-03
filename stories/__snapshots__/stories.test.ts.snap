@@ -145,51 +145,62 @@ exports[`Storyshots AdvancedFilterContainer normal render 1`] = `
   className="advanced-filter-container"
 >
   <div
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "flexFlow": "row nowrap",
-        "justifyContent": "space-between",
-        "width": "100%",
-      }
-    }
+    className="filter-sub-header-container"
   >
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "color": "gray",
-          "display": "flex",
-          "flexFlow": "row nowrap",
-        }
-      }
+      className="filter-advanced-filter-header"
     >
-      <h2
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h2
+          style={
+            Object {
+              "color": "#63666A",
+            }
+          }
+        >
+          <span
+            className="fa fa-tasks fa-lg"
+          />
+           Advanced Filters
+        </h2>
+        <span
+          style={
+            Object {
+              "marginTop": "6px",
+            }
+          }
+        >
+           Click on an item to remove it from the list
+        </span>
+      </div>
+      <div
         style={
           Object {
-            "color": "#63666A",
+            "display": "flex",
+            "marginRight": "10px",
           }
         }
       >
-        <span
-          className="fa fa-tasks fa-lg"
-        />
-         Advanced Filters
-      </h2>
-      <span>
-         Click on an item to remove it.
-      </span>
+        <button
+          className="filter-button"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
-    <button
-      className="filter-button"
-      onClick={[Function]}
+    <div
+      className="filter-header"
     >
-      Expand 
-      <span
-        className="fa fa-chevron-down"
+      <div
+        className="filter-status"
       />
-    </button>
+    </div>
   </div>
 </div>
 `;
@@ -587,7 +598,9 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="basic-filter-button-container"
+  >
     <div>
       Advanced Filters
     </div>
@@ -601,6 +614,130 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
         className="fa fa-chevron-right"
       />
     </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-container"
+  >
+    <div
+      className="basic-filter"
+    >
+      <div
+        className="basic-filter-selection"
+        id="grades-basic-filter"
+      >
+        <label>
+          Grades
+        </label>
+        <div
+          className="basic-filter-body"
+        >
+          <select
+            onChange={[Function]}
+          >
+            <option
+              value="7"
+            >
+              Elementary
+            </option>
+            <option
+              value="1"
+            >
+              Grade 3
+            </option>
+            <option
+              value="2"
+            >
+              Grade 4
+            </option>
+            <option
+              value="4"
+            >
+              Grade 5
+            </option>
+            <option
+              value="8"
+            >
+              Grade 6
+            </option>
+            <option
+              value="16"
+            >
+              Grade 7
+            </option>
+            <option
+              value="32"
+            >
+              Grade 8
+            </option>
+            <option
+              value="960"
+            >
+              High
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="basic-filter-selection"
+        id="techtype-basic-filter"
+      >
+        <label>
+          TechType
+        </label>
+        <div
+          className="basic-filter-body"
+        >
+          <form>
+            <label>
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="radio"
+                value="CAT"
+              />
+              CAT
+            </label>
+            <label>
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="radio"
+                value="PT"
+              />
+              Performance Items
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      className="basic-filter-button-container"
+    >
+      <div>
+        Advanced Filters
+      </div>
+      <button
+        className="filter-button"
+        onClick={[Function]}
+      >
+        Show
+         
+        <span
+          className="fa fa-chevron-right"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
