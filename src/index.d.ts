@@ -47,25 +47,41 @@ export interface AdvancedFilters {
     techTypes: AdvancedFilterCategory;
 }
 
-export interface Props {
+export interface AdvancedProps {
     filterOptions: AdvancedFilterCategory[];
     onClick: (selected: AdvancedFilterCategory[]) => void;
 }
 
-export interface State {
+export interface AdvancedState {
     filters: AdvancedFilterCategory[];
     expanded: boolean
 }
 
-export class AdvancedFilterContainer extends Component<Props, State> { }
-
-export interface BasicFilterProps {
+export interface BasicProps {
     filterOptions: BasicFilterCategory[];
     onClick: (selected: BasicFilterCategory[]) => void;
 }
 
-export interface BasicFilterState {
+export interface BasicState {
     filters: BasicFilterCategory[];
+    expanded: boolean
 }
 
-export class BasicFilterContainer extends Component<BasicFilterProps, BasicFilterState> { }
+export interface FilterProps {
+    basicFilterOptions: BasicFilterCategory[];
+    onBasicFilterClick: (selected: BasicFilterCategory[]) => void;
+    advancedFilterOptions: AdvancedFilterCategory[];
+    onAdvancedFilterClick: (selected: AdvancedFilterCategory[]) => void;
+}
+
+export interface FilterState {
+    basicFilters: BasicFilterCategory[];
+    advancedFilters: AdvancedFilterCategory[];
+    expanded: boolean;
+}
+
+export class AdvancedFilterContainer extends Component<AdvancedProps, AdvancedState> { }
+
+export class BasicFilterContainer extends Component<BasicProps, BasicState> { }
+
+export class FilterContainer extends Component<FilterProps, FilterState> { }
