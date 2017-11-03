@@ -1,24 +1,29 @@
 import * as React from "react";
-import "@osu-cass/smarter-balanced-styles/styles/basic-filter.less";
-import {BasicFilterCategory, BasicFilterOption} from "./AdvancedFilterModel";
+import { BasicFilterCategory, BasicFilterOption } from "./AdvancedFilterModel";
 import { BasicFilter } from "./BasicFilter";
 
-export interface Props {
+export interface BasicProps {
     filterOptions: BasicFilterCategory[];
     onClick: (selected: BasicFilterCategory[]) => void;
+    containsAdvancedFilter: boolean;
+    handleAdvancedFilterExpand: () => void;
 }
 
-export interface State {
+export interface BasicState {
     filters: BasicFilterCategory[];
+    expanded?: boolean;
 }
 
-export class BasicFilterContainer extends React.Component<Props, State>{
-    constructor(props: Props) {
+export class BasicFilterContainer extends React.Component<BasicProps, BasicState>{
+    constructor(props: BasicProps) {
         super(props);
 
         this.state = {
-            filters:props.filterOptions
+            filters: props.filterOptions,
+            expanded: false
         }
+
+        this.handleClick = this.handleClick.bind(this);
     }
 
     //multiSelect not an option right now.
@@ -27,11 +32,11 @@ export class BasicFilterContainer extends React.Component<Props, State>{
         const newFilters = [...this.state.filters];
         let newOptions: BasicFilterOption[] = [];
 
-        if(option){
+        if (option) {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);
             newOptions = newFilters[index].filterOptions
                 .map(opt => { return { ...opt, isSelected: false } });
-            
+
             newOptions[optionIdx].isSelected = !option.isSelected;
 
             newFilters[index] = {
@@ -65,20 +70,49 @@ export class BasicFilterContainer extends React.Component<Props, State>{
         }
     }
 
-    renderFilters(){
-        const filterTags = this.state.filters.map((fil,i) => {
+    renderFilters() {
+        const filterTags = this.state.filters.map((fil, i) => {
             return (
-                <BasicFilter key={i} {...fil} selectedHandler={(opt) => this.onSelect(fil,opt)} />
+                <BasicFilter key={i} {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
             );
         });
 
         return filterTags;
     }
 
+    handleClick() {
+        this.setState({expanded: !this.state.expanded});
+        this.props.handleAdvancedFilterExpand();
+    }
+
     render() {
+        const { filterOptions, containsAdvancedFilter } = this.props;
+        const { expanded } = this.state;
+        let advancedFilterButton = null;
+
+        // if the component is being used in conjunction
+        // with the AdvancedFilterContainer we handle expanding it here
+        if (containsAdvancedFilter) {
+            advancedFilterButton =
+                (<div className="basic-filter-button-container">
+                    <div>Advanced Filters</div>
+                    <button className="filter-button" onClick={this.handleClick}>
+                        {expanded ?"Hide" : "Show" }&nbsp; 
+                        <span className={`fa fa-chevron-${expanded ? "down" : "right"}`} />
+                    </button>
+                </div>)
+        }
+        let className = "basic-filter-container";
+        if(expanded){
+            className = "basic-filter-container-expanded";
+        }
+
         return (
-            <div className="basic-filter-container">
-                {this.renderFilters()}
+            <div className={className} >
+                <div className="basic-filter">
+                    {this.renderFilters()}
+                </div>
+                {advancedFilterButton}
             </div>
         );
     }

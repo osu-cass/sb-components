@@ -1,6 +1,5 @@
 import * as React from "react";
 import { BasicFilterCategory, BasicFilterOption, OptionType } from './AdvancedFilterModel';
-import "@osu-cass/smarter-balanced-styles/styles/basic-filter.less";
 
 export interface Props extends BasicFilterCategory { 
     selectedHandler: (data?: BasicFilterOption) => void;

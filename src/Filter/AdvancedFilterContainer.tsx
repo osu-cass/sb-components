@@ -1,20 +1,19 @@
 import * as React from "react";
 import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
-import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 
-export interface Props {
+export interface AdvancedProps {
     filterOptions: AdvancedFilterCategory[];
     onClick: (selected: AdvancedFilterCategory[]) => void;
-}  
+}
 
-interface State {
+interface AdvancedState {
     filters: AdvancedFilterCategory[];
     expanded: boolean
 }
 
-export class AdvancedFilterContainer extends React.Component<Props, State>{
-    constructor(props: Props) {
+export class AdvancedFilterContainer extends React.Component<AdvancedProps, AdvancedState>{
+    constructor(props: AdvancedProps) {
         super(props);
 
         this.state = {
@@ -74,10 +73,18 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
         this.props.onClick(newFilters);
     }
 
-    keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
-        if (e.keyCode === 0 || e.keyCode === 13 || e.keyCode === 32) {
-            this.resetFilters();
-        }
+    hasActiveFilterIndicators(){
+        let active = false;
+        this.state.filters.forEach(fil => {
+            if(!fil.disabled){
+                fil.filterOptions.forEach(opt => {
+                    if(opt.isSelected){
+                        active = true;
+                    }
+                })
+            }
+        })
+        return active;
     }
 
     renderFilterIndicators() {
@@ -89,7 +96,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
                     if (opt.isSelected) {
                         tags.push(
                             <div className="filter-indicator" key={opt.key}>
-                                {opt.label}&nbsp;<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times fa-small" />
+                                {opt.label}&nbsp;<span onClick={() => this.onSelect(fil, opt)} className="fa fa-times-circle fa-small" />
                             </div>
                         );
                     }
@@ -103,11 +110,6 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     renderFilterHeader() {
         return (
             <div className="filter-header">
-                <div style={{ display: "flex", flexflow: "row nowrap", justifyContent: "space-between" }}>
-                    <a onClick={() => this.resetFilters()}
-                        onKeyPress={e => this.keyPressResetFilters(e)}
-                        tabIndex={0}>Reset filters</a>
-                </div>
                 <div className="filter-status">
                     {this.renderFilterIndicators()}
                 </div>
@@ -118,7 +120,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     renderFilterBody() {
         const filterTags = this.state.filters.map((fil, i) => {
             return (
-                <AdvancedFilter {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
+                <AdvancedFilter key={i} {...fil} selectedHandler={(opt) => this.onSelect(fil, opt)} />
             );
         });
 
@@ -130,15 +132,29 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     }
 
     renderCollapsedFilterContainer = () => {
-        const className = this.state.expanded ? "fa fa-chevron-up" : "fa fa-chevron-down";
+        const { filters } = this.state;
+        const className = this.state.expanded ? "fa fa-chevron-down" : "fa fa-chevron-right";
         const buttonText = this.state.expanded ? "Collapse " : "Expand ";
         return (
-            <div style={{ display: "flex", flexFlow: "row nowrap", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-                <div style={{ display: "flex", flexFlow: "row nowrap", color: "gray", alignItems: "center" }}>
-                    <h2 style={{ color: "#63666A" }}><span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters</h2>
-                    <span>&nbsp;Click on an item to remove it.</span>
+            <div className="filter-sub-header-container">
+                <div className="filter-advanced-filter-header">
+                    <div className="filter-advanced-filter-title">
+                        <h2 style={{ color: "#63666A" }}><span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters</h2>
+                        <span style={{marginTop: "6px"}}>&nbsp;Click on an item to remove it from the list</span>
+                    </div>
+                    <div style={{ display: "flex", marginRight: "10px"}}>
+                        {
+                            this.hasActiveFilterIndicators() ?
+                                <button onClick={() => this.resetFilters()} className="filter-button">Reset Filters</button> :
+                                null}
+                        <button onClick={() => this.handleClick()} className="filter-button">{buttonText}<span className={className} /></button>
+                    </div>
                 </div>
-                <button onClick={this.handleClick} className="filter-button">{buttonText}<span className={className} /></button>
+                {
+                    filters && filters.length > 0 ?
+                        this.renderFilterHeader() :
+                        null
+                }
             </div>
         )
     }
@@ -147,7 +163,7 @@ export class AdvancedFilterContainer extends React.Component<Props, State>{
     render() {
         let content = null;
         if (this.state.expanded) {
-            content = (<div className="advanced-filter-container-expanded">{this.renderFilterHeader()}{this.renderFilterBody()}</div>)
+            content = (<div className="advanced-filter-container-expanded">{this.renderFilterBody()}</div>)
         }
 
         return (
