@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { QuestionDataTable } from '../QuestionDataTable';
 import * as Models from "../../Models";
 import { configure, shallow } from 'enzyme';
-import { GradeLevels } from '../../../../client/src/Models/GradeLevels';
+import { GradeLevels } from '../../GradeLevels';
 import * as Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
