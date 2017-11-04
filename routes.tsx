@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
+import { Layout } from './Layout';
+import { Home } from './Home/Home';
 import { AboutItemComponent, AboutThisClient } from './AboutItem/AboutItems';
 import { ItemsSearchComponent, ItemsSearchClient, ItemsViewModelClient } from './ItemSearch/ItemsSearch'
 import { ItemPageContainer, ItemPageClient, AboutThisItemViewModelClient } from './ItemPage/ItemPageContainer';
