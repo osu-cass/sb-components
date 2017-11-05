@@ -1,0 +1,32 @@
+//** Item Viewer frame to use IVS
+@import 'constants.less';
+
+.itemViewerFrame {
+    position: relative;
+    background-color: #ffffff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 70vh;
+    width: 100%;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: 1px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 3px 8px rgb(100,100,100);
+    -webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
+    box-shadow: 0px 3px 8px rgb(100,100,100);
+}
+
+.itemviewer-iframe {
+    height: 100%;
+    max-height: 99%;
+    width: 100%;
+    border: none;
+}
+
+.itemviewer-iframe-spinner {
+    position: absolute;
+    top: calc(~'50% - 60px');
+    left: calc(~'50% - 60px');
+    z-index: 1;
+}

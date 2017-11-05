@@ -1,0 +1,102 @@
+//** Item Card styles
+
+@import 'constants.less';
+
+.card {
+    border: 2px solid;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #444444;
+    width: 300px;
+    -webkit-transition-duration: 0.2s; // Safari
+    transition-duration: 0.2s;
+    cursor: pointer;
+    margin: 26px;
+    font-size: @font-size-base;
+    box-shadow: @card-shadow;
+}
+
+.card:hover {
+    box-shadow: @card-shadow;
+}
+
+.card:focus {
+    box-shadow: @card-shadow;
+}
+
+.card.ela {
+    border-color: @sb-blue;
+}
+
+.card.condensed {
+    margin: 10px;
+    width: 215px;
+    font-size: 95%; // SB
+}
+    
+.card.condensed h4.card-title {
+    padding: 10px;
+}
+    
+.card.condensed .card-contents p {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 5px 0px;
+}
+
+.card.condensed .card-contents p:first-of-type {
+    padding-top: 5px;
+}
+
+.card-static {
+    cursor: default;
+}
+
+.card-static:hover {
+    box-shadow: @card-shadow;
+}
+
+.ela h4.card-title {
+    background-color: @sb-blue;
+}
+
+.card.math {
+    border-color: @sb-green;
+}
+
+.math h4.card-title {
+    background-color: @sb-green;
+}
+
+h4.card-title {
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+@media (max-width: 370px) {
+    h4.card-title {
+        font-size: 86%;
+    }
+}
+
+.card-text-label {
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: bold;
+    color: #727477;
+    padding-right: .25em;
+}
+
+.card-text-value {
+    color: #000000;
+}
+
+.card-contents p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-contents p:first-of-type {
+    padding-top: 5px;
+}

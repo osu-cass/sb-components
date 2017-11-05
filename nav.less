@@ -1,16 +1,14 @@
 ﻿@import "constants.less";
 
 nav {
-	border-radius: 0px; // SB
-	padding: 1em; // SB
-	box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135); // SB
-    background-color: #ffffff; // SB
-    border-color: #ffffff; // SB
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    border-radius: 0px; // SB
+    padding: 1em; // SB
+    box-shadow: @sb-shadow; // SB
+    background-color: @sb-white; // SB
+    border-color: @sb-white; // SB
+    position: relative;
     margin-bottom: 20px;
+    font-family: "PT Serif Caption",serif;
 }
 
 @media screen and (max-width: @small) {
@@ -69,10 +67,10 @@ nav {
 
 
 .sbNav-titleGroup-item h3 {
-    color: #63666A;
+    color: @grey;
     margin: 0 auto;
     font-size: 28px;
-    letter-spacing: -.02em; // SB
+    letter-spacing: @sb-letter-spacing; // SB
     font-family: "PT Sans", Times, serif;
 }
 
@@ -84,7 +82,7 @@ nav {
 .sbNav-titleGroup-item img {
     height: 50px;
     padding-right: 15px;
-    border-right: 1px solid #63666A;
+    border-right: 1px solid @grey;
 }
 
 @media screen and (max-width: @small) {
@@ -101,14 +99,11 @@ footer {
     border: 1px solid #ffffff;
     background-color: #ffffff;
     display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     flex-shrink: 0;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
 	padding: 2em 2em 1em 2em; // SB
+    text-align:right;
 }
 
 .footer-copyright {
@@ -116,6 +111,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5px;
+    font-family: "PT Sans";
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing: 0pt;
 }
 
 .footer-practiceTests {
