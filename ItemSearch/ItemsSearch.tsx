@@ -1,4 +1,4 @@
-﻿import '../Styles/search.less'
+﻿import '../Styles/search.less';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as ItemCard from '../ItemCard/ItemCard';

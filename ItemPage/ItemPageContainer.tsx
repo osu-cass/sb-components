@@ -1,4 +1,5 @@
 ﻿import '../Styles/item.less';
+import '@osu-cass/smarter-balanced-styles/styles/advanced-filter.less'
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as Accessibility from '../Accessibility/Accessibility';
