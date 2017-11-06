@@ -1,4 +1,5 @@
-import './css/site.css';
+//import '@osu-cass/smarter-balanced-styles/styles/site.less';
+import './Styles/site.less'
 import 'bootstrap';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

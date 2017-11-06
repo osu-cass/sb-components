@@ -1,5 +1,5 @@
-﻿import '../css/about.css';
-import '../css/item.css';
+﻿import '../Styles/about.less';
+import '../Styles/item.less';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as $ from 'jquery';

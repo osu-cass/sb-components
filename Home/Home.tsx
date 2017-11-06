@@ -9,7 +9,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
         return <div className="home-container">
             <div>
                 <h1 className="home-title"><b>Welcome!</b></h1>
-                Sup kevin This site provides examples of test questions used on Smarter Balanced assessments in English language
+                This site provides examples of test questions used on Smarter Balanced assessments in English language
         arts/literacy and math. Teachers, parents, students, administrators, and policymakers can experience these test items just as students encounter them.
 
         <br /><br />
@@ -24,15 +24,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, {}> {
                 <NavLink to={'/BrowseItems'} exact activeClassName='active' className="btn-lg btn-primary home-container-button">
                     <span>Browse Test Items</span>
                 </NavLink>
-          
 
-            <br /><br />
-            <NavLink to={'/AboutItems'} exact activeClassName='active' className="btn-lg btn-success home-container-button">
+
+                <br /><br />
+                <NavLink to={'/AboutItems'} exact activeClassName='active' className="btn-lg btn-success home-container-button">
                     <span>Learn More About Items</span>
-            </NavLink>
-                
-    </div >
-</div >
+                </NavLink>
+
+            </div >
+        </div >
 
     }
 }
