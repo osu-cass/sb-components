@@ -2,6 +2,7 @@
 import * as ItemsSearch from './ItemsSearch';
 import * as GradeLevels from '../GradeLevels/GradeLevels';
 import * as Models from './ItemsSearchModels';
+import { parseQueryString } from '../ApiModel';
 
 const hideArrow = (
     <span aria-label="Hide">▼</span>
@@ -10,18 +11,6 @@ const hideArrow = (
 const showArrow = (
     <span aria-label="Show">▶</span>
 );
-
-function parseQueryString(url: string): { [key: string]: string[] | undefined } {
-    let queryObject: { [key: string]: string[] | undefined } = {};
-    const pairs = url.slice(url.indexOf("?") + 1).split("&");
-    for (const pair of pairs) {
-        const pairParts = pair.split("=");
-        if (pairParts[0] && pairParts[1]) {
-            queryObject[pairParts[0]] = pairParts[1].split(",");
-        }
-    }
-    return queryObject;
-}
 
 export interface Props {
     interactionTypes: Models.InteractionType[];

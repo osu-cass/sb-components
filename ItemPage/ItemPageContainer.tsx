@@ -5,7 +5,7 @@ import * as Accessibility from '../Accessibility/Accessibility';
 import * as AboutThisItem from '../AboutItem/AboutThisItem';
 import * as ItemPage from './ItemPage';
 import * as ItemPageModels from './ItemPageModels';
-import { Resource, get, getResourceContent } from '../ApiModel';
+import { Resource, get, getResourceContent, parseQueryString } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
 
 export const AboutThisItemViewModelClient = (params: ItemPageModels.Item) =>
@@ -33,7 +33,13 @@ export class ItemPageContainer extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
         //TODO: parse url params and change item
-        const item: ItemPageModels.ItemIsaap = { itemKey: 2851, bankKey: 187, isaap: "" }
+
+        const queryObject = parseQueryString(location.search);
+        const itemKey = +(queryObject["itemKey"] || [])[0] || 0;
+        const bankKey = +(queryObject["bankKey"] || [])[0] || 0;
+        const isaap = (queryObject["isaap"] || [])[0] || "";
+        
+        const item: ItemPageModels.ItemIsaap = { itemKey: itemKey, bankKey: bankKey, isaap: isaap }
 
         this.state = {
             aboutThisItem: { kind: "loading" },
