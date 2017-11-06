@@ -1,15 +1,12 @@
-﻿import { OptionType, BasicFilterCategory } from '@osu-cass/react-advanced-filter'
+﻿import { OptionType, AdvancedFilterCategory } from '@osu-cass/react-advanced-filter'
 
-export const mockBasicFilterCategories: BasicFilterCategory[] = [
+export const mockAdvancedFilterCategories: AdvancedFilterCategory[] = [
     {
         "disabled": false,
+        "isMultiSelect": false,
+        "helpText": "Grade HelpText here.",
         "label": "Grades",
         "filterOptions": [
-            {
-                "label": "All",
-                "key": "1023",
-                "isSelected": false
-            },
             {
                 "label": "Elementary",
                 "key": "7",
@@ -51,19 +48,16 @@ export const mockBasicFilterCategories: BasicFilterCategory[] = [
                 "isSelected": false
             }
         ],
-        "type": OptionType.DropDown
+        "displayAllButton":true
     },
     {
         "disabled": false,
+        "isMultiSelect": false,
         "label": "Subjects",
+        "helpText": "Subjects HelpText here.",
         "filterOptions": [
-            //{
-            //    "label": "All",
-            //    "key": "",
-            //    "isSelected": false
-            //},
             {
-                "label": "Math",
+                "label": "Mathematics",
                 "key": "MATH",
                 "isSelected": false
             },
@@ -73,11 +67,13 @@ export const mockBasicFilterCategories: BasicFilterCategory[] = [
                 "isSelected": false
             }
         ],
-        "type": OptionType.radioBtn
+        "displayAllButton": true
     },
     {
         "disabled": false,
+        "isMultiSelect": false,
         "label": "TechType",
+        "helpText": "TechType HelpText here.",
         "filterOptions": [
             {
                 "label": "CAT",
@@ -90,6 +86,6 @@ export const mockBasicFilterCategories: BasicFilterCategory[] = [
                 "isSelected": false
             }
         ],
-        "type": OptionType.radioBtn
+        "displayAllButton": true
     }
 ];

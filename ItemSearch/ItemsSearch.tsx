@@ -9,8 +9,8 @@ import * as Models from './ItemsSearchModels';
 import { Resource, get } from '../ApiModel';
 import * as ItemSearchModels from './ItemsSearchModels';
 import { RouteComponentProps } from 'react-router';
-import { BasicFilterContainer, BasicFilterCategory } from '@osu-cass/react-advanced-filter';
-import { mockBasicFilterCategories } from './filterModels';
+import { AdvancedFilterCategory, AdvancedFilterContainer } from '@osu-cass/react-advanced-filter';
+import { mockAdvancedFilterCategories } from './filterModels';
 
 
 export const ItemsSearchClient = (params: ItemSearchModels.SearchAPIParams) =>
@@ -134,7 +134,7 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
 
 
     // TODO: Optimize this 
-    translateBasicFilterCate(categorys: BasicFilterCategory[]): Models.SearchAPIParams {
+    translateAdvancedFilterCate(categorys: AdvancedFilterCategory[]): Models.SearchAPIParams {
         let model: Models.SearchAPIParams = {
             itemId: "",
             gradeLevels: GradeLevels.GradeLevels.All,
@@ -175,7 +175,7 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
         return model;
     }
 
-    beginSearchFilter = (categorys: BasicFilterCategory[]) => {
+    beginSearchFilter = (categorys: AdvancedFilterCategory[]) => {
         const searchResults = this.state.searchResults;
         if (searchResults.kind === "success") {
             this.setState({
@@ -190,7 +190,7 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
             });
         }
 
-        const params = this.translateBasicFilterCate(categorys);
+        const params = this.translateAdvancedFilterCate(categorys);
 
         this.props.itemsSearchClient(params)
             .then((data) => this.onSearch(data))
@@ -205,7 +205,7 @@ export class ItemsSearchComponent extends React.Component<Props, State> {
         if (searchVm.kind == "success" || searchVm.kind == "reloading") {
             if (searchVm.content) {
                 return (
-                    <BasicFilterContainer filterOptions={...mockBasicFilterCategories} onClick={this.beginSearchFilter} />
+                    <AdvancedFilterContainer filterOptions={...mockAdvancedFilterCategories} onClick={this.beginSearchFilter} />
                 );
             }
             else {
