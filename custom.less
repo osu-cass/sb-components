@@ -31,6 +31,15 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.site-body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}   
+
+.site-content {
+    flex: 1;
+}
 
 .btn-primary { // SB
     background-color: @sb-blue;
@@ -103,20 +112,19 @@ textarea {
     flex: 1 1 auto;
     flex-basis: 600px;
     justify-content: center;
-    padding: 20px;
+    padding: @spacing-unit;
     border-width: 0px 1px 1px 1px;
     border-style: solid;
-    border-color: #cccccc;
+    border-color: @grey-border-color;
     border-radius: 0px 0px 10px 10px;
-    margin-top: -20px;
-    background-color: #ffffff;
+    margin-top: -@spacing-unit;
+    background-color: @sb-white;
 }
-
 
 .tag {
     padding: 5px;
     margin: 5px;
-    background-color: #ffffff;
+    background-color: @sb-white;
     color: #000000;
     font-size: 12px;
     border-radius: 4px;

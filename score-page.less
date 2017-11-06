@@ -18,9 +18,9 @@
     background-color: white;
     padding: 15px;
     border-style: solid;
-    border-top-color: #d9d9d9;
-    border-right-color: #d9d9d9;
-    border-left-color: #d9d9d9;
+    border-top-color:@grey-border-color;
+    border-right-color: @grey-border-color;
+    border-left-color: @grey-border-color;
     border-bottom: 5px solid white;
     border-width: 1px;
     border-radius: 5px;
@@ -34,7 +34,7 @@
 }
 
 .tab-not-selected {
-    background-color: #f3f3f3;
+    background-color: @background-color-base;
     padding: 15px;
 }
 
@@ -47,20 +47,20 @@
 }
 
 .item-information-content {
-    padding: 10px;
+    padding: @spacing-unit/2;
     border-style: solid;
-    border-color: #d9d9d9;
+    border-color: @grey-border-color;
     border-width: 1px;
     border-radius: 5px;
-    -moz-box-shadow: 0px 3px 8px rgb(100,100,100);
-    -webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
-    box-shadow: 0px 3px 8px rgb(100,100,100);
+    -moz-box-shadow: @box-shadow-light;
+    -webkit-box-shadow: @box-shadow-light;
+    box-shadow: @box-shadow-light;
 }
 
 table.item-table {
     width: 100%;
     height: 100%;
-    background-color: #D5D5D5;
+    background-color: @grey-border-color;
     display: block;
     margin: 0;
     padding: 0;
@@ -96,17 +96,17 @@ table.item-table {
 
 .selected {
     background-color: #63666A !important;
-    color: white;
+    color: @text-color-light;
 }
 
 .selected:hover {
     background-color: #535559 !important;
-    color: white;
+    color: @text-color-light;
 }
 
 .selected:focus {
     background-color: #535559;
-    color: white;
+    color: @text-color-light;
 }
 
 table.item-table > thead > tr > th:first-child,
@@ -122,17 +122,17 @@ table.item-table > tbody > tr > td{
 }
 
 table.item-table > tbody > tr:nth-child(even) {
-    background-color: #F3F3F3;
-    border: 1px solid #D9D9D9;
+    background-color: @background-color-base;
+    border: 1px solid @grey-border-color;
 }
 
 table.item-table > tbody > tr:nth-child(odd) {
-    background-color: #F9F9F9;
-    border: 1px solid #D9D9D9;
+    background-color: @background-color-base;
+    border: 1px solid @grey-border-color;
 }
 
 table.item-table > tbody > tr:hover {
-    background-color: #FFFFFF;
+    background-color: @sb-white;
 }
 
 table.item-table > thead > tr > th {
@@ -181,13 +181,13 @@ table.item-table > tbody > tr > td {
     flex: 1 1 auto;
     flex-basis: 600px;
     justify-content: center;
-    padding: 20px;
-    padding-top:8em;
+    padding: @spacing-unit;
+    padding-top: 8em;
     border-width: 0px 1px 1px 1px;
     border-style: solid;
     border-color: #cccccc;
     border-radius: 0px 0px 10px 10px;
-    margin-top: -20px;
-    background-color: #ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    margin-top: -@spacing-unit;
+    background-color: @sb-white;
+    box-shadow: @box-shadow;
 }

@@ -7,12 +7,12 @@ div.basic-filter-container {
     justify-content: space-between;
     width: 100%;
     border: 1px solid @grey-border-color;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: @box-shadow;
     margin-bottom: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
     font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
-    background-color: #fff;
+    background-color: @sb-white;
 }
 
 div.basic-filter-container-expanded{
@@ -22,26 +22,23 @@ div.basic-filter-container-expanded{
     justify-content: space-between;
     width: 100%;
     border: 1px solid @grey-border-color;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: @box-shadow;
     margin-bottom: 0;
     padding-top: 1em;
     padding-bottom: 1em;
     font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
-    background-color: #fff;
+    background-color: @sb-white;
 }
 
 div.basic-filter-container > .basic-filter-selection {
-    padding: 10px;
+    padding: @spacing-unit/2;
 }
 
 .basic-filter-button-container {
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
-    margin-right:10px;
-}
-
-.basic-filter-body > label {
+    margin-right:@spacing-unit/2;
 }
 
 .basic-filter-body > select {
@@ -49,7 +46,7 @@ div.basic-filter-container > .basic-filter-selection {
     height: 30px;
     border-radius: 5px;
     border: 2px solid @grey-border-color;
-    padding:5px;
+    padding: 5px;
 }
 
 .basic-filter-body > form {
@@ -60,6 +57,6 @@ div.basic-filter-container > .basic-filter-selection {
 .basic-filter{
     display: flex;
     flex-flow: row nowrap;   
-    margin-left: 10px;
+    margin-left: @spacing-unit/2;
 }
 

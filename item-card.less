@@ -5,7 +5,7 @@
 .card {
     border: 2px solid;
     border-radius: 6px;
-    background-color: #ffffff;
+    background-color: @sb-white;
     color: #444444;
     width: 300px;
     -webkit-transition-duration: 0.2s; // Safari
@@ -29,17 +29,17 @@
 }
 
 .card.condensed {
-    margin: 10px;
+    margin: @spacing-unit/2;
     width: 215px;
     font-size: 95%; // SB
 }
     
 .card.condensed h4.card-title {
-    padding: 10px;
+    padding: @spacing-unit/2;
 }
     
 .card.condensed .card-contents p {
-    padding: 0px 10px 0px 10px;
+    padding: 0px @spacing-unit/2 0px @spacing-unit/2;
     margin: 0px 0px 5px 0px;
 }
 
@@ -69,7 +69,7 @@
 
 h4.card-title {
     font-weight: bold;
-    color: white;
+    color: @text-color-light;
     padding: 15px;
     margin: 0;
 }

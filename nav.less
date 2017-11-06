@@ -7,8 +7,11 @@ nav {
     background-color: @sb-white; // SB
     border-color: @sb-white; // SB
     position: relative;
-    margin-bottom: 20px;
     font-family: "PT Serif Caption",serif;
+
+    h1, h2, h3 {
+        white-space:nowrap;
+    } 
 }
 
 @media screen and (max-width: @small) {
@@ -20,8 +23,8 @@ nav {
 .sbNav {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
-    margin: 0 10px;
+    justify-content: space-around;
+    margin: 0;
 }
 
 @media screen and (max-width: @small) {
@@ -56,15 +59,13 @@ nav {
 .sbNav-linksGroup-item {
     font-size: @font-size-larger; // SB
     color: @link-color; //SB
-    margin: 10px 20px; // SB
+    margin: @spacing-unit/2 @spacing-unit; // SB
     white-space: nowrap;
 
     &:hover{
         text-decoration: none;
     }
 }
-
-
 
 .sbNav-titleGroup-item h3 {
     color: @grey;
@@ -96,29 +97,34 @@ nav {
 }
 
 footer {
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
+    border: 1px solid @sb-white;
+    background-color: @sb-white;
     display: flex;
     flex-shrink: 0;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
 	padding: 2em 2em 1em 2em; // SB
-    text-align:right;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .footer-copyright {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5px;
     font-family: "PT Sans";
     color: #7a7a7a;
-    font-size: 12px;
+    font-size: @font-size-smaller;
     letter-spacing: 0pt;
+
+    .footer-sbLink {
+        margin-left: @spacing-unit;
+    }
 }
 
 .footer-practiceTests {
-    align-self: flex-start;
     font-size: @font-size-smaller; // SB
     text-decoration: underline;
 }
@@ -130,5 +136,30 @@ footer {
 @media screen and (max-width: @small) {
     .footer-copyright {
         flex-direction: column;
+    }
+}
+
+a.skip-link {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: @text-color-light;
+    border-right: 1px solid @sb-white;
+    border-bottom: 1px solid @sb-white;
+    border-bottom-right-radius: 8px;
+    background: transparent;
+    -webkit-transition: top 1s ease-out, background 1s linear;
+    transition: top 1s ease-out, background 1s linear;
+
+    &:focus, &:active {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: #BF1722;
+        outline: 0;
+        -webkit-transition: top .1s ease-in, background .5s linear;
+        transition: top .1s ease-in, background .5s linear;
+        z-index: 3;
     }
 }
