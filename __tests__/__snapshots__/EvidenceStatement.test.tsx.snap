@@ -10,45 +10,49 @@ ShallowWrapper {
   "length": 1,
   "node": <div
     className="centered-table-container"
->
+  >
     <table
-        className="item-data-table"
+      className="item-data-table"
     >
-        <thead>
-            <tr>
-                <th>
-                    Evidence Statement
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td />
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>
+            Evidence Statement
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            
+          </td>
+        </tr>
+      </tbody>
     </table>
-</div>,
+  </div>,
   "nodes": Array [
     <div
       className="centered-table-container"
->
+    >
       <table
-            className="item-data-table"
+        className="item-data-table"
       >
-            <thead>
-                  <tr>
-                        <th>
-                              Evidence Statement
-                        </th>
-                  </tr>
-            </thead>
-            <tbody>
-                  <tr>
-                        <td />
-                  </tr>
-            </tbody>
+        <thead>
+          <tr>
+            <th>
+              Evidence Statement
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              
+            </td>
+          </tr>
+        </tbody>
       </table>
-</div>,
+    </div>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -58,7 +62,7 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <EvidenceStatement
         statement=""
-/>,
+      />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -90,45 +94,49 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
           className="centered-table-container"
->
+        >
           <table
-                    className="item-data-table"
+            className="item-data-table"
           >
-                    <thead>
-                              <tr>
-                                        <th>
-                                                  Evidence Statement
-                                        </th>
-                              </tr>
-                    </thead>
-                    <tbody>
-                              <tr>
-                                        <td />
-                              </tr>
-                    </tbody>
+            <thead>
+              <tr>
+                <th>
+                  Evidence Statement
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  
+                </td>
+              </tr>
+            </tbody>
           </table>
-</div>,
+        </div>,
         "_debugID": 2,
         "_renderedOutput": <div
           className="centered-table-container"
->
+        >
           <table
-                    className="item-data-table"
+            className="item-data-table"
           >
-                    <thead>
-                              <tr>
-                                        <th>
-                                                  Evidence Statement
-                                        </th>
-                              </tr>
-                    </thead>
-                    <tbody>
-                              <tr>
-                                        <td />
-                              </tr>
-                    </tbody>
+            <thead>
+              <tr>
+                <th>
+                  Evidence Statement
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  
+                </td>
+              </tr>
+            </tbody>
           </table>
-</div>,
+        </div>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
@@ -142,6 +150,6 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <EvidenceStatement
     statement=""
-/>,
+  />,
 }
 `;

@@ -10,19 +10,19 @@ ShallowWrapper {
   "length": 1,
   "node": <div
     dangerouslySetInnerHTML={
-        Object {
-            "__html": null,
-          }
+      Object {
+        "__html": null,
+      }
     }
-/>,
+  />,
   "nodes": Array [
     <div
       dangerouslySetInnerHTML={
-            Object {
-                  "__html": null,
-                }
+        Object {
+          "__html": null,
+        }
       }
-/>,
+    />,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -32,15 +32,15 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <ItemViewComponent
         view={
-                Object {
-                        "captured": true,
-                        "html": null,
-                        "id": "12334",
-                        "picturePath": null,
-                        "type": 1,
-                      }
+          Object {
+            "captured": true,
+            "html": null,
+            "id": "12334",
+            "picturePath": null,
+            "type": 1,
+          }
         }
-/>,
+      />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -78,19 +78,19 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
           dangerouslySetInnerHTML={
-                    Object {
-                              "__html": null,
-                            }
+            Object {
+              "__html": null,
+            }
           }
-/>,
+        />,
         "_debugID": 2,
         "_renderedOutput": <div
           dangerouslySetInnerHTML={
-                    Object {
-                              "__html": null,
-                            }
+            Object {
+              "__html": null,
+            }
           }
-/>,
+        />,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
@@ -104,14 +104,14 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <ItemViewComponent
     view={
-        Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          }
+      Object {
+        "captured": true,
+        "html": null,
+        "id": "12334",
+        "picturePath": null,
+        "type": 1,
+      }
     }
-/>,
+  />,
 }
 `;

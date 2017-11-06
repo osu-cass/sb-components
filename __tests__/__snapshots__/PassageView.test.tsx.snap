@@ -10,47 +10,47 @@ ShallowWrapper {
   "length": 1,
   "node": <div
     className="item"
->
+  >
     <h2>
-        Passage for 
-        item
-         
-        some_text
+      Passage for 
+      items
+       
+      187-1234, 187-1235
     </h2>
     <ItemViewComponent
-        view={
-            Object {
-                "captured": true,
-                "html": null,
-                "id": "12334",
-                "picturePath": null,
-                "type": 1,
-              }
+      view={
+        Object {
+          "captured": true,
+          "html": null,
+          "id": "12334",
+          "picturePath": null,
+          "type": 1,
         }
+      }
     />
-</div>,
+  </div>,
   "nodes": Array [
     <div
       className="item"
->
+    >
       <h2>
-            Passage for 
-            item
-             
-            some_text
+        Passage for 
+        items
+         
+        187-1234, 187-1235
       </h2>
       <ItemViewComponent
-            view={
-                  Object {
-                        "captured": true,
-                        "html": null,
-                        "id": "12334",
-                        "picturePath": null,
-                        "type": 1,
-                      }
-            }
+        view={
+          Object {
+            "captured": true,
+            "html": null,
+            "id": "12334",
+            "picturePath": null,
+            "type": 1,
+          }
+        }
       />
-</div>,
+    </div>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -59,17 +59,22 @@ ShallowWrapper {
       "_compositeType": 0,
       "_context": Object {},
       "_currentElement": <PassageView
-        associatedItems="some_text"
-        view={
-                Object {
-                        "captured": true,
-                        "html": null,
-                        "id": "12334",
-                        "picturePath": null,
-                        "type": 1,
-                      }
+        associatedItems={
+          Array [
+            "187-1234",
+            "187-1235",
+          ]
         }
-/>,
+        view={
+          Object {
+            "captured": true,
+            "html": null,
+            "id": "12334",
+            "picturePath": null,
+            "type": 1,
+          }
+        }
+      />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -77,7 +82,10 @@ ShallowWrapper {
         "_reactInternalInstance": [Circular],
         "context": Object {},
         "props": Object {
-          "associatedItems": "some_text",
+          "associatedItems": Array [
+            "187-1234",
+            "187-1235",
+          ],
           "view": Object {
             "captured": true,
             "html": null,
@@ -108,47 +116,47 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
           className="item"
->
+        >
           <h2>
-                    Passage for 
-                    item
-                     
-                    some_text
+            Passage for 
+            items
+             
+            187-1234, 187-1235
           </h2>
           <ItemViewComponent
-                    view={
-                              Object {
-                                        "captured": true,
-                                        "html": null,
-                                        "id": "12334",
-                                        "picturePath": null,
-                                        "type": 1,
-                                      }
-                    }
+            view={
+              Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              }
+            }
           />
-</div>,
+        </div>,
         "_debugID": 2,
         "_renderedOutput": <div
           className="item"
->
+        >
           <h2>
-                    Passage for 
-                    item
-                     
-                    some_text
+            Passage for 
+            items
+             
+            187-1234, 187-1235
           </h2>
           <ItemViewComponent
-                    view={
-                              Object {
-                                        "captured": true,
-                                        "html": null,
-                                        "id": "12334",
-                                        "picturePath": null,
-                                        "type": 1,
-                                      }
-                    }
+            view={
+              Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              }
+            }
           />
-</div>,
+        </div>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
@@ -161,16 +169,21 @@ ShallowWrapper {
   },
   "root": [Circular],
   "unrendered": <PassageView
-    associatedItems="some_text"
-    view={
-        Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          }
+    associatedItems={
+      Array [
+        "187-1234",
+        "187-1235",
+      ]
     }
-/>,
+    view={
+      Object {
+        "captured": true,
+        "html": null,
+        "id": "12334",
+        "picturePath": null,
+        "type": 1,
+      }
+    }
+  />,
 }
 `;

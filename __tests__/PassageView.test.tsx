@@ -14,7 +14,7 @@ const itemView: Models.ItemView = {
 
 const props = {
     view: itemView,
-    associatedItems: "some_text"
+    associatedItems: ["187-1234", "187-1235"]
 }
 
 describe("EvidenceStatement", () => {

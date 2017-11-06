@@ -10,41 +10,41 @@ ShallowWrapper {
   "length": 1,
   "node": <div
     className="item"
->
+  >
     <h2>
-        Question #
+      Question #
     </h2>
     <ItemViewComponent
-        view={
-            Object {
-                "captured": true,
-                "html": null,
-                "id": "12334",
-                "picturePath": null,
-                "type": 1,
-              }
+      view={
+        Object {
+          "captured": true,
+          "html": null,
+          "id": "12334",
+          "picturePath": null,
+          "type": 1,
         }
+      }
     />
-</div>,
+  </div>,
   "nodes": Array [
     <div
       className="item"
->
+    >
       <h2>
-            Question #
+        Question #
       </h2>
       <ItemViewComponent
-            view={
-                  Object {
-                        "captured": true,
-                        "html": null,
-                        "id": "12334",
-                        "picturePath": null,
-                        "type": 1,
-                      }
-            }
+        view={
+          Object {
+            "captured": true,
+            "html": null,
+            "id": "12334",
+            "picturePath": null,
+            "type": 1,
+          }
+        }
       />
-</div>,
+    </div>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -54,20 +54,20 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <QuestionView
         question={
-                Object {
-                        "data": null,
-                        "id": "something",
-                        "questionNumber": null,
-                        "view": Object {
-                          "captured": true,
-                          "html": null,
-                          "id": "12334",
-                          "picturePath": null,
-                          "type": 1,
-                        },
-                      }
+          Object {
+            "data": null,
+            "id": "something",
+            "questionNumber": null,
+            "view": Object {
+              "captured": true,
+              "html": null,
+              "id": "12334",
+              "picturePath": null,
+              "type": 1,
+            },
+          }
         }
-/>,
+      />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -110,41 +110,41 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
           className="item"
->
+        >
           <h2>
-                    Question #
+            Question #
           </h2>
           <ItemViewComponent
-                    view={
-                              Object {
-                                        "captured": true,
-                                        "html": null,
-                                        "id": "12334",
-                                        "picturePath": null,
-                                        "type": 1,
-                                      }
-                    }
+            view={
+              Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              }
+            }
           />
-</div>,
+        </div>,
         "_debugID": 2,
         "_renderedOutput": <div
           className="item"
->
+        >
           <h2>
-                    Question #
+            Question #
           </h2>
           <ItemViewComponent
-                    view={
-                              Object {
-                                        "captured": true,
-                                        "html": null,
-                                        "id": "12334",
-                                        "picturePath": null,
-                                        "type": 1,
-                                      }
-                    }
+            view={
+              Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              }
+            }
           />
-</div>,
+        </div>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
@@ -158,19 +158,19 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <QuestionView
     question={
-        Object {
-            "data": null,
-            "id": "something",
-            "questionNumber": null,
-            "view": Object {
-              "captured": true,
-              "html": null,
-              "id": "12334",
-              "picturePath": null,
-              "type": 1,
-            },
-          }
+      Object {
+        "data": null,
+        "id": "something",
+        "questionNumber": null,
+        "view": Object {
+          "captured": true,
+          "html": null,
+          "id": "12334",
+          "picturePath": null,
+          "type": 1,
+        },
+      }
     }
-/>,
+  />,
 }
 `;

@@ -10,65 +10,65 @@ ShallowWrapper {
   "length": 1,
   "node": <div
     className="page first-page"
->
+  >
     <div
-        className="first-page-title"
+      className="first-page-title"
     >
+      Smarter Balanced
+      <br />
+      Assessment Consortium
+    </div>
+    <div
+      className="first-page-subtitle"
+    >
+      math
+       Practice Test Scoring Guide
+      <br />
+      <strong>
+        grade 3
+      </strong>
+    </div>
+    <div
+      className="first-page-date"
+    >
+      01
+      /
+      12
+      /
+      2017
+    </div>
+  </div>,
+  "nodes": Array [
+    <div
+      className="page first-page"
+    >
+      <div
+        className="first-page-title"
+      >
         Smarter Balanced
         <br />
         Assessment Consortium
-    </div>
-    <div
+      </div>
+      <div
         className="first-page-subtitle"
-    >
+      >
         math
          Practice Test Scoring Guide
         <br />
         <strong>
-            grade 3
+          grade 3
         </strong>
-    </div>
-    <div
+      </div>
+      <div
         className="first-page-date"
-    >
+      >
         01
         /
         12
         /
         2017
-    </div>
-</div>,
-  "nodes": Array [
-    <div
-      className="page first-page"
->
-      <div
-            className="first-page-title"
-      >
-            Smarter Balanced
-            <br />
-            Assessment Consortium
       </div>
-      <div
-            className="first-page-subtitle"
-      >
-            math
-             Practice Test Scoring Guide
-            <br />
-            <strong>
-                  grade 3
-            </strong>
-      </div>
-      <div
-            className="first-page-date"
-      >
-            01
-            /
-            12
-            /
-            2017
-      </div>
-</div>,
+    </div>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -78,15 +78,15 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <FirstPage
         date={
-                Object {
-                        "getDate": [Function],
-                        "getFullYear": [Function],
-                        "getMonth": [Function],
-                      }
+          Object {
+            "getDate": [Function],
+            "getFullYear": [Function],
+            "getMonth": [Function],
+          }
         }
         grade="grade 3"
         subject="math"
-/>,
+      />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -124,65 +124,65 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
           className="page first-page"
->
+        >
           <div
-                    className="first-page-title"
+            className="first-page-title"
           >
-                    Smarter Balanced
-                    <br />
-                    Assessment Consortium
+            Smarter Balanced
+            <br />
+            Assessment Consortium
           </div>
           <div
-                    className="first-page-subtitle"
+            className="first-page-subtitle"
           >
-                    math
-                     Practice Test Scoring Guide
-                    <br />
-                    <strong>
-                              grade 3
-                    </strong>
+            math
+             Practice Test Scoring Guide
+            <br />
+            <strong>
+              grade 3
+            </strong>
           </div>
           <div
-                    className="first-page-date"
+            className="first-page-date"
           >
-                    01
-                    /
-                    12
-                    /
-                    2017
+            01
+            /
+            12
+            /
+            2017
           </div>
-</div>,
+        </div>,
         "_debugID": 2,
         "_renderedOutput": <div
           className="page first-page"
->
+        >
           <div
-                    className="first-page-title"
+            className="first-page-title"
           >
-                    Smarter Balanced
-                    <br />
-                    Assessment Consortium
+            Smarter Balanced
+            <br />
+            Assessment Consortium
           </div>
           <div
-                    className="first-page-subtitle"
+            className="first-page-subtitle"
           >
-                    math
-                     Practice Test Scoring Guide
-                    <br />
-                    <strong>
-                              grade 3
-                    </strong>
+            math
+             Practice Test Scoring Guide
+            <br />
+            <strong>
+              grade 3
+            </strong>
           </div>
           <div
-                    className="first-page-date"
+            className="first-page-date"
           >
-                    01
-                    /
-                    12
-                    /
-                    2017
+            01
+            /
+            12
+            /
+            2017
           </div>
-</div>,
+        </div>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
@@ -196,14 +196,14 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <FirstPage
     date={
-        Object {
-            "getDate": [Function],
-            "getFullYear": [Function],
-            "getMonth": [Function],
-          }
+      Object {
+        "getDate": [Function],
+        "getFullYear": [Function],
+        "getMonth": [Function],
+      }
     }
     grade="grade 3"
     subject="math"
-/>,
+  />,
 }
 `;
