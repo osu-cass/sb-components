@@ -38,7 +38,7 @@ export class ShareModal extends React.Component<Props, {}>{
                         <div className="modal-body ">
                             <span>The following URL can be used to load this question with your currently saved accessibility options.</span>
                             <div className="input-group">
-                                <input type="text" className="form-control readonly-select" id="shareUrl" style={{ "maxWidth": "inherit" }} readOnly={true} value={url} />
+                                <input type="text" className="form-control readonly-select" id="shareUrl" style={{ "maxWidth": "inherit" }} readOnly={true} value={decodeURIComponent(url)} />
                                 <span className="input-group-btn">
                                     <button className="btn btn-default" type="button" id="copy-button" onClick={this.copyToClipboard}>
                                         <span className="glyphicon glyphicon-copy" aria-hidden="true"></span>
