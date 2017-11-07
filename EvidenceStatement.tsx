@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+
 interface Props {
     statement: string;
 }

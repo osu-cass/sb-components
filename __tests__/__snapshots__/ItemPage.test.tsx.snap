@@ -2,491 +2,9 @@
 
 exports[`EvidenceStatement matches snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <div
-    className="page"
-  >
-    <QuestionView
-      question={
-        Object {
-          "data": Object {
-            "associatedItems": "string",
-            "commonCoreStandardsDescription": "string",
-            "depthOfKnowledge": "string",
-            "educationalDifficulty": "string",
-            "evidenceStatement": "string",
-            "itemCardViewModel": Object {
-              "bankKey": 1,
-              "claimCode": "234536",
-              "claimLabel": "Math Claim",
-              "commonCoreStandardId": "",
-              "depthOfKnowledge": "",
-              "domain": "MATH",
-              "grade": 8,
-              "gradeLabel": "grade 3",
-              "interactionTypeCode": "",
-              "interactionTypeLabel": "",
-              "isPerformanceItem": false,
-              "itemKey": 1,
-              "subjectCode": "MATH",
-              "subjectLabel": "math",
-              "target": "1-3",
-              "targetId": "23463467",
-              "title": "",
-            },
-            "rubrics": Array [
-              Object {
-                "language": "english",
-                "rubricEntries": Array [
-                  Object {
-                    "name": "",
-                    "scorepoint": "",
-                    "value": "",
-                  },
-                ],
-                "samples": Array [
-                  Object {
-                    "maxValue": "",
-                    "minValue": "",
-                    "sampleResponses": Array [
-                      Object {
-                        "name": "",
-                        "purpose": "",
-                        "sampleContent": "",
-                        "scorePoint": "",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-            "targetDescription": "string",
-          },
-          "id": "12334",
-          "questionNumber": 1,
-          "view": Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          },
-        }
-      }
-    />
-  </div>,
-  "nodes": Array [
-    <div
-      className="page"
-    >
-      <QuestionView
-        question={
-          Object {
-            "data": Object {
-              "associatedItems": "string",
-              "commonCoreStandardsDescription": "string",
-              "depthOfKnowledge": "string",
-              "educationalDifficulty": "string",
-              "evidenceStatement": "string",
-              "itemCardViewModel": Object {
-                "bankKey": 1,
-                "claimCode": "234536",
-                "claimLabel": "Math Claim",
-                "commonCoreStandardId": "",
-                "depthOfKnowledge": "",
-                "domain": "MATH",
-                "grade": 8,
-                "gradeLabel": "grade 3",
-                "interactionTypeCode": "",
-                "interactionTypeLabel": "",
-                "isPerformanceItem": false,
-                "itemKey": 1,
-                "subjectCode": "MATH",
-                "subjectLabel": "math",
-                "target": "1-3",
-                "targetId": "23463467",
-                "title": "",
-              },
-              "rubrics": Array [
-                Object {
-                  "language": "english",
-                  "rubricEntries": Array [
-                    Object {
-                      "name": "",
-                      "scorepoint": "",
-                      "value": "",
-                    },
-                  ],
-                  "samples": Array [
-                    Object {
-                      "maxValue": "",
-                      "minValue": "",
-                      "sampleResponses": Array [
-                        Object {
-                          "name": "",
-                          "purpose": "",
-                          "sampleContent": "",
-                          "scorePoint": "",
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "targetDescription": "string",
-            },
-            "id": "12334",
-            "questionNumber": 1,
-            "view": Object {
-              "captured": true,
-              "html": null,
-              "id": "12334",
-              "picturePath": null,
-              "type": 1,
-            },
-          }
-        }
-      />
-    </div>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <ItemPage
-        itemData={
-          Object {
-            "passage": null,
-            "questions": Array [
-              Object {
-                "data": Object {
-                  "associatedItems": "string",
-                  "commonCoreStandardsDescription": "string",
-                  "depthOfKnowledge": "string",
-                  "educationalDifficulty": "string",
-                  "evidenceStatement": "string",
-                  "itemCardViewModel": Object {
-                    "bankKey": 1,
-                    "claimCode": "234536",
-                    "claimLabel": "Math Claim",
-                    "commonCoreStandardId": "",
-                    "depthOfKnowledge": "",
-                    "domain": "MATH",
-                    "grade": 8,
-                    "gradeLabel": "grade 3",
-                    "interactionTypeCode": "",
-                    "interactionTypeLabel": "",
-                    "isPerformanceItem": false,
-                    "itemKey": 1,
-                    "subjectCode": "MATH",
-                    "subjectLabel": "math",
-                    "target": "1-3",
-                    "targetId": "23463467",
-                    "title": "",
-                  },
-                  "rubrics": Array [
-                    Object {
-                      "language": "english",
-                      "rubricEntries": Array [
-                        Object {
-                          "name": "",
-                          "scorepoint": "",
-                          "value": "",
-                        },
-                      ],
-                      "samples": Array [
-                        Object {
-                          "maxValue": "",
-                          "minValue": "",
-                          "sampleResponses": Array [
-                            Object {
-                              "name": "",
-                              "purpose": "",
-                              "sampleContent": "",
-                              "scorePoint": "",
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                  "targetDescription": "string",
-                },
-                "id": "12334",
-                "questionNumber": 1,
-                "view": Object {
-                  "captured": true,
-                  "html": null,
-                  "id": "12334",
-                  "picturePath": null,
-                  "type": 1,
-                },
-              },
-            ],
-          }
-        }
-      />,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": ItemPage {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "itemData": Object {
-            "passage": null,
-            "questions": Array [
-              Object {
-                "data": Object {
-                  "associatedItems": "string",
-                  "commonCoreStandardsDescription": "string",
-                  "depthOfKnowledge": "string",
-                  "educationalDifficulty": "string",
-                  "evidenceStatement": "string",
-                  "itemCardViewModel": Object {
-                    "bankKey": 1,
-                    "claimCode": "234536",
-                    "claimLabel": "Math Claim",
-                    "commonCoreStandardId": "",
-                    "depthOfKnowledge": "",
-                    "domain": "MATH",
-                    "grade": 8,
-                    "gradeLabel": "grade 3",
-                    "interactionTypeCode": "",
-                    "interactionTypeLabel": "",
-                    "isPerformanceItem": false,
-                    "itemKey": 1,
-                    "subjectCode": "MATH",
-                    "subjectLabel": "math",
-                    "target": "1-3",
-                    "targetId": "23463467",
-                    "title": "",
-                  },
-                  "rubrics": Array [
-                    Object {
-                      "language": "english",
-                      "rubricEntries": Array [
-                        Object {
-                          "name": "",
-                          "scorepoint": "",
-                          "value": "",
-                        },
-                      ],
-                      "samples": Array [
-                        Object {
-                          "maxValue": "",
-                          "minValue": "",
-                          "sampleResponses": Array [
-                            Object {
-                              "name": "",
-                              "purpose": "",
-                              "sampleContent": "",
-                              "scorePoint": "",
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                  "targetDescription": "string",
-                },
-                "id": "12334",
-                "questionNumber": 1,
-                "view": Object {
-                  "captured": true,
-                  "html": null,
-                  "id": "12334",
-                  "picturePath": null,
-                  "type": 1,
-                },
-              },
-            ],
-          },
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div
-          className="page"
-        >
-          <QuestionView
-            question={
-              Object {
-                "data": Object {
-                  "associatedItems": "string",
-                  "commonCoreStandardsDescription": "string",
-                  "depthOfKnowledge": "string",
-                  "educationalDifficulty": "string",
-                  "evidenceStatement": "string",
-                  "itemCardViewModel": Object {
-                    "bankKey": 1,
-                    "claimCode": "234536",
-                    "claimLabel": "Math Claim",
-                    "commonCoreStandardId": "",
-                    "depthOfKnowledge": "",
-                    "domain": "MATH",
-                    "grade": 8,
-                    "gradeLabel": "grade 3",
-                    "interactionTypeCode": "",
-                    "interactionTypeLabel": "",
-                    "isPerformanceItem": false,
-                    "itemKey": 1,
-                    "subjectCode": "MATH",
-                    "subjectLabel": "math",
-                    "target": "1-3",
-                    "targetId": "23463467",
-                    "title": "",
-                  },
-                  "rubrics": Array [
-                    Object {
-                      "language": "english",
-                      "rubricEntries": Array [
-                        Object {
-                          "name": "",
-                          "scorepoint": "",
-                          "value": "",
-                        },
-                      ],
-                      "samples": Array [
-                        Object {
-                          "maxValue": "",
-                          "minValue": "",
-                          "sampleResponses": Array [
-                            Object {
-                              "name": "",
-                              "purpose": "",
-                              "sampleContent": "",
-                              "scorePoint": "",
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                  "targetDescription": "string",
-                },
-                "id": "12334",
-                "questionNumber": 1,
-                "view": Object {
-                  "captured": true,
-                  "html": null,
-                  "id": "12334",
-                  "picturePath": null,
-                  "type": 1,
-                },
-              }
-            }
-          />
-        </div>,
-        "_debugID": 2,
-        "_renderedOutput": <div
-          className="page"
-        >
-          <QuestionView
-            question={
-              Object {
-                "data": Object {
-                  "associatedItems": "string",
-                  "commonCoreStandardsDescription": "string",
-                  "depthOfKnowledge": "string",
-                  "educationalDifficulty": "string",
-                  "evidenceStatement": "string",
-                  "itemCardViewModel": Object {
-                    "bankKey": 1,
-                    "claimCode": "234536",
-                    "claimLabel": "Math Claim",
-                    "commonCoreStandardId": "",
-                    "depthOfKnowledge": "",
-                    "domain": "MATH",
-                    "grade": 8,
-                    "gradeLabel": "grade 3",
-                    "interactionTypeCode": "",
-                    "interactionTypeLabel": "",
-                    "isPerformanceItem": false,
-                    "itemKey": 1,
-                    "subjectCode": "MATH",
-                    "subjectLabel": "math",
-                    "target": "1-3",
-                    "targetId": "23463467",
-                    "title": "",
-                  },
-                  "rubrics": Array [
-                    Object {
-                      "language": "english",
-                      "rubricEntries": Array [
-                        Object {
-                          "name": "",
-                          "scorepoint": "",
-                          "value": "",
-                        },
-                      ],
-                      "samples": Array [
-                        Object {
-                          "maxValue": "",
-                          "minValue": "",
-                          "sampleResponses": Array [
-                            Object {
-                              "name": "",
-                              "purpose": "",
-                              "sampleContent": "",
-                              "scorePoint": "",
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                  "targetDescription": "string",
-                },
-                "id": "12334",
-                "questionNumber": 1,
-                "view": Object {
-                  "captured": true,
-                  "html": null,
-                  "id": "12334",
-                  "picturePath": null,
-                  "type": 1,
-                },
-              }
-            }
-          />
-        </div>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ItemPage
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ItemPage
     itemData={
       Object {
         "passage": null,
@@ -559,5 +77,341 @@ ShallowWrapper {
       }
     }
   />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        null,
+        Array [
+          <QuestionView
+            question={
+              Object {
+                "data": Object {
+                  "associatedItems": "string",
+                  "commonCoreStandardsDescription": "string",
+                  "depthOfKnowledge": "string",
+                  "educationalDifficulty": "string",
+                  "evidenceStatement": "string",
+                  "itemCardViewModel": Object {
+                    "bankKey": 1,
+                    "claimCode": "234536",
+                    "claimLabel": "Math Claim",
+                    "commonCoreStandardId": "",
+                    "depthOfKnowledge": "",
+                    "domain": "MATH",
+                    "grade": 8,
+                    "gradeLabel": "grade 3",
+                    "interactionTypeCode": "",
+                    "interactionTypeLabel": "",
+                    "isPerformanceItem": false,
+                    "itemKey": 1,
+                    "subjectCode": "MATH",
+                    "subjectLabel": "math",
+                    "target": "1-3",
+                    "targetId": "23463467",
+                    "title": "",
+                  },
+                  "rubrics": Array [
+                    Object {
+                      "language": "english",
+                      "rubricEntries": Array [
+                        Object {
+                          "name": "",
+                          "scorepoint": "",
+                          "value": "",
+                        },
+                      ],
+                      "samples": Array [
+                        Object {
+                          "maxValue": "",
+                          "minValue": "",
+                          "sampleResponses": Array [
+                            Object {
+                              "name": "",
+                              "purpose": "",
+                              "sampleContent": "",
+                              "scorePoint": "",
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                  "targetDescription": "string",
+                },
+                "id": "12334",
+                "questionNumber": 1,
+                "view": Object {
+                  "captured": true,
+                  "html": null,
+                  "id": "12334",
+                  "picturePath": null,
+                  "type": 1,
+                },
+              }
+            }
+          />,
+        ],
+      ],
+      "className": "page",
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "question": Object {
+            "data": Object {
+              "associatedItems": "string",
+              "commonCoreStandardsDescription": "string",
+              "depthOfKnowledge": "string",
+              "educationalDifficulty": "string",
+              "evidenceStatement": "string",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "234536",
+                "claimLabel": "Math Claim",
+                "commonCoreStandardId": "",
+                "depthOfKnowledge": "",
+                "domain": "MATH",
+                "grade": 8,
+                "gradeLabel": "grade 3",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": false,
+                "itemKey": 1,
+                "subjectCode": "MATH",
+                "subjectLabel": "math",
+                "target": "1-3",
+                "targetId": "23463467",
+                "title": "",
+              },
+              "rubrics": Array [
+                Object {
+                  "language": "english",
+                  "rubricEntries": Array [
+                    Object {
+                      "name": "",
+                      "scorepoint": "",
+                      "value": "",
+                    },
+                  ],
+                  "samples": Array [
+                    Object {
+                      "maxValue": "",
+                      "minValue": "",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "",
+                          "purpose": "",
+                          "sampleContent": "",
+                          "scorePoint": "",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              "targetDescription": "string",
+            },
+            "id": "12334",
+            "questionNumber": 1,
+            "view": Object {
+              "captured": true,
+              "html": null,
+              "id": "12334",
+              "picturePath": null,
+              "type": 1,
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          null,
+          Array [
+            <QuestionView
+              question={
+                Object {
+                  "data": Object {
+                    "associatedItems": "string",
+                    "commonCoreStandardsDescription": "string",
+                    "depthOfKnowledge": "string",
+                    "educationalDifficulty": "string",
+                    "evidenceStatement": "string",
+                    "itemCardViewModel": Object {
+                      "bankKey": 1,
+                      "claimCode": "234536",
+                      "claimLabel": "Math Claim",
+                      "commonCoreStandardId": "",
+                      "depthOfKnowledge": "",
+                      "domain": "MATH",
+                      "grade": 8,
+                      "gradeLabel": "grade 3",
+                      "interactionTypeCode": "",
+                      "interactionTypeLabel": "",
+                      "isPerformanceItem": false,
+                      "itemKey": 1,
+                      "subjectCode": "MATH",
+                      "subjectLabel": "math",
+                      "target": "1-3",
+                      "targetId": "23463467",
+                      "title": "",
+                    },
+                    "rubrics": Array [
+                      Object {
+                        "language": "english",
+                        "rubricEntries": Array [
+                          Object {
+                            "name": "",
+                            "scorepoint": "",
+                            "value": "",
+                          },
+                        ],
+                        "samples": Array [
+                          Object {
+                            "maxValue": "",
+                            "minValue": "",
+                            "sampleResponses": Array [
+                              Object {
+                                "name": "",
+                                "purpose": "",
+                                "sampleContent": "",
+                                "scorePoint": "",
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                    "targetDescription": "string",
+                  },
+                  "id": "12334",
+                  "questionNumber": 1,
+                  "view": Object {
+                    "captured": true,
+                    "html": null,
+                    "id": "12334",
+                    "picturePath": null,
+                    "type": 1,
+                  },
+                }
+              }
+            />,
+          ],
+        ],
+        "className": "page",
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "question": Object {
+              "data": Object {
+                "associatedItems": "string",
+                "commonCoreStandardsDescription": "string",
+                "depthOfKnowledge": "string",
+                "educationalDifficulty": "string",
+                "evidenceStatement": "string",
+                "itemCardViewModel": Object {
+                  "bankKey": 1,
+                  "claimCode": "234536",
+                  "claimLabel": "Math Claim",
+                  "commonCoreStandardId": "",
+                  "depthOfKnowledge": "",
+                  "domain": "MATH",
+                  "grade": 8,
+                  "gradeLabel": "grade 3",
+                  "interactionTypeCode": "",
+                  "interactionTypeLabel": "",
+                  "isPerformanceItem": false,
+                  "itemKey": 1,
+                  "subjectCode": "MATH",
+                  "subjectLabel": "math",
+                  "target": "1-3",
+                  "targetId": "23463467",
+                  "title": "",
+                },
+                "rubrics": Array [
+                  Object {
+                    "language": "english",
+                    "rubricEntries": Array [
+                      Object {
+                        "name": "",
+                        "scorepoint": "",
+                        "value": "",
+                      },
+                    ],
+                    "samples": Array [
+                      Object {
+                        "maxValue": "",
+                        "minValue": "",
+                        "sampleResponses": Array [
+                          Object {
+                            "name": "",
+                            "purpose": "",
+                            "sampleContent": "",
+                            "scorePoint": "",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "targetDescription": "string",
+              },
+              "id": "12334",
+              "questionNumber": 1,
+              "view": Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

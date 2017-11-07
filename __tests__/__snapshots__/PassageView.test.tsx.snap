@@ -2,179 +2,10 @@
 
 exports[`EvidenceStatement matches snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <div
-    className="item"
-  >
-    <h2>
-      Passage for 
-      items
-       
-      187-1234, 187-1235
-    </h2>
-    <ItemViewComponent
-      view={
-        Object {
-          "captured": true,
-          "html": null,
-          "id": "12334",
-          "picturePath": null,
-          "type": 1,
-        }
-      }
-    />
-  </div>,
-  "nodes": Array [
-    <div
-      className="item"
-    >
-      <h2>
-        Passage for 
-        items
-         
-        187-1234, 187-1235
-      </h2>
-      <ItemViewComponent
-        view={
-          Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          }
-        }
-      />
-    </div>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <PassageView
-        associatedItems={
-          Array [
-            "187-1234",
-            "187-1235",
-          ]
-        }
-        view={
-          Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          }
-        }
-      />,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": PassageView {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "associatedItems": Array [
-            "187-1234",
-            "187-1235",
-          ],
-          "view": Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          },
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div
-          className="item"
-        >
-          <h2>
-            Passage for 
-            items
-             
-            187-1234, 187-1235
-          </h2>
-          <ItemViewComponent
-            view={
-              Object {
-                "captured": true,
-                "html": null,
-                "id": "12334",
-                "picturePath": null,
-                "type": 1,
-              }
-            }
-          />
-        </div>,
-        "_debugID": 2,
-        "_renderedOutput": <div
-          className="item"
-        >
-          <h2>
-            Passage for 
-            items
-             
-            187-1234, 187-1235
-          </h2>
-          <ItemViewComponent
-            view={
-              Object {
-                "captured": true,
-                "html": null,
-                "id": "12334",
-                "picturePath": null,
-                "type": 1,
-              }
-            }
-          />
-        </div>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <PassageView
-    associatedItems={
-      Array [
-        "187-1234",
-        "187-1235",
-      ]
-    }
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PassageView
+    associatedItems="some_text"
     view={
       Object {
         "captured": true,
@@ -185,5 +16,159 @@ ShallowWrapper {
       }
     }
   />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Passage for 
+          item
+           
+          some_text
+        </h2>,
+        <ItemViewComponent
+          view={
+            Object {
+              "captured": true,
+              "html": null,
+              "id": "12334",
+              "picturePath": null,
+              "type": 1,
+            }
+          }
+        />,
+      ],
+      "className": "item",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Passage for ",
+            "item",
+            " ",
+            "some_text",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Passage for ",
+          "item",
+          " ",
+          "some_text",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "view": Object {
+            "captured": true,
+            "html": null,
+            "id": "12334",
+            "picturePath": null,
+            "type": 1,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Passage for 
+            item
+             
+            some_text
+          </h2>,
+          <ItemViewComponent
+            view={
+              Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              }
+            }
+          />,
+        ],
+        "className": "item",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Passage for ",
+              "item",
+              " ",
+              "some_text",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Passage for ",
+            "item",
+            " ",
+            "some_text",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "view": Object {
+              "captured": true,
+              "html": null,
+              "id": "12334",
+              "picturePath": null,
+              "type": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

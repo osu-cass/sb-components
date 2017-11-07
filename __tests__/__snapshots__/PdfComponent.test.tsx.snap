@@ -2,621 +2,9 @@
 
 exports[`PdfComponent matches snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <html>
-    <head>
-      <base
-        href="http://example.com"
-      />
-      <meta
-        charSet="UTF-8"
-      />
-      <link
-        href="css/pdf.css"
-        rel="stylesheet"
-      />
-      <link
-        href="http://example.com/Shared/CSS/Universal/items.css"
-        rel="stylesheet"
-      />
-      <link
-        href="http://example.com/Projects/SBAC/css/modernItems.css"
-        rel="stylesheet"
-      />
-    </head>
-    <body>
-      <FirstPage
-        grade="3"
-        subject="math"
-      />
-      <ItemPage
-        itemData={
-          Object {
-            "passage": undefined,
-            "questions": Array [
-              Object {
-                "data": Object {
-                  "associatedItems": "string",
-                  "commonCoreStandardsDescription": "string",
-                  "depthOfKnowledge": "string",
-                  "educationalDifficulty": "string",
-                  "evidenceStatement": "string",
-                  "itemCardViewModel": Object {
-                    "bankKey": 1,
-                    "claimCode": "234536",
-                    "claimLabel": "Math Claim",
-                    "commonCoreStandardId": "",
-                    "depthOfKnowledge": "",
-                    "domain": "MATH",
-                    "grade": 8,
-                    "gradeLabel": "grade 3",
-                    "interactionTypeCode": "",
-                    "interactionTypeLabel": "",
-                    "isPerformanceItem": false,
-                    "itemKey": 1,
-                    "subjectCode": "MATH",
-                    "subjectLabel": "math",
-                    "target": "1-3",
-                    "targetId": "23463467",
-                    "title": "",
-                  },
-                  "rubrics": Array [
-                    Object {
-                      "language": "english",
-                      "rubricEntries": Array [
-                        Object {
-                          "name": "",
-                          "scorepoint": "",
-                          "value": "",
-                        },
-                      ],
-                      "samples": Array [
-                        Object {
-                          "maxValue": "",
-                          "minValue": "",
-                          "sampleResponses": Array [
-                            Object {
-                              "name": "",
-                              "purpose": "",
-                              "sampleContent": "",
-                              "scorePoint": "",
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                  "targetDescription": "string",
-                },
-                "id": "12334",
-                "questionNumber": 1,
-                "view": Object {
-                  "captured": true,
-                  "html": undefined,
-                  "id": "12334",
-                  "picturePath": undefined,
-                  "type": 1,
-                },
-              },
-            ],
-          }
-        }
-      />
-    </body>
-  </html>,
-  "nodes": Array [
-    <html>
-      <head>
-        <base
-          href="http://example.com"
-        />
-        <meta
-          charSet="UTF-8"
-        />
-        <link
-          href="css/pdf.css"
-          rel="stylesheet"
-        />
-        <link
-          href="http://example.com/Shared/CSS/Universal/items.css"
-          rel="stylesheet"
-        />
-        <link
-          href="http://example.com/Projects/SBAC/css/modernItems.css"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
-        <FirstPage
-          grade="3"
-          subject="math"
-        />
-        <ItemPage
-          itemData={
-            Object {
-              "passage": undefined,
-              "questions": Array [
-                Object {
-                  "data": Object {
-                    "associatedItems": "string",
-                    "commonCoreStandardsDescription": "string",
-                    "depthOfKnowledge": "string",
-                    "educationalDifficulty": "string",
-                    "evidenceStatement": "string",
-                    "itemCardViewModel": Object {
-                      "bankKey": 1,
-                      "claimCode": "234536",
-                      "claimLabel": "Math Claim",
-                      "commonCoreStandardId": "",
-                      "depthOfKnowledge": "",
-                      "domain": "MATH",
-                      "grade": 8,
-                      "gradeLabel": "grade 3",
-                      "interactionTypeCode": "",
-                      "interactionTypeLabel": "",
-                      "isPerformanceItem": false,
-                      "itemKey": 1,
-                      "subjectCode": "MATH",
-                      "subjectLabel": "math",
-                      "target": "1-3",
-                      "targetId": "23463467",
-                      "title": "",
-                    },
-                    "rubrics": Array [
-                      Object {
-                        "language": "english",
-                        "rubricEntries": Array [
-                          Object {
-                            "name": "",
-                            "scorepoint": "",
-                            "value": "",
-                          },
-                        ],
-                        "samples": Array [
-                          Object {
-                            "maxValue": "",
-                            "minValue": "",
-                            "sampleResponses": Array [
-                              Object {
-                                "name": "",
-                                "purpose": "",
-                                "sampleContent": "",
-                                "scorePoint": "",
-                              },
-                            ],
-                          },
-                        ],
-                      },
-                    ],
-                    "targetDescription": "string",
-                  },
-                  "id": "12334",
-                  "questionNumber": 1,
-                  "view": Object {
-                    "captured": true,
-                    "html": undefined,
-                    "id": "12334",
-                    "picturePath": undefined,
-                    "type": 1,
-                  },
-                },
-              ],
-            }
-          }
-        />
-      </body>
-    </html>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <PdfComponent
-        displayTitlePage={true}
-        grade="3"
-        items={
-          Array [
-            Object {
-              "passage": undefined,
-              "questions": Array [
-                Object {
-                  "data": Object {
-                    "associatedItems": "string",
-                    "commonCoreStandardsDescription": "string",
-                    "depthOfKnowledge": "string",
-                    "educationalDifficulty": "string",
-                    "evidenceStatement": "string",
-                    "itemCardViewModel": Object {
-                      "bankKey": 1,
-                      "claimCode": "234536",
-                      "claimLabel": "Math Claim",
-                      "commonCoreStandardId": "",
-                      "depthOfKnowledge": "",
-                      "domain": "MATH",
-                      "grade": 8,
-                      "gradeLabel": "grade 3",
-                      "interactionTypeCode": "",
-                      "interactionTypeLabel": "",
-                      "isPerformanceItem": false,
-                      "itemKey": 1,
-                      "subjectCode": "MATH",
-                      "subjectLabel": "math",
-                      "target": "1-3",
-                      "targetId": "23463467",
-                      "title": "",
-                    },
-                    "rubrics": Array [
-                      Object {
-                        "language": "english",
-                        "rubricEntries": Array [
-                          Object {
-                            "name": "",
-                            "scorepoint": "",
-                            "value": "",
-                          },
-                        ],
-                        "samples": Array [
-                          Object {
-                            "maxValue": "",
-                            "minValue": "",
-                            "sampleResponses": Array [
-                              Object {
-                                "name": "",
-                                "purpose": "",
-                                "sampleContent": "",
-                                "scorePoint": "",
-                              },
-                            ],
-                          },
-                        ],
-                      },
-                    ],
-                    "targetDescription": "string",
-                  },
-                  "id": "12334",
-                  "questionNumber": 1,
-                  "view": Object {
-                    "captured": true,
-                    "html": undefined,
-                    "id": "12334",
-                    "picturePath": undefined,
-                    "type": 1,
-                  },
-                },
-              ],
-            },
-          ]
-        }
-        ivsBaseUrl="http://example.com"
-        pageBaseUrl="http://example.com"
-        subject="math"
-      />,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": PdfComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "displayTitlePage": true,
-          "grade": "3",
-          "items": Array [
-            Object {
-              "passage": undefined,
-              "questions": Array [
-                Object {
-                  "data": Object {
-                    "associatedItems": "string",
-                    "commonCoreStandardsDescription": "string",
-                    "depthOfKnowledge": "string",
-                    "educationalDifficulty": "string",
-                    "evidenceStatement": "string",
-                    "itemCardViewModel": Object {
-                      "bankKey": 1,
-                      "claimCode": "234536",
-                      "claimLabel": "Math Claim",
-                      "commonCoreStandardId": "",
-                      "depthOfKnowledge": "",
-                      "domain": "MATH",
-                      "grade": 8,
-                      "gradeLabel": "grade 3",
-                      "interactionTypeCode": "",
-                      "interactionTypeLabel": "",
-                      "isPerformanceItem": false,
-                      "itemKey": 1,
-                      "subjectCode": "MATH",
-                      "subjectLabel": "math",
-                      "target": "1-3",
-                      "targetId": "23463467",
-                      "title": "",
-                    },
-                    "rubrics": Array [
-                      Object {
-                        "language": "english",
-                        "rubricEntries": Array [
-                          Object {
-                            "name": "",
-                            "scorepoint": "",
-                            "value": "",
-                          },
-                        ],
-                        "samples": Array [
-                          Object {
-                            "maxValue": "",
-                            "minValue": "",
-                            "sampleResponses": Array [
-                              Object {
-                                "name": "",
-                                "purpose": "",
-                                "sampleContent": "",
-                                "scorePoint": "",
-                              },
-                            ],
-                          },
-                        ],
-                      },
-                    ],
-                    "targetDescription": "string",
-                  },
-                  "id": "12334",
-                  "questionNumber": 1,
-                  "view": Object {
-                    "captured": true,
-                    "html": undefined,
-                    "id": "12334",
-                    "picturePath": undefined,
-                    "type": 1,
-                  },
-                },
-              ],
-            },
-          ],
-          "ivsBaseUrl": "http://example.com",
-          "pageBaseUrl": "http://example.com",
-          "subject": "math",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <html>
-          <head>
-            <base
-              href="http://example.com"
-            />
-            <meta
-              charSet="UTF-8"
-            />
-            <link
-              href="css/pdf.css"
-              rel="stylesheet"
-            />
-            <link
-              href="http://example.com/Shared/CSS/Universal/items.css"
-              rel="stylesheet"
-            />
-            <link
-              href="http://example.com/Projects/SBAC/css/modernItems.css"
-              rel="stylesheet"
-            />
-          </head>
-          <body>
-            <FirstPage
-              grade="3"
-              subject="math"
-            />
-            <ItemPage
-              itemData={
-                Object {
-                  "passage": undefined,
-                  "questions": Array [
-                    Object {
-                      "data": Object {
-                        "associatedItems": "string",
-                        "commonCoreStandardsDescription": "string",
-                        "depthOfKnowledge": "string",
-                        "educationalDifficulty": "string",
-                        "evidenceStatement": "string",
-                        "itemCardViewModel": Object {
-                          "bankKey": 1,
-                          "claimCode": "234536",
-                          "claimLabel": "Math Claim",
-                          "commonCoreStandardId": "",
-                          "depthOfKnowledge": "",
-                          "domain": "MATH",
-                          "grade": 8,
-                          "gradeLabel": "grade 3",
-                          "interactionTypeCode": "",
-                          "interactionTypeLabel": "",
-                          "isPerformanceItem": false,
-                          "itemKey": 1,
-                          "subjectCode": "MATH",
-                          "subjectLabel": "math",
-                          "target": "1-3",
-                          "targetId": "23463467",
-                          "title": "",
-                        },
-                        "rubrics": Array [
-                          Object {
-                            "language": "english",
-                            "rubricEntries": Array [
-                              Object {
-                                "name": "",
-                                "scorepoint": "",
-                                "value": "",
-                              },
-                            ],
-                            "samples": Array [
-                              Object {
-                                "maxValue": "",
-                                "minValue": "",
-                                "sampleResponses": Array [
-                                  Object {
-                                    "name": "",
-                                    "purpose": "",
-                                    "sampleContent": "",
-                                    "scorePoint": "",
-                                  },
-                                ],
-                              },
-                            ],
-                          },
-                        ],
-                        "targetDescription": "string",
-                      },
-                      "id": "12334",
-                      "questionNumber": 1,
-                      "view": Object {
-                        "captured": true,
-                        "html": undefined,
-                        "id": "12334",
-                        "picturePath": undefined,
-                        "type": 1,
-                      },
-                    },
-                  ],
-                }
-              }
-            />
-          </body>
-        </html>,
-        "_debugID": 2,
-        "_renderedOutput": <html>
-          <head>
-            <base
-              href="http://example.com"
-            />
-            <meta
-              charSet="UTF-8"
-            />
-            <link
-              href="css/pdf.css"
-              rel="stylesheet"
-            />
-            <link
-              href="http://example.com/Shared/CSS/Universal/items.css"
-              rel="stylesheet"
-            />
-            <link
-              href="http://example.com/Projects/SBAC/css/modernItems.css"
-              rel="stylesheet"
-            />
-          </head>
-          <body>
-            <FirstPage
-              grade="3"
-              subject="math"
-            />
-            <ItemPage
-              itemData={
-                Object {
-                  "passage": undefined,
-                  "questions": Array [
-                    Object {
-                      "data": Object {
-                        "associatedItems": "string",
-                        "commonCoreStandardsDescription": "string",
-                        "depthOfKnowledge": "string",
-                        "educationalDifficulty": "string",
-                        "evidenceStatement": "string",
-                        "itemCardViewModel": Object {
-                          "bankKey": 1,
-                          "claimCode": "234536",
-                          "claimLabel": "Math Claim",
-                          "commonCoreStandardId": "",
-                          "depthOfKnowledge": "",
-                          "domain": "MATH",
-                          "grade": 8,
-                          "gradeLabel": "grade 3",
-                          "interactionTypeCode": "",
-                          "interactionTypeLabel": "",
-                          "isPerformanceItem": false,
-                          "itemKey": 1,
-                          "subjectCode": "MATH",
-                          "subjectLabel": "math",
-                          "target": "1-3",
-                          "targetId": "23463467",
-                          "title": "",
-                        },
-                        "rubrics": Array [
-                          Object {
-                            "language": "english",
-                            "rubricEntries": Array [
-                              Object {
-                                "name": "",
-                                "scorepoint": "",
-                                "value": "",
-                              },
-                            ],
-                            "samples": Array [
-                              Object {
-                                "maxValue": "",
-                                "minValue": "",
-                                "sampleResponses": Array [
-                                  Object {
-                                    "name": "",
-                                    "purpose": "",
-                                    "sampleContent": "",
-                                    "scorePoint": "",
-                                  },
-                                ],
-                              },
-                            ],
-                          },
-                        ],
-                        "targetDescription": "string",
-                      },
-                      "id": "12334",
-                      "questionNumber": 1,
-                      "view": Object {
-                        "captured": true,
-                        "html": undefined,
-                        "id": "12334",
-                        "picturePath": undefined,
-                        "type": 1,
-                      },
-                    },
-                  ],
-                }
-              }
-            />
-          </body>
-        </html>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <PdfComponent
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PdfComponent
     displayTitlePage={true}
     grade="3"
     items={
@@ -696,5 +84,789 @@ ShallowWrapper {
     pageBaseUrl="http://example.com"
     subject="math"
   />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <head>
+          <base
+            href="http://example.com"
+          />
+          <meta
+            charSet="UTF-8"
+          />
+          <link
+            href="css/pdf.css"
+            rel="stylesheet"
+          />
+          <link
+            href="http://example.com/Shared/CSS/Universal/items.css"
+            rel="stylesheet"
+          />
+          <link
+            href="http://example.com/Projects/SBAC/css/modernItems.css"
+            rel="stylesheet"
+          />
+        </head>,
+        <body>
+          <FirstPage
+            grade="3"
+            subject="math"
+          />
+          <ItemPage
+            itemData={
+              Object {
+                "passage": undefined,
+                "questions": Array [
+                  Object {
+                    "data": Object {
+                      "associatedItems": "string",
+                      "commonCoreStandardsDescription": "string",
+                      "depthOfKnowledge": "string",
+                      "educationalDifficulty": "string",
+                      "evidenceStatement": "string",
+                      "itemCardViewModel": Object {
+                        "bankKey": 1,
+                        "claimCode": "234536",
+                        "claimLabel": "Math Claim",
+                        "commonCoreStandardId": "",
+                        "depthOfKnowledge": "",
+                        "domain": "MATH",
+                        "grade": 8,
+                        "gradeLabel": "grade 3",
+                        "interactionTypeCode": "",
+                        "interactionTypeLabel": "",
+                        "isPerformanceItem": false,
+                        "itemKey": 1,
+                        "subjectCode": "MATH",
+                        "subjectLabel": "math",
+                        "target": "1-3",
+                        "targetId": "23463467",
+                        "title": "",
+                      },
+                      "rubrics": Array [
+                        Object {
+                          "language": "english",
+                          "rubricEntries": Array [
+                            Object {
+                              "name": "",
+                              "scorepoint": "",
+                              "value": "",
+                            },
+                          ],
+                          "samples": Array [
+                            Object {
+                              "maxValue": "",
+                              "minValue": "",
+                              "sampleResponses": Array [
+                                Object {
+                                  "name": "",
+                                  "purpose": "",
+                                  "sampleContent": "",
+                                  "scorePoint": "",
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                      "targetDescription": "string",
+                    },
+                    "id": "12334",
+                    "questionNumber": 1,
+                    "view": Object {
+                      "captured": true,
+                      "html": undefined,
+                      "id": "12334",
+                      "picturePath": undefined,
+                      "type": 1,
+                    },
+                  },
+                ],
+              }
+            }
+          />
+        </body>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <base
+              href="http://example.com"
+            />,
+            <meta
+              charSet="UTF-8"
+            />,
+            <link
+              href="css/pdf.css"
+              rel="stylesheet"
+            />,
+            <link
+              href="http://example.com/Shared/CSS/Universal/items.css"
+              rel="stylesheet"
+            />,
+            <link
+              href="http://example.com/Projects/SBAC/css/modernItems.css"
+              rel="stylesheet"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "href": "http://example.com",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "base",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "charSet": "UTF-8",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "meta",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "href": "css/pdf.css",
+              "rel": "stylesheet",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "link",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "href": "http://example.com/Shared/CSS/Universal/items.css",
+              "rel": "stylesheet",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "link",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "href": "http://example.com/Projects/SBAC/css/modernItems.css",
+              "rel": "stylesheet",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "link",
+          },
+        ],
+        "type": "head",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <FirstPage
+              grade="3"
+              subject="math"
+            />,
+            Array [
+              <ItemPage
+                itemData={
+                  Object {
+                    "passage": undefined,
+                    "questions": Array [
+                      Object {
+                        "data": Object {
+                          "associatedItems": "string",
+                          "commonCoreStandardsDescription": "string",
+                          "depthOfKnowledge": "string",
+                          "educationalDifficulty": "string",
+                          "evidenceStatement": "string",
+                          "itemCardViewModel": Object {
+                            "bankKey": 1,
+                            "claimCode": "234536",
+                            "claimLabel": "Math Claim",
+                            "commonCoreStandardId": "",
+                            "depthOfKnowledge": "",
+                            "domain": "MATH",
+                            "grade": 8,
+                            "gradeLabel": "grade 3",
+                            "interactionTypeCode": "",
+                            "interactionTypeLabel": "",
+                            "isPerformanceItem": false,
+                            "itemKey": 1,
+                            "subjectCode": "MATH",
+                            "subjectLabel": "math",
+                            "target": "1-3",
+                            "targetId": "23463467",
+                            "title": "",
+                          },
+                          "rubrics": Array [
+                            Object {
+                              "language": "english",
+                              "rubricEntries": Array [
+                                Object {
+                                  "name": "",
+                                  "scorepoint": "",
+                                  "value": "",
+                                },
+                              ],
+                              "samples": Array [
+                                Object {
+                                  "maxValue": "",
+                                  "minValue": "",
+                                  "sampleResponses": Array [
+                                    Object {
+                                      "name": "",
+                                      "purpose": "",
+                                      "sampleContent": "",
+                                      "scorePoint": "",
+                                    },
+                                  ],
+                                },
+                              ],
+                            },
+                          ],
+                          "targetDescription": "string",
+                        },
+                        "id": "12334",
+                        "questionNumber": 1,
+                        "view": Object {
+                          "captured": true,
+                          "html": undefined,
+                          "id": "12334",
+                          "picturePath": undefined,
+                          "type": 1,
+                        },
+                      },
+                    ],
+                  }
+                }
+              />,
+            ],
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "grade": "3",
+              "subject": "math",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "12334",
+            "nodeType": "class",
+            "props": Object {
+              "itemData": Object {
+                "passage": undefined,
+                "questions": Array [
+                  Object {
+                    "data": Object {
+                      "associatedItems": "string",
+                      "commonCoreStandardsDescription": "string",
+                      "depthOfKnowledge": "string",
+                      "educationalDifficulty": "string",
+                      "evidenceStatement": "string",
+                      "itemCardViewModel": Object {
+                        "bankKey": 1,
+                        "claimCode": "234536",
+                        "claimLabel": "Math Claim",
+                        "commonCoreStandardId": "",
+                        "depthOfKnowledge": "",
+                        "domain": "MATH",
+                        "grade": 8,
+                        "gradeLabel": "grade 3",
+                        "interactionTypeCode": "",
+                        "interactionTypeLabel": "",
+                        "isPerformanceItem": false,
+                        "itemKey": 1,
+                        "subjectCode": "MATH",
+                        "subjectLabel": "math",
+                        "target": "1-3",
+                        "targetId": "23463467",
+                        "title": "",
+                      },
+                      "rubrics": Array [
+                        Object {
+                          "language": "english",
+                          "rubricEntries": Array [
+                            Object {
+                              "name": "",
+                              "scorepoint": "",
+                              "value": "",
+                            },
+                          ],
+                          "samples": Array [
+                            Object {
+                              "maxValue": "",
+                              "minValue": "",
+                              "sampleResponses": Array [
+                                Object {
+                                  "name": "",
+                                  "purpose": "",
+                                  "sampleContent": "",
+                                  "scorePoint": "",
+                                },
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                      "targetDescription": "string",
+                    },
+                    "id": "12334",
+                    "questionNumber": 1,
+                    "view": Object {
+                      "captured": true,
+                      "html": undefined,
+                      "id": "12334",
+                      "picturePath": undefined,
+                      "type": 1,
+                    },
+                  },
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "body",
+      },
+    ],
+    "type": "html",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <head>
+            <base
+              href="http://example.com"
+            />
+            <meta
+              charSet="UTF-8"
+            />
+            <link
+              href="css/pdf.css"
+              rel="stylesheet"
+            />
+            <link
+              href="http://example.com/Shared/CSS/Universal/items.css"
+              rel="stylesheet"
+            />
+            <link
+              href="http://example.com/Projects/SBAC/css/modernItems.css"
+              rel="stylesheet"
+            />
+          </head>,
+          <body>
+            <FirstPage
+              grade="3"
+              subject="math"
+            />
+            <ItemPage
+              itemData={
+                Object {
+                  "passage": undefined,
+                  "questions": Array [
+                    Object {
+                      "data": Object {
+                        "associatedItems": "string",
+                        "commonCoreStandardsDescription": "string",
+                        "depthOfKnowledge": "string",
+                        "educationalDifficulty": "string",
+                        "evidenceStatement": "string",
+                        "itemCardViewModel": Object {
+                          "bankKey": 1,
+                          "claimCode": "234536",
+                          "claimLabel": "Math Claim",
+                          "commonCoreStandardId": "",
+                          "depthOfKnowledge": "",
+                          "domain": "MATH",
+                          "grade": 8,
+                          "gradeLabel": "grade 3",
+                          "interactionTypeCode": "",
+                          "interactionTypeLabel": "",
+                          "isPerformanceItem": false,
+                          "itemKey": 1,
+                          "subjectCode": "MATH",
+                          "subjectLabel": "math",
+                          "target": "1-3",
+                          "targetId": "23463467",
+                          "title": "",
+                        },
+                        "rubrics": Array [
+                          Object {
+                            "language": "english",
+                            "rubricEntries": Array [
+                              Object {
+                                "name": "",
+                                "scorepoint": "",
+                                "value": "",
+                              },
+                            ],
+                            "samples": Array [
+                              Object {
+                                "maxValue": "",
+                                "minValue": "",
+                                "sampleResponses": Array [
+                                  Object {
+                                    "name": "",
+                                    "purpose": "",
+                                    "sampleContent": "",
+                                    "scorePoint": "",
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                        "targetDescription": "string",
+                      },
+                      "id": "12334",
+                      "questionNumber": 1,
+                      "view": Object {
+                        "captured": true,
+                        "html": undefined,
+                        "id": "12334",
+                        "picturePath": undefined,
+                        "type": 1,
+                      },
+                    },
+                  ],
+                }
+              }
+            />
+          </body>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <base
+                href="http://example.com"
+              />,
+              <meta
+                charSet="UTF-8"
+              />,
+              <link
+                href="css/pdf.css"
+                rel="stylesheet"
+              />,
+              <link
+                href="http://example.com/Shared/CSS/Universal/items.css"
+                rel="stylesheet"
+              />,
+              <link
+                href="http://example.com/Projects/SBAC/css/modernItems.css"
+                rel="stylesheet"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "href": "http://example.com",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "base",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "charSet": "UTF-8",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "meta",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "href": "css/pdf.css",
+                "rel": "stylesheet",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "link",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "href": "http://example.com/Shared/CSS/Universal/items.css",
+                "rel": "stylesheet",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "link",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "href": "http://example.com/Projects/SBAC/css/modernItems.css",
+                "rel": "stylesheet",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "link",
+            },
+          ],
+          "type": "head",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FirstPage
+                grade="3"
+                subject="math"
+              />,
+              Array [
+                <ItemPage
+                  itemData={
+                    Object {
+                      "passage": undefined,
+                      "questions": Array [
+                        Object {
+                          "data": Object {
+                            "associatedItems": "string",
+                            "commonCoreStandardsDescription": "string",
+                            "depthOfKnowledge": "string",
+                            "educationalDifficulty": "string",
+                            "evidenceStatement": "string",
+                            "itemCardViewModel": Object {
+                              "bankKey": 1,
+                              "claimCode": "234536",
+                              "claimLabel": "Math Claim",
+                              "commonCoreStandardId": "",
+                              "depthOfKnowledge": "",
+                              "domain": "MATH",
+                              "grade": 8,
+                              "gradeLabel": "grade 3",
+                              "interactionTypeCode": "",
+                              "interactionTypeLabel": "",
+                              "isPerformanceItem": false,
+                              "itemKey": 1,
+                              "subjectCode": "MATH",
+                              "subjectLabel": "math",
+                              "target": "1-3",
+                              "targetId": "23463467",
+                              "title": "",
+                            },
+                            "rubrics": Array [
+                              Object {
+                                "language": "english",
+                                "rubricEntries": Array [
+                                  Object {
+                                    "name": "",
+                                    "scorepoint": "",
+                                    "value": "",
+                                  },
+                                ],
+                                "samples": Array [
+                                  Object {
+                                    "maxValue": "",
+                                    "minValue": "",
+                                    "sampleResponses": Array [
+                                      Object {
+                                        "name": "",
+                                        "purpose": "",
+                                        "sampleContent": "",
+                                        "scorePoint": "",
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                            ],
+                            "targetDescription": "string",
+                          },
+                          "id": "12334",
+                          "questionNumber": 1,
+                          "view": Object {
+                            "captured": true,
+                            "html": undefined,
+                            "id": "12334",
+                            "picturePath": undefined,
+                            "type": 1,
+                          },
+                        },
+                      ],
+                    }
+                  }
+                />,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "grade": "3",
+                "subject": "math",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "12334",
+              "nodeType": "class",
+              "props": Object {
+                "itemData": Object {
+                  "passage": undefined,
+                  "questions": Array [
+                    Object {
+                      "data": Object {
+                        "associatedItems": "string",
+                        "commonCoreStandardsDescription": "string",
+                        "depthOfKnowledge": "string",
+                        "educationalDifficulty": "string",
+                        "evidenceStatement": "string",
+                        "itemCardViewModel": Object {
+                          "bankKey": 1,
+                          "claimCode": "234536",
+                          "claimLabel": "Math Claim",
+                          "commonCoreStandardId": "",
+                          "depthOfKnowledge": "",
+                          "domain": "MATH",
+                          "grade": 8,
+                          "gradeLabel": "grade 3",
+                          "interactionTypeCode": "",
+                          "interactionTypeLabel": "",
+                          "isPerformanceItem": false,
+                          "itemKey": 1,
+                          "subjectCode": "MATH",
+                          "subjectLabel": "math",
+                          "target": "1-3",
+                          "targetId": "23463467",
+                          "title": "",
+                        },
+                        "rubrics": Array [
+                          Object {
+                            "language": "english",
+                            "rubricEntries": Array [
+                              Object {
+                                "name": "",
+                                "scorepoint": "",
+                                "value": "",
+                              },
+                            ],
+                            "samples": Array [
+                              Object {
+                                "maxValue": "",
+                                "minValue": "",
+                                "sampleResponses": Array [
+                                  Object {
+                                    "name": "",
+                                    "purpose": "",
+                                    "sampleContent": "",
+                                    "scorePoint": "",
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                        "targetDescription": "string",
+                      },
+                      "id": "12334",
+                      "questionNumber": 1,
+                      "view": Object {
+                        "captured": true,
+                        "html": undefined,
+                        "id": "12334",
+                        "picturePath": undefined,
+                        "type": 1,
+                      },
+                    },
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "body",
+        },
+      ],
+      "type": "html",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;
