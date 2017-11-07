@@ -14,4 +14,4 @@ deploy:
   script: echo "Deploying package to npm."
   skip_cleanup: true
   on:
-    branch: master
+    tags: true
