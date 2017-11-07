@@ -1,0 +1,55 @@
+﻿@import "constants.less";
+
+body {
+    background-image: url('/images/backgroundimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: @medium) {
+    body {
+        //background-size: inherit;
+    }
+}
+
+.container {
+    align-self: flex-start;
+    margin: 20px;
+}
+
+@media screen and (max-width: @phone-portrait) {
+    .container {
+        align-self: center;
+        padding: 0;
+    }
+}
+
+.home-container {
+    height: auto; // SB
+    max-width: 500px;
+    font-size: @font-size-base; // SB
+    padding: 20px 40px 50px;
+    border-radius: 10px;
+    background-color: rgba(256,256,256,.9); // SB
+    box-shadow: @sb-shadow; // SB
+    color: black;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: @phone-portrait) {
+    .home-container {
+        height: 100%;
+        padding: 14px;
+        box-shadow: none;
+    }
+}
+
+.home-title {
+    font-size: @font-size-header; // SB
+    letter-spacing: @sb-letter-spacing; // SB
+}
+
+.home-container-button {
+    text-align: center;
+    display: inline-block;
+}
