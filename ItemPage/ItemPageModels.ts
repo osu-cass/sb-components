@@ -26,14 +26,14 @@ export interface ItemPageViewModel {
     isPerformanceItem: boolean;
     performanceItemDescription: string;
     subject: string;
-    accResourceGroups: Accessibility.AccResourceGroup[];
     moreLikeThisVM: moreLikeThis;
     brailleItemCodes: string[];
     braillePassageCodes: string[];
+    defaultIsaapCodes: string;
 }
 
-export function toiSAAP(accResourceGroups: Accessibility.AccResourceGroup[]): string {
-    let isaapCodes = "TDS_ITM1;TDS_APC_SCRUBBER;"; // always enable item tools menu
+export function toiSAAP(accResourceGroups: Accessibility.AccResourceGroup[], defaultIsaap: string): string {
+    let isaapCodes = defaultIsaap;
     for (let group of accResourceGroups) {
         for (let res of group.accessibilityResources) {
             if (res.currentSelectionCode && !res.disabled) {

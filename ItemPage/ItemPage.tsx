@@ -20,6 +20,7 @@ export interface Props extends ItemPageModels.ItemPageViewModel {
     onReset: () => void;
     aboutThisItemVM: AboutThisItem.Props;
     currentItem: ItemPageModels.ItemIdentifier;
+    accResourceGroups: Accessibility.AccResourceGroup[];
 }
 
 export class Page extends React.Component<Props, {}> {
@@ -138,7 +139,7 @@ export class Page extends React.Component<Props, {}> {
     }
 
     renderModalFrames(): JSX.Element {
-        let isaap = ItemPageModels.toiSAAP(this.props.accResourceGroups);
+        let isaap = ItemPageModels.toiSAAP(this.props.accResourceGroups, this.props.defaultIsaapCodes);
         return (
             <div>
                 <AboutThisItem.AboutThisItemComponent {...this.props.aboutThisItemVM} />
@@ -155,7 +156,7 @@ export class Page extends React.Component<Props, {}> {
     }
 
     renderIFrame(): JSX.Element {
-        let isaap = ItemPageModels.toiSAAP(this.props.accResourceGroups);
+        let isaap = ItemPageModels.toiSAAP(this.props.accResourceGroups, this.props.defaultIsaapCodes);
         const itemNames = (Accessibility.isBrailleEnabled(this.props.accResourceGroups)) ? this.props.brailleItemNames : this.props.itemNames;
         let scrollTo: string = Accessibility.isStreamlinedEnabled(this.props.accResourceGroups) ? "" : ("&scrollToId=").concat(this.props.currentItem.itemName);
         let ivsUrl: string = this.props.itemViewerServiceUrl.concat("/items?ids=", itemNames, "&isaap=", isaap, scrollTo);
