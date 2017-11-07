@@ -1,0 +1,145 @@
+﻿//** Layout styles and overrides for bootstrap
+
+@import 'constants.less';
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "PT Serif", Times, serif;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: @background-color-base;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "PT Sans", Times, serif;
+}
+
+.container {
+    flex: 1 0 auto;
+    max-width: 1400px;
+    margin: 0 1em 1em 1em;
+    align-self: center;
+}
+
+@media (max-width: @small) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.site-body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}   
+
+.site-content {
+    flex: 1;
+}
+
+.btn-primary { // SB
+    background-color: @sb-blue;
+    border-color: @sb-blue;
+    box-shadow: @sb-shadow;
+}
+.btn-primary:hover { // SB
+    background-color: @sb-blue-hover;
+    border-color: @sb-blue-hover;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+.btn-success { // SB
+    background-color: @sb-green;
+    border-color: @sb-green;
+    box-shadow: @sb-shadow;
+}
+.btn-success:hover { // SB
+    background-color: @sb-green-hover;
+    border-color: @sb-green-hover;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute !important;
+}
+
+
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.collapsible-body {
+    padding-left: 14px;
+}
+
+.link-button, a.link-button:hover, a.link-button:active, a.link-button:visited {
+    color: black;
+    text-decoration: none !important;
+}
+
+.collapsible-label, a.collapsible-label:hover, a.collapsible-label:active, a.collapsible-label:visited {
+    font-size: 1.2em;
+    text-decoration: none !important;
+}
+
+
+/* search tags and results SIW */
+
+.search-results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    flex-basis: 600px;
+    justify-content: center;
+    padding: @spacing-unit;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: @grey-border-color;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -@spacing-unit;
+    background-color: @sb-white;
+}
+
+.tag {
+    padding: 5px;
+    margin: 5px;
+    background-color: @sb-white;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-align: left;
+    user-select: none; /* So they can't select text */
+    cursor: pointer;
+}
+
+.tag:hover {
+    background-color: #efefef;
+}
+
+.tag:focus:not(.selected) {
+    background-color: #efefef;
+}
+
+/* end search tags SIW */
