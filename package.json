@@ -11,7 +11,8 @@
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "node_modules/.bin/tsc && cp ./src/index.d.ts ./build/"
+    "build": "node_modules/.bin/tsc && cp ./src/index.d.ts ./build/",
+    "generate-types": "node generateTypes.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,6 @@
     "url": "https://github.com/osu-cass/sb-components/issues"
   },
   "homepage": "https://github.com/osu-cass/sb-components#readme",
-  "dependencies": {},
   "devDependencies": {
     "@osu-cass/smarter-balanced-styles": "^1.0.5",
     "@storybook/addon-actions": "^3.2.12",
@@ -69,7 +69,8 @@
     "bootstrap": "3.3.7",
     "@types/google.analytics": "0.0.29",
     "@types/react-router": "4.0.12",
-    "@types/react-router-dom": "4.0.5"
+    "@types/react-router-dom": "4.0.5",
+    "dts-generator": "^2.1.0"
   },
   "jest": {
     "transform": {

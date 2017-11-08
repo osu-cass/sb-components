@@ -12,7 +12,7 @@ import { RouteComponentProps } from 'react-router';
 export const AboutThisClient = (params?: { interactionTypeCode: string }) =>
     get<AboutItemModels.AboutItemsViewModel>("/AboutItems/GetItemUrl", params);
 
-interface State {
+export interface State {
     selectedCode?: string;
     itemUrl?: string;
     aboutThisItemViewModel: Resource<AboutItemModels.AboutThisItemViewModel>;
@@ -20,7 +20,7 @@ interface State {
 
 }
 
-interface Props extends RouteComponentProps<{}> {
+export interface Props extends RouteComponentProps<{}> {
     aboutClient: (params?: { interactionTypeCode: string }) => Promise<AboutItemModels.AboutItemsViewModel>;
 }
 

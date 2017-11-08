@@ -21,7 +21,7 @@ export interface Props {
     itemKey: number;
 }
 
-interface State {
+export interface State {
     displaySpinner: boolean;
 
 }
