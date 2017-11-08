@@ -15,10 +15,17 @@ module.exports = (baseConfig, env) => {
       { test: /\.less$/,
         include: [
           path.resolve(__dirname, '../', 'src', 'Styles'),
-          path.resolve(__dirname, '../', 'node_modules', 'smarter-balanced-styles', 'styles')
+          path.resolve(__dirname, '../', 'node_modules', 'smarter-balanced-styles', 'Styles')
         ],
         use: ['style-loader', 'css-loader', 'less-loader']}
     )
+
+    config.module.rules.push({
+      test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000',
+      include: [
+        path.resolve(__dirname, '../', 'src', 'Images')
+      ]
+     });
 
     config.resolve.extensions.push('.ts', '.tsx', '.less');
 
