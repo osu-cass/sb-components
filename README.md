@@ -1,5 +1,5 @@
-# react-advanced-filter
-> For use in SmarterBalanced
+# Smarter Balanced Components
+> For use in Smarter Balanced
 
 Make sure you have the latest version of Node.js and npm.
 

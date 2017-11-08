@@ -1,7 +1,7 @@
 {
-  "name": "@osu-cass/react-advanced-filter",
+  "name": "@osu-cass/sb-components",
   "version": "1.0.5",
-  "description": "A component that filters item results for Smarter Balanced.",
+  "description": "Shared components for Smarter Balanced",
   "main": "build/index",
   "files": [
     "build"
@@ -15,17 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osu-cass/react-advanced-filter.git"
+    "url": "git+https://github.com/osu-cass/sb-components.git"
   },
   "authors": [
     "Dan Van Horn (danvanhorn)",
     "Kevin Turkington (zainkai)"
   ],
-  "license": "ISC",
+  "license": "MPL",
   "bugs": {
-    "url": "https://github.com/osu-cass/react-advanced-filter/issues"
+    "url": "https://github.com/osu-cass/sb-components/issues"
   },
-  "homepage": "https://github.com/osu-cass/react-advanced-filter#readme",
+  "homepage": "https://github.com/osu-cass/sb-components#readme",
   "dependencies": {},
   "devDependencies": {
     "@osu-cass/smarter-balanced-styles": "^1.0.5",
