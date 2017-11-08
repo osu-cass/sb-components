@@ -29,7 +29,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -50,6 +50,7 @@ ShallowWrapper {
           }
         />,
         null,
+        undefined,
       ],
       "className": "item",
     },
@@ -57,7 +58,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -76,7 +77,7 @@ ShallowWrapper {
       null,
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "view": Object {
@@ -92,13 +93,14 @@ ShallowWrapper {
         "type": [Function],
       },
       null,
+      undefined,
     ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -119,6 +121,7 @@ ShallowWrapper {
             }
           />,
           null,
+          undefined,
         ],
         "className": "item",
       },
@@ -126,7 +129,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -145,7 +148,7 @@ ShallowWrapper {
         null,
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "view": Object {
@@ -161,6 +164,7 @@ ShallowWrapper {
           "type": [Function],
         },
         null,
+        undefined,
       ],
       "type": "div",
     },
