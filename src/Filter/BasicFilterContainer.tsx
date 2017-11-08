@@ -1,6 +1,6 @@
 import '../Styles/basic-filter.less'
 import * as React from "react";
-import { BasicFilterCategory, BasicFilterOption } from "./AdvancedFilterModel";
+import { BasicFilterCategory, FilterOption } from "./AdvancedFilterModel";
 import { BasicFilter } from "./BasicFilter";
 
 export interface BasicProps {
@@ -28,10 +28,10 @@ export class BasicFilterContainer extends React.Component<BasicProps, BasicState
     }
 
     //multiSelect not an option right now.
-    onSelect(category: BasicFilterCategory, option?: BasicFilterOption) {
+    onSelect(category: BasicFilterCategory, option?: FilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions: BasicFilterOption[] = [];
+        let newOptions: FilterOption[] = [];
 
         if (option) {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);

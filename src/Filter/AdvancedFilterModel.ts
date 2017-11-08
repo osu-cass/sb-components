@@ -5,29 +5,27 @@ export enum OptionType {
     DropDown
 }
 
-export interface BasicFilterOption extends AdvancedFilterOption { }
-
-export interface AdvancedFilterOption {
+export interface FilterOption {
     label: string;
     key: string;
     isSelected: boolean;
 }
 
-export interface BasicFilterCategory{
-    disabled: boolean;
-    label: string;
-    filterOptions: BasicFilterOption[];
+export interface BasicFilterCategory extends FilterCategory{
     type: OptionType;
 }
 
-
-
-export interface AdvancedFilterCategory {
+interface FilterCategory {
     disabled: boolean;
-    isMultiSelect: boolean;
     label: string;
-    helpText: string;
-    filterOptions: AdvancedFilterOption[];
+    filterOptions: FilterOption[];
+    helpText?: string;
+}
+
+
+export interface AdvancedFilterCategory extends FilterCategory {
+    isMultiSelect: boolean;
+    filterOptions: FilterOption[];
     displayAllButton: boolean;
 }
 

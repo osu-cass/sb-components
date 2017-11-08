@@ -1,6 +1,6 @@
 import '../Styles/advanced-filter.less'
 import * as React from "react";
-import { AdvancedFilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
+import { FilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 
 export interface AdvancedProps {
@@ -27,10 +27,10 @@ export class AdvancedFilterContainer extends React.Component<AdvancedProps, Adva
         this.setState({ expanded: !this.state.expanded })
     }
 
-    onSelect(category: AdvancedFilterCategory, option?: AdvancedFilterOption) {
+    onSelect(category: AdvancedFilterCategory, option?: FilterOption) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions: AdvancedFilterOption[] = [];
+        let newOptions: FilterOption[] = [];
 
         //TODO Refactor
         if (!option) { // all pressed

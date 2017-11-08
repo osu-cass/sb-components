@@ -2,16 +2,16 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { BasicFilter, Props } from '../../src/Filter/BasicFilter';
-import { BasicFilterOption, OptionType, BasicFilterCategory } from '../../src/Filter/AdvancedFilterModel';
+import { FilterOption, OptionType, BasicFilterCategory } from '../../src/Filter/AdvancedFilterModel';
 import {CenterDecorator} from  '../CenterDecorator';
 
-const basicFilterOption:BasicFilterOption = {
+const basicFilterOption:FilterOption = {
     label: "Grade 3",
     key: "12345",
     isSelected: false
 };
 
-const advancedFilterOptionsArray: BasicFilterOption[] = [
+const advancedFilterOptionsArray: FilterOption[] = [
     {...basicFilterOption, label: "Grade 1", key: "12346"},
     {...basicFilterOption, label: "Grade 2", key: "12347"},
     {...basicFilterOption},

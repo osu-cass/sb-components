@@ -1,8 +1,8 @@
 import * as React from "react";
-import { BasicFilterCategory, BasicFilterOption, OptionType } from './AdvancedFilterModel';
+import { BasicFilterCategory, FilterOption, OptionType } from './AdvancedFilterModel';
 
 export interface Props extends BasicFilterCategory { 
-    selectedHandler: (data?: BasicFilterOption) => void;
+    selectedHandler: (data?: FilterOption) => void;
 }
 
 export class BasicFilter extends React.Component<Props, {}> {
