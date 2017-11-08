@@ -2,8 +2,7 @@ import * as React from "react";
 import {
     BasicFilterCategory,
     AdvancedFilterCategory,
-    BasicFilterOption,
-    AdvancedFilterOption
+    FilterOption
 } from "./AdvancedFilterModel";
 import { BasicFilterContainer } from "./BasicFilterContainer";
 import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
