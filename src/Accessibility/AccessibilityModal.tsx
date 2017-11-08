@@ -1,17 +1,18 @@
 ﻿import * as React from 'react';
 import * as Accessibility from './Accessibility';
 import * as Dropdown from '../DropDown/DropDown';
-interface Props {
+
+export interface Props {
     accResourceGroups: Accessibility.AccResourceGroup[];
     onSave(selections: Accessibility.ResourceSelections): void;
     onReset(): void;
 }
 
-interface IsResourceExpanded {
+export interface IsResourceExpanded {
     [resourceType: string]: boolean;
 }
 
-interface State {
+export interface State {
     resourceTypeExpanded: IsResourceExpanded;
     resourceSelections: Accessibility.ResourceSelections;
 }

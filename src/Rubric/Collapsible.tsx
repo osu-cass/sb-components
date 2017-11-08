@@ -1,12 +1,12 @@
 ﻿import * as React from 'react';
 
-interface Props {
+export interface Props {
     className?: string;
     style?: React.CSSProperties;
     label: string;
 }
 
-interface State {
+export interface State {
     isCollapsed: boolean;
 }
 

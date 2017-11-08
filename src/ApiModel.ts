@@ -1,28 +1,28 @@
 ﻿import * as $ from 'jquery';
 
-interface Loading {
+export interface Loading {
     kind: "loading";
 }
 
-interface NotLoaded {
+export interface NotLoaded {
     kind: "none";
 }
 
-interface Success<T> {
+export interface Success<T> {
     kind: "success";
     content: T | undefined;
 }
 
-interface Failure {
+export interface Failure {
     kind: "failure";
 }
 
-interface Reloading<T> {
+export interface Reloading<T> {
     kind: "reloading";
     content: T | undefined;
 }
 
-export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure | NotLoaded
+export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure | NotLoaded;
 
 export function parseQueryString(url: string): { [key: string]: string[] | undefined } {
     let queryObject: { [key: string]: string[] | undefined } = {};

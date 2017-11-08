@@ -7,7 +7,7 @@ function getItemUrl(): string {
     return url;
 }
 
-interface Props {
+export interface Props {
     iSAAP: string;
 }
 

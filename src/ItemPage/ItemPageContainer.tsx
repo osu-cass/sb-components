@@ -18,7 +18,7 @@ export const ItemAccessibilityClient = (params: ItemPageModels.ItemIsaap) =>
     get<Accessibility.AccResourceGroup[]>("/Item/ItemAccessibility", params);
 
 
-interface Props extends RouteComponentProps<{}> {
+export interface Props extends RouteComponentProps<{}> {
     aboutThisClient: (params: ItemPageModels.Item) =>
         Promise<AboutThisItem.Props>;
     itemPageClient: (params: ItemPageModels.Item) =>
@@ -27,7 +27,7 @@ interface Props extends RouteComponentProps<{}> {
         Promise<Accessibility.AccResourceGroup[]>;
 }
 
-interface State {
+export interface State {
     aboutThisItem: Resource<AboutThisItem.Props>
     itemPageVM: Resource<ItemPageModels.ItemPageViewModel>;
     itemAccessibility: Resource<Accessibility.AccResourceGroup[]>;

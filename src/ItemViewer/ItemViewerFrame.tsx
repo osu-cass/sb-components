@@ -1,10 +1,10 @@
 ﻿import * as React from 'react';
 
-interface FrameProps {
+export interface FrameProps {
     url: string;
 }
 
-interface FrameState {
+export interface FrameState {
     loading: boolean;
 }
 

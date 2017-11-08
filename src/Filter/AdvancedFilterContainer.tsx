@@ -8,7 +8,7 @@ export interface AdvancedProps {
     onClick: (selected: AdvancedFilterCategory[]) => void;
 }
 
-interface AdvancedState {
+export interface AdvancedState {
     filters: AdvancedFilterCategory[];
     expanded: boolean
 }
