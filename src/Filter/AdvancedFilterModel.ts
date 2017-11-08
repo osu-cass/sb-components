@@ -1,3 +1,5 @@
+import {Subject} from "../ItemSearch/ItemSearchModels";
+
 export enum OptionType {
     inputBox,
     button,
@@ -15,7 +17,7 @@ export interface BasicFilterCategory extends FilterCategory{
     type: OptionType;
 }
 
-interface FilterCategory {
+export interface FilterCategory {
     disabled: boolean;
     label: string;
     filterOptions: FilterOption[];
@@ -30,11 +32,6 @@ export interface AdvancedFilterCategory extends FilterCategory {
 }
 
 export interface TechType extends Subject { }
-
-export interface Subject {
-    code: string;
-    label: string;
-}
 
 export interface AdvancedFilters {
     subjects: AdvancedFilterCategory;

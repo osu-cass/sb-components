@@ -4,7 +4,7 @@ export interface Props {
     subject: string;
     description: string;
 }
-export class Modal extends React.Component<Props, {}> {
+export class AboutPTModal extends React.Component<Props, {}> {
     //TODO: REFACTOR
     getSubjectHeader(): string {
         switch (this.props.subject.toLowerCase()) {

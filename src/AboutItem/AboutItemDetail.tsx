@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import * as AboutItemModels from './AboutItemModels';
 
-export class AboutThisItemDetailComponent extends React.Component<AboutItemModels.AboutThisItemViewModel, {}> {
+export class AboutThisItemDetail extends React.Component<AboutItemModels.AboutThisItemViewModel, {}> {
     renderField(label: string, value: string | number, className: string): JSX.Element | null {
         if (!value) {
             return null;

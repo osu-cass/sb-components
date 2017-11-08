@@ -1,11 +1,9 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.1-beta",
+  "version": "0.0.2-beta",
   "description": "Shared components for Smarter Balanced",
-  "main": "build/index",
-  "files": [
-    "build"
-  ],
+  "main": "index",
+  "files": ["*"],
   "types": "./build/index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/jest",

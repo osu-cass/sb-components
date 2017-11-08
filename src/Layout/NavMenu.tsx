@@ -1,10 +1,10 @@
 import '../Styles/nav.less'
 import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { SbNavLink, SbNavLinkComponent } from './SbNavLink';
+import { SbNavLink, SbNavlinkProps } from './SbNavLink';
 
 interface Props {
-    links?: SbNavLink[];
+    links?: SbNavlinkProps[];
     siteName: string;
 }
 
@@ -12,7 +12,7 @@ export class NavMenu extends React.Component<Props, {}> {
     private renderLinks(){
         const links = this.props.links;
         if(links){
-            const sbLinks = links.map((l, key) => <SbNavLinkComponent {...l} key={key}/>);
+            const sbLinks = links.map((l, key) => <SbNavLink {...l} key={key}/>);
             return <div className="sbNav-linksGroup">
                     {sbLinks}
                 </div>

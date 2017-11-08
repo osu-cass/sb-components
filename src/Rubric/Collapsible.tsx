@@ -10,7 +10,7 @@ export interface State {
     isCollapsed: boolean;
 }
 
-export class CComponent extends React.Component<Props, State> {
+export class Collapsible extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {

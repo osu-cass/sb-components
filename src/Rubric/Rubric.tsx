@@ -1,13 +1,13 @@
 ﻿import * as React from 'react'
 import * as AboutItemModels from '../AboutItem/AboutItemModels';
-import * as RubricEntry from './RubricEntry';
-import * as Collapsible from './Collapsible';
-import * as SampleResponse from '../SampleResponse/SampleResponse';
+import { RubricEntry } from './RubricEntry';
+import { Collapsible } from './Collapsible';
+import { SampleResponse } from '../SampleResponse/SampleResponse';
 
-export class RubricComponent extends React.Component<AboutItemModels.Rubric, {}> {
+export class Rubric extends React.Component<AboutItemModels.Rubric, {}> {
 
     renderRubrics() {
-        const rubricEntries = this.props.rubricEntries.map((re, i) => <RubricEntry.RubricEntryComponent {...re} key={String(i)} />);
+        const rubricEntries = this.props.rubricEntries.map((re, i) => <RubricEntry {...re} key={String(i)} />);
         if (rubricEntries.length === 0) {
             return null;
         }
@@ -27,7 +27,7 @@ export class RubricComponent extends React.Component<AboutItemModels.Rubric, {}>
     
         for (const sample of this.props.samples) {
             const key = `${i}:`;
-            const responses = sample.sampleResponses.map((sr, idx) => <SampleResponse.SampleResponseComponent {...sr} key={key + String(idx)} />);
+            const responses = sample.sampleResponses.map((sr, idx) => <SampleResponse {...sr} key={key + String(idx)} />);
             rubricSamples.push(...responses);
             i++;
         }
@@ -49,10 +49,10 @@ export class RubricComponent extends React.Component<AboutItemModels.Rubric, {}>
     render() {
         const label = `${this.props.language} Rubric`;
         return (
-            <Collapsible.CComponent label={label}>
+            <Collapsible label={label}>
                 {this.renderRubrics()}
                 {this.renderSampleResponses()}
-            </Collapsible.CComponent>
+            </Collapsible>
         );
     }
 }

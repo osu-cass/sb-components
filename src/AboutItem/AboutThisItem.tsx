@@ -1,11 +1,11 @@
 ﻿import * as React from 'react';
 import * as Collapsible from '../Rubric/Collapsible';
 import * as AboutItemModels from './AboutItemModels';
-import * as Rubric from '../Rubric/Rubric';
-import * as AboutItemDetail from './AboutItemDetail';
+import { Rubric } from '../Rubric/Rubric';
+import { AboutThisItemDetail } from './AboutItemDetail';
 
 export interface Props extends AboutItemModels.AboutThisItemViewModel {
- 
+
 }
 
 export class AboutThisItemComponent extends React.Component<Props, {}> {
@@ -13,7 +13,7 @@ export class AboutThisItemComponent extends React.Component<Props, {}> {
         if (!this.props.rubrics) {
             return null;
         }
-        const rubrics = this.props.rubrics.map((ru, i) => <Rubric.RubricComponent {...ru} key={String(i)} />);
+        const rubrics = this.props.rubrics.map((ru, i) => <Rubric {...ru} key={String(i)} />);
         return (
             <div className="modal fade"
                 id="about-item-modal-container"
@@ -30,7 +30,7 @@ export class AboutThisItemComponent extends React.Component<Props, {}> {
                             <h4 className="modal-title">About This Item</h4>
                         </div>
                         <div className="modal-body">
-                            <AboutItemDetail.AboutThisItemDetailComponent {...this.props} />
+                            <AboutItemDetail {...this.props} />
                             {rubrics}
                         </div>
                         <div className="modal-footer">

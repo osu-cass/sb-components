@@ -13,7 +13,7 @@ export interface Props {
     gradeAboveItems: Column | null;
 }
 
-export class Modal extends React.Component<Props, {}> {
+export class MoreLikeThisModal extends React.Component<Props, {}> {
 
     renderColumn(column: Column | null) {
         if (!column || column.label == "NA") {

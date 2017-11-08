@@ -13,7 +13,7 @@ function readCookie(name: string): string | undefined {
     return cookie ? cookie.pop() : '';
 }
 
-export class Modal extends React.Component<Props, {}> {
+export class AboutPTPopupModal extends React.Component<Props, {}> {
 
     shouldShowOnLoad(): void {
         if (!this.props.isPerformance) {

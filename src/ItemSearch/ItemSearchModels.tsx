@@ -13,8 +13,8 @@ export interface InteractionType {
 export interface Subject {
     code: string;
     label: string;
-    claims: Claim[];
-    interactionTypeCodes: string[];
+    claims?: Claim[];
+    interactionTypeCodes?: string[];
 }
 
 export interface Claim {
