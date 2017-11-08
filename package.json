@@ -62,7 +62,14 @@
     "less-loader": "^4.0.5",
     "less": "^2.7.3",
     "style-loader": "^0.19.0",
-    "postcss-loader": "^2.0.8"
+    "postcss-loader": "^2.0.8",
+    "@types/jquery": "2.0.40",
+    "jquery": "3.2.1",
+    "@types/bootstrap": "3.3.32",
+    "bootstrap": "3.3.7",
+    "@types/google.analytics": "0.0.29",
+    "@types/react-router": "4.0.12",
+    "@types/react-router-dom": "4.0.5"
   },
   "jest": {
     "transform": {
