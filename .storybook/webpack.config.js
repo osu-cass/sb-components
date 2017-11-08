@@ -11,27 +11,14 @@ module.exports = (baseConfig, env) => {
         loader: require.resolve('awesome-typescript-loader')
     });
 
-    config.module.rules.push({
-        test: /\.less$/,
-        use: [
-          {
-            loader: 'style-loader' // creates style nodes from JS strings
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          {
-            loader: 'less-loader' // compiles Less to CSS
-          }
-        ],
+    config.module.rules.push(
+      { test: /\.less$/,
         include: [
-          path.resolve(__dirname, '../', 'src', 'styles'),
-          path.resolve(__dirname, '../', 'node_modules', '@osu-cass', 'smarter-balanced-styles', 'styles')
+          path.resolve(__dirname, '../', 'src', 'Styles'),
+          path.resolve(__dirname, '../', 'node_modules', 'smarter-balanced-styles', 'styles')
         ],
-      });
+        use: ['style-loader', 'css-loader', 'less-loader']}
+    )
 
     config.resolve.extensions.push('.ts', '.tsx', '.less');
 

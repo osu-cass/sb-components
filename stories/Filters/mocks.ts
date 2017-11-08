@@ -1,5 +1,5 @@
-import { Props } from '../src/Filter/AdvancedFilter';
-import { AdvancedFilterOption, OptionType, AdvancedFilterCategory } from '../src/Filter/AdvancedFilterModel';
+import { Props } from '../../src/Filter/AdvancedFilter';
+import { AdvancedFilterOption, OptionType, AdvancedFilterCategory } from '../../src/Filter/AdvancedFilterModel';
 import { action } from '@storybook/addon-actions';
 
 export const mockAdvancedFilterCategories = [

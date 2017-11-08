@@ -1,3 +1,4 @@
+import '../Styles/basic-filter.less'
 import * as React from "react";
 import { BasicFilterCategory, BasicFilterOption } from "./AdvancedFilterModel";
 import { BasicFilter } from "./BasicFilter";

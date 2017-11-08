@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { BasicFilter, Props } from '../src/Filter/BasicFilter';
-import { BasicFilterOption, OptionType, BasicFilterCategory } from '../src/Filter/AdvancedFilterModel';
-import {CenterDecorator} from  './CenterDecorator';
+import { BasicFilter, Props } from '../../src/Filter/BasicFilter';
+import { BasicFilterOption, OptionType, BasicFilterCategory } from '../../src/Filter/AdvancedFilterModel';
+import {CenterDecorator} from  '../CenterDecorator';
 
 const basicFilterOption:BasicFilterOption = {
     label: "Grade 3",
