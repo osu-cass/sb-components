@@ -412,10 +412,10 @@ exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
   >
     <div
       className="basic-filter-selection"
-      id="grades-basic-filter"
+      id="grade-basic-filter"
     >
       <label>
-        Grades
+        Grade
       </label>
       <div
         className="basic-filter-body"
@@ -426,52 +426,27 @@ exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
           <option
             value="7"
           >
-            Elementary
+            Grades 3-5
           </option>
           <option
-            value="1"
+            value="56"
           >
-            Grade 3
-          </option>
-          <option
-            value="2"
-          >
-            Grade 4
-          </option>
-          <option
-            value="4"
-          >
-            Grade 5
-          </option>
-          <option
-            value="8"
-          >
-            Grade 6
-          </option>
-          <option
-            value="16"
-          >
-            Grade 7
-          </option>
-          <option
-            value="32"
-          >
-            Grade 8
+            Grades 6-8
           </option>
           <option
             value="960"
           >
-            High
+            High School
           </option>
         </select>
       </div>
     </div>
     <div
       className="basic-filter-selection"
-      id="techtype-basic-filter"
+      id="subjects-basic-filter"
     >
       <label>
-        TechType
+        Subjects
       </label>
       <div
         className="basic-filter-body"
@@ -482,18 +457,18 @@ exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
               checked={false}
               onChange={[Function]}
               type="radio"
-              value="CAT"
+              value="ELA"
             />
-            CAT
+            English Literacy/ Arts
           </label>
           <label>
             <input
               checked={false}
               onChange={[Function]}
               type="radio"
-              value="PT"
+              value="Math"
             />
-            Performance Items
+            Mathematics
           </label>
         </form>
       </div>
@@ -511,10 +486,10 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
   >
     <div
       className="basic-filter-selection"
-      id="grades-basic-filter"
+      id="grade-basic-filter"
     >
       <label>
-        Grades
+        Grade
       </label>
       <div
         className="basic-filter-body"
@@ -525,52 +500,27 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
           <option
             value="7"
           >
-            Elementary
+            Grades 3-5
           </option>
           <option
-            value="1"
+            value="56"
           >
-            Grade 3
-          </option>
-          <option
-            value="2"
-          >
-            Grade 4
-          </option>
-          <option
-            value="4"
-          >
-            Grade 5
-          </option>
-          <option
-            value="8"
-          >
-            Grade 6
-          </option>
-          <option
-            value="16"
-          >
-            Grade 7
-          </option>
-          <option
-            value="32"
-          >
-            Grade 8
+            Grades 6-8
           </option>
           <option
             value="960"
           >
-            High
+            High School
           </option>
         </select>
       </div>
     </div>
     <div
       className="basic-filter-selection"
-      id="techtype-basic-filter"
+      id="subjects-basic-filter"
     >
       <label>
-        TechType
+        Subjects
       </label>
       <div
         className="basic-filter-body"
@@ -581,18 +531,18 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
               checked={false}
               onChange={[Function]}
               type="radio"
-              value="CAT"
+              value="ELA"
             />
-            CAT
+            English Literacy/ Arts
           </label>
           <label>
             <input
               checked={false}
               onChange={[Function]}
               type="radio"
-              value="PT"
+              value="Math"
             />
-            Performance Items
+            Mathematics
           </label>
         </form>
       </div>
@@ -634,10 +584,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     >
       <div
         className="basic-filter-selection"
-        id="grades-basic-filter"
+        id="grade-basic-filter"
       >
         <label>
-          Grades
+          Grade
         </label>
         <div
           className="basic-filter-body"
@@ -648,52 +598,27 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             <option
               value="7"
             >
-              Elementary
+              Grades 3-5
             </option>
             <option
-              value="1"
+              value="56"
             >
-              Grade 3
-            </option>
-            <option
-              value="2"
-            >
-              Grade 4
-            </option>
-            <option
-              value="4"
-            >
-              Grade 5
-            </option>
-            <option
-              value="8"
-            >
-              Grade 6
-            </option>
-            <option
-              value="16"
-            >
-              Grade 7
-            </option>
-            <option
-              value="32"
-            >
-              Grade 8
+              Grades 6-8
             </option>
             <option
               value="960"
             >
-              High
+              High School
             </option>
           </select>
         </div>
       </div>
       <div
         className="basic-filter-selection"
-        id="techtype-basic-filter"
+        id="subjects-basic-filter"
       >
         <label>
-          TechType
+          Subjects
         </label>
         <div
           className="basic-filter-body"
@@ -704,18 +629,18 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
                 checked={false}
                 onChange={[Function]}
                 type="radio"
-                value="CAT"
+                value="ELA"
               />
-              CAT
+              English Literacy/ Arts
             </label>
             <label>
               <input
                 checked={false}
                 onChange={[Function]}
                 type="radio"
-                value="PT"
+                value="Math"
               />
-              Performance Items
+              Mathematics
             </label>
           </form>
         </div>
@@ -739,5 +664,389 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       </button>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Layout name links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="site-body"
+  >
+    <header
+      role="navigation"
+    >
+      <div
+        className="skip-link"
+        id="skip-main"
+      >
+        <a
+          className="skip-link"
+          href="/#main"
+          onClick={[Function]}
+        >
+          Skip to main content
+        </a>
+      </div>
+      <nav
+        role="navigation"
+      >
+        <div
+          className="sbNav"
+        >
+          <div
+            className="sbNav-titleGroup"
+          >
+            <div
+              className="sbNav-titleGroup-item"
+            >
+              <a
+                href="http://www.smarterbalanced.org/"
+                target="_blank"
+                title="Smarter Balanced Home"
+              >
+                <img
+                  alt="Smarter Balanced Logo"
+                  src="/Images/SmarterBalanced_logo.png"
+                />
+              </a>
+            </div>
+            <div
+              className="sbNav-titleGroup-item"
+            >
+              <h3>
+                Test
+              </h3>
+            </div>
+          </div>
+          <div
+            className="sbNav-linksGroup"
+          >
+            <a
+              className="sbNav-linksGroup-item"
+              href="url1"
+              onClick={[Function]}
+              style={undefined}
+            >
+              <span
+                className=""
+              />
+               
+              link1
+            </a>
+            <a
+              className="sbNav-linksGroup-item"
+              href="url2"
+              onClick={[Function]}
+              style={undefined}
+            >
+              <span
+                className=""
+              />
+               
+              link2
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      className="container site-content"
+      id="main"
+      role="main"
+    />
+    <footer
+      role="contentinfo"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+           www.SmarterBalanced.org
+        </a>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout name no links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="site-body"
+  >
+    <header
+      role="navigation"
+    >
+      <div
+        className="skip-link"
+        id="skip-main"
+      >
+        <a
+          className="skip-link"
+          href="/#main"
+          onClick={[Function]}
+        >
+          Skip to main content
+        </a>
+      </div>
+      <nav
+        role="navigation"
+      >
+        <div
+          className="sbNav"
+        >
+          <div
+            className="sbNav-titleGroup"
+          >
+            <div
+              className="sbNav-titleGroup-item"
+            >
+              <a
+                href="http://www.smarterbalanced.org/"
+                target="_blank"
+                title="Smarter Balanced Home"
+              >
+                <img
+                  alt="Smarter Balanced Logo"
+                  src="/Images/SmarterBalanced_logo.png"
+                />
+              </a>
+            </div>
+            <div
+              className="sbNav-titleGroup-item"
+            >
+              <h3>
+                Test
+              </h3>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      className="container site-content"
+      id="main"
+      role="main"
+    />
+    <footer
+      role="contentinfo"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+           www.SmarterBalanced.org
+        </a>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Storyshots LayoutNav name links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
+    >
+      <div
+        className="sbNav"
+      >
+        <div
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+        <div
+          className="sbNav-linksGroup"
+        >
+          <a
+            className="sbNav-linksGroup-item"
+            href="url1"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link1
+          </a>
+          <a
+            className="sbNav-linksGroup-item"
+            href="url2"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link2
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Storyshots LayoutNav name no links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
+    >
+      <div
+        className="sbNav"
+      >
+        <div
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 </div>
 `;
