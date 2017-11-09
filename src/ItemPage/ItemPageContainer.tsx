@@ -13,6 +13,7 @@ import { AboutThisItemViewModel } from '../AboutItem/AboutItemModels';
 
 export const AboutThisItemViewModelClient = (params: ItemPageModels.Item) =>
     get<AboutThisItemViewModel>("/Item/AboutThisItemViewModel", params);
+
 export const ItemPageClient = (params: ItemPageModels.Item) =>
     get<ItemPageModels.ItemPageViewModel>("/Item/GetItem", params);
 
@@ -35,7 +36,6 @@ export interface ItemPageState {
     itemAccessibility: Resource<Accessibility.AccResourceGroup[]>;
     currentItem?: ItemPageModels.ItemIdentifier;
     item: ItemPageModels.Item;
-
 }
 
 export class ItemPageContainer extends React.Component<ItemPageContainerProps, ItemPageState>{
