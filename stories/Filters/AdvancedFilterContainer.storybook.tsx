@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import {AdvancedFilterContainer, AdvancedProps} from '../../src/Filter/AdvancedFilterContainer';
-import { FilterOption, OptionType, AdvancedFilterCategory } from '../../src/Filter/AdvancedFilterModel';
+import {AdvancedFilterContainer, AdvancedFilterContainerProps} from '../../src/Filter/AdvancedFilterContainer';
+import { FilterOptionModel, OptionTypeModel, AdvancedFilterCategoryModel } from '../../src/Filter/AdvancedFilterModel';
 import { mockAdvancedFilterCategories } from './mocks';
 
-const props: AdvancedProps  = {
+const props: AdvancedFilterContainerProps  = {
     filterOptions: mockAdvancedFilterCategories,
     onClick: action("clicked")
 }

@@ -1,17 +1,17 @@
 ﻿import * as React from 'react';
 
-export interface Props {
+export interface CollapsibleProps {
     className?: string;
     style?: React.CSSProperties;
     label: string;
 }
 
-export interface State {
+export interface CollapsibleState {
     isCollapsed: boolean;
 }
 
-export class Collapsible extends React.Component<Props, State> {
-    constructor(props: Props) {
+export class Collapsible extends React.Component<CollapsibleProps, CollapsibleState> {
+    constructor(props: CollapsibleProps) {
         super(props);
         this.state = {
             isCollapsed: true

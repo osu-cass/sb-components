@@ -1,27 +1,28 @@
-﻿import * as Accessibility from '../Accessibility/Accessibility';
+﻿import { AccessibilityResourceModel, AccResourceGroupModel, ResourceSelectionsModel } from '../Accessibility/AccessibilityModels';
 import { Props as moreLikeThis } from '../Modals/MoreLikeThisModal';
-import * as Dropdown from '../DropDown/DropDown';
+import { DropDownSelectionModel } from '../DropDown/DropDownModels';
+import { get } from '../ApiModel';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
 
-export interface ItemIdentifier extends Item{
+export interface ItemIdentifierModel extends ItemModel {
     itemName: string;
-  
 }
 
-export interface Item {
+export interface ItemModel {
     bankKey: number;
     itemKey: number;
 }
 
-export interface ItemIsaap extends Item {
+export interface ItemIsaapModel extends ItemModel {
     isaap?: string;
 }
 
-export interface ItemPageViewModel {
+export interface ItemPageModel {
     itemViewerServiceUrl: string;
     itemNames: string;
     brailleItemNames: string;
-    brailleItem: ItemIdentifier;
-    nonBrailleItem: ItemIdentifier;
+    brailleItem: ItemIdentifierModel;
+    nonBrailleItem: ItemIdentifierModel;
     accessibilityCookieName: string;
     isPerformanceItem: boolean;
     performanceItemDescription: string;
@@ -32,7 +33,7 @@ export interface ItemPageViewModel {
     defaultIsaapCodes: string;
 }
 
-export function toiSAAP(accResourceGroups: Accessibility.AccResourceGroup[], defaultIsaap: string): string {
+export function toiSAAP(accResourceGroups: AccResourceGroupModel[], defaultIsaap: string): string {
     let isaapCodes = defaultIsaap;
     for (let group of accResourceGroups) {
         for (let res of group.accessibilityResources) {
@@ -45,21 +46,21 @@ export function toiSAAP(accResourceGroups: Accessibility.AccResourceGroup[], def
     return encodeURIComponent(isaapCodes);
 }
 
-export function resetResource(model: Accessibility.AccessibilityResource): Accessibility.AccessibilityResource {
+export function resetResource(model: AccessibilityResourceModel): AccessibilityResourceModel {
     const newModel = Object.assign({}, model);
     newModel.currentSelectionCode = model.defaultSelection;
     return newModel;
 }
 
-export function trimAccResource(resource: Accessibility.AccessibilityResource): { label: string, selectedCode: string } {
+export function trimAccResource(resource: AccessibilityResourceModel): { label: string, selectedCode: string } {
     return {
         label: resource.label,
         selectedCode: resource.currentSelectionCode,
     };
 }
 
-export function toCookie(accGroups: Accessibility.AccResourceGroup[]): string {
-    let prefs: Accessibility.ResourceSelections = {};
+export function toCookie(accGroups: AccResourceGroupModel[]): string {
+    let prefs: ResourceSelectionsModel = {};
     for (const group of accGroups) {
         for (const resource of group.accessibilityResources) {
             prefs[resource.resourceCode] = resource.currentSelectionCode;
@@ -71,10 +72,10 @@ export function toCookie(accGroups: Accessibility.AccResourceGroup[]): string {
     return cookie;
 }
 
-export function addDisabledPlaceholder(resource: Accessibility.AccessibilityResource): Accessibility.AccessibilityResource {
+export function addDisabledPlaceholder(resource: AccessibilityResourceModel): AccessibilityResourceModel {
     if (resource.disabled) {
         let newSelection = { ...resource };
-        let disabledOption: Dropdown.Selection = {
+        let disabledOption: DropDownSelectionModel = {
             label: "Disabled for item",
             selectionCode: "",
             disabled: true,
@@ -90,3 +91,12 @@ export function addDisabledPlaceholder(resource: Accessibility.AccessibilityReso
         return cookie ? cookie.pop() : '';
     }
 }
+
+export const aboutThisItemViewModelClient = (params: ItemModel) =>
+    get<AboutItemModel>("/Item/AboutThisItemViewModel", params);
+
+export const itemPageClient = (params: ItemModel) =>
+    get<ItemPageModel>("/Item/GetItem", params);
+
+export const itemAccessibilityClient = (params: ItemIsaapModel) =>
+    get<AccResourceGroupModel[]>("/Item/ItemAccessibility", params);

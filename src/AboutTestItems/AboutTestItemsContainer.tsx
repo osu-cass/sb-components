@@ -3,29 +3,27 @@ import '../Styles/item.less';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as $ from 'jquery';
-import * as AboutThisItem from './AboutThisItem';
-import * as AboutItemModels from './AboutItemModels';
+import { AboutItem } from '../AboutItem/AboutItem';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
 import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
 import { Resource, get } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
+import { AboutTestItemsModel, InteractionTypeModel } from './AboutTestItemsModels';
 
-export const AboutItemsClient = (params?: { interactionTypeCode: string }) =>
-    get<AboutItemModels.AboutItemsViewModel>("/AboutItems/GetItemUrl", params);
-
-export interface AboutItemState {
+export interface AboutTestItemContainerState {
     selectedCode?: string;
     itemUrl?: string;
-    aboutThisItemViewModel: Resource<AboutItemModels.AboutThisItemViewModel>;
-    aboutItemsViewModel: Resource<AboutItemModels.AboutItemsViewModel>;
+    aboutThisItemViewModel: Resource<AboutItemModel>;
+    aboutItemsViewModel: Resource<AboutTestItemsModel>;
 
 }
 
-export interface AboutItemProps extends RouteComponentProps<{}> {
-    aboutClient: (params?: { interactionTypeCode: string }) => Promise<AboutItemModels.AboutItemsViewModel>;
+export interface AboutTestItemContainerProps extends RouteComponentProps<{}> {
+    aboutClient: (params?: { interactionTypeCode: string }) => Promise<AboutTestItemsModel>;
 }
 
-export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
-    constructor(props: AboutItemProps) {
+export class AboutTestItemsContainer extends React.Component<AboutTestItemContainerProps, AboutTestItemContainerState>{
+    constructor(props: AboutTestItemContainerProps) {
         super(props);
         this.state = {
             aboutThisItemViewModel: { kind: "loading" },
@@ -52,7 +50,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
         this.props.aboutClient(params).then((data) => this.onFetchedUpdatedViewModel(data)).catch();
     }
 
-    onFetchedUpdatedViewModel = (viewModel: AboutItemModels.AboutItemsViewModel) => {
+    onFetchedUpdatedViewModel = (viewModel: AboutTestItemsModel) => {
         if (!viewModel) {
             console.log("An error occurred updating the item.");
             return;
@@ -67,7 +65,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
         });
     }
 
-    renderDescription(interactionTypes: AboutItemModels.InteractionType[]) {
+    renderDescription(interactionTypes: InteractionTypeModel[]) {
         let desc = "";
         for (let it of interactionTypes) {
             if (it.code === this.state.selectedCode && it.description) {
@@ -81,7 +79,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
         );
     }
 
-    renderInteractionTypesSelect(interactionTypes: AboutItemModels.InteractionType[]) {
+    renderInteractionTypesSelect(interactionTypes: InteractionTypeModel[]) {
         let items: JSX.Element[] = [];
         for (let i of interactionTypes) {
             items.push(
@@ -126,7 +124,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
                         </div>
                     </div>
                     <ItemFrame url={this.state.itemUrl || ""} />
-                    <AboutThisItem.AboutThisItem {...aboutThisItem.content} />
+                    <AboutItem {...aboutThisItem.content} />
                 </div>
             );
         }
@@ -153,11 +151,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
         else {
             return <p><em>Loading...</em></p>
         }
-
-
     }
-
-
 
     public render() {
         const itemFrame = this.state.itemUrl ? this.renderItemFrame() : this.renderNoItem();

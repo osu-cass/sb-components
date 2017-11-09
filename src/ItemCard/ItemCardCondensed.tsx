@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import * as ItemCardModels from './ItemCardModels';
 
-export class ItemCardCondensed extends React.Component<ItemCardModels.ItemCardViewModel, {}> {
+export class ItemCardCondensed extends React.Component<ItemCardModels.ItemCardModel, {}> {
 
     handleKeyPress(bankKey: number, itemKey: number, e: React.KeyboardEvent<HTMLElement>) {
         if (e.keyCode === 13) {

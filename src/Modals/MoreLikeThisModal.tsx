@@ -1,10 +1,10 @@
 ﻿import * as React from 'react';
-import { ItemCardViewModel } from '../ItemCard/ItemCardModels';
+import { ItemCardModel } from '../ItemCard/ItemCardModels';
 import * as ItemCardCondensed from '../ItemCard/ItemCardCondensed';
 
 export interface Column {
     label: string;
-    itemCards: ItemCardViewModel[];
+    itemCards: ItemCardModel[];
 }
 
 export interface Props {

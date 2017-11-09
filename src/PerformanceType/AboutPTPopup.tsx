@@ -2,7 +2,7 @@
 import * as $ from "jquery";
 import * as Boostrap from 'bootstrap';
 
-export interface Props {
+export interface AboutPtPopupModalProps {
     subject: string;
     description: string;
     isPerformance: boolean;
@@ -13,7 +13,7 @@ function readCookie(name: string): string | undefined {
     return cookie ? cookie.pop() : '';
 }
 
-export class AboutPTPopupModal extends React.Component<Props, {}> {
+export class AboutPTPopupModal extends React.Component<AboutPtPopupModalProps, {}> {
 
     shouldShowOnLoad(): void {
         if (!this.props.isPerformance) {

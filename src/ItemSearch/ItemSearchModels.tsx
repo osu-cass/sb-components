@@ -1,36 +1,32 @@
-﻿import * as GradeLevels from "../GradeLevels/GradeLevels";
-import * as ItemCardModels from '../ItemCard/ItemCardModels';
-import { InteractionType } from "../AboutItem/AboutItemModels"
+﻿import { GradeLevels } from "../GradeLevels/GradeLevels";
+import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 
-export interface SubjectClaims {
+export interface SubjectClaimsModel {
     [subject: string]: { text: string; value: string }[];
 }
 
-
-
-export interface Subject {
+export interface SubjectModel {
     code: string;
     label: string;
-    claims?: Claim[];
+    claims?: ClaimModel[];
     interactionTypeCodes?: string[];
 }
 
-export interface Claim {
+export interface ClaimModel {
     code: string;
     label: string;
-    targets: Target[];
+    targets: TargetModel[];
 }
 
 
-export interface Target {
+export interface TargetModel {
     name: string;
     nameHash: number;
 }
 
-
-export interface SearchAPIParams {
+export interface SearchAPIParamsModel {
     itemId: string;
-    gradeLevels: GradeLevels.GradeLevels;
+    gradeLevels: GradeLevels;
     subjects: string[];
     claims: string[];
     interactionTypes: string[];
@@ -38,9 +34,7 @@ export interface SearchAPIParams {
     targets: number[];
 }
 
-export interface ItemsSearchViewModel {
-    interactionTypes: InteractionType[];
-    subjects: Subject[];
+export interface ItemsSearchModel {
+    interactionTypes: InteractionTypeModel[];
+    subjects: SubjectModel[];
 }
-
-

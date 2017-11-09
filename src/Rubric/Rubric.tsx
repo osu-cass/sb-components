@@ -1,10 +1,10 @@
 ﻿import * as React from 'react'
-import * as AboutItemModels from '../AboutItem/AboutItemModels';
+import {RubricModel} from './RubricModels';
 import { RubricEntry } from './RubricEntry';
 import { Collapsible } from './Collapsible';
-import { SampleResponse } from '../SampleResponse/SampleResponse';
+import { SampleResponse } from './SampleResponse';
 
-export class Rubric extends React.Component<AboutItemModels.RubricProps, {}> {
+export class Rubric extends React.Component<RubricModel, {}> {
 
     renderRubrics() {
         const rubricEntries = this.props.rubricEntries.map((re, i) => <RubricEntry {...re} key={String(i)} />);

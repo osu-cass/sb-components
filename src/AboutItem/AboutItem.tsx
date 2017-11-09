@@ -1,10 +1,10 @@
 ﻿import * as React from 'react';
 import * as Collapsible from '../Rubric/Collapsible';
-import {AboutThisItemViewModel} from './AboutItemModels';
+import {AboutItemModel} from './AboutItemModels';
 import { Rubric } from '../Rubric/Rubric';
 import { AboutThisItemDetail } from './AboutItemDetail';
 
-export class AboutThisItem extends React.Component<AboutThisItemViewModel, {}> {
+export class AboutItem extends React.Component<AboutItemModel, {}> {
     render() {
         if (!this.props.rubrics) {
             return null;

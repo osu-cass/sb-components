@@ -1,10 +1,10 @@
 ﻿import * as React from 'react';
 
-export interface Props {
+export interface AboutPTModalProps {
     subject: string;
     description: string;
 }
-export class AboutPTModal extends React.Component<Props, {}> {
+export class AboutPTModal extends React.Component<AboutPTModalProps, {}> {
     //TODO: REFACTOR
     getSubjectHeader(): string {
         switch (this.props.subject.toLowerCase()) {

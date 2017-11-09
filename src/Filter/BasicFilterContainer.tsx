@@ -1,22 +1,22 @@
 import '../Styles/basic-filter.less'
 import * as React from "react";
-import { BasicFilterCategory, FilterOption } from "./AdvancedFilterModel";
+import { BasicFilterCategoryModel, FilterOptionModel } from "./AdvancedFilterModel";
 import { BasicFilter } from "./BasicFilter";
 
-export interface BasicProps {
-    filterOptions: BasicFilterCategory[];
-    onClick: (selected: BasicFilterCategory[]) => void;
+export interface BasicFilterContainerProps {
+    filterOptions: BasicFilterCategoryModel[];
+    onClick: (selected: BasicFilterCategoryModel[]) => void;
     containsAdvancedFilter: boolean;
     handleAdvancedFilterExpand: () => void;
 }
 
-export interface BasicState {
-    filters: BasicFilterCategory[];
+export interface BasicFilterContainerState {
+    filters: BasicFilterCategoryModel[];
     expanded?: boolean;
 }
 
-export class BasicFilterContainer extends React.Component<BasicProps, BasicState>{
-    constructor(props: BasicProps) {
+export class BasicFilterContainer extends React.Component<BasicFilterContainerProps, BasicFilterContainerState>{
+    constructor(props: BasicFilterContainerProps) {
         super(props);
 
         this.state = {
@@ -28,10 +28,10 @@ export class BasicFilterContainer extends React.Component<BasicProps, BasicState
     }
 
     //multiSelect not an option right now.
-    onSelect(category: BasicFilterCategory, option?: FilterOption) {
+    onSelect(category: BasicFilterCategoryModel, option?: FilterOptionModel) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions: FilterOption[] = [];
+        let newOptions: FilterOptionModel[] = [];
 
         if (option) {
             const optionIdx = newFilters[index].filterOptions.indexOf(option);

@@ -1,20 +1,20 @@
 import '../Styles/advanced-filter.less'
 import * as React from "react";
-import { FilterOption, OptionType, AdvancedFilterCategory, AdvancedFilters } from './AdvancedFilterModel';
+import { FilterOptionModel, OptionTypeModel, AdvancedFilterCategoryModel, AdvancedFiltersModel } from './AdvancedFilterModel';
 import { AdvancedFilter } from './AdvancedFilter';
 
-export interface AdvancedProps {
-    filterOptions: AdvancedFilterCategory[];
-    onClick: (selected: AdvancedFilterCategory[]) => void;
+export interface AdvancedFilterContainerProps {
+    filterOptions: AdvancedFilterCategoryModel[];
+    onClick: (selected: AdvancedFilterCategoryModel[]) => void;
 }
 
-export interface AdvancedState {
-    filters: AdvancedFilterCategory[];
+export interface AdvancedFilterContainerState {
+    filters: AdvancedFilterCategoryModel[];
     expanded: boolean
 }
 
-export class AdvancedFilterContainer extends React.Component<AdvancedProps, AdvancedState>{
-    constructor(props: AdvancedProps) {
+export class AdvancedFilterContainer extends React.Component<AdvancedFilterContainerProps, AdvancedFilterContainerState>{
+    constructor(props: AdvancedFilterContainerProps) {
         super(props);
 
         this.state = {
@@ -27,10 +27,10 @@ export class AdvancedFilterContainer extends React.Component<AdvancedProps, Adva
         this.setState({ expanded: !this.state.expanded })
     }
 
-    onSelect(category: AdvancedFilterCategory, option?: FilterOption) {
+    onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
         const index = this.state.filters.indexOf(category);
         const newFilters = [...this.state.filters];
-        let newOptions: FilterOption[] = [];
+        let newOptions: FilterOptionModel[] = [];
 
         //TODO Refactor
         if (!option) { // all pressed

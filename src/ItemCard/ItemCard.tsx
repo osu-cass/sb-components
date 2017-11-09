@@ -4,7 +4,7 @@ import * as ItemCardModels from './ItemCardModels';
 
 
 
-export class ItemCard extends React.Component<ItemCardModels.ItemCardViewModel, {}> {
+export class ItemCard extends React.Component<ItemCardModels.ItemCardModel, {}> {
 
     handleKeyPress(bankKey: number, itemKey: number, e: React.KeyboardEvent<HTMLElement>) {
         if (e.keyCode === 13 || e.keyCode === 23) {
@@ -12,7 +12,7 @@ export class ItemCard extends React.Component<ItemCardModels.ItemCardViewModel, 
         }
     }
 
-    shouldComponentUpdate(nextProps: Readonly<ItemCardModels.ItemCardViewModel>, nextState: Readonly<{}>, nextContext: any): boolean {
+    shouldComponentUpdate(nextProps: Readonly<ItemCardModels.ItemCardModel>, nextState: Readonly<{}>, nextContext: any): boolean {
         return false;
     }
 

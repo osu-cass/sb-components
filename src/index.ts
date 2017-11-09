@@ -2,28 +2,25 @@
 // AboutItem Components and Models
 //
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
-export {
-    SampleResponseProps,
-    RubricSample,
-    RubricEntryProps,
-    RubricProps,
-    InteractionType,
-    AboutThisItemViewModel,
-    AboutItemsViewModel
-} from "./AboutItem/AboutItemModels";
-export { AboutItem, AboutItemsClient, AboutItemProps, AboutItemState } from "./AboutItem/AboutItems";
-export { AboutThisItem } from "./AboutItem/AboutThisItem";
+export { AboutItemModel } from "./AboutItem/AboutItemModels";
+export { AboutItem } from "./AboutItem/AboutItem";
+
+//
+// About Test Items
+//
+export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer"
+export { InteractionTypeModel, AboutTestItemsModel, aboutItemsClient } from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
 //
 export {
-    AccessibilityResource,
-    AccResourceGroup,
+    AccessibilityResourceModel,
+    AccResourceGroupModel,
     getResource,
     getBrailleAccommodation
-} from "./Accessibility/Accessibility";
-export { ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
+} from "./Accessibility/AccessibilityModels";
+export { ItemAccessibilityModalProps } from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
@@ -38,15 +35,14 @@ export { AdvancedFilterContainer } from "./Filter/AdvancedFilterContainer";
 export { BasicFilterContainer } from "./Filter/BasicFilterContainer";
 export { FilterContainer } from "./Filter/FilterContainer";
 export {
-    OptionType,
-    FilterOption,
-    BasicFilterCategory,
-    FilterCategory,
-    AdvancedFilterCategory,
+    OptionTypeModel,
+    FilterOptionModel,
+    BasicFilterCategoryModel,
+    FilterCategoryModel,
+    AdvancedFilterCategoryModel,
     TechType,
-    AdvancedFilters
+    AdvancedFiltersModel
 } from "./Filter/AdvancedFilterModel";
-
 
 //
 // Grade Levels
@@ -58,40 +54,38 @@ export { GradeLevels } from "./GradeLevels/GradeLevels";
 //
 export { ItemCard } from "./ItemCard/ItemCard";
 export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
-export { itemPageLink, ItemCardViewModel } from "./ItemCard/ItemCardModels";
+export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
+
 //
 // Item Page
 //
 export { ItemPage, ItemPageProps } from "./ItemPage/ItemPage";
+export { ItemPageContainerProps, ItemPageContainer } from "./ItemPage/ItemPageContainer";
 export {
-    AboutThisItemViewModelClient,
-    ItemPageClient,
-    ItemAccessibilityClient,
-    ItemPageContainerProps,
-    ItemPageContainer
-} from "./ItemPage/ItemPageContainer";
-export {
-    Item,
-    ItemIdentifier,
-    ItemIsaap,
-    ItemPageViewModel,
+    ItemModel,
+    ItemIdentifierModel,
+    ItemIsaapModel,
+    ItemPageModel,
     toCookie,
     toiSAAP,
     trimAccResource,
     addDisabledPlaceholder,
-    resetResource
+    resetResource,
+    itemAccessibilityClient,
+    itemPageClient,
+    aboutThisItemViewModelClient
 } from "./ItemPage/ItemPageModels";
 
 //
 // ItemSearchModels models
 //
 export {
-    SubjectClaims,
-    Subject,
-    Claim,
-    Target,
-    SearchAPIParams,
-    ItemsSearchViewModel
+    SubjectClaimsModel,
+    SubjectModel,
+    ClaimModel,
+    TargetModel,
+    SearchAPIParamsModel,
+    ItemsSearchModel
 } from "./ItemSearch/ItemSearchModels";
 
 //
@@ -108,7 +102,7 @@ export { NavMenu } from "./Layout/NavMenu";
 export { SbNavLink, SbNavlinkProps } from "./Layout/SbNavLink";
 
 //
-// Modals comonents
+// Modals Components
 //
 export { MoreLikeThisModal } from "./Modals/MoreLikeThisModal";
 export { ShareModal } from "./Modals/ShareModal";
@@ -125,16 +119,11 @@ export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
 export { RubricEntry } from "./Rubric/RubricEntry";
-
-//
-// SampleResponse Component
-//
-export { SampleResponse } from "./SampleResponse/SampleResponse";
+export { SampleResponse } from "./Rubric/SampleResponse";
 
 //
 // ApiModel
 //
-
 export {
     Resource,
     parseQueryString,
