@@ -6,7 +6,7 @@ import * as Accessibility from '../Accessibility/AccessibilityModels';
 import * as AccessibilityModal from '../Accessibility/AccessibilityModal';
 import * as Dropdown from '../DropDown/DropDown';
 import { MoreLikeThisModal } from '../Modals/MoreLikeThisModal';
-import  {AboutItem} from '../AboutItem/AboutItem';
+import { AboutItem } from '../AboutItem/AboutItem';
 import { AboutPTModal } from '../PerformanceType/AboutPT';
 import { AboutPTPopupModal } from '../PerformanceType/AboutPTPopup';
 import * as Braille from '../Accessibility/Braille';
@@ -14,7 +14,7 @@ import { ShareModal } from '../Modals/ShareModal';
 import * as ItemPageModels from './ItemPageModels';
 import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
 import * as $ from 'jquery';
-import {AboutItemModel} from '../AboutItem/AboutItemModels';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
 import { AccResourceGroupModel, ResourceSelectionsModel } from '../Accessibility/AccessibilityModels';
 import { ItemAccessibilityModal } from '../Accessibility/AccessibilityModal';
 

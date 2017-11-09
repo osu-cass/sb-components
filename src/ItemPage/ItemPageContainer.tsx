@@ -2,8 +2,8 @@
 import '@osu-cass/smarter-balanced-styles/styles/advanced-filter.less'
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {AccResourceGroupModel, isBrailleEnabled, ResourceSelectionsModel, AccessibilityResourceModel} from '../Accessibility/AccessibilityModels';
-import  {AboutItemModel} from '../AboutItem/AboutItemModels';
+import { AccResourceGroupModel, isBrailleEnabled, ResourceSelectionsModel, AccessibilityResourceModel } from '../Accessibility/AccessibilityModels';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
 import { ItemPage } from './ItemPage';
 import { ItemModel, ItemIsaapModel, ItemPageModel, ItemIdentifierModel, toCookie, toiSAAP, resetResource } from './ItemPageModels';
 import { Resource, get, getResourceContent, parseQueryString } from '../ApiModel';
