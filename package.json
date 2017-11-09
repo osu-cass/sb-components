@@ -11,7 +11,8 @@
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "node_modules/.bin/tsc && cp -r ./src/Styles ./build/Styles"
+    "build": "tsc && cp -r ./src/Styles ./build/Styles",
+    "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,12 @@
     "babel-runtime": "~6.26.0",
     "bootstrap": "3.3.7",
     "css-loader": "~0.28.7",
+    "dts-generator": "^2.1.0",
+    "eslint": "~4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
     "font-awesome": "~4.7.0",
     "identity-obj-proxy": "~3.0.0",
     "jest": "~21.2.1",
@@ -62,6 +69,7 @@
     "less": "~2.7.3",
     "less-loader": "~4.0.5",
     "postcss-loader": "~2.0.8",
+    "prettier": "~1.8.2",
     "react": "~16.0.0",
     "react-dom": "~16.0.0",
     "react-router-dom": "4.1.1",
@@ -69,9 +77,9 @@
     "style-loader": "~0.19.0",
     "ts-jest": "~21.1.2",
     "typescript": "~2.5.3",
-    "webpack": "~3.8.1",
+    "typescript-eslint-parser": "~8.0.1",
     "url-loader": "0.5.9",
-    "dts-generator": "^2.1.0"
+    "webpack": "~3.8.1"
   },
   "jest": {
     "transform": {

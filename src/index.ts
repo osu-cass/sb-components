@@ -8,7 +8,7 @@ export { AboutItem } from "./AboutItem/AboutItem";
 //
 // About Test Items
 //
-export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer"
+export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer";
 export { InteractionTypeModel, AboutTestItemsModel, aboutItemsClient } from "./AboutTestItems/AboutTestItemsModels";
 
 //
@@ -18,7 +18,7 @@ export {
     AccessibilityResourceModel,
     AccResourceGroupModel,
     getResource,
-    getBrailleAccommodation
+    getBrailleAccommodation,
 } from "./Accessibility/AccessibilityModels";
 export { ItemAccessibilityModalProps } from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
@@ -41,7 +41,7 @@ export {
     FilterCategoryModel,
     AdvancedFilterCategoryModel,
     TechType,
-    AdvancedFiltersModel
+    AdvancedFiltersModel,
 } from "./Filter/AdvancedFilterModel";
 
 //
@@ -73,7 +73,7 @@ export {
     resetResource,
     itemAccessibilityClient,
     itemPageClient,
-    aboutThisItemViewModelClient
+    aboutThisItemViewModelClient,
 } from "./ItemPage/ItemPageModels";
 
 //
@@ -85,7 +85,7 @@ export {
     ClaimModel,
     TargetModel,
     SearchAPIParamsModel,
-    ItemsSearchModel
+    ItemsSearchModel,
 } from "./ItemSearch/ItemSearchModels";
 
 //
@@ -114,7 +114,7 @@ export { AboutPTModal } from "./PerformanceType/AboutPT";
 export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 
 //
-// Rubric 
+// Rubric
 //
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
@@ -128,5 +128,5 @@ export {
     Resource,
     parseQueryString,
     getResourceContent,
-    get
+    get,
 } from "./ApiModel";

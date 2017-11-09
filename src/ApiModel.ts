@@ -1,4 +1,4 @@
-﻿import * as $ from 'jquery';
+import * as $ from "jquery";
 
 export interface Loading {
     kind: "loading";
@@ -25,7 +25,7 @@ export interface Reloading<T> {
 export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure | NotLoaded;
 
 export function parseQueryString(url: string): { [key: string]: string[] | undefined } {
-    let queryObject: { [key: string]: string[] | undefined } = {};
+    const queryObject: { [key: string]: string[] | undefined } = {};
     const pairs = url.slice(url.indexOf("?") + 1).split("&");
     for (const pair of pairs) {
         const pairParts = pair.split("=");
@@ -42,17 +42,16 @@ export function getResourceContent<T>(resource: Resource<T>): T | undefined {
     }
 }
 
-
 export async function get<T>(url: string, params?: object) {
     return new Promise<T>((resolve, reject) => {
         $.ajax({
-            url: url,
+            url,
             dataType: "json",
             traditional: true,
             data: params,
             success: resolve,
             error: (xhr, status, err) => reject(new Error(err)),
-            type: "GET"
-        })
+            type: "GET",
+        });
     });
 }

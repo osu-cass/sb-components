@@ -1,42 +1,61 @@
-﻿import * as React from 'react';
+import * as React from "react";
 
 export interface CollapsibleProps {
-    className?: string;
-    style?: React.CSSProperties;
-    label: string;
+  className?: string;
+  style?: React.CSSProperties;
+  label: string;
 }
 
 export interface CollapsibleState {
-    isCollapsed: boolean;
+  isCollapsed: boolean;
 }
 
-export class Collapsible extends React.Component<CollapsibleProps, CollapsibleState> {
-    constructor(props: CollapsibleProps) {
-        super(props);
-        this.state = {
-            isCollapsed: true
-        }
-    }
+export class Collapsible extends React.Component<
+  CollapsibleProps,
+  CollapsibleState
+> {
+  constructor(props: CollapsibleProps) {
+    super(props);
+    this.state = {
+      isCollapsed: true
+    };
+  }
 
-    toggleCollapsed() {
-        this.setState({
-            isCollapsed: !this.state.isCollapsed
-        });
-    }
+  toggleCollapsed() {
+    this.setState({
+      isCollapsed: !this.state.isCollapsed
+    });
+  }
 
-    render() {
-        let label = (this.state.isCollapsed ? "▶ " : "▼ ") + this.props.label;
-        let style: React.CSSProperties = this.state.isCollapsed ? { display: "none" } : {};
+  render() {
+    const label = (this.state.isCollapsed ? "▶ " : "▼ ") + this.props.label;
+    const style: React.CSSProperties = this.state.isCollapsed
+      ? { display: "none" }
+      : {};
 
-        return (
-            <div className={this.props.className} style={this.props.style} aria-expanded={!this.state.isCollapsed}>
-                <a role="button" className="collapsible-label link-button" href="#" onClick={() => this.toggleCollapsed()} tabIndex={0}>
-                    {label}
-                </a>
-                <div className="collapsible-body" style={style} aria-hidden={this.state.isCollapsed}>
-                    {this.props.children}
-                </div>
-            </div>
-        );
-    }
+    return (
+      <div
+        className={this.props.className}
+        style={this.props.style}
+        aria-expanded={!this.state.isCollapsed}
+      >
+        <a
+          role="button"
+          className="collapsible-label link-button"
+          href="#"
+          onClick={() => this.toggleCollapsed()}
+          tabIndex={0}
+        >
+          {label}
+        </a>
+        <div
+          className="collapsible-body"
+          style={style}
+          aria-hidden={this.state.isCollapsed}
+        >
+          {this.props.children}
+        </div>
+      </div>
+    );
+  }
 }
