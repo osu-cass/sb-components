@@ -6,13 +6,12 @@
   "files": [
     "build"
   ],
-  "types": "./build/index.d.ts",
+  "types": "./build/typings/index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "node_modules/.bin/tsc && cp index.d.ts ./build/ && cp -r ./src/Styles ./build/Styles",
-    "generate-types": "node generateTypes.js"
+    "build": "node_modules/.bin/tsc && cp -r ./src/Styles ./build/Styles"
   },
   "repository": {
     "type": "git",
