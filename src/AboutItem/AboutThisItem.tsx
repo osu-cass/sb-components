@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import * as Collapsible from '../Rubric/Collapsible';
-import {AboutThisItemViewModel} from './AboutItemModels';
+import { AboutThisItemViewModel } from './AboutItemModels';
 import { Rubric } from '../Rubric/Rubric';
 import { AboutThisItemDetail } from './AboutItemDetail';
 

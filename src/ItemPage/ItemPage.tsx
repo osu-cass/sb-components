@@ -6,7 +6,7 @@ import * as Accessibility from '../Accessibility/Accessibility';
 import * as AccessibilityModal from '../Accessibility/AccessibilityModal';
 import * as Dropdown from '../DropDown/DropDown';
 import { MoreLikeThisModal } from '../Modals/MoreLikeThisModal';
-import  {AboutThisItem} from '../AboutItem/AboutThisItem';
+import { AboutThisItem } from '../AboutItem/AboutThisItem';
 import { AboutPTModal } from '../PerformanceType/AboutPT';
 import { AboutPTPopupModal } from '../PerformanceType/AboutPTPopup';
 import * as Braille from '../Accessibility/Braille';
@@ -14,7 +14,7 @@ import { ShareModal } from '../Modals/ShareModal';
 import * as ItemPageModels from './ItemPageModels';
 import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
 import * as $ from 'jquery';
-import {AboutThisItemViewModel} from '../AboutItem/AboutItemModels';
+import { AboutThisItemViewModel } from '../AboutItem/AboutItemModels';
 
 
 export interface ItemPageProps extends ItemPageModels.ItemPageViewModel {

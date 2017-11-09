@@ -8,7 +8,7 @@ import { ItemPage } from './ItemPage';
 import * as ItemPageModels from './ItemPageModels';
 import { Resource, get, getResourceContent, parseQueryString } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
-import {AboutThisItemViewModel} from '../AboutItem/AboutItemModels';
+import { AboutThisItemViewModel } from '../AboutItem/AboutItemModels';
 
 
 export const AboutThisItemViewModelClient = (params: ItemPageModels.Item) =>

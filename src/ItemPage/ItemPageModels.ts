@@ -2,9 +2,9 @@
 import { Props as moreLikeThis } from '../Modals/MoreLikeThisModal';
 import * as Dropdown from '../DropDown/DropDown';
 
-export interface ItemIdentifier extends Item{
+export interface ItemIdentifier extends Item {
     itemName: string;
-  
+
 }
 
 export interface Item {
