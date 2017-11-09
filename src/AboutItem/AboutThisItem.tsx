@@ -30,7 +30,7 @@ export class AboutThisItemComponent extends React.Component<Props, {}> {
                             <h4 className="modal-title">About This Item</h4>
                         </div>
                         <div className="modal-body">
-                            <AboutItemDetail {...this.props} />
+                            <AboutThisItemDetail {...this.props} />
                             {rubrics}
                         </div>
                         <div className="modal-footer">

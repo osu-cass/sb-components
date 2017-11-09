@@ -105,3 +105,14 @@ export { RubricEntry } from "./Rubric/RubricEntry";
 // SampleResponse Component
 //
 export { SampleResponse } from "./SampleResponse/SampleResponse";
+
+//
+// ApiModel
+//
+
+export {
+    Resource, 
+    parseQueryString, 
+    getResourceContent, 
+    get 
+} from "./ApiModel";

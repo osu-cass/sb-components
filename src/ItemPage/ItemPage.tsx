@@ -5,12 +5,12 @@ import * as ReactDOM from 'react-dom';
 import * as Accessibility from '../Accessibility/Accessibility';
 import * as AccessibilityModal from '../Accessibility/AccessibilityModal';
 import * as Dropdown from '../DropDown/DropDown';
-import * as MoreLikeThis from '../Modals/MoreLikeThisModal';
+import { MoreLikeThisModal } from '../Modals/MoreLikeThisModal';
 import * as AboutThisItem from '../AboutItem/AboutThisItem';
-import * as AboutPT from '../PerformanceType/AboutPT';
-import * as AboutPTPopup from '../PerformanceType/AboutPTPopup';
+import { AboutPTModal } from '../PerformanceType/AboutPT';
+import { AboutPTPopupModal } from '../PerformanceType/AboutPTPopup';
 import * as Braille from '../Accessibility/Braille';
-import * as Share from '../Modals/ShareModal';
+import { ShareModal } from '../Modals/ShareModal';
 import * as ItemPageModels from './ItemPageModels';
 import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
 import * as $ from 'jquery';
@@ -147,10 +147,10 @@ export class Page extends React.Component<Props, {}> {
                     accResourceGroups={this.props.accResourceGroups}
                     onSave={this.props.onSave}
                     onReset={this.props.onReset} />
-                <MoreLikeThis.Modal {...this.props.moreLikeThisVM} />
-                <Share.ShareModal iSAAP={isaap} />
-                <AboutPTPopup.Modal subject={this.props.subject} description={this.props.performanceItemDescription} isPerformance={this.props.isPerformanceItem} />
-                <AboutPT.Modal subject={this.props.subject} description={this.props.performanceItemDescription} />
+                <MoreLikeThisModal {...this.props.moreLikeThisVM} />
+                <ShareModal iSAAP={isaap} />
+                <AboutPTPopupModal subject={this.props.subject} description={this.props.performanceItemDescription} isPerformance={this.props.isPerformanceItem} />
+                <AboutPTModal subject={this.props.subject} description={this.props.performanceItemDescription} />
             </div>
         );
     }

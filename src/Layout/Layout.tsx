@@ -1,12 +1,12 @@
 import * as React from 'react';
  import { NavMenu } from './NavMenu';
 import { Footer } from './Footer';
-import { SbNavLink } from './SbNavLink';
+import { SbNavlinkProps } from './SbNavLink';
 
 
 interface LayoutProps {
     children?: React.ReactNode;
-    links?: SbNavLink[];
+    links?: SbNavlinkProps[];
     siteName: string;
 }
 
