@@ -1,6 +1,6 @@
 ﻿import { ItemCardViewModel } from '../ItemCard/ItemCardModels';
 
-export interface SampleResponse {
+export interface SampleResponseProps {
     purpose: string;
     scorePoint: string;
     name: string;
@@ -10,30 +10,30 @@ export interface SampleResponse {
 export interface RubricSample {
     maxValue: string;
     minValue: string;
-    sampleResponses: SampleResponse[];
+    sampleResponses: SampleResponseProps[];
 }
 
-export interface RubricEntry {
+export interface RubricEntryProps {
     scorepoint: string;
     name: string;
     value: string;
 }
 
-export interface Rubric {
+export interface RubricProps {
     language: string;
-    rubricEntries: RubricEntry[];
+    rubricEntries: RubricEntryProps[];
     samples: RubricSample[];
 }
 
 export interface InteractionType {
     code: string;
     label: string;
-    description: string;
+    description?: string;
     order?: number;
 }
 
 export interface AboutThisItemViewModel {
-    rubrics: Rubric[];
+    rubrics: RubricProps[];
     itemCardViewModel: ItemCardViewModel;
     depthOfKnowledge: string;
     targetDescription: string;

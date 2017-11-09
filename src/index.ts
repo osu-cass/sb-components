@@ -2,16 +2,25 @@
 // AboutItem Components and Models
 //
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
-export * from "./AboutItem/AboutItemModels";
-export { AboutItemComponent } from "./AboutItem/AboutItems";
+export {
+    SampleResponseProps,
+    RubricSample,
+    RubricEntryProps,
+    RubricProps,
+    InteractionType,
+    AboutThisItemViewModel,
+    AboutItemsViewModel
+} from "./AboutItem/AboutItemModels";
+export { AboutItem, AboutItemsClient, AboutItemProps, AboutItemState } from "./AboutItem/AboutItems";
+export { AboutThisItem } from "./AboutItem/AboutThisItem";
 
 //
 // Accessibility Components, Models and Actions
 //
 export {
-    AccessibilityResource, 
-    AccResourceGroup, 
-    getResource, 
+    AccessibilityResource,
+    AccResourceGroup,
+    getResource,
     getBrailleAccommodation
 } from "./Accessibility/Accessibility";
 export { ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
@@ -29,12 +38,12 @@ export { AdvancedFilterContainer } from "./Filter/AdvancedFilterContainer";
 export { BasicFilterContainer } from "./Filter/BasicFilterContainer";
 export { FilterContainer } from "./Filter/FilterContainer";
 export {
-    OptionType, 
-    FilterOption, 
-    BasicFilterCategory, 
-    FilterCategory, 
-    AdvancedFilterCategory, 
-    TechType, 
+    OptionType,
+    FilterOption,
+    BasicFilterCategory,
+    FilterCategory,
+    AdvancedFilterCategory,
+    TechType,
     AdvancedFilters
 } from "./Filter/AdvancedFilterModel";
 
@@ -45,23 +54,39 @@ export {
 export { GradeLevels } from "./GradeLevels/GradeLevels";
 
 //
-// Home Component
-//
-export { Home } from "./Home/Home";
-
-//
 // ItemCard Components, Models, and Actions
 //
 export { ItemCard } from "./ItemCard/ItemCard";
 export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { itemPageLink, ItemCardViewModel } from "./ItemCard/ItemCardModels";
+//
+// Item Page
+//
+export { ItemPage, ItemPageProps } from "./ItemPage/ItemPage";
+export {
+    AboutThisItemViewModelClient,
+    ItemPageClient,
+    ItemAccessibilityClient,
+    ItemPageContainerProps,
+    ItemPageContainer
+} from "./ItemPage/ItemPageContainer";
+export {
+    Item,
+    ItemIdentifier,
+    ItemIsaap,
+    ItemPageViewModel,
+    toCookie,
+    toiSAAP,
+    trimAccResource,
+    addDisabledPlaceholder,
+    resetResource
+} from "./ItemPage/ItemPageModels";
 
 //
 // ItemSearchModels models
 //
 export {
     SubjectClaims,
-    InteractionType,
     Subject,
     Claim,
     Target,
@@ -80,7 +105,7 @@ export { ItemFrame } from "./ItemViewer/ItemViewerFrame";
 export { Layout } from "./Layout/Layout";
 export { Footer } from "./Layout/Footer";
 export { NavMenu } from "./Layout/NavMenu";
-export { SbNavLink } from "./Layout/SbNavLink";
+export { SbNavLink, SbNavlinkProps } from "./Layout/SbNavLink";
 
 //
 // Modals comonents
@@ -111,8 +136,8 @@ export { SampleResponse } from "./SampleResponse/SampleResponse";
 //
 
 export {
-    Resource, 
-    parseQueryString, 
-    getResourceContent, 
-    get 
+    Resource,
+    parseQueryString,
+    getResourceContent,
+    get
 } from "./ApiModel";

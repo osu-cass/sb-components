@@ -4,7 +4,7 @@ import { RubricEntry } from './RubricEntry';
 import { Collapsible } from './Collapsible';
 import { SampleResponse } from '../SampleResponse/SampleResponse';
 
-export class Rubric extends React.Component<AboutItemModels.Rubric, {}> {
+export class Rubric extends React.Component<AboutItemModels.RubricProps, {}> {
 
     renderRubrics() {
         const rubricEntries = this.props.rubricEntries.map((re, i) => <RubricEntry {...re} key={String(i)} />);

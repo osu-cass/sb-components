@@ -9,10 +9,10 @@ import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
 import { Resource, get } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
 
-export const AboutThisClient = (params?: { interactionTypeCode: string }) =>
+export const AboutItemsClient = (params?: { interactionTypeCode: string }) =>
     get<AboutItemModels.AboutItemsViewModel>("/AboutItems/GetItemUrl", params);
 
-export interface State {
+export interface AboutItemState {
     selectedCode?: string;
     itemUrl?: string;
     aboutThisItemViewModel: Resource<AboutItemModels.AboutThisItemViewModel>;
@@ -20,12 +20,12 @@ export interface State {
 
 }
 
-export interface Props extends RouteComponentProps<{}> {
+export interface AboutItemProps extends RouteComponentProps<{}> {
     aboutClient: (params?: { interactionTypeCode: string }) => Promise<AboutItemModels.AboutItemsViewModel>;
 }
 
-export class AboutItemComponent extends React.Component<Props, State>{
-    constructor(props: Props) {
+export class AboutItem extends React.Component<AboutItemProps, AboutItemState>{
+    constructor(props: AboutItemProps) {
         super(props);
         this.state = {
             aboutThisItemViewModel: { kind: "loading" },
@@ -70,7 +70,7 @@ export class AboutItemComponent extends React.Component<Props, State>{
     renderDescription(interactionTypes: AboutItemModels.InteractionType[]) {
         let desc = "";
         for (let it of interactionTypes) {
-            if (it.code === this.state.selectedCode) {
+            if (it.code === this.state.selectedCode && it.description) {
                 desc = it.description;
             }
         }
@@ -126,7 +126,7 @@ export class AboutItemComponent extends React.Component<Props, State>{
                         </div>
                     </div>
                     <ItemFrame url={this.state.itemUrl || ""} />
-                    <AboutThisItem.AboutThisItemComponent {...aboutThisItem.content} />
+                    <AboutThisItem.AboutThisItem {...aboutThisItem.content} />
                 </div>
             );
         }

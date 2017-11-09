@@ -4,13 +4,15 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as Accessibility from '../Accessibility/Accessibility';
 import * as AboutThisItem from '../AboutItem/AboutThisItem';
-import * as ItemPage from './ItemPage';
+import { ItemPage } from './ItemPage';
 import * as ItemPageModels from './ItemPageModels';
 import { Resource, get, getResourceContent, parseQueryString } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
+import {AboutThisItemViewModel} from '../AboutItem/AboutItemModels';
+
 
 export const AboutThisItemViewModelClient = (params: ItemPageModels.Item) =>
-    get<AboutThisItem.Props>("/Item/AboutThisItemViewModel", params);
+    get<AboutThisItemViewModel>("/Item/AboutThisItemViewModel", params);
 export const ItemPageClient = (params: ItemPageModels.Item) =>
     get<ItemPageModels.ItemPageViewModel>("/Item/GetItem", params);
 
@@ -18,17 +20,17 @@ export const ItemAccessibilityClient = (params: ItemPageModels.ItemIsaap) =>
     get<Accessibility.AccResourceGroup[]>("/Item/ItemAccessibility", params);
 
 
-export interface Props extends RouteComponentProps<{}> {
+export interface ItemPageContainerProps extends RouteComponentProps<{}> {
     aboutThisClient: (params: ItemPageModels.Item) =>
-        Promise<AboutThisItem.Props>;
+        Promise<AboutThisItemViewModel>;
     itemPageClient: (params: ItemPageModels.Item) =>
         Promise<ItemPageModels.ItemPageViewModel>;
     itemAccessibilityClient: (params: ItemPageModels.ItemIsaap) =>
         Promise<Accessibility.AccResourceGroup[]>;
 }
 
-export interface State {
-    aboutThisItem: Resource<AboutThisItem.Props>
+export interface ItemPageState {
+    aboutThisItem: Resource<AboutThisItemViewModel>
     itemPageVM: Resource<ItemPageModels.ItemPageViewModel>;
     itemAccessibility: Resource<Accessibility.AccResourceGroup[]>;
     currentItem?: ItemPageModels.ItemIdentifier;
@@ -36,21 +38,21 @@ export interface State {
 
 }
 
-export class ItemPageContainer extends React.Component<Props, State>{
-    constructor(props: Props) {
+export class ItemPageContainer extends React.Component<ItemPageContainerProps, ItemPageState>{
+    constructor(props: ItemPageContainerProps) {
         super(props);
 
         const queryObject = parseQueryString(location.search);
         const itemKey = +(queryObject["itemKey"] || [])[0] || 0;
         const bankKey = +(queryObject["bankKey"] || [])[0] || 0;
         const isaap = (queryObject["isaap"] || [])[0] || "";
-        
+
         const item: ItemPageModels.ItemIsaap = { itemKey: itemKey, bankKey: bankKey, isaap: isaap }
 
         this.state = {
             aboutThisItem: { kind: "loading" },
             itemPageVM: { kind: "loading" },
-            itemAccessibility: {kind: "loading"},
+            itemAccessibility: { kind: "loading" },
             item: item
         }
 
@@ -103,7 +105,7 @@ export class ItemPageContainer extends React.Component<Props, State>{
         return getResourceContent(itemPage);
     }
 
-    private getAboutItem(): AboutThisItem.Props | undefined {
+    private getAboutItem(): AboutThisItemViewModel | undefined {
         const aboutItem = this.state.aboutThisItem;
         return getResourceContent(aboutItem);
     }
@@ -184,7 +186,7 @@ export class ItemPageContainer extends React.Component<Props, State>{
 
     }
 
-    onFetchedUpdatedViewModel(viewModel: AboutThisItem.Props) {
+    onFetchedUpdatedViewModel(viewModel: AboutThisItemViewModel) {
         this.setState({
             aboutThisItem: { kind: "success", content: viewModel }
         });
@@ -205,7 +207,7 @@ export class ItemPageContainer extends React.Component<Props, State>{
 
         if (aboutThisItem && itemPage && itemDetails && itemAccessibility) {
             return <div className="item-page">
-                <ItemPage.Page
+                <ItemPage
                     {...itemPage}
                     aboutThisItemVM={aboutThisItem}
                     onSave={this.onSave}

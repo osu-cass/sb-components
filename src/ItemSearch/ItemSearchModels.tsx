@@ -1,14 +1,12 @@
 ﻿import * as GradeLevels from "../GradeLevels/GradeLevels";
 import * as ItemCardModels from '../ItemCard/ItemCardModels';
+import { InteractionType } from "../AboutItem/AboutItemModels"
 
 export interface SubjectClaims {
     [subject: string]: { text: string; value: string }[];
 }
 
-export interface InteractionType {
-    code: string;
-    label: string;
-}
+
 
 export interface Subject {
     code: string;
