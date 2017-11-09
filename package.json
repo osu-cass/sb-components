@@ -1,17 +1,16 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.3-beta",
+  "version": "0.0.4-beta",
   "description": "Shared components for Smarter Balanced",
-  "main": "index",
+  "main": "./src/index",
   "files": [
     "*"
   ],
-  "types": "./build/index.d.ts",
+  "types": "./src/index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "node_modules/.bin/tsc && cp ./src/index.d.ts ./build/",
     "generate-types": "node generateTypes.js"
   },
   "repository": {
