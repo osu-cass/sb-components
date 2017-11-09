@@ -4,7 +4,7 @@ import { Footer } from './Footer';
 import { SbNavlinkProps } from './SbNavLink';
 
 
-interface LayoutProps {
+export interface LayoutProps {
     children?: React.ReactNode;
     links?: SbNavlinkProps[];
     siteName: string;

@@ -3,12 +3,12 @@ import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { SbNavLink, SbNavlinkProps } from './SbNavLink';
 
-interface Props {
+export interface NavMenuProps {
     links?: SbNavlinkProps[];
     siteName: string;
 }
 
-export class NavMenu extends React.Component<Props, {}> {
+export class NavMenu extends React.Component<NavMenuProps, {}> {
     private renderLinks(){
         const links = this.props.links;
         if(links){
