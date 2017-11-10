@@ -1,13 +1,10 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { BasicFilterContainer, BasicProps} from '../../src/Filter/BasicFilterContainer';
-import { FilterOption, OptionType, BasicFilterCategory } from '../../src/Filter/AdvancedFilterModel';
 import { mockBasicFilterCategories } from './mocks';
+import { BasicFilterContainer, BasicFilterContainerProps } from '../../src';
 
-
-
-const props: BasicProps  = {
+const props: BasicFilterContainerProps  = {
     filterOptions: mockBasicFilterCategories,
     onClick: action("clicked"),
     containsAdvancedFilter: false,

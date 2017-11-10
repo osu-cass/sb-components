@@ -1,27 +1,27 @@
 import * as React from "react";
 import {
-    BasicFilterCategory,
-    AdvancedFilterCategory,
-    FilterOption
+    BasicFilterCategoryModel,
+    AdvancedFilterCategoryModel,
+    FilterOptionModel
 } from "./AdvancedFilterModel";
 import { BasicFilterContainer } from "./BasicFilterContainer";
 import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
 
-export interface FilterProps {
-    basicFilterOptions: BasicFilterCategory[];
-    onBasicFilterClick: (selected: BasicFilterCategory[]) => void;
-    advancedFilterOptions: AdvancedFilterCategory[];
-    onAdvancedFilterClick: (selected: AdvancedFilterCategory[]) => void;
+export interface FilterContainerProps {
+    basicFilterOptions: BasicFilterCategoryModel[];
+    onBasicFilterClick: (selected: BasicFilterCategoryModel[]) => void;
+    advancedFilterOptions: AdvancedFilterCategoryModel[];
+    onAdvancedFilterClick: (selected: AdvancedFilterCategoryModel[]) => void;
 }
 
-export interface FilterState {
-    basicFilters: BasicFilterCategory[];
-    advancedFilters: AdvancedFilterCategory[];
+export interface FilterContainerState {
+    basicFilters: BasicFilterCategoryModel[];
+    advancedFilters: AdvancedFilterCategoryModel[];
     expanded: boolean;
 }
 
-export class FilterContainer extends React.Component<FilterProps, FilterState>{
-    constructor(props: FilterProps) {
+export class FilterContainer extends React.Component<FilterContainerProps, FilterContainerState>{
+    constructor(props: FilterContainerProps) {
         super(props);
         this.state = {
             basicFilters: props.basicFilterOptions,

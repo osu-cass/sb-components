@@ -1,12 +1,12 @@
 ﻿/// <reference types="google.analytics" />
-
+import '../Styles/item.less';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as Accessibility from '../Accessibility/Accessibility';
+import * as Accessibility from '../Accessibility/AccessibilityModels';
 import * as AccessibilityModal from '../Accessibility/AccessibilityModal';
 import * as Dropdown from '../DropDown/DropDown';
 import { MoreLikeThisModal } from '../Modals/MoreLikeThisModal';
-import * as AboutThisItem from '../AboutItem/AboutThisItem';
+import { AboutItem } from '../AboutItem/AboutItem';
 import { AboutPTModal } from '../PerformanceType/AboutPT';
 import { AboutPTPopupModal } from '../PerformanceType/AboutPTPopup';
 import * as Braille from '../Accessibility/Braille';
@@ -14,21 +14,25 @@ import { ShareModal } from '../Modals/ShareModal';
 import * as ItemPageModels from './ItemPageModels';
 import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
 import * as $ from 'jquery';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
+import { AccResourceGroupModel, ResourceSelectionsModel } from '../Accessibility/AccessibilityModels';
+import { ItemAccessibilityModal } from '../Accessibility/AccessibilityModal';
 
-export interface Props extends ItemPageModels.ItemPageViewModel {
-    onSave: (selections: Accessibility.ResourceSelections) => void;
+
+export interface ItemPageProps extends ItemPageModels.ItemPageModel {
+    onSave: (selections: ResourceSelectionsModel) => void;
     onReset: () => void;
-    aboutThisItemVM: AboutThisItem.Props;
-    currentItem: ItemPageModels.ItemIdentifier;
-    accResourceGroups: Accessibility.AccResourceGroup[];
+    aboutThisItemVM: AboutItemModel;
+    currentItem: ItemPageModels.ItemIdentifierModel;
+    accResourceGroups: AccResourceGroupModel[];
 }
 
-export class Page extends React.Component<Props, {}> {
-    constructor(props: Props) {
+export class ItemPage extends React.Component<ItemPageProps, {}> {
+    constructor(props: ItemPageProps) {
         super(props);
     }
 
-    saveOptions = (resourceSelections: Accessibility.ResourceSelections): void => {
+    saveOptions = (resourceSelections: ResourceSelectionsModel): void => {
         this.props.onSave(resourceSelections);
     }
 
@@ -142,8 +146,8 @@ export class Page extends React.Component<Props, {}> {
         let isaap = ItemPageModels.toiSAAP(this.props.accResourceGroups, this.props.defaultIsaapCodes);
         return (
             <div>
-                <AboutThisItem.AboutThisItemComponent {...this.props.aboutThisItemVM} />
-                <AccessibilityModal.ItemAccessibilityModal
+                <AboutItem {...this.props.aboutThisItemVM} />
+                <ItemAccessibilityModal
                     accResourceGroups={this.props.accResourceGroups}
                     onSave={this.props.onSave}
                     onReset={this.props.onReset} />

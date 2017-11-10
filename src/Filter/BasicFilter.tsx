@@ -1,12 +1,13 @@
+import '../Styles/basic-filter.less';
 import * as React from "react";
-import { BasicFilterCategory, FilterOption, OptionType } from './AdvancedFilterModel';
+import { BasicFilterCategoryModel, FilterOptionModel, OptionTypeModel } from './AdvancedFilterModel';
 
-export interface Props extends BasicFilterCategory { 
-    selectedHandler: (data?: FilterOption) => void;
+export interface BasicFilterProps extends BasicFilterCategoryModel { 
+    selectedHandler: (data?: FilterOptionModel) => void;
 }
 
-export class BasicFilter extends React.Component<Props, {}> {
-    constructor(props: Props) {
+export class BasicFilter extends React.Component<BasicFilterProps, {}> {
+    constructor(props: BasicFilterProps) {
         super(props);
     }
 
@@ -15,12 +16,12 @@ export class BasicFilter extends React.Component<Props, {}> {
         let classname = "";
         if(this.props.filterOptions){
             this.props.filterOptions.forEach((t, i) => {                 
-                if(this.props.type == OptionType.DropDown){
+                if(this.props.type == OptionTypeModel.DropDown){
                     tags.push(
                         <option key={t.key} value={t.key}>{t.label}</option>
                     );
                 }
-                else if(this.props.type == OptionType.radioBtn){
+                else if(this.props.type == OptionTypeModel.radioBtn){
                     tags.push(
                         <label key={t.key}><input checked={t.isSelected} type='radio' key={t.key} value={t.key}  onChange={() => this.props.selectedHandler(t)}/>{t.label}</label>
                     );
@@ -38,7 +39,7 @@ export class BasicFilter extends React.Component<Props, {}> {
     renderFilterBody() {
         let tag:JSX.Element; 
         
-        if(this.props.type == OptionType.DropDown){
+        if(this.props.type == OptionTypeModel.DropDown){
             tag = (
                 <select onChange={(e) => this.props.selectedHandler(this.findFilterOption(e.target.value))}>
                     {this.renderTags()}

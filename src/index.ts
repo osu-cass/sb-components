@@ -2,19 +2,25 @@
 // AboutItem Components and Models
 //
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
-export * from "./AboutItem/AboutItemModels";
-export { AboutItemComponent } from "./AboutItem/AboutItems";
+export { AboutItemModel } from "./AboutItem/AboutItemModels";
+export { AboutItem } from "./AboutItem/AboutItem";
+
+//
+// About Test Items
+//
+export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer"
+export { InteractionTypeModel, AboutTestItemsModel, aboutTestItemsClient } from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
 //
 export {
-    AccessibilityResource, 
-    AccResourceGroup, 
-    getResource, 
+    AccessibilityResourceModel,
+    AccResourceGroupModel,
+    getResource,
     getBrailleAccommodation
-} from "./Accessibility/Accessibility";
-export { ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
+} from "./Accessibility/AccessibilityModels";
+export { ItemAccessibilityModalProps } from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
@@ -25,19 +31,20 @@ export { Dropdown } from "./DropDown/DropDown";
 //
 // Filter Components and Models
 //
-export { AdvancedFilterContainer } from "./Filter/AdvancedFilterContainer";
-export { BasicFilterContainer } from "./Filter/BasicFilterContainer";
-export { FilterContainer } from "./Filter/FilterContainer";
+export { AdvancedFilter, AdvancedFilterProps } from "./Filter/AdvancedFilter"
+export { AdvancedFilterContainer, AdvancedFilterContainerProps } from "./Filter/AdvancedFilterContainer";
+export { BasicFilter, BasicFilterProps } from "./Filter/BasicFilter";
+export { BasicFilterContainer, BasicFilterContainerProps } from "./Filter/BasicFilterContainer";
+export { FilterContainer, FilterContainerProps } from "./Filter/FilterContainer";
 export {
-    OptionType, 
-    FilterOption, 
-    BasicFilterCategory, 
-    FilterCategory, 
-    AdvancedFilterCategory, 
-    TechType, 
-    AdvancedFilters
+    OptionTypeModel,
+    FilterOptionModel,
+    BasicFilterCategoryModel,
+    FilterCategoryModel,
+    AdvancedFilterCategoryModel,
+    TechType,
+    AdvancedFiltersModel
 } from "./Filter/AdvancedFilterModel";
-
 
 //
 // Grade Levels
@@ -45,28 +52,42 @@ export {
 export { GradeLevels } from "./GradeLevels/GradeLevels";
 
 //
-// Home Component
-//
-export { Home } from "./Home/Home";
-
-//
 // ItemCard Components, Models, and Actions
 //
 export { ItemCard } from "./ItemCard/ItemCard";
 export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
-export { itemPageLink, ItemCardViewModel } from "./ItemCard/ItemCardModels";
+export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
+
+//
+// Item Page
+//
+export { ItemPage, ItemPageProps } from "./ItemPage/ItemPage";
+export { ItemPageContainerProps, ItemPageContainer } from "./ItemPage/ItemPageContainer";
+export {
+    ItemModel,
+    ItemIdentifierModel,
+    ItemIsaapModel,
+    ItemPageModel,
+    toCookie,
+    toiSAAP,
+    trimAccResource,
+    addDisabledPlaceholder,
+    resetResource,
+    itemAccessibilityClient,
+    itemPageClient,
+    aboutThisItemViewModelClient
+} from "./ItemPage/ItemPageModels";
 
 //
 // ItemSearchModels models
 //
 export {
-    SubjectClaims,
-    InteractionType,
-    Subject,
-    Claim,
-    Target,
-    SearchAPIParams,
-    ItemsSearchViewModel
+    SubjectClaimsModel,
+    SubjectModel,
+    ClaimModel,
+    TargetModel,
+    SearchAPIParamsModel,
+    ItemsSearchModel
 } from "./ItemSearch/ItemSearchModels";
 
 //
@@ -80,10 +101,10 @@ export { ItemFrame } from "./ItemViewer/ItemViewerFrame";
 export { Layout } from "./Layout/Layout";
 export { Footer } from "./Layout/Footer";
 export { NavMenu } from "./Layout/NavMenu";
-export { SbNavLink } from "./Layout/SbNavLink";
+export { SbNavLink, SbNavlinkProps } from "./Layout/SbNavLink";
 
 //
-// Modals comonents
+// Modals Components
 //
 export { MoreLikeThisModal } from "./Modals/MoreLikeThisModal";
 export { ShareModal } from "./Modals/ShareModal";
@@ -100,19 +121,14 @@ export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
 export { RubricEntry } from "./Rubric/RubricEntry";
-
-//
-// SampleResponse Component
-//
-export { SampleResponse } from "./SampleResponse/SampleResponse";
+export { SampleResponse } from "./Rubric/SampleResponse";
 
 //
 // ApiModel
 //
-
 export {
-    Resource, 
-    parseQueryString, 
-    getResourceContent, 
-    get 
+    Resource,
+    parseQueryString,
+    getResourceContent,
+    get
 } from "./ApiModel";

@@ -1,4 +1,5 @@
-﻿import * as React from 'react';
+﻿import '../Styles/item-frame.less';
+import * as React from 'react';
 
 export interface FrameProps {
     url: string;

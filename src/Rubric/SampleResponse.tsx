@@ -1,8 +1,8 @@
 ﻿import * as React from 'react';
-import { Collapsible } from '../Rubric/Collapsible';
-import * as AboutItemModels from '../AboutItem/AboutItemModels';
+import { Collapsible } from './Collapsible';
+import { SampleResponseModel } from './RubricModels';
 
-export class SampleResponse extends React.Component<AboutItemModels.SampleResponse, {}> {
+export class SampleResponse extends React.Component<SampleResponseModel, {}> {
     render() {
         const pointLabel = this.props.scorePoint == "1" ? "point" : "points";
         const label = `${this.props.name} (${this.props.scorePoint} ${pointLabel})`;

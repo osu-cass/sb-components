@@ -1,25 +1,18 @@
 ﻿import * as React from 'react';
+import {DropDownSelectionModel} from './DropDownModels'
 
-export interface Selection {
-    disabled: boolean;
-    label: string;
-    selectionCode: string;
-    order: number;
-    hidden: boolean;
-}
-
-export interface Props {
+export interface DropdownProps {
     label: string;
     disabled: boolean;
     selectionCode: string;
-    selections: Selection[];
+    selections: DropDownSelectionModel[];
     updateSelection(selectionCode: string, resourceCode: string): void;
     defaultSelection: string;
     resourceCode: string;
 }
 
-export class Dropdown extends React.Component<Props, {}> {
-    constructor(props: Props) {
+export class Dropdown extends React.Component<DropdownProps, {}> {
+    constructor(props: DropdownProps) {
         super(props);
     }
 
@@ -27,7 +20,7 @@ export class Dropdown extends React.Component<Props, {}> {
         this.props.updateSelection(event.currentTarget.value, this.props.resourceCode);
     }
 
-    renderOption = (selection: Selection) => {
+    renderOption = (selection: DropDownSelectionModel) => {
         const disabledCSS: string = selection.disabled ? "option-disabled" : "option-enabled";
         const label = this.props.disabled ? "" : selection.label;
         return (

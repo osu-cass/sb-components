@@ -1,40 +1,40 @@
-import {Subject} from "../ItemSearch/ItemSearchModels";
+import {SubjectModel} from '../ItemSearch/ItemSearchModels';
 
-export enum OptionType {
+export enum OptionTypeModel {
     inputBox,
     button,
     radioBtn,
     DropDown
 }
 
-export interface FilterOption {
+export interface FilterOptionModel {
     label: string;
     key: string;
     isSelected: boolean;
 }
 
-export interface BasicFilterCategory extends FilterCategory{
-    type: OptionType;
+export interface BasicFilterCategoryModel extends FilterCategoryModel{
+    type: OptionTypeModel;
 }
 
-export interface FilterCategory {
+export interface FilterCategoryModel {
     disabled: boolean;
     label: string;
-    filterOptions: FilterOption[];
+    filterOptions: FilterOptionModel[];
     helpText?: string;
 }
 
 
-export interface AdvancedFilterCategory extends FilterCategory {
+export interface AdvancedFilterCategoryModel extends FilterCategoryModel {
     isMultiSelect: boolean;
-    filterOptions: FilterOption[];
+    filterOptions: FilterOptionModel[];
     displayAllButton: boolean;
 }
 
-export interface TechType extends Subject { }
+export interface TechType extends SubjectModel { }
 
-export interface AdvancedFilters {
-    subjects: AdvancedFilterCategory;
-    grades: AdvancedFilterCategory;
-    techTypes: AdvancedFilterCategory;
+export interface AdvancedFiltersModel {
+    subjects: AdvancedFilterCategoryModel;
+    grades: AdvancedFilterCategoryModel;
+    techTypes: AdvancedFilterCategoryModel;
 }

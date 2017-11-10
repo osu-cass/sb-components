@@ -1,56 +1,46 @@
 ﻿import '../Styles/item.less';
-import '@osu-cass/smarter-balanced-styles/styles/advanced-filter.less'
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as Accessibility from '../Accessibility/Accessibility';
-import * as AboutThisItem from '../AboutItem/AboutThisItem';
-import * as ItemPage from './ItemPage';
-import * as ItemPageModels from './ItemPageModels';
+import { AccResourceGroupModel, isBrailleEnabled, ResourceSelectionsModel, AccessibilityResourceModel } from '../Accessibility/AccessibilityModels';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
+import { ItemPage } from './ItemPage';
+import { ItemModel, ItemIsaapModel, ItemPageModel, ItemIdentifierModel, toCookie, toiSAAP, resetResource } from './ItemPageModels';
 import { Resource, get, getResourceContent, parseQueryString } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
 
-export const AboutThisItemViewModelClient = (params: ItemPageModels.Item) =>
-    get<AboutThisItem.Props>("/Item/AboutThisItemViewModel", params);
-export const ItemPageClient = (params: ItemPageModels.Item) =>
-    get<ItemPageModels.ItemPageViewModel>("/Item/GetItem", params);
-
-export const ItemAccessibilityClient = (params: ItemPageModels.ItemIsaap) =>
-    get<Accessibility.AccResourceGroup[]>("/Item/ItemAccessibility", params);
-
-
-export interface Props extends RouteComponentProps<{}> {
-    aboutThisClient: (params: ItemPageModels.Item) =>
-        Promise<AboutThisItem.Props>;
-    itemPageClient: (params: ItemPageModels.Item) =>
-        Promise<ItemPageModels.ItemPageViewModel>;
-    itemAccessibilityClient: (params: ItemPageModels.ItemIsaap) =>
-        Promise<Accessibility.AccResourceGroup[]>;
+export interface ItemPageContainerProps extends RouteComponentProps<{}> {
+    aboutThisClient: (params: ItemModel) =>
+        Promise<AboutItemModel>;
+    itemPageClient: (params: ItemModel) =>
+        Promise<ItemPageModel>;
+    itemAccessibilityClient: (params: ItemIsaapModel) =>
+        Promise<AccResourceGroupModel[]>;
 }
 
-export interface State {
-    aboutThisItem: Resource<AboutThisItem.Props>
-    itemPageVM: Resource<ItemPageModels.ItemPageViewModel>;
-    itemAccessibility: Resource<Accessibility.AccResourceGroup[]>;
-    currentItem?: ItemPageModels.ItemIdentifier;
-    item: ItemPageModels.Item;
+export interface ItemPageState {
+    aboutThisItem: Resource<AboutItemModel>
+    itemPageVM: Resource<ItemPageModel>;
+    itemAccessibility: Resource<AccResourceGroupModel[]>;
+    currentItem?: ItemIdentifierModel;
+    item: ItemModel;
 
 }
 
-export class ItemPageContainer extends React.Component<Props, State>{
-    constructor(props: Props) {
+export class ItemPageContainer extends React.Component<ItemPageContainerProps, ItemPageState>{
+    constructor(props: ItemPageContainerProps) {
         super(props);
 
         const queryObject = parseQueryString(location.search);
         const itemKey = +(queryObject["itemKey"] || [])[0] || 0;
         const bankKey = +(queryObject["bankKey"] || [])[0] || 0;
         const isaap = (queryObject["isaap"] || [])[0] || "";
-        
-        const item: ItemPageModels.ItemIsaap = { itemKey: itemKey, bankKey: bankKey, isaap: isaap }
+
+        const item: ItemIsaapModel = { itemKey: itemKey, bankKey: bankKey, isaap: isaap }
 
         this.state = {
             aboutThisItem: { kind: "loading" },
             itemPageVM: { kind: "loading" },
-            itemAccessibility: {kind: "loading"},
+            itemAccessibility: { kind: "loading" },
             item: item
         }
 
@@ -69,9 +59,9 @@ export class ItemPageContainer extends React.Component<Props, State>{
         const itemPage = this.getItemPage();
         const itemAcc = this.getItemAccessibility();
 
-        let currentItem: ItemPageModels.ItemIdentifier | undefined = undefined;
+        let currentItem: ItemIdentifierModel | undefined = undefined;
         if (itemPage && itemAcc) {
-            currentItem = Accessibility.isBrailleEnabled(itemAcc) ?
+            currentItem = isBrailleEnabled(itemAcc) ?
                 itemPage.brailleItem : itemPage.nonBrailleItem;
         }
 
@@ -81,14 +71,14 @@ export class ItemPageContainer extends React.Component<Props, State>{
 
     }
 
-    onGetItemPage(data: ItemPageModels.ItemPageViewModel) {
+    onGetItemPage(data: ItemPageModel) {
         this.setState({
             itemPageVM: { kind: "success", content: data }
         });
 
     }
 
-    onGetItemAccessibility(data: Accessibility.AccResourceGroup[]) {
+    onGetItemAccessibility(data: AccResourceGroupModel[]) {
         this.setState({
             itemAccessibility: { kind: "success", content: data }
         });
@@ -98,32 +88,32 @@ export class ItemPageContainer extends React.Component<Props, State>{
         console.error(err);
     }
 
-    private getItemPage(): ItemPageModels.ItemPageViewModel | undefined {
+    private getItemPage(): ItemPageModel | undefined {
         const itemPage = this.state.itemPageVM;
         return getResourceContent(itemPage);
     }
 
-    private getAboutItem(): AboutThisItem.Props | undefined {
+    private getAboutItem(): AboutItemModel | undefined {
         const aboutItem = this.state.aboutThisItem;
         return getResourceContent(aboutItem);
     }
 
-    private getItemAccessibility(): Accessibility.AccResourceGroup[] | undefined {
+    private getItemAccessibility(): AccResourceGroupModel[] | undefined {
         const itemAcc = this.state.itemAccessibility;
         return getResourceContent(itemAcc);
     }
 
 
 
-    onSave = (selections: Accessibility.ResourceSelections) => {
+    onSave = (selections: ResourceSelectionsModel) => {
         const itemAcc = this.getItemAccessibility();
         const itemPage = this.getItemPage();
         if (itemPage && itemAcc) {
 
-            const newGroups: Accessibility.AccResourceGroup[] = [];
+            const newGroups: AccResourceGroupModel[] = [];
             for (let group of itemAcc) {
                 const newGroup = { ...group };
-                const newResources: Accessibility.AccessibilityResource[] = [];
+                const newResources: AccessibilityResourceModel[] = [];
                 for (let res of newGroup.accessibilityResources) {
                     const newRes = { ...res };
                     newRes.currentSelectionCode = selections[newRes.resourceCode] || newRes.currentSelectionCode;
@@ -144,8 +134,8 @@ export class ItemPageContainer extends React.Component<Props, State>{
 
     }
 
-    private updateCookie(cookieName: string, accGroups?: Accessibility.AccResourceGroup[]): void {
-        let cookieValue = (accGroups) ? ItemPageModels.toCookie(accGroups) : "";
+    private updateCookie(cookieName: string, accGroups?: AccResourceGroupModel[]): void {
+        let cookieValue = (accGroups) ? toCookie(accGroups) : "";
         document.cookie = cookieName.concat("=", cookieValue, "; path=/");
     }
 
@@ -159,7 +149,7 @@ export class ItemPageContainer extends React.Component<Props, State>{
 
             const newAccResourceGroups = itemAcc.map(g => {
                 const newGroup = { ...g };
-                newGroup.accessibilityResources = newGroup.accessibilityResources.map(ItemPageModels.resetResource);
+                newGroup.accessibilityResources = newGroup.accessibilityResources.map(resetResource);
                 return newGroup;
             });
 
@@ -177,14 +167,14 @@ export class ItemPageContainer extends React.Component<Props, State>{
     fetchUpdatedAboutThisItem() {
         const item = this.state.currentItem;
         if (item) {
-            AboutThisItemViewModelClient(item)
+            this.props.aboutThisClient(item)
                 .then((data) => this.onFetchedUpdatedViewModel(data))
                 .catch(err => this.onError(err));
         }
 
     }
 
-    onFetchedUpdatedViewModel(viewModel: AboutThisItem.Props) {
+    onFetchedUpdatedViewModel(viewModel: AboutItemModel) {
         this.setState({
             aboutThisItem: { kind: "success", content: viewModel }
         });
@@ -205,7 +195,7 @@ export class ItemPageContainer extends React.Component<Props, State>{
 
         if (aboutThisItem && itemPage && itemDetails && itemAccessibility) {
             return <div className="item-page">
-                <ItemPage.Page
+                <ItemPage
                     {...itemPage}
                     aboutThisItemVM={aboutThisItem}
                     onSave={this.onSave}

@@ -13,7 +13,7 @@ function getCookie(name: string): string | null {
         })[0] || null;
 }
 
-export interface Props {
+export interface BrailleLinkProps {
     currentSelectionCode: string;
     brailleItemCodes: string[];
     braillePassageCodes: string[];
@@ -21,12 +21,12 @@ export interface Props {
     itemKey: number;
 }
 
-export interface State {
+export interface BrailleLinkState {
     displaySpinner: boolean;
 
 }
-export class BrailleLink extends React.Component<Props, State> {
-    constructor(props: Props) {
+export class BrailleLink extends React.Component<BrailleLinkProps, BrailleLinkState> {
+    constructor(props: BrailleLinkProps) {
         super(props);
         this.state = {
             displaySpinner: false

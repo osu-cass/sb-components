@@ -4,6 +4,8 @@
       "noImplicitAny": true,
       "noEmitOnError": false,
       "removeComments": false,
+      "declaration": true,
+      "declarationDir": "./build/typings",
       "sourceMap": true,
       "module": "commonjs",
       "target": "es5",

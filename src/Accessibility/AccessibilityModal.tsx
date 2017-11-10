@@ -1,10 +1,10 @@
 ﻿import * as React from 'react';
-import * as Accessibility from './Accessibility';
+import * as Accessibility from './AccessibilityModels';
 import * as Dropdown from '../DropDown/DropDown';
 
-export interface Props {
-    accResourceGroups: Accessibility.AccResourceGroup[];
-    onSave(selections: Accessibility.ResourceSelections): void;
+export interface ItemAccessibilityModalProps {
+    accResourceGroups: Accessibility.AccResourceGroupModel[];
+    onSave(selections: Accessibility.ResourceSelectionsModel): void;
     onReset(): void;
 }
 
@@ -12,14 +12,14 @@ export interface IsResourceExpanded {
     [resourceType: string]: boolean;
 }
 
-export interface State {
+export interface ItemAccessibilityModalState {
     resourceTypeExpanded: IsResourceExpanded;
-    resourceSelections: Accessibility.ResourceSelections;
+    resourceSelections: Accessibility.ResourceSelectionsModel;
 }
 
-export class ItemAccessibilityModal extends React.Component<Props, State> {
+export class ItemAccessibilityModal extends React.Component<ItemAccessibilityModalProps, ItemAccessibilityModalState> {
 
-    constructor(props: Props) {
+    constructor(props: ItemAccessibilityModalProps) {
         super(props);
 
         const expandeds: IsResourceExpanded = {};
@@ -100,7 +100,7 @@ export class ItemAccessibilityModal extends React.Component<Props, State> {
         let dropdowns = resources.map(res => {
             let selectedCode = (this.state.resourceSelections || {})[res.resourceCode] || res.currentSelectionCode;
             let selections = res.selections.filter(s => !s.hidden);
-            let ddprops: Dropdown.Props = {
+            let ddprops: Dropdown.DropdownProps = {
                 defaultSelection: res.currentSelectionCode,
                 label: res.label,
                 selections: selections,

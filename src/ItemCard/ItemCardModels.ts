@@ -5,7 +5,7 @@ export function itemPageLink(bankKey: number, itemKey: number) {
     window.location.href = "/Item?bankKey=" + bankKey + "&itemKey=" + itemKey;
 }
 
-export interface ItemCardViewModel {
+export interface ItemCardModel {
     bankKey: number;
     itemKey: number;
     title: string;
