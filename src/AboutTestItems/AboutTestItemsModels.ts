@@ -15,5 +15,5 @@ export interface AboutTestItemsModel {
     aboutThisItemViewModel: AboutItemModel;
 }
 
-export const aboutItemsClient = (params?: { interactionTypeCode: string }) =>
-    get<AboutItemModel>("/AboutItems/GetItemUrl", params);
+export const aboutTestItemsClient = (params?: { interactionTypeCode: string }) =>
+    get<AboutTestItemsModel>("/AboutItems/GetItemUrl", params);

@@ -1,5 +1,10 @@
-import { AdvancedFilterProps } from '../../src/Filter/AdvancedFilter';
-import { FilterOptionModel, OptionTypeModel, AdvancedFilterCategoryModel, BasicFilterCategoryModel } from '../../src/Filter/AdvancedFilterModel';
+import { 
+  AdvancedFilterProps,
+   FilterOptionModel, 
+   OptionTypeModel, 
+   AdvancedFilterCategoryModel, 
+   BasicFilterCategoryModel 
+  } from '../../src';
 import { action } from '@storybook/addon-actions';
 
 const gradeFilterOptions: FilterOptionModel[] = [

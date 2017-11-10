@@ -1,5 +1,5 @@
 ﻿/// <reference types="google.analytics" />
-
+import '../Styles/item.less';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as Accessibility from '../Accessibility/AccessibilityModels';

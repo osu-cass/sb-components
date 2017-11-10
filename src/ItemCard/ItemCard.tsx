@@ -1,8 +1,7 @@
-﻿import * as React from 'react';
+﻿import '../Styles/item-card.less'
+import * as React from 'react';
 import * as GradeLevels from '../GradeLevels/GradeLevels';
 import * as ItemCardModels from './ItemCardModels';
-
-
 
 export class ItemCard extends React.Component<ItemCardModels.ItemCardModel, {}> {
 

@@ -1,8 +1,12 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { BasicFilter, BasicFilterProps } from '../../src/Filter/BasicFilter';
-import { FilterOptionModel, OptionTypeModel, BasicFilterCategoryModel } from '../../src/Filter/AdvancedFilterModel';
+import { 
+    BasicFilter, 
+    BasicFilterProps,  
+    FilterOptionModel, 
+    OptionTypeModel, 
+    BasicFilterCategoryModel } from '../../src/';
 import {CenterDecorator} from  '../CenterDecorator';
 
 const basicFilterOption:FilterOptionModel = {

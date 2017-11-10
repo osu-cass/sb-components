@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AdvancedFilter } from '../../src/Filter/AdvancedFilter';
+import { AdvancedFilter } from '../../src';
 import { advancedFilterProps, advancedFilterOptionsArray } from './mocks';
 import { CenterDecorator } from '../CenterDecorator';
 

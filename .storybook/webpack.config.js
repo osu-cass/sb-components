@@ -14,8 +14,7 @@ module.exports = (baseConfig, env) => {
     config.module.rules.push(
       { test: /\.less$/,
         include: [
-          path.resolve(__dirname, '../', 'src', 'Styles'),
-          path.resolve(__dirname, '../', 'node_modules', 'smarter-balanced-styles', 'Styles')
+          path.resolve(__dirname, '../', 'src', 'Styles')
         ],
         use: ['style-loader', 'css-loader', 'less-loader']}
     )

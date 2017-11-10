@@ -9,7 +9,7 @@ export { AboutItem } from "./AboutItem/AboutItem";
 // About Test Items
 //
 export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer"
-export { InteractionTypeModel, AboutTestItemsModel, aboutItemsClient } from "./AboutTestItems/AboutTestItemsModels";
+export { InteractionTypeModel, AboutTestItemsModel, aboutTestItemsClient } from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
@@ -31,9 +31,11 @@ export { Dropdown } from "./DropDown/DropDown";
 //
 // Filter Components and Models
 //
-export { AdvancedFilterContainer } from "./Filter/AdvancedFilterContainer";
-export { BasicFilterContainer } from "./Filter/BasicFilterContainer";
-export { FilterContainer } from "./Filter/FilterContainer";
+export { AdvancedFilter, AdvancedFilterProps } from "./Filter/AdvancedFilter"
+export { AdvancedFilterContainer, AdvancedFilterContainerProps } from "./Filter/AdvancedFilterContainer";
+export { BasicFilter, BasicFilterProps } from "./Filter/BasicFilter";
+export { BasicFilterContainer, BasicFilterContainerProps } from "./Filter/BasicFilterContainer";
+export { FilterContainer, FilterContainerProps } from "./Filter/FilterContainer";
 export {
     OptionTypeModel,
     FilterOptionModel,

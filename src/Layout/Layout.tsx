@@ -1,5 +1,6 @@
+import '../Styles/custom.less';
 import * as React from 'react';
- import { NavMenu } from './NavMenu';
+import { NavMenu } from './NavMenu';
 import { Footer } from './Footer';
 import { SbNavlinkProps } from './SbNavLink';
 

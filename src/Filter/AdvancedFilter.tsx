@@ -1,3 +1,4 @@
+import '../Styles/advanced-filter.less';
 import * as React from "react";
 import { AdvancedFilterCategoryModel, FilterOptionModel, OptionTypeModel } from './AdvancedFilterModel';
 

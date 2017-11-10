@@ -2,9 +2,7 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { mockBasicFilterCategories } from './mocks';
-import { BasicFilterContainer, BasicFilterContainerProps } from '../../src/Filter/BasicFilterContainer';
-
-
+import { BasicFilterContainer, BasicFilterContainerProps } from '../../src';
 
 const props: BasicFilterContainerProps  = {
     filterOptions: mockBasicFilterCategories,
