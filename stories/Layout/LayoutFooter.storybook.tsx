@@ -9,5 +9,4 @@ import { SiteLinks } from './mocks';
 
 storiesOf("Layout Footer", module)
     .addDecorator(RouterDecorator)
-    .addDecorator(CenterDecorator)
     .add("default footer", () => <Footer />)

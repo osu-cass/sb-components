@@ -10,7 +10,7 @@ import {
 import {CenterDecorator} from  '../CenterDecorator';
 
 const basicFilterOption:FilterOptionModel = {
-    label: "Grade 3",
+    label: "Grade",
     key: "12345",
     isSelected: false
 };
@@ -24,14 +24,14 @@ const advancedFilterOptionsArray: FilterOptionModel[] = [
 
 const basicFilterCategoryDropDown: BasicFilterCategoryModel  = {
     disabled: false,
-    label: "Grade 3",
+    label: "Grade",
     filterOptions: [basicFilterOption],
     type: OptionTypeModel.DropDown
 }
 
 const basicFilterCategoryRadioBtn: BasicFilterCategoryModel  = {
     disabled: false,
-    label: "Grade 3",
+    label: "Grade",
     filterOptions: [basicFilterOption],
     type: OptionTypeModel.radioBtn
 }

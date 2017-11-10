@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
+exports[`Storyshots AdvancedFilter disabled 1`] = `
 <div
   style={
     Object {
@@ -16,16 +16,16 @@ exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
 >
   <div
     className="filter-selection"
-    id="grade 3-filter"
+    id="disabled-filter"
   >
     <label>
       <span
         info-label={true}
       >
-        Grade 3
+        Disabled
       </span>
       <span
-        data-tooltip="Grade 3"
+        data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
         <span
@@ -37,41 +37,19 @@ exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
       className="child-filter-container"
     >
       <div
-        className="filter-all-btn-container"
-      >
-        <button
-          className="filter-all-btn  selected-button filter-button"
-          onClick={[Function]}
-        >
-          All
-        </button>
-      </div>
-      <div
         className="filter-button-container"
       >
         <button
           className=" filter-button"
           onClick={[Function]}
         >
-          Grade 1
+          English Literacy/ Arts
         </button>
         <button
           className=" filter-button"
           onClick={[Function]}
         >
-          Grade 2
-        </button>
-        <button
-          className=" filter-button"
-          onClick={[Function]}
-        >
-          Grade 3
-        </button>
-        <button
-          className=" filter-button"
-          onClick={[Function]}
-        >
-          Grade 4
+          Mathematics
         </button>
       </div>
     </div>
@@ -79,7 +57,7 @@ exports[`Storyshots AdvancedFilter multiple filter items 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter one filter item 1`] = `
+exports[`Storyshots AdvancedFilter disabled multi 1`] = `
 <div
   style={
     Object {
@@ -95,16 +73,73 @@ exports[`Storyshots AdvancedFilter one filter item 1`] = `
 >
   <div
     className="filter-selection"
-    id="grade 3-filter"
+    id="disabled multi-filter"
   >
     <label>
       <span
         info-label={true}
       >
-        Grade 3
+        Disabled Multi
       </span>
       <span
-        data-tooltip="Grade 3"
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter disabled multi all 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi all disabled-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Multi All Disabled
+      </span>
+      <span
+        data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
         <span
@@ -132,7 +167,362 @@ exports[`Storyshots AdvancedFilter one filter item 1`] = `
           className=" filter-button"
           onClick={[Function]}
         >
-          Grade 3
+          English Literacy/ Arts
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter disabled with selections 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="disabled-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Disabled
+      </span>
+      <span
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className="selected-button filter-button"
+          onClick={[Function]}
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className="selected-button filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter multi select 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Multi
+      </span>
+      <span
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className="selected-button filter-button"
+          onClick={[Function]}
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className="selected-button filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter multi select all  1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi all-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Multi All
+      </span>
+      <span
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-all-btn-container"
+      >
+        <button
+          className="filter-all-btn  selected-button filter-button"
+          onClick={[Function]}
+        >
+          All
+        </button>
+      </div>
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter multi select all selected  1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi all-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Multi All
+      </span>
+      <span
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-all-btn-container"
+      >
+        <button
+          className="filter-all-btn  filter-button"
+          onClick={[Function]}
+        >
+          All
+        </button>
+      </div>
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className="selected-button filter-button"
+          onClick={[Function]}
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className="selected-button filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter no options 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="subjects-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Subjects
+      </span>
+      <span
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-button-container"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AdvancedFilter single select 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="subjects-filter"
+  >
+    <label>
+      <span
+        info-label={true}
+      >
+        Subjects
+      </span>
+      <span
+        data-tooltip="Subject Help"
+        data-tooltip-position="top"
+      >
+        <span
+          className="fa fa-info-circle fa-sm"
+        />
+      </span>
+    </label>
+    <div
+      className="child-filter-container"
+    >
+      <div
+        className="filter-button-container"
+      >
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className=" filter-button"
+          onClick={[Function]}
+        >
+          Mathematics
         </button>
       </div>
     </div>
@@ -221,10 +611,10 @@ exports[`Storyshots BasicFilter DropDown: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade 3-basic-filter"
+    id="grade-basic-filter"
   >
     <label>
-      Grade 3
+      Grade
     </label>
     <div
       className="basic-filter-body"
@@ -245,7 +635,7 @@ exports[`Storyshots BasicFilter DropDown: multiple filter items 1`] = `
         <option
           value="12345"
         >
-          Grade 3
+          Grade
         </option>
         <option
           value="12348"
@@ -274,10 +664,10 @@ exports[`Storyshots BasicFilter DropDown: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade 3-basic-filter"
+    id="grade-basic-filter"
   >
     <label>
-      Grade 3
+      Grade
     </label>
     <div
       className="basic-filter-body"
@@ -288,7 +678,7 @@ exports[`Storyshots BasicFilter DropDown: one filter item 1`] = `
         <option
           value="12345"
         >
-          Grade 3
+          Grade
         </option>
       </select>
     </div>
@@ -312,10 +702,10 @@ exports[`Storyshots BasicFilter RadioBtn: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade 3-basic-filter"
+    id="grade-basic-filter"
   >
     <label>
-      Grade 3
+      Grade
     </label>
     <div
       className="basic-filter-body"
@@ -346,7 +736,7 @@ exports[`Storyshots BasicFilter RadioBtn: multiple filter items 1`] = `
             type="radio"
             value="12345"
           />
-          Grade 3
+          Grade
         </label>
         <label>
           <input
@@ -379,10 +769,10 @@ exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade 3-basic-filter"
+    id="grade-basic-filter"
   >
     <label>
-      Grade 3
+      Grade
     </label>
     <div
       className="basic-filter-body"
@@ -395,7 +785,7 @@ exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
             type="radio"
             value="12345"
           />
-          Grade 3
+          Grade
         </label>
       </form>
     </div>
@@ -885,290 +1275,34 @@ exports[`Storyshots ItemCard Item Card Condensed 1`] = `
 `;
 
 exports[`Storyshots Layout Footer default footer 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
+<footer
+  role="contentinfo"
 >
-  <footer
-    role="contentinfo"
+  <a
+    className="footer-sbLink footer-practiceTests"
+    href="http://practice.smarterbalanced.org/"
   >
+    Practice and training tests are available here.
+  </a>
+  <div
+    className="footer-copyright"
+  >
+    <p>
+      © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+    </p>
     <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
+      className="footer-sbLink"
+      href="//www.smarterbalanced.org"
     >
-      Practice and training tests are available here.
+       www.SmarterBalanced.org
     </a>
-    <div
-      className="footer-copyright"
-    >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
-      </p>
-      <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
-      >
-         www.SmarterBalanced.org
-      </a>
-    </div>
-  </footer>
-</div>
+  </div>
+</footer>
 `;
 
 exports[`Storyshots Layout name links and body 1`] = `
 <div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="site-body"
-  >
-    <header
-      role="navigation"
-    >
-      <div
-        className="skip-link"
-        id="skip-main"
-      >
-        <a
-          className="skip-link"
-          href="/#main"
-          onClick={[Function]}
-        >
-          Skip to main content
-        </a>
-      </div>
-      <nav
-        role="navigation"
-      >
-        <div
-          className="sbNav"
-        >
-          <div
-            className="sbNav-titleGroup"
-          >
-            <div
-              className="sbNav-titleGroup-item"
-            >
-              <a
-                href="http://www.smarterbalanced.org/"
-                target="_blank"
-                title="Smarter Balanced Home"
-              >
-                <img
-                  alt="Smarter Balanced Logo"
-                  src="/Images/SmarterBalanced_logo.png"
-                />
-              </a>
-            </div>
-            <div
-              className="sbNav-titleGroup-item"
-            >
-              <h3>
-                Test
-              </h3>
-            </div>
-          </div>
-          <div
-            className="sbNav-linksGroup"
-          >
-            <a
-              className="sbNav-linksGroup-item"
-              href="url1"
-              onClick={[Function]}
-              style={undefined}
-            >
-              <span
-                className=""
-              />
-               
-              link1
-            </a>
-            <a
-              className="sbNav-linksGroup-item"
-              href="url2"
-              onClick={[Function]}
-              style={undefined}
-            >
-              <span
-                className=""
-              />
-               
-              link2
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main
-      className="container site-content"
-      id="main"
-      role="main"
-    >
-      <div
-        className="test-container"
-      >
-        <p>
-          Test Body
-        </p>
-      </div>
-    </main>
-    <footer
-      role="contentinfo"
-    >
-      <a
-        className="footer-sbLink footer-practiceTests"
-        href="http://practice.smarterbalanced.org/"
-      >
-        Practice and training tests are available here.
-      </a>
-      <div
-        className="footer-copyright"
-      >
-        <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium 
-        </p>
-        <a
-          className="footer-sbLink"
-          href="//www.smarterbalanced.org"
-        >
-           www.SmarterBalanced.org
-        </a>
-      </div>
-    </footer>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout name no links no body 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="site-body"
-  >
-    <header
-      role="navigation"
-    >
-      <div
-        className="skip-link"
-        id="skip-main"
-      >
-        <a
-          className="skip-link"
-          href="/#main"
-          onClick={[Function]}
-        >
-          Skip to main content
-        </a>
-      </div>
-      <nav
-        role="navigation"
-      >
-        <div
-          className="sbNav"
-        >
-          <div
-            className="sbNav-titleGroup"
-          >
-            <div
-              className="sbNav-titleGroup-item"
-            >
-              <a
-                href="http://www.smarterbalanced.org/"
-                target="_blank"
-                title="Smarter Balanced Home"
-              >
-                <img
-                  alt="Smarter Balanced Logo"
-                  src="/Images/SmarterBalanced_logo.png"
-                />
-              </a>
-            </div>
-            <div
-              className="sbNav-titleGroup-item"
-            >
-              <h3>
-                Test
-              </h3>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main
-      className="container site-content"
-      id="main"
-      role="main"
-    />
-    <footer
-      role="contentinfo"
-    >
-      <a
-        className="footer-sbLink footer-practiceTests"
-        href="http://practice.smarterbalanced.org/"
-      >
-        Practice and training tests are available here.
-      </a>
-      <div
-        className="footer-copyright"
-      >
-        <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium 
-        </p>
-        <a
-          className="footer-sbLink"
-          href="//www.smarterbalanced.org"
-        >
-           www.SmarterBalanced.org
-        </a>
-      </div>
-    </footer>
-  </div>
-</div>
-`;
-
-exports[`Storyshots LayoutNav name links 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
+  className="site-body"
 >
   <header
     role="navigation"
@@ -1247,22 +1381,52 @@ exports[`Storyshots LayoutNav name links 1`] = `
       </div>
     </nav>
   </header>
+  <main
+    className="container site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="test-container"
+    >
+      <div
+        className="container"
+      >
+        <p>
+          Test Body...
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer
+    role="contentinfo"
+  >
+    <a
+      className="footer-sbLink footer-practiceTests"
+      href="http://practice.smarterbalanced.org/"
+    >
+      Practice and training tests are available here.
+    </a>
+    <div
+      className="footer-copyright"
+    >
+      <p>
+        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+      </p>
+      <a
+        className="footer-sbLink"
+        href="//www.smarterbalanced.org"
+      >
+         www.SmarterBalanced.org
+      </a>
+    </div>
+  </footer>
 </div>
 `;
 
-exports[`Storyshots LayoutNav name no links 1`] = `
+exports[`Storyshots Layout name no links no body 1`] = `
 <div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
+  className="site-body"
 >
   <header
     role="navigation"
@@ -1313,5 +1477,165 @@ exports[`Storyshots LayoutNav name no links 1`] = `
       </div>
     </nav>
   </header>
+  <main
+    className="container site-content"
+    id="main"
+    role="main"
+  />
+  <footer
+    role="contentinfo"
+  >
+    <a
+      className="footer-sbLink footer-practiceTests"
+      href="http://practice.smarterbalanced.org/"
+    >
+      Practice and training tests are available here.
+    </a>
+    <div
+      className="footer-copyright"
+    >
+      <p>
+        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+      </p>
+      <a
+        className="footer-sbLink"
+        href="//www.smarterbalanced.org"
+      >
+         www.SmarterBalanced.org
+      </a>
+    </div>
+  </footer>
 </div>
+`;
+
+exports[`Storyshots LayoutNav name links 1`] = `
+<header
+  role="navigation"
+>
+  <div
+    className="skip-link"
+    id="skip-main"
+  >
+    <a
+      className="skip-link"
+      href="/#main"
+      onClick={[Function]}
+    >
+      Skip to main content
+    </a>
+  </div>
+  <nav
+    role="navigation"
+  >
+    <div
+      className="sbNav"
+    >
+      <div
+        className="sbNav-titleGroup"
+      >
+        <div
+          className="sbNav-titleGroup-item"
+        >
+          <a
+            href="http://www.smarterbalanced.org/"
+            target="_blank"
+            title="Smarter Balanced Home"
+          >
+            <img
+              alt="Smarter Balanced Logo"
+              src="/Images/SmarterBalanced_logo.png"
+            />
+          </a>
+        </div>
+        <div
+          className="sbNav-titleGroup-item"
+        >
+          <h3>
+            Test
+          </h3>
+        </div>
+      </div>
+      <div
+        className="sbNav-linksGroup"
+      >
+        <a
+          className="sbNav-linksGroup-item"
+          href="url1"
+          onClick={[Function]}
+          style={undefined}
+        >
+          <span
+            className=""
+          />
+           
+          link1
+        </a>
+        <a
+          className="sbNav-linksGroup-item"
+          href="url2"
+          onClick={[Function]}
+          style={undefined}
+        >
+          <span
+            className=""
+          />
+           
+          link2
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`Storyshots LayoutNav name no links 1`] = `
+<header
+  role="navigation"
+>
+  <div
+    className="skip-link"
+    id="skip-main"
+  >
+    <a
+      className="skip-link"
+      href="/#main"
+      onClick={[Function]}
+    >
+      Skip to main content
+    </a>
+  </div>
+  <nav
+    role="navigation"
+  >
+    <div
+      className="sbNav"
+    >
+      <div
+        className="sbNav-titleGroup"
+      >
+        <div
+          className="sbNav-titleGroup-item"
+        >
+          <a
+            href="http://www.smarterbalanced.org/"
+            target="_blank"
+            title="Smarter Balanced Home"
+          >
+            <img
+              alt="Smarter Balanced Logo"
+              src="/Images/SmarterBalanced_logo.png"
+            />
+          </a>
+        </div>
+        <div
+          className="sbNav-titleGroup-item"
+        >
+          <h3>
+            Test
+          </h3>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
 `;
