@@ -49,7 +49,7 @@ export {
 //
 // Grade Levels
 //
-export { GradeLevels } from "./GradeLevels/GradeLevels";
+export { GradeLevels, gradeCaseToString, gradeLevelContains, gradeLevelToString } from "./GradeLevels/GradeLevels";
 
 //
 // ItemCard Components, Models, and Actions
