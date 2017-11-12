@@ -20,13 +20,14 @@ export {
     getResource,
     getBrailleAccommodation
 } from "./Accessibility/AccessibilityModels";
-export { ItemAccessibilityModalProps } from "./Accessibility/AccessibilityModal";
+export { ItemAccessibilityModalProps, ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
 // DropDown Components and Models
 //
-export { Dropdown } from "./DropDown/DropDown";
+export { Dropdown, DropdownProps } from "./DropDown/DropDown";
+export {DropDownSelectionModel} from "./DropDown/DropDownModels";
 
 //
 // Filter Components and Models
