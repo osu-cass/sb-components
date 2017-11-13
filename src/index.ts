@@ -8,7 +8,7 @@ export { AboutItem } from "./AboutItem/AboutItem";
 //
 // About Test Items
 //
-export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer"
+export { AboutTestItemsContainer, AboutTestItemContainerProps } from "./AboutTestItems/AboutTestItemsContainer"
 export { InteractionTypeModel, AboutTestItemsModel, aboutTestItemsClient } from "./AboutTestItems/AboutTestItemsModels";
 
 //
@@ -121,6 +121,7 @@ export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 //
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
+export { RubricEntryModel, RubricModel, RubricSampleModel } from "./Rubric/RubricModels";
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 

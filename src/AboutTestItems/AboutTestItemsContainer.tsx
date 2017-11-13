@@ -5,7 +5,7 @@ import * as $ from 'jquery';
 import { AboutItem } from '../AboutItem/AboutItem';
 import { AboutItemModel } from '../AboutItem/AboutItemModels';
 import { ItemFrame } from '../ItemViewer/ItemViewerFrame';
-import { Resource, get } from '../ApiModel';
+import { Resource, get, getResourceContent } from '../ApiModel';
 import { RouteComponentProps } from 'react-router';
 import { AboutTestItemsModel, InteractionTypeModel } from './AboutTestItemsModels';
 
@@ -14,11 +14,13 @@ export interface AboutTestItemContainerState {
     itemUrl?: string;
     aboutThisItemViewModel: Resource<AboutItemModel>;
     aboutItemsViewModel: Resource<AboutTestItemsModel>;
-
+    hasError: boolean;
 }
 
-export interface AboutTestItemContainerProps extends RouteComponentProps<{}> {
+export interface AboutTestItemContainerProps {
     aboutClient: (params?: { interactionTypeCode: string }) => Promise<AboutTestItemsModel>;
+    routeComponentProps?: RouteComponentProps<{}>;
+    selectedCode?: string;
 }
 
 export class AboutTestItemsContainer extends React.Component<AboutTestItemContainerProps, AboutTestItemContainerState>{
@@ -26,10 +28,12 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
         super(props);
         this.state = {
             aboutThisItemViewModel: { kind: "loading" },
-            aboutItemsViewModel: { kind: "loading" }
+            aboutItemsViewModel: { kind: "loading" },
+            selectedCode: this.props.selectedCode,
+            hasError: false
         }
-        this.props.aboutClient().then((data) => this.onFetchedUpdatedViewModel(data)).catch();
 
+        this.fetchUpdatedViewModel(this.state.selectedCode);
     }
 
     handleChange = (e: React.FormEvent<HTMLSelectElement>) => {
@@ -41,12 +45,23 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
         this.fetchUpdatedViewModel(newCode);
     }
 
-    fetchUpdatedViewModel(newCode: string) {
+    fetchUpdatedViewModel(newCode?: string) {
         const params = {
-            interactionTypeCode: newCode
+            interactionTypeCode: newCode || ""
         };
 
-        this.props.aboutClient(params).then((data) => this.onFetchedUpdatedViewModel(data)).catch();
+        this.props.aboutClient(params)
+            .then((data) => this.onFetchedUpdatedViewModel(data))
+            .catch(err => this.onError(err));
+    }
+
+    onError(err: any) {
+        console.error(err);
+        this.setState({
+            aboutThisItemViewModel: { kind: "failure" },
+            aboutItemsViewModel: { kind: "failure" },
+            hasError: true
+        })
     }
 
     onFetchedUpdatedViewModel = (viewModel: AboutTestItemsModel) => {
@@ -59,8 +74,8 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
             itemUrl: viewModel.itemUrl,
             selectedCode: viewModel.selectedInteractionTypeCode,
             aboutThisItemViewModel: { kind: "success", content: viewModel.aboutThisItemViewModel },
-            aboutItemsViewModel: { kind: "success", content: viewModel }
-
+            aboutItemsViewModel: { kind: "success", content: viewModel },
+            hasError: false
         });
     }
 
@@ -87,17 +102,10 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
         }
 
         return (
-            <select className="form-control" onChange={this.handleChange}>
+            <select className="form-control" onChange={this.handleChange} value={this.state.selectedCode}>
                 {items}
             </select>
         );
-    }
-
-    openAboutItemModal(e: React.KeyboardEvent<HTMLAnchorElement>) {
-        if (e.keyCode === 13 || e.keyCode === 23) {
-            const modal: any = ($("#about-item-modal-container"));
-            modal.modal();
-        }
     }
 
     renderNoItem() {
@@ -115,23 +123,16 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
                 <div className="aboutitem-iframe" aria-live="polite" aria-relevant="additions removals" >
                     <div className="item-nav" role="toolbar" aria-label="Toolbar with button groups">
                         <div className="item-nav-left-group" role="group" aria-label="First group">
-                            <a className="item-nav-btn" data-toggle="modal" data-target="#about-item-modal-container"
-                                onKeyUp={e => this.openAboutItemModal(e)} role="button" tabIndex={0}>
-                                <span className="glyphicon glyphicon-info-sign glyphicon-pad" aria-hidden="true" />
-                                About This Item
-                        </a>
+                            <AboutItem {...aboutThisItem.content} />
                         </div>
                     </div>
                     <ItemFrame url={this.state.itemUrl || ""} />
-                    <AboutItem {...aboutThisItem.content} />
                 </div>
             );
         }
         else {
             return this.renderNoItem();
         }
-
-
     }
 
     private renderItemTypesGroup() {
@@ -152,6 +153,19 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
         }
     }
 
+    private renderError() {
+        if (this.state.hasError) {
+            return (
+                <div className="page-error">
+                    <p aria-label="Network error occurred">Network failure, please try again</p>
+                </div>
+            )
+        }
+        else {
+            return null;
+        }
+    }
+
     public render() {
         const itemFrame = this.state.itemUrl ? this.renderItemFrame() : this.renderNoItem();
         return (
@@ -159,6 +173,7 @@ export class AboutTestItemsContainer extends React.Component<AboutTestItemContai
                 <div className="aboutitems-parents">
                     <div className="aboutitems-info">
                         <h1>About Test Items</h1>
+                        {this.renderError()}
                         <div className="aboutitems-text">
                             Smarter Balanced assessments use a variety of item
                              types to accurately measure what students know and can do.

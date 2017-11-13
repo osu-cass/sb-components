@@ -94,7 +94,7 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
     renderModals(): JSX.Element {
         const abtText = <span>About <span className="item-nav-long-label">This Item</span></span>;
         const moreText = <span>More <span className="item-nav-long-label">Like This</span></span>;
-
+        //TODO:Refactor modals.
 
         return (
             <div className="item-nav" role="toolbar" aria-label="Toolbar with button groups">

@@ -104,12 +104,6 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
         this.setState({ showModal: false });
     }
 
-    openAccessibilityModal(e: React.KeyboardEvent<HTMLButtonElement>) {
-        if (e.keyCode === 13 || e.keyCode === 23 || e.keyCode === 32) {
-            this.handleShowModal();
-        }
-    }
-
     renderResourceType(type: string) {
         let resources = this.props.accResourceGroups
             .filter(group => group.label === type)[0]
@@ -182,7 +176,7 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
             <div>
                 <button className="accessibility-btn btn btn-primary"
                     onClick={this.handleShowModal} aria-label="Open Accessibility Modal"
-                    onKeyUp={e => this.openAccessibilityModal(e)} tabIndex={0}>
+                    tabIndex={0}>
                     <span className="glyphicon glyphicon-collapse-down" aria-hidden="true">Accessibility</span>
                 </button>
                 <ReactModal
@@ -194,7 +188,7 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
                         <div className="modal-header">
                             <h4 className="modal-title">Accessibility Options</h4>
                             <button className="close" onClick={this.handleHideModal} aria-label="Close accessibility options">
-                            <span className="fa fa-times" aria-hidden="true"></span></button>
+                                <span className="fa fa-times" aria-hidden="true"></span></button>
                         </div>
                         <div className="modal-body">
                             <p><span>Options displayed in grey are not available for this item.</span></p>
