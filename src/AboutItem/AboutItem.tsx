@@ -1,4 +1,5 @@
-﻿import * as React from 'react';
+﻿import '../Styles/modal.less';
+import * as React from 'react';
 import * as Collapsible from '../Rubric/Collapsible';
 import { AboutItemModel } from './AboutItemModels';
 import { Rubric } from '../Rubric/Rubric';
@@ -50,8 +51,10 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
                     isOpen={this.state.showModal}
                     contentLabel="About This Item Modal"
                     onRequestClose={this.handleHideModal}
-                >
-                    <div className="accessibility-modal"
+                    overlayClassName="react-modal-overlay"
+                    className="react-modal-content about-item-modal">
+                    
+                    <div className="modal-wrapper"
                         aria-labelledby="About Item Modal"
                         aria-hidden="true">
                         <div className="modal-header">

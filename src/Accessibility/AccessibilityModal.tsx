@@ -183,8 +183,9 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
                     isOpen={this.state.showModal}
                     contentLabel="Accessibility Modal"
                     onRequestClose={this.handleHideModal}
-                >
-                    <div className="accessibility-modal">
+                    overlayClassName="react-modal-overlay"
+                    className="react-modal-content accessibility-modal">
+                    <div className="modal-wrapper">
                         <div className="modal-header">
                             <h4 className="modal-title">Accessibility Options</h4>
                             <button className="close" onClick={this.handleHideModal} aria-label="Close accessibility options">
