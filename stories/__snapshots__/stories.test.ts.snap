@@ -1,5 +1,270 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots About Item Modal default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About This Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Item Modal showing no rubrics 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About This Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Item Modal showing rubrics 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About This Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About This Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About This Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Test Items default 1`] = `
+<div
+  className="about-items"
+>
+  <div
+    className="aboutitems-parents"
+  >
+    <div
+      className="aboutitems-info"
+    >
+      <h1>
+        About Test Items
+      </h1>
+      <div
+        className="aboutitems-text"
+      >
+        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
+      </div>
+      <p>
+        <em>
+          Loading...
+        </em>
+      </p>
+    </div>
+    <div
+      className="no-item"
+    >
+      <p>
+        No items of the selected type found.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Test Items loading 1`] = `
+<div
+  className="about-items"
+>
+  <div
+    className="aboutitems-parents"
+  >
+    <div
+      className="aboutitems-info"
+    >
+      <h1>
+        About Test Items
+      </h1>
+      <div
+        className="aboutitems-text"
+      >
+        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
+      </div>
+      <p>
+        <em>
+          Loading...
+        </em>
+      </p>
+    </div>
+    <div
+      className="no-item"
+    >
+      <p>
+        No items of the selected type found.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Test Items reject 1`] = `
+<div
+  className="about-items"
+>
+  <div
+    className="aboutitems-parents"
+  >
+    <div
+      className="aboutitems-info"
+    >
+      <h1>
+        About Test Items
+      </h1>
+      <div
+        className="aboutitems-text"
+      >
+        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
+      </div>
+      <p>
+        <em>
+          Loading...
+        </em>
+      </p>
+    </div>
+    <div
+      className="no-item"
+    >
+      <p>
+        No items of the selected type found.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Accessibility DropDown all disabled 1`] = `
 <div
   style={
@@ -247,7 +512,6 @@ exports[`Storyshots Accessibility Modal few options hiding 1`] = `
       aria-label="Open Accessibility Modal"
       className="accessibility-btn btn btn-primary"
       onClick={[Function]}
-      onKeyUp={[Function]}
       tabIndex={0}
     >
       <span
@@ -280,7 +544,6 @@ exports[`Storyshots Accessibility Modal many options showing  1`] = `
       aria-label="Open Accessibility Modal"
       className="accessibility-btn btn btn-primary"
       onClick={[Function]}
-      onKeyUp={[Function]}
       tabIndex={0}
     >
       <span
@@ -313,7 +576,6 @@ exports[`Storyshots Accessibility Modal no options showing  1`] = `
       aria-label="Open Accessibility Modal"
       className="accessibility-btn btn btn-primary"
       onClick={[Function]}
-      onKeyUp={[Function]}
       tabIndex={0}
     >
       <span
@@ -1602,29 +1864,43 @@ exports[`Storyshots ItemCard Item Card Condensed 1`] = `
 `;
 
 exports[`Storyshots Layout Footer default footer 1`] = `
-<footer
-  role="contentinfo"
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <a
-    className="footer-sbLink footer-practiceTests"
-    href="http://practice.smarterbalanced.org/"
+  <footer
+    role="contentinfo"
   >
-    Practice and training tests are available here.
-  </a>
-  <div
-    className="footer-copyright"
-  >
-    <p>
-      © The Regents of the University of California – Smarter Balanced Assessment Consortium 
-    </p>
     <a
-      className="footer-sbLink"
-      href="//www.smarterbalanced.org"
+      className="footer-sbLink footer-practiceTests"
+      href="http://practice.smarterbalanced.org/"
     >
-       www.SmarterBalanced.org
+      Practice and training tests are available here.
     </a>
-  </div>
-</footer>
+    <div
+      className="footer-copyright"
+    >
+      <p>
+        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+      </p>
+      <a
+        className="footer-sbLink"
+        href="//www.smarterbalanced.org"
+      >
+         www.SmarterBalanced.org
+      </a>
+    </div>
+  </footer>
+</div>
 `;
 
 exports[`Storyshots Layout name links and body 1`] = `
@@ -1836,133 +2112,161 @@ exports[`Storyshots Layout name no links no body 1`] = `
 `;
 
 exports[`Storyshots LayoutNav name links 1`] = `
-<header
-  role="navigation"
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <div
-    className="skip-link"
-    id="skip-main"
-  >
-    <a
-      className="skip-link"
-      href="/#main"
-      onClick={[Function]}
-    >
-      Skip to main content
-    </a>
-  </div>
-  <nav
+  <header
     role="navigation"
   >
     <div
-      className="sbNav"
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
     >
       <div
-        className="sbNav-titleGroup"
+        className="sbNav"
       >
         <div
-          className="sbNav-titleGroup-item"
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+        <div
+          className="sbNav-linksGroup"
         >
           <a
-            href="http://www.smarterbalanced.org/"
-            target="_blank"
-            title="Smarter Balanced Home"
+            className="sbNav-linksGroup-item"
+            href="url1"
+            onClick={[Function]}
+            style={undefined}
           >
-            <img
-              alt="Smarter Balanced Logo"
-              src="/Images/SmarterBalanced_logo.png"
+            <span
+              className=""
             />
+             
+            link1
+          </a>
+          <a
+            className="sbNav-linksGroup-item"
+            href="url2"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link2
           </a>
         </div>
-        <div
-          className="sbNav-titleGroup-item"
-        >
-          <h3>
-            Test
-          </h3>
-        </div>
       </div>
-      <div
-        className="sbNav-linksGroup"
-      >
-        <a
-          className="sbNav-linksGroup-item"
-          href="url1"
-          onClick={[Function]}
-          style={undefined}
-        >
-          <span
-            className=""
-          />
-           
-          link1
-        </a>
-        <a
-          className="sbNav-linksGroup-item"
-          href="url2"
-          onClick={[Function]}
-          style={undefined}
-        >
-          <span
-            className=""
-          />
-           
-          link2
-        </a>
-      </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+</div>
 `;
 
 exports[`Storyshots LayoutNav name no links 1`] = `
-<header
-  role="navigation"
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <div
-    className="skip-link"
-    id="skip-main"
-  >
-    <a
-      className="skip-link"
-      href="/#main"
-      onClick={[Function]}
-    >
-      Skip to main content
-    </a>
-  </div>
-  <nav
+  <header
     role="navigation"
   >
     <div
-      className="sbNav"
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
     >
       <div
-        className="sbNav-titleGroup"
+        className="sbNav"
       >
         <div
-          className="sbNav-titleGroup-item"
+          className="sbNav-titleGroup"
         >
-          <a
-            href="http://www.smarterbalanced.org/"
-            target="_blank"
-            title="Smarter Balanced Home"
+          <div
+            className="sbNav-titleGroup-item"
           >
-            <img
-              alt="Smarter Balanced Logo"
-              src="/Images/SmarterBalanced_logo.png"
-            />
-          </a>
-        </div>
-        <div
-          className="sbNav-titleGroup-item"
-        >
-          <h3>
-            Test
-          </h3>
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+</div>
 `;
