@@ -1,7 +1,8 @@
 import { AboutItemModel, RubricModel } from "../../src";
 import { completeItemCard } from "../ItemCard/mocks";
+import {GradeLevels} from "../../src/GradeLevels/GradeLevels";
 
-export const aboutItemModel: AboutItemModel = {
+export const AboutItemMockModel: AboutItemModel = {
     depthOfKnowledge: "",
     targetDescription: "",
     commonCoreStandardsDescription: "",

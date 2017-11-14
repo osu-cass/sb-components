@@ -265,6 +265,129 @@ exports[`Storyshots About Test Items reject 1`] = `
 </div>
 `;
 
+exports[`Storyshots About This Item Detail displays information about an item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="item-details"
+  >
+    <p
+      className="card-text subject"
+      tabIndex={0}
+    >
+      <span
+        className="card-text-label"
+      >
+        Subject
+        :
+      </span>
+      <span
+        className="card-text-value"
+      >
+         
+        ELA
+      </span>
+    </p>
+    <p
+      className="card-text grade"
+      tabIndex={0}
+    >
+      <span
+        className="card-text-label"
+      >
+        Grade
+        :
+      </span>
+      <span
+        className="card-text-value"
+      >
+         
+        Grade 4
+      </span>
+    </p>
+    <p
+      className="card-text claim"
+      tabIndex={0}
+    >
+      <span
+        className="card-text-label"
+      >
+        Claim
+        :
+      </span>
+      <span
+        className="card-text-value"
+      >
+         
+        Claim
+      </span>
+    </p>
+    <p
+      className="card-text target"
+      tabIndex={0}
+    >
+      <span
+        className="card-text-label"
+      >
+        Target
+        :
+      </span>
+      <span
+        className="card-text-value"
+      >
+         
+        Short Name
+      </span>
+    </p>
+    <p
+      className="card-text interaction-type"
+      tabIndex={0}
+    >
+      <span
+        className="card-text-label"
+      >
+        Item Type
+        :
+      </span>
+      <span
+        className="card-text-value"
+      >
+         
+        Item Type
+      </span>
+    </p>
+    <p
+      className="card-text item-id"
+      tabIndex={0}
+    >
+      <span
+        className="card-text-label"
+      >
+        Item Id
+        :
+      </span>
+      <span
+        className="card-text-value"
+      >
+         
+        3434
+      </span>
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Accessibility DropDown all disabled 1`] = `
 <div
   style={
@@ -1890,13 +2013,15 @@ exports[`Storyshots Layout Footer default footer 1`] = `
       className="footer-copyright"
     >
       <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+        © The Regents of the University of California – Smarter Balanced Assessment Consortium
+         
       </p>
       <a
         className="footer-sbLink"
         href="//www.smarterbalanced.org"
       >
-         www.SmarterBalanced.org
+         
+        www.SmarterBalanced.org
       </a>
     </div>
   </footer>
@@ -2014,13 +2139,15 @@ exports[`Storyshots Layout name links and body 1`] = `
       className="footer-copyright"
     >
       <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+        © The Regents of the University of California – Smarter Balanced Assessment Consortium
+         
       </p>
       <a
         className="footer-sbLink"
         href="//www.smarterbalanced.org"
       >
-         www.SmarterBalanced.org
+         
+        www.SmarterBalanced.org
       </a>
     </div>
   </footer>
@@ -2098,13 +2225,15 @@ exports[`Storyshots Layout name no links no body 1`] = `
       className="footer-copyright"
     >
       <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium 
+        © The Regents of the University of California – Smarter Balanced Assessment Consortium
+         
       </p>
       <a
         className="footer-sbLink"
         href="//www.smarterbalanced.org"
       >
-         www.SmarterBalanced.org
+         
+        www.SmarterBalanced.org
       </a>
     </div>
   </footer>

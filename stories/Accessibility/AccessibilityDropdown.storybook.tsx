@@ -1,13 +1,20 @@
-import '../../src/Styles/accessibility.less';
-import * as React from 'react';
-import { storiesOf } from '@storybook/react';
-import { dropDefaultProp, dropDisabledProp, dropDisabledAllSelectionsProp, mockAccResourceGroups } from './mocks';
-import { CenterDecorator } from '../CenterDecorator';
-import { Dropdown } from '../../src';
+import "../../src/Styles/accessibility.less";
+import * as React from "react";
+import { storiesOf } from "@storybook/react";
+import {
+  dropDefaultProp,
+  dropDisabledProp,
+  dropDisabledAllSelectionsProp,
+  mockAccResourceGroups
+} from "./mocks";
+import { CenterDecorator } from "../CenterDecorator";
+import { Dropdown } from "../../src";
 
 storiesOf("Accessibility DropDown", module)
-    .addDecorator(CenterDecorator)
-    .add("default with disabled", () => <Dropdown {...dropDefaultProp} />)
-    .add("all disabled", () => <Dropdown {...dropDisabledAllSelectionsProp} />)
-    .add("dropdown disabled", () => <Dropdown {...dropDisabledProp} />)
-    .add("no selections", () => <Dropdown {...dropDefaultProp} selections={[]} />)
+  .addDecorator(CenterDecorator)
+  .add("default with disabled", () => <Dropdown {...dropDefaultProp} />)
+  .add("all disabled", () => <Dropdown {...dropDisabledAllSelectionsProp} />)
+  .add("dropdown disabled", () => <Dropdown {...dropDisabledProp} />)
+  .add("no selections", () => (
+    <Dropdown {...dropDefaultProp} selections={[]} />
+  ));

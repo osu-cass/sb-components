@@ -1,4 +1,4 @@
-﻿import { GradeLevels, gradeLevelContains } from "../GradeLevels/GradeLevels";
+import { GradeLevels, gradeLevelContains } from "../GradeLevels/GradeLevels";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 import {ItemCardModel} from "../ItemCard/ItemCardModels";
 

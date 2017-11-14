@@ -1,4 +1,4 @@
-import { AboutTestItemContainerProps, Resource, AboutItemModel, AboutTestItemsModel, InteractionTypeModel } from '../../src';
+import { Resource, AboutItemModel, AboutTestItemsModel, InteractionTypeModel } from '../../src';
 import { completeItemCard } from '../ItemCard/mocks';
 import { action } from '@storybook/addon-actions';
 

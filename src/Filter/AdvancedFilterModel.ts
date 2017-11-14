@@ -65,7 +65,6 @@ export function advancedFilterToSearch(filterModels: FilterCategoryModel[]): Sea
     const catOnly = (dictionary["CAT"] || [])[0] === "true";
     const targetStrings = dictionary["Target"] || [];
     const targetHash = targetStrings.map(t => +t); //string[] to number[]
-
     const searchModel: SearchAPIParamsModel = {
         subjects: subjects,
         gradeLevels: gradeLevels,
