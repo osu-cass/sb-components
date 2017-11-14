@@ -8,7 +8,7 @@ storiesOf("About Item Modal", module)
   .addDecorator(CenterDecorator)
   .add("default", () => <AboutItem {...AboutItemMockModel} />)
   .add("showing no rubrics", () => (
-    <AboutItem {...AboutItemMockModel} showModal={true}/>
+    <AboutItem {...AboutItemMockModel} showModal={true} />
   ))
   .add("showing rubrics", () => (
     <AboutItem {...AboutItemMockModel} showModal={true} rubrics={rubrics} />

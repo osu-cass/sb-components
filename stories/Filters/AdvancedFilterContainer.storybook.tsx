@@ -18,4 +18,3 @@ const props: AdvancedFilterContainerProps = {
 storiesOf("AdvancedFilterContainer", module).add("normal render", () => (
   <AdvancedFilterContainer {...props} />
 ));
-
