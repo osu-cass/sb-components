@@ -26,14 +26,16 @@ const basicFilterCategoryDropDown: BasicFilterCategoryModel  = {
     disabled: false,
     label: "Grade",
     filterOptions: [basicFilterOption],
-    type: OptionTypeModel.DropDown
+    type: OptionTypeModel.DropDown,
+    code: "Grade"
 }
 
 const basicFilterCategoryRadioBtn: BasicFilterCategoryModel  = {
     disabled: false,
     label: "Grade",
     filterOptions: [basicFilterOption],
-    type: OptionTypeModel.radioBtn
+    type: OptionTypeModel.radioBtn,
+    code: "Grade"    
 }
 
 const selectedHandler = action("clicked filter");

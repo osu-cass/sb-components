@@ -27,7 +27,9 @@ export const subjectsFilterOptionsSelected: FilterOptionModel[] = [
 
 
 export const advancedFilterSubject: AdvancedFilterCategoryModel = {
-  disabled: false, isMultiSelect: false, label: "Subjects", filterOptions:subjectsFilterOptions, displayAllButton: false, helpText: "Subject Help"}
+  disabled: false, isMultiSelect: false, label: "Subjects", code: "Subject", 
+  filterOptions:subjectsFilterOptions, displayAllButton: false, helpText: "Subject Help",
+}
 
 export const advancedFilterSubjectMulti : AdvancedFilterCategoryModel = {
   ...advancedFilterSubject, label: "Multi", isMultiSelect: true
@@ -52,7 +54,8 @@ export const advancedFilterSubjectMultiAllDisabled : AdvancedFilterCategoryModel
 
 
 export const advancedFilterGrade : AdvancedFilterCategoryModel = {
-  disabled: false, isMultiSelect: false, label: "Grade", filterOptions: gradeFilterOptions, displayAllButton: true, helpText: "Grade Help"
+  disabled: false, isMultiSelect: false, label: "Grade", filterOptions: gradeFilterOptions, 
+  displayAllButton: true, helpText: "Grade Help", code: "Grade"
 }
 
 export const mockAdvancedFilterCategoriesAll: AdvancedFilterCategoryModel[] = [
@@ -66,8 +69,8 @@ export const mockAdvancedFilterCategoriesAll: AdvancedFilterCategoryModel[] = [
 
 
 export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
-  {disabled: false, label: "Grade", filterOptions: gradeFilterOptions, type: OptionTypeModel.DropDown},
-  {disabled: false, label: "Subjects", filterOptions:subjectsFilterOptions, type:OptionTypeModel.radioBtn}
+  {disabled: false, label: "Grade", code: "Grade", filterOptions: gradeFilterOptions, type: OptionTypeModel.DropDown},
+  {disabled: false, label: "Subjects", code: "Subject", filterOptions:subjectsFilterOptions, type:OptionTypeModel.radioBtn}
 ]
 
 export const selectedHandler = action("clicked filter");

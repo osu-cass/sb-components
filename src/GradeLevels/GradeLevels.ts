@@ -56,3 +56,7 @@ export function gradeLevelToString(grades: GradeLevels): string {
 export function gradeLevelContains(haystack: GradeLevels, needle: GradeLevels): boolean {
     return (haystack & needle) === needle;
 }
+
+export function stringToGradeLevel(gradeString: string) : GradeLevels {
+     return parseInt(gradeString, 10) || GradeLevels.NA;
+}
