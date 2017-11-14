@@ -1,4 +1,3 @@
-import "@osu-cass/smarter-balanced-styles/styles/advanced-filter.less";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { RouteComponentProps } from "react-router";
