@@ -15,8 +15,9 @@ export interface ItemCardModel {
     subjectLabel: string;
     claimCode: string;
     claimLabel: string;
-    targetHash: string;
+    targetHash: number;
     targetShortName: string;
     interactionTypeCode: string;
     interactionTypeLabel: string;
+    isPerformanceItem: boolean;
 }

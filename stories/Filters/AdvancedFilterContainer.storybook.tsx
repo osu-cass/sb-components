@@ -8,10 +8,10 @@ import {
     OptionTypeModel, 
     AdvancedFilterCategoryModel 
 } from '../../src';
-import { mockAdvancedFilterCategories } from './mocks';
+import { mockAdvancedFilterCategoriesAll } from './mocks';
 
 const props: AdvancedFilterContainerProps = {
-    filterOptions: mockAdvancedFilterCategories,
+    filterOptions: mockAdvancedFilterCategoriesAll,
     onClick: action("clicked")
 }
 

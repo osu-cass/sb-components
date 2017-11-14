@@ -27,10 +27,9 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
             <option value={selection.selectionCode}
                 aria-label={selection.label}
                 disabled={selection.disabled}
-                aria-hiden={selection.disabled}
+                aria-hidden={selection.disabled}
                 key={selection.selectionCode}
-                className={disabledCSS}
-                selected={this.props.selectionCode === selection.selectionCode}>
+                className={disabledCSS}>
                 {label}
             </option>
         );

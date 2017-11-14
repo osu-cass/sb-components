@@ -8,7 +8,7 @@ export { AboutItem } from "./AboutItem/AboutItem";
 //
 // About Test Items
 //
-export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer"
+export { AboutTestItemsContainer, AboutTestItemContainerProps } from "./AboutTestItems/AboutTestItemsContainer"
 export { InteractionTypeModel, AboutTestItemsModel, aboutTestItemsClient } from "./AboutTestItems/AboutTestItemsModels";
 
 //
@@ -20,13 +20,14 @@ export {
     getResource,
     getBrailleAccommodation
 } from "./Accessibility/AccessibilityModels";
-export { ItemAccessibilityModalProps } from "./Accessibility/AccessibilityModal";
+export { ItemAccessibilityModalProps, ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
 // DropDown Components and Models
 //
-export { Dropdown } from "./DropDown/DropDown";
+export { Dropdown, DropdownProps } from "./DropDown/DropDown";
+export {DropDownSelectionModel} from "./DropDown/DropDownModels";
 
 //
 // Filter Components and Models
@@ -49,7 +50,7 @@ export {
 //
 // Grade Levels
 //
-export { GradeLevels } from "./GradeLevels/GradeLevels";
+export { GradeLevels, gradeCaseToString, gradeLevelContains, gradeLevelToString } from "./GradeLevels/GradeLevels";
 
 //
 // ItemCard Components, Models, and Actions
@@ -120,6 +121,7 @@ export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 //
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
+export { RubricEntryModel, RubricModel, RubricSampleModel } from "./Rubric/RubricModels";
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 

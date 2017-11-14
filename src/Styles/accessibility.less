@@ -1,0 +1,40 @@
+@import 'constants.less';
+
+.accessibility-groups {
+    display: flex;
+    flex-direction: column;
+}
+
+.accessibility-dropdowns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.accessibility-dropdown {
+    padding: 7px;
+    flex-basis: 250px;
+}
+
+.accessibility-modal {
+    width: 85%;
+}
+
+
+.expand-button {
+    cursor: pointer;
+}
+
+.option-disabled {
+    background: rgb(128,128,128); /* Fallback for browsers without support for rgba() */
+    background: rgba(128,128,128,0.4);
+}
+
+.selection-disabled {
+    opacity: 0.5;
+}
+
+
+.readonly-select {
+    user-select: all;
+}

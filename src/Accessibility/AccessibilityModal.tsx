@@ -1,11 +1,16 @@
-﻿import * as React from 'react';
+﻿/// <reference types="google.analytics" />
+import '../Styles/modal.less';
+import '../Styles/accessibility.less';
+import * as React from 'react';
 import * as Accessibility from './AccessibilityModels';
 import * as Dropdown from '../DropDown/DropDown';
+import * as ReactModal from 'react-modal';
 
 export interface ItemAccessibilityModalProps {
     accResourceGroups: Accessibility.AccResourceGroupModel[];
     onSave(selections: Accessibility.ResourceSelectionsModel): void;
     onReset(): void;
+    showModal?: boolean;
 }
 
 export interface IsResourceExpanded {
@@ -15,6 +20,7 @@ export interface IsResourceExpanded {
 export interface ItemAccessibilityModalState {
     resourceTypeExpanded: IsResourceExpanded;
     resourceSelections: Accessibility.ResourceSelectionsModel;
+    showModal: boolean;
 }
 
 export class ItemAccessibilityModal extends React.Component<ItemAccessibilityModalProps, ItemAccessibilityModalState> {
@@ -31,7 +37,8 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
         }
         this.state = {
             resourceTypeExpanded: expandeds,
-            resourceSelections: {}
+            resourceSelections: {},
+            showModal: this.props.showModal || false
         };
     }
 
@@ -72,17 +79,29 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
     onSave = (e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) => {
         e.preventDefault();
         this.props.onSave(this.state.resourceSelections || {});
-
+        this.setState({ showModal: false });
     }
 
     onCancel = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        this.setState({ resourceSelections: {} });
+        this.setState({ resourceSelections: {}, showModal: false });
     }
 
     onReset = (e: React.MouseEvent<HTMLButtonElement>) => {
-        this.setState({ resourceSelections: {} });
+        this.setState({ resourceSelections: {}, showModal: false });
         this.props.onReset();
+    }
+
+    handleShowModal = () => {
+        if (!this.state.showModal) {
+            ga("send", "event", "button", "OpenAccessibility");
+        }
+
+        this.setState({ showModal: true });
+    }
+
+    handleHideModal = () => {
+        this.setState({ showModal: false });
     }
 
     renderResourceType(type: string) {
@@ -152,15 +171,25 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
     render() {
         const types = Accessibility.getResourceTypes(this.props.accResourceGroups);
         const groups = types.map(t => this.renderResourceType(t));
+
         return (
-            <div className="modal fade" id="accessibility-modal-container" tabIndex={-1} role="dialog" aria-labelledby="Accessibility Options Modal" aria-describedby="Accessibility Options Modal" aria-hidden="true">
-                <div className="modal-dialog accessibility-modal" role="document">
-                    <div className="modal-content">
+            <div>
+                <button className="accessibility-btn btn btn-primary"
+                    onClick={this.handleShowModal} aria-label="Open Accessibility Modal"
+                    tabIndex={0}>
+                    <span className="glyphicon glyphicon-collapse-down" aria-hidden="true">Accessibility</span>
+                </button>
+                <ReactModal
+                    isOpen={this.state.showModal}
+                    contentLabel="Accessibility Modal"
+                    onRequestClose={this.handleHideModal}
+                    overlayClassName="react-modal-overlay"
+                    className="react-modal-content accessibility-modal">
+                    <div className="modal-wrapper">
                         <div className="modal-header">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={this.onCancel}>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 className="modal-title" id="myModalLabel">Accessibility Options</h4>
+                            <h4 className="modal-title">Accessibility Options</h4>
+                            <button className="close" onClick={this.handleHideModal} aria-label="Close accessibility options">
+                                <span className="fa fa-times" aria-hidden="true"></span></button>
                         </div>
                         <div className="modal-body">
                             <p><span>Options displayed in grey are not available for this item.</span></p>
@@ -168,7 +197,6 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
                                 To experience the <strong>text-to-speech functionality</strong>,&nbsp;
                                     please visit the&nbsp;
                                     <a href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ " target="_blank">Smarter Balanced Practice Test.</a>
-
                             </p>
                             <form id="accessibility-form" onSubmit={this.onSave}>
                                 <div className="accessibility-groups">
@@ -177,14 +205,15 @@ export class ItemAccessibilityModal extends React.Component<ItemAccessibilityMod
                             </form>
                         </div>
                         <div className="modal-footer">
-                            <button className="btn btn-primary" aria-label="Update options and reload item" form="accessibility-form" data-dismiss="modal" onClick={this.onSave}> Update</button>
-                            <button className="btn btn-primary" aria-label="Reset all options to default and reload item" data-dismiss="modal" onClick={this.onReset} >Reset to Default</button>
-                            <button className="btn btn-primary btn-cancel" aria-label="Cancel and undo changes" data-dismiss="modal" onClick={this.onCancel}>Cancel</button>
+                            <button className="btn btn-primary" aria-label="Update options and reload item" form="accessibility-form" onClick={this.onSave}> Update</button>
+                            <button className="btn btn-primary" aria-label="Reset all options to default and reload item" onClick={this.onReset} >Reset to Default</button>
+                            <button className="btn btn-primary btn-cancel" aria-label="Cancel and undo changes" onClick={this.onCancel}>Cancel</button>
                         </div>
+
                     </div>
-                </div>
+                </ReactModal>
+
             </div>
-        );
+        )
     }
 }
-

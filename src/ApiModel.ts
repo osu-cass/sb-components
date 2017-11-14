@@ -13,8 +13,9 @@ export interface Success<T> {
     content: T | undefined;
 }
 
-export interface Failure {
+export interface Failure<T> {
     kind: "failure";
+    content?: T;
 }
 
 export interface Reloading<T> {
@@ -22,7 +23,7 @@ export interface Reloading<T> {
     content: T | undefined;
 }
 
-export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure | NotLoaded;
+export type Resource<T> = Loading | Success<T> | Reloading<T> | Failure<T> | NotLoaded;
 
 export function parseQueryString(url: string): { [key: string]: string[] | undefined } {
     let queryObject: { [key: string]: string[] | undefined } = {};
@@ -37,7 +38,10 @@ export function parseQueryString(url: string): { [key: string]: string[] | undef
 }
 
 export function getResourceContent<T>(resource: Resource<T>): T | undefined {
-    if ((resource.kind == "success" || resource.kind == "reloading")) {
+    if ((resource.kind == "success" ||
+        resource.kind == "reloading" ||
+        resource.kind == "failure")) {
+            
         return resource.content;
     }
 }

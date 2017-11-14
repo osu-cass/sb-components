@@ -1,0 +1,76 @@
+@import 'constants.less';
+
+.modal-body {
+    padding: 15px;
+}
+
+.modal-header {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-header .close {
+    padding: 10px;
+    float: none;
+    order: 2;
+}
+
+.modal-title {
+    flex: 1;
+    margin-left: 8px;
+}
+
+
+//## React Modal 
+.react-modal-overlay {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: @background-color-lighter-fade;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.react-modal-content {
+    position: absolute;
+    min-width: @modal-min-width;
+    border: 1px solid rgb(204, 204, 204);
+    background: @sb-white;
+    border-radius: 4px;
+    outline: none;
+    margin-top: @spacing-unit*2;
+    margin-bottom: @spacing-unit*2;
+    padding: @spacing-unit;
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+}
+
+.modal-body {
+    overflow: auto;
+}
+
+.modal-header {
+    flex-shrink: 0;
+}
+
+.modal-footer {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: @small) {
+    .react-modal-content {
+        min-width: 95%;
+    }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.13-beta",
+  "version": "0.0.15-beta",
   "description": "Shared components for Smarter Balanced",
   "main": "./build/index.js",
   "files": [
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/osu-cass/sb-components#readme",
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-console": "^1.0.0",
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/addons": "^3.2.12",
     "@storybook/channels": "^3.2.12",
@@ -72,7 +73,8 @@
     "ts-jest": "~21.1.2",
     "typescript": "~2.5.3",
     "url-loader": "0.5.9",
-    "webpack": "~3.8.1"
+    "webpack": "~3.8.1",
+    "@types/react-modal": "^2.2.2"
   },
   "jest": {
     "transform": {
@@ -111,5 +113,7 @@
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-modal": "^3.1.2"
+  }
 }
