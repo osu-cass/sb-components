@@ -55,7 +55,7 @@ export function filterItemCards(
   //grade level
   if (filter.gradeLevels && filter.gradeLevels != GradeLevels.NA) {
     results = results.filter(i =>
-      gradeLevelContains(i.grade, filter.gradeLevels || GradeLevels.NA)
+      gradeLevelContains(filter.gradeLevels || GradeLevels.NA, i.grade)
     );
   }
 
