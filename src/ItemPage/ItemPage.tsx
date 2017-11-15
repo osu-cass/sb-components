@@ -12,7 +12,7 @@ import { AboutPTPopupModal } from "../PerformanceType/AboutPTPopup";
 import * as Braille from "../Accessibility/Braille";
 import { ShareModal } from "../Modals/ShareModal";
 import * as ItemPageModels from "./ItemPageModels";
-import { ItemFrame } from "../ItemViewer/ItemViewerFrame";
+import { ItemViewerFrame } from "../ItemViewer/ItemViewerFrame";
 import * as $ from "jquery";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import {
@@ -262,7 +262,7 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
       scrollTo
     );
 
-    return <ItemFrame url={ivsUrl} />;
+    return <ItemViewerFrame url={ivsUrl} />;
   }
 
   render() {

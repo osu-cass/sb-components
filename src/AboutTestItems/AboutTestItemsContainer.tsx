@@ -4,7 +4,7 @@ import * as ReactDOM from "react-dom";
 import * as $ from "jquery";
 import { AboutItem } from "../AboutItem/AboutItem";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { ItemFrame } from "../ItemViewer/ItemViewerFrame";
+import { ItemViewerFrame } from "../ItemViewer/ItemViewerFrame";
 import { Resource, get, getResourceContent } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 import {
@@ -164,7 +164,7 @@ export class AboutTestItemsContainer extends React.Component<
               <AboutItem {...aboutThisItem.content} />
             </div>
           </div>
-          <ItemFrame url={this.state.itemUrl || ""} />
+          <ItemViewerFrame url={this.state.itemUrl || ""} />
         </div>
       );
     } else {

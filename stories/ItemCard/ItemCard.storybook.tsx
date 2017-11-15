@@ -4,7 +4,7 @@ import { CenterDecorator } from "../CenterDecorator";
 import { completeItemCard } from "./mocks";
 import { ItemCardCondensed, ItemCard } from "../../src";
 
-storiesOf("ItemCard", module)
+storiesOf("Item Card", module)
   .addDecorator(CenterDecorator)
   .add("Item Card", () => <ItemCard {...completeItemCard} />)
   .add("Item Card Condensed", () => (

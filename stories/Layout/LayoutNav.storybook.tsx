@@ -5,7 +5,7 @@ import { NavMenu } from "../../src";
 import { RouterDecorator } from "../RouterDecorator";
 import { SiteLinks } from "./mocks";
 
-storiesOf("LayoutNav", module)
+storiesOf("Layout Nav", module)
   .addDecorator(RouterDecorator)
   .addDecorator(CenterDecorator)
   .add("name no links", () => <NavMenu siteName="Test" />)

@@ -94,7 +94,7 @@ export {
 //
 // ItemViewer Component
 //
-export { ItemFrame } from "./ItemViewer/ItemViewerFrame";
+export { ItemViewerFrame } from "./ItemViewer/ItemViewerFrame";
 
 //
 // Layout Components
