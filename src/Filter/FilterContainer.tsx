@@ -15,8 +15,6 @@ export interface FilterContainerProps {
 }
 
 export interface FilterContainerState {
-  basicFilters: BasicFilterCategoryModel[];
-  advancedFilters: AdvancedFilterCategoryModel[];
   expanded: boolean;
 }
 
@@ -27,8 +25,6 @@ export class FilterContainer extends React.Component<
   constructor(props: FilterContainerProps) {
     super(props);
     this.state = {
-      basicFilters: props.basicFilterOptions,
-      advancedFilters: props.advancedFilterOptions,
       expanded: false
     };
     this.handleClick = this.handleClick.bind(this);
