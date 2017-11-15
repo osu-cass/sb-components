@@ -27,7 +27,7 @@ export { BrailleLink } from "./Accessibility/Braille";
 // DropDown Components and Models
 //
 export { Dropdown, DropdownProps } from "./DropDown/DropDown";
-export {DropDownSelectionModel} from "./DropDown/DropDownModels";
+export { DropDownSelectionModel } from "./DropDown/DropDownModels";
 
 //
 // Filter Components and Models
