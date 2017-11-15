@@ -17,7 +17,7 @@ export interface SubjectModel {
 export interface ClaimModel {
   code: string;
   label: string;
-  targets: TargetModel[];
+  targets?: TargetModel[];
   targetCodes?: string[];
 }
 
@@ -46,7 +46,9 @@ export interface ItemsSearchModel {
 }
 
 //add function to filter itemtypes, claims, targets
-
+export function getCurrentItemTypes(itemCards: ItemCardModel){
+  
+}
 
 export function filterItemCards(
   itemCards: ItemCardModel[],
