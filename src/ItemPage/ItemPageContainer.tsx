@@ -26,9 +26,10 @@ import {
 } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 
-export interface ItemPageContainerProps extends RouteComponentProps<{}> {
+export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
   itemPageClient: (params: ItemModel) => Promise<ItemPageModel>;
+  routeComponentProps?: RouteComponentProps<{}>;
   itemAccessibilityClient: (
     params: ItemIsaapModel
   ) => Promise<AccResourceGroupModel[]>;
