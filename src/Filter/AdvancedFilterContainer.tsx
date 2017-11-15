@@ -14,7 +14,6 @@ export interface AdvancedFilterContainerProps {
 }
 
 export interface AdvancedFilterContainerState {
-  filters: AdvancedFilterCategoryModel[];
   expanded: boolean;
 }
 
@@ -26,7 +25,6 @@ export class AdvancedFilterContainer extends React.Component<
     super(props);
 
     this.state = {
-      filters: props.filterOptions,
       expanded: false
     };
   }
@@ -36,8 +34,8 @@ export class AdvancedFilterContainer extends React.Component<
   };
 
   onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
-    const index = this.state.filters.indexOf(category);
-    const newFilters = [...this.state.filters];
+    const index = this.props.filterOptions.indexOf(category);
+    const newFilters = [...this.props.filterOptions];
     let newOptions: FilterOptionModel[] = [];
 
     //TODO Refactor
@@ -66,28 +64,20 @@ export class AdvancedFilterContainer extends React.Component<
       filterOptions: newOptions
     };
 
-    this.setState({
-      filters: newFilters
-    });
-
     this.props.onClick(newFilters);
   }
 
   resetFilters() {
-    const newFilters = this.state.filters;
+    const newFilters = this.props.filterOptions;
     newFilters.forEach(cate => {
       cate.filterOptions.map(opt => (opt.isSelected = false));
-    });
-
-    this.setState({
-      filters: [...newFilters]
     });
     this.props.onClick(newFilters);
   }
 
   hasActiveFilterIndicators() {
     let active = false;
-    this.state.filters.forEach(fil => {
+    this.props.filterOptions.forEach(fil => {
       if (!fil.disabled) {
         fil.filterOptions.forEach(opt => {
           if (opt.isSelected) {
@@ -102,7 +92,7 @@ export class AdvancedFilterContainer extends React.Component<
   renderFilterIndicators() {
     const tags: JSX.Element[] = [];
 
-    this.state.filters.forEach(fil => {
+    this.props.filterOptions.forEach(fil => {
       if (!fil.disabled) {
         fil.filterOptions.forEach(opt => {
           if (opt.isSelected) {
@@ -131,7 +121,7 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   renderFilterBody() {
-    const filterTags = this.state.filters.map((fil, i) => {
+    const filterTags = this.props.filterOptions.map((fil, i) => {
       return (
         <AdvancedFilter
           key={i}
@@ -153,7 +143,7 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   renderCollapsedFilterContainer = () => {
-    const { filters } = this.state;
+    const { filterOptions } = this.props;
     const className = this.state.expanded
       ? "fa fa-chevron-down"
       : "fa fa-chevron-right";
@@ -187,7 +177,9 @@ export class AdvancedFilterContainer extends React.Component<
             </button>
           </div>
         </div>
-        {filters && filters.length > 0 ? this.renderFilterHeader() : null}
+        {filterOptions && filterOptions.length > 0
+          ? this.renderFilterHeader()
+          : null}
       </div>
     );
   };

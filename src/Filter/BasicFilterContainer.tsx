@@ -14,7 +14,6 @@ export interface BasicFilterContainerProps {
 }
 
 export interface BasicFilterContainerState {
-  filters: BasicFilterCategoryModel[];
   expanded?: boolean;
 }
 
@@ -26,7 +25,6 @@ export class BasicFilterContainer extends React.Component<
     super(props);
 
     this.state = {
-      filters: props.filterOptions,
       expanded: false
     };
 
@@ -35,8 +33,8 @@ export class BasicFilterContainer extends React.Component<
 
   //multiSelect not an option right now.
   onSelect(category: BasicFilterCategoryModel, option?: FilterOptionModel) {
-    const index = this.state.filters.indexOf(category);
-    const newFilters = [...this.state.filters];
+    const index = this.props.filterOptions.indexOf(category);
+    const newFilters = [...this.props.filterOptions];
     let newOptions: FilterOptionModel[] = [];
 
     if (option) {
@@ -53,22 +51,13 @@ export class BasicFilterContainer extends React.Component<
         filterOptions: newOptions
       };
     }
-
-    this.setState({
-      filters: newFilters
-    });
-
     this.props.onClick(newFilters);
   }
 
   resetFilters() {
-    const newFilters = this.state.filters;
+    const newFilters = this.props.filterOptions;
     newFilters.forEach(cate => {
       cate.filterOptions.map(opt => (opt.isSelected = false));
-    });
-
-    this.setState({
-      filters: [...newFilters]
     });
     this.props.onClick(newFilters);
   }
@@ -80,7 +69,7 @@ export class BasicFilterContainer extends React.Component<
   }
 
   renderFilters() {
-    const filterTags = this.state.filters.map((fil, i) => {
+    const filterTags = this.props.filterOptions.map((fil, i) => {
       return (
         <BasicFilter
           key={i}
