@@ -10,6 +10,7 @@ export interface SubjectModel {
   code: string;
   label: string;
   claims?: ClaimModel[];
+  claimCodes?: string[];
   interactionTypeCodes?: string[];
 }
 
@@ -17,6 +18,7 @@ export interface ClaimModel {
   code: string;
   label: string;
   targets: TargetModel[];
+  targetCodes?: string[];
 }
 
 export interface TargetModel {
@@ -35,10 +37,16 @@ export interface SearchAPIParamsModel {
   targets?: number[];
 }
 
+//TODO: add claims, targets 
 export interface ItemsSearchModel {
   interactionTypes: InteractionTypeModel[];
   subjects: SubjectModel[];
+  claims: ClaimModel[];
+  targets: TargetModel[];
 }
+
+//add function to filter itemtypes, claims, targets
+
 
 export function filterItemCards(
   itemCards: ItemCardModel[],
