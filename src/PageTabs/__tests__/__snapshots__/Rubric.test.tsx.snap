@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RubricEntryComponent matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RubricEntryComponent
+    name="Steve Harvey"
+    scorepoint="123"
+    value="val"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "dangerouslySetInnerHTML": Object {
+        "__html": "val",
+      },
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "dangerouslySetInnerHTML": Object {
+          "__html": "val",
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`SampleResponseComponent matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SampleResponseComponent
+    name="name"
+    purpose="purpose"
+    sampleContent="sampleContent"
+    scorePoint="scorePoint"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <b>
+          Purpose: 
+        </b>,
+        " ",
+        "purpose",
+        " ",
+        <br />,
+        <b>
+          Sample Response: 
+        </b>,
+        " ",
+        <br />,
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "sampleContent",
+            }
+          }
+        />,
+      ],
+      "className": "sample-response",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Purpose: ",
+        },
+        "ref": null,
+        "rendered": "Purpose: ",
+        "type": "b",
+      },
+      " ",
+      "purpose",
+      " ",
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sample Response: ",
+        },
+        "ref": null,
+        "rendered": "Sample Response: ",
+        "type": "b",
+      },
+      " ",
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "dangerouslySetInnerHTML": Object {
+            "__html": "sampleContent",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <b>
+            Purpose: 
+          </b>,
+          " ",
+          "purpose",
+          " ",
+          <br />,
+          <b>
+            Sample Response: 
+          </b>,
+          " ",
+          <br />,
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "sampleContent",
+              }
+            }
+          />,
+        ],
+        "className": "sample-response",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Purpose: ",
+          },
+          "ref": null,
+          "rendered": "Purpose: ",
+          "type": "b",
+        },
+        " ",
+        "purpose",
+        " ",
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Sample Response: ",
+          },
+          "ref": null,
+          "rendered": "Sample Response: ",
+          "type": "b",
+        },
+        " ",
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "dangerouslySetInnerHTML": Object {
+              "__html": "sampleContent",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`rubric component matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RubricComponent
+    language="english"
+    rubricEntries={
+      Array [
+        Object {
+          "name": "Steve Harvey",
+          "scorepoint": "123",
+          "value": "val",
+        },
+      ]
+    }
+    samples={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <h4>
+            Rubrics
+          </h4>
+          <RubricEntryComponent
+            name="Steve Harvey"
+            scorepoint="123"
+            value="val"
+          />
+        </div>,
+        null,
+      ],
+      "className": "item-information-content",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Rubrics
+            </h4>,
+            Array [
+              <RubricEntryComponent
+                name="Steve Harvey"
+                scorepoint="123"
+                value="val"
+              />,
+            ],
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Rubrics",
+            },
+            "ref": null,
+            "rendered": "Rubrics",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "name": "Steve Harvey",
+              "scorepoint": "123",
+              "value": "val",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <h4>
+              Rubrics
+            </h4>
+            <RubricEntryComponent
+              name="Steve Harvey"
+              scorepoint="123"
+              value="val"
+            />
+          </div>,
+          null,
+        ],
+        "className": "item-information-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Rubrics
+              </h4>,
+              Array [
+                <RubricEntryComponent
+                  name="Steve Harvey"
+                  scorepoint="123"
+                  value="val"
+                />,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rubrics",
+              },
+              "ref": null,
+              "rendered": "Rubrics",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "name": "Steve Harvey",
+                "scorepoint": "123",
+                "value": "val",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

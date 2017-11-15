@@ -1,0 +1,508 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTabs matches snapshot for each tab 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ItemTabs
+    changedTab={[Function]}
+    selectedTab="viewer"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="selected-tab"
+          onClick={[Function]}
+        >
+          Item Viewer
+        </div>,
+        <div
+          className="tab-not-selected"
+          onClick={[Function]}
+        >
+          Rubric and Exemplar
+        </div>,
+        <div
+          className="tab-not-selected"
+          onClick={[Function]}
+        >
+          Item Information
+        </div>,
+      ],
+      "className": "tabs",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Item Viewer",
+          "className": "selected-tab",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Item Viewer",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Rubric and Exemplar",
+          "className": "tab-not-selected",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Rubric and Exemplar",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Item Information",
+          "className": "tab-not-selected",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Item Information",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="selected-tab"
+            onClick={[Function]}
+          >
+            Item Viewer
+          </div>,
+          <div
+            className="tab-not-selected"
+            onClick={[Function]}
+          >
+            Rubric and Exemplar
+          </div>,
+          <div
+            className="tab-not-selected"
+            onClick={[Function]}
+          >
+            Item Information
+          </div>,
+        ],
+        "className": "tabs",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Item Viewer",
+            "className": "selected-tab",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Item Viewer",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Rubric and Exemplar",
+            "className": "tab-not-selected",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Rubric and Exemplar",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Item Information",
+            "className": "tab-not-selected",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Item Information",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`PageTabs matches snapshot for each tab 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ItemTabs
+    changedTab={[Function]}
+    selectedTab="rubric"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="tab-not-selected"
+          onClick={[Function]}
+        >
+          Item Viewer
+        </div>,
+        <div
+          className="selected-tab"
+          onClick={[Function]}
+        >
+          Rubric and Exemplar
+        </div>,
+        <div
+          className="tab-not-selected"
+          onClick={[Function]}
+        >
+          Item Information
+        </div>,
+      ],
+      "className": "tabs",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Item Viewer",
+          "className": "tab-not-selected",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Item Viewer",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Rubric and Exemplar",
+          "className": "selected-tab",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Rubric and Exemplar",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Item Information",
+          "className": "tab-not-selected",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Item Information",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="tab-not-selected"
+            onClick={[Function]}
+          >
+            Item Viewer
+          </div>,
+          <div
+            className="selected-tab"
+            onClick={[Function]}
+          >
+            Rubric and Exemplar
+          </div>,
+          <div
+            className="tab-not-selected"
+            onClick={[Function]}
+          >
+            Item Information
+          </div>,
+        ],
+        "className": "tabs",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Item Viewer",
+            "className": "tab-not-selected",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Item Viewer",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Rubric and Exemplar",
+            "className": "selected-tab",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Rubric and Exemplar",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Item Information",
+            "className": "tab-not-selected",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Item Information",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`PageTabs matches snapshot for each tab 3`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ItemTabs
+    changedTab={[Function]}
+    selectedTab="information"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="tab-not-selected"
+          onClick={[Function]}
+        >
+          Item Viewer
+        </div>,
+        <div
+          className="tab-not-selected"
+          onClick={[Function]}
+        >
+          Rubric and Exemplar
+        </div>,
+        <div
+          className="selected-tab"
+          onClick={[Function]}
+        >
+          Item Information
+        </div>,
+      ],
+      "className": "tabs",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Item Viewer",
+          "className": "tab-not-selected",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Item Viewer",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Rubric and Exemplar",
+          "className": "tab-not-selected",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Rubric and Exemplar",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Item Information",
+          "className": "selected-tab",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Item Information",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="tab-not-selected"
+            onClick={[Function]}
+          >
+            Item Viewer
+          </div>,
+          <div
+            className="tab-not-selected"
+            onClick={[Function]}
+          >
+            Rubric and Exemplar
+          </div>,
+          <div
+            className="selected-tab"
+            onClick={[Function]}
+          >
+            Item Information
+          </div>,
+        ],
+        "className": "tabs",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Item Viewer",
+            "className": "tab-not-selected",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Item Viewer",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Rubric and Exemplar",
+            "className": "tab-not-selected",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Rubric and Exemplar",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Item Information",
+            "className": "selected-tab",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Item Information",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
