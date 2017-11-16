@@ -93,19 +93,16 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": undefined,
+    "key": null,
     "nodeType": "host",
     "props": Object {
       "children": Array [
         <head>
-          <base
-            href="http://example.com"
-          />
           <meta
             charSet="UTF-8"
           />
           <link
-            href="css/pdf.css"
+            href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
             rel="stylesheet"
           />
           <link
@@ -202,18 +199,15 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": null,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <base
-              href="http://example.com"
-            />,
             <meta
               charSet="UTF-8"
             />,
             <link
-              href="css/pdf.css"
+              href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
               rel="stylesheet"
             />,
             <link
@@ -230,18 +224,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "href": "http://example.com",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "base",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
+            "key": null,
             "nodeType": "host",
             "props": Object {
               "charSet": "UTF-8",
@@ -252,10 +235,10 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": null,
             "nodeType": "host",
             "props": Object {
-              "href": "css/pdf.css",
+              "href": "C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css",
               "rel": "stylesheet",
             },
             "ref": null,
@@ -264,7 +247,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": null,
             "nodeType": "host",
             "props": Object {
               "href": "http://example.com/Shared/CSS/Universal/items.css",
@@ -276,7 +259,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": null,
             "nodeType": "host",
             "props": Object {
               "href": "http://example.com/Projects/SBAC/css/modernItems.css",
@@ -291,7 +274,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": null,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -380,7 +363,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": null,
             "nodeType": "class",
             "props": Object {
               "grade": "3",
@@ -478,19 +461,16 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": undefined,
+      "key": null,
       "nodeType": "host",
       "props": Object {
         "children": Array [
           <head>
-            <base
-              href="http://example.com"
-            />
             <meta
               charSet="UTF-8"
             />
             <link
-              href="css/pdf.css"
+              href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
               rel="stylesheet"
             />
             <link
@@ -587,18 +567,15 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": null,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <base
-                href="http://example.com"
-              />,
               <meta
                 charSet="UTF-8"
               />,
               <link
-                href="css/pdf.css"
+                href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
                 rel="stylesheet"
               />,
               <link
@@ -615,18 +592,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "href": "http://example.com",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "base",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
+              "key": null,
               "nodeType": "host",
               "props": Object {
                 "charSet": "UTF-8",
@@ -637,10 +603,10 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": null,
               "nodeType": "host",
               "props": Object {
-                "href": "css/pdf.css",
+                "href": "C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css",
                 "rel": "stylesheet",
               },
               "ref": null,
@@ -649,7 +615,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": null,
               "nodeType": "host",
               "props": Object {
                 "href": "http://example.com/Shared/CSS/Universal/items.css",
@@ -661,7 +627,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": null,
               "nodeType": "host",
               "props": Object {
                 "href": "http://example.com/Projects/SBAC/css/modernItems.css",
@@ -676,7 +642,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": null,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -765,7 +731,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": null,
               "nodeType": "class",
               "props": Object {
                 "grade": "3",
