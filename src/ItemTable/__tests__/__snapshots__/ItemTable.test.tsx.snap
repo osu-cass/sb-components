@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemTable matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ItemTable
+    columns={Array []}
+    item={
+      Object {
+        "content": Object {
+          "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+          "depthOfKnowledge": "depthOfKnowledge",
+          "educationalDifficulty": "educationalDifficulty",
+          "evidenceStatement": "evidenceStatement",
+          "itemCardViewModel": Object {
+            "bankKey": 1,
+            "claimCode": "",
+            "claimLabel": "",
+            "grade": 1023,
+            "gradeLabel": "",
+            "interactionTypeCode": "",
+            "interactionTypeLabel": "",
+            "isPerformanceItem": true,
+            "itemKey": 3,
+            "subjectCode": "",
+            "subjectLabel": "",
+            "targetHash": 323,
+            "targetShortName": "",
+            "title": "",
+          },
+          "rubrics": Array [],
+          "targetDescription": "targetDescription",
+        },
+        "kind": "success",
+      }
+    }
+    mapRows={Array []}
+    rowOnClick={[Function]}
+    selectedRow={
+      Object {
+        "bankKey": 1,
+        "claimCode": "claim_1234",
+        "claimLabel": "claim_math",
+        "grade": 1,
+        "gradeLabel": "1",
+        "interactionTypeCode": "type01",
+        "interactionTypeLabel": "type01label",
+        "isPerformanceItem": false,
+        "itemKey": 123,
+        "subjectCode": "Math",
+        "subjectLabel": "MTH",
+        "targetHash": 2323,
+        "targetShortName": "",
+        "title": "test_title",
+      }
+    }
+    sort={Array []}
+    tableRef={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [],
+    },
+    "ref": null,
+    "rendered": Array [],
+    "type": "tbody",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [],
+      },
+      "ref": null,
+      "rendered": Array [],
+      "type": "tbody",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

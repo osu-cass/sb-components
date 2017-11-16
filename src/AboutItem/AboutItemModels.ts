@@ -7,4 +7,6 @@ export interface AboutItemModel {
   depthOfKnowledge: string;
   targetDescription: string;
   commonCoreStandardsDescription: string;
+  educationalDifficulty: string;
+  evidenceStatement: string;
 }

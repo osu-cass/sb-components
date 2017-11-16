@@ -55,30 +55,31 @@ export function filterItemCards(
   //grade level
   if (filter.gradeLevels && filter.gradeLevels != GradeLevels.NA) {
     results = results.filter(i =>
-      gradeLevelContains(i.grade, filter.gradeLevels || GradeLevels.NA)
+      gradeLevelContains(filter.gradeLevels || GradeLevels.NA, i.grade)
     );
   }
 
   //subjects
   if (filter.subjects && filter.subjects.length > 0) {
-    results = results.filter(i =>
-      (filter.subjects || []).findIndex(s => s === i.subjectCode)
+    results = results.filter(
+      i => filter.subjects!.findIndex(s => s === i.subjectCode) !== -1
     );
   }
 
   //interaction types
   if (filter.interactionTypes && filter.interactionTypes.length > 0) {
-    results = results.filter(i =>
-      (filter.interactionTypes || []).findIndex(
-        it => it === i.interactionTypeCode
-      )
+    results = results.filter(
+      i =>
+        filter.interactionTypes!.findIndex(
+          it => it === i.interactionTypeCode
+        ) !== -1
     );
   }
 
   //claims
   if (filter.claims && filter.claims.length > 0) {
-    results = results.filter(i =>
-      (filter.claims || []).findIndex(c => c === i.claimCode)
+    results = results.filter(
+      i => filter.claims!.findIndex(c => c === i.claimCode) !== -1
     );
   }
 
@@ -91,8 +92,8 @@ export function filterItemCards(
 
   //targets
   if (filter.targets && filter.targets.length > 0) {
-    results = results.filter(i =>
-      (filter.targets || []).findIndex(t => t === i.targetHash)
+    results = results.filter(
+      i => filter.targets!.findIndex(t => t === i.targetHash) !== -1
     );
   }
 
