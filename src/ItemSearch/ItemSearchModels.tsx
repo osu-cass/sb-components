@@ -1,6 +1,7 @@
 import { GradeLevels, gradeLevelContains } from "../GradeLevels/GradeLevels";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
+import { AdvancedFilterCategoryModel, FilterOptionModel } from "../Filter/AdvancedFilterModel";
 
 export interface SubjectClaimsModel {
   [subject: string]: { text: string; value: string }[];
@@ -37,7 +38,7 @@ export interface SearchAPIParamsModel {
   targets?: number[];
 }
 
-//TODO: add claims, targets 
+
 export interface ItemsSearchModel {
   interactionTypes: InteractionTypeModel[];
   subjects: SubjectModel[];
@@ -46,8 +47,62 @@ export interface ItemsSearchModel {
 }
 
 //add function to filter itemtypes, claims, targets
-export function getCurrentItemTypes(itemCards: ItemCardModel){
-  
+export function getCurrentClaimsFilter(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
+  const selectedSubjectCodes = currentCategories
+    .find(c => c.code.toLowerCase() === 'subject') // find subjects category
+    .filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
+    .map(f => f.key); // grab keys from selected subjects
+
+  const currentClaimCodes = model.subjects
+    .filter(s => selectedSubjectCodes.some(ssc => ssc === s.code))//currently selected subjects
+    .map(s => s.claimCodes ? s.claimCodes : [])// grab all lists of claims
+    .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
+
+
+  const claimFilterOptions = model.claims
+    .filter(f => currentClaimCodes.some(c => c === f.code))
+    .map(cm => {
+      return {
+        label:cm.label,
+        key:cm.code,
+        isSelected:false //this will have some conflicts with current selection
+      } as FilterOptionModel;
+    });
+
+  const claimsFilter = currentCategories.find(f => f.code === 'claim');
+  claimsFilter.filterOptions = claimFilterOptions;
+  return claimsFilter;
+}
+
+export function getCurrentTargets(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
+  const selectedClaimCodes = currentCategories
+    .find(c => c.code.toLowerCase() === 'claim') // find subjects category
+    .filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
+    .map(f => f.key); // grab keys from selected subjects
+
+  const currentTargetCodes = model.claims
+    .filter(s => selectedClaimCodes.some(ssc => ssc === s.code))//currently selected subjects
+    .map(s => s.targetCodes ? s.targetCodes : [])// grab all lists of targetcodes
+    .reduce((pc, cc) =>  pc.concat(cc), []);//flatten targetcodes
+
+    // const targetFilterOptions = model.targets
+    //   .filter(f => currentTargetCodes.some(c => c === f.))
+
+  return currentTargetCodes;// TODO: return targets filter
+}
+
+export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
+  const selectedSubjectCodes = currentCategories
+    .find(c => c.code.toLowerCase() === 'subject') // find subjects category
+    .filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
+    .map(f => f.key); // grab keys from selected subjects
+
+  const currentInteractionTypeCodes = model.subjects
+    .filter(s => selectedSubjectCodes.some(ssc => ssc === s.code))//currently selected subjects
+    .map(s => s.interactionTypeCodes ? s.interactionTypeCodes : [])// grab all lists of claims
+    .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
+
+  return currentInteractionTypeCodes; // TODO: return interactionTypes filter
 }
 
 export function filterItemCards(
