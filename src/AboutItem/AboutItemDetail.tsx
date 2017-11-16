@@ -1,10 +1,7 @@
 import * as React from "react";
 import { AboutItemModel } from "./AboutItemModels";
 
-export class AboutThisItemDetail extends React.Component<
-  AboutItemModel,
-  {}
-  > {
+export class AboutThisItemDetail extends React.Component<AboutItemModel, {}> {
   renderField(
     label: string,
     value: string | number,
@@ -80,7 +77,6 @@ export class AboutThisItemDetail extends React.Component<
           this.props.evidenceStatement,
           "evidence-statement"
         )}
-
       </div>
     );
   }

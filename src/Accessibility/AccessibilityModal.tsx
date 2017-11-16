@@ -2,8 +2,13 @@
 import "../Styles/modal.less";
 import "../Styles/accessibility.less";
 import * as React from "react";
-import { AccessibilityResourceModel, AccResourceGroupModel, ResourceSelectionsModel, getResourceTypes } from "./AccessibilityModels";
-import {Dropdown, DropdownProps} from "../DropDown/DropDown";
+import {
+  AccessibilityResourceModel,
+  AccResourceGroupModel,
+  ResourceSelectionsModel,
+  getResourceTypes
+} from "./AccessibilityModels";
+import { Dropdown, DropdownProps } from "../DropDown/DropDown";
 import * as ReactModal from "react-modal";
 
 export interface ItemAccessibilityModalProps {
