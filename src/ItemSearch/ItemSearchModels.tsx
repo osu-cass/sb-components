@@ -95,7 +95,7 @@ export function getCurrentTargets(model: ItemsSearchModel, currentCategories:Adv
       } as FilterOptionModel;
     });
 
-  return currentTargetCodes;// TODO: return targets filter
+  return targetFilterOptions;
 }
 
 export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
@@ -108,6 +108,16 @@ export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCateg
     .filter(s => selectedSubjectCodes.some(ssc => ssc === s.code))//currently selected subjects
     .map(s => s.interactionTypeCodes ? s.interactionTypeCodes : [])// grab all lists of claims
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
+
+  const interactionFilterOptions = model.interactionTypes
+    .filter(f => currentInteractionTypeCodes.some(i => i === f.label))
+    .map(m => {
+      return {
+        label:m.label,
+        key:m.code,
+        isSelected:false
+      } as FilterOptionModel;
+    });
 
   return currentInteractionTypeCodes; // TODO: return interactionTypes filter
 }
