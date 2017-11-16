@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PdfComponent
+    cssUrl="http://example.com/style.css"
     displayTitlePage={true}
     grade="3"
     items={
@@ -102,7 +103,7 @@ ShallowWrapper {
             charSet="UTF-8"
           />
           <link
-            href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
+            href="http://example.com/style.css"
             rel="stylesheet"
           />
           <link
@@ -207,7 +208,7 @@ ShallowWrapper {
               charSet="UTF-8"
             />,
             <link
-              href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
+              href="http://example.com/style.css"
               rel="stylesheet"
             />,
             <link
@@ -238,7 +239,7 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "href": "C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css",
+              "href": "http://example.com/style.css",
               "rel": "stylesheet",
             },
             "ref": null,
@@ -470,7 +471,7 @@ ShallowWrapper {
               charSet="UTF-8"
             />
             <link
-              href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
+              href="http://example.com/style.css"
               rel="stylesheet"
             />
             <link
@@ -575,7 +576,7 @@ ShallowWrapper {
                 charSet="UTF-8"
               />,
               <link
-                href="C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css"
+                href="http://example.com/style.css"
                 rel="stylesheet"
               />,
               <link
@@ -606,7 +607,7 @@ ShallowWrapper {
               "key": null,
               "nodeType": "host",
               "props": Object {
-                "href": "C:\\\\Users\\\\mikkelsb\\\\Documents\\\\Projects\\\\ScoringGuide\\\\server\\\\public\\\\pdf\\\\pdf.css",
+                "href": "http://example.com/style.css",
                 "rel": "stylesheet",
               },
               "ref": null,

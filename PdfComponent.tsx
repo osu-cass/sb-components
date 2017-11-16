@@ -10,6 +10,7 @@ interface Props {
     grade: string;
     subject: string;
     ivsBaseUrl: string;
+    cssUrl: string;
     displayTitlePage: boolean;
 }
 
@@ -23,7 +24,7 @@ export class PdfComponent extends React.Component<Props, {}> {
             <html>
                 <head>
                     <meta charSet="UTF-8" />
-                    <link rel='stylesheet' href={path.join(__dirname, '../../public/pdf/pdf.css')} />
+                    <link rel='stylesheet' href={this.props.cssUrl} />
                     <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Shared/CSS/Universal/items.css"} />
                     <link rel='stylesheet' href={this.props.ivsBaseUrl + "/Projects/SBAC/css/modernItems.css"} />
                 </head>

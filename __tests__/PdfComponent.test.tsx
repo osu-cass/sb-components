@@ -84,6 +84,7 @@ const props = {
     subject: "math",
     pageBaseUrl: "http://example.com",
     ivsBaseUrl: "http://example.com",
+    cssUrl: "http://example.com/style.css",
     displayTitlePage: true
 }
 
