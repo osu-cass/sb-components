@@ -73,6 +73,8 @@
     "jest": "~21.2.1",
     "jest-cli": "~21.2.1",
     "jquery": "3.2.1",
+    "jsdom": "^11.3.0",
+    "jsdom-global": "^3.0.2",
     "less": "~2.7.3",
     "less-loader": "~4.0.5",
     "postcss-loader": "~2.0.8",
@@ -90,15 +92,20 @@
     "webpack": "~3.8.1"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTest.ts",    
+    "setupTestFrameworkScriptFile": "./src/setupTest.ts",
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "/stories/.*(test)\\.(js|ts|tsx?)$|/__tests__/.*\\.(ts|tsx?)$",
+    "testRegex": "/stories/.*(test)\\.(js|ts|tsx?)$|__tests__/.*\\.(ts|tsx?)$",
+    "testPathIgnorePatterns": [
+      "/build/",
+      "/node_modules/"
+    ],
     "collectCoverageFrom": [
       "src/**/*.tsx",
       "!src/**/__tests__/*",
-      "!src/index.tsx"
+      "!src/index.ts",
+      "!**/node_modules/**"
     ],
     "globals": {
       "ts-jest": {
