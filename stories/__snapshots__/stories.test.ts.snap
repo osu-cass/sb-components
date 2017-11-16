@@ -712,7 +712,72 @@ exports[`Storyshots Accessibility Modal no options showing  1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled 1`] = `
+exports[`Storyshots Advanced Filter Container normal render 1`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <div
+      className="filter-advanced-filter-header"
+    >
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h2
+          style={
+            Object {
+              "color": "#63666A",
+            }
+          }
+        >
+          <span
+            className="fa fa-tasks fa-lg"
+          />
+           Advanced Filters
+        </h2>
+        <span
+          style={
+            Object {
+              "marginTop": "6px",
+            }
+          }
+        >
+           Click on an item to remove it from the list
+        </span>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "marginRight": "10px",
+          }
+        }
+      >
+        <button
+          className="filter-button"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-header"
+    >
+      <div
+        className="filter-status"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter disabled 1`] = `
 <div
   style={
     Object {
@@ -769,7 +834,7 @@ exports[`Storyshots AdvancedFilter disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled multi 1`] = `
+exports[`Storyshots Advanced Filter disabled multi 1`] = `
 <div
   style={
     Object {
@@ -826,7 +891,7 @@ exports[`Storyshots AdvancedFilter disabled multi 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled multi all 1`] = `
+exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 <div
   style={
     Object {
@@ -893,7 +958,7 @@ exports[`Storyshots AdvancedFilter disabled multi all 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled with selections 1`] = `
+exports[`Storyshots Advanced Filter disabled with selections 1`] = `
 <div
   style={
     Object {
@@ -950,7 +1015,7 @@ exports[`Storyshots AdvancedFilter disabled with selections 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter multi select 1`] = `
+exports[`Storyshots Advanced Filter multi select 1`] = `
 <div
   style={
     Object {
@@ -1007,7 +1072,7 @@ exports[`Storyshots AdvancedFilter multi select 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter multi select all  1`] = `
+exports[`Storyshots Advanced Filter multi select all  1`] = `
 <div
   style={
     Object {
@@ -1074,7 +1139,7 @@ exports[`Storyshots AdvancedFilter multi select all  1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter multi select all selected  1`] = `
+exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 <div
   style={
     Object {
@@ -1141,7 +1206,7 @@ exports[`Storyshots AdvancedFilter multi select all selected  1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter no options 1`] = `
+exports[`Storyshots Advanced Filter no options 1`] = `
 <div
   style={
     Object {
@@ -1185,7 +1250,7 @@ exports[`Storyshots AdvancedFilter no options 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter single select 1`] = `
+exports[`Storyshots Advanced Filter single select 1`] = `
 <div
   style={
     Object {
@@ -1242,270 +1307,7 @@ exports[`Storyshots AdvancedFilter single select 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilterContainer normal render 1`] = `
-<div
-  className="advanced-filter-container"
->
-  <div
-    className="filter-sub-header-container"
-  >
-    <div
-      className="filter-advanced-filter-header"
-    >
-      <div
-        className="filter-advanced-filter-title"
-      >
-        <h2
-          style={
-            Object {
-              "color": "#63666A",
-            }
-          }
-        >
-          <span
-            className="fa fa-tasks fa-lg"
-          />
-           Advanced Filters
-        </h2>
-        <span
-          style={
-            Object {
-              "marginTop": "6px",
-            }
-          }
-        >
-           Click on an item to remove it from the list
-        </span>
-      </div>
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "marginRight": "10px",
-          }
-        }
-      >
-        <button
-          className="filter-button"
-          onClick={[Function]}
-        >
-          Expand 
-          <span
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      className="filter-header"
-    >
-      <div
-        className="filter-status"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter DropDown: multiple filter items 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <select
-        onChange={[Function]}
-      >
-        <option
-          value="12346"
-        >
-          Grade 1
-        </option>
-        <option
-          value="12347"
-        >
-          Grade 2
-        </option>
-        <option
-          value="12345"
-        >
-          Grade
-        </option>
-        <option
-          value="12348"
-        >
-          Grade 4
-        </option>
-      </select>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter DropDown: one filter item 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <select
-        onChange={[Function]}
-      >
-        <option
-          value="12345"
-        >
-          Grade
-        </option>
-      </select>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter RadioBtn: multiple filter items 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <form>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12346"
-          />
-          Grade 1
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12347"
-          />
-          Grade 2
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12345"
-          />
-          Grade
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12348"
-          />
-          Grade 4
-        </label>
-      </form>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <form>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12345"
-          />
-          Grade
-        </label>
-      </form>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
+exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 <div
   className="basic-filter-container"
 >
@@ -1579,7 +1381,7 @@ exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
 </div>
 `;
 
-exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expansion button 1`] = `
+exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
   className="basic-filter-container"
 >
@@ -1666,6 +1468,204 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
         className="fa fa-chevron-right"
       />
     </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <select
+        onChange={[Function]}
+      >
+        <option
+          value="12346"
+        >
+          Grade 1
+        </option>
+        <option
+          value="12347"
+        >
+          Grade 2
+        </option>
+        <option
+          value="12345"
+        >
+          Grade
+        </option>
+        <option
+          value="12348"
+        >
+          Grade 4
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <select
+        onChange={[Function]}
+      >
+        <option
+          value="12345"
+        >
+          Grade
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <form>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12346"
+          />
+          Grade 1
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12347"
+          />
+          Grade 2
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12348"
+          />
+          Grade 4
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <form>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade
+        </label>
+      </form>
+    </div>
   </div>
 </div>
 `;
@@ -1769,7 +1769,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
 </div>
 `;
 
-exports[`Storyshots ItemCard Item Card 1`] = `
+exports[`Storyshots Item Card Item Card 1`] = `
 <div
   style={
     Object {
@@ -1893,7 +1893,7 @@ exports[`Storyshots ItemCard Item Card 1`] = `
 </div>
 `;
 
-exports[`Storyshots ItemCard Item Card Condensed 1`] = `
+exports[`Storyshots Item Card Item Card Condensed 1`] = `
 <div
   style={
     Object {
@@ -1986,6 +1986,952 @@ exports[`Storyshots ItemCard Item Card Condensed 1`] = `
 </div>
 `;
 
+exports[`Storyshots Item Page Container just the container 1`] = `<div />`;
+
+exports[`Storyshots Item Page Item Page returns error 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <a
+        className="item-nav-btn"
+        data-target="#about-item-modal-container"
+        data-toggle="modal"
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-info-sign glyphicon-pad"
+        />
+        <span>
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </span>
+      </a>
+      <a
+        className="item-nav-btn"
+        data-target="#more-like-this-modal-container"
+        data-toggle="modal"
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-th-large glyphicon-pad"
+        />
+        <span>
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </span>
+      </a>
+      <a
+        className="item-nav-btn"
+        data-target="#share-modal-container"
+        data-toggle="modal"
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-share-alt glyphicon-pad"
+        />
+        Share
+      </a>
+    </div>
+    <div>
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          About This Item
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="accessibility-btn btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-collapse-down"
+          >
+            Accessibility
+          </span>
+        </button>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="More Like This Modal"
+        className="modal fade"
+        id="more-like-this-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog more-like-this-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                More Like This
+              </h4>
+            </div>
+            <div
+              className="modal-body"
+            >
+              <br />
+              <div
+                className="more-like-this"
+              >
+                <div
+                  className="more-like-this-column"
+                >
+                  <div>
+                    <h3>
+                      Grade 5
+                    </h3>
+                  </div>
+                  No items found for this grade.
+                </div>
+                <div
+                  className="more-like-this-column"
+                >
+                  <div>
+                    <h3>
+                      Grade 6
+                    </h3>
+                  </div>
+                  No items found for this grade.
+                </div>
+                <div
+                  className="more-like-this-column"
+                >
+                  <div>
+                    <h3>
+                      Grade 7
+                    </h3>
+                  </div>
+                  No items found for this grade.
+                </div>
+              </div>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        className="modal fade"
+        id="share-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog share-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                Share
+              </h4>
+            </div>
+            <div
+              className="modal-body "
+            >
+              <span>
+                The following URL can be used to load this question with your currently saved accessibility options.
+              </span>
+              <div
+                className="input-group"
+              >
+                <input
+                  className="form-control readonly-select"
+                  id="shareUrl"
+                  readOnly={true}
+                  style={
+                    Object {
+                      "maxWidth": "inherit",
+                    }
+                  }
+                  type="text"
+                  value="about:blank&isaap=TDS_ITM1;TDS_APC_SCRUBBER;"
+                />
+                <span
+                  className="input-group-btn"
+                >
+                  <button
+                    className="btn btn-default"
+                    id="copy-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="glyphicon glyphicon-copy"
+                    />
+                    <span>
+                       Copy to clipboard
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-describedby="About Performance Tasks"
+        aria-hidden="true"
+        aria-labelledby="About Performance Tasks"
+        className="modal fade"
+        id="about-performance-tasks-popup-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog share-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                Note about ELA Performance Task Items
+              </h4>
+            </div>
+            <div
+              className="modal-body"
+            >
+              <p
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        className="modal fade"
+        id="about-performance-tasks-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog share-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                About Performance Tasks
+              </h4>
+            </div>
+            <div
+              className="modal-body"
+            >
+              <p>
+                <b>
+                  Performance tasks
+                </b>
+                 measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
+              </p>
+              <p>
+                <b>
+                  Note about ELA Performance Task Items: 
+                </b>
+                <span
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "",
+                    }
+                  }
+                />
+              </p>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <button
+        className="accessibility-btn btn btn-primary"
+        data-target="#accessibility-modal-container"
+        data-toggle="modal"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-collapse-down"
+        />
+        Accessibility
+      </button>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="itemviewer-iframe-spinner"
+    >
+      <img
+        src="/images/spin-large.gif"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3B&scrollToId="
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Page Item Page with an item 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <a
+        className="item-nav-btn"
+        data-target="#about-item-modal-container"
+        data-toggle="modal"
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-info-sign glyphicon-pad"
+        />
+        <span>
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </span>
+      </a>
+      <a
+        className="item-nav-btn"
+        data-target="#more-like-this-modal-container"
+        data-toggle="modal"
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-th-large glyphicon-pad"
+        />
+        <span>
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </span>
+      </a>
+      <a
+        className="item-nav-btn"
+        data-target="#share-modal-container"
+        data-toggle="modal"
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-share-alt glyphicon-pad"
+        />
+        Share
+      </a>
+    </div>
+    <div>
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          About This Item
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="accessibility-btn btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-collapse-down"
+          >
+            Accessibility
+          </span>
+        </button>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="More Like This Modal"
+        className="modal fade"
+        id="more-like-this-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog more-like-this-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                More Like This
+              </h4>
+            </div>
+            <div
+              className="modal-body"
+            >
+              <br />
+              <div
+                className="more-like-this"
+              >
+                <div
+                  className="more-like-this-column"
+                >
+                  <div>
+                    <h3>
+                      Grade 5
+                    </h3>
+                  </div>
+                  No items found for this grade.
+                </div>
+                <div
+                  className="more-like-this-column"
+                >
+                  <div>
+                    <h3>
+                      Grade 6
+                    </h3>
+                  </div>
+                  No items found for this grade.
+                </div>
+                <div
+                  className="more-like-this-column"
+                >
+                  <div>
+                    <h3>
+                      Grade 7
+                    </h3>
+                  </div>
+                  No items found for this grade.
+                </div>
+              </div>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        className="modal fade"
+        id="share-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog share-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                Share
+              </h4>
+            </div>
+            <div
+              className="modal-body "
+            >
+              <span>
+                The following URL can be used to load this question with your currently saved accessibility options.
+              </span>
+              <div
+                className="input-group"
+              >
+                <input
+                  className="form-control readonly-select"
+                  id="shareUrl"
+                  readOnly={true}
+                  style={
+                    Object {
+                      "maxWidth": "inherit",
+                    }
+                  }
+                  type="text"
+                  value="about:blank&isaap=TDS_ITM1;TDS_APC_SCRUBBER;TDS_SCNotepad;TDS_WL_Glossary;TDS_Highlight1;TDS_ExpandablePassages1;TDS_ST1;TDS_PS_L0;TDS_CC0;TDS_Masking0;ENU;TDS_BT0;TDS_SLM0;"
+                />
+                <span
+                  className="input-group-btn"
+                >
+                  <button
+                    className="btn btn-default"
+                    id="copy-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="glyphicon glyphicon-copy"
+                    />
+                    <span>
+                       Copy to clipboard
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-describedby="About Performance Tasks"
+        aria-hidden="true"
+        aria-labelledby="About Performance Tasks"
+        className="modal fade"
+        id="about-performance-tasks-popup-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog share-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                Note about ELA Performance Task Items
+              </h4>
+            </div>
+            <div
+              className="modal-body"
+            >
+              <p
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        className="modal fade"
+        id="about-performance-tasks-modal-container"
+        role="dialog"
+        tabIndex={-1}
+      >
+        <div
+          className="modal-dialog share-modal"
+          role="document"
+        >
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal-header"
+            >
+              <button
+                aria-label="Close"
+                className="close"
+                data-dismiss="modal"
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                >
+                  ×
+                </span>
+              </button>
+              <h4
+                className="modal-title"
+                id="myModalLabel"
+              >
+                About Performance Tasks
+              </h4>
+            </div>
+            <div
+              className="modal-body"
+            >
+              <p>
+                <b>
+                  Performance tasks
+                </b>
+                 measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
+              </p>
+              <p>
+                <b>
+                  Note about ELA Performance Task Items: 
+                </b>
+                <span
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "",
+                    }
+                  }
+                />
+              </p>
+            </div>
+            <div
+              className="modal-footer"
+            >
+              <button
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <button
+        className="accessibility-btn btn btn-primary"
+        data-target="#accessibility-modal-container"
+        data-toggle="modal"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          aria-hidden="true"
+          className="glyphicon glyphicon-collapse-down"
+        />
+        Accessibility
+      </button>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="itemviewer-iframe-spinner"
+    >
+      <img
+        src="/images/spin-large.gif"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_ExpandablePassages1%3BTDS_ST1%3BTDS_PS_L0%3BTDS_CC0%3BTDS_Masking0%3BENU%3BTDS_BT0%3BTDS_SLM0%3B&scrollToId=187-3000"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Viewer Frame with an item 1`] = `
+<div
+  className="itemViewerFrame"
+  tabIndex={0}
+>
+  <div
+    className="itemviewer-iframe-spinner"
+  >
+    <img
+      src="/images/spin-large.gif"
+    />
+  </div>
+  <iframe
+    className="itemviewer-iframe"
+    id="itemviewer-iframe"
+    onLoad={[Function]}
+    onLoadStart={[Function]}
+    src="http://ivs.smarterbalanced.org/items?ids=187-3246"
+  />
+</div>
+`;
+
+exports[`Storyshots Item Viewer Frame with no contents 1`] = `
+<div
+  className="no-item"
+>
+  <p>
+    No Item Found
+  </p>
+</div>
+`;
+
 exports[`Storyshots Layout Footer default footer 1`] = `
 <div
   style={
@@ -2025,6 +2971,166 @@ exports[`Storyshots Layout Footer default footer 1`] = `
       </a>
     </div>
   </footer>
+</div>
+`;
+
+exports[`Storyshots Layout Nav name links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
+    >
+      <div
+        className="sbNav"
+      >
+        <div
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+        <div
+          className="sbNav-linksGroup"
+        >
+          <a
+            className="sbNav-linksGroup-item"
+            href="url1"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link1
+          </a>
+          <a
+            className="sbNav-linksGroup-item"
+            href="url2"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link2
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Storyshots Layout Nav name no links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
+    >
+      <div
+        className="sbNav"
+      >
+        <div
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 </div>
 `;
 
@@ -2237,165 +3343,5 @@ exports[`Storyshots Layout name no links no body 1`] = `
       </a>
     </div>
   </footer>
-</div>
-`;
-
-exports[`Storyshots LayoutNav name links 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <header
-    role="navigation"
-  >
-    <div
-      className="skip-link"
-      id="skip-main"
-    >
-      <a
-        className="skip-link"
-        href="/#main"
-        onClick={[Function]}
-      >
-        Skip to main content
-      </a>
-    </div>
-    <nav
-      role="navigation"
-    >
-      <div
-        className="sbNav"
-      >
-        <div
-          className="sbNav-titleGroup"
-        >
-          <div
-            className="sbNav-titleGroup-item"
-          >
-            <a
-              href="http://www.smarterbalanced.org/"
-              target="_blank"
-              title="Smarter Balanced Home"
-            >
-              <img
-                alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
-              />
-            </a>
-          </div>
-          <div
-            className="sbNav-titleGroup-item"
-          >
-            <h3>
-              Test
-            </h3>
-          </div>
-        </div>
-        <div
-          className="sbNav-linksGroup"
-        >
-          <a
-            className="sbNav-linksGroup-item"
-            href="url1"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <span
-              className=""
-            />
-             
-            link1
-          </a>
-          <a
-            className="sbNav-linksGroup-item"
-            href="url2"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <span
-              className=""
-            />
-             
-            link2
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-</div>
-`;
-
-exports[`Storyshots LayoutNav name no links 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <header
-    role="navigation"
-  >
-    <div
-      className="skip-link"
-      id="skip-main"
-    >
-      <a
-        className="skip-link"
-        href="/#main"
-        onClick={[Function]}
-      >
-        Skip to main content
-      </a>
-    </div>
-    <nav
-      role="navigation"
-    >
-      <div
-        className="sbNav"
-      >
-        <div
-          className="sbNav-titleGroup"
-        >
-          <div
-            className="sbNav-titleGroup-item"
-          >
-            <a
-              href="http://www.smarterbalanced.org/"
-              target="_blank"
-              title="Smarter Balanced Home"
-            >
-              <img
-                alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
-              />
-            </a>
-          </div>
-          <div
-            className="sbNav-titleGroup-item"
-          >
-            <h3>
-              Test
-            </h3>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
 </div>
 `;

@@ -5,7 +5,7 @@
     "noEmitOnError": false,
     "removeComments": false,
     "declaration": true,
-    "baseUrl": "../build/",
+    "declarationDir": "./build/typings",
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
@@ -32,24 +32,9 @@
     "wwwroot",
     "stories"
   ],
-  "types": [
-    "jest",
-    "storybook__react",
-    "storybook__addon-actions"
-  ],
-  "typeRoots": [
-    "./node_modules/@types"
-  ]
-},
-{
-"exclude": [
-  "node_modules",
-  "wwwroot",
-  "stories"
-],
-"jest": {
-  "moduleDirectories": [
-    "node_modules"
-  ]
-}
+  "jest": {
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  }
 }

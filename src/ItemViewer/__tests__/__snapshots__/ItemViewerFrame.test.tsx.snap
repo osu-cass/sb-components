@@ -4,7 +4,7 @@ exports[`ItemViewerFrame after page content is loaded 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ItemFrame
+  Symbol(enzyme.__unrendered__): <ItemViewerFrame
     url="http://test.com"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -108,7 +108,7 @@ exports[`ItemViewerFrame matches snapshot while loading 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ItemFrame
+  Symbol(enzyme.__unrendered__): <ItemViewerFrame
     url="http://test.com"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -270,7 +270,7 @@ exports[`ItemViewerFrame no item found 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ItemFrame
+  Symbol(enzyme.__unrendered__): <ItemViewerFrame
     url=""
   />,
   Symbol(enzyme.__renderer__): Object {

@@ -1,3 +1,4 @@
+import 'jsdom-global/register'
 import * as React from "react";
 import { ItemPage } from "../../src/ItemPage/ItemPage";
 import { storiesOf } from "@storybook/react";
