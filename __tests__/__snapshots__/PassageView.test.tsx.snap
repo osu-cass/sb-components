@@ -5,7 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PassageView
-    associatedItems="some_text"
+    associatedItems={
+      Array [
+        "187-1234",
+        "187-1235",
+      ]
+    }
     view={
       Object {
         "captured": true,
@@ -25,15 +30,15 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
         <h2>
           Passage for 
-          item
+          items
            
-          some_text
+          187-1234, 187-1235
         </h2>,
         <ItemViewComponent
           view={
@@ -53,28 +58,28 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
             "Passage for ",
-            "item",
+            "items",
             " ",
-            "some_text",
+            "187-1234, 187-1235",
           ],
         },
         "ref": null,
         "rendered": Array [
           "Passage for ",
-          "item",
+          "items",
           " ",
-          "some_text",
+          "187-1234, 187-1235",
         ],
         "type": "h2",
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "view": Object {
@@ -95,15 +100,15 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
           <h2>
             Passage for 
-            item
+            items
              
-            some_text
+            187-1234, 187-1235
           </h2>,
           <ItemViewComponent
             view={
@@ -123,28 +128,28 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
               "Passage for ",
-              "item",
+              "items",
               " ",
-              "some_text",
+              "187-1234, 187-1235",
             ],
           },
           "ref": null,
           "rendered": Array [
             "Passage for ",
-            "item",
+            "items",
             " ",
-            "some_text",
+            "187-1234, 187-1235",
           ],
           "type": "h2",
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "view": Object {

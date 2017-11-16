@@ -12,7 +12,7 @@ export class ItemPage extends React.Component<Props, {}> {
         const passage = this.props.itemData.passage
             ? <PassageView 
                 view={this.props.itemData.passage} 
-                associatedItems={this.props.itemData.questions[0].data.associatedItems} />
+                associatedItems={this.props.itemData.questions.map(q => q.id)} />
             : null;
 
         const questions = this.props.itemData.questions.map(q => 
