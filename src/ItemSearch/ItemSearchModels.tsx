@@ -61,10 +61,10 @@ export function getCurrentClaimsFilter(model: ItemsSearchModel, currentCategorie
 
   const claimFilterOptions = model.claims
     .filter(f => currentClaimCodes.some(c => c === f.code))
-    .map(cm => {
+    .map(m => {
       return {
-        label:cm.label,
-        key:cm.code,
+        label:m.label,
+        key:m.code,
         isSelected:false //this will have some conflicts with current selection
       } as FilterOptionModel;
     });
@@ -85,8 +85,15 @@ export function getCurrentTargets(model: ItemsSearchModel, currentCategories:Adv
     .map(s => s.targetCodes ? s.targetCodes : [])// grab all lists of targetcodes
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten targetcodes
 
-    // const targetFilterOptions = model.targets
-    //   .filter(f => currentTargetCodes.some(c => c === f.))
+  const targetFilterOptions = model.targets
+    .filter(f => currentTargetCodes.some(t => t=== f.name))
+    .map(m => {
+      return {
+        label:m.name,
+        key:String(m.nameHash),
+        isSelected:false
+      } as FilterOptionModel;
+    });
 
   return currentTargetCodes;// TODO: return targets filter
 }
