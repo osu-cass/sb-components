@@ -1,7 +1,6 @@
-import * as ItemCardViewModel from '../Models/ItemCardViewModel';
 import * as React from "react";
+import { SortColumn, HeaderSort, SortDirection } from './ItemTableModels';
 
-export type Header = "Item" | "Claim/Target" | "Subject" | "Grade" | "Item Type";
 
 export interface Props {
     columns: SortColumn[];
@@ -11,24 +10,6 @@ export interface Props {
 
 export interface State { }
 
-export enum SortDirection {
-    NoSort = 0,
-    Ascending = 1,
-    Descending = -1
-}
-
-export interface HeaderSort {
-    col: SortColumn;
-    direction: SortDirection;
-    resetSortCount: number;
-}
-
-export interface SortColumn {
-    header: Header;
-    className: string;
-    accessor: (label: ItemCardViewModel.ItemCardViewModel) => string | number;
-    compare: (a: ItemCardViewModel.ItemCardViewModel, b: ItemCardViewModel.ItemCardViewModel) => number;
-}
 
 const invokeResetSortLimit = 2;
 
@@ -48,48 +29,6 @@ const noSort = (
     <span style={style} className="fa fa-sort" aria-hidden="true" />
 );
 
-export const headerColumns: SortColumn[] = [
-    {
-        header: "Item",
-        className: "item",
-        accessor: label => label.itemKey,
-        compare: (a, b) => (a.itemKey) - (b.itemKey)
-    },
-    {
-        header: "Claim/Target",
-        className: "claimAndTarget",
-        accessor: label => label.claimLabel + "/" + label.target,
-        compare: (a, b) => {
-            if (a.claimCode < b.claimCode || a.target < b.target) {
-                return SortDirection.Ascending;
-            }
-            else if (a.claimCode > b.claimCode || a.target > b.target) {
-                return SortDirection.Descending
-            }
-            else {
-                return SortDirection.NoSort;
-            }
-        }
-    },
-    {
-        header: "Subject",
-        className: "subject",
-        accessor: label => label.subjectLabel,
-        compare: (a, b) => (a.subjectCode).localeCompare(b.subjectCode)
-    },
-    {
-        header: "Grade",
-        className: "grade",
-        accessor: label => label.gradeLabel,
-        compare: (a, b) => (a.grade) - (b.grade)
-    },
-    {
-        header: "Item Type",
-        className: "interactionType",
-        accessor: label => label.interactionTypeLabel,
-        compare: (a, b) => (a.interactionTypeCode).localeCompare(b.interactionTypeCode)
-    },
-];
 
 export class HeaderTable extends React.Component<Props, State> {
     constructor(props: Props) {

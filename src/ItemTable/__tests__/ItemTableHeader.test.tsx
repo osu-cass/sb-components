@@ -1,12 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { HeaderTable, headerColumns, HeaderSort, SortColumn, SortDirection } from '../ItemTableHeader';
-import { ItemCardViewModel  } from '../../Models/ItemCardViewModel';
+import {  headerColumns, HeaderSort, SortColumn, SortDirection } from '../ItemTableModels';
 import * as TestUtils from 'react-dom/test-utils';
-import Enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-Enzyme.configure({ adapter: new Adapter() });
+import { shallow, mount, render } from 'enzyme';
+import { HeaderTable } from '../ItemTableHeader';
 
 describe("ItemTableHeader", () => {
     const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"]

@@ -23,7 +23,8 @@ ShallowWrapper {
           "itemKey": 123,
           "subjectCode": "Math",
           "subjectLabel": "MTH",
-          "target": "",
+          "targetHash": 323,
+          "targetShortName": "something",
           "title": "test_title",
         },
         "rubrics": Array [],
@@ -40,7 +41,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -54,7 +55,7 @@ ShallowWrapper {
             className="item-content"
           >
             <div>
-              <ItemInformationDetail
+              <AboutThisItemDetail
                 commonCoreStandardsDescription="commonCoreStandardsDescription"
                 depthOfKnowledge="depthOfKnowledge"
                 educationalDifficulty="educationalDifficulty"
@@ -72,10 +73,12 @@ ShallowWrapper {
                     "itemKey": 123,
                     "subjectCode": "Math",
                     "subjectLabel": "MTH",
-                    "target": "",
+                    "targetHash": 323,
+                    "targetShortName": "something",
                     "title": "test_title",
                   }
                 }
+                rubrics={Array []}
                 targetDescription="targetDescription"
               />
             </div>
@@ -88,7 +91,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "changedTab": [Function],
@@ -100,7 +103,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -109,7 +112,7 @@ ShallowWrapper {
               className="item-content"
             >
               <div>
-                <ItemInformationDetail
+                <AboutThisItemDetail
                   commonCoreStandardsDescription="commonCoreStandardsDescription"
                   depthOfKnowledge="depthOfKnowledge"
                   educationalDifficulty="educationalDifficulty"
@@ -127,10 +130,12 @@ ShallowWrapper {
                       "itemKey": 123,
                       "subjectCode": "Math",
                       "subjectLabel": "MTH",
-                      "target": "",
+                      "targetHash": 323,
+                      "targetShortName": "something",
                       "title": "test_title",
                     }
                   }
+                  rubrics={Array []}
                   targetDescription="targetDescription"
                 />
               </div>
@@ -142,11 +147,11 @@ ShallowWrapper {
           " ",
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": <div>
-                <ItemInformationDetail
+                <AboutThisItemDetail
                   commonCoreStandardsDescription="commonCoreStandardsDescription"
                   depthOfKnowledge="depthOfKnowledge"
                   educationalDifficulty="educationalDifficulty"
@@ -164,10 +169,12 @@ ShallowWrapper {
                       "itemKey": 123,
                       "subjectCode": "Math",
                       "subjectLabel": "MTH",
-                      "target": "",
+                      "targetHash": 323,
+                      "targetShortName": "something",
                       "title": "test_title",
                     }
                   }
+                  rubrics={Array []}
                   targetDescription="targetDescription"
                 />
               </div>,
@@ -176,10 +183,10 @@ ShallowWrapper {
             "ref": null,
             "rendered": Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <ItemInformationDetail
+                "children": <AboutThisItemDetail
                   commonCoreStandardsDescription="commonCoreStandardsDescription"
                   depthOfKnowledge="depthOfKnowledge"
                   educationalDifficulty="educationalDifficulty"
@@ -197,17 +204,19 @@ ShallowWrapper {
                       "itemKey": 123,
                       "subjectCode": "Math",
                       "subjectLabel": "MTH",
-                      "target": "",
+                      "targetHash": 323,
+                      "targetShortName": "something",
                       "title": "test_title",
                     }
                   }
+                  rubrics={Array []}
                   targetDescription="targetDescription"
                 />,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
-                "key": null,
+                "key": undefined,
                 "nodeType": "class",
                 "props": Object {
                   "commonCoreStandardsDescription": "commonCoreStandardsDescription",
@@ -226,9 +235,11 @@ ShallowWrapper {
                     "itemKey": 123,
                     "subjectCode": "Math",
                     "subjectLabel": "MTH",
-                    "target": "",
+                    "targetHash": 323,
+                    "targetShortName": "something",
                     "title": "test_title",
                   },
+                  "rubrics": Array [],
                   "targetDescription": "targetDescription",
                 },
                 "ref": null,
@@ -248,7 +259,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -262,7 +273,7 @@ ShallowWrapper {
               className="item-content"
             >
               <div>
-                <ItemInformationDetail
+                <AboutThisItemDetail
                   commonCoreStandardsDescription="commonCoreStandardsDescription"
                   depthOfKnowledge="depthOfKnowledge"
                   educationalDifficulty="educationalDifficulty"
@@ -280,10 +291,12 @@ ShallowWrapper {
                       "itemKey": 123,
                       "subjectCode": "Math",
                       "subjectLabel": "MTH",
-                      "target": "",
+                      "targetHash": 323,
+                      "targetShortName": "something",
                       "title": "test_title",
                     }
                   }
+                  rubrics={Array []}
                   targetDescription="targetDescription"
                 />
               </div>
@@ -296,7 +309,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "changedTab": [Function],
@@ -308,7 +321,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -317,7 +330,7 @@ ShallowWrapper {
                 className="item-content"
               >
                 <div>
-                  <ItemInformationDetail
+                  <AboutThisItemDetail
                     commonCoreStandardsDescription="commonCoreStandardsDescription"
                     depthOfKnowledge="depthOfKnowledge"
                     educationalDifficulty="educationalDifficulty"
@@ -335,10 +348,12 @@ ShallowWrapper {
                         "itemKey": 123,
                         "subjectCode": "Math",
                         "subjectLabel": "MTH",
-                        "target": "",
+                        "targetHash": 323,
+                        "targetShortName": "something",
                         "title": "test_title",
                       }
                     }
+                    rubrics={Array []}
                     targetDescription="targetDescription"
                   />
                 </div>
@@ -350,11 +365,11 @@ ShallowWrapper {
             " ",
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": <div>
-                  <ItemInformationDetail
+                  <AboutThisItemDetail
                     commonCoreStandardsDescription="commonCoreStandardsDescription"
                     depthOfKnowledge="depthOfKnowledge"
                     educationalDifficulty="educationalDifficulty"
@@ -372,10 +387,12 @@ ShallowWrapper {
                         "itemKey": 123,
                         "subjectCode": "Math",
                         "subjectLabel": "MTH",
-                        "target": "",
+                        "targetHash": 323,
+                        "targetShortName": "something",
                         "title": "test_title",
                       }
                     }
+                    rubrics={Array []}
                     targetDescription="targetDescription"
                   />
                 </div>,
@@ -384,10 +401,10 @@ ShallowWrapper {
               "ref": null,
               "rendered": Object {
                 "instance": null,
-                "key": null,
+                "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <ItemInformationDetail
+                  "children": <AboutThisItemDetail
                     commonCoreStandardsDescription="commonCoreStandardsDescription"
                     depthOfKnowledge="depthOfKnowledge"
                     educationalDifficulty="educationalDifficulty"
@@ -405,17 +422,19 @@ ShallowWrapper {
                         "itemKey": 123,
                         "subjectCode": "Math",
                         "subjectLabel": "MTH",
-                        "target": "",
+                        "targetHash": 323,
+                        "targetShortName": "something",
                         "title": "test_title",
                       }
                     }
+                    rubrics={Array []}
                     targetDescription="targetDescription"
                   />,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
-                  "key": null,
+                  "key": undefined,
                   "nodeType": "class",
                   "props": Object {
                     "commonCoreStandardsDescription": "commonCoreStandardsDescription",
@@ -434,9 +453,11 @@ ShallowWrapper {
                       "itemKey": 123,
                       "subjectCode": "Math",
                       "subjectLabel": "MTH",
-                      "target": "",
+                      "targetHash": 323,
+                      "targetShortName": "something",
                       "title": "test_title",
                     },
+                    "rubrics": Array [],
                     "targetDescription": "targetDescription",
                   },
                   "ref": null,
@@ -487,7 +508,8 @@ ShallowWrapper {
           "itemKey": 123,
           "subjectCode": "Math",
           "subjectLabel": "MTH",
-          "target": "",
+          "targetHash": 323,
+          "targetShortName": "something",
           "title": "test_title",
         },
         "rubrics": Array [],
@@ -504,7 +526,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -526,7 +548,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "changedTab": [Function],
@@ -538,7 +560,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -554,7 +576,7 @@ ShallowWrapper {
           " ",
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": Array [],
@@ -574,7 +596,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -596,7 +618,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "changedTab": [Function],
@@ -608,7 +630,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -624,7 +646,7 @@ ShallowWrapper {
             " ",
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": Array [],
@@ -675,7 +697,8 @@ ShallowWrapper {
           "itemKey": 123,
           "subjectCode": "Math",
           "subjectLabel": "MTH",
-          "target": "",
+          "targetHash": 323,
+          "targetShortName": "something",
           "title": "test_title",
         },
         "rubrics": Array [],
@@ -692,7 +715,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -718,7 +741,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "changedTab": [Function],
@@ -730,7 +753,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -750,7 +773,7 @@ ShallowWrapper {
           " ",
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": <ItemFrame
@@ -761,7 +784,7 @@ ShallowWrapper {
             "ref": null,
             "rendered": Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "class",
               "props": Object {
                 "url": "http://ivs.smarterbalanced.org/items?ids=1-123",
@@ -782,7 +805,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -808,7 +831,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "changedTab": [Function],
@@ -820,7 +843,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -840,7 +863,7 @@ ShallowWrapper {
             " ",
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": <ItemFrame
@@ -851,7 +874,7 @@ ShallowWrapper {
               "ref": null,
               "rendered": Object {
                 "instance": null,
-                "key": null,
+                "key": undefined,
                 "nodeType": "class",
                 "props": Object {
                   "url": "http://ivs.smarterbalanced.org/items?ids=1-123",

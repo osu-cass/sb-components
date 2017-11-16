@@ -1,29 +1,25 @@
 ﻿import * as React from 'react';
-import * as Rubric from '../PageTabs/Rubric';
-import * as AboutItemVM from '../Models/AboutItemVM';
-import * as PageTabs from '../PageTabs/ItemTabs';
-import * as ItemViewerFrame from './ItemViewerFrame';
-import * as ItemInformation from '../PageTabs/ItemInformation';
-import * as ItemInformationDetail from '../PageTabs/ItemInformationDetail';
-import * as ApiModels from '../Models/ApiModels';
-
-export interface Props {
-    item?: AboutItemVM.AboutThisItem;
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
+import {} from '../ItemTable/ItemTableHeader'
+import { ItemFrame, Rubric, AboutThisItemDetail } from '../index';
+import { Tabs, ItemTabs } from '../PageTabs/ItemTabs';
+export interface ItemCardViewerProps {
+    item?: AboutItemModel;
 }
 
 export interface State {
-    selectedTab: PageTabs.Tabs;
+    selectedTab: Tabs;
 }
 
-export class ItemCardViewer extends React.Component<Props, State> {
-    constructor(props: Props) {
+export class ItemCardViewer extends React.Component<ItemCardViewerProps, State> {
+    constructor(props: ItemCardViewerProps) {
         super(props);
         this.state = {
             selectedTab: "viewer",
         }
     }
 
-    onTabChange(tab: PageTabs.Tabs) {
+    onTabChange(tab: Tabs) {
         this.setState({
             selectedTab: tab
         });
@@ -32,14 +28,14 @@ export class ItemCardViewer extends React.Component<Props, State> {
     renderViewer(url: string) {
         return (
             <div className="item-content">
-                <ItemViewerFrame.ItemFrame url={url} />
+                <ItemFrame url={url} />
             </div>
         );
     }
-    
-    renderRubric() { 
+
+    renderRubric() {
         if (this.props.item) {
-            const rubrics = this.props.item.rubrics.map((ru, i) => <Rubric.RubricComponent {...ru } key={String(i)} />)
+            const rubrics = this.props.item.rubrics.map((ru, i) => <Rubric {...ru } key={String(i)} />)
             return (
                 <div className="item-content">{rubrics}</div>
             );
@@ -51,13 +47,7 @@ export class ItemCardViewer extends React.Component<Props, State> {
             const aboutItem = this.props.item;
             return (
                 <div className="item-content">
-                    <div><ItemInformationDetail.ItemInformationDetail
-                        itemCardViewModel={aboutItem.itemCardViewModel}
-                        depthOfKnowledge={aboutItem.depthOfKnowledge}
-                        commonCoreStandardsDescription={aboutItem.commonCoreStandardsDescription}
-                        targetDescription={aboutItem.targetDescription}
-                        educationalDifficulty={aboutItem.educationalDifficulty}
-                        evidenceStatement={aboutItem.evidenceStatement} />
+                    <div><AboutThisItemDetail {...aboutItem}/>
                     </div>
                 </div>
             );
@@ -85,10 +75,9 @@ export class ItemCardViewer extends React.Component<Props, State> {
         }
     }
     render() {
-        const tabs = PageTabs.ItemTabs;
         return (
             <div className="item-card">
-                <PageTabs.ItemTabs changedTab={(tab) => this.onTabChange(tab)} selectedTab={this.state.selectedTab}/>
+                <ItemTabs changedTab={(tab) => this.onTabChange(tab)} selectedTab={this.state.selectedTab} />
                 {this.renderChosen()}
             </div>
         );

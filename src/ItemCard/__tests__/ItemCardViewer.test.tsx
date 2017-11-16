@@ -1,17 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ItemCardViewer } from '../ItemCardViewer';
-import * as AboutItemVM from '../../Models/AboutItemVM';
-import * as ItemCardViewModel from '../../Models/ItemCardViewModel'
-import * as Rubric from '../../PageTabs/Rubric';
 import * as TestUtils from 'react-dom/test-utils';
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow, mount, render } from 'enzyme';
 
-Enzyme.configure({ adapter: new Adapter() });
+import { ItemCardModel, RubricModel, AboutItemModel } from '../../';
+
 
 describe("ItemCardViewer", () => {
-    const itemCardViewModel: ItemCardViewModel.ItemCardViewModel = {
+    const itemCardViewModel: ItemCardModel = {
         bankKey: 1,
         itemKey: 123,
         title: "test_title",
@@ -21,15 +18,16 @@ describe("ItemCardViewer", () => {
         subjectLabel: "MTH",
         claimCode: "claim_1234",
         claimLabel: "claim_math",
-        target: "",
+        targetShortName: "something",
         interactionTypeCode: "type01",
         interactionTypeLabel: "type01label",
-        isPerformanceItem: false
+        isPerformanceItem: false,
+        targetHash: 323
     }
 
-    const rubrics: Rubric.Rubric[] = []
+    const rubrics: RubricModel[] = []
 
-    const item: AboutItemVM.AboutThisItem = {
+    const item: AboutItemModel = {
         rubrics,
         itemCardViewModel,
         depthOfKnowledge: "depthOfKnowledge",

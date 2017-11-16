@@ -1,10 +1,10 @@
 import * as React from "react";
-import * as AboutItemModels from "./AboutItemModels";
+import { AboutItemModel } from "./AboutItemModels";
 
 export class AboutThisItemDetail extends React.Component<
-  AboutItemModels.AboutItemModel,
+  AboutItemModel,
   {}
-> {
+  > {
   renderField(
     label: string,
     value: string | number,
@@ -70,6 +70,17 @@ export class AboutThisItemDetail extends React.Component<
           this.props.targetDescription,
           "target-description"
         )}
+        {this.renderField(
+          "Educational Difficulty",
+          this.props.educationalDifficulty,
+          "educational-difficulty"
+        )}
+        {this.renderField(
+          "Evidence Statement",
+          this.props.evidenceStatement,
+          "evidence-statement"
+        )}
+
       </div>
     );
   }

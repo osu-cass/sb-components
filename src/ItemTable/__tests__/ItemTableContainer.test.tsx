@@ -1,40 +1,35 @@
 import 'jsdom-global/register'
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { ItemPageTable, Props } from '../ItemPageTable';
-import * as GradeLevels from '../../Models/GradeLevels';
-import * as ItemCardViewModel from '../../Models/ItemCardViewModel';
-import * as ApiModels from '../../Models/ApiModels';
-import * as Rubric from '../../PageTabs/Rubric';
-import * as AboutItemVM from '../../Models/AboutItemVM';
 import * as TestUtils from 'react-dom/test-utils';
-import Enzyme, { shallow, mount, render } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow, mount, render } from 'enzyme';
 
-Enzyme.configure({ adapter: new Adapter() });
+import { GradeLevels, RubricModel, AboutItemModel, Resource, ItemCardModel } from '../../index';
+import { ItemTableContainerProps, ItemTableContainer } from '../ItemTableContainer';
 
 describe("ItemPageTable", () => {
     const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"]
 
-    const itemCards: ItemCardViewModel.ItemCardViewModel[] = [{
+    const itemCards: ItemCardModel[] = [{
         bankKey: 1,
         itemKey: 3,
         title: "",
-        grade: GradeLevels.GradeLevels.All,
+        grade: GradeLevels.All,
         gradeLabel: "",
         subjectCode: "",
         subjectLabel: "",
         claimCode: "",
         claimLabel: "",
-        target: "",
+        targetShortName: "",
         interactionTypeCode: "",
         interactionTypeLabel: "",
-        isPerformanceItem: true
+        isPerformanceItem: true,
+        targetHash: 3123
     }]
 
-    const rubrics: Rubric.Rubric[] = []
+    const rubrics: RubricModel[] = []
 
-    const content: AboutItemVM.AboutThisItem = {
+    const content: AboutItemModel = {
         rubrics,
         itemCardViewModel: itemCards[0],
         depthOfKnowledge: "depthOfKnowledge",
@@ -44,23 +39,23 @@ describe("ItemPageTable", () => {
         evidenceStatement: "evidenceStatement"
     }
 
-    const item: ApiModels.Resource<AboutItemVM.AboutThisItem>= {
+    const item: Resource<AboutItemModel>= {
         kind: "success",
         content
     }
 
-    const props: Props = {
+    const props: ItemTableContainerProps = {
         onRowSelection: jest.fn((item: { itemKey: number; bankKey: number }) => { return null }),
         itemCards,
         item
     }
 
     it("matches snapshot", () => {
-        expect(shallow(<ItemPageTable {...props} />)).toMatchSnapshot();;
+        expect(shallow(<ItemTableContainer {...props} />)).toMatchSnapshot();;
     })
 
     it("sorts list on header click", () => {
-        let wrapper = mount(<ItemPageTable {...props} />);
+        let wrapper = mount(<ItemTableContainer {...props} />);
         tabs.forEach(tab => {
             wrapper.find(`th.${tab}`).simulate('click');
             expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
@@ -68,7 +63,7 @@ describe("ItemPageTable", () => {
     })
 
     it("calls onRowSelection()", () => {
-        let wrapper = mount(<ItemPageTable {...props} />);
+        let wrapper = mount(<ItemTableContainer {...props} />);
         wrapper.find('td.item').simulate('click');
         expect(props.onRowSelection).toHaveBeenCalled();
     })

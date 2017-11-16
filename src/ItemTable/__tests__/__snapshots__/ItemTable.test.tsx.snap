@@ -4,7 +4,7 @@ exports[`ItemTable matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <DataTable
+  Symbol(enzyme.__unrendered__): <ItemTable
     columns={Array []}
     item={
       Object {
@@ -25,7 +25,8 @@ ShallowWrapper {
             "itemKey": 3,
             "subjectCode": "",
             "subjectLabel": "",
-            "target": "",
+            "targetHash": 323,
+            "targetShortName": "",
             "title": "",
           },
           "rubrics": Array [],
@@ -49,7 +50,8 @@ ShallowWrapper {
         "itemKey": 123,
         "subjectCode": "Math",
         "subjectLabel": "MTH",
-        "target": "",
+        "targetHash": 2323,
+        "targetShortName": "",
         "title": "test_title",
       }
     }
@@ -65,7 +67,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [],
@@ -77,7 +79,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [],

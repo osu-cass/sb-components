@@ -1,37 +1,39 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { DataTable } from '../ItemTable';
+import { ItemTable } from '../ItemTable';
 import * as TestUtils from 'react-dom/test-utils';
-import * as ItemCardViewModel from '../../Models/ItemCardViewModel';
-import * as GradeLevels from '../../Models/GradeLevels';
-import * as Rubric from '../../PageTabs/Rubric';
-import * as AboutItemVM from '../../Models/AboutItemVM';
-import * as ApiModels from '../../Models/ApiModels';
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow, mount, render } from 'enzyme';
 
-Enzyme.configure({ adapter: new Adapter() });
+
+import {
+    ItemCardModel,
+    GradeLevels,
+    RubricModel,
+    AboutItemModel,
+    Resource
+} from '../../index';
 
 describe("ItemTable", () => {
-    const itemCards: ItemCardViewModel.ItemCardViewModel[] = [{
+    const itemCards: ItemCardModel[] = [{
         bankKey: 1,
         itemKey: 3,
         title: "",
-        grade: GradeLevels.GradeLevels.All,
+        grade: GradeLevels.All,
         gradeLabel: "",
         subjectCode: "",
         subjectLabel: "",
         claimCode: "",
         claimLabel: "",
-        target: "",
+        targetShortName: "",
         interactionTypeCode: "",
         interactionTypeLabel: "",
-        isPerformanceItem: true
+        isPerformanceItem: true,
+        targetHash: 323
     }]
 
-    const rubrics: Rubric.Rubric[] = []
+    const rubrics: RubricModel[] = []
 
-    const content: AboutItemVM.AboutThisItem = {
+    const content: AboutItemModel = {
         rubrics,
         itemCardViewModel: itemCards[0],
         depthOfKnowledge: "depthOfKnowledge",
@@ -41,11 +43,11 @@ describe("ItemTable", () => {
         evidenceStatement: "evidenceStatement"
     }
 
-    const item: ApiModels.Resource<AboutItemVM.AboutThisItem> = {
+    const item: Resource<AboutItemModel> = {
         kind: "success",
         content
     }
-    
+
     const props = {
         tableRef: jest.fn(),
         mapRows: [],
@@ -53,24 +55,25 @@ describe("ItemTable", () => {
         sort: [],
         columns: [],
         selectedRow: {
-                bankKey: 1,
-                itemKey: 123,
-                title: "test_title",
-                grade: 1,
-                gradeLabel: "1",
-                subjectCode: "Math",
-                subjectLabel: "MTH",
-                claimCode: "claim_1234",
-                claimLabel: "claim_math",
-                target: "",
-                interactionTypeCode: "type01",
-                interactionTypeLabel: "type01label",
-                isPerformanceItem: false
+            bankKey: 1,
+            itemKey: 123,
+            title: "test_title",
+            grade: 1,
+            gradeLabel: "1",
+            subjectCode: "Math",
+            subjectLabel: "MTH",
+            claimCode: "claim_1234",
+            claimLabel: "claim_math",
+            targetShortName: "",
+            interactionTypeCode: "type01",
+            interactionTypeLabel: "type01label",
+            isPerformanceItem: false,
+            targetHash: 2323
         },
         item
     }
-    
+
     it("matches snapshot", () => {
-        expect(shallow(<DataTable {...props}/>)).toMatchSnapshot();;
+        expect(shallow(<ItemTable {...props} />)).toMatchSnapshot();;
     })
 })

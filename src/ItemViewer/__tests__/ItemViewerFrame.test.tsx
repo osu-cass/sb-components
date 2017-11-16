@@ -2,10 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ItemFrame } from '../ItemViewerFrame';
 import * as TestUtils from 'react-dom/test-utils';
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-Enzyme.configure({ adapter: new Adapter() });
+import { shallow, mount, render } from 'enzyme';
 
 describe("ItemViewerFrame", () => {
     const obj = {

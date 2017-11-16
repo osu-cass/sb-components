@@ -2,13 +2,13 @@
 import "../Styles/modal.less";
 import "../Styles/accessibility.less";
 import * as React from "react";
-import * as Accessibility from "./AccessibilityModels";
-import * as Dropdown from "../DropDown/DropDown";
+import { AccessibilityResourceModel, AccResourceGroupModel, ResourceSelectionsModel, getResourceTypes } from "./AccessibilityModels";
+import {Dropdown, DropdownProps} from "../DropDown/DropDown";
 import * as ReactModal from "react-modal";
 
 export interface ItemAccessibilityModalProps {
-  accResourceGroups: Accessibility.AccResourceGroupModel[];
-  onSave(selections: Accessibility.ResourceSelectionsModel): void;
+  accResourceGroups: AccResourceGroupModel[];
+  onSave(selections: ResourceSelectionsModel): void;
   onReset(): void;
   showModal?: boolean;
 }
@@ -19,7 +19,7 @@ export interface IsResourceExpanded {
 
 export interface ItemAccessibilityModalState {
   resourceTypeExpanded: IsResourceExpanded;
-  resourceSelections: Accessibility.ResourceSelectionsModel;
+  resourceSelections: ResourceSelectionsModel;
   showModal: boolean;
 }
 
@@ -132,7 +132,7 @@ export class ItemAccessibilityModal extends React.Component<
         (this.state.resourceSelections || {})[res.resourceCode] ||
         res.currentSelectionCode;
       let selections = res.selections.filter(s => !s.hidden);
-      let ddprops: Dropdown.DropdownProps = {
+      let ddprops: DropdownProps = {
         defaultSelection: res.currentSelectionCode,
         label: res.label,
         selections: selections,
@@ -141,7 +141,7 @@ export class ItemAccessibilityModal extends React.Component<
         updateSelection: this.updateSelection,
         resourceCode: res.resourceCode
       };
-      return <Dropdown.Dropdown {...ddprops} key={res.resourceCode} />;
+      return <Dropdown {...ddprops} key={res.resourceCode} />;
     });
 
     let expandButton: JSX.Element | undefined;
@@ -185,7 +185,7 @@ export class ItemAccessibilityModal extends React.Component<
   }
 
   render() {
-    const types = Accessibility.getResourceTypes(this.props.accResourceGroups);
+    const types = getResourceTypes(this.props.accResourceGroups);
     const groups = types.map(t => this.renderResourceType(t));
 
     return (

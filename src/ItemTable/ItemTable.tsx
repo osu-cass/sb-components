@@ -1,30 +1,29 @@
-﻿import * as ItemCardViewModel from '../Models/ItemCardViewModel';
-import * as React from "react";
-import * as ItemTableHeader from './ItemTableHeader';
-import * as AboutItemVM from '../Models/AboutItemVM';
-import * as ApiModels from '../Models/ApiModels';
-import * as ItemCardViewer from '../AboutItem/ItemCardViewer';
+﻿import * as React from "react";
+import { HeaderSort, SortColumn } from './ItemTableModels';
+import { Resource } from '../ApiModel';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
+import { ItemCardModel } from '../ItemCard/ItemCardModels';
+import { ItemCardViewer } from '../ItemCard/ItemCardViewer';
 
-interface Props {
-    tableRef?: (ref: HTMLTableElement) => void;
-    mapRows: ItemCardViewModel.ItemCardViewModel[];
-    rowOnClick: (item: ItemCardViewModel.ItemCardViewModel) => void;
-    sort: ItemTableHeader.HeaderSort[];
-    columns: ItemTableHeader.SortColumn[];
-    selectedRow?: ItemCardViewModel.ItemCardViewModel | null;
-    item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
+export interface ItemTableProps {
+    mapRows: ItemCardModel[];
+    rowOnClick: (item: ItemCardModel) => void;
+    sort: HeaderSort[];
+    columns: SortColumn[];
+    selectedRow?: ItemCardModel | null;
+    item: Resource<AboutItemModel>;
 }
 
-export class DataTable extends React.Component<Props, {}> {
-    constructor(props: Props) {
+export class ItemTable extends React.Component<ItemTableProps, {}> {
+    constructor(props: ItemTableProps) {
         super(props);
     }
 
-    handleRowClick = (rowData: ItemCardViewModel.ItemCardViewModel) => {
+    handleRowClick = (rowData: ItemCardModel) => {
         this.props.rowOnClick(rowData)
     }
 
-    renderCell(col: ItemTableHeader.SortColumn, cellData: ItemCardViewModel.ItemCardViewModel): JSX.Element {
+    renderCell(col: SortColumn, cellData: ItemCardModel): JSX.Element {
         return (
             <td key={col.header}
                 className={col.className}>
@@ -36,10 +35,10 @@ export class DataTable extends React.Component<Props, {}> {
     }
 
     //TODO replace X with a > that specifies that  the table  row can  be expanded
-    renderRow(rowData: ItemCardViewModel.ItemCardViewModel, index: number): JSX.Element {
+    renderRow(rowData: ItemCardModel, index: number): JSX.Element {
         const collapse = (<i style={{ color: "gray" }} className="fa fa-chevron-right fa-sm" aria-hidden="true"></i>)
         const expand = (<i style={{ color: "white" }} className="fa fa-chevron-down fa-sm" aria-hidden="true"></i>)
-        const style={
+        const style = {
             display: "block",
             padding: "0px"
         }
@@ -57,31 +56,31 @@ export class DataTable extends React.Component<Props, {}> {
                 {this.props.columns.map(col => this.renderCell(col, rowData))}
             </tr>
         );
-        if (this.props.item.kind === "success" && isSelected){
-                row = (
-                    <tr key={index}>
-                        <td colSpan={6}>
-                            <table className="item-table mapcomponent-table" style={style}>
-                                <tbody>
-                                    {row}
-                                    <tr>
-                                        <td colSpan={6}>
-                                            <ItemCardViewer.ItemCardViewer
-                                                item={this.props.item.content}
-                                            />
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                )
+        if (this.props.item.kind === "success" && isSelected) {
+            row = (
+                <tr key={index}>
+                    <td colSpan={6}>
+                        <table className="item-table mapcomponent-table" style={style}>
+                            <tbody>
+                                {row}
+                                <tr>
+                                    <td colSpan={6}>
+                                        <ItemCardViewer
+                                            item={this.props.item.content}
+                                        />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            )
         }
 
         return row;
     }
 
-        render() {
-            return (<tbody>{this.props.mapRows.map((rowData, idx) => this.renderRow(rowData, idx))}</tbody>);
-        }
+    render() {
+        return (<tbody>{this.props.mapRows.map((rowData, idx) => this.renderRow(rowData, idx))}</tbody>);
     }
+}

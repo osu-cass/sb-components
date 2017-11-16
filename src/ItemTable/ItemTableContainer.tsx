@@ -1,55 +1,51 @@
 import * as React from 'react'
-import * as ItemTableHeader from './ItemTableHeader'
-import * as ItemTable from './ItemTable'
-import * as ItemCardViewModel from '../Models/ItemCardViewModel'
-import * as GradeLevels from "../Models/GradeLevels";
-import { ItemsSearchViewModel } from "../ScoreGuide/ItemSearchContainer";
-import * as ItemModels from '../Models/ItemModels';
-import * as AboutItemVM from '../Models/AboutItemVM';
-import * as ApiModels from '../Models/ApiModels';
+import { ItemCardModel } from '../ItemCard/ItemCardModels';
+import { AboutItemModel } from '../AboutItem/AboutItemModels';
+import { Resource } from '../ApiModel';
+import { HeaderSort, SortColumn, SortDirection, headerColumns } from './ItemTableModels';
+import {HeaderTable} from './ItemTableHeader';
+import { ItemTable } from './ItemTable';
 
-export interface Props {
+export interface ItemTableContainerProps {
     onRowSelection: (item: { itemKey: number; bankKey: number }, reset: boolean) => void;
-    itemCards?: ItemCardViewModel.ItemCardViewModel[];
-    item: ApiModels.Resource<AboutItemVM.AboutThisItem>;
+    itemCards?: ItemCardModel[];
+    item: Resource<AboutItemModel>;
 }
 
-export interface State {
-    sorts: ItemTableHeader.HeaderSort[];
-    selectedRow?: ItemCardViewModel.ItemCardViewModel | null;
+export interface ItemTableContainerState {
+    sorts: HeaderSort[];
+    selectedRow?: ItemCardModel;
 }
 
-export class ItemPageTable extends React.Component<Props, State>{
-    private headerColumns = ItemTableHeader.headerColumns;
-    private dataTableRef: HTMLTableElement;
+export class ItemTableContainer extends React.Component<ItemTableContainerProps, ItemTableContainerState>{
+    private pageHeaderColumns = headerColumns;
 
-    constructor(props: Props) {
+    constructor(props: ItemTableContainerProps) {
         super(props);
         this.state = {
-            sorts: [],
-            selectedRow: null
+            sorts: []
         }
     }
 
-    onClickHeader = (col: ItemTableHeader.SortColumn) => {
+    onClickHeader = (col: SortColumn) => {
         const newSorts = (this.state.sorts || []).slice();
         const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
         if (headIdx !== -1) {
             const newSort = Object.assign({}, newSorts[headIdx]);
-            if (newSort.direction == ItemTableHeader.SortDirection.Ascending) {
-                newSort.direction = ItemTableHeader.SortDirection.Descending;
+            if (newSort.direction == SortDirection.Ascending) {
+                newSort.direction = SortDirection.Descending;
             }
-            else if (newSort.direction == ItemTableHeader.SortDirection.Descending) {
-                newSort.direction = ItemTableHeader.SortDirection.NoSort;
+            else if (newSort.direction == SortDirection.Descending) {
+                newSort.direction = SortDirection.NoSort;
             }
             else {
-                newSort.direction = ItemTableHeader.SortDirection.Ascending;
+                newSort.direction = SortDirection.Ascending;
             }
             newSorts[headIdx] = newSort;
         } else {
-            const newSort: ItemTableHeader.HeaderSort = {
+            const newSort: HeaderSort = {
                 col: col,
-                direction: ItemTableHeader.SortDirection.Ascending,
+                direction: SortDirection.Ascending,
                 resetSortCount: 0
             };
             newSorts.push(newSort);
@@ -57,18 +53,18 @@ export class ItemPageTable extends React.Component<Props, State>{
         this.setState({ sorts: newSorts });
     }
 
-    onSelectItem = (item: ItemCardViewModel.ItemCardViewModel) => {
+    onSelectItem = (item: ItemCardModel) => {
         const card = { itemKey: item.itemKey, bankKey: item.bankKey }
-        if(item === this.state.selectedRow){
+        if (item === this.state.selectedRow) {
             this.props.onRowSelection(card, true)
-            this.setState({selectedRow: null})
-        }else{
+            this.setState({ selectedRow: undefined })
+        } else {
             this.props.onRowSelection(card, false)
-            this.setState({selectedRow: item})
+            this.setState({ selectedRow: item })
         }
     };
 
-    invokeMultiSort(lhs: ItemCardViewModel.ItemCardViewModel, rhs: ItemCardViewModel.ItemCardViewModel): number {
+    invokeMultiSort(lhs: ItemCardModel, rhs: ItemCardModel): number {
         const sorts = this.state.sorts || [];
         for (const sort of sorts) {
             const diff = sort.col.compare(lhs, rhs) * sort.direction;
@@ -78,8 +74,8 @@ export class ItemPageTable extends React.Component<Props, State>{
         }
         return 0;
     }
-    
-    getTableData = (): ItemCardViewModel.ItemCardViewModel[] | undefined => {
+
+    getTableData = (): ItemCardModel[] | undefined => {
         let data = this.props.itemCards;
         if (data != undefined) {
             data = this.state.sorts && this.state.sorts.length !== 0
@@ -91,10 +87,10 @@ export class ItemPageTable extends React.Component<Props, State>{
 
     renderTableHeader() {
         return (
-            <ItemTableHeader.HeaderTable
+            <HeaderTable
                 sorts={this.state.sorts}
                 onHeaderClick={this.onClickHeader}
-                columns={this.headerColumns} />
+                columns={this.pageHeaderColumns} />
         );
     }
 
@@ -105,12 +101,11 @@ export class ItemPageTable extends React.Component<Props, State>{
             //if no items are returned we want to return a friendly message
             if (itemCards.length !== 0) {
                 content = (
-                    <ItemTable.DataTable
+                    <ItemTable
                         mapRows={itemCards}
                         rowOnClick={this.onSelectItem}
                         sort={this.state.sorts}
-                        tableRef={ref => this.dataTableRef = ref}
-                        columns={this.headerColumns}
+                        columns={this.pageHeaderColumns}
                         selectedRow={this.state.selectedRow}
                         item={this.props.item}
                     />
