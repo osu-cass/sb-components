@@ -163,9 +163,24 @@ export const mockInteractionTypes:InteractionTypeModel[] = [
   }
 ];
 
+export const mockSubjectModel:SubjectModel[] = [
+  {
+    code:"MATH",
+    label:"Mathematics",
+    claimCodes:["MATH1","MATH2","MATH3","MATH4"],
+    interactionTypeCodes:["EQ","GI","MC","MI","MS","TI","SA"]
+  },
+  {
+    code:"ELA",
+    label:"English language arts/literacy",
+    claimCodes:["ELA1","ELA2","ELA3","ELA4"],
+    interactionTypeCodes:["EBSR","SA","HTQ","MC","MS","MI","WER"]
+  }
+];
+
 export const mockItemsSearchModel:ItemsSearchModel = {
-  interactionTypes:[],
-  subjects:[],
+  interactionTypes:mockInteractionTypes,
+  subjects:mockSubjectModel,
   claims:[],
   targets:[]
 };
