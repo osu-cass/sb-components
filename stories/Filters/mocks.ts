@@ -3,7 +3,13 @@ import {
    FilterOptionModel, 
    OptionTypeModel, 
    AdvancedFilterCategoryModel, 
-   BasicFilterCategoryModel 
+   BasicFilterCategoryModel,
+
+   ItemsSearchModel,
+   InteractionTypeModel,
+   SubjectModel,
+   ClaimModel,
+   TargetModel
   } from '../../src';
 import { action } from '@storybook/addon-actions';
 
@@ -74,3 +80,20 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
 ]
 
 export const selectedHandler = action("clicked filter");
+
+
+export const mockInteractionTypes:InteractionTypeModel[] = [
+  {
+    code:"",
+    label:"",
+    description:"",
+    order:0
+  }
+];
+
+export const mockItemsSearchModel:ItemsSearchModel = {
+  interactionTypes:[],
+  subjects:[],
+  claims:[],
+  targets:[]
+};
