@@ -96,11 +96,7 @@
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "/(stories|src)/.*(test)\\.(js|ts|tsx?)$",    
-    "testPathIgnorePatterns": [
-      "/build/",
-      "/node_modules/"
-    ],
+    "testRegex": "(stories|src)/.*(test)\\.(js|ts|tsx?)$",    
     "collectCoverageFrom": [
       "src/**/*.tsx",
       "!src/**/__tests__/*",
