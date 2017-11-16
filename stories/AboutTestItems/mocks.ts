@@ -22,7 +22,9 @@ const aboutItemModel: AboutItemModel = {
     targetDescription: "",
     commonCoreStandardsDescription: "",
     rubrics: [],
-    itemCardViewModel: completeItemCard
+    itemCardViewModel: completeItemCard,
+    educationalDifficulty: "",
+    evidenceStatement: ""
 }
 
 export const defaultAboutTestItemsModel: AboutTestItemsModel = {

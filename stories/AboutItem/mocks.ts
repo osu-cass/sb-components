@@ -1,13 +1,15 @@
 import { AboutItemModel, RubricModel } from "../../src";
 import { completeItemCard } from "../ItemCard/mocks";
-import {GradeLevels} from "../../src/GradeLevels/GradeLevels";
+import { GradeLevels } from "../../src/GradeLevels/GradeLevels";
 
 export const AboutItemMockModel: AboutItemModel = {
     depthOfKnowledge: "",
     targetDescription: "",
     commonCoreStandardsDescription: "",
     rubrics: [],
-    itemCardViewModel: completeItemCard
+    itemCardViewModel: completeItemCard,
+    educationalDifficulty: "",
+    evidenceStatement: ""
 }
 
 //TODO: Add me

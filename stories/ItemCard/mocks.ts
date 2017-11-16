@@ -1,4 +1,4 @@
-import {ItemCardModel} from '../../src'
+import { ItemCardModel } from '../../src'
 
 export const completeItemCard: ItemCardModel = {
     bankKey: 187,
@@ -14,5 +14,5 @@ export const completeItemCard: ItemCardModel = {
     claimCode: "3",
     claimLabel: "Claim",
     targetHash: 33434,
-    isPerformanceItem: false  
+    isPerformanceItem: false
 }

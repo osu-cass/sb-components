@@ -1,39 +1,41 @@
 {
-    "compilerOptions": {
-      "alwaysStrict": true,
-      "noImplicitAny": true,
-      "noEmitOnError": false,
-      "removeComments": false,
-      "declaration": true,
-      "baseUrl": "../build/",
-      "sourceMap": true,
-      "module": "commonjs",
-      "target": "es5",
-      "outDir": "./build",
-      "jsx": "react",
-      "strictNullChecks": true,
-      "allowSyntheticDefaultImports": false,
-      "lib": [
-        "es5",
-        "es6",
-        "dom"
-      ],
-      "types": [
-        "storybook__react",
-        "storybook__addon-actions"
-      ],
-      "typeRoots": [
-        "./node_modules/@types"
-      ]
-    },
-    "exclude": [
-      "node_modules",
-      "wwwroot",
-      "stories"
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noEmitOnError": false,
+    "removeComments": false,
+    "declaration": true,
+    "baseUrl": "../build/",
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "./build",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": false,
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
     ],
-    "jest": {
-      "moduleDirectories": [
-        "node_modules"
-      ]
-    }
+    "types": [
+      "jest",
+      "storybook__react",
+      "storybook__addon-actions"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "stories",
+    "**/__tests__/*"
+  ],
+  "jest": {
+    "moduleDirectories": [
+      "node_modules"
+    ]
   }
+}
