@@ -96,7 +96,7 @@
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "/stories/.*(test)\\.(js|ts|tsx?)$|__tests__/.*\\.(ts|tsx?)$",
+    "testRegex": "/(stories|src)/.*(test)\\.(js|ts|tsx?)$",    
     "testPathIgnorePatterns": [
       "/build/",
       "/node_modules/"
