@@ -69,8 +69,9 @@ export function getCurrentClaimsFilter(model: ItemsSearchModel, currentCategorie
       } as FilterOptionModel;
     });
 
-  const claimsFilter = currentCategories.find(f => f.code === 'claim');
+  const claimsFilter = currentCategories.find(f => f.code.toLowerCase() === 'claim');
   claimsFilter.filterOptions = claimFilterOptions;
+
   return claimsFilter;
 }
 
@@ -95,7 +96,10 @@ export function getCurrentTargets(model: ItemsSearchModel, currentCategories:Adv
       } as FilterOptionModel;
     });
 
-  return targetFilterOptions;
+  const targetsFilter = currentCategories.find(f => f.code.toLowerCase() === 'target');
+  targetsFilter.filterOptions = targetFilterOptions;
+
+  return targetsFilter;
 }
 
 export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
@@ -119,7 +123,10 @@ export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCateg
       } as FilterOptionModel;
     });
 
-  return currentInteractionTypeCodes; // TODO: return interactionTypes filter
+  const interactionTypeFilter = currentCategories.find(f => f.code.toLowerCase() === 'interaction type');
+  interactionTypeFilter.filterOptions = interactionFilterOptions;
+
+  return interactionTypeFilter;
 }
 
 export function filterItemCards(
