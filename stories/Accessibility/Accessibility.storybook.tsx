@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { accessibilityModalProp, mockAccResourceGroups } from "./mocks";
 import { CenterDecorator } from "../CenterDecorator";
 import { ItemAccessibilityModal } from "../../src";
-import { allAccessibilityResourceGroups } from "./accessibilityFull";
+import { allAccessibilityResourceGroups } from "./AccessibilityOptionsMock";
 
 storiesOf("Accessibility Modal", module)
   .addDecorator(CenterDecorator)
