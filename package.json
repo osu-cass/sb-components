@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Shared components for Smarter Balanced",
   "main": "./build/index.js",
   "files": [
