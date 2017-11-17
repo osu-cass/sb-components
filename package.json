@@ -115,6 +115,9 @@
         "plugins": [
           "transform-es2015-modules-commonjs"
         ]
+      },
+      "global": {
+        "window": true
       }
     },
     "moduleFileExtensions": [

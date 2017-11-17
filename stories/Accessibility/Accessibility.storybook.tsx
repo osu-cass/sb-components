@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
 import { accessibilityModalProp, mockAccResourceGroups } from "./mocks";
 import { CenterDecorator } from "../CenterDecorator";

@@ -1,134 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots About Item Modal default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
-      onClick={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
-      />
-      About This Item
-    </button>
-  </div>
+<div>
+  <button
+    aria-label="Open About This Item Modal"
+    className="item-nav-btn btn btn-link"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="glyphicon glyphicon-info-sign glyphicon-pad"
+    />
+    About This Item
+  </button>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing no rubrics 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
-      onClick={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
-      />
-      About This Item
-    </button>
-  </div>
+<div>
+  <button
+    aria-label="Open About This Item Modal"
+    className="item-nav-btn btn btn-link"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="glyphicon glyphicon-info-sign glyphicon-pad"
+    />
+    About This Item
+  </button>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing rubrics 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
-      onClick={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
-      />
-      About This Item
-    </button>
-  </div>
+<div>
+  <button
+    aria-label="Open About This Item Modal"
+    className="item-nav-btn btn btn-link"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="glyphicon glyphicon-info-sign glyphicon-pad"
+    />
+    About This Item
+  </button>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
-      onClick={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
-      />
-      About This Item
-    </button>
-  </div>
+<div>
+  <button
+    aria-label="Open About This Item Modal"
+    className="item-nav-btn btn btn-link"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="glyphicon glyphicon-info-sign glyphicon-pad"
+    />
+    About This Item
+  </button>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
+<div>
+  <button
+    aria-label="Open About This Item Modal"
+    className="item-nav-btn btn btn-link"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="glyphicon glyphicon-info-sign glyphicon-pad"
+    />
+    About This Item
+  </button>
+</div>
+`;
+
+exports[`Storyshots About PT About ELA 1`] = `
 <div
   style={
     Object {
@@ -142,20 +104,252 @@ exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
     }
   }
 >
-  <div>
-    <button
-      aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
-      onClick={[Function]}
-      role="button"
-      tabIndex={0}
+  <div
+    aria-hidden="true"
+    className="modal fade"
+    id="about-performance-tasks-modal-container"
+    role="dialog"
+    tabIndex={-1}
+  >
+    <div
+      className="modal-dialog share-modal"
+      role="document"
     >
-      <span
-        aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
-      />
-      About This Item
-    </button>
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
+        >
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ×
+            </span>
+          </button>
+          <h4
+            className="modal-title"
+            id="myModalLabel"
+          >
+            About Performance Tasks
+          </h4>
+        </div>
+        <div
+          className="modal-body"
+        >
+          <p>
+            <b>
+              Performance tasks
+            </b>
+             measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
+          </p>
+          <p>
+            <b>
+              Note about ELA Performance Task Items: 
+            </b>
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "description",
+                }
+              }
+            />
+          </p>
+        </div>
+        <div
+          className="modal-footer"
+        >
+          <button
+            className="btn btn-primary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT About Math 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    aria-hidden="true"
+    className="modal fade"
+    id="about-performance-tasks-modal-container"
+    role="dialog"
+    tabIndex={-1}
+  >
+    <div
+      className="modal-dialog share-modal"
+      role="document"
+    >
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
+        >
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ×
+            </span>
+          </button>
+          <h4
+            className="modal-title"
+            id="myModalLabel"
+          >
+            About Performance Tasks
+          </h4>
+        </div>
+        <div
+          className="modal-body"
+        >
+          <p>
+            <b>
+              Performance tasks
+            </b>
+             measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
+          </p>
+          <p>
+            <b>
+              Note about Math Performance Task Items: 
+            </b>
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "description",
+                }
+              }
+            />
+          </p>
+        </div>
+        <div
+          className="modal-footer"
+        >
+          <button
+            className="btn btn-primary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT Nothing 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    aria-hidden="true"
+    className="modal fade"
+    id="about-performance-tasks-modal-container"
+    role="dialog"
+    tabIndex={-1}
+  >
+    <div
+      className="modal-dialog share-modal"
+      role="document"
+    >
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
+        >
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ×
+            </span>
+          </button>
+          <h4
+            className="modal-title"
+            id="myModalLabel"
+          >
+            About Performance Tasks
+          </h4>
+        </div>
+        <div
+          className="modal-body"
+        >
+          <p>
+            <b>
+              Performance tasks
+            </b>
+             measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
+          </p>
+          <p>
+            <b>
+              
+            </b>
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "description",
+                }
+              }
+            />
+          </p>
+        </div>
+        <div
+          className="modal-footer"
+        >
+          <button
+            className="btn btn-primary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -1670,6 +1864,127 @@ exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
 </div>
 `;
 
+exports[`Storyshots Collapsible Collapsible with CSS classname 1`] = `
+<div
+  aria-expanded={false}
+  className="test-collapsible"
+  style={Object {}}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible Collapsible with inline red border 1`] = `
+<div
+  aria-expanded={false}
+  className=""
+  style={
+    Object {
+      "border": "1px solid blue",
+    }
+  }
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible No classname of style 1`] = `
+<div
+  aria-expanded={false}
+  className=""
+  style={Object {}}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`] = `
 <div
   style={
@@ -1769,7 +2084,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
 </div>
 `;
 
-exports[`Storyshots Item Card Item Card 1`] = `
+exports[`Storyshots Item Tab information tab 1`] = `
 <div
   style={
     Object {
@@ -1784,116 +2099,31 @@ exports[`Storyshots Item Card Item Card 1`] = `
   }
 >
   <div
-    className="card card-block ela"
-    onClick={[Function]}
-    onKeyUp={[Function]}
-    tabIndex={0}
+    className="tabs"
   >
     <div
-      className="card-contents"
+      className="tab-not-selected"
+      onClick={[Function]}
     >
-      <h4
-        className="card-title"
-        onClick={[Function]}
-        onKeyUp={[Function]}
-      >
-        ELA Grade 4
-      </h4>
-      <p
-        className="card-text subject"
-      >
-        <span
-          className="card-text-label"
-        >
-          Subject:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          ELA
-        </span>
-      </p>
-      <p
-        className="card-text grade"
-      >
-        <span
-          className="card-text-label"
-        >
-          Grade:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Grade 4
-        </span>
-      </p>
-      <p
-        className="card-text claim"
-      >
-        <span
-          className="card-text-label"
-        >
-          Claim:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Claim
-        </span>
-      </p>
-      <p
-        className="card-text target"
-      >
-        <span
-          className="card-text-label"
-        >
-          Target:
-        </span>
-        <span
-          className="card-text-value"
-        >
-          Short Name
-        </span>
-      </p>
-      <p
-        className="card-text interaction-type"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Type:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Item Type
-        </span>
-      </p>
-      <p
-        className="card-text item-id"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Id:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          3434
-        </span>
-      </p>
+      Item Viewer
+    </div>
+    <div
+      className="tab-not-selected"
+      onClick={[Function]}
+    >
+      Rubric and Exemplar
+    </div>
+    <div
+      className="selected-tab"
+      onClick={[Function]}
+    >
+      Item Information
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Item Card Item Card Condensed 1`] = `
+exports[`Storyshots Item Tab rubric tab 1`] = `
 <div
   style={
     Object {
@@ -1908,994 +2138,65 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
   }
 >
   <div
-    className="card card-block ela condensed"
-    onClick={[Function]}
-    onKeyUp={[Function]}
-    tabIndex={0}
+    className="tabs"
   >
     <div
-      className="card-contents"
+      className="tab-not-selected"
+      onClick={[Function]}
     >
-      <h4
-        className="card-title"
-      >
-        ELA
-      </h4>
-      <p
-        className="card-text claim"
-      >
-        <span
-          className="card-text-label"
-        >
-          Claim:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Claim
-        </span>
-      </p>
-      <p
-        className="card-text target"
-      >
-        <span
-          className="card-text-label"
-        >
-          Target:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Short Name
-        </span>
-      </p>
-      <p
-        className="card-text interaction-type"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Type:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Item Type
-        </span>
-      </p>
-      <p
-        className="card-text item-id"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Id:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          3434
-        </span>
-      </p>
+      Item Viewer
+    </div>
+    <div
+      className="selected-tab"
+      onClick={[Function]}
+    >
+      Rubric and Exemplar
+    </div>
+    <div
+      className="tab-not-selected"
+      onClick={[Function]}
+    >
+      Item Information
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Item Page Container just the container 1`] = `<div />`;
-
-exports[`Storyshots Item Page Item Page returns error 1`] = `
-<div>
+exports[`Storyshots Item Tab viewer tab 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
   <div
-    aria-label="Toolbar with button groups"
-    className="item-nav"
-    role="toolbar"
+    className="tabs"
   >
     <div
-      aria-label="First group"
-      className="item-nav-left-group"
-      role="group"
+      className="selected-tab"
+      onClick={[Function]}
     >
-      <a
-        className="item-nav-btn"
-        data-target="#about-item-modal-container"
-        data-toggle="modal"
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-info-sign glyphicon-pad"
-        />
-        <span>
-          About 
-          <span
-            className="item-nav-long-label"
-          >
-            This Item
-          </span>
-        </span>
-      </a>
-      <a
-        className="item-nav-btn"
-        data-target="#more-like-this-modal-container"
-        data-toggle="modal"
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-th-large glyphicon-pad"
-        />
-        <span>
-          More 
-          <span
-            className="item-nav-long-label"
-          >
-            Like This
-          </span>
-        </span>
-      </a>
-      <a
-        className="item-nav-btn"
-        data-target="#share-modal-container"
-        data-toggle="modal"
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-share-alt glyphicon-pad"
-        />
-        Share
-      </a>
-    </div>
-    <div>
-      <div>
-        <button
-          aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-link"
-          onClick={[Function]}
-          role="button"
-          tabIndex={0}
-        >
-          <span
-            aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
-          />
-          About This Item
-        </button>
-      </div>
-      <div>
-        <button
-          aria-label="Open Accessibility Modal"
-          className="accessibility-btn btn btn-primary"
-          onClick={[Function]}
-          tabIndex={0}
-        >
-          <span
-            aria-hidden="true"
-            className="glyphicon glyphicon-collapse-down"
-          >
-            Accessibility
-          </span>
-        </button>
-      </div>
-      <div
-        aria-hidden="true"
-        aria-labelledby="More Like This Modal"
-        className="modal fade"
-        id="more-like-this-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog more-like-this-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                More Like This
-              </h4>
-            </div>
-            <div
-              className="modal-body"
-            >
-              <br />
-              <div
-                className="more-like-this"
-              >
-                <div
-                  className="more-like-this-column"
-                >
-                  <div>
-                    <h3>
-                      Grade 5
-                    </h3>
-                  </div>
-                  No items found for this grade.
-                </div>
-                <div
-                  className="more-like-this-column"
-                >
-                  <div>
-                    <h3>
-                      Grade 6
-                    </h3>
-                  </div>
-                  No items found for this grade.
-                </div>
-                <div
-                  className="more-like-this-column"
-                >
-                  <div>
-                    <h3>
-                      Grade 7
-                    </h3>
-                  </div>
-                  No items found for this grade.
-                </div>
-              </div>
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-hidden="true"
-        className="modal fade"
-        id="share-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog share-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                Share
-              </h4>
-            </div>
-            <div
-              className="modal-body "
-            >
-              <span>
-                The following URL can be used to load this question with your currently saved accessibility options.
-              </span>
-              <div
-                className="input-group"
-              >
-                <input
-                  className="form-control readonly-select"
-                  id="shareUrl"
-                  readOnly={true}
-                  style={
-                    Object {
-                      "maxWidth": "inherit",
-                    }
-                  }
-                  type="text"
-                  value="about:blank&isaap=TDS_ITM1;TDS_APC_SCRUBBER;"
-                />
-                <span
-                  className="input-group-btn"
-                >
-                  <button
-                    className="btn btn-default"
-                    id="copy-button"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <span
-                      aria-hidden="true"
-                      className="glyphicon glyphicon-copy"
-                    />
-                    <span>
-                       Copy to clipboard
-                    </span>
-                  </button>
-                </span>
-              </div>
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-describedby="About Performance Tasks"
-        aria-hidden="true"
-        aria-labelledby="About Performance Tasks"
-        className="modal fade"
-        id="about-performance-tasks-popup-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog share-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                Note about ELA Performance Task Items
-              </h4>
-            </div>
-            <div
-              className="modal-body"
-            >
-              <p
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "",
-                  }
-                }
-              />
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-hidden="true"
-        className="modal fade"
-        id="about-performance-tasks-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog share-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                About Performance Tasks
-              </h4>
-            </div>
-            <div
-              className="modal-body"
-            >
-              <p>
-                <b>
-                  Performance tasks
-                </b>
-                 measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
-              </p>
-              <p>
-                <b>
-                  Note about ELA Performance Task Items: 
-                </b>
-                <span
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "",
-                    }
-                  }
-                />
-              </p>
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      Item Viewer
     </div>
     <div
-      aria-label="Second group"
-      className="item-nav-right-group"
-      role="group"
+      className="tab-not-selected"
+      onClick={[Function]}
     >
-      <button
-        className="accessibility-btn btn btn-primary"
-        data-target="#accessibility-modal-container"
-        data-toggle="modal"
-        onClick={[Function]}
-        onKeyUp={[Function]}
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-collapse-down"
-        />
-        Accessibility
-      </button>
-    </div>
-  </div>
-  <div
-    className="itemViewerFrame"
-    tabIndex={0}
-  >
-    <div
-      className="itemviewer-iframe-spinner"
-    >
-      <img
-        src="/images/spin-large.gif"
-      />
-    </div>
-    <iframe
-      className="itemviewer-iframe"
-      id="itemviewer-iframe"
-      onLoad={[Function]}
-      onLoadStart={[Function]}
-      src="http://ivs.smarterbalanced.org//items?ids=&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3B&scrollToId="
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Item Page Item Page with an item 1`] = `
-<div>
-  <div
-    aria-label="Toolbar with button groups"
-    className="item-nav"
-    role="toolbar"
-  >
-    <div
-      aria-label="First group"
-      className="item-nav-left-group"
-      role="group"
-    >
-      <a
-        className="item-nav-btn"
-        data-target="#about-item-modal-container"
-        data-toggle="modal"
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-info-sign glyphicon-pad"
-        />
-        <span>
-          About 
-          <span
-            className="item-nav-long-label"
-          >
-            This Item
-          </span>
-        </span>
-      </a>
-      <a
-        className="item-nav-btn"
-        data-target="#more-like-this-modal-container"
-        data-toggle="modal"
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-th-large glyphicon-pad"
-        />
-        <span>
-          More 
-          <span
-            className="item-nav-long-label"
-          >
-            Like This
-          </span>
-        </span>
-      </a>
-      <a
-        className="item-nav-btn"
-        data-target="#share-modal-container"
-        data-toggle="modal"
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-share-alt glyphicon-pad"
-        />
-        Share
-      </a>
-    </div>
-    <div>
-      <div>
-        <button
-          aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-link"
-          onClick={[Function]}
-          role="button"
-          tabIndex={0}
-        >
-          <span
-            aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
-          />
-          About This Item
-        </button>
-      </div>
-      <div>
-        <button
-          aria-label="Open Accessibility Modal"
-          className="accessibility-btn btn btn-primary"
-          onClick={[Function]}
-          tabIndex={0}
-        >
-          <span
-            aria-hidden="true"
-            className="glyphicon glyphicon-collapse-down"
-          >
-            Accessibility
-          </span>
-        </button>
-      </div>
-      <div
-        aria-hidden="true"
-        aria-labelledby="More Like This Modal"
-        className="modal fade"
-        id="more-like-this-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog more-like-this-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                More Like This
-              </h4>
-            </div>
-            <div
-              className="modal-body"
-            >
-              <br />
-              <div
-                className="more-like-this"
-              >
-                <div
-                  className="more-like-this-column"
-                >
-                  <div>
-                    <h3>
-                      Grade 5
-                    </h3>
-                  </div>
-                  No items found for this grade.
-                </div>
-                <div
-                  className="more-like-this-column"
-                >
-                  <div>
-                    <h3>
-                      Grade 6
-                    </h3>
-                  </div>
-                  No items found for this grade.
-                </div>
-                <div
-                  className="more-like-this-column"
-                >
-                  <div>
-                    <h3>
-                      Grade 7
-                    </h3>
-                  </div>
-                  No items found for this grade.
-                </div>
-              </div>
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-hidden="true"
-        className="modal fade"
-        id="share-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog share-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                Share
-              </h4>
-            </div>
-            <div
-              className="modal-body "
-            >
-              <span>
-                The following URL can be used to load this question with your currently saved accessibility options.
-              </span>
-              <div
-                className="input-group"
-              >
-                <input
-                  className="form-control readonly-select"
-                  id="shareUrl"
-                  readOnly={true}
-                  style={
-                    Object {
-                      "maxWidth": "inherit",
-                    }
-                  }
-                  type="text"
-                  value="about:blank&isaap=TDS_ITM1;TDS_APC_SCRUBBER;TDS_SCNotepad;TDS_WL_Glossary;TDS_Highlight1;TDS_ExpandablePassages1;TDS_ST1;TDS_PS_L0;TDS_CC0;TDS_Masking0;ENU;TDS_BT0;TDS_SLM0;"
-                />
-                <span
-                  className="input-group-btn"
-                >
-                  <button
-                    className="btn btn-default"
-                    id="copy-button"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <span
-                      aria-hidden="true"
-                      className="glyphicon glyphicon-copy"
-                    />
-                    <span>
-                       Copy to clipboard
-                    </span>
-                  </button>
-                </span>
-              </div>
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-describedby="About Performance Tasks"
-        aria-hidden="true"
-        aria-labelledby="About Performance Tasks"
-        className="modal fade"
-        id="about-performance-tasks-popup-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog share-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                Note about ELA Performance Task Items
-              </h4>
-            </div>
-            <div
-              className="modal-body"
-            >
-              <p
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "",
-                  }
-                }
-              />
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-hidden="true"
-        className="modal fade"
-        id="about-performance-tasks-modal-container"
-        role="dialog"
-        tabIndex={-1}
-      >
-        <div
-          className="modal-dialog share-modal"
-          role="document"
-        >
-          <div
-            className="modal-content"
-          >
-            <div
-              className="modal-header"
-            >
-              <button
-                aria-label="Close"
-                className="close"
-                data-dismiss="modal"
-                type="button"
-              >
-                <span
-                  aria-hidden="true"
-                >
-                  ×
-                </span>
-              </button>
-              <h4
-                className="modal-title"
-                id="myModalLabel"
-              >
-                About Performance Tasks
-              </h4>
-            </div>
-            <div
-              className="modal-body"
-            >
-              <p>
-                <b>
-                  Performance tasks
-                </b>
-                 measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
-              </p>
-              <p>
-                <b>
-                  Note about ELA Performance Task Items: 
-                </b>
-                <span
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "",
-                    }
-                  }
-                />
-              </p>
-            </div>
-            <div
-              className="modal-footer"
-            >
-              <button
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      Rubric and Exemplar
     </div>
     <div
-      aria-label="Second group"
-      className="item-nav-right-group"
-      role="group"
+      className="tab-not-selected"
+      onClick={[Function]}
     >
-      <button
-        className="accessibility-btn btn btn-primary"
-        data-target="#accessibility-modal-container"
-        data-toggle="modal"
-        onClick={[Function]}
-        onKeyUp={[Function]}
-        tabIndex={0}
-      >
-        <span
-          aria-hidden="true"
-          className="glyphicon glyphicon-collapse-down"
-        />
-        Accessibility
-      </button>
+      Item Information
     </div>
-  </div>
-  <div
-    className="itemViewerFrame"
-    tabIndex={0}
-  >
-    <div
-      className="itemviewer-iframe-spinner"
-    >
-      <img
-        src="/images/spin-large.gif"
-      />
-    </div>
-    <iframe
-      className="itemviewer-iframe"
-      id="itemviewer-iframe"
-      onLoad={[Function]}
-      onLoadStart={[Function]}
-      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_ExpandablePassages1%3BTDS_ST1%3BTDS_PS_L0%3BTDS_CC0%3BTDS_Masking0%3BENU%3BTDS_BT0%3BTDS_SLM0%3B&scrollToId=187-3000"
-    />
   </div>
 </div>
 `;
