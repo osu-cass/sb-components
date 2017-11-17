@@ -1,19 +1,21 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.15-beta",
+  "version": "0.0.22",
   "description": "Shared components for Smarter Balanced",
-  "main": "./build/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
-    "build"
+    "lib",
+    "README.md",
+    "LICENSE"
   ],
-  "types": "./build/typings/index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",
     "build-storybook": "npm run clean && build-storybook",
-    "build": "npm run clean && npm run build-ts && cp -r ./src/Styles ./build/Styles",
+    "build": "npm run clean && npm run build-ts && cp -r ./src/Styles ./lib/Styles",
     "build-ts": "./node_modules/.bin/tsc",
-    "clean": "rm -rf ./build ?",
+    "clean": "rm -rf ./lib ?",
     "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
   },
   "repository": {
@@ -24,7 +26,7 @@
     "Dan Van Horn (danvanhorn)",
     "Kevin Turkington (zainkai)"
   ],
-  "license": "MPL",
+  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/osu-cass/sb-components/issues"
   },

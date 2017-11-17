@@ -5,11 +5,10 @@
     "noEmitOnError": false,
     "removeComments": false,
     "declaration": true,
-    "declarationDir": "./build/typings",
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
-    "outDir": "./build",
+    "outDir": "./lib",
     "jsx": "react",
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": false,
@@ -30,7 +29,9 @@
   "exclude": [
     "node_modules",
     "wwwroot",
-    "stories"
+    "stories",
+    "**/__tests__/*",
+    "**/setupTest.ts"
   ],
   "jest": {
     "moduleDirectories": [
