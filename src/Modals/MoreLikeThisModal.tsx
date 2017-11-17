@@ -1,19 +1,39 @@
 import * as React from "react";
 import * as ItemCardCondensed from "../ItemCard/ItemCardCondensed";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
+import * as ReactModal from "react-modal";
+import { MoreLikeThisModel } from "./MoreLikeThisModels";
 
 export interface Column {
   label: string;
   itemCards: ItemCardModel[];
 }
 
-export interface Props {
-  gradeBelowItems: Column | null;
-  sameGradeItems: Column;
-  gradeAboveItems: Column | null;
+export interface MoreLikeThisModalProps extends MoreLikeThisModel {
+  showModal?: boolean;
 }
 
-export class MoreLikeThisModal extends React.Component<Props, {}> {
+export interface MoreLikeThisModalState {
+  showModal: boolean;
+}
+
+export class MoreLikeThisModal extends React.Component<MoreLikeThisModalProps, MoreLikeThisModalState> {
+  constructor(props: MoreLikeThisModalProps) {
+    super(props);
+    this.state = {
+      showModal: this.props.showModal || false
+    };
+  }
+
+  handleShowModal = () => {
+    this.setState({ showModal: true });
+  };
+
+  handleHideModal = () => {
+    this.setState({ showModal: false });
+  };
+
+
   renderColumn(column: Column | null) {
     if (!column || column.label == "NA") {
       return undefined;
@@ -40,33 +60,47 @@ export class MoreLikeThisModal extends React.Component<Props, {}> {
     );
   }
 
+  
   render() {
     return (
-      <div
-        className="modal fade"
-        id="more-like-this-modal-container"
-        tabIndex={-1}
-        role="dialog"
-        aria-labelledby="More Like This Modal"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog more-like-this-modal" role="document">
-          <div className="modal-content">
+      <div>
+        <button
+          className="item-nav-btn btn btn-link"
+          role="button"
+          tabIndex={0}
+          onClick={this.handleShowModal}
+          aria-label="More Like This Modal"
+        >
+          <span
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            aria-hidden="true"
+          />
+         More <span className="item-nav-long-label">Like This</span>
+        </button>
+
+        <ReactModal
+          isOpen={this.state.showModal}
+          contentLabel="More Like This Modal"
+          onRequestClose={this.handleHideModal}
+          overlayClassName="react-modal-overlay"
+          className="react-modal-content more-like-this-modal"
+        >
+          <div
+            className="modal-wrapper"
+            aria-labelledby="More Like This"
+            aria-hidden="true"
+          >
             <div className="modal-header">
+              <h4 className="modal-title">More Like This</h4>
               <button
-                type="button"
                 className="close"
-                data-dismiss="modal"
-                aria-label="Close"
+                onClick={this.handleHideModal}
+                aria-label="Close modal"
               >
-                <span aria-hidden="true">&times;</span>
+                <span className="fa fa-times" aria-hidden="true" />
               </button>
-              <h4 className="modal-title" id="myModalLabel">
-                More Like This
-              </h4>
             </div>
             <div className="modal-body">
-              <br />
               <div className="more-like-this">
                 {this.renderColumn(this.props.gradeBelowItems)}
                 {this.renderColumn(this.props.sameGradeItems)}
@@ -74,12 +108,16 @@ export class MoreLikeThisModal extends React.Component<Props, {}> {
               </div>
             </div>
             <div className="modal-footer">
-              <button className="btn btn-primary" data-dismiss="modal">
+              <button
+                className="btn btn-primary"
+                aria-label="Close modal"
+                onClick={this.handleHideModal}
+              >
                 Close
               </button>
             </div>
           </div>
-        </div>
+        </ReactModal>
       </div>
     );
   }

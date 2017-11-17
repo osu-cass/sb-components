@@ -3,8 +3,10 @@ import { storiesOf } from "@storybook/react";
 import { RouterDecorator } from "../RouterDecorator";
 import { AboutItem } from "../../src";
 import { AboutItemMockModel, rubrics, rubricsEsn, allRubrics } from "./mocks";
+import {CenterDecorator} from "../CenterDecorator";
 
 storiesOf("About Item Modal", module)
+.addDecorator(CenterDecorator)
 .addDecorator(RouterDecorator)
   .add("default", () => <AboutItem {...AboutItemMockModel} />)
   .add("showing no rubrics", () => (

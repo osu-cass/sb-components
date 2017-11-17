@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as ReactModal from "react-modal";
 
 function getItemUrl(): string {
   const fullUrl = window.location.href;
@@ -7,14 +8,31 @@ function getItemUrl(): string {
   return url;
 }
 
-export interface Props {
+
+export interface ShareModalProps {
   iSAAP: string;
+  showModal?: boolean;
 }
 
-export class ShareModal extends React.Component<Props, {}> {
-  constructor(props: Props) {
+export interface ShareModalState {
+  showModal: boolean;
+}
+
+export class ShareModal extends React.Component<ShareModalProps, ShareModalState> {
+  constructor(props: ShareModalProps) {
     super(props);
+    this.state = {
+      showModal: this.props.showModal || false
+    };
   }
+
+  handleShowModal = () => {
+    this.setState({ showModal: true });
+  };
+
+  handleHideModal = () => {
+    this.setState({ showModal: false });
+  };
 
   copyToClipboard(event: any): void {
     event.preventDefault();
@@ -25,31 +43,47 @@ export class ShareModal extends React.Component<Props, {}> {
 
   render() {
     const url = getItemUrl() + "&isaap=" + this.props.iSAAP;
+    
     return (
-      <div
-        className="modal fade"
-        id="share-modal-container"
-        tabIndex={-1}
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog share-modal" role="document">
-          <div className="modal-content">
+      <div>
+        <button
+          className="item-nav-btn btn btn-link"
+          role="button"
+          tabIndex={0}
+          onClick={this.handleShowModal}
+          aria-label="Open Share Modal"
+        >
+          <span
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            aria-hidden="true"
+          />
+        Share
+        </button>
+
+        <ReactModal
+          isOpen={this.state.showModal}
+          contentLabel="Share Modal"
+          onRequestClose={this.handleHideModal}
+          overlayClassName="react-modal-overlay"
+          className="react-modal-content share-modal"
+        >
+          <div
+            className="modal-wrapper"
+            aria-labelledby="Share Modal"
+            aria-hidden="true"
+          >
             <div className="modal-header">
+              <h4 className="modal-title">Share</h4>
               <button
-                type="button"
                 className="close"
-                data-dismiss="modal"
-                aria-label="Close"
+                onClick={this.handleHideModal}
+                aria-label="Close modal"
               >
-                <span aria-hidden="true">&times;</span>
+                <span className="fa fa-times" aria-hidden="true" />
               </button>
-              <h4 className="modal-title" id="myModalLabel">
-                Share
-              </h4>
             </div>
-            <div className="modal-body ">
-              <span>
+            <div className="modal-body">
+            <span>
                 The following URL can be used to load this question with your
                 currently saved accessibility options.
               </span>
@@ -79,12 +113,16 @@ export class ShareModal extends React.Component<Props, {}> {
               </div>
             </div>
             <div className="modal-footer">
-              <button className="btn btn-primary" data-dismiss="modal">
+              <button
+                className="btn btn-primary"
+                aria-label="Close modal"
+                onClick={this.handleHideModal}
+              >
                 Close
               </button>
             </div>
           </div>
-        </div>
+        </ReactModal>
       </div>
     );
   }
