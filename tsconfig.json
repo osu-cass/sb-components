@@ -5,7 +5,7 @@
     "noEmitOnError": false,
     "removeComments": false,
     "declaration": true,
-    "baseUrl": "../build/",
+    "declarationDir": "./build/Typings",
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
@@ -31,7 +31,8 @@
     "node_modules",
     "wwwroot",
     "stories",
-    "**/__tests__/*"
+    "**/__tests__/*",
+    "setupTest.ts"
   ],
   "jest": {
     "moduleDirectories": [

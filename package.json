@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Shared components for Smarter Balanced",
   "main": "./build/index.js",
   "files": [
@@ -8,7 +8,7 @@
     "README.md",
     "LICENSE"
   ],
-  "types": "./build/typings/index.d.ts",
+  "types": "./build/Typings/index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",
