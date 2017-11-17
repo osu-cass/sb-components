@@ -178,9 +178,56 @@ export const mockSubjectModel:SubjectModel[] = [
   }
 ];
 
+export const mockClaimModel: ClaimModel[] = [
+  {
+    code:"MATH1",
+    label:"Concepts and Procedures",
+    targetCodes:[]
+  },
+  {
+    code:"MATH2",
+    label:"Problem Solving",
+    targetCodes:[]
+  },
+  {
+    code:"MATH3",
+    label:"Communicating Reasoning",
+    targetCodes:[]
+  },
+  {
+    code:"MATH4",
+    label:"Modeling/Data Analysis",
+    targetCodes:[]
+  },
+  {
+    code:"ELA1",
+    label:"Reading",
+    targetCodes:[1262,1839,2081,2939,2455,2478,1137,1039,1231,2455]
+  },
+  {
+    code:"ELA2",
+    label:"Writing",
+    targetCodes:[2312,1052,1729,1617,2287,1183]
+  },
+  {
+    code:"ELA3",
+    label:"Listening",
+    targetCodes:[1659,1455,1790]
+  },
+  {
+    code:"ELA4",
+    label:"Research/Inquiry",
+    targetCodes:[1287,3180,2924,2832,1136]
+  }
+];
+
+const mockTargetModel:TargetModel[] = [
+  
+];
+
 export const mockItemsSearchModel:ItemsSearchModel = {
   interactionTypes:mockInteractionTypes,
   subjects:mockSubjectModel,
-  claims:[],
+  claims:mockClaimModel,
   targets:[]
 };

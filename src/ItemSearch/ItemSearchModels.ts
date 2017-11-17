@@ -19,7 +19,7 @@ export interface ClaimModel {
   code: string;
   label: string;
   targets?: TargetModel[];
-  targetCodes?: string[];
+  targetCodes?: Number[];
 }
 
 export interface TargetModel {
@@ -97,7 +97,7 @@ export function getCurrentTargets(model: ItemsSearchModel, currentCategories:Adv
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten targetcodes
 
   const targetFilterOptions = model.targets
-    .filter(f => currentTargetCodes.some(t => t=== f.name))
+    .filter(f => currentTargetCodes.some(t => t=== f.nameHash))
     .map(m => {
       return {
         label:m.name,
