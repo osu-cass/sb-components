@@ -9,7 +9,12 @@ export { AboutItem } from "./AboutItem/AboutItem";
 // About Test Items
 //
 export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer";
-export { InteractionTypeModel, AboutTestItemsModel, aboutTestItemsClient } from "./AboutTestItems/AboutTestItemsModels";
+export {
+    InteractionTypeModel,
+    AboutTestItemsModel,
+    aboutTestItemsClient,
+    AboutTestItemsParams
+} from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
