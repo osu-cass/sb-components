@@ -1,6 +1,6 @@
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 
-export type Header =
+export type HeaderType =
   | "Item"
   | "Claim/Target"
   | "Subject"
@@ -13,20 +13,20 @@ export enum SortDirection {
   Descending = -1
 }
 
-export interface HeaderSort {
-  col: SortColumn;
+export interface HeaderSortModel {
+  col: SortColumnModel;
   direction: SortDirection;
   resetSortCount: number;
 }
 
-export interface SortColumn {
-  header: Header;
+export interface SortColumnModel {
+  header: HeaderType;
   className: string;
   accessor: (label: ItemCardModel) => string | number;
   compare: (a: ItemCardModel, b: ItemCardModel) => number;
 }
 
-export const headerColumns: SortColumn[] = [
+export const headerColumns: SortColumnModel[] = [
   {
     header: "Item",
     className: "item",

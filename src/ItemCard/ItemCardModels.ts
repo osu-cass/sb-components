@@ -20,4 +20,8 @@ export interface ItemCardModel {
   interactionTypeCode: string;
   interactionTypeLabel: string;
   isPerformanceItem: boolean;
+  brailleOnlyItem: boolean,
+  domain?: string,
+  depthOfKnowledge?: string,
+  commonCoreStandardId?: string
 }
