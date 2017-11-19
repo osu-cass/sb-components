@@ -9,5 +9,5 @@ export interface AboutItemModel {
   commonCoreStandardsDescription: string;
   educationalDifficulty: string;
   evidenceStatement: string;
-  associatedItems?: string[];
+  associatedItems?: string;
 }
