@@ -64,6 +64,7 @@ export { ItemCard } from "./ItemCard/ItemCard";
 export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
+export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 
 //
 // Item Page
@@ -131,6 +132,23 @@ export { MoreLikeThisModal } from "./Modals/MoreLikeThisModal";
 export { ShareModal } from "./Modals/ShareModal";
 
 //
+// Page Tabs Components
+//
+export { ItemTabs, ItemTabsProps } from "./PageTabs/ItemTabs";
+
+//
+// Pdf Components
+//
+export { CoverPage, CoverPageProps } from "./Pdf/CoverPage";
+export { EvidenceStatement, EvidenceStatementProps } from "./Pdf/EvidenceStatement";
+export { ItemView, ItemViewProps } from "./Pdf/ItemView";
+export { ItemViewContainer, ItemViewContainerProps } from "./Pdf/ItemViewContainer";
+export { PassageView, PassageViewProps } from "./Pdf/PassageView";
+export { PdfContainer, PdfContainerProps } from "./Pdf/PdfContainer";
+export { ItemGroupModel, QuestionModel, ItemPdfModel, PdfViewType } from "./Pdf/PdfModels";
+export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
+
+//
 // PerformanceType Components
 //
 export { AboutPTModal } from "./PerformanceType/AboutPT";
@@ -144,6 +162,7 @@ export { Rubric } from "./Rubric/Rubric";
 export { RubricEntryModel, RubricModel, RubricSampleModel } from "./Rubric/RubricModels";
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
+export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 
 //
 // ApiModel
