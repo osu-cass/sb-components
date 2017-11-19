@@ -1,0 +1,695 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionDataTable matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <QuestionDataTable
+    tableData={
+      Object {
+        "bankKey": 1,
+        "claimCode": "234536",
+        "claimLabel": "Math Claim",
+        "commonCoreStandardId": "",
+        "depthOfKnowledge": "",
+        "domain": "MATH",
+        "grade": 8,
+        "gradeLabel": "grade 3",
+        "interactionTypeCode": "",
+        "interactionTypeLabel": "",
+        "isPerformanceItem": false,
+        "itemKey": 1,
+        "subjectCode": "MATH",
+        "subjectLabel": "math",
+        "target": "1-3",
+        "targetId": "23463467",
+        "title": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>,
+        <tbody>
+          <tr>
+            <td>
+              1
+              -
+              1
+            </td>
+            <td>
+              234536
+            </td>
+            <td>
+              MATH
+            </td>
+            <td>
+              23463467
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+        </tbody>,
+      ],
+      "className": "item-data-table",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <th>
+                Item
+              </th>,
+              <th>
+                Claim
+              </th>,
+              <th>
+                Domain
+              </th>,
+              <th>
+                Target
+              </th>,
+              <th>
+                DOK
+              </th>,
+              <th>
+                Standards
+              </th>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Item",
+              },
+              "ref": null,
+              "rendered": "Item",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Claim",
+              },
+              "ref": null,
+              "rendered": "Claim",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Domain",
+              },
+              "ref": null,
+              "rendered": "Domain",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Target",
+              },
+              "ref": null,
+              "rendered": "Target",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "DOK",
+              },
+              "ref": null,
+              "rendered": "DOK",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Standards",
+              },
+              "ref": null,
+              "rendered": "Standards",
+              "type": "th",
+            },
+          ],
+          "type": "tr",
+        },
+        "type": "thead",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": <tr>
+            <td>
+              1
+              -
+              1
+            </td>
+            <td>
+              234536
+            </td>
+            <td>
+              MATH
+            </td>
+            <td>
+              23463467
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <td>
+                1
+                -
+                1
+              </td>,
+              <td>
+                234536
+              </td>,
+              <td>
+                MATH
+              </td>,
+              <td>
+                23463467
+              </td>,
+              <td>
+                
+              </td>,
+              <td>
+                
+              </td>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  1,
+                  "-",
+                  1,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                1,
+                "-",
+                1,
+              ],
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "234536",
+              },
+              "ref": null,
+              "rendered": "234536",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "MATH",
+              },
+              "ref": null,
+              "rendered": "MATH",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "23463467",
+              },
+              "ref": null,
+              "rendered": "23463467",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "td",
+            },
+          ],
+          "type": "tr",
+        },
+        "type": "tbody",
+      },
+    ],
+    "type": "table",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <thead>
+            <tr>
+              <th>
+                Item
+              </th>
+              <th>
+                Claim
+              </th>
+              <th>
+                Domain
+              </th>
+              <th>
+                Target
+              </th>
+              <th>
+                DOK
+              </th>
+              <th>
+                Standards
+              </th>
+            </tr>
+          </thead>,
+          <tbody>
+            <tr>
+              <td>
+                1
+                -
+                1
+              </td>
+              <td>
+                234536
+              </td>
+              <td>
+                MATH
+              </td>
+              <td>
+                23463467
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td>
+            </tr>
+          </tbody>,
+        ],
+        "className": "item-data-table",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <tr>
+              <th>
+                Item
+              </th>
+              <th>
+                Claim
+              </th>
+              <th>
+                Domain
+              </th>
+              <th>
+                Target
+              </th>
+              <th>
+                DOK
+              </th>
+              <th>
+                Standards
+              </th>
+            </tr>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <th>
+                  Item
+                </th>,
+                <th>
+                  Claim
+                </th>,
+                <th>
+                  Domain
+                </th>,
+                <th>
+                  Target
+                </th>,
+                <th>
+                  DOK
+                </th>,
+                <th>
+                  Standards
+                </th>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Item",
+                },
+                "ref": null,
+                "rendered": "Item",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Claim",
+                },
+                "ref": null,
+                "rendered": "Claim",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Domain",
+                },
+                "ref": null,
+                "rendered": "Domain",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Target",
+                },
+                "ref": null,
+                "rendered": "Target",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "DOK",
+                },
+                "ref": null,
+                "rendered": "DOK",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Standards",
+                },
+                "ref": null,
+                "rendered": "Standards",
+                "type": "th",
+              },
+            ],
+            "type": "tr",
+          },
+          "type": "thead",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": <tr>
+              <td>
+                1
+                -
+                1
+              </td>
+              <td>
+                234536
+              </td>
+              <td>
+                MATH
+              </td>
+              <td>
+                23463467
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td>
+            </tr>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <td>
+                  1
+                  -
+                  1
+                </td>,
+                <td>
+                  234536
+                </td>,
+                <td>
+                  MATH
+                </td>,
+                <td>
+                  23463467
+                </td>,
+                <td>
+                  
+                </td>,
+                <td>
+                  
+                </td>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    1,
+                    "-",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  1,
+                  "-",
+                  1,
+                ],
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "234536",
+                },
+                "ref": null,
+                "rendered": "234536",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "MATH",
+                },
+                "ref": null,
+                "rendered": "MATH",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "23463467",
+                },
+                "ref": null,
+                "rendered": "23463467",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "td",
+              },
+            ],
+            "type": "tr",
+          },
+          "type": "tbody",
+        },
+      ],
+      "type": "table",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EvidenceStatement matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PassageView
+    associatedItems={
+      Array [
+        "187-1234",
+        "187-1235",
+      ]
+    }
+    view={
+      Object {
+        "captured": true,
+        "html": null,
+        "id": "12334",
+        "picturePath": null,
+        "type": 1,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Passage for 
+          items
+           
+          187-1234, 187-1235
+        </h2>,
+        <ItemViewComponent
+          view={
+            Object {
+              "captured": true,
+              "html": null,
+              "id": "12334",
+              "picturePath": null,
+              "type": 1,
+            }
+          }
+        />,
+      ],
+      "className": "item",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Passage for ",
+            "items",
+            " ",
+            "187-1234, 187-1235",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Passage for ",
+          "items",
+          " ",
+          "187-1234, 187-1235",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "view": Object {
+            "captured": true,
+            "html": null,
+            "id": "12334",
+            "picturePath": null,
+            "type": 1,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Passage for 
+            items
+             
+            187-1234, 187-1235
+          </h2>,
+          <ItemViewComponent
+            view={
+              Object {
+                "captured": true,
+                "html": null,
+                "id": "12334",
+                "picturePath": null,
+                "type": 1,
+              }
+            }
+          />,
+        ],
+        "className": "item",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Passage for ",
+              "items",
+              " ",
+              "187-1234, 187-1235",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Passage for ",
+            "items",
+            " ",
+            "187-1234, 187-1235",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "view": Object {
+              "captured": true,
+              "html": null,
+              "id": "12334",
+              "picturePath": null,
+              "type": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
