@@ -1,12 +1,11 @@
-import * as path from 'path';
 import * as React from 'react';
-import { ItemGroup } from '../Models';
-import { ItemPage } from './ItemPage';
-import { FirstPage } from "./FirstPage";
+import { ItemGroupModel } from "./PdfModels";
+import { ItemViewContainer } from './ItemViewContainer';
+import { CoverPage } from "./CoverPage";
 
 
-interface Props {
-    items: ItemGroup[];
+export interface PdfContainerProps {
+    items: ItemGroupModel[];
     grade: string;
     subject: string;
     ivsBaseUrl: string;
@@ -14,10 +13,10 @@ interface Props {
     displayTitlePage: boolean;
 }
 
-export class PdfComponent extends React.Component<Props, {}> {
+export class PdfContainer extends React.Component<PdfContainerProps, {}> {
     render() {
         const itemPages = this.props.items.map(item => (
-            <ItemPage itemData={item} key={item.questions[0].id}/>
+            <ItemViewContainer itemData={item} key={item.questions[0].id}/>
         ));
 
         return (
@@ -30,7 +29,7 @@ export class PdfComponent extends React.Component<Props, {}> {
                 </head>
                 <body>
                     {this.props.displayTitlePage
-                        ? <FirstPage grade={this.props.grade} subject={this.props.subject} />
+                        ? <CoverPage grade={this.props.grade} subject={this.props.subject} />
                         : null}
                     {itemPages}
                 </body>

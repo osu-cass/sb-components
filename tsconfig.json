@@ -20,7 +20,8 @@
     "types": [
       "jest",
       "storybook__react",
-      "storybook__addon-actions"
+      "storybook__addon-actions",
+      "node"
     ],
     "typeRoots": [
       "./node_modules/@types"

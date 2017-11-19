@@ -1,18 +1,13 @@
 import * as React from 'react';
-import { Rubric } from '../Models';
+import {RubricModel, RubricTableRowModel } from './RubricModels';
 
-interface Props {
-    rubrics: Rubric[];
+export interface RubricTableProps {
+    rubrics: RubricModel[];
 }
 
-interface TableRow {
-    score: string;
-    rationale: string;
-    sample: string;
-}
 
-export class RubricComponent extends React.Component<Props, {}> {
-    renderRubric(rubric: Rubric, index: number) {
+export class RubricTable extends React.Component<RubricTableProps, {}> {
+    renderRubric(rubric: RubricModel, index: number) {
 
         const rows = rubric.rubricEntries.map(entry => {
             const sample = rubric.samples.find(s => 
@@ -25,7 +20,7 @@ export class RubricComponent extends React.Component<Props, {}> {
                 score: entry.scorepoint,
                 rationale: entry.value,
                 sample: sampleHtml
-            } as TableRow;
+            } as RubricTableRowModel;
         });
 
         const showSample = rubric.samples.length !== 0;

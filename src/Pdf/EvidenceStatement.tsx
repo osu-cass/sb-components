@@ -1,11 +1,10 @@
 import * as React from 'react';
 
-
-interface Props {
+export interface EvidenceStatementProps {
     statement: string;
 }
 
-export class EvidenceStatement extends React.Component<Props, {}> {
+export class EvidenceStatement extends React.Component<EvidenceStatementProps, {}> {
     render() {
         return (
             <div className="centered-table-container">

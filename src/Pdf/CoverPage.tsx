@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface Props {
+export interface CoverPageProps {
     subject: string;
     grade: string;
     date?: {
@@ -10,7 +10,7 @@ interface Props {
     }
 }
 
-export class FirstPage extends React.Component<Props, {}> {
+export class CoverPage extends React.Component<CoverPageProps, {}> {
     render() {
         // the data prop is for snapshot testing
         const today = this.props.date ? this.props.date : new Date();

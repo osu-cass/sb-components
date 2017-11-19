@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { ItemViewModel, ItemGroup } from "../Models";
+import { ItemPdfModel, ItemGroupModel } from "./PdfModels";
 import { PassageView } from './PassageView';
 import { QuestionView } from './QuestionView';
 
-interface Props {
-    itemData: ItemGroup;
+export interface ItemViewContainerProps {
+    itemData: ItemGroupModel;
 }
 
-export class ItemPage extends React.Component<Props, {}> {
+export class ItemViewContainer extends React.Component<ItemViewContainerProps, {}> {
     render() {
         const passage = this.props.itemData.passage
             ? <PassageView 

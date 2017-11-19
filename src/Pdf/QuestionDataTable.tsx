@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { ItemViewModel } from "../Models";
+import { ItemCardModel } from "../ItemCard/ItemCardModels";
 
-interface Props {
-    tableData: ItemViewModel;
+export interface QuestionDataTableProps {
+    card: ItemCardModel;
 }
 
-export class QuestionDataTable extends React.Component<Props, {}> {
+export class QuestionDataTable extends React.Component<QuestionDataTableProps, {}> {
     render() {
         return (
             <table className='item-data-table'>
@@ -21,12 +21,12 @@ export class QuestionDataTable extends React.Component<Props, {}> {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{this.props.tableData.bankKey}-{this.props.tableData.itemKey}</td>
-                        <td>{this.props.tableData.claimCode}</td>
-                        <td>{this.props.tableData.domain}</td>
-                        <td>{this.props.tableData.targetId}</td>
-                        <td>{this.props.tableData.depthOfKnowledge}</td>
-                        <td>{this.props.tableData.commonCoreStandardId}</td>
+                        <td>{this.props.card.bankKey}-{this.props.card.itemKey}</td>
+                        <td>{this.props.card.claimCode}</td>
+                        <td>{this.props.card.domain}</td>
+                        <td>{this.props.card.targetId}</td>
+                        <td>{this.props.card.depthOfKnowledge}</td>
+                        <td>{this.props.card.commonCoreStandardId}</td>
                     </tr>
                 </tbody>
             </table>

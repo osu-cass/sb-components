@@ -1,19 +1,18 @@
 import * as React from 'react';
-import { ItemView } from '../Models';
-import { ItemViewComponent } from './ItemView';
+import { ItemView } from './ItemView';
+import { ItemPdfModel } from './PdfModels';
 
-
-interface Props {
-    view: ItemView;
+export interface PassageViewProps {
+    view: ItemPdfModel;
     associatedItems: string[];
 }
 
-export class PassageView extends React.Component<Props, {}> {
+export class PassageView extends React.Component<PassageViewProps, {}> {
     render() {
         return (
             <div className='item'>
                 <h2>Passage for {this.props.associatedItems.length === 1 ? 'item' : 'items'} {this.props.associatedItems.join(', ')}</h2>
-                <ItemViewComponent view={this.props.view} />
+                <ItemView view={this.props.view} />
             </div>
         );
     }
