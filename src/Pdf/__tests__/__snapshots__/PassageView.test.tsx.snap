@@ -30,7 +30,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -40,7 +40,7 @@ ShallowWrapper {
            
           187-1234, 187-1235
         </h2>,
-        <ItemViewComponent
+        <ItemView
           view={
             Object {
               "captured": true,
@@ -58,7 +58,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -79,7 +79,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "view": Object {
@@ -100,7 +100,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -110,7 +110,7 @@ ShallowWrapper {
              
             187-1234, 187-1235
           </h2>,
-          <ItemViewComponent
+          <ItemView
             view={
               Object {
                 "captured": true,
@@ -128,7 +128,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -149,7 +149,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "view": Object {

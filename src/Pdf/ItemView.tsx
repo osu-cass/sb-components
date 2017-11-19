@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Path from 'path';
-import {ItemPdfModel,ViewType } from './PdfModels';
+import {ItemPdfModel,PdfViewType } from './PdfModels';
 
 export interface ItemViewProps {
     view: ItemPdfModel;
@@ -9,8 +9,8 @@ export interface ItemViewProps {
 export class ItemView extends React.Component<ItemViewProps, {}> {
     render() {
         let item, evidence: JSX.Element;
-        
-        if (this.props.view.type === ViewType.html) {
+
+        if (this.props.view.type === PdfViewType.html) {
             item = (<div dangerouslySetInnerHTML={{__html: this.props.view.html || ""}} />);
         } else if(this.props.view.picturePath){
             const fileName = Path.basename(this.props.view.picturePath);

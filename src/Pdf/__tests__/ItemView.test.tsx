@@ -1,22 +1,19 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { ItemViewComponent } from '../ItemView';
-import * as Models from "../../Models";
-import { configure, shallow } from 'enzyme';
-import * as Adapter from 'enzyme-adapter-react-16';
+import { ItemView } from '../ItemView';
+import { ItemPdfModel, PdfViewType } from '../PdfModels';
+import { shallow, mount, render } from 'enzyme';
 
-configure({ adapter: new Adapter() });
-
-const itemView: Models.ItemView = {
+const itemView: ItemPdfModel = {
     id: "12334",
     html: null,
     picturePath: null,
     captured: true,
-    type: Models.ViewType.html
+    type: PdfViewType.html
 }
 
 describe("EvidenceStatement", () => {
     it("matches snapshot", () => {
-        expect(shallow(<ItemViewComponent view={itemView}/>)).toMatchSnapshot()
+        expect(shallow(<ItemView view={itemView} />)).toMatchSnapshot()
     })
 })

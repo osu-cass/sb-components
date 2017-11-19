@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ItemView } from './ItemView';
 import { EvidenceStatement } from './EvidenceStatement';
-import { QuestionDataTable } from './QuestionDataTable';
+import { ItemCardTable } from '../ItemCard/ItemCardTable';
 import { RubricTable } from '../Rubric/RubricTable'
 import { QuestionModel } from './PdfModels';
 import {AboutItemModel} from '../AboutItem/AboutItemModels';
@@ -46,7 +46,7 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
             : null;
         
         const dataTable = data && data.itemCardViewModel
-            ? <QuestionDataTable tableData={data.itemCardViewModel} />
+            ? <ItemCardTable card={data.itemCardViewModel} />
             : null;
 
         const key = data && data.sampleItemScoring && data.sampleItemScoring.answerKey

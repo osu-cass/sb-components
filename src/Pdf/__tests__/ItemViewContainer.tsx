@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { EvidenceStatement } from '../EvidenceStatement';
+import { ItemViewContainer } from '../ItemViewContainer';
 import { shallow, mount, render } from 'enzyme';
+import { itemGroup } from './PdfMocks';
+
 
 describe("EvidenceStatement", () => {
     it("matches snapshot", () => {
-        const wrapper = shallow(<EvidenceStatement statement="" />)
-        expect(wrapper).toMatchSnapshot();
+        expect(shallow(<ItemViewContainer itemData={itemGroup} />)).toMatchSnapshot();
     })
 })

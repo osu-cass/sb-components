@@ -4,14 +4,14 @@ exports[`PdfComponent matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PdfComponent
+  Symbol(enzyme.__unrendered__): <PdfContainer
     cssUrl="http://example.com/style.css"
     displayTitlePage={true}
     grade="3"
     items={
       Array [
         Object {
-          "passage": undefined,
+          "passage": null,
           "questions": Array [
             Object {
               "data": Object {
@@ -35,8 +35,9 @@ ShallowWrapper {
                   "itemKey": 1,
                   "subjectCode": "MATH",
                   "subjectLabel": "math",
-                  "target": "1-3",
+                  "targetHash": 212,
                   "targetId": "23463467",
+                  "targetShortName": "1-3",
                   "title": "",
                 },
                 "rubrics": Array [
@@ -71,9 +72,9 @@ ShallowWrapper {
               "questionNumber": 1,
               "view": Object {
                 "captured": true,
-                "html": undefined,
+                "html": null,
                 "id": "12334",
-                "picturePath": undefined,
+                "picturePath": null,
                 "type": 1,
               },
             },
@@ -82,7 +83,6 @@ ShallowWrapper {
       ]
     }
     ivsBaseUrl="http://example.com"
-    pageBaseUrl="http://example.com"
     subject="math"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -94,7 +94,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -116,14 +116,14 @@ ShallowWrapper {
           />
         </head>,
         <body>
-          <FirstPage
+          <CoverPage
             grade="3"
             subject="math"
           />
-          <ItemPage
+          <ItemViewContainer
             itemData={
               Object {
-                "passage": undefined,
+                "passage": null,
                 "questions": Array [
                   Object {
                     "data": Object {
@@ -147,8 +147,9 @@ ShallowWrapper {
                         "itemKey": 1,
                         "subjectCode": "MATH",
                         "subjectLabel": "math",
-                        "target": "1-3",
+                        "targetHash": 212,
                         "targetId": "23463467",
+                        "targetShortName": "1-3",
                         "title": "",
                       },
                       "rubrics": Array [
@@ -183,9 +184,9 @@ ShallowWrapper {
                     "questionNumber": 1,
                     "view": Object {
                       "captured": true,
-                      "html": undefined,
+                      "html": null,
                       "id": "12334",
-                      "picturePath": undefined,
+                      "picturePath": null,
                       "type": 1,
                     },
                   },
@@ -200,7 +201,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -225,7 +226,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "charSet": "UTF-8",
@@ -236,7 +237,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "href": "http://example.com/style.css",
@@ -248,7 +249,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "href": "http://example.com/Shared/CSS/Universal/items.css",
@@ -260,7 +261,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
               "href": "http://example.com/Projects/SBAC/css/modernItems.css",
@@ -275,19 +276,19 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <FirstPage
+            <CoverPage
               grade="3"
               subject="math"
             />,
             Array [
-              <ItemPage
+              <ItemViewContainer
                 itemData={
                   Object {
-                    "passage": undefined,
+                    "passage": null,
                     "questions": Array [
                       Object {
                         "data": Object {
@@ -311,8 +312,9 @@ ShallowWrapper {
                             "itemKey": 1,
                             "subjectCode": "MATH",
                             "subjectLabel": "math",
-                            "target": "1-3",
+                            "targetHash": 212,
                             "targetId": "23463467",
+                            "targetShortName": "1-3",
                             "title": "",
                           },
                           "rubrics": Array [
@@ -347,9 +349,9 @@ ShallowWrapper {
                         "questionNumber": 1,
                         "view": Object {
                           "captured": true,
-                          "html": undefined,
+                          "html": null,
                           "id": "12334",
-                          "picturePath": undefined,
+                          "picturePath": null,
                           "type": 1,
                         },
                       },
@@ -364,7 +366,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "class",
             "props": Object {
               "grade": "3",
@@ -380,7 +382,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "itemData": Object {
-                "passage": undefined,
+                "passage": null,
                 "questions": Array [
                   Object {
                     "data": Object {
@@ -404,8 +406,9 @@ ShallowWrapper {
                         "itemKey": 1,
                         "subjectCode": "MATH",
                         "subjectLabel": "math",
-                        "target": "1-3",
+                        "targetHash": 212,
                         "targetId": "23463467",
+                        "targetShortName": "1-3",
                         "title": "",
                       },
                       "rubrics": Array [
@@ -440,9 +443,9 @@ ShallowWrapper {
                     "questionNumber": 1,
                     "view": Object {
                       "captured": true,
-                      "html": undefined,
+                      "html": null,
                       "id": "12334",
-                      "picturePath": undefined,
+                      "picturePath": null,
                       "type": 1,
                     },
                   },
@@ -462,7 +465,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -484,14 +487,14 @@ ShallowWrapper {
             />
           </head>,
           <body>
-            <FirstPage
+            <CoverPage
               grade="3"
               subject="math"
             />
-            <ItemPage
+            <ItemViewContainer
               itemData={
                 Object {
-                  "passage": undefined,
+                  "passage": null,
                   "questions": Array [
                     Object {
                       "data": Object {
@@ -515,8 +518,9 @@ ShallowWrapper {
                           "itemKey": 1,
                           "subjectCode": "MATH",
                           "subjectLabel": "math",
-                          "target": "1-3",
+                          "targetHash": 212,
                           "targetId": "23463467",
+                          "targetShortName": "1-3",
                           "title": "",
                         },
                         "rubrics": Array [
@@ -551,9 +555,9 @@ ShallowWrapper {
                       "questionNumber": 1,
                       "view": Object {
                         "captured": true,
-                        "html": undefined,
+                        "html": null,
                         "id": "12334",
-                        "picturePath": undefined,
+                        "picturePath": null,
                         "type": 1,
                       },
                     },
@@ -568,7 +572,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -593,7 +597,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "charSet": "UTF-8",
@@ -604,7 +608,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "href": "http://example.com/style.css",
@@ -616,7 +620,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "href": "http://example.com/Shared/CSS/Universal/items.css",
@@ -628,7 +632,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "href": "http://example.com/Projects/SBAC/css/modernItems.css",
@@ -643,19 +647,19 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <FirstPage
+              <CoverPage
                 grade="3"
                 subject="math"
               />,
               Array [
-                <ItemPage
+                <ItemViewContainer
                   itemData={
                     Object {
-                      "passage": undefined,
+                      "passage": null,
                       "questions": Array [
                         Object {
                           "data": Object {
@@ -679,8 +683,9 @@ ShallowWrapper {
                               "itemKey": 1,
                               "subjectCode": "MATH",
                               "subjectLabel": "math",
-                              "target": "1-3",
+                              "targetHash": 212,
                               "targetId": "23463467",
+                              "targetShortName": "1-3",
                               "title": "",
                             },
                             "rubrics": Array [
@@ -715,9 +720,9 @@ ShallowWrapper {
                           "questionNumber": 1,
                           "view": Object {
                             "captured": true,
-                            "html": undefined,
+                            "html": null,
                             "id": "12334",
-                            "picturePath": undefined,
+                            "picturePath": null,
                             "type": 1,
                           },
                         },
@@ -732,7 +737,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "class",
               "props": Object {
                 "grade": "3",
@@ -748,7 +753,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "itemData": Object {
-                  "passage": undefined,
+                  "passage": null,
                   "questions": Array [
                     Object {
                       "data": Object {
@@ -772,8 +777,9 @@ ShallowWrapper {
                           "itemKey": 1,
                           "subjectCode": "MATH",
                           "subjectLabel": "math",
-                          "target": "1-3",
+                          "targetHash": 212,
                           "targetId": "23463467",
+                          "targetShortName": "1-3",
                           "title": "",
                         },
                         "rubrics": Array [
@@ -808,9 +814,9 @@ ShallowWrapper {
                       "questionNumber": 1,
                       "view": Object {
                         "captured": true,
-                        "html": undefined,
+                        "html": null,
                         "id": "12334",
-                        "picturePath": undefined,
+                        "picturePath": null,
                         "type": 1,
                       },
                     },

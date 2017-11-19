@@ -1,14 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { QuestionDataTable } from '../QuestionDataTable';
-import * as Models from "../../Models";
-import { configure, shallow } from 'enzyme';
-import { GradeLevels } from '../../GradeLevels';
-import * as Adapter from 'enzyme-adapter-react-16';
+import { shallow, mount, render } from 'enzyme';
+import { ItemCardModel } from '../ItemCardModels';
+import { GradeLevels } from '../../GradeLevels/GradeLevels';
+import { ItemCardTable } from '../ItemCardTable';
 
-configure({ adapter: new Adapter() });
-
-const itemVM: Models.ItemViewModel = {
+const itemVM: ItemCardModel = {
     bankKey: 1,
     itemKey: 1,
     gradeLabel: "grade 3",
@@ -22,14 +19,16 @@ const itemVM: Models.ItemViewModel = {
     grade: GradeLevels.Grade6,
     subjectCode: "MATH",
     claimLabel: "Math Claim",
-    target: "1-3",
+    targetShortName: "1-3",
     interactionTypeCode: "",
     interactionTypeLabel: "",
-    isPerformanceItem: false
+    isPerformanceItem: false,
+    brailleOnlyItem: false,
+    targetHash: 1212
 }
 
 describe("QuestionDataTable", () => {
     it("matches snapshot", () => {
-        expect(shallow(<QuestionDataTable tableData={itemVM} />)).toMatchSnapshot();
+        expect(shallow(<ItemCardTable card={itemVM} />)).toMatchSnapshot();
     })
 })

@@ -1,16 +1,14 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { PdfComponent } from '../PdfComponent';
-import * as Models from "../../Models";
-import { configure, shallow } from 'enzyme';
-import { GradeLevels } from '../../../../client/src/Models/GradeLevels';
-import * as Adapter from 'enzyme-adapter-react-16';
+import { RubricModel } from '../../Rubric/RubricModels';
+import { ItemCardModel } from '../../ItemCard/ItemCardModels';
+import { AboutItemModel } from '../../AboutItem/AboutItemModels';
+import { GradeLevels } from '../../GradeLevels/GradeLevels';
+import { ItemPdfModel, PdfViewType, ItemGroupModel, QuestionModel } from '../PdfModels';
+import {PdfContainerProps} from '../PdfContainer';
+import { PassageViewProps } from '../PassageView';
 
-configure({ adapter: new Adapter() });
-
-const rubric:  Models.Rubric = {
+const rubric: RubricModel = {
     language: "english",
-    rubricEntries: [{    
+    rubricEntries: [{
         scorepoint: "",
         name: "",
         value: ""
@@ -23,11 +21,12 @@ const rubric:  Models.Rubric = {
             scorePoint: "",
             name: "",
             sampleContent: ""
-        }]     
+        }]
     }]
 }
 
-const itemVM: Models.ItemViewModel = {
+
+export const itemVM: ItemCardModel = {
     bankKey: 1,
     itemKey: 1,
     gradeLabel: "grade 3",
@@ -41,13 +40,14 @@ const itemVM: Models.ItemViewModel = {
     grade: GradeLevels.Grade6,
     subjectCode: "MATH",
     claimLabel: "Math Claim",
-    target: "1-3",
+    targetShortName: "1-3",
     interactionTypeCode: "",
     interactionTypeLabel: "",
-    isPerformanceItem: false
+    isPerformanceItem: false,
+    targetHash: 212
 }
 
-const aboutItemVM: Models.AboutItemViewModel = {
+export const aboutItemVM: AboutItemModel = {
     itemCardViewModel: itemVM,
     rubrics: [rubric],
     targetDescription: "string",
@@ -58,38 +58,41 @@ const aboutItemVM: Models.AboutItemViewModel = {
     associatedItems: "string"
 }
 
-const itemView: Models.ItemView = {
+export const itemView: ItemPdfModel = {
     id: "12334",
-    html: undefined,
-    picturePath: undefined,
+    html: null,
+    picturePath: null,
     captured: true,
-    type: Models.ViewType.html
+    type: PdfViewType.html
 }
 
-const question: Models.Question = {
+export const question: QuestionModel = {
     id: "12334",
     view: itemView,
     data: aboutItemVM,
     questionNumber: 1
 }
 
-const itemGroup : Models.ItemGroup = {
-    passage: undefined,
+export const questionDataNull: QuestionModel = 
+    {...question, data: null};
+
+
+export const itemGroup: ItemGroupModel = {
+    passage: null,
     questions: [question]
 }
 
-const props = {
+
+export const pdfContainerProps: PdfContainerProps = {
     items:  [itemGroup],
     grade: "3",
     subject: "math",
-    pageBaseUrl: "http://example.com",
     ivsBaseUrl: "http://example.com",
     cssUrl: "http://example.com/style.css",
     displayTitlePage: true
 }
 
-describe("PdfComponent", () => {
-    it("matches snapshot", () => {
-        expect(shallow(<PdfComponent {...props} />)).toMatchSnapshot();
-    })
-})
+export const passageViewProps: PassageViewProps = {
+    view: itemView,
+    associatedItems: ["187-1234", "187-1235"]
+}

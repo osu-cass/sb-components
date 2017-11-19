@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
+import { ItemCardModel } from "./ItemCardModels";
 
-export interface QuestionDataTableProps {
+export interface ItemCardTableProps {
     card: ItemCardModel;
 }
 
-export class QuestionDataTable extends React.Component<QuestionDataTableProps, {}> {
+export class ItemCardTable extends React.Component<ItemCardTableProps, {}> {
     render() {
         return (
             <table className='item-data-table'>

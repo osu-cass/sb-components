@@ -17,10 +17,10 @@ export interface ItemPdfModel {
     html?: string;
     picturePath?: string;
     captured: boolean;
-    type: ViewType;
+    type: PdfViewType;
 }
 
-export enum ViewType {
+export enum PdfViewType {
     picture,
     html
 }

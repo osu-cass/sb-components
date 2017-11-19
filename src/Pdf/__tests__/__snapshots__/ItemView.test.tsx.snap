@@ -4,7 +4,7 @@ exports[`EvidenceStatement matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ItemViewComponent
+  Symbol(enzyme.__unrendered__): <ItemView
     view={
       Object {
         "captured": true,
@@ -24,11 +24,11 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "dangerouslySetInnerHTML": Object {
-        "__html": null,
+        "__html": "",
       },
     },
     "ref": null,
@@ -38,11 +38,11 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "dangerouslySetInnerHTML": Object {
-          "__html": null,
+          "__html": "",
         },
       },
       "ref": null,
