@@ -1,15 +1,16 @@
-import { filterItemCards, SearchAPIParamsModel } from '../ItemSearchModels';
+import { SearchAPIParamsModel } from '../ItemSearchModels';
+import { ItemSearch } from '../ItemSearch';
 import { ItemCardModel } from '../../ItemCard/ItemCardModels';
 import { itemCards } from './ItemSearchModelsTestData';
-import { GradeLevels, gradeLevelContains } from '../../GradeLevels/GradeLevels';
+import { GradeLevels, GradeLevel } from '../../GradeLevels/GradeLevels';
 
-describe('FilterItemCards', () => {
+describe('ItemSearch.filterItemCards', () => {
     it('filters with empty filter', () => {
-        const params: SearchAPIParamsModel = { };
-        const result = filterItemCards(itemCards, params);
+        const params: SearchAPIParamsModel = {};
+        const result = ItemSearch.filterItemCards(itemCards, params);
 
         expect(result).toHaveLength(itemCards.length);
-        itemCards.forEach(card => 
+        itemCards.forEach(card =>
             expect(result).toContain(card)
         );
     });
@@ -20,7 +21,7 @@ describe('FilterItemCards', () => {
             subjects: ['ELA'],
             claims: ['ELA4']
         };
-        const result = filterItemCards([], params);
+        const result = ItemSearch.filterItemCards([], params);
         expect(result).toHaveLength(0);
     });
 
@@ -30,8 +31,8 @@ describe('FilterItemCards', () => {
             claims: ['ELA4'],
             targets: [2832]
         };
-        const result = filterItemCards(itemCards, params);
-        const expectedCards = itemCards.filter(c => 
+        const result = ItemSearch.filterItemCards(itemCards, params);
+        const expectedCards = itemCards.filter(c =>
             c.subjectCode === 'ELA' && c.claimCode === 'ELA4' && c.targetHash === 2832
         );
 
@@ -43,13 +44,13 @@ describe('FilterItemCards', () => {
         const params: SearchAPIParamsModel = {
             gradeLevels: GradeLevels.Middle
         };
-        const result = filterItemCards(itemCards, params);
-        const expectedCards = itemCards.filter(c => 
-            gradeLevelContains(GradeLevels.Middle, c.grade)
+        const result = ItemSearch.filterItemCards(itemCards, params);
+        const expectedCards = itemCards.filter(c =>
+            GradeLevel.gradeLevelContains(GradeLevels.Middle, c.grade)
         );
 
         expect(result).toHaveLength(expectedCards.length);
-        expectedCards.forEach(card => 
+        expectedCards.forEach(card =>
             expect(result).toContain(card)
         );
     });
@@ -58,11 +59,11 @@ describe('FilterItemCards', () => {
         const params: SearchAPIParamsModel = {
             catOnly: true
         };
-        const result = filterItemCards(itemCards, params);
+        const result = ItemSearch.filterItemCards(itemCards, params);
         const expectedCards = itemCards.filter(c => !c.isPerformanceItem);
 
         expect(result).toHaveLength(expectedCards.length);
-        expectedCards.forEach(card => 
+        expectedCards.forEach(card =>
             expect(result).toContain(card)
         );
     });
@@ -71,11 +72,11 @@ describe('FilterItemCards', () => {
         const params: SearchAPIParamsModel = {
             performanceOnly: true
         };
-        const result = filterItemCards(itemCards, params);
+        const result = ItemSearch.filterItemCards(itemCards, params);
         const expectedCards = itemCards.filter(c => c.isPerformanceItem);
 
         expect(result).toHaveLength(expectedCards.length);
-        expectedCards.forEach(card => 
+        expectedCards.forEach(card =>
             expect(result).toContain(card)
         );
     });

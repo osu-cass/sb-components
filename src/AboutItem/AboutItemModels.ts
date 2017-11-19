@@ -10,4 +10,5 @@ export interface AboutItemModel {
   educationalDifficulty: string;
   evidenceStatement: string;
   sampleItemScoring?: SampleItemScoringModel
+  associatedItems?: string;
 }

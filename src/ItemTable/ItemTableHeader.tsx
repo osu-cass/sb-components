@@ -1,13 +1,12 @@
 import * as React from "react";
-import { SortColumn, HeaderSort, SortDirection } from "./ItemTableModels";
+import { SortColumnModel, HeaderSortModel, SortDirection } from "./ItemTableModels";
 
-export interface Props {
-  columns: SortColumn[];
-  onHeaderClick: (header: SortColumn) => void;
-  sorts: HeaderSort[];
-}
+export interface HeaderTableProps {
+  columns: SortColumnModel[];
+  onHeaderClick: (header: SortColumnModel) => void;
+  sorts: HeaderSortModel[];
+} 
 
-export interface State {}
 
 const invokeResetSortLimit = 2;
 
@@ -25,19 +24,19 @@ const acendingArrow = (
 
 const noSort = <span style={style} className="fa fa-sort" aria-hidden="true" />;
 
-export class HeaderTable extends React.Component<Props, State> {
-  constructor(props: Props) {
+export class HeaderTable extends React.Component<HeaderTableProps, {}> {
+  constructor(props: HeaderTableProps) {
     super(props);
     this.state = {
       dirElem: undefined
     };
   }
 
-  headerEventHandler(scol: SortColumn, hcol: HeaderSort | undefined) {
+  headerEventHandler(scol: SortColumnModel, hcol: HeaderSortModel | undefined) {
     this.props.onHeaderClick(scol);
   }
 
-  setDirElem(headerSort: HeaderSort | undefined): JSX.Element {
+  setDirElem(headerSort: HeaderSortModel | undefined): JSX.Element {
     let dirElem = noSort;
     if (!headerSort) {
       return dirElem;
@@ -49,7 +48,7 @@ export class HeaderTable extends React.Component<Props, State> {
     return dirElem;
   }
 
-  renderHeader(col: SortColumn): JSX.Element {
+  renderHeader(col: SortColumnModel): JSX.Element {
     const headerSort = this.props.sorts.find(
       hs => hs.col.header === col.header
     );

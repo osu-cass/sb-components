@@ -18,63 +18,67 @@ export enum GradeLevels {
   All = Elementary | Middle | High
 }
 
-export function gradeCaseToString(grade: GradeLevels): string {
-  switch (grade) {
-    case GradeLevels.NA:
-      return "NA";
-    case GradeLevels.Grade3:
-      return "Grade 3";
-    case GradeLevels.Grade4:
-      return "Grade 4";
-    case GradeLevels.Grade5:
-      return "Grade 5";
-    case GradeLevels.Grade6:
-      return "Grade 6";
-    case GradeLevels.Grade7:
-      return "Grade 7";
-    case GradeLevels.Grade8:
-      return "Grade 8";
-    case GradeLevels.Grade9:
-      return "Grade 9";
-    case GradeLevels.Grade10:
-      return "Grade 10";
-    case GradeLevels.Grade11:
-      return "Grade 11";
-    case GradeLevels.Grade12:
-      return "Grade 12";
-    case GradeLevels.Elementary:
-      return "Elementary";
-    case GradeLevels.Middle:
-      return "Middle";
-    case GradeLevels.High:
-      return "High";
-    default:
-      return "";
-  }
-}
+export class GradeLevel {
 
-export function gradeLevelToString(grades: GradeLevels): string | undefined {
-  const caseString = gradeCaseToString(grades);
-  if (caseString !== "") {
-    return caseString;
-  }
-
-  let gradeStrings: string[] = [];
-  for (let i = 0; i < 10; i++) {
-    if ((grades & (1 << i)) === 1 << i) {
-      gradeStrings.push(gradeCaseToString(1 << i));
+  public static gradeCaseToString(grade: GradeLevels): string {
+    switch (grade) {
+      case GradeLevels.NA:
+        return "NA";
+      case GradeLevels.Grade3:
+        return "Grade 3";
+      case GradeLevels.Grade4:
+        return "Grade 4";
+      case GradeLevels.Grade5:
+        return "Grade 5";
+      case GradeLevels.Grade6:
+        return "Grade 6";
+      case GradeLevels.Grade7:
+        return "Grade 7";
+      case GradeLevels.Grade8:
+        return "Grade 8";
+      case GradeLevels.Grade9:
+        return "Grade 9";
+      case GradeLevels.Grade10:
+        return "Grade 10";
+      case GradeLevels.Grade11:
+        return "Grade 11";
+      case GradeLevels.Grade12:
+        return "Grade 12";
+      case GradeLevels.Elementary:
+        return "Elementary";
+      case GradeLevels.Middle:
+        return "Middle";
+      case GradeLevels.High:
+        return "High";
+      default:
+        return "";
     }
   }
-  return gradeStrings.join(", ");
+  
+  public static gradeLevelToString(grades: GradeLevels): string | undefined {
+    const caseString = this.gradeCaseToString(grades);
+    if (caseString !== "") {
+      return caseString;
+    }
+  
+    let gradeStrings: string[] = [];
+    for (let i = 0; i < 10; i++) {
+      if ((grades & (1 << i)) === 1 << i) {
+        gradeStrings.push(this.gradeCaseToString(1 << i));
+      }
+    }
+    return gradeStrings.join(", ");
+  }
+  
+  public static gradeLevelContains(
+    haystack: GradeLevels,
+    needle: GradeLevels
+  ): boolean {
+    return (haystack & needle) === needle;
+  }
+  
+  public static stringToGradeLevel(gradeString: string): GradeLevels {
+    return parseInt(gradeString, 10) || GradeLevels.NA;
+  }
 }
 
-export function gradeLevelContains(
-  haystack: GradeLevels,
-  needle: GradeLevels
-): boolean {
-  return (haystack & needle) === needle;
-}
-
-export function stringToGradeLevel(gradeString: string): GradeLevels {
-  return parseInt(gradeString, 10) || GradeLevels.NA;
-}

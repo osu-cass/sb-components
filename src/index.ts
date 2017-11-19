@@ -9,7 +9,12 @@ export { AboutItem } from "./AboutItem/AboutItem";
 // About Test Items
 //
 export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer";
-export { InteractionTypeModel, AboutTestItemsModel, aboutTestItemsClient } from "./AboutTestItems/AboutTestItemsModels";
+export {
+    InteractionTypeModel,
+    AboutTestItemsModel,
+    aboutTestItemsClient,
+    AboutTestItemsParams
+} from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
@@ -44,13 +49,13 @@ export {
     FilterCategoryModel,
     AdvancedFilterCategoryModel,
     TechType,
-    AdvancedFiltersModel,
+    AdvancedFiltersModel
 } from "./Filter/AdvancedFilterModel";
 
 //
 // Grade Levels
 //
-export { GradeLevels, gradeCaseToString, gradeLevelContains, gradeLevelToString } from "./GradeLevels/GradeLevels";
+export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 
 //
 // ItemCard Components, Models, and Actions
@@ -58,6 +63,7 @@ export { GradeLevels, gradeCaseToString, gradeLevelContains, gradeLevelToString 
 export { ItemCard } from "./ItemCard/ItemCard";
 export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
+export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 
 //
 // Item Page
@@ -82,6 +88,7 @@ export {
 //
 // ItemSearchModels models
 //
+export { ItemSearch } from "./ItemSearch/ItemSearch";
 export {
     SubjectClaimsModel,
     SubjectModel,
@@ -90,6 +97,19 @@ export {
     SearchAPIParamsModel,
     ItemsSearchModel,
 } from "./ItemSearch/ItemSearchModels";
+//
+// Item Table
+//
+export { ItemTable, ItemTableProps } from "./ItemTable/ItemTable";
+export { ItemTableContainer, ItemTableContainerProps } from "./ItemTable/ItemTableContainer";
+export { HeaderTable } from "./ItemTable/ItemTableHeader";
+export {
+    SortColumnModel,
+    headerColumns,
+    HeaderType,
+    HeaderSortModel,
+    SortDirection
+} from "./ItemTable/ItemTableModels";
 
 //
 // ItemViewer Component
