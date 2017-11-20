@@ -15,4 +15,4 @@ deploy:
   local_dir: storybuild
   target_branch: gh-pages
   on:
-    branch: gh-storybook #TODO: update to master
+    branch: feat/gh-storybook #TODO: update to master
