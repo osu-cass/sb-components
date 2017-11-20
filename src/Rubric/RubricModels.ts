@@ -22,3 +22,25 @@ export interface RubricModel {
   rubricEntries: RubricEntryModel[];
   samples: RubricSampleModel[];
 }
+
+export interface SampleItemScoringModel {
+  answerKey: string;
+  hasMachineRubric: boolean;
+  scoringOptions: SmarterAppOptionModel[];
+  rubrics: RubricModel[];
+}
+
+export interface SmarterAppOptionModel {
+  name: string;
+  value: string;
+  feedback: string;
+  language: string;
+  answer: string;
+}
+
+export interface RubricTableRowModel {
+  score: string;
+  rationale: string;
+  sample: string;
+}
+

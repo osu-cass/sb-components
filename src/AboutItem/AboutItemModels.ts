@@ -1,5 +1,5 @@
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { RubricModel } from "../Rubric/RubricModels";
+import { RubricModel, SampleItemScoringModel } from "../Rubric/RubricModels";
 
 export interface AboutItemModel {
   rubrics: RubricModel[];
@@ -9,4 +9,6 @@ export interface AboutItemModel {
   commonCoreStandardsDescription: string;
   educationalDifficulty: string;
   evidenceStatement: string;
+  sampleItemScoring?: SampleItemScoringModel
+  associatedItems?: string;
 }

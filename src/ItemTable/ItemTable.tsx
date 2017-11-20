@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HeaderSort, SortColumn } from "./ItemTableModels";
+import { HeaderSortModel, SortColumnModel } from "./ItemTableModels";
 import { Resource } from "../ApiModel";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
@@ -8,8 +8,8 @@ import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
 export interface ItemTableProps {
   mapRows: ItemCardModel[];
   rowOnClick: (item: ItemCardModel) => void;
-  sort: HeaderSort[];
-  columns: SortColumn[];
+  sort: HeaderSortModel[];
+  columns: SortColumnModel[];
   selectedRow?: ItemCardModel | null;
   item: Resource<AboutItemModel>;
 }
@@ -23,7 +23,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     this.props.rowOnClick(rowData);
   };
 
-  renderCell(col: SortColumn, cellData: ItemCardModel): JSX.Element {
+  renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
     return (
       <td key={col.header} className={col.className}>
         <div className={col.className}>{col.accessor(cellData)}</div>

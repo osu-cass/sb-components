@@ -14,5 +14,7 @@ export const completeItemCard: ItemCardModel = {
     claimCode: "3",
     claimLabel: "Claim",
     targetHash: 33434,
-    isPerformanceItem: false
+    isPerformanceItem: false,
+    brailleOnlyItem: false,
+    targetId: "dfas"
 }

@@ -1,16 +1,17 @@
+import '../Styles/score-page.less';
 import * as React from "react";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
 import {
-  HeaderSort,
-  SortColumn,
+  HeaderSortModel,
+  SortColumnModel,
   SortDirection,
   headerColumns
 } from "./ItemTableModels";
 import { HeaderTable } from "./ItemTableHeader";
 import { ItemTable } from "./ItemTable";
-
+ 
 export interface ItemTableContainerProps {
   onRowSelection: (
     item: { itemKey: number; bankKey: number },
@@ -21,7 +22,7 @@ export interface ItemTableContainerProps {
 }
 
 export interface ItemTableContainerState {
-  sorts: HeaderSort[];
+  sorts: HeaderSortModel[];
   selectedRow?: ItemCardModel;
 }
 
@@ -38,7 +39,7 @@ export class ItemTableContainer extends React.Component<
     };
   }
 
-  onClickHeader = (col: SortColumn) => {
+  onClickHeader = (col: SortColumnModel) => {
     const newSorts = (this.state.sorts || []).slice();
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
@@ -52,7 +53,7 @@ export class ItemTableContainer extends React.Component<
       }
       newSorts[headIdx] = newSort;
     } else {
-      const newSort: HeaderSort = {
+      const newSort: HeaderSortModel = {
         col: col,
         direction: SortDirection.Ascending,
         resetSortCount: 0

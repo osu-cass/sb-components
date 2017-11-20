@@ -1,31 +1,62 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
-import { AboutTestItemsContainer } from "../../src";
+import { AboutTestItemsContainer, AboutTestItemsParams} from "../../src";
 import { RouterDecorator } from "../RouterDecorator";
 import {
   mockAboutTestClient,
   mockAboutTestClientLoading,
-  mockAboutTestClientReject
+  mockAboutTestClientReject,
+  aboutTestMatch,
+  aboutTestPath,
+  aboutTestBadItem
 } from "./mocks";
+import { Route, match } from "react-router";
+
 
 storiesOf("About Test Items", module)
   .addDecorator(RouterDecorator)
   .add("default", () => (
-    <AboutTestItemsContainer
-      aboutClient={mockAboutTestClient}
-      selectedCode="EQ"
-    />
+    <Route exact path={aboutTestPath} render={(props) => (
+      <AboutTestItemsContainer
+        {...props}
+        aboutClient={mockAboutTestClient}
+      />
+    )} />
   ))
-  .add("reject", () => (
-    <AboutTestItemsContainer
-      aboutClient={mockAboutTestClientReject}
-      selectedCode="EQ"
-    />
+  .add("default, param", () => (
+    <Route exact path={aboutTestPath} render={(props) => (
+      <AboutTestItemsContainer
+        {...props}
+        match={aboutTestMatch}
+        aboutClient={mockAboutTestClient}
+      />
+    )} />
   ))
-  .add("loading", () => (
-    <AboutTestItemsContainer
-      aboutClient={mockAboutTestClientLoading}
-      selectedCode="EQ"
-    />
+  .add("reject, param", () => (
+    <Route exact path={aboutTestPath} render={(props) => (
+      <AboutTestItemsContainer
+        {...props}
+        match={aboutTestMatch}
+        aboutClient={mockAboutTestClientReject}
+      />
+    )} />
+  ))
+  .add("loading, param", () => (
+    <Route exact path={aboutTestPath} render={(props) => (
+      <AboutTestItemsContainer
+        {...props}
+        match={aboutTestMatch}
+        aboutClient={mockAboutTestClientLoading}
+      />
+    )} />
+  ))
+  .add("bad item type", () => (
+    <Route exact path={aboutTestPath} render={(props) => (
+      <AboutTestItemsContainer
+        {...props}
+        match={aboutTestBadItem}
+        aboutClient={mockAboutTestClient}
+      />
+    )} />
   ));
