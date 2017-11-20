@@ -8,7 +8,7 @@
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
-    "outDir": "./lib",
+    "outDir": "../lib",
     "jsx": "react",
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": false,
