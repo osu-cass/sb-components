@@ -6,3 +6,13 @@ install:
 script:
 - npm run build
 - npm run test
+- npm run storybook-publish
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GIT_API_KEY
+  local_dir: storybuild
+  target_branch: gh-pages
+  on:
+    branch: gh-storybook #TODO: update to master

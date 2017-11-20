@@ -17,6 +17,7 @@
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",
     "build-storybook": "npm run clean && build-storybook",
+    "storybook-publish": "build-storybook -o storybuild",    
     "build": "npm run clean && build-storybook && npm run webpack-dev",
     "clean": "rm -rf ./lib ?",
     "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
