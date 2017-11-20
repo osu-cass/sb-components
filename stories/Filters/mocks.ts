@@ -221,7 +221,7 @@ export const mockClaimModel: ClaimModel[] = [
   }
 ];
 
-const mockTargetModel:TargetModel[] = [
+export const mockTargetModel:TargetModel[] = [
   
 ];
 
