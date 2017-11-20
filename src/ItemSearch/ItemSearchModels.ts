@@ -56,16 +56,12 @@ export function getCurrentClaimsFilter(model: ItemsSearchModel, currentCategorie
   if(subjectCategory){
     selectedSubjectCodes = subjectCategory.filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
     .map(f => f.key); // grab keys from selected subjects
-
-    console.log("subjectCategory",subjectCategory)
   }
 
   const currentClaimCodes = model.subjects
-    .filter(s => selectedSubjectCodes.some(ssc => ssc === s.code))//currently selected subjects
+    .filter(s => selectedSubjectCodes.some(ssc => ssc.toLowerCase() === s.code.toLowerCase()))//currently selected subjects
     .map(s => s.claimCodes ? s.claimCodes : [])// grab all lists of claims
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
-
-  console.log("currentClaimCodes",currentClaimCodes)
 
   const claimFilterOptions = model.claims
     .filter(f => currentClaimCodes.some(c => c === f.code))
@@ -77,7 +73,7 @@ export function getCurrentClaimsFilter(model: ItemsSearchModel, currentCategorie
       } as FilterOptionModel;
     });
 
-  const claimsFilter = currentCategories.find(f => f.code.toLowerCase() === 'claim');
+  const claimsFilter = currentCategories.find(f => f.code.toLowerCase() === 'claims');
   claimsFilter ? claimsFilter.filterOptions = claimFilterOptions : [];
 
   return claimsFilter;

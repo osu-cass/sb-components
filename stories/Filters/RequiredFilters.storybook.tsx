@@ -19,13 +19,22 @@ import {
 
 
 function onClickHandler(advFilCategorys:AdvancedFilterCategoryModel[]){
-  action("clicked")
   const newClaimsFilter = getCurrentClaimsFilter(mockItemsSearchModel,advFilCategorys);
   console.log(newClaimsFilter);
 }
 
+const AdvancedFilterClaims:AdvancedFilterCategoryModel = {
+  disabled:false,
+  isMultiSelect:true,
+  label:"Claims",
+  code:"Claims",
+  displayAllButton:true,
+  filterOptions:[],
+  helpText:"Claims help text here."
+}
+
 const props: AdvancedFilterContainerProps = {
-  filterOptions: [advancedFilterGrade,advancedFilterSubject],
+  filterOptions: [advancedFilterGrade,advancedFilterSubject,AdvancedFilterClaims],
   onClick: onClickHandler
 };
 
