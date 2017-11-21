@@ -9,6 +9,6 @@ export interface AboutItemModel {
   commonCoreStandardsDescription: string;
   educationalDifficulty: string;
   evidenceStatement: string;
-  sampleItemScoring?: SampleItemScoringModel
+  sampleItemScoring?: SampleItemScoringModel;
   associatedItems?: string;
 }

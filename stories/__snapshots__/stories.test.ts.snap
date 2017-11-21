@@ -2469,3 +2469,547 @@ exports[`Storyshots LayoutNav name no links 1`] = `
   </header>
 </div>
 `;
+
+exports[`Storyshots PDF Cover Page Cover Page 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page first-page"
+  >
+    <div
+      className="first-page-title"
+    >
+      Smarter Balanced
+      <br />
+      Assessment Consortium
+    </div>
+    <div
+      className="first-page-subtitle"
+    >
+      Mathematics
+       Practice Test Scoring Guide
+      <br />
+      <strong>
+        High School
+      </strong>
+    </div>
+    <div
+      className="first-page-date"
+    >
+      10
+      /
+      21
+      /
+      2017
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF Item Metadata Evidence Statement 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="centered-table-container"
+  >
+    <table
+      className="item-data-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Evidence Statement
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            This is the evidence statement
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF Item Metadata Item Card Table 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <table
+    className="item-data-table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Item
+        </th>
+        <th>
+          Claim
+        </th>
+        <th>
+          Domain
+        </th>
+        <th>
+          Target
+        </th>
+        <th>
+          DOK
+        </th>
+        <th>
+          Standards
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          187
+          -
+          3434
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          domain
+        </td>
+        <td>
+          dfas
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          AB-123
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots PDF Rubric Table Rubric Table 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div>
+    <table
+      className="item-data-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Score
+          </th>
+          <th>
+            Rationale
+          </th>
+          <th>
+            Exemplar
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            0
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did not do the problem",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "5 + 6 = _",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student tried to do the problem, but got it wrong",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "5 + 6 = 56<br/>5 + 6 = a million",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did the problem correctly",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "5 + 6 = 11",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF Rubric Table Rubric Table: multiple 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div>
+    <table
+      className="item-data-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Score
+          </th>
+          <th>
+            Rationale
+          </th>
+          <th>
+            Exemplar
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            0
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did not do the problem",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "5 + 6 = _",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student tried to do the problem, but got it wrong",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "5 + 6 = 56<br/>5 + 6 = a million",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did the problem correctly",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "5 + 6 = 11",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+      </tbody>
+    </table>
+    <table
+      className="item-data-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Score
+          </th>
+          <th>
+            Rationale
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            0
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did not do the problem",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student tried to do the problem, but got it wrong",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did the problem correctly",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF Rubric Table Rubric Table: no Samples 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div>
+    <table
+      className="item-data-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Score
+          </th>
+          <th>
+            Rationale
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            0
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did not do the problem",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student tried to do the problem, but got it wrong",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Student did the problem correctly",
+              }
+            }
+            style={
+              Object {
+                "textAlign": "left",
+              }
+            }
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

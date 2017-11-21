@@ -4,7 +4,7 @@ import { PdfDecorator } from "../PdfDecorator";
 import { CoverPage } from "../../src/Pdf/CoverPage";
 
 storiesOf("PDF Cover Page", module)
-.addDecorator(PdfDecorator)
-.add("Cover Page", () => 
+  .addDecorator(PdfDecorator)
+  .add("Cover Page", () => (
     <CoverPage subject="Mathematics" grade="High School" />
-)
+  ));
