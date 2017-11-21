@@ -41,6 +41,12 @@ export const rubric: RubricModel = {
                     scorePoint: "1",
                     name: "1pt",
                     sampleContent: "5 + 6 = 56"
+                },
+                {
+                    purpose: "idk",
+                    scorePoint: "1",
+                    name: "1pt",
+                    sampleContent: "5 + 6 = a million"
                 }
             ]
         },

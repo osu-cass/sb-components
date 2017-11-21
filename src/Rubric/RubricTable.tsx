@@ -1,3 +1,4 @@
+import "../Styles/pdf.less";
 import * as React from 'react';
 import {RubricModel, RubricTableRowModel } from './RubricModels';
 
