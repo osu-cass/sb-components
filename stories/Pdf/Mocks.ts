@@ -1,4 +1,6 @@
 import { RubricModel } from "../../src/Rubric/RubricModels";
+import { ItemViewContainerProps } from "../../src/Pdf/ItemViewContainer";
+import { ItemGroupModel, PdfViewType } from "../../src/Pdf/PdfModels";
 
 export const rubric: RubricModel = {
     language: "en-us",
@@ -85,4 +87,22 @@ export const rubricNoSamples: RubricModel = {
         }
     ],
     samples: []
+}
+
+export const singleQuestion: ItemGroupModel {
+    questions: [
+        {
+            id: "187-1234",
+            view: {
+                id: "187-1234",
+                html: "<b>Solve this equation</b><p><i>x</i> + 5 = 10</p>",
+                captured: true,
+                type: PdfViewType.html
+            },
+            data: {
+                
+            },
+            questionNumber: 1
+        }
+    ]
 }
