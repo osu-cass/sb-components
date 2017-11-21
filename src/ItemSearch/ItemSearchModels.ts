@@ -127,8 +127,6 @@ export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCateg
     .map(s => s.interactionTypeCodes ? s.interactionTypeCodes : [])// grab all lists of claims
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
 
-    console.log(currentInteractionTypeCodes)
-
   const interactionFilterOptions = model.interactionTypes
     .filter(f => currentInteractionTypeCodes.some(i => i.toLowerCase() === f.code.toLowerCase()))
     .map(m => {
