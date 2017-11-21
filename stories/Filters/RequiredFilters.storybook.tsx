@@ -11,11 +11,17 @@ import {
 
 import { 
   getCurrentClaimsFilter,
-  getCurrentInteractionTypes } from "../../src/ItemSearch/ItemSearchModels";//add theses into index.d.ts
+  getCurrentInteractionTypes,
+  getCurrentTargets
+} from "../../src/ItemSearch/ItemSearchModels";//add theses into index.d.ts
 import { 
   advancedFilterGrade,
   advancedFilterSubject,
-  mockItemsSearchModel
+  mockItemsSearchModel,
+  emptyAdvancedFilterClaims,
+  FilledAdvancedFilterClaims,
+  emptyAdvancedFilterInteractionTypes,
+  emptyAdvancedFilterTargets
 } from "./mocks";
 
 
@@ -30,42 +36,32 @@ function onClickHandlerInteractionTypes(advFilCategorys:AdvancedFilterCategoryMo
   console.log(newFilter);
 }
 
-const AdvancedFilterClaims:AdvancedFilterCategoryModel = {
-  disabled:false,
-  isMultiSelect:true,
-  label:"Claims",
-  code:"Claims",
-  displayAllButton:true,
-  filterOptions:[],
-  helpText:"Claims help text here."
+function onClickHandlerTarget(advFilCategorys:AdvancedFilterCategoryModel[]){
+  const newFilter = getCurrentTargets(mockItemsSearchModel,advFilCategorys);
+  console.log(newFilter);
 }
-
-const AdvancedFilterInteractionTypes:AdvancedFilterCategoryModel = {
-  disabled:false,
-  isMultiSelect:true,
-  label:"interaction type",
-  code:"interactiontype",
-  displayAllButton:true,
-  filterOptions:[],
-  helpText:"Claims help text here."
-}
-
-
 
 const claimProps: AdvancedFilterContainerProps = {
-  filterOptions: [advancedFilterGrade,advancedFilterSubject,AdvancedFilterClaims],
+  filterOptions: [advancedFilterGrade,advancedFilterSubject,emptyAdvancedFilterClaims],
   onClick: onClickHandlerClaim
 };
 
 const interactionTypeProps:AdvancedFilterContainerProps = {
-  filterOptions:[advancedFilterGrade,advancedFilterSubject,AdvancedFilterInteractionTypes],
+  filterOptions:[advancedFilterGrade,advancedFilterSubject,emptyAdvancedFilterInteractionTypes],
   onClick: onClickHandlerInteractionTypes
 }
 
-storiesOf("RequiredFilters", module).add("claims filter", () => (
+const targetProps:AdvancedFilterContainerProps = {
+  filterOptions:[advancedFilterGrade,advancedFilterSubject,FilledAdvancedFilterClaims,emptyAdvancedFilterTargets],
+  onClick: onClickHandlerTarget
+}
+
+storiesOf("RequiredFilters", module).add("Claims filter", () => (
   <AdvancedFilterContainer {...claimProps} />
-)).add("interactionType filter", () => (
+)).add("Interaction Type filter", () => (
   <AdvancedFilterContainer {...interactionTypeProps} />
-))
+)).add("Target filter", () => (
+  <AdvancedFilterContainer {...targetProps} />
+));
 
 

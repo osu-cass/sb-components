@@ -222,12 +222,87 @@ export const mockClaimModel: ClaimModel[] = [
 ];
 
 export const mockTargetModel:TargetModel[] = [
-  
+  {name:"Word Meanings",nameHash:1262},
+  {name:"Reasoning & Evidence",nameHash:1839},
+  {name:"Reasoning & Evaluation",nameHash:2084},
+  {name:"Analysis Within Or Across Texts",nameHash:2939},
+  {name:"Text Structures & Features",nameHash:2478},
+  {name:"Language Use",nameHash:1137},
+  {name:"Key Details",nameHash:1039},
+  {name:"Central Ideas",nameHash:1231},
+  {name:"Text Structures/features",nameHash:2455},
+
+  {name:"Write/revise Brief Texts",nameHash:2312},
+  {name:"Technology",nameHash:1052},
+  {name:"Compose Full Texts",nameHash:1729},
+  {name:"Use Text Features",nameHash:1617},
+  {name:"Language & Vocabulary Use",nameHash:2287},
+  {name:"Edit/clarify",nameHash:1183},
+
+  {name:"Listen/interpret",nameHash:1659},
+  {name:"Clarify Message",nameHash:1455},
+  {name:"Plan/speak/present",nameHash:1790},
+
+  {name:"Plan/research",nameHash:1287},
+  {name:"Interpret & Integrate Information",nameHash:3180},
+  {name:"Analyze/integrate Information",nameHash:2924},
+  {name:"Evaluate Information/sources",nameHash:2832},
+  {name:"Use Evidence",nameHash:1136},
 ];
 
 export const mockItemsSearchModel:ItemsSearchModel = {
   interactionTypes:mockInteractionTypes,
   subjects:mockSubjectModel,
   claims:mockClaimModel,
-  targets:[]
+  targets:mockTargetModel
 };
+
+export const emptyAdvancedFilterClaims:AdvancedFilterCategoryModel = {
+  disabled:false,
+  isMultiSelect:true,
+  label:"Claims",
+  code:"Claims",
+  displayAllButton:true,
+  filterOptions:[],
+  helpText:"Claims help text here."
+}
+
+export const allClaimsFilterOptions:FilterOptionModel[] = [
+  {label: "Reading", key: "ELA1", isSelected: false},
+  {label: "Writing", key: "ELA2", isSelected: false},
+  {label: "Listening", key: "ELA3", isSelected: false},
+  {label: "Research/Inquiry", key: "ELA4", isSelected: false},
+  {label: "Concepts and Procedures", key: "MATH1", isSelected: false},
+  {label: "Problem Solving", key: "MATH2", isSelected: false},
+  {label: "Communicating Reasoning", key: "MATH3", isSelected: false},
+  {label: "Modeling/Data Analysis", key: "MATH4", isSelected: false},
+];
+
+export const FilledAdvancedFilterClaims:AdvancedFilterCategoryModel = {
+  disabled:false,
+  isMultiSelect:true,
+  label:"Claims",
+  code:"Claims",
+  displayAllButton:true,
+  filterOptions:allClaimsFilterOptions,
+  helpText:"Claims help text here."
+}
+
+export const emptyAdvancedFilterInteractionTypes:AdvancedFilterCategoryModel = {
+  disabled:false,
+  isMultiSelect:true,
+  label:"interaction type",
+  code:"interactiontype",
+  displayAllButton:true,
+  filterOptions:[],
+  helpText:"InteractionTypes help text here."
+}
+export const emptyAdvancedFilterTargets:AdvancedFilterCategoryModel = {
+  disabled:false,
+  isMultiSelect:true,
+  label:"Targets",
+  code:"Targets",
+  displayAllButton:true,
+  filterOptions:[],
+  helpText:"Targets help text here."
+}

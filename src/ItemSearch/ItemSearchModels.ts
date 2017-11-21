@@ -83,20 +83,20 @@ export function getCurrentTargets(model: ItemsSearchModel, currentCategories:Adv
   let selectedClaimCodes:string[] = [];
 
   const claimCategory = currentCategories
-    .find(c => c.code.toLowerCase() === 'claim') // find subjects category
+    .find(c => c.code.toLowerCase() === 'claims') // find subjects category
     
   if(claimCategory){
     selectedClaimCodes =  claimCategory.filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
     .map(f => f.key); // grab keys from selected subjects
   }
-  
+
   const currentTargetCodes = model.claims
-    .filter(s => selectedClaimCodes.some(ssc => ssc === s.code))//currently selected subjects
+    .filter(s => selectedClaimCodes.some(ssc => ssc.toLowerCase() === s.code.toLowerCase()))//currently selected subjects
     .map(s => s.targetCodes ? s.targetCodes : [])// grab all lists of targetcodes
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten targetcodes
 
   const targetFilterOptions = model.targets
-    .filter(f => currentTargetCodes.some(t => t=== f.nameHash))
+    .filter(f => currentTargetCodes.some(t => t === f.nameHash))
     .map(m => {
       return {
         label:m.name,
@@ -105,7 +105,7 @@ export function getCurrentTargets(model: ItemsSearchModel, currentCategories:Adv
       } as FilterOptionModel;
     });
 
-  const targetsFilter = currentCategories.find(f => f.code.toLowerCase() === 'target');
+  const targetsFilter = currentCategories.find(f => f.code.toLowerCase() === 'targets');
   targetsFilter ? targetsFilter.filterOptions = targetFilterOptions : [];
 
   return targetsFilter;
