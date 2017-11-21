@@ -4,8 +4,8 @@ import { CenterDecorator } from "../CenterDecorator";
 import { itemTableProps } from "./Mocks";
 import { ItemTableContainer } from "../../src/ItemTable/ItemTableContainer";
 
-storiesOf("Item Page Table", module)
+storiesOf("ItemTableContainer", module)
     .addDecorator(CenterDecorator)
-    .add("Item Page Table", () => 
+    .add("normal render", () => 
         <ItemTableContainer {...itemTableProps} />
     );
