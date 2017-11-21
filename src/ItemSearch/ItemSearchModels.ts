@@ -123,12 +123,14 @@ export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCateg
   }
 
   const currentInteractionTypeCodes = model.subjects
-    .filter(s => selectedSubjectCodes.some(ssc => ssc === s.code))//currently selected subjects
+    .filter(s => selectedSubjectCodes.some(ssc => ssc.toLowerCase() === s.code.toLowerCase()))//currently selected subjects
     .map(s => s.interactionTypeCodes ? s.interactionTypeCodes : [])// grab all lists of claims
     .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
 
+    console.log(currentInteractionTypeCodes)
+
   const interactionFilterOptions = model.interactionTypes
-    .filter(f => currentInteractionTypeCodes.some(i => i === f.label))
+    .filter(f => currentInteractionTypeCodes.some(i => i.toLowerCase() === f.code.toLowerCase()))
     .map(m => {
       return {
         label:m.label,
@@ -137,7 +139,7 @@ export function getCurrentInteractionTypes(model: ItemsSearchModel, currentCateg
       } as FilterOptionModel;
     });
 
-  const interactionTypeFilter = currentCategories.find(f => f.code.toLowerCase() === 'interaction type');
+  const interactionTypeFilter = currentCategories.find(f => f.code.toLowerCase() === 'interactiontype');
   interactionTypeFilter ? interactionTypeFilter.filterOptions = interactionFilterOptions : [];
 
   return interactionTypeFilter;

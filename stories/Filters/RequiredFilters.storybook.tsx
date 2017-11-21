@@ -9,7 +9,9 @@ import {
   AdvancedFilterCategoryModel
 } from "../../src";
 
-import { getCurrentClaimsFilter } from "../../src/ItemSearch/ItemSearchModels";//add theses into index.d.ts
+import { 
+  getCurrentClaimsFilter,
+  getCurrentInteractionTypes } from "../../src/ItemSearch/ItemSearchModels";//add theses into index.d.ts
 import { 
   advancedFilterGrade,
   advancedFilterSubject,
@@ -18,9 +20,14 @@ import {
 
 
 
-function onClickHandler(advFilCategorys:AdvancedFilterCategoryModel[]){
-  const newClaimsFilter = getCurrentClaimsFilter(mockItemsSearchModel,advFilCategorys);
-  console.log(newClaimsFilter);
+function onClickHandlerClaim(advFilCategorys:AdvancedFilterCategoryModel[]){
+  const newFilter = getCurrentClaimsFilter(mockItemsSearchModel,advFilCategorys);
+  console.log(newFilter);
+}
+
+function onClickHandlerInteractionTypes(advFilCategorys:AdvancedFilterCategoryModel[]){
+  const newFilter = getCurrentInteractionTypes(mockItemsSearchModel,advFilCategorys);
+  console.log(newFilter);
 }
 
 const AdvancedFilterClaims:AdvancedFilterCategoryModel = {
@@ -33,11 +40,32 @@ const AdvancedFilterClaims:AdvancedFilterCategoryModel = {
   helpText:"Claims help text here."
 }
 
-const props: AdvancedFilterContainerProps = {
+const AdvancedFilterInteractionTypes:AdvancedFilterCategoryModel = {
+  disabled:false,
+  isMultiSelect:true,
+  label:"interaction type",
+  code:"interactiontype",
+  displayAllButton:true,
+  filterOptions:[],
+  helpText:"Claims help text here."
+}
+
+
+
+const claimProps: AdvancedFilterContainerProps = {
   filterOptions: [advancedFilterGrade,advancedFilterSubject,AdvancedFilterClaims],
-  onClick: onClickHandler
+  onClick: onClickHandlerClaim
 };
 
-storiesOf("RequiredFilters", module).add("normal render", () => (
-  <AdvancedFilterContainer {...props} />
-));
+const interactionTypeProps:AdvancedFilterContainerProps = {
+  filterOptions:[advancedFilterGrade,advancedFilterSubject,AdvancedFilterInteractionTypes],
+  onClick: onClickHandlerInteractionTypes
+}
+
+storiesOf("RequiredFilters", module).add("claims filter", () => (
+  <AdvancedFilterContainer {...claimProps} />
+)).add("interactionType filter", () => (
+  <AdvancedFilterContainer {...interactionTypeProps} />
+))
+
+
