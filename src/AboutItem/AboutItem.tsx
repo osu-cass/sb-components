@@ -51,7 +51,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
             className="glyphicon glyphicon-info-sign glyphicon-pad"
             aria-hidden="true"
           />
-          About This Item
+        About <span className="item-nav-long-label">This Item</span>
         </button>
 
         <ReactModal
@@ -60,7 +60,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
           onRequestClose={this.handleHideModal}
           overlayClassName="react-modal-overlay"
           className="react-modal-content about-item-modal"
-        >
+          >
           <div
             className="modal-wrapper"
             aria-labelledby="About Item Modal"

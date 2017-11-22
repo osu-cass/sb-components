@@ -9,7 +9,7 @@ export interface FrameState {
   loading: boolean;
 }
 
-export class ItemFrame extends React.Component<FrameProps, FrameState> {
+export class ItemViewerFrame extends React.Component<FrameProps, FrameState> {
   constructor(props: FrameProps) {
     super(props);
     this.state = { loading: true };

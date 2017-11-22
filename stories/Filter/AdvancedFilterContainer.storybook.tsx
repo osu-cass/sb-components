@@ -15,6 +15,6 @@ const props: AdvancedFilterContainerProps = {
   onClick: action("clicked")
 };
 
-storiesOf("AdvancedFilterContainer", module).add("normal render", () => (
+storiesOf("Advanced Filter Container", module).add("normal render", () => (
   <AdvancedFilterContainer {...props} />
 ));
