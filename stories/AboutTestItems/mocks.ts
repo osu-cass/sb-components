@@ -1,6 +1,7 @@
-import { Resource, AboutItemModel, AboutTestItemsModel, InteractionTypeModel } from '../../src';
+import { Resource, AboutItemModel, AboutTestItemsModel, InteractionTypeModel, AboutTestItemsParams } from '../../src';
 import { completeItemCard } from '../ItemCard/mocks';
 import { action } from '@storybook/addon-actions';
+import { match } from 'react-router';
 
 const interactionTypes: InteractionTypeModel[] = [
     {
@@ -67,3 +68,19 @@ export const mockAboutTestClientReject = (params?: { interactionTypeCode: string
 
 export const mockAboutTestClientLoading = (params?: { interactionTypeCode: string }) =>
     mockPromiseLoading(params);
+
+export const aboutTestPath = "/:itemType?";
+
+export const aboutTestMatch: match<AboutTestItemsParams> = {
+    params: { itemType: "EQ" },
+    isExact: true,
+    path: "aboutTestPath",
+    url: "/"
+};
+
+export const aboutTestBadItem: match<AboutTestItemsParams> = {
+    params: { itemType: "somebadtype" },
+    isExact: true,
+    path: "aboutTestPath",
+    url: "/"
+};

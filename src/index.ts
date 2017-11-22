@@ -9,7 +9,12 @@ export { AboutItem } from "./AboutItem/AboutItem";
 // About Test Items
 //
 export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer";
-export { InteractionTypeModel, AboutTestItemsModel } from "./AboutTestItems/AboutTestItemsModels";
+export {
+    InteractionTypeModel,
+    AboutTestItemsModel,
+    aboutTestItemsClient,
+    AboutTestItemsParams
+} from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
@@ -44,13 +49,13 @@ export {
     FilterCategoryModel,
     AdvancedFilterCategoryModel,
     TechType,
-    AdvancedFiltersModel,
+    AdvancedFiltersModel
 } from "./Filter/AdvancedFilterModel";
 
 //
 // Grade Levels
 //
-export { GradeLevels, gradeCaseToString, gradeLevelContains, gradeLevelToString } from "./GradeLevels/GradeLevels";
+export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 
 //
 // ItemCard Components, Models, and Actions
@@ -58,6 +63,8 @@ export { GradeLevels, gradeCaseToString, gradeLevelContains, gradeLevelToString 
 export { ItemCard } from "./ItemCard/ItemCard";
 export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
+export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
+export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 
 //
 // Item Page
@@ -82,6 +89,7 @@ export {
 //
 // ItemSearchModels models
 //
+export { ItemSearch } from "./ItemSearch/ItemSearch";
 export {
     SubjectClaimsModel,
     SubjectModel,
@@ -90,6 +98,19 @@ export {
     SearchAPIParamsModel,
     ItemsSearchModel,
 } from "./ItemSearch/ItemSearchModels";
+//
+// Item Table
+//
+export { ItemTable, ItemTableProps } from "./ItemTable/ItemTable";
+export { ItemTableContainer, ItemTableContainerProps } from "./ItemTable/ItemTableContainer";
+export { HeaderTable } from "./ItemTable/ItemTableHeader";
+export {
+    SortColumnModel,
+    headerColumns,
+    HeaderType,
+    HeaderSortModel,
+    SortDirection
+} from "./ItemTable/ItemTableModels";
 
 //
 // ItemViewer Component
@@ -111,6 +132,23 @@ export { MoreLikeThisModal } from "./Modals/MoreLikeThisModal";
 export { ShareModal } from "./Modals/ShareModal";
 
 //
+// Page Tabs Components
+//
+export { ItemTabs, ItemTabsProps } from "./PageTabs/ItemTabs";
+
+//
+// Pdf Components
+//
+export { CoverPage, CoverPageProps } from "./Pdf/CoverPage";
+export { EvidenceStatement, EvidenceStatementProps } from "./Pdf/EvidenceStatement";
+export { ItemView, ItemViewProps } from "./Pdf/ItemView";
+export { ItemViewContainer, ItemViewContainerProps } from "./Pdf/ItemViewContainer";
+export { PassageView, PassageViewProps } from "./Pdf/PassageView";
+export { PdfContainer, PdfContainerProps } from "./Pdf/PdfContainer";
+export { ItemGroupModel, QuestionModel, ItemPdfModel, PdfViewType } from "./Pdf/PdfModels";
+export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
+
+//
 // PerformanceType Components
 //
 export { AboutPTModal } from "./PerformanceType/AboutPT";
@@ -124,6 +162,7 @@ export { Rubric } from "./Rubric/Rubric";
 export { RubricEntryModel, RubricModel, RubricSampleModel } from "./Rubric/RubricModels";
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
+export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 
 //
 // ApiModel
