@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-export interface ErrorBoundaryProps {}
+export interface ErrorBoundaryProps {
+    fallbackUI: React.Component<any,any>
+}
 
 export interface ErrorBoundaryState {
     hasError: boolean,
@@ -25,7 +27,7 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
         let content = this.props.children;
         if ( hasError ) {
             // You can render any custom fallback UI
-            content = (<div>{`An error ocurred: ${error}`}</div>);
+            content = this.props.fallbackUI;
         }
         return content;
     }
