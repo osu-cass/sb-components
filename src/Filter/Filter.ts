@@ -1,9 +1,9 @@
-import { SearchAPIParamsModel, ItemsSearchModel } from "./ItemSearchModels";
+import { SearchAPIParamsModel, ItemsSearchModel } from "../ItemSearch/ItemSearchModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { FilterCategoryModel, FilterOptionModel, AdvancedFilterCategoryModel } from "../Filter/AdvancedFilterModel";
 
-export class ItemSearch {
+export class Filter {
 
     public static parseAdvancedFilter(
         filterModels: FilterCategoryModel[]
