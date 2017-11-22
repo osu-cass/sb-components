@@ -167,13 +167,13 @@ export const mockSubjectModel:SubjectModel[] = [
   {
     code:"MATH",
     label:"Mathematics",
-    claimCodes:["MATH1","MATH2","MATH3","MATH4"],
+    claimCodes:["MATH1","MATH2","MATH3"],
     interactionTypeCodes:["EQ","GI","MC","MI","MS","TI","SA"]
   },
   {
     code:"ELA",
     label:"English language arts/literacy",
-    claimCodes:["ELA1","ELA2","ELA3","ELA4"],
+    claimCodes:["ELA1","ELA2","ELA3"],
     interactionTypeCodes:["EBSR","SA","HTQ","MC","MS","MI","WER"]
   }
 ];
@@ -271,11 +271,9 @@ export const allClaimsFilterOptions:FilterOptionModel[] = [
   {label: "Reading", key: "ELA1", isSelected: false},
   {label: "Writing", key: "ELA2", isSelected: false},
   {label: "Listening", key: "ELA3", isSelected: false},
-  {label: "Research/Inquiry", key: "ELA4", isSelected: false},
   {label: "Concepts and Procedures", key: "MATH1", isSelected: false},
   {label: "Problem Solving", key: "MATH2", isSelected: false},
   {label: "Communicating Reasoning", key: "MATH3", isSelected: false},
-  {label: "Modeling/Data Analysis", key: "MATH4", isSelected: false},
 ];
 
 export const FilledAdvancedFilterClaims:AdvancedFilterCategoryModel = {

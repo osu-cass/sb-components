@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
+import { action, decorateAction } from "@storybook/addon-actions";
 import {
   AdvancedFilterContainer,
   AdvancedFilterContainerProps,
@@ -9,11 +9,7 @@ import {
   AdvancedFilterCategoryModel
 } from "../../src";
 
-import { 
-  getCurrentClaimsFilter,
-  getCurrentInteractionTypes,
-  getCurrentTargets
-} from "../../src/ItemSearch/ItemSearchModels";//add theses into index.d.ts
+import { ItemSearch } from "../../src/ItemSearch/ItemSearch";//add theses into index.d.ts
 import { 
   advancedFilterGrade,
   advancedFilterSubject,
@@ -24,20 +20,24 @@ import {
   emptyAdvancedFilterTargets
 } from "./mocks";
 
-
+const claimHandler = decorateAction([
+  args => {
+    ItemSearch.getCurrentClaimsFilter(mockItemsSearchModel, args)
+  }
+])
 
 function onClickHandlerClaim(advFilCategorys:AdvancedFilterCategoryModel[]){
-  const newFilter = getCurrentClaimsFilter(mockItemsSearchModel,advFilCategorys);
+  const newFilter = ItemSearch.getCurrentClaimsFilter(mockItemsSearchModel,advFilCategorys);
   console.log(newFilter);
 }
 
 function onClickHandlerInteractionTypes(advFilCategorys:AdvancedFilterCategoryModel[]){
-  const newFilter = getCurrentInteractionTypes(mockItemsSearchModel,advFilCategorys);
+  const newFilter = ItemSearch.getCurrentInteractionTypes(mockItemsSearchModel,advFilCategorys);
   console.log(newFilter);
 }
 
 function onClickHandlerTarget(advFilCategorys:AdvancedFilterCategoryModel[]){
-  const newFilter = getCurrentTargets(mockItemsSearchModel,advFilCategorys);
+  const newFilter = ItemSearch.getCurrentTargets(mockItemsSearchModel,advFilCategorys);
   console.log(newFilter);
 }
 
