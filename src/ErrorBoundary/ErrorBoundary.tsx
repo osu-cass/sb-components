@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export interface ErrorBoundaryProps {
-    fallbackUI: React.ReactNode
+    fallbackUI: React.Component<{},{}>
 }
 
 export interface ErrorBoundaryState {
