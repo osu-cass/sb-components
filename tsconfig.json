@@ -8,7 +8,7 @@
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
-    "outDir": "./lib",
+    "outDir": "../lib",
     "jsx": "react",
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": false,
@@ -20,7 +20,8 @@
     "types": [
       "storybook__react",
       "storybook__addon-actions",
-      "jest"
+      "jest",
+      "node"
     ],
     "typeRoots": [
       "./node_modules/@types"

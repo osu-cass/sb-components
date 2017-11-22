@@ -2,6 +2,7 @@ import * as React from "react";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { ItemViewerFrame, Rubric, AboutThisItemDetail } from "../index";
 import { Tabs, ItemTabs } from "../PageTabs/ItemTabs";
+
 export interface ItemCardViewerProps {
   item?: AboutItemModel;
 }

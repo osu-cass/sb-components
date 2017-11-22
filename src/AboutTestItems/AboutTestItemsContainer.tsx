@@ -9,7 +9,8 @@ import { Resource, get, getResourceContent } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 import {
   AboutTestItemsModel,
-  InteractionTypeModel
+  InteractionTypeModel,
+  AboutTestItemsParams
 } from "./AboutTestItemsModels";
 
 export interface AboutTestItemContainerState {
@@ -20,24 +21,22 @@ export interface AboutTestItemContainerState {
   hasError: boolean;
 }
 
-export interface AboutTestItemContainerProps {
+export interface AboutTestItemContainerProps extends RouteComponentProps<AboutTestItemsParams> {
   aboutClient: (
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
-  routeComponentProps?: RouteComponentProps<{}>;
-  selectedCode?: string;
 }
 
 export class AboutTestItemsContainer extends React.Component<
   AboutTestItemContainerProps,
   AboutTestItemContainerState
-> {
+  > {
   constructor(props: AboutTestItemContainerProps) {
     super(props);
     this.state = {
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
-      selectedCode: this.props.selectedCode,
+      selectedCode: this.props.match.params.itemType,
       hasError: false
     };
 
@@ -46,11 +45,13 @@ export class AboutTestItemsContainer extends React.Component<
 
   handleChange = (e: React.FormEvent<HTMLSelectElement>) => {
     const newCode = e.currentTarget.value;
-    if (newCode === this.state.selectedCode) {
-      return;
-    }
+    if (newCode !== this.state.selectedCode) {
+      this.setState({
+        selectedCode: newCode
+      })
 
-    this.fetchUpdatedViewModel(newCode);
+      this.fetchUpdatedViewModel(newCode);
+    }
   };
 
   fetchUpdatedViewModel(newCode?: string) {
@@ -74,20 +75,28 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   onFetchedUpdatedViewModel = (viewModel: AboutTestItemsModel) => {
-    if (!viewModel) {
-      console.log("An error occurred updating the item.");
-      return;
+    const { interactionTypes, aboutThisItemViewModel } = viewModel;
+    let selectedCode = this.state.selectedCode;
+
+    if (interactionTypes.length > 0) {
+      if (!selectedCode) {
+        selectedCode = interactionTypes[0].code;
+      } else {
+        const validType = interactionTypes.find(it => it.code === selectedCode);
+        selectedCode = (validType) ? selectedCode : interactionTypes[0].code
+      }
+
     }
 
     this.setState({
       itemUrl: viewModel.itemUrl,
-      selectedCode: viewModel.selectedInteractionTypeCode,
       aboutThisItemViewModel: {
         kind: "success",
-        content: viewModel.aboutThisItemViewModel
+        content: aboutThisItemViewModel
       },
       aboutItemsViewModel: { kind: "success", content: viewModel },
-      hasError: false
+      hasError: false,
+      selectedCode: selectedCode
     });
   };
 

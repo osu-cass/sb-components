@@ -2,17 +2,17 @@ import * as React from "react";
 
 export type Tabs = "viewer" | "rubric" | "information";
 
-export interface Props {
+export interface ItemTabsProps {
   changedTab: (tab: Tabs) => void;
   selectedTab: Tabs;
 }
 
 export interface State {}
 
-export class ItemTabs extends React.Component<Props, State> {
+export class ItemTabs extends React.Component<ItemTabsProps, State> {
   private select: Tabs;
 
-  constructor(props: Props) {
+  constructor(props: ItemTabsProps) {
     super(props);
 
     this.state = {

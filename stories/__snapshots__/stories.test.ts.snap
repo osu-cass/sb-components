@@ -1,92 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots About Item Modal default 1`] = `
-<div>
-  <button
-    aria-label="Open About This Item Modal"
-    className="item-nav-btn btn btn-link"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      aria-hidden="true"
-      className="glyphicon glyphicon-info-sign glyphicon-pad"
-    />
-    About This Item
-  </button>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing no rubrics 1`] = `
-<div>
-  <button
-    aria-label="Open About This Item Modal"
-    className="item-nav-btn btn btn-link"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      aria-hidden="true"
-      className="glyphicon glyphicon-info-sign glyphicon-pad"
-    />
-    About This Item
-  </button>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing rubrics 1`] = `
-<div>
-  <button
-    aria-label="Open About This Item Modal"
-    className="item-nav-btn btn btn-link"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      aria-hidden="true"
-      className="glyphicon glyphicon-info-sign glyphicon-pad"
-    />
-    About This Item
-  </button>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
-<div>
-  <button
-    aria-label="Open About This Item Modal"
-    className="item-nav-btn btn btn-link"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      aria-hidden="true"
-      className="glyphicon glyphicon-info-sign glyphicon-pad"
-    />
-    About This Item
-  </button>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
-<div>
-  <button
-    aria-label="Open About This Item Modal"
-    className="item-nav-btn btn btn-link"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      aria-hidden="true"
-      className="glyphicon glyphicon-info-sign glyphicon-pad"
-    />
-    About This Item
-  </button>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
 </div>
 `;
 
@@ -104,76 +199,27 @@ exports[`Storyshots About PT About ELA 1`] = `
     }
   }
 >
-  <div
-    aria-hidden="true"
-    className="modal fade"
-    id="about-performance-tasks-modal-container"
-    role="dialog"
-    tabIndex={-1}
-  >
-    <div
-      className="modal-dialog share-modal"
-      role="document"
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <div
-        className="modal-content"
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      <span
+        className="item-nav-long-label"
       >
-        <div
-          className="modal-header"
-        >
-          <button
-            aria-label="Close"
-            className="close"
-            data-dismiss="modal"
-            type="button"
-          >
-            <span
-              aria-hidden="true"
-            >
-              ×
-            </span>
-          </button>
-          <h4
-            className="modal-title"
-            id="myModalLabel"
-          >
-            About Performance Tasks
-          </h4>
-        </div>
-        <div
-          className="modal-body"
-        >
-          <p>
-            <b>
-              Performance tasks
-            </b>
-             measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
-          </p>
-          <p>
-            <b>
-              Note about ELA Performance Task Items: 
-            </b>
-            <span
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "description",
-                }
-              }
-            />
-          </p>
-        </div>
-        <div
-          className="modal-footer"
-        >
-          <button
-            className="btn btn-primary"
-            data-dismiss="modal"
-          >
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
   </div>
 </div>
 `;
@@ -192,76 +238,27 @@ exports[`Storyshots About PT About Math 1`] = `
     }
   }
 >
-  <div
-    aria-hidden="true"
-    className="modal fade"
-    id="about-performance-tasks-modal-container"
-    role="dialog"
-    tabIndex={-1}
-  >
-    <div
-      className="modal-dialog share-modal"
-      role="document"
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <div
-        className="modal-content"
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      <span
+        className="item-nav-long-label"
       >
-        <div
-          className="modal-header"
-        >
-          <button
-            aria-label="Close"
-            className="close"
-            data-dismiss="modal"
-            type="button"
-          >
-            <span
-              aria-hidden="true"
-            >
-              ×
-            </span>
-          </button>
-          <h4
-            className="modal-title"
-            id="myModalLabel"
-          >
-            About Performance Tasks
-          </h4>
-        </div>
-        <div
-          className="modal-body"
-        >
-          <p>
-            <b>
-              Performance tasks
-            </b>
-             measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
-          </p>
-          <p>
-            <b>
-              Note about Math Performance Task Items: 
-            </b>
-            <span
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "description",
-                }
-              }
-            />
-          </p>
-        </div>
-        <div
-          className="modal-footer"
-        >
-          <button
-            className="btn btn-primary"
-            data-dismiss="modal"
-          >
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
   </div>
 </div>
 `;
@@ -280,75 +277,61 @@ exports[`Storyshots About PT Nothing 1`] = `
     }
   }
 >
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Test Items bad item type 1`] = `
+<div
+  className="about-items"
+>
   <div
-    aria-hidden="true"
-    className="modal fade"
-    id="about-performance-tasks-modal-container"
-    role="dialog"
-    tabIndex={-1}
+    className="aboutitems-parents"
   >
     <div
-      className="modal-dialog share-modal"
-      role="document"
+      className="aboutitems-info"
     >
+      <h1>
+        About Test Items
+      </h1>
       <div
-        className="modal-content"
+        className="aboutitems-text"
       >
-        <div
-          className="modal-header"
-        >
-          <button
-            aria-label="Close"
-            className="close"
-            data-dismiss="modal"
-            type="button"
-          >
-            <span
-              aria-hidden="true"
-            >
-              ×
-            </span>
-          </button>
-          <h4
-            className="modal-title"
-            id="myModalLabel"
-          >
-            About Performance Tasks
-          </h4>
-        </div>
-        <div
-          className="modal-body"
-        >
-          <p>
-            <b>
-              Performance tasks
-            </b>
-             measure a student’s ability to demonstrate critical-thinking and problem-solving skills. Performance tasks challenge students to apply their knowledge and skills to respond to complex real-world problems. They can be best described as collections of questions and activities that are coherently connected to a single theme or scenario. These activities are meant to measure capacities such as depth of understanding, writing and research skills, and complex analysis, which cannot be adequately assessed with traditional assessment questions. The performance tasks are taken on a computer (but are not computer adaptive) and will take one to two class periods to complete.
-          </p>
-          <p>
-            <b>
-              
-            </b>
-            <span
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "description",
-                }
-              }
-            />
-          </p>
-        </div>
-        <div
-          className="modal-footer"
-        >
-          <button
-            className="btn btn-primary"
-            data-dismiss="modal"
-          >
-            Close
-          </button>
-        </div>
+        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
       </div>
+      <p>
+        <em>
+          Loading...
+        </em>
+      </p>
+    </div>
+    <div
+      className="no-item"
+    >
+      <p>
+        No items of the selected type found.
+      </p>
     </div>
   </div>
 </div>
@@ -389,7 +372,7 @@ exports[`Storyshots About Test Items default 1`] = `
 </div>
 `;
 
-exports[`Storyshots About Test Items loading 1`] = `
+exports[`Storyshots About Test Items default, param 1`] = `
 <div
   className="about-items"
 >
@@ -424,7 +407,42 @@ exports[`Storyshots About Test Items loading 1`] = `
 </div>
 `;
 
-exports[`Storyshots About Test Items reject 1`] = `
+exports[`Storyshots About Test Items loading, param 1`] = `
+<div
+  className="about-items"
+>
+  <div
+    className="aboutitems-parents"
+  >
+    <div
+      className="aboutitems-info"
+    >
+      <h1>
+        About Test Items
+      </h1>
+      <div
+        className="aboutitems-text"
+      >
+        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
+      </div>
+      <p>
+        <em>
+          Loading...
+        </em>
+      </p>
+    </div>
+    <div
+      className="no-item"
+    >
+      <p>
+        No items of the selected type found.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Test Items reject, param 1`] = `
 <div
   className="about-items"
 >
@@ -1909,7 +1927,7 @@ exports[`Storyshots Collapsible Collapsible with inline red border 1`] = `
   className=""
   style={
     Object {
-      "border": "1px solid blue",
+      "border": "1px solid red",
     }
   }
 >
@@ -2080,6 +2098,232 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         />
       </button>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Page Container just the container 1`] = `<div />`;
+
+exports[`Storyshots Item Page Item Page returns error 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="More Like This Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Share Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="accessibility-btn btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-collapse-down"
+          >
+            Accessibility
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="itemviewer-iframe-spinner"
+    >
+      <img
+        src="/images/spin-large.gif"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3B&scrollToId="
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Page Item Page with an item 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="More Like This Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Share Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="accessibility-btn btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-collapse-down"
+          >
+            Accessibility
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="itemviewer-iframe-spinner"
+    >
+      <img
+        src="/images/spin-large.gif"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_Dict_SD2%3BTDS_ExpandablePassages1%3BTDS_GN1%3BTDS_ST1%3BTDS_TH_TA%3BTDS_PS_L0%3BTDS_CCMagenta%3BTDS_Masking1%3BENU%3BTDS_ASL0%3BTDS_BT0%3BTDS_ClosedCap0%3BTDS_SLM0%3B&scrollToId=187-3000"
+    />
   </div>
 </div>
 `;
@@ -2644,5 +2888,480 @@ exports[`Storyshots Layout name no links no body 1`] = `
       </a>
     </div>
   </footer>
+</div>
+`;
+
+exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    aria-expanded={false}
+    className={undefined}
+    style={undefined}
+  >
+    <a
+      className="collapsible-label link-button"
+      href="javascript:"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      ▶ 
+        Rubric  ( points)
+    </a>
+    <div
+      aria-hidden={true}
+      className="collapsible-body"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p style=\\"color:#000000; \\">Exemplar:</p><p style=\\"color:#000000; \\">&#xA0;</p><p style=\\"color:#000000; \\">4; 3; 1, 2, 4 OR 9; 3; 1, 3, 9</p><p style=\\"color:#000000; \\">&#xA0;</p><p style=\\"color:#000000; \\">For this item, a full-credit response includes</p><p style=\\"color:#000000; \\">&#xA0;</p><ul style=\\"padding-left:1.5000em; \\"><li><p style=\\"color:#000000; background-color:transparent; \\">1 point: Student gives one of these two combinations of answers:</p><p style=\\"color:#000000; background-color:transparent; \\">&#xA0;</p></li></ul><div align=\\"margins\\"><table class=\\"newtable\\" id=\\"item_3322_Table1\\" style=\\"width:15.241799999999997em; border-spacing:0;margin-left:0.5069in; margin-right:4.3368in; \\" cellpadding=\\"0\\" cellspacing=\\"0\\"><colgroup style=\\"width:4.8792em; \\" /><colgroup style=\\"width:5.4792em; \\" /><colgroup style=\\"width:4.8792em; \\" /><tbody><tr><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-top:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Part A </p><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">First Box</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-top:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Part A </p><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Second Box</p></td><td style=\\"padding:0.2292em;  border:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Part B</p></td></tr><tr><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">4</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">3</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-right:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">1, 2, 4</p></td></tr><tr><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">9</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">3</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-right:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">1, 3, 9</p></td></tr></tbody></table></div><ul style=\\"padding-left:1.5000em; \\"><li><p style=\\"color:#000000; \\">&#xA0;</p><p style=\\"color:#000000; \\">(1 point)</p><p style=\\"color:#000000; \\">&#xA0;</p></li><li><p style=\\"color:#000000; \\">0 points: Any other response. (0 points).</p></li></ul>",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Rubric Entry with an empty entry 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    aria-expanded={false}
+    className={undefined}
+    style={undefined}
+  >
+    <a
+      className="collapsible-label link-button"
+      href="javascript:"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      ▶  ( points)
+    </a>
+    <div
+      aria-hidden={true}
+      className="collapsible-body"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Rubric with a rubric model 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ English Rubric
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div>
+      <h4>
+        Rubrics
+      </h4>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 
+        Rubric 2 (2 points)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p style=\\"text-decoration:underline; font-weight:bold; \\">3 point text </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion. The student may make minor computation errors that do not affect the reasonableness of the explanation. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">&#xA0;</p><p style=\\"text-decoration:underline; font-weight:bold; \\">2 point text </p><p style=\\"text-decoration:underline; font-weight:bold; \\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing an incomplete chain of reasoning that supports this conclusion. (An incomplete chain of reasoning can be defined by missing process steps or unsupported calculations in an otherwise complete chain of reasoning.) </p><p style=\\"\\">OR </p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion, but makes computation errors that affect the reasonableness of the explanation. </p>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 
+        Rubric 1 (1 point)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p style=\\"\\">The student completes the task and reaches a conclusion. The student's explanation attempts to relate distance to time, but contains errors in fundamental mathematical procedures. </p><p style=\\"\\">&#xA0;</p>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 
+        Rubric 0 (0 points)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p style=\\"\\">The student demonstrates a lack of comprehension in regard to the mathematical content and practices essential to the task. </p>",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>
+        Sample Responses
+      </h4>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 2-Point Other Official Sample Answers
+       (2 points)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            className="sample-response"
+          >
+            <b>
+              Purpose: 
+            </b>
+             
+            OtherExemplar
+             
+            <br />
+            <b>
+              Sample Response: 
+            </b>
+             
+            <br />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 1: </span>&#xA0;</p><p style=\\"\\">Emily can travel 3/4 mile in under 5 minutes, so she can travel 3 miles (4x as far) in under 20 minutes (4x as long.) This means that Emily will have traveled 3 miles before 8:45 (20 minutes after she left.) Then there is only .42 miles left to go, and since .42 miles is less than 3/4 mile, we know she can cover that distance in less than 5 minutes. That means she will get to school before 8:50, so she will be on time. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 2:</span> &#xA0;</p><p style=\\"\\">Emily travels 3/4 mile in 4.5 minutes, so to find her rate of travel we would divide time by distance and get (4.5) / (.75) = 6 minutes per mile. Multiply 6 minutes per mile times the distance she has to travel (3.42 miles) to find the time it would take for her to get to school (20.52.) Since 20.52 is less than 21 minutes, we know it will take her less than 21 minutes to get to school. 8:25 + 21 minutes is 8:46, which is before 8:50, so she will make it to school on time. </p>",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Rubric with an empty model 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ English Rubric
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots RubricTable with a rubric table 1`] = `
+<div>
+  <table
+    className="item-data-table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Score
+        </th>
+        <th>
+          Rationale
+        </th>
+        <th>
+          Exemplar
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          2
+        </td>
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"text-decoration:underline; font-weight:bold; \\">3 point text </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion. The student may make minor computation errors that do not affect the reasonableness of the explanation. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">&#xA0;</p><p style=\\"text-decoration:underline; font-weight:bold; \\">2 point text </p><p style=\\"text-decoration:underline; font-weight:bold; \\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing an incomplete chain of reasoning that supports this conclusion. (An incomplete chain of reasoning can be defined by missing process steps or unsupported calculations in an otherwise complete chain of reasoning.) </p><p style=\\"\\">OR </p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion, but makes computation errors that affect the reasonableness of the explanation. </p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 1: </span>&#xA0;</p><p style=\\"\\">Emily can travel 3/4 mile in under 5 minutes, so she can travel 3 miles (4x as far) in under 20 minutes (4x as long.) This means that Emily will have traveled 3 miles before 8:45 (20 minutes after she left.) Then there is only .42 miles left to go, and since .42 miles is less than 3/4 mile, we know she can cover that distance in less than 5 minutes. That means she will get to school before 8:50, so she will be on time. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 2:</span> &#xA0;</p><p style=\\"\\">Emily travels 3/4 mile in 4.5 minutes, so to find her rate of travel we would divide time by distance and get (4.5) / (.75) = 6 minutes per mile. Multiply 6 minutes per mile times the distance she has to travel (3.42 miles) to find the time it would take for her to get to school (20.52.) Since 20.52 is less than 21 minutes, we know it will take her less than 21 minutes to get to school. 8:25 + 21 minutes is 8:46, which is before 8:50, so she will make it to school on time. </p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+      </tr>
+      <tr>
+        <td>
+          1
+        </td>
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"\\">The student completes the task and reaches a conclusion. The student's explanation attempts to relate distance to time, but contains errors in fundamental mathematical procedures. </p><p style=\\"\\">&#xA0;</p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+      </tr>
+      <tr>
+        <td>
+          0
+        </td>
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"\\">The student demonstrates a lack of comprehension in regard to the mathematical content and practices essential to the task. </p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Sample Response with a sample response 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ 1-Point Official Sample Answer
+       (1 point)
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="sample-response"
+    >
+      <b>
+        Purpose: 
+      </b>
+       
+      Exemplar
+       
+      <br />
+      <b>
+        Sample Response: 
+      </b>
+       
+      <br />
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p style=\\"\\">Source #3 would most likely be relevant to students researching new approaches to increasing people's financial literacy. One example of a way people can increase their financial literacy discussed in this source is just-in-time education, where training is provided at \\"crucial moments\\" like right before someone decides on a student loan. Another example is giving people \\"simple rules of thumb\\" to follow.</p>",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;

@@ -5,7 +5,6 @@ import '../src/Styles/site.less';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../src/Styles/custom.less';
-import * as $ from 'jquery';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

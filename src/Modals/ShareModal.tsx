@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactModal from "react-modal";
 
 function getItemUrl(): string {
-  const fullUrl = window.location.href;
+  const fullUrl = (window === undefined) ? "" : window.location.href;
   //Strip off any exsisting iSAAP codes or anchors/fragments
   const url = fullUrl.split("#")[0].split("&isaap=")[0];
   return url;
@@ -42,7 +42,10 @@ export class ShareModal extends React.Component<ShareModalProps, ShareModalState
   }
 
   render() {
-    const url = getItemUrl() + "&isaap=" + this.props.iSAAP;
+    let url = ""; 
+    if(typeof window !== 'undefined' && window !== null){
+      url = `${getItemUrl()}&isaap=${this.props.iSAAP}`;
+    }
     
     return (
       <div>
