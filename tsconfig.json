@@ -20,7 +20,6 @@
     "types": [
       "storybook__react",
       "storybook__addon-actions",
-      "jest",
       "node"
     ],
     "typeRoots": [
