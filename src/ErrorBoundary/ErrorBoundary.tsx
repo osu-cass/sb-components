@@ -1,31 +1,30 @@
 import * as React from 'react';
 
 export interface ErrorBoundaryProps {
-    fallbackUI: React.Component<{},{}>
+    fallbackUI: JSX.Element;
 }
 
 export interface ErrorBoundaryState {
     hasError: boolean,
-    error?: Error
+    error?: Error | null,
+    errorInfo: any | null
 }
 
 export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState>{
     constructor ( props: ErrorBoundaryProps ) {
         super( props );
-        this.state = { hasError: false };
+        this.state = { hasError: false, error: null, errorInfo: null };
     }
 
-    componentDidCatch (error: Error, info: any) {
+    componentDidCatch ( error: Error, info: any ) {
         // Display fallback UI
-        this.setState( { hasError: true } );
+        this.setState( { hasError: true, error, errorInfo: info } );
         // You can also log the error to an error reporting service
-        // logError(error);
     }
 
     render () {
-        const {hasError, error} = this.state;
         let content = this.props.children;
-        if ( hasError ) {
+        if ( this.state.hasError ) {
             // You can render any custom fallback UI
             content = this.props.fallbackUI;
         }

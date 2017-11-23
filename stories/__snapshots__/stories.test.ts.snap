@@ -2003,6 +2003,32 @@ exports[`Storyshots Collapsible No classname of style 1`] = `
 </div>
 `;
 
+exports[`Storyshots Error Boundary shows the fallback ui 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      className="test-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Click Me!
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`] = `
 <div
   style={
