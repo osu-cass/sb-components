@@ -66,7 +66,6 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   onError(err: any) {
-    console.error(err);
     this.setState({
       aboutThisItemViewModel: { kind: "failure" },
       aboutItemsViewModel: { kind: "failure" },
