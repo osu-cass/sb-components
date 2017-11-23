@@ -17,9 +17,9 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
     }
 
     componentDidCatch ( error: Error, info: any ) {
+        // You can log the error to an error reporting service here
         // Display fallback UI
         this.setState( { hasError: true, error, errorInfo: info } );
-        // You can also log the error to an error reporting service
     }
 
     render () {
