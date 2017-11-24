@@ -1029,12 +1029,14 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
         className="filter-button-container"
       >
         <button
-          className="disabled-filter-button"
+          className=" filter-button"
+          onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
-          className="disabled-filter-button"
+          className=" filter-button"
+          onClick={[Function]}
         >
           Mathematics
         </button>
@@ -1084,12 +1086,14 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
         className="filter-button-container"
       >
         <button
-          className="disabled-filter-button"
+          className=" filter-button"
+          onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
-          className="disabled-filter-button"
+          className=" filter-button"
+          onClick={[Function]}
         >
           Mathematics
         </button>
@@ -1206,12 +1210,14 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
         className="filter-button-container"
       >
         <button
-          className="disabled-filter-button"
+          className="selected-button filter-button"
+          onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
-          className="disabled-filter-button"
+          className="selected-button filter-button"
+          onClick={[Function]}
         >
           Mathematics
         </button>
