@@ -11,10 +11,21 @@ export enum OptionTypeModel {
   DropDown
 }
 
+export enum FilterType {
+  Subject,
+  Grade,
+  Claim,
+  Performance,
+  Target,
+  CAT,
+  InteractionType
+}
+
 export interface FilterOptionModel {
   label: string;
   key: string;
   isSelected: boolean;
+  filterType: FilterType;
 }
 
 export interface BasicFilterCategoryModel extends FilterCategoryModel {
@@ -26,7 +37,7 @@ export interface FilterCategoryModel {
   label: string;
   filterOptions: FilterOptionModel[];
   helpText?: string;
-  code: string;
+  code: FilterType;
 }
 
 export interface AdvancedFilterCategoryModel extends FilterCategoryModel {
@@ -34,7 +45,7 @@ export interface AdvancedFilterCategoryModel extends FilterCategoryModel {
   displayAllButton: boolean;
 }
 
-export interface TechType extends SubjectModel {}
+export interface TechType extends SubjectModel { }
 
 export interface AdvancedFiltersModel {
   subjects: AdvancedFilterCategoryModel;

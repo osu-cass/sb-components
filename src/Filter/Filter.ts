@@ -1,144 +1,273 @@
-import { SearchAPIParamsModel, ItemsSearchModel } from "../ItemSearch/ItemSearchModels";
+import { InteractionTypeModel } from '../../lib/AboutTestItems/AboutTestItemsModels';
+import {
+    ClaimModel,
+    ItemsSearchModel,
+    SearchAPIParamsModel,
+    SearchBaseModel,
+    SearchFilterTypes,
+    SubjectModel,
+    TargetModel,
+    ItemsSearchFilterModel,
+} from '../ItemSearch/ItemSearchModels';
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
-import { FilterCategoryModel, FilterOptionModel, AdvancedFilterCategoryModel } from "../Filter/AdvancedFilterModel";
+import {
+    AdvancedFilterCategoryModel,
+    FilterCategoryModel,
+    FilterOptionModel,
+    FilterType,
+} from '../Filter/AdvancedFilterModel';
+import { ItemSearch } from '../ItemSearch/ItemSearch';
+
 
 export class Filter {
 
-    public static parseAdvancedFilter(
-        filterModels: FilterCategoryModel[]
-    ): { [key: string]: string[] | undefined } {
-        let queryObject: { [key: string]: string[] | undefined } = {};
-        for (const fg of filterModels) {
-            const selectedOptions: string[] =
-                fg.filterOptions.filter(f => f.isSelected).map(f => f.key) || [];
-            queryObject[fg.code] = selectedOptions;
+    /**
+     * Returns a list of selected codes for the given FilterType and Categories
+     * @param  {FilterType} key
+     * @param  {FilterCategoryModel[]} filterModels
+     */
+    public static getSelectedCodes(key: FilterType, filterModels: FilterCategoryModel[]): string[] | undefined {
+        let filterCategory = filterModels.find(f => f.code === key);
+        if (filterCategory) {
+            return filterCategory.filterOptions
+                .filter(f => f.isSelected)
+                .map(f => f.key) || [];
+        } else {
+            return undefined;
         }
-        return queryObject;
     }
 
-    public static advancedFilterToSearch(
-        filterModels: FilterCategoryModel[]
-    ): SearchAPIParamsModel {
-        const dictionary = this.parseAdvancedFilter(filterModels);
+    /**
+     * Reduces Filter Models for grade selections
+     * Exclusive OR to flip the bits for selected grades
+     * @param  {FilterCategoryModel[]} filterModels
+     */
+    public static getSelectedGrade(filterModels: FilterCategoryModel[]): GradeLevels {
+        const selectedCodes = this.getSelectedCodes(FilterType.Grade, filterModels);
+        let gradeLevel = GradeLevels.NA;
 
-        const subjects = dictionary["Subject"] || [];
-        const gradeString = (dictionary["Grade"] || [])[0]; //TODO: This is an array of grades, could use bitwise
-        const gradeLevels = GradeLevel.stringToGradeLevel(gradeString);
-        const claims = dictionary["Claim"] || [];
-        const interactionTypes = dictionary["InteractionType"] || [];
-        const performanceOnly = (dictionary["Performance"] || [])[0] === "true";
-        const catOnly = (dictionary["CAT"] || [])[0] === "true";
-        const targetStrings = dictionary["Target"] || [];
-        const targetHash = targetStrings.map(t => +t); //string[] to number[]
-        const searchModel: SearchAPIParamsModel = {
-            subjects: subjects,
-            gradeLevels: gradeLevels,
-            claims: claims,
-            interactionTypes: interactionTypes,
-            targets: targetHash,
-            catOnly: catOnly,
-            performanceOnly: performanceOnly
-        };
-
-        return searchModel;
-    }
-
-    //add function to filter itemtypes, claims, targets
-    public static getCurrentClaimsFilter(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
-        let selectedSubjectCodes: string[] = [];
-    
-        const subjectCategory = currentCategories
-        .find(c => c.code.toLowerCase() === 'subject'); // find subjects category
-    
-        if(subjectCategory){
-        selectedSubjectCodes = subjectCategory.filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
-        .map(f => f.key); // grab keys from selected subjects
+        if (selectedCodes) {
+            gradeLevel = selectedCodes.reduce<GradeLevels>((previous, next) => {
+                // tslint:disable-next-line:no-bitwise
+                return previous ^ GradeLevel.stringToGradeLevel(next);
+            }, gradeLevel)
         }
-    
-        const currentClaimCodes = model.subjects
-        .filter(s => selectedSubjectCodes.some(ssc => ssc.toLowerCase() === s.code.toLowerCase()))//currently selected subjects
-        .map(s => s.claimCodes ? s.claimCodes : [])// grab all lists of claims
-        .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
-    
-        const claimFilterOptions = model.claims
-        .filter(f => currentClaimCodes.some(c => c === f.code))
-        .map(m => {
-            return {
-            label:m.label,
-            key:m.code,
-            isSelected:false //this will have some conflicts with current selection
-            } as FilterOptionModel;
-        });
-    
-        const claimsFilter = currentCategories.find(f => f.code.toLowerCase() === 'claims');
-        claimsFilter ? claimsFilter.filterOptions = claimFilterOptions : [];
-    
-        return claimsFilter;
+
+        return gradeLevel;
     }
 
-    public static getCurrentTargets(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
-        let selectedClaimCodes:string[] = [];
-      
-        const claimCategory = currentCategories
-          .find(c => c.code.toLowerCase() === 'claims') // find subjects category
-          
-        if(claimCategory){
-          selectedClaimCodes =  claimCategory.filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
-          .map(f => f.key); // grab keys from selected subjects
+    /**
+     * Evaluates filtered categories for the given filter type to bool or undefined
+     * @param  {FilterType} key
+     * @param  {FilterCategoryModel[]} filterModels
+     */
+    public static getSelectedFlag(key: FilterType, filterModels: FilterCategoryModel[]): boolean | undefined {
+        const selectedCodes = this.getSelectedCodes(key, filterModels);
+        return (selectedCodes) ? (selectedCodes[0] === "true") : undefined;
+    }
+
+    /**
+     * Gets selected target hash values
+     * @param  {FilterCategoryModel[]} filterModels
+     */
+    public static getSelectedTargets(filterModels: FilterCategoryModel[]): number[] | undefined {
+        const selectedCodes = this.getSelectedCodes(FilterType.Target, filterModels);
+        return (selectedCodes) ? (selectedCodes.map(s => +s)) : selectedCodes;
+    }
+
+    /**
+     * Filters subjects with the given codes
+     * @param  {SubjectModel[]} subjects
+     * @param  {string[]} subjectCodes?
+     */
+    public static filterSubjects(subjects: SubjectModel[], subjectCodes?: string[]): SubjectModel[] {
+        let filteredSubjects = subjects;
+
+        if (subjectCodes && subjectCodes.length > 0) {
+            filteredSubjects = filteredSubjects
+                .filter(s => subjectCodes
+                    .some(ssc => ssc === s.code));
         }
-      
-        const currentTargetCodes = model.claims
-          .filter(s => selectedClaimCodes.some(ssc => ssc.toLowerCase() === s.code.toLowerCase()))//currently selected subjects
-          .map(s => s.targetCodes ? s.targetCodes : [])// grab all lists of targetcodes
-          .reduce((pc, cc) =>  pc.concat(cc), []);//flatten targetcodes
-      
-        const targetFilterOptions = model.targets
-          .filter(f => currentTargetCodes.some(t => t === f.nameHash))
-          .map(m => {
-            return {
-              label:m.name,
-              key:String(m.nameHash),
-              isSelected:false
-            } as FilterOptionModel;
-          });
-      
-        const targetsFilter = currentCategories.find(f => f.code.toLowerCase() === 'targets');
-        targetsFilter ? targetsFilter.filterOptions = targetFilterOptions : [];
-      
-        return targetsFilter;
+        return filteredSubjects;
     }
 
-    public static getCurrentInteractionTypes(model: ItemsSearchModel, currentCategories:AdvancedFilterCategoryModel[]){
-        let selectedSubjectCodes:string[] = [];
-      
-        const selectedCategory = currentCategories
-          .find(c => c.code.toLowerCase() === 'subject') // find subjects category
-      
-        if (selectedCategory){
-          selectedSubjectCodes = selectedCategory.filterOptions.filter(f => f.isSelected) // filter out all non selected subjects
-          .map(f => f.key); // grab keys from selected subjects
+    /**
+     * Filters claims with the given codes
+     * @param  {ClaimModel[]} claims
+     * @param  {string[]} claimCodes?
+     */
+    public static filterClaims(claims: ClaimModel[], claimCodes?: string[]): ClaimModel[] {
+        let filteredClaims = claims;
+
+        if (claimCodes && claimCodes.length > 0) {
+            filteredClaims = filteredClaims
+                .filter(s => claimCodes
+                    .some(ssc => ssc === s.code));
         }
-      
-        const currentInteractionTypeCodes = model.subjects
-          .filter(s => selectedSubjectCodes.some(ssc => ssc.toLowerCase() === s.code.toLowerCase()))//currently selected subjects
-          .map(s => s.interactionTypeCodes ? s.interactionTypeCodes : [])// grab all lists of claims
-          .reduce((pc, cc) =>  pc.concat(cc), []);//flatten claims
-      
-        const interactionFilterOptions = model.interactionTypes
-          .filter(f => currentInteractionTypeCodes.some(i => i.toLowerCase() === f.code.toLowerCase()))
-          .map(m => {
-            return {
-              label:m.label,
-              key:m.code,
-              isSelected:false
-            } as FilterOptionModel;
-          });
-      
-        const interactionTypeFilter = currentCategories.find(f => f.code.toLowerCase() === 'interactiontype');
-        interactionTypeFilter ? interactionTypeFilter.filterOptions = interactionFilterOptions : [];
-      
-        return interactionTypeFilter;
+        return filteredClaims;
     }
 
+    /**
+     * Filters targets with the given codes
+     * @param  {TargetModel[]} targets
+     * @param  {number[]} targetCodes?
+     */
+    public static filterTargets(targets: TargetModel[], targetCodes?: number[]): TargetModel[] {
+        let filteredClaims = targets;
+
+        if (targetCodes && targetCodes.length > 0) {
+            filteredClaims = filteredClaims
+                .filter(s => targetCodes
+                    .some(ssc => ssc === s.nameHash));
+        }
+        return filteredClaims;
+    }
+
+    /**
+     * Filters interaction types with the given codes
+     * @param  {InteractionTypeModel[]} interactionTypes
+     * @param  {string[]} interactionTypeCodes?
+     */
+    public static filterInteractionTypes(
+        interactionTypes: InteractionTypeModel[],
+        interactionTypeCodes?: string[]) {
+
+        let filteredClaims = interactionTypes;
+        if (interactionTypeCodes && interactionTypeCodes.length > 0) {
+            filteredClaims = filteredClaims
+                .filter(s => interactionTypeCodes
+                    .some(ssc => ssc === s.code as string));
+        }
+        return filteredClaims;
+    }
+
+    /** Returns the list of related claims
+     * @param  {SubjectModel[]} subjects
+     */
+    private static getSubjectClaimCodes(subjects: SubjectModel[]): string[] {
+        return subjects
+            .map(s => s.claimCodes || [])
+            .reduce((pc, cc) => pc.concat(cc), []);
+    }
+
+    /**
+     * Returns the list of related interaction types
+     * @param  {SubjectModel[]} subjects
+     */
+    private static getSubjectInteractionTypes(subjects: SubjectModel[]): string[] {
+        return subjects
+            .map(s => s.interactionTypeCodes || [])
+            .reduce((pc, cc) => pc.concat(cc), []);
+    }
+
+    /**
+     * Returns the list of related target codes
+     * @param  {ClaimModel[]} claims
+     */
+    private static getClaimTargetCodes(claims: ClaimModel[]): number[] {
+        return claims
+            .map(c => c.targetCodes || [])
+            .reduce((prev, next) => prev.concat(next));
+    }
+
+    /**
+     * Gets the list of current claims from dependent subjects 
+     * @param  {ItemsSearchModel} model
+     * @param  {SearchAPIParamsModel} searchApiModel
+     */
+    public static getCurrentClaimsFilter(
+        model: ItemsSearchModel,
+        searchApiModel: SearchAPIParamsModel,
+        filteredSubjects?: SubjectModel[]) {
+
+        filteredSubjects = filteredSubjects || this.filterSubjects(model.subjects, searchApiModel.subjects);
+        const subjectClaims = this.getSubjectClaimCodes(filteredSubjects);
+        const filteredClaims = this.filterClaims(model.claims, subjectClaims);
+
+        return filteredClaims;
+    }
+
+    /**
+     * Gets the list of current interaction types from dependent subjects
+     * @param  {ItemsSearchModel} model
+     * @param  {SearchAPIParamsModel} searchApiModel
+     */
+    public static getCurrentInteractionTypes(
+        model: ItemsSearchModel,
+        searchApiModel: SearchAPIParamsModel,
+        filteredSubjects?: SubjectModel[]) : InteractionTypeModel[] {
+
+        filteredSubjects = filteredSubjects || this.filterSubjects(model.subjects, searchApiModel.subjects);
+        const subjectInteractionTypes = this.getSubjectInteractionTypes(filteredSubjects);
+        const filteredInteractionTypes = this.filterInteractionTypes(model.interactionTypes, subjectInteractionTypes);
+
+        return filteredInteractionTypes;
+    }
+
+    /**
+     * Gets the list of current targets from dependent subjects and claims
+     * @param  {ItemsSearchModel} model
+     * @param  {SearchAPIParamsModel} searchApiModel
+     */
+    public static getCurrentTargets(
+        model: ItemsSearchModel,
+        searchApiModel: SearchAPIParamsModel,
+        filteredClaims?: ClaimModel[]) : TargetModel[] {
+
+        filteredClaims = filteredClaims || this.getCurrentClaimsFilter(model, searchApiModel);
+        const targetCodes = this.getClaimTargetCodes(filteredClaims);
+        const filteredTarget = this.filterTargets(model.targets, targetCodes);
+
+        return filteredTarget;
+    }
+
+    /**
+     * Returns Filter Categories with the updated dependent lists with selected values
+     * Dependent list Target, Claim, and Interaction Types
+     * @param  {ItemsSearchModel} model
+     * @param  {FilterCategoryModel[]} filters
+     * @param  {SearchAPIParamsModel} searchAPI
+     */
+    public static getUpdatedSearchFilters(
+        model: ItemsSearchModel,
+        filters: FilterCategoryModel[],
+        searchAPI: SearchAPIParamsModel) : FilterCategoryModel[]{
+
+        searchAPI = searchAPI || ItemSearch.filterToSearchApiModel(filters);
+        filters = filters.slice();
+
+        let subjectFilter = filters.find(f => f.code === FilterType.Subject);
+        if (subjectFilter) {
+            const filteredSubjects = this.filterSubjects(model.subjects, searchAPI.subjects);
+            let filteredClaims: ClaimModel[] | undefined = undefined;
+
+            let claimFilterIdx = filters.findIndex(f => f.code === FilterType.Claim);
+            let interactionFilterIdx = filters.findIndex(f => f.code === FilterType.InteractionType);
+            let targetFilterIdx = filters.findIndex(f => f.code === FilterType.Target);
+
+            if (claimFilterIdx !== -1) {
+                filteredClaims = this.getCurrentClaimsFilter(model, searchAPI, filteredSubjects);
+                const filterOptions = ItemSearch.searchOptionFilterString(
+                    filteredClaims, FilterType.Claim, searchAPI.claims);
+                filters[claimFilterIdx].filterOptions = filterOptions;
+            }
+
+            if (interactionFilterIdx !== -1) {
+                const filteredInteractions = this.getCurrentInteractionTypes(model, searchAPI, filteredSubjects);
+                const filterOptions = ItemSearch.searchOptionFilterString(
+                    filteredInteractions, FilterType.InteractionType, searchAPI.interactionTypes);
+                filters[interactionFilterIdx].filterOptions = filterOptions;
+            }
+
+            if (targetFilterIdx !== -1) {
+                const filteredTargets = this.getCurrentTargets(model, searchAPI, filteredClaims);
+                const filterOptions = ItemSearch.searchOptionToFilterTarget(
+                    filteredTargets, FilterType.InteractionType, searchAPI.targets);
+                filters[targetFilterIdx].filterOptions = filterOptions;
+            }
+        }
+
+        return filters;
+    }
 }
