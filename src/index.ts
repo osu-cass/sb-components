@@ -173,3 +173,8 @@ export {
     getResourceContent,
     get,
 } from "./ApiModel";
+
+//
+// ErrorWrapper
+//
+export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
