@@ -56,7 +56,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
         );
       });
     }else{
-      tags.push(<div>No options.</div>)
+      tags.push(<div key={0}>No options.</div>)
     }
     return tags;
   }
