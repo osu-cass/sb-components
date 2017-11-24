@@ -41,27 +41,22 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   renderTags () {
     const tags: JSX.Element[] = [];
     let classname = "";
-    if ( this.props.filterOptions ) {
-      this.props.filterOptions.forEach( ( t, i ) => {
+    if (this.props.filterOptions.length > 0) {
+      this.props.filterOptions.forEach((t, i) => {
         classname = t.isSelected ? "selected-button" : "";
-        if ( !this.props.disabled ) {
-          tags.push(
-            <button
-              className={classname + " filter-button"}
-              key={t.key}
-              onClick={() => this.props.selectedHandler( t )}
-            >
-              {t.label}
-            </button>
-          );
-        } else {
-          tags.push(
-            <button className="disabled-filter-button" key={t.key}>
-              {t.label}
-            </button>
-          )
-        }
-      } );
+
+        tags.push(
+          <button
+            className={classname + " filter-button"}
+            key={t.key}
+            onClick={() => this.props.selectedHandler(t)}
+          >
+            {t.label}
+          </button>
+        );
+      });
+    }else{
+      tags.push(<div key={0}>No options.</div>)
     }
     return tags;
   }

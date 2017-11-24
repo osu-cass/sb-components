@@ -1450,7 +1450,11 @@ exports[`Storyshots Advanced Filter no options 1`] = `
     >
       <div
         className="filter-button-container"
-      />
+      >
+        <div>
+          No options.
+        </div>
+      </div>
     </div>
   </div>
 </div>
