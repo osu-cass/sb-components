@@ -3,10 +3,14 @@
 ## Extensions
 
 ### Required
+
 * Add jsdoc comments [here](https://marketplace.visualstudio.com/items?itemName=stevencl.addDocComments)
+
 * (Not Ready) TSLint [here](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+
 * Spell Checker [here](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-* (Not ready) Prettier - Code Formatter (here)[https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode]
+
+* (Not ready) Prettier - Code Formatter [here](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ### Optional
 
