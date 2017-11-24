@@ -41,7 +41,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   renderTags() {
     const tags: JSX.Element[] = [];
     let classname = "";
-    if (this.props.filterOptions) {
+    if (this.props.filterOptions.length > 0) {
       this.props.filterOptions.forEach((t, i) => {
         classname = t.isSelected ? "selected-button" : "";
 
@@ -55,6 +55,8 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
           </button>
         );
       });
+    }else{
+      tags.push(<div>No options.</div>)
     }
     return tags;
   }
