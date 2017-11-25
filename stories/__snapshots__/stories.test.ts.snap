@@ -1009,7 +1009,7 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Disabled
       </span>
@@ -1066,7 +1066,7 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Disabled Multi
       </span>
@@ -1123,7 +1123,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Multi All Disabled
       </span>
@@ -1190,7 +1190,7 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Disabled
       </span>
@@ -1247,7 +1247,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Multi
       </span>
@@ -1304,7 +1304,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Multi All
       </span>
@@ -1371,7 +1371,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Multi All
       </span>
@@ -1438,7 +1438,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Subjects
       </span>
@@ -1486,7 +1486,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
   >
     <label>
       <span
-        info-label={true}
+        info-label="true"
       >
         Subjects
       </span>
