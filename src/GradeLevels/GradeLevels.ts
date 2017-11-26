@@ -19,7 +19,6 @@ export enum GradeLevels {
 }
 
 export class GradeLevel {
-
   public static gradeCaseToString(grade: GradeLevels): string {
     switch (grade) {
       case GradeLevels.NA:
@@ -54,13 +53,13 @@ export class GradeLevel {
         return "";
     }
   }
-  
+
   public static gradeLevelToString(grades: GradeLevels): string | undefined {
     const caseString = this.gradeCaseToString(grades);
     if (caseString !== "") {
       return caseString;
     }
-  
+
     let gradeStrings: string[] = [];
     for (let i = 0; i < 10; i++) {
       if ((grades & (1 << i)) === 1 << i) {
@@ -69,16 +68,20 @@ export class GradeLevel {
     }
     return gradeStrings.join(", ");
   }
-  
+
   public static gradeLevelContains(
     haystack: GradeLevels,
     needle: GradeLevels
   ): boolean {
     return (haystack & needle) === needle;
   }
-  
+
   public static stringToGradeLevel(gradeString: string): GradeLevels {
     return parseInt(gradeString, 10) || GradeLevels.NA;
   }
-}
 
+  public static gradeLevelAdd(grade: GradeLevels, gradeString: string) {
+    // tslint:disable-next-line:no-bitwise
+    return grade ^ this.stringToGradeLevel(gradeString);
+  }
+}

@@ -1,27 +1,39 @@
+import { Filter } from '../Filter/Filter';
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
+import { AdvancedFilterCategoryModel, FilterOptionModel, FilterType } from '../Filter/AdvancedFilterModel';
+
+export type SearchFilterStringTypes = ClaimModel | SubjectModel | InteractionTypeModel;
+export type SearchFilterTypes = SearchFilterStringTypes | TargetModel | GradeLevel;
+export type SearchFilterModelTypes = FilterSearchGradeLevelModel | FilterSearchStringModel | FilterSearchTargetModel;
 
 export interface SubjectClaimsModel {
   [subject: string]: { text: string; value: string }[];
 }
 
-export interface SubjectModel {
-  code: string;
-  label: string;
-  claims?: ClaimModel[];
-  interactionTypeCodes?: string[];
+export interface SearchBaseModel {
+  label: string
 }
 
-export interface ClaimModel {
+export interface SubjectModel extends SearchBaseModel {
+  claimCodes?: string[];
+  interactionTypeCodes?: string[];
   code: string;
-  label: string;
-  targets: TargetModel[];
+  filterType?: FilterType.Subject;
+}
+
+export interface ClaimModel extends SearchBaseModel {
+  targetCodes?: number[];
+  code: string;
+  filterType?: FilterType.Claim
 }
 
 export interface TargetModel {
   name: string;
   nameHash: number;
+  filterType?: FilterType.Target;
+  
 }
 
 export interface SearchAPIParamsModel {
@@ -38,4 +50,35 @@ export interface SearchAPIParamsModel {
 export interface ItemsSearchModel {
   interactionTypes: InteractionTypeModel[];
   subjects: SubjectModel[];
+  claims: ClaimModel[];
+  targets: TargetModel[];
+}
+
+export interface ItemsSearchFilterModel {
+  interactionType: FilterSearchStringModel;
+  subjects: FilterSearchStringModel;
+  claims: FilterSearchStringModel;
+  targets: FilterSearchTargetModel;
+}
+
+export interface FilterSearchModel {
+  label: string;
+  helpText?: string;
+  code: FilterType;
+  filterOptions: SearchFilterTypes[];
+}
+
+export interface FilterSearchStringModel extends FilterSearchModel {
+  filterOptions: SearchFilterStringTypes[];
+  code: FilterType.Claim | FilterType.InteractionType | FilterType.Subject;
+}
+
+export interface FilterSearchGradeLevelModel extends FilterSearchModel {
+  filterOptions: GradeLevels[];
+  code: FilterType.Grade;
+}
+
+export interface FilterSearchTargetModel extends FilterSearchModel {
+  filterOptions: TargetModel[];
+  code: FilterType.Target;
 }
