@@ -7,20 +7,20 @@ import {
 } from "./AdvancedFilterModel";
 
 export interface AdvancedFilterProps extends AdvancedFilterCategoryModel {
-  selectedHandler: (data?: FilterOptionModel) => void;
+  selectedHandler: ( data?: FilterOptionModel ) => void;
 }
 
 export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
-  constructor(props: AdvancedFilterProps) {
-    super(props);
+  constructor ( props: AdvancedFilterProps ) {
+    super( props );
   }
 
-  renderAllbtnContainer() {
+  renderAllbtnContainer () {
     let allBtnContainer: JSX.Element | undefined;
     let classname = "";
-    const anySelected = this.props.filterOptions.some(fo => fo.isSelected);
+    const anySelected = this.props.filterOptions.some( fo => fo.isSelected );
 
-    if (this.props.displayAllButton) {
+    if ( this.props.displayAllButton ) {
       classname = anySelected ? "" : " selected-button";
 
       allBtnContainer = (
@@ -38,10 +38,10 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     return allBtnContainer;
   }
 
-  renderTags() {
+  renderTags () {
     const tags: JSX.Element[] = [];
     let classname = "";
-    if (this.props.filterOptions) {
+    if (this.props.filterOptions.length > 0) {
       this.props.filterOptions.forEach((t, i) => {
         classname = t.isSelected ? "selected-button" : "";
 
@@ -55,14 +55,16 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
           </button>
         );
       });
+    }else{
+      tags.push(<div key={0}>No options.</div>)
     }
     return tags;
   }
 
-  render() {
+  render () {
     return (
       <div
-        id={(this.props.label + "-filter").toLocaleLowerCase()}
+        id={( this.props.label + "-filter" ).toLocaleLowerCase()}
         className="filter-selection"
       >
         <label>

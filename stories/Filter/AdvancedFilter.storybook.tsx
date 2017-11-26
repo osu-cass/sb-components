@@ -14,7 +14,7 @@ import {
 import { CenterDecorator } from "../CenterDecorator";
 
 //Advanced filter select actions won't persist, stories should be checking the rendering and not actions
-storiesOf("AdvancedFilter", module)
+storiesOf("Advanced Filter", module)
   .addDecorator(CenterDecorator)
   .add("single select", () => (
     <AdvancedFilter

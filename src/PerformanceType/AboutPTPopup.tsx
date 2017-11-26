@@ -1,100 +1,90 @@
 import * as Boostrap from "bootstrap";
 import * as $ from "jquery";
 import * as React from "react";
+import { getSubjectHeader, shouldShowOnLoad } from "./PerformanceModels";
+import * as ReactModal from "react-modal";
 
 export interface AboutPtPopupModalProps {
   subject: string;
   description: string;
   isPerformance: boolean;
+  showModal?: boolean;
+  skipCookie?: boolean;
 }
 
-function readCookie(name: string): string | undefined {
-  const cookie = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)");
-  return cookie ? cookie.pop() : "";
+export interface AboutPTPopupModalState {
+  showModal: boolean;
 }
+
 
 export class AboutPTPopupModal extends React.Component<
-  AboutPtPopupModalProps,
-  {}
-> {
-  shouldShowOnLoad(): void {
-    if (!this.props.isPerformance) {
-      return;
-    }
-    let visitedBefore = false;
-    //Cookies only store strings
-    if (this.props.subject.toLowerCase() === "math") {
-      visitedBefore = readCookie("visitedMathPerfItem") == "true";
-      document.cookie = "visitedMathPerfItem=true";
-    } else if (this.props.subject.toLowerCase() === "ela") {
-      visitedBefore = readCookie("visitedELAPerfItem") == "true";
-      document.cookie = "visitedELAPerfItem=true";
-    }
-    if (!visitedBefore) {
-      $("#about-performance-tasks-popup-modal-container").modal("show");
-    }
-  }
-  getSubjectText(): string {
-    switch (this.props.subject.toLowerCase()) {
-      case "math":
-        return "Math";
-      case "ela":
-        return "ELA";
-      default:
-        return "";
-    }
+  AboutPtPopupModalProps, AboutPTPopupModalState> {
+
+  constructor(props: AboutPtPopupModalProps) {
+    super(props);
+    const skipCookie = this.props.skipCookie || false;
+    const cookieShouldShow = (skipCookie) ? false : shouldShowOnLoad(this.props.isPerformance);
+
+    this.state = {
+      showModal: this.props.showModal || cookieShouldShow || false
+    };
   }
 
-  getSubjectHeader(): string {
-    switch (this.props.subject.toLowerCase()) {
-      case "math":
-        return "Note about Math Performance Task Items";
-      case "ela":
-        return "Note about ELA Performance Task Items";
-      default:
-        return "";
-    }
-  }
+  handleShowModal = () => {
+    this.setState({ showModal: true });
+  };
+
+  handleHideModal = () => {
+    this.setState({ showModal: false });
+  };
 
   render() {
-    this.shouldShowOnLoad();
-    const header = this.getSubjectHeader();
+    const header = getSubjectHeader(this.props.subject);
+
     return (
-      <div
-        className="modal fade"
-        id="about-performance-tasks-popup-modal-container"
-        tabIndex={-1}
-        role="dialog"
-        aria-hidden="true"
-        aria-labelledby="About Performance Tasks"
-        aria-describedby="About Performance Tasks"
-      >
-        <div className="modal-dialog share-modal" role="document">
-          <div className="modal-content">
+      <div>
+
+        <ReactModal
+          isOpen={this.state.showModal}
+          contentLabel={header}
+          onRequestClose={this.handleHideModal}
+          overlayClassName="react-modal-overlay"
+          className="react-modal-content about-pt-modal"
+        >
+          <div
+            className="modal-wrapper"
+            aria-labelledby="About Performance Tasks"
+            aria-describedby="About Performance Tasks"
+            aria-hidden="true"
+          >
             <div className="modal-header">
+              <h4 className="modal-title">{header}</h4>
               <button
-                type="button"
                 className="close"
-                data-dismiss="modal"
-                aria-label="Close"
+                onClick={this.handleHideModal}
+                aria-label="Close modal"
               >
-                <span aria-hidden="true">&times;</span>
+                <span className="fa fa-times" aria-hidden="true" />
               </button>
-              <h4 className="modal-title" id="myModalLabel">
-                {header}
-              </h4>
             </div>
             <div className="modal-body">
-              <p dangerouslySetInnerHTML={{ __html: this.props.description }} />
+              {/* TODO: add label */}
+              <p dangerouslySetInnerHTML={{ __html: this.props.description }}></p>
             </div>
             <div className="modal-footer">
-              <button className="btn btn-primary" data-dismiss="modal">
+              <button
+                className="btn btn-primary"
+                aria-label="Close modal"
+                onClick={this.handleHideModal}
+              >
                 Close
               </button>
             </div>
           </div>
-        </div>
+        </ReactModal>
       </div>
     );
   }
+
+
 }
