@@ -26,7 +26,12 @@ exports[`Storyshots About Item Modal default 1`] = `
         aria-hidden="true"
         className="glyphicon glyphicon-info-sign glyphicon-pad"
       />
-      About This Item
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
     </button>
   </div>
 </div>
@@ -58,7 +63,12 @@ exports[`Storyshots About Item Modal showing no rubrics 1`] = `
         aria-hidden="true"
         className="glyphicon glyphicon-info-sign glyphicon-pad"
       />
-      About This Item
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
     </button>
   </div>
 </div>
@@ -90,7 +100,12 @@ exports[`Storyshots About Item Modal showing rubrics 1`] = `
         aria-hidden="true"
         className="glyphicon glyphicon-info-sign glyphicon-pad"
       />
-      About This Item
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
     </button>
   </div>
 </div>
@@ -122,7 +137,12 @@ exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
         aria-hidden="true"
         className="glyphicon glyphicon-info-sign glyphicon-pad"
       />
-      About This Item
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
     </button>
   </div>
 </div>
@@ -154,7 +174,129 @@ exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
         aria-hidden="true"
         className="glyphicon glyphicon-info-sign glyphicon-pad"
       />
-      About This Item
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT About ELA 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT About Math 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT Nothing 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-link"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
     </button>
   </div>
 </div>
@@ -782,7 +924,72 @@ exports[`Storyshots Accessibility Modal no options showing  1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled 1`] = `
+exports[`Storyshots Advanced Filter Container normal render 1`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <div
+      className="filter-advanced-filter-header"
+    >
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h2
+          style={
+            Object {
+              "color": "#63666A",
+            }
+          }
+        >
+          <span
+            className="fa fa-tasks fa-lg"
+          />
+           Advanced Filters
+        </h2>
+        <span
+          style={
+            Object {
+              "marginTop": "6px",
+            }
+          }
+        >
+           Click on an item to remove it from the list
+        </span>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "marginRight": "10px",
+          }
+        }
+      >
+        <button
+          className="filter-button"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-header"
+    >
+      <div
+        className="filter-status"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter disabled 1`] = `
 <div
   style={
     Object {
@@ -839,7 +1046,7 @@ exports[`Storyshots AdvancedFilter disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled multi 1`] = `
+exports[`Storyshots Advanced Filter disabled multi 1`] = `
 <div
   style={
     Object {
@@ -896,7 +1103,7 @@ exports[`Storyshots AdvancedFilter disabled multi 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled multi all 1`] = `
+exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 <div
   style={
     Object {
@@ -963,7 +1170,7 @@ exports[`Storyshots AdvancedFilter disabled multi all 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter disabled with selections 1`] = `
+exports[`Storyshots Advanced Filter disabled with selections 1`] = `
 <div
   style={
     Object {
@@ -1020,7 +1227,7 @@ exports[`Storyshots AdvancedFilter disabled with selections 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter multi select 1`] = `
+exports[`Storyshots Advanced Filter multi select 1`] = `
 <div
   style={
     Object {
@@ -1077,7 +1284,7 @@ exports[`Storyshots AdvancedFilter multi select 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter multi select all  1`] = `
+exports[`Storyshots Advanced Filter multi select all  1`] = `
 <div
   style={
     Object {
@@ -1144,7 +1351,7 @@ exports[`Storyshots AdvancedFilter multi select all  1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter multi select all selected  1`] = `
+exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 <div
   style={
     Object {
@@ -1211,7 +1418,7 @@ exports[`Storyshots AdvancedFilter multi select all selected  1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter no options 1`] = `
+exports[`Storyshots Advanced Filter no options 1`] = `
 <div
   style={
     Object {
@@ -1249,13 +1456,17 @@ exports[`Storyshots AdvancedFilter no options 1`] = `
     >
       <div
         className="filter-button-container"
-      />
+      >
+        <div>
+          No options.
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots AdvancedFilter single select 1`] = `
+exports[`Storyshots Advanced Filter single select 1`] = `
 <div
   style={
     Object {
@@ -1312,270 +1523,7 @@ exports[`Storyshots AdvancedFilter single select 1`] = `
 </div>
 `;
 
-exports[`Storyshots AdvancedFilterContainer normal render 1`] = `
-<div
-  className="advanced-filter-container"
->
-  <div
-    className="filter-sub-header-container"
-  >
-    <div
-      className="filter-advanced-filter-header"
-    >
-      <div
-        className="filter-advanced-filter-title"
-      >
-        <h2
-          style={
-            Object {
-              "color": "#63666A",
-            }
-          }
-        >
-          <span
-            className="fa fa-tasks fa-lg"
-          />
-           Advanced Filters
-        </h2>
-        <span
-          style={
-            Object {
-              "marginTop": "6px",
-            }
-          }
-        >
-           Click on an item to remove it from the list
-        </span>
-      </div>
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "marginRight": "10px",
-          }
-        }
-      >
-        <button
-          className="filter-button"
-          onClick={[Function]}
-        >
-          Expand 
-          <span
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      className="filter-header"
-    >
-      <div
-        className="filter-status"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter DropDown: multiple filter items 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <select
-        onChange={[Function]}
-      >
-        <option
-          value="12346"
-        >
-          Grade 1
-        </option>
-        <option
-          value="12347"
-        >
-          Grade 2
-        </option>
-        <option
-          value="12345"
-        >
-          Grade
-        </option>
-        <option
-          value="12348"
-        >
-          Grade 4
-        </option>
-      </select>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter DropDown: one filter item 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <select
-        onChange={[Function]}
-      >
-        <option
-          value="12345"
-        >
-          Grade
-        </option>
-      </select>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter RadioBtn: multiple filter items 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <form>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12346"
-          />
-          Grade 1
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12347"
-          />
-          Grade 2
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12345"
-          />
-          Grade
-        </label>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12348"
-          />
-          Grade 4
-        </label>
-      </form>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilter RadioBtn: one filter item 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div
-    className="basic-filter-selection"
-    id="grade-basic-filter"
-  >
-    <label>
-      Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <form>
-        <label>
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="radio"
-            value="12345"
-          />
-          Grade
-        </label>
-      </form>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
+exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 <div
   className="basic-filter-container"
 >
@@ -1649,7 +1597,7 @@ exports[`Storyshots BasicFilterContainer Basic Filter only 1`] = `
 </div>
 `;
 
-exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expansion button 1`] = `
+exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
   className="basic-filter-container"
 >
@@ -1735,6 +1683,351 @@ exports[`Storyshots BasicFilterContainer Basic Filter with Advanced filter expan
       <span
         className="fa fa-chevron-right"
       />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <select
+        onChange={[Function]}
+      >
+        <option
+          value="12346"
+        >
+          Grade 1
+        </option>
+        <option
+          value="12347"
+        >
+          Grade 2
+        </option>
+        <option
+          value="12345"
+        >
+          Grade
+        </option>
+        <option
+          value="12348"
+        >
+          Grade 4
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <select
+        onChange={[Function]}
+      >
+        <option
+          value="12345"
+        >
+          Grade
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <form>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12346"
+          />
+          Grade 1
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12347"
+          />
+          Grade 2
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade
+        </label>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12348"
+          />
+          Grade 4
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="basic-filter-selection"
+    id="grade-basic-filter"
+  >
+    <label>
+      Grade
+    </label>
+    <div
+      className="basic-filter-body"
+    >
+      <form>
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible Collapsible with CSS classname 1`] = `
+<div
+  aria-expanded={false}
+  className="test-collapsible"
+  style={Object {}}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible Collapsible with inline red border 1`] = `
+<div
+  aria-expanded={false}
+  className=""
+  style={
+    Object {
+      "border": "1px solid red",
+    }
+  }
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible No classname of style 1`] = `
+<div
+  aria-expanded={false}
+  className=""
+  style={Object {}}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Error Boundary shows the fallback ui 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      className="test-button"
+      onClick={[Function]}
+      type="button"
+    >
+      Click Me!
     </button>
   </div>
 </div>
@@ -1839,7 +2132,233 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
 </div>
 `;
 
-exports[`Storyshots ItemCard Item Card 1`] = `
+exports[`Storyshots Item Page Container just the container 1`] = `<div />`;
+
+exports[`Storyshots Item Page Item Page returns error 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="More Like This Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Share Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="accessibility-btn btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-collapse-down"
+          >
+            Accessibility
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="itemviewer-iframe-spinner"
+    >
+      <img
+        src="/images/spin-large.gif"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3B&scrollToId="
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Page Item Page with an item 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="More Like This Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Share Modal"
+          className="item-nav-btn btn btn-link"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-info-sign glyphicon-pad"
+          />
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="accessibility-btn btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-collapse-down"
+          >
+            Accessibility
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="itemviewer-iframe-spinner"
+    >
+      <img
+        src="/images/spin-large.gif"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_Dict_SD2%3BTDS_ExpandablePassages1%3BTDS_GN1%3BTDS_ST1%3BTDS_TH_TA%3BTDS_PS_L0%3BTDS_CCMagenta%3BTDS_Masking1%3BENU%3BTDS_ASL0%3BTDS_BT0%3BTDS_ClosedCap0%3BTDS_SLM0%3B&scrollToId=187-3000"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Tab information tab 1`] = `
 <div
   style={
     Object {
@@ -1854,116 +2373,31 @@ exports[`Storyshots ItemCard Item Card 1`] = `
   }
 >
   <div
-    className="card card-block ela"
-    onClick={[Function]}
-    onKeyUp={[Function]}
-    tabIndex={0}
+    className="tabs"
   >
     <div
-      className="card-contents"
+      className="tab-not-selected"
+      onClick={[Function]}
     >
-      <h4
-        className="card-title"
-        onClick={[Function]}
-        onKeyUp={[Function]}
-      >
-        ELA Grade 4
-      </h4>
-      <p
-        className="card-text subject"
-      >
-        <span
-          className="card-text-label"
-        >
-          Subject:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          ELA
-        </span>
-      </p>
-      <p
-        className="card-text grade"
-      >
-        <span
-          className="card-text-label"
-        >
-          Grade:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Grade 4
-        </span>
-      </p>
-      <p
-        className="card-text claim"
-      >
-        <span
-          className="card-text-label"
-        >
-          Claim:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Claim
-        </span>
-      </p>
-      <p
-        className="card-text target"
-      >
-        <span
-          className="card-text-label"
-        >
-          Target:
-        </span>
-        <span
-          className="card-text-value"
-        >
-          Short Name
-        </span>
-      </p>
-      <p
-        className="card-text interaction-type"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Type:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Item Type
-        </span>
-      </p>
-      <p
-        className="card-text item-id"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Id:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          3434
-        </span>
-      </p>
+      Item Viewer
+    </div>
+    <div
+      className="tab-not-selected"
+      onClick={[Function]}
+    >
+      Rubric and Exemplar
+    </div>
+    <div
+      className="selected-tab"
+      onClick={[Function]}
+    >
+      Item Information
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots ItemCard Item Card Condensed 1`] = `
+exports[`Storyshots Item Tab rubric tab 1`] = `
 <div
   style={
     Object {
@@ -1978,81 +2412,98 @@ exports[`Storyshots ItemCard Item Card Condensed 1`] = `
   }
 >
   <div
-    className="card card-block ela condensed"
-    onClick={[Function]}
-    onKeyUp={[Function]}
-    tabIndex={0}
+    className="tabs"
   >
     <div
-      className="card-contents"
+      className="tab-not-selected"
+      onClick={[Function]}
     >
-      <h4
-        className="card-title"
-      >
-        ELA
-      </h4>
-      <p
-        className="card-text claim"
-      >
-        <span
-          className="card-text-label"
-        >
-          Claim:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Claim
-        </span>
-      </p>
-      <p
-        className="card-text target"
-      >
-        <span
-          className="card-text-label"
-        >
-          Target:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Short Name
-        </span>
-      </p>
-      <p
-        className="card-text interaction-type"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Type:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          Item Type
-        </span>
-      </p>
-      <p
-        className="card-text item-id"
-      >
-        <span
-          className="card-text-label"
-        >
-          Item Id:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
-          3434
-        </span>
-      </p>
+      Item Viewer
+    </div>
+    <div
+      className="selected-tab"
+      onClick={[Function]}
+    >
+      Rubric and Exemplar
+    </div>
+    <div
+      className="tab-not-selected"
+      onClick={[Function]}
+    >
+      Item Information
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Item Tab viewer tab 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tabs"
+  >
+    <div
+      className="selected-tab"
+      onClick={[Function]}
+    >
+      Item Viewer
+    </div>
+    <div
+      className="tab-not-selected"
+      onClick={[Function]}
+    >
+      Rubric and Exemplar
+    </div>
+    <div
+      className="tab-not-selected"
+      onClick={[Function]}
+    >
+      Item Information
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Viewer Frame with an item 1`] = `
+<div
+  className="itemViewerFrame"
+  tabIndex={0}
+>
+  <div
+    className="itemviewer-iframe-spinner"
+  >
+    <img
+      src="/images/spin-large.gif"
+    />
+  </div>
+  <iframe
+    className="itemviewer-iframe"
+    id="itemviewer-iframe"
+    onLoad={[Function]}
+    onLoadStart={[Function]}
+    src="http://ivs.smarterbalanced.org/items?ids=187-3246"
+  />
+</div>
+`;
+
+exports[`Storyshots Item Viewer Frame with no contents 1`] = `
+<div
+  className="no-item"
+>
+  <p>
+    No Item Found
+  </p>
 </div>
 `;
 
@@ -2095,6 +2546,166 @@ exports[`Storyshots Layout Footer default footer 1`] = `
       </a>
     </div>
   </footer>
+</div>
+`;
+
+exports[`Storyshots Layout Nav name links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
+    >
+      <div
+        className="sbNav"
+      >
+        <div
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+        <div
+          className="sbNav-linksGroup"
+        >
+          <a
+            className="sbNav-linksGroup-item"
+            href="url1"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link1
+          </a>
+          <a
+            className="sbNav-linksGroup-item"
+            href="url2"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            link2
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Storyshots Layout Nav name no links 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      role="navigation"
+    >
+      <div
+        className="sbNav"
+      >
+        <div
+          className="sbNav-titleGroup"
+        >
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="/Images/SmarterBalanced_logo.png"
+              />
+            </a>
+          </div>
+          <div
+            className="sbNav-titleGroup-item"
+          >
+            <h3>
+              Test
+            </h3>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 </div>
 `;
 
@@ -2310,7 +2921,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
 </div>
 `;
 
-exports[`Storyshots LayoutNav name links 1`] = `
+exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
 <div
   style={
     Object {
@@ -2324,87 +2935,43 @@ exports[`Storyshots LayoutNav name links 1`] = `
     }
   }
 >
-  <header
-    role="navigation"
+  <div
+    aria-expanded={false}
+    className={undefined}
+    style={undefined}
   >
-    <div
-      className="skip-link"
-      id="skip-main"
+    <a
+      className="collapsible-label link-button"
+      href="javascript:"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <a
-        className="skip-link"
-        href="/#main"
-        onClick={[Function]}
-      >
-        Skip to main content
-      </a>
-    </div>
-    <nav
-      role="navigation"
+      ▶ 
+        Rubric  ( points)
+    </a>
+    <div
+      aria-hidden={true}
+      className="collapsible-body"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
     >
       <div
-        className="sbNav"
-      >
-        <div
-          className="sbNav-titleGroup"
-        >
-          <div
-            className="sbNav-titleGroup-item"
-          >
-            <a
-              href="http://www.smarterbalanced.org/"
-              target="_blank"
-              title="Smarter Balanced Home"
-            >
-              <img
-                alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
-              />
-            </a>
-          </div>
-          <div
-            className="sbNav-titleGroup-item"
-          >
-            <h3>
-              Test
-            </h3>
-          </div>
-        </div>
-        <div
-          className="sbNav-linksGroup"
-        >
-          <a
-            className="sbNav-linksGroup-item"
-            href="url1"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <span
-              className=""
-            />
-             
-            link1
-          </a>
-          <a
-            className="sbNav-linksGroup-item"
-            href="url2"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <span
-              className=""
-            />
-             
-            link2
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p style=\\"color:#000000; \\">Exemplar:</p><p style=\\"color:#000000; \\">&#xA0;</p><p style=\\"color:#000000; \\">4; 3; 1, 2, 4 OR 9; 3; 1, 3, 9</p><p style=\\"color:#000000; \\">&#xA0;</p><p style=\\"color:#000000; \\">For this item, a full-credit response includes</p><p style=\\"color:#000000; \\">&#xA0;</p><ul style=\\"padding-left:1.5000em; \\"><li><p style=\\"color:#000000; background-color:transparent; \\">1 point: Student gives one of these two combinations of answers:</p><p style=\\"color:#000000; background-color:transparent; \\">&#xA0;</p></li></ul><div align=\\"margins\\"><table class=\\"newtable\\" id=\\"item_3322_Table1\\" style=\\"width:15.241799999999997em; border-spacing:0;margin-left:0.5069in; margin-right:4.3368in; \\" cellpadding=\\"0\\" cellspacing=\\"0\\"><colgroup style=\\"width:4.8792em; \\" /><colgroup style=\\"width:5.4792em; \\" /><colgroup style=\\"width:4.8792em; \\" /><tbody><tr><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-top:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Part A </p><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">First Box</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-top:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Part A </p><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Second Box</p></td><td style=\\"padding:0.2292em;  border:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-weight:bold; font-size:1.0000em; font-family:Verdana; \\">Part B</p></td></tr><tr><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">4</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">3</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-right:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">1, 2, 4</p></td></tr><tr><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">9</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">3</p></td><td style=\\"padding:0.2292em;  border-left:0.06em solid #000000; border-right:0.06em solid #000000; border-bottom:0.06em solid #000000;vertical-align:top; \\"><p style=\\"color:#000000; font-size:1.0000em; font-family:Verdana; \\">1, 3, 9</p></td></tr></tbody></table></div><ul style=\\"padding-left:1.5000em; \\"><li><p style=\\"color:#000000; \\">&#xA0;</p><p style=\\"color:#000000; \\">(1 point)</p><p style=\\"color:#000000; \\">&#xA0;</p></li><li><p style=\\"color:#000000; \\">0 points: Any other response. (0 points).</p></li></ul>",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots LayoutNav name no links 1`] = `
+exports[`Storyshots Rubric Entry with an empty entry 1`] = `
 <div
   style={
     Object {
@@ -2418,54 +2985,413 @@ exports[`Storyshots LayoutNav name no links 1`] = `
     }
   }
 >
-  <header
-    role="navigation"
+  <div
+    aria-expanded={false}
+    className={undefined}
+    style={undefined}
   >
-    <div
-      className="skip-link"
-      id="skip-main"
+    <a
+      className="collapsible-label link-button"
+      href="javascript:"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <a
-        className="skip-link"
-        href="/#main"
-        onClick={[Function]}
-      >
-        Skip to main content
-      </a>
-    </div>
-    <nav
-      role="navigation"
+      ▶  ( points)
+    </a>
+    <div
+      aria-hidden={true}
+      className="collapsible-body"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
     >
       <div
-        className="sbNav"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Rubric with a rubric model 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ English Rubric
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div>
+      <h4>
+        Rubrics
+      </h4>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
       >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 
+        Rubric 2 (2 points)
+        </a>
         <div
-          className="sbNav-titleGroup"
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
         >
           <div
-            className="sbNav-titleGroup-item"
-          >
-            <a
-              href="http://www.smarterbalanced.org/"
-              target="_blank"
-              title="Smarter Balanced Home"
-            >
-              <img
-                alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
-              />
-            </a>
-          </div>
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p style=\\"text-decoration:underline; font-weight:bold; \\">3 point text </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion. The student may make minor computation errors that do not affect the reasonableness of the explanation. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">&#xA0;</p><p style=\\"text-decoration:underline; font-weight:bold; \\">2 point text </p><p style=\\"text-decoration:underline; font-weight:bold; \\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing an incomplete chain of reasoning that supports this conclusion. (An incomplete chain of reasoning can be defined by missing process steps or unsupported calculations in an otherwise complete chain of reasoning.) </p><p style=\\"\\">OR </p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion, but makes computation errors that affect the reasonableness of the explanation. </p>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 
+        Rubric 1 (1 point)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
           <div
-            className="sbNav-titleGroup-item"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p style=\\"\\">The student completes the task and reaches a conclusion. The student's explanation attempts to relate distance to time, but contains errors in fundamental mathematical procedures. </p><p style=\\"\\">&#xA0;</p>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 
+        Rubric 0 (0 points)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p style=\\"\\">The student demonstrates a lack of comprehension in regard to the mathematical content and practices essential to the task. </p>",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>
+        Sample Responses
+      </h4>
+      <div
+        aria-expanded={false}
+        className={undefined}
+        style={undefined}
+      >
+        <a
+          className="collapsible-label link-button"
+          href="javascript:"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          ▶ 2-Point Other Official Sample Answers
+       (2 points)
+        </a>
+        <div
+          aria-hidden={true}
+          className="collapsible-body"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            className="sample-response"
           >
-            <h3>
-              Test
-            </h3>
+            <b>
+              Purpose: 
+            </b>
+             
+            OtherExemplar
+             
+            <br />
+            <b>
+              Sample Response: 
+            </b>
+             
+            <br />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 1: </span>&#xA0;</p><p style=\\"\\">Emily can travel 3/4 mile in under 5 minutes, so she can travel 3 miles (4x as far) in under 20 minutes (4x as long.) This means that Emily will have traveled 3 miles before 8:45 (20 minutes after she left.) Then there is only .42 miles left to go, and since .42 miles is less than 3/4 mile, we know she can cover that distance in less than 5 minutes. That means she will get to school before 8:50, so she will be on time. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 2:</span> &#xA0;</p><p style=\\"\\">Emily travels 3/4 mile in 4.5 minutes, so to find her rate of travel we would divide time by distance and get (4.5) / (.75) = 6 minutes per mile. Multiply 6 minutes per mile times the distance she has to travel (3.42 miles) to find the time it would take for her to get to school (20.52.) Since 20.52 is less than 21 minutes, we know it will take her less than 21 minutes to get to school. 8:25 + 21 minutes is 8:46, which is before 8:50, so she will make it to school on time. </p>",
+                }
+              }
+            />
           </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Rubric with an empty model 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ English Rubric
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots RubricTable with a rubric table 1`] = `
+<div>
+  <table
+    className="item-data-table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Score
+        </th>
+        <th>
+          Rationale
+        </th>
+        <th>
+          Exemplar
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          2
+        </td>
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"text-decoration:underline; font-weight:bold; \\">3 point text </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion. The student may make minor computation errors that do not affect the reasonableness of the explanation. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\">&#xA0;</p><p style=\\"text-decoration:underline; font-weight:bold; \\">2 point text </p><p style=\\"text-decoration:underline; font-weight:bold; \\">&#xA0;</p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing an incomplete chain of reasoning that supports this conclusion. (An incomplete chain of reasoning can be defined by missing process steps or unsupported calculations in an otherwise complete chain of reasoning.) </p><p style=\\"\\">OR </p><p style=\\"\\">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion, but makes computation errors that affect the reasonableness of the explanation. </p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 1: </span>&#xA0;</p><p style=\\"\\">Emily can travel 3/4 mile in under 5 minutes, so she can travel 3 miles (4x as far) in under 20 minutes (4x as long.) This means that Emily will have traveled 3 miles before 8:45 (20 minutes after she left.) Then there is only .42 miles left to go, and since .42 miles is less than 3/4 mile, we know she can cover that distance in less than 5 minutes. That means she will get to school before 8:50, so she will be on time. </p><p style=\\"\\">&#xA0;</p><p style=\\"\\"><span style=\\"text-decoration:underline; font-weight:bold; \\">Sample 2:</span> &#xA0;</p><p style=\\"\\">Emily travels 3/4 mile in 4.5 minutes, so to find her rate of travel we would divide time by distance and get (4.5) / (.75) = 6 minutes per mile. Multiply 6 minutes per mile times the distance she has to travel (3.42 miles) to find the time it would take for her to get to school (20.52.) Since 20.52 is less than 21 minutes, we know it will take her less than 21 minutes to get to school. 8:25 + 21 minutes is 8:46, which is before 8:50, so she will make it to school on time. </p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+      </tr>
+      <tr>
+        <td>
+          1
+        </td>
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"\\">The student completes the task and reaches a conclusion. The student's explanation attempts to relate distance to time, but contains errors in fundamental mathematical procedures. </p><p style=\\"\\">&#xA0;</p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+      </tr>
+      <tr>
+        <td>
+          0
+        </td>
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p style=\\"\\">The student demonstrates a lack of comprehension in regard to the mathematical content and practices essential to the task. </p>",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+        <td
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+          style={
+            Object {
+              "textAlign": "left",
+            }
+          }
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Sample Response with a sample response 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ 1-Point Official Sample Answer
+       (1 point)
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="sample-response"
+    >
+      <b>
+        Purpose: 
+      </b>
+       
+      Exemplar
+       
+      <br />
+      <b>
+        Sample Response: 
+      </b>
+       
+      <br />
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p style=\\"\\">Source #3 would most likely be relevant to students researching new approaches to increasing people's financial literacy. One example of a way people can increase their financial literacy discussed in this source is just-in-time education, where training is provided at \\"crucial moments\\" like right before someone decides on a student loan. Another example is giving people \\"simple rules of thumb\\" to follow.</p>",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;

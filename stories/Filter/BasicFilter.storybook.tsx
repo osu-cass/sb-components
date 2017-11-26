@@ -49,7 +49,7 @@ const propsRadioBtn: BasicFilterProps = {
   selectedHandler
 };
 
-storiesOf("BasicFilter", module)
+storiesOf("Basic Filter", module)
   .addDecorator(CenterDecorator)
   .add("DropDown: one filter item", () => <BasicFilter {...propsDropDown} />)
   .add("DropDown: multiple filter items", () => (

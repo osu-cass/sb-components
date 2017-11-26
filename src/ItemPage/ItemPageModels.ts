@@ -6,7 +6,7 @@ import {
 } from "../Accessibility/AccessibilityModels";
 import { get } from "../ApiModel";
 import { DropDownSelectionModel } from "../DropDown/DropDownModels";
-import { Props as moreLikeThis } from "../Modals/MoreLikeThisModal";
+import { MoreLikeThisModel } from "../Modals/MoreLikeThisModels";
 
 export interface ItemIdentifierModel extends ItemModel {
   itemName: string;
@@ -31,7 +31,7 @@ export interface ItemPageModel {
   isPerformanceItem: boolean;
   performanceItemDescription: string;
   subject: string;
-  moreLikeThisVM: moreLikeThis;
+  moreLikeThisVM: MoreLikeThisModel;
   brailleItemCodes: string[];
   braillePassageCodes: string[];
   defaultIsaapCodes: string;

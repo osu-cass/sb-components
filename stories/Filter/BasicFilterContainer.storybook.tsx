@@ -11,7 +11,7 @@ const props: BasicFilterContainerProps = {
   handleAdvancedFilterExpand: () => {}
 };
 
-storiesOf("BasicFilterContainer", module)
+storiesOf("Basic Filter Container", module)
   .add("Basic Filter only", () => <BasicFilterContainer {...props} />)
   .add("Basic Filter with Advanced filter expansion button", () => (
     <BasicFilterContainer {...props} containsAdvancedFilter={true} />

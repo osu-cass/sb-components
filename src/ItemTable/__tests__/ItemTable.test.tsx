@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { ItemTable } from '../ItemTable';
 import * as TestUtils from 'react-dom/test-utils';
 import { shallow, mount, render } from 'enzyme';

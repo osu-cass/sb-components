@@ -41,7 +41,6 @@ async function mockPromise(params?: { interactionTypeCode: string }) {
         if (params) {
             aboutItems.selectedInteractionTypeCode = params.interactionTypeCode;
         }
-        console.log('API about test items', params);
         resolve(aboutItems);
     });
 }

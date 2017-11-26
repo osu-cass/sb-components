@@ -141,7 +141,7 @@ export {
 //
 // ItemViewer Component
 //
-export { ItemFrame } from "./ItemViewer/ItemViewerFrame";
+export { ItemViewerFrame } from "./ItemViewer/ItemViewerFrame";
 
 //
 // Layout Components
@@ -214,3 +214,8 @@ export {
   getResourceContent,
   get
 } from "./ApiModel";
+
+//
+// ErrorWrapper
+//
+export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";

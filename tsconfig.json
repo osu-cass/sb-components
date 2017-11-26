@@ -18,10 +18,10 @@
       "dom"
     ],
     "types": [
-      "jest",
       "storybook__react",
       "storybook__addon-actions",
-      "node"
+      "node",
+      "jest"
     ],
     "typeRoots": [
       "./node_modules/@types"

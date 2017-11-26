@@ -12,12 +12,12 @@
   "scripts": {
     "webpack-prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "webpack-dev": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "prepublish": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
+    "prepare": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",
     "build-storybook": "npm run clean && build-storybook",
-    "storybook-publish": "build-storybook -o storybuild",    
+    "storybook-publish": "build-storybook -o storybuild",
     "build": "npm run clean && build-storybook && npm run webpack-dev",
     "clean": "rm -rf ./lib ?",
     "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
