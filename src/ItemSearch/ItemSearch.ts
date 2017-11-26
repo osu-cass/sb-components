@@ -1,4 +1,3 @@
-import { gradeFilterOptions } from '../../stories/Filters/mocks';
 import { FilterCategoryModel, FilterOptionModel, FilterType } from '../Filter/AdvancedFilterModel';
 import {
     FilterSearchModel,
