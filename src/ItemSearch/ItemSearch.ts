@@ -14,7 +14,6 @@ import {
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { Filter } from "../Filter/Filter";
-import { SubjectModel } from '../../lib/ItemSearch/ItemSearchModels';
 
 export class ItemSearch {
 

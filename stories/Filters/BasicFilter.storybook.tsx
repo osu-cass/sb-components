@@ -6,9 +6,11 @@ import {
   BasicFilterProps,
   FilterOptionModel,
   OptionTypeModel,
-  BasicFilterCategoryModel
+  BasicFilterCategoryModel,
+  FilterType
 } from "../../src/";
 import { CenterDecorator } from "../CenterDecorator";
+import { GradeLevel } from "../../src/GradeLevels/GradeLevels";
 
 const basicFilterOption: FilterOptionModel = {
   label: "Grade",
@@ -28,15 +30,11 @@ const basicFilterCategoryDropDown: BasicFilterCategoryModel = {
   label: "Grade",
   filterOptions: [basicFilterOption],
   type: OptionTypeModel.DropDown,
-  code: "Grade"
+  code: FilterType.Grade
 };
 
 const basicFilterCategoryRadioBtn: BasicFilterCategoryModel = {
-  disabled: false,
-  label: "Grade",
-  filterOptions: [basicFilterOption],
-  type: OptionTypeModel.radioBtn,
-  code: "Grade"
+ ...basicFilterCategoryDropDown, type: OptionTypeModel.radioBtn
 };
 
 const selectedHandler = action("clicked filter");

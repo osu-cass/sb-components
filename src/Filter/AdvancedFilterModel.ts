@@ -25,7 +25,7 @@ export interface FilterOptionModel {
   label: string;
   key: string;
   isSelected: boolean;
-  filterType: FilterType;
+  filterType?: FilterType;
 }
 
 export interface BasicFilterCategoryModel extends FilterCategoryModel {

@@ -211,20 +211,17 @@ export const targets: TargetModel[] = [
   {
     name: "ELA1",
     nameHash: 21,
-    filterType: FilterType.Target,
-    label: "ELA1"
+    filterType: FilterType.Target
   },
   {
     name: "MATH1",
     nameHash: 11,
-    filterType: FilterType.Target,
-    label: "MATH1"
+    filterType: FilterType.Target
   },
   {
     name: "MATH2",
     nameHash: 12,
-    filterType: FilterType.Target,
-    label: "MATH2"
+    filterType: FilterType.Target
   }
 ];
 
@@ -244,4 +241,4 @@ export const searchModel: ItemsSearchModel = {
   claims: claims,
   subjects: subjects,
   targets: targets
-}
+};

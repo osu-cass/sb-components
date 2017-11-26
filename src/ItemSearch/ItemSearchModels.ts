@@ -20,19 +20,19 @@ export interface SubjectModel extends SearchBaseModel {
   claimCodes?: string[];
   interactionTypeCodes?: string[];
   code: string;
-  filterType: FilterType.Subject;
+  filterType?: FilterType.Subject;
 }
 
 export interface ClaimModel extends SearchBaseModel {
   targetCodes?: number[];
   code: string;
-  filterType: FilterType.Claim
+  filterType?: FilterType.Claim
 }
 
-export interface TargetModel extends SearchBaseModel {
+export interface TargetModel {
   name: string;
   nameHash: number;
-  filterType: FilterType.Target;
+  filterType?: FilterType.Target;
   
 }
 

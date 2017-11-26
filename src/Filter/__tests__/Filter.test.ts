@@ -452,6 +452,13 @@ describe("Filter.getCurrentClaimsFilter", () => {
     expect(result).toBeUndefined();
   });
 
+  it("subjects no selections", () => {
+    const filteredSubjects = [];
+    const result = Filter.getCurrentClaimsFilter(Mocks.searchModel, {});
+
+    expect(result).toHaveLength(2);
+  });
+
   it("no search model", () => {
     const filteredSubjects = [];
     const result = Filter.getCurrentClaimsFilter(
@@ -464,6 +471,163 @@ describe("Filter.getCurrentClaimsFilter", () => {
   });
 });
 
-describe("Filter.getCurrentInteractionTypes", () => {});
-describe("Filter.getCurrentTargets", () => {});
+describe("Filter.getCurrentInteractionTypes", () => {
+  it("one subject", () => {
+    const subject = Mocks.subjects.find(s => s.code === "MATH");
+    const expected = Mocks.interactionTypes.find(c => c.code === "ITM1");
+    const filteredSubjects = [subject];
+    const result = Filter.getCurrentInteractionTypes(
+      Mocks.searchModel,
+      {},
+      filteredSubjects
+    );
+
+    expect(result).toHaveLength(1);
+    expect(result).toContainEqual(expected);
+  });
+
+  it("one, search", () => {
+    const expected = Mocks.interactionTypes.find(c => c.code === "ITM1");
+    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {
+      subjects: ["MATH"]
+    });
+    expect(result).toHaveLength(1);
+    expect(result).toContainEqual(expected);
+  });
+
+  it("one, search bad", () => {
+    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {
+      subjects: ["badsubject"]
+    });
+    expect(result).toBeUndefined();
+  });
+
+  it("all subjects", () => {
+    const filteredSubjects = Mocks.subjects;
+    const result = Filter.getCurrentInteractionTypes(
+      Mocks.searchModel,
+      {},
+      filteredSubjects
+    );
+
+    expect(result).toHaveLength(2);
+    expect(result).toEqual(Mocks.interactionTypes);
+  });
+
+  it("all subjects", () => {
+    const filteredSubjects = Mocks.subjects;
+    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {
+      subjects: filteredSubjects.map(s => s.code)
+    });
+
+    expect(result).toHaveLength(2);
+    expect(result).toEqual(Mocks.interactionTypes);
+  });
+
+  it("no subjects", () => {
+    const filteredSubjects = [];
+    const result = Filter.getCurrentInteractionTypes(
+      Mocks.searchModel,
+      {},
+      filteredSubjects
+    );
+
+    expect(result).toBeUndefined();
+  });
+
+  it("subjects no selections", () => {
+    const filteredSubjects = [];
+    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {});
+
+    expect(result).toHaveLength(2);
+  });
+
+  it("no search model", () => {
+    const filteredSubjects = [];
+    const result = Filter.getCurrentInteractionTypes(
+      { claims: [], interactionTypes: [], subjects: [], targets: [] },
+      {},
+      filteredSubjects
+    );
+
+    expect(result).toBeUndefined();
+  });
+});
+describe("Filter.getCurrentTargets", () => {
+  it("one claim", () => {
+    const claim = Mocks.claims.find(c => c.code === "ELA1");
+    const expected = Mocks.targets.find(c => c.name === "ELA1");
+    const result = Filter.getCurrentTargets(Mocks.searchModel, {}, [claim]);
+
+    expect(result).toHaveLength(1);
+    expect(result).toContainEqual(expected);
+  });
+
+  it("one, search", () => {
+    const expected = Mocks.targets.find(c => c.name === "ELA1");
+    const result = Filter.getCurrentTargets(Mocks.searchModel, {
+      claims: ["ELA1"],
+      subjects: ["ELA"]
+    });
+    expect(result).toHaveLength(1);
+    expect(result).toContainEqual(expected);
+  });
+
+  it("one, search bad", () => {
+    const result = Filter.getCurrentTargets(Mocks.searchModel, {
+      claims: ["badclaim"],
+      subjects: ["badsubject"]
+    });
+    expect(result).toBeUndefined();
+  });
+
+  it("all claims", () => {
+    const result = Filter.getCurrentTargets(
+      Mocks.searchModel,
+      {},
+      Mocks.claims
+    );
+
+    expect(result).toHaveLength(3);
+    expect(result).toEqual(Mocks.targets);
+  });
+
+  it("all subjects and claims", () => {
+    const filteredSubjects = Mocks.subjects;
+    const result = Filter.getCurrentTargets(Mocks.searchModel, {
+      subjects: filteredSubjects.map(s => s.code),
+      claims: Mocks.claims.map(c => c.code)
+    });
+
+    expect(result).toHaveLength(3);
+    expect(result).toEqual(Mocks.targets);
+  });
+
+  it("all subjects and no claims", () => {
+    const filteredSubjects = Mocks.subjects;
+    const result = Filter.getCurrentTargets(Mocks.searchModel, {
+      subjects: filteredSubjects.map(s => s.code),
+      claims: []
+    });
+
+    expect(result).toHaveLength(3);
+    expect(result).toEqual(Mocks.targets);
+  });
+
+  it("no claims", () => {
+    const result = Filter.getCurrentTargets(Mocks.searchModel, {}, []);
+
+    expect(result).toBeUndefined();
+  });
+
+  it("no search model", () => {
+    const result = Filter.getCurrentTargets(
+      { claims: [], interactionTypes: [], subjects: [], targets: [] },
+      {},
+      []
+    );
+
+    expect(result).toBeUndefined();
+  });
+});
 describe("Filter.getUpdatedSearchFilters", () => {});

@@ -8,24 +8,29 @@ export { AboutItem } from "./AboutItem/AboutItem";
 //
 // About Test Items
 //
-export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer";
 export {
-    InteractionTypeModel,
-    AboutTestItemsModel,
-    aboutTestItemsClient,
-    AboutTestItemsParams
+  AboutTestItemsContainer
+} from "./AboutTestItems/AboutTestItemsContainer";
+export {
+  InteractionTypeModel,
+  AboutTestItemsModel,
+  aboutTestItemsClient,
+  AboutTestItemsParams
 } from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
 //
 export {
-    AccessibilityResourceModel,
-    AccResourceGroupModel,
-    getResource,
-    getBrailleAccommodation,
+  AccessibilityResourceModel,
+  AccResourceGroupModel,
+  getResource,
+  getBrailleAccommodation
 } from "./Accessibility/AccessibilityModels";
-export { ItemAccessibilityModalProps, ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
+export {
+  ItemAccessibilityModalProps,
+  ItemAccessibilityModal
+} from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
@@ -37,21 +42,31 @@ export { DropDownSelectionModel } from "./DropDown/DropDownModels";
 //
 // Filter Components and Models
 //
-export { AdvancedFilter, AdvancedFilterProps } from "./Filter/AdvancedFilter"
-export { AdvancedFilterContainer, AdvancedFilterContainerProps } from "./Filter/AdvancedFilterContainer";
-export { BasicFilter, BasicFilterProps } from "./Filter/BasicFilter";
-export { BasicFilterContainer, BasicFilterContainerProps } from "./Filter/BasicFilterContainer";
-export { FilterContainer, FilterContainerProps } from "./Filter/FilterContainer";
+export { AdvancedFilter, AdvancedFilterProps } from "./Filter/AdvancedFilter";
 export {
-    OptionTypeModel,
-    FilterOptionModel,
-    BasicFilterCategoryModel,
-    FilterCategoryModel,
-    AdvancedFilterCategoryModel,
-    TechType,
-    AdvancedFiltersModel
+  AdvancedFilterContainer,
+  AdvancedFilterContainerProps
+} from "./Filter/AdvancedFilterContainer";
+export { BasicFilter, BasicFilterProps } from "./Filter/BasicFilter";
+export {
+  BasicFilterContainer,
+  BasicFilterContainerProps
+} from "./Filter/BasicFilterContainer";
+export {
+  FilterContainer,
+  FilterContainerProps
+} from "./Filter/FilterContainer";
+export {
+  OptionTypeModel,
+  FilterOptionModel,
+  BasicFilterCategoryModel,
+  FilterCategoryModel,
+  AdvancedFilterCategoryModel,
+  TechType,
+  AdvancedFiltersModel,
+  FilterType
 } from "./Filter/AdvancedFilterModel";
-
+export { Filter } from "./Filter/Filter";
 //
 // Grade Levels
 //
@@ -70,20 +85,23 @@ export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 // Item Page
 //
 export { ItemPage, ItemPageProps } from "./ItemPage/ItemPage";
-export { ItemPageContainerProps, ItemPageContainer } from "./ItemPage/ItemPageContainer";
 export {
-    ItemModel,
-    ItemIdentifierModel,
-    ItemIsaapModel,
-    ItemPageModel,
-    toCookie,
-    toiSAAP,
-    trimAccResource,
-    addDisabledPlaceholder,
-    resetResource,
-    itemAccessibilityClient,
-    itemPageClient,
-    aboutThisItemViewModelClient,
+  ItemPageContainerProps,
+  ItemPageContainer
+} from "./ItemPage/ItemPageContainer";
+export {
+  ItemModel,
+  ItemIdentifierModel,
+  ItemIsaapModel,
+  ItemPageModel,
+  toCookie,
+  toiSAAP,
+  trimAccResource,
+  addDisabledPlaceholder,
+  resetResource,
+  itemAccessibilityClient,
+  itemPageClient,
+  aboutThisItemViewModelClient
 } from "./ItemPage/ItemPageModels";
 
 //
@@ -91,25 +109,33 @@ export {
 //
 export { ItemSearch } from "./ItemSearch/ItemSearch";
 export {
-    SubjectClaimsModel,
-    SubjectModel,
-    ClaimModel,
-    TargetModel,
-    SearchAPIParamsModel,
-    ItemsSearchModel,
+  SubjectClaimsModel,
+  SubjectModel,
+  ClaimModel,
+  TargetModel,
+  SearchAPIParamsModel,
+  ItemsSearchModel,
+  ItemsSearchFilterModel,
+  FilterSearchStringModel,
+  FilterSearchGradeLevelModel,
+  FilterSearchModel,
+  FilterSearchTargetModel
 } from "./ItemSearch/ItemSearchModels";
 //
 // Item Table
 //
 export { ItemTable, ItemTableProps } from "./ItemTable/ItemTable";
-export { ItemTableContainer, ItemTableContainerProps } from "./ItemTable/ItemTableContainer";
+export {
+  ItemTableContainer,
+  ItemTableContainerProps
+} from "./ItemTable/ItemTableContainer";
 export { HeaderTable } from "./ItemTable/ItemTableHeader";
 export {
-    SortColumnModel,
-    headerColumns,
-    HeaderType,
-    HeaderSortModel,
-    SortDirection
+  SortColumnModel,
+  headerColumns,
+  HeaderType,
+  HeaderSortModel,
+  SortDirection
 } from "./ItemTable/ItemTableModels";
 
 //
@@ -140,12 +166,23 @@ export { ItemTabs, ItemTabsProps } from "./PageTabs/ItemTabs";
 // Pdf Components
 //
 export { CoverPage, CoverPageProps } from "./Pdf/CoverPage";
-export { EvidenceStatement, EvidenceStatementProps } from "./Pdf/EvidenceStatement";
+export {
+  EvidenceStatement,
+  EvidenceStatementProps
+} from "./Pdf/EvidenceStatement";
 export { ItemView, ItemViewProps } from "./Pdf/ItemView";
-export { ItemViewContainer, ItemViewContainerProps } from "./Pdf/ItemViewContainer";
+export {
+  ItemViewContainer,
+  ItemViewContainerProps
+} from "./Pdf/ItemViewContainer";
 export { PassageView, PassageViewProps } from "./Pdf/PassageView";
 export { PdfContainer, PdfContainerProps } from "./Pdf/PdfContainer";
-export { ItemGroupModel, QuestionModel, ItemPdfModel, PdfViewType } from "./Pdf/PdfModels";
+export {
+  ItemGroupModel,
+  QuestionModel,
+  ItemPdfModel,
+  PdfViewType
+} from "./Pdf/PdfModels";
 export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
 
 //
@@ -159,7 +196,11 @@ export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 //
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
-export { RubricEntryModel, RubricModel, RubricSampleModel } from "./Rubric/RubricModels";
+export {
+  RubricEntryModel,
+  RubricModel,
+  RubricSampleModel
+} from "./Rubric/RubricModels";
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
@@ -168,8 +209,8 @@ export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 // ApiModel
 //
 export {
-    Resource,
-    parseQueryString,
-    getResourceContent,
-    get,
+  Resource,
+  parseQueryString,
+  getResourceContent,
+  get
 } from "./ApiModel";

@@ -243,9 +243,8 @@ export class Filter {
         model.interactionTypes,
         subjectInteractionTypes
       );
-
-      return filteredIntTypes;
     }
+    return filteredIntTypes;
   }
 
   /**
