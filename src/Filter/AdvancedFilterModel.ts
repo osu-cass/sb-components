@@ -12,14 +12,14 @@ export enum OptionTypeModel {
 }
 
 export enum FilterType {
-  Subject,
-  Grade,
-  Claim,
-  Performance,
-  Target,
-  CAT,
-  InteractionType,
-  PerformanceCAT
+  Subject = "Subject",
+  Grade = "Grade",
+  Claim = "Claim",
+  Performance = "Performance",
+  Target = "Target",
+  CAT = "CAT",
+  InteractionType = "InteractionType",
+  PerformanceCAT = "PerformanceCAT"
 }
 
 export interface FilterOptionModel {

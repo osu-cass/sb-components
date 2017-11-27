@@ -224,11 +224,11 @@ export class Filter {
    * @param  {FilterCategoryModel[]} filters
    * @param  {SearchAPIParamsModel} searchAPI
    */
-  public static getUpdatedSearchFilters(
+  public static getUpdatedSearchFilters<T extends FilterCategoryModel>(
     model: ItemsSearchModel,
-    filters: FilterCategoryModel[],
+    filters: T[],
     searchAPI: SearchAPIParamsModel
-  ): FilterCategoryModel[] {
+  ): T[] {
     searchAPI = searchAPI || ItemSearch.filterToSearchApiModel(filters);
     filters = filters.slice();
 
