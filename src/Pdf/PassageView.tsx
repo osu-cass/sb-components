@@ -13,7 +13,7 @@ export class PassageView extends React.Component<PassageViewProps, {}> {
     return (
       <div className="item">
         <p className="question-title">
-          Passage for {" "}
+          Passage for{" "}
           {this.props.associatedItems.length === 1 ? "item" : "items"}{" "}
           {this.props.associatedItems.join(", ")}
         </p>

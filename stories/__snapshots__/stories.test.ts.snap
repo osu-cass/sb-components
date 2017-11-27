@@ -3552,13 +3552,15 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
     <div
       className="item"
     >
-      <h2>
-        Passage for
+      <p
+        className="question-title"
+      >
+        Passage for 
          
         items
          
         187-1234, 187-1235
-      </h2>
+      </p>
       <div
         dangerouslySetInnerHTML={
           Object {
@@ -3570,10 +3572,12 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
     <div
       className="item"
     >
-      <h2>
+      <p
+        className="question-title"
+      >
         Question #
         1
-      </h2>
+      </p>
       <table
         className="item-data-table"
       >
@@ -3667,10 +3671,12 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
     <div
       className="item"
     >
-      <h2>
+      <p
+        className="question-title"
+      >
         Question #
         2
-      </h2>
+      </p>
       <table
         className="item-data-table"
       >
@@ -3783,13 +3789,15 @@ exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
     <div
       className="item"
     >
-      <h2>
-        Passage for
+      <p
+        className="question-title"
+      >
+        Passage for 
          
         item
          
         187-1234
-      </h2>
+      </p>
       <div
         dangerouslySetInnerHTML={
           Object {
@@ -3801,10 +3809,12 @@ exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
     <div
       className="item"
     >
-      <h2>
+      <p
+        className="question-title"
+      >
         Question #
         1
-      </h2>
+      </p>
       <table
         className="item-data-table"
       >
@@ -3917,10 +3927,12 @@ exports[`Storyshots PDF ItemViewContainer question only 1`] = `
     <div
       className="item"
     >
-      <h2>
+      <p
+        className="question-title"
+      >
         Question #
         1
-      </h2>
+      </p>
       <table
         className="item-data-table"
       >
