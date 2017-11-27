@@ -105,7 +105,9 @@ export class ItemSearch {
     let options: FilterOptionModel[] = [];
 
     switch (filter.code) {
-      case FilterType.Claim || FilterType.InteractionType || FilterType.Subject:
+      case FilterType.Claim:
+      case FilterType.InteractionType:
+      case FilterType.Subject:
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code
@@ -122,6 +124,7 @@ export class ItemSearch {
           filter.filterOptions,
           filter.code
         );
+        break;
     }
 
     return options;
