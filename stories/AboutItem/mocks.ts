@@ -36,7 +36,7 @@ export const rubrics: RubricModel[] = [
                         purpose: "idk",
                         scorePoint: "0",
                         name: "0pts",
-                        sampleContent: "5 + 6 = _"
+                        sampleContent: "x = _"
                     }
                 ]
             },
@@ -48,13 +48,13 @@ export const rubrics: RubricModel[] = [
                         purpose: "idk",
                         scorePoint: "1",
                         name: "1pt",
-                        sampleContent: "5 + 6 = 56"
+                        sampleContent: "x = 10 + 5 = 15"
                     },
                     {
                         purpose: "idk",
                         scorePoint: "1",
                         name: "1pt",
-                        sampleContent: "5 + 6 = a million"
+                        sampleContent: "x = 10 - 5 = a million"
                     }
                 ]
             },
@@ -66,7 +66,7 @@ export const rubrics: RubricModel[] = [
                         purpose: "idk",
                         scorePoint: "2",
                         name: "2pts",
-                        sampleContent: "5 + 6 = 11"
+                        sampleContent: "x = 10 - 5 = 5"
                     }
                 ]
             }
@@ -105,7 +105,29 @@ export const AboutItemMockModel: AboutItemModel = {
     rubrics: rubrics,
     itemCardViewModel: completeItemCard,
     educationalDifficulty: "5",
-    evidenceStatement: "This is a sample evidence statement"
+    evidenceStatement: "This is a sample evidence statement",
+    sampleItemScoring: {
+        answerKey: "x = 5",
+        hasMachineRubric: false,
+        scoringOptions: [],
+        rubrics: rubrics
+    }
+};
+
+export const AboutItemMockNoRubric: AboutItemModel = {
+    depthOfKnowledge: "3",
+    targetDescription: "Solve equations",
+    commonCoreStandardsDescription: "A-123-BC",
+    rubrics: [],
+    itemCardViewModel: completeItemCard,
+    educationalDifficulty: "5",
+    evidenceStatement: "This is a sample evidence statement",
+    sampleItemScoring: {
+        answerKey: "x = 5",
+        hasMachineRubric: false,
+        scoringOptions: [],
+        rubrics: []
+    }
 };
 
 export const allRubrics: RubricModel[] = rubrics.concat(rubricsEsn, rubricNoSamples);
