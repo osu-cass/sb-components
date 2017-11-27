@@ -4,8 +4,8 @@ import { AboutItemModel } from "./AboutItemModels";
 export class AboutThisItemDetail extends React.Component<AboutItemModel, {}> {
   renderField(
     label: string,
-    value: string | number,
-    className: string
+    className: string,
+    value?: string | number
   ): JSX.Element | null {
     if (!value) {
       return null;
@@ -24,58 +24,58 @@ export class AboutThisItemDetail extends React.Component<AboutItemModel, {}> {
       <div className={"item-details"}>
         {this.renderField(
           "Subject",
-          this.props.itemCardViewModel.subjectLabel,
-          "subject"
+          "subject",
+          this.props.itemCardViewModel.subjectLabel
         )}
         {this.renderField(
           "Grade",
-          this.props.itemCardViewModel.gradeLabel,
-          "grade"
+          "grade",
+          this.props.itemCardViewModel.gradeLabel
         )}
         {this.renderField(
           "Claim",
-          this.props.itemCardViewModel.claimLabel,
-          "claim"
+          "claim",
+          this.props.itemCardViewModel.claimLabel
         )}
         {this.renderField(
           "Target",
-          this.props.itemCardViewModel.targetShortName,
-          "target"
+          "target",
+          this.props.itemCardViewModel.targetShortName
         )}
         {this.renderField(
           "Item Type",
-          this.props.itemCardViewModel.interactionTypeLabel,
-          "interaction-type"
+          "interaction-type",
+          this.props.itemCardViewModel.interactionTypeLabel
         )}
         {this.renderField(
           "Item Id",
-          this.props.itemCardViewModel.itemKey,
-          "item-id"
+          "item-id",
+          this.props.itemCardViewModel.itemKey
         )}
         {this.renderField(
           "Depth of Knowledge",
-          this.props.depthOfKnowledge,
-          "dok"
+          "dok",
+          this.props.depthOfKnowledge
         )}
         {this.renderField(
           "Common Core State Standard",
-          this.props.commonCoreStandardsDescription,
-          "ccss"
+          "ccss",
+          this.props.commonCoreStandardsDescription
         )}
         {this.renderField(
           "Target Description",
-          this.props.targetDescription,
-          "target-description"
+          "target-description",
+          this.props.targetDescription
         )}
         {this.renderField(
           "Educational Difficulty",
-          this.props.educationalDifficulty,
-          "educational-difficulty"
+          "educational-difficulty",
+          this.props.educationalDifficulty
         )}
         {this.renderField(
           "Evidence Statement",
-          this.props.evidenceStatement,
-          "evidence-statement"
+          "evidence-statement",
+          this.props.evidenceStatement
         )}
       </div>
     );

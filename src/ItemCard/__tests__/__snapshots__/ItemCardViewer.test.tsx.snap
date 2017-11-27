@@ -536,9 +536,6 @@ ShallowWrapper {
         />,
         <div>
            
-          <div
-            className="item-content"
-          />
            
         </div>,
       ],
@@ -565,27 +562,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             " ",
-            <div
-              className="item-content"
-            />,
+            undefined,
             " ",
           ],
         },
         "ref": null,
         "rendered": Array [
           " ",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [],
-              "className": "item-content",
-            },
-            "ref": null,
-            "rendered": Array [],
-            "type": "div",
-          },
+          undefined,
           " ",
         ],
         "type": "div",
@@ -606,9 +590,6 @@ ShallowWrapper {
           />,
           <div>
              
-            <div
-              className="item-content"
-            />
              
           </div>,
         ],
@@ -635,27 +616,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               " ",
-              <div
-                className="item-content"
-              />,
+              undefined,
               " ",
             ],
           },
           "ref": null,
           "rendered": Array [
             " ",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [],
-                "className": "item-content",
-              },
-              "ref": null,
-              "rendered": Array [],
-              "type": "div",
-            },
+            undefined,
             " ",
           ],
           "type": "div",
