@@ -728,7 +728,7 @@ ShallowWrapper {
           <div
             className="item-content"
           >
-            <ItemFrame
+            <ItemViewerFrame
               url="http://ivs.smarterbalanced.org/items?ids=1-123"
             />
           </div>
@@ -761,7 +761,7 @@ ShallowWrapper {
             <div
               className="item-content"
             >
-              <ItemFrame
+              <ItemViewerFrame
                 url="http://ivs.smarterbalanced.org/items?ids=1-123"
               />
             </div>,
@@ -776,7 +776,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <ItemFrame
+              "children": <ItemViewerFrame
                 url="http://ivs.smarterbalanced.org/items?ids=1-123"
               />,
               "className": "item-content",
@@ -818,7 +818,7 @@ ShallowWrapper {
             <div
               className="item-content"
             >
-              <ItemFrame
+              <ItemViewerFrame
                 url="http://ivs.smarterbalanced.org/items?ids=1-123"
               />
             </div>
@@ -851,7 +851,7 @@ ShallowWrapper {
               <div
                 className="item-content"
               >
-                <ItemFrame
+                <ItemViewerFrame
                   url="http://ivs.smarterbalanced.org/items?ids=1-123"
                 />
               </div>,
@@ -866,7 +866,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <ItemFrame
+                "children": <ItemViewerFrame
                   url="http://ivs.smarterbalanced.org/items?ids=1-123"
                 />,
                 "className": "item-content",

@@ -26,9 +26,10 @@ import {
 } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 
-export interface ItemPageContainerProps extends RouteComponentProps<{}> {
+export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
   itemPageClient: (params: ItemModel) => Promise<ItemPageModel>;
+  routeComponentProps?: RouteComponentProps<{}>;
   itemAccessibilityClient: (
     params: ItemIsaapModel
   ) => Promise<AccResourceGroupModel[]>;
@@ -49,7 +50,10 @@ export class ItemPageContainer extends React.Component<
   constructor(props: ItemPageContainerProps) {
     super(props);
 
-    const queryObject = parseQueryString(location.search);
+    const queryObject = parseQueryString(
+      (typeof location !== 'undefined' && location.search !== undefined) ? 
+       location.search : ""
+    );
     const itemKey = +(queryObject["itemKey"] || [])[0] || 0;
     const bankKey = +(queryObject["bankKey"] || [])[0] || 0;
     const isaap = (queryObject["isaap"] || [])[0] || "";

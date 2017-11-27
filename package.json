@@ -12,7 +12,7 @@
   "scripts": {
     "webpack-prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "webpack-dev": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "prepublish": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
+    "prepare": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",

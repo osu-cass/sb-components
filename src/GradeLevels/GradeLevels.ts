@@ -79,4 +79,9 @@ export class GradeLevel {
   public static stringToGradeLevel(gradeString: string): GradeLevels {
     return parseInt(gradeString, 10) || GradeLevels.NA;
   }
+
+  public static gradeLevelAdd(grade: GradeLevels, gradeString: string) {
+    // tslint:disable-next-line:no-bitwise
+    return grade ^ this.stringToGradeLevel(gradeString);
+  }
 }

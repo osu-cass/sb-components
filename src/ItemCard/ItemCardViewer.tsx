@@ -1,7 +1,6 @@
 import * as React from "react";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import {} from "../ItemTable/ItemTableHeader";
-import { ItemFrame, Rubric, AboutThisItemDetail } from "../index";
+import { ItemViewerFrame, Rubric, AboutThisItemDetail } from "../index";
 import { Tabs, ItemTabs } from "../PageTabs/ItemTabs";
 
 export interface ItemCardViewerProps {
@@ -32,7 +31,7 @@ export class ItemCardViewer extends React.Component<
   renderViewer(url: string) {
     return (
       <div className="item-content">
-        <ItemFrame url={url} />
+        <ItemViewerFrame url={url} />
       </div>
     );
   }
