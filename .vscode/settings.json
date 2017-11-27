@@ -1,0 +1,8 @@
+{
+    "typescriptHero.resolver.ignorePatterns": [
+        "build",
+        "out",
+        "dist",
+        "lib"
+    ]
+}
