@@ -37,11 +37,16 @@ export class ItemCardViewer extends React.Component<
   }
 
   renderRubric() {
-    if (this.props.item) {
-      const rubrics = this.props.item.rubrics.map((ru, i) => (
-        <Rubric {...ru} key={String(i)} />
-      ));
-      return <div className="item-content">{rubrics}</div>;
+    const aboutItem = this.props.item;
+
+    if (aboutItem && aboutItem.sampleItemScoring) {
+      //TODO: add logic for non rubric scoring options
+      if(aboutItem.sampleItemScoring.rubrics){
+        const rubrics = aboutItem.sampleItemScoring.rubrics.map((ru, i) => (
+          <Rubric {...ru} key={String(i)} />
+        ));
+        return <div className="item-content">{rubrics}</div>;
+      }
     }
   }
 

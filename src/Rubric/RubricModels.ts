@@ -24,10 +24,10 @@ export interface RubricModel {
 }
 
 export interface SampleItemScoringModel {
-  answerKey: string;
-  hasMachineRubric: boolean;
-  scoringOptions: SmarterAppOptionModel[];
-  rubrics: RubricModel[];
+  answerKey?: string;
+  hasMachineRubric?: boolean;
+  scoringOptions?: SmarterAppOptionModel[];
+  rubrics?: RubricModel[];
 }
 
 export interface SmarterAppOptionModel {

@@ -22,7 +22,6 @@ const aboutItemModel: AboutItemModel = {
     depthOfKnowledge: "",
     targetDescription: "",
     commonCoreStandardsDescription: "",
-    rubrics: [],
     itemCardViewModel: completeItemCard,
     educationalDifficulty: "",
     evidenceStatement: ""

@@ -55,7 +55,7 @@ export interface ItemsSearchModel {
 }
 
 export interface ItemsSearchFilterModel {
-  interactionType: FilterSearchStringModel<InteractionTypeModel>;
+  interactionTypes: FilterSearchStringModel<InteractionTypeModel>;
   subjects: FilterSearchStringModel<SubjectModel>;
   claims: FilterSearchStringModel<ClaimModel>;
   targets: FilterSearchTargetModel;
