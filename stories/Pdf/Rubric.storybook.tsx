@@ -10,6 +10,4 @@ storiesOf("PDF RubricTable", module)
   .add("Rubric Table: no Samples", () => (
     <RubricTable rubrics={rubricNoSamples} />
   ))
-  .add("Rubric Table: multiple", () => (
-    <RubricTable rubrics={allRubrics} />
-  ));
+  .add("Rubric Table: multiple", () => <RubricTable rubrics={allRubrics} />);

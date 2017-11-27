@@ -1,144 +1,176 @@
-import { FilterCategoryModel, FilterOptionModel, FilterType } from '../Filter/AdvancedFilterModel';
 import {
-    SearchAPIParamsModel,
-    SearchFilterStringTypes,
-    TargetModel,
-    SearchFilterModelTypes
-} from '../ItemSearch/ItemSearchModels';
+  FilterCategoryModel,
+  FilterOptionModel,
+  FilterType
+} from "../Filter/AdvancedFilterModel";
+import {
+  SearchAPIParamsModel,
+  SearchFilterStringTypes,
+  TargetModel,
+  SearchFilterModelTypes
+} from "../ItemSearch/ItemSearchModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { Filter } from "../Filter/Filter";
 
 export class ItemSearch {
-    public static parseAdvancedFilter(
-        filterModels: FilterCategoryModel[]
-    ): { [key: string]: string[] | undefined } {
-        let queryObject: { [key: string]: string[] | undefined } = {};
-        for (const fg of filterModels) {
-            const selectedOptions: string[] =
-                fg.filterOptions.filter(f => f.isSelected).map(f => f.key) || [];
-            queryObject[fg.code] = selectedOptions;
-        }
-        return queryObject;
+  public static parseAdvancedFilter(
+    filterModels: FilterCategoryModel[]
+  ): { [key: string]: string[] | undefined } {
+    let queryObject: { [key: string]: string[] | undefined } = {};
+    for (const fg of filterModels) {
+      const selectedOptions: string[] =
+        fg.filterOptions.filter(f => f.isSelected).map(f => f.key) || [];
+      queryObject[fg.code] = selectedOptions;
+    }
+    return queryObject;
+  }
+
+  public static filterToSearchApiModel(
+    filterModels: FilterCategoryModel[]
+  ): SearchAPIParamsModel {
+    const subjects = Filter.getSelectedCodes(FilterType.Subject, filterModels);
+    const grade = Filter.getSelectedGrade(filterModels);
+    const claims = Filter.getSelectedCodes(FilterType.Claim, filterModels);
+    const interactionTypes = Filter.getSelectedCodes(
+      FilterType.InteractionType,
+      filterModels
+    );
+    const performanceOnly = Filter.getSelectedFlag(
+      FilterType.Performance,
+      filterModels
+    );
+    const catOnly = Filter.getSelectedFlag(FilterType.CAT, filterModels);
+    const targets = Filter.getSelectedTargets(filterModels);
+
+    const searchModel: SearchAPIParamsModel = {
+      subjects: subjects,
+      gradeLevels: grade,
+      claims: claims,
+      interactionTypes: interactionTypes,
+      targets: targets,
+      catOnly: catOnly,
+      performanceOnly: performanceOnly
+    };
+
+    return searchModel;
+  }
+  public static advancedFilterToSearch(
+    filterModels: FilterCategoryModel[]
+  ): SearchAPIParamsModel {
+    const dictionary = this.parseAdvancedFilter(filterModels);
+
+    const subjects = dictionary["Subject"] || [];
+    const gradeString = (dictionary["Grade"] || [])[0]; //TODO: This is an array of grades, could use bitwise
+    const gradeLevels = GradeLevel.stringToGradeLevel(gradeString);
+    const claims = dictionary["Claim"] || [];
+    const interactionTypes = dictionary["InteractionType"] || [];
+    const performanceOnly = (dictionary["Performance"] || [])[0] === "true";
+    const catOnly = (dictionary["CAT"] || [])[0] === "true";
+    const targetStrings = dictionary["Target"] || [];
+    const targetHash = targetStrings.map(t => +t); //string[] to number[]
+    const searchModel: SearchAPIParamsModel = {
+      subjects: subjects,
+      gradeLevels: gradeLevels,
+      claims: claims,
+      interactionTypes: interactionTypes,
+      targets: targetHash,
+      catOnly: catOnly,
+      performanceOnly: performanceOnly
+    };
+
+    return searchModel;
+  }
+
+  public static searchOptionFilterString(
+    options: SearchFilterStringTypes[],
+    filterType: FilterType,
+    selectedCodes?: string[]
+  ): FilterOptionModel[] {
+    return options.map(o => {
+      return {
+        label: o.label,
+        key: o.code,
+        isSelected: (selectedCodes || []).some(s => s === o.code),
+        filterType: filterType
+      };
+    });
+  }
+
+  public static searchOptionToFilterGrade(
+    options: GradeLevels[],
+    filterType: FilterType,
+    selectedCodes?: string[]
+  ): FilterOptionModel[] {
+    return options.map(o => {
+      const gradeString = GradeLevel.gradeLevelToString(o) || "";
+      return {
+        label: gradeString,
+        key: gradeString,
+        isSelected: (selectedCodes || []).some(
+          s => GradeLevel.stringToGradeLevel(s) === o
+        ),
+        filterType: filterType
+      };
+    });
+  }
+
+  public static searchOptionToFilterTarget(
+    options: TargetModel[],
+    filterType: FilterType,
+    selectedCodes?: number[]
+  ): FilterOptionModel[] {
+    return options.map(o => {
+      return {
+        label: o.name,
+        key: o.nameHash.toString(),
+        isSelected: (selectedCodes || []).some(s => s === o.nameHash),
+        filterType: filterType
+      };
+    });
+  }
+
+  public static getFilterOptionModel(
+    filter: SearchFilterModelTypes
+  ): FilterOptionModel[] {
+    let options: FilterOptionModel[] = [];
+
+    switch (filter.code) {
+      case FilterType.Claim || FilterType.InteractionType || FilterType.Subject:
+        options = this.searchOptionFilterString(
+          filter.filterOptions,
+          filter.code
+        );
+        break;
+      case FilterType.Grade:
+        options = this.searchOptionToFilterGrade(
+          filter.filterOptions,
+          filter.code
+        );
+        break;
+      case FilterType.Target:
+        options = this.searchOptionToFilterTarget(
+          filter.filterOptions,
+          filter.code
+        );
     }
 
-    public static filterToSearchApiModel(
-        filterModels: FilterCategoryModel[]
-        ): SearchAPIParamsModel {
+    return options;
+  }
 
-        const subjects = Filter.getSelectedCodes(FilterType.Subject, filterModels);
-        const grade = Filter.getSelectedGrade(filterModels);
-        const claims = Filter.getSelectedCodes(FilterType.Claim, filterModels);
-        const interactionTypes = Filter.getSelectedCodes(FilterType.InteractionType, filterModels);
-        const performanceOnly = Filter.getSelectedFlag(FilterType.Performance, filterModels);
-        const catOnly = Filter.getSelectedFlag(FilterType.CAT, filterModels);
-        const targets = Filter.getSelectedTargets(filterModels);
+  public static filterSearchToCategory(
+    filter: SearchFilterModelTypes
+  ): FilterCategoryModel {
+    const options = this.getFilterOptionModel(filter);
 
-        const searchModel: SearchAPIParamsModel = {
-            subjects: subjects,
-            gradeLevels: grade,
-            claims: claims,
-            interactionTypes: interactionTypes,
-            targets: targets,
-            catOnly: catOnly,
-            performanceOnly: performanceOnly
-        };
+    const category: FilterCategoryModel = {
+      ...filter,
+      disabled: false,
+      filterOptions: options
+    };
 
-        return searchModel;
-    }
-    public static advancedFilterToSearch(
-        filterModels: FilterCategoryModel[]
-    ): SearchAPIParamsModel {
-        const dictionary = this.parseAdvancedFilter(filterModels);
-        
-        const subjects = dictionary["Subject"] || [];
-        const gradeString = (dictionary["Grade"] || [])[0]; //TODO: This is an array of grades, could use bitwise
-        const gradeLevels = GradeLevel.stringToGradeLevel(gradeString);
-        const claims = dictionary["Claim"] || [];
-        const interactionTypes = dictionary["InteractionType"] || [];
-        const performanceOnly = (dictionary["Performance"] || [])[0] === "true";
-        const catOnly = (dictionary["CAT"] || [])[0] === "true";
-        const targetStrings = dictionary["Target"] || [];
-        const targetHash = targetStrings.map(t => +t); //string[] to number[]
-        const searchModel: SearchAPIParamsModel = {
-            subjects: subjects,
-            gradeLevels: gradeLevels,
-            claims: claims,
-            interactionTypes: interactionTypes,
-            targets: targetHash,
-            catOnly: catOnly,
-            performanceOnly: performanceOnly
-        };
-
-        return searchModel;
-    }
-
-    public static searchOptionFilterString(options: SearchFilterStringTypes[], filterType: FilterType, selectedCodes?: string[]): FilterOptionModel[] {
-        return options.map(o => {
-            return {
-                label: o.label,
-                key: o.code,
-                isSelected: (selectedCodes || []).some(s => s === o.code),
-                filterType: filterType
-            }
-        });
-    }
-
-
-    public static searchOptionToFilterGrade(options: GradeLevels[], filterType: FilterType, selectedCodes?: string[]): FilterOptionModel[] {
-        return options.map(o => {
-            const gradeString = GradeLevel.gradeLevelToString(o) || "";
-            return {
-                label: gradeString,
-                key: gradeString,
-                isSelected: (selectedCodes || []).some(s => GradeLevel.stringToGradeLevel(s) === o),
-                filterType: filterType
-            }
-        });
-    }
-
-
-    public static searchOptionToFilterTarget(options: TargetModel[], filterType: FilterType, selectedCodes?: number[]): FilterOptionModel[] {
-        return options.map(o => {
-            return {
-                label: o.name,
-                key: o.nameHash.toString(),
-                isSelected: (selectedCodes || []).some(s => s === o.nameHash),
-                filterType: filterType
-            }
-        });
-    }
-
-
-    public static getFilterOptionModel(filter: SearchFilterModelTypes): FilterOptionModel[] {
-        let options: FilterOptionModel[] = [];
-
-        switch (filter.code) {
-            case (FilterType.Claim || FilterType.InteractionType || FilterType.Subject):
-                options = this.searchOptionFilterString(filter.filterOptions, filter.code);
-                break;
-            case (FilterType.Grade):
-                options = this.searchOptionToFilterGrade(filter.filterOptions, filter.code)
-                break;
-            case (FilterType.Target):
-                options = this.searchOptionToFilterTarget(filter.filterOptions, filter.code)
-
-        }
-
-        return options;
-    }
-
-    public static filterSearchToCategory(filter: SearchFilterModelTypes): FilterCategoryModel {
-        const options = this.getFilterOptionModel(filter);
-
-        const category: FilterCategoryModel = {
-            ...filter,
-            disabled: false,
-            filterOptions: options
-        };
-
-        return category;
-    }
+    return category;
+  }
 
   public static filterItemCards(
     itemCards: ItemCardModel[],
