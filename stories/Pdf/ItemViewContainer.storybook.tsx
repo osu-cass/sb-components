@@ -7,5 +7,5 @@ import { singleQuestion } from "./Mocks";
 storiesOf("PDF ItemViewContainer", module)
     .addDecorator(PdfDecorator)
     .add("question only", () => (
-    <ItemViewContainer itemData={singleQuestion} />
+        <ItemViewContainer itemData={singleQuestion} />
     ));
