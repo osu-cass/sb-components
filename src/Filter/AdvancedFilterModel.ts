@@ -18,7 +18,8 @@ export enum FilterType {
   Performance,
   Target,
   CAT,
-  InteractionType
+  InteractionType,
+  PerformanceCAT
 }
 
 export interface FilterOptionModel {
@@ -45,7 +46,7 @@ export interface AdvancedFilterCategoryModel extends FilterCategoryModel {
   displayAllButton: boolean;
 }
 
-export interface TechType extends SubjectModel { }
+export interface TechType extends SubjectModel {}
 
 export interface AdvancedFiltersModel {
   subjects: AdvancedFilterCategoryModel;

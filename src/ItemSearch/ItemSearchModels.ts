@@ -6,7 +6,7 @@ import { AdvancedFilterCategoryModel, FilterOptionModel, FilterType } from '../F
 
 export type SearchFilterStringTypes = ClaimModel | SubjectModel | InteractionTypeModel;
 export type SearchFilterTypes = SearchFilterStringTypes | TargetModel | GradeLevel;
-export type SearchFilterModelTypes = FilterSearchGradeLevelModel | FilterSearchStringModel | FilterSearchTargetModel;
+export type SearchFilterModelTypes = FilterSearchGradeLevelModel | FilterSearchStringModel<SearchFilterStringTypes> | FilterSearchTargetModel;
 
 export interface SubjectClaimsModel {
   [subject: string]: { text: string; value: string }[];
@@ -48,16 +48,16 @@ export interface SearchAPIParamsModel {
 }
 
 export interface ItemsSearchModel {
-  interactionTypes: InteractionTypeModel[];
-  subjects: SubjectModel[];
-  claims: ClaimModel[];
-  targets: TargetModel[];
+  interactionTypes?: InteractionTypeModel[];
+  subjects?: SubjectModel[];
+  claims?: ClaimModel[];
+  targets?: TargetModel[];
 }
 
 export interface ItemsSearchFilterModel {
-  interactionType: FilterSearchStringModel;
-  subjects: FilterSearchStringModel;
-  claims: FilterSearchStringModel;
+  interactionType: FilterSearchStringModel<InteractionTypeModel>;
+  subjects: FilterSearchStringModel<SubjectModel>;
+  claims: FilterSearchStringModel<ClaimModel>;
   targets: FilterSearchTargetModel;
 }
 
@@ -68,8 +68,8 @@ export interface FilterSearchModel {
   filterOptions: SearchFilterTypes[];
 }
 
-export interface FilterSearchStringModel extends FilterSearchModel {
-  filterOptions: SearchFilterStringTypes[];
+export interface FilterSearchStringModel<T> extends FilterSearchModel {
+  filterOptions: T[];
   code: FilterType.Claim | FilterType.InteractionType | FilterType.Subject;
 }
 

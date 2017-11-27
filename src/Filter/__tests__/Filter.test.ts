@@ -2,6 +2,7 @@ import { Filter } from "../Filter";
 import * as Mocks from "./Mocks";
 import { FilterType } from "../AdvancedFilterModel";
 import { GradeLevel, GradeLevels } from "../../GradeLevels/GradeLevels";
+import { filter } from "minimatch";
 
 describe("Filter.getSelectedCodes", () => {
   it("No selections", () => {
@@ -144,177 +145,48 @@ describe("Filter.getSelectedTargets", () => {
 });
 describe("Filter.filterSubjects", () => {
   it("filtering some", () => {
-    const result = Filter.filterSubjects(Mocks.subjects, ["ELA"]);
+    const result = Filter.filterStringTypes(Mocks.subjects, ["ELA"]);
     const expected = Mocks.subjects.find(s => s.code === "ELA");
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
   });
 
   it("filtering some other", () => {
-    const result = Filter.filterSubjects(Mocks.subjects, ["MATH"]);
+    const result = Filter.filterStringTypes(Mocks.subjects, ["MATH"]);
     const expected = Mocks.subjects.find(s => s.code === "MATH");
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
   });
 
   it("filtering all", () => {
-    const result = Filter.filterSubjects(Mocks.subjects, ["MATH", "ELA"]);
+    const result = Filter.filterStringTypes(Mocks.subjects, ["MATH", "ELA"]);
     expect(result).toHaveLength(2);
     expect(result).toEqual(Mocks.subjects);
   });
 
   it("filtering none", () => {
-    const result = Filter.filterSubjects(Mocks.subjects);
+    const result = Filter.filterStringTypes(Mocks.subjects);
     expect(result).toHaveLength(2);
     expect(result).toEqual(Mocks.subjects);
   });
 
   it("filtering empty", () => {
-    const result = Filter.filterSubjects(Mocks.subjects, [""]);
+    const result = Filter.filterStringTypes(Mocks.subjects, [""]);
     expect(result).toHaveLength(0);
   });
   it("filtering bad subject", () => {
-    const result = Filter.filterSubjects(Mocks.subjects, ["nosubject"]);
+    const result = Filter.filterStringTypes(Mocks.subjects, ["nosubject"]);
     expect(result).toHaveLength(0);
   });
-});
 
-describe("Filter.filterClaims", () => {
-  it("filtering some", () => {
-    const result = Filter.filterClaims(Mocks.claims, ["MATH1"]);
-    const expected = Mocks.claims.find(c => c.code === "MATH1");
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("filtering some other", () => {
-    const result = Filter.filterClaims(Mocks.claims, ["ELA1"]);
+  it("filtering claim", () => {
+    const result = Filter.filterStringTypes(Mocks.claims, ["ELA1"]);
     const expected = Mocks.claims.find(c => c.code === "ELA1");
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
   });
-
-  it("filtering some all", () => {
-    const result = Filter.filterClaims(Mocks.claims, ["MATH1", "ELA1"]);
-    expect(result).toHaveLength(2);
-    expect(result).toEqual(Mocks.claims);
-  });
-
-  it("filtering none", () => {
-    const result = Filter.filterClaims(Mocks.claims);
-    expect(result).toHaveLength(2);
-    expect(result).toEqual(Mocks.claims);
-  });
-
-  it("filtering empty", () => {
-    const result = Filter.filterClaims(Mocks.claims, [""]);
-    expect(result).toHaveLength(0);
-  });
-
-  it("filtering bad claim", () => {
-    const result = Filter.filterClaims(Mocks.claims, ["noclaim"]);
-    expect(result).toHaveLength(0);
-  });
-
-  it("filtering empty claims", () => {
-    const result = Filter.filterClaims([]);
-    expect(result).toHaveLength(0);
-  });
-
-  it("filtering empty list", () => {
-    const result = Filter.filterClaims(Mocks.claims, []);
-    expect(result).toHaveLength(2);
-  });
 });
 
-describe("Filter.filterTargets", () => {
-  it("filtering some", () => {
-    const result = Filter.filterTargets(Mocks.targets, [11]);
-    const expected = Mocks.targets.find(s => s.nameHash === 11);
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("filtering some other", () => {
-    const result = Filter.filterTargets(Mocks.targets, [12]);
-    const expected = Mocks.targets.find(s => s.nameHash === 12);
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("filtering all", () => {
-    const result = Filter.filterTargets(Mocks.targets, [12, 11, 21]);
-    expect(result).toHaveLength(3);
-    expect(result).toEqual(Mocks.targets);
-  });
-
-  it("filtering none", () => {
-    const result = Filter.filterTargets(Mocks.targets);
-    expect(result).toHaveLength(3);
-    expect(result).toEqual(Mocks.targets);
-  });
-
-  it("filtering empty", () => {
-    const result = Filter.filterTargets(Mocks.targets, []);
-    expect(result).toHaveLength(3);
-  });
-
-  it("filtering bad target", () => {
-    const result = Filter.filterTargets(Mocks.targets, [12121]);
-    expect(result).toHaveLength(0);
-  });
-});
-describe("Filter.filterInteractionTypes", () => {
-  it("filtering some", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes, [
-      "ITM1"
-    ]);
-    const expected = Mocks.interactionTypes.find(s => s.code === "ITM1");
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("filtering some other", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes, [
-      "ITE1"
-    ]);
-    const expected = Mocks.interactionTypes.find(s => s.code === "ITE1");
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("filtering all", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes, [
-      "ITE1",
-      "ITM1"
-    ]);
-    expect(result).toHaveLength(2);
-    expect(result).toEqual(Mocks.interactionTypes);
-  });
-
-  it("filtering none", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes);
-    expect(result).toHaveLength(2);
-    expect(result).toEqual(Mocks.interactionTypes);
-  });
-
-  it("filtering empty", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes, [""]);
-    expect(result).toHaveLength(0);
-  });
-
-  it("filtering empty list", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes, []);
-    expect(result).toHaveLength(2);
-  });
-
-  it("filtering bad interaction type", () => {
-    const result = Filter.filterInteractionTypes(Mocks.interactionTypes, [
-      "nointeraction"
-    ]);
-    expect(result).toHaveLength(0);
-  });
-});
 describe("Filter.getSubjectClaimCodes", () => {
   it("all", () => {
     const result = Filter.getSubjectClaimCodes(Mocks.subjects);
@@ -393,49 +265,22 @@ describe("Filter.getCurrentClaimsFilter", () => {
     const expected = Mocks.claims.find(c => c.code === "MATH1");
     const filteredSubjects = [subject];
     const result = Filter.getCurrentClaimsFilter(
-      Mocks.searchModel,
+      Mocks.searchModel.claims,
       {},
       filteredSubjects
     );
 
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
-  });
-
-  it("one, search", () => {
-    const subject = Mocks.subjects.find(s => s.code === "MATH");
-    const expected = Mocks.claims.find(c => c.code === "MATH1");
-    const result = Filter.getCurrentClaimsFilter(Mocks.searchModel, {
-      subjects: ["MATH"]
-    });
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("one, search bad", () => {
-    const result = Filter.getCurrentClaimsFilter(Mocks.searchModel, {
-      subjects: ["badsubject"]
-    });
-    expect(result).toBeUndefined();
   });
 
   it("all subjects", () => {
     const filteredSubjects = Mocks.subjects;
     const result = Filter.getCurrentClaimsFilter(
-      Mocks.searchModel,
+      Mocks.searchModel.claims,
       {},
       filteredSubjects
     );
-
-    expect(result).toHaveLength(2);
-    expect(result).toEqual(Mocks.claims);
-  });
-
-  it("all subjects", () => {
-    const filteredSubjects = Mocks.subjects;
-    const result = Filter.getCurrentClaimsFilter(Mocks.searchModel, {
-      subjects: filteredSubjects.map(s => s.code)
-    });
 
     expect(result).toHaveLength(2);
     expect(result).toEqual(Mocks.claims);
@@ -444,7 +289,7 @@ describe("Filter.getCurrentClaimsFilter", () => {
   it("no subjects", () => {
     const filteredSubjects = [];
     const result = Filter.getCurrentClaimsFilter(
-      Mocks.searchModel,
+      Mocks.searchModel.claims,
       {},
       filteredSubjects
     );
@@ -454,18 +299,18 @@ describe("Filter.getCurrentClaimsFilter", () => {
 
   it("subjects no selections", () => {
     const filteredSubjects = [];
-    const result = Filter.getCurrentClaimsFilter(Mocks.searchModel, {});
+    const result = Filter.getCurrentClaimsFilter(
+      Mocks.searchModel.claims,
+      {},
+      []
+    );
 
-    expect(result).toHaveLength(2);
+    expect(result).toBeUndefined();
   });
 
   it("no search model", () => {
     const filteredSubjects = [];
-    const result = Filter.getCurrentClaimsFilter(
-      { claims: [], interactionTypes: [], subjects: [], targets: [] },
-      {},
-      filteredSubjects
-    );
+    const result = Filter.getCurrentClaimsFilter([], {}, filteredSubjects);
 
     expect(result).toBeUndefined();
   });
@@ -477,48 +322,22 @@ describe("Filter.getCurrentInteractionTypes", () => {
     const expected = Mocks.interactionTypes.find(c => c.code === "ITM1");
     const filteredSubjects = [subject];
     const result = Filter.getCurrentInteractionTypes(
-      Mocks.searchModel,
+      Mocks.searchModel.interactionTypes,
       {},
       filteredSubjects
     );
 
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
-  });
-
-  it("one, search", () => {
-    const expected = Mocks.interactionTypes.find(c => c.code === "ITM1");
-    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {
-      subjects: ["MATH"]
-    });
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("one, search bad", () => {
-    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {
-      subjects: ["badsubject"]
-    });
-    expect(result).toBeUndefined();
   });
 
   it("all subjects", () => {
     const filteredSubjects = Mocks.subjects;
     const result = Filter.getCurrentInteractionTypes(
-      Mocks.searchModel,
+      Mocks.searchModel.interactionTypes,
       {},
       filteredSubjects
     );
-
-    expect(result).toHaveLength(2);
-    expect(result).toEqual(Mocks.interactionTypes);
-  });
-
-  it("all subjects", () => {
-    const filteredSubjects = Mocks.subjects;
-    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {
-      subjects: filteredSubjects.map(s => s.code)
-    });
 
     expect(result).toHaveLength(2);
     expect(result).toEqual(Mocks.interactionTypes);
@@ -527,7 +346,7 @@ describe("Filter.getCurrentInteractionTypes", () => {
   it("no subjects", () => {
     const filteredSubjects = [];
     const result = Filter.getCurrentInteractionTypes(
-      Mocks.searchModel,
+      Mocks.searchModel.interactionTypes,
       {},
       filteredSubjects
     );
@@ -536,19 +355,18 @@ describe("Filter.getCurrentInteractionTypes", () => {
   });
 
   it("subjects no selections", () => {
-    const filteredSubjects = [];
-    const result = Filter.getCurrentInteractionTypes(Mocks.searchModel, {});
+    const result = Filter.getCurrentInteractionTypes(
+      Mocks.searchModel.interactionTypes,
+      {},
+      []
+    );
 
-    expect(result).toHaveLength(2);
+    expect(result).toBeUndefined();
   });
 
   it("no search model", () => {
     const filteredSubjects = [];
-    const result = Filter.getCurrentInteractionTypes(
-      { claims: [], interactionTypes: [], subjects: [], targets: [] },
-      {},
-      filteredSubjects
-    );
+    const result = Filter.getCurrentInteractionTypes([], {}, filteredSubjects);
 
     expect(result).toBeUndefined();
   });
@@ -557,33 +375,17 @@ describe("Filter.getCurrentTargets", () => {
   it("one claim", () => {
     const claim = Mocks.claims.find(c => c.code === "ELA1");
     const expected = Mocks.targets.find(c => c.name === "ELA1");
-    const result = Filter.getCurrentTargets(Mocks.searchModel, {}, [claim]);
+    const result = Filter.getCurrentTargets(Mocks.searchModel.targets, {}, [
+      claim
+    ]);
 
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
-  });
-
-  it("one, search", () => {
-    const expected = Mocks.targets.find(c => c.name === "ELA1");
-    const result = Filter.getCurrentTargets(Mocks.searchModel, {
-      claims: ["ELA1"],
-      subjects: ["ELA"]
-    });
-    expect(result).toHaveLength(1);
-    expect(result).toContainEqual(expected);
-  });
-
-  it("one, search bad", () => {
-    const result = Filter.getCurrentTargets(Mocks.searchModel, {
-      claims: ["badclaim"],
-      subjects: ["badsubject"]
-    });
-    expect(result).toBeUndefined();
   });
 
   it("all claims", () => {
     const result = Filter.getCurrentTargets(
-      Mocks.searchModel,
+      Mocks.searchModel.targets,
       {},
       Mocks.claims
     );
@@ -592,40 +394,14 @@ describe("Filter.getCurrentTargets", () => {
     expect(result).toEqual(Mocks.targets);
   });
 
-  it("all subjects and claims", () => {
-    const filteredSubjects = Mocks.subjects;
-    const result = Filter.getCurrentTargets(Mocks.searchModel, {
-      subjects: filteredSubjects.map(s => s.code),
-      claims: Mocks.claims.map(c => c.code)
-    });
-
-    expect(result).toHaveLength(3);
-    expect(result).toEqual(Mocks.targets);
-  });
-
-  it("all subjects and no claims", () => {
-    const filteredSubjects = Mocks.subjects;
-    const result = Filter.getCurrentTargets(Mocks.searchModel, {
-      subjects: filteredSubjects.map(s => s.code),
-      claims: []
-    });
-
-    expect(result).toHaveLength(3);
-    expect(result).toEqual(Mocks.targets);
-  });
-
   it("no claims", () => {
-    const result = Filter.getCurrentTargets(Mocks.searchModel, {}, []);
+    const result = Filter.getCurrentTargets(Mocks.searchModel.targets, {}, []);
 
     expect(result).toBeUndefined();
   });
 
   it("no search model", () => {
-    const result = Filter.getCurrentTargets(
-      { claims: [], interactionTypes: [], subjects: [], targets: [] },
-      {},
-      []
-    );
+    const result = Filter.getCurrentTargets([], {}, []);
 
     expect(result).toBeUndefined();
   });
