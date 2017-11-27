@@ -35,7 +35,8 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2>
-          Passage for 
+          Passage for
+           
           items
            
           187-1234, 187-1235
@@ -62,7 +63,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Passage for ",
+            "Passage for",
+            " ",
             "items",
             " ",
             "187-1234, 187-1235",
@@ -70,7 +72,8 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Passage for ",
+          "Passage for",
+          " ",
           "items",
           " ",
           "187-1234, 187-1235",
@@ -105,7 +108,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            Passage for 
+            Passage for
+             
             items
              
             187-1234, 187-1235
@@ -132,7 +136,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Passage for ",
+              "Passage for",
+              " ",
               "items",
               " ",
               "187-1234, 187-1235",
@@ -140,7 +145,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Passage for ",
+            "Passage for",
+            " ",
             "items",
             " ",
             "187-1234, 187-1235",
