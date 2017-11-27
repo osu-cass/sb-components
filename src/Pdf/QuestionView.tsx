@@ -5,7 +5,7 @@ import { ItemCardTable } from "../ItemCard/ItemCardTable";
 import { RubricTable } from "../Rubric/RubricTable";
 import { QuestionModel } from "./PdfModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
-
+import "../Styles/pdf-item-page.less"
 export interface QuestionViewProps {
   question: QuestionModel;
 }
@@ -70,7 +70,7 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
 
     return (
       <div className="item">
-        <h2>Question #{this.props.question.questionNumber}</h2>
+        <p className="question-title">Question #{this.props.question.questionNumber}</p>
         {dataTable}
         {evidenceStatement}
         <ItemView view={this.props.question.view} />

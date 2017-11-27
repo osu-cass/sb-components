@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Styles/pdf.less";
+import "../Styles/pdf-cover-page.less";
 
 export interface CoverPageProps {
   subject: string;

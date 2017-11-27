@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Styles/pdf.less";
+import "../Styles/pdf-item-page.less";
 import { ItemPdfModel, ItemGroupModel } from "./PdfModels";
 import { PassageView } from "./PassageView";
 import { QuestionView } from "./QuestionView";
