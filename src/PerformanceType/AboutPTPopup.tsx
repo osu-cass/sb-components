@@ -68,8 +68,7 @@ export class AboutPTPopupModal extends React.Component<
               </button>
             </div>
             <div className="modal-body">
-              {/* TODO: add label */}
-              <p dangerouslySetInnerHTML={{ __html: this.props.description }}></p>
+              <p aria-labelledby="description" dangerouslySetInnerHTML={{ __html: this.props.description }}></p>
             </div>
             <div className="modal-footer">
               <button

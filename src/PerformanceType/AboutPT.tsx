@@ -41,8 +41,7 @@ export class AboutPTModal extends React.Component<AboutPTModalProps, AboutPTModa
 
   renderDescription(ptHeader: string) {
     return (
-      <p>
-        {/* TODO: add label */}
+      <p aria-labelledby={`${ptHeader}`}>
         <b>{ptHeader}</b>
         <span
           dangerouslySetInnerHTML={{ __html: this.props.description }}
