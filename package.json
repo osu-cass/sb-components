@@ -24,7 +24,7 @@
     "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
   },
   "lint-staged": {
-    "*.(ts|tsx)": ["prettier --write","git add"]
+    "*.{ts|tsx}": ["prettier --write","git add"]
   },
   "repository": {
     "type": "git",
