@@ -6,6 +6,7 @@ import { AccResourceGroupModel, ResourceSelectionsModel } from "../../src/Access
 import { AboutItemMockModel } from "../AboutItem/mocks";
 import * as H from 'history';
 import {allAccessibilityResourceGroups} from "../Accessibility/AccessibilityOptionsMock";
+import { match } from "react-router";
 
 export const aboutThisClient = ( params: ItemModel ) =>
     new Promise<AboutItemModel>(
@@ -19,11 +20,15 @@ export const itemAccessibilityClient = ( params: ItemIsaapModel ) => new Promise
     () => { return ItemPageMockProps.accResourceGroups }
 );
 
-export const ItemPageContainerMockProps: ItemPageContainerProps = {
-    aboutThisClient,
-    itemPageClient,
-    itemAccessibilityClient
-}
+
+export const itemPagePath = "/:bankKey/:itemKey";
+
+export const itemPageMatch: match<ItemModel> = {
+    params: { bankKey: 187, itemKey: 4000 },
+    isExact: true,
+    path: "itemPagePath",
+    url: "/"
+};
 
 export const onSave = ( ( selections: ResourceSelectionsModel ) => { } ) as ( ( selections: ResourceSelectionsModel ) => void );
 
