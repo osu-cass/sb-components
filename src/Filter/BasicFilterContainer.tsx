@@ -25,7 +25,7 @@ export class BasicFilterContainer extends React.Component<
     super(props);
 
     this.state = {
-      expanded: true
+      expanded: this.props.containsAdvancedFilter ? false : true
     };
 
     this.handleClick = this.handleClick.bind(this);
