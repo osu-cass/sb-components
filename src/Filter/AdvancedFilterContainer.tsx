@@ -11,6 +11,7 @@ import {
 export interface AdvancedFilterContainerProps {
   filterOptions: AdvancedFilterCategoryModel[];
   onClick: (selected: AdvancedFilterCategoryModel[]) => void;
+  isNested?: boolean;
 }
 
 export interface AdvancedFilterContainerState {
@@ -25,7 +26,7 @@ export class AdvancedFilterContainer extends React.Component<
     super(props);
 
     this.state = {
-      expanded: true
+      expanded: this.props.isNested ? true : false
     };
   }
 
