@@ -4,14 +4,15 @@
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "files": ["lib", "README.md", "LICENSE"],
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "webpack-prod":
-      "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
-    "webpack-dev":
-      "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "prepare":
-      "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
+    "webpack-prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
+    "webpack-dev": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
+    "prepare": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",
@@ -19,14 +20,16 @@
     "storybook-publish": "build-storybook -o storybuild",
     "build": "npm run clean && build-storybook && npm run webpack-dev",
     "clean": "rm -rf ./lib ?",
-    "prettier":
-      "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
+    "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/osu-cass/sb-components.git"
   },
-  "authors": ["Dan Van Horn (danvanhorn)", "Kevin Turkington (zainkai)"],
+  "authors": [
+    "Dan Van Horn (danvanhorn)",
+    "Kevin Turkington (zainkai)"
+  ],
   "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/osu-cass/sb-components/issues"
@@ -106,12 +109,17 @@
         "tsConfigFile": "./tsconfig.json"
       }
     },
-    "moduleFileExtensions": ["ts", "tsx", "json", "js", "jsx"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "json",
+      "js",
+      "jsx"
+    ],
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
-      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/src/__mocks__/fileMock.js"
+      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
     }
   },
   "dependencies": {
@@ -119,6 +127,9 @@
     "react-modal": "3.1.2"
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "git add"]
+    "*.(ts|tsx)": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
