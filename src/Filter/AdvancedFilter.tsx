@@ -68,7 +68,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
         className="filter-selection"
       >
         <label>
-          <span info-label>{this.props.label}</span>
+          <span info-label="true">{this.props.label}</span>
           <span data-tooltip={this.props.helpText} data-tooltip-position="top">
             <span className="fa fa-info-circle fa-sm" />
           </span>

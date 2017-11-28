@@ -31,7 +31,6 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     );
   }
 
-  //TODO replace X with a > that specifies that  the table  row can  be expanded
   renderRow(rowData: ItemCardModel, index: number): JSX.Element {
     const collapse = (
       <i
