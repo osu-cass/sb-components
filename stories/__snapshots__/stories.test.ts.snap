@@ -3422,11 +3422,7 @@ exports[`Storyshots PDF CoverPage Cover Page 1`] = `
     <div
       className="first-page-date"
     >
-      10
-      /
-      27
-      /
-      2017
+      10/27/2017
     </div>
   </div>
 </div>

@@ -48,11 +48,7 @@ ShallowWrapper {
         <div
           className="first-page-date"
         >
-          01
-          /
-          12
-          /
-          2017
+          2017-11-27
         </div>,
       ],
       "className": "page first-page",
@@ -134,23 +130,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "01",
-            "/",
-            "12",
-            "/",
-            "2017",
-          ],
+          "children": "2017-11-27",
           "className": "first-page-date",
         },
         "ref": null,
-        "rendered": Array [
-          "01",
-          "/",
-          "12",
-          "/",
-          "2017",
-        ],
+        "rendered": "2017-11-27",
         "type": "div",
       },
     ],
@@ -183,11 +167,7 @@ ShallowWrapper {
           <div
             className="first-page-date"
           >
-            01
-            /
-            12
-            /
-            2017
+            2017-11-27
           </div>,
         ],
         "className": "page first-page",
@@ -269,23 +249,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "01",
-              "/",
-              "12",
-              "/",
-              "2017",
-            ],
+            "children": "2017-11-27",
             "className": "first-page-date",
           },
           "ref": null,
-          "rendered": Array [
-            "01",
-            "/",
-            "12",
-            "/",
-            "2017",
-          ],
+          "rendered": "2017-11-27",
           "type": "div",
         },
       ],
