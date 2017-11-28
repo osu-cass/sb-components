@@ -9,7 +9,7 @@ export interface CoverPageProps {
 
 export class CoverPage extends React.Component<CoverPageProps, {}> {
   render() {
-    const today =  this.props.dateString || (new Date()).toLocaleDateString();
+    const today = this.props.dateString || new Date().toLocaleDateString();
     return (
       <div className="page first-page">
         <div className="first-page-title">
@@ -20,9 +20,7 @@ export class CoverPage extends React.Component<CoverPageProps, {}> {
           {this.props.subject} Practice Test Scoring Guide<br />
           <strong>{this.props.grade}</strong>
         </div>
-        <div className="first-page-date">
-        {today}
-        </div>
+        <div className="first-page-date">{today}</div>
       </div>
     );
   }
