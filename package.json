@@ -13,7 +13,7 @@
     "webpack-prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "webpack-dev": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
     "prepare": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
-    "precommit": "npm run lint-staged",
+    "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
     "storybook": "npm run clean && start-storybook -p 6006",
@@ -24,7 +24,10 @@
     "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
   },
   "lint-staged": {
-    "*.{ts|tsx}": ["npm run prettier","git add"]
+    "*.{ts|tsx}": [
+      "npm run prettier",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -128,6 +131,8 @@
   },
   "dependencies": {
     "extract-text-webpack-plugin": "^3.0.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
     "react-modal": "3.1.2"
   }
 }
