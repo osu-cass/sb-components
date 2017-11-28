@@ -141,7 +141,7 @@ export class AdvancedFilterContainer extends React.Component<
             <h2 style={{ color: "#63666A" }}>
               <span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters
             </h2>
-            <span style={{ marginTop: "6px" }}>
+            <span>
               &nbsp;Click on an item to remove it from the list
             </span>
           </div>
