@@ -41,7 +41,7 @@ export class AdvancedFilterContainer extends React.Component<
     let options = newFilters[categoryIndex].filterOptions.slice();
 
     if (allPressed || !category.isMultiSelect) {
-      options.forEach(o => o.isSelected = false);
+      options.forEach(o => (o.isSelected = false));
     }
 
     if (option) {
