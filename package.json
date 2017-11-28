@@ -24,9 +24,9 @@
     "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\" &>1"
   },
   "lint-staged": {
-    "verbose": true,
     "*.tsx": ["npm run prettier","git add"],
-    "*.ts": ["npm run prettier","git add"]
+    "*.ts": ["npm run prettier","git add"],
+    "verbose": true
   },
   "repository": {
     "type": "git",
