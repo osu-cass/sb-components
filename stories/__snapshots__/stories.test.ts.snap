@@ -1034,13 +1034,7 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
           />
            Advanced Filters
         </h2>
-        <span
-          style={
-            Object {
-              "marginTop": "6px",
-            }
-          }
-        >
+        <span>
            Click on an item to remove it from the list
         </span>
       </div>
