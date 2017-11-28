@@ -21,7 +21,7 @@
     "storybook-publish": "build-storybook -o storybuild",
     "build": "npm run clean && build-storybook && npm run webpack-dev",
     "clean": "rm -rf ./lib ?",
-    "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\" &>1"
+    "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\" &> 1"
   },
   "lint-staged": {
     "*.tsx": ["npm run prettier","git add"],
