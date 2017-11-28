@@ -3,6 +3,7 @@
         "build",
         "out",
         "dist",
-        "lib"
+        "lib",
+        "__tests__"
     ]
 }
