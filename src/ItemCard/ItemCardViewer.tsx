@@ -31,7 +31,6 @@ export class ItemCardViewer extends React.Component<
   renderViewer(url: string) {
     return (
       <div className="item-content">
-      
         <ItemViewerFrame url={url} />
       </div>
     );
