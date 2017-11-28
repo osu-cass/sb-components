@@ -52,11 +52,10 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
             description={this.props.performanceItemDescription}
           />
         </div>
-      )
+      );
     } else {
       return null;
     }
-
   }
 
   renderNav(): JSX.Element {
@@ -66,7 +65,7 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
         role="toolbar"
         aria-label="Toolbar with button groups"
       >
-       {this.renderLeftNav()}
+        {this.renderLeftNav()}
         {this.renderRightNav()}
       </div>
     );
@@ -79,28 +78,27 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
     );
     return (
       <div
-      className="item-nav-left-group"
-      role="group"
-      aria-label="First group"
-    >
+        className="item-nav-left-group"
+        role="group"
+        aria-label="First group"
+      >
+        <AboutItem {...this.props.aboutThisItemVM} />
 
-      <AboutItem {...this.props.aboutThisItemVM} />
+        <MoreLikeThisModal {...this.props.moreLikeThisVM} />
+        <ShareModal iSAAP={isaap} />
+        {this.renderPerformanceModals()}
 
-      <MoreLikeThisModal {...this.props.moreLikeThisVM} />
-      <ShareModal iSAAP={isaap} />
-      {this.renderPerformanceModals()}
-
-      <Braille.BrailleLink
-        currentSelectionCode={Accessibility.getBrailleAccommodation(
-          this.props.accResourceGroups
-        )}
-        brailleItemCodes={this.props.brailleItemCodes}
-        braillePassageCodes={this.props.braillePassageCodes}
-        bankKey={this.props.currentItem.bankKey}
-        itemKey={this.props.currentItem.itemKey}
-      />
-    </div>
-    )
+        <Braille.BrailleLink
+          currentSelectionCode={Accessibility.getBrailleAccommodation(
+            this.props.accResourceGroups
+          )}
+          brailleItemCodes={this.props.brailleItemCodes}
+          braillePassageCodes={this.props.braillePassageCodes}
+          bankKey={this.props.currentItem.bankKey}
+          itemKey={this.props.currentItem.itemKey}
+        />
+      </div>
+    );
   }
 
   renderRightNav(): JSX.Element {
@@ -115,11 +113,9 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
           onSave={this.props.onSave}
           onReset={this.props.onReset}
         />
-
       </div>
     );
   }
-
 
   renderIFrame(): JSX.Element {
     let isaap = ItemPageModels.toiSAAP(

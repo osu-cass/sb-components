@@ -10,7 +10,7 @@ import {
 
 export interface AdvancedFilterContainerProps {
   filterOptions: AdvancedFilterCategoryModel[];
-  onClick: ( selected: AdvancedFilterCategoryModel[] ) => void;
+  onClick: (selected: AdvancedFilterCategoryModel[]) => void;
 }
 
 export interface AdvancedFilterContainerState {
@@ -20,9 +20,9 @@ export interface AdvancedFilterContainerState {
 export class AdvancedFilterContainer extends React.Component<
   AdvancedFilterContainerProps,
   AdvancedFilterContainerState
-  > {
-  constructor ( props: AdvancedFilterContainerProps ) {
-    super( props );
+> {
+  constructor(props: AdvancedFilterContainerProps) {
+    super(props);
 
     this.state = {
       expanded: false
@@ -30,80 +30,83 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   handleClick = () => {
-    this.setState( { expanded: !this.state.expanded } );
+    this.setState({ expanded: !this.state.expanded });
   };
 
-  onSelect ( category: AdvancedFilterCategoryModel, option?: FilterOptionModel ) {
-    const categoryIndex = this.props.filterOptions.indexOf( category );
-    let newFilters = [ ...this.props.filterOptions ];
+  onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
+    const categoryIndex = this.props.filterOptions.indexOf(category);
+    let newFilters = [...this.props.filterOptions];
     let newOptions: FilterOptionModel[] = [];
 
-    if ( option ) {
-      const optionIdx = newFilters[ categoryIndex ].filterOptions.indexOf( option );
-      if ( category.isMultiSelect ) {
-        newOptions = newFilters[ categoryIndex ].filterOptions.map( opt => ( { ...opt } ) );
+    if (option) {
+      const optionIdx = newFilters[categoryIndex].filterOptions.indexOf(option);
+      if (category.isMultiSelect) {
+        newOptions = newFilters[categoryIndex].filterOptions.map(opt => ({
+          ...opt
+        }));
       } else {
-        newOptions = newFilters[ categoryIndex ].filterOptions.map( ( opt, idx ) => ( {
-          ...opt,
-          isSelected: ( idx === optionIdx ) ? !option.isSelected : false
-        } )
+        newOptions = newFilters[categoryIndex].filterOptions.map(
+          (opt, idx) => ({
+            ...opt,
+            isSelected: idx === optionIdx ? !option.isSelected : false
+          })
         );
       }
     }
-    newFilters[ categoryIndex ] = {
-      ...newFilters[ categoryIndex ],
+    newFilters[categoryIndex] = {
+      ...newFilters[categoryIndex],
       filterOptions: newOptions
     };
 
-    this.props.onClick( newFilters );
+    this.props.onClick(newFilters);
   }
 
-  resetFilters () {
+  resetFilters() {
     const newFilters = this.props.filterOptions;
-    newFilters.forEach( cate => {
-      cate.filterOptions.map( opt => ( opt.isSelected = false ) );
-    } );
-    this.props.onClick( newFilters );
+    newFilters.forEach(cate => {
+      cate.filterOptions.map(opt => (opt.isSelected = false));
+    });
+    this.props.onClick(newFilters);
   }
 
-  hasActiveFilterIndicators () {
+  hasActiveFilterIndicators() {
     let active = false;
-    this.props.filterOptions.forEach( fil => {
-      if ( !fil.disabled ) {
-        fil.filterOptions.forEach( opt => {
-          if ( opt.isSelected ) {
+    this.props.filterOptions.forEach(fil => {
+      if (!fil.disabled) {
+        fil.filterOptions.forEach(opt => {
+          if (opt.isSelected) {
             active = true;
           }
-        } );
+        });
       }
-    } );
+    });
     return active;
   }
 
-  renderFilterIndicators () {
+  renderFilterIndicators() {
     const tags: JSX.Element[] = [];
 
-    this.props.filterOptions.forEach( fil => {
-      if ( !fil.disabled ) {
-        fil.filterOptions.forEach( opt => {
-          if ( opt.isSelected ) {
+    this.props.filterOptions.forEach(fil => {
+      if (!fil.disabled) {
+        fil.filterOptions.forEach(opt => {
+          if (opt.isSelected) {
             tags.push(
               <div className="filter-indicator" key={opt.key}>
                 {opt.label}&nbsp;<span
-                  onClick={() => this.onSelect( fil, opt )}
+                  onClick={() => this.onSelect(fil, opt)}
                   className="fa fa-times-circle fa-small"
                 />
               </div>
             );
           }
-        } );
+        });
       }
-    } );
+    });
 
     return tags;
   }
 
-  renderFilterHeader () {
+  renderFilterHeader() {
     return (
       <div className="filter-header">
         <div className="filter-status">{this.renderFilterIndicators()}</div>
@@ -111,16 +114,16 @@ export class AdvancedFilterContainer extends React.Component<
     );
   }
 
-  renderFilterBody () {
-    const filterTags = this.props.filterOptions.map( ( fil, i ) => {
+  renderFilterBody() {
+    const filterTags = this.props.filterOptions.map((fil, i) => {
       return (
         <AdvancedFilter
           key={i}
           {...fil}
-          selectedHandler={opt => this.onSelect( fil, opt )}
+          selectedHandler={opt => this.onSelect(fil, opt)}
         />
       );
-    } );
+    });
 
     return (
       <div
@@ -175,9 +178,9 @@ export class AdvancedFilterContainer extends React.Component<
     );
   };
 
-  render () {
+  render() {
     let content = null;
-    if ( this.state.expanded ) {
+    if (this.state.expanded) {
       content = (
         <div className="advanced-filter-container-expanded">
           {this.renderFilterBody()}

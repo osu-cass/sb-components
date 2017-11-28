@@ -21,7 +21,8 @@ export interface AboutTestItemContainerState {
   hasError: boolean;
 }
 
-export interface AboutTestItemContainerProps extends RouteComponentProps<AboutTestItemsParams> {
+export interface AboutTestItemContainerProps
+  extends RouteComponentProps<AboutTestItemsParams> {
   aboutClient: (
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
@@ -30,7 +31,7 @@ export interface AboutTestItemContainerProps extends RouteComponentProps<AboutTe
 export class AboutTestItemsContainer extends React.Component<
   AboutTestItemContainerProps,
   AboutTestItemContainerState
-  > {
+> {
   constructor(props: AboutTestItemContainerProps) {
     super(props);
     this.state = {
@@ -48,7 +49,7 @@ export class AboutTestItemsContainer extends React.Component<
     if (newCode !== this.state.selectedCode) {
       this.setState({
         selectedCode: newCode
-      })
+      });
 
       this.fetchUpdatedViewModel(newCode);
     }
@@ -82,9 +83,8 @@ export class AboutTestItemsContainer extends React.Component<
         selectedCode = interactionTypes[0].code;
       } else {
         const validType = interactionTypes.find(it => it.code === selectedCode);
-        selectedCode = (validType) ? selectedCode : interactionTypes[0].code
+        selectedCode = validType ? selectedCode : interactionTypes[0].code;
       }
-
     }
 
     this.setState({

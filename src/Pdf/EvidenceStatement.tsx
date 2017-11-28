@@ -1,26 +1,30 @@
-import * as React from 'react';
+import * as React from "react";
+import "../Styles/pdf-data-table.less";
 
 export interface EvidenceStatementProps {
-    statement: string;
+  statement: string;
 }
 
-export class EvidenceStatement extends React.Component<EvidenceStatementProps, {}> {
-    render() {
-        return (
-            <div className="centered-table-container">
-                <table className='item-data-table'>
-                    <thead>
-                        <tr>
-                            <th>Evidence Statement</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>{this.props.statement}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        );
-    }
+export class EvidenceStatement extends React.Component<
+  EvidenceStatementProps,
+  {}
+> {
+  render() {
+    return (
+      <div className="centered-table-container">
+        <table className="item-data-table">
+          <thead>
+            <tr>
+              <th>Evidence Statement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{this.props.statement}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    );
+  }
 }

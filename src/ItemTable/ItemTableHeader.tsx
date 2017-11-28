@@ -1,12 +1,15 @@
 import * as React from "react";
-import { SortColumnModel, HeaderSortModel, SortDirection } from "./ItemTableModels";
+import {
+  SortColumnModel,
+  HeaderSortModel,
+  SortDirection
+} from "./ItemTableModels";
 
 export interface HeaderTableProps {
   columns: SortColumnModel[];
   onHeaderClick: (header: SortColumnModel) => void;
   sorts: HeaderSortModel[];
-} 
-
+}
 
 const invokeResetSortLimit = 2;
 

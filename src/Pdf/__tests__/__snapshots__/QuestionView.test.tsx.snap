@@ -33,10 +33,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <p
+          className="question-title"
+        >
           Question #
           1
-        </h2>,
+        </p>,
         null,
         null,
         <ItemView
@@ -66,13 +68,14 @@ ShallowWrapper {
             "Question #",
             1,
           ],
+          "className": "question-title",
         },
         "ref": null,
         "rendered": Array [
           "Question #",
           1,
         ],
-        "type": "h2",
+        "type": "p",
       },
       null,
       null,
@@ -105,10 +108,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <p
+            className="question-title"
+          >
             Question #
             1
-          </h2>,
+          </p>,
           null,
           null,
           <ItemView
@@ -138,13 +143,14 @@ ShallowWrapper {
               "Question #",
               1,
             ],
+            "className": "question-title",
           },
           "ref": null,
           "rendered": Array [
             "Question #",
             1,
           ],
-          "type": "h2",
+          "type": "p",
         },
         null,
         null,

@@ -10,7 +10,7 @@ export interface ItemTableProps {
   rowOnClick: (item: ItemCardModel) => void;
   sort: HeaderSortModel[];
   columns: SortColumnModel[];
-  selectedRow?: ItemCardModel | null;
+  selectedRow?: ItemCardModel;
   item: Resource<AboutItemModel>;
 }
 

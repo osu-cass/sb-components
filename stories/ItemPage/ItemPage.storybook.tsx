@@ -5,7 +5,6 @@ import { CenterDecorator } from "../CenterDecorator";
 import { RouterDecorator } from "../RouterDecorator";
 import { ItemPageMockProps, ItemPageMockPropsNoItem } from "./mocks";
 
-
 storiesOf("Item Page", module)
   .addDecorator(RouterDecorator)
   .add("Item Page with an item", () => <ItemPage {...ItemPageMockProps} />)
