@@ -33,10 +33,6 @@ export class AdvancedFilterContainer extends React.Component<
     this.setState( { expanded: !this.state.expanded } );
   };
 
-  mapFilterOptions(){
-    
-  }
-
   onSelect ( category: AdvancedFilterCategoryModel, option?: FilterOptionModel ) {
     const categoryIndex = this.props.filterOptions.indexOf( category );
     let newFilters = [ ...this.props.filterOptions ];
