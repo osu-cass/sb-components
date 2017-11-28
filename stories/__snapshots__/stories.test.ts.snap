@@ -1056,9 +1056,9 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
           className="filter-button"
           onClick={[Function]}
         >
-          Expand 
+          Collapse 
           <span
-            className="fa fa-chevron-right"
+            className="fa fa-chevron-down"
           />
         </button>
       </div>
@@ -1069,6 +1069,292 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
       <div
         className="filter-status"
       />
+    </div>
+  </div>
+  <div
+    className="advanced-filter-container-expanded"
+  >
+    <div
+      aria-live="polite"
+      aria-relevant="additions removals"
+      className="filter-body"
+    >
+      <div
+        className="filter-selection"
+        id="grade-filter"
+      >
+        <label>
+          <span
+            info-label="true"
+          >
+            Grade
+          </span>
+          <span
+            data-tooltip="Grade Help"
+            data-tooltip-position="top"
+          >
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+        </label>
+        <div
+          className="child-filter-container"
+        >
+          <div
+            className="filter-all-btn-container"
+          >
+            <button
+              className="filter-all-btn  selected-button filter-button"
+              onClick={[Function]}
+            >
+              All
+            </button>
+          </div>
+          <div
+            className="filter-button-container"
+          >
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Grades 3-5
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Grades 6-8
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              High School
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="filter-selection"
+        id="multi-filter"
+      >
+        <label>
+          <span
+            info-label="true"
+          >
+            Multi
+          </span>
+          <span
+            data-tooltip="Subject Help"
+            data-tooltip-position="top"
+          >
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+        </label>
+        <div
+          className="child-filter-container"
+        >
+          <div
+            className="filter-button-container"
+          >
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              English Literacy/ Arts
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Mathematics
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="filter-selection"
+        id="disabled-filter"
+      >
+        <label>
+          <span
+            info-label="true"
+          >
+            Disabled
+          </span>
+          <span
+            data-tooltip="Subject Help"
+            data-tooltip-position="top"
+          >
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+        </label>
+        <div
+          className="child-filter-container"
+        >
+          <div
+            className="filter-button-container"
+          >
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              English Literacy/ Arts
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Mathematics
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="filter-selection"
+        id="disabled multi-filter"
+      >
+        <label>
+          <span
+            info-label="true"
+          >
+            Disabled Multi
+          </span>
+          <span
+            data-tooltip="Subject Help"
+            data-tooltip-position="top"
+          >
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+        </label>
+        <div
+          className="child-filter-container"
+        >
+          <div
+            className="filter-button-container"
+          >
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              English Literacy/ Arts
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Mathematics
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="filter-selection"
+        id="multi all-filter"
+      >
+        <label>
+          <span
+            info-label="true"
+          >
+            Multi All
+          </span>
+          <span
+            data-tooltip="Subject Help"
+            data-tooltip-position="top"
+          >
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+        </label>
+        <div
+          className="child-filter-container"
+        >
+          <div
+            className="filter-all-btn-container"
+          >
+            <button
+              className="filter-all-btn  selected-button filter-button"
+              onClick={[Function]}
+            >
+              All
+            </button>
+          </div>
+          <div
+            className="filter-button-container"
+          >
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              English Literacy/ Arts
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Mathematics
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="filter-selection"
+        id="multi all disabled-filter"
+      >
+        <label>
+          <span
+            info-label="true"
+          >
+            Multi All Disabled
+          </span>
+          <span
+            data-tooltip="Subject Help"
+            data-tooltip-position="top"
+          >
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+        </label>
+        <div
+          className="child-filter-container"
+        >
+          <div
+            className="filter-all-btn-container"
+          >
+            <button
+              className="filter-all-btn  selected-button filter-button"
+              onClick={[Function]}
+            >
+              All
+            </button>
+          </div>
+          <div
+            className="filter-button-container"
+          >
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              English Literacy/ Arts
+            </button>
+            <button
+              className=" filter-button"
+              onClick={[Function]}
+            >
+              Mathematics
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1610,7 +1896,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
 
 exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 <div
-  className="basic-filter-container"
+  className="basic-filter-container-expanded"
 >
   <div
     className="basic-filter"
@@ -1684,7 +1970,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 
 exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
-  className="basic-filter-container"
+  className="basic-filter-container-expanded"
 >
   <div
     className="basic-filter"
@@ -1763,10 +2049,10 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       className="filter-button"
       onClick={[Function]}
     >
-      Show
+      Hide
        
       <span
-        className="fa fa-chevron-right"
+        className="fa fa-chevron-down"
       />
     </button>
   </div>
@@ -2127,7 +2413,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
   }
 >
   <div
-    className="basic-filter-container"
+    className="basic-filter-container-expanded"
   >
     <div
       className="basic-filter"
@@ -2206,10 +2492,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         className="filter-button"
         onClick={[Function]}
       >
-        Show
+        Hide
          
         <span
-          className="fa fa-chevron-right"
+          className="fa fa-chevron-down"
         />
       </button>
     </div>
