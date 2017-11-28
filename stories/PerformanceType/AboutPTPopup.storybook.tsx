@@ -4,7 +4,6 @@ import { storiesOf } from "@storybook/react";
 import { AboutPTPopupModal } from "../../src/PerformanceType/AboutPTPopup";
 import { RouterDecorator } from "../RouterDecorator";
 
-
 // storiesOf("About PT Popup", module)
 //   .addDecorator(RouterDecorator)
 //   .add("About Math", () => (

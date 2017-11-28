@@ -51,8 +51,9 @@ export class ItemPageContainer extends React.Component<
     super(props);
 
     const queryObject = parseQueryString(
-      (typeof location !== 'undefined' && location.search !== undefined) ? 
-       location.search : ""
+      typeof location !== "undefined" && location.search !== undefined
+        ? location.search
+        : ""
     );
     const itemKey = +(queryObject["itemKey"] || [])[0] || 0;
     const bankKey = +(queryObject["bankKey"] || [])[0] || 0;

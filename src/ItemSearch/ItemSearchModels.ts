@@ -1,19 +1,32 @@
-import { Filter } from '../Filter/Filter';
+import { Filter } from "../Filter/Filter";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { AdvancedFilterCategoryModel, FilterOptionModel, FilterType } from '../Filter/AdvancedFilterModel';
+import {
+  AdvancedFilterCategoryModel,
+  FilterOptionModel,
+  FilterType
+} from "../Filter/AdvancedFilterModel";
 
-export type SearchFilterStringTypes = ClaimModel | SubjectModel | InteractionTypeModel;
-export type SearchFilterTypes = SearchFilterStringTypes | TargetModel | GradeLevel;
-export type SearchFilterModelTypes = FilterSearchGradeLevelModel | FilterSearchStringModel<SearchFilterStringTypes> | FilterSearchTargetModel;
+export type SearchFilterStringTypes =
+  | ClaimModel
+  | SubjectModel
+  | InteractionTypeModel;
+export type SearchFilterTypes =
+  | SearchFilterStringTypes
+  | TargetModel
+  | GradeLevel;
+export type SearchFilterModelTypes =
+  | FilterSearchGradeLevelModel
+  | FilterSearchStringModel<SearchFilterStringTypes>
+  | FilterSearchTargetModel;
 
 export interface SubjectClaimsModel {
   [subject: string]: { text: string; value: string }[];
 }
 
 export interface SearchBaseModel {
-  label: string
+  label: string;
 }
 
 export interface SubjectModel extends SearchBaseModel {
@@ -26,14 +39,13 @@ export interface SubjectModel extends SearchBaseModel {
 export interface ClaimModel extends SearchBaseModel {
   targetCodes?: number[];
   code: string;
-  filterType?: FilterType.Claim
+  filterType?: FilterType.Claim;
 }
 
 export interface TargetModel {
   name: string;
   nameHash: number;
   filterType?: FilterType.Target;
-  
 }
 
 export interface SearchAPIParamsModel {

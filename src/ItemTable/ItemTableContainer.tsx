@@ -1,4 +1,4 @@
-import '../Styles/score-page.less';
+import "../Styles/score-page.less";
 import * as React from "react";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
@@ -11,7 +11,7 @@ import {
 } from "./ItemTableModels";
 import { HeaderTable } from "./ItemTableHeader";
 import { ItemTable } from "./ItemTable";
- 
+
 export interface ItemTableContainerProps {
   onRowSelection: (
     item: { itemKey: number; bankKey: number },

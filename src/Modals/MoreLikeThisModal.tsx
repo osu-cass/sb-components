@@ -17,7 +17,10 @@ export interface MoreLikeThisModalState {
   showModal: boolean;
 }
 
-export class MoreLikeThisModal extends React.Component<MoreLikeThisModalProps, MoreLikeThisModalState> {
+export class MoreLikeThisModal extends React.Component<
+  MoreLikeThisModalProps,
+  MoreLikeThisModalState
+> {
   constructor(props: MoreLikeThisModalProps) {
     super(props);
     this.state = {
@@ -32,7 +35,6 @@ export class MoreLikeThisModal extends React.Component<MoreLikeThisModalProps, M
   handleHideModal = () => {
     this.setState({ showModal: false });
   };
-
 
   renderColumn(column: Column | null) {
     if (!column || column.label == "NA") {
@@ -60,7 +62,6 @@ export class MoreLikeThisModal extends React.Component<MoreLikeThisModalProps, M
     );
   }
 
-  
   render() {
     return (
       <div>
@@ -75,7 +76,7 @@ export class MoreLikeThisModal extends React.Component<MoreLikeThisModalProps, M
             className="glyphicon glyphicon-info-sign glyphicon-pad"
             aria-hidden="true"
           />
-         More <span className="item-nav-long-label">Like This</span>
+          More <span className="item-nav-long-label">Like This</span>
         </button>
 
         <ReactModal

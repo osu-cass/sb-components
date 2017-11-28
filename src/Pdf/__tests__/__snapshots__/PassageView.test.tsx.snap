@@ -34,12 +34,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <p
+          className="question-title"
+        >
           Passage for 
+           
           items
            
           187-1234, 187-1235
-        </h2>,
+        </p>,
         <ItemView
           view={
             Object {
@@ -63,19 +66,22 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Passage for ",
+            " ",
             "items",
             " ",
             "187-1234, 187-1235",
           ],
+          "className": "question-title",
         },
         "ref": null,
         "rendered": Array [
           "Passage for ",
+          " ",
           "items",
           " ",
           "187-1234, 187-1235",
         ],
-        "type": "h2",
+        "type": "p",
       },
       Object {
         "instance": null,
@@ -104,12 +110,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <p
+            className="question-title"
+          >
             Passage for 
+             
             items
              
             187-1234, 187-1235
-          </h2>,
+          </p>,
           <ItemView
             view={
               Object {
@@ -133,19 +142,22 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "Passage for ",
+              " ",
               "items",
               " ",
               "187-1234, 187-1235",
             ],
+            "className": "question-title",
           },
           "ref": null,
           "rendered": Array [
             "Passage for ",
+            " ",
             "items",
             " ",
             "187-1234, 187-1235",
           ],
-          "type": "h2",
+          "type": "p",
         },
         Object {
           "instance": null,

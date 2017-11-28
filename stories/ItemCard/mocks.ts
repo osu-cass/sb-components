@@ -16,5 +16,8 @@ export const completeItemCard: ItemCardModel = {
     targetHash: 33434,
     isPerformanceItem: false,
     brailleOnlyItem: false,
-    targetId: "dfas"
+    targetId: "dfas",
+    depthOfKnowledge: "2",
+    commonCoreStandardId: "AB-123",
+    domain: "domain"
 }
