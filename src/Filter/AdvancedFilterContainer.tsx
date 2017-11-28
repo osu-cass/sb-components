@@ -34,33 +34,24 @@ export class AdvancedFilterContainer extends React.Component<
   };
 
   onSelect ( category: AdvancedFilterCategoryModel, option?: FilterOptionModel ) {
-    const index = this.props.filterOptions.indexOf( category );
-    const newFilters = [ ...this.props.filterOptions ];
+    const categoryIndex = this.props.filterOptions.indexOf( category );
+    let newFilters = [ ...this.props.filterOptions ];
     let newOptions: FilterOptionModel[] = [];
 
-    //TODO Refactor
-    if ( !option ) {
-      // all pressed
-      newOptions = newFilters[ index ].filterOptions.map( opt => ( {
-        ...opt,
-        isSelected: false
-      } ) );
-    } else {
-      const optionIdx = newFilters[ index ].filterOptions.indexOf( option );
+    if ( option ) {
+      const optionIdx = newFilters[ categoryIndex ].filterOptions.indexOf( option );
       if ( category.isMultiSelect ) {
-        newOptions = newFilters[ index ].filterOptions.map( opt => ( { ...opt } ) );
+        newOptions = newFilters[ categoryIndex ].filterOptions.map( opt => ( { ...opt } ) );
       } else {
-        newOptions = newFilters[ index ].filterOptions.map( opt => ( {
+        newOptions = newFilters[ categoryIndex ].filterOptions.map( ( opt, idx ) => ( {
           ...opt,
-          isSelected: false
-        } ) );
+          isSelected: ( idx === optionIdx ) ? !option.isSelected : false
+        } )
+        );
       }
-
-      newOptions[ optionIdx ].isSelected = !option.isSelected;
     }
-
-    newFilters[ index ] = {
-      ...newFilters[ index ],
+    newFilters[ categoryIndex ] = {
+      ...newFilters[ categoryIndex ],
       filterOptions: newOptions
     };
 
