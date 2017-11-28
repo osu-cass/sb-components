@@ -25,7 +25,7 @@ export class AdvancedFilterContainer extends React.Component<
     super(props);
 
     this.state = {
-      expanded: false
+      expanded: true
     };
   }
 
@@ -63,8 +63,8 @@ export class AdvancedFilterContainer extends React.Component<
 
   resetFilters() {
     const newFilters = this.props.filterOptions;
-    newFilters.forEach(cate => {
-      cate.filterOptions.map(opt => (opt.isSelected = false));
+    newFilters.forEach(cat => {
+      cat.filterOptions.map(opt => (opt.isSelected = false));
     });
     this.props.onClick(newFilters);
   }
