@@ -4,17 +4,12 @@ import "../Styles/pdf-cover-page.less";
 export interface CoverPageProps {
   subject: string;
   grade: string;
-  date?: {
-    getMonth: () => string;
-    getDate: () => string;
-    getFullYear: () => string;
-  };
+  dateString?: string;
 }
 
 export class CoverPage extends React.Component<CoverPageProps, {}> {
   render() {
-    // the data prop is for snapshot testing
-    const today = this.props.date ? this.props.date : new Date();
+    const today =  this.props.dateString || (new Date()).toLocaleDateString();
     return (
       <div className="page first-page">
         <div className="first-page-title">
@@ -26,7 +21,7 @@ export class CoverPage extends React.Component<CoverPageProps, {}> {
           <strong>{this.props.grade}</strong>
         </div>
         <div className="first-page-date">
-          {today.getMonth()}/{today.getDate()}/{today.getFullYear()}
+        {today}
         </div>
       </div>
     );

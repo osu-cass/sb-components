@@ -5,13 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CoverPage
-    date={
-      Object {
-        "getDate": [Function],
-        "getFullYear": [Function],
-        "getMonth": [Function],
-      }
-    }
+    dateString="01/12/2017"
     grade="grade 3"
     subject="math"
   />,
@@ -48,11 +42,7 @@ ShallowWrapper {
         <div
           className="first-page-date"
         >
-          01
-          /
-          12
-          /
-          2017
+          01/12/2017
         </div>,
       ],
       "className": "page first-page",
@@ -134,23 +124,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "01",
-            "/",
-            "12",
-            "/",
-            "2017",
-          ],
+          "children": "01/12/2017",
           "className": "first-page-date",
         },
         "ref": null,
-        "rendered": Array [
-          "01",
-          "/",
-          "12",
-          "/",
-          "2017",
-        ],
+        "rendered": "01/12/2017",
         "type": "div",
       },
     ],
@@ -183,11 +161,7 @@ ShallowWrapper {
           <div
             className="first-page-date"
           >
-            01
-            /
-            12
-            /
-            2017
+            01/12/2017
           </div>,
         ],
         "className": "page first-page",
@@ -269,23 +243,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "01",
-              "/",
-              "12",
-              "/",
-              "2017",
-            ],
+            "children": "01/12/2017",
             "className": "first-page-date",
           },
           "ref": null,
-          "rendered": Array [
-            "01",
-            "/",
-            "12",
-            "/",
-            "2017",
-          ],
+          "rendered": "01/12/2017",
           "type": "div",
         },
       ],
