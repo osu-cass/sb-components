@@ -38,18 +38,22 @@ export class AdvancedFilterContainer extends React.Component<
     let newFilters = [ ...this.props.filterOptions ];
     let newOptions: FilterOptionModel[] = [];
 
-    if(option){
+    if ( option ) {
       const optionIdx = newFilters[ categoryIndex ].filterOptions.indexOf( option );
-      if(category.isMultiSelect){
+      if ( category.isMultiSelect ) {
         newOptions = newFilters[ categoryIndex ].filterOptions.map( opt => ( { ...opt } ) );
-      }else{
-        newOptions = newFilters[ categoryIndex ].filterOptions.map( (opt, idx) => ( {
-               ...opt,
-               isSelected: (idx === optionIdx ) ? !option.isSelected : false
-            }) 
+      } else {
+        newOptions = newFilters[ categoryIndex ].filterOptions.map( ( opt, idx ) => ( {
+          ...opt,
+          isSelected: ( idx === optionIdx ) ? !option.isSelected : false
+        } )
         );
       }
     }
+    newFilters[ categoryIndex ] = {
+      ...newFilters[ categoryIndex ],
+      filterOptions: newOptions
+    };
 
     this.props.onClick( newFilters );
   }
