@@ -11,7 +11,10 @@ export interface AboutPTModalProps {
 export interface AboutPTModalState {
   showModal: boolean;
 }
-export class AboutPTModal extends React.Component<AboutPTModalProps, AboutPTModalState> {
+export class AboutPTModal extends React.Component<
+  AboutPTModalProps,
+  AboutPTModalState
+> {
   constructor(props: AboutPTModalProps) {
     super(props);
 
@@ -23,19 +26,18 @@ export class AboutPTModal extends React.Component<AboutPTModalProps, AboutPTModa
   renderAboutPt() {
     return (
       <p>
-        <b>Performance tasks</b> measure a student’s ability to
-      demonstrate critical-thinking and problem-solving skills.
-      Performance tasks challenge students to apply their knowledge
-      and skills to respond to complex real-world problems. They can
-      be best described as collections of questions and activities
-      that are coherently connected to a single theme or scenario.
-      These activities are meant to measure capacities such as depth
-      of understanding, writing and research skills, and complex
-      analysis, which cannot be adequately assessed with traditional
-      assessment questions. The performance tasks are taken on a
-      computer (but are not computer adaptive) and will take one to
-      two class periods to complete.
-    </p>
+        <b>Performance tasks</b> measure a student’s ability to demonstrate
+        critical-thinking and problem-solving skills. Performance tasks
+        challenge students to apply their knowledge and skills to respond to
+        complex real-world problems. They can be best described as collections
+        of questions and activities that are coherently connected to a single
+        theme or scenario. These activities are meant to measure capacities such
+        as depth of understanding, writing and research skills, and complex
+        analysis, which cannot be adequately assessed with traditional
+        assessment questions. The performance tasks are taken on a computer (but
+        are not computer adaptive) and will take one to two class periods to
+        complete.
+      </p>
     );
   }
 
@@ -43,9 +45,7 @@ export class AboutPTModal extends React.Component<AboutPTModalProps, AboutPTModa
     return (
       <p aria-labelledby={`${ptHeader}`}>
         <b>{ptHeader}</b>
-        <span
-          dangerouslySetInnerHTML={{ __html: this.props.description }}
-        />
+        <span dangerouslySetInnerHTML={{ __html: this.props.description }} />
       </p>
     );
   }
@@ -119,5 +119,4 @@ export class AboutPTModal extends React.Component<AboutPTModalProps, AboutPTModa
       </div>
     );
   }
-
 }

@@ -40,7 +40,7 @@ export class Collapsible extends React.Component<
         aria-expanded={!this.state.isCollapsed}
       >
         <a
-        role="button"
+          role="button"
           className="collapsible-label link-button"
           href="javascript:"
           onClick={() => this.toggleCollapsed()}

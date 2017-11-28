@@ -34,7 +34,8 @@ const basicFilterCategoryDropDown: BasicFilterCategoryModel = {
 };
 
 const basicFilterCategoryRadioBtn: BasicFilterCategoryModel = {
- ...basicFilterCategoryDropDown, type: OptionTypeModel.radioBtn
+  ...basicFilterCategoryDropDown,
+  type: OptionTypeModel.radioBtn
 };
 
 const selectedHandler = action("clicked filter");

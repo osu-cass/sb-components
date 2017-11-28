@@ -43,4 +43,3 @@ export interface RubricTableRowModel {
   rationale: string;
   sample: string;
 }
-

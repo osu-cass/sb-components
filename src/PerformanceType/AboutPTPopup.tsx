@@ -16,14 +16,16 @@ export interface AboutPTPopupModalState {
   showModal: boolean;
 }
 
-
 export class AboutPTPopupModal extends React.Component<
-  AboutPtPopupModalProps, AboutPTPopupModalState> {
-
+  AboutPtPopupModalProps,
+  AboutPTPopupModalState
+> {
   constructor(props: AboutPtPopupModalProps) {
     super(props);
     const skipCookie = this.props.skipCookie || false;
-    const cookieShouldShow = (skipCookie) ? false : shouldShowOnLoad(this.props.isPerformance);
+    const cookieShouldShow = skipCookie
+      ? false
+      : shouldShowOnLoad(this.props.isPerformance);
 
     this.state = {
       showModal: this.props.showModal || cookieShouldShow || false
@@ -43,7 +45,6 @@ export class AboutPTPopupModal extends React.Component<
 
     return (
       <div>
-
         <ReactModal
           isOpen={this.state.showModal}
           contentLabel={header}
@@ -68,7 +69,10 @@ export class AboutPTPopupModal extends React.Component<
               </button>
             </div>
             <div className="modal-body">
-              <p aria-labelledby="description" dangerouslySetInnerHTML={{ __html: this.props.description }}></p>
+              <p
+                aria-labelledby="description"
+                dangerouslySetInnerHTML={{ __html: this.props.description }}
+              />
             </div>
             <div className="modal-footer">
               <button
@@ -84,6 +88,4 @@ export class AboutPTPopupModal extends React.Component<
       </div>
     );
   }
-
-
 }
