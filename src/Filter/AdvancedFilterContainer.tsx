@@ -64,6 +64,7 @@ export class AdvancedFilterContainer extends React.Component<
 
   hasActiveFilterIndicators() {
     let active = false;
+
     this.props.filterOptions.forEach(fil => {
       if (!fil.disabled) {
         fil.filterOptions.forEach(opt => {
@@ -142,9 +143,7 @@ export class AdvancedFilterContainer extends React.Component<
             <h2 style={{ color: "#63666A" }}>
               <span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters
             </h2>
-            <span>
-              &nbsp;Click on an item to remove it from the list
-            </span>
+            <span>&nbsp;Click on an item to remove it from the list</span>
           </div>
           <div style={{ display: "flex", marginRight: "10px" }}>
             {this.hasActiveFilterIndicators() ? (
