@@ -1678,7 +1678,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 
 exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="basic-filter-container"
 >
   <div
     className="basic-filter"
@@ -1757,10 +1757,10 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       className="filter-button"
       onClick={[Function]}
     >
-      Hide
+      Show
        
       <span
-        className="fa fa-chevron-down"
+        className="fa fa-chevron-right"
       />
     </button>
   </div>
@@ -2121,7 +2121,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
   }
 >
   <div
-    className="basic-filter-container-expanded"
+    className="basic-filter-container"
   >
     <div
       className="basic-filter"
@@ -2200,10 +2200,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         className="filter-button"
         onClick={[Function]}
       >
-        Hide
+        Show
          
         <span
-          className="fa fa-chevron-down"
+          className="fa fa-chevron-right"
         />
       </button>
     </div>
