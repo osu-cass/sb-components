@@ -34,30 +34,22 @@ export class AdvancedFilterContainer extends React.Component<
   };
 
   onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
-    const categoryIndex = this.props.filterOptions.indexOf(category);
-    let newFilters = [...this.props.filterOptions];
-    let newOptions: FilterOptionModel[] = [];
+    const allPressed = option === undefined && category.displayAllButton;
+
+    let newFilters = this.props.filterOptions.slice();
+    const categoryIndex = newFilters.indexOf(category);
+    let options = newFilters[categoryIndex].filterOptions.slice();
+
+    if (allPressed || !category.isMultiSelect) {
+      options.forEach(o => o.isSelected = false);
+    }
 
     if (option) {
-      const optionIdx = newFilters[categoryIndex].filterOptions.indexOf(option);
-      if (category.isMultiSelect) {
-        newOptions = newFilters[categoryIndex].filterOptions.map(opt => ({
-          ...opt
-        }));
-      } else {
-        newOptions = newFilters[categoryIndex].filterOptions.map(
-          (opt, idx) => ({
-            ...opt,
-            isSelected: idx === optionIdx ? !option.isSelected : false
-          })
-        );
-      }
+      const optionIdx = options.indexOf(option);
+      options[optionIdx].isSelected = !option.isSelected;
     }
-    newFilters[categoryIndex] = {
-      ...newFilters[categoryIndex],
-      filterOptions: newOptions
-    };
 
+    newFilters[categoryIndex].filterOptions = options;
     this.props.onClick(newFilters);
   }
 
