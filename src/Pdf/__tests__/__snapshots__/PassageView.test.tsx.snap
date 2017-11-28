@@ -37,7 +37,7 @@ ShallowWrapper {
         <p
           className="question-title"
         >
-          Passage for 
+          Passage for
            
           items
            
@@ -65,7 +65,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Passage for ",
+            "Passage for",
             " ",
             "items",
             " ",
@@ -75,7 +75,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Passage for ",
+          "Passage for",
           " ",
           "items",
           " ",
@@ -113,7 +113,7 @@ ShallowWrapper {
           <p
             className="question-title"
           >
-            Passage for 
+            Passage for
              
             items
              
@@ -141,7 +141,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Passage for ",
+              "Passage for",
               " ",
               "items",
               " ",
@@ -151,7 +151,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Passage for ",
+            "Passage for",
             " ",
             "items",
             " ",

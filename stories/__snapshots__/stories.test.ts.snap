@@ -3555,7 +3555,7 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
       <p
         className="question-title"
       >
-        Passage for 
+        Passage for
          
         items
          
@@ -3792,7 +3792,7 @@ exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
       <p
         className="question-title"
       >
-        Passage for 
+        Passage for
          
         item
          
