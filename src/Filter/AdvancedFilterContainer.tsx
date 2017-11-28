@@ -11,6 +11,7 @@ import {
 export interface AdvancedFilterContainerProps {
   filterOptions: AdvancedFilterCategoryModel[];
   onClick: (selected: AdvancedFilterCategoryModel[]) => void;
+  isNested?: boolean;
 }
 
 export interface AdvancedFilterContainerState {
@@ -25,7 +26,7 @@ export class AdvancedFilterContainer extends React.Component<
     super(props);
 
     this.state = {
-      expanded: false
+      expanded: this.props.isNested ? true : false
     };
   }
 
@@ -34,43 +35,36 @@ export class AdvancedFilterContainer extends React.Component<
   };
 
   onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
-    const categoryIndex = this.props.filterOptions.indexOf(category);
-    let newFilters = [...this.props.filterOptions];
-    let newOptions: FilterOptionModel[] = [];
+    const allPressed = option === undefined && category.displayAllButton;
+
+    let newFilters = this.props.filterOptions.slice();
+    const categoryIndex = newFilters.indexOf(category);
+    let options = newFilters[categoryIndex].filterOptions.slice();
+
+    if (allPressed || !category.isMultiSelect) {
+      options.forEach(o => (o.isSelected = false));
+    }
 
     if (option) {
-      const optionIdx = newFilters[categoryIndex].filterOptions.indexOf(option);
-      if (category.isMultiSelect) {
-        newOptions = newFilters[categoryIndex].filterOptions.map(opt => ({
-          ...opt
-        }));
-      } else {
-        newOptions = newFilters[categoryIndex].filterOptions.map(
-          (opt, idx) => ({
-            ...opt,
-            isSelected: idx === optionIdx ? !option.isSelected : false
-          })
-        );
-      }
+      const optionIdx = options.indexOf(option);
+      options[optionIdx].isSelected = !option.isSelected;
     }
-    newFilters[categoryIndex] = {
-      ...newFilters[categoryIndex],
-      filterOptions: newOptions
-    };
 
+    newFilters[categoryIndex].filterOptions = options;
     this.props.onClick(newFilters);
   }
 
   resetFilters() {
     const newFilters = this.props.filterOptions;
-    newFilters.forEach(cate => {
-      cate.filterOptions.map(opt => (opt.isSelected = false));
+    newFilters.forEach(cat => {
+      cat.filterOptions.map(opt => (opt.isSelected = false));
     });
     this.props.onClick(newFilters);
   }
 
   hasActiveFilterIndicators() {
     let active = false;
+
     this.props.filterOptions.forEach(fil => {
       if (!fil.disabled) {
         fil.filterOptions.forEach(opt => {
@@ -149,9 +143,7 @@ export class AdvancedFilterContainer extends React.Component<
             <h2 style={{ color: "#63666A" }}>
               <span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters
             </h2>
-            <span style={{ marginTop: "6px" }}>
-              &nbsp;Click on an item to remove it from the list
-            </span>
+            <span>&nbsp;Click on an item to remove it from the list</span>
           </div>
           <div style={{ display: "flex", marginRight: "10px" }}>
             {this.hasActiveFilterIndicators() ? (
