@@ -232,6 +232,6 @@ export class ItemSearch {
       );
     }
 
-    return results; ///TODO: add sort
+    return results;
   }
 }

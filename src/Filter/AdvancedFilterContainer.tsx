@@ -33,25 +33,28 @@ export class AdvancedFilterContainer extends React.Component<
     this.setState({ expanded: !this.state.expanded });
   };
 
-  onSelect ( category: AdvancedFilterCategoryModel, option?: FilterOptionModel ) {
-    const categoryIndex = this.props.filterOptions.indexOf( category );
-    let newFilters = [ ...this.props.filterOptions ];
+  onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
+    const categoryIndex = this.props.filterOptions.indexOf(category);
+    let newFilters = [...this.props.filterOptions];
     let newOptions: FilterOptionModel[] = [];
 
-    if ( option ) {
-      const optionIdx = newFilters[ categoryIndex ].filterOptions.indexOf( option );
-      if ( category.isMultiSelect ) {
-        newOptions = newFilters[ categoryIndex ].filterOptions.map( opt => ( { ...opt } ) );
+    if (option) {
+      const optionIdx = newFilters[categoryIndex].filterOptions.indexOf(option);
+      if (category.isMultiSelect) {
+        newOptions = newFilters[categoryIndex].filterOptions.map(opt => ({
+          ...opt
+        }));
       } else {
-        newOptions = newFilters[ categoryIndex ].filterOptions.map( ( opt, idx ) => ( {
-          ...opt,
-          isSelected: ( idx === optionIdx ) ? !option.isSelected : false
-        } )
+        newOptions = newFilters[categoryIndex].filterOptions.map(
+          (opt, idx) => ({
+            ...opt,
+            isSelected: idx === optionIdx ? !option.isSelected : false
+          })
         );
       }
     }
-    newFilters[ categoryIndex ] = {
-      ...newFilters[ categoryIndex ],
+    newFilters[categoryIndex] = {
+      ...newFilters[categoryIndex],
       filterOptions: newOptions
     };
 
