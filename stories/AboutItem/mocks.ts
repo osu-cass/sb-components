@@ -74,7 +74,7 @@ export const AboutItemMockModel: AboutItemModel = {
     depthOfKnowledge: "3",
     targetDescription: "Solve equations",
     commonCoreStandardsDescription: "A-123-BC",
-    rubrics: [],
+    rubrics: rubricsWithSamples,
     itemCardViewModel: completeItemCard,
     educationalDifficulty: "5",
     evidenceStatement: "This is a sample evidence statement",
