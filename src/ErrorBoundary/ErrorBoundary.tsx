@@ -26,11 +26,8 @@ export class ErrorBoundary extends React.Component<
   }
 
   render() {
-    let content = this.props.children;
-    if (this.state.hasError) {
-      // You can render any custom fallback UI
-      content = this.props.fallbackUI;
-    }
-    return content;
+    return this.state.hasError
+      ? this.props.fallbackUI
+      : this.props.children as JSX.Element;
   }
 }
