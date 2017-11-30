@@ -55,16 +55,15 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   resetFilters() {
-    const newFilters = this.props.filterOptions;
-    newFilters.forEach(cat => {
-      cat.filterOptions.map(opt => (opt.isSelected = false));
-    });
+    const newFilters = this.props.filterOptions.slice();
+    newFilters.forEach(cat =>
+      cat.filterOptions.forEach(fo => (fo.isSelected = false))
+    );
     this.props.onClick(newFilters);
   }
 
   hasActiveFilterIndicators() {
     let active = false;
-
     this.props.filterOptions.forEach(fil => {
       if (!fil.disabled) {
         fil.filterOptions.forEach(opt => {

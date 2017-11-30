@@ -2211,7 +2211,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
 </div>
 `;
 
-exports[`Storyshots Item Page Container just the container 1`] = `<div />`;
+exports[`Storyshots Item Page Container just the container 1`] = `null`;
 
 exports[`Storyshots Item Page Item Page returns error 1`] = `
 <div>

@@ -121,6 +121,8 @@ export {
   FilterSearchModel,
   FilterSearchTargetModel
 } from "./ItemSearch/ItemSearchModels";
+export { SearchUrl } from "./ItemSearch/SearchUrl";
+
 //
 // Item Table
 //
