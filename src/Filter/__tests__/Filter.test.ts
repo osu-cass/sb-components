@@ -104,25 +104,6 @@ describe("Filter.getSelectedGrade", () => {
   });
 });
 
-describe("Filter.getSelectedFlag", () => {
-  it("flag False", () => {
-    const categories = [Mocks.performanceFalseCategory];
-    const result = Filter.getSelectedFlag(FilterType.Performance, categories);
-    expect(result).toEqual(false);
-  });
-
-  it("flag True", () => {
-    const categories = [Mocks.performanceTruthCategory];
-    const result = Filter.getSelectedFlag(FilterType.Performance, categories);
-    expect(result).toEqual(true);
-  });
-
-  it("empty", () => {
-    const categories = [Mocks.performanceEmptyCategory];
-    const result = Filter.getSelectedFlag(FilterType.Performance, categories);
-    expect(result).toBeUndefined();
-  });
-});
 describe("Filter.getSelectedTargets", () => {
   it("Selections", () => {
     const categories = [Mocks.targetSelectionsCategory];

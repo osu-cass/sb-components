@@ -19,7 +19,7 @@ export enum FilterType {
   Target = "Target",
   CAT = "CAT",
   InteractionType = "InteractionType",
-  PerformanceCAT = "PerformanceCAT"
+  TechnologyType = "TechnologyType" //Contains Performance and CAT
 }
 
 export interface FilterOptionModel {

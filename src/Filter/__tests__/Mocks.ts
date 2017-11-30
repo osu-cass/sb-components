@@ -105,29 +105,29 @@ export const gradeEmptyCategory = {
   filterOptions: gradeOptions
 };
 
-export const performanceFalseOptions: FilterOptionModel[] = [
+export const performanceCatOptions: FilterOptionModel[] = [
   {
-    label: "Yes",
-    key: "true",
+    label: "Performance",
+    key: FilterType.Performance,
     isSelected: false,
     filterType: FilterType.Performance
   },
   {
-    label: "No",
-    key: "false",
+    label: "CAT",
+    key: FilterType.CAT,
     isSelected: true,
-    filterType: FilterType.Performance
+    filterType: FilterType.CAT
   }
 ];
 
 export const performanceTruthOptions: FilterOptionModel[] = [
-  { ...performanceFalseOptions[0], isSelected: true }
+  { ...performanceCatOptions[0], isSelected: true }
 ];
 export const performanceFalseCategory: FilterCategoryModel = {
   disabled: false,
   label: "Performance",
-  code: FilterType.Performance,
-  filterOptions: performanceFalseOptions
+  code: FilterType.TechnologyType,
+  filterOptions: performanceCatOptions
 };
 
 export const performanceTruthCategory: FilterCategoryModel = {
@@ -180,14 +180,12 @@ export const subjects: SubjectModel[] = [
     claimCodes: ["MATH1", "MATH2"],
     interactionTypeCodes: ["ITM1", "ITM2"],
     code: "MATH",
-    filterType: FilterType.Subject,
     label: "MATH"
   },
   {
     claimCodes: ["ELA1", "ELA2"],
     interactionTypeCodes: ["ITE1", "ITE2"],
     code: "ELA",
-    filterType: FilterType.Subject,
     label: "ELA"
   }
 ];
@@ -196,13 +194,11 @@ export const claims: ClaimModel[] = [
   {
     targetCodes: [11, 12, 13, 14],
     code: "MATH1",
-    filterType: FilterType.Claim,
     label: "MATH1"
   },
   {
     targetCodes: [21, 22, 23, 24],
     code: "ELA1",
-    filterType: FilterType.Claim,
     label: "ELA1"
   }
 ];
@@ -210,18 +206,15 @@ export const claims: ClaimModel[] = [
 export const targets: TargetModel[] = [
   {
     name: "ELA1",
-    nameHash: 21,
-    filterType: FilterType.Target
+    nameHash: 21
   },
   {
     name: "MATH1",
-    nameHash: 11,
-    filterType: FilterType.Target
+    nameHash: 11
   },
   {
     name: "MATH2",
-    nameHash: 12,
-    filterType: FilterType.Target
+    nameHash: 12
   }
 ];
 

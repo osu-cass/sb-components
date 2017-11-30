@@ -67,21 +67,6 @@ export class Filter {
   }
 
   /**
-   * Evaluates filtered categories for the given filter type to bool or undefined
-   * @param  {FilterType} key
-   * @param  {FilterCategoryModel[]} filterModels
-   */
-  public static getSelectedFlag(
-    key: FilterType,
-    filterModels: FilterCategoryModel[]
-  ): boolean | undefined {
-    const selectedCodes = this.getSelectedCodes(key, filterModels);
-    return selectedCodes && selectedCodes.length > 0
-      ? selectedCodes[0] === "true"
-      : undefined;
-  }
-
-  /**
    * Gets selected target hash values
    * @param  {FilterCategoryModel[]} filterModels
    */
@@ -281,7 +266,8 @@ export class Filter {
 
       if (targetFilterIdx !== -1 && model.targets && filteredClaims) {
         const filteredTargets =
-          this.getCurrentTargets(model.targets, searchAPI, filteredClaims!) || [];
+          this.getCurrentTargets(model.targets, searchAPI, filteredClaims!) ||
+          [];
         const filterOptions = ItemSearch.searchOptionToFilterTarget(
           filteredTargets,
           FilterType.InteractionType,

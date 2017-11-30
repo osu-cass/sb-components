@@ -31,11 +31,18 @@ export class ItemSearch {
       FilterType.InteractionType,
       filterModels
     );
-    const performanceOnly = Filter.getSelectedFlag(
-      FilterType.Performance,
+
+    const techTypes = Filter.getSelectedCodes(
+      FilterType.TechnologyType,
       filterModels
     );
-    const catOnly = Filter.getSelectedFlag(FilterType.CAT, filterModels);
+    const catOnly = techTypes
+      ? techTypes.some(t => t === FilterType.CAT)
+      : undefined;
+    const performanceOnly = techTypes
+      ? techTypes.some(t => t === FilterType.Performance)
+      : undefined;
+
     const targets = Filter.getSelectedTargets(filterModels);
 
     const searchModel: SearchAPIParamsModel = {
@@ -69,16 +76,17 @@ export class ItemSearch {
   public static searchOptionToFilterGrade(
     options: GradeLevels[],
     filterType: FilterType,
-    selectedCodes?: string[]
+    selectedCode?: GradeLevels
   ): FilterOptionModel[] {
     return options.map(o => {
       const gradeString = GradeLevel.gradeLevelToString(o) || "";
+      const selected = selectedCode
+        ? GradeLevel.gradeLevelContains(o, selectedCode)
+        : false;
       return {
         label: gradeString,
         key: gradeString,
-        isSelected: (selectedCodes || []).some(
-          s => GradeLevel.stringToGradeLevel(s) === o
-        ),
+        isSelected: selected,
         filterType: filterType
       };
     });
@@ -100,29 +108,52 @@ export class ItemSearch {
   }
 
   public static getFilterOptionModel(
-    filter: SearchFilterModelTypes
+    filter: SearchFilterModelTypes,
+    searchApi: SearchAPIParamsModel = {}
   ): FilterOptionModel[] {
     let options: FilterOptionModel[] = [];
 
     switch (filter.code) {
       case FilterType.Claim:
+        options = this.searchOptionFilterString(
+          filter.filterOptions,
+          filter.code,
+          searchApi.claims
+        );
+        break;
       case FilterType.InteractionType:
+        options = this.searchOptionFilterString(
+          filter.filterOptions,
+          filter.code,
+          searchApi.interactionTypes
+        );
+        break;
       case FilterType.Subject:
         options = this.searchOptionFilterString(
           filter.filterOptions,
-          filter.code
+          filter.code,
+          searchApi.subjects
         );
         break;
       case FilterType.Grade:
         options = this.searchOptionToFilterGrade(
           filter.filterOptions,
-          filter.code
+          filter.code,
+          searchApi.gradeLevels
         );
         break;
       case FilterType.Target:
         options = this.searchOptionToFilterTarget(
           filter.filterOptions,
-          filter.code
+          filter.code,
+          searchApi.targets
+        );
+        break;
+      case FilterType.TechnologyType:
+        options = this.searchOptionFilterString(
+          filter.filterOptions,
+          filter.code,
+          this.getTechnologyTypeCodes(searchApi)
         );
         break;
     }
@@ -130,10 +161,22 @@ export class ItemSearch {
     return options;
   }
 
+  public static getTechnologyTypeCodes(search: SearchAPIParamsModel): string[] {
+    let codes: string[] = [];
+    if (search.catOnly !== undefined) {
+      codes.push(FilterType.CAT);
+    }
+    if (search.performanceOnly !== undefined) {
+      codes.push(FilterType.Performance);
+    }
+    return codes;
+  }
+
   public static filterSearchToCategory(
-    filter: SearchFilterModelTypes
+    filter: SearchFilterModelTypes,
+    searchApi: SearchAPIParamsModel = {}
   ): FilterCategoryModel {
-    const options = this.getFilterOptionModel(filter);
+    const options = this.getFilterOptionModel(filter, searchApi);
 
     const category: FilterCategoryModel = {
       ...filter,
