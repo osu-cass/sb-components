@@ -9,10 +9,12 @@ import "../Styles/pdf-item-page.less";
 
 export interface QuestionViewProps {
   question: QuestionModel;
+  displayScoreInfo: boolean;
 }
 
 export class QuestionView extends React.Component<QuestionViewProps, {}> {
   renderRubric(data?: AboutItemModel) {
+    if (!this.props.displayScoreInfo) return null;
     let rubric: JSX.Element | undefined = undefined;
     if (data && data.sampleItemScoring && data.sampleItemScoring.rubrics) {
       const entries = data.sampleItemScoring.rubrics
@@ -63,7 +65,7 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
       ) : null;
 
     const key =
-      data && data.sampleItemScoring && data.sampleItemScoring.answerKey ? (
+      data && data.sampleItemScoring && data.sampleItemScoring.answerKey && this.props.displayScoreInfo ? (
         <div>
           <b>Key:</b> {data.sampleItemScoring.answerKey}
         </div>

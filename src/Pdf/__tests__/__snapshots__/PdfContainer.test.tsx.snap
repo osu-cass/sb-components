@@ -121,6 +121,7 @@ ShallowWrapper {
             subject="math"
           />
           <ItemViewContainer
+            displayScoreInfo={undefined}
             itemData={
               Object {
                 "passage": null,
@@ -286,6 +287,7 @@ ShallowWrapper {
             />,
             Array [
               <ItemViewContainer
+                displayScoreInfo={undefined}
                 itemData={
                   Object {
                     "passage": null,
@@ -381,6 +383,7 @@ ShallowWrapper {
             "key": "12334",
             "nodeType": "class",
             "props": Object {
+              "displayScoreInfo": undefined,
               "itemData": Object {
                 "passage": null,
                 "questions": Array [
@@ -492,6 +495,7 @@ ShallowWrapper {
               subject="math"
             />
             <ItemViewContainer
+              displayScoreInfo={undefined}
               itemData={
                 Object {
                   "passage": null,
@@ -657,6 +661,7 @@ ShallowWrapper {
               />,
               Array [
                 <ItemViewContainer
+                  displayScoreInfo={undefined}
                   itemData={
                     Object {
                       "passage": null,
@@ -752,6 +757,7 @@ ShallowWrapper {
               "key": "12334",
               "nodeType": "class",
               "props": Object {
+                "displayScoreInfo": undefined,
                 "itemData": Object {
                   "passage": null,
                   "questions": Array [

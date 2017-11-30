@@ -3761,6 +3761,114 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
 </div>
 `;
 
+exports[`Storyshots PDF ItemViewContainer no score info 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Question #
+        1
+      </p>
+      <table
+        className="item-data-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              187
+              -
+              3434
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              domain
+            </td>
+            <td>
+              dfas
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              AB-123
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="centered-table-container"
+      >
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Evidence Statement
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                This is a sample evidence statement
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Solve for x</b><p><i>x</i> + 5 = 10</p>",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
 <div
   style={

@@ -94,6 +94,7 @@ ShallowWrapper {
         null,
         Array [
           <QuestionView
+            displayScoreInfo={undefined}
             question={
               Object {
                 "data": Object {
@@ -174,6 +175,7 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "class",
         "props": Object {
+          "displayScoreInfo": undefined,
           "question": Object {
             "data": Object {
               "associatedItems": "string",
@@ -257,6 +259,7 @@ ShallowWrapper {
           null,
           Array [
             <QuestionView
+              displayScoreInfo={undefined}
               question={
                 Object {
                   "data": Object {
@@ -337,6 +340,7 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "class",
           "props": Object {
+            "displayScoreInfo": undefined,
             "question": Object {
               "data": Object {
                 "associatedItems": "string",

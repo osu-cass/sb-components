@@ -11,12 +11,16 @@ export interface PdfContainerProps {
   ivsBaseUrl: string;
   cssUrl: string;
   displayTitlePage: boolean;
+  displayScoreInfo: boolean;
 }
 
 export class PdfContainer extends React.Component<PdfContainerProps, {}> {
   render() {
     const itemPages = this.props.items.map(item => (
-      <ItemViewContainer itemData={item} key={item.questions[0].id} />
+      <ItemViewContainer 
+        itemData={item} 
+        key={item.questions[0].id} 
+        displayScoreInfo={this.props.displayScoreInfo} />
     ));
 
     return (
