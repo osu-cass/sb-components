@@ -6,10 +6,10 @@ import { RouterDecorator } from "../RouterDecorator";
 import { completeItemCard } from "./mocks";
 import { ItemCardCondensed, ItemCard } from "../../src";
 
-// // storiesOf("Item Card", module)
-// //   .addDecorator(RouterDecorator)
-// //   .addDecorator(CenterDecorator)
-// //   .add("Item Card", () => <ItemCard {...completeItemCard} />)
-// //   .add("Item Card Condensed", () => (
-// //     <ItemCardCondensed {...completeItemCard} />
-// //   ));
+storiesOf("Item Card", module)
+  .addDecorator(RouterDecorator)
+  .addDecorator(CenterDecorator)
+  .add("Item Card", () => <ItemCard {...completeItemCard} />)
+  .add("Item Card Condensed", () => (
+    <ItemCardCondensed {...completeItemCard} />
+  ));

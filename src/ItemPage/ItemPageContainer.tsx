@@ -238,7 +238,7 @@ export class ItemPageContainer extends React.Component<
 
     if (aboutThisItem && itemPage && itemDetails && itemAccessibility) {
       return (
-        <div className="item-page">
+        <div className="container item-page">
           <ItemPage
             {...itemPage}
             aboutThisItemVM={aboutThisItem}

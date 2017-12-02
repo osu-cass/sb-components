@@ -75,9 +75,9 @@ export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 //
 // ItemCard Components, Models, and Actions
 //
-export { ItemCard } from "./ItemCard/ItemCard";
-export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
-export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
+export { ItemCard, ItemCardProps } from "./ItemCard/ItemCard";
+export { ItemCardCondensed, ItemCardCondensedProps } from "./ItemCard/ItemCardCondensed";
+export { ItemCardModel } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 

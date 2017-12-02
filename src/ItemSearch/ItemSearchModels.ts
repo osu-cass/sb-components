@@ -16,7 +16,7 @@ export type SearchFilterStringTypes =
 export type SearchFilterTypes =
   | SearchFilterStringTypes
   | TargetModel
-  | GradeLevel;
+  | GradeLevels;
 export type SearchFilterModelTypes =
   | FilterSearchGradeLevelModel
   | FilterSearchStringModel<SearchFilterStringTypes>
@@ -79,7 +79,7 @@ export interface FilterSearchModel {
   filterOptions: SearchFilterTypes[];
 }
 
-export interface FilterSearchStringModel<T> extends FilterSearchModel {
+export interface FilterSearchStringModel<T extends SearchFilterStringTypes> extends FilterSearchModel {
   filterOptions: T[];
   code:
     | FilterType.Claim

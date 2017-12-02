@@ -304,7 +304,7 @@ exports[`Storyshots About PT Nothing 1`] = `
 
 exports[`Storyshots About Test Items bad item type 1`] = `
 <div
-  className="about-items"
+  className="container about-items"
 >
   <div
     className="aboutitems-parents"
@@ -339,7 +339,7 @@ exports[`Storyshots About Test Items bad item type 1`] = `
 
 exports[`Storyshots About Test Items default 1`] = `
 <div
-  className="about-items"
+  className="container about-items"
 >
   <div
     className="aboutitems-parents"
@@ -374,7 +374,7 @@ exports[`Storyshots About Test Items default 1`] = `
 
 exports[`Storyshots About Test Items default, param 1`] = `
 <div
-  className="about-items"
+  className="container about-items"
 >
   <div
     className="aboutitems-parents"
@@ -409,7 +409,7 @@ exports[`Storyshots About Test Items default, param 1`] = `
 
 exports[`Storyshots About Test Items loading, param 1`] = `
 <div
-  className="about-items"
+  className="container about-items"
 >
   <div
     className="aboutitems-parents"
@@ -444,7 +444,7 @@ exports[`Storyshots About Test Items loading, param 1`] = `
 
 exports[`Storyshots About Test Items reject, param 1`] = `
 <div
-  className="about-items"
+  className="container about-items"
 >
   <div
     className="aboutitems-parents"
@@ -1022,32 +1022,16 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
       <div
         className="filter-advanced-filter-title"
       >
-        <h2
-          style={
-            Object {
-              "color": "#63666A",
-            }
-          }
-        >
+        <h3>
           <span
-            className="fa fa-tasks fa-lg"
+            className="fa fa-tasks"
           />
            Advanced Filters
-        </h2>
-        <span>
-           Click on an item to remove it from the list
-        </span>
+        </h3>
       </div>
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "marginRight": "10px",
-          }
-        }
-      >
+      <div>
         <button
-          className="filter-button"
+          className="filter-expand-btn"
           onClick={[Function]}
         >
           Expand 
@@ -1058,12 +1042,54 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
       </div>
     </div>
     <div
-      className="filter-header"
+      className="filter-status"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter Container page title 1`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <h1>
+      <span
+        className="filter-page-title"
+      >
+        Search
+      </span>
+    </h1>
+    <div
+      className="filter-advanced-filter-header"
     >
       <div
-        className="filter-status"
-      />
+        className="filter-advanced-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div>
+        <button
+          className="filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
+    <div
+      className="filter-status"
+    />
   </div>
 </div>
 `;
@@ -1083,19 +1109,19 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
   }
 >
   <div
-    className="filter-selection"
+    className="filter-selection filter-disabled"
     id="disabled-filter"
   >
     <label>
       <span
-        info-label="true"
-      >
-        Disabled
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Disabled
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1109,12 +1135,14 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
       >
         <button
           className=" filter-button"
+          disabled={true}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className=" filter-button"
+          disabled={true}
           onClick={[Function]}
         >
           Mathematics
@@ -1140,19 +1168,19 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
   }
 >
   <div
-    className="filter-selection"
+    className="filter-selection filter-disabled"
     id="disabled multi-filter"
   >
     <label>
       <span
-        info-label="true"
-      >
-        Disabled Multi
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Disabled Multi
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1166,12 +1194,14 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
       >
         <button
           className=" filter-button"
+          disabled={true}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className=" filter-button"
+          disabled={true}
           onClick={[Function]}
         >
           Mathematics
@@ -1202,14 +1232,14 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
   >
     <label>
       <span
-        info-label="true"
-      >
-        Multi All Disabled
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Multi All Disabled
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1233,12 +1263,14 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       >
         <button
           className=" filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className=" filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           Mathematics
@@ -1264,19 +1296,19 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
   }
 >
   <div
-    className="filter-selection"
+    className="filter-selection filter-disabled"
     id="disabled-filter"
   >
     <label>
       <span
-        info-label="true"
-      >
-        Disabled
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Disabled
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1290,12 +1322,14 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
       >
         <button
           className="selected-button filter-button"
+          disabled={true}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className="selected-button filter-button"
+          disabled={true}
           onClick={[Function]}
         >
           Mathematics
@@ -1326,14 +1360,14 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
   >
     <label>
       <span
-        info-label="true"
-      >
-        Multi
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Multi
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1347,12 +1381,14 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       >
         <button
           className="selected-button filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className="selected-button filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           Mathematics
@@ -1383,14 +1419,14 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
   >
     <label>
       <span
-        info-label="true"
-      >
-        Multi All
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Multi All
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1414,12 +1450,14 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       >
         <button
           className=" filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className=" filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           Mathematics
@@ -1450,14 +1488,14 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
   >
     <label>
       <span
-        info-label="true"
-      >
-        Multi All
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Multi All
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1481,12 +1519,14 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       >
         <button
           className="selected-button filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className="selected-button filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           Mathematics
@@ -1517,14 +1557,14 @@ exports[`Storyshots Advanced Filter no options 1`] = `
   >
     <label>
       <span
-        info-label="true"
-      >
-        Subjects
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Subjects
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1565,14 +1605,14 @@ exports[`Storyshots Advanced Filter single select 1`] = `
   >
     <label>
       <span
-        info-label="true"
-      >
-        Subjects
-      </span>
-      <span
         data-tooltip="Subject Help"
         data-tooltip-position="top"
       >
+        <span
+          info-label="true"
+        >
+          Subjects
+        </span>
         <span
           className="fa fa-info-circle fa-sm"
         />
@@ -1586,12 +1626,14 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       >
         <button
           className=" filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
           className=" filter-button"
+          disabled={false}
           onClick={[Function]}
         >
           Mathematics
@@ -2206,6 +2248,223 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           className="fa fa-chevron-right"
         />
       </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Card Item Card 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="card card-block ela"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="card-contents"
+    >
+      <h4
+        className="card-title"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+      >
+        ELA Grade 4
+      </h4>
+      <p
+        className="card-text subject"
+      >
+        <span
+          className="card-text-label"
+        >
+          Subject:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          ELA
+        </span>
+      </p>
+      <p
+        className="card-text grade"
+      >
+        <span
+          className="card-text-label"
+        >
+          Grade:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Grade 4
+        </span>
+      </p>
+      <p
+        className="card-text claim"
+      >
+        <span
+          className="card-text-label"
+        >
+          Claim:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Claim
+        </span>
+      </p>
+      <p
+        className="card-text target"
+      >
+        <span
+          className="card-text-label"
+        >
+          Target:
+        </span>
+        <span
+          className="card-text-value"
+        >
+          Short Name
+        </span>
+      </p>
+      <p
+        className="card-text interaction-type"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Type:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Item Type
+        </span>
+      </p>
+      <p
+        className="card-text item-id"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Id:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          3434
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Card Item Card Condensed 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="card card-block ela condensed"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="card-contents"
+    >
+      <h4
+        className="card-title"
+      >
+        ELA
+      </h4>
+      <p
+        className="card-text claim"
+      >
+        <span
+          className="card-text-label"
+        >
+          Claim:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Claim
+        </span>
+      </p>
+      <p
+        className="card-text target"
+      >
+        <span
+          className="card-text-label"
+        >
+          Target:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Short Name
+        </span>
+      </p>
+      <p
+        className="card-text interaction-type"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Type:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Item Type
+        </span>
+      </p>
+      <p
+        className="card-text item-id"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Id:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          3434
+        </span>
+      </p>
     </div>
   </div>
 </div>
@@ -3251,15 +3510,23 @@ exports[`Storyshots Layout name links and body 1`] = `
     </nav>
   </header>
   <main
-    className="container site-content"
+    className="site-content"
     id="main"
     role="main"
   >
     <div
-      className="test-container"
+      className="container test-container"
     >
       <div
-        className="container"
+        style={
+          Object {
+            "backgroundColor": "lightgrey",
+            "height": "100%",
+            "minHeight": "800px",
+            "minWidth": "1200px",
+            "width": "100%",
+          }
+        }
       >
         <p>
           Test Body...
@@ -3349,7 +3616,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
     </nav>
   </header>
   <main
-    className="container site-content"
+    className="site-content"
     id="main"
     role="main"
   />
