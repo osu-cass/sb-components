@@ -16,20 +16,20 @@
     "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
-    "test:prod": "npm run test -- --coverage --no-cache",    
+    "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "npm run clean && start-storybook -p 6006",
     "build-storybook": "npm run clean && build-storybook",
     "storybook-publish": "build-storybook -o storybuild",
     "build": "npm run clean && npm run build-storybook && npm run webpack-dev",
     "clean": "rm -rf ./lib ?",
-    "prettier": "prettier --write  src/**/*.ts* stories/**/*.ts*",
+    "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
     "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "lint-staged": {
-    "{src,stories}/**/*.ts*": [
-      "prettier --write ",
+    "{src,stories}/**/*{.tsx,.ts}": [
+      "prettier --write",
       "git add"
     ]
   },
@@ -76,6 +76,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "font-awesome": "~4.7.0",
+    "husky": "^0.14.3",
     "identity-obj-proxy": "~3.0.0",
     "jest": "~21.2.1",
     "jest-cli": "~21.2.1",
@@ -84,6 +85,7 @@
     "jsdom-global": "^3.0.2",
     "less": "~2.7.3",
     "less-loader": "~4.0.5",
+    "lint-staged": "^6.0.0",
     "postcss-loader": "~2.0.8",
     "prettier": "~1.8.2",
     "react": "~16.0.0",

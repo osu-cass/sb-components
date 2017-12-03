@@ -1,6 +1,7 @@
 [![npm version](https://badge.fury.io/js/%40osu-cass%2Fsb-components.svg)](https://badge.fury.io/js/%40osu-cass%2Fsb-components)
 [![Build Status](https://travis-ci.org/osu-cass/sb-components.svg?branch=master)](https://travis-ci.org/osu-cass/sb-components)
 [![Documentation Status](https://readthedocs.org/projects/sb-components/badge/?version=latest)](http://sb-components.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/osu-cass/sb-components/badge.svg?branch=feat%2Ftslint-config)](https://coveralls.io/github/osu-cass/sb-components?branch=feat%2Ftslint-config)
 
 # Smarter Balanced Components
 
