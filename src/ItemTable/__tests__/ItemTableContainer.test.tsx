@@ -1,70 +1,89 @@
 import "jsdom-global/register";
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import * as TestUtils from 'react-dom/test-utils';
-import { shallow, mount, render } from 'enzyme';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import * as TestUtils from "react-dom/test-utils";
+import { shallow, mount, render } from "enzyme";
 
-import { GradeLevels, RubricModel, AboutItemModel, Resource, ItemCardModel } from '../../index';
-import { ItemTableContainerProps, ItemTableContainer } from '../ItemTableContainer';
+import {
+  GradeLevels,
+  RubricModel,
+  AboutItemModel,
+  Resource,
+  ItemCardModel
+} from "../../index";
+import {
+  ItemTableContainerProps,
+  ItemTableContainer
+} from "../ItemTableContainer";
 
 describe("ItemPageTable", () => {
-    const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"]
+  const tabs = [
+    "item",
+    "claimAndTarget",
+    "subject",
+    "grade",
+    "interactionType"
+  ];
 
-    const itemCards: ItemCardModel[] = [{
-        bankKey: 1,
-        itemKey: 3,
-        title: "",
-        grade: GradeLevels.All,
-        gradeLabel: "",
-        subjectCode: "",
-        subjectLabel: "",
-        claimCode: "",
-        claimLabel: "",
-        targetShortName: "",
-        interactionTypeCode: "",
-        interactionTypeLabel: "",
-        isPerformanceItem: true,
-        targetHash: 3123
-    }]
-
-    const rubrics: RubricModel[] = []
-
-    const content: AboutItemModel = {
-        rubrics,
-        itemCardViewModel: itemCards[0],
-        depthOfKnowledge: "depthOfKnowledge",
-        targetDescription: "targetDescription",
-        commonCoreStandardsDescription: "commonCoreStandardsDescription",
-        educationalDifficulty: "educationalDifficulty",
-        evidenceStatement: "evidenceStatement"
+  const itemCards: ItemCardModel[] = [
+    {
+      bankKey: 1,
+      itemKey: 3,
+      title: "",
+      grade: GradeLevels.All,
+      gradeLabel: "",
+      subjectCode: "",
+      subjectLabel: "",
+      claimCode: "",
+      claimLabel: "",
+      targetShortName: "",
+      interactionTypeCode: "",
+      interactionTypeLabel: "",
+      isPerformanceItem: true,
+      targetHash: 3123,
+      targetId: ""
     }
+  ];
 
-    const item: Resource<AboutItemModel>= {
-        kind: "success",
-        content
-    }
+  const rubrics: RubricModel[] = [];
 
-    const props: ItemTableContainerProps = {
-        onRowSelection: jest.fn((item: { itemKey: number; bankKey: number }) => { return null }),
-        itemCards,
-        item
-    }
+  const content: AboutItemModel = {
+    itemCardViewModel: itemCards[0],
+    depthOfKnowledge: "depthOfKnowledge",
+    targetDescription: "targetDescription",
+    commonCoreStandardsDescription: "commonCoreStandardsDescription",
+    educationalDifficulty: "educationalDifficulty",
+    evidenceStatement: "evidenceStatement"
+  };
 
-    it("matches snapshot", () => {
-        expect(shallow(<ItemTableContainer {...props} />)).toMatchSnapshot();;
-    })
+  const item: Resource<AboutItemModel> = {
+    content,
+    kind: "success"
+  };
 
-    it("sorts list on header click", () => {
-        let wrapper = mount(<ItemTableContainer {...props} />);
-        tabs.forEach(tab => {
-            wrapper.find(`th.${tab}`).simulate('click');
-            expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
-        })
-    })
+  const props: ItemTableContainerProps = {
+    item,
+    itemCards,
+    onRowSelection: jest.fn((item: { itemKey: number; bankKey: number }, reset: boolean) => {
+      return undefined;
+    }),
+  };
 
-    it("calls onRowSelection()", () => {
-        let wrapper = mount(<ItemTableContainer {...props} />);
-        wrapper.find('td.item').simulate('click');
-        expect(props.onRowSelection).toHaveBeenCalled();
-    })
-})
+  it("matches snapshot", () => {
+    expect(shallow(<ItemTableContainer {...props} />)).toMatchSnapshot();
+  });
+
+  it("sorts list on header click", () => {
+    const wrapper = mount(<ItemTableContainer {...props} />);
+    tabs.forEach(tab => {
+      wrapper.find(`th.${tab}`).simulate("click");
+      expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+    });
+  });
+
+  it("calls onRowSelection()", () => {
+    let wrapper = mount(<ItemTableContainer {...props} />);
+    wrapper.find("td.item").simulate("click");
+    expect(props.onRowSelection).toHaveBeenCalled();
+  });
+});
