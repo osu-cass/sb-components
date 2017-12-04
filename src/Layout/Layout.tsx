@@ -15,7 +15,7 @@ export class Layout extends React.Component<LayoutProps, {}> {
     return (
       <div className="site-body">
         <NavMenu siteName={this.props.siteName} links={this.props.links} />
-        <main id="main" className="container site-content" role="main">
+        <main id="main" className="site-content" role="main">
           {this.props.children}
         </main>
         <Footer />

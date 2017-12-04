@@ -9,9 +9,13 @@ import {
   SortDirection,
   headerColumns
 } from "./ItemTableModels";
-import { HeaderTable } from "./ItemTableHeader";
+import { HeaderTable } from "./HeaderTable";
 import { ItemTable } from "./ItemTable";
 
+/**
+ * Properties for ItemTableContainer
+ * @interface ItemTableContainerProps
+ */
 export interface ItemTableContainerProps {
   onRowSelection: (
     item: { itemKey: number; bankKey: number },
@@ -21,11 +25,21 @@ export interface ItemTableContainerProps {
   item: Resource<AboutItemModel>;
 }
 
+/**
+ * State object interface for ItemTableContainer
+ * @interface ItemTableContainerState
+ */
 export interface ItemTableContainerState {
   sorts: HeaderSortModel[];
   selectedRow?: ItemCardModel;
 }
-
+/**
+ * Container for a table of Items that can be sorted by clicking on the table header.
+ * When an item is clicked, it displays an iframe of that question.
+ * @export
+ * @class ItemTableContainer
+ * @extends {React.Component<ItemTableContainerProps, ItemTableContainerState>}
+ */
 export class ItemTableContainer extends React.Component<
   ItemTableContainerProps,
   ItemTableContainerState
@@ -39,8 +53,16 @@ export class ItemTableContainer extends React.Component<
     };
   }
 
+  /**
+   * On header click, the column that was clicked will be added to the
+   * sorts array in state or its sort status will be removed.
+   * @memberOf {ItemTableContainer}
+   * @function {onClickHeader}
+   * @param {SortColumnModel} col
+   */
   onClickHeader = (col: SortColumnModel) => {
     const newSorts = (this.state.sorts || []).slice();
+    // find the index of the
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
       const newSort = Object.assign({}, newSorts[headIdx]);
@@ -63,6 +85,13 @@ export class ItemTableContainer extends React.Component<
     this.setState({ sorts: newSorts });
   };
 
+  /**
+   * Sets the state with the currently selected item or removes
+   * the selection from the item and removes it from state.
+   * @function {onSelectItem}
+   * @param {ItemCardModel} item
+   * @memberof ItemTableContainer
+   */
   onSelectItem = (item: ItemCardModel) => {
     const card = { itemKey: item.itemKey, bankKey: item.bankKey };
     if (item === this.state.selectedRow) {
@@ -73,29 +102,42 @@ export class ItemTableContainer extends React.Component<
       this.setState({ selectedRow: item });
     }
   };
-
-  invokeMultiSort(lhs: ItemCardModel, rhs: ItemCardModel): number {
-    const sorts = this.state.sorts || [];
-    for (const sort of sorts) {
-      const diff = sort.col.compare(lhs, rhs) * sort.direction;
-      if (diff !== 0) {
-        return diff;
-      }
-    }
-    return 0;
+  /**
+   * Sorts two ItemCardModels on the property specified by the sort parameter
+   * @param {HeaderSortModel} sort
+   * @param {ItemCardModel} lhs
+   * @param {ItemCardModel} rhs
+   * @memberof ItemTableContainer
+   */
+  invokeMultiSort(
+    sort: HeaderSortModel,
+    lhs: ItemCardModel,
+    rhs: ItemCardModel
+  ): number {
+    return sort.col.compare(lhs, rhs) * sort.direction;
   }
-
+  /**
+   * Sorts the data that is shown in the table on each of the 'sorts' that are
+   * stored in state.
+   * @function {getTableData}
+   * @memberof ItemTableContainer
+   */
   getTableData = (): ItemCardModel[] | undefined => {
-    let data = this.props.itemCards;
-    if (data != undefined) {
-      data =
-        this.state.sorts && this.state.sorts.length !== 0
-          ? data.sort((lhs, rhs) => this.invokeMultiSort(lhs, rhs))
-          : data;
-    }
-    return data;
+    const sorts = this.state.sorts || [];
+    let itemCards = this.props.itemCards || [];
+    sorts.forEach(sort => {
+      itemCards = itemCards.sort((lhs, rhs) =>
+        this.invokeMultiSort(sort, lhs, rhs)
+      );
+    });
+    return itemCards;
   };
 
+  /**
+   * Renders the HeaderTable component, the header to the ItemTable
+   * @function {renderTableHeader}
+   * @memberof ItemTableContainer
+   */
   renderTableHeader() {
     return (
       <HeaderTable
@@ -106,6 +148,11 @@ export class ItemTableContainer extends React.Component<
     );
   }
 
+  /**
+   * Renders the ItemTable component
+   * @function {renderTable}
+   * @memberof ItemTableContainer
+   */
   renderTable() {
     const itemCards = this.getTableData(); //this returns undefined but in the method it has data. that's w
     let content = (

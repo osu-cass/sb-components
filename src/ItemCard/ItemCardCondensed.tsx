@@ -1,28 +1,49 @@
 import "../Styles/item-card.less";
 import * as React from "react";
 import * as ItemCardModels from "./ItemCardModels";
+import { Redirect } from "react-router";
+
+export interface ItemCardCondensedState {
+  redirect: boolean;
+}
+export interface ItemCardCondensedProps extends ItemCardModels.ItemCardModel {}
 
 export class ItemCardCondensed extends React.Component<
-  ItemCardModels.ItemCardModel,
-  {}
+  ItemCardCondensedProps,
+  ItemCardCondensedState
 > {
-  handleKeyPress(
-    bankKey: number,
-    itemKey: number,
-    e: React.KeyboardEvent<HTMLElement>
-  ) {
-    if (e.keyCode === 13) {
-      ItemCardModels.itemPageLink(bankKey, itemKey);
+  constructor(props: ItemCardCondensedProps) {
+    super(props);
+    this.state = { redirect: false };
+  }
+
+  shouldComponentUpdate(
+    nextProps: Readonly<ItemCardCondensedProps>,
+    nextState: Readonly<ItemCardCondensedState>,
+    nextContext: any
+  ): boolean {
+    return this.state.redirect;
+  }
+
+  handleKeyPress(e: React.KeyboardEvent<HTMLElement>) {
+    if (e.keyCode === 13 || e.keyCode === 23) {
+      this.setState({ redirect: true });
     }
+  }
+  handleOnClick() {
+    this.setState({ redirect: true });
   }
 
   render() {
     const { bankKey, itemKey } = this.props;
+    if (this.state.redirect) {
+      return <Redirect push to={`/Item/${bankKey}-${itemKey}`} />;
+    }
     return (
       <div
         className={`card card-block ${this.props.subjectCode.toLowerCase()} condensed`}
-        onClick={e => ItemCardModels.itemPageLink(bankKey, itemKey)}
-        onKeyUp={e => this.handleKeyPress(bankKey, itemKey, e)}
+        onClick={() => this.handleOnClick()}
+        onKeyUp={e => this.handleKeyPress(e)}
         tabIndex={0}
       >
         <div className="card-contents">

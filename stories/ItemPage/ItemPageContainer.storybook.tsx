@@ -1,12 +1,30 @@
 import * as React from "react";
 import { ItemPageContainer } from "../../src/ItemPage/ItemPageContainer";
 import { storiesOf } from "@storybook/react";
-import { CenterDecorator } from "../CenterDecorator";
 import { RouterDecorator } from "../RouterDecorator";
-import { ItemPageContainerMockProps } from "./mocks";
+import {
+  aboutThisClient,
+  itemPageClient,
+  itemAccessibilityClient,
+  itemPagePath,
+  itemPageMatch
+} from "./mocks";
+import { Route } from "react-router";
 
 storiesOf("Item Page Container", module)
   .addDecorator(RouterDecorator)
   .add("just the container", () => (
-    <ItemPageContainer {...ItemPageContainerMockProps} />
+    <Route
+      exact
+      path={itemPagePath}
+      render={props => (
+        <ItemPageContainer
+          {...props}
+          match={itemPageMatch}
+          aboutThisClient={aboutThisClient}
+          itemPageClient={itemPageClient}
+          itemAccessibilityClient={itemAccessibilityClient}
+        />
+      )}
+    />
   ));

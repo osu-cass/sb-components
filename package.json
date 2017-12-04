@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.31",
+  "version": "0.0.60",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -16,16 +16,22 @@
     "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
+    "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "npm run clean && start-storybook -p 6006",
     "build-storybook": "npm run clean && build-storybook",
     "storybook-publish": "build-storybook -o storybuild",
-    "build": "npm run clean && build-storybook && npm run webpack-dev",
+    "build": "npm run clean && npm run build-storybook && npm run webpack-dev",
     "clean": "rm -rf ./lib ?",
-    "prettier": "prettier --write"
+    "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
+    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "lint-staged": {
-    "*.tsx": ["npm run prettier","git add"],
-    "*.ts": ["npm run prettier","git add"]
+    "{src,stories}/**/*{.tsx,.ts}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -64,16 +70,13 @@
     "@types/storybook__react": "~3.0.5",
     "awesome-typescript-loader": "^3.4.0",
     "bootstrap": "3.3.7",
+    "coveralls": "^3.0.0",
     "css-loader": "~0.28.7",
     "dts-generator": "^2.1.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "eslint": "~4.10.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
     "font-awesome": "~4.7.0",
+    "husky": "^0.14.3",
     "identity-obj-proxy": "~3.0.0",
     "jest": "~21.2.1",
     "jest-cli": "~21.2.1",
@@ -82,6 +85,7 @@
     "jsdom-global": "^3.0.2",
     "less": "~2.7.3",
     "less-loader": "~4.0.5",
+    "lint-staged": "^6.0.0",
     "postcss-loader": "~2.0.8",
     "prettier": "~1.8.2",
     "react": "~16.0.0",
@@ -92,8 +96,12 @@
     "style-loader": "~0.19.0",
     "ts-jest": "~21.1.2",
     "ts-loader": "^3.1.1",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.4.2",
+    "tslint-config-prettier": "^1.6.0",
+    "tslint-language-service": "^0.9.6",
+    "tslint-microsoft-contrib": "^5.0.1",
     "typescript": "~2.5.3",
-    "typescript-eslint-parser": "~8.0.1",
     "url-loader": "0.5.9",
     "webpack": "~3.8.1"
   },
@@ -121,6 +129,8 @@
       "js",
       "jsx"
     ],
+    "collectCoverage": true,
+    "mapCoverage": true,
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",

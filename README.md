@@ -1,4 +1,10 @@
+[![npm version](https://badge.fury.io/js/%40osu-cass%2Fsb-components.svg)](https://badge.fury.io/js/%40osu-cass%2Fsb-components)
+[![Build Status](https://travis-ci.org/osu-cass/sb-components.svg?branch=master)](https://travis-ci.org/osu-cass/sb-components)
+[![Documentation Status](https://readthedocs.org/projects/sb-components/badge/?version=latest)](http://sb-components.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/osu-cass/sb-components/badge.svg?branch=feat%2Ftslint-config)](https://coveralls.io/github/osu-cass/sb-components?branch=feat%2Ftslint-config)
+
 # Smarter Balanced Components
+
 > For use in Smarter Balanced
 
 Make sure you have the latest version of Node.js and npm.
@@ -14,3 +20,7 @@ If ANY of the snapshot tests fail, inspect the failures and verify that they are
 ### Other Commands
 - `npm install` to setup development environment.
 - `npm run storybook` to launch the live demo.
+
+## Links
+- [gh-pages](https://osu-cass.github.io/sb-components/)
+- [npm](https://www.npmjs.com/package/@osu-cass/sb-components)

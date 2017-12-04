@@ -224,7 +224,7 @@ export class AboutTestItemsContainer extends React.Component<
       ? this.renderItemFrame()
       : this.renderNoItem();
     return (
-      <div className="about-items">
+      <div className="container about-items">
         <div className="aboutitems-parents">
           <div className="aboutitems-info">
             <h1>About Test Items</h1>
