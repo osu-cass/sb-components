@@ -171,7 +171,7 @@ export class AdvancedFilterContainer extends React.Component<
 
     return (
       <div className="filter-sub-header-container">
-      {this.renderPageTitle()}
+        {this.renderPageTitle()}
         <div className="filter-advanced-filter-header">
           <div className="filter-advanced-filter-title">
             <h3>
