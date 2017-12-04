@@ -25,9 +25,7 @@ export class ErrorBoundary extends React.Component<
     this.setState({ hasError: true, error, errorInfo: info });
   }
 
-  render() {
-    return this.state.hasError
-      ? this.props.fallbackUI
-      : this.props.children as JSX.Element;
+  render(): JSX.Element | React.ReactNode {
+    return this.state.hasError ? this.props.fallbackUI : this.props.children;
   }
 }
