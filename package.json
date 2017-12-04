@@ -24,14 +24,8 @@
     "prettier": "prettier --write"
   },
   "lint-staged": {
-    "*.tsx": [
-      "npm run prettier",
-      "git add"
-    ],
-    "*.ts": [
-      "npm run prettier",
-      "git add"
-    ]
+    "*.tsx": ["npm run prettier","git add"],
+    "*.ts": ["npm run prettier","git add"]
   },
   "repository": {
     "type": "git",
