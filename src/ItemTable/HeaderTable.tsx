@@ -35,8 +35,6 @@ const noSort = <span style={style} className="fa fa-sort" aria-hidden="true" />;
  * HeaderTable creates a table header based on the passed in columns
  * The HeaderTable, when clicked, will add the clicked column header
  * the parent, ItemTableContainer, state, sorting the table
- * @class HeaderTable
- * @extends {React.Component<HeaderTableProps, {}>}
  */
 export class HeaderTable extends React.Component<HeaderTableProps, {}> {
   constructor(props: HeaderTableProps) {
@@ -50,7 +48,6 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
    * using onHeaderClick prop.
    * @param {SortColumnModel} sCol
    * @param {(HeaderSortModel | undefined)} hCol
-   * @memberof HeaderTable
    */
   headerEventHandler(sCol: SortColumnModel, hCol: HeaderSortModel | undefined) {
     this.props.onHeaderClick(sCol);
@@ -61,7 +58,6 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
    * header when clicked, denoting how it is sorted
    * @param {(HeaderSortModel | undefined)} headerSort
    * @returns {JSX.Element}
-   * @memberof HeaderTable
    */
   setDirElem(headerSort: HeaderSortModel | undefined): JSX.Element {
     let dirElem = noSort;
@@ -80,7 +76,6 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
    * or 'not-sorted' symbol
    * @param {SortColumnModel} col
    * @returns {JSX.Element}
-   * @memberof HeaderTable
    */
   renderHeader(col: SortColumnModel): JSX.Element {
     const headerSort = this.props.sorts.find(
