@@ -10,10 +10,6 @@ import {
   SortDirection
 } from "../../src/ItemTable/ItemTableModels";
 
-const TableWrapperDecorator = (storyFn: () => JSX.Element) => {
-  return <table>{storyFn()}</table>;
-};
-
 const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"];
 
 const sorts: Array<HeaderSortModel> = [
@@ -33,5 +29,10 @@ const props = {
 
 storiesOf("Item Table Header", module)
   .addDecorator(CenterDecorator)
-  .addDecorator(TableWrapperDecorator)
-  .add("AP_ScoreGuide tabs", () => <HeaderTable {...props} />);
+  .add("AP_ScoreGuide tabs", () => (
+    <div>
+      <table className="item-table mapcomponent-table">
+        <HeaderTable {...props} />
+      </table>
+    </div>
+  ));

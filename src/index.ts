@@ -76,7 +76,10 @@ export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 // ItemCard Components, Models, and Actions
 //
 export { ItemCard, ItemCardProps } from "./ItemCard/ItemCard";
-export { ItemCardCondensed, ItemCardCondensedProps } from "./ItemCard/ItemCardCondensed";
+export {
+  ItemCardCondensed,
+  ItemCardCondensedProps
+} from "./ItemCard/ItemCardCondensed";
 export { ItemCardModel } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
@@ -131,7 +134,7 @@ export {
   ItemTableContainer,
   ItemTableContainerProps
 } from "./ItemTable/ItemTableContainer";
-export { HeaderTable } from "./ItemTable/ItemTableHeader";
+export { HeaderTable } from "./ItemTable/HeaderTable";
 export {
   SortColumnModel,
   headerColumns,
