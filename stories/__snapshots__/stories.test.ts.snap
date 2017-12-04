@@ -2813,6 +2813,137 @@ exports[`Storyshots Item Tab viewer tab 1`] = `
 </div>
 `;
 
+exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
+<table>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexFlow": "column nowrap",
+        "height": "100%",
+        "justifyContent": "center",
+        "paddingTop": "300px",
+        "width": "100%",
+      }
+    }
+  >
+    <thead>
+      <tr
+        className="primary"
+      >
+        <th />
+        <th
+          className="item"
+          onClick={[Function]}
+        >
+          <div
+            className="item"
+          >
+            <span>
+              Item
+            </span>
+            <span
+              aria-hidden="true"
+              className="fa fa-sort-asc"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </div>
+        </th>
+        <th
+          className="claimAndTarget"
+          onClick={[Function]}
+        >
+          <div
+            className="claimAndTarget"
+          >
+            <span>
+              Claim/Target
+            </span>
+            <span
+              aria-hidden="true"
+              className="fa fa-sort"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </div>
+        </th>
+        <th
+          className="subject"
+          onClick={[Function]}
+        >
+          <div
+            className="subject"
+          >
+            <span>
+              Subject
+            </span>
+            <span
+              aria-hidden="true"
+              className="fa fa-sort"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </div>
+        </th>
+        <th
+          className="grade"
+          onClick={[Function]}
+        >
+          <div
+            className="grade"
+          >
+            <span>
+              Grade
+            </span>
+            <span
+              aria-hidden="true"
+              className="fa fa-sort"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </div>
+        </th>
+        <th
+          className="interactionType"
+          onClick={[Function]}
+        >
+          <div
+            className="interactionType"
+          >
+            <span>
+              Item Type
+            </span>
+            <span
+              aria-hidden="true"
+              className="fa fa-sort"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </div>
+        </th>
+      </tr>
+    </thead>
+  </div>
+</table>
+`;
+
 exports[`Storyshots Item Viewer Frame with an item 1`] = `
 <div
   className="itemViewerFrame"
