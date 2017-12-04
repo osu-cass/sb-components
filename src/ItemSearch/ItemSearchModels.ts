@@ -79,7 +79,8 @@ export interface FilterSearchModel {
   filterOptions: SearchFilterTypes[];
 }
 
-export interface FilterSearchStringModel<T extends SearchFilterStringTypes> extends FilterSearchModel {
+export interface FilterSearchStringModel<T extends SearchFilterStringTypes>
+  extends FilterSearchModel {
   filterOptions: T[];
   code:
     | FilterType.Claim
