@@ -12,6 +12,7 @@ export interface AdvancedFilterContainerProps {
   filterOptions: AdvancedFilterCategoryModel[];
   onClick: (selected: AdvancedFilterCategoryModel[]) => void;
   isNested?: boolean;
+  pageTitle?: string;
 }
 
 export interface AdvancedFilterContainerState {
@@ -36,6 +37,9 @@ export class AdvancedFilterContainer extends React.Component<
 
   onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
     const allPressed = option === undefined && category.displayAllButton;
+    if (category.disabled) {
+      return;
+    }
 
     let newFilters = this.props.filterOptions.slice();
     const categoryIndex = newFilters.indexOf(category);
@@ -55,16 +59,15 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   resetFilters() {
-    const newFilters = this.props.filterOptions;
-    newFilters.forEach(cat => {
-      cat.filterOptions.map(opt => (opt.isSelected = false));
-    });
+    const newFilters = this.props.filterOptions.slice();
+    newFilters.forEach(cat =>
+      cat.filterOptions.forEach(fo => (fo.isSelected = false))
+    );
     this.props.onClick(newFilters);
   }
 
   hasActiveFilterIndicators() {
     let active = false;
-
     this.props.filterOptions.forEach(fil => {
       if (!fil.disabled) {
         fil.filterOptions.forEach(opt => {
@@ -85,7 +88,7 @@ export class AdvancedFilterContainer extends React.Component<
         fil.filterOptions.forEach(opt => {
           if (opt.isSelected) {
             tags.push(
-              <div className="filter-indicator" key={opt.key}>
+              <div className="filter-indicator" key={fil.label + opt.key}>
                 {opt.label}&nbsp;<span
                   onClick={() => this.onSelect(fil, opt)}
                   className="fa fa-times-circle fa-small"
@@ -100,12 +103,8 @@ export class AdvancedFilterContainer extends React.Component<
     return tags;
   }
 
-  renderFilterHeader() {
-    return (
-      <div className="filter-header">
-        <div className="filter-status">{this.renderFilterIndicators()}</div>
-      </div>
-    );
+  renderSelected() {
+    return <div className="filter-status">{this.renderFilterIndicators()}</div>;
   }
 
   renderFilterBody() {
@@ -130,47 +129,63 @@ export class AdvancedFilterContainer extends React.Component<
     );
   }
 
-  renderCollapsedFilterContainer = () => {
-    const { filterOptions } = this.props;
+  renderExpandButton() {
     const className = this.state.expanded
       ? "fa fa-chevron-down"
       : "fa fa-chevron-right";
     const buttonText = this.state.expanded ? "Collapse " : "Expand ";
     return (
+      <div>
+        {this.hasActiveFilterIndicators() ? (
+          <button
+            onClick={() => this.resetFilters()}
+            className="filter-reset-btn"
+          >
+            Reset Filters
+          </button>
+        ) : null}
+        <button
+          onClick={() => this.handleClick()}
+          className="filter-expand-btn"
+        >
+          {buttonText}
+          <span className={className} />
+        </button>
+      </div>
+    );
+  }
+
+  renderPageTitle() {
+    if (this.props.pageTitle) {
+      return (
+        <h1>
+          <span className="filter-page-title">{this.props.pageTitle}</span>
+        </h1>
+      );
+    } else {
+      return null;
+    }
+  }
+  renderCollapsedFilterContainer = () => {
+    const { filterOptions } = this.props;
+
+    return (
       <div className="filter-sub-header-container">
+        {this.renderPageTitle()}
         <div className="filter-advanced-filter-header">
           <div className="filter-advanced-filter-title">
-            <h2 style={{ color: "#63666A" }}>
-              <span className="fa fa-tasks fa-lg" />&nbsp;Advanced Filters
-            </h2>
-            <span>&nbsp;Click on an item to remove it from the list</span>
+            <h3>
+              <span className="fa fa-tasks" />&nbsp;Advanced Filters
+            </h3>
           </div>
-          <div style={{ display: "flex", marginRight: "10px" }}>
-            {this.hasActiveFilterIndicators() ? (
-              <button
-                onClick={() => this.resetFilters()}
-                className="filter-button"
-              >
-                Reset Filters
-              </button>
-            ) : null}
-            <button
-              onClick={() => this.handleClick()}
-              className="filter-button"
-            >
-              {buttonText}
-              <span className={className} />
-            </button>
-          </div>
+          {this.renderExpandButton()}
         </div>
-        {filterOptions && filterOptions.length > 0
-          ? this.renderFilterHeader()
-          : null}
+        {this.renderSelected()}
       </div>
     );
   };
 
-  render() {
+  renderExpanded() {
     let content = null;
     if (this.state.expanded) {
       content = (
@@ -179,11 +194,14 @@ export class AdvancedFilterContainer extends React.Component<
         </div>
       );
     }
+    return content;
+  }
 
+  render() {
     return (
       <div className="advanced-filter-container">
         {this.renderCollapsedFilterContainer()}
-        {content}
+        {this.renderExpanded()}
       </div>
     );
   }

@@ -2,43 +2,55 @@ import "../Styles/item-card.less";
 import * as React from "react";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
 import * as ItemCardModels from "./ItemCardModels";
+import { Redirect } from "react-router";
 
-export class ItemCard extends React.Component<
-  ItemCardModels.ItemCardModel,
-  {}
-> {
-  handleKeyPress(
-    bankKey: number,
-    itemKey: number,
-    e: React.KeyboardEvent<HTMLElement>
-  ) {
+export interface ItemCardState {
+  redirect: boolean;
+}
+export interface ItemCardProps extends ItemCardModels.ItemCardModel {}
+
+export class ItemCard extends React.Component<ItemCardProps, ItemCardState> {
+  constructor(props: ItemCardProps) {
+    super(props);
+    this.state = { redirect: false };
+  }
+
+  handleKeyPress(e: React.KeyboardEvent<HTMLElement>) {
     if (e.keyCode === 13 || e.keyCode === 23) {
-      ItemCardModels.itemPageLink(bankKey, itemKey);
+      this.setState({ redirect: true });
     }
   }
 
+  handleOnClick() {
+    this.setState({ redirect: true });
+  }
+
   shouldComponentUpdate(
-    nextProps: Readonly<ItemCardModels.ItemCardModel>,
-    nextState: Readonly<{}>,
+    nextProps: Readonly<ItemCardProps>,
+    nextState: Readonly<ItemCardState>,
     nextContext: any
   ): boolean {
-    return false;
+    return this.state.redirect;
   }
 
   render() {
     const { bankKey, itemKey } = this.props;
+    if (this.state.redirect) {
+      return <Redirect push to={`/Item/${bankKey}-${itemKey}`} />;
+    }
+
     return (
       <div
         className={`card card-block ${this.props.subjectCode.toLowerCase()}`}
-        onClick={e => ItemCardModels.itemPageLink(bankKey, itemKey)}
-        onKeyUp={e => this.handleKeyPress(bankKey, itemKey, e)}
+        onClick={() => this.handleOnClick()}
+        onKeyUp={e => this.handleKeyPress(e)}
         tabIndex={0}
       >
         <div className="card-contents">
           <h4
             className="card-title"
-            onClick={e => ItemCardModels.itemPageLink(bankKey, itemKey)}
-            onKeyUp={e => this.handleKeyPress(bankKey, itemKey, e)}
+            onClick={() => this.handleOnClick()}
+            onKeyUp={e => this.handleKeyPress(e)}
           >
             {this.props.title}
           </h4>

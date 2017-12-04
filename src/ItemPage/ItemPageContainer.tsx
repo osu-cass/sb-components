@@ -26,10 +26,9 @@ import {
 } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 
-export interface ItemPageContainerProps {
+export interface ItemPageContainerProps extends RouteComponentProps<ItemModel> {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
   itemPageClient: (params: ItemModel) => Promise<ItemPageModel>;
-  routeComponentProps?: RouteComponentProps<{}>;
   itemAccessibilityClient: (
     params: ItemIsaapModel
   ) => Promise<AccResourceGroupModel[]>;
@@ -50,18 +49,10 @@ export class ItemPageContainer extends React.Component<
   constructor(props: ItemPageContainerProps) {
     super(props);
 
-    const queryObject = parseQueryString(
-      typeof location !== "undefined" && location.search !== undefined
-        ? location.search
-        : ""
-    );
-    const itemKey = +(queryObject["itemKey"] || [])[0] || 0;
-    const bankKey = +(queryObject["bankKey"] || [])[0] || 0;
-    const isaap = (queryObject["isaap"] || [])[0] || "";
-
+    const itemParams: ItemModel = { ...this.props.match.params };
+    const isaap = this.getLocationIsaap() || "";
     const item: ItemIsaapModel = {
-      itemKey: itemKey,
-      bankKey: bankKey,
+      ...itemParams,
       isaap: isaap
     };
 
@@ -71,7 +62,9 @@ export class ItemPageContainer extends React.Component<
       itemAccessibility: { kind: "loading" },
       item: item
     };
+  }
 
+  componentDidMount() {
     this.props
       .itemPageClient(this.state.item)
       .then(data => this.onGetItemPage(data))
@@ -118,6 +111,28 @@ export class ItemPageContainer extends React.Component<
     console.error(err);
   }
 
+  updateLocationIsaap(accResourceGroups: AccResourceGroupModel[]) {
+    try {
+      const isaap = decodeURIComponent(toiSAAP(accResourceGroups, ""));
+      const location = {
+        ...this.props.history.location,
+        search: "isaap=" + isaap
+      };
+      this.props.history.replace(location);
+    } catch (exception) {
+      console.error("unable to update url", exception);
+    }
+  }
+
+  getLocationIsaap() {
+    let isaap: string | undefined = undefined;
+    try {
+      const query = parseQueryString(this.props.location.search);
+      isaap = (query["isaap"] || [])[0] || "";
+    } catch {}
+    return isaap;
+  }
+
   private getItemPage(): ItemPageModel | undefined {
     const itemPage = this.state.itemPageVM;
     return getResourceContent(itemPage);
@@ -154,6 +169,7 @@ export class ItemPageContainer extends React.Component<
       this.onGetItemAccessibility(newGroups);
       this.setCurrentItem();
       this.updateCookie(itemPage.accessibilityCookieName, newGroups);
+      this.updateLocationIsaap(newGroups);
     } else {
       console.error("Error no item to update resources");
     }
@@ -222,7 +238,7 @@ export class ItemPageContainer extends React.Component<
 
     if (aboutThisItem && itemPage && itemDetails && itemAccessibility) {
       return (
-        <div className="item-page">
+        <div className="container item-page">
           <ItemPage
             {...itemPage}
             aboutThisItemVM={aboutThisItem}

@@ -13,11 +13,23 @@ storiesOf("About Item Modal", module)
     <AboutItem {...AboutItemMockModel} showModal={true} />
   ))
   .add("showing rubrics", () => (
-    <AboutItem {...AboutItemMockModel} showModal={true} rubrics={rubrics} />
+    <AboutItem
+      {...AboutItemMockModel}
+      showModal={true}
+      sampleItemScoring={{ rubrics: rubrics }}
+    />
   ))
   .add("showing rubrics ESN", () => (
-    <AboutItem {...AboutItemMockModel} showModal={true} rubrics={rubricsEsn} />
+    <AboutItem
+      {...AboutItemMockModel}
+      showModal={true}
+      sampleItemScoring={{ rubrics: rubricsEsn }}
+    />
   ))
   .add("showing rubrics ENU ESN", () => (
-    <AboutItem {...AboutItemMockModel} showModal={true} rubrics={allRubrics} />
+    <AboutItem
+      {...AboutItemMockModel}
+      showModal={true}
+      sampleItemScoring={{ rubrics: allRubrics }}
+    />
   ));

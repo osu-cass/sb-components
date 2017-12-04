@@ -31,10 +31,16 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
   };
 
   private renderRubrics() {
-    const rubrics = this.props.rubrics.map((ru, i) => (
-      <Rubric {...ru} key={String(i)} />
-    ));
-    return <div className="rubric">{rubrics}</div>;
+    const scoring = this.props.sampleItemScoring;
+    if (scoring && scoring.rubrics) {
+      //TODO: add logic for non rubrics
+      const rubrics = scoring.rubrics.map((ru, i) => (
+        <Rubric {...ru} key={String(i)} />
+      ));
+      return <div className="rubric">{rubrics}</div>;
+    } else {
+      return null;
+    }
   }
 
   render() {
