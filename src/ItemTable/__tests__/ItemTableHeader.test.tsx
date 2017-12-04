@@ -2,13 +2,13 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {
   headerColumns,
-  HeaderSort,
-  SortColumn,
+  HeaderSortModel,
+  SortColumnModel,
   SortDirection
 } from "../ItemTableModels";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
-import { HeaderTable } from "../ItemTableHeader";
+import { HeaderTable } from "../HeaderTable";
 
 describe("ItemTableHeader", () => {
   const tabs = [
@@ -19,7 +19,7 @@ describe("ItemTableHeader", () => {
     "interactionType"
   ];
 
-  const sorts: Array<HeaderSort> = [
+  const sorts: Array<HeaderSortModel> = [
     {
       col: headerColumns[0],
       direction: SortDirection.Ascending,
@@ -29,7 +29,7 @@ describe("ItemTableHeader", () => {
 
   const props = {
     columns: headerColumns,
-    onHeaderClick: jest.fn((header: SortColumn) => null),
+    onHeaderClick: jest.fn((header: SortColumnModel) => null),
     sorts
   };
 

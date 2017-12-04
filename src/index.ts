@@ -134,7 +134,7 @@ export {
   ItemTableContainer,
   ItemTableContainerProps
 } from "./ItemTable/ItemTableContainer";
-export { HeaderTable } from "./ItemTable/ItemTableHeader";
+export { HeaderTable } from "./ItemTable/HeaderTable";
 export {
   SortColumnModel,
   headerColumns,
