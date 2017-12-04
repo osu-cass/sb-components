@@ -64,9 +64,11 @@ describe("ItemPageTable", () => {
   const props: ItemTableContainerProps = {
     item,
     itemCards,
-    onRowSelection: jest.fn((item: { itemKey: number; bankKey: number }, reset: boolean) => {
-      return undefined;
-    }),
+    onRowSelection: jest.fn(
+      (item: { itemKey: number; bankKey: number }, reset: boolean) => {
+        return undefined;
+      }
+    )
   };
 
   it("matches snapshot", () => {
