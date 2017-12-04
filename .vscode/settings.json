@@ -5,5 +5,7 @@
         "dist",
         "lib",
         "__tests__"
-    ]
+    ],
+    "docthis.includeMemberOfOnClassMembers": false,
+    "docthis.includeMemberOfOnInterfaceMembers": false
 }
