@@ -8,10 +8,7 @@ import {
   OptionTypeModel,
   AdvancedFilterCategoryModel
 } from "../../src";
-import {
-  mockAdvancedFilterCategoriesAll,
-  mockBasicFilterCategories
-} from "./mocks";
+import { mockAdvancedFilterCategoriesAll } from "./mocks";
 
 interface AdvFilterTestProps {
   properties?: any;

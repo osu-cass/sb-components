@@ -7,6 +7,7 @@ import {
   FilterOptionModel,
   OptionTypeModel
 } from "./AdvancedFilterModel";
+
 /**
  * AdvancedFilterContainer props
  * @interface AdvancedFilterContainerProps
@@ -144,7 +145,7 @@ export class AdvancedFilterContainer extends React.Component<
         <AdvancedFilter
           key={i}
           {...category}
-          selectedHandler={opt => this.onFilterSelect(category, opt)}
+          onFilterOptionSelect={opt => this.onFilterSelect(category, opt)}
         />
       );
     });

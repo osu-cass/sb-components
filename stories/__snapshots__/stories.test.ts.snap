@@ -1029,17 +1029,15 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
            Advanced Filters
         </h3>
       </div>
-      <div>
-        <button
-          className="filter-expand-btn"
-          onClick={[Function]}
-        >
-          Expand 
-          <span
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </div>
+      <button
+        className="filter-expand-btn"
+        onClick={[Function]}
+      >
+        Expand 
+        <span
+          className="fa fa-chevron-right"
+        />
+      </button>
     </div>
     <div
       className="filter-status"
@@ -1055,13 +1053,6 @@ exports[`Storyshots Advanced Filter Container page title 1`] = `
   <div
     className="filter-sub-header-container"
   >
-    <h1>
-      <span
-        className="filter-page-title"
-      >
-        Search
-      </span>
-    </h1>
     <div
       className="filter-advanced-filter-header"
     >
@@ -1075,17 +1066,15 @@ exports[`Storyshots Advanced Filter Container page title 1`] = `
            Advanced Filters
         </h3>
       </div>
-      <div>
-        <button
-          className="filter-expand-btn"
-          onClick={[Function]}
-        >
-          Expand 
-          <span
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </div>
+      <button
+        className="filter-expand-btn"
+        onClick={[Function]}
+      >
+        Expand 
+        <span
+          className="fa fa-chevron-right"
+        />
+      </button>
     </div>
     <div
       className="filter-status"
@@ -1138,14 +1127,14 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          English
         </button>
         <button
           className=" filter-button"
           disabled={true}
           onClick={[Function]}
         >
-          Mathematics
+          Chemistry
         </button>
       </div>
     </div>
@@ -1197,14 +1186,14 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          Reading
         </button>
         <button
           className=" filter-button"
           disabled={true}
           onClick={[Function]}
         >
-          Mathematics
+          History
         </button>
       </div>
     </div>
@@ -1266,14 +1255,14 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          Calculus
         </button>
         <button
           className=" filter-button"
           disabled={false}
           onClick={[Function]}
         >
-          Mathematics
+          Geometry
         </button>
       </div>
     </div>
@@ -1325,14 +1314,14 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
           disabled={true}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          English Literacy & Arts
         </button>
         <button
           className="selected-button filter-button"
           disabled={true}
           onClick={[Function]}
         >
-          Mathematics
+          Maths
         </button>
       </div>
     </div>
@@ -1384,14 +1373,14 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          English Literacy & Arts
         </button>
         <button
           className="selected-button filter-button"
           disabled={false}
           onClick={[Function]}
         >
-          Mathematics
+          Maths
         </button>
       </div>
     </div>
@@ -1453,14 +1442,14 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          US History
         </button>
         <button
           className=" filter-button"
           disabled={false}
           onClick={[Function]}
         >
-          Mathematics
+          World History
         </button>
       </div>
     </div>
@@ -1522,14 +1511,14 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
           disabled={false}
           onClick={[Function]}
         >
-          English Literacy/ Arts
+          English Literacy & Arts
         </button>
         <button
           className="selected-button filter-button"
           disabled={false}
           onClick={[Function]}
         >
-          Mathematics
+          Maths
         </button>
       </div>
     </div>

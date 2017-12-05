@@ -19,58 +19,58 @@ storiesOf("Advanced Filter", module)
   .add("single select", () => (
     <AdvancedFilter
       {...advancedFilterSubject}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
     />
   ))
   .add("multi select", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMulti}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
       filterOptions={subjectsFilterOptionsSelected}
     />
   ))
   .add("multi select all ", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMultiAll}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
     />
   ))
   .add("multi select all selected ", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMultiAll}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
       filterOptions={subjectsFilterOptionsSelected}
     />
   ))
   .add("disabled", () => (
     <AdvancedFilter
       {...advancedFilterSubjectDisabled}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
     />
   ))
   .add("disabled with selections", () => (
     <AdvancedFilter
       {...advancedFilterSubjectDisabled}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
       filterOptions={subjectsFilterOptionsSelected}
     />
   ))
   .add("disabled multi", () => (
     <AdvancedFilter
       {...advancedFilterSubjectDisabledMulti}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
     />
   ))
   .add("disabled multi all", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMultiAllDisabled}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
     />
   ))
   .add("no options", () => (
     <AdvancedFilter
       {...advancedFilterSubject}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={selectedHandler}
       filterOptions={[]}
     />
   ));
