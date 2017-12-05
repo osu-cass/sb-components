@@ -17,16 +17,16 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
 
   renderAllbtnContainer() {
     let allBtnContainer: JSX.Element | undefined;
-    let classname = "";
+    let className = "";
     const anySelected = this.props.filterOptions.some(fo => fo.isSelected);
 
     if (this.props.displayAllButton) {
-      classname = anySelected ? "" : " selected-button";
+      className = anySelected ? "" : " selected-button";
 
       allBtnContainer = (
         <div className="filter-all-btn-container">
           <button
-            className={"filter-all-btn " + classname + " filter-button"}
+            className={"filter-all-btn " + className + " filter-button"}
             key="all"
             onClick={() => this.props.selectedHandler()}
           >
@@ -41,14 +41,14 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   renderTags() {
     const tags: JSX.Element[] = [];
 
-    let classname = "";
+    let className = "";
     if (this.props.filterOptions.length > 0) {
       this.props.filterOptions.forEach((t, i) => {
-        classname = t.isSelected ? "selected-button" : "";
+        className = t.isSelected ? "selected-button" : "";
 
         tags.push(
           <button
-            className={classname + " filter-button"}
+            className={className + " filter-button"}
             key={t.key}
             onClick={() => this.props.selectedHandler(t)}
             disabled={this.props.disabled}
