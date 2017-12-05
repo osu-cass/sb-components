@@ -36,9 +36,6 @@ export interface ItemTableContainerState {
 /**
  * Container for a table of Items that can be sorted by clicking on the table header.
  * When an item is clicked, it displays an iframe of that question.
- * @export
- * @class ItemTableContainer
- * @extends {React.Component<ItemTableContainerProps, ItemTableContainerState>}
  */
 export class ItemTableContainer extends React.Component<
   ItemTableContainerProps,
@@ -90,7 +87,6 @@ export class ItemTableContainer extends React.Component<
    * the selection from the item and removes it from state.
    * @function {onSelectItem}
    * @param {ItemCardModel} item
-   * @memberof ItemTableContainer
    */
   onSelectItem = (item: ItemCardModel) => {
     const card = { itemKey: item.itemKey, bankKey: item.bankKey };
@@ -107,7 +103,6 @@ export class ItemTableContainer extends React.Component<
    * @param {HeaderSortModel} sort
    * @param {ItemCardModel} lhs
    * @param {ItemCardModel} rhs
-   * @memberof ItemTableContainer
    */
   invokeMultiSort(
     sort: HeaderSortModel,
@@ -120,7 +115,6 @@ export class ItemTableContainer extends React.Component<
    * Sorts the data that is shown in the table on each of the 'sorts' that are
    * stored in state.
    * @function {getTableData}
-   * @memberof ItemTableContainer
    */
   getTableData = (): ItemCardModel[] | undefined => {
     const sorts = this.state.sorts || [];
@@ -136,7 +130,6 @@ export class ItemTableContainer extends React.Component<
   /**
    * Renders the HeaderTable component, the header to the ItemTable
    * @function {renderTableHeader}
-   * @memberof ItemTableContainer
    */
   renderTableHeader() {
     return (
@@ -151,7 +144,6 @@ export class ItemTableContainer extends React.Component<
   /**
    * Renders the ItemTable component
    * @function {renderTable}
-   * @memberof ItemTableContainer
    */
   renderTable() {
     const itemCards = this.getTableData(); //this returns undefined but in the method it has data. that's w
