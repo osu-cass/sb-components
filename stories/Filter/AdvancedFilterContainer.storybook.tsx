@@ -11,8 +11,8 @@ import {
 import { mockAdvancedFilterCategoriesAll } from "./mocks";
 
 const props: AdvancedFilterContainerProps = {
-  filterOptions: mockAdvancedFilterCategoriesAll,
-  onClick: action("clicked")
+  filterCategories: mockAdvancedFilterCategoriesAll,
+  onUpdateFilter: action("clicked")
 };
 
 storiesOf("Advanced Filter Container", module)

@@ -6,7 +6,9 @@ import { singleQuestion, passageAndQuestion, multipleQuestions } from "./Mocks";
 
 storiesOf("PDF ItemViewContainer", module)
   .addDecorator(PdfDecorator)
-  .add("question only", () => <ItemViewContainer itemData={singleQuestion} displayScoreInfo={true} />)
+  .add("question only", () => (
+    <ItemViewContainer itemData={singleQuestion} displayScoreInfo={true} />
+  ))
   .add("passage and question", () => (
     <ItemViewContainer itemData={passageAndQuestion} displayScoreInfo={true} />
   ))

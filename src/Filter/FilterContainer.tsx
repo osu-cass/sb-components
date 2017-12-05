@@ -46,8 +46,8 @@ export class FilterContainer extends React.Component<
       advancedFilter = (
         <AdvancedFilterContainer
           isNested={true}
-          filterOptions={advancedFilterOptions}
-          onClick={onAdvancedFilterClick}
+          filterCategories={advancedFilterOptions}
+          onUpdateFilter={onAdvancedFilterClick}
         />
       );
     }

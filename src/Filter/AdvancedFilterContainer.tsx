@@ -7,25 +7,41 @@ import {
   FilterOptionModel,
   OptionTypeModel
 } from "./AdvancedFilterModel";
-
+/**
+ * AdvancedFilterContainer props
+ * @interface AdvancedFilterContainerProps
+ * @member {AdvancedFilterCategoryModel[]} filterOptions
+ * @member {(selected: AdvancedFilterCategoryModel[]) => void} onUpdateFilterOptions
+ * @member {boolean} isNested
+ * @member {string?} pageTitle
+ */
 export interface AdvancedFilterContainerProps {
-  filterOptions: AdvancedFilterCategoryModel[];
-  onClick: (selected: AdvancedFilterCategoryModel[]) => void;
+  filterCategories: AdvancedFilterCategoryModel[];
+  onUpdateFilter: (selected: AdvancedFilterCategoryModel[]) => void;
   isNested?: boolean;
   pageTitle?: string;
 }
-
+/**
+ * AdvancedFilterContainer state
+ * @interface AdvancedFilterContainerState
+ * @member {boolean} expanded
+ */
 export interface AdvancedFilterContainerState {
   expanded: boolean;
 }
 
+/**
+ * The AdvancedFilterContainer is a collapsible menu that displays AdvancedFilters
+ * that, when clicked, calls `this.props.onClick()`
+ * @class AdvancedFilterContainer
+ * @extends {React.Component<AdvancedFilterContainerProps, AdvancedFilterContainerState>}
+ */
 export class AdvancedFilterContainer extends React.Component<
   AdvancedFilterContainerProps,
   AdvancedFilterContainerState
 > {
   constructor(props: AdvancedFilterContainerProps) {
     super(props);
-
     this.state = {
       expanded: this.props.isNested ? true : false
     };
@@ -35,15 +51,18 @@ export class AdvancedFilterContainer extends React.Component<
     this.setState({ expanded: !this.state.expanded });
   };
 
-  onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
+  onFilterSelect(
+    category: AdvancedFilterCategoryModel,
+    option?: FilterOptionModel
+  ) {
+    const { filterCategories, onUpdateFilter } = this.props;
     const allPressed = option === undefined && category.displayAllButton;
     if (category.disabled) {
       return;
     }
 
-    let newFilters = this.props.filterOptions.slice();
-    const categoryIndex = newFilters.indexOf(category);
-    let options = newFilters[categoryIndex].filterOptions.slice();
+    const categoryIndex = filterCategories.indexOf(category);
+    let options = filterCategories[categoryIndex].filterOptions.slice();
 
     if (allPressed || !category.isMultiSelect) {
       options.forEach(o => (o.isSelected = false));
@@ -54,26 +73,25 @@ export class AdvancedFilterContainer extends React.Component<
       options[optionIdx].isSelected = !option.isSelected;
     }
 
-    newFilters[categoryIndex].filterOptions = options;
-    this.props.onClick(newFilters);
+    filterCategories[categoryIndex].filterOptions = options;
+    this.props.onUpdateFilter(filterCategories);
   }
 
   resetFilters() {
-    const newFilters = this.props.filterOptions.slice();
-    newFilters.forEach(cat =>
+    const { filterCategories } = this.props;
+    filterCategories.forEach(cat =>
       cat.filterOptions.forEach(fo => (fo.isSelected = false))
     );
-    this.props.onClick(newFilters);
+    this.props.onUpdateFilter(filterCategories);
   }
 
   hasActiveFilterIndicators() {
+    const { filterCategories } = this.props;
     let active = false;
-    this.props.filterOptions.forEach(fil => {
-      if (!fil.disabled) {
-        fil.filterOptions.forEach(opt => {
-          if (opt.isSelected) {
-            active = true;
-          }
+    filterCategories.forEach(cat => {
+      if (!cat.disabled) {
+        cat.filterOptions.forEach(opt => {
+          active = opt.isSelected ? true : false;
         });
       }
     });
@@ -81,16 +99,17 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   renderFilterIndicators() {
+    const { filterCategories } = this.props;
     const tags: JSX.Element[] = [];
 
-    this.props.filterOptions.forEach(fil => {
-      if (!fil.disabled) {
-        fil.filterOptions.forEach(opt => {
+    filterCategories.forEach(cat => {
+      if (!cat.disabled) {
+        cat.filterOptions.forEach(opt => {
           if (opt.isSelected) {
             tags.push(
-              <div className="filter-indicator" key={fil.label + opt.key}>
+              <div className="filter-indicator" key={cat.label + opt.key}>
                 {opt.label}&nbsp;<span
-                  onClick={() => this.onSelect(fil, opt)}
+                  onClick={() => this.onFilterSelect(cat, opt)}
                   className="fa fa-times-circle fa-small"
                 />
               </div>
@@ -108,12 +127,12 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   renderFilterBody() {
-    const filterTags = this.props.filterOptions.map((fil, i) => {
+    const filterTags = this.props.filterCategories.map((category, i) => {
       return (
         <AdvancedFilter
           key={i}
-          {...fil}
-          selectedHandler={opt => this.onSelect(fil, opt)}
+          {...category}
+          selectedHandler={opt => this.onFilterSelect(category, opt)}
         />
       );
     });
@@ -167,8 +186,6 @@ export class AdvancedFilterContainer extends React.Component<
     }
   }
   renderCollapsedFilterContainer = () => {
-    const { filterOptions } = this.props;
-
     return (
       <div className="filter-sub-header-container">
         {this.renderPageTitle()}
