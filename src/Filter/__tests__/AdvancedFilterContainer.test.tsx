@@ -1,5 +1,6 @@
 import * as React from "react";
 import { AdvancedFilterContainer } from "../AdvancedFilterContainer";
+import { AdvancedFilterCategoryModel } from "../AdvancedFilterModel";
 import {
   mockAdvancedFilterCategoriesAll,
   mockAdvancedFilterCategoriesSelected
@@ -7,10 +8,16 @@ import {
 import { shallow } from "enzyme";
 
 describe("AdvancedFilterContainer", () => {
+  const updateFilter = jest.fn(
+    (filterCategories: AdvancedFilterCategoryModel[]) => {
+      wrapper.setProps({ filterCategories });
+    }
+  );
+
   const wrapper = shallow(
     <AdvancedFilterContainer
       pageTitle="Advanced Filter"
-      onUpdateFilter={() => {}}
+      onUpdateFilter={updateFilter}
       filterCategories={mockAdvancedFilterCategoriesAll}
     />
   );
@@ -18,20 +25,20 @@ describe("AdvancedFilterContainer", () => {
   const wrapper1 = shallow(
     <AdvancedFilterContainer
       pageTitle="Advanced Filter"
-      onUpdateFilter={() => {}}
+      onUpdateFilter={updateFilter}
       filterCategories={mockAdvancedFilterCategoriesSelected}
     />
   );
 
   it("expands and collapses on click", () => {
-    expect(wrapper).toMatchSnapshot();
     wrapper.find(".filter-expand-btn").simulate("click");
     expect(wrapper).toMatchSnapshot();
     wrapper.find(".filter-expand-btn").simulate("click");
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("resets filter options", () => {
+  it("'Reset Filters' button resets filters", () => {
+    expect(wrapper1).toMatchSnapshot();
     wrapper1
       .find(".filter-indicator")
       .at(0)
