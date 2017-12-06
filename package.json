@@ -18,14 +18,15 @@
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "npm run clean && start-storybook -p 6006",
-    "build-storybook": "npm run clean && build-storybook",
-    "storybook-publish": "build-storybook -o storybuild",
+    "build-storybook": "npm run clean && npm run build-storybook",
+    "storybook-publish": "build-storybook -o gh-site/storybook",
     "build": "npm run clean && npm run build-storybook && npm run webpack-dev",
-    "clean": "rm -rf ./lib ?",
+    "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
     "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls"
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "tsdoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
     "{src,stories}/**/*{.tsx,.ts}": [
@@ -96,6 +97,7 @@
     "style-loader": "~0.19.0",
     "ts-jest": "~21.1.2",
     "ts-loader": "^3.1.1",
+    "tsdoc": "0.0.4",
     "tslint": "^5.8.0",
     "tslint-config-airbnb": "^5.4.2",
     "tslint-config-prettier": "^1.6.0",

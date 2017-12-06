@@ -125,12 +125,9 @@ export class ItemPageContainer extends React.Component<
   }
 
   getLocationIsaap() {
-    let isaap: string | undefined = undefined;
-    try {
-      const query = parseQueryString(this.props.location.search);
-      isaap = (query["isaap"] || [])[0] || "";
-    } catch {}
-    return isaap;
+    const query = parseQueryString(this.props.location.search);
+
+    return (query["isaap"] || [])[0] || "";
   }
 
   private getItemPage(): ItemPageModel | undefined {
