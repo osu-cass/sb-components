@@ -251,8 +251,6 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
   }
 ];
 
-export const selectedHandler = action("clicked filter");
-
 export const mockInteractionTypes: InteractionTypeModel[] = [
   {
     code: "EBSR",
