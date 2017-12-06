@@ -38,7 +38,6 @@ describe("AdvancedFilterContainer", () => {
   });
 
   it("'Reset Filters' button resets filters", () => {
-    expect(wrapper1).toMatchSnapshot();
     wrapper1
       .find(".filter-indicator")
       .at(0)
