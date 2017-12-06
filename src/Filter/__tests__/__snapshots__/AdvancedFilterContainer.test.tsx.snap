@@ -3388,3 +3388,1517 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`AdvancedFilterContainer resets filter options 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AdvancedFilterContainer
+    filterCategories={
+      Array [
+        Object {
+          "code": "Grade",
+          "disabled": false,
+          "displayAllButton": true,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": true,
+              "key": "ELA",
+              "label": "English Literacy & Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": true,
+              "key": "Math",
+              "label": "Maths",
+            },
+          ],
+          "helpText": "Grade Help",
+          "isMultiSelect": false,
+          "label": "Grade",
+        },
+      ]
+    }
+    onUpdateFilter={[Function]}
+    pageTitle="Advanced Filter"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="filter-sub-header-container"
+        >
+          <h1>
+            <span
+              className="filter-page-title"
+            >
+              Advanced Filter
+            </span>
+          </h1>
+          <div
+            className="filter-advanced-filter-header"
+          >
+            <div
+              className="filter-advanced-filter-title"
+            >
+              <h3>
+                <span
+                  className="fa fa-tasks"
+                />
+                 Advanced Filters
+              </h3>
+            </div>
+            <button
+              className="filter-reset-btn "
+              onClick={[Function]}
+            >
+              Reset Filters
+            </button>
+          </div>
+          <div
+            className="filter-status"
+          >
+            <div
+              className="filter-indicator"
+            >
+              English Literacy & Arts
+               
+              <span
+                className="fa fa-times-circle fa-small"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="filter-indicator"
+            >
+              Maths
+               
+              <span
+                className="fa fa-times-circle fa-small"
+                onClick={[Function]}
+              />
+            </div>
+          </div>
+        </div>,
+        undefined,
+      ],
+      "className": "advanced-filter-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              <span
+                className="filter-page-title"
+              >
+                Advanced Filter
+              </span>
+            </h1>,
+            <div
+              className="filter-advanced-filter-header"
+            >
+              <div
+                className="filter-advanced-filter-title"
+              >
+                <h3>
+                  <span
+                    className="fa fa-tasks"
+                  />
+                   Advanced Filters
+                </h3>
+              </div>
+              <button
+                className="filter-reset-btn "
+                onClick={[Function]}
+              >
+                Reset Filters
+              </button>
+            </div>,
+            <div
+              className="filter-status"
+            >
+              <div
+                className="filter-indicator"
+              >
+                English Literacy & Arts
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+              <div
+                className="filter-indicator"
+              >
+                Maths
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+            </div>,
+          ],
+          "className": "filter-sub-header-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="filter-page-title"
+              >
+                Advanced Filter
+              </span>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Advanced Filter",
+                "className": "filter-page-title",
+              },
+              "ref": null,
+              "rendered": "Advanced Filter",
+              "type": "span",
+            },
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="filter-advanced-filter-title"
+                >
+                  <h3>
+                    <span
+                      className="fa fa-tasks"
+                    />
+                     Advanced Filters
+                  </h3>
+                </div>,
+                <button
+                  className="filter-reset-btn "
+                  onClick={[Function]}
+                >
+                  Reset Filters
+                </button>,
+              ],
+              "className": "filter-advanced-filter-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <h3>
+                    <span
+                      className="fa fa-tasks"
+                    />
+                     Advanced Filters
+                  </h3>,
+                  "className": "filter-advanced-filter-title",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="fa fa-tasks"
+                      />,
+                      " Advanced Filters",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-tasks",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    " Advanced Filters",
+                  ],
+                  "type": "h3",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Reset Filters",
+                  "className": "filter-reset-btn ",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Reset Filters",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="filter-indicator"
+                >
+                  English Literacy & Arts
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>,
+                <div
+                  className="filter-indicator"
+                >
+                  Maths
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>,
+              ],
+              "className": "filter-status",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "GradeELA",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "English Literacy & Arts",
+                    " ",
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />,
+                  ],
+                  "className": "filter-indicator",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "English Literacy & Arts",
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-times-circle fa-small",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "GradeMath",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Maths",
+                    " ",
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />,
+                  ],
+                  "className": "filter-indicator",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Maths",
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-times-circle fa-small",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      undefined,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="filter-sub-header-container"
+          >
+            <h1>
+              <span
+                className="filter-page-title"
+              >
+                Advanced Filter
+              </span>
+            </h1>
+            <div
+              className="filter-advanced-filter-header"
+            >
+              <div
+                className="filter-advanced-filter-title"
+              >
+                <h3>
+                  <span
+                    className="fa fa-tasks"
+                  />
+                   Advanced Filters
+                </h3>
+              </div>
+              <button
+                className="filter-reset-btn "
+                onClick={[Function]}
+              >
+                Reset Filters
+              </button>
+            </div>
+            <div
+              className="filter-status"
+            >
+              <div
+                className="filter-indicator"
+              >
+                English Literacy & Arts
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+              <div
+                className="filter-indicator"
+              >
+                Maths
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+            </div>
+          </div>,
+          undefined,
+        ],
+        "className": "advanced-filter-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                <span
+                  className="filter-page-title"
+                >
+                  Advanced Filter
+                </span>
+              </h1>,
+              <div
+                className="filter-advanced-filter-header"
+              >
+                <div
+                  className="filter-advanced-filter-title"
+                >
+                  <h3>
+                    <span
+                      className="fa fa-tasks"
+                    />
+                     Advanced Filters
+                  </h3>
+                </div>
+                <button
+                  className="filter-reset-btn "
+                  onClick={[Function]}
+                >
+                  Reset Filters
+                </button>
+              </div>,
+              <div
+                className="filter-status"
+              >
+                <div
+                  className="filter-indicator"
+                >
+                  English Literacy & Arts
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>
+                <div
+                  className="filter-indicator"
+                >
+                  Maths
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>
+              </div>,
+            ],
+            "className": "filter-sub-header-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="filter-page-title"
+                >
+                  Advanced Filter
+                </span>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Advanced Filter",
+                  "className": "filter-page-title",
+                },
+                "ref": null,
+                "rendered": "Advanced Filter",
+                "type": "span",
+              },
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="filter-advanced-filter-title"
+                  >
+                    <h3>
+                      <span
+                        className="fa fa-tasks"
+                      />
+                       Advanced Filters
+                    </h3>
+                  </div>,
+                  <button
+                    className="filter-reset-btn "
+                    onClick={[Function]}
+                  >
+                    Reset Filters
+                  </button>,
+                ],
+                "className": "filter-advanced-filter-header",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h3>
+                      <span
+                        className="fa fa-tasks"
+                      />
+                       Advanced Filters
+                    </h3>,
+                    "className": "filter-advanced-filter-title",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="fa fa-tasks"
+                        />,
+                        " Advanced Filters",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fa fa-tasks",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "span",
+                      },
+                      " Advanced Filters",
+                    ],
+                    "type": "h3",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Reset Filters",
+                    "className": "filter-reset-btn ",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Reset Filters",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="filter-indicator"
+                  >
+                    English Literacy & Arts
+                     
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />
+                  </div>,
+                  <div
+                    className="filter-indicator"
+                  >
+                    Maths
+                     
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />
+                  </div>,
+                ],
+                "className": "filter-status",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "GradeELA",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "English Literacy & Arts",
+                      " ",
+                      <span
+                        className="fa fa-times-circle fa-small"
+                        onClick={[Function]}
+                      />,
+                    ],
+                    "className": "filter-indicator",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "English Literacy & Arts",
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-times-circle fa-small",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": "GradeMath",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Maths",
+                      " ",
+                      <span
+                        className="fa fa-times-circle fa-small"
+                        onClick={[Function]}
+                      />,
+                    ],
+                    "className": "filter-indicator",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Maths",
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-times-circle fa-small",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        undefined,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`AdvancedFilterContainer resets filter options 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AdvancedFilterContainer
+    filterCategories={
+      Array [
+        Object {
+          "code": "Grade",
+          "disabled": false,
+          "displayAllButton": true,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "ELA",
+              "label": "English Literacy & Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Math",
+              "label": "Maths",
+            },
+          ],
+          "helpText": "Grade Help",
+          "isMultiSelect": false,
+          "label": "Grade",
+        },
+      ]
+    }
+    onUpdateFilter={[Function]}
+    pageTitle="Advanced Filter"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="filter-sub-header-container"
+        >
+          <h1>
+            <span
+              className="filter-page-title"
+            >
+              Advanced Filter
+            </span>
+          </h1>
+          <div
+            className="filter-advanced-filter-header"
+          >
+            <div
+              className="filter-advanced-filter-title"
+            >
+              <h3>
+                <span
+                  className="fa fa-tasks"
+                />
+                 Advanced Filters
+              </h3>
+            </div>
+            <button
+              className="filter-reset-btn "
+              onClick={[Function]}
+            >
+              Reset Filters
+            </button>
+          </div>
+          <div
+            className="filter-status"
+          >
+            <div
+              className="filter-indicator"
+            >
+              English Literacy & Arts
+               
+              <span
+                className="fa fa-times-circle fa-small"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="filter-indicator"
+            >
+              Maths
+               
+              <span
+                className="fa fa-times-circle fa-small"
+                onClick={[Function]}
+              />
+            </div>
+          </div>
+        </div>,
+        undefined,
+      ],
+      "className": "advanced-filter-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              <span
+                className="filter-page-title"
+              >
+                Advanced Filter
+              </span>
+            </h1>,
+            <div
+              className="filter-advanced-filter-header"
+            >
+              <div
+                className="filter-advanced-filter-title"
+              >
+                <h3>
+                  <span
+                    className="fa fa-tasks"
+                  />
+                   Advanced Filters
+                </h3>
+              </div>
+              <button
+                className="filter-reset-btn "
+                onClick={[Function]}
+              >
+                Reset Filters
+              </button>
+            </div>,
+            <div
+              className="filter-status"
+            >
+              <div
+                className="filter-indicator"
+              >
+                English Literacy & Arts
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+              <div
+                className="filter-indicator"
+              >
+                Maths
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+            </div>,
+          ],
+          "className": "filter-sub-header-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="filter-page-title"
+              >
+                Advanced Filter
+              </span>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Advanced Filter",
+                "className": "filter-page-title",
+              },
+              "ref": null,
+              "rendered": "Advanced Filter",
+              "type": "span",
+            },
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="filter-advanced-filter-title"
+                >
+                  <h3>
+                    <span
+                      className="fa fa-tasks"
+                    />
+                     Advanced Filters
+                  </h3>
+                </div>,
+                <button
+                  className="filter-reset-btn "
+                  onClick={[Function]}
+                >
+                  Reset Filters
+                </button>,
+              ],
+              "className": "filter-advanced-filter-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <h3>
+                    <span
+                      className="fa fa-tasks"
+                    />
+                     Advanced Filters
+                  </h3>,
+                  "className": "filter-advanced-filter-title",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="fa fa-tasks"
+                      />,
+                      " Advanced Filters",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-tasks",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    " Advanced Filters",
+                  ],
+                  "type": "h3",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Reset Filters",
+                  "className": "filter-reset-btn ",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Reset Filters",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="filter-indicator"
+                >
+                  English Literacy & Arts
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>,
+                <div
+                  className="filter-indicator"
+                >
+                  Maths
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>,
+              ],
+              "className": "filter-status",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "GradeELA",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "English Literacy & Arts",
+                    " ",
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />,
+                  ],
+                  "className": "filter-indicator",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "English Literacy & Arts",
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-times-circle fa-small",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "GradeMath",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Maths",
+                    " ",
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />,
+                  ],
+                  "className": "filter-indicator",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Maths",
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-times-circle fa-small",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      undefined,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="filter-sub-header-container"
+          >
+            <h1>
+              <span
+                className="filter-page-title"
+              >
+                Advanced Filter
+              </span>
+            </h1>
+            <div
+              className="filter-advanced-filter-header"
+            >
+              <div
+                className="filter-advanced-filter-title"
+              >
+                <h3>
+                  <span
+                    className="fa fa-tasks"
+                  />
+                   Advanced Filters
+                </h3>
+              </div>
+              <button
+                className="filter-reset-btn "
+                onClick={[Function]}
+              >
+                Reset Filters
+              </button>
+            </div>
+            <div
+              className="filter-status"
+            >
+              <div
+                className="filter-indicator"
+              >
+                English Literacy & Arts
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+              <div
+                className="filter-indicator"
+              >
+                Maths
+                 
+                <span
+                  className="fa fa-times-circle fa-small"
+                  onClick={[Function]}
+                />
+              </div>
+            </div>
+          </div>,
+          undefined,
+        ],
+        "className": "advanced-filter-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                <span
+                  className="filter-page-title"
+                >
+                  Advanced Filter
+                </span>
+              </h1>,
+              <div
+                className="filter-advanced-filter-header"
+              >
+                <div
+                  className="filter-advanced-filter-title"
+                >
+                  <h3>
+                    <span
+                      className="fa fa-tasks"
+                    />
+                     Advanced Filters
+                  </h3>
+                </div>
+                <button
+                  className="filter-reset-btn "
+                  onClick={[Function]}
+                >
+                  Reset Filters
+                </button>
+              </div>,
+              <div
+                className="filter-status"
+              >
+                <div
+                  className="filter-indicator"
+                >
+                  English Literacy & Arts
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>
+                <div
+                  className="filter-indicator"
+                >
+                  Maths
+                   
+                  <span
+                    className="fa fa-times-circle fa-small"
+                    onClick={[Function]}
+                  />
+                </div>
+              </div>,
+            ],
+            "className": "filter-sub-header-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="filter-page-title"
+                >
+                  Advanced Filter
+                </span>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Advanced Filter",
+                  "className": "filter-page-title",
+                },
+                "ref": null,
+                "rendered": "Advanced Filter",
+                "type": "span",
+              },
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="filter-advanced-filter-title"
+                  >
+                    <h3>
+                      <span
+                        className="fa fa-tasks"
+                      />
+                       Advanced Filters
+                    </h3>
+                  </div>,
+                  <button
+                    className="filter-reset-btn "
+                    onClick={[Function]}
+                  >
+                    Reset Filters
+                  </button>,
+                ],
+                "className": "filter-advanced-filter-header",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h3>
+                      <span
+                        className="fa fa-tasks"
+                      />
+                       Advanced Filters
+                    </h3>,
+                    "className": "filter-advanced-filter-title",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="fa fa-tasks"
+                        />,
+                        " Advanced Filters",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fa fa-tasks",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "span",
+                      },
+                      " Advanced Filters",
+                    ],
+                    "type": "h3",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Reset Filters",
+                    "className": "filter-reset-btn ",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Reset Filters",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="filter-indicator"
+                  >
+                    English Literacy & Arts
+                     
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />
+                  </div>,
+                  <div
+                    className="filter-indicator"
+                  >
+                    Maths
+                     
+                    <span
+                      className="fa fa-times-circle fa-small"
+                      onClick={[Function]}
+                    />
+                  </div>,
+                ],
+                "className": "filter-status",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "GradeELA",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "English Literacy & Arts",
+                      " ",
+                      <span
+                        className="fa fa-times-circle fa-small"
+                        onClick={[Function]}
+                      />,
+                    ],
+                    "className": "filter-indicator",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "English Literacy & Arts",
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-times-circle fa-small",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": "GradeMath",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Maths",
+                      " ",
+                      <span
+                        className="fa fa-times-circle fa-small"
+                        onClick={[Function]}
+                      />,
+                    ],
+                    "className": "filter-indicator",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Maths",
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-times-circle fa-small",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        undefined,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

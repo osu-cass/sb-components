@@ -209,6 +209,18 @@ export const mockAdvancedFilterCategoriesAll: AdvancedFilterCategoryModel[] = [
   advancedFilterSubjectMultiAllDisabled
 ];
 
+export const mockAdvancedFilterCategoriesSelected: AdvancedFilterCategoryModel[] = [
+  {
+    disabled: false,
+    isMultiSelect: false,
+    label: "Grade",
+    filterOptions: subjectsFilterOptionsSelected,
+    displayAllButton: true,
+    helpText: "Grade Help",
+    code: FilterType.Grade
+  }
+];
+
 export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
   {
     disabled: false,

@@ -1,6 +1,9 @@
 import * as React from "react";
 import { AdvancedFilterContainer } from "../AdvancedFilterContainer";
-import { mockAdvancedFilterCategoriesAll } from "../../../stories/Filter/mocks";
+import {
+  mockAdvancedFilterCategoriesAll,
+  mockAdvancedFilterCategoriesSelected
+} from "../../../stories/Filter/mocks";
 import { shallow } from "enzyme";
 
 describe("AdvancedFilterContainer", () => {
@@ -11,6 +14,15 @@ describe("AdvancedFilterContainer", () => {
       filterCategories={mockAdvancedFilterCategoriesAll}
     />
   );
+
+  const wrapper1 = shallow(
+    <AdvancedFilterContainer
+      pageTitle="Advanced Filter"
+      onUpdateFilter={() => {}}
+      filterCategories={mockAdvancedFilterCategoriesSelected}
+    />
+  );
+
   it("expands and collapses on click", () => {
     expect(wrapper).toMatchSnapshot();
     wrapper.find(".filter-expand-btn").simulate("click");
@@ -19,6 +31,13 @@ describe("AdvancedFilterContainer", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // add mock props that are selected and remove the tags and test reset filter
-  it("resets filter options", () => {});
+  it("resets filter options", () => {
+    wrapper1
+      .find(".filter-indicator")
+      .at(0)
+      .simulate("click");
+    expect(wrapper1).toMatchSnapshot();
+    wrapper1.find(".filter-reset-btn").simulate("click");
+    expect(wrapper1).toMatchSnapshot();
+  });
 });
