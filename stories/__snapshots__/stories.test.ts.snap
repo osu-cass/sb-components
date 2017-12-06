@@ -1046,7 +1046,7 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
 </div>
 `;
 
-exports[`Storyshots Advanced Filter Container page title 1`] = `
+exports[`Storyshots Advanced Filter Container with page title 1`] = `
 <div
   className="advanced-filter-container"
 >

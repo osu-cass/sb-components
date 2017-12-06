@@ -24,7 +24,6 @@ describe("AdvancedFilterContainer", () => {
 
   const wrapper1 = shallow(
     <AdvancedFilterContainer
-      pageTitle="Advanced Filter"
       onUpdateFilter={updateFilter}
       filterCategories={mockAdvancedFilterCategoriesSelected}
     />

@@ -9,4 +9,6 @@ const props: any = {
 
 storiesOf("Advanced Filter Container", module)
   .add("normal render", () => <AdvFilContainerTestWrapper />)
-  .add("page title", () => <AdvFilContainerTestWrapper properties={props} />);
+  .add("with page title", () => (
+    <AdvFilContainerTestWrapper properties={props} />
+  ));
