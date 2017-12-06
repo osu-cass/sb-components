@@ -51,6 +51,7 @@ export class AdvancedFilterContainer extends React.Component<
   handleClick = () => {
     this.setState({ expanded: !this.state.expanded });
   };
+
   /**
    * Updates a category with the filter option that was selected
    * @param {AdvancedFilterCategoryModel} category
@@ -60,26 +61,29 @@ export class AdvancedFilterContainer extends React.Component<
     category: AdvancedFilterCategoryModel,
     option?: FilterOptionModel
   ) {
-    const { filterCategories, onUpdateFilter } = this.props;
+    let { filterCategories, onUpdateFilter } = this.props;
     const allPressed = option === undefined && category.displayAllButton;
-    if (category.disabled) {
-      return;
+    if (!category.disabled) {
+      const categoryIndex = filterCategories.indexOf(category);
+      let options = filterCategories[categoryIndex].filterOptions.slice();
+
+      if (allPressed) {
+        options.forEach(o => (o.isSelected = false));
+      }
+
+      if (option) {
+        const optionIdx = options.indexOf(option);
+        options[optionIdx].isSelected = !option.isSelected;
+        if (!category.isMultiSelect) {
+          options.forEach(opt => {
+            opt.isSelected = opt === option ? opt.isSelected : false;
+          });
+        }
+      }
+
+      filterCategories[categoryIndex].filterOptions = options;
+      onUpdateFilter(filterCategories);
     }
-
-    const categoryIndex = filterCategories.indexOf(category);
-    let options = filterCategories[categoryIndex].filterOptions.slice();
-
-    if (allPressed || !category.isMultiSelect) {
-      options.forEach(o => (o.isSelected = false));
-    }
-
-    if (option) {
-      const optionIdx = options.indexOf(option);
-      options[optionIdx].isSelected = !option.isSelected;
-    }
-
-    filterCategories[categoryIndex].filterOptions = options;
-    this.props.onUpdateFilter(filterCategories);
   }
   /**
    * Resets each of the filter options for each category.
