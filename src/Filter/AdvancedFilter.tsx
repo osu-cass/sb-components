@@ -22,11 +22,9 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       displayAllButton
     } = this.props;
     let allBtnContainer: JSX.Element | undefined;
-    let className = "";
     const anySelected = filterOptions.some(fo => fo.isSelected);
-
     if (displayAllButton) {
-      className = anySelected ? "" : " selected-button";
+      let className = anySelected ? "" : " selected-button";
       allBtnContainer = (
         <div className="filter-all-btn-container">
           <button
