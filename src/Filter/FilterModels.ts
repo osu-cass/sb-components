@@ -12,11 +12,10 @@ import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
  * @param {FilterOptionModel} [option]
  */
 export const onFilterSelect = (
-  onUpdateFilter: (filterCategories: AdvancedFilterCategoryModel[]) => void,
   categories: AdvancedFilterCategoryModel[],
   selectedCat: AdvancedFilterCategoryModel,
   option?: FilterOptionModel
-) => {
+): AdvancedFilterCategoryModel[] | undefined => {
   const allPressed = option === undefined && selectedCat.displayAllButton;
   if (!selectedCat.disabled) {
     const categoryIndex = categories.indexOf(selectedCat);
@@ -37,7 +36,7 @@ export const onFilterSelect = (
     }
 
     categories[categoryIndex].filterOptions = options;
-    onUpdateFilter(categories);
+    return categories;
   }
 };
 export enum OptionTypeModel {

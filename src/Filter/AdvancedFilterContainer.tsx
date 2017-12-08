@@ -19,7 +19,7 @@ import {
  */
 export interface AdvancedFilterContainerProps {
   filterCategories: AdvancedFilterCategoryModel[];
-  onUpdateFilter: (selected: AdvancedFilterCategoryModel[]) => void;
+  onUpdateFilter: (selected: AdvancedFilterCategoryModel[] | undefined) => void;
   isNested?: boolean;
   pageTitle?: string;
 }
@@ -52,6 +52,15 @@ export class AdvancedFilterContainer extends React.Component<
   handleClick = () => {
     this.setState({ expanded: !this.state.expanded });
   };
+
+  handleFilterSelect(
+    category: AdvancedFilterCategoryModel,
+    option?: FilterOptionModel
+  ) {
+    const { onUpdateFilter, filterCategories } = this.props;
+    const newFilters = onFilterSelect(filterCategories, category, option);
+    onUpdateFilter(newFilters);
+  }
 
   /**
    * Resets each of the filter options for each category.
@@ -87,7 +96,7 @@ export class AdvancedFilterContainer extends React.Component<
    * options are currently selected
    */
   renderSelectedFilterIndicators() {
-    const { filterCategories, onUpdateFilter } = this.props;
+    const { filterCategories } = this.props;
     const tags: JSX.Element[] = [];
 
     filterCategories.forEach(cat => {
@@ -97,9 +106,7 @@ export class AdvancedFilterContainer extends React.Component<
             tags.push(
               <div className="filter-indicator" key={cat.label + opt.key}>
                 {opt.label}&nbsp;<span
-                  onClick={() =>
-                    onFilterSelect(onUpdateFilter, filterCategories, cat, opt)
-                  }
+                  onClick={() => this.handleFilterSelect(cat, opt)}
                   className="fa fa-times-circle fa-small"
                 />
               </div>
@@ -116,15 +123,13 @@ export class AdvancedFilterContainer extends React.Component<
    * Renders the array of filter categories and their respective filter options.
    */
   renderFilterCategories() {
-    const { onUpdateFilter, filterCategories } = this.props;
+    const { filterCategories } = this.props;
     const filterCats = filterCategories.map((category, i) => {
       return (
         <AdvancedFilter
           key={i}
           {...category}
-          onFilterOptionSelect={opt =>
-            onFilterSelect(onUpdateFilter, filterCategories, category, opt)
-          }
+          onFilterOptionSelect={opt => this.handleFilterSelect(category, opt)}
         />
       );
     });
