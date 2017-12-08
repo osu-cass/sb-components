@@ -4,7 +4,7 @@ import {
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,
   FilterOptionModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 import { BasicFilterContainer } from "./BasicFilterContainer";
 
 export interface FilterContainerProps {
@@ -54,8 +54,8 @@ export class FilterContainer extends React.Component<
     return (
       <div style={{ width: "100%" }}>
         <BasicFilterContainer
-          filterOptions={basicFilterOptions}
-          onClick={onBasicFilterClick}
+          filterCategories={basicFilterOptions}
+          onUpdateFilter={onBasicFilterClick}
           containsAdvancedFilter={true}
           handleAdvancedFilterExpand={this.handleClick}
         />

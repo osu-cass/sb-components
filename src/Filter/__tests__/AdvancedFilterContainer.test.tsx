@@ -1,6 +1,6 @@
 import * as React from "react";
 import { AdvancedFilterContainer } from "../AdvancedFilterContainer";
-import { AdvancedFilterCategoryModel } from "../AdvancedFilterModel";
+import { AdvancedFilterCategoryModel } from "../FilterModels";
 import {
   mockAdvancedFilterCategoriesAll,
   mockAdvancedFilterCategoriesSelected

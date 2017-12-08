@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { AdvFilTestWrapper } from "../AdvFilTestWrappers";
+import { AdvancedFilter } from "../../src";
 import {
   advancedFilterSubject,
   advancedFilterSubjectMulti,
@@ -12,42 +12,62 @@ import {
 } from "./mocks";
 import { CenterDecorator } from "../CenterDecorator";
 
+const action = () => {};
 //Advanced filter select actions won't persist, stories should be checking the rendering and not actions
 storiesOf("Advanced Filter", module)
   .addDecorator(CenterDecorator)
   .add("single select", () => (
-    <AdvFilTestWrapper filterCat={advancedFilterSubject} />
+    <AdvancedFilter {...advancedFilterSubject} onFilterOptionSelect={action} />
   ))
   .add("multi select", () => (
-    <AdvFilTestWrapper
-      filterCat={advancedFilterSubjectMulti}
+    <AdvancedFilter
+      {...advancedFilterSubjectMulti}
       filterOptions={subjectsFilterOptionsSelected}
+      onFilterOptionSelect={action}
     />
   ))
   .add("multi select all ", () => (
-    <AdvFilTestWrapper filterCat={advancedFilterSubjectMultiAll} />
+    <AdvancedFilter
+      {...advancedFilterSubjectMultiAll}
+      onFilterOptionSelect={action}
+    />
   ))
   .add("multi select all selected ", () => (
-    <AdvFilTestWrapper
-      filterCat={advancedFilterSubjectMultiAll}
+    <AdvancedFilter
+      {...advancedFilterSubjectMultiAll}
       filterOptions={subjectsFilterOptionsSelected}
+      onFilterOptionSelect={action}
     />
   ))
   .add("disabled", () => (
-    <AdvFilTestWrapper filterCat={advancedFilterSubjectDisabled} />
+    <AdvancedFilter
+      {...advancedFilterSubjectDisabled}
+      onFilterOptionSelect={action}
+    />
   ))
   .add("disabled with selections", () => (
-    <AdvFilTestWrapper
-      filterCat={advancedFilterSubjectDisabled}
+    <AdvancedFilter
+      {...advancedFilterSubjectDisabled}
       filterOptions={subjectsFilterOptionsSelected}
+      onFilterOptionSelect={action}
     />
   ))
   .add("disabled multi", () => (
-    <AdvFilTestWrapper filterCat={advancedFilterSubjectDisabledMulti} />
+    <AdvancedFilter
+      {...advancedFilterSubjectDisabledMulti}
+      onFilterOptionSelect={action}
+    />
   ))
   .add("disabled multi all", () => (
-    <AdvFilTestWrapper filterCat={advancedFilterSubjectMultiAllDisabled} />
+    <AdvancedFilter
+      {...advancedFilterSubjectMultiAllDisabled}
+      onFilterOptionSelect={action}
+    />
   ))
   .add("no options", () => (
-    <AdvFilTestWrapper filterCat={advancedFilterSubject} filterOptions={[]} />
+    <AdvancedFilter
+      {...advancedFilterSubject}
+      filterOptions={[]}
+      onFilterOptionSelect={action}
+    />
   ));

@@ -4,7 +4,7 @@ import {
   AdvancedFilterCategoryModel,
   FilterOptionModel,
   OptionTypeModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 
 export interface AdvancedFilterProps extends AdvancedFilterCategoryModel {
   onFilterOptionSelect: (data?: FilterOptionModel) => void;

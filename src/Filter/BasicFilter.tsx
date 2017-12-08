@@ -4,7 +4,7 @@ import {
   BasicFilterCategoryModel,
   FilterOptionModel,
   OptionTypeModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;

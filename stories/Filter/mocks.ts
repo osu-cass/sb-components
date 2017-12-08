@@ -1,5 +1,6 @@
 import {
   AdvancedFilterProps,
+  BasicFilterProps,
   FilterOptionModel,
   OptionTypeModel,
   AdvancedFilterCategoryModel,
@@ -11,8 +12,9 @@ import {
   TargetModel
 } from "../../src";
 import { action } from "@storybook/addon-actions";
-import { FilterType } from "../../src/Filter/AdvancedFilterModel";
+import { FilterType } from "../../src/Filter/FilterModels";
 
+// ADVANCED FILTER MOCKS
 export const gradeFilterOptions: FilterOptionModel[] = [
   {
     label: "Grades 3-5",
@@ -381,4 +383,44 @@ export const emptyAdvancedFilterTargets: AdvancedFilterCategoryModel = {
   displayAllButton: true,
   filterOptions: [],
   helpText: "Targets help text here."
+};
+
+// BASIC FILTER MOCKS
+
+export const basicFilterOption: FilterOptionModel = {
+  label: "Grade",
+  key: "12345",
+  isSelected: false
+};
+
+export const advancedFilterOptionsArray: FilterOptionModel[] = [
+  { ...basicFilterOption, label: "Grade 1", key: "12346" },
+  { ...basicFilterOption, label: "Grade 2", key: "12347" },
+  { ...basicFilterOption },
+  { ...basicFilterOption, label: "Grade 4", key: "12348" }
+];
+
+export const basicFilterCategoryDropDown: BasicFilterCategoryModel = {
+  disabled: false,
+  label: "Grade",
+  filterOptions: [basicFilterOption],
+  type: OptionTypeModel.DropDown,
+  code: FilterType.Grade
+};
+
+export const basicFilterCategoryRadioBtn: BasicFilterCategoryModel = {
+  ...basicFilterCategoryDropDown,
+  type: OptionTypeModel.radioBtn
+};
+
+export const selectedHandler = action("clicked filter");
+
+export const propsDropDown: BasicFilterProps = {
+  ...basicFilterCategoryDropDown,
+  selectedHandler
+};
+
+export const propsRadioBtn: BasicFilterProps = {
+  ...basicFilterCategoryRadioBtn,
+  selectedHandler
 };

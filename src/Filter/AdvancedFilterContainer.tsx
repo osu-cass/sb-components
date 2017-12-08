@@ -2,11 +2,12 @@ import * as React from "react";
 import "../Styles/advanced-filter.less";
 import { AdvancedFilter } from "./AdvancedFilter";
 import {
+  onFilterSelect,
   AdvancedFilterCategoryModel,
   AdvancedFiltersModel,
   FilterOptionModel,
   OptionTypeModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 
 /**
  * AdvancedFilterContainer props
@@ -53,39 +54,6 @@ export class AdvancedFilterContainer extends React.Component<
   };
 
   /**
-   * Updates a category with the filter option that was selected
-   * @param {AdvancedFilterCategoryModel} category
-   * @param {FilterOptionModel} [option]
-   */
-  onFilterSelect(
-    category: AdvancedFilterCategoryModel,
-    option?: FilterOptionModel
-  ) {
-    let { filterCategories, onUpdateFilter } = this.props;
-    const allPressed = option === undefined && category.displayAllButton;
-    if (!category.disabled) {
-      const categoryIndex = filterCategories.indexOf(category);
-      let options = filterCategories[categoryIndex].filterOptions.slice();
-
-      if (allPressed) {
-        options.forEach(o => (o.isSelected = false));
-      }
-
-      if (option) {
-        const optionIdx = options.indexOf(option);
-        options[optionIdx].isSelected = !option.isSelected;
-        if (!category.isMultiSelect) {
-          options.forEach(opt => {
-            opt.isSelected = opt === option ? opt.isSelected : false;
-          });
-        }
-      }
-
-      filterCategories[categoryIndex].filterOptions = options;
-      onUpdateFilter(filterCategories);
-    }
-  }
-  /**
    * Resets each of the filter options for each category.
    */
   resetFilters() {
@@ -105,7 +73,9 @@ export class AdvancedFilterContainer extends React.Component<
     filterCategories.forEach(cat => {
       if (!cat.disabled) {
         cat.filterOptions.forEach(opt => {
-          active = opt.isSelected ? true : false;
+          if (opt.isSelected) {
+            active = true;
+          }
         });
       }
     });
@@ -117,7 +87,7 @@ export class AdvancedFilterContainer extends React.Component<
    * options are currently selected
    */
   renderSelectedFilterIndicators() {
-    const { filterCategories } = this.props;
+    const { filterCategories, onUpdateFilter } = this.props;
     const tags: JSX.Element[] = [];
 
     filterCategories.forEach(cat => {
@@ -127,7 +97,9 @@ export class AdvancedFilterContainer extends React.Component<
             tags.push(
               <div className="filter-indicator" key={cat.label + opt.key}>
                 {opt.label}&nbsp;<span
-                  onClick={() => this.onFilterSelect(cat, opt)}
+                  onClick={() =>
+                    onFilterSelect(onUpdateFilter, filterCategories, cat, opt)
+                  }
                   className="fa fa-times-circle fa-small"
                 />
               </div>
@@ -144,12 +116,15 @@ export class AdvancedFilterContainer extends React.Component<
    * Renders the array of filter categories and their respective filter options.
    */
   renderFilterCategories() {
-    const filterCats = this.props.filterCategories.map((category, i) => {
+    const { onUpdateFilter, filterCategories } = this.props;
+    const filterCats = filterCategories.map((category, i) => {
       return (
         <AdvancedFilter
           key={i}
           {...category}
-          onFilterOptionSelect={opt => this.onFilterSelect(category, opt)}
+          onFilterOptionSelect={opt =>
+            onFilterSelect(onUpdateFilter, filterCategories, category, opt)
+          }
         />
       );
     });
