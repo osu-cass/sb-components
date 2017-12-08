@@ -20,11 +20,9 @@ export const onFilterSelect = (
   if (!selectedCat.disabled) {
     const categoryIndex = categories.indexOf(selectedCat);
     let options = categories[categoryIndex].filterOptions.slice();
-
     if (allPressed) {
       options.forEach((opt: FilterOptionModel) => (opt.isSelected = false));
     }
-
     if (option) {
       const optionIdx = options.indexOf(option);
       options[optionIdx].isSelected = !option.isSelected;
@@ -34,7 +32,6 @@ export const onFilterSelect = (
         });
       }
     }
-
     categories[categoryIndex].filterOptions = options;
     return categories;
   }
