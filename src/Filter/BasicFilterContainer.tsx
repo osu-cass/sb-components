@@ -30,24 +30,21 @@ export class BasicFilterContainer extends React.Component<
     option?: FilterOptionModel
   ) {
     const index = this.props.filterCategories.indexOf(category);
-    const { filterCategories } = this.props;
-    let newOptions: FilterOptionModel[] = [];
+    let { filterCategories } = this.props;
+    if (!category.disabled) {
+      if (option !== undefined) {
+        let newOptions = filterCategories[index].filterOptions.slice();
+        const optionIdx = filterCategories[index].filterOptions.indexOf(option);
+        newOptions = filterCategories[index].filterOptions.map(opt => ({
+          ...opt,
+          isSelected: false
+        }));
 
-    if (option) {
-      const optionIdx = filterCategories[index].filterOptions.indexOf(option);
-      newOptions = filterCategories[index].filterOptions.map(opt => ({
-        ...opt,
-        isSelected: false
-      }));
-
-      newOptions[optionIdx].isSelected = !option.isSelected;
-
-      filterCategories[index] = {
-        ...filterCategories[index],
-        filterOptions: newOptions
-      };
+        newOptions[optionIdx].isSelected = !option.isSelected;
+        filterCategories[index].filterOptions = newOptions;
+        this.props.onUpdateFilter(filterCategories);
+      }
     }
-    this.props.onUpdateFilter(filterCategories);
   }
 
   resetFilters() {

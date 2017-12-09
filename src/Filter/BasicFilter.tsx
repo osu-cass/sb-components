@@ -46,7 +46,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   }
 
   findFilterOption(key: string) {
-    return this.props.filterOptions.find(fil => fil.key == key);
+    return this.props.filterOptions.find(fil => fil.key === key);
   }
 
   renderFilterBody() {
