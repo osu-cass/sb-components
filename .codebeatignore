@@ -1,2 +1,2 @@
-*.storybook.tsx
-*.test.tsx
+stories/
+**/__tests__
