@@ -6,6 +6,8 @@ import { mockBasicFilterCategories } from "../../../stories/Filter/mocks";
 import { shallow } from "enzyme";
 
 describe("BasicFilterContainer", () => {
+  const AdvFilExpand = jest.fn();
+
   const updateFilter = (filterCategories: BasicFilterCategoryModel[]) => {
     wrapper.setProps({ filterCategories });
   };
@@ -16,6 +18,16 @@ describe("BasicFilterContainer", () => {
       onUpdateFilter={updateFilter}
       containsAdvancedFilter={false}
       handleAdvancedFilterExpand={() => {}}
+    />,
+    { lifecycleExperimental: true }
+  );
+
+  let wrapper1 = shallow(
+    <BasicFilterContainer
+      filterCategories={mockBasicFilterCategories}
+      onUpdateFilter={updateFilter}
+      containsAdvancedFilter={true}
+      handleAdvancedFilterExpand={AdvFilExpand}
     />,
     { lifecycleExperimental: true }
   );
@@ -54,5 +66,12 @@ describe("BasicFilterContainer", () => {
       expect(wrapper).toMatchSnapshot();
       i++;
     });
+  });
+
+  it("expands the advanced filter", () => {
+    expect(wrapper1).toMatchSnapshot();
+    wrapper1.setState({ expanded: false });
+    wrapper1.findWhere(node => node.type() === "button").simulate("click");
+    expect(wrapper1).toMatchSnapshot();
   });
 });
