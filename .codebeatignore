@@ -1,2 +1,2 @@
-/stories/*
-/__tests__/*
+src/stories/**
+**/__tests__/*
