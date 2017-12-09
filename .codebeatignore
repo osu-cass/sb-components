@@ -1,2 +1,2 @@
-src/stories/
-src/**/__tests__/
+stories
+__tests__
