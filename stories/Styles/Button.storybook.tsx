@@ -7,6 +7,7 @@ storiesOf("Style", module)
   .addDecorator(CenterDecorator)
   .add("Buttons", () => (
     <div>
+      <button className="btn btn-white">btn-white</button>
       <button className="btn btn-blue">btn-blue</button>
       <button className="btn btn-green">btn-green</button>
       <button className="btn btn-gray">btn-gray</button>
@@ -16,5 +17,30 @@ storiesOf("Style", module)
       <a className="btn btn-link" role="button" onClick={action("Clicked")}>
         btn-link
       </a>
+    </div>
+  ))
+  .add("Buttons Disabled", () => (
+    <div>
+      <button disabled className="btn btn-white">
+        btn-white
+      </button>
+      <button disabled className="btn btn-blue">
+        btn-blue
+      </button>
+      <button disabled className="btn btn-green">
+        btn-green
+      </button>
+      <button disabled className="btn btn-gray">
+        btn-gray
+      </button>
+      <button disabled className="btn btn-primary">
+        btn-primary
+      </button>
+      <button disabled className="btn btn-success">
+        btn-success
+      </button>
+      <button disabled className="item-nav-btn btn btn-link">
+        item-nav-btn
+      </button>
     </div>
   ));

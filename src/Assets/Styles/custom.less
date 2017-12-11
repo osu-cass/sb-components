@@ -55,6 +55,12 @@ h5 {
     cursor: pointer;
     box-shadow: none;
   }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  & > span {
+    padding: 2px;    
+  }
 }
 
 .btn-blue,
@@ -65,16 +71,23 @@ h5 {
     color: @text-color-light;
   }
 }
+
 .btn-blue,
 .btn-primary {
   background-color: @sb-blue;
   border-color: @sb-blue;
-  box-shadow: @sb-shadow;
   &:hover, &:active, &:hover {
     background-color: @sb-blue-darker;
     border-color: @sb-blue-darker;
   }
-  
+  &:disabled{
+    background-color: @sb-blue-lighter;
+    border-color: @sb-blue-lighter;
+  }
+  &:disabled:hover {
+    background-color: @sb-blue;
+    border-color: @sb-blue;
+  }
 }
 
 .btn-green,
@@ -85,6 +98,14 @@ h5 {
     background-color: @sb-green-darker;
     border-color: @sb-green-darker;
   }
+  &:disabled {
+    background-color: @sb-green-lighter;
+    border-color: @sb-green-lighter;
+  }
+  &:disabled:hover {
+    background-color: @sb-green;
+    border-color: @sb-green;
+  }
 }
 
 .btn-gray {
@@ -94,12 +115,25 @@ h5 {
     background-color: @sb-gray-darker;
     border-color: @sb-gray-darker;
   }
+  &:disabled{
+    background-color: @sb-gray-lighter;
+    border-color: @sb-gray-lighter;
+  }
+  &:disabled:hover {
+    background-color: @sb-gray;
+    border-color: @sb-gray;
+  }
 }
 
-button:disabled {
-  opacity: 0.65;
-  cursor: not-allowed;
+.btn-white {
+  background-color: @sb-white;
+  border-color: @sb-white;
+  &:hover, &:active, &:hover {
+    background-color: @sb-white-darker;
+    border-color: @sb-white-darker;
+  }
 }
+
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
