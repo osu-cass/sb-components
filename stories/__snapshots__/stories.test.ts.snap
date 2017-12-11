@@ -3827,12 +3827,13 @@ exports[`Storyshots Layout Nav name links 1`] = `
           >
             <a
               href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
               target="_blank"
               title="Smarter Balanced Home"
             >
               <img
                 alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
+                src="test-file-stub"
               />
             </a>
           </div>
@@ -3921,12 +3922,13 @@ exports[`Storyshots Layout Nav name no links 1`] = `
           >
             <a
               href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
               target="_blank"
               title="Smarter Balanced Home"
             >
               <img
                 alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
+                src="test-file-stub"
               />
             </a>
           </div>
@@ -3977,12 +3979,13 @@ exports[`Storyshots Layout name links and body 1`] = `
           >
             <a
               href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
               target="_blank"
               title="Smarter Balanced Home"
             >
               <img
                 alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
+                src="test-file-stub"
               />
             </a>
           </div>
@@ -4111,12 +4114,13 @@ exports[`Storyshots Layout name no links no body 1`] = `
           >
             <a
               href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
               target="_blank"
               title="Smarter Balanced Home"
             >
               <img
                 alt="Smarter Balanced Logo"
-                src="/Images/SmarterBalanced_logo.png"
+                src="test-file-stub"
               />
             </a>
           </div>
