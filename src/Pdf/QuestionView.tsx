@@ -65,7 +65,10 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
       ) : null;
 
     const key =
-      data && data.sampleItemScoring && data.sampleItemScoring.answerKey && this.props.displayScoreInfo ? (
+      data &&
+      data.sampleItemScoring &&
+      data.sampleItemScoring.answerKey &&
+      this.props.displayScoreInfo ? (
         <div>
           <b>Key:</b> {data.sampleItemScoring.answerKey}
         </div>

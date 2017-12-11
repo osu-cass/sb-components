@@ -34,7 +34,7 @@ export interface ItemTableContainerState {
   selectedRow?: ItemCardModel;
 }
 /**
- * Container for a table of Items that can be sorted by clicking on the table header.
+ * Container for a table of Items that can be sorted by clicking on a table header.
  * When an item is clicked, it displays an iframe of that question.
  */
 export class ItemTableContainer extends React.Component<

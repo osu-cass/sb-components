@@ -2,7 +2,7 @@ import {
   FilterCategoryModel,
   FilterOptionModel,
   FilterType
-} from "../Filter/AdvancedFilterModel";
+} from "../Filter/FilterModels";
 import {
   FilterSearchModel,
   ItemsSearchModel,

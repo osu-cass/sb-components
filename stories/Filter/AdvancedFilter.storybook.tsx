@@ -2,7 +2,6 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { AdvancedFilter } from "../../src";
 import {
-  selectedHandler,
   advancedFilterSubject,
   advancedFilterSubjectMulti,
   advancedFilterSubjectDisabled,
@@ -13,64 +12,62 @@ import {
 } from "./mocks";
 import { CenterDecorator } from "../CenterDecorator";
 
+const action = () => {};
 //Advanced filter select actions won't persist, stories should be checking the rendering and not actions
 storiesOf("Advanced Filter", module)
   .addDecorator(CenterDecorator)
   .add("single select", () => (
-    <AdvancedFilter
-      {...advancedFilterSubject}
-      selectedHandler={selectedHandler}
-    />
+    <AdvancedFilter {...advancedFilterSubject} onFilterOptionSelect={action} />
   ))
   .add("multi select", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMulti}
-      selectedHandler={selectedHandler}
       filterOptions={subjectsFilterOptionsSelected}
+      onFilterOptionSelect={action}
     />
   ))
   .add("multi select all ", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMultiAll}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={action}
     />
   ))
   .add("multi select all selected ", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMultiAll}
-      selectedHandler={selectedHandler}
       filterOptions={subjectsFilterOptionsSelected}
+      onFilterOptionSelect={action}
     />
   ))
   .add("disabled", () => (
     <AdvancedFilter
       {...advancedFilterSubjectDisabled}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={action}
     />
   ))
   .add("disabled with selections", () => (
     <AdvancedFilter
       {...advancedFilterSubjectDisabled}
-      selectedHandler={selectedHandler}
       filterOptions={subjectsFilterOptionsSelected}
+      onFilterOptionSelect={action}
     />
   ))
   .add("disabled multi", () => (
     <AdvancedFilter
       {...advancedFilterSubjectDisabledMulti}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={action}
     />
   ))
   .add("disabled multi all", () => (
     <AdvancedFilter
       {...advancedFilterSubjectMultiAllDisabled}
-      selectedHandler={selectedHandler}
+      onFilterOptionSelect={action}
     />
   ))
   .add("no options", () => (
     <AdvancedFilter
       {...advancedFilterSubject}
-      selectedHandler={selectedHandler}
       filterOptions={[]}
+      onFilterOptionSelect={action}
     />
   ));

@@ -1,22 +1,14 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import {
-  AdvancedFilterContainer,
-  AdvancedFilterContainerProps,
-  FilterOptionModel,
-  OptionTypeModel,
-  AdvancedFilterCategoryModel
-} from "../../src";
-import { mockAdvancedFilterCategoriesAll } from "./mocks";
+import { AdvFilContainerTestWrapper } from "../AdvFilTestWrappers";
 
-const props: AdvancedFilterContainerProps = {
-  filterOptions: mockAdvancedFilterCategoriesAll,
-  onClick: action("clicked")
+const props: any = {
+  pageTitle: "Search"
 };
 
 storiesOf("Advanced Filter Container", module)
-  .add("normal render", () => <AdvancedFilterContainer {...props} />)
-  .add("page title", () => (
-    <AdvancedFilterContainer {...props} pageTitle="Search" />
+  .add("normal render", () => <AdvFilContainerTestWrapper />)
+  .add("with page title", () => (
+    <AdvFilContainerTestWrapper properties={props} />
   ));

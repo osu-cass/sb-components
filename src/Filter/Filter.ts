@@ -16,7 +16,7 @@ import {
   FilterCategoryModel,
   FilterOptionModel,
   FilterType
-} from "../Filter/AdvancedFilterModel";
+} from "../Filter/FilterModels";
 import { ItemSearch } from "../ItemSearch/ItemSearch";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 

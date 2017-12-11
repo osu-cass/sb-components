@@ -6,7 +6,7 @@ import {
   AdvancedFilterCategoryModel,
   FilterOptionModel,
   FilterType
-} from "../Filter/AdvancedFilterModel";
+} from "../Filter/FilterModels";
 
 export type SearchFilterStringTypes =
   | ClaimModel

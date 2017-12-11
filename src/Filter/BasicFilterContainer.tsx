@@ -1,14 +1,11 @@
 import * as React from "react";
 import "../Styles/basic-filter.less";
-import {
-  BasicFilterCategoryModel,
-  FilterOptionModel
-} from "./AdvancedFilterModel";
+import { BasicFilterCategoryModel, FilterOptionModel } from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
 
 export interface BasicFilterContainerProps {
-  filterOptions: BasicFilterCategoryModel[];
-  onClick: (selected: BasicFilterCategoryModel[]) => void;
+  filterCategories: BasicFilterCategoryModel[];
+  onUpdateFilter: (selected: BasicFilterCategoryModel[]) => void;
   containsAdvancedFilter: boolean;
   handleAdvancedFilterExpand: () => void;
 }
@@ -23,43 +20,40 @@ export class BasicFilterContainer extends React.Component<
 > {
   constructor(props: BasicFilterContainerProps) {
     super(props);
-
     this.state = {
       expanded: this.props.containsAdvancedFilter ? false : true
     };
-
     this.handleClick = this.handleClick.bind(this);
   }
 
-  //multiSelect not an option right now.
-  onSelect(category: BasicFilterCategoryModel, option?: FilterOptionModel) {
-    const index = this.props.filterOptions.indexOf(category);
-    const newFilters = [...this.props.filterOptions];
-    let newOptions: FilterOptionModel[] = [];
+  onFilterSelect(
+    category: BasicFilterCategoryModel,
+    option?: FilterOptionModel
+  ) {
+    const index = this.props.filterCategories.indexOf(category);
+    let { filterCategories } = this.props;
+    if (!category.disabled) {
+      if (option !== undefined) {
+        let newOptions = filterCategories[index].filterOptions.slice();
+        const optionIdx = filterCategories[index].filterOptions.indexOf(option);
+        newOptions = filterCategories[index].filterOptions.map(opt => ({
+          ...opt,
+          isSelected: false
+        }));
 
-    if (option) {
-      const optionIdx = newFilters[index].filterOptions.indexOf(option);
-      newOptions = newFilters[index].filterOptions.map(opt => ({
-        ...opt,
-        isSelected: false
-      }));
-
-      newOptions[optionIdx].isSelected = !option.isSelected;
-
-      newFilters[index] = {
-        ...newFilters[index],
-        filterOptions: newOptions
-      };
+        newOptions[optionIdx].isSelected = !option.isSelected;
+        filterCategories[index].filterOptions = newOptions;
+        this.props.onUpdateFilter(filterCategories);
+      }
     }
-    this.props.onClick(newFilters);
   }
 
   resetFilters() {
-    const newFilters = this.props.filterOptions;
-    newFilters.forEach(cate => {
-      cate.filterOptions.map(opt => (opt.isSelected = false));
+    const { filterCategories, onUpdateFilter } = this.props;
+    filterCategories.forEach(category => {
+      category.filterOptions.map(opt => (opt.isSelected = false));
     });
-    this.props.onClick(newFilters);
+    onUpdateFilter(filterCategories);
   }
 
   keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
@@ -69,17 +63,16 @@ export class BasicFilterContainer extends React.Component<
   }
 
   renderFilters() {
-    const filterTags = this.props.filterOptions.map((fil, i) => {
+    const { filterCategories } = this.props;
+    return filterCategories.map((fil, i) => {
       return (
         <BasicFilter
           key={i}
           {...fil}
-          selectedHandler={opt => this.onSelect(fil, opt)}
+          selectedHandler={opt => this.onFilterSelect(fil, opt)}
         />
       );
     });
-
-    return filterTags;
   }
 
   handleClick() {
@@ -88,7 +81,7 @@ export class BasicFilterContainer extends React.Component<
   }
 
   render() {
-    const { filterOptions, containsAdvancedFilter } = this.props;
+    const { filterCategories, containsAdvancedFilter } = this.props;
     const { expanded } = this.state;
     let advancedFilterButton = null;
 

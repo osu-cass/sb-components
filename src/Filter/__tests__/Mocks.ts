@@ -3,7 +3,7 @@ import {
   FilterOptionModel,
   FilterCategoryModel,
   FilterType
-} from "../AdvancedFilterModel";
+} from "../FilterModels";
 import {
   SubjectModel,
   TargetModel,

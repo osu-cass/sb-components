@@ -1,6 +1,7 @@
 //
 // AboutItem Components and Models
 //
+import { onFilterSelect } from "./Filter/FilterModels";
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
 export { AboutItemModel } from "./AboutItem/AboutItemModels";
 export { AboutItem } from "./AboutItem/AboutItem";
@@ -57,6 +58,7 @@ export {
   FilterContainerProps
 } from "./Filter/FilterContainer";
 export {
+  onFilterSelect,
   OptionTypeModel,
   FilterOptionModel,
   BasicFilterCategoryModel,
@@ -65,7 +67,7 @@ export {
   TechType,
   AdvancedFiltersModel,
   FilterType
-} from "./Filter/AdvancedFilterModel";
+} from "./Filter/FilterModels";
 export { Filter } from "./Filter/Filter";
 //
 // Grade Levels

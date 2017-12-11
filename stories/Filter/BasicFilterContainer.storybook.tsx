@@ -5,8 +5,8 @@ import { mockBasicFilterCategories } from "./mocks";
 import { BasicFilterContainer, BasicFilterContainerProps } from "../../src";
 
 const props: BasicFilterContainerProps = {
-  filterOptions: mockBasicFilterCategories,
-  onClick: action("clicked"),
+  filterCategories: mockBasicFilterCategories,
+  onUpdateFilter: action("clicked"),
   containsAdvancedFilter: false,
   handleAdvancedFilterExpand: () => {}
 };

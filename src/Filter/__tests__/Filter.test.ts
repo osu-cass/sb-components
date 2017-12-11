@@ -1,6 +1,6 @@
 import { Filter } from "../Filter";
 import * as Mocks from "./Mocks";
-import { FilterType } from "../AdvancedFilterModel";
+import { FilterType } from "../FilterModels";
 import { GradeLevel, GradeLevels } from "../../GradeLevels/GradeLevels";
 import { filter } from "minimatch";
 
