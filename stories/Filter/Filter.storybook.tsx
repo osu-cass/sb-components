@@ -3,15 +3,16 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { FilterContainer, FilterContainerProps } from "../../src/";
 import {
+  advancedFilterGrade,
   mockAdvancedFilterCategoriesAll,
   mockBasicFilterCategories
 } from "./mocks";
 
 const props: FilterContainerProps = {
-  basicFilterOptions: mockBasicFilterCategories,
-  onBasicFilterClick: action("clicked on a basic filter"),
-  advancedFilterOptions: mockAdvancedFilterCategoriesAll,
-  onAdvancedFilterClick: action("clicked on an advanced filter")
+  basicFilterCategories: mockBasicFilterCategories,
+  onUpdateBasicFilter: action("clicked on a basic filter"),
+  advancedFilterCategories: mockAdvancedFilterCategoriesAll,
+  onUpdateAdvancedFilter: action("clicked on an advanced filter")
 };
 
 storiesOf("Filter Container", module).add(
