@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../Styles/nav.less";
+import "../Assets/Styles/nav.less";
 import { SbNavLink, SbNavlinkProps } from "./SbNavLink";
 
 export interface NavMenuProps {

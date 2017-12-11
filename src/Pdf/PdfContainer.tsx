@@ -2,7 +2,7 @@ import * as React from "react";
 import { ItemGroupModel } from "./PdfModels";
 import { ItemViewContainer } from "./ItemViewContainer";
 import { CoverPage } from "./CoverPage";
-import "../Styles/pdf.less";
+import "../Assets/Styles/pdf.less";
 
 export interface PdfContainerProps {
   items: ItemGroupModel[];
@@ -17,10 +17,11 @@ export interface PdfContainerProps {
 export class PdfContainer extends React.Component<PdfContainerProps, {}> {
   render() {
     const itemPages = this.props.items.map(item => (
-      <ItemViewContainer 
-        itemData={item} 
-        key={item.questions[0].id} 
-        displayScoreInfo={this.props.displayScoreInfo} />
+      <ItemViewContainer
+        itemData={item}
+        key={item.questions[0].id}
+        displayScoreInfo={this.props.displayScoreInfo}
+      />
     ));
 
     return (

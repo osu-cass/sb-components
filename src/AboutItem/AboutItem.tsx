@@ -1,4 +1,4 @@
-import "../Styles/modal.less";
+import "../Assets/Styles/modal.less";
 import * as React from "react";
 import * as Collapsible from "../Rubric/Collapsible";
 import { AboutItemModel } from "./AboutItemModels";

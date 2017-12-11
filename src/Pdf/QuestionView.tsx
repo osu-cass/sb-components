@@ -5,7 +5,7 @@ import { ItemCardTable } from "../ItemCard/ItemCardTable";
 import { RubricTable } from "../Rubric/RubricTable";
 import { QuestionModel } from "./PdfModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import "../Styles/pdf-item-page.less";
+import "../Assets/Styles/pdf-item-page.less";
 
 export interface QuestionViewProps {
   question: QuestionModel;
@@ -65,7 +65,10 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
       ) : null;
 
     const key =
-      data && data.sampleItemScoring && data.sampleItemScoring.answerKey && this.props.displayScoreInfo ? (
+      data &&
+      data.sampleItemScoring &&
+      data.sampleItemScoring.answerKey &&
+      this.props.displayScoreInfo ? (
         <div>
           <b>Key:</b> {data.sampleItemScoring.answerKey}
         </div>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Styles/pdf-item-page.less";
+import "../Assets/Styles/pdf-item-page.less";
 import { ItemPdfModel, ItemGroupModel } from "./PdfModels";
 import { PassageView } from "./PassageView";
 import { QuestionView } from "./QuestionView";
@@ -22,9 +22,9 @@ export class ItemViewContainer extends React.Component<
     ) : null;
 
     const questions = this.props.itemData.questions.map(q => (
-      <QuestionView 
-        question={q} 
-        key={q.questionNumber} 
+      <QuestionView
+        question={q}
+        key={q.questionNumber}
         displayScoreInfo={this.props.displayScoreInfo}
       />
     ));

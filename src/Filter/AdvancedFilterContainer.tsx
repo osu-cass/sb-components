@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Styles/advanced-filter.less";
+import "../Assets/Styles/advanced-filter.less";
 import { AdvancedFilter } from "./AdvancedFilter";
 import {
   AdvancedFilterCategoryModel,

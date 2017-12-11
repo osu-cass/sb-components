@@ -70,18 +70,15 @@
     "@types/storybook__addon-actions": "~3.0.1",
     "@types/storybook__react": "~3.0.5",
     "awesome-typescript-loader": "^3.4.0",
-    "bootstrap": "3.3.7",
     "coveralls": "^3.0.0",
     "css-loader": "~0.28.7",
     "dts-generator": "^2.1.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "font-awesome": "~4.7.0",
     "husky": "^0.14.3",
     "identity-obj-proxy": "~3.0.0",
     "jest": "~21.2.1",
     "jest-cli": "~21.2.1",
-    "jquery": "3.2.1",
     "jsdom": "^11.3.0",
     "jsdom-global": "^3.0.2",
     "less": "~2.7.3",
@@ -105,10 +102,32 @@
     "tslint-microsoft-contrib": "^5.0.1",
     "typescript": "~2.5.3",
     "url-loader": "0.5.9",
-    "webpack": "~3.8.1"
+    "webpack": "~3.8.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "react-modal": "3.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "file-loader": "^1.1.5",
+    "font-awesome": "~4.7.0",
+    "jquery": "3.2.1",
+    "typeface-pt-sans-caption": "0.0.44",
+    "typeface-pt-serif": "0.0.44",
+    "typeface-pt-serif-caption": "0.0.44"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16",
+    "react-dom": "^15.0.0 || ^16",
+    "bootstrap": "^3.3.7 || ^4",
+    "jquery": "^3.2.1",
+    "react-modal": "^3.1.2",
+    "font-awesome": "~4.7.0",
+    "typeface-pt-sans-caption": "^0.0.44",
+    "typeface-pt-serif": "^0.0.44",
+    "typeface-pt-serif-caption": "^0.0.44"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTest.ts",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTest.ts",
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
@@ -121,7 +140,8 @@
     ],
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "./tsconfig.json"
+        "tsConfigFile": "./tsconfig.json",
+        "skipBabel": true        
       }
     },
     "moduleFileExtensions": [
@@ -138,9 +158,5 @@
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
     }
-  },
-  "dependencies": {
-    "extract-text-webpack-plugin": "^3.0.2",
-    "react-modal": "3.1.2"
   }
 }

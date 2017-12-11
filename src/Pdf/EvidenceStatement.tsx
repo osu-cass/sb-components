@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Styles/pdf-data-table.less";
+import "../Assets/Styles/pdf-data-table.less";
 
 export interface EvidenceStatementProps {
   statement: string;
