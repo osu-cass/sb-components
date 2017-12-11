@@ -21,7 +21,7 @@ h3,
 h4,
 h5 {
   font-family: @font-family-base;
-  color: @text-color-darkest;  
+  color: @text-color-darkest;
 }
 
 .container {
@@ -64,7 +64,7 @@ h5 {
     cursor: not-allowed;
   }
   & > span {
-    padding: 2px;    
+    padding: 2px;
   }
 }
 
@@ -80,14 +80,20 @@ h5 {
 .btn-green,
 .btn-gray {
   color: @text-color-light;
-  &:hover, &:active, &:hover, &:focus {
+  &:hover,
+  &:active,
+  &:hover,
+  &:focus {
     color: @text-color-light;
   }
 }
 
 .btn-white {
   color: @text-color-darkest;
-  &:hover, &:active, &:hover, &:focus {
+  &:hover,
+  &:active,
+  &:hover,
+  &:focus {
     color: @text-color-darkest;
   }
 }
@@ -96,11 +102,13 @@ h5 {
 .btn-primary {
   background-color: @sb-blue;
   border-color: @sb-blue;
-  &:hover, &:active, &:hover {
+  &:hover,
+  &:active,
+  &:hover {
     background-color: @sb-blue-darker;
     border-color: @sb-blue-darker;
   }
-  &:disabled{
+  &:disabled {
     background-color: @sb-blue-lighter;
     border-color: @sb-blue-lighter;
   }
@@ -114,7 +122,9 @@ h5 {
 .btn-success {
   background-color: @sb-green;
   border-color: @sb-green;
-  &:hover, &:active, &:hover {
+  &:hover,
+  &:active,
+  &:hover {
     background-color: @sb-green-darker;
     border-color: @sb-green-darker;
   }
@@ -131,11 +141,13 @@ h5 {
 .btn-gray {
   background-color: @sb-gray;
   border-color: @sb-gray;
-  &:hover, &:active, &:hover {
+  &:hover,
+  &:active,
+  &:hover {
     background-color: @sb-gray-darker;
     border-color: @sb-gray-darker;
   }
-  &:disabled{
+  &:disabled {
     background-color: @sb-gray-lighter;
     border-color: @sb-gray-lighter;
   }
@@ -148,12 +160,13 @@ h5 {
 .btn-white {
   background-color: @sb-white;
   border-color: @sb-white;
-  &:hover, &:active, &:hover {
+  &:hover,
+  &:active,
+  &:hover {
     background-color: @sb-gray-lighter;
     border-color: @sb-gray-lighter;
   }
 }
-
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
@@ -195,8 +208,7 @@ a.collapsible-label:visited {
 }
 
 //## Tooltips
-
-.tooltip-label{
+.tooltip-label {
   margin-right: @spacing-item;
 }
 
@@ -206,6 +218,7 @@ a.collapsible-label:visited {
   cursor: help;
   padding: @spacing-item;
 }
+
 /* Tooltip styling */
 [data-tooltip]:before {
   content: attr(data-tooltip);
