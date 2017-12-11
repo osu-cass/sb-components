@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../Styles/nav.less";
+import "../Assets/Styles/nav.less";
 import { SbNavLink, SbNavlinkProps } from "./SbNavLink";
+const sbLogo = require("../Assets/Images/SmarterBalanced_logo.png");
 
 export interface NavMenuProps {
   links?: SbNavlinkProps[];
@@ -11,12 +12,13 @@ export interface NavMenuProps {
 export class NavMenu extends React.Component<NavMenuProps, {}> {
   renderLinks() {
     const links = this.props.links;
+    let content: JSX.Element | undefined;
     if (links) {
       const sbLinks = links.map((l, key) => <SbNavLink {...l} key={key} />);
-      return <div className="sbNav-linksGroup">{sbLinks}</div>;
-    } else {
-      return null;
+      content = <div className="sbNav-linksGroup">{sbLinks}</div>;
     }
+
+    return content;
   }
 
   render() {
@@ -32,14 +34,12 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
             <div className="sbNav-titleGroup">
               <div className="sbNav-titleGroup-item">
                 <a
+                  rel="noopener noreferrer"
                   target="_blank"
                   href="http://www.smarterbalanced.org/"
                   title="Smarter Balanced Home"
                 >
-                  <img
-                    alt="Smarter Balanced Logo"
-                    src="/Images/SmarterBalanced_logo.png"
-                  />
+                  <img alt="Smarter Balanced Logo" src={sbLogo} />
                 </a>
               </div>
               <div className="sbNav-titleGroup-item">

@@ -1,4 +1,4 @@
-import "../Styles/custom.less";
+import "../Assets/Styles/custom.less";
 import * as React from "react";
 import { NavMenu } from "./NavMenu";
 import { Footer } from "./Footer";

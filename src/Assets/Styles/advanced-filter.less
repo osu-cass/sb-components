@@ -9,9 +9,10 @@
   box-shadow: @box-shadow;
   font-family: "PT ", "Georgia", "Times New Roman", "Times,serif";
   background-color: @sb-white;
-  min-width: 475px;
   padding: @spacing-unit;
   border-radius: 0 0 10px 10px;
+  color: @text-color-dark;
+  min-width: 300px;
 }
 
 div.advanced-filter-container *:not(span) {
@@ -37,7 +38,7 @@ div.filter-title-container {
 
 div.filter-advanced-filter-header {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -49,13 +50,6 @@ div.filter-advanced-filter-title {
   align-items: center;
   margin-left: @spacing-unit/2;
   white-space: nowrap;
-}
-
-button.filter-reset-btn {
-}
-button.filter-reset-btn:hover {
-  background-color: @grey-hover;
-  color: @text-color-light;
 }
 
 div.advanced-filter-container-expanded {
@@ -88,76 +82,12 @@ div.filter-status {
   padding: @spacing-unit/2;
 }
 
-.filter-indicator {
-  padding: 5px;
-  margin-right: 15px;
-  color: @text-color-light;
-  border: 1px solid @grey-border-color;
-  border-radius: 6px;
-  background-color: #2d7bbd;
-}
-
-.filter-indicator,
-.filter-button {
-  user-select: none; /* So they can't select text */
-  cursor: pointer;
-}
-
-.filter-indicator:hover {
-  background-color: @grey-hover;
-}
-
-.filter-indicator > span {
-  padding: 2px;
-}
-
 .filter-button-container {
   display: flex;
-  flex-flow: column nowrap;
-}
-
-.disabled-filter-button {
-  margin: 1px;
-  border-radius: 3px;
-  border: 1px solid @grey-border-color;
-  padding: 8px;
-  height: 30px;
-  background-color: @grey-border-color;
-  outline: @grey;
-}
-
-.filter-button {
-  height: 30px;
-  background-color: @sb-white;
-  outline: @grey-border-color;
-
-  /* SIW styles */
-  padding: 5px;
-  margin: 5px;
-  color: #000000;
-  font-size: 12px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  text-align: left;
-  width: max-content;
-}
-
-.filter-button:hover :not(disabled) {
-  background-color: #efefef;
-  color: @text-color-light;
-  box-shadow: 1px 1px 2px black;
-  border: 0;
-}
-
-.filter-button:active {
-  background-color: #1f67a1;
-  color: @text-color-light;
-  border: 0;
-}
-
-.selected-button {
-  background-color: #2d7bbd;
-  color: @text-color-light;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+  max-width: 175px;
 }
 
 .filter-selection {
@@ -175,19 +105,10 @@ div.filter-status {
 .child-filter-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.filter-expand-btn,
-.filter-reset-btn {
-  border: 1px solid @grey-border-color;
-  border-radius: 6px;
-  background-color: white;
-  padding: 5px;
-  margin: 5px;
-  color: #000000;
-  font-size: 12px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  text-align: left;
+.filter-btn {
+  max-width: max-content;
+  min-width: 50px;
 }

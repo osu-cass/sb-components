@@ -1,16 +1,19 @@
 ﻿//** Constants used by all pages
-
 //## Media
 @phone-portrait: 550px;
 @small: 800px;
 
-//## Font Sizes
+//## Fonts
 @font-size-header: 48px;
 @font-size-base: 16px;
 @font-size-larger: 18px;
 @font-size-smaller: 14px;
+@font-size-smallest: 12px;
+@font-family-base: "PT Serif", serif, Times;
 
+//## Spacing
 @spacing-unit: 20px;
+@spacing-item: 5px;
 
 @background-color-base: #f3f3f3;
 @background-color-lighter: #FFFFFF;
@@ -23,19 +26,35 @@
 
 @text-color-light: #ffffff;
 @text-color-gray: gray;
+@text-color-dark: @sb-gray;
+
+@text-color-darkest: @sb-gray-darker;
 
 @box-shadow: 0 3px 6px rgba(0,0,0,.16);
 @box-shadow-light: 0px 3px 8px rgb(100,100,100);
 
 //## Smarter Balanced custom colors
 @sb-blue: #007393;
-@sb-blue-hover: #005C76;
-@sb-green: #2b731b;
-@sb-green-hover: #225b15;
-@sb-white: #ffffff;
+@sb-blue-darker: #004355;
+@sb-blue-lighter: #008AB1;
+@sb-blue-text: #008AB1;
 
-@grey: #63666A;
-@grey-hover: #535559;
+
+@sb-green: #2b731b;
+@sb-green-darker: #1e5012;
+@sb-green-text: #358c21;
+
+@sb-green-lighter: #43b02a;
+
+@sb-gray: #63666A;
+@sb-gray-darker: #313335;
+@sb-gray-text: #63666A;
+@sb-gray-lighter: lighten(@sb-gray, 25);
+
+@sb-text-light: #686868;
+
+@sb-white: #ffffff;
+@sb-white-darker: #e6e6e6;
 
 @sb-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
 @card-shadow: inset 0 0 0 transparent,0 0px 5px #959595;

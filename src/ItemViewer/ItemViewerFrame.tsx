@@ -1,4 +1,4 @@
-import "../Styles/item-frame.less";
+import "../Assets/Styles/item-frame.less";
 import * as React from "react";
 
 export interface FrameProps {

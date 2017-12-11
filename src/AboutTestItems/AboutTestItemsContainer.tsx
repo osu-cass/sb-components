@@ -1,4 +1,4 @@
-import "../Styles/about.less";
+import "../Assets/Styles/about.less";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as $ from "jquery";

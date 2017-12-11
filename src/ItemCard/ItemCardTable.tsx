@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ItemCardModel } from "./ItemCardModels";
-import "../Styles/pdf-data-table.less";
+import "../Assets/Styles/pdf-data-table.less";
 
 export interface ItemCardTableProps {
   card: ItemCardModel;

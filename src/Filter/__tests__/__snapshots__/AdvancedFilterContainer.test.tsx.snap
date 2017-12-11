@@ -20,18 +20,31 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
            Advanced Filters
         </h3>
       </div>
-      <button
-        className="filter-reset-btn "
-        onClick={[Function]}
+      <div
+        className="adv-control-btns"
       >
-        Reset Filters
-      </button>
+        <button
+          className="btn btn-white filter-reset-btn "
+          onClick={[Function]}
+        >
+          Reset Filters
+        </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="filter-status"
     >
       <div
-        className="filter-indicator"
+        className="btn btn-blue filter-btn filter-selection"
         key="GradeELA"
       >
         English Literacy & Arts
@@ -42,7 +55,7 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
         />
       </div>
       <div
-        className="filter-indicator"
+        className="btn btn-blue filter-btn filter-selection"
         key="GradeMath"
       >
         Maths
@@ -77,18 +90,31 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
            Advanced Filters
         </h3>
       </div>
-      <button
-        className="filter-reset-btn "
-        onClick={[Function]}
+      <div
+        className="adv-control-btns"
       >
-        Reset Filters
-      </button>
+        <button
+          className="btn btn-white filter-reset-btn "
+          onClick={[Function]}
+        >
+          Reset Filters
+        </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="filter-status"
     >
       <div
-        className="filter-indicator"
+        className="btn btn-blue filter-btn filter-selection"
         key="GradeELA"
       >
         English Literacy & Arts
@@ -99,7 +125,7 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
         />
       </div>
       <div
-        className="filter-indicator"
+        className="btn btn-blue filter-btn filter-selection"
         key="GradeMath"
       >
         Maths
@@ -141,15 +167,19 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
            Advanced Filters
         </h3>
       </div>
-      <button
-        className="filter-expand-btn"
-        onClick={[Function]}
+      <div
+        className="adv-control-btns"
       >
-        Collapse 
-        <span
-          className="fa fa-chevron-down"
-        />
-      </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Collapse 
+          <span
+            className="fa fa-chevron-down"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="filter-status"
@@ -357,15 +387,19 @@ exports[`AdvancedFilterContainer expands and collapses on click 2`] = `
            Advanced Filters
         </h3>
       </div>
-      <button
-        className="filter-expand-btn"
-        onClick={[Function]}
+      <div
+        className="adv-control-btns"
       >
-        Expand 
-        <span
-          className="fa fa-chevron-right"
-        />
-      </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="filter-status"
