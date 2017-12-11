@@ -59,6 +59,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
             this.props.selectedHandler(this.findFilterOption(e.target.value))
           }
         >
+          <option value="default">Select Filter...</option>
           {this.renderTags()}
         </select>
       );

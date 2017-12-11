@@ -39,7 +39,7 @@ describe("BasicFilterContainer", () => {
   });
 
   it("can select dropdown filter options", () => {
-    const options = [7, 56, 960];
+    const options = ["default", 7, 56, 960];
     options.forEach(opt => {
       wrapper
         .findWhere(node => node.type() === BasicFilter)
@@ -68,9 +68,24 @@ describe("BasicFilterContainer", () => {
     });
   });
 
+  it("resets filters on keyboard events", () => {
+    const keyCodes = [0, 13, 32];
+    keyCodes.forEach(key => {
+      wrapper
+        .findWhere(node => node.type() === BasicFilter)
+        .at(0)
+        .dive()
+        .find("select")
+        .simulate("keyDown", { keyCode: key });
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it("expands the advanced filter", () => {
     expect(wrapper1).toMatchSnapshot();
     wrapper1.setState({ expanded: false });
+    wrapper1.findWhere(node => node.type() === "button").simulate("click");
+    expect(wrapper1).toMatchSnapshot();
     wrapper1.findWhere(node => node.type() === "button").simulate("click");
     expect(wrapper1).toMatchSnapshot();
   });
