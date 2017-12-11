@@ -7,5 +7,6 @@ Developers Guide
 
    ProjectSetup
    StyleGuide
+   ReactBestPractices
 
   
