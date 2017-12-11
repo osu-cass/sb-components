@@ -1,5 +1,6 @@
 import {
   AdvancedFilterProps,
+  BasicFilterProps,
   FilterOptionModel,
   OptionTypeModel,
   AdvancedFilterCategoryModel,
@@ -11,8 +12,9 @@ import {
   TargetModel
 } from "../../src";
 import { action } from "@storybook/addon-actions";
-import { FilterType } from "../../src/Filter/AdvancedFilterModel";
+import { FilterType } from "../../src/Filter/FilterModels";
 
+// ADVANCED FILTER MOCKS
 export const gradeFilterOptions: FilterOptionModel[] = [
   {
     label: "Grades 3-5",
@@ -51,13 +53,13 @@ export const subjectsFilterOptions: FilterOptionModel[] = [
 
 export const subjectsFilterOptionsSelected: FilterOptionModel[] = [
   {
-    label: "English Literacy/ Arts",
+    label: "English Literacy & Arts",
     key: "ELA",
     isSelected: true,
     filterType: FilterType.Subject
   },
   {
-    label: "Mathematics",
+    label: "Maths",
     key: "Math",
     isSelected: true,
     filterType: FilterType.Subject
@@ -69,25 +71,80 @@ export const advancedFilterSubject: AdvancedFilterCategoryModel = {
   isMultiSelect: false,
   label: "Subjects",
   code: FilterType.Subject,
-  filterOptions: subjectsFilterOptions,
+  filterOptions: [
+    {
+      label: "English Literacy/ Arts",
+      key: "ELA",
+      isSelected: false,
+      filterType: FilterType.Subject
+    },
+    {
+      label: "Mathematics",
+      key: "Math",
+      isSelected: false,
+      filterType: FilterType.Subject
+    }
+  ],
   displayAllButton: false,
   helpText: "Subject Help"
 };
 
 export const advancedFilterSubjectMulti: AdvancedFilterCategoryModel = {
   ...advancedFilterSubject,
+  filterOptions: [
+    {
+      label: "English Literacy & Arts",
+      key: "EL&A",
+      isSelected: false,
+      filterType: FilterType.Subject
+    },
+    {
+      label: "Maths",
+      key: "Mth",
+      isSelected: false,
+      filterType: FilterType.Subject
+    }
+  ],
   label: "Multi",
   isMultiSelect: true
 };
 
 export const advancedFilterSubjectDisabled: AdvancedFilterCategoryModel = {
   ...advancedFilterSubject,
+  filterOptions: [
+    {
+      label: "English",
+      key: "Eng",
+      isSelected: false,
+      filterType: FilterType.Subject
+    },
+    {
+      label: "Chemistry",
+      key: "Chem",
+      isSelected: false,
+      filterType: FilterType.Subject
+    }
+  ],
   label: "Disabled",
   disabled: true
 };
 
 export const advancedFilterSubjectDisabledMulti: AdvancedFilterCategoryModel = {
   ...advancedFilterSubject,
+  filterOptions: [
+    {
+      label: "Reading",
+      key: "Read",
+      isSelected: false,
+      filterType: FilterType.Subject
+    },
+    {
+      label: "History",
+      key: "Hist",
+      isSelected: false,
+      filterType: FilterType.Subject
+    }
+  ],
   label: "Disabled Multi",
   disabled: true,
   isMultiSelect: true
@@ -95,6 +152,20 @@ export const advancedFilterSubjectDisabledMulti: AdvancedFilterCategoryModel = {
 
 export const advancedFilterSubjectMultiAll: AdvancedFilterCategoryModel = {
   ...advancedFilterSubject,
+  filterOptions: [
+    {
+      label: "US History",
+      key: "USh",
+      isSelected: false,
+      filterType: FilterType.Subject
+    },
+    {
+      label: "World History",
+      key: "Wh",
+      isSelected: false,
+      filterType: FilterType.Subject
+    }
+  ],
   label: "Multi All",
   displayAllButton: true,
   isMultiSelect: true
@@ -102,6 +173,20 @@ export const advancedFilterSubjectMultiAll: AdvancedFilterCategoryModel = {
 
 export const advancedFilterSubjectMultiAllDisabled: AdvancedFilterCategoryModel = {
   ...advancedFilterSubject,
+  filterOptions: [
+    {
+      label: "Calculus",
+      key: "Calc",
+      isSelected: false,
+      filterType: FilterType.Subject
+    },
+    {
+      label: "Geometry",
+      key: "Geom",
+      isSelected: false,
+      filterType: FilterType.Subject
+    }
+  ],
   label: "Multi All Disabled",
   displayAllButton: true,
   isMultiSelect: true
@@ -126,6 +211,18 @@ export const mockAdvancedFilterCategoriesAll: AdvancedFilterCategoryModel[] = [
   advancedFilterSubjectMultiAllDisabled
 ];
 
+export const mockAdvancedFilterCategoriesSelected: AdvancedFilterCategoryModel[] = [
+  {
+    disabled: false,
+    isMultiSelect: false,
+    label: "Grade",
+    filterOptions: subjectsFilterOptionsSelected,
+    displayAllButton: true,
+    helpText: "Grade Help",
+    code: FilterType.Grade
+  }
+];
+
 export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
   {
     disabled: false,
@@ -138,12 +235,23 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
     disabled: false,
     label: "Subjects",
     code: FilterType.Subject,
-    filterOptions: subjectsFilterOptions,
+    filterOptions: [
+      {
+        label: "English Literacy/ Arts",
+        key: "ELA",
+        isSelected: false,
+        filterType: FilterType.Subject
+      },
+      {
+        label: "Mathematics",
+        key: "Math",
+        isSelected: false,
+        filterType: FilterType.Subject
+      }
+    ],
     type: OptionTypeModel.radioBtn
   }
 ];
-
-export const selectedHandler = action("clicked filter");
 
 export const mockInteractionTypes: InteractionTypeModel[] = [
   {
@@ -275,4 +383,44 @@ export const emptyAdvancedFilterTargets: AdvancedFilterCategoryModel = {
   displayAllButton: true,
   filterOptions: [],
   helpText: "Targets help text here."
+};
+
+// BASIC FILTER MOCKS
+
+export const basicFilterOption: FilterOptionModel = {
+  label: "Grade",
+  key: "12345",
+  isSelected: false
+};
+
+export const advancedFilterOptionsArray: FilterOptionModel[] = [
+  { ...basicFilterOption, label: "Grade 1", key: "12346" },
+  { ...basicFilterOption, label: "Grade 2", key: "12347" },
+  { ...basicFilterOption },
+  { ...basicFilterOption, label: "Grade 4", key: "12348" }
+];
+
+export const basicFilterCategoryDropDown: BasicFilterCategoryModel = {
+  disabled: false,
+  label: "Grade",
+  filterOptions: [basicFilterOption],
+  type: OptionTypeModel.DropDown,
+  code: FilterType.Grade
+};
+
+export const basicFilterCategoryRadioBtn: BasicFilterCategoryModel = {
+  ...basicFilterCategoryDropDown,
+  type: OptionTypeModel.radioBtn
+};
+
+export const selectedHandler = action("clicked filter");
+
+export const propsDropDown: BasicFilterProps = {
+  ...basicFilterCategoryDropDown,
+  selectedHandler
+};
+
+export const propsRadioBtn: BasicFilterProps = {
+  ...basicFilterCategoryRadioBtn,
+  selectedHandler
 };

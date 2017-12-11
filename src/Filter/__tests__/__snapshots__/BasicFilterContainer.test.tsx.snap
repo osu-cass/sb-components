@@ -1,0 +1,490 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicFilterContainer can select dropdown filter options 1`] = `
+<div
+  className="basic-filter-container-expanded"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer can select dropdown filter options 2`] = `
+<div
+  className="basic-filter-container-expanded"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer can select dropdown filter options 3`] = `
+<div
+  className="basic-filter-container-expanded"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer can select radio button filter options 1`] = `
+<div
+  className="basic-filter-container-expanded"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": true,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer can select radio button filter options 2`] = `
+<div
+  className="basic-filter-container-expanded"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": true,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer expands the advanced filter 1`] = `
+<div
+  className="basic-filter-container"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+  <div
+    className="basic-filter-button-container"
+  >
+    <div>
+      Advanced Filters
+    </div>
+    <button
+      className="filter-button"
+      onClick={[Function]}
+    >
+      Show
+       
+      <span
+        className="fa fa-chevron-right"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer expands the advanced filter 2`] = `
+<div
+  className="basic-filter-container-expanded"
+>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      selectedHandler={[Function]}
+      type={3}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": true,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      selectedHandler={[Function]}
+      type={2}
+    />
+  </div>
+  <div
+    className="basic-filter-button-container"
+  >
+    <div>
+      Advanced Filters
+    </div>
+    <button
+      className="filter-button"
+      onClick={[Function]}
+    >
+      Hide
+       
+      <span
+        className="fa fa-chevron-down"
+      />
+    </button>
+  </div>
+</div>
+`;

@@ -2,30 +2,48 @@ import * as React from "react";
 import "../Assets/Styles/advanced-filter.less";
 import { AdvancedFilter } from "./AdvancedFilter";
 import {
+  onFilterSelect,
   AdvancedFilterCategoryModel,
   AdvancedFiltersModel,
   FilterOptionModel,
   OptionTypeModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 
+/**
+ * AdvancedFilterContainer props
+ * @interface AdvancedFilterContainerProps
+ * @member {AdvancedFilterCategoryModel[]} filterOptions
+ * @member {(selected: AdvancedFilterCategoryModel[]) => void} onUpdateFilterOptions
+ * @member {boolean} isNested
+ * @member {string?} pageTitle
+ */
 export interface AdvancedFilterContainerProps {
-  filterOptions: AdvancedFilterCategoryModel[];
-  onClick: (selected: AdvancedFilterCategoryModel[]) => void;
+  filterCategories: AdvancedFilterCategoryModel[];
+  onUpdateFilter: (selected: AdvancedFilterCategoryModel[] | undefined) => void;
   isNested?: boolean;
   pageTitle?: string;
 }
-
+/**
+ * AdvancedFilterContainer state
+ * @interface AdvancedFilterContainerState
+ * @member {boolean} expanded
+ */
 export interface AdvancedFilterContainerState {
   expanded: boolean;
 }
 
+/**
+ * The AdvancedFilterContainer is a collapsible menu that displays AdvancedFilters
+ * that, when clicked, calls `this.props.onClick()`
+ * @class AdvancedFilterContainer
+ * @extends {React.Component<AdvancedFilterContainerProps, AdvancedFilterContainerState>}
+ */
 export class AdvancedFilterContainer extends React.Component<
   AdvancedFilterContainerProps,
   AdvancedFilterContainerState
 > {
   constructor(props: AdvancedFilterContainerProps) {
     super(props);
-
     this.state = {
       expanded: this.props.isNested ? true : false
     };
@@ -35,42 +53,35 @@ export class AdvancedFilterContainer extends React.Component<
     this.setState({ expanded: !this.state.expanded });
   };
 
-  onSelect(category: AdvancedFilterCategoryModel, option?: FilterOptionModel) {
-    const allPressed = option === undefined && category.displayAllButton;
-    if (category.disabled) {
-      return;
-    }
-
-    let newFilters = this.props.filterOptions.slice();
-    const categoryIndex = newFilters.indexOf(category);
-    let options = newFilters[categoryIndex].filterOptions.slice();
-
-    if (allPressed || !category.isMultiSelect) {
-      options.forEach(o => (o.isSelected = false));
-    }
-
-    if (option) {
-      const optionIdx = options.indexOf(option);
-      options[optionIdx].isSelected = !option.isSelected;
-    }
-
-    newFilters[categoryIndex].filterOptions = options;
-    this.props.onClick(newFilters);
+  handleFilterSelect(
+    category: AdvancedFilterCategoryModel,
+    option?: FilterOptionModel
+  ) {
+    const { onUpdateFilter, filterCategories } = this.props;
+    const newFilters = onFilterSelect(filterCategories, category, option);
+    onUpdateFilter(newFilters);
   }
 
+  /**
+   * Resets each of the filter options for each category.
+   */
   resetFilters() {
-    const newFilters = this.props.filterOptions.slice();
-    newFilters.forEach(cat =>
+    const { filterCategories } = this.props;
+    filterCategories.forEach(cat =>
       cat.filterOptions.forEach(fo => (fo.isSelected = false))
     );
-    this.props.onClick(newFilters);
+    this.props.onUpdateFilter(filterCategories);
   }
-
+  /**
+   * Returns true if one or more filter options are selected in any filter category.
+   * False if otherwise
+   */
   hasActiveFilterIndicators() {
+    const { filterCategories } = this.props;
     let active = false;
-    this.props.filterOptions.forEach(fil => {
-      if (!fil.disabled) {
-        fil.filterOptions.forEach(opt => {
+    filterCategories.forEach(cat => {
+      if (!cat.disabled) {
+        cat.filterOptions.forEach(opt => {
           if (opt.isSelected) {
             active = true;
           }
@@ -80,17 +91,22 @@ export class AdvancedFilterContainer extends React.Component<
     return active;
   }
 
-  renderFilterIndicators() {
+  /**
+   * Builds and returns a list of JSX.Elements that shows which filter
+   * options are currently selected
+   */
+  renderSelectedFilterIndicators() {
+    const { filterCategories } = this.props;
     const tags: JSX.Element[] = [];
 
-    this.props.filterOptions.forEach(fil => {
-      if (!fil.disabled) {
-        fil.filterOptions.forEach(opt => {
+    filterCategories.forEach(cat => {
+      if (!cat.disabled) {
+        cat.filterOptions.forEach(opt => {
           if (opt.isSelected) {
             tags.push(
-              <div className="filter-indicator" key={fil.label + opt.key}>
+              <div className="filter-indicator" key={cat.label + opt.key}>
                 {opt.label}&nbsp;<span
-                  onClick={() => this.onSelect(fil, opt)}
+                  onClick={() => this.handleFilterSelect(cat, opt)}
                   className="fa fa-times-circle fa-small"
                 />
               </div>
@@ -100,20 +116,20 @@ export class AdvancedFilterContainer extends React.Component<
       }
     });
 
-    return tags;
+    return <div className="filter-status">{tags}</div>;
   }
 
-  renderSelected() {
-    return <div className="filter-status">{this.renderFilterIndicators()}</div>;
-  }
-
-  renderFilterBody() {
-    const filterTags = this.props.filterOptions.map((fil, i) => {
+  /**
+   * Renders the array of filter categories and their respective filter options.
+   */
+  renderFilterCategories() {
+    const { filterCategories } = this.props;
+    const filterCats = filterCategories.map((category, i) => {
       return (
         <AdvancedFilter
           key={i}
-          {...fil}
-          selectedHandler={opt => this.onSelect(fil, opt)}
+          {...category}
+          onFilterOptionSelect={opt => this.handleFilterSelect(category, opt)}
         />
       );
     });
@@ -124,26 +140,30 @@ export class AdvancedFilterContainer extends React.Component<
         aria-live="polite"
         aria-relevant="additions removals"
       >
-        {filterTags}
+        {filterCats}
       </div>
     );
   }
 
+  /**
+   * Renders the button that, when clicked, expands or collapses the advanced filter.
+   */
   renderExpandButton() {
-    const className = this.state.expanded
-      ? "fa fa-chevron-down"
-      : "fa fa-chevron-right";
-    const buttonText = this.state.expanded ? "Collapse " : "Expand ";
-    return (
-      <div>
-        {this.hasActiveFilterIndicators() ? (
-          <button
-            onClick={() => this.resetFilters()}
-            className="filter-reset-btn"
-          >
-            Reset Filters
-          </button>
-        ) : null}
+    const { expanded } = this.state;
+    let content: JSX.Element | undefined = undefined;
+    const className = expanded ? "fa fa-chevron-down" : "fa fa-chevron-right";
+    const buttonText = expanded ? "Collapse " : "Expand ";
+    if (this.hasActiveFilterIndicators()) {
+      content = (
+        <button
+          onClick={() => this.resetFilters()}
+          className="filter-reset-btn "
+        >
+          Reset Filters
+        </button>
+      );
+    } else {
+      content = (
         <button
           onClick={() => this.handleClick()}
           className="filter-expand-btn"
@@ -151,11 +171,15 @@ export class AdvancedFilterContainer extends React.Component<
           {buttonText}
           <span className={className} />
         </button>
-      </div>
-    );
+      );
+    }
+    return content;
   }
 
-  renderPageTitle() {
+  /**
+   * Renders the page title.
+   */
+  renderPageTitle(): JSX.Element | undefined {
     if (this.props.pageTitle) {
       return (
         <h1>
@@ -163,12 +187,14 @@ export class AdvancedFilterContainer extends React.Component<
         </h1>
       );
     } else {
-      return null;
+      return undefined;
     }
   }
-  renderCollapsedFilterContainer = () => {
-    const { filterOptions } = this.props;
-
+  /**
+   * Renders the portion of the Advanced filter container that will always be visible
+   * and dictates expansion of the filter menu, essentially the 'header' of the component.
+   */
+  renderCollapsedFilterContainer(): JSX.Element {
     return (
       <div className="filter-sub-header-container">
         {this.renderPageTitle()}
@@ -180,21 +206,23 @@ export class AdvancedFilterContainer extends React.Component<
           </div>
           {this.renderExpandButton()}
         </div>
-        {this.renderSelected()}
+        {this.renderSelectedFilterIndicators()}
       </div>
     );
-  };
+  }
 
-  renderExpanded() {
-    let content = null;
+  /**
+   * Render the expanded filter container
+   */
+  renderExpanded(): JSX.Element | undefined {
     if (this.state.expanded) {
-      content = (
+      return (
         <div className="advanced-filter-container-expanded">
-          {this.renderFilterBody()}
+          {this.renderFilterCategories()}
         </div>
       );
     }
-    return content;
+    return undefined;
   }
 
   render() {

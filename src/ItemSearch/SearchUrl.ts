@@ -1,5 +1,5 @@
 import { GradeLevel, GradeLevels } from "../GradeLevels/GradeLevels";
-import { FilterType } from "../Filter/AdvancedFilterModel";
+import { FilterType } from "../Filter/FilterModels";
 import { parseQueryString } from "../ApiModel";
 import { SearchAPIParamsModel } from "./ItemSearchModels";
 
