@@ -43,4 +43,11 @@ storiesOf("Style", module)
         item-nav-btn
       </button>
     </div>
+  ))
+  .add("Buttons Sizes", () => (
+    <div>
+      <button className="btn btn-sm btn-blue">btn-sm</button>
+      <button className="btn btn-gray">btn-gray</button>
+      <button className="btn btn-lg btn-green">btn-lg</button>
+    </div>
   ));

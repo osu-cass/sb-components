@@ -1029,15 +1029,19 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
            Advanced Filters
         </h3>
       </div>
-      <button
-        className="filter-expand-btn"
-        onClick={[Function]}
+      <div
+        className="adv-control-btns"
       >
-        Expand 
-        <span
-          className="fa fa-chevron-right"
-        />
-      </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="filter-status"
@@ -1053,6 +1057,13 @@ exports[`Storyshots Advanced Filter Container with page title 1`] = `
   <div
     className="filter-sub-header-container"
   >
+    <h1>
+      <span
+        className="filter-page-title"
+      >
+        Search
+      </span>
+    </h1>
     <div
       className="filter-advanced-filter-header"
     >
@@ -1066,15 +1077,19 @@ exports[`Storyshots Advanced Filter Container with page title 1`] = `
            Advanced Filters
         </h3>
       </div>
-      <button
-        className="filter-expand-btn"
-        onClick={[Function]}
+      <div
+        className="adv-control-btns"
       >
-        Expand 
-        <span
-          className="fa fa-chevron-right"
-        />
-      </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="filter-status"
@@ -1101,21 +1116,27 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
     className="filter-selection filter-disabled"
     id="disabled-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Disabled
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Disabled
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1123,14 +1144,14 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
         className="filter-button-container"
       >
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={true}
           onClick={[Function]}
         >
           English
         </button>
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={true}
           onClick={[Function]}
         >
@@ -1160,21 +1181,27 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
     className="filter-selection filter-disabled"
     id="disabled multi-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Disabled Multi
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Disabled Multi
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1182,14 +1209,14 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
         className="filter-button-container"
       >
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={true}
           onClick={[Function]}
         >
           Reading
         </button>
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={true}
           onClick={[Function]}
         >
@@ -1219,21 +1246,27 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
     className="filter-selection"
     id="multi all disabled-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Multi All Disabled
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Multi All Disabled
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1241,7 +1274,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
         className="filter-all-btn-container"
       >
         <button
-          className="filter-all-btn  selected-button filter-button"
+          className="btn btn-sm filter-btn filter-btn-all  btn-blue"
           onClick={[Function]}
         >
           All
@@ -1251,14 +1284,14 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
         className="filter-button-container"
       >
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={false}
           onClick={[Function]}
         >
           Calculus
         </button>
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={false}
           onClick={[Function]}
         >
@@ -1288,21 +1321,27 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
     className="filter-selection filter-disabled"
     id="disabled-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Disabled
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Disabled
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1310,14 +1349,14 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
         className="filter-button-container"
       >
         <button
-          className="selected-button filter-button"
+          className="btn btn-sm filter-btn btn-blue selected"
           disabled={true}
           onClick={[Function]}
         >
           English Literacy & Arts
         </button>
         <button
-          className="selected-button filter-button"
+          className="btn btn-sm filter-btn btn-blue selected"
           disabled={true}
           onClick={[Function]}
         >
@@ -1347,21 +1386,27 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
     className="filter-selection"
     id="multi-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Multi
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Multi
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1369,14 +1414,14 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
         className="filter-button-container"
       >
         <button
-          className="selected-button filter-button"
+          className="btn btn-sm filter-btn btn-blue selected"
           disabled={false}
           onClick={[Function]}
         >
           English Literacy & Arts
         </button>
         <button
-          className="selected-button filter-button"
+          className="btn btn-sm filter-btn btn-blue selected"
           disabled={false}
           onClick={[Function]}
         >
@@ -1406,21 +1451,27 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
     className="filter-selection"
     id="multi all-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Multi All
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Multi All
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1428,7 +1479,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
         className="filter-all-btn-container"
       >
         <button
-          className="filter-all-btn  selected-button filter-button"
+          className="btn btn-sm filter-btn filter-btn-all  btn-blue"
           onClick={[Function]}
         >
           All
@@ -1438,14 +1489,14 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
         className="filter-button-container"
       >
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={false}
           onClick={[Function]}
         >
           US History
         </button>
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={false}
           onClick={[Function]}
         >
@@ -1475,21 +1526,27 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
     className="filter-selection"
     id="multi all-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Multi All
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Multi All
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1497,7 +1554,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
         className="filter-all-btn-container"
       >
         <button
-          className="filter-all-btn  filter-button"
+          className="btn btn-sm filter-btn filter-btn-all btn-white"
           onClick={[Function]}
         >
           All
@@ -1507,14 +1564,14 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
         className="filter-button-container"
       >
         <button
-          className="selected-button filter-button"
+          className="btn btn-sm filter-btn btn-blue selected"
           disabled={false}
           onClick={[Function]}
         >
           English Literacy & Arts
         </button>
         <button
-          className="selected-button filter-button"
+          className="btn btn-sm filter-btn btn-blue selected"
           disabled={false}
           onClick={[Function]}
         >
@@ -1544,21 +1601,27 @@ exports[`Storyshots Advanced Filter no options 1`] = `
     className="filter-selection"
     id="subjects-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Subjects
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Subjects
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1592,21 +1655,27 @@ exports[`Storyshots Advanced Filter single select 1`] = `
     className="filter-selection"
     id="subjects-filter"
   >
-    <label>
-      <span
-        data-tooltip="Subject Help"
-        data-tooltip-position="top"
-      >
+    <div
+      className="filter-container-header"
+    >
+      <label>
         <span
-          info-label="true"
+          className="tooltip-help"
+          data-tooltip="Subject Help"
+          data-tooltip-position="top"
         >
-          Subjects
+          <span
+            className="tooltip-label"
+            info-label="true"
+          >
+            Subjects
+          </span>
+          <span
+            className="fa fa-info-circle fa-sm"
+          />
         </span>
-        <span
-          className="fa fa-info-circle fa-sm"
-        />
-      </span>
-    </label>
+      </label>
+    </div>
     <div
       className="child-filter-container"
     >
@@ -1614,14 +1683,14 @@ exports[`Storyshots Advanced Filter single select 1`] = `
         className="filter-button-container"
       >
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={false}
           onClick={[Function]}
         >
           English Literacy/ Arts
         </button>
         <button
-          className=" filter-button"
+          className="btn btn-sm filter-btn btn-white"
           disabled={false}
           onClick={[Function]}
         >
@@ -2144,13 +2213,7 @@ exports[`Storyshots Error Boundary shows the fallback ui 1`] = `
 `;
 
 exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`] = `
-<div
-  style={
-    Object {
-      "width": "100%",
-    }
-  }
->
+<div>
   <div
     className="basic-filter-container"
   >
@@ -5939,6 +6002,11 @@ exports[`Storyshots Style Buttons 1`] = `
 >
   <div>
     <button
+      className="btn btn-white"
+    >
+      btn-white
+    </button>
+    <button
       className="btn btn-blue"
     >
       btn-blue
@@ -5975,6 +6043,101 @@ exports[`Storyshots Style Buttons 1`] = `
     >
       btn-link
     </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Disabled 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      className="btn btn-white"
+      disabled={true}
+    >
+      btn-white
+    </button>
+    <button
+      className="btn btn-blue"
+      disabled={true}
+    >
+      btn-blue
+    </button>
+    <button
+      className="btn btn-green"
+      disabled={true}
+    >
+      btn-green
+    </button>
+    <button
+      className="btn btn-gray"
+      disabled={true}
+    >
+      btn-gray
+    </button>
+    <button
+      className="btn btn-primary"
+      disabled={true}
+    >
+      btn-primary
+    </button>
+    <button
+      className="btn btn-success"
+      disabled={true}
+    >
+      btn-success
+    </button>
+    <button
+      className="item-nav-btn btn btn-link"
+      disabled={true}
+    >
+      item-nav-btn
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      className="btn btn-sm btn-blue"
+    >
+      btn-sm
+    </button>
+    <button
+      className="btn btn-gray"
+    >
+      btn-gray
+    </button>
+    <button
+      className="btn btn-lg btn-green"
+    >
+      btn-lg
+    </button>
   </div>
 </div>
 `;

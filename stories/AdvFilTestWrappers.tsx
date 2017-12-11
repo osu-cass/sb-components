@@ -7,8 +7,9 @@ import {
 } from "../src";
 import { mockAdvancedFilterCategoriesAll } from "./Filter/mocks";
 
-interface AdvFilContainerTestProps {
-  properties?: any;
+export interface AdvFilContainerTestProps {
+  isNested?: boolean;
+  pageTitle?: string;
 }
 
 interface AdvFilContainerTestState {
@@ -22,7 +23,7 @@ export class AdvFilContainerTestWrapper extends React.Component<
   AdvFilContainerTestProps,
   AdvFilContainerTestState
 > {
-  constructor(props: any) {
+  constructor(props: AdvFilContainerTestProps) {
     super(props);
     this.state = {
       filterCategories: mockAdvancedFilterCategoriesAll
@@ -34,11 +35,12 @@ export class AdvFilContainerTestWrapper extends React.Component<
 
   render() {
     const { filterCategories } = this.state;
+
     return (
       <AdvancedFilterContainer
+        {...this.props}
         onUpdateFilter={this.updateFilter}
         filterCategories={filterCategories}
-        {...this.props}
       />
     );
   }

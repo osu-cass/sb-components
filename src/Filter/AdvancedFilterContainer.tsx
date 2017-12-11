@@ -72,6 +72,7 @@ export class AdvancedFilterContainer extends React.Component<
     );
     this.props.onUpdateFilter(filterCategories);
   }
+
   /**
    * Returns true if one or more filter options are selected in any filter category.
    * False if otherwise
@@ -88,6 +89,7 @@ export class AdvancedFilterContainer extends React.Component<
         });
       }
     });
+
     return active;
   }
 
@@ -104,7 +106,10 @@ export class AdvancedFilterContainer extends React.Component<
         cat.filterOptions.forEach(opt => {
           if (opt.isSelected) {
             tags.push(
-              <div className="filter-indicator" key={cat.label + opt.key}>
+              <div
+                className="btn btn-blue filter-btn filter-selection"
+                key={cat.label + opt.key}
+              >
                 {opt.label}&nbsp;<span
                   onClick={() => this.handleFilterSelect(cat, opt)}
                   className="fa fa-times-circle fa-small"
@@ -146,49 +151,57 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   /**
-   * Renders the button that, when clicked, expands or collapses the advanced filter.
+   * Renders teh reset button
    */
-  renderExpandButton() {
-    const { expanded } = this.state;
-    let content: JSX.Element | undefined = undefined;
-    const className = expanded ? "fa fa-chevron-down" : "fa fa-chevron-right";
-    const buttonText = expanded ? "Collapse " : "Expand ";
+  renderResetButton(): JSX.Element | undefined {
+    let content: JSX.Element | undefined;
     if (this.hasActiveFilterIndicators()) {
       content = (
         <button
           onClick={() => this.resetFilters()}
-          className="filter-reset-btn "
+          className="btn btn-white filter-reset-btn "
         >
           Reset Filters
         </button>
       );
-    } else {
-      content = (
-        <button
-          onClick={() => this.handleClick()}
-          className="filter-expand-btn"
-        >
-          {buttonText}
-          <span className={className} />
-        </button>
-      );
     }
+
     return content;
+  }
+
+  /**
+   * Renders the button that, when clicked, expands or collapses the advanced filter.
+   */
+  renderExpandButton() {
+    const { expanded } = this.state;
+    const className = expanded ? "fa fa-chevron-down" : "fa fa-chevron-right";
+    const buttonText = expanded ? "Collapse " : "Expand ";
+
+    return (
+      <button
+        onClick={() => this.handleClick()}
+        className="btn btn-white filter-expand-btn"
+      >
+        {buttonText}
+        <span className={className} />
+      </button>
+    );
   }
 
   /**
    * Renders the page title.
    */
   renderPageTitle(): JSX.Element | undefined {
+    let content: JSX.Element | undefined;
     if (this.props.pageTitle) {
-      return (
+      content = (
         <h1>
           <span className="filter-page-title">{this.props.pageTitle}</span>
         </h1>
       );
-    } else {
-      return undefined;
     }
+
+    return content;
   }
   /**
    * Renders the portion of the Advanced filter container that will always be visible
@@ -204,7 +217,10 @@ export class AdvancedFilterContainer extends React.Component<
               <span className="fa fa-tasks" />&nbsp;Advanced Filters
             </h3>
           </div>
-          {this.renderExpandButton()}
+          <div className="adv-control-btns">
+            {this.renderResetButton()}
+            {this.renderExpandButton()}
+          </div>
         </div>
         {this.renderSelectedFilterIndicators()}
       </div>

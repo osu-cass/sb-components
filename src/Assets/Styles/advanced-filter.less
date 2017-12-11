@@ -9,9 +9,10 @@
   box-shadow: @box-shadow;
   font-family: "PT ", "Georgia", "Times New Roman", "Times,serif";
   background-color: @sb-white;
-  min-width: 475px;
   padding: @spacing-unit;
   border-radius: 0 0 10px 10px;
+  color: @text-color-dark;
+  min-width: 300px;
 }
 
 div.advanced-filter-container *:not(span) {
@@ -37,7 +38,7 @@ div.filter-title-container {
 
 div.filter-advanced-filter-header {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -83,19 +84,10 @@ div.filter-status {
 
 .filter-button-container {
   display: flex;
-  flex-flow: column nowrap;
-}
-
-.disabled-filter-button {
-  margin: 1px;
-  padding: 8px;
-  height: 30px;
-}
-
-.filter-button {
-  height: 30px;
-  font-size: 12px;
-  width: max-content;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+  max-width: 175px;
 }
 
 .filter-selection {
@@ -113,19 +105,10 @@ div.filter-status {
 .child-filter-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.filter-expand-btn,
-.filter-reset-btn {
-  border: 1px solid @grey-border-color;
-  border-radius: 6px;
-  background-color: white;
-  padding: 5px;
-  margin: 5px;
-  color: #000000;
-  font-size: 12px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  text-align: left;
+.filter-btn {
+  max-width: max-content;
+  min-width: 50px;
 }

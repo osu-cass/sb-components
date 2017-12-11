@@ -41,7 +41,8 @@ export class FilterContainer extends React.Component<
       advancedFilterOptions,
       onAdvancedFilterClick
     } = this.props;
-    let advancedFilter = null;
+
+    let advancedFilter: JSX.Element | undefined;
     if (this.state.expanded) {
       advancedFilter = (
         <AdvancedFilterContainer
@@ -51,8 +52,9 @@ export class FilterContainer extends React.Component<
         />
       );
     }
+
     return (
-      <div style={{ width: "100%" }}>
+      <div>
         <BasicFilterContainer
           filterCategories={basicFilterOptions}
           onUpdateFilter={onBasicFilterClick}

@@ -24,11 +24,11 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     let allBtnContainer: JSX.Element | undefined;
     const anySelected = filterOptions.some(fo => fo.isSelected);
     if (displayAllButton) {
-      let className = anySelected ? "" : " selected-button";
+      const className = anySelected ? "btn-white" : " btn-blue";
       allBtnContainer = (
         <div className="filter-all-btn-container">
           <button
-            className={"filter-all-btn " + className + " filter-button"}
+            className={`btn btn-sm filter-btn filter-btn-all ${className}`}
             key="all"
             onClick={() => onFilterOptionSelect()}
           >
@@ -37,6 +37,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
         </div>
       );
     }
+
     return allBtnContainer;
   }
 
@@ -44,14 +45,12 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     const { filterOptions, onFilterOptionSelect, disabled } = this.props;
     const tags: JSX.Element[] = [];
 
-    let className = "";
     if (filterOptions.length > 0) {
       filterOptions.forEach((t, i) => {
-        className = t.isSelected ? "selected-button" : "";
-
+        const className = t.isSelected ? "btn-blue selected" : "btn-white";
         tags.push(
           <button
-            className={className + " filter-button"}
+            className={`btn btn-sm filter-btn ${className}`}
             key={t.key}
             onClick={() => onFilterOptionSelect(t)}
             disabled={disabled}
@@ -74,12 +73,20 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
         id={(label + "-filter").toLocaleLowerCase()}
         className={"filter-selection" + className}
       >
-        <label>
-          <span data-tooltip={helpText} data-tooltip-position="top">
-            <span info-label="true">{label}</span>
-            <span className="fa fa-info-circle fa-sm" />
-          </span>
-        </label>
+        <div className="filter-container-header">
+          <label>
+            <span
+              className="tooltip-help"
+              data-tooltip={helpText}
+              data-tooltip-position="top"
+            >
+              <span className="tooltip-label" info-label="true">
+                {label}
+              </span>
+              <span className="fa fa-info-circle fa-sm" />
+            </span>
+          </label>
+        </div>
         <div className="child-filter-container">
           {this.renderAllBtnContainer()}
           <div className="filter-button-container">{this.renderTags()}</div>
