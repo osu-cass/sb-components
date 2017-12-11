@@ -36,8 +36,6 @@ describe("FilterContainer", () => {
     />,
     { lifecycleExperimental: true }
   );
-
-  it();
 });
 
 describe("Filter.getSelectedCodes", () => {
