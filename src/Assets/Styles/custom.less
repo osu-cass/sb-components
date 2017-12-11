@@ -1,12 +1,13 @@
 ﻿//** Layout styles and overrides for bootstrap
 
 @import "constants.less";
+
 html {
   height: 100%;
 }
 
 body {
-  font-family: "PT Serif", Times, serif;
+  font-family: @font-family-base;
   height: 100%;
   display: flex;
   flex-flow: column;
@@ -18,7 +19,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "PT Sans", Times, serif;
+  font-family: @font-family-base;
 }
 
 .container {
@@ -47,33 +48,52 @@ h5 {
   flex-direction: column;
 }
 
+.btn {
+  box-shadow: @sb-shadow;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+.btn-blue,
+.btn-green,
+.btn-gray {
+  color: @text-color-light;
+  &:hover {
+    color: @text-color-light;
+  }
+}
+.btn-blue,
 .btn-primary {
-  // SB
   background-color: @sb-blue;
   border-color: @sb-blue;
   box-shadow: @sb-shadow;
+  &:hover, &:active, &:hover {
+    background-color: @sb-blue-darker;
+    border-color: @sb-blue-darker;
+  }
+  
 }
-.btn-primary:hover {
-  // SB
-  background-color: @sb-blue-hover;
-  border-color: @sb-blue-hover;
-  text-decoration: none;
-  cursor: pointer;
-  box-shadow: none;
-}
+
+.btn-green,
 .btn-success {
-  // SB
   background-color: @sb-green;
   border-color: @sb-green;
-  box-shadow: @sb-shadow;
+  &:hover, &:active, &:hover {
+    background-color: @sb-green-darker;
+    border-color: @sb-green-darker;
+  }
 }
-.btn-success:hover {
-  // SB
-  background-color: @sb-green-hover;
-  border-color: @sb-green-hover;
-  text-decoration: none;
-  cursor: pointer;
-  box-shadow: none;
+
+.btn-gray {
+  background-color: @sb-gray;
+  border-color: @sb-gray;
+  &:hover, &:active, &:hover {
+    background-color: @sb-gray-darker;
+    border-color: @sb-gray-darker;
+  }
 }
 
 button:disabled {
@@ -189,3 +209,20 @@ a.collapsible-label:visited {
   display: block;
   z-index: 50;
 }
+
+//## table styles
+
+// .sb-table-header {
+//   background-color: @sb-secondary-darkgreen;
+// }
+
+// .sb-table-secondary-header {
+//   background-color: @sb-secondary-darkgreen-light;
+// }
+
+// .sb-table-body {
+//   font-size: @font-size-smaller;
+// }
+// .sb-table-caption, sb-table-notes {
+//   font-size: @font-size-smaller;
+// }
