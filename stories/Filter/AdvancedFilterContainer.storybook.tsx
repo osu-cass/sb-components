@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import {
   AdvFilContainerTestWrapper,
   AdvFilContainerTestProps
-} from "../AdvFilTestWrappers";
+} from "../FilterTestWrappers";
 
 const props: AdvFilContainerTestProps = {
   pageTitle: "Search"
