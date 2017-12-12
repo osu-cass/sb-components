@@ -22,7 +22,7 @@ export class FilterLink extends React.Component<FilterLinkProps, {}> {
     return (
       <div className="filter-jump-link-footer">
         <div className="filter-jump-link-container">
-          <a className="filter-jump-link" href={this.props.filterId}>
+          <a className="btn btn-blue" role="button" href={this.props.filterId}>
             Jump to Filter
           </a>
         </div>
