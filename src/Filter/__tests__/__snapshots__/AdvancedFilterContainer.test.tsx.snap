@@ -47,6 +47,10 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
         className="btn btn-blue filter-btn filter-selection"
         key="GradeELA"
       >
+        <strong>
+          Grade
+          /
+        </strong>
         English Literacy & Arts
          
         <span
@@ -58,6 +62,10 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
         className="btn btn-blue filter-btn filter-selection"
         key="GradeMath"
       >
+        <strong>
+          Grade
+          /
+        </strong>
         Maths
          
         <span
@@ -117,6 +125,10 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
         className="btn btn-blue filter-btn filter-selection"
         key="GradeELA"
       >
+        <strong>
+          Grade
+          /
+        </strong>
         English Literacy & Arts
          
         <span
@@ -128,6 +140,10 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
         className="btn btn-blue filter-btn filter-selection"
         key="GradeMath"
       >
+        <strong>
+          Grade
+          /
+        </strong>
         Maths
          
         <span

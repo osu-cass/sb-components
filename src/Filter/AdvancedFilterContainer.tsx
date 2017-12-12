@@ -110,7 +110,9 @@ export class AdvancedFilterContainer extends React.Component<
                 className="btn btn-blue filter-btn filter-selection"
                 key={cat.label + opt.key}
               >
-                {opt.label}&nbsp;<span
+                <strong>{cat.label}/</strong>
+                {opt.label}&nbsp;
+                <span
                   onClick={() => this.handleFilterSelect(cat, opt)}
                   className="fa fa-times-circle fa-small"
                 />
