@@ -25,9 +25,7 @@ const style1: React.CSSProperties = {
   flexDirection: "column"
 };
 
-let itemTableLongList: ItemTableContainerProps = {
-  ...itemTableSortProps
-};
+let itemTableLongList: ItemTableContainerProps = itemTableSortProps;
 
 let itemCards: ItemCardModel[] = [];
 

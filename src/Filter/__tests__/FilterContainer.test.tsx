@@ -9,7 +9,6 @@ import {
   mockAdvancedFilterCategoriesAll
 } from "../../../stories/Filter/mocks";
 import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
 import { BasicFilterContainer } from "../BasicFilterContainer";
 
 describe("FilterContainer", () => {
@@ -36,7 +35,7 @@ describe("FilterContainer", () => {
   );
 
   it("expands the advanced filter", () => {
-    expect(toJson(wrapper, { noKey: false, mode: "deep" })).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
     for (let i = 0; i < 2; i++) {
       wrapper
         .findWhere(node => node.type() === BasicFilterContainer)
