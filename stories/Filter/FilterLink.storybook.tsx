@@ -7,7 +7,7 @@ import {
 } from "../../src/index";
 import { CenterDecorator } from "../CenterDecorator";
 import { ItemCardModel } from "../../src/ItemCard/ItemCardModels";
-import { itemTableSortProps } from "../ItemTable/Mocks";
+import { itemTableSortProps } from "../ItemTable/mocks";
 
 const style: React.CSSProperties = {
   display: "flex",
