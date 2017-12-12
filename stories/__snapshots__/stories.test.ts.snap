@@ -2344,12 +2344,16 @@ exports[`Storyshots Filter Link changed color on hover and click 1`] = `
     }
   }
 >
-  <a
-    className="filter-jump-link"
-    href="javascript:void(0)"
+  <div
+    className="filter-jump-link-container"
   >
-    Jump to Filter
-  </a>
+    <a
+      className="filter-jump-link"
+      href="javascript:void(0)"
+    >
+      Jump to Filter
+    </a>
+  </div>
 </div>
 `;
 
