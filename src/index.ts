@@ -69,6 +69,7 @@ export {
   FilterType
 } from "./Filter/FilterModels";
 export { Filter } from "./Filter/Filter";
+export { FilterLink } from "./Filter/FilterLink";
 //
 // Grade Levels
 //
