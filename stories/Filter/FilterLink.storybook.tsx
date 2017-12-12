@@ -5,9 +5,9 @@ import {
   ItemTableContainer,
   ItemTableContainerProps
 } from "../../src/index";
-import { itemTableSortProps } from "../ItemTable/mocks";
 import { CenterDecorator } from "../CenterDecorator";
-import { ItemCardModel } from "../../src";
+import { ItemCardModel } from "../../src/ItemCard/ItemCardModels";
+import { itemTableSortProps } from "../ItemTable/mocks";
 
 const style: React.CSSProperties = {
   display: "flex",
