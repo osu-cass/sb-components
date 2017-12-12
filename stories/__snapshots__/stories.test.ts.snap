@@ -1723,6 +1723,11 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           onChange={[Function]}
         >
           <option
+            value="default"
+          >
+            Select Filter...
+          </option>
+          <option
             value="7"
           >
             Grades 3-5
@@ -1796,6 +1801,11 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         <select
           onChange={[Function]}
         >
+          <option
+            value="default"
+          >
+            Select Filter...
+          </option>
           <option
             value="7"
           >
@@ -1895,6 +1905,11 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         onChange={[Function]}
       >
         <option
+          value="default"
+        >
+          Select Filter...
+        </option>
+        <option
           value="12346"
         >
           Grade 1
@@ -1947,6 +1962,11 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
       <select
         onChange={[Function]}
       >
+        <option
+          value="default"
+        >
+          Select Filter...
+        </option>
         <option
           value="12345"
         >
@@ -2233,6 +2253,11 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           <select
             onChange={[Function]}
           >
+            <option
+              value="default"
+            >
+              Select Filter...
+            </option>
             <option
               value="7"
             >
