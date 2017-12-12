@@ -2330,6 +2330,29 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
 </div>
 `;
 
+exports[`Storyshots Filter Link changed color on hover and click 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <a
+    className="filter-jump-link"
+    href="javascript:void(0)"
+  >
+    Jump to Filter
+  </a>
+</div>
+`;
+
 exports[`Storyshots Item Card Item Card 1`] = `
 <div
   style={

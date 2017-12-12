@@ -1,42 +1,8 @@
 import { Filter } from "../Filter";
-import { FilterContainer } from "../FilterContainer";
 import * as Mocks from "./Mocks";
 import { FilterType } from "../FilterModels";
 import { GradeLevel, GradeLevels } from "../../GradeLevels/GradeLevels";
-import {
-  BasicFilterCategoryModel,
-  AdvancedFilterCategoryModel
-} from "../FilterModels";
-import {
-  mockBasicFilterCategories,
-  mockAdvancedFilterCategoriesAll
-} from "../../../stories/Filter/mocks";
-import { shallow } from "enzyme";
 import { filter } from "minimatch";
-
-describe("FilterContainer", () => {
-  const updateBasicFilter = (
-    basicFilterCategories: BasicFilterCategoryModel[]
-  ) => {
-    wrapper.setProps({ basicFilterCategories });
-  };
-
-  const updateAdvancedFilter = (
-    advancedFilterCategories: AdvancedFilterCategoryModel[]
-  ) => {
-    wrapper.setProps({ advancedFilterCategories });
-  };
-
-  const wrapper = shallow(
-    <FilterContainer
-      basicFilterCategories={mockBasicFilterCategories}
-      onUpdateBasicFilter={updateBasicFilter}
-      advancedFilterCategories={mockAdvancedFilterCategoriesAll}
-      onUpdateAdvancedFilter={updateAdvancedFilter}
-    />,
-    { lifecycleExperimental: true }
-  );
-});
 
 describe("Filter.getSelectedCodes", () => {
   it("No selections", () => {
