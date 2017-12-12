@@ -7,10 +7,12 @@ export interface FilterLinkProps {
 export class FilterLink extends React.Component<FilterLinkProps, {}> {
   render() {
     return (
-      <div className="filter-jump-link-container">
-        <a className="filter-jump-link" href={this.props.filterId}>
-          Jump to Filter
-        </a>
+      <div className="filter-jump-link-footer">
+        <div className="filter-jump-link-container">
+          <a className="filter-jump-link" href={this.props.filterId}>
+            Jump to Filter
+          </a>
+        </div>
       </div>
     );
   }
