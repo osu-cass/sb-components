@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterContainer expands the advanced filter 1`] = `
+<div>
+  <BasicFilterContainer
+    containsAdvancedFilter={true}
+    filterCategories={
+      Array [
+        Object {
+          "code": "Grade",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "7",
+              "label": "Grades 3-5",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "56",
+              "label": "Grades 6-8",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "960",
+              "label": "High School",
+            },
+          ],
+          "label": "Grade",
+          "type": 3,
+        },
+        Object {
+          "code": "Subject",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "ELA",
+              "label": "English Literacy/ Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Math",
+              "label": "Mathematics",
+            },
+          ],
+          "label": "Subjects",
+          "type": 2,
+        },
+      ]
+    }
+    handleAdvancedFilterExpand={[Function]}
+    onUpdateFilter={[Function]}
+  />
+</div>
+`;
+
+exports[`FilterContainer expands the advanced filter 2`] = `
+<div>
+  <BasicFilterContainer
+    containsAdvancedFilter={true}
+    filterCategories={
+      Array [
+        Object {
+          "code": "Grade",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "7",
+              "label": "Grades 3-5",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "56",
+              "label": "Grades 6-8",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "960",
+              "label": "High School",
+            },
+          ],
+          "label": "Grade",
+          "type": 3,
+        },
+        Object {
+          "code": "Subject",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "ELA",
+              "label": "English Literacy/ Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Math",
+              "label": "Mathematics",
+            },
+          ],
+          "label": "Subjects",
+          "type": 2,
+        },
+      ]
+    }
+    handleAdvancedFilterExpand={[Function]}
+    onUpdateFilter={[Function]}
+  />
+</div>
+`;
+
+exports[`FilterContainer expands the advanced filter 3`] = `
+<div>
+  <BasicFilterContainer
+    containsAdvancedFilter={true}
+    filterCategories={
+      Array [
+        Object {
+          "code": "Grade",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "7",
+              "label": "Grades 3-5",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "56",
+              "label": "Grades 6-8",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "960",
+              "label": "High School",
+            },
+          ],
+          "label": "Grade",
+          "type": 3,
+        },
+        Object {
+          "code": "Subject",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "ELA",
+              "label": "English Literacy/ Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Math",
+              "label": "Mathematics",
+            },
+          ],
+          "label": "Subjects",
+          "type": 2,
+        },
+      ]
+    }
+    handleAdvancedFilterExpand={[Function]}
+    onUpdateFilter={[Function]}
+  />
+</div>
+`;
