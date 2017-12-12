@@ -3294,6 +3294,387 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 </div>
 `;
 
+exports[`Storyshots Item Table Container selected item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <table
+      className="item-table mapcomponent-table"
+    >
+      <thead>
+        <tr
+          className="primary"
+        >
+          <th />
+          <th
+            className="item"
+            onClick={[Function]}
+          >
+            <div
+              className="item"
+            >
+              <span>
+                Item
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="subject"
+            onClick={[Function]}
+          >
+            <div
+              className="subject"
+            >
+              <span>
+                Subject
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="grade"
+            onClick={[Function]}
+          >
+            <div
+              className="grade"
+            >
+              <span>
+                Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="interactionType"
+            onClick={[Function]}
+          >
+            <div
+              className="interactionType"
+            >
+              <span>
+                Item Type
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td>
+            <i
+              aria-hidden="true"
+              className="fa fa-chevron-right fa-sm"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </td>
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              1
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Alpha/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              Math
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 5
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Equation
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td>
+            <i
+              aria-hidden="true"
+              className="fa fa-chevron-right fa-sm"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </td>
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              2
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Bravo/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              ELA/literacy
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 4
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multiple Choice
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td>
+            <i
+              aria-hidden="true"
+              className="fa fa-chevron-right fa-sm"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </td>
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Charlie/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              Math
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 3
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multi Select
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td>
+            <i
+              aria-hidden="true"
+              className="fa fa-chevron-right fa-sm"
+              style={
+                Object {
+                  "color": "gray",
+                }
+              }
+            />
+          </td>
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              4
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Delta/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              ELA/literacy
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 2
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multi Select
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Item Table Container verify sort order 1`] = `
 <div
   style={
