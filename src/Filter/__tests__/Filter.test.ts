@@ -387,5 +387,4 @@ describe("Filter.getCurrentTargets", () => {
     expect(result).toBeUndefined();
   });
 });
-
 describe("Filter.getUpdatedSearchFilters", () => {});
