@@ -2351,8 +2351,9 @@ exports[`Storyshots Filter Link changed color on hover and click 1`] = `
       className="filter-jump-link-container"
     >
       <a
-        className="filter-jump-link"
+        className="btn btn-blue"
         href="javascript:void(0)"
+        role="button"
       >
         Jump to Filter
       </a>
@@ -5556,8 +5557,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
       className="filter-jump-link-container"
     >
       <a
-        className="filter-jump-link"
+        className="btn btn-blue"
         href="javascript:void(0)"
+        role="button"
       >
         Jump to Filter
       </a>
