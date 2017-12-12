@@ -8,5 +8,5 @@ Please complete all of these steps for this pull request.
 
 ### Reviewing developer checklist
 - [ ] I've pulled this branch to my local machine.
-- [ ] I've inspected the changes on storybook.s
+- [ ] I've inspected the changes on storybook.
 - [ ] I've run the test suite and all tests have passed
