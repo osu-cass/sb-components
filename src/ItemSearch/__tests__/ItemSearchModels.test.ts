@@ -11,7 +11,11 @@ import {
   resultFilterOptionModelSelected,
   resultFilterGradeModel,
   resultFilterGradeModelSelectedSingle,
-  resultFilterGradeModelSelectedMultiple
+  resultFilterGradeModelSelectedMultiple,
+  searchOptionFilterTarget,
+  resultSearchOptionFilterTarget,
+  resultSearchOptionFilterTargetSelectedSingle,
+  resultSearchOptionFilterTargetSelectedMultiple
 } from "./ItemSearchModelsTestData";
 
 import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
@@ -185,5 +189,55 @@ describe("ItemSearch.searchOptionToFilterGrade", () => {
       selectedCodeParam
     );
     expect(result).toEqual(resultFilterGradeModelSelectedMultiple);
+  });
+});
+
+describe("ItemSearch.searchOptionToFilterTarget", () => {
+  it("empty options", () => {
+    const optionParam = [];
+    const filterParam = FilterType.Target;
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual([]);
+  });
+
+  it("filled options", () => {
+    const optionParam = searchOptionFilterTarget;
+    const filterParam = FilterType.Target;
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual(resultSearchOptionFilterTarget);
+  });
+
+  it("selected options single", () => {
+    const optionParam = searchOptionFilterTarget;
+    const filterParam = FilterType.Target;
+    const selectedCodeParam = [1];
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultSearchOptionFilterTargetSelectedSingle);
+  });
+
+  it("selected options multiple", () => {
+    const optionParam = searchOptionFilterTarget;
+    const filterParam = FilterType.Target;
+    const selectedCodeParam = [1, 3];
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultSearchOptionFilterTargetSelectedMultiple);
   });
 });
