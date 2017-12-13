@@ -1,8 +1,18 @@
-import { SearchAPIParamsModel } from "../ItemSearchModels";
+import {
+  SearchAPIParamsModel,
+  SearchFilterStringTypes
+} from "../ItemSearchModels";
 import { ItemSearch } from "../ItemSearch";
 import { ItemCardModel } from "../../ItemCard/ItemCardModels";
-import { itemCards } from "./ItemSearchModelsTestData";
+import {
+  itemCards,
+  genericSearchStringTypes,
+  resultFilterOptionModel,
+  resultFilterOptionModelSelected
+} from "./ItemSearchModelsTestData";
+
 import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
+import { FilterType } from "../../Filter/FilterModels";
 
 describe("ItemSearch.filterItemCards", () => {
   it("filters with empty filter", () => {
@@ -74,5 +84,53 @@ describe("ItemSearch.filterItemCards", () => {
 
     expect(result).toHaveLength(expectedCards.length);
     expectedCards.forEach(card => expect(result).toContain(card));
+  });
+});
+
+describe("ItemSearch.searchOptionFilterString", () => {
+  it("empty options", () => {
+    const optionParam: SearchFilterStringTypes[] = [];
+    const filterParam = FilterType.Subject;
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual([]);
+  });
+
+  it("filled options length", () => {
+    const optionParam = genericSearchStringTypes;
+    const filterParam = FilterType.Subject;
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam
+    );
+    expect(result.length).toEqual(3);
+  });
+
+  it("filled options", () => {
+    const optionParam = genericSearchStringTypes;
+    const filterParam = FilterType.Subject;
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual(resultFilterOptionModel);
+  });
+
+  it("selected options", () => {
+    const optionParam = genericSearchStringTypes;
+    const filterParam = FilterType.Subject;
+    const selectedCodesParam = ["t1", "t3"];
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam,
+      selectedCodesParam
+    );
+    expect(result).toEqual(resultFilterOptionModelSelected);
   });
 });

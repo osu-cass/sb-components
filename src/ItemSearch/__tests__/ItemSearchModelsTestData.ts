@@ -1,4 +1,6 @@
 import { ItemCardModel } from "../../ItemCard/ItemCardModels";
+import { SearchFilterStringTypes } from "../ItemSearchModels";
+import { FilterOptionModel, FilterType } from "../../Filter/FilterModels";
 
 export const itemCards: ItemCardModel[] = [
   {
@@ -72,5 +74,53 @@ export const itemCards: ItemCardModel[] = [
     interactionTypeLabel: "Multi Select",
     isPerformanceItem: false,
     brailleOnlyItem: false
+  }
+];
+
+export const genericSearchStringTypes: SearchFilterStringTypes[] = [
+  { label: "test", code: "t1" },
+  { label: "test2", code: "t2" },
+  { label: "test3", code: "t3" }
+];
+
+export const resultFilterOptionModel: FilterOptionModel[] = [
+  {
+    filterType: FilterType.Subject,
+    isSelected: false,
+    key: "t1",
+    label: "test"
+  },
+  {
+    filterType: FilterType.Subject,
+    isSelected: false,
+    key: "t2",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.Subject,
+    isSelected: false,
+    key: "t3",
+    label: "test3"
+  }
+];
+
+export const resultFilterOptionModelSelected: FilterOptionModel[] = [
+  {
+    filterType: FilterType.Subject,
+    isSelected: true,
+    key: "t1",
+    label: "test"
+  },
+  {
+    filterType: FilterType.Subject,
+    isSelected: false,
+    key: "t2",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.Subject,
+    isSelected: true,
+    key: "t3",
+    label: "test3"
   }
 ];
