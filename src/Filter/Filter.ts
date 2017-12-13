@@ -20,6 +20,7 @@ import {
 import { ItemSearch } from "../ItemSearch/ItemSearch";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 
+// tslint:disable-next-line:no-stateless-class
 export class Filter {
   /**
    * Returns a list of selected codes for the given FilterType and Categories
@@ -214,22 +215,20 @@ export class Filter {
     filters: T[],
     searchAPI: SearchAPIParamsModel
   ): T[] {
-    searchAPI = searchAPI || ItemSearch.filterToSearchApiModel(filters);
-    filters = filters.slice();
-
-    let subjectFilter = filters.find(f => f.code === FilterType.Subject);
-    if (subjectFilter && model.subjects) {
+    if (model.subjects) {
       const filteredSubjects = this.filterStringTypes(
         model.subjects,
         searchAPI.subjects
       );
-      let filteredClaims: ClaimModel[] | undefined = undefined;
+      let filteredClaims: ClaimModel[] | undefined;
 
-      let claimFilterIdx = filters.findIndex(f => f.code === FilterType.Claim);
-      let interactionFilterIdx = filters.findIndex(
+      const claimFilterIdx = filters.findIndex(
+        f => f.code === FilterType.Claim
+      );
+      const interactionFilterIdx = filters.findIndex(
         f => f.code === FilterType.InteractionType
       );
-      let targetFilterIdx = filters.findIndex(
+      const targetFilterIdx = filters.findIndex(
         f => f.code === FilterType.Target
       );
 
@@ -266,7 +265,7 @@ export class Filter {
 
       if (targetFilterIdx !== -1 && model.targets && filteredClaims) {
         const filteredTargets =
-          this.getCurrentTargets(model.targets, searchAPI, filteredClaims!) ||
+          this.getCurrentTargets(model.targets, searchAPI, filteredClaims) ||
           [];
         const filterOptions = ItemSearch.searchOptionToFilterTarget(
           filteredTargets,

@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.60",
+  "version": "0.0.64",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -18,9 +18,8 @@
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "npm run clean && start-storybook -p 6006",
-    "build-storybook": "npm run clean && npm run build-storybook",
     "storybook-publish": "build-storybook -o gh-site/storybook",
-    "build": "npm run clean && npm run build-storybook && npm run webpack-dev",
+    "build": "npm run clean && npm run storybook-publish && npm run webpack-dev",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
     "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",

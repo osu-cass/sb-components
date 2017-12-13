@@ -48,8 +48,16 @@ module.exports = env => {
                 })
           },
           {
-            test: /\.(png|jpg|jpeg|gif|svg)$/,
-            use: "file-loader"
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: "file-loader",
+                options: {
+                  name: "/Assets/Images/[name].[ext]",
+                  emitFile: false
+                }
+              }
+            ]
           }
         ]
       },
