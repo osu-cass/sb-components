@@ -12,7 +12,7 @@ script:
 after_success:
 - npm run report-coverage
 - npm run storybook-publish
-- npm run tsdoc-publish
+- npm run typedoc-publish
 deploy:
   provider: pages
   skip_cleanup: true
