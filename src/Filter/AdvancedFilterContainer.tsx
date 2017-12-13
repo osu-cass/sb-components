@@ -98,10 +98,8 @@ export class AdvancedFilterContainer extends React.Component<
    * options are currently selected
    */
   renderSelectedFilterIndicators() {
-    const { filterCategories } = this.props;
     const tags: JSX.Element[] = [];
-
-    filterCategories.forEach(cat => {
+    this.props.filterCategories.forEach(cat => {
       if (!cat.disabled) {
         cat.filterOptions.forEach(opt => {
           if (opt.isSelected) {
@@ -122,7 +120,6 @@ export class AdvancedFilterContainer extends React.Component<
         });
       }
     });
-
     return <div className="filter-status">{tags}</div>;
   }
 
