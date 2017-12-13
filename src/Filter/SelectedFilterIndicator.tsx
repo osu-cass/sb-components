@@ -11,8 +11,8 @@ export const SelectedFilterIndicator: React.SFC<
 > = props => {
   return (
     <div className="btn btn-blue filter-btn filter-selection">
-      <strong>{props.category.label}&nbsp;</strong>
-      {props.option.label}&nbsp;
+      <strong>{props.option.label}&nbsp;</strong>
+      {props.category.label}&nbsp;
       <span onClick={props.onClick} className="fa fa-times-circle fa-small" />
     </div>
   );
