@@ -12,6 +12,7 @@ export interface FilterContainerProps {
   onUpdateBasicFilter: (selected: BasicFilterCategoryModel[]) => void;
   advancedFilterCategories: AdvancedFilterCategoryModel[];
   onUpdateAdvancedFilter: (selected: AdvancedFilterCategoryModel[]) => void;
+  filterId?: string;
 }
 
 export interface FilterContainerState {
@@ -54,7 +55,7 @@ export class FilterContainer extends React.Component<
     }
 
     return (
-      <div>
+      <div id={this.props.filterId}>
         <BasicFilterContainer
           filterCategories={basicFilterCategories}
           onUpdateFilter={onUpdateBasicFilter}

@@ -8,6 +8,7 @@ export interface BasicFilterContainerProps {
   onUpdateFilter: (selected: BasicFilterCategoryModel[]) => void;
   containsAdvancedFilter: boolean;
   handleAdvancedFilterExpand: () => void;
+  filterId?: string;
 }
 
 export interface BasicFilterContainerState {
@@ -67,7 +68,7 @@ export class BasicFilterContainer extends React.Component<
   }
 
   render() {
-    const { filterCategories, containsAdvancedFilter } = this.props;
+    const { filterCategories, containsAdvancedFilter, filterId } = this.props;
     const { expanded } = this.state;
     let advancedFilterButton = null;
 
@@ -90,7 +91,7 @@ export class BasicFilterContainer extends React.Component<
     }
 
     return (
-      <div className={className}>
+      <div id={filterId} className={className}>
         <div className="basic-filter">{this.renderFilters()}</div>
         {advancedFilterButton}
       </div>

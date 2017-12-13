@@ -23,6 +23,7 @@ export interface AdvancedFilterContainerProps {
   onUpdateFilter: (selected: AdvancedFilterCategoryModel[] | undefined) => void;
   isNested?: boolean;
   pageTitle?: string;
+  filterId?: string;
 }
 /**
  * AdvancedFilterContainer state
@@ -238,7 +239,7 @@ export class AdvancedFilterContainer extends React.Component<
 
   render() {
     return (
-      <div className="advanced-filter-container">
+      <div id={this.props.filterId} className="advanced-filter-container">
         {this.renderCollapsedFilterContainer()}
         {this.renderExpanded()}
       </div>
