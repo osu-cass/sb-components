@@ -1,6 +1,7 @@
 import * as React from "react";
 import "../Assets/Styles/advanced-filter.less";
 import { AdvancedFilter } from "./AdvancedFilter";
+import { SelectedFilterIndicator } from "./SelectedFilterIndicator";
 import {
   onFilterSelect,
   AdvancedFilterCategoryModel,
@@ -98,29 +99,23 @@ export class AdvancedFilterContainer extends React.Component<
    * options are currently selected
    */
   renderSelectedFilterIndicators() {
-    const { filterCategories } = this.props;
     const tags: JSX.Element[] = [];
-
-    filterCategories.forEach(cat => {
+    this.props.filterCategories.forEach(cat => {
       if (!cat.disabled) {
         cat.filterOptions.forEach(opt => {
           if (opt.isSelected) {
             tags.push(
-              <div
-                className="btn btn-blue filter-btn filter-selection"
+              <SelectedFilterIndicator
                 key={cat.label + opt.key}
-              >
-                {opt.label}&nbsp;<span
-                  onClick={() => this.handleFilterSelect(cat, opt)}
-                  className="fa fa-times-circle fa-small"
-                />
-              </div>
+                category={cat}
+                option={opt}
+                onClick={() => this.handleFilterSelect(cat, opt)}
+              />
             );
           }
         });
       }
     });
-
     return <div className="filter-status">{tags}</div>;
   }
 

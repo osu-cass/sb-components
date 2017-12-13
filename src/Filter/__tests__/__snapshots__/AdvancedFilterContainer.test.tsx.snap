@@ -43,28 +43,78 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
     <div
       className="filter-status"
     >
-      <div
-        className="btn btn-blue filter-btn filter-selection"
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
         key="GradeELA"
-      >
-        English Literacy & Arts
-         
-        <span
-          className="fa fa-times-circle fa-small"
-          onClick={[Function]}
-        />
-      </div>
-      <div
-        className="btn btn-blue filter-btn filter-selection"
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy & Arts",
+          }
+        }
+      />
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
         key="GradeMath"
-      >
-        Maths
-         
-        <span
-          className="fa fa-times-circle fa-small"
-          onClick={[Function]}
-        />
-      </div>
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Maths",
+          }
+        }
+      />
     </div>
   </div>
 </div>
@@ -113,28 +163,78 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
     <div
       className="filter-status"
     >
-      <div
-        className="btn btn-blue filter-btn filter-selection"
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
         key="GradeELA"
-      >
-        English Literacy & Arts
-         
-        <span
-          className="fa fa-times-circle fa-small"
-          onClick={[Function]}
-        />
-      </div>
-      <div
-        className="btn btn-blue filter-btn filter-selection"
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy & Arts",
+          }
+        }
+      />
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
         key="GradeMath"
-      >
-        Maths
-         
-        <span
-          className="fa fa-times-circle fa-small"
-          onClick={[Function]}
-        />
-      </div>
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Maths",
+          }
+        }
+      />
     </div>
   </div>
 </div>

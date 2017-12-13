@@ -38,7 +38,7 @@ describe("AdvancedFilterContainer", () => {
 
   it("'Reset Filters' button resets filters", () => {
     wrapper1
-      .find(".filter-selection")
+      .findWhere(node => node.type() === "button")
       .at(0)
       .simulate("click");
     expect(wrapper1).toMatchSnapshot();
