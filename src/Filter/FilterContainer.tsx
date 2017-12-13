@@ -12,6 +12,7 @@ export interface FilterContainerProps {
   onUpdateBasicFilter: (selected: BasicFilterCategoryModel[]) => void;
   advancedFilterCategories: AdvancedFilterCategoryModel[];
   onUpdateAdvancedFilter: (selected: AdvancedFilterCategoryModel[]) => void;
+  filterId?: string;
 }
 
 export interface FilterContainerState {
@@ -39,9 +40,10 @@ export class FilterContainer extends React.Component<
       basicFilterCategories,
       onUpdateBasicFilter,
       advancedFilterCategories,
-      onUpdateAdvancedFilter
+      onUpdateAdvancedFilter,
+      filterId
     } = this.props;
-
+    const id = filterId ? filterId : "";
     let advancedFilter: JSX.Element | undefined;
     if (this.state.expanded) {
       advancedFilter = (
@@ -56,6 +58,7 @@ export class FilterContainer extends React.Component<
     return (
       <div>
         <BasicFilterContainer
+          filterId={this.props.filterId}
           filterCategories={basicFilterCategories}
           onUpdateFilter={onUpdateBasicFilter}
           containsAdvancedFilter={true}
