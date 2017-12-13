@@ -80,7 +80,7 @@ export class ItemSearch {
     return options.map(o => {
       const gradeString = GradeLevel.gradeLevelToString(o) || "";
       const selected = selectedCode
-        ? GradeLevel.gradeLevelContains(o, selectedCode)
+        ? GradeLevel.gradeLevelContains(selectedCode, o)
         : false;
 
       return {
