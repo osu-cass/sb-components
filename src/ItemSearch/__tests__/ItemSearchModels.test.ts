@@ -138,7 +138,6 @@ describe("ItemSearch.searchOptionFilterString", () => {
   });
 });
 
-// TODO: fix key to display grade code not label.
 describe("ItemSearch.searchOptionToFilterGrade", () => {
   it("empty options", () => {
     const optionParam: GradeLevels[] = [];

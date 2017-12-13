@@ -129,13 +129,13 @@ export const resultFilterGradeModel: FilterOptionModel[] = [
   {
     filterType: FilterType.Grade,
     isSelected: false,
-    key: "Grade 3",
+    key: "1",
     label: "Grade 3"
   },
   {
     filterType: FilterType.Grade,
     isSelected: false,
-    key: "Grade 4",
+    key: "2",
     label: "Grade 4"
   }
 ];
@@ -144,13 +144,13 @@ export const resultFilterGradeModelSelectedSingle: FilterOptionModel[] = [
   {
     filterType: FilterType.Grade,
     isSelected: true,
-    key: "Grade 3",
+    key: "1",
     label: "Grade 3"
   },
   {
     filterType: FilterType.Grade,
     isSelected: false,
-    key: "Grade 4",
+    key: "2",
     label: "Grade 4"
   }
 ];
@@ -159,13 +159,13 @@ export const resultFilterGradeModelSelectedMultiple: FilterOptionModel[] = [
   {
     filterType: FilterType.Grade,
     isSelected: true,
-    key: "Grade 3",
+    key: "1",
     label: "Grade 3"
   },
   {
     filterType: FilterType.Grade,
     isSelected: true,
-    key: "Grade 4",
+    key: "2",
     label: "Grade 4"
   }
 ];

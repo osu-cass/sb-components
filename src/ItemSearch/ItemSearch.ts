@@ -86,7 +86,7 @@ export class ItemSearch {
       return {
         filterType,
         label: gradeString,
-        key: gradeString,
+        key: String(o),
         isSelected: selected
       };
     });
