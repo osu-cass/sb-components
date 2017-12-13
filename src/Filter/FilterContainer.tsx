@@ -40,9 +40,10 @@ export class FilterContainer extends React.Component<
       basicFilterCategories,
       onUpdateBasicFilter,
       advancedFilterCategories,
-      onUpdateAdvancedFilter
+      onUpdateAdvancedFilter,
+      filterId
     } = this.props;
-
+    const id = filterId ? filterId : "";
     let advancedFilter: JSX.Element | undefined;
     if (this.state.expanded) {
       advancedFilter = (
@@ -55,8 +56,9 @@ export class FilterContainer extends React.Component<
     }
 
     return (
-      <div id={this.props.filterId}>
+      <div>
         <BasicFilterContainer
+          filterId={this.props.filterId}
           filterCategories={basicFilterCategories}
           onUpdateFilter={onUpdateBasicFilter}
           containsAdvancedFilter={true}

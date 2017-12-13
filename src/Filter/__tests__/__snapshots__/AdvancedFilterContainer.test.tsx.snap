@@ -3,6 +3,7 @@
 exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
 <div
   className="advanced-filter-container"
+  id=""
 >
   <div
     className="filter-sub-header-container"
@@ -123,6 +124,7 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
 exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
 <div
   className="advanced-filter-container"
+  id=""
 >
   <div
     className="filter-sub-header-container"
@@ -243,6 +245,7 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
 exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
 <div
   className="advanced-filter-container"
+  id=""
 >
   <div
     className="filter-sub-header-container"
@@ -463,6 +466,7 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
 exports[`AdvancedFilterContainer expands and collapses on click 2`] = `
 <div
   className="advanced-filter-container"
+  id=""
 >
   <div
     className="filter-sub-header-container"

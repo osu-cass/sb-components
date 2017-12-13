@@ -3,6 +3,15 @@ import "../Assets/Styles/basic-filter.less";
 import { BasicFilterCategoryModel, FilterOptionModel } from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
 
+/**
+ * Properties interface for the BasicFilterContainer component.
+ * @interface BasicFilterContainerProps
+ * @member {BasicFilterCategoryModel[]} filterCategories
+ * @member {(selected: BasicFilterCategoryModel[]) => void} onUpdateFilter
+ * @member {boolean} containsAdvancedFilter
+ * @member {() => void} handleAdvancedFilterExpand
+ * @member {string?} filterId
+ */
 export interface BasicFilterContainerProps {
   filterCategories: BasicFilterCategoryModel[];
   onUpdateFilter: (selected: BasicFilterCategoryModel[]) => void;
@@ -10,11 +19,21 @@ export interface BasicFilterContainerProps {
   handleAdvancedFilterExpand: () => void;
   filterId?: string;
 }
-
+/**
+ * State interface for the BasicFilterContainer component.
+ * @interface BasicFilterContainerState
+ * @member {boolean} expanded
+ */
 export interface BasicFilterContainerState {
   expanded?: boolean;
 }
-
+/**
+ * The BasicFilterContainer is a menu of drop down lists and radio buttons
+ * that filter Items based on BasicFilterCategoryModels and their corresponding
+ * filter options. Can expand the Advanced filter as well if they are coupled together.
+ * @class BasicFilterContainer
+ * @extends {React.Component<BasicFilterContainerProps, BasicFilterContainerState>}
+ */
 export class BasicFilterContainer extends React.Component<
   BasicFilterContainerProps,
   BasicFilterContainerState
@@ -26,7 +45,13 @@ export class BasicFilterContainer extends React.Component<
     };
     this.handleClick = this.handleClick.bind(this);
   }
-
+  /**
+   * Sets the isSelected property of the filter that the user selected
+   * and sets the state of the parent component with the new filter categories.
+   * @method onFilterSelect
+   * @param {BasicFilterCategoryModel} category
+   * @param {FilterOptionModel} [option]
+   */
   onFilterSelect(
     category: BasicFilterCategoryModel,
     option?: FilterOptionModel
@@ -48,7 +73,10 @@ export class BasicFilterContainer extends React.Component<
       }
     }
   }
-
+  /**
+   * Returns an array Basic Filter component for each of the filter categories
+   * @method renderFilters
+   */
   renderFilters() {
     const { filterCategories } = this.props;
     return filterCategories.map((fil, i) => {
@@ -62,6 +90,11 @@ export class BasicFilterContainer extends React.Component<
     });
   }
 
+  /**
+   * If the BasicFilter and AdvancedFilter Containers are used in conjunction with each other,
+   * this method sets expands and collapses the AdvancedFilterContainer
+   * @method handleClick
+   */
   handleClick() {
     this.setState({ expanded: !this.state.expanded });
     this.props.handleAdvancedFilterExpand();
@@ -70,6 +103,7 @@ export class BasicFilterContainer extends React.Component<
   render() {
     const { filterCategories, containsAdvancedFilter, filterId } = this.props;
     const { expanded } = this.state;
+    const id = filterId ? filterId : "";
     let advancedFilterButton = null;
 
     // if the component is being used in conjunction
@@ -78,7 +112,10 @@ export class BasicFilterContainer extends React.Component<
       advancedFilterButton = (
         <div className="basic-filter-button-container">
           <div>Advanced Filters</div>
-          <button className="filter-button" onClick={this.handleClick}>
+          <button
+            className="btn btn-white filter-button"
+            onClick={this.handleClick}
+          >
             {expanded ? "Hide" : "Show"}&nbsp;
             <span className={`fa fa-chevron-${expanded ? "down" : "right"}`} />
           </button>
@@ -91,7 +128,7 @@ export class BasicFilterContainer extends React.Component<
     }
 
     return (
-      <div id={filterId} className={className}>
+      <div id={id} className={className}>
         <div className="basic-filter">{this.renderFilters()}</div>
         {advancedFilterButton}
       </div>

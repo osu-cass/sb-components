@@ -14,9 +14,10 @@ import {
  * AdvancedFilterContainer props
  * @interface AdvancedFilterContainerProps
  * @member {AdvancedFilterCategoryModel[]} filterOptions
- * @member {(selected: AdvancedFilterCategoryModel[]) => void} onUpdateFilterOptions
+ * @method {(selected: AdvancedFilterCategoryModel[]) => void} onUpdateFilterOptions
  * @member {boolean} isNested
  * @member {string?} pageTitle
+ * @member {string?} filterId
  */
 export interface AdvancedFilterContainerProps {
   filterCategories: AdvancedFilterCategoryModel[];
@@ -238,8 +239,9 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   render() {
+    const id = this.props.filterId ? this.props.filterId : "";
     return (
-      <div id={this.props.filterId} className="advanced-filter-container">
+      <div id={id} className="advanced-filter-container">
         {this.renderCollapsedFilterContainer()}
         {this.renderExpanded()}
       </div>
