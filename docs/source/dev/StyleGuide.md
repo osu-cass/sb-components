@@ -1,8 +1,7 @@
 # Style Guide
 
-
 ## General style
-We follow AirBnb style guide. listed [here](https://github.com/airbnb/javascript/blob/master/react/README.md)
+We follow AirBnb style guide listed [here] and Microsoft contribution library rules.(https://github.com/airbnb/javascript/blob/master/react/README.md)
 Follow basic A11y guidelines 
 
 ## Cheatsheet

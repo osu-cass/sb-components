@@ -9,17 +9,55 @@
 
 Make sure you have the latest version of Node.js and npm.
 
-## Contributing
+## Getting Started
 
-Before you push to this repository you must run the following commands:
-- `npm run test` to run snapshot tests (do this before you check in changes).
-If ANY of the snapshot tests fail, inspect the failures and verify that they are expected failures, then run;
-- `npm run test -- -u` to update snapshot tests with new results (commit the *.snap* files).
-- `npm run prettier` to autoformat the entire `src/` directory to enforce consistent code formatting
+### Install peer dependencies
+- react
+- react-dom
+- bootstrap
+- jquery
+- react-modal
+- font-awesome
+- typeface-pt-sans-caption
+- typeface-pt-serif
+- type-pt-serif-caption
 
-### Other Commands
+### Install sb-components using npm:
+```
+npm install --save @osu-cass/sb-components
+```
+### Typings
+Included in lib
+
+### Required Assets
+Use webpack copy
+```
+npm install --save-dev copy-webpack-plugin
+```
+Webpack config:
+```
+new CopyWebpackPlugin([
+    {
+        from: path.join(__dirname, 'node_modules', '@osu-cass/sb-components/lib/Assets/Images'),
+        to: path.join(__dirname, 'public', 'Assets/Images')
+    }
+])
+```
+## Scripts
 - `npm install` to setup development environment.
 - `npm run storybook` to launch the live demo.
+- `npm run test` to run snapshot tests
+- `npm run test:prod` to run tests with no cache
+- `npm run test -- -u` to update snapshot tests with new results (commit the *.snap* files).
+- `npm run storybook-publish` to publish storybook to gh-site/storybook
+- `npm run tsdoc-publish` to publish TypeScript docs to gh-site/tsdoc
+- `npm run prepare` to determine if a npm publish would succeed
+- `npm run webpack` to run dev webpack outputs to lib
+- `npm run webpack:prod` to run production webpack outputs to lib
+
+## Contribute
+* [Fork It](https://help.github.com/articles/fork-a-repo/)
+* [Submit Pull Request](https://help.github.com/articles/about-pull-requests/)
 
 ## Links
 - [gh-pages](https://osu-cass.github.io/sb-components/)
