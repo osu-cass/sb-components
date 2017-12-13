@@ -20,12 +20,13 @@ import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { Filter } from "../Filter/Filter";
 
+// tslint:disable-next-line:no-stateless-class
 export class ItemSearch {
   public static filterToSearchApiModel(
     filterModels: FilterCategoryModel[]
   ): SearchAPIParamsModel {
     const subjects = Filter.getSelectedCodes(FilterType.Subject, filterModels);
-    const grade = Filter.getSelectedGrade(filterModels);
+    const gradeLevels = Filter.getSelectedGrade(filterModels);
     const claims = Filter.getSelectedCodes(FilterType.Claim, filterModels);
     const interactionTypes = Filter.getSelectedCodes(
       FilterType.InteractionType,
@@ -45,17 +46,15 @@ export class ItemSearch {
 
     const targets = Filter.getSelectedTargets(filterModels);
 
-    const searchModel: SearchAPIParamsModel = {
-      subjects: subjects,
-      gradeLevels: grade,
-      claims: claims,
-      interactionTypes: interactionTypes,
-      targets: targets,
-      catOnly: catOnly,
-      performanceOnly: performanceOnly
+    return {
+      subjects,
+      gradeLevels,
+      claims,
+      interactionTypes,
+      targets,
+      catOnly,
+      performanceOnly
     };
-
-    return searchModel;
   }
 
   public static searchOptionFilterString(
@@ -65,10 +64,10 @@ export class ItemSearch {
   ): FilterOptionModel[] {
     return options.map(o => {
       return {
+        filterType,
         label: o.label,
         key: o.code,
-        isSelected: (selectedCodes || []).some(s => s === o.code),
-        filterType: filterType
+        isSelected: (selectedCodes || []).some(s => s === o.code)
       };
     });
   }
@@ -83,11 +82,12 @@ export class ItemSearch {
       const selected = selectedCode
         ? GradeLevel.gradeLevelContains(o, selectedCode)
         : false;
+
       return {
+        filterType,
         label: gradeString,
         key: gradeString,
-        isSelected: selected,
-        filterType: filterType
+        isSelected: selected
       };
     });
   }
@@ -99,10 +99,10 @@ export class ItemSearch {
   ): FilterOptionModel[] {
     return options.map(o => {
       return {
+        filterType,
         label: o.name,
         key: o.nameHash.toString(),
-        isSelected: (selectedCodes || []).some(s => s === o.nameHash),
-        filterType: filterType
+        isSelected: (selectedCodes || []).some(s => s === o.nameHash)
       };
     });
   }
@@ -156,19 +156,22 @@ export class ItemSearch {
           this.getTechnologyTypeCodes(searchApi)
         );
         break;
+      default:
+        break;
     }
 
     return options;
   }
 
   public static getTechnologyTypeCodes(search: SearchAPIParamsModel): string[] {
-    let codes: string[] = [];
+    const codes: string[] = [];
     if (search.catOnly !== undefined) {
       codes.push(FilterType.CAT);
     }
     if (search.performanceOnly !== undefined) {
       codes.push(FilterType.Performance);
     }
+
     return codes;
   }
 
@@ -178,13 +181,11 @@ export class ItemSearch {
   ): FilterCategoryModel {
     const options = this.getFilterOptionModel(filter, searchApi);
 
-    const category: FilterCategoryModel = {
+    return {
       ...filter,
       disabled: false,
       filterOptions: options
     };
-
-    return category;
   }
 
   public static filterItemCards(
