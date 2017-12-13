@@ -12436,6 +12436,37 @@ exports[`Storyshots Sample Response with a sample response 1`] = `
 </div>
 `;
 
+exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="btn btn-blue filter-btn filter-selection"
+  >
+    <strong>
+      English Literacy & Arts
+       
+    </strong>
+    Grade
+     
+    <span
+      className="fa fa-times-circle fa-small"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Style Buttons 1`] = `
 <div
   style={
