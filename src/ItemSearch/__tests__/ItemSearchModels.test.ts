@@ -8,7 +8,10 @@ import {
   itemCards,
   genericSearchStringTypes,
   resultFilterOptionModel,
-  resultFilterOptionModelSelected
+  resultFilterOptionModelSelected,
+  resultFilterGradeModel,
+  resultFilterGradeModelSelectedSingle,
+  resultFilterGradeModelSelectedMultiple
 } from "./ItemSearchModelsTestData";
 
 import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
@@ -132,5 +135,56 @@ describe("ItemSearch.searchOptionFilterString", () => {
       selectedCodesParam
     );
     expect(result).toEqual(resultFilterOptionModelSelected);
+  });
+});
+
+// TODO: fix key to display grade code not label.
+describe("ItemSearch.searchOptionToFilterGrade", () => {
+  it("empty options", () => {
+    const optionParam: GradeLevels[] = [];
+    const filterParam = FilterType.Grade;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual([]);
+  });
+
+  it("filled options", () => {
+    const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
+    const filterParam = FilterType.Grade;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual(resultFilterGradeModel);
+  });
+
+  it("filled options Selected single", () => {
+    const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
+    const filterParam = FilterType.Grade;
+    const selectedCodeParam = GradeLevels.Grade3;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultFilterGradeModelSelectedSingle);
+  });
+
+  it("filled options Selected multiple", () => {
+    const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
+    const filterParam = FilterType.Grade;
+    const selectedCodeParam = GradeLevels.Grade3 | GradeLevels.Grade4;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultFilterGradeModelSelectedMultiple);
   });
 });
