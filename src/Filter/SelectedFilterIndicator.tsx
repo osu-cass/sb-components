@@ -8,12 +8,12 @@ export interface SelectedFilterIndicatorProps {
 }
 export const SelectedFilterIndicator: React.SFC<
   SelectedFilterIndicatorProps
-> = ({ category, option, onClick }) => {
+> = props => {
   return (
     <div className="btn btn-blue filter-btn filter-selection">
-      <strong>{category.label}&nbsp;</strong>
-      {option.label}&nbsp;
-      <span onClick={onClick} className="fa fa-times-circle fa-small" />
+      <strong>{props.category.label}&nbsp;</strong>
+      {props.option.label}&nbsp;
+      <span onClick={props.onClick} className="fa fa-times-circle fa-small" />
     </div>
   );
 };
