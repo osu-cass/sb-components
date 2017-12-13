@@ -3,3 +3,7 @@ lib
 *.log
 docs/_build
 storybuild
+storybook-static
+coverage
+gh-site/tsdoc
+gh-site/storybook

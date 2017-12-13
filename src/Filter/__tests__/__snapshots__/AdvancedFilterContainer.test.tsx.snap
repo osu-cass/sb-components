@@ -1,0 +1,509 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <div
+      className="filter-advanced-filter-header"
+    >
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div
+        className="adv-control-btns"
+      >
+        <button
+          className="btn btn-white filter-reset-btn "
+          onClick={[Function]}
+        >
+          Reset Filters
+        </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-status"
+    >
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
+        key="GradeELA"
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy & Arts",
+          }
+        }
+      />
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
+        key="GradeMath"
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Maths",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <div
+      className="filter-advanced-filter-header"
+    >
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div
+        className="adv-control-btns"
+      >
+        <button
+          className="btn btn-white filter-reset-btn "
+          onClick={[Function]}
+        >
+          Reset Filters
+        </button>
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-status"
+    >
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
+        key="GradeELA"
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy & Arts",
+          }
+        }
+      />
+      <Component
+        category={
+          Object {
+            "code": "Grade",
+            "disabled": false,
+            "displayAllButton": true,
+            "filterOptions": Array [
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "ELA",
+                "label": "English Literacy & Arts",
+              },
+              Object {
+                "filterType": "Subject",
+                "isSelected": false,
+                "key": "Math",
+                "label": "Maths",
+              },
+            ],
+            "helpText": "Grade Help",
+            "isMultiSelect": false,
+            "label": "Grade",
+          }
+        }
+        key="GradeMath"
+        onClick={[Function]}
+        option={
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "Math",
+            "label": "Maths",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <h1>
+      <span
+        className="filter-page-title"
+      >
+        Advanced Filter
+      </span>
+    </h1>
+    <div
+      className="filter-advanced-filter-header"
+    >
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div
+        className="adv-control-btns"
+      >
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Collapse 
+          <span
+            className="fa fa-chevron-down"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-status"
+    />
+  </div>
+  <div
+    className="advanced-filter-container-expanded"
+  >
+    <div
+      aria-live="polite"
+      aria-relevant="additions removals"
+      className="filter-body"
+    >
+      <AdvancedFilter
+        code="Grade"
+        disabled={false}
+        displayAllButton={true}
+        filterOptions={
+          Array [
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "7",
+              "label": "Grades 3-5",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "56",
+              "label": "Grades 6-8",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "960",
+              "label": "High School",
+            },
+          ]
+        }
+        helpText="Grade Help"
+        isMultiSelect={false}
+        key="0"
+        label="Grade"
+        onFilterOptionSelect={[Function]}
+      />
+      <AdvancedFilter
+        code="Subject"
+        disabled={false}
+        displayAllButton={false}
+        filterOptions={
+          Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "EL&A",
+              "label": "English Literacy & Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Mth",
+              "label": "Maths",
+            },
+          ]
+        }
+        helpText="Subject Help"
+        isMultiSelect={true}
+        key="1"
+        label="Multi"
+        onFilterOptionSelect={[Function]}
+      />
+      <AdvancedFilter
+        code="Subject"
+        disabled={true}
+        displayAllButton={false}
+        filterOptions={
+          Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Eng",
+              "label": "English",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Chem",
+              "label": "Chemistry",
+            },
+          ]
+        }
+        helpText="Subject Help"
+        isMultiSelect={false}
+        key="2"
+        label="Disabled"
+        onFilterOptionSelect={[Function]}
+      />
+      <AdvancedFilter
+        code="Subject"
+        disabled={true}
+        displayAllButton={false}
+        filterOptions={
+          Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Read",
+              "label": "Reading",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Hist",
+              "label": "History",
+            },
+          ]
+        }
+        helpText="Subject Help"
+        isMultiSelect={true}
+        key="3"
+        label="Disabled Multi"
+        onFilterOptionSelect={[Function]}
+      />
+      <AdvancedFilter
+        code="Subject"
+        disabled={false}
+        displayAllButton={true}
+        filterOptions={
+          Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "USh",
+              "label": "US History",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Wh",
+              "label": "World History",
+            },
+          ]
+        }
+        helpText="Subject Help"
+        isMultiSelect={true}
+        key="4"
+        label="Multi All"
+        onFilterOptionSelect={[Function]}
+      />
+      <AdvancedFilter
+        code="Subject"
+        disabled={false}
+        displayAllButton={true}
+        filterOptions={
+          Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Calc",
+              "label": "Calculus",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Geom",
+              "label": "Geometry",
+            },
+          ]
+        }
+        helpText="Subject Help"
+        isMultiSelect={true}
+        key="5"
+        label="Multi All Disabled"
+        onFilterOptionSelect={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AdvancedFilterContainer expands and collapses on click 2`] = `
+<div
+  className="advanced-filter-container"
+>
+  <div
+    className="filter-sub-header-container"
+  >
+    <h1>
+      <span
+        className="filter-page-title"
+      >
+        Advanced Filter
+      </span>
+    </h1>
+    <div
+      className="filter-advanced-filter-header"
+    >
+      <div
+        className="filter-advanced-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div
+        className="adv-control-btns"
+      >
+        <button
+          className="btn btn-white filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-status"
+    />
+  </div>
+</div>
+`;

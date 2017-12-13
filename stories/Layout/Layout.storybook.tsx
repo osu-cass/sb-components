@@ -4,9 +4,17 @@ import { Layout } from "../../src";
 import { RouterDecorator } from "../RouterDecorator";
 import { SiteLinks } from "./mocks";
 
+const style: React.CSSProperties = {
+  width: "100%",
+  height: "100%",
+  minHeight: "800px",
+  minWidth: "1200px",
+  backgroundColor: "lightgrey"
+};
+
 const body = (
-  <div className="test-container">
-    <div className="container">
+  <div className="container test-container">
+    <div style={style}>
       <p>Test Body...</p>
     </div>
   </div>

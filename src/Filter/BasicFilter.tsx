@@ -1,10 +1,10 @@
-import "../Styles/basic-filter.less";
+import "../Assets/Styles/basic-filter.less";
 import * as React from "react";
 import {
   BasicFilterCategoryModel,
   FilterOptionModel,
   OptionTypeModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
@@ -46,7 +46,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   }
 
   findFilterOption(key: string) {
-    return this.props.filterOptions.find(fil => fil.key == key);
+    return this.props.filterOptions.find(fil => fil.key === key);
   }
 
   renderFilterBody() {
@@ -59,6 +59,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
             this.props.selectedHandler(this.findFilterOption(e.target.value))
           }
         >
+          <option value="default">Select Filter...</option>
           {this.renderTags()}
         </select>
       );

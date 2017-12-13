@@ -1,0 +1,115 @@
+@import "constants.less";
+
+.advanced-filter-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  border: 1px solid @grey-border-color;
+  box-shadow: @box-shadow;
+  font-family: "PT ", "Georgia", "Times New Roman", "Times,serif";
+  background-color: @sb-white;
+  padding: @spacing-unit;
+  border-radius: 0 0 10px 10px;
+  color: @text-color-dark;
+  min-width: 300px;
+}
+
+div.advanced-filter-container *:not(span) {
+  font-family: inherit;
+}
+
+div.filter-sub-header-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  z-index: 1;
+  background-color: @sb-white;
+}
+
+div.filter-title-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: @box-shadow;
+}
+
+div.filter-advanced-filter-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.filter-advanced-filter-title {
+  display: flex;
+  flex-flow: row nowrap;
+  color: @text-color-gray;
+  align-items: center;
+  margin-left: @spacing-unit/2;
+  white-space: nowrap;
+}
+
+div.advanced-filter-container-expanded {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+div.filter-status {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin: 3px;
+}
+
+.filter-subheader {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-body {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: @spacing-unit/2;
+}
+
+.filter-button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+  max-width: 175px;
+}
+
+.filter-selection {
+  padding: @spacing-unit/2;
+}
+
+.advanced-filter-container-expanded {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.child-filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filter-btn {
+  max-width: max-content;
+  min-width: 50px;
+}
+

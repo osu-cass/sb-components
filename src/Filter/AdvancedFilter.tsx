@@ -1,80 +1,94 @@
-import "../Styles/advanced-filter.less";
+import "../Assets/Styles/advanced-filter.less";
 import * as React from "react";
 import {
   AdvancedFilterCategoryModel,
   FilterOptionModel,
   OptionTypeModel
-} from "./AdvancedFilterModel";
+} from "./FilterModels";
 
 export interface AdvancedFilterProps extends AdvancedFilterCategoryModel {
-  selectedHandler: ( data?: FilterOptionModel ) => void;
+  onFilterOptionSelect: (data?: FilterOptionModel) => void;
 }
 
 export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
-  constructor ( props: AdvancedFilterProps ) {
-    super( props );
+  constructor(props: AdvancedFilterProps) {
+    super(props);
   }
 
-  renderAllbtnContainer () {
+  renderAllBtnContainer() {
+    const {
+      filterOptions,
+      onFilterOptionSelect,
+      displayAllButton
+    } = this.props;
     let allBtnContainer: JSX.Element | undefined;
-    let classname = "";
-    const anySelected = this.props.filterOptions.some( fo => fo.isSelected );
-
-    if ( this.props.displayAllButton ) {
-      classname = anySelected ? "" : " selected-button";
-
+    const anySelected = filterOptions.some(fo => fo.isSelected);
+    if (displayAllButton) {
+      const className = anySelected ? "btn-white" : " btn-blue";
       allBtnContainer = (
         <div className="filter-all-btn-container">
           <button
-            className={"filter-all-btn " + classname + " filter-button"}
+            className={`btn btn-sm filter-btn filter-btn-all ${className}`}
             key="all"
-            onClick={() => this.props.selectedHandler()}
+            onClick={() => onFilterOptionSelect()}
           >
             All
           </button>
         </div>
       );
     }
+
     return allBtnContainer;
   }
 
-  renderTags () {
+  renderTags() {
+    const { filterOptions, onFilterOptionSelect, disabled } = this.props;
     const tags: JSX.Element[] = [];
-    let classname = "";
-    if (this.props.filterOptions.length > 0) {
-      this.props.filterOptions.forEach((t, i) => {
-        classname = t.isSelected ? "selected-button" : "";
 
+    if (filterOptions.length > 0) {
+      filterOptions.forEach((t, i) => {
+        const className = t.isSelected ? "btn-blue selected" : "btn-white";
         tags.push(
           <button
-            className={classname + " filter-button"}
+            className={`btn btn-sm filter-btn ${className}`}
             key={t.key}
-            onClick={() => this.props.selectedHandler(t)}
+            onClick={() => onFilterOptionSelect(t)}
+            disabled={disabled}
           >
             {t.label}
           </button>
         );
       });
-    }else{
-      tags.push(<div key={0}>No options.</div>)
+    } else {
+      tags.push(<div key={0}>No options.</div>);
     }
     return tags;
   }
 
-  render () {
+  render() {
+    const { disabled, label, helpText } = this.props;
+    const className = disabled ? " filter-disabled" : "";
     return (
       <div
-        id={( this.props.label + "-filter" ).toLocaleLowerCase()}
-        className="filter-selection"
+        id={(label + "-filter").toLocaleLowerCase()}
+        className={"filter-selection" + className}
       >
-        <label>
-          <span info-label>{this.props.label}</span>
-          <span data-tooltip={this.props.helpText} data-tooltip-position="top">
-            <span className="fa fa-info-circle fa-sm" />
-          </span>
-        </label>
+        <div className="filter-container-header">
+          <label>
+            <span
+              className="tooltip-help"
+              data-tooltip={helpText}
+              data-tooltip-position="top"
+            >
+              <span className="tooltip-label" info-label="true">
+                {label}
+              </span>
+              <span className="fa fa-info-circle fa-sm" />
+            </span>
+          </label>
+        </div>
         <div className="child-filter-container">
-          {this.renderAllbtnContainer()}
+          {this.renderAllBtnContainer()}
           <div className="filter-button-container">{this.renderTags()}</div>
         </div>
       </div>

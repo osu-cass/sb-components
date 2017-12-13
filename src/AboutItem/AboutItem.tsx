@@ -1,4 +1,4 @@
-import "../Styles/modal.less";
+import "../Assets/Styles/modal.less";
 import * as React from "react";
 import * as Collapsible from "../Rubric/Collapsible";
 import { AboutItemModel } from "./AboutItemModels";
@@ -31,10 +31,16 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
   };
 
   private renderRubrics() {
-    const rubrics = this.props.rubrics.map((ru, i) => (
-      <Rubric {...ru} key={String(i)} />
-    ));
-    return <div className="rubric">{rubrics}</div>;
+    const scoring = this.props.sampleItemScoring;
+    if (scoring && scoring.rubrics) {
+      //TODO: add logic for non rubrics
+      const rubrics = scoring.rubrics.map((ru, i) => (
+        <Rubric {...ru} key={String(i)} />
+      ));
+      return <div className="rubric">{rubrics}</div>;
+    } else {
+      return null;
+    }
   }
 
   render() {
@@ -51,7 +57,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
             className="glyphicon glyphicon-info-sign glyphicon-pad"
             aria-hidden="true"
           />
-        About <span className="item-nav-long-label">This Item</span>
+          About <span className="item-nav-long-label">This Item</span>
         </button>
 
         <ReactModal
@@ -60,7 +66,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
           onRequestClose={this.handleHideModal}
           overlayClassName="react-modal-overlay"
           className="react-modal-content about-item-modal"
-          >
+        >
           <div
             className="modal-wrapper"
             aria-labelledby="About Item Modal"

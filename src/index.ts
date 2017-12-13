@@ -1,6 +1,7 @@
 //
 // AboutItem Components and Models
 //
+import { onFilterSelect } from "./Filter/FilterModels";
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
 export { AboutItemModel } from "./AboutItem/AboutItemModels";
 export { AboutItem } from "./AboutItem/AboutItem";
@@ -8,24 +9,29 @@ export { AboutItem } from "./AboutItem/AboutItem";
 //
 // About Test Items
 //
-export { AboutTestItemsContainer } from "./AboutTestItems/AboutTestItemsContainer";
 export {
-    InteractionTypeModel,
-    AboutTestItemsModel,
-    aboutTestItemsClient,
-    AboutTestItemsParams
+  AboutTestItemsContainer
+} from "./AboutTestItems/AboutTestItemsContainer";
+export {
+  InteractionTypeModel,
+  AboutTestItemsModel,
+  aboutTestItemsClient,
+  AboutTestItemsParams
 } from "./AboutTestItems/AboutTestItemsModels";
 
 //
 // Accessibility Components, Models and Actions
 //
 export {
-    AccessibilityResourceModel,
-    AccResourceGroupModel,
-    getResource,
-    getBrailleAccommodation,
+  AccessibilityResourceModel,
+  AccResourceGroupModel,
+  getResource,
+  getBrailleAccommodation
 } from "./Accessibility/AccessibilityModels";
-export { ItemAccessibilityModalProps, ItemAccessibilityModal } from "./Accessibility/AccessibilityModal";
+export {
+  ItemAccessibilityModalProps,
+  ItemAccessibilityModal
+} from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
@@ -37,21 +43,33 @@ export { DropDownSelectionModel } from "./DropDown/DropDownModels";
 //
 // Filter Components and Models
 //
-export { AdvancedFilter, AdvancedFilterProps } from "./Filter/AdvancedFilter"
-export { AdvancedFilterContainer, AdvancedFilterContainerProps } from "./Filter/AdvancedFilterContainer";
-export { BasicFilter, BasicFilterProps } from "./Filter/BasicFilter";
-export { BasicFilterContainer, BasicFilterContainerProps } from "./Filter/BasicFilterContainer";
-export { FilterContainer, FilterContainerProps } from "./Filter/FilterContainer";
+export { AdvancedFilter, AdvancedFilterProps } from "./Filter/AdvancedFilter";
 export {
-    OptionTypeModel,
-    FilterOptionModel,
-    BasicFilterCategoryModel,
-    FilterCategoryModel,
-    AdvancedFilterCategoryModel,
-    TechType,
-    AdvancedFiltersModel
-} from "./Filter/AdvancedFilterModel";
-
+  AdvancedFilterContainer,
+  AdvancedFilterContainerProps
+} from "./Filter/AdvancedFilterContainer";
+export { BasicFilter, BasicFilterProps } from "./Filter/BasicFilter";
+export {
+  BasicFilterContainer,
+  BasicFilterContainerProps
+} from "./Filter/BasicFilterContainer";
+export {
+  FilterContainer,
+  FilterContainerProps
+} from "./Filter/FilterContainer";
+export {
+  onFilterSelect,
+  OptionTypeModel,
+  FilterOptionModel,
+  BasicFilterCategoryModel,
+  FilterCategoryModel,
+  AdvancedFilterCategoryModel,
+  TechType,
+  AdvancedFiltersModel,
+  FilterType
+} from "./Filter/FilterModels";
+export { Filter } from "./Filter/Filter";
+export { FilterLink } from "./Filter/FilterLink";
 //
 // Grade Levels
 //
@@ -60,9 +78,12 @@ export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 //
 // ItemCard Components, Models, and Actions
 //
-export { ItemCard } from "./ItemCard/ItemCard";
-export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
-export { itemPageLink, ItemCardModel } from "./ItemCard/ItemCardModels";
+export { ItemCard, ItemCardProps } from "./ItemCard/ItemCard";
+export {
+  ItemCardCondensed,
+  ItemCardCondensedProps
+} from "./ItemCard/ItemCardCondensed";
+export { ItemCardModel } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 
@@ -70,20 +91,23 @@ export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 // Item Page
 //
 export { ItemPage, ItemPageProps } from "./ItemPage/ItemPage";
-export { ItemPageContainerProps, ItemPageContainer } from "./ItemPage/ItemPageContainer";
 export {
-    ItemModel,
-    ItemIdentifierModel,
-    ItemIsaapModel,
-    ItemPageModel,
-    toCookie,
-    toiSAAP,
-    trimAccResource,
-    addDisabledPlaceholder,
-    resetResource,
-    itemAccessibilityClient,
-    itemPageClient,
-    aboutThisItemViewModelClient,
+  ItemPageContainerProps,
+  ItemPageContainer
+} from "./ItemPage/ItemPageContainer";
+export {
+  ItemModel,
+  ItemIdentifierModel,
+  ItemIsaapModel,
+  ItemPageModel,
+  toCookie,
+  toiSAAP,
+  trimAccResource,
+  addDisabledPlaceholder,
+  resetResource,
+  itemAccessibilityClient,
+  itemPageClient,
+  aboutThisItemViewModelClient
 } from "./ItemPage/ItemPageModels";
 
 //
@@ -91,25 +115,35 @@ export {
 //
 export { ItemSearch } from "./ItemSearch/ItemSearch";
 export {
-    SubjectClaimsModel,
-    SubjectModel,
-    ClaimModel,
-    TargetModel,
-    SearchAPIParamsModel,
-    ItemsSearchModel,
+  SubjectClaimsModel,
+  SubjectModel,
+  ClaimModel,
+  TargetModel,
+  SearchAPIParamsModel,
+  ItemsSearchModel,
+  ItemsSearchFilterModel,
+  FilterSearchStringModel,
+  FilterSearchGradeLevelModel,
+  FilterSearchModel,
+  FilterSearchTargetModel
 } from "./ItemSearch/ItemSearchModels";
+export { SearchUrl } from "./ItemSearch/SearchUrl";
+
 //
 // Item Table
 //
 export { ItemTable, ItemTableProps } from "./ItemTable/ItemTable";
-export { ItemTableContainer, ItemTableContainerProps } from "./ItemTable/ItemTableContainer";
-export { HeaderTable } from "./ItemTable/ItemTableHeader";
 export {
-    SortColumnModel,
-    headerColumns,
-    HeaderType,
-    HeaderSortModel,
-    SortDirection
+  ItemTableContainer,
+  ItemTableContainerProps
+} from "./ItemTable/ItemTableContainer";
+export { HeaderTable } from "./ItemTable/HeaderTable";
+export {
+  SortColumnModel,
+  headerColumns,
+  HeaderType,
+  HeaderSortModel,
+  SortDirection
 } from "./ItemTable/ItemTableModels";
 
 //
@@ -140,12 +174,23 @@ export { ItemTabs, ItemTabsProps } from "./PageTabs/ItemTabs";
 // Pdf Components
 //
 export { CoverPage, CoverPageProps } from "./Pdf/CoverPage";
-export { EvidenceStatement, EvidenceStatementProps } from "./Pdf/EvidenceStatement";
+export {
+  EvidenceStatement,
+  EvidenceStatementProps
+} from "./Pdf/EvidenceStatement";
 export { ItemView, ItemViewProps } from "./Pdf/ItemView";
-export { ItemViewContainer, ItemViewContainerProps } from "./Pdf/ItemViewContainer";
+export {
+  ItemViewContainer,
+  ItemViewContainerProps
+} from "./Pdf/ItemViewContainer";
 export { PassageView, PassageViewProps } from "./Pdf/PassageView";
 export { PdfContainer, PdfContainerProps } from "./Pdf/PdfContainer";
-export { ItemGroupModel, QuestionModel, ItemPdfModel, PdfViewType } from "./Pdf/PdfModels";
+export {
+  ItemGroupModel,
+  QuestionModel,
+  ItemPdfModel,
+  PdfViewType
+} from "./Pdf/PdfModels";
 export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
 
 //
@@ -159,7 +204,11 @@ export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 //
 export { Collapsible } from "./Rubric/Collapsible";
 export { Rubric } from "./Rubric/Rubric";
-export { RubricEntryModel, RubricModel, RubricSampleModel } from "./Rubric/RubricModels";
+export {
+  RubricEntryModel,
+  RubricModel,
+  RubricSampleModel
+} from "./Rubric/RubricModels";
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
@@ -168,10 +217,10 @@ export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 // ApiModel
 //
 export {
-    Resource,
-    parseQueryString,
-    getResourceContent,
-    get,
+  Resource,
+  parseQueryString,
+  getResourceContent,
+  get
 } from "./ApiModel";
 
 //

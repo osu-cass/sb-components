@@ -1,17 +1,23 @@
 language: node_js
 node_js:
 - '8'
+cache:
+  directories:
+    - node_modules
+
 install:
 - npm install
 script:
-- npm run test
+- npm run test:prod
+after_success:
+- npm run report-coverage
 - npm run storybook-publish
-
+- npm run tsdoc-publish
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GIT_API_KEY
-  local_dir: storybuild
+  local_dir: gh-site
   target_branch: gh-pages
   on:
     branch: master

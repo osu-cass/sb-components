@@ -8,5 +8,4 @@ Developers Guide
    ProjectSetup
    StyleGuide
    VsCode   
-
-  
+   ReactBestPractices

@@ -1,182 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`QuestionDataTable matches snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <QuestionView
-    question={
+<div
+  className="item"
+>
+  <p
+    className="question-title"
+  >
+    Question #
+    1
+  </p>
+  <ItemView
+    view={
       Object {
-        "data": null,
+        "captured": true,
+        "html": null,
         "id": "12334",
-        "questionNumber": 1,
-        "view": Object {
-          "captured": true,
-          "html": null,
-          "id": "12334",
-          "picturePath": null,
-          "type": 1,
-        },
+        "picturePath": null,
+        "type": 1,
       }
     }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <h2>
-          Question #
-          1
-        </h2>,
-        null,
-        null,
-        <ItemView
-          view={
-            Object {
-              "captured": true,
-              "html": null,
-              "id": "12334",
-              "picturePath": null,
-              "type": 1,
-            }
-          }
-        />,
-        null,
-        null,
-      ],
-      "className": "item",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Question #",
-            1,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Question #",
-          1,
-        ],
-        "type": "h2",
-      },
-      null,
-      null,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "view": Object {
-            "captured": true,
-            "html": null,
-            "id": "12334",
-            "picturePath": null,
-            "type": 1,
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      null,
-      null,
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h2>
-            Question #
-            1
-          </h2>,
-          null,
-          null,
-          <ItemView
-            view={
-              Object {
-                "captured": true,
-                "html": null,
-                "id": "12334",
-                "picturePath": null,
-                "type": 1,
-              }
-            }
-          />,
-          null,
-          null,
-        ],
-        "className": "item",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Question #",
-              1,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Question #",
-            1,
-          ],
-          "type": "h2",
-        },
-        null,
-        null,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "view": Object {
-              "captured": true,
-              "html": null,
-              "id": "12334",
-              "picturePath": null,
-              "type": 1,
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        null,
-        null,
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+  />
+</div>
 `;

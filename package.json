@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "0.0.31",
+  "version": "0.0.64",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -12,15 +12,26 @@
   "scripts": {
     "webpack-prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "webpack-dev": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "prepare": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Styles ./lib/Styles",
+    "prepare": "npm run clean && npm run test && npm run webpack-prod && cp -r ./src/Assets ./lib/",
+    "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
+    "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "npm run clean && start-storybook -p 6006",
-    "build-storybook": "npm run clean && build-storybook",
-    "storybook-publish": "build-storybook -o storybuild",
-    "build": "npm run clean && build-storybook && npm run webpack-dev",
-    "clean": "rm -rf ./lib ?",
-    "prettier": "prettier --write \"src/*/*.ts\" && prettier --write \"src/*/*.tsx\" && prettier --write \"stories/*/*.tsx\""
+    "storybook-publish": "build-storybook -o gh-site/storybook",
+    "build": "npm run clean && npm run storybook-publish && npm run webpack-dev",
+    "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
+    "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
+    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "tsdoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
+  },
+  "lint-staged": {
+    "{src,stories}/**/*{.tsx,.ts}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -58,25 +69,21 @@
     "@types/storybook__addon-actions": "~3.0.1",
     "@types/storybook__react": "~3.0.5",
     "awesome-typescript-loader": "^3.4.0",
-    "bootstrap": "3.3.7",
+    "coveralls": "^3.0.0",
     "css-loader": "~0.28.7",
     "dts-generator": "^2.1.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "eslint": "~4.10.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
-    "font-awesome": "~4.7.0",
+    "husky": "^0.14.3",
+    "enzyme-to-json": "^3.2.2",
     "identity-obj-proxy": "~3.0.0",
     "jest": "~21.2.1",
     "jest-cli": "~21.2.1",
-    "jquery": "3.2.1",
     "jsdom": "^11.3.0",
     "jsdom-global": "^3.0.2",
     "less": "~2.7.3",
     "less-loader": "~4.0.5",
+    "lint-staged": "^6.0.0",
     "postcss-loader": "~2.0.8",
     "prettier": "~1.8.2",
     "react": "~16.0.0",
@@ -87,13 +94,43 @@
     "style-loader": "~0.19.0",
     "ts-jest": "~21.1.2",
     "ts-loader": "^3.1.1",
+    "tsdoc": "0.0.4",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.4.2",
+    "tslint-config-prettier": "^1.6.0",
+    "tslint-language-service": "^0.9.6",
+    "tslint-microsoft-contrib": "^5.0.1",
     "typescript": "~2.5.3",
-    "typescript-eslint-parser": "~8.0.1",
     "url-loader": "0.5.9",
-    "webpack": "~3.8.1"
+    "webpack": "~3.8.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "react-modal": "3.1.2",
+    "file-loader": "^1.1.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "~4.7.0",
+    "jquery": "3.2.1",
+    "typeface-pt-sans-caption": "0.0.44",
+    "typeface-pt-serif": "0.0.44",
+    "typeface-pt-serif-caption": "0.0.44"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16",
+    "react-dom": "^15.0.0 || ^16",
+    "bootstrap": "^3.3.7 || ^4",
+    "jquery": "^3.2.1",
+    "react-modal": "^3.1.2",
+    "font-awesome": "~4.7.0",
+    "typeface-pt-sans-caption": "^0.0.44",
+    "typeface-pt-serif": "^0.0.44",
+    "typeface-pt-serif-caption": "^0.0.44"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTest.ts",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTest.ts",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
@@ -106,7 +143,8 @@
     ],
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "./tsconfig.json"
+        "tsConfigFile": "./tsconfig.json",
+        "skipBabel": true
       }
     },
     "moduleFileExtensions": [
@@ -116,14 +154,12 @@
       "js",
       "jsx"
     ],
+    "collectCoverage": true,
+    "mapCoverage": true,
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
     }
-  },
-  "dependencies": {
-    "extract-text-webpack-plugin": "^3.0.2",
-    "react-modal": "3.1.2"
   }
 }

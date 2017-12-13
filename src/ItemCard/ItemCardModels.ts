@@ -1,15 +1,10 @@
-import { Link } from "react-router-dom";
-import * as GradeLevels from "../GradeLevels/GradeLevels";
-
-export function itemPageLink(bankKey: number, itemKey: number) {
-  window.location.href = "/Item?bankKey=" + bankKey + "&itemKey=" + itemKey;
-}
+import { GradeLevels } from "../GradeLevels/GradeLevels";
 
 export interface ItemCardModel {
   bankKey: number;
   itemKey: number;
   title: string;
-  grade: GradeLevels.GradeLevels;
+  grade: GradeLevels;
   gradeLabel: string;
   subjectCode: string;
   subjectLabel: string;
@@ -21,8 +16,8 @@ export interface ItemCardModel {
   interactionTypeCode: string;
   interactionTypeLabel: string;
   isPerformanceItem: boolean;
-  brailleOnlyItem?: boolean,
-  domain?: string,
-  depthOfKnowledge?: string,
-  commonCoreStandardId?: string
+  brailleOnlyItem?: boolean;
+  domain?: string;
+  depthOfKnowledge?: string;
+  commonCoreStandardId?: string;
 }

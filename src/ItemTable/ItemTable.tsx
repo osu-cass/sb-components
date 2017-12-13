@@ -10,7 +10,7 @@ export interface ItemTableProps {
   rowOnClick: (item: ItemCardModel) => void;
   sort: HeaderSortModel[];
   columns: SortColumnModel[];
-  selectedRow?: ItemCardModel | null;
+  selectedRow?: ItemCardModel;
   item: Resource<AboutItemModel>;
 }
 
@@ -31,7 +31,6 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     );
   }
 
-  //TODO replace X with a > that specifies that  the table  row can  be expanded
   renderRow(rowData: ItemCardModel, index: number): JSX.Element {
     const collapse = (
       <i

@@ -1,6 +1,6 @@
 /// <reference types="google.analytics" />
-import "../Styles/modal.less";
-import "../Styles/accessibility.less";
+import "../Assets/Styles/modal.less";
+import "../Assets/Styles/accessibility.less";
 import * as React from "react";
 import {
   AccessibilityResourceModel,

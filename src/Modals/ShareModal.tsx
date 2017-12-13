@@ -2,12 +2,11 @@ import * as React from "react";
 import * as ReactModal from "react-modal";
 
 function getItemUrl(): string {
-  const fullUrl = (window === undefined) ? "" : window.location.href;
+  const fullUrl = window === undefined ? "" : window.location.href;
   //Strip off any exsisting iSAAP codes or anchors/fragments
   const url = fullUrl.split("#")[0].split("&isaap=")[0];
   return url;
 }
-
 
 export interface ShareModalProps {
   iSAAP: string;
@@ -18,7 +17,10 @@ export interface ShareModalState {
   showModal: boolean;
 }
 
-export class ShareModal extends React.Component<ShareModalProps, ShareModalState> {
+export class ShareModal extends React.Component<
+  ShareModalProps,
+  ShareModalState
+> {
   constructor(props: ShareModalProps) {
     super(props);
     this.state = {
@@ -42,11 +44,11 @@ export class ShareModal extends React.Component<ShareModalProps, ShareModalState
   }
 
   render() {
-    let url = ""; 
-    if(typeof window !== 'undefined' && window !== null){
+    let url = "";
+    if (typeof window !== "undefined" && window !== null) {
       url = `${getItemUrl()}&isaap=${this.props.iSAAP}`;
     }
-    
+
     return (
       <div>
         <button
@@ -60,7 +62,7 @@ export class ShareModal extends React.Component<ShareModalProps, ShareModalState
             className="glyphicon glyphicon-info-sign glyphicon-pad"
             aria-hidden="true"
           />
-        Share
+          Share
         </button>
 
         <ReactModal
@@ -86,7 +88,7 @@ export class ShareModal extends React.Component<ShareModalProps, ShareModalState
               </button>
             </div>
             <div className="modal-body">
-            <span>
+              <span>
                 The following URL can be used to load this question with your
                 currently saved accessibility options.
               </span>
