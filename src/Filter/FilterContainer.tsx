@@ -8,10 +8,10 @@ import {
 import { BasicFilterContainer } from "./BasicFilterContainer";
 
 export interface FilterContainerProps {
-  basicFilterOptions: BasicFilterCategoryModel[];
-  onBasicFilterClick: (selected: BasicFilterCategoryModel[]) => void;
-  advancedFilterOptions: AdvancedFilterCategoryModel[];
-  onAdvancedFilterClick: (selected: AdvancedFilterCategoryModel[]) => void;
+  basicFilterCategories: BasicFilterCategoryModel[];
+  onUpdateBasicFilter: (selected: BasicFilterCategoryModel[]) => void;
+  advancedFilterCategories: AdvancedFilterCategoryModel[];
+  onUpdateAdvancedFilter: (selected: AdvancedFilterCategoryModel[]) => void;
 }
 
 export interface FilterContainerState {
@@ -36,10 +36,10 @@ export class FilterContainer extends React.Component<
 
   render() {
     const {
-      basicFilterOptions,
-      onBasicFilterClick,
-      advancedFilterOptions,
-      onAdvancedFilterClick
+      basicFilterCategories,
+      onUpdateBasicFilter,
+      advancedFilterCategories,
+      onUpdateAdvancedFilter
     } = this.props;
 
     let advancedFilter: JSX.Element | undefined;
@@ -47,8 +47,8 @@ export class FilterContainer extends React.Component<
       advancedFilter = (
         <AdvancedFilterContainer
           isNested={true}
-          filterCategories={advancedFilterOptions}
-          onUpdateFilter={onAdvancedFilterClick}
+          filterCategories={advancedFilterCategories}
+          onUpdateFilter={onUpdateAdvancedFilter}
         />
       );
     }
@@ -56,8 +56,8 @@ export class FilterContainer extends React.Component<
     return (
       <div>
         <BasicFilterContainer
-          filterCategories={basicFilterOptions}
-          onUpdateFilter={onBasicFilterClick}
+          filterCategories={basicFilterCategories}
+          onUpdateFilter={onUpdateBasicFilter}
           containsAdvancedFilter={true}
           handleAdvancedFilterExpand={this.handleClick}
         />

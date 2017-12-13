@@ -48,20 +48,6 @@ export class BasicFilterContainer extends React.Component<
     }
   }
 
-  resetFilters() {
-    const { filterCategories, onUpdateFilter } = this.props;
-    filterCategories.forEach(category => {
-      category.filterOptions.map(opt => (opt.isSelected = false));
-    });
-    onUpdateFilter(filterCategories);
-  }
-
-  keyPressResetFilters(e: React.KeyboardEvent<HTMLElement>) {
-    if (e.keyCode === 0 || e.keyCode === 13 || e.keyCode === 32) {
-      this.resetFilters();
-    }
-  }
-
   renderFilters() {
     const { filterCategories } = this.props;
     return filterCategories.map((fil, i) => {
