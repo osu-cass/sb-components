@@ -109,3 +109,81 @@ describe("SearchUrl.encodeFilter", () => {
     expect(encoded).toEqual("Claim=MATH1,ELA1");
   });
 });
+
+describe("SearchUrl.decodeSearch", () => {
+  it("decodes empty string", () => {
+    const decoded = SearchUrl.decodeSearch("");
+
+    expect(decoded).toMatchObject({});
+  });
+
+  it("decodes claims only", () => {
+    const decoded = SearchUrl.decodeSearch("?Claim=test,test2");
+
+    expect(decoded).toMatchObject({
+      claims: ["test", "test2"]
+    });
+  });
+
+  it("decodes subjects only", () => {
+    const decoded = SearchUrl.decodeSearch("?Subject=s,s2");
+
+    expect(decoded).toMatchObject({
+      subjects: ["s", "s2"]
+    });
+  });
+
+  it("decodes interaction types only", () => {
+    const decoded = SearchUrl.decodeSearch("?InteractionType=it,it2");
+
+    expect(decoded).toMatchObject({
+      interactionTypes: ["it", "it2"]
+    });
+  });
+
+  it("decodes grade level only", () => {
+    const decoded = SearchUrl.decodeSearch("?Grade=4");
+
+    expect(decoded).toMatchObject({
+      gradeLevels: GradeLevels.Grade5
+    });
+  });
+
+  it("decodes targets only", () => {
+    const decoded = SearchUrl.decodeSearch("?Target=1234,4321");
+
+    expect(decoded).toMatchObject({
+      targets: [1234, 4321]
+    });
+  });
+
+  it("decodes CAT types only", () => {
+    const decoded = SearchUrl.decodeSearch("?CAT=true");
+
+    expect(decoded).toMatchObject({
+      catOnly: true
+    });
+  });
+
+  it("decodes performance types only", () => {
+    const decoded = SearchUrl.decodeSearch("?Performance=true");
+
+    expect(decoded).toMatchObject({
+      performanceOnly: true
+    });
+  });
+
+  it("decodes multiple params", () => {
+    const decoded = SearchUrl.decodeSearch(
+      "?Claim=MATH1,MATH2&Subject=MATH&Grade=4&Target=1234,5678&CAT=true"
+    );
+
+    expect(decoded).toMatchObject({
+      subjects: ["MATH"],
+      gradeLevels: GradeLevels.Grade5,
+      targets: [1234, 5678],
+      claims: ["MATH1", "MATH2"],
+      catOnly: true
+    });
+  });
+});

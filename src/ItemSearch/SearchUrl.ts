@@ -64,7 +64,7 @@ export class SearchUrl {
     const claims = queryObject[FilterType.Claim];
     const interactionTypes = queryObject[FilterType.InteractionType];
     const performanceOnly = this.optionFlag(
-      queryObject[FilterType.InteractionType]
+      queryObject[FilterType.Performance]
     );
     const catOnly = this.optionFlag(queryObject[FilterType.CAT]);
     const targetOptions = queryObject[FilterType.Target];
