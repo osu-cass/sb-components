@@ -82,6 +82,6 @@ export class GradeLevel {
 
   public static gradeLevelAdd(grade: GradeLevels, gradeString: string) {
     // tslint:disable-next-line:no-bitwise
-    return grade ^ this.stringToGradeLevel(gradeString);
+    return grade | this.stringToGradeLevel(gradeString);
   }
 }
