@@ -9,6 +9,13 @@ export interface ExpressQuery {
 
 // tslint:disable-next-line:no-stateless-class
 export class SearchUrl {
+  /**
+   * Encode the search params object into a query string to be set in the url
+   *
+   * @static
+   * @param {SearchAPIParamsModel} search the search params object to be encoded
+   * @returns {string}
+   */
   public static encodeQuery(search: SearchAPIParamsModel) {
     let pairs: string[] = [];
     if (search.claims && search.claims.length > 0) {
