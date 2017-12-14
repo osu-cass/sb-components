@@ -25,6 +25,11 @@
     ],
     "typeRoots": [
       "./node_modules/@types"
+    ], 
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      } 
     ]
   },
   "exclude": [

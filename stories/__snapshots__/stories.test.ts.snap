@@ -1012,6 +1012,7 @@ exports[`Storyshots Accessibility Modal no options showing  1`] = `
 exports[`Storyshots Advanced Filter Container normal render 1`] = `
 <div
   className="advanced-filter-container"
+  id=""
 >
   <div
     className="filter-sub-header-container"
@@ -1053,6 +1054,7 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
 exports[`Storyshots Advanced Filter Container with page title 1`] = `
 <div
   className="advanced-filter-container"
+  id=""
 >
   <div
     className="filter-sub-header-container"
@@ -1705,6 +1707,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
 exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 <div
   className="basic-filter-container-expanded"
+  id=""
 >
   <div
     className="basic-filter"
@@ -1784,6 +1787,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
   className="basic-filter-container"
+  id=""
 >
   <div
     className="basic-filter"
@@ -1864,7 +1868,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       Advanced Filters
     </div>
     <button
-      className="filter-button"
+      className="btn btn-white filter-button"
       onClick={[Function]}
     >
       Show
@@ -2236,6 +2240,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
 <div>
   <div
     className="basic-filter-container"
+    id=""
   >
     <div
       className="basic-filter"
@@ -2316,7 +2321,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         Advanced Filters
       </div>
       <button
-        className="filter-button"
+        className="btn btn-white filter-button"
         onClick={[Function]}
       >
         Show
@@ -2381,7 +2386,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
   >
     <div>
       <table
-        className="item-table mapcomponent-table"
+        className="item-table"
       >
         <thead>
           <tr
@@ -6144,7 +6149,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
@@ -6525,7 +6530,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
@@ -6906,7 +6911,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
@@ -10093,7 +10098,7 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr

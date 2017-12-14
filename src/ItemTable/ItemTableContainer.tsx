@@ -173,7 +173,7 @@ export class ItemTableContainer extends React.Component<
   render() {
     return (
       <div>
-        <table className="item-table mapcomponent-table">
+        <table className="item-table">
           {this.renderTableHeader()}
           {this.renderTable()}
         </table>
