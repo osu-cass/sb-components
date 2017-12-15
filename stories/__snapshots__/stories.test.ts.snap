@@ -2349,21 +2349,13 @@ exports[`Storyshots Filter Link changed color on hover and click 1`] = `
     }
   }
 >
-  <div
-    className="filter-jump-link-footer"
+  <a
+    className=" filter-jump-link btn btn-blue"
+    href="javascript:void(0)"
+    role="button"
   >
-    <div
-      className="filter-jump-link-container"
-    >
-      <a
-        className="btn btn-blue"
-        href="javascript:void(0)"
-        role="button"
-      >
-        Jump to Filter
-      </a>
-    </div>
-  </div>
+    Jump to Filter
+  </a>
 </div>
 `;
 
@@ -5555,21 +5547,13 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
       </table>
     </div>
   </div>
-  <div
-    className="filter-jump-link-footer"
+  <a
+    className=" filter-jump-link btn btn-blue"
+    href="javascript:void(0)"
+    role="button"
   >
-    <div
-      className="filter-jump-link-container"
-    >
-      <a
-        className="btn btn-blue"
-        href="javascript:void(0)"
-        role="button"
-      >
-        Jump to Filter
-      </a>
-    </div>
-  </div>
+    Jump to Filter
+  </a>
 </div>
 `;
 
