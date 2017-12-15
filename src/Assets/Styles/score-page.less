@@ -95,17 +95,34 @@ table.item-table {
     padding: 5px;
 }
 
+table.item-table > thead > tr > th {
+    border-right: 1px solid hsla(220,3%,40%,.17);
+    width: 200px;
+    min-width: 100px;
+    background-color: #E3E3E3;
+    text-align: left;
+    white-space: nowrap;
+    border: none;
+    padding:4px 8px;
+}
+
+table.table > tbody > tr > td,
+table.item-table > tbody > tr > td { 
+    width: 200px;
+    min-width: 100px;
+    padding: 8px 0px 8px 0px;
+    text-align: left;
+    white-space: normal;
+}
+
 
 table.item-table > thead > tr > th:first-child,
-table.item-table > tbody > tr > td:first-child {
+table.item-table > tbody > tr > td:first-child,
+table.table > tbody > tr > td:first-child  {
     width: 50px;
     min-width: 50px;
     text-align: center;
     padding: 0px;
-}
-
-table.item-table > tbody > tr > td{
-    text-align: left;
 }
 
 table.item-table > tbody > tr:nth-child(even) {
@@ -122,17 +139,7 @@ table.item-table > tbody > tr:hover {
     background-color: @sb-white;
 }
 
-table.item-table > thead > tr > th {
-    border-right: 1px solid hsla(220,3%,40%,.17);
-    width: 200px;
-    min-width: 100px;
-    background-color: #E3E3E3;
-    text-align: left;
-    white-space: nowrap;
-    border: none;
-    padding:4px 8px;
-}
-
+table.table > thead > tr > th > div, 
 table.item-table > thead > tr > th > div {
     display: flex;
     flex-flow: row nowrap;
@@ -141,12 +148,6 @@ table.item-table > thead > tr > th > div {
 
 table.item-table > thead > tr > th:hover {
     background-color: #EFEFEF;
-}
-
-table.item-table > tbody > tr > td {
-    width: 200px;
-    min-width: 100px;
-    padding: 8px;
 }
 
 .search-categories {
@@ -160,5 +161,3 @@ table.item-table > tbody > tr > td {
 .search-categories > select {
     margin-right: 5px;
 }
-
-
