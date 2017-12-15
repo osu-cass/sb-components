@@ -10264,6 +10264,7 @@ exports[`Storyshots Layout Footer default footer 1`] = `
   }
 >
   <footer
+    className="footer-container"
     role="contentinfo"
   >
     <a
@@ -10321,6 +10322,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
       </a>
     </div>
     <nav
+      className="nav-container"
       role="navigation"
     >
       <div
@@ -10416,6 +10418,7 @@ exports[`Storyshots Layout Nav name no links 1`] = `
       </a>
     </div>
     <nav
+      className="nav-container"
       role="navigation"
     >
       <div
@@ -10473,6 +10476,7 @@ exports[`Storyshots Layout name links and body 1`] = `
       </a>
     </div>
     <nav
+      className="nav-container"
       role="navigation"
     >
       <div
@@ -10561,6 +10565,7 @@ exports[`Storyshots Layout name links and body 1`] = `
     </div>
   </main>
   <footer
+    className="footer-container"
     role="contentinfo"
   >
     <a
@@ -10608,6 +10613,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
       </a>
     </div>
     <nav
+      className="nav-container"
       role="navigation"
     >
       <div
@@ -10648,6 +10654,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
     role="main"
   />
   <footer
+    className="footer-container"
     role="contentinfo"
   >
     <a

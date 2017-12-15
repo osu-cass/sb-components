@@ -29,7 +29,7 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
             Skip to main content
           </Link>
         </div>
-        <nav role="navigation">
+        <nav className="nav-container" role="navigation">
           <div className="sbNav">
             <div className="sbNav-titleGroup">
               <div className="sbNav-titleGroup-item">

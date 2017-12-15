@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 export class Footer extends React.Component<{}, {}> {
   render() {
     return (
-      <footer role="contentinfo">
+      <footer className="footer-container" role="contentinfo">
         <a
           className="footer-sbLink footer-practiceTests"
           href="http://practice.smarterbalanced.org/"
