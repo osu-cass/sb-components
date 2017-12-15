@@ -2386,7 +2386,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
   >
     <div>
       <table
-        className="item-table mapcomponent-table"
+        className="item-table"
       >
         <thead>
           <tr
@@ -6149,7 +6149,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
@@ -6530,7 +6530,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
@@ -6911,7 +6911,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
@@ -10098,7 +10098,7 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
 >
   <div>
     <table
-      className="item-table mapcomponent-table"
+      className="item-table"
     >
       <thead>
         <tr
