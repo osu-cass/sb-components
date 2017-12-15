@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Braille no render 1`] = `""`;
+
+exports[`Braille refresh state 1`] = `
+<a
+  aria-live="polite"
+  aria-relevant="additions removals"
+  className="item-nav-btn"
+  download={true}
+  href="/Item/Braille?bankKey=111&itemKey=222&brailleCode=test"
+  onClick={[Function]}
+>
+  <span
+    className="glyphicon glyphicon-download-alt glyphicon-pad"
+  />
+  Download Braille Embossing File(s)
+  <span
+    className="glyphicon glyphicon-refresh glyphicon-pad rotating"
+  />
+</a>
+`;
+
+exports[`Braille refresh state 2`] = `
+<span
+  className="glyphicon glyphicon-refresh glyphicon-pad rotating"
+/>
+`;
+
+exports[`Braille renders correctly 1`] = `
+<a
+  aria-live="polite"
+  aria-relevant="additions removals"
+  className="item-nav-btn"
+  download={true}
+  href="/Item/Braille?bankKey=111&itemKey=222&brailleCode=test"
+  onClick={[Function]}
+>
+  <span
+    className="glyphicon glyphicon-download-alt glyphicon-pad"
+  />
+  Download Braille Embossing File(s)
+</a>
+`;
