@@ -187,3 +187,107 @@ describe("SearchUrl.decodeSearch", () => {
     });
   });
 });
+
+describe("SearchUrl.decodeExpressQuery", () => {
+  it("decodes empty object", () => {
+    const decoded = SearchUrl.decodeExpressQuery({});
+
+    expect(decoded).toMatchObject({});
+  });
+
+  it("decodes grades only", () => {
+    const query = {
+      Grade: "4"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      gradeLevels: GradeLevels.Grade5
+    });
+  });
+
+  it("decodes claims only", () => {
+    const query = {
+      Claim: "test,test2"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      claims: ["test", "test2"]
+    });
+  });
+
+  it("decodes subjects only", () => {
+    const query = {
+      Subject: "MATH,ELA"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      subjects: ["MATH", "ELA"]
+    });
+  });
+
+  it("decodes interaction type only", () => {
+    const query = {
+      InteractionType: "1,2"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      interactionTypes: ["1", "2"]
+    });
+  });
+
+  it("decodes target only", () => {
+    const query = {
+      Target: "1234,2468"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      targets: [1234, 2468]
+    });
+  });
+
+  it("decodes performance type only", () => {
+    const query = {
+      Performance: "true"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      performanceOnly: true
+    });
+  });
+
+  it("decodes CAT type only", () => {
+    const query = {
+      CAT: "true"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      catOnly: true
+    });
+  });
+
+  it("decodes multiple params", () => {
+    const query = {
+      CAT: "true",
+      Subject: "MATH,ELA",
+      Claim: "MATH1,2,3",
+      Target: "1,2,3",
+      Grade: "2"
+    };
+    const decoded = SearchUrl.decodeExpressQuery(query);
+
+    expect(decoded).toMatchObject({
+      catOnly: true,
+      subjects: ["MATH", "ELA"],
+      claims: ["MATH1", "2", "3"],
+      targets: [1, 2, 3],
+      gradeLevels: GradeLevels.Grade4
+    });
+  });
+});
