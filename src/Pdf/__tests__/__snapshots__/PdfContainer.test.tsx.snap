@@ -19,7 +19,9 @@ exports[`PdfComponent matches snapshot 1`] = `
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body
+    className="pdf-body"
+  >
     <CoverPage
       grade="3"
       subject="math"

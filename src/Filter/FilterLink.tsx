@@ -18,12 +18,8 @@ export interface FilterLinkProps {
  */
 export const FilterLink: React.SFC<FilterLinkProps> = ({ filterId }) => {
   return (
-    <div className="filter-jump-link-footer">
-      <div className="filter-jump-link-container">
-        <a className="btn btn-blue" role="button" href={filterId}>
-          Jump to Filter
-        </a>
-      </div>
-    </div>
+    <a className=" filter-jump-link btn btn-blue" role="button" href={filterId}>
+      Jump to Filter
+    </a>
   );
 };

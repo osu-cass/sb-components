@@ -1,8 +1,25 @@
-import { SearchAPIParamsModel } from "../ItemSearchModels";
+import {
+  SearchAPIParamsModel,
+  SearchFilterStringTypes
+} from "../ItemSearchModels";
 import { ItemSearch } from "../ItemSearch";
 import { ItemCardModel } from "../../ItemCard/ItemCardModels";
-import { itemCards } from "./ItemSearchModelsTestData";
+import {
+  itemCards,
+  genericSearchStringTypes,
+  resultFilterOptionModel,
+  resultFilterOptionModelSelected,
+  resultFilterGradeModel,
+  resultFilterGradeModelSelectedSingle,
+  resultFilterGradeModelSelectedMultiple,
+  searchOptionFilterTarget,
+  resultSearchOptionFilterTarget,
+  resultSearchOptionFilterTargetSelectedSingle,
+  resultSearchOptionFilterTargetSelectedMultiple
+} from "./ItemSearchModelsTestData";
+
 import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
+import { FilterType } from "../../Filter/FilterModels";
 
 describe("ItemSearch.filterItemCards", () => {
   it("filters with empty filter", () => {
@@ -74,5 +91,153 @@ describe("ItemSearch.filterItemCards", () => {
 
     expect(result).toHaveLength(expectedCards.length);
     expectedCards.forEach(card => expect(result).toContain(card));
+  });
+});
+
+describe("ItemSearch.searchOptionFilterString", () => {
+  it("empty options", () => {
+    const optionParam: SearchFilterStringTypes[] = [];
+    const filterParam = FilterType.Subject;
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual([]);
+  });
+
+  it("filled options length", () => {
+    const optionParam = genericSearchStringTypes;
+    const filterParam = FilterType.Subject;
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam
+    );
+    expect(result.length).toEqual(3);
+  });
+
+  it("filled options", () => {
+    const optionParam = genericSearchStringTypes;
+    const filterParam = FilterType.Subject;
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual(resultFilterOptionModel);
+  });
+
+  it("selected options", () => {
+    const optionParam = genericSearchStringTypes;
+    const filterParam = FilterType.Subject;
+    const selectedCodesParam = ["t1", "t3"];
+
+    const result = ItemSearch.searchOptionFilterString(
+      optionParam,
+      filterParam,
+      selectedCodesParam
+    );
+    expect(result).toEqual(resultFilterOptionModelSelected);
+  });
+});
+
+describe("ItemSearch.searchOptionToFilterGrade", () => {
+  it("empty options", () => {
+    const optionParam: GradeLevels[] = [];
+    const filterParam = FilterType.Grade;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual([]);
+  });
+
+  it("filled options", () => {
+    const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
+    const filterParam = FilterType.Grade;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual(resultFilterGradeModel);
+  });
+
+  it("filled options Selected single", () => {
+    const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
+    const filterParam = FilterType.Grade;
+    const selectedCodeParam = GradeLevels.Grade3;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultFilterGradeModelSelectedSingle);
+  });
+
+  it("filled options Selected multiple", () => {
+    const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
+    const filterParam = FilterType.Grade;
+    const selectedCodeParam = GradeLevels.Grade3 | GradeLevels.Grade4;
+
+    const result = ItemSearch.searchOptionToFilterGrade(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultFilterGradeModelSelectedMultiple);
+  });
+});
+
+describe("ItemSearch.searchOptionToFilterTarget", () => {
+  it("empty options", () => {
+    const optionParam = [];
+    const filterParam = FilterType.Target;
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual([]);
+  });
+
+  it("filled options", () => {
+    const optionParam = searchOptionFilterTarget;
+    const filterParam = FilterType.Target;
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam
+    );
+    expect(result).toEqual(resultSearchOptionFilterTarget);
+  });
+
+  it("selected options single", () => {
+    const optionParam = searchOptionFilterTarget;
+    const filterParam = FilterType.Target;
+    const selectedCodeParam = [1];
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultSearchOptionFilterTargetSelectedSingle);
+  });
+
+  it("selected options multiple", () => {
+    const optionParam = searchOptionFilterTarget;
+    const filterParam = FilterType.Target;
+    const selectedCodeParam = [1, 3];
+
+    const result = ItemSearch.searchOptionToFilterTarget(
+      optionParam,
+      filterParam,
+      selectedCodeParam
+    );
+    expect(result).toEqual(resultSearchOptionFilterTargetSelectedMultiple);
   });
 });

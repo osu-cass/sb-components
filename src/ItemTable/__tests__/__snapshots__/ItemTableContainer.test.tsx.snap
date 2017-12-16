@@ -3,7 +3,7 @@
 exports[`ItemPageTable matches snapshot 1`] = `
 <div>
   <table
-    className="item-table mapcomponent-table"
+    className="item-table"
   >
     <HeaderTable
       columns={
@@ -135,12 +135,2187 @@ exports[`ItemPageTable matches snapshot 1`] = `
 </div>
 `;
 
-exports[`ItemPageTable sorts list on header click 1`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead><tbody><tr class=\\\\\\"\\\\\\"><td><i style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-chevron-right fa-sm\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></i></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+exports[`ItemPageTable sorts list on header click 1`] = `
+<ItemTableContainer
+  item={
+    Object {
+      "content": Object {
+        "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+        "depthOfKnowledge": "depthOfKnowledge",
+        "educationalDifficulty": "educationalDifficulty",
+        "evidenceStatement": "evidenceStatement",
+        "itemCardViewModel": Object {
+          "bankKey": 1,
+          "claimCode": "",
+          "claimLabel": "",
+          "grade": 1023,
+          "gradeLabel": "",
+          "interactionTypeCode": "",
+          "interactionTypeLabel": "",
+          "isPerformanceItem": true,
+          "itemKey": 3,
+          "subjectCode": "",
+          "subjectLabel": "",
+          "targetHash": 3123,
+          "targetId": "",
+          "targetShortName": "",
+          "title": "",
+        },
+        "targetDescription": "targetDescription",
+      },
+      "kind": "success",
+    }
+  }
+  itemCards={
+    Array [
+      Object {
+        "bankKey": 1,
+        "claimCode": "",
+        "claimLabel": "",
+        "grade": 1023,
+        "gradeLabel": "",
+        "interactionTypeCode": "",
+        "interactionTypeLabel": "",
+        "isPerformanceItem": true,
+        "itemKey": 3,
+        "subjectCode": "",
+        "subjectLabel": "",
+        "targetHash": 3123,
+        "targetId": "",
+        "targetShortName": "",
+        "title": "",
+      },
+    ]
+  }
+  onRowSelection={[Function]}
+>
+  <div>
+    <table
+      className="item-table"
+    >
+      <HeaderTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        onHeaderClick={[Function]}
+        sorts={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr
+            className="primary"
+          >
+            <th />
+            <th
+              className="item"
+              key="Item"
+              onClick={[Function]}
+            >
+              <div
+                className="item"
+              >
+                <span>
+                  Item
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="subject"
+              key="Subject"
+              onClick={[Function]}
+            >
+              <div
+                className="subject"
+              >
+                <span>
+                  Subject
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="grade"
+              key="Grade"
+              onClick={[Function]}
+            >
+              <div
+                className="grade"
+              >
+                <span>
+                  Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="interactionType"
+              key="Item Type"
+              onClick={[Function]}
+            >
+              <div
+                className="interactionType"
+              >
+                <span>
+                  Item Type
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+      </HeaderTable>
+      <ItemTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        item={
+          Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "targetHash": 3123,
+                "targetId": "",
+                "targetShortName": "",
+                "title": "",
+              },
+              "targetDescription": "targetDescription",
+            },
+            "kind": "success",
+          }
+        }
+        mapRows={
+          Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "targetHash": 3123,
+              "targetId": "",
+              "targetShortName": "",
+              "title": "",
+            },
+          ]
+        }
+        rowOnClick={[Function]}
+        sort={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <tbody>
+          <tr
+            className=""
+            key="0"
+            onClick={[Function]}
+          >
+            <td>
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </td>
+            <td
+              className="item"
+              key="Item"
+            >
+              <div
+                className="item"
+              >
+                3
+              </div>
+            </td>
+            <td
+              className="claimAndTarget"
+              key="Claim/Target"
+            >
+              <div
+                className="claimAndTarget"
+              >
+                /
+              </div>
+            </td>
+            <td
+              className="subject"
+              key="Subject"
+            >
+              <div
+                className="subject"
+              />
+            </td>
+            <td
+              className="grade"
+              key="Grade"
+            >
+              <div
+                className="grade"
+              />
+            </td>
+            <td
+              className="interactionType"
+              key="Item Type"
+            >
+              <div
+                className="interactionType"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </ItemTable>
+    </table>
+  </div>
+</ItemTableContainer>
+`;
 
-exports[`ItemPageTable sorts list on header click 2`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead><tbody><tr class=\\\\\\"\\\\\\"><td><i style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-chevron-right fa-sm\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></i></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+exports[`ItemPageTable sorts list on header click 2`] = `
+<ItemTableContainer
+  item={
+    Object {
+      "content": Object {
+        "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+        "depthOfKnowledge": "depthOfKnowledge",
+        "educationalDifficulty": "educationalDifficulty",
+        "evidenceStatement": "evidenceStatement",
+        "itemCardViewModel": Object {
+          "bankKey": 1,
+          "claimCode": "",
+          "claimLabel": "",
+          "grade": 1023,
+          "gradeLabel": "",
+          "interactionTypeCode": "",
+          "interactionTypeLabel": "",
+          "isPerformanceItem": true,
+          "itemKey": 3,
+          "subjectCode": "",
+          "subjectLabel": "",
+          "targetHash": 3123,
+          "targetId": "",
+          "targetShortName": "",
+          "title": "",
+        },
+        "targetDescription": "targetDescription",
+      },
+      "kind": "success",
+    }
+  }
+  itemCards={
+    Array [
+      Object {
+        "bankKey": 1,
+        "claimCode": "",
+        "claimLabel": "",
+        "grade": 1023,
+        "gradeLabel": "",
+        "interactionTypeCode": "",
+        "interactionTypeLabel": "",
+        "isPerformanceItem": true,
+        "itemKey": 3,
+        "subjectCode": "",
+        "subjectLabel": "",
+        "targetHash": 3123,
+        "targetId": "",
+        "targetShortName": "",
+        "title": "",
+      },
+    ]
+  }
+  onRowSelection={[Function]}
+>
+  <div>
+    <table
+      className="item-table"
+    >
+      <HeaderTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        onHeaderClick={[Function]}
+        sorts={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr
+            className="primary"
+          >
+            <th />
+            <th
+              className="item"
+              key="Item"
+              onClick={[Function]}
+            >
+              <div
+                className="item"
+              >
+                <span>
+                  Item
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="subject"
+              key="Subject"
+              onClick={[Function]}
+            >
+              <div
+                className="subject"
+              >
+                <span>
+                  Subject
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="grade"
+              key="Grade"
+              onClick={[Function]}
+            >
+              <div
+                className="grade"
+              >
+                <span>
+                  Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="interactionType"
+              key="Item Type"
+              onClick={[Function]}
+            >
+              <div
+                className="interactionType"
+              >
+                <span>
+                  Item Type
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+      </HeaderTable>
+      <ItemTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        item={
+          Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "targetHash": 3123,
+                "targetId": "",
+                "targetShortName": "",
+                "title": "",
+              },
+              "targetDescription": "targetDescription",
+            },
+            "kind": "success",
+          }
+        }
+        mapRows={
+          Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "targetHash": 3123,
+              "targetId": "",
+              "targetShortName": "",
+              "title": "",
+            },
+          ]
+        }
+        rowOnClick={[Function]}
+        sort={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <tbody>
+          <tr
+            className=""
+            key="0"
+            onClick={[Function]}
+          >
+            <td>
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </td>
+            <td
+              className="item"
+              key="Item"
+            >
+              <div
+                className="item"
+              >
+                3
+              </div>
+            </td>
+            <td
+              className="claimAndTarget"
+              key="Claim/Target"
+            >
+              <div
+                className="claimAndTarget"
+              >
+                /
+              </div>
+            </td>
+            <td
+              className="subject"
+              key="Subject"
+            >
+              <div
+                className="subject"
+              />
+            </td>
+            <td
+              className="grade"
+              key="Grade"
+            >
+              <div
+                className="grade"
+              />
+            </td>
+            <td
+              className="interactionType"
+              key="Item Type"
+            >
+              <div
+                className="interactionType"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </ItemTable>
+    </table>
+  </div>
+</ItemTableContainer>
+`;
 
-exports[`ItemPageTable sorts list on header click 3`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead><tbody><tr class=\\\\\\"\\\\\\"><td><i style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-chevron-right fa-sm\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></i></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+exports[`ItemPageTable sorts list on header click 3`] = `
+<ItemTableContainer
+  item={
+    Object {
+      "content": Object {
+        "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+        "depthOfKnowledge": "depthOfKnowledge",
+        "educationalDifficulty": "educationalDifficulty",
+        "evidenceStatement": "evidenceStatement",
+        "itemCardViewModel": Object {
+          "bankKey": 1,
+          "claimCode": "",
+          "claimLabel": "",
+          "grade": 1023,
+          "gradeLabel": "",
+          "interactionTypeCode": "",
+          "interactionTypeLabel": "",
+          "isPerformanceItem": true,
+          "itemKey": 3,
+          "subjectCode": "",
+          "subjectLabel": "",
+          "targetHash": 3123,
+          "targetId": "",
+          "targetShortName": "",
+          "title": "",
+        },
+        "targetDescription": "targetDescription",
+      },
+      "kind": "success",
+    }
+  }
+  itemCards={
+    Array [
+      Object {
+        "bankKey": 1,
+        "claimCode": "",
+        "claimLabel": "",
+        "grade": 1023,
+        "gradeLabel": "",
+        "interactionTypeCode": "",
+        "interactionTypeLabel": "",
+        "isPerformanceItem": true,
+        "itemKey": 3,
+        "subjectCode": "",
+        "subjectLabel": "",
+        "targetHash": 3123,
+        "targetId": "",
+        "targetShortName": "",
+        "title": "",
+      },
+    ]
+  }
+  onRowSelection={[Function]}
+>
+  <div>
+    <table
+      className="item-table"
+    >
+      <HeaderTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        onHeaderClick={[Function]}
+        sorts={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "subject",
+                "compare": [Function],
+                "header": "Subject",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr
+            className="primary"
+          >
+            <th />
+            <th
+              className="item"
+              key="Item"
+              onClick={[Function]}
+            >
+              <div
+                className="item"
+              >
+                <span>
+                  Item
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="subject"
+              key="Subject"
+              onClick={[Function]}
+            >
+              <div
+                className="subject"
+              >
+                <span>
+                  Subject
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="grade"
+              key="Grade"
+              onClick={[Function]}
+            >
+              <div
+                className="grade"
+              >
+                <span>
+                  Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="interactionType"
+              key="Item Type"
+              onClick={[Function]}
+            >
+              <div
+                className="interactionType"
+              >
+                <span>
+                  Item Type
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+      </HeaderTable>
+      <ItemTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        item={
+          Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "targetHash": 3123,
+                "targetId": "",
+                "targetShortName": "",
+                "title": "",
+              },
+              "targetDescription": "targetDescription",
+            },
+            "kind": "success",
+          }
+        }
+        mapRows={
+          Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "targetHash": 3123,
+              "targetId": "",
+              "targetShortName": "",
+              "title": "",
+            },
+          ]
+        }
+        rowOnClick={[Function]}
+        sort={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "subject",
+                "compare": [Function],
+                "header": "Subject",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <tbody>
+          <tr
+            className=""
+            key="0"
+            onClick={[Function]}
+          >
+            <td>
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </td>
+            <td
+              className="item"
+              key="Item"
+            >
+              <div
+                className="item"
+              >
+                3
+              </div>
+            </td>
+            <td
+              className="claimAndTarget"
+              key="Claim/Target"
+            >
+              <div
+                className="claimAndTarget"
+              >
+                /
+              </div>
+            </td>
+            <td
+              className="subject"
+              key="Subject"
+            >
+              <div
+                className="subject"
+              />
+            </td>
+            <td
+              className="grade"
+              key="Grade"
+            >
+              <div
+                className="grade"
+              />
+            </td>
+            <td
+              className="interactionType"
+              key="Item Type"
+            >
+              <div
+                className="interactionType"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </ItemTable>
+    </table>
+  </div>
+</ItemTableContainer>
+`;
 
-exports[`ItemPageTable sorts list on header click 4`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead><tbody><tr class=\\\\\\"\\\\\\"><td><i style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-chevron-right fa-sm\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></i></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+exports[`ItemPageTable sorts list on header click 4`] = `
+<ItemTableContainer
+  item={
+    Object {
+      "content": Object {
+        "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+        "depthOfKnowledge": "depthOfKnowledge",
+        "educationalDifficulty": "educationalDifficulty",
+        "evidenceStatement": "evidenceStatement",
+        "itemCardViewModel": Object {
+          "bankKey": 1,
+          "claimCode": "",
+          "claimLabel": "",
+          "grade": 1023,
+          "gradeLabel": "",
+          "interactionTypeCode": "",
+          "interactionTypeLabel": "",
+          "isPerformanceItem": true,
+          "itemKey": 3,
+          "subjectCode": "",
+          "subjectLabel": "",
+          "targetHash": 3123,
+          "targetId": "",
+          "targetShortName": "",
+          "title": "",
+        },
+        "targetDescription": "targetDescription",
+      },
+      "kind": "success",
+    }
+  }
+  itemCards={
+    Array [
+      Object {
+        "bankKey": 1,
+        "claimCode": "",
+        "claimLabel": "",
+        "grade": 1023,
+        "gradeLabel": "",
+        "interactionTypeCode": "",
+        "interactionTypeLabel": "",
+        "isPerformanceItem": true,
+        "itemKey": 3,
+        "subjectCode": "",
+        "subjectLabel": "",
+        "targetHash": 3123,
+        "targetId": "",
+        "targetShortName": "",
+        "title": "",
+      },
+    ]
+  }
+  onRowSelection={[Function]}
+>
+  <div>
+    <table
+      className="item-table"
+    >
+      <HeaderTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        onHeaderClick={[Function]}
+        sorts={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "subject",
+                "compare": [Function],
+                "header": "Subject",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "grade",
+                "compare": [Function],
+                "header": "Grade",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr
+            className="primary"
+          >
+            <th />
+            <th
+              className="item"
+              key="Item"
+              onClick={[Function]}
+            >
+              <div
+                className="item"
+              >
+                <span>
+                  Item
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="subject"
+              key="Subject"
+              onClick={[Function]}
+            >
+              <div
+                className="subject"
+              >
+                <span>
+                  Subject
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="grade"
+              key="Grade"
+              onClick={[Function]}
+            >
+              <div
+                className="grade"
+              >
+                <span>
+                  Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="interactionType"
+              key="Item Type"
+              onClick={[Function]}
+            >
+              <div
+                className="interactionType"
+              >
+                <span>
+                  Item Type
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+      </HeaderTable>
+      <ItemTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        item={
+          Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "targetHash": 3123,
+                "targetId": "",
+                "targetShortName": "",
+                "title": "",
+              },
+              "targetDescription": "targetDescription",
+            },
+            "kind": "success",
+          }
+        }
+        mapRows={
+          Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "targetHash": 3123,
+              "targetId": "",
+              "targetShortName": "",
+              "title": "",
+            },
+          ]
+        }
+        rowOnClick={[Function]}
+        sort={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "subject",
+                "compare": [Function],
+                "header": "Subject",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "grade",
+                "compare": [Function],
+                "header": "Grade",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <tbody>
+          <tr
+            className=""
+            key="0"
+            onClick={[Function]}
+          >
+            <td>
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </td>
+            <td
+              className="item"
+              key="Item"
+            >
+              <div
+                className="item"
+              >
+                3
+              </div>
+            </td>
+            <td
+              className="claimAndTarget"
+              key="Claim/Target"
+            >
+              <div
+                className="claimAndTarget"
+              >
+                /
+              </div>
+            </td>
+            <td
+              className="subject"
+              key="Subject"
+            >
+              <div
+                className="subject"
+              />
+            </td>
+            <td
+              className="grade"
+              key="Grade"
+            >
+              <div
+                className="grade"
+              />
+            </td>
+            <td
+              className="interactionType"
+              key="Item Type"
+            >
+              <div
+                className="interactionType"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </ItemTable>
+    </table>
+  </div>
+</ItemTableContainer>
+`;
 
-exports[`ItemPageTable sorts list on header click 5`] = `"\\"<div><table class=\\\\\\"item-table mapcomponent-table\\\\\\"><thead><tr class=\\\\\\"primary\\\\\\"><th></th><th class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\"><span>Item</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\"><span>Claim/Target</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"><span>Subject</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"><span>Grade</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th><th class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"><span>Item Type</span><span style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-sort-asc\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></span></div></th></tr></thead><tbody><tr class=\\\\\\"\\\\\\"><td><i style=\\\\\\"color: gray;\\\\\\" class=\\\\\\"fa fa-chevron-right fa-sm\\\\\\" aria-hidden=\\\\\\"true\\\\\\"></i></td><td class=\\\\\\"item\\\\\\"><div class=\\\\\\"item\\\\\\">3</div></td><td class=\\\\\\"claimAndTarget\\\\\\"><div class=\\\\\\"claimAndTarget\\\\\\">/</div></td><td class=\\\\\\"subject\\\\\\"><div class=\\\\\\"subject\\\\\\"></div></td><td class=\\\\\\"grade\\\\\\"><div class=\\\\\\"grade\\\\\\"></div></td><td class=\\\\\\"interactionType\\\\\\"><div class=\\\\\\"interactionType\\\\\\"></div></td></tr></tbody></table></div>\\""`;
+exports[`ItemPageTable sorts list on header click 5`] = `
+<ItemTableContainer
+  item={
+    Object {
+      "content": Object {
+        "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+        "depthOfKnowledge": "depthOfKnowledge",
+        "educationalDifficulty": "educationalDifficulty",
+        "evidenceStatement": "evidenceStatement",
+        "itemCardViewModel": Object {
+          "bankKey": 1,
+          "claimCode": "",
+          "claimLabel": "",
+          "grade": 1023,
+          "gradeLabel": "",
+          "interactionTypeCode": "",
+          "interactionTypeLabel": "",
+          "isPerformanceItem": true,
+          "itemKey": 3,
+          "subjectCode": "",
+          "subjectLabel": "",
+          "targetHash": 3123,
+          "targetId": "",
+          "targetShortName": "",
+          "title": "",
+        },
+        "targetDescription": "targetDescription",
+      },
+      "kind": "success",
+    }
+  }
+  itemCards={
+    Array [
+      Object {
+        "bankKey": 1,
+        "claimCode": "",
+        "claimLabel": "",
+        "grade": 1023,
+        "gradeLabel": "",
+        "interactionTypeCode": "",
+        "interactionTypeLabel": "",
+        "isPerformanceItem": true,
+        "itemKey": 3,
+        "subjectCode": "",
+        "subjectLabel": "",
+        "targetHash": 3123,
+        "targetId": "",
+        "targetShortName": "",
+        "title": "",
+      },
+    ]
+  }
+  onRowSelection={[Function]}
+>
+  <div>
+    <table
+      className="item-table"
+    >
+      <HeaderTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        onHeaderClick={[Function]}
+        sorts={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "subject",
+                "compare": [Function],
+                "header": "Subject",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "grade",
+                "compare": [Function],
+                "header": "Grade",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "interactionType",
+                "compare": [Function],
+                "header": "Item Type",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr
+            className="primary"
+          >
+            <th />
+            <th
+              className="item"
+              key="Item"
+              onClick={[Function]}
+            >
+              <div
+                className="item"
+              >
+                <span>
+                  Item
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="subject"
+              key="Subject"
+              onClick={[Function]}
+            >
+              <div
+                className="subject"
+              >
+                <span>
+                  Subject
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="grade"
+              key="Grade"
+              onClick={[Function]}
+            >
+              <div
+                className="grade"
+              >
+                <span>
+                  Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="interactionType"
+              key="Item Type"
+              onClick={[Function]}
+            >
+              <div
+                className="interactionType"
+              >
+                <span>
+                  Item Type
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+      </HeaderTable>
+      <ItemTable
+        columns={
+          Array [
+            Object {
+              "accessor": [Function],
+              "className": "item",
+              "compare": [Function],
+              "header": "Item",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "claimAndTarget",
+              "compare": [Function],
+              "header": "Claim/Target",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "subject",
+              "compare": [Function],
+              "header": "Subject",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "grade",
+              "compare": [Function],
+              "header": "Grade",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "interactionType",
+              "compare": [Function],
+              "header": "Item Type",
+            },
+          ]
+        }
+        item={
+          Object {
+            "content": Object {
+              "commonCoreStandardsDescription": "commonCoreStandardsDescription",
+              "depthOfKnowledge": "depthOfKnowledge",
+              "educationalDifficulty": "educationalDifficulty",
+              "evidenceStatement": "evidenceStatement",
+              "itemCardViewModel": Object {
+                "bankKey": 1,
+                "claimCode": "",
+                "claimLabel": "",
+                "grade": 1023,
+                "gradeLabel": "",
+                "interactionTypeCode": "",
+                "interactionTypeLabel": "",
+                "isPerformanceItem": true,
+                "itemKey": 3,
+                "subjectCode": "",
+                "subjectLabel": "",
+                "targetHash": 3123,
+                "targetId": "",
+                "targetShortName": "",
+                "title": "",
+              },
+              "targetDescription": "targetDescription",
+            },
+            "kind": "success",
+          }
+        }
+        mapRows={
+          Array [
+            Object {
+              "bankKey": 1,
+              "claimCode": "",
+              "claimLabel": "",
+              "grade": 1023,
+              "gradeLabel": "",
+              "interactionTypeCode": "",
+              "interactionTypeLabel": "",
+              "isPerformanceItem": true,
+              "itemKey": 3,
+              "subjectCode": "",
+              "subjectLabel": "",
+              "targetHash": 3123,
+              "targetId": "",
+              "targetShortName": "",
+              "title": "",
+            },
+          ]
+        }
+        rowOnClick={[Function]}
+        sort={
+          Array [
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "item",
+                "compare": [Function],
+                "header": "Item",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "claimAndTarget",
+                "compare": [Function],
+                "header": "Claim/Target",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "subject",
+                "compare": [Function],
+                "header": "Subject",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "grade",
+                "compare": [Function],
+                "header": "Grade",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+            Object {
+              "col": Object {
+                "accessor": [Function],
+                "className": "interactionType",
+                "compare": [Function],
+                "header": "Item Type",
+              },
+              "direction": 1,
+              "resetSortCount": 0,
+            },
+          ]
+        }
+      >
+        <tbody>
+          <tr
+            className=""
+            key="0"
+            onClick={[Function]}
+          >
+            <td>
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </td>
+            <td
+              className="item"
+              key="Item"
+            >
+              <div
+                className="item"
+              >
+                3
+              </div>
+            </td>
+            <td
+              className="claimAndTarget"
+              key="Claim/Target"
+            >
+              <div
+                className="claimAndTarget"
+              >
+                /
+              </div>
+            </td>
+            <td
+              className="subject"
+              key="Subject"
+            >
+              <div
+                className="subject"
+              />
+            </td>
+            <td
+              className="grade"
+              key="Grade"
+            >
+              <div
+                className="grade"
+              />
+            </td>
+            <td
+              className="interactionType"
+              key="Item Type"
+            >
+              <div
+                className="interactionType"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </ItemTable>
+    </table>
+  </div>
+</ItemTableContainer>
+`;
