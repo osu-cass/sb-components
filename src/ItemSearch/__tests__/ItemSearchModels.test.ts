@@ -27,7 +27,7 @@ import {
   resultFilterOptionModeltarget,
   resultFilterOptionModelTechType,
   techtypeSearchStringTypes
-} from "./ItemSearchModelsTestData";
+} from "./mocks";
 
 import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
 import { FilterType } from "../../Filter/FilterModels";
