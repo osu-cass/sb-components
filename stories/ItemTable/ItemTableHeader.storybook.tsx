@@ -31,7 +31,7 @@ storiesOf("Item Table Header", module)
   .addDecorator(CenterDecorator)
   .add("AP_ScoreGuide tabs", () => (
     <div>
-      <table className="item-table mapcomponent-table">
+      <table className="item-table">
         <HeaderTable {...props} />
       </table>
     </div>

@@ -79,7 +79,7 @@ describe("ItemPageTable", () => {
     const wrapper = mount(<ItemTableContainer {...props} />);
     tabs.forEach(tab => {
       wrapper.find(`th.${tab}`).simulate("click");
-      expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+      expect(wrapper).toMatchSnapshot();
     });
   });
 

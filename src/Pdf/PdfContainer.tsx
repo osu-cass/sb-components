@@ -38,7 +38,7 @@ export class PdfContainer extends React.Component<PdfContainerProps, {}> {
             href={this.props.ivsBaseUrl + "/Projects/SBAC/css/modernItems.css"}
           />
         </head>
-        <body>
+        <body className="pdf-body">
           {this.props.displayTitlePage ? (
             <CoverPage grade={this.props.grade} subject={this.props.subject} />
           ) : null}

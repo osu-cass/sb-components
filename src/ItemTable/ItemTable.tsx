@@ -46,10 +46,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         aria-hidden="true"
       />
     );
-    const style = {
-      display: "block",
-      padding: "0px"
-    };
+
     let tab = null;
     let isSelected = false;
     if (this.props.selectedRow) {
@@ -73,16 +70,18 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
       row = (
         <tr key={index}>
           <td colSpan={6}>
-            <table className="item-table mapcomponent-table" style={style}>
-              <tbody>
-                {row}
-                <tr>
-                  <td colSpan={6}>
-                    <ItemCardViewer item={this.props.item.content} />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="table-responsive">
+              <table className="table">
+                <tbody>
+                  {row}
+                  <tr>
+                    <td colSpan={6}>
+                      <ItemCardViewer item={this.props.item.content} />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </td>
         </tr>
       );
