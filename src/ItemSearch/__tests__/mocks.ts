@@ -1,6 +1,11 @@
 import { ItemCardModel } from "../../ItemCard/ItemCardModels";
-import { SearchFilterStringTypes, TargetModel } from "../ItemSearchModels";
+import {
+  SearchFilterStringTypes,
+  TargetModel,
+  SearchAPIParamsModel
+} from "../ItemSearchModels";
 import { FilterOptionModel, FilterType } from "../../Filter/FilterModels";
+import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
 
 export const itemCards: ItemCardModel[] = [
   {
@@ -207,4 +212,159 @@ export const resultSearchOptionFilterTargetSelectedMultiple: FilterOptionModel[]
     filterType: FilterType.Target
   },
   { label: "test3", key: "3", isSelected: true, filterType: FilterType.Target }
+];
+
+export const mockSeachAPI: SearchAPIParamsModel = {
+  itemId: "item1",
+  gradeLevels: GradeLevels.Grade3 | GradeLevels.Grade4,
+  subjects: ["t1", "t2"],
+  claims: ["t1", "t2"],
+  interactionTypes: ["t1", "t2"],
+  performanceOnly: true,
+  catOnly: true,
+  targets: [1, 2]
+};
+
+export const resultFilterOptionModelClaim: FilterOptionModel[] = [
+  {
+    filterType: FilterType.Claim,
+    isSelected: true,
+    key: "t1",
+    label: "test"
+  },
+  {
+    filterType: FilterType.Claim,
+    isSelected: true,
+    key: "t2",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.Claim,
+    isSelected: false,
+    key: "t3",
+    label: "test3"
+  }
+];
+
+export const resultFilterOptionModelIT: FilterOptionModel[] = [
+  {
+    filterType: FilterType.InteractionType,
+    isSelected: true,
+    key: "t1",
+    label: "test"
+  },
+  {
+    filterType: FilterType.InteractionType,
+    isSelected: true,
+    key: "t2",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.InteractionType,
+    isSelected: false,
+    key: "t3",
+    label: "test3"
+  }
+];
+
+export const resultFilterOptionModelSubject: FilterOptionModel[] = [
+  {
+    filterType: FilterType.Subject,
+    isSelected: true,
+    key: "t1",
+    label: "test"
+  },
+  {
+    filterType: FilterType.Subject,
+    isSelected: true,
+    key: "t2",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.Subject,
+    isSelected: false,
+    key: "t3",
+    label: "test3"
+  }
+];
+
+export const gradeSearchStringTypes: GradeLevels[] = [
+  GradeLevels.Grade3,
+  GradeLevels.Grade4,
+  GradeLevels.Grade5
+];
+
+export const resultFilterOptionModelGrade: FilterOptionModel[] = [
+  {
+    filterType: FilterType.Grade,
+    isSelected: true,
+    key: "1",
+    label: "Grade 3"
+  },
+  {
+    filterType: FilterType.Grade,
+    isSelected: true,
+    key: "2",
+    label: "Grade 4"
+  },
+  {
+    filterType: FilterType.Grade,
+    isSelected: false,
+    key: "4",
+    label: "Grade 5"
+  }
+];
+
+export const targetSearchStringTypes: TargetModel[] = [
+  { name: "test", nameHash: 1 },
+  { name: "test2", nameHash: 2 },
+  { name: "test3", nameHash: 3 }
+];
+
+export const resultFilterOptionModeltarget: FilterOptionModel[] = [
+  {
+    filterType: FilterType.Target,
+    isSelected: true,
+    key: "1",
+    label: "test"
+  },
+  {
+    filterType: FilterType.Target,
+    isSelected: true,
+    key: "2",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.Target,
+    isSelected: false,
+    key: "3",
+    label: "test3"
+  }
+];
+
+export const techtypeSearchStringTypes: SearchFilterStringTypes[] = [
+  { label: "test", code: "CAT" },
+  { label: "test2", code: "Performance" },
+  { label: "test3", code: "t3" }
+];
+
+export const resultFilterOptionModelTechType: FilterOptionModel[] = [
+  {
+    filterType: FilterType.TechnologyType,
+    isSelected: true,
+    key: "CAT",
+    label: "test"
+  },
+  {
+    filterType: FilterType.TechnologyType,
+    isSelected: true,
+    key: "Performance",
+    label: "test2"
+  },
+  {
+    filterType: FilterType.TechnologyType,
+    isSelected: false,
+    key: "t3",
+    label: "test3"
+  }
 ];
