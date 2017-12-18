@@ -61,15 +61,26 @@ export class SearchResultContainer extends React.Component<
     return <div className="search-result-body">{tag}</div>;
   }
 
-  renderTypeHandler() {}
+  renderTypeHandler(e: React.MouseEvent<HTMLButtonElement>) {
+    const btnValue = Number(e.currentTarget.value);
+    console.log("btnValue: ", btnValue);
+
+    this.setState({ renderType: btnValue });
+  }
 
   renderHeader() {
     return (
       <div className="search-result-header">
-        <button>
+        <button
+          value={SearchResultType.Table}
+          onClick={this.renderTypeHandler.bind(this)}
+        >
           <span className="fa fa-table" />
         </button>
-        <button>
+        <button
+          value={SearchResultType.ItemCard}
+          onClick={this.renderTypeHandler.bind(this)}
+        >
           <span className="fa fa-book" />
         </button>
       </div>
