@@ -3,6 +3,7 @@ import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
 import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
+import { ItemCard } from "../ItemCard/ItemCard";
 
 export enum SearchResultType {
   Table,
@@ -36,9 +37,17 @@ export class SearchResultContainer extends React.Component<
   }
 
   renderItemCards() {
-    let tag: JSX.Element | JSX.Element[] | undefined;
-    if (this.props.itemCards && this.props.itemCards.length === 0) {
+    let tags: JSX.Element[] | undefined;
+
+    if (this.props.itemCards) {
+      tags = this.props.itemCards.map(digest => (
+        <ItemCard
+          {...digest}
+          key={digest.bankKey.toString() + "-" + digest.itemKey.toString()}
+        />
+      ));
     }
+    return tags;
   }
 
   renderTag() {
@@ -46,11 +55,17 @@ export class SearchResultContainer extends React.Component<
     if (this.state.renderType === SearchResultType.Table) {
       tag = <ItemTableContainer {...this.props} />;
     } else {
+      tag = this.renderItemCards();
     }
     return tag;
   }
 
   render() {
-    return <div className="search-result-container">{this.renderTag()}</div>;
+    return (
+      <div className="search-result-container">
+        <div className="search-result-header">toggleable controls here</div>
+        {this.renderTag()}
+      </div>
+    );
   }
 }
