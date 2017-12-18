@@ -82,5 +82,5 @@ export const SearchResultTableProps: SearchResultContainerProps = {
   item: {
     kind: "none"
   },
-  defaultRenderType: SearchResultType.Table
+  defaultRenderType: SearchResultType.ItemCard
 };

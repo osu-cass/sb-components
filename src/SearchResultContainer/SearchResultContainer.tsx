@@ -47,24 +47,40 @@ export class SearchResultContainer extends React.Component<
         />
       ));
     }
+
     return tags;
   }
 
-  renderTag() {
+  renderBody() {
     let tag: JSX.Element | JSX.Element[] | undefined;
     if (this.state.renderType === SearchResultType.Table) {
       tag = <ItemTableContainer {...this.props} />;
     } else {
       tag = this.renderItemCards();
     }
-    return tag;
+    return <div className="search-result-body">{tag}</div>;
+  }
+
+  renderTypeHandler() {}
+
+  renderHeader() {
+    return (
+      <div className="search-result-header">
+        <button>
+          <span className="fa fa-table" />
+        </button>
+        <button>
+          <span className="fa fa-book" />
+        </button>
+      </div>
+    );
   }
 
   render() {
     return (
       <div className="search-result-container">
-        <div className="search-result-header">toggleable controls here</div>
-        {this.renderTag()}
+        {this.renderHeader()}
+        {this.renderBody()}
       </div>
     );
   }
