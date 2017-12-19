@@ -2237,7 +2237,9 @@ exports[`Storyshots Error Boundary shows the fallback ui 1`] = `
 `;
 
 exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`] = `
-<div>
+<div
+  className="filter-component-wrapper"
+>
   <div
     className="basic-filter-container"
     id=""
