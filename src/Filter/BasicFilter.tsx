@@ -16,17 +16,21 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   }
 
   renderTags() {
+    const { filterOptions, type } = this.props;
     const tags: JSX.Element[] = [];
-    const classname = "";
-    if (this.props.filterOptions) {
-      this.props.filterOptions.forEach((t, i) => {
-        if (this.props.type == OptionTypeModel.DropDown) {
+    if (filterOptions) {
+      filterOptions.forEach((t, i) => {
+        if (type === OptionTypeModel.DropDown) {
           tags.push(
-            <option key={t.key} value={t.key}>
+            <option
+              key={t.key}
+              value={t.key}
+              selected={t.isSelected ? true : false}
+            >
               {t.label}
             </option>
           );
-        } else if (this.props.type == OptionTypeModel.radioBtn) {
+        } else if (type === OptionTypeModel.radioBtn) {
           tags.push(
             <label key={t.key}>
               <input
