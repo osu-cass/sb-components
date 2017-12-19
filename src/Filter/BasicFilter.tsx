@@ -9,7 +9,12 @@ import {
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
 }
-
+/**
+ * Renders a radio button or drop down list from
+ * the FilterOptionModel passed in as props
+ * @class BasicFilter
+ * @extends {React.Component<BasicFilterProps, {}>}
+ */
 export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   constructor(props: BasicFilterProps) {
     super(props);
@@ -22,11 +27,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       filterOptions.forEach((t, i) => {
         if (type === OptionTypeModel.DropDown) {
           tags.push(
-            <option
-              key={t.key}
-              value={t.key}
-              selected={t.isSelected ? true : false}
-            >
+            <option key={t.key} value={t.key}>
               {t.label}
             </option>
           );
@@ -54,14 +55,14 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   }
 
   renderFilterBody() {
+    const { selectedHandler, type, filterOptions } = this.props;
     let tag: JSX.Element;
-
-    if (this.props.type == OptionTypeModel.DropDown) {
+    const selected = filterOptions.filter(fil => fil.isSelected === true);
+    if (type === OptionTypeModel.DropDown) {
       tag = (
         <select
-          onChange={e =>
-            this.props.selectedHandler(this.findFilterOption(e.target.value))
-          }
+          onChange={e => selectedHandler(this.findFilterOption(e.target.value))}
+          value={selected.length > 0 ? `${selected[0].key}` : `default`}
         >
           <option value="default">Select Filter...</option>
           {this.renderTags()}
@@ -75,12 +76,13 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   }
 
   render() {
+    const { label } = this.props;
     return (
       <div
-        id={(this.props.label + "-basic-filter").toLocaleLowerCase()}
+        id={(label + "-basic-filter").toLocaleLowerCase()}
         className="basic-filter-selection"
       >
-        <label>{this.props.label}</label>
+        <label>{label}</label>
         {this.renderFilterBody()}
       </div>
     );
