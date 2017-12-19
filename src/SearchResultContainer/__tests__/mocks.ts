@@ -1,7 +1,7 @@
 import {
   SearchResultContainerProps,
   SearchResultType
-} from "../../src/SearchResultContainer/SearchResultContainer";
+} from "../../SearchResultContainer/SearchResultContainer";
 
 export const SearchResultCardProps: SearchResultContainerProps = {
   onRowSelection: () => {},
