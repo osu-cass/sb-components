@@ -24,7 +24,6 @@ describe("SearchResultContainer", () => {
     let wrapper = shallow(
       <SearchResultContainer {...SearchResultTableProps} />
     );
-
     const eventMock = { currentTarget: { value: "1" } };
 
     wrapper
@@ -36,12 +35,11 @@ describe("SearchResultContainer", () => {
 
   it("card to table transition", () => {
     let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
-
     const eventMock = { currentTarget: { value: "0" } };
 
     wrapper
       .findWhere(node => node.type() === "button")
-      .at(1)
+      .at(0)
       .simulate("click", eventMock);
     expect(wrapper).toMatchSnapshot();
   });
