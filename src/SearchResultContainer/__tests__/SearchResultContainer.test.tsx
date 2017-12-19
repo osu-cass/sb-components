@@ -2,7 +2,11 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
-import { SearchResultTableProps, SearchResultCardProps } from "./mocks";
+import {
+  SearchResultTableProps,
+  SearchResultCardProps,
+  SearchResultEmptyProps
+} from "./mocks";
 import { SearchResultContainer } from "../SearchResultContainer";
 
 let wrapper = shallow(<SearchResultContainer {...SearchResultTableProps} />);
@@ -17,6 +21,13 @@ describe("SearchResultContainer", () => {
 
   it("onload matches snapshot ItemCards", () => {
     let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("empty itemCards", () => {
+    let wrapper = shallow(
+      <SearchResultContainer {...SearchResultEmptyProps} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

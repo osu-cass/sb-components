@@ -120,6 +120,40 @@ exports[`SearchResultContainer card to table transition 1`] = `
 </div>
 `;
 
+exports[`SearchResultContainer empty itemCards 1`] = `
+<div
+  className="search-result-container"
+>
+  <div
+    className="search-result-header"
+  >
+    <button
+      className="btn btn-white"
+      onClick={[Function]}
+      value={0}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-table"
+      />
+    </button>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      value={1}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-book"
+      />
+    </button>
+  </div>
+  <div
+    className="search-result-body"
+  />
+</div>
+`;
+
 exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
 <div
   className="search-result-container"

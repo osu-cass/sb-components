@@ -166,3 +166,11 @@ export const SearchResultTableProps: SearchResultContainerProps = {
   },
   defaultRenderType: SearchResultType.Table
 };
+
+export const SearchResultEmptyProps: SearchResultContainerProps = {
+  onRowSelection: () => {},
+  item: {
+    kind: "none"
+  },
+  defaultRenderType: SearchResultType.ItemCard
+};
