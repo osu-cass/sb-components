@@ -53,11 +53,13 @@ export class SearchResultContainer extends React.Component<
 
   renderBody() {
     let tag: JSX.Element | JSX.Element[] | undefined;
+
     if (this.state.renderType === SearchResultType.Table) {
       tag = <ItemTableContainer {...this.props} />;
     } else {
       tag = this.renderItemCards();
     }
+
     return <div className="search-result-body">{tag}</div>;
   }
 
@@ -71,14 +73,24 @@ export class SearchResultContainer extends React.Component<
     return (
       <div className="search-result-header">
         <button
-          className="btn btn-white"
+          className={
+            "btn " +
+            (this.state.renderType === SearchResultType.Table
+              ? "btn-primary"
+              : "btn-white")
+          }
           value={SearchResultType.Table}
           onClick={this.renderTypeHandler.bind(this)}
         >
           <i aria-hidden="true" className="fa fa-table" />
         </button>
         <button
-          className="btn btn-white"
+          className={
+            "btn " +
+            (this.state.renderType === SearchResultType.ItemCard
+              ? "btn-primary"
+              : "btn-white")
+          }
           value={SearchResultType.ItemCard}
           onClick={this.renderTypeHandler.bind(this)}
         >
