@@ -1,3 +1,69 @@
+@import "constants";
+
+.first-page {
+    text-align: right;
+    padding-top: 200px;
+}
+
+.first-page-title {
+    color: @sb-blue;
+    font-size: @font-size-header;
+    margin: 30px 0;
+}
+
+.first-page-subtitle {
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+.first-page-date {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.item-data-table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.item-data-table thead {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.item-data-table tr {
+    page-break-inside: avoid;
+}
+
+.item-data-table td,
+.item-data-table th {
+    border: 1px solid black;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.centered-table-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    page-break-after: always;
+}
+
+.item {
+    page-break-inside: avoid;
+}
+
+.question-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: @sb-text-light;
+    font-weight: bold;
+}
+
+
 .pdf-body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -18,7 +84,7 @@
 }
 
 .pdf-footer {
-    font-size: 16px;
+    font-size: @font-size-base;
     .footer-page-number {
         position: absolute;
         right: 0;
