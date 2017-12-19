@@ -6,11 +6,23 @@ import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
 import { ItemCard } from "../ItemCard/ItemCard";
 import "../Assets/Styles/search-result-container.less";
 
+/**
+ * SearchResultType enum
+ * @enum {number}
+ */
 export enum SearchResultType {
   Table,
   ItemCard
 }
 
+/**
+ * SearchResultContainerProps props
+ * @interface SearchResultContainerProps
+ * @method {(item: { itemKey: number; bankKey: number },reset: boolean) => void} onRowSelection
+ * @member {ItemCardModel[]?} itemCards
+ * @member {Resource<AboutItemModel>} item
+ * @member {SearchResultType} defaultRenderType
+ */
 export interface SearchResultContainerProps {
   onRowSelection: (
     item: { itemKey: number; bankKey: number },
@@ -21,10 +33,21 @@ export interface SearchResultContainerProps {
   defaultRenderType: SearchResultType;
 }
 
+/**
+ * SearchResultContainerState state
+ * @interface SearchResultContainerState
+ * @member {SearchResultType} renderType
+ */
 export interface SearchResultContainerState {
   renderType: SearchResultType;
 }
 
+/**
+ * The SearchResultContainer is a togglable display/menu that changes search
+ * results from a table layout to ItemCard and vice versa.
+ * @class SearchResultContainer
+ * @extends {React.Component<SearchResultContainerProps, SearchResultContainerState>}
+ */
 export class SearchResultContainer extends React.Component<
   SearchResultContainerProps,
   SearchResultContainerState
@@ -37,6 +60,9 @@ export class SearchResultContainer extends React.Component<
     };
   }
 
+  /**
+   * Renders all results to ItemCard view.
+   */
   renderItemCards() {
     let tags: JSX.Element[] | undefined;
 
@@ -52,6 +78,10 @@ export class SearchResultContainer extends React.Component<
     return tags;
   }
 
+  /**
+   * Depending on what renderType is selected, ItemCards or a table
+   * will be rendered.
+   */
   renderBody() {
     let tag: JSX.Element | JSX.Element[] | undefined;
 
@@ -64,12 +94,19 @@ export class SearchResultContainer extends React.Component<
     return <div className="search-result-body">{tag}</div>;
   }
 
+  /**
+   * Handles the chage from one view to another.
+   * @param {React.MouseEvent<HTMLButtonElement>} e
+   */
   renderTypeHandler(e: React.MouseEvent<HTMLButtonElement>) {
     const btnValue = Number(e.currentTarget.value);
 
     this.setState({ renderType: btnValue });
   }
 
+  /**
+   * Renders togglable buttons for view state.
+   */
   renderHeader() {
     return (
       <div className="search-result-header">
