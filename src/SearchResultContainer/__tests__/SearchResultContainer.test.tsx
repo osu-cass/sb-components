@@ -15,21 +15,34 @@ describe("SearchResultContainer", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("table to card transition", () => {
-    let wrapper = shallow(
-      <SearchResultContainer {...SearchResultTableProps} />
-    );
-    wrapper
-      .find(".btn-white")
-      .at(0)
-      .simulate("click");
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it("onload matches snapshot ItemCards", () => {
     let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 
-  //TODO: work on click simulations
+  it("table to card transition", () => {
+    let wrapper = shallow(
+      <SearchResultContainer {...SearchResultTableProps} />
+    );
+
+    const eventMock = { currentTarget: { value: "1" } };
+
+    wrapper
+      .findWhere(node => node.type() === "button")
+      .at(1)
+      .simulate("click", eventMock);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("card to table transition", () => {
+    let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
+
+    const eventMock = { currentTarget: { value: "0" } };
+
+    wrapper
+      .findWhere(node => node.type() === "button")
+      .at(1)
+      .simulate("click", eventMock);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

@@ -12453,7 +12453,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
       className="search-result-header"
     >
       <button
-        className="btn btn-white"
+        className="btn btn-primary"
         onClick={[Function]}
         value={0}
       >
