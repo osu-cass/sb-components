@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ItemView } from "./ItemView";
 import { ItemPdfModel } from "./PdfModels";
-import "../Assets/Styles/pdf-item-page.less";
+import "../Assets/Styles/pdf.less";
 
 export interface PassageViewProps {
   view: ItemPdfModel;

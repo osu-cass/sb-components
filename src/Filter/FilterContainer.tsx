@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../Assets/Styles/filter.less";
 import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
 import {
   AdvancedFilterCategoryModel,
@@ -56,7 +57,7 @@ export class FilterContainer extends React.Component<
     }
 
     return (
-      <div>
+      <div className="filter-component-wrapper">
         <BasicFilterContainer
           filterId={this.props.filterId}
           filterCategories={basicFilterCategories}
