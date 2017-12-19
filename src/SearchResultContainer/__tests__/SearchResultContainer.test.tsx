@@ -15,6 +15,17 @@ describe("SearchResultContainer", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it("table to card transition", () => {
+    let wrapper = shallow(
+      <SearchResultContainer {...SearchResultTableProps} />
+    );
+    wrapper
+      .find(".btn-white")
+      .at(0)
+      .simulate("click");
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("onload matches snapshot ItemCards", () => {
     let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
     expect(wrapper).toMatchSnapshot();
