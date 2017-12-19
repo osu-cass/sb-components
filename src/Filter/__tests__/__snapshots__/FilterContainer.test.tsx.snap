@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FilterContainer expands the advanced filter 1`] = `
-<div>
+<div
+  className="filter-component-wrapper"
+>
   <BasicFilterContainer
     containsAdvancedFilter={true}
     filterCategories={
@@ -61,7 +63,9 @@ exports[`FilterContainer expands the advanced filter 1`] = `
 `;
 
 exports[`FilterContainer expands the advanced filter 2`] = `
-<div>
+<div
+  className="filter-component-wrapper"
+>
   <BasicFilterContainer
     containsAdvancedFilter={true}
     filterCategories={
@@ -121,7 +125,9 @@ exports[`FilterContainer expands the advanced filter 2`] = `
 `;
 
 exports[`FilterContainer expands the advanced filter 3`] = `
-<div>
+<div
+  className="filter-component-wrapper"
+>
   <BasicFilterContainer
     containsAdvancedFilter={true}
     filterCategories={
