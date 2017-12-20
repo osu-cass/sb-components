@@ -20,7 +20,3 @@ Follow basic A11y guidelines
 * Models have suffix "Model"
 * One react component per file unless stateless
 
-## Accessibility
-* A11y [here](http://a11yproject.com/checklist.html)
-* React Accessibility [here](https://reactjs.org/docs/accessibility.html)
-

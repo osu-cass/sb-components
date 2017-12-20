@@ -1034,7 +1034,7 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-white filter-expand-btn"
+          className="btn btn-default filter-expand-btn"
           onClick={[Function]}
         >
           Expand 
@@ -1083,7 +1083,7 @@ exports[`Storyshots Advanced Filter Container with page title 1`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-white filter-expand-btn"
+          className="btn btn-default filter-expand-btn"
           onClick={[Function]}
         >
           Expand 
@@ -1140,22 +1140,25 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
+      data-toggle="buttons"
     >
       <div
-        className="filter-button-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={true}
           onClick={[Function]}
+          role="button"
         >
           English
         </button>
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={true}
           onClick={[Function]}
+          role="button"
         >
           Chemistry
         </button>
@@ -1205,22 +1208,25 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
+      data-toggle="buttons"
     >
       <div
-        className="filter-button-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={true}
           onClick={[Function]}
+          role="button"
         >
           Reading
         </button>
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={true}
           onClick={[Function]}
+          role="button"
         >
           History
         </button>
@@ -1270,32 +1276,33 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical "
+      data-toggle="buttons"
     >
+      <button
+        className="btn btn-primary active"
+        disabled={false}
+        onClick={[Function]}
+        role="button"
+      >
+        All
+      </button>
       <div
-        className="filter-all-btn-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn filter-btn-all  btn-blue"
-          onClick={[Function]}
-        >
-          All
-        </button>
-      </div>
-      <div
-        className="filter-button-container"
-      >
-        <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           Calculus
         </button>
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           Geometry
         </button>
@@ -1345,22 +1352,25 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
+      data-toggle="buttons"
     >
       <div
-        className="filter-button-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn btn-blue selected"
+          className="btn btn-primary active"
           disabled={true}
           onClick={[Function]}
+          role="button"
         >
           English Literacy & Arts
         </button>
         <button
-          className="btn btn-sm filter-btn btn-blue selected"
+          className="btn btn-primary active"
           disabled={true}
           onClick={[Function]}
+          role="button"
         >
           Maths
         </button>
@@ -1410,22 +1420,25 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical "
+      data-toggle="buttons"
     >
       <div
-        className="filter-button-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn btn-blue selected"
+          className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           English Literacy & Arts
         </button>
         <button
-          className="btn btn-sm filter-btn btn-blue selected"
+          className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           Maths
         </button>
@@ -1475,32 +1488,33 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical "
+      data-toggle="buttons"
     >
+      <button
+        className="btn btn-primary active"
+        disabled={false}
+        onClick={[Function]}
+        role="button"
+      >
+        All
+      </button>
       <div
-        className="filter-all-btn-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn filter-btn-all  btn-blue"
-          onClick={[Function]}
-        >
-          All
-        </button>
-      </div>
-      <div
-        className="filter-button-container"
-      >
-        <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           US History
         </button>
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           World History
         </button>
@@ -1550,32 +1564,33 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical "
+      data-toggle="buttons"
     >
+      <button
+        className="btn btn-primary "
+        disabled={false}
+        onClick={[Function]}
+        role="button"
+      >
+        All
+      </button>
       <div
-        className="filter-all-btn-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn filter-btn-all btn-white"
-          onClick={[Function]}
-        >
-          All
-        </button>
-      </div>
-      <div
-        className="filter-button-container"
-      >
-        <button
-          className="btn btn-sm filter-btn btn-blue selected"
+          className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           English Literacy & Arts
         </button>
         <button
-          className="btn btn-sm filter-btn btn-blue selected"
+          className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           Maths
         </button>
@@ -1625,10 +1640,11 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical "
+      data-toggle="buttons"
     >
       <div
-        className="filter-button-container"
+        className="btn-group"
       >
         <div>
           No options.
@@ -1679,22 +1695,25 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       </label>
     </div>
     <div
-      className="child-filter-container"
+      className="nested-btn-group btn-group-sm toggle-group vertical "
+      data-toggle="buttons"
     >
       <div
-        className="filter-button-container"
+        className="btn-group"
       >
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           English Literacy/ Arts
         </button>
         <button
-          className="btn btn-sm filter-btn btn-white"
+          className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
+          role="button"
         >
           Mathematics
         </button>
@@ -1714,72 +1733,80 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
   >
     <div
       className="basic-filter-selection"
-      id="grade-basic-filter"
+      id="grade -basic-filter"
     >
       <label>
         Grade
-      </label>
-      <div
-        className="basic-filter-body"
-      >
         <select
+          className="form-control input-sm"
+          disabled={false}
           onChange={[Function]}
           value="default"
         >
           <option
+            aria-selected={true}
+            disabled={false}
+            label="Please Select"
             value="default"
-          >
-            Select Filter...
-          </option>
+          />
           <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 3-5"
             value="7"
-          >
-            Grades 3-5
-          </option>
+          />
           <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 6-8"
             value="56"
-          >
-            Grades 6-8
-          </option>
+          />
           <option
+            aria-selected={false}
+            disabled={false}
+            label="High School"
             value="960"
-          >
-            High School
-          </option>
+          />
         </select>
-      </div>
+      </label>
     </div>
     <div
       className="basic-filter-selection"
-      id="subjects-basic-filter"
+      id="subjects -basic-filter"
     >
       <label>
         Subjects
-      </label>
-      <div
-        className="basic-filter-body"
-      >
-        <form>
+        <div
+          className="radio"
+        >
           <label>
             <input
+              aria-checked={false}
               checked={false}
+              name="Subjects"
               onChange={[Function]}
               type="radio"
               value="ELA"
             />
             English Literacy/ Arts
           </label>
+        </div>
+        <div
+          className="radio"
+        >
           <label>
             <input
+              aria-checked={false}
               checked={false}
+              name="Subjects"
               onChange={[Function]}
               type="radio"
               value="Math"
             />
             Mathematics
           </label>
-        </form>
-      </div>
+        </div>
+      </label>
     </div>
   </div>
 </div>
@@ -1795,72 +1822,80 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
   >
     <div
       className="basic-filter-selection"
-      id="grade-basic-filter"
+      id="grade -basic-filter"
     >
       <label>
         Grade
-      </label>
-      <div
-        className="basic-filter-body"
-      >
         <select
+          className="form-control input-sm"
+          disabled={false}
           onChange={[Function]}
           value="default"
         >
           <option
+            aria-selected={true}
+            disabled={false}
+            label="Please Select"
             value="default"
-          >
-            Select Filter...
-          </option>
+          />
           <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 3-5"
             value="7"
-          >
-            Grades 3-5
-          </option>
+          />
           <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 6-8"
             value="56"
-          >
-            Grades 6-8
-          </option>
+          />
           <option
+            aria-selected={false}
+            disabled={false}
+            label="High School"
             value="960"
-          >
-            High School
-          </option>
+          />
         </select>
-      </div>
+      </label>
     </div>
     <div
       className="basic-filter-selection"
-      id="subjects-basic-filter"
+      id="subjects -basic-filter"
     >
       <label>
         Subjects
-      </label>
-      <div
-        className="basic-filter-body"
-      >
-        <form>
+        <div
+          className="radio"
+        >
           <label>
             <input
+              aria-checked={false}
               checked={false}
+              name="Subjects"
               onChange={[Function]}
               type="radio"
               value="ELA"
             />
             English Literacy/ Arts
           </label>
+        </div>
+        <div
+          className="radio"
+        >
           <label>
             <input
+              aria-checked={false}
               checked={false}
+              name="Subjects"
               onChange={[Function]}
               type="radio"
               value="Math"
             />
             Mathematics
           </label>
-        </form>
-      </div>
+        </div>
+      </label>
     </div>
   </div>
   <div
@@ -1899,45 +1934,48 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade-basic-filter"
+    id="grade -basic-filter"
   >
     <label>
       Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
       <select
+        className="form-control input-sm"
+        disabled={false}
         onChange={[Function]}
         value="default"
       >
         <option
+          aria-selected={true}
+          disabled={false}
+          label="Please Select"
           value="default"
-        >
-          Select Filter...
-        </option>
+        />
         <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade 1"
           value="12346"
-        >
-          Grade 1
-        </option>
+        />
         <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade 2"
           value="12347"
-        >
-          Grade 2
-        </option>
+        />
         <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade"
           value="12345"
-        >
-          Grade
-        </option>
+        />
         <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade 4"
           value="12348"
-        >
-          Grade 4
-        </option>
+        />
       </select>
-    </div>
+    </label>
   </div>
 </div>
 `;
@@ -1958,30 +1996,30 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade-basic-filter"
+    id="grade -basic-filter"
   >
     <label>
       Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
       <select
+        className="form-control input-sm"
+        disabled={false}
         onChange={[Function]}
         value="default"
       >
         <option
+          aria-selected={true}
+          disabled={false}
+          label="Please Select"
           value="default"
-        >
-          Select Filter...
-        </option>
+        />
         <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade"
           value="12345"
-        >
-          Grade
-        </option>
+        />
       </select>
-    </div>
+    </label>
   </div>
 </div>
 `;
@@ -2002,53 +2040,71 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade-basic-filter"
+    id="grade -basic-filter"
   >
     <label>
       Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <form>
+      <div
+        className="radio"
+      >
         <label>
           <input
+            aria-checked={false}
             checked={false}
+            name="Grade"
             onChange={[Function]}
             type="radio"
             value="12346"
           />
           Grade 1
         </label>
+      </div>
+      <div
+        className="radio"
+      >
         <label>
           <input
+            aria-checked={false}
             checked={false}
+            name="Grade"
             onChange={[Function]}
             type="radio"
             value="12347"
           />
           Grade 2
         </label>
+      </div>
+      <div
+        className="radio"
+      >
         <label>
           <input
+            aria-checked={false}
             checked={false}
+            name="Grade"
             onChange={[Function]}
             type="radio"
             value="12345"
           />
           Grade
         </label>
+      </div>
+      <div
+        className="radio"
+      >
         <label>
           <input
+            aria-checked={false}
             checked={false}
+            name="Grade"
             onChange={[Function]}
             type="radio"
             value="12348"
           />
           Grade 4
         </label>
-      </form>
-    </div>
+      </div>
+    </label>
   </div>
 </div>
 `;
@@ -2069,26 +2125,26 @@ exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade-basic-filter"
+    id="grade -basic-filter"
   >
     <label>
       Grade
-    </label>
-    <div
-      className="basic-filter-body"
-    >
-      <form>
+      <div
+        className="radio"
+      >
         <label>
           <input
+            aria-checked={false}
             checked={false}
+            name="Grade"
             onChange={[Function]}
             type="radio"
             value="12345"
           />
           Grade
         </label>
-      </form>
-    </div>
+      </div>
+    </label>
   </div>
 </div>
 `;
@@ -2253,72 +2309,80 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     >
       <div
         className="basic-filter-selection"
-        id="grade-basic-filter"
+        id="grade -basic-filter"
       >
         <label>
           Grade
-        </label>
-        <div
-          className="basic-filter-body"
-        >
           <select
+            className="form-control input-sm"
+            disabled={false}
             onChange={[Function]}
             value="default"
           >
             <option
+              aria-selected={true}
+              disabled={false}
+              label="Please Select"
               value="default"
-            >
-              Select Filter...
-            </option>
+            />
             <option
+              aria-selected={false}
+              disabled={false}
+              label="Grades 3-5"
               value="7"
-            >
-              Grades 3-5
-            </option>
+            />
             <option
+              aria-selected={false}
+              disabled={false}
+              label="Grades 6-8"
               value="56"
-            >
-              Grades 6-8
-            </option>
+            />
             <option
+              aria-selected={false}
+              disabled={false}
+              label="High School"
               value="960"
-            >
-              High School
-            </option>
+            />
           </select>
-        </div>
+        </label>
       </div>
       <div
         className="basic-filter-selection"
-        id="subjects-basic-filter"
+        id="subjects -basic-filter"
       >
         <label>
           Subjects
-        </label>
-        <div
-          className="basic-filter-body"
-        >
-          <form>
+          <div
+            className="radio"
+          >
             <label>
               <input
+                aria-checked={false}
                 checked={false}
+                name="Subjects"
                 onChange={[Function]}
                 type="radio"
                 value="ELA"
               />
               English Literacy/ Arts
             </label>
+          </div>
+          <div
+            className="radio"
+          >
             <label>
               <input
+                aria-checked={false}
                 checked={false}
+                name="Subjects"
                 onChange={[Function]}
                 type="radio"
                 value="Math"
               />
               Mathematics
             </label>
-          </form>
-        </div>
+          </div>
+        </label>
       </div>
     </div>
     <div
@@ -12868,8 +12932,10 @@ exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
     }
   }
 >
-  <div
-    className="btn btn-blue filter-btn filter-selection"
+  <button
+    className="btn btn-sm aqua reverse"
+    onClick={[Function]}
+    role="button"
   >
     <strong>
       English Literacy & Arts
@@ -12879,164 +12945,7 @@ exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
      
     <span
       className="fa fa-times-circle fa-small"
-      onClick={[Function]}
     />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Style Buttons 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      className="btn btn-white"
-    >
-      btn-white
-    </button>
-    <button
-      className="btn btn-blue"
-    >
-      btn-blue
-    </button>
-    <button
-      className="btn btn-green"
-    >
-      btn-green
-    </button>
-    <button
-      className="btn btn-gray"
-    >
-      btn-gray
-    </button>
-    <button
-      className="btn btn-primary"
-    >
-      btn-primary
-    </button>
-    <button
-      className="btn btn-success"
-    >
-      btn-success
-    </button>
-    <button
-      className="item-nav-btn btn btn-link"
-    >
-      item-nav-btn
-    </button>
-    <a
-      className="btn btn-link"
-      onClick={[Function]}
-      role="button"
-    >
-      btn-link
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Style Buttons Disabled 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      className="btn btn-white"
-      disabled={true}
-    >
-      btn-white
-    </button>
-    <button
-      className="btn btn-blue"
-      disabled={true}
-    >
-      btn-blue
-    </button>
-    <button
-      className="btn btn-green"
-      disabled={true}
-    >
-      btn-green
-    </button>
-    <button
-      className="btn btn-gray"
-      disabled={true}
-    >
-      btn-gray
-    </button>
-    <button
-      className="btn btn-primary"
-      disabled={true}
-    >
-      btn-primary
-    </button>
-    <button
-      className="btn btn-success"
-      disabled={true}
-    >
-      btn-success
-    </button>
-    <button
-      className="item-nav-btn btn btn-link"
-      disabled={true}
-    >
-      item-nav-btn
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Style Buttons Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexFlow": "column nowrap",
-      "height": "100%",
-      "justifyContent": "center",
-      "paddingTop": "300px",
-      "width": "100%",
-    }
-  }
->
-  <div>
-    <button
-      className="btn btn-sm btn-blue"
-    >
-      btn-sm
-    </button>
-    <button
-      className="btn btn-gray"
-    >
-      btn-gray
-    </button>
-    <button
-      className="btn btn-lg btn-green"
-    >
-      btn-lg
-    </button>
-  </div>
+  </button>
 </div>
 `;
