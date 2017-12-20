@@ -59,7 +59,7 @@ export class FilterContainer extends React.Component<
     return (
       <div className="filter-component-wrapper">
         <BasicFilterContainer
-          filterId={this.props.filterId}
+          filterId={filterId}
           filterCategories={basicFilterCategories}
           onUpdateFilter={onUpdateBasicFilter}
           containsAdvancedFilter={true}
