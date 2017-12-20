@@ -1,26 +1,15 @@
 [![npm version](https://badge.fury.io/js/%40osu-cass%2Fsb-components.svg)](https://badge.fury.io/js/%40osu-cass%2Fsb-components)
 [![Build Status](https://travis-ci.org/osu-cass/sb-components.svg?branch=master)](https://travis-ci.org/osu-cass/sb-components)
-[![Documentation Status](https://readthedocs.org/projects/sb-components/badge/?version=latest)](http://sb-components.readthedocs.io/en/latest/?badge=latest)
-[![Coverage Status](https://coveralls.io/repos/github/osu-cass/sb-components/badge.svg?branch=master)](https://coveralls.io/github/osu-cass/sb-components?branch=master)
 
 # Smarter Balanced Components
-
 > For use in Smarter Balanced
 
-Make sure you have the latest version of Node.js and npm.
+[![Documentation Status](https://readthedocs.org/projects/sb-components/badge/?version=latest)](http://sb-components.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/osu-cass/sb-components/badge.svg?branch=master)](https://coveralls.io/github/osu-cass/sb-components?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6c28a487397344339991bb286d816ea4)](https://www.codacy.com/app/alexlepinski/sb-components?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=osu-cass/sb-components&amp;utm_campaign=Badge_Grade)
+[![codebeat badge](https://codebeat.co/badges/b0770905-aaa3-4319-bb98-b438b708aa24)](https://codebeat.co/projects/github-com-osu-cass-sb-components-master)
 
 ## Getting Started
-
-### Install peer dependencies
-- react
-- react-dom
-- bootstrap
-- jquery
-- react-modal
-- font-awesome
-- typeface-pt-sans-caption
-- typeface-pt-serif
-- type-pt-serif-caption
 
 ### Install sb-components using npm:
 ```
@@ -29,20 +18,9 @@ npm install --save @osu-cass/sb-components
 ### Typings
 Included in lib
 
-### Required Assets
-Use webpack copy
-```
-npm install --save-dev copy-webpack-plugin
-```
-Webpack config:
-```
-new CopyWebpackPlugin([
-    {
-        from: path.join(__dirname, 'node_modules', '@osu-cass/sb-components/lib/Assets/Images'),
-        to: path.join(__dirname, 'public', 'Assets/Images')
-    }
-])
-```
+### Usage
+- Please see [docs](http://sb-components.readthedocs.io/en/latest/dev/Usage.html)
+
 ## Scripts
 - `npm install` to setup development environment.
 - `npm run storybook` to launch the live demo.
