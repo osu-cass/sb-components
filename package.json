@@ -107,6 +107,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "enhanced-resolve": "^4.0.0-beta.2",
     "font-awesome": "~4.7.0",
     "jquery": "3.2.1",
     "typeface-pt-sans-caption": "0.0.44",

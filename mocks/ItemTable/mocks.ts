@@ -1,6 +1,5 @@
-import { ItemTableProps } from "../../src/ItemTable/ItemTable";
-import { ItemTableContainerProps } from "../../src/ItemTable/ItemTableContainer";
-import { AboutItemMockNoRubric } from "../AboutItem/mocks";
+import { ItemTableProps, ItemTableContainerProps } from "src";
+import { AboutItemMockNoRubric } from "mocks/AboutItem/mocks";
 
 export const itemTableProps: ItemTableContainerProps = {
   onRowSelection: () => {},

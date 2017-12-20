@@ -1,4 +1,4 @@
-import { Column, Props } from "../../src/Modals/MoreLikeThisModal";
+import { Column, Props } from "src";
 
 export interface Column {
   label: string;

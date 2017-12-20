@@ -3,7 +3,10 @@ import { ItemPage } from "../../src/ItemPage/ItemPage";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
 import { RouterDecorator } from "../RouterDecorator";
-import { ItemPageMockProps, ItemPageMockPropsNoItem } from "./mocks";
+import {
+  ItemPageMockProps,
+  ItemPageMockPropsNoItem
+} from "mocks/ItemPage/mocks";
 
 storiesOf("Item Page", module)
   .addDecorator(RouterDecorator)

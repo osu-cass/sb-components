@@ -17,6 +17,10 @@ module.exports = (baseConfig, env) => {
     use: ["style-loader", "css-loader", "less-loader"]
   });
 
+  config.resolve.alias = {
+    src: path.resolve(__dirname, "src"),
+    mocks: path.resolve(__dirname, "mocks"),
+  }
   config.resolve.extensions.push(".ts", ".tsx", ".less");
 
   return config;

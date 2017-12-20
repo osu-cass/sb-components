@@ -224,6 +224,13 @@ export {
 } from "./ApiModel";
 
 //
+// Search Result Container
+//
+export {
+  SearchResultContainer
+} from "./SearchResultContainer/SearchResultContainer";
+
+//
 // ErrorWrapper
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";

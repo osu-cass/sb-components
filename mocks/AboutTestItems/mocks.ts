@@ -4,8 +4,8 @@ import {
   AboutTestItemsModel,
   InteractionTypeModel,
   AboutTestItemsParams
-} from "../../src";
-import { completeItemCard } from "../ItemCard/mocks";
+} from "src";
+import { completeItemCard } from "mocks/ItemCard/mocks";
 import { action } from "@storybook/addon-actions";
 import { match } from "react-router";
 

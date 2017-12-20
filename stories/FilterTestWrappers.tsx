@@ -12,7 +12,7 @@ import {
 import {
   mockAdvancedFilterCategoriesAll,
   mockBasicFilterCategories
-} from "./Filter/mocks";
+} from "mocks/Filter/mocks";
 
 export interface AdvFilContainerTestProps {
   isNested?: boolean;

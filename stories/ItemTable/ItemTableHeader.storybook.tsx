@@ -1,14 +1,14 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
-import { itemTableProps } from "./mocks";
+import { itemTableProps } from "mocks/ItemTable/mocks";
 import {
   headerColumns,
   HeaderSortModel,
   HeaderTable,
   SortColumnModel,
   SortDirection
-} from "../../src/index";
+} from "src";
 
 const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"];
 

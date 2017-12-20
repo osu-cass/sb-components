@@ -1,8 +1,13 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { RouterDecorator } from "../RouterDecorator";
-import { AboutItem } from "../../src";
-import { AboutItemMockModel, rubrics, rubricsEsn, allRubrics } from "./mocks";
+import { AboutItem } from "src/index";
+import {
+  AboutItemMockModel,
+  rubrics,
+  rubricsEsn,
+  allRubrics
+} from "mocks/AboutItem/mocks";
 import { CenterDecorator } from "../CenterDecorator";
 
 storiesOf("About Item Modal", module)

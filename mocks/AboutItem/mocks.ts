@@ -1,6 +1,5 @@
-import { AboutItemModel, RubricModel } from "../../src";
-import { completeItemCard } from "../ItemCard/mocks";
-import { GradeLevels } from "../../src/GradeLevels/GradeLevels";
+import { AboutItemModel, RubricModel, GradeLevels } from "src";
+import { completeItemCard } from "mocks/ItemCard/mocks";
 
 export const rubricsWithSamples: RubricModel[] = [
   {

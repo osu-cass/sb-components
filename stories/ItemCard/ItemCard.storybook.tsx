@@ -3,7 +3,7 @@ import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
 import { RouterDecorator } from "../RouterDecorator";
-import { completeItemCard } from "./mocks";
+import { completeItemCard } from "mocks/ItemCard/mocks";
 import { ItemCardCondensed, ItemCard } from "../../src";
 
 storiesOf("Item Card", module)

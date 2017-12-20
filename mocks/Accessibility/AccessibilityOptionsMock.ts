@@ -1,4 +1,4 @@
-import { AccResourceGroupModel } from "../../src";
+import { AccResourceGroupModel } from "src";
 export const allAccessibilityResourceGroups: AccResourceGroupModel[] = [
   {
     label: "Universal Tools",

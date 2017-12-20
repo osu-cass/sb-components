@@ -4,7 +4,7 @@ import {
   DropDownSelectionModel,
   DropdownProps,
   ItemAccessibilityModalProps
-} from "../../src";
+} from "src";
 import { action } from "@storybook/addon-actions";
 
 export const accessibilityNotepad: AccessibilityResourceModel = {

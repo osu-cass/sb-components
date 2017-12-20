@@ -1,4 +1,4 @@
-import { ItemCardModel } from "../../src";
+import { ItemCardModel } from "src";
 
 export const completeItemCard: ItemCardModel = {
   bankKey: 187,
