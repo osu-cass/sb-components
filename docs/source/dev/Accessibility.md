@@ -2,7 +2,9 @@
 
 ## Minimum Requirements
 * Use a keyboard to interact with components (tab, space, enter, shift-tab)
-* Roles should be used unless input (input type does this automatically)
+* Icons should have aria-hidden
+* Links or buttons with no text need to have aria-label or labeled-by. More info [here](http://fontawesome.io/accessibility/)
+* Roles should be used unless input (input type does this automatically). More info  [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
 * Check contrast of components being used
 
 ## Resources
@@ -10,6 +12,8 @@
 * React Accessibility [here](https://reactjs.org/docs/accessibility.html)
 * MDN button and links [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role)
 * MDN Accessibility [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* Font awesome [here](http://fontawesome.io/accessibility/)
+* MDN Aria roles [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
 
 ## TSLint
 - Linting is enabled for this project to determine if elements are compliant
