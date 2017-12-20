@@ -1724,6 +1724,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
       >
         <select
           onChange={[Function]}
+          value="default"
         >
           <option
             value="default"
@@ -1804,6 +1805,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       >
         <select
           onChange={[Function]}
+          value="default"
         >
           <option
             value="default"
@@ -1907,6 +1909,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
     >
       <select
         onChange={[Function]}
+        value="default"
       >
         <option
           value="default"
@@ -1965,6 +1968,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
     >
       <select
         onChange={[Function]}
+        value="default"
       >
         <option
           value="default"
@@ -2259,6 +2263,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         >
           <select
             onChange={[Function]}
+            value="default"
           >
             <option
               value="default"
