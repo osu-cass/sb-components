@@ -1,10 +1,10 @@
-import "../Assets/Styles/advanced-filter.less";
 import * as React from "react";
 import {
   AdvancedFilterCategoryModel,
   FilterOptionModel,
   OptionTypeModel
 } from "./FilterModels";
+import { BtnGroupOption } from "../Button/BtnGroupOption";
 
 export interface AdvancedFilterProps extends AdvancedFilterCategoryModel {
   onFilterOptionSelect: (data?: FilterOptionModel) => void;
@@ -19,22 +19,19 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     const {
       filterOptions,
       onFilterOptionSelect,
-      displayAllButton
+      displayAllButton,
+      disabled
     } = this.props;
     let allBtnContainer: JSX.Element | undefined;
     const anySelected = filterOptions.some(fo => fo.isSelected);
     if (displayAllButton) {
-      const className = anySelected ? "btn-white" : " btn-blue";
       allBtnContainer = (
-        <div className="filter-all-btn-container">
-          <button
-            className={`btn btn-sm filter-btn filter-btn-all ${className}`}
-            key="all"
-            onClick={() => onFilterOptionSelect()}
-          >
-            All
-          </button>
-        </div>
+        <BtnGroupOption
+          onClick={() => onFilterOptionSelect()}
+          disabled={disabled}
+          selected={!anySelected}
+          label="All"
+        />
       );
     }
 
@@ -47,27 +44,27 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
 
     if (filterOptions.length > 0) {
       filterOptions.forEach((t, i) => {
-        const className = t.isSelected ? "btn-blue selected" : "btn-white";
         tags.push(
-          <button
-            className={`btn btn-sm filter-btn ${className}`}
-            key={t.key}
+          <BtnGroupOption
             onClick={() => onFilterOptionSelect(t)}
             disabled={disabled}
-          >
-            {t.label}
-          </button>
+            selected={t.isSelected}
+            label={t.label}
+            key={t.key}
+          />
         );
       });
     } else {
       tags.push(<div key={0}>No options.</div>);
     }
+
     return tags;
   }
 
   render() {
     const { disabled, label, helpText } = this.props;
     const className = disabled ? " filter-disabled" : "";
+
     return (
       <div
         id={(label + "-filter").toLocaleLowerCase()}
@@ -87,9 +84,14 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
             </span>
           </label>
         </div>
-        <div className="child-filter-container">
+        <div
+          className={`nested-btn-group btn-group-sm toggle-group vertical ${
+            className
+          }`}
+          data-toggle="buttons"
+        >
           {this.renderAllBtnContainer()}
-          <div className="filter-button-container">{this.renderTags()}</div>
+          <div className="btn-group">{this.renderTags()}</div>
         </div>
       </div>
     );

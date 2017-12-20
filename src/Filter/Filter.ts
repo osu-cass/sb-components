@@ -52,7 +52,7 @@ export class Filter {
     filterModels: FilterCategoryModel[]
   ): GradeLevels | undefined {
     const selectedCodes = this.getSelectedCodes(FilterType.Grade, filterModels);
-    let gradeLevel: GradeLevels | undefined = undefined;
+    let gradeLevel: GradeLevels | undefined;
 
     if (selectedCodes) {
       const gradesLevel = selectedCodes.reduce<GradeLevels>(
@@ -78,6 +78,7 @@ export class Filter {
       FilterType.Target,
       filterModels
     );
+
     return selectedCodes ? selectedCodes.map(s => +s) : undefined;
   }
   public static filterStringTypes<T extends SearchFilterStringTypes>(
