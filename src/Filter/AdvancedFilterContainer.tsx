@@ -228,19 +228,21 @@ export class AdvancedFilterContainer extends React.Component<
    * Render the expanded filter container
    */
   renderExpanded(): JSX.Element | undefined {
+    let content: JSX.Element | undefined;
     if (this.state.expanded) {
-      return (
+      content = (
         <div className="advanced-filter-container-expanded">
           {this.renderFilterCategories()}
         </div>
       );
     }
 
-    return undefined;
+    return content;
   }
 
   render() {
     const id = this.props.filterId ? this.props.filterId : "";
+
     return (
       <div id={id} className="advanced-filter-container">
         {this.renderCollapsedFilterContainer()}
