@@ -12460,6 +12460,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
       className="search-result-header"
     >
       <button
+        aria-label="table view"
         className="btn btn-primary"
         onClick={[Function]}
         value={0}
@@ -12470,6 +12471,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
         />
       </button>
       <button
+        aria-label="item card view"
         className="btn btn-white"
         onClick={[Function]}
         value={1}
