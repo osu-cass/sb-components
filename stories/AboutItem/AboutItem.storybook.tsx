@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { RouterDecorator } from "../RouterDecorator";
-import { AboutItem } from "src/index";
+import { AboutItem } from "src/AboutItem/AboutItem";
 import {
   AboutItemMockModel,
   rubrics,

@@ -13,13 +13,13 @@ module.exports = (baseConfig, env) => {
 
   config.module.rules.push({
     test: /\.less$/,
-    include: [path.resolve(__dirname, "../", "src", "Assets/Styles")],
+    include: [path.resolve(__dirname, "../", "src/index", "Assets/Styles")],
     use: ["style-loader", "css-loader", "less-loader"]
   });
 
   config.resolve.alias = {
-    src: path.resolve(__dirname, "src"),
-    mocks: path.resolve(__dirname, "mocks"),
+    src: path.resolve(__dirname, "../src"),
+    mocks: path.resolve(__dirname, "../mocks"),
   }
   config.resolve.extensions.push(".ts", ".tsx", ".less");
 

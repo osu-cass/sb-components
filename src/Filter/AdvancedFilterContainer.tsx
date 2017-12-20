@@ -1,6 +1,6 @@
 import * as React from "react";
-import "../Assets/Styles/advanced-filter.less";
-import { AdvancedFilter } from "src";
+import "src/Assets/Styles/advanced-filter.less";
+import { AdvancedFilter } from "./AdvancedFilter";
 import { SelectedFilterIndicator } from "./SelectedFilterIndicator";
 import {
   onFilterSelect,

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { PdfDecorator } from "../PdfDecorator";
-import { ItemViewContainer } from "src";
+import { ItemViewContainer } from "src/index";
 import {
   singleQuestion,
   passageAndQuestion,

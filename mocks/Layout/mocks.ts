@@ -1,4 +1,4 @@
-import { SbNavlinkProps } from "src";
+import { SbNavlinkProps } from "src/index";
 
 export const SiteLinks: SbNavlinkProps[] = [
   { name: "link1", url: "url1" },

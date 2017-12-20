@@ -1,7 +1,7 @@
 import { Filter } from "../Filter";
 import * as Mocks from "./Mocks";
 import { FilterType } from "../FilterModels";
-import { GradeLevel, GradeLevels } from "../../GradeLevels/GradeLevels";
+import { GradeLevel, GradeLevels } from "src/GradeLevels/GradeLevels";
 import { filter } from "minimatch";
 
 describe("Filter.getSelectedCodes", () => {

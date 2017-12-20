@@ -6,7 +6,7 @@ import {
   itemTableSortProps,
   itemTableSelectProps
 } from "mocks/ItemTable/mocks";
-import { ItemTableContainer } from "src";
+import { ItemTableContainer } from "src/index";
 
 storiesOf("Item Table Container", module)
   .addDecorator(CenterDecorator)

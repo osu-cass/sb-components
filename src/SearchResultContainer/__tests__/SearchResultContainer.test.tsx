@@ -6,7 +6,7 @@ import {
   SearchResultTableProps,
   SearchResultCardProps,
   SearchResultEmptyProps
-} from "./mocks";
+} from "mocks/SearchResultContainer/mocks";
 import { SearchResultContainer } from "../SearchResultContainer";
 
 describe("SearchResultContainer", () => {

@@ -8,7 +8,7 @@ import {
   HeaderTable,
   SortColumnModel,
   SortDirection
-} from "src";
+} from "src/index";
 
 const tabs = ["item", "claimAndTarget", "subject", "grade", "interactionType"];
 

@@ -5,7 +5,7 @@ import {
   ItemTableContainer,
   ItemTableContainerProps,
   ItemCardModel
-} from "src";
+} from "src/index";
 import { CenterDecorator } from "../CenterDecorator";
 import { itemTableSortProps } from "mocks/ItemTable/mocks";
 

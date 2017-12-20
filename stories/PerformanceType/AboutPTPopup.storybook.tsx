@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
-import { AboutPTPopupModal } from "../../src/PerformanceType/AboutPTPopup";
+import { AboutPTPopupModal } from "src/PerformanceType/AboutPTPopup";
 import { RouterDecorator } from "../RouterDecorator";
 
 // storiesOf("About PT Popup", module)

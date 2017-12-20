@@ -18,7 +18,7 @@ import {
   FilterOptionModel,
   FilterType,
   ItemSearch
-} from "src";
+} from "src/index";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 
 // tslint:disable-next-line:no-stateless-class

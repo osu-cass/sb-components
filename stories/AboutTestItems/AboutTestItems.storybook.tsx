@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
-import { AboutTestItemsContainer, AboutTestItemsParams } from "src";
+import { AboutTestItemsContainer, AboutTestItemsParams } from "src/index";
 import { RouterDecorator } from "../RouterDecorator";
 import {
   mockAboutTestClient,

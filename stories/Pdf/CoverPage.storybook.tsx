@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { PdfDecorator } from "../PdfDecorator";
-import { CoverPage } from "src";
+import { CoverPage } from "src/index";
 
 storiesOf("PDF CoverPage", module)
   .addDecorator(PdfDecorator)

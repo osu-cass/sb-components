@@ -8,7 +8,7 @@ import {
   ItemIsaapModel,
   AccResourceGroupModel,
   AboutItemModel
-} from "src";
+} from "src/index";
 import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 import { allAccessibilityResourceGroups } from "mocks/Accessibility/AccessibilityOptionsMock";

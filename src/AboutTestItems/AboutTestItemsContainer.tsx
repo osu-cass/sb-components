@@ -2,7 +2,7 @@ import "../Assets/Styles/about.less";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as $ from "jquery";
-import { AboutItem, AboutItemModel, ItemViewerFrame } from "src";
+import { AboutItem, AboutItemModel, ItemViewerFrame } from "../index";
 import { Resource, get, getResourceContent } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 import {

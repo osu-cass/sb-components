@@ -8,7 +8,7 @@ import {
   mockAccResourceGroups
 } from "mocks/Accessibility/mocks";
 import { CenterDecorator } from "../CenterDecorator";
-import { Dropdown } from "src";
+import { Dropdown } from "src/index";
 
 storiesOf("Accessibility DropDown", module)
   .addDecorator(CenterDecorator)

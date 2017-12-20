@@ -1,6 +1,6 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import { BrailleLink, BrailleLinkState } from "src";
+import { BrailleLink, BrailleLinkState } from "../Braille";
 
 describe("Braille", () => {
   const wrapper = shallow(

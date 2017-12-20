@@ -3,7 +3,7 @@ import {
   SearchAPIParamsModel,
   GradeLevels,
   GradeLevel
-} from "src";
+} from "src/index";
 
 /**
  * Updates a category with the filter option that was selected

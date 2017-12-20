@@ -1,4 +1,4 @@
-import { ItemTableProps, ItemTableContainerProps } from "src";
+import { ItemTableProps, ItemTableContainerProps } from "src/index";
 import { AboutItemMockNoRubric } from "mocks/AboutItem/mocks";
 
 export const itemTableProps: ItemTableContainerProps = {
