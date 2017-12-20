@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../Assets/Styles/error-page-container.less";
 
 export enum pageType {
   Error = 500,
