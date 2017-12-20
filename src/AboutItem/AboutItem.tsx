@@ -1,9 +1,7 @@
 import "src/Assets/Styles/modal.less";
 import * as React from "react";
-import * as Collapsible from "../Rubric/Collapsible";
-import { AboutItemModel } from "./AboutItemModels";
-import { Rubric } from "../Rubric/Rubric";
-import { AboutThisItemDetail } from "./AboutItemDetail";
+import * as Collapsible from "src/Rubric/Collapsible";
+import { AboutItemModel, Rubric, AboutThisItemDetail } from "src";
 import * as ReactModal from "react-modal";
 
 export interface AboutItemProps extends AboutItemModel {

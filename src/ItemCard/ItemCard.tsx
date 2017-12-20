@@ -1,4 +1,4 @@
-import "../Assets/Styles/item-card.less";
+import "src/Assets/Styles/item-card.less";
 import * as React from "react";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
 import * as ItemCardModels from "./ItemCardModels";

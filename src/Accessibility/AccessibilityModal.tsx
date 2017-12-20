@@ -8,7 +8,7 @@ import {
   ResourceSelectionsModel,
   getResourceTypes
 } from "./AccessibilityModels";
-import { Dropdown, DropdownProps } from "../DropDown/DropDown";
+import { Dropdown, DropdownProps } from "src";
 import * as ReactModal from "react-modal";
 
 export interface ItemAccessibilityModalProps {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Assets/Styles/basic-filter.less";
+import "src/Assets/Styles/basic-filter.less";
 import { BasicFilterCategoryModel, FilterOptionModel } from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
 

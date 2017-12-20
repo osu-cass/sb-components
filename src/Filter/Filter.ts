@@ -1,23 +1,24 @@
 import {
+  SearchBaseModel,
+  SearchFilterTypes,
+  SearchFilterStringTypes
+} from "src/ItemSearch/ItemSearchModels";
+import {
+  ItemCardModel,
   ClaimModel,
   ItemsSearchModel,
   SearchAPIParamsModel,
-  SearchBaseModel,
-  SearchFilterTypes,
   SubjectModel,
   TargetModel,
   ItemsSearchFilterModel,
-  SearchFilterStringTypes
-} from "../ItemSearch/ItemSearchModels";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
-import {
+  GradeLevels,
+  GradeLevel,
   AdvancedFilterCategoryModel,
   FilterCategoryModel,
   FilterOptionModel,
-  FilterType
-} from "../Filter/FilterModels";
-import { ItemSearch } from "../ItemSearch/ItemSearch";
+  FilterType,
+  ItemSearch
+} from "src";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 
 // tslint:disable-next-line:no-stateless-class

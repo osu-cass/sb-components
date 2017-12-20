@@ -1,12 +1,11 @@
 import * as React from "react";
-import "../Assets/Styles/filter.less";
-import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
+import "src/Assets/Styles/filter.less";
+import { AdvancedFilterContainer, BasicFilterContainer } from "src";
 import {
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,
   FilterOptionModel
 } from "./FilterModels";
-import { BasicFilterContainer } from "./BasicFilterContainer";
 
 export interface FilterContainerProps {
   basicFilterCategories: BasicFilterCategoryModel[];

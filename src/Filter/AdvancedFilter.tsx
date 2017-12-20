@@ -1,4 +1,4 @@
-import "../Assets/Styles/advanced-filter.less";
+import "src/Assets/Styles/advanced-filter.less";
 import * as React from "react";
 import {
   AdvancedFilterCategoryModel,
