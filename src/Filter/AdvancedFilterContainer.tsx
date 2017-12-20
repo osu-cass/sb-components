@@ -117,6 +117,7 @@ export class AdvancedFilterContainer extends React.Component<
         });
       }
     });
+
     return <div className="filter-status">{tags}</div>;
   }
 
@@ -147,7 +148,7 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   /**
-   * Renders teh reset button
+   * Renders the reset button
    */
   renderResetButton(): JSX.Element | undefined {
     let content: JSX.Element | undefined;
@@ -155,7 +156,7 @@ export class AdvancedFilterContainer extends React.Component<
       content = (
         <button
           onClick={() => this.resetFilters()}
-          className="btn btn-white filter-reset-btn "
+          className="btn btn-default filter-reset-btn "
         >
           Reset Filters
         </button>
@@ -175,8 +176,8 @@ export class AdvancedFilterContainer extends React.Component<
 
     return (
       <button
-        onClick={() => this.handleClick()}
-        className="btn btn-white filter-expand-btn"
+        onClick={this.handleClick}
+        className="btn btn-default filter-expand-btn"
       >
         {buttonText}
         <span className={className} />
@@ -234,6 +235,7 @@ export class AdvancedFilterContainer extends React.Component<
         </div>
       );
     }
+
     return undefined;
   }
 
