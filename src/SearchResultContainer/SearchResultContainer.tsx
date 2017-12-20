@@ -54,7 +54,6 @@ export class SearchResultContainer extends React.Component<
 > {
   constructor(props: SearchResultContainerProps) {
     super(props);
-
     this.state = {
       renderType: props.defaultRenderType
     };
@@ -63,7 +62,7 @@ export class SearchResultContainer extends React.Component<
   /**
    * Renders all results to ItemCard view.
    */
-  renderItemCards() {
+  renderItemCards = () => {
     let tags: JSX.Element[] | undefined;
 
     if (this.props.itemCards) {
@@ -76,13 +75,13 @@ export class SearchResultContainer extends React.Component<
     }
 
     return tags;
-  }
+  };
 
   /**
    * Depending on what renderType is selected, ItemCards or a table
    * will be rendered.
    */
-  renderBody() {
+  renderBody = () => {
     let tag: JSX.Element | JSX.Element[] | undefined;
 
     if (this.state.renderType === SearchResultType.Table) {
@@ -92,10 +91,10 @@ export class SearchResultContainer extends React.Component<
     }
 
     return <div className="search-result-body">{tag}</div>;
-  }
+  };
 
   /**
-   * Handles the chage from one view to another.
+   * Handles the change from one view to another.
    * @param {React.MouseEvent<HTMLButtonElement>} e
    */
   renderTypeHandler(e: React.MouseEvent<HTMLButtonElement>) {
@@ -104,39 +103,37 @@ export class SearchResultContainer extends React.Component<
     this.setState({ renderType: btnValue });
   }
 
+  renderButton = (type: SearchResultType) => {
+    return (
+      <button
+        className={
+          "btn " +
+          (this.state.renderType === type ? "btn-primary" : "btn-white")
+        }
+        value={type}
+        onClick={this.renderTypeHandler.bind(this)}
+      >
+        <i
+          aria-hidden="true"
+          className={`fa fa-${
+            type === SearchResultType.Table ? "table" : "book"
+          }`}
+        />
+      </button>
+    );
+  };
+
   /**
    * Renders togglable buttons for view state.
    */
-  renderHeader() {
+  renderHeader = () => {
     return (
       <div className="search-result-header">
-        <button
-          className={
-            "btn " +
-            (this.state.renderType === SearchResultType.Table
-              ? "btn-primary"
-              : "btn-white")
-          }
-          value={SearchResultType.Table}
-          onClick={this.renderTypeHandler.bind(this)}
-        >
-          <i aria-hidden="true" className="fa fa-table" />
-        </button>
-        <button
-          className={
-            "btn " +
-            (this.state.renderType === SearchResultType.ItemCard
-              ? "btn-primary"
-              : "btn-white")
-          }
-          value={SearchResultType.ItemCard}
-          onClick={this.renderTypeHandler.bind(this)}
-        >
-          <i aria-hidden="true" className="fa fa-book" />
-        </button>
+        {this.renderButton(SearchResultType.Table)}
+        {this.renderButton(SearchResultType.ItemCard)}
       </div>
     );
-  }
+  };
 
   render() {
     return (

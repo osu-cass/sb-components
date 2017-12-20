@@ -9,8 +9,6 @@ import {
 } from "./mocks";
 import { SearchResultContainer } from "../SearchResultContainer";
 
-let wrapper = shallow(<SearchResultContainer {...SearchResultTableProps} />);
-
 describe("SearchResultContainer", () => {
   it("onload matches snapshot table", () => {
     let wrapper = shallow(
