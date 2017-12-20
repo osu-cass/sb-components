@@ -6,6 +6,7 @@ export interface SelectedFilterIndicatorProps {
   option: FilterOptionModel;
   onClick: () => void;
 }
+
 export const SelectedFilterIndicator: React.SFC<
   SelectedFilterIndicatorProps
 > = props => {
@@ -13,7 +14,7 @@ export const SelectedFilterIndicator: React.SFC<
     <button
       role="button"
       onClick={props.onClick}
-      className="btn tag tag-sm aqua reverse"
+      className="btn btn-sm aqua reverse"
     >
       <strong>{props.option.label}&nbsp;</strong>
       {props.category.label}&nbsp;

@@ -4,6 +4,8 @@ import {
   FilterOptionModel,
   OptionTypeModel
 } from "./FilterModels";
+import { SelectOptionProps } from "../Select/SelectOption";
+import { Select } from "../Select/Select";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
@@ -19,70 +21,129 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     super(props);
   }
 
-  renderTags() {
-    const { filterOptions, type } = this.props;
-    const tags: JSX.Element[] = [];
-    if (filterOptions) {
-      filterOptions.forEach((t, i) => {
-        if (type === OptionTypeModel.DropDown) {
-          tags.push(
-            <option key={t.key} value={t.key}>
-              {t.label}
-            </option>
-          );
-        } else if (type === OptionTypeModel.radioBtn) {
-          tags.push(
-            <label key={t.key}>
-              <input
-                checked={t.isSelected}
-                type="radio"
-                key={t.key}
-                value={t.key}
-                onChange={() => this.props.selectedHandler(t)}
-              />
-              {t.label}
-            </label>
-          );
-        }
-      });
-    }
-    return tags;
-  }
-
   findFilterOption(key: string) {
     return this.props.filterOptions.find(fil => fil.key === key);
   }
 
-  renderFilterBody() {
-    const { selectedHandler, type, filterOptions } = this.props;
-    let tag: JSX.Element;
-    const selected = filterOptions.filter(fil => fil.isSelected === true);
-    if (type === OptionTypeModel.DropDown) {
-      tag = (
-        <select
-          onChange={e => selectedHandler(this.findFilterOption(e.target.value))}
-          value={selected.length > 0 ? `${selected[0].key}` : `default`}
-        >
-          <option value="default">Select Filter...</option>
-          {this.renderTags()}
-        </select>
-      );
-    } else {
-      tag = <form>{this.renderTags()}</form>;
-    }
+  /**
+   * Renders JSX element of radio input category
+   * @returns {JSX.Element} radio input category with selections
+   */
+  renderRadio(): JSX.Element {
+    const { selectedHandler, label, filterOptions } = this.props;
 
-    return <div className="basic-filter-body">{tag}</div>;
+    const radioOptions = filterOptions.map(fo => {
+      return (
+        <div className="radio" key={fo.key}>
+          <label>
+            <input
+              checked={fo.isSelected}
+              aria-checked={fo.isSelected}
+              type="radio"
+              name={label}
+              value={fo.key}
+              onChange={() => this.props.selectedHandler(fo)}
+            />
+            {fo.label}
+          </label>
+        </div>
+      );
+    });
+
+    return (
+      <label>
+        {label}
+        {radioOptions}
+      </label>
+    );
   }
 
+  /**
+   * Renders Select list for the category with default option
+   * @returns {JSX.Element} Select React component
+   */
+  renderDropDown(): JSX.Element {
+    const {
+      selectedHandler,
+      type,
+      filterOptions,
+      disabled,
+      label,
+      code
+    } = this.props;
+    const defaultValue = "default";
+
+    const selected = filterOptions.find(fil => fil.isSelected === true);
+    const selectedValue = selected ? selected.key : defaultValue;
+
+    let selectOptions: SelectOptionProps[] = [];
+    selectOptions.push({
+      disabled,
+      selected: selectedValue === defaultValue,
+      label: "Please Select",
+      value: defaultValue
+    });
+
+    const filterSelectOptions = filterOptions.map(fo => {
+      return {
+        disabled,
+        selected: selectedValue === fo.key,
+        label: fo.label,
+        value: fo.key
+      };
+    });
+
+    selectOptions = selectOptions.concat(filterSelectOptions);
+
+    return (
+      <Select
+        disabled={disabled}
+        label={label}
+        selected={selectedValue}
+        options={selectOptions}
+        onChange={val => selectedHandler(this.findFilterOption(val))}
+        key={code}
+        className={"input-sm"}
+      />
+    );
+  }
+
+  /**
+   * Renders the render Category based on the category type
+   * @returns {(JSX.Element | undefined)} JSX element of category
+   */
+  renderCategory(): JSX.Element | undefined {
+    const { type } = this.props;
+    let content: JSX.Element | undefined;
+
+    switch (type) {
+      case OptionTypeModel.DropDown:
+        content = this.renderDropDown();
+        break;
+      case OptionTypeModel.radioBtn:
+        content = this.renderRadio();
+        break;
+      default:
+        console.error("Invalid option", type);
+        break;
+    }
+
+    return content;
+  }
+
+  /**
+   * Renders an individual category
+   * @returns default render method JSX Element
+   */
   render() {
     const { label } = this.props;
+
     return (
       <div
-        id={(label + "-basic-filter").toLocaleLowerCase()}
+        id={`${label} -basic-filter`.toLocaleLowerCase()}
         className="basic-filter-selection"
       >
-        <label>{label}</label>
-        {this.renderFilterBody()}
+        {this.renderCategory()}
       </div>
     );
   }
