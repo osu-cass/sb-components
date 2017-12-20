@@ -8,8 +8,8 @@
 ## Resources
 * A11y [here](http://a11yproject.com/checklist.html)
 * React Accessibility [here](https://reactjs.org/docs/accessibility.html)
-* MSDN button and links [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role)
-* MSDN Accessibility [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* MDN button and links [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role)
+* MDN Accessibility [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 
 ## TSLint
 - Linting is enabled for this project to determine if elements are compliant
