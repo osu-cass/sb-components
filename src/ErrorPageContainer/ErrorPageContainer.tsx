@@ -2,14 +2,12 @@ import * as React from "react";
 import "../Assets/Styles/error-page-container.less";
 
 export enum pageType {
-  Error = 500,
-  NotFound = 404,
-  Other = 0
+  ServerError = 500,
+  NotFound = 404
 }
 
 export interface ErrorPageContainerProps {
   pageRender?: pageType;
-  errorTitle?: string;
   errorMsg?: string;
   description?: string;
 }
@@ -28,13 +26,18 @@ export class ErrorPageContainer extends React.Component<
   }
 
   renderHeader() {
-    const errPageTitle = this.props.errorTitle
-      ? `${this.props.pageRender}: ${this.props.errorTitle}`
-      : defaultErrorTitle;
-
     const errMessage = this.props.errorMsg
       ? this.props.errorMsg
       : defaultErrorMsg;
+    let errPageTitle = "";
+
+    if (this.props.pageRender === pageType.NotFound) {
+      errPageTitle = `Not Found: ${this.props.pageRender}`;
+    } else if (this.props.pageRender === pageType.ServerError) {
+      errPageTitle = `Server Error: ${this.props.pageRender}`;
+    } else {
+      errPageTitle = defaultErrorTitle;
+    }
 
     return (
       <div className="error-page-header">
