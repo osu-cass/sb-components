@@ -106,6 +106,9 @@ export class SearchResultContainer extends React.Component<
   renderButton = (type: SearchResultType) => {
     return (
       <button
+        aria-label={
+          type === SearchResultType.Table ? "table view" : "item card view"
+        }
         className={
           "btn " +
           (this.state.renderType === type ? "btn-primary" : "btn-white")
