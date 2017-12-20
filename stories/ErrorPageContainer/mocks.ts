@@ -5,7 +5,7 @@ import {
 
 export const serverErrMock: ErrorPageContainerProps = {
   pageRender: pageType.ServerError,
-  errorMsg: "you did a bad thing that cause errors",
+  errorMsg: "you did a bad thing that caused errors",
   description: "stop doing that thing that caused errors"
 };
 
