@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Collapsible } from "../../src/Rubric/Collapsible";
+import { Collapsible } from "src/Rubric/Collapsible";
 
 const style = {
   height: "300px",

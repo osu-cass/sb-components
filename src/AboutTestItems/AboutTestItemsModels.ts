@@ -1,4 +1,4 @@
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
+import { AboutItemModel } from "../index";
 import { get } from "../ApiModel";
 
 export interface InteractionTypeModel {

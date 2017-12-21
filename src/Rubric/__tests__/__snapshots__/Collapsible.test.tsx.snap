@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapsible collapses 1`] = `
+<div
+  aria-expanded={false}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ collapsible
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Collapsible expands 1`] = `
+<div
+  aria-expanded={false}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ collapsible
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Collapsible expands 2`] = `
+<div
+  aria-expanded={true}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▼ collapsible
+  </a>
+  <div
+    aria-hidden={false}
+    className="collapsible-body"
+    style={Object {}}
+  />
+</div>
+`;

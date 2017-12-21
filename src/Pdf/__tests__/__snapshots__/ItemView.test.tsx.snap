@@ -9,3 +9,21 @@ exports[`EvidenceStatement matches snapshot 1`] = `
   }
 />
 `;
+
+exports[`EvidenceStatement matches snapshot with html 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": <div>
+        hello world
+      </div>,
+    }
+  }
+/>
+`;
+
+exports[`EvidenceStatement matches snapshot with picture 1`] = `
+<img
+  src="images/screenshots/filename"
+/>
+`;

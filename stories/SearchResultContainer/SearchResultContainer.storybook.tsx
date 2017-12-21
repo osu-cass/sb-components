@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { SearchResultContainer } from "../../src/SearchResultContainer/SearchResultContainer";
-import { SearchResultTableProps } from "./mocks";
+import { SearchResultContainer } from "src/index";
+import { SearchResultTableProps } from "mocks/SearchResultContainer/mocks";
 import { CenterDecorator } from "../CenterDecorator";
 
 storiesOf("Search Result Container", module)

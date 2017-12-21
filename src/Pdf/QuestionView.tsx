@@ -5,7 +5,6 @@ import { ItemCardTable } from "../ItemCard/ItemCardTable";
 import { RubricTable } from "../Rubric/RubricTable";
 import { QuestionModel } from "./PdfModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import "../Assets/Styles/pdf.less";
 
 export interface QuestionViewProps {
   question: QuestionModel;

@@ -4,7 +4,6 @@ import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
 import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
 import { ItemCard } from "../ItemCard/ItemCard";
-import "../Assets/Styles/search-result-container.less";
 
 /**
  * SearchResultType enum

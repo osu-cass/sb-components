@@ -10,7 +10,7 @@ import {
   advancedFilterOptionsArray,
   basicFilterCategoryDropDown,
   basicFilterCategoryRadioBtn
-} from "./mocks";
+} from "mocks/Filter/mocks";
 import { CenterDecorator } from "../CenterDecorator";
 import { GradeLevel } from "../../src/GradeLevels/GradeLevels";
 

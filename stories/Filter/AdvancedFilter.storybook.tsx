@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { AdvancedFilter } from "../../src";
+import { AdvancedFilter } from "src/index";
 import {
   advancedFilterSubject,
   advancedFilterSubjectMulti,
@@ -9,7 +9,7 @@ import {
   advancedFilterSubjectMultiAll,
   advancedFilterSubjectMultiAllDisabled,
   subjectsFilterOptionsSelected
-} from "./mocks";
+} from "mocks/Filter/mocks";
 import { CenterDecorator } from "../CenterDecorator";
 
 const action = () => {};

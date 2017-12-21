@@ -108,6 +108,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "enhanced-resolve": "^4.0.0-beta.2",
     "font-awesome": "~4.7.0",
     "jquery": "3.2.1",
     "typeface-pt-sans-caption": "0.0.44",
@@ -159,7 +160,10 @@
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
-      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
+      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "^src/(.*)": "<rootDir>/src/$1",
+      "^mocks/(.*)": "<rootDir>/mocks/$1",
+      "^stories/(.*)": "<rootDir>/stories/$1"
     }
   }
 }

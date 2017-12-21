@@ -2,7 +2,7 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { Layout } from "../../src";
 import { RouterDecorator } from "../RouterDecorator";
-import { SiteLinks } from "./mocks";
+import { SiteLinks } from "mocks/Layout/mocks";
 
 const style: React.CSSProperties = {
   width: "100%",
