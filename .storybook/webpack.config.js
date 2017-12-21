@@ -13,7 +13,7 @@ module.exports = (baseConfig, env) => {
 
   config.module.rules.push({
     test: /\.less$/,
-    include: [path.resolve(__dirname, "..", "src", "Assets", "Style")],
+    include: [path.resolve(__dirname, "..", "src", "Assets", "Styles")],
     use: ["style-loader", "css-loader", "less-loader"]
   });
 
