@@ -18,14 +18,11 @@ export enum pageType {
  * @member {string?} errorMsg
  * @member {string?} description
  */
-export interface ErrorPageContainerParams {
+export interface ErrorPageContainerProps {
   errorCode?: pageType;
   errorMsg?: string;
   description?: string;
 }
-
-export interface ErrorPageContainerProps
-  extends RouteComponentProps<ErrorPageContainerParams> {}
 
 const defaultErrorTitle = "Sorry!";
 const defaultErrorMsg = "Something went wrong";
@@ -49,15 +46,15 @@ export class ErrorPageContainer extends React.Component<
    * renders header, status code and error type.
    */
   renderHeader() {
-    const errMessage = this.props.match.params.errorMsg
-      ? this.props.match.params.errorMsg
+    const errMessage = this.props.errorMsg
+      ? this.props.errorMsg
       : defaultErrorMsg;
     let errPageTitle = "";
 
-    if (this.props.match.params.errorCode === pageType.NotFound) {
-      errPageTitle = `Not Found: ${this.props.match.params.errorCode}`;
-    } else if (this.props.match.params.errorCode === pageType.ServerError) {
-      errPageTitle = `Server Error: ${this.props.match.params.errorCode}`;
+    if (this.props.errorCode === pageType.NotFound) {
+      errPageTitle = `Not Found: ${this.props.errorCode}`;
+    } else if (this.props.errorCode === pageType.ServerError) {
+      errPageTitle = `Server Error: ${this.props.errorCode}`;
     } else {
       errPageTitle = defaultErrorTitle;
     }
@@ -77,8 +74,8 @@ export class ErrorPageContainer extends React.Component<
    * renders body, error discription or user instructions.
    */
   renderBody() {
-    const errDescription = this.props.match.params.description
-      ? this.props.match.params.description
+    const errDescription = this.props.description
+      ? this.props.description
       : defaultDescription;
 
     return (
