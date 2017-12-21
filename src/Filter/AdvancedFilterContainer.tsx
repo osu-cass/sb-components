@@ -1,5 +1,4 @@
 import * as React from "react";
-import "src/Assets/Styles/advanced-filter.less";
 import { AdvancedFilter } from "./AdvancedFilter";
 import { SelectedFilterIndicator } from "./SelectedFilterIndicator";
 import {
@@ -118,6 +117,7 @@ export class AdvancedFilterContainer extends React.Component<
         });
       }
     });
+
     return <div className="filter-status">{tags}</div>;
   }
 
@@ -148,7 +148,7 @@ export class AdvancedFilterContainer extends React.Component<
   }
 
   /**
-   * Renders teh reset button
+   * Renders the reset button
    */
   renderResetButton(): JSX.Element | undefined {
     let content: JSX.Element | undefined;
@@ -156,7 +156,7 @@ export class AdvancedFilterContainer extends React.Component<
       content = (
         <button
           onClick={() => this.resetFilters()}
-          className="btn btn-white filter-reset-btn "
+          className="btn btn-default filter-reset-btn "
         >
           Reset Filters
         </button>
@@ -176,8 +176,8 @@ export class AdvancedFilterContainer extends React.Component<
 
     return (
       <button
-        onClick={() => this.handleClick()}
-        className="btn btn-white filter-expand-btn"
+        onClick={this.handleClick}
+        className="btn btn-default filter-expand-btn"
       >
         {buttonText}
         <span className={className} />
@@ -227,8 +227,8 @@ export class AdvancedFilterContainer extends React.Component<
   /**
    * Render the expanded filter container
    */
-  renderExpanded(): JSX.Element | null {
-    let content = null;
+  renderExpanded(): JSX.Element | undefined {
+    let content: JSX.Element | undefined;
     if (this.state.expanded) {
       content = (
         <div className="advanced-filter-container-expanded">
@@ -236,11 +236,13 @@ export class AdvancedFilterContainer extends React.Component<
         </div>
       );
     }
+
     return content;
   }
 
   render() {
     const id = this.props.filterId ? this.props.filterId : "";
+
     return (
       <div id={id} className="advanced-filter-container">
         {this.renderCollapsedFilterContainer()}

@@ -1,25 +1,26 @@
 /// <reference types="google.analytics" />
-import "src/Assets/Styles/item.less";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import * as $ from "jquery";
 import * as Accessibility from "../Accessibility/AccessibilityModels";
 import * as AccessibilityModal from "../Accessibility/AccessibilityModal";
 import * as Dropdown from "../DropDown/DropDown";
-import { MoreLikeThisModal } from "../Modals/MoreLikeThisModal";
-import { AboutItem } from "../AboutItem/AboutItem";
-import { AboutPTModal } from "../PerformanceType/AboutPT";
-import { AboutPTPopupModal } from "../PerformanceType/AboutPTPopup";
 import * as Braille from "../Accessibility/Braille";
-import { ShareModal } from "../Modals/ShareModal";
 import * as ItemPageModels from "./ItemPageModels";
-import { ItemViewerFrame } from "../ItemViewer/ItemViewerFrame";
-import * as $ from "jquery";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
+import {
+  MoreLikeThisModal,
+  AboutItem,
+  AboutPTModal,
+  AboutPTPopupModal,
+  ShareModal,
+  ItemViewerFrame,
+  ItemAccessibilityModal,
+  AboutItemModel
+} from "../index";
 import {
   AccResourceGroupModel,
   ResourceSelectionsModel
 } from "../Accessibility/AccessibilityModels";
-import { ItemAccessibilityModal } from "../Accessibility/AccessibilityModal";
 
 export interface ItemPageProps extends ItemPageModels.ItemPageModel {
   onSave: (selections: ResourceSelectionsModel) => void;

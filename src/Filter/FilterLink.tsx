@@ -1,4 +1,3 @@
-import "src/Assets/Styles/filter-link.less";
 import * as React from "react";
 
 /**

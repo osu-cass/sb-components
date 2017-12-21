@@ -35,6 +35,11 @@ export {
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
+// Button
+//
+export { BtnGroupOptionProps, BtnGroupOption } from "./Button/BtnGroupOption";
+
+//
 // DropDown Components and Models
 //
 export { Dropdown, DropdownProps } from "./DropDown/DropDown";
@@ -212,6 +217,12 @@ export {
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
+
+//
+// Select
+//
+export { Select, SelectProps } from "./Select/Select";
+export { SelectOption, SelectOptionProps } from "./Select/SelectOption";
 
 //
 // ApiModel

@@ -4,7 +4,6 @@ import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
 import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
 import { ItemCard } from "../ItemCard/ItemCard";
-import "../Assets/Styles/search-result-container.less";
 
 /**
  * SearchResultType enum
@@ -106,6 +105,9 @@ export class SearchResultContainer extends React.Component<
   renderButton = (type: SearchResultType) => {
     return (
       <button
+        aria-label={
+          type === SearchResultType.Table ? "table view" : "item card view"
+        }
         className={
           "btn " +
           (this.state.renderType === type ? "btn-primary" : "btn-white")

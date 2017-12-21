@@ -7,9 +7,8 @@ import {
 
 /**
  * Updates a category with the filter option that was selected
- * @param {(filterCategories: AdvancedFilterCategoryModel[]) => void} onUpdateFilter
  * @param {AdvancedFilterCategoryModel[]} categories
- * @param {AdvancedFilterCategoryModel} category
+ * @param {AdvancedFilterCategoryModel} selectedCat
  * @param {FilterOptionModel} [option]
  */
 export const onFilterSelect = (

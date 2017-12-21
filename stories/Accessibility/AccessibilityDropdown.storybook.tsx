@@ -1,4 +1,3 @@
-import "../../src/Assets/Styles/accessibility.less";
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import {

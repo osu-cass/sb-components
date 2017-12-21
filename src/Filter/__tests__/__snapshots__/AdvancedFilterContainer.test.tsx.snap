@@ -25,13 +25,13 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-white filter-reset-btn "
+          className="btn btn-default filter-reset-btn "
           onClick={[Function]}
         >
           Reset Filters
         </button>
         <button
-          className="btn btn-white filter-expand-btn"
+          className="btn btn-default filter-expand-btn"
           onClick={[Function]}
         >
           Expand 
@@ -146,13 +146,13 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-white filter-reset-btn "
+          className="btn btn-default filter-reset-btn "
           onClick={[Function]}
         >
           Reset Filters
         </button>
         <button
-          className="btn btn-white filter-expand-btn"
+          className="btn btn-default filter-expand-btn"
           onClick={[Function]}
         >
           Expand 
@@ -274,7 +274,7 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-white filter-expand-btn"
+          className="btn btn-default filter-expand-btn"
           onClick={[Function]}
         >
           Collapse 
@@ -495,7 +495,7 @@ exports[`AdvancedFilterContainer expands and collapses on click 2`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-white filter-expand-btn"
+          className="btn btn-default filter-expand-btn"
           onClick={[Function]}
         >
           Expand 

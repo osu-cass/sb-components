@@ -1,8 +1,7 @@
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../Assets/Styles/nav.less";
 import { SbNavLink, SbNavlinkProps } from "./SbNavLink";
-const sbLogo = require("../Assets/Images/SmarterBalanced_logo.png");
+const sbLogo = require("@sbac/sbac-ui-kit/src/images/SmarterBalanced-Logo.png");
 
 export interface NavMenuProps {
   links?: SbNavlinkProps[];

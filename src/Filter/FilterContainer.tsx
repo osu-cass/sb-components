@@ -1,6 +1,5 @@
 import * as React from "react";
-import "src/Assets/Styles/filter.less";
-import { AdvancedFilterContainer, BasicFilterContainer } from "src/index";
+import { AdvancedFilterContainer, BasicFilterContainer } from "../index";
 import {
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,

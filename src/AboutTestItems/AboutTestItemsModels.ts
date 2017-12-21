@@ -1,5 +1,5 @@
-import { AboutItemModel } from "src/index";
-import { get } from "src/ApiModel";
+import { AboutItemModel } from "../index";
+import { get } from "../ApiModel";
 
 export interface InteractionTypeModel {
   code: string;
