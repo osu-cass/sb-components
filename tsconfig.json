@@ -15,13 +15,11 @@
     "baseUrl": ".",
     "rootDirs": [
       "./src",
-      "./mocks",
-      "./stories"
+      "./mocks"
     ],
     "paths": {
-      "src/*": ["src/*"],
-      "mocks/*": ["mocks/*"],
-      "stories/*": ["stories/*"]
+      "src": ["src/*"],
+      "mocks": ["mocks/*"]
     },
     "lib": [
       "es5",
@@ -46,7 +44,6 @@
   "exclude": [
     "node_modules",
     "wwwroot",
-    "stories",
     "**/__tests__/*",
     "**/setupTest.ts"
   ],

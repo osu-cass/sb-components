@@ -11,7 +11,7 @@ import {
 } from "src/index";
 import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-import { allAccessibilityResourceGroups } from "mocks/Accessibility/AccessibilityOptionsMock";
+import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
 
 export const aboutThisClient = ( params: ItemModel ) =>
   new Promise<AboutItemModel>( () => jest.fn() );
