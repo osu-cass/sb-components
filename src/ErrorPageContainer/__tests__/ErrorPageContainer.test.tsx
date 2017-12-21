@@ -2,7 +2,7 @@ import * as React from "react";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow } from "enzyme";
 import { ErrorPageContainer } from "../ErrorPageContainer";
-import { serverErrMock, notFoundErrMock } from "./mocks";
+import { serverErrMock, notFoundErrMock } from "mock/ErrorPageContainer/mocks";
 
 describe("ErrorPageContainer", () => {
   it("default render empty props", () => {
