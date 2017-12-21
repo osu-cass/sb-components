@@ -44,6 +44,7 @@
   "exclude": [
     "node_modules",
     "wwwroot",
+    "stories",
     "**/__tests__/*",
     "**/setupTest.ts"
   ],
