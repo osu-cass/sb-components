@@ -3,11 +3,11 @@ import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
 import {
   accessibilityModalProp,
-  mockAccResourceGroups
+  mockAccResourceGroups,
+  allAccessibilityResourceGroups
 } from "mocks/Accessibility/mocks";
 import { CenterDecorator } from "../CenterDecorator";
 import { ItemAccessibilityModal } from "src/index";
-import { allAccessibilityResourceGroups } from "mocks/Accessibility/AccessibilityOptionsMock";
 
 storiesOf("Accessibility Modal", module)
   .addDecorator(CenterDecorator)
