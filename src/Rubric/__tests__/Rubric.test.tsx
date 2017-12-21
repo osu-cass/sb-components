@@ -9,7 +9,7 @@ import {
 } from "../RubricModels";
 import { RubricEntry } from "../RubricEntry";
 import { SampleResponse } from "../SampleResponse";
-import { Rubric } from "src/index";
+import { Rubric } from "../Rubric";
 
 const entry: RubricEntryModel = {
   scorepoint: "123",
