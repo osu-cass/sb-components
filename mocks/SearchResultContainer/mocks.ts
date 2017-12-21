@@ -1,9 +1,9 @@
 import {
   SearchResultContainerProps,
   SearchResultType
-} from "../../src/SearchResultContainer/SearchResultContainer";
+} from "src/SearchResultContainer/SearchResultContainer";
 
-export const SearchResultTableProps: SearchResultContainerProps = {
+export const SearchResultCardProps: SearchResultContainerProps = {
   onRowSelection: () => {},
   itemCards: [
     {
@@ -82,5 +82,18 @@ export const SearchResultTableProps: SearchResultContainerProps = {
   item: {
     kind: "none"
   },
+  defaultRenderType: SearchResultType.ItemCard
+};
+
+export const SearchResultTableProps: SearchResultContainerProps = {
+  ...SearchResultCardProps,
   defaultRenderType: SearchResultType.Table
+};
+
+export const SearchResultEmptyProps: SearchResultContainerProps = {
+  onRowSelection: () => {},
+  item: {
+    kind: "none"
+  },
+  defaultRenderType: SearchResultType.ItemCard
 };

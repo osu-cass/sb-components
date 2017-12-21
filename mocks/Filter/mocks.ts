@@ -9,10 +9,10 @@ import {
   InteractionTypeModel,
   SubjectModel,
   ClaimModel,
-  TargetModel
-} from "../../src";
+  TargetModel,
+  FilterType
+} from "src/index";
 import { action } from "@storybook/addon-actions";
-import { FilterType } from "../../src/Filter/FilterModels";
 
 // ADVANCED FILTER MOCKS
 export const gradeFilterOptions: FilterOptionModel[] = [

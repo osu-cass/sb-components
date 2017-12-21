@@ -12,6 +12,15 @@
     "jsx": "react",
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": false,
+    "baseUrl": ".",
+    "rootDirs": [
+      "./src",
+      "./mocks"
+    ],
+    "paths": {
+      "src": ["src/*"],
+      "mocks": ["mocks/*"]
+    },
     "lib": [
       "es5",
       "es6",
@@ -41,7 +50,9 @@
   ],
   "jest": {
     "moduleDirectories": [
-      "node_modules"
+      "node_modules",
+      "src",
+      "stories"
     ]
   }
 }

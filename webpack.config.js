@@ -17,6 +17,10 @@ module.exports = env => {
         index: "./src/index.ts"
       },
       resolve: {
+        alias : {
+          src: path.resolve(__dirname, "src/index"), 
+          mocks: path.resolve(__dirname, "mocks")
+      },
         extensions: [".js", ".jsx", ".ts", ".tsx"]
       },
       output: {

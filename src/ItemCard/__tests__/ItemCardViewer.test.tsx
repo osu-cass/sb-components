@@ -4,7 +4,7 @@ import { ItemCardViewer } from "../ItemCardViewer";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
 
-import { ItemCardModel, RubricModel, AboutItemModel } from "../../";
+import { ItemCardModel, RubricModel, AboutItemModel } from "src/index";
 
 describe("ItemCardViewer", () => {
   const itemCardViewModel: ItemCardModel = {
