@@ -9,7 +9,7 @@ import {
   RubricModel,
   AboutItemModel,
   Resource
-} from "../../index";
+} from "src/index";
 
 describe("ItemTable", () => {
   const itemCards: ItemCardModel[] = [

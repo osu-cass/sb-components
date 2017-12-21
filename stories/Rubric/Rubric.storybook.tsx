@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Rubric } from "../../src/Rubric/Rubric";
-import { RubricModel } from "../../src/Rubric/RubricModels";
+import { Rubric } from "src/index";
+import { RubricModel } from "src/Rubric/RubricModels";
 import { CenterDecorator } from "../CenterDecorator";
 
 const RubricMockProps: RubricModel = {

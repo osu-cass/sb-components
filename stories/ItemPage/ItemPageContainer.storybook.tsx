@@ -8,7 +8,7 @@ import {
   itemAccessibilityClient,
   itemPagePath,
   itemPageMatch
-} from "./mocks";
+} from "mocks/ItemPage/mocks";
 import { Route } from "react-router";
 
 storiesOf("Item Page Container", module)

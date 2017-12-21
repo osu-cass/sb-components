@@ -1,29 +1,27 @@
-import { ItemPageProps } from "../../src/ItemPage/ItemPage";
-import { ItemPageContainerProps } from "../../src/ItemPage/ItemPageContainer";
-import { AboutItemModel } from "../../src/AboutItem/AboutItemModels";
+import * as H from "history";
+import { match } from "react-router";
 import {
+  ItemPageProps,
+  ItemPageContainerProps,
   ItemModel,
   ItemPageModel,
-  ItemIsaapModel
-} from "../../src/ItemPage/ItemPageModels";
-import {
+  ItemIsaapModel,
   AccResourceGroupModel,
-  ResourceSelectionsModel
-} from "../../src/Accessibility/AccessibilityModels";
-import { AboutItemMockModel } from "../AboutItem/mocks";
-import * as H from "history";
-import { allAccessibilityResourceGroups } from "../Accessibility/AccessibilityOptionsMock";
-import { match } from "react-router";
+  AboutItemModel
+} from "src/index";
+import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
+import { AboutItemMockModel } from "mocks/AboutItem/mocks";
+import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
 
-export const aboutThisClient = (params: ItemModel) =>
-  new Promise<AboutItemModel>(() => jest.fn());
-export const itemPageClient = (params: ItemModel) =>
-  new Promise<ItemPageModel>(() => jest.fn());
+export const aboutThisClient = ( params: ItemModel ) =>
+  new Promise<AboutItemModel>( () => jest.fn() );
+export const itemPageClient = ( params: ItemModel ) =>
+  new Promise<ItemPageModel>( () => jest.fn() );
 
-export const itemAccessibilityClient = (params: ItemIsaapModel) =>
-  new Promise<AccResourceGroupModel[]>(() => {
+export const itemAccessibilityClient = ( params: ItemIsaapModel ) =>
+  new Promise<AccResourceGroupModel[]>( () => {
     return ItemPageMockProps.accResourceGroups;
-  });
+  } );
 
 export const itemPagePath = "/:bankKey/:itemKey";
 
@@ -34,11 +32,11 @@ export const itemPageMatch: match<ItemModel> = {
   url: "/"
 };
 
-export const onSave = ((selections: ResourceSelectionsModel) => {}) as ((
+export const onSave = ( ( selections: ResourceSelectionsModel ) => { } ) as ( (
   selections: ResourceSelectionsModel
-) => void);
+) => void );
 
-export const onReset = (() => {}) as (() => void);
+export const onReset = ( () => { } ) as ( () => void );
 
 export const ItemPageMockProps: ItemPageProps = {
   onSave,

@@ -1,9 +1,9 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { mockBasicFilterCategories } from "./mocks";
+import { mockBasicFilterCategories } from "mocks/Filter/mocks";
 import { BasFilContainerTestWrapper } from "../FilterTestWrappers";
-import { BasicFilterContainer, BasicFilterContainerProps } from "../../src";
+import { BasicFilterContainer, BasicFilterContainerProps } from "src/index";
 
 const props: BasicFilterContainerProps = {
   filterCategories: mockBasicFilterCategories,

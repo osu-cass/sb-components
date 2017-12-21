@@ -1,5 +1,4 @@
 import * as React from "react";
-import "../Assets/Styles/pdf.less";
 
 export interface EvidenceStatementProps {
   statement: string;

@@ -1,11 +1,11 @@
-import { ItemCardModel } from "../../ItemCard/ItemCardModels";
+import { ItemCardModel } from "src/ItemCard/ItemCardModels";
 import {
   SearchFilterStringTypes,
   TargetModel,
   SearchAPIParamsModel
-} from "../ItemSearchModels";
-import { FilterOptionModel, FilterType } from "../../Filter/FilterModels";
-import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
+} from "src/ItemSearch/ItemSearchModels";
+import { FilterOptionModel, FilterType } from "src/Filter/FilterModels";
+import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
 
 export const itemCards: ItemCardModel[] = [
   {

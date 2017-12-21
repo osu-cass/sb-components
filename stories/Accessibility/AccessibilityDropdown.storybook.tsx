@@ -1,4 +1,3 @@
-import "../../src/Assets/Styles/accessibility.less";
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import {
@@ -6,9 +5,9 @@ import {
   dropDisabledProp,
   dropDisabledAllSelectionsProp,
   mockAccResourceGroups
-} from "./mocks";
+} from "mocks/Accessibility/mocks";
 import { CenterDecorator } from "../CenterDecorator";
-import { Dropdown } from "../../src";
+import { Dropdown } from "src/index";
 
 storiesOf("Accessibility DropDown", module)
   .addDecorator(CenterDecorator)

@@ -1,8 +1,9 @@
 import {
   SubjectModel,
-  SearchAPIParamsModel
-} from "../ItemSearch/ItemSearchModels";
-import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
+  SearchAPIParamsModel,
+  GradeLevels,
+  GradeLevel
+} from "src/index";
 
 /**
  * Updates a category with the filter option that was selected
