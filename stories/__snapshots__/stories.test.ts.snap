@@ -302,8 +302,6 @@ exports[`Storyshots About PT Nothing 1`] = `
 </div>
 `;
 
-exports[`Storyshots About PT Popup Nothing 1`] = `<div />`;
-
 exports[`Storyshots About Test Items bad item type 1`] = `
 <div
   className="container about-items"
