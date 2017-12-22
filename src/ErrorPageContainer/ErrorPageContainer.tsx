@@ -24,11 +24,6 @@ export interface ErrorPageContainerProps {
   description?: string;
 }
 
-const defaultErrorTitle = "Sorry!";
-const defaultErrorMsg = "Something went wrong";
-const defaultDescription =
-  "The page you’re looking for can’t be found. Try searching or returning home!";
-
 /**
  * The ErrorPageContainer is a component for display any page errors.
  * @class ErrorPageContainer
@@ -38,6 +33,12 @@ export class ErrorPageContainer extends React.Component<
   ErrorPageContainerProps,
   {}
 > {
+  public static defaultProps: Partial<ErrorPageContainerProps> = {
+    errorMsg: "Something went wrong",
+    description:
+      "The page you’re looking for can’t be found. Try searching or returning home!"
+  };
+
   constructor(props: ErrorPageContainerProps) {
     super(props);
   }
@@ -46,17 +47,15 @@ export class ErrorPageContainer extends React.Component<
    * renders header, status code and error type.
    */
   renderHeader() {
-    const errMessage = this.props.errorMsg
-      ? this.props.errorMsg
-      : defaultErrorMsg;
+    const { errorMsg, errorCode } = this.props;
     let errPageTitle = "";
 
-    if (this.props.errorCode === pageType.NotFound) {
-      errPageTitle = `Not Found: ${this.props.errorCode}`;
-    } else if (this.props.errorCode === pageType.ServerError) {
-      errPageTitle = `Server Error: ${this.props.errorCode}`;
+    if (errorCode === pageType.NotFound) {
+      errPageTitle = `Not Found: ${errorCode}`;
+    } else if (errorCode === pageType.ServerError) {
+      errPageTitle = `Server Error: ${errorCode}`;
     } else {
-      errPageTitle = defaultErrorTitle;
+      errPageTitle = "Sorry!";
     }
 
     return (
@@ -64,7 +63,7 @@ export class ErrorPageContainer extends React.Component<
         <h1>{errPageTitle}</h1>
         <h4>
           <strong>Error: </strong>
-          {errMessage}
+          {errorMsg}
         </h4>
       </div>
     );
@@ -74,13 +73,11 @@ export class ErrorPageContainer extends React.Component<
    * renders body, error discription or user instructions.
    */
   renderBody() {
-    const errDescription = this.props.description
-      ? this.props.description
-      : defaultDescription;
+    const { description } = this.props;
 
     return (
       <div className="error-page-body">
-        <p>{errDescription}</p>
+        <p>{description}</p>
       </div>
     );
   }
