@@ -35,7 +35,7 @@ exports[`ErrorPageContainer render not found page 1`] = `
     className="error-page-header"
   >
     <h1>
-      Not Found: 404
+      Sorry!
     </h1>
     <h4>
       <strong>
@@ -62,7 +62,7 @@ exports[`ErrorPageContainer render server error page 1`] = `
     className="error-page-header"
   >
     <h1>
-      Server Error: 500
+      Sorry!
     </h1>
     <h4>
       <strong>
