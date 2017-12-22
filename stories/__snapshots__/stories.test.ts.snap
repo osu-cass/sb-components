@@ -2331,20 +2331,20 @@ exports[`Storyshots Error Page Container not found render 1`] = `
     className="error-page-header"
   >
     <h1>
-      Sorry!
+      Not Found: 404
     </h1>
     <h4>
       <strong>
         Error: 
       </strong>
-      Something went wrong
+      This item cannot be found
     </h4>
   </div>
   <div
     className="error-page-body"
   >
     <p>
-      The page you’re looking for can’t be found. Try searching or returning home!
+      Please try another search
     </p>
   </div>
 </div>
@@ -2358,20 +2358,20 @@ exports[`Storyshots Error Page Container server error render 1`] = `
     className="error-page-header"
   >
     <h1>
-      Sorry!
+      Server Error: 500
     </h1>
     <h4>
       <strong>
         Error: 
       </strong>
-      Something went wrong
+      you did a bad thing that caused errors
     </h4>
   </div>
   <div
     className="error-page-body"
   >
     <p>
-      The page you’re looking for can’t be found. Try searching or returning home!
+      stop doing that thing that caused errors
     </p>
   </div>
 </div>
