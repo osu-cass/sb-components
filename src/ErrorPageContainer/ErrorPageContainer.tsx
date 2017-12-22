@@ -70,7 +70,7 @@ export class ErrorPageContainer extends React.Component<
   }
 
   /**
-   * renders body, error discription or user instructions.
+   * renders body, error description or user instructions.
    */
   renderBody() {
     const { description } = this.props;
