@@ -242,6 +242,7 @@ export {
 } from "./SearchResultContainer/SearchResultContainer";
 
 //
-// ErrorWrapper
+// Error Components
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
+export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";
