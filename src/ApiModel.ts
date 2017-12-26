@@ -46,9 +46,9 @@ export function parseQueryString(
 
 export function getResourceContent<T>(resource: Resource<T>): T | undefined {
   if (
-    resource.kind == "success" ||
-    resource.kind == "reloading" ||
-    resource.kind == "failure"
+    resource.kind === "success" ||
+    resource.kind === "reloading" ||
+    resource.kind === "failure"
   ) {
     return resource.content;
   }
@@ -64,6 +64,20 @@ export async function get<T>(url: string, params?: object) {
       success: resolve,
       error: (xhr, status, err) => reject(new Error(err)),
       type: "GET"
+    });
+  });
+}
+
+export async function post<T>(url: string, params?: object) {
+  return new Promise<T>((resolve, reject) => {
+    $.ajax({
+      url,
+      dataType: "json",
+      traditional: true,
+      data: params,
+      success: resolve,
+      error: (xhr, status, err) => reject(new Error(err)),
+      type: "POST"
     });
   });
 }
