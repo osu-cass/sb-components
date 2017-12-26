@@ -72,8 +72,6 @@ export async function post<T>(url: string, params?: object) {
   return new Promise<T>((resolve, reject) => {
     $.ajax({
       url,
-      dataType: "json",
-      traditional: true,
       data: params,
       success: resolve,
       error: (xhr, status, err) => reject(new Error(err)),
