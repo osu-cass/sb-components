@@ -91,7 +91,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
           data-toggle="buttons"
         >
           {this.renderAllBtnContainer()}
-          <div className="btn-group">{this.renderTags()}</div>
+          <div className="btn-group filter-btn-group">{this.renderTags()}</div>
         </div>
       </div>
     );
