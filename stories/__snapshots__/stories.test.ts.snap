@@ -1144,7 +1144,7 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
       data-toggle="buttons"
     >
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary "
@@ -1212,7 +1212,7 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
       data-toggle="buttons"
     >
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary "
@@ -1288,7 +1288,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
         All
       </button>
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary "
@@ -1356,7 +1356,7 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
       data-toggle="buttons"
     >
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary active"
@@ -1424,7 +1424,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       data-toggle="buttons"
     >
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary active"
@@ -1500,7 +1500,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
         All
       </button>
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary "
@@ -1576,7 +1576,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
         All
       </button>
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary active"
@@ -1644,7 +1644,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       data-toggle="buttons"
     >
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <div>
           No options.
@@ -1699,7 +1699,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       data-toggle="buttons"
     >
       <div
-        className="btn-group"
+        className="btn-group filter-btn-group"
       >
         <button
           className="btn btn-primary "
