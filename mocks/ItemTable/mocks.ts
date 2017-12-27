@@ -6,6 +6,7 @@ export const itemTableProps: ItemTableContainerProps = {
   onItemSelection: () => {},
   itemCards: [
     {
+      selected: false,
       bankKey: 187,
       itemKey: 3206,
       title: "Math Grade 6 Claim 1",
@@ -24,6 +25,7 @@ export const itemTableProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 3163,
       title: "ELA/ literacy Grade 3 Claim 1",
@@ -42,6 +44,7 @@ export const itemTableProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 3615,
       title: "Math Grade 6 Claim 4",
@@ -60,6 +63,7 @@ export const itemTableProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 2928,
       title: "ELA/ literacy Grade 4 Claim 4",
@@ -88,6 +92,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
   onItemSelection: () => {},
   itemCards: [
     {
+      selected: false,
       bankKey: 187,
       itemKey: 1,
       title: "alpha",
@@ -106,6 +111,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 2,
       title: "bravo",
@@ -124,6 +130,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 3,
       title: "charlie",
@@ -142,6 +149,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 4,
       title: "delta",
@@ -170,6 +178,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
   onItemSelection: () => {},
   itemCards: [
     {
+      selected: false,
       bankKey: 187,
       itemKey: 1,
       title: "alpha",
@@ -188,6 +197,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 2,
       title: "bravo",
@@ -206,6 +216,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 3,
       title: "charlie",
@@ -224,6 +235,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       brailleOnlyItem: false
     },
     {
+      selected: false,
       bankKey: 187,
       itemKey: 4,
       title: "delta",

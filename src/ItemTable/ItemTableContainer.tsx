@@ -8,6 +8,7 @@ import {
   SortDirection,
   headerColumns
 } from "./ItemTableModels";
+import { ItemModel } from "../ItemPage/ItemPageModels";
 import { HeaderTable } from "./HeaderTable";
 import { ItemTable } from "./ItemTable";
 
@@ -16,15 +17,10 @@ import { ItemTable } from "./ItemTable";
  * @interface ItemTableContainerProps
  */
 
-export interface Item {
-  itemKey: number;
-  bankKey: number;
-}
-
 export interface ItemTableContainerProps {
-  onRowSelection: (item: Item, reset: boolean) => void;
+  onRowSelection: (item: ItemModel, reset: boolean) => void;
 
-  onItemSelection: (item: Item) => void;
+  onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item: Resource<AboutItemModel>;
 }

@@ -31,6 +31,7 @@ let itemCards: ItemCardModel[] = [];
 
 for (let i = 0; i < 50; i++) {
   itemCards.push({
+    selected: false,
     bankKey: 187,
     itemKey: i + 5,
     title: "delta",

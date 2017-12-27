@@ -15,7 +15,12 @@ export interface ItemTableProps {
   expandedRow?: ItemCardModel;
   item: Resource<AboutItemModel>;
 }
-
+/**
+ * Renders the table populated from an array of ItemCardModels. Also renders an instance of the ItemCardViewer,
+ * inserting a responsive sub-table with an iframe that displays the Item Card.
+ * @class ItemTable
+ * @extends {React.Component<ItemTableProps, {}>}
+ */
 export class ItemTable extends React.Component<ItemTableProps, {}> {
   constructor(props: ItemTableProps) {
     super(props);
@@ -32,10 +37,12 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     this.props.onRowExpand(rowData);
   };
 
-  handleCheckboxClick = (event: Event, rowData: ItemCardModel) => {
+  handleCheckboxClick = (
+    event: React.MouseEvent<HTMLTableDataCellElement>,
+    rowData: ItemCardModel
+  ) => {
     event.stopPropagation();
     this.props.onRowSelect(rowData);
-    // TODO: add this row to a list of selected rows
   };
 
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
@@ -47,39 +54,35 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   }
 
   renderRow(rowData: ItemCardModel, index: number): JSX.Element {
+    const { expandedRow, columns, item } = this.props;
     const unChecked = (
       <i className="fa fa-square-o fa-sm table-icon" aria-hidden="true" />
     );
     const checked = (
       <i className="fa fa-check-square-o fa-sm table-icon" aria-hidden="true" />
     );
-    let isSelected = false;
-    if (this.props.expandedRow) {
-      isSelected =
-        rowData.itemKey === this.props.expandedRow.itemKey &&
-        rowData.bankKey === this.props.expandedRow.bankKey;
+    let isExpanded = false;
+    if (expandedRow) {
+      isExpanded =
+        rowData.itemKey === expandedRow.itemKey &&
+        rowData.bankKey === expandedRow.bankKey;
     }
     let row = (
       <tr
         key={index}
-        className={isSelected ? "selected" : ""}
+        className={isExpanded ? "selected" : ""}
         onClick={() => {
           this.handleRowClick(rowData);
         }}
       >
-        <td
-          onClick={e => {
-            e.stopPropagation();
-            console.log("add this row to collection as selected");
-          }}
-        >
-          {unChecked}&nbsp;
-          {isSelected ? this.expand : this.collapse}
+        <td onClick={e => this.handleCheckboxClick(e, rowData)}>
+          {rowData.selected === true ? checked : unChecked}&nbsp;
+          {isExpanded ? this.expand : this.collapse}
         </td>
-        {this.props.columns.map(col => this.renderCell(col, rowData))}
+        {columns.map(col => this.renderCell(col, rowData))}
       </tr>
     );
-    if (this.props.item.kind === "success" && isSelected) {
+    if (item.kind === "success" && isExpanded) {
       row = (
         <tr key={index}>
           <td colSpan={6}>
@@ -89,7 +92,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
                   {row}
                   <tr>
                     <td colSpan={6}>
-                      <ItemCardViewer item={this.props.item.content} />
+                      <ItemCardViewer item={item.content} />
                     </td>
                   </tr>
                 </tbody>

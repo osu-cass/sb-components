@@ -2,7 +2,8 @@ import * as React from "react";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
-import { ItemTableContainer, Item } from "../ItemTable/ItemTableContainer";
+import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
+import { ItemModel } from "../ItemPage/ItemPageModels";
 import { ItemCard } from "../ItemCard/ItemCard";
 
 /**
@@ -23,8 +24,8 @@ export enum SearchResultType {
  * @member {SearchResultType} defaultRenderType
  */
 export interface SearchResultContainerProps {
-  onRowSelection: (item: Item, reset: boolean) => void;
-  onItemSelection: (item: Item) => void;
+  onRowSelection: (item: ItemModel, reset: boolean) => void;
+  onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item: Resource<AboutItemModel>;
   defaultRenderType?: SearchResultType;

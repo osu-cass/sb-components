@@ -53,6 +53,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Equation",
             "isPerformanceItem": true,
             "itemKey": 3206,
+            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetHash": 100,
@@ -71,6 +72,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Multiple Choice",
             "isPerformanceItem": true,
             "itemKey": 3163,
+            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetHash": 1039,
@@ -89,6 +91,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 3615,
+            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetHash": 0,
@@ -107,6 +110,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 2928,
+            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetHash": 2832,
@@ -204,6 +208,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={true}
       itemKey={3206}
       key="187 - 3206"
+      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
       targetHash={100}
@@ -223,6 +228,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={true}
       itemKey={3163}
       key="187 - 3163"
+      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
       targetHash={1039}
@@ -242,6 +248,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={false}
       itemKey={3615}
       key="187 - 3615"
+      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
       targetHash={0}
@@ -261,6 +268,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={false}
       itemKey={2928}
       key="187 - 2928"
+      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
       targetHash={2832}
@@ -325,6 +333,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Equation",
             "isPerformanceItem": true,
             "itemKey": 3206,
+            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetHash": 100,
@@ -343,6 +352,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Multiple Choice",
             "isPerformanceItem": true,
             "itemKey": 3163,
+            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetHash": 1039,
@@ -361,6 +371,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 3615,
+            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetHash": 0,
@@ -379,6 +390,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 2928,
+            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetHash": 2832,
@@ -440,6 +452,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={true}
       itemKey={3206}
       key="187 - 3206"
+      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
       targetHash={100}
@@ -459,6 +472,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={true}
       itemKey={3163}
       key="187 - 3163"
+      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
       targetHash={1039}
@@ -478,6 +492,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={false}
       itemKey={3615}
       key="187 - 3615"
+      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
       targetHash={0}
@@ -497,6 +512,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={false}
       itemKey={2928}
       key="187 - 2928"
+      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
       targetHash={2832}
