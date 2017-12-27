@@ -29,7 +29,7 @@ export interface SearchResultContainerProps {
   ) => void;
   itemCards?: ItemCardModel[];
   item: Resource<AboutItemModel>;
-  defaultRenderType: SearchResultType;
+  defaultRenderType?: SearchResultType;
 }
 
 /**
@@ -55,6 +55,8 @@ export class SearchResultContainer extends React.Component<
     super(props);
     this.state = {
       renderType: props.defaultRenderType
+        ? props.defaultRenderType
+        : SearchResultType.Table
     };
   }
 

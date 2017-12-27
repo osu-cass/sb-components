@@ -239,7 +239,8 @@ export {
 // Search Result Container
 //
 export {
-  SearchResultContainer
+  SearchResultContainer,
+  SearchResultType
 } from "./SearchResultContainer/SearchResultContainer";
 
 //
