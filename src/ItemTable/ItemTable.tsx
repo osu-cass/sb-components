@@ -7,10 +7,12 @@ import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
 
 export interface ItemTableProps {
   mapRows: ItemCardModel[];
-  rowOnClick: (item: ItemCardModel) => void;
+  onRowExpand: (item: ItemCardModel) => void;
+
+  onRowSelect: (item: ItemCardModel) => void;
   sort: HeaderSortModel[];
   columns: SortColumnModel[];
-  selectedRow?: ItemCardModel;
+  expandedRow?: ItemCardModel;
   item: Resource<AboutItemModel>;
 }
 
@@ -19,8 +21,21 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     super(props);
   }
 
+  collapse = (
+    <i className="fa fa-chevron-right fa-sm table-icon" aria-hidden="true" />
+  );
+  expand = (
+    <i className="fa fa-chevron-down fa-sm table-icon" aria-hidden="true" />
+  );
+
   handleRowClick = (rowData: ItemCardModel) => {
-    this.props.rowOnClick(rowData);
+    this.props.onRowExpand(rowData);
+  };
+
+  handleCheckboxClick = (event: Event, rowData: ItemCardModel) => {
+    event.stopPropagation();
+    this.props.onRowSelect(rowData);
+    // TODO: add this row to a list of selected rows
   };
 
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
@@ -32,27 +47,17 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   }
 
   renderRow(rowData: ItemCardModel, index: number): JSX.Element {
-    const collapse = (
-      <i
-        style={{ color: "gray" }}
-        className="fa fa-chevron-right fa-sm"
-        aria-hidden="true"
-      />
+    const unChecked = (
+      <i className="fa fa-square-o fa-sm table-icon" aria-hidden="true" />
     );
-    const expand = (
-      <i
-        style={{ color: "white" }}
-        className="fa fa-chevron-down fa-sm"
-        aria-hidden="true"
-      />
+    const checked = (
+      <i className="fa fa-check-square-o fa-sm table-icon" aria-hidden="true" />
     );
-
-    let tab = null;
     let isSelected = false;
-    if (this.props.selectedRow) {
+    if (this.props.expandedRow) {
       isSelected =
-        rowData.itemKey === this.props.selectedRow.itemKey &&
-        rowData.bankKey === this.props.selectedRow.bankKey;
+        rowData.itemKey === this.props.expandedRow.itemKey &&
+        rowData.bankKey === this.props.expandedRow.bankKey;
     }
     let row = (
       <tr
@@ -62,7 +67,15 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
           this.handleRowClick(rowData);
         }}
       >
-        <td>{isSelected ? expand : collapse}</td>
+        <td
+          onClick={e => {
+            e.stopPropagation();
+            console.log("add this row to collection as selected");
+          }}
+        >
+          {unChecked}&nbsp;
+          {isSelected ? this.expand : this.collapse}
+        </td>
         {this.props.columns.map(col => this.renderCell(col, rowData))}
       </tr>
     );

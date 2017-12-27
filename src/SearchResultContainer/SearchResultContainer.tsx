@@ -2,7 +2,7 @@ import * as React from "react";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
-import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
+import { ItemTableContainer, Item } from "../ItemTable/ItemTableContainer";
 import { ItemCard } from "../ItemCard/ItemCard";
 
 /**
@@ -23,10 +23,8 @@ export enum SearchResultType {
  * @member {SearchResultType} defaultRenderType
  */
 export interface SearchResultContainerProps {
-  onRowSelection: (
-    item: { itemKey: number; bankKey: number },
-    reset: boolean
-  ) => void;
+  onRowSelection: (item: Item, reset: boolean) => void;
+  onItemSelection: (item: Item) => void;
   itemCards?: ItemCardModel[];
   item: Resource<AboutItemModel>;
   defaultRenderType?: SearchResultType;

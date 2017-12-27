@@ -116,6 +116,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
           },
         ]
       }
+      onItemSelection={[Function]}
       onRowSelection={[Function]}
     />
   </div>
@@ -387,6 +388,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
           },
         ]
       }
+      onItemSelection={[Function]}
       onRowSelection={[Function]}
     />
   </div>

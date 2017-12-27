@@ -1,8 +1,9 @@
-import { ItemTableProps, ItemTableContainerProps } from "src/index";
+import { ItemTableProps, ItemTableContainerProps, ItemCardModel } from "src/index";
 import { AboutItemMockNoRubric } from "mocks/AboutItem/mocks";
 
 export const itemTableProps: ItemTableContainerProps = {
   onRowSelection: () => {},
+  onItemSelection: () => {},
   itemCards: [
     {
       bankKey: 187,
@@ -84,6 +85,7 @@ export const itemTableProps: ItemTableContainerProps = {
 
 export const itemTableSortProps: ItemTableContainerProps = {
   onRowSelection: () => {},
+  onItemSelection: () => {},
   itemCards: [
     {
       bankKey: 187,
@@ -165,6 +167,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
 
 export const itemTableSelectProps: ItemTableContainerProps = {
   onRowSelection: () => {},
+  onItemSelection: () => {},
   itemCards: [
     {
       bankKey: 187,

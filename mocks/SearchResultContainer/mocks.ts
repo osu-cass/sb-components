@@ -5,6 +5,7 @@ import {
 
 export const SearchResultCardProps: SearchResultContainerProps = {
   onRowSelection: () => {},
+  onItemSelection: () => {},
   itemCards: [
     {
       bankKey: 187,
@@ -92,6 +93,7 @@ export const SearchResultTableProps: SearchResultContainerProps = {
 
 export const SearchResultEmptyProps: SearchResultContainerProps = {
   onRowSelection: () => {},
+  onItemSelection: () => {},
   item: {
     kind: "none"
   },
