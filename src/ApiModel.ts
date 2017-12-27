@@ -78,7 +78,7 @@ export async function post<T>(url: string, items?: object) {
       const blob = req.response;
       const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
-      link.download = `Scoring_Guide${new Date().toDateString}.pdf`;
+      link.download = `Scoring_Guide${new Date().toDateString()}.pdf`;
       document.body.appendChild(link);
       link.click();
       resolve();
