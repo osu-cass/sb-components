@@ -100,7 +100,7 @@ export class ItemTableContainer extends React.Component<
   };
 
   handleSelectItem = (item: ItemCardModel) => {
-    const card = { itemKey: item.itemKey, bankKey: item.bankKey };
+    this.props.onItemSelection(item);
   };
   /**
    * Sorts two ItemCardModels on the property specified by the sort parameter
