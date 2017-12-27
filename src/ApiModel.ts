@@ -74,7 +74,14 @@ export async function post<T>(url: string, params?: object) {
       url,
       data: params,
       dataType: "json",
-      success: resolve,
+      success: data => {
+        const blob = new Blob([data]);
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = "scoring-guide.pdf";
+        link.click();
+        resolve();
+      },
       error: (xhr, status, err) => reject(new Error(err)),
       type: "POST"
     });
