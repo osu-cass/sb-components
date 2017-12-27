@@ -73,6 +73,7 @@ export async function post<T>(url: string, params?: object) {
     $.ajax({
       url,
       data: params,
+      dataType: "json",
       success: resolve,
       error: (xhr, status, err) => reject(new Error(err)),
       type: "POST"
