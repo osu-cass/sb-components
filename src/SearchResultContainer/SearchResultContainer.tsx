@@ -40,7 +40,7 @@ export interface SearchResultContainerState {
 }
 
 /**
- * The SearchResultContainer is a togglable display/menu that changes search
+ * The SearchResultContainer is a toggleable display/menu that changes search
  * results from a table layout to ItemCard and vice versa.
  * @class SearchResultContainer
  * @extends {React.Component<SearchResultContainerProps, SearchResultContainerState>}
