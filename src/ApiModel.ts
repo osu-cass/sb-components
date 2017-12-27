@@ -68,22 +68,21 @@ export async function get<T>(url: string, params?: object) {
   });
 }
 
-export async function post<T>(url: string, params?: object) {
-  return new Promise<T>((resolve, reject) => {
-    $.ajax({
-      url,
-      data: params,
-      dataType: "json",
-      success: data => {
-        const blob = new Blob([data]);
-        const link = document.createElement("a");
-        link.href = window.URL.createObjectURL(blob);
-        link.download = "scoring-guide.pdf";
-        link.click();
-        resolve();
-      },
-      error: (xhr, status, err) => reject(new Error(err)),
-      type: "POST"
-    });
+export async function post<T>(url: string, items?: object) {
+  return new Promise((resolve, reject) => {
+    const req = new XMLHttpRequest();
+    req.open("POST", url, true);
+    req.responseType = "blob";
+    req.onerror = event => reject(event.error);
+    req.onload = event => {
+      const blob = req.response;
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = `Scoring_Guide${new Date().toDateString}.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      resolve();
+    };
+    items ? req.send(items) : req.send();
   });
 }
