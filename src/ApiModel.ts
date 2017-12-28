@@ -80,13 +80,11 @@ export async function postRequest<T>(url: string, items?: object) {
       const blob = req.response;
       const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
-      link.download = `Scoring_Guide${now.getMonth()}/${now.getDay()}/${now.getFullYear()}-${now.getHours()}:${
-        now.getMinutes
-      }.pdf`;
+      link.download = `Scoring_Guide${now.getMonth()}-${now.getDay()}-${now.getFullYear()}_${now.getHours()}:${now.getMinutes()}.pdf`;
       document.body.appendChild(link);
       link.click();
       resolve();
     };
-    items ? req.send(JSON.stringify(items)) : req.send();
+    items ? req.send({ items: JSON.stringify(items) }) : req.send();
   });
 }
