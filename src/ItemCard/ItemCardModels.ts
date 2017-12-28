@@ -1,6 +1,7 @@
 import { GradeLevels } from "../GradeLevels/GradeLevels";
 
 export interface ItemCardModel {
+  selected?: boolean;
   bankKey: number;
   itemKey: number;
   title: string;

@@ -3,6 +3,7 @@ import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { Resource } from "../ApiModel";
 import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
+import { ItemModel } from "../ItemPage/ItemPageModels";
 import { ItemCard } from "../ItemCard/ItemCard";
 
 /**
@@ -23,13 +24,11 @@ export enum SearchResultType {
  * @member {SearchResultType} defaultRenderType
  */
 export interface SearchResultContainerProps {
-  onRowSelection: (
-    item: { itemKey: number; bankKey: number },
-    reset: boolean
-  ) => void;
+  onRowSelection: (item: ItemModel, reset: boolean) => void;
+  onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item: Resource<AboutItemModel>;
-  defaultRenderType: SearchResultType;
+  defaultRenderType?: SearchResultType;
 }
 
 /**
@@ -42,7 +41,7 @@ export interface SearchResultContainerState {
 }
 
 /**
- * The SearchResultContainer is a togglable display/menu that changes search
+ * The SearchResultContainer is a toggleable display/menu that changes search
  * results from a table layout to ItemCard and vice versa.
  * @class SearchResultContainer
  * @extends {React.Component<SearchResultContainerProps, SearchResultContainerState>}
@@ -55,6 +54,8 @@ export class SearchResultContainer extends React.Component<
     super(props);
     this.state = {
       renderType: props.defaultRenderType
+        ? props.defaultRenderType
+        : SearchResultType.Table
     };
   }
 

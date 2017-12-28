@@ -1,6 +1,7 @@
 import { ItemCardModel } from "src/index";
 
 export const completeItemCard: ItemCardModel = {
+  selected: false,
   bankKey: 187,
   itemKey: 3434,
   interactionTypeCode: "GI",

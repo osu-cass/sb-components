@@ -6,7 +6,7 @@ import {
   AboutThisItemDetail,
   ItemTabs
 } from "../index";
-import { Tabs } from "src/PageTabs/ItemTabs";
+import { Tabs } from "../PageTabs/ItemTabs";
 
 export interface ItemCardViewerProps {
   item?: AboutItemModel;
