@@ -85,9 +85,11 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
 
     if (item.kind === "success" && isExpanded) {
       row.push(
-        <td colSpan={6}>
-          <ItemCardViewer item={item.content} />
-        </td>
+        <tr key="item-card-viewer">
+          <td colSpan={6}>
+            <ItemCardViewer item={item.content} />
+          </td>
+        </tr>
       );
     }
 
