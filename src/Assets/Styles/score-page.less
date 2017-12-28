@@ -106,15 +106,13 @@ table.item-table > thead > tr > th {
 }
 
 table.item-table > thead > tr > th:first-child,
-table.item-table > tbody > tr > td:first-child,
-table.table > tbody > tr > td:first-child  {
+table.item-table > tbody > tr > td:first-child {
     width: 50px;
     min-width: 50px;
     text-align: center;
     padding: 0px;
 }
 
-table.table > tbody > tr > td,
 table.item-table > tbody > tr > td { 
     width: 200px;
     min-width: 100px;
@@ -137,7 +135,6 @@ table.item-table > tbody > tr:hover {
     background-color: @sb-white;
 }
 
-table.table > thead > tr > th > div, 
 table.item-table > thead > tr > th > div {
     display: flex;
     flex-flow: row nowrap;
@@ -148,7 +145,7 @@ table.item-table > thead > tr > th:hover {
     background-color: #EFEFEF;
 }
 
-table.table-icon {
+table.item-table.table-icon {
     color: @sb-gray
 }
 
