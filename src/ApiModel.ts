@@ -54,7 +54,7 @@ export function getResourceContent<T>(resource: Resource<T>): T | undefined {
   }
 }
 
-export async function get<T>(url: string, params?: object) {
+export async function getRequest<T>(url: string, params?: object) {
   return new Promise<T>((resolve, reject) => {
     $.ajax({
       url,
@@ -68,17 +68,21 @@ export async function get<T>(url: string, params?: object) {
   });
 }
 
-export async function post<T>(url: string, items?: object) {
+export async function postRequest<T>(url: string, items?: object) {
   return new Promise((resolve, reject) => {
+    const now = new Date();
     const req = new XMLHttpRequest();
     req.open("POST", url, true);
+    req.setRequestHeader("Content-Type", "application/json");
     req.responseType = "blob";
     req.onerror = event => reject(event.error);
     req.onload = event => {
       const blob = req.response;
       const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
-      link.download = `Scoring_Guide${new Date().toDateString()}.pdf`;
+      link.download = `Scoring_Guide${now.getMonth()}/${now.getDay()}/${now.getFullYear()}-${now.getHours()}:${
+        now.getMinutes
+      }.pdf`;
       document.body.appendChild(link);
       link.click();
       resolve();
