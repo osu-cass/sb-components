@@ -1,6 +1,5 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
-import "../Assets/Styles/error-page-container.less";
 
 /**
  * pageType enum
