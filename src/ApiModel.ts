@@ -41,6 +41,7 @@ export function parseQueryString(
       queryObject[pairParts[0]] = pairParts[1].split(",");
     }
   }
+
   return queryObject;
 }
 
@@ -71,6 +72,7 @@ export async function getRequest<T>(url: string, params?: object) {
 export async function postRequest<T>(url: string, items?: object) {
   return new Promise((resolve, reject) => {
     const now = new Date();
+    const fileName = `Scoring_Guide${now.getMonth()}-${now.getDay()}-${now.getFullYear()}_${now.getHours()}:${now.getMinutes()}.pdf`;
     const req = new XMLHttpRequest();
     req.open("POST", url, true);
     req.setRequestHeader("Content-Type", "application/json");
@@ -80,7 +82,7 @@ export async function postRequest<T>(url: string, items?: object) {
       const blob = req.response;
       const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
-      link.download = `Scoring_Guide${now.getMonth()}-${now.getDay()}-${now.getFullYear()}_${now.getHours()}:${now.getMinutes()}.pdf`;
+      link.download = fileName;
       document.body.appendChild(link);
       link.click();
       resolve();

@@ -53,7 +53,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     );
   }
 
-  renderRow(rowData: ItemCardModel, index: number): JSX.Element {
+  renderRow(rowData: ItemCardModel, index: number): JSX.Element[] {
     const { expandedRow, columns, item } = this.props;
     const unChecked = (
       <i className="fa fa-square-o fa-sm table-icon" aria-hidden="true" />
@@ -67,7 +67,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         rowData.itemKey === expandedRow.itemKey &&
         rowData.bankKey === expandedRow.bankKey;
     }
-    let row = (
+    const row: JSX.Element[] = [
       <tr
         key={index}
         className={isExpanded ? "selected" : ""}
@@ -81,25 +81,13 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         </td>
         {columns.map(col => this.renderCell(col, rowData))}
       </tr>
-    );
+    ];
+
     if (item.kind === "success" && isExpanded) {
-      row = (
-        <tr key={index}>
-          <td colSpan={6}>
-            <div className="table-responsive">
-              <table className="table">
-                <tbody>
-                  {row}
-                  <tr>
-                    <td colSpan={6}>
-                      <ItemCardViewer item={item.content} />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </td>
-        </tr>
+      row.push(
+        <td colSpan={6}>
+          <ItemCardViewer item={item.content} />
+        </td>
       );
     }
 
