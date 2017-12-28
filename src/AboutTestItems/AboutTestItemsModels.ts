@@ -1,5 +1,5 @@
 import { AboutItemModel } from "../index";
-import { get } from "../ApiModel";
+import { getRequest } from "../ApiModel";
 
 export interface InteractionTypeModel {
   code: string;
@@ -21,4 +21,4 @@ export interface AboutTestItemsParams {
 
 export const aboutTestItemsClient = (params?: {
   interactionTypeCode: string;
-}) => get<AboutTestItemsModel>("/AboutItems/GetItemUrl", params);
+}) => getRequest<AboutTestItemsModel>("/AboutItems/GetItemUrl", params);

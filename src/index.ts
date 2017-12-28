@@ -231,8 +231,8 @@ export {
   Resource,
   parseQueryString,
   getResourceContent,
-  get,
-  post
+  getRequest,
+  postRequest
 } from "./ApiModel";
 
 //
