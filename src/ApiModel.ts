@@ -83,6 +83,6 @@ export async function post<T>(url: string, items?: object) {
       link.click();
       resolve();
     };
-    items ? req.send(items) : req.send();
+    items ? req.send(JSON.stringify(items)) : req.send();
   });
 }
