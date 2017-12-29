@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResultContainer card to table transition 1`] = `
+<div
+  className="search-result-container"
+>
+  <div
+    className="search-result-header"
+  >
+    <button
+      aria-label="table view toggle"
+      className="btn btn-primary"
+      onClick={[Function]}
+      value={0}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-table"
+      />
+    </button>
+    <button
+      aria-label="item card view toggle"
+      className="btn btn-white"
+      onClick={[Function]}
+      value={1}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-book"
+      />
+    </button>
+  </div>
+  <div
+    className="search-result-body"
+  >
+    <ItemTableContainer
+      defaultRenderType={1}
+      item={
+        Object {
+          "kind": "none",
+        }
+      }
+      itemCards={
+        Array [
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "MATH1",
+            "claimLabel": "Concepts and Procedures",
+            "grade": 8,
+            "gradeLabel": "Grade 6",
+            "interactionTypeCode": "EQ",
+            "interactionTypeLabel": "Equation",
+            "isPerformanceItem": true,
+            "itemKey": 3206,
+            "selected": false,
+            "subjectCode": "MATH",
+            "subjectLabel": "Math",
+            "targetHash": 100,
+            "targetId": "A",
+            "targetShortName": "",
+            "title": "Math Grade 6 Claim 1",
+          },
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "ELA1",
+            "claimLabel": "Reading",
+            "grade": 1,
+            "gradeLabel": "Grade 3",
+            "interactionTypeCode": "MC",
+            "interactionTypeLabel": "Multiple Choice",
+            "isPerformanceItem": true,
+            "itemKey": 3163,
+            "selected": false,
+            "subjectCode": "ELA",
+            "subjectLabel": "ELA/literacy",
+            "targetHash": 1039,
+            "targetId": "B",
+            "targetShortName": "Key Details",
+            "title": "ELA/ literacy Grade 3 Claim 1",
+          },
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "MATH4",
+            "claimLabel": "Modeling/Data Analysis",
+            "grade": 8,
+            "gradeLabel": "Grade 6",
+            "interactionTypeCode": "MS",
+            "interactionTypeLabel": "Multi Select",
+            "isPerformanceItem": false,
+            "itemKey": 3615,
+            "selected": false,
+            "subjectCode": "MATH",
+            "subjectLabel": "Math",
+            "targetHash": 0,
+            "targetId": "C",
+            "targetShortName": "",
+            "title": "Math Grade 6 Claim 4",
+          },
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "ELA4",
+            "claimLabel": "Research/Inquiry",
+            "grade": 2,
+            "gradeLabel": "Grade 4",
+            "interactionTypeCode": "MS",
+            "interactionTypeLabel": "Multi Select",
+            "isPerformanceItem": false,
+            "itemKey": 2928,
+            "selected": false,
+            "subjectCode": "ELA",
+            "subjectLabel": "ELA/literacy",
+            "targetHash": 2832,
+            "targetId": "D",
+            "targetShortName": "Evaluate Information/ sources",
+            "title": "ELA/ literacy Grade 4 Claim 4",
+          },
+        ]
+      }
+      onItemSelection={[Function]}
+      onRowSelection={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`SearchResultContainer empty itemCards 1`] = `
+<div
+  className="search-result-container"
+>
+  <div
+    className="search-result-header"
+  >
+    <button
+      aria-label="table view toggle"
+      className="btn btn-white"
+      onClick={[Function]}
+      value={0}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-table"
+      />
+    </button>
+    <button
+      aria-label="item card view toggle"
+      className="btn btn-primary"
+      onClick={[Function]}
+      value={1}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-book"
+      />
+    </button>
+  </div>
+  <div
+    className="search-result-body"
+  />
+</div>
+`;
+
+exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
+<div
+  className="search-result-container"
+>
+  <div
+    className="search-result-header"
+  >
+    <button
+      aria-label="table view toggle"
+      className="btn btn-white"
+      onClick={[Function]}
+      value={0}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-table"
+      />
+    </button>
+    <button
+      aria-label="item card view toggle"
+      className="btn btn-primary"
+      onClick={[Function]}
+      value={1}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-book"
+      />
+    </button>
+  </div>
+  <div
+    className="search-result-body"
+  >
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="MATH1"
+      claimLabel="Concepts and Procedures"
+      grade={8}
+      gradeLabel="Grade 6"
+      interactionTypeCode="EQ"
+      interactionTypeLabel="Equation"
+      isPerformanceItem={true}
+      itemKey={3206}
+      key="187 - 3206"
+      selected={false}
+      subjectCode="MATH"
+      subjectLabel="Math"
+      targetHash={100}
+      targetId="A"
+      targetShortName=""
+      title="Math Grade 6 Claim 1"
+    />
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="ELA1"
+      claimLabel="Reading"
+      grade={1}
+      gradeLabel="Grade 3"
+      interactionTypeCode="MC"
+      interactionTypeLabel="Multiple Choice"
+      isPerformanceItem={true}
+      itemKey={3163}
+      key="187 - 3163"
+      selected={false}
+      subjectCode="ELA"
+      subjectLabel="ELA/literacy"
+      targetHash={1039}
+      targetId="B"
+      targetShortName="Key Details"
+      title="ELA/ literacy Grade 3 Claim 1"
+    />
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="MATH4"
+      claimLabel="Modeling/Data Analysis"
+      grade={8}
+      gradeLabel="Grade 6"
+      interactionTypeCode="MS"
+      interactionTypeLabel="Multi Select"
+      isPerformanceItem={false}
+      itemKey={3615}
+      key="187 - 3615"
+      selected={false}
+      subjectCode="MATH"
+      subjectLabel="Math"
+      targetHash={0}
+      targetId="C"
+      targetShortName=""
+      title="Math Grade 6 Claim 4"
+    />
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="ELA4"
+      claimLabel="Research/Inquiry"
+      grade={2}
+      gradeLabel="Grade 4"
+      interactionTypeCode="MS"
+      interactionTypeLabel="Multi Select"
+      isPerformanceItem={false}
+      itemKey={2928}
+      key="187 - 2928"
+      selected={false}
+      subjectCode="ELA"
+      subjectLabel="ELA/literacy"
+      targetHash={2832}
+      targetId="D"
+      targetShortName="Evaluate Information/ sources"
+      title="ELA/ literacy Grade 4 Claim 4"
+    />
+  </div>
+</div>
+`;
+
+exports[`SearchResultContainer onload matches snapshot table 1`] = `
+<div
+  className="search-result-container"
+>
+  <div
+    className="search-result-header"
+  >
+    <button
+      aria-label="table view toggle"
+      className="btn btn-primary"
+      onClick={[Function]}
+      value={0}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-table"
+      />
+    </button>
+    <button
+      aria-label="item card view toggle"
+      className="btn btn-white"
+      onClick={[Function]}
+      value={1}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-book"
+      />
+    </button>
+  </div>
+  <div
+    className="search-result-body"
+  >
+    <ItemTableContainer
+      defaultRenderType={0}
+      item={
+        Object {
+          "kind": "none",
+        }
+      }
+      itemCards={
+        Array [
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "MATH1",
+            "claimLabel": "Concepts and Procedures",
+            "grade": 8,
+            "gradeLabel": "Grade 6",
+            "interactionTypeCode": "EQ",
+            "interactionTypeLabel": "Equation",
+            "isPerformanceItem": true,
+            "itemKey": 3206,
+            "selected": false,
+            "subjectCode": "MATH",
+            "subjectLabel": "Math",
+            "targetHash": 100,
+            "targetId": "A",
+            "targetShortName": "",
+            "title": "Math Grade 6 Claim 1",
+          },
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "ELA1",
+            "claimLabel": "Reading",
+            "grade": 1,
+            "gradeLabel": "Grade 3",
+            "interactionTypeCode": "MC",
+            "interactionTypeLabel": "Multiple Choice",
+            "isPerformanceItem": true,
+            "itemKey": 3163,
+            "selected": false,
+            "subjectCode": "ELA",
+            "subjectLabel": "ELA/literacy",
+            "targetHash": 1039,
+            "targetId": "B",
+            "targetShortName": "Key Details",
+            "title": "ELA/ literacy Grade 3 Claim 1",
+          },
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "MATH4",
+            "claimLabel": "Modeling/Data Analysis",
+            "grade": 8,
+            "gradeLabel": "Grade 6",
+            "interactionTypeCode": "MS",
+            "interactionTypeLabel": "Multi Select",
+            "isPerformanceItem": false,
+            "itemKey": 3615,
+            "selected": false,
+            "subjectCode": "MATH",
+            "subjectLabel": "Math",
+            "targetHash": 0,
+            "targetId": "C",
+            "targetShortName": "",
+            "title": "Math Grade 6 Claim 4",
+          },
+          Object {
+            "bankKey": 187,
+            "brailleOnlyItem": false,
+            "claimCode": "ELA4",
+            "claimLabel": "Research/Inquiry",
+            "grade": 2,
+            "gradeLabel": "Grade 4",
+            "interactionTypeCode": "MS",
+            "interactionTypeLabel": "Multi Select",
+            "isPerformanceItem": false,
+            "itemKey": 2928,
+            "selected": false,
+            "subjectCode": "ELA",
+            "subjectLabel": "ELA/literacy",
+            "targetHash": 2832,
+            "targetId": "D",
+            "targetShortName": "Evaluate Information/ sources",
+            "title": "ELA/ literacy Grade 4 Claim 4",
+          },
+        ]
+      }
+      onItemSelection={[Function]}
+      onRowSelection={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`SearchResultContainer table to card transition 1`] = `
+<div
+  className="search-result-container"
+>
+  <div
+    className="search-result-header"
+  >
+    <button
+      aria-label="table view toggle"
+      className="btn btn-white"
+      onClick={[Function]}
+      value={0}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-table"
+      />
+    </button>
+    <button
+      aria-label="item card view toggle"
+      className="btn btn-primary"
+      onClick={[Function]}
+      value={1}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-book"
+      />
+    </button>
+  </div>
+  <div
+    className="search-result-body"
+  >
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="MATH1"
+      claimLabel="Concepts and Procedures"
+      grade={8}
+      gradeLabel="Grade 6"
+      interactionTypeCode="EQ"
+      interactionTypeLabel="Equation"
+      isPerformanceItem={true}
+      itemKey={3206}
+      key="187 - 3206"
+      selected={false}
+      subjectCode="MATH"
+      subjectLabel="Math"
+      targetHash={100}
+      targetId="A"
+      targetShortName=""
+      title="Math Grade 6 Claim 1"
+    />
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="ELA1"
+      claimLabel="Reading"
+      grade={1}
+      gradeLabel="Grade 3"
+      interactionTypeCode="MC"
+      interactionTypeLabel="Multiple Choice"
+      isPerformanceItem={true}
+      itemKey={3163}
+      key="187 - 3163"
+      selected={false}
+      subjectCode="ELA"
+      subjectLabel="ELA/literacy"
+      targetHash={1039}
+      targetId="B"
+      targetShortName="Key Details"
+      title="ELA/ literacy Grade 3 Claim 1"
+    />
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="MATH4"
+      claimLabel="Modeling/Data Analysis"
+      grade={8}
+      gradeLabel="Grade 6"
+      interactionTypeCode="MS"
+      interactionTypeLabel="Multi Select"
+      isPerformanceItem={false}
+      itemKey={3615}
+      key="187 - 3615"
+      selected={false}
+      subjectCode="MATH"
+      subjectLabel="Math"
+      targetHash={0}
+      targetId="C"
+      targetShortName=""
+      title="Math Grade 6 Claim 4"
+    />
+    <ItemCard
+      bankKey={187}
+      brailleOnlyItem={false}
+      claimCode="ELA4"
+      claimLabel="Research/Inquiry"
+      grade={2}
+      gradeLabel="Grade 4"
+      interactionTypeCode="MS"
+      interactionTypeLabel="Multi Select"
+      isPerformanceItem={false}
+      itemKey={2928}
+      key="187 - 2928"
+      selected={false}
+      subjectCode="ELA"
+      subjectLabel="ELA/literacy"
+      targetHash={2832}
+      targetId="D"
+      targetShortName="Evaluate Information/ sources"
+      title="ELA/ literacy Grade 4 Claim 4"
+    />
+  </div>
+</div>
+`;

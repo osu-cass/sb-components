@@ -1,23 +1,24 @@
 import {
+  SearchBaseModel,
+  SearchFilterTypes,
+  SearchFilterStringTypes
+} from "../ItemSearch/ItemSearchModels";
+import {
+  ItemCardModel,
   ClaimModel,
   ItemsSearchModel,
   SearchAPIParamsModel,
-  SearchBaseModel,
-  SearchFilterTypes,
   SubjectModel,
   TargetModel,
   ItemsSearchFilterModel,
-  SearchFilterStringTypes
-} from "../ItemSearch/ItemSearchModels";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
-import {
+  GradeLevels,
+  GradeLevel,
   AdvancedFilterCategoryModel,
   FilterCategoryModel,
   FilterOptionModel,
-  FilterType
-} from "../Filter/FilterModels";
-import { ItemSearch } from "../ItemSearch/ItemSearch";
+  FilterType,
+  ItemSearch
+} from "../index";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
 
 // tslint:disable-next-line:no-stateless-class
@@ -52,7 +53,7 @@ export class Filter {
     filterModels: FilterCategoryModel[]
   ): GradeLevels | undefined {
     const selectedCodes = this.getSelectedCodes(FilterType.Grade, filterModels);
-    let gradeLevel: GradeLevels | undefined = undefined;
+    let gradeLevel: GradeLevels | undefined;
 
     if (selectedCodes) {
       const gradesLevel = selectedCodes.reduce<GradeLevels>(
@@ -78,6 +79,7 @@ export class Filter {
       FilterType.Target,
       filterModels
     );
+
     return selectedCodes ? selectedCodes.map(s => +s) : undefined;
   }
   public static filterStringTypes<T extends SearchFilterStringTypes>(

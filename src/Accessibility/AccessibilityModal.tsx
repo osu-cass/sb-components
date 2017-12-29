@@ -1,6 +1,4 @@
 /// <reference types="google.analytics" />
-import "../Assets/Styles/modal.less";
-import "../Assets/Styles/accessibility.less";
 import * as React from "react";
 import {
   AccessibilityResourceModel,
@@ -8,7 +6,7 @@ import {
   ResourceSelectionsModel,
   getResourceTypes
 } from "./AccessibilityModels";
-import { Dropdown, DropdownProps } from "../DropDown/DropDown";
+import { Dropdown, DropdownProps } from "../index";
 import * as ReactModal from "react-modal";
 
 export interface ItemAccessibilityModalProps {

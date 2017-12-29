@@ -4,7 +4,7 @@ import {
   AccResourceGroupModel,
   ResourceSelectionsModel
 } from "../Accessibility/AccessibilityModels";
-import { get } from "../ApiModel";
+import { getRequest } from "../ApiModel";
 import { DropDownSelectionModel } from "../DropDown/DropDownModels";
 import { MoreLikeThisModel } from "../Modals/MoreLikeThisModels";
 
@@ -109,10 +109,10 @@ export function addDisabledPlaceholder(
 }
 
 export const aboutThisItemViewModelClient = (params: ItemModel) =>
-  get<AboutItemModel>("/Item/AboutThisItemViewModel", params);
+  getRequest<AboutItemModel>("/Item/AboutThisItemViewModel", params);
 
 export const itemPageClient = (params: ItemModel) =>
-  get<ItemPageModel>("/Item/GetItem", params);
+  getRequest<ItemPageModel>("/Item/GetItem", params);
 
 export const itemAccessibilityClient = (params: ItemIsaapModel) =>
-  get<AccResourceGroupModel[]>("/Item/ItemAccessibility", params);
+  getRequest<AccResourceGroupModel[]>("/Item/ItemAccessibility", params);

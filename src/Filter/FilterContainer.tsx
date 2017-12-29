@@ -1,11 +1,10 @@
 import * as React from "react";
-import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
+import { AdvancedFilterContainer, BasicFilterContainer } from "../index";
 import {
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,
   FilterOptionModel
 } from "./FilterModels";
-import { BasicFilterContainer } from "./BasicFilterContainer";
 
 export interface FilterContainerProps {
   basicFilterCategories: BasicFilterCategoryModel[];
@@ -56,9 +55,9 @@ export class FilterContainer extends React.Component<
     }
 
     return (
-      <div>
+      <div className="filter-component-wrapper">
         <BasicFilterContainer
-          filterId={this.props.filterId}
+          filterId={filterId}
           filterCategories={basicFilterCategories}
           onUpdateFilter={onUpdateBasicFilter}
           containsAdvancedFilter={true}

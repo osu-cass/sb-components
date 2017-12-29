@@ -8,18 +8,18 @@ import {
   BasicFilterContainer,
   BasicFilterCategoryModel,
   FilterOptionModel
-} from "../src";
+} from "src/index";
 import {
   mockAdvancedFilterCategoriesAll,
   mockBasicFilterCategories
-} from "./Filter/mocks";
+} from "mocks/Filter/mocks";
 
 export interface AdvFilContainerTestProps {
   isNested?: boolean;
   pageTitle?: string;
 }
 
-interface AdvFilContainerTestState {
+export interface AdvFilContainerTestState {
   filterCategories: AdvancedFilterCategoryModel[];
 }
 
@@ -53,7 +53,7 @@ export class AdvFilContainerTestWrapper extends React.Component<
 
 export interface BasFilContainerTestProps extends BasicFilterContainerProps {}
 
-interface BasFilContainerTestState {
+export interface BasFilContainerTestState {
   filterCategories: BasicFilterCategoryModel[];
 }
 
@@ -85,9 +85,9 @@ export class BasFilContainerTestWrapper extends React.Component<
   }
 }
 
-interface FilterContainerTestProps {}
+export interface FilterContainerTestProps {}
 
-interface FilterContainerTestState {
+export interface FilterContainerTestState {
   basicFilterCategories: BasicFilterCategoryModel[];
   advancedFilterCategories: AdvancedFilterCategoryModel[];
 }

@@ -1,4 +1,4 @@
-@import "constants.less";
+@import "constants";
 
 .advanced-filter-container {
   display: flex;
@@ -7,7 +7,7 @@
   width: 100%;
   border: 1px solid @grey-border-color;
   box-shadow: @box-shadow;
-  font-family: "PT ", "Georgia", "Times New Roman", "Times,serif";
+  font-family: @font-family-base;
   background-color: @sb-white;
   padding: @spacing-unit;
   border-radius: 0 0 10px 10px;
@@ -100,7 +100,6 @@ div.filter-status {
   flex-direction: column;
   width: 100%;
   background-color: #e6e6e6;
-  cursor: pointer;
 }
 
 .child-filter-container {
@@ -114,3 +113,15 @@ div.filter-status {
   min-width: 50px;
 }
 
+div.filter-selection >
+div.nested-btn-group >
+button.btn-primary {
+  max-height: 30px;
+}
+
+div.filter-btn-group >
+button.btn {
+  max-width: 100px;
+  white-space: normal;
+  margin-right: 0 !important; //overwriting bootstrap
+}

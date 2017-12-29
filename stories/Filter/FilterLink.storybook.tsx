@@ -3,11 +3,11 @@ import { storiesOf } from "@storybook/react";
 import {
   FilterLink,
   ItemTableContainer,
-  ItemTableContainerProps
-} from "../../src/index";
+  ItemTableContainerProps,
+  ItemCardModel
+} from "src/index";
 import { CenterDecorator } from "../CenterDecorator";
-import { ItemCardModel } from "../../src/ItemCard/ItemCardModels";
-import { itemTableSortProps } from "../ItemTable/mocks";
+import { itemTableSortProps } from "mocks/ItemTable/mocks";
 
 const style: React.CSSProperties = {
   display: "flex",
@@ -31,6 +31,7 @@ let itemCards: ItemCardModel[] = [];
 
 for (let i = 0; i < 50; i++) {
   itemCards.push({
+    selected: false,
     bankKey: 187,
     itemKey: i + 5,
     title: "delta",

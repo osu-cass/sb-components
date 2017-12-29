@@ -35,6 +35,11 @@ export {
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
+// Button
+//
+export { BtnGroupOptionProps, BtnGroupOption } from "./Button/BtnGroupOption";
+
+//
 // DropDown Components and Models
 //
 export { Dropdown, DropdownProps } from "./DropDown/DropDown";
@@ -214,16 +219,32 @@ export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 
 //
+// Select
+//
+export { Select, SelectProps } from "./Select/Select";
+export { SelectOption, SelectOptionProps } from "./Select/SelectOption";
+
+//
 // ApiModel
 //
 export {
   Resource,
   parseQueryString,
   getResourceContent,
-  get
+  getRequest,
+  postRequest
 } from "./ApiModel";
 
 //
-// ErrorWrapper
+// Search Result Container
+//
+export {
+  SearchResultContainer,
+  SearchResultType
+} from "./SearchResultContainer/SearchResultContainer";
+
+//
+// Error Components
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
+export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";

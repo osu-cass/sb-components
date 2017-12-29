@@ -1,13 +1,13 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { PdfDecorator } from "../PdfDecorator";
-import { RubricTable } from "../../src/Rubric/RubricTable";
+import { RubricTable } from "src/index";
 import {
   rubrics,
   rubricsWithSamples,
   rubricsEsn,
   allRubrics
-} from "../AboutItem/mocks";
+} from "mocks/AboutItem/mocks";
 
 storiesOf("PDF RubricTable", module)
   .addDecorator(PdfDecorator)

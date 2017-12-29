@@ -1,4 +1,3 @@
-import "../Assets/Styles/score-page.less";
 import * as React from "react";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
@@ -9,6 +8,7 @@ import {
   SortDirection,
   headerColumns
 } from "./ItemTableModels";
+import { ItemModel } from "../ItemPage/ItemPageModels";
 import { HeaderTable } from "./HeaderTable";
 import { ItemTable } from "./ItemTable";
 
@@ -16,11 +16,11 @@ import { ItemTable } from "./ItemTable";
  * Properties for ItemTableContainer
  * @interface ItemTableContainerProps
  */
+
 export interface ItemTableContainerProps {
-  onRowSelection: (
-    item: { itemKey: number; bankKey: number },
-    reset: boolean
-  ) => void;
+  onRowSelection: (item: ItemModel, reset: boolean) => void;
+
+  onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item: Resource<AboutItemModel>;
 }
@@ -31,7 +31,7 @@ export interface ItemTableContainerProps {
  */
 export interface ItemTableContainerState {
   sorts: HeaderSortModel[];
-  selectedRow?: ItemCardModel;
+  expandedRow?: ItemCardModel;
 }
 /**
  * Container for a table of Items that can be sorted by clicking on a table header.
@@ -63,9 +63,9 @@ export class ItemTableContainer extends React.Component<
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
       const newSort = Object.assign({}, newSorts[headIdx]);
-      if (newSort.direction == SortDirection.Ascending) {
+      if (newSort.direction === SortDirection.Ascending) {
         newSort.direction = SortDirection.Descending;
-      } else if (newSort.direction == SortDirection.Descending) {
+      } else if (newSort.direction === SortDirection.Descending) {
         newSort.direction = SortDirection.NoSort;
       } else {
         newSort.direction = SortDirection.Ascending;
@@ -73,7 +73,7 @@ export class ItemTableContainer extends React.Component<
       newSorts[headIdx] = newSort;
     } else {
       const newSort: HeaderSortModel = {
-        col: col,
+        col,
         direction: SortDirection.Ascending,
         resetSortCount: 0
       };
@@ -85,18 +85,22 @@ export class ItemTableContainer extends React.Component<
   /**
    * Sets the state with the currently selected item or removes
    * the selection from the item and removes it from state.
-   * @function {onSelectItem}
+   * @function {handleExpandItem}
    * @param {ItemCardModel} item
    */
-  onSelectItem = (item: ItemCardModel) => {
+  handleExpandItem = (item: ItemCardModel) => {
     const card = { itemKey: item.itemKey, bankKey: item.bankKey };
-    if (item === this.state.selectedRow) {
+    if (item === this.state.expandedRow) {
       this.props.onRowSelection(card, true);
-      this.setState({ selectedRow: undefined });
+      this.setState({ expandedRow: undefined });
     } else {
       this.props.onRowSelection(card, false);
-      this.setState({ selectedRow: item });
+      this.setState({ expandedRow: item });
     }
+  };
+
+  handleSelectItem = (item: ItemCardModel) => {
+    this.props.onItemSelection(item);
   };
   /**
    * Sorts two ItemCardModels on the property specified by the sort parameter
@@ -124,6 +128,7 @@ export class ItemTableContainer extends React.Component<
         this.invokeMultiSort(sort, lhs, rhs)
       );
     });
+
     return itemCards;
   };
 
@@ -146,27 +151,29 @@ export class ItemTableContainer extends React.Component<
    * @function {renderTable}
    */
   renderTable() {
-    const itemCards = this.getTableData(); //this returns undefined but in the method it has data. that's w
+    const itemCards = this.getTableData(); // this returns undefined but in the method it has data. that's w
     let content = (
       <span className="placeholder-text" role="alert">
         No results found for the given search terms.
       </span>
     );
-    if (itemCards != undefined) {
-      //if no items are returned we want to return a friendly message
+    if (itemCards !== undefined) {
+      // if no items are returned we want to return a friendly message
       if (itemCards.length !== 0) {
         content = (
           <ItemTable
             mapRows={itemCards}
-            rowOnClick={this.onSelectItem}
+            onRowExpand={this.handleExpandItem}
+            onRowSelect={this.handleSelectItem}
             sort={this.state.sorts}
             columns={this.pageHeaderColumns}
-            selectedRow={this.state.selectedRow}
+            expandedRow={this.state.expandedRow}
             item={this.props.item}
           />
         );
       }
     }
+
     return content;
   }
 

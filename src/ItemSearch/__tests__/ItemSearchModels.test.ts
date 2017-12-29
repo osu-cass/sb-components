@@ -1,6 +1,7 @@
 import {
   SearchAPIParamsModel,
-  SearchFilterStringTypes
+  SearchFilterStringTypes,
+  SearchFilterModelTypes
 } from "../ItemSearchModels";
 import { ItemSearch } from "../ItemSearch";
 import { ItemCardModel } from "../../ItemCard/ItemCardModels";
@@ -15,11 +16,22 @@ import {
   searchOptionFilterTarget,
   resultSearchOptionFilterTarget,
   resultSearchOptionFilterTargetSelectedSingle,
-  resultSearchOptionFilterTargetSelectedMultiple
-} from "./ItemSearchModelsTestData";
+  resultSearchOptionFilterTargetSelectedMultiple,
+  mockSeachAPI,
+  resultFilterOptionModelClaim,
+  resultFilterOptionModelIT,
+  resultFilterOptionModelSubject,
+  gradeSearchStringTypes,
+  resultFilterOptionModelGrade,
+  targetSearchStringTypes,
+  resultFilterOptionModeltarget,
+  resultFilterOptionModelTechType,
+  techtypeSearchStringTypes
+} from "mocks/ItemSearch/mocks";
 
-import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
-import { FilterType } from "../../Filter/FilterModels";
+import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
+import { FilterType } from "src/Filter/FilterModels";
+import { filter } from "minimatch";
 
 describe("ItemSearch.filterItemCards", () => {
   it("filters with empty filter", () => {
@@ -239,5 +251,112 @@ describe("ItemSearch.searchOptionToFilterTarget", () => {
       selectedCodeParam
     );
     expect(result).toEqual(resultSearchOptionFilterTargetSelectedMultiple);
+  });
+});
+
+describe("ItemSearch.getTechnologyTypeCodes", () => {
+  it("empty type code", () => {
+    const searchParam: SearchAPIParamsModel = {};
+
+    const result = ItemSearch.getTechnologyTypeCodes(searchParam);
+    expect(result).toEqual([]);
+  });
+
+  it("type code CAT", () => {
+    const searchParam: SearchAPIParamsModel = { catOnly: false };
+
+    const result = ItemSearch.getTechnologyTypeCodes(searchParam);
+    expect(result).toEqual(["CAT"]);
+  });
+
+  it("type code Performance", () => {
+    const searchParam: SearchAPIParamsModel = { performanceOnly: false };
+
+    const result = ItemSearch.getTechnologyTypeCodes(searchParam);
+    expect(result).toEqual(["Performance"]);
+  });
+
+  it("type code CAT & Performance", () => {
+    const searchParam: SearchAPIParamsModel = {
+      performanceOnly: false,
+      catOnly: false
+    };
+
+    const result = ItemSearch.getTechnologyTypeCodes(searchParam);
+    expect(result).toEqual(["CAT", "Performance"]);
+  });
+});
+
+describe("ItemSearch.getFilterOptionModel", () => {
+  it("claims options", () => {
+    const filterParam: SearchFilterModelTypes = {
+      label: "claims",
+      code: FilterType.Claim,
+      filterOptions: genericSearchStringTypes
+    };
+    const searchApiParam = mockSeachAPI;
+
+    const result = ItemSearch.getFilterOptionModel(filterParam, searchApiParam);
+    expect(result).toEqual(resultFilterOptionModelClaim);
+  });
+
+  it("InteractionType options", () => {
+    const filterParam: SearchFilterModelTypes = {
+      label: "InteractionType",
+      code: FilterType.InteractionType,
+      filterOptions: genericSearchStringTypes
+    };
+    const searchApiParam = mockSeachAPI;
+
+    const result = ItemSearch.getFilterOptionModel(filterParam, searchApiParam);
+    expect(result).toEqual(resultFilterOptionModelIT);
+  });
+
+  it("Subject options", () => {
+    const filterParam: SearchFilterModelTypes = {
+      label: "Subject",
+      code: FilterType.Subject,
+      filterOptions: genericSearchStringTypes
+    };
+    const searchApiParam = mockSeachAPI;
+
+    const result = ItemSearch.getFilterOptionModel(filterParam, searchApiParam);
+    expect(result).toEqual(resultFilterOptionModelSubject);
+  });
+
+  it("Grade options", () => {
+    const filterParam: SearchFilterModelTypes = {
+      label: "Grade",
+      code: FilterType.Grade,
+      filterOptions: gradeSearchStringTypes
+    };
+    const searchApiParam = mockSeachAPI;
+
+    const result = ItemSearch.getFilterOptionModel(filterParam, searchApiParam);
+    expect(result).toEqual(resultFilterOptionModelGrade);
+  });
+
+  it("Target options", () => {
+    const filterParam: SearchFilterModelTypes = {
+      label: "Target",
+      code: FilterType.Target,
+      filterOptions: targetSearchStringTypes
+    };
+    const searchApiParam = mockSeachAPI;
+
+    const result = ItemSearch.getFilterOptionModel(filterParam, searchApiParam);
+    expect(result).toEqual(resultFilterOptionModeltarget);
+  });
+
+  it("TechnologyType options", () => {
+    const filterParam: SearchFilterModelTypes = {
+      label: "TechnologyType",
+      code: FilterType.TechnologyType,
+      filterOptions: techtypeSearchStringTypes
+    };
+    const searchApiParam = mockSeachAPI;
+
+    const result = ItemSearch.getFilterOptionModel(filterParam, searchApiParam);
+    expect(result).toEqual(resultFilterOptionModelTechType);
   });
 });

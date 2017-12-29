@@ -1,9 +1,8 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { PdfDecorator } from "../PdfDecorator";
-import { EvidenceStatement } from "../../src/Pdf/EvidenceStatement";
-import { ItemCardTable } from "../../src/ItemCard/ItemCardTable";
-import { completeItemCard } from "../ItemCard/mocks";
+import { EvidenceStatement, ItemCardTable } from "src/index";
+import { completeItemCard } from "mocks/ItemCard/mocks";
 
 storiesOf("PDF Item Metadata", module)
   .addDecorator(PdfDecorator)

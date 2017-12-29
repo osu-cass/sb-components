@@ -1,4 +1,3 @@
-import "../Assets/Styles/filter-link.less";
 import * as React from "react";
 
 /**
@@ -16,6 +15,7 @@ export interface FilterLinkProps {
  * filter on the DOM.
  * @function FilterLink
  */
+// tslint:disable-next-line:variable-name
 export const FilterLink: React.SFC<FilterLinkProps> = ({ filterId }) => {
   return (
     <a className=" filter-jump-link btn btn-blue" role="button" href={filterId}>

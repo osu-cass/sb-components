@@ -1,4 +1,3 @@
-import "../Assets/Styles/item-card.less";
 import * as React from "react";
 import * as ItemCardModels from "./ItemCardModels";
 import { Redirect } from "react-router";

@@ -2,7 +2,6 @@ import * as React from "react";
 import { ItemGroupModel } from "./PdfModels";
 import { ItemViewContainer } from "./ItemViewContainer";
 import { CoverPage } from "./CoverPage";
-import "../Assets/Styles/pdf.less";
 
 export interface PdfContainerProps {
   items: ItemGroupModel[];

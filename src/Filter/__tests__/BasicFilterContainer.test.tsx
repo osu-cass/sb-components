@@ -2,8 +2,9 @@ import * as React from "react";
 import { BasicFilterContainer } from "../BasicFilterContainer";
 import { BasicFilter } from "../BasicFilter";
 import { BasicFilterCategoryModel } from "../FilterModels";
-import { mockBasicFilterCategories } from "../../../stories/Filter/mocks";
+import { mockBasicFilterCategories } from "mocks/Filter/mocks";
 import { shallow } from "enzyme";
+import { Select } from "../../Select/Select";
 
 describe("BasicFilterContainer", () => {
   const AdvFilExpand = jest.fn();
@@ -45,7 +46,7 @@ describe("BasicFilterContainer", () => {
         .findWhere(node => node.type() === BasicFilter)
         .at(0)
         .dive()
-        .find("select")
+        .findWhere(node => node.type() === Select)
         .simulate("change", { target: { value: opt } });
       expect(wrapper).toMatchSnapshot();
     });
@@ -59,7 +60,6 @@ describe("BasicFilterContainer", () => {
         .findWhere(node => node.type() === BasicFilter)
         .at(1)
         .dive()
-        .find("form")
         .find("input")
         .at(i)
         .simulate("change", { target: { value: opt } });
@@ -75,7 +75,7 @@ describe("BasicFilterContainer", () => {
         .findWhere(node => node.type() === BasicFilter)
         .at(0)
         .dive()
-        .find("select")
+        .findWhere(node => node.type() === Select)
         .simulate("keyDown", { keyCode: key });
       expect(wrapper).toMatchSnapshot();
     });

@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPTPopupModal close button footer AboutPT 1`] = `
+<div>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content about-pt-modal"
+    closeTimeoutMS={0}
+    contentLabel=""
+    isOpen={false}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      aria-describedby="About Performance Tasks"
+      aria-hidden="true"
+      aria-labelledby="About Performance Tasks"
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        />
+        <button
+          aria-label="Close modal"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p
+          aria-labelledby="description"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "lorem ipsum",
+            }
+          }
+        />
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Close modal"
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;
+
+exports[`AboutPTPopupModal close button header AboutPT 1`] = `
+<div>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content about-pt-modal"
+    closeTimeoutMS={0}
+    contentLabel=""
+    isOpen={false}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      aria-describedby="About Performance Tasks"
+      aria-hidden="true"
+      aria-labelledby="About Performance Tasks"
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        />
+        <button
+          aria-label="Close modal"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p
+          aria-labelledby="description"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "lorem ipsum",
+            }
+          }
+        />
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Close modal"
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;
+
+exports[`AboutPTPopupModal expanded AboutPT 1`] = `
+<div>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content about-pt-modal"
+    closeTimeoutMS={0}
+    contentLabel=""
+    isOpen={true}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      aria-describedby="About Performance Tasks"
+      aria-hidden="true"
+      aria-labelledby="About Performance Tasks"
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        />
+        <button
+          aria-label="Close modal"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p
+          aria-labelledby="description"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "lorem ipsum",
+            }
+          }
+        />
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Close modal"
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;
+
+exports[`AboutPTPopupModal non-expanded AboutPT 1`] = `
+<div>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content about-pt-modal"
+    closeTimeoutMS={0}
+    contentLabel=""
+    isOpen={false}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      aria-describedby="About Performance Tasks"
+      aria-hidden="true"
+      aria-labelledby="About Performance Tasks"
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        />
+        <button
+          aria-label="Close modal"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p
+          aria-labelledby="description"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "lorem ipsum",
+            }
+          }
+        />
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Close modal"
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;

@@ -1,6 +1,5 @@
 ﻿//** Item table styles
-
-@import 'constants.less';
+@import "constants";
 
 .item-card {
     display: flex;
@@ -22,9 +21,9 @@
     border-top-color:@grey-border-color;
     border-right-color: @grey-border-color;
     border-left-color: @grey-border-color;
-    border-bottom: 5px solid white;
+    border-bottom: @spacing-item solid white;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: @spacing-item;
     position: relative;
     z-index: 1;
     margin-bottom: -3px;
@@ -52,7 +51,7 @@
     border-style: solid;
     border-color: @grey-border-color;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: @spacing-item;
     -moz-box-shadow: @box-shadow-light;
     -webkit-box-shadow: @box-shadow-light;
     box-shadow: @box-shadow-light;
@@ -66,33 +65,33 @@ table.item-table {
     margin: 0;
     padding: 0;
     border: 0;
-    border-radius: 5px;
+    border-radius: @spacing-item;
     border-spacing: 1px;
 }
 
 .ItemNumber {
     width: 150px;
-    padding: 5px;
+    padding: @spacing-item;
 }
 
 .Claim {
     width: 250px;
-    padding: 5px;
+    padding: @spacing-item;
 }
 
 .Subject {
     width: 200px;
-    padding: 5px;
+    padding: @spacing-item;
 }
 
 .Grade {
     width: 225px;
-    padding: 5px;
+    padding: @spacing-item;
 }
 
 .ItemType {
     width: 225px;
-    padding: 5px;
+    padding: @spacing-item;
 }
 
 table.item-table > thead > tr > th {
@@ -106,23 +105,20 @@ table.item-table > thead > tr > th {
     padding:4px 8px;
 }
 
-table.table > tbody > tr > td,
+table.item-table > thead > tr > th:first-child,
+table.item-table > tbody > tr > td:first-child {
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+    padding: 0px;
+}
+
 table.item-table > tbody > tr > td { 
     width: 200px;
     min-width: 100px;
     padding: 8px 0px 8px 0px;
     text-align: left;
     white-space: normal;
-}
-
-
-table.item-table > thead > tr > th:first-child,
-table.item-table > tbody > tr > td:first-child,
-table.table > tbody > tr > td:first-child  {
-    width: 50px;
-    min-width: 50px;
-    text-align: center;
-    padding: 0px;
 }
 
 table.item-table > tbody > tr:nth-child(even) {
@@ -139,7 +135,6 @@ table.item-table > tbody > tr:hover {
     background-color: @sb-white;
 }
 
-table.table > thead > tr > th > div, 
 table.item-table > thead > tr > th > div {
     display: flex;
     flex-flow: row nowrap;
@@ -148,6 +143,10 @@ table.item-table > thead > tr > th > div {
 
 table.item-table > thead > tr > th:hover {
     background-color: #EFEFEF;
+}
+
+table.item-table.table-icon {
+    color: @sb-gray
 }
 
 .search-categories {
@@ -159,5 +158,5 @@ table.item-table > thead > tr > th:hover {
 }
 
 .search-categories > select {
-    margin-right: 5px;
+    margin-right: @spacing-item;
 }

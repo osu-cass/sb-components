@@ -1,6 +1,6 @@
 //** Item Card styles
 
-@import 'constants.less';
+@import "constants";
 
 .card {
     border: 2px solid;
@@ -44,7 +44,7 @@
 }
 
 .card.condensed .card-contents p:first-of-type {
-    padding-top: 5px;
+    padding-top: @spacing-item;
 }
 
 .card-static {
@@ -98,5 +98,5 @@ h4.card-title {
 }
 
 .card-contents p:first-of-type {
-    padding-top: 5px;
+    padding-top: @spacing-item;
 }

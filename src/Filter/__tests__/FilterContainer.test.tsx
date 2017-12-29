@@ -7,7 +7,7 @@ import {
 import {
   mockBasicFilterCategories,
   mockAdvancedFilterCategoriesAll
-} from "../../../stories/Filter/mocks";
+} from "mocks/Filter/mocks";
 import { shallow } from "enzyme";
 import { BasicFilterContainer } from "../BasicFilterContainer";
 
