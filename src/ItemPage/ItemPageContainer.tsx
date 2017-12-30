@@ -17,12 +17,7 @@ import {
   toiSAAP,
   resetResource
 } from "./ItemPageModels";
-import {
-  Resource,
-  get,
-  getResourceContent,
-  parseQueryString
-} from "../ApiModel";
+import { Resource, getResourceContent, parseQueryString } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 
 export interface ItemPageContainerProps extends RouteComponentProps<ItemModel> {

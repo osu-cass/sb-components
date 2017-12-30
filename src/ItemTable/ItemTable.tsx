@@ -7,20 +7,42 @@ import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
 
 export interface ItemTableProps {
   mapRows: ItemCardModel[];
-  rowOnClick: (item: ItemCardModel) => void;
+  onRowExpand: (item: ItemCardModel) => void;
+
+  onRowSelect: (item: ItemCardModel) => void;
   sort: HeaderSortModel[];
   columns: SortColumnModel[];
-  selectedRow?: ItemCardModel;
+  expandedRow?: ItemCardModel;
   item: Resource<AboutItemModel>;
 }
-
+/**
+ * Renders the table populated from an array of ItemCardModels. Also renders an instance of the ItemCardViewer,
+ * inserting a responsive sub-table with an iframe that displays the Item Card.
+ * @class ItemTable
+ * @extends {React.Component<ItemTableProps, {}>}
+ */
 export class ItemTable extends React.Component<ItemTableProps, {}> {
   constructor(props: ItemTableProps) {
     super(props);
   }
 
+  collapse = (
+    <i className="fa fa-chevron-right fa-sm table-icon" aria-hidden="true" />
+  );
+  expand = (
+    <i className="fa fa-chevron-down fa-sm table-icon" aria-hidden="true" />
+  );
+
   handleRowClick = (rowData: ItemCardModel) => {
-    this.props.rowOnClick(rowData);
+    this.props.onRowExpand(rowData);
+  };
+
+  handleCheckboxClick = (
+    event: React.MouseEvent<HTMLTableDataCellElement>,
+    rowData: ItemCardModel
+  ) => {
+    event.stopPropagation();
+    this.props.onRowSelect(rowData);
   };
 
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
@@ -31,57 +53,41 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     );
   }
 
-  renderRow(rowData: ItemCardModel, index: number): JSX.Element {
-    const collapse = (
-      <i
-        style={{ color: "gray" }}
-        className="fa fa-chevron-right fa-sm"
-        aria-hidden="true"
-      />
+  renderRow(rowData: ItemCardModel, index: number): JSX.Element[] {
+    const { expandedRow, columns, item } = this.props;
+    const unChecked = (
+      <i className="fa fa-square-o fa-sm table-icon" aria-hidden="true" />
     );
-    const expand = (
-      <i
-        style={{ color: "white" }}
-        className="fa fa-chevron-down fa-sm"
-        aria-hidden="true"
-      />
+    const checked = (
+      <i className="fa fa-check-square-o fa-sm table-icon" aria-hidden="true" />
     );
-
-    let tab = null;
-    let isSelected = false;
-    if (this.props.selectedRow) {
-      isSelected =
-        rowData.itemKey === this.props.selectedRow.itemKey &&
-        rowData.bankKey === this.props.selectedRow.bankKey;
+    let isExpanded = false;
+    if (expandedRow) {
+      isExpanded =
+        rowData.itemKey === expandedRow.itemKey &&
+        rowData.bankKey === expandedRow.bankKey;
     }
-    let row = (
+    const row: JSX.Element[] = [
       <tr
         key={index}
-        className={isSelected ? "selected" : ""}
+        className={isExpanded ? "selected" : ""}
         onClick={() => {
           this.handleRowClick(rowData);
         }}
       >
-        <td>{isSelected ? expand : collapse}</td>
-        {this.props.columns.map(col => this.renderCell(col, rowData))}
+        <td onClick={e => this.handleCheckboxClick(e, rowData)}>
+          {rowData.selected === true ? checked : unChecked}&nbsp;
+          {isExpanded ? this.expand : this.collapse}
+        </td>
+        {columns.map(col => this.renderCell(col, rowData))}
       </tr>
-    );
-    if (this.props.item.kind === "success" && isSelected) {
-      row = (
-        <tr key={index}>
+    ];
+
+    if (item.kind === "success" && isExpanded) {
+      row.push(
+        <tr key="item-card-viewer">
           <td colSpan={6}>
-            <div className="table-responsive">
-              <table className="table">
-                <tbody>
-                  {row}
-                  <tr>
-                    <td colSpan={6}>
-                      <ItemCardViewer item={this.props.item.content} />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <ItemCardViewer item={item.content} />
           </td>
         </tr>
       );

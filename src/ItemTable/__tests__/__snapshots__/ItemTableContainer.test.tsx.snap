@@ -128,7 +128,8 @@ exports[`ItemPageTable matches snapshot 1`] = `
           },
         ]
       }
-      rowOnClick={[Function]}
+      onRowExpand={[Function]}
+      onRowSelect={[Function]}
       sort={Array []}
     />
   </table>
@@ -447,7 +448,8 @@ exports[`ItemPageTable sorts list on header click 1`] = `
             },
           ]
         }
-        rowOnClick={[Function]}
+        onRowExpand={[Function]}
+        onRowSelect={[Function]}
         sort={
           Array [
             Object {
@@ -469,15 +471,17 @@ exports[`ItemPageTable sorts list on header click 1`] = `
             key="0"
             onClick={[Function]}
           >
-            <td>
+            <td
+              onClick={[Function]}
+            >
               <i
                 aria-hidden="true"
-                className="fa fa-chevron-right fa-sm"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
               />
             </td>
             <td
@@ -854,7 +858,8 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             },
           ]
         }
-        rowOnClick={[Function]}
+        onRowExpand={[Function]}
+        onRowSelect={[Function]}
         sort={
           Array [
             Object {
@@ -886,15 +891,17 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             key="0"
             onClick={[Function]}
           >
-            <td>
+            <td
+              onClick={[Function]}
+            >
               <i
                 aria-hidden="true"
-                className="fa fa-chevron-right fa-sm"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
               />
             </td>
             <td
@@ -1281,7 +1288,8 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             },
           ]
         }
-        rowOnClick={[Function]}
+        onRowExpand={[Function]}
+        onRowSelect={[Function]}
         sort={
           Array [
             Object {
@@ -1323,15 +1331,17 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             key="0"
             onClick={[Function]}
           >
-            <td>
+            <td
+              onClick={[Function]}
+            >
               <i
                 aria-hidden="true"
-                className="fa fa-chevron-right fa-sm"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
               />
             </td>
             <td
@@ -1728,7 +1738,8 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             },
           ]
         }
-        rowOnClick={[Function]}
+        onRowExpand={[Function]}
+        onRowSelect={[Function]}
         sort={
           Array [
             Object {
@@ -1780,15 +1791,17 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             key="0"
             onClick={[Function]}
           >
-            <td>
+            <td
+              onClick={[Function]}
+            >
               <i
                 aria-hidden="true"
-                className="fa fa-chevron-right fa-sm"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
               />
             </td>
             <td
@@ -2195,7 +2208,8 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             },
           ]
         }
-        rowOnClick={[Function]}
+        onRowExpand={[Function]}
+        onRowSelect={[Function]}
         sort={
           Array [
             Object {
@@ -2257,15 +2271,17 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             key="0"
             onClick={[Function]}
           >
-            <td>
+            <td
+              onClick={[Function]}
+            >
               <i
                 aria-hidden="true"
-                className="fa fa-chevron-right fa-sm"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
               />
             </td>
             <td

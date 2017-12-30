@@ -231,17 +231,20 @@ export {
   Resource,
   parseQueryString,
   getResourceContent,
-  get
+  getRequest,
+  postRequest
 } from "./ApiModel";
 
 //
 // Search Result Container
 //
 export {
-  SearchResultContainer
+  SearchResultContainer,
+  SearchResultType
 } from "./SearchResultContainer/SearchResultContainer";
 
 //
-// ErrorWrapper
+// Error Components
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
+export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";

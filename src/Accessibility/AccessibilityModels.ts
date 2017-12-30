@@ -1,4 +1,4 @@
-import { DropDownSelectionModel } from "src/DropDown/DropDownModels";
+import { DropDownSelectionModel } from "../DropDown/DropDownModels";
 
 export interface AccessibilityResourceModel {
   resourceCode: string; // ID for this resource

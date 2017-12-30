@@ -2,7 +2,7 @@ import {
   SearchBaseModel,
   SearchFilterTypes,
   SearchFilterStringTypes
-} from "src/ItemSearch/ItemSearchModels";
+} from "../ItemSearch/ItemSearchModels";
 import {
   ItemCardModel,
   ClaimModel,

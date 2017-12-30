@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as $ from "jquery";
 import { AboutItem, AboutItemModel, ItemViewerFrame } from "../index";
-import { Resource, get, getResourceContent } from "../ApiModel";
+import { Resource, getRequest, getResourceContent } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 import {
   AboutTestItemsModel,
@@ -63,7 +63,7 @@ export class AboutTestItemsContainer extends React.Component<
       .catch(err => this.onError(err));
   }
 
-  onError(err: any) {
+  onError(err: Error) {
     this.setState({
       aboutThisItemViewModel: { kind: "failure" },
       aboutItemsViewModel: { kind: "failure" },
@@ -98,7 +98,7 @@ export class AboutTestItemsContainer extends React.Component<
 
   renderDescription(interactionTypes: InteractionTypeModel[]) {
     let desc = "";
-    for (let it of interactionTypes) {
+    for (const it of interactionTypes) {
       if (it.code === this.state.selectedCode && it.description) {
         desc = it.description;
       }
@@ -116,7 +116,7 @@ export class AboutTestItemsContainer extends React.Component<
 
   renderInteractionTypesSelect(interactionTypes: InteractionTypeModel[]) {
     let items: JSX.Element[] = [];
-    for (let i of interactionTypes) {
+    for (const i of interactionTypes) {
       items.push(
         <option key={i.code} value={i.code}>
           {" "}
@@ -147,7 +147,8 @@ export class AboutTestItemsContainer extends React.Component<
   renderItemFrame() {
     const aboutThisItem = this.state.aboutThisItemViewModel;
     if (
-      (aboutThisItem.kind == "success" || aboutThisItem.kind == "reloading") &&
+      (aboutThisItem.kind === "success" ||
+        aboutThisItem.kind === "reloading") &&
       aboutThisItem.content
     ) {
       return (
