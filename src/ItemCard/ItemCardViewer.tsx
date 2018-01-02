@@ -90,9 +90,19 @@ export class ItemCardViewer extends React.Component<
     }
   }
   render() {
+    let rubricVisibility = false;
+    if (
+      this.props.item &&
+      this.props.item.sampleItemScoring &&
+      this.props.item.sampleItemScoring.rubrics
+    ) {
+      rubricVisibility = true;
+    }
+
     return (
       <div className="item-card">
         <ItemTabs
+          showRubricTab={rubricVisibility}
           changedTab={tab => this.onTabChange(tab)}
           selectedTab={this.state.selectedTab}
         />

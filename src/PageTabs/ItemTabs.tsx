@@ -5,11 +5,10 @@ export type Tabs = "viewer" | "rubric" | "information";
 export interface ItemTabsProps {
   changedTab: (tab: Tabs) => void;
   selectedTab: Tabs;
+  showRubricTab?: boolean;
 }
 
-export interface State {}
-
-export class ItemTabs extends React.Component<ItemTabsProps, State> {
+export class ItemTabs extends React.Component<ItemTabsProps, {}> {
   private select: Tabs;
 
   constructor(props: ItemTabsProps) {
@@ -24,39 +23,32 @@ export class ItemTabs extends React.Component<ItemTabsProps, State> {
     this.props.changedTab(selectedVal);
   };
 
+  renderTab(label: string, tabType: Tabs) {
+    return (
+      <div
+        className={
+          this.props.selectedTab === tabType
+            ? "selected-tab"
+            : "tab-not-selected"
+        }
+        onClick={() => this.onClick(tabType)}
+      >
+        {label}
+      </div>
+    );
+  }
+
   render() {
+    let rubricTab;
+    if (this.props.showRubricTab && this.props.showRubricTab === true) {
+      rubricTab = this.renderTab("Rubric and Exemplar", "rubric");
+    }
+
     return (
       <div className="tabs">
-        <div
-          className={
-            this.props.selectedTab == "viewer"
-              ? "selected-tab"
-              : "tab-not-selected"
-          }
-          onClick={() => this.onClick("viewer")}
-        >
-          Item Viewer
-        </div>
-        <div
-          className={
-            this.props.selectedTab == "rubric"
-              ? "selected-tab"
-              : "tab-not-selected"
-          }
-          onClick={() => this.onClick("rubric")}
-        >
-          Rubric and Exemplar
-        </div>
-        <div
-          className={
-            this.props.selectedTab == "information"
-              ? "selected-tab"
-              : "tab-not-selected"
-          }
-          onClick={() => this.onClick("information")}
-        >
-          Item Information
-        </div>
+        {this.renderTab("Item Viewer", "viewer")}
+        {rubricTab}
+        {this.renderTab("Item Information", "information")}
       </div>
     );
   }
