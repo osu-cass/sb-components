@@ -10619,26 +10619,28 @@ exports[`Storyshots Layout Footer default footer 1`] = `
     className="footer-container"
     role="contentinfo"
   >
-    <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
-    >
-      Practice and training tests are available here.
-    </a>
     <div
-      className="footer-copyright"
+      className="footer-content container"
     >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium
-         
-      </p>
       <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
       >
-         
-        www.SmarterBalanced.org
+        Practice and training tests are available here.
       </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -10678,13 +10680,13 @@ exports[`Storyshots Layout Nav name links 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10699,7 +10701,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <h3>
               Test
@@ -10774,13 +10776,13 @@ exports[`Storyshots Layout Nav name no links 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10795,7 +10797,7 @@ exports[`Storyshots Layout Nav name no links 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <h3>
               Test
@@ -10832,13 +10834,13 @@ exports[`Storyshots Layout name links and body 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10853,7 +10855,7 @@ exports[`Storyshots Layout name links and body 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <h3>
               Test
@@ -10898,48 +10900,45 @@ exports[`Storyshots Layout name links and body 1`] = `
   >
     <div
       className="container test-container"
-    >
-      <div
-        style={
-          Object {
-            "backgroundColor": "lightgrey",
-            "height": "100%",
-            "minHeight": "800px",
-            "minWidth": "1200px",
-            "width": "100%",
-          }
+      style={
+        Object {
+          "backgroundColor": "lightgrey",
+          "height": "100%",
+          "width": "100%",
         }
-      >
-        <p>
-          Test Body...
-        </p>
-      </div>
+      }
+    >
+      <p>
+        Test Body...
+      </p>
     </div>
   </main>
   <footer
     className="footer-container"
     role="contentinfo"
   >
-    <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
-    >
-      Practice and training tests are available here.
-    </a>
     <div
-      className="footer-copyright"
+      className="footer-content container"
     >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium
-         
-      </p>
       <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
       >
-         
-        www.SmarterBalanced.org
+        Practice and training tests are available here.
       </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -10969,13 +10968,13 @@ exports[`Storyshots Layout name no links no body 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10990,7 +10989,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <h3>
               Test
@@ -11009,26 +11008,28 @@ exports[`Storyshots Layout name no links no body 1`] = `
     className="footer-container"
     role="contentinfo"
   >
-    <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
-    >
-      Practice and training tests are available here.
-    </a>
     <div
-      className="footer-copyright"
+      className="footer-content container"
     >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium
-         
-      </p>
       <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
       >
-         
-        www.SmarterBalanced.org
+        Practice and training tests are available here.
       </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
     </div>
   </footer>
 </div>
