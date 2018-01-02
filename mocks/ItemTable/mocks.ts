@@ -1,5 +1,5 @@
 import { ItemTableProps, ItemTableContainerProps, ItemCardModel } from "src/index";
-import { AboutItemMockNoRubric } from "mocks/AboutItem/mocks";
+import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 
 export const itemTableProps: ItemTableContainerProps = {
   onRowSelection: () => {},
@@ -256,6 +256,6 @@ export const itemTableSelectProps: ItemTableContainerProps = {
   ],
   item: {
     kind: "success",
-    content: AboutItemMockNoRubric
+    content: AboutItemMockModel
   }
 };
