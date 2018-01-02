@@ -42,11 +42,13 @@
 .nav-linksGroup-item {
     font-size: @font-size-larger; // SB
     color: @link-color; //SB
-    margin: @spacing-unit/2; 
-    margin-left: @spacing-unit;
+    margin: @spacing-unit/2 @spacing-unit; 
     white-space: nowrap;
     &:hover{
         text-decoration: none;
+    }
+    &:last-child {
+        margin-right: 0;
     }
 }
 
