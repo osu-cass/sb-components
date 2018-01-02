@@ -77,8 +77,8 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
       >
         <td onClick={e => this.handleCheckboxClick(e, rowData)}>
           {rowData.selected === true ? checked : unChecked}&nbsp;
-          {isExpanded ? this.expand : this.collapse}
         </td>
+        <td>{isExpanded ? this.expand : this.collapse}</td>
         {columns.map(col => this.renderCell(col, rowData))}
       </tr>
     ];
