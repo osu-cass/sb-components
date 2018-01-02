@@ -8,6 +8,7 @@ import {
   rubricsEsn,
   allRubrics
 } from "mocks/AboutItem/mocks";
+import "src/Assets/Styles/pdf.less";
 
 storiesOf("PDF RubricTable", module)
   .addDecorator(PdfDecorator)

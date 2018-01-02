@@ -29,9 +29,9 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
           </Link>
         </div>
         <nav className="nav-container" role="navigation">
-          <div className="sbNav">
-            <div className="sbNav-titleGroup">
-              <div className="sbNav-titleGroup-item">
+          <div className="nav-content container">
+            <div className="nav-titleGroup">
+              <div className="nav-titleGroup-item">
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
@@ -41,7 +41,7 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
                   <img alt="Smarter Balanced Logo" src={sbLogo} />
                 </a>
               </div>
-              <div className="sbNav-titleGroup-item">
+              <div className="nav-titleGroup-item">
                 <h3>{this.props.siteName}</h3>
               </div>
             </div>
