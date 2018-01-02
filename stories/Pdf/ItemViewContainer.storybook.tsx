@@ -7,6 +7,7 @@ import {
   passageAndQuestion,
   multipleQuestions
 } from "mocks/Pdf/mocks";
+import "src/Assets/Styles/pdf.less";
 
 storiesOf("PDF ItemViewContainer", module)
   .addDecorator(PdfDecorator)
