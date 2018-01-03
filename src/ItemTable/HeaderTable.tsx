@@ -104,6 +104,7 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
       <thead>
         <tr className="primary">
           <th />
+          <th />
           {this.props.columns.map(col => this.renderHeader(col))}
         </tr>
       </thead>
