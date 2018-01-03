@@ -9,18 +9,21 @@
     font-family: "PT Serif Caption",serif;
     display: flex;
     justify-content: center;
+    position: relative;
     margin: 0;
     h1, h2, h3 {
         white-space: nowrap;
     } 
 }
 
-.nav-content {
+.nav-content, .nav-content.container {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    padding: 0;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .nav-titleGroup,
@@ -42,16 +45,18 @@
 .nav-linksGroup-item {
     font-size: @font-size-larger; // SB
     color: @link-color; //SB
-    margin: @spacing-unit/2; 
-    margin-left: @spacing-unit;
+    margin: @spacing-unit/2 @spacing-unit; 
     white-space: nowrap;
     &:hover{
         text-decoration: none;
     }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-@media screen and (max-width: @phone-portrait) {
-    .nav {
+@media screen and (max-width: @nav-min-width) {
+    .nav-contnet, .nav-content.container {
         flex-flow: column;
     }
     .nav-titleGroup,  .nav-linksGroup  {
@@ -100,7 +105,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
     align-content: center;
     width: 100%;
 }

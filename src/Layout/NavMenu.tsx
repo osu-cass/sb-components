@@ -14,7 +14,7 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
     let content: JSX.Element | undefined;
     if (links) {
       const sbLinks = links.map((l, key) => <SbNavLink {...l} key={key} />);
-      content = <div className="sbNav-linksGroup">{sbLinks}</div>;
+      content = <div className="nav-linksGroup">{sbLinks}</div>;
     }
 
     return content;

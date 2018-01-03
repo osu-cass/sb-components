@@ -13,7 +13,7 @@ export class SbNavLink extends React.Component<SbNavlinkProps, {}> {
         to={this.props.url}
         exact
         activeClassName="active"
-        className="sbNav-linksGroup-item"
+        className="nav-linksGroup-item"
       >
         <span className="" /> {this.props.name}
       </NavLink>
