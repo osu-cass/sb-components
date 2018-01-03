@@ -25,16 +25,15 @@ export class ItemTabs extends React.Component<ItemTabsProps, {}> {
 
   renderTab(label: string, tabType: Tabs) {
     return (
-      <div
+      <li
+        role="button"
         className={
-          this.props.selectedTab === tabType
-            ? "selected-tab"
-            : "tab-not-selected"
+          this.props.selectedTab === tabType ? "nav-item active" : "nav-item"
         }
         onClick={() => this.onClick(tabType)}
       >
-        {label}
-      </div>
+        <a className="nav-link">{label}</a>
+      </li>
     );
   }
 
@@ -45,11 +44,11 @@ export class ItemTabs extends React.Component<ItemTabsProps, {}> {
     }
 
     return (
-      <div className="tabs">
+      <ul className="nav nav-tabs">
         {this.renderTab("Item Viewer", "viewer")}
         {rubricTab}
         {this.renderTab("Item Information", "information")}
-      </div>
+      </ul>
     );
   }
 }
