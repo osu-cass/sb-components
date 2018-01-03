@@ -22,7 +22,7 @@ export interface ItemTableContainerProps {
 
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
-  item: Resource<AboutItemModel>;
+  item?: Resource<AboutItemModel>;
 }
 
 /**

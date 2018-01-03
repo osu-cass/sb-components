@@ -17,8 +17,19 @@ export interface FilterLinkProps {
  */
 // tslint:disable-next-line:variable-name
 export const FilterLink: React.SFC<FilterLinkProps> = ({ filterId }) => {
+  const handleClick = () => {
+    const element = document.getElementById(filterId);
+    if (element) {
+      element.scrollIntoView();
+    }
+  };
+
   return (
-    <a className=" filter-jump-link btn btn-blue" role="button" href={filterId}>
+    <a
+      className=" filter-jump-link btn btn-blue"
+      role="button"
+      onClick={handleClick}
+    >
       Jump to Filter
     </a>
   );

@@ -27,7 +27,7 @@ export interface SearchResultContainerProps {
   onRowSelection: (item: ItemModel, reset: boolean) => void;
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
-  item: Resource<AboutItemModel>;
+  item?: Resource<AboutItemModel>;
   defaultRenderType?: SearchResultType;
 }
 
