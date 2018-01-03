@@ -52,7 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: flex-end;
 }
 
 .item-nav-right-group {
@@ -105,7 +105,7 @@
 }
 
 .more-like-this-modal {
-    max-width: @small;
+    max-width: @modal-min-width;
     width: auto;
 }
 
@@ -113,7 +113,15 @@
     margin-top: 0px;
 }
 
+//share modal specfic styles
+.share-modal > .modal-wrapper {
+    max-width: @modal-min-width;
+}
 
+#copy-button {
+    margin:auto;
+    white-space: nowrap;
+}
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {

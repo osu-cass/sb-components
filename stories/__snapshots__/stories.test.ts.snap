@@ -10709,7 +10709,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
           </div>
         </div>
         <div
-          className="sbNav-linksGroup"
+          className="nav-linksGroup"
         >
           <a
             className="nav-linksGroup-item"
@@ -10721,7 +10721,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
               className=""
             />
              
-            link1
+            Home
           </a>
           <a
             className="nav-linksGroup-item"
@@ -10733,7 +10733,19 @@ exports[`Storyshots Layout Nav name links 1`] = `
               className=""
             />
              
-            link2
+            About Test Items
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url3"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Browse Items
           </a>
         </div>
       </div>
@@ -10858,12 +10870,12 @@ exports[`Storyshots Layout name links and body 1`] = `
             className="nav-titleGroup-item"
           >
             <h3>
-              Test
+              SB-Components
             </h3>
           </div>
         </div>
         <div
-          className="sbNav-linksGroup"
+          className="nav-linksGroup"
         >
           <a
             className="nav-linksGroup-item"
@@ -10875,7 +10887,7 @@ exports[`Storyshots Layout name links and body 1`] = `
               className=""
             />
              
-            link1
+            Home
           </a>
           <a
             className="nav-linksGroup-item"
@@ -10887,7 +10899,19 @@ exports[`Storyshots Layout name links and body 1`] = `
               className=""
             />
              
-            link2
+            About Test Items
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url3"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Browse Items
           </a>
         </div>
       </div>
@@ -10900,17 +10924,21 @@ exports[`Storyshots Layout name links and body 1`] = `
   >
     <div
       className="container test-container"
-      style={
-        Object {
-          "backgroundColor": "lightgrey",
-          "height": "100%",
-          "width": "100%",
-        }
-      }
     >
-      <p>
-        Test Body...
-      </p>
+      <div
+        className="content"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "height": "70vh",
+            "width": "100%",
+          }
+        }
+      >
+        <p>
+          Test Body...
+        </p>
+      </div>
     </div>
   </main>
   <footer
