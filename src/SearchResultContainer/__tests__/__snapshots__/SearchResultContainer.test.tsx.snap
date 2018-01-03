@@ -159,7 +159,11 @@ exports[`SearchResultContainer empty itemCards 1`] = `
   </div>
   <div
     className="search-result-body"
-  />
+  >
+    <div
+      className="loader"
+    />
+  </div>
 </div>
 `;
 

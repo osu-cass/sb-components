@@ -38,6 +38,7 @@ export interface SearchResultContainerProps {
  */
 export interface SearchResultContainerState {
   renderType: SearchResultType;
+  loading: boolean;
 }
 
 /**
@@ -55,8 +56,17 @@ export class SearchResultContainer extends React.Component<
     this.state = {
       renderType: props.defaultRenderType
         ? props.defaultRenderType
-        : SearchResultType.Table
+        : SearchResultType.Table,
+      loading: true
     };
+  }
+
+  componentWillReceiveProps(nextProps: SearchResultContainerProps) {
+    let loading = true;
+    if (nextProps.itemCards) {
+      loading = false;
+    }
+    this.setState({ loading });
   }
 
   /**
@@ -80,14 +90,18 @@ export class SearchResultContainer extends React.Component<
    */
   renderBody(): JSX.Element {
     let tag: JSX.Element | JSX.Element[] | undefined;
-
+    const notFound = this.state.loading ? (
+      <div className="loader" />
+    ) : (
+      <p>No items found.</p>
+    );
     if (this.state.renderType === SearchResultType.Table) {
       tag = <ItemTableContainer {...this.props} />;
     } else {
       tag = this.renderItemCards();
     }
 
-    return <div className="search-result-body">{tag}</div>;
+    return <div className="search-result-body">{tag ? tag : notFound}</div>;
   }
 
   handleTypeChange = (searchType: SearchResultType): void => {
