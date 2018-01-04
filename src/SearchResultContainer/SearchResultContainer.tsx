@@ -90,18 +90,21 @@ export class SearchResultContainer extends React.Component<
    */
   renderBody(): JSX.Element {
     let tag: JSX.Element | JSX.Element[] | undefined;
-    const notFound = this.state.loading ? (
-      <div className="loader" />
-    ) : (
-      <p>No items found.</p>
-    );
-    if (this.state.renderType === SearchResultType.Table) {
-      tag = <ItemTableContainer {...this.props} />;
+    if (this.props.itemCards && this.props.itemCards.length > 0) {
+      if (this.state.renderType === SearchResultType.Table) {
+        tag = <ItemTableContainer {...this.props} />;
+      } else {
+        tag = this.renderItemCards();
+      }
     } else {
-      tag = this.renderItemCards();
+      if (this.state.loading) {
+        tag = <div className="loader" />;
+      } else {
+        tag = <p>No items found.</p>;
+      }
     }
 
-    return <div className="search-result-body">{tag ? tag : notFound}</div>;
+    return <div className="search-result-body">{tag}</div>;
   }
 
   handleTypeChange = (searchType: SearchResultType): void => {
