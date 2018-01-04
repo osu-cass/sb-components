@@ -6223,13 +6223,6 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
     className="itemViewerFrame"
     tabIndex={0}
   >
-    <div
-      className="itemviewer-iframe-spinner"
-    >
-      <img
-        src="/images/spin-large.gif"
-      />
-    </div>
     <iframe
       className="itemviewer-iframe"
       id="itemviewer-iframe"
@@ -6335,13 +6328,6 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
     className="itemViewerFrame"
     tabIndex={0}
   >
-    <div
-      className="itemviewer-iframe-spinner"
-    >
-      <img
-        src="/images/spin-large.gif"
-      />
-    </div>
     <iframe
       className="itemviewer-iframe"
       id="itemviewer-iframe"
@@ -10795,13 +10781,6 @@ exports[`Storyshots Item Viewer Frame with an item 1`] = `
   className="itemViewerFrame"
   tabIndex={0}
 >
-  <div
-    className="itemviewer-iframe-spinner"
-  >
-    <img
-      src="/images/spin-large.gif"
-    />
-  </div>
   <iframe
     className="itemviewer-iframe"
     id="itemviewer-iframe"
