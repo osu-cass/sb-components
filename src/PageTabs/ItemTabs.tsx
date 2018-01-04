@@ -1,13 +1,28 @@
 import * as React from "react";
 
+/**
+ * Names of the different tab types.
+ * @type {Tabs}
+ */
 export type Tabs = "viewer" | "rubric" | "information";
 
+/**
+ * ItemTabsProps props
+ * @export
+ * @interface ItemTabsProps
+ */
 export interface ItemTabsProps {
   changedTab: (tab: Tabs) => void;
   selectedTab: Tabs;
   showRubricTab?: boolean;
 }
 
+/**
+ * ItemTabs displays options for view state of a selected item.
+ * @export
+ * @class ItemTabs
+ * @extends {React.Component<ItemTabsProps, {}>}
+ */
 export class ItemTabs extends React.Component<ItemTabsProps, {}> {
   private select: Tabs;
 
@@ -19,10 +34,19 @@ export class ItemTabs extends React.Component<ItemTabsProps, {}> {
     };
   }
 
+  /**
+   * event handler for view state.
+   */
   onClick = (selectedVal: Tabs) => {
     this.props.changedTab(selectedVal);
   };
 
+  /**
+   * renders individual tab components
+   * @param {string} label
+   * @param {Tabs} tabType
+   * @returns
+   */
   renderTab(label: string, tabType: Tabs) {
     return (
       <li
