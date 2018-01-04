@@ -22,7 +22,7 @@ export interface ItemTableContainerProps {
 
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
-  item: Resource<AboutItemModel>;
+  item?: Resource<AboutItemModel>;
 }
 
 /**
@@ -59,7 +59,6 @@ export class ItemTableContainer extends React.Component<
    */
   onClickHeader = (col: SortColumnModel) => {
     const newSorts = (this.state.sorts || []).slice();
-    // find the index of the
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
       const newSort = Object.assign({}, newSorts[headIdx]);

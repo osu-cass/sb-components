@@ -27,7 +27,7 @@ export interface SearchResultContainerProps {
   onRowSelection: (item: ItemModel, reset: boolean) => void;
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
-  item: Resource<AboutItemModel>;
+  item?: Resource<AboutItemModel>;
   defaultRenderType?: SearchResultType;
 }
 
@@ -38,6 +38,7 @@ export interface SearchResultContainerProps {
  */
 export interface SearchResultContainerState {
   renderType: SearchResultType;
+  loading: boolean;
 }
 
 /**
@@ -55,8 +56,17 @@ export class SearchResultContainer extends React.Component<
     this.state = {
       renderType: props.defaultRenderType
         ? props.defaultRenderType
-        : SearchResultType.Table
+        : SearchResultType.Table,
+      loading: true
     };
+  }
+
+  componentWillReceiveProps(nextProps: SearchResultContainerProps) {
+    let loading = true;
+    if (nextProps.itemCards) {
+      loading = false;
+    }
+    this.setState({ loading });
   }
 
   /**
@@ -80,18 +90,25 @@ export class SearchResultContainer extends React.Component<
    */
   renderBody(): JSX.Element {
     let tag: JSX.Element | JSX.Element[] | undefined;
-
-    if (this.state.renderType === SearchResultType.Table) {
-      tag = <ItemTableContainer {...this.props} />;
+    if (this.props.itemCards && this.props.itemCards.length > 0) {
+      if (this.state.renderType === SearchResultType.Table) {
+        tag = <ItemTableContainer {...this.props} />;
+      } else {
+        tag = this.renderItemCards();
+      }
     } else {
-      tag = this.renderItemCards();
+      if (this.state.loading) {
+        tag = <div className="loader" />;
+      } else {
+        tag = <p>No items found.</p>;
+      }
     }
 
     return <div className="search-result-body">{tag}</div>;
   }
 
-  handleTypeChange = (searchType: SearchResultType): void => {
-    this.setState({ renderType: searchType });
+  handleTypeChange = (renderType: SearchResultType): void => {
+    this.setState({ renderType });
   };
 
   /**
