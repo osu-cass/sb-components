@@ -13,6 +13,8 @@ export interface HeaderTableProps {
   columns: SortColumnModel[];
   onHeaderClick: (header: SortColumnModel) => void;
   sorts: HeaderSortModel[];
+
+  isLinkTable: boolean;
 }
 
 const invokeResetSortLimit = 2;
@@ -103,8 +105,7 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
     return (
       <thead>
         <tr className="primary">
-          <th />
-          <th />
+          {this.props.isLinkTable ? undefined : <th colSpan={2} />}
           {this.props.columns.map(col => this.renderHeader(col))}
         </tr>
       </thead>

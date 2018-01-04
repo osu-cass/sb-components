@@ -57,6 +57,7 @@
     box-shadow: @box-shadow-light;
 }
 
+table.link-table,
 table.item-table {
     width: 100%;
     height: 100%;
@@ -94,6 +95,7 @@ table.item-table {
     padding: @spacing-item;
 }
 
+table.link-table > thead > tr > th,
 table.item-table > thead > tr > th {
     border-right: 1px solid hsla(220,3%,40%,.17);
     width: 200px;
@@ -115,6 +117,7 @@ table.item-table > tbody > tr > td:nth-child(2), {
     padding: 0px;
 }
 
+table.link-table > tbody > tr > td
 table.item-table > tbody > tr > td { 
     width: 200px;
     min-width: 100px;
@@ -123,26 +126,31 @@ table.item-table > tbody > tr > td {
     white-space: normal;
 }
 
+table.link-table > tbody > tr:nth-child(even),
 table.item-table > tbody > tr:nth-child(even) {
     background-color: @background-color-base;
     border: 1px solid @grey-border-color;
 }
 
+table.link-table > tbody > tr:nth-child(odd),
 table.item-table > tbody > tr:nth-child(odd) {
     background-color: @background-color-base;
     border: 1px solid @grey-border-color;
 }
 
+table.link-table > tbody > tr:hover,
 table.item-table > tbody > tr:hover {
     background-color: @sb-white;
 }
 
+table.link-table > thead > tr > th > div,
 table.item-table > thead > tr > th > div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
+table.link-table > thead > tr > th:hover,
 table.item-table > thead > tr > th:hover {
     background-color: #EFEFEF;
 }
