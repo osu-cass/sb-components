@@ -107,8 +107,8 @@ export class SearchResultContainer extends React.Component<
     return <div className="search-result-body">{tag}</div>;
   }
 
-  handleTypeChange = (searchType: SearchResultType): void => {
-    this.setState({ renderType: searchType });
+  handleTypeChange = (renderType: SearchResultType): void => {
+    this.setState({ renderType });
   };
 
   /**
