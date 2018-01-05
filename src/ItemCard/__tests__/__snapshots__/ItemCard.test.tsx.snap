@@ -5,6 +5,7 @@ exports[`ItemCard renders correctly 1`] = `
   className="card card-block math"
   onClick={[Function]}
   onKeyUp={[Function]}
+  role="link"
   tabIndex={0}
 >
   <div
@@ -12,8 +13,6 @@ exports[`ItemCard renders correctly 1`] = `
   >
     <h4
       className="card-title"
-      onClick={[Function]}
-      onKeyUp={[Function]}
     />
     <p
       className="card-text subject"
