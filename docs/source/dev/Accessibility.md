@@ -5,7 +5,7 @@
 * Icons should have aria-hidden
 * Links or buttons with no text need to have aria-label or labeled-by. More info [here](http://fontawesome.io/accessibility/)
 * Roles should be used unless input (input type does this automatically). More info  [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
-* Check contrast of components being used (storybook accessibility tab) or [color-contract-tool](https://webaim.org/resources/contrastchecker/)
+* Check contrast of components being used (storybook accessibility tab) or [color-contrast-tool](https://webaim.org/resources/contrastchecker/)
 * Storybook accessibility tab should have no issues
 
 ## Resources
