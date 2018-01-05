@@ -83,7 +83,7 @@ export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 //
 // ItemCard Components, Models, and Actions
 //
-export { ItemCard, ItemCardProps } from "./ItemCard/ItemCard";
+export { ItemCard } from "./ItemCard/ItemCard";
 export {
   ItemCardCondensed,
   ItemCardCondensedProps

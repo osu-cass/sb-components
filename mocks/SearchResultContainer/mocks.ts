@@ -4,8 +4,9 @@ import {
 } from "src/SearchResultContainer/SearchResultContainer";
 
 export const SearchResultCardProps: SearchResultContainerProps = {
-  onRowSelection: () => {},
-  onItemSelection: () => {},
+  isLinkTable: true,
+  onRowSelection: () => { },
+  onItemSelection: () => { },
   itemCards: [
     {
       selected: false,
@@ -96,8 +97,9 @@ export const SearchResultTableProps: SearchResultContainerProps = {
 };
 
 export const SearchResultEmptyProps: SearchResultContainerProps = {
-  onRowSelection: () => {},
-  onItemSelection: () => {},
+  isLinkTable: true,
+  onRowSelection: () => { },
+  onItemSelection: () => { },
   item: {
     kind: "none"
   },
