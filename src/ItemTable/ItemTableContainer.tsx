@@ -23,6 +23,7 @@ export interface ItemTableContainerProps {
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item?: Resource<AboutItemModel>;
+  isLinkTable: boolean;
 }
 
 /**
@@ -141,6 +142,7 @@ export class ItemTableContainer extends React.Component<
         sorts={this.state.sorts}
         onHeaderClick={this.onClickHeader}
         columns={this.pageHeaderColumns}
+        isLinkTable={this.props.isLinkTable}
       />
     );
   }
@@ -168,6 +170,7 @@ export class ItemTableContainer extends React.Component<
             columns={this.pageHeaderColumns}
             expandedRow={this.state.expandedRow}
             item={this.props.item}
+            isLinkTable={this.props.isLinkTable}
           />
         );
       }
@@ -179,7 +182,7 @@ export class ItemTableContainer extends React.Component<
   render() {
     return (
       <div>
-        <table className="item-table">
+        <table className={this.props.isLinkTable ? "link-table" : "item-table"}>
           {this.renderTableHeader()}
           {this.renderTable()}
         </table>

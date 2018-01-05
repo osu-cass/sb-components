@@ -2536,8 +2536,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
           <tr
             className="primary"
           >
-            <th />
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               onClick={[Function]}
@@ -5928,6 +5929,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
     className="card card-block ela"
     onClick={[Function]}
     onKeyUp={[Function]}
+    role="link"
     tabIndex={0}
   >
     <div
@@ -5935,8 +5937,6 @@ exports[`Storyshots Item Card Item Card 1`] = `
     >
       <h4
         className="card-title"
-        onClick={[Function]}
-        onKeyUp={[Function]}
       >
         ELA Grade 4
       </h4>
@@ -6010,8 +6010,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
         <span
           className="card-text-value"
         >
-           
-          Item Type
+           Item Type
         </span>
       </p>
       <p
@@ -6478,8 +6477,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
         <tr
           className="primary"
         >
-          <th />
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -6854,6 +6854,342 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 </div>
 `;
 
+exports[`Storyshots Item Table Container render without chevron and checkbox 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <table
+      className="link-table"
+    >
+      <thead>
+        <tr
+          className="primary"
+        >
+          <th
+            className="item"
+            onClick={[Function]}
+          >
+            <div
+              className="item"
+            >
+              <span>
+                Item
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="subject"
+            onClick={[Function]}
+          >
+            <div
+              className="subject"
+            >
+              <span>
+                Subject
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="grade"
+            onClick={[Function]}
+          >
+            <div
+              className="grade"
+            >
+              <span>
+                Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="interactionType"
+            onClick={[Function]}
+          >
+            <div
+              className="interactionType"
+            >
+              <span>
+                Item Type
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3206
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Concepts and Procedures/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              Math
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 6
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Equation
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3163
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Reading/Key Details
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              ELA/literacy
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 3
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multiple Choice
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3615
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Modeling/Data Analysis/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              Math
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 6
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multi Select
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              2928
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Research/Inquiry/Evaluate Information/ sources
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              ELA/literacy
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 4
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multi Select
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Item Table Container selected item 1`] = `
 <div
   style={
@@ -6876,8 +7212,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
         <tr
           className="primary"
         >
-          <th />
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -7274,8 +7611,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
         <tr
           className="primary"
         >
-          <th />
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -10662,8 +11000,9 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
         <tr
           className="primary"
         >
-          <th />
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -13077,14 +13416,12 @@ exports[`Storyshots Search Result Container normal render 1`] = `
     >
       <div>
         <table
-          className="item-table"
+          className="link-table"
         >
           <thead>
             <tr
               className="primary"
             >
-              <th />
-              <th />
               <th
                 className="item"
                 onClick={[Function]}
@@ -13198,21 +13535,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               onClick={[Function]}
             >
               <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td>
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
                 className="item"
               >
                 <div
@@ -13262,21 +13584,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               className=""
               onClick={[Function]}
             >
-              <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td>
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
               <td
                 className="item"
               >
@@ -13328,21 +13635,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               onClick={[Function]}
             >
               <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td>
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
                 className="item"
               >
                 <div
@@ -13392,21 +13684,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               className=""
               onClick={[Function]}
             >
-              <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td>
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
               <td
                 className="item"
               >

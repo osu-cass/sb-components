@@ -11,6 +11,9 @@ import { ItemTableContainer } from "src/index";
 storiesOf("Item Table Container", module)
   .addDecorator(CenterDecorator)
   .add("normal render", () => <ItemTableContainer {...itemTableProps} />)
+  .add("render without chevron and checkbox", () => (
+    <ItemTableContainer {...itemTableProps} isLinkTable={true} />
+  ))
   .add("verify sort order", () => (
     <ItemTableContainer {...itemTableSortProps} />
   ))
