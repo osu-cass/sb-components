@@ -2,6 +2,7 @@ import { ItemTableProps, ItemTableContainerProps, ItemCardModel } from "src/inde
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 
 export const itemTableProps: ItemTableContainerProps = {
+  isLinkTable: false,
   onRowSelection: () => {},
   onItemSelection: () => {},
   itemCards: [
@@ -88,6 +89,7 @@ export const itemTableProps: ItemTableContainerProps = {
 };
 
 export const itemTableSortProps: ItemTableContainerProps = {
+  isLinkTable: false,
   onRowSelection: () => {},
   onItemSelection: () => {},
   itemCards: [
@@ -174,6 +176,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
 };
 
 export const itemTableSelectProps: ItemTableContainerProps = {
+  isLinkTable: false,
   onRowSelection: () => {},
   onItemSelection: () => {},
   itemCards: [

@@ -24,7 +24,8 @@ const props = {
   columns: headerColumns,
   onHeaderClick: (header: SortColumnModel) =>
     console.log(JSON.stringify(header)),
-  sorts
+  sorts,
+  isLinkTable: false
 };
 
 storiesOf("Item Table Header", module)
