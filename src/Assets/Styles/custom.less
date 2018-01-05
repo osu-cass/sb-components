@@ -45,15 +45,89 @@ a.collapsible-label:visited {
   text-decoration: none !important;
 }
 
-//## Tooltips
-.tooltip-label {
+// //## Tooltips
+// .tooltip-label {
+//   margin-right: @spacing-item;
+// }
+
+// [data-tooltip] {
+//   display: inline-block;
+//   position: relative;
+//   cursor: help;
+//   padding: @spacing-item;
+// }
+
+// /* Tooltip styling */
+// [data-tooltip]:before {
+//   content: attr(data-tooltip);
+//   display: none;
+//   position: absolute;
+//   background: @sb-white;
+//   padding: 4px 8px;
+//   min-width: 100px;
+//   text-align: center;
+//   border-radius: 4px;
+// }
+// /* Dynamic horizontal centering */
+// [data-tooltip-position="top"]:before,
+// [data-tooltip-position="bottom"]:before {
+//   left: 50%;
+//   -ms-transform: translateX(-50%);
+//   -moz-transform: translateX(-50%);
+//   -webkit-transform: translateX(-50%);
+//   transform: translateX(-50%);
+// }
+// [data-tooltip-position="top"]:before {
+//   bottom: 100%;
+//   margin-bottom: 6px;
+// }
+// [data-tooltip-position="bottom"]:before {
+//   top: 100%;
+//   margin-top: 6px;
+// }
+
+// /* Tooltip arrow styling/placement */
+// [data-tooltip]:after {
+//   content: "";
+//   display: none;
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   border-color: transparent;
+//   border-style: solid;
+// }
+// /* Dynamic horizontal centering for the tooltip */
+// [data-tooltip-position="top"]:after,
+// [data-tooltip-position="bottom"]:after {
+//   left: 50%;
+//   margin-left: -6px;
+// }
+// [data-tooltip-position="top"]:after {
+//   bottom: 100%;
+//   border-width: 6px 6px 0;
+//   border-top-color: @sb-white;
+// }
+// [data-tooltip-position="bottom"]:after {
+//   top: 100%;
+//   border-width: 0 6px 6px;
+//   border-bottom-color: @sb-white;
+// }
+// /* Show the tooltip when hovering */
+// [data-tooltip]:hover:before,
+// [data-tooltip]:hover:after {
+//   display: block;
+//   z-index: 50;
+// }
+
+//## Item Table Tooltips
+.item-table-tooltip-label {
   margin-right: @spacing-item;
 }
+
 
 [data-tooltip] {
   display: inline-block;
   position: relative;
-  cursor: help;
   padding: @spacing-item;
 }
 
@@ -62,7 +136,7 @@ a.collapsible-label:visited {
   content: attr(data-tooltip);
   display: none;
   position: absolute;
-  background: @sb-white;
+  background: #D5D5D5;
   padding: 4px 8px;
   min-width: 100px;
   text-align: center;
@@ -97,24 +171,24 @@ a.collapsible-label:visited {
   border-style: solid;
 }
 /* Dynamic horizontal centering for the tooltip */
-[data-tooltip-position="top"]:after,
-[data-tooltip-position="bottom"]:after {
+.item-table-tooltip-help[data-tooltip-position="top"]:after,
+.item-table-tooltip-help[data-tooltip-position="bottom"]:after {
   left: 50%;
   margin-left: -6px;
 }
-[data-tooltip-position="top"]:after {
+.item-table-tooltip-help[data-tooltip-position="top"]:after {
   bottom: 100%;
   border-width: 6px 6px 0;
-  border-top-color: @sb-white;
+  border-top-color: #D5D5D5;
 }
-[data-tooltip-position="bottom"]:after {
+.item-table-tooltip-help[data-tooltip-position="bottom"]:after {
   top: 100%;
   border-width: 0 6px 6px;
-  border-bottom-color: @sb-white;
+  border-bottom-color: #D5D5D5;
 }
 /* Show the tooltip when hovering */
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
+.item-table-tooltip-help[data-tooltip]:focus:after,
+.item-table-tooltip-help[data-tooltip]:focus:before {
   display: block;
   z-index: 50;
 }

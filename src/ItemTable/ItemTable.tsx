@@ -39,6 +39,12 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     this.props.onRowExpand(rowData);
   };
 
+  handleKeyUpEnter = (e: React.KeyboardEvent<any>, rowData: ItemCardModel) => {
+    if (e.keyCode === 13) {
+      this.props.onRowExpand(rowData);
+    }
+  };
+
   handleCheckboxClick = (
     event: React.MouseEvent<HTMLTableDataCellElement>,
     rowData: ItemCardModel
@@ -47,10 +53,47 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     this.props.onRowSelect(rowData);
   };
 
+  handleCheckboxKeyUpEnter = (
+    e: React.KeyboardEvent<any>,
+    rowData: ItemCardModel
+  ) => {
+    if (e.keyCode === 13) {
+      e.stopPropagation();
+      this.props.onRowSelect(rowData);
+    }
+  };
+
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
+    let tag: JSX.Element;
+
+    // if(true) {
+    //   tag = <a className={col.className}>{col.accessor(cellData)}</a>;
+    // } else {
+    tag = (
+      <div className={col.className}>
+        <span
+          className="item-table-tooltip-help"
+          data-tooltip={"HALP TEXT"}
+          data-tooltip-position="top"
+        >
+          <a
+            className="item-table-tooltip-label"
+            data-toggle="data-tooltip"
+            info-label="true"
+            tabIndex={0}
+            onClick={e => e.stopPropagation()}
+            role="contentinfo"
+          >
+            {col.accessor(cellData)}
+          </a>
+        </span>
+      </div>
+    );
+
     return (
       <td key={col.header} className={col.className}>
-        <div className={col.className}>{col.accessor(cellData)}</div>
+        {/* <a className={col.className}>{col.accessor(cellData)}</a> */}
+        {tag}
       </td>
     );
   }
@@ -69,12 +112,15 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         rowData.itemKey === expandedRow.itemKey &&
         rowData.bankKey === expandedRow.bankKey;
     }
-    let controls: JSX.Element[] = [];
+
+    const controls: JSX.Element[] = [];
     if (!isLinkTable) {
       controls.push(
         <td
           key={rowData.bankKey}
           onClick={e => this.handleCheckboxClick(e, rowData)}
+          onKeyUp={e => this.handleCheckboxKeyUpEnter(e, rowData)}
+          tabIndex={0}
         >
           {rowData.selected === true ? checked : unChecked}&nbsp;
         </td>,
@@ -87,9 +133,9 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
       <tr
         key={index}
         className={isExpanded ? "selected" : ""}
-        onClick={() => {
-          this.handleRowClick(rowData);
-        }}
+        onClick={() => this.handleRowClick(rowData)}
+        onKeyUp={e => this.handleKeyUpEnter(e, rowData)}
+        tabIndex={0}
       >
         {controls.length > 0 ? controls : undefined}
         {columns.map(col => this.renderCell(col, rowData))}

@@ -51,9 +51,29 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
    * @param {SortColumnModel} sCol
    * @param {(HeaderSortModel | undefined)} hCol
    */
-  headerEventHandler(sCol: SortColumnModel, hCol: HeaderSortModel | undefined) {
+  headerClickHandler = (
+    sCol: SortColumnModel,
+    hCol: HeaderSortModel | undefined
+  ) => {
     this.props.onHeaderClick(sCol);
-  }
+  };
+
+  /**
+   * Send the clicked sort column to the parent to be added to the sorts list
+   * using onHeaderClick prop.
+   * @param {React.KeyboardEvent<any>} e
+   * @param {SortColumnModel} sCol
+   * @param {(HeaderSortModel | undefined)} hCol
+   */
+  headerKeyUpHandler = (
+    e: React.KeyboardEvent<any>,
+    sCol: SortColumnModel,
+    hCol: HeaderSortModel | undefined
+  ) => {
+    if (e.keyCode === 13) {
+      this.props.onHeaderClick(sCol);
+    }
+  };
 
   /**
    * Assigns an ascending or descending arrow character to the visible column
@@ -70,6 +90,7 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
     } else if (headerSort.direction === SortDirection.Descending) {
       dirElem = descendingArrow;
     }
+
     return dirElem;
   }
 
@@ -91,7 +112,10 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
       <th
         key={col.header}
         className={col.className}
-        onClick={() => this.headerEventHandler(col, headerSort)}
+        onClick={() => this.headerClickHandler(col, headerSort)}
+        onKeyUp={e => this.headerKeyUpHandler(e, col, headerSort)}
+        tabIndex={0}
+        scope="col"
       >
         <div className={col.className}>
           <span>{col.header}</span>
@@ -105,7 +129,7 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
     return (
       <thead>
         <tr className="primary">
-          {this.props.isLinkTable ? undefined : <th colSpan={2} />}
+          {this.props.isLinkTable ? undefined : <td colSpan={2} />}
           {this.props.columns.map(col => this.renderHeader(col))}
         </tr>
       </thead>
