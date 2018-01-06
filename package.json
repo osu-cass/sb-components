@@ -70,6 +70,7 @@
     "@types/react-modal": "2.2.2",
     "@types/react-router": "4.0.12",
     "@types/react-router-dom": "4.0.5",
+    "@types/react-tooltip": "^3.3.2",
     "@types/storybook__addon-actions": "~3.0.1",
     "@types/storybook__react": "~3.0.5",
     "awesome-typescript-loader": "^3.4.0",
@@ -113,6 +114,7 @@
     "enhanced-resolve": "^4.0.0-beta.2",
     "font-awesome": "~4.7.0",
     "jquery": "3.2.1",
+    "react-tooltip": "^3.4.0",
     "typeface-pt-sans-caption": "0.0.44",
     "typeface-pt-serif": "0.0.44",
     "typeface-pt-serif-caption": "0.0.44"

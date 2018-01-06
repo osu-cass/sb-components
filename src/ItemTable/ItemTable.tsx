@@ -4,6 +4,7 @@ import { Resource } from "../ApiModel";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
+import * as ReactTooltip from "react-tooltip";
 
 export interface ItemTableProps {
   mapRows: ItemCardModel[];
@@ -70,23 +71,17 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     //   tag = <a className={col.className}>{col.accessor(cellData)}</a>;
     // } else {
     tag = (
-      <div className={col.className}>
-        <span
-          className="item-table-tooltip-help"
-          data-tooltip={"HALP TEXT"}
-          data-tooltip-position="top"
+      <div className={`${col.className}-${cellData.itemKey}`}>
+        <a
+          tabIndex={0}
+          onClick={e => e.stopPropagation()}
+          data-event="focus"
+          data-tip="custom show"
+          role="button"
         >
-          <a
-            className="item-table-tooltip-label"
-            data-toggle="data-tooltip"
-            info-label="true"
-            tabIndex={0}
-            onClick={e => e.stopPropagation()}
-            role="contentinfo"
-          >
-            {col.accessor(cellData)}
-          </a>
-        </span>
+          {col.accessor(cellData)}
+        </a>
+        <ReactTooltip globalEventOff="click" />
       </div>
     );
 
