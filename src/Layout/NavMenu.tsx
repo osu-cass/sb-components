@@ -42,7 +42,7 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
                 </a>
               </div>
               <div className="nav-titleGroup-item">
-                <h3>{this.props.siteName}</h3>
+                <h1 className="application-title">{this.props.siteName}</h1>
               </div>
             </div>
             {this.renderLinks()}

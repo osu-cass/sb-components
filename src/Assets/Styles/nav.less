@@ -2,18 +2,14 @@
 
 .nav-container {
     border-radius: 0px; // SB
-    padding: 1em; // SB
+    padding: @spacing-unit/2;
     box-shadow: @sb-shadow; // SB
     background-color: @sb-white; // SB
     border-color: @sb-white; // SB
-    font-family: "PT Serif Caption",serif;
     display: flex;
     justify-content: center;
     position: relative;
     margin: 0;
-    h1, h2, h3 {
-        white-space: nowrap;
-    } 
 }
 
 .nav-content, .nav-content.container {
@@ -21,9 +17,19 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     flex-wrap: wrap;
     align-content: flex-start;
+}
+
+.nav-content, 
+.nav-content.container, 
+.footer-content, 
+.footer-content.container {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .nav-titleGroup,
@@ -36,10 +42,6 @@
 
 .nav-linksGroup {
     justify-content: flex-end;
-}
-
-.nav-titleGroup-item {
-    margin: @spacing-item;
 }
 
 .nav-linksGroup-item {
@@ -55,8 +57,27 @@
     }
 }
 
+.nav-titleGroup-item{
+    margin: @spacing-item;
+
+    h1, h2, h3 {
+        margin: 0 @spacing-unit/2;
+        letter-spacing: @sb-letter-spacing; // SB
+    }
+    img {
+        width: 183px;
+        padding-right: @spacing-unit;
+        border-right: 1px solid @sb-gray;
+    }
+}
+
+.glyphicon-search {
+    font-size: 80%;
+    padding-right: @spacing-item;
+}
+
 @media screen and (max-width: @nav-min-width) {
-    .nav-contnet, .nav-content.container {
+    .nav-content, .nav-content.container {
         flex-flow: column;
     }
     .nav-titleGroup,  .nav-linksGroup  {
@@ -69,25 +90,6 @@
     .nav-container {
         margin: 0;
     }
-}
-
-.nav-titleGroup-item h3 {
-    color: @sb-gray;
-    margin: 0 auto;
-    font-size: 28px;
-    letter-spacing: @sb-letter-spacing; // SB
-    font-family: "PT Sans", Times, serif;
-}
-
-.glyphicon-search {
-    font-size: 80%;
-    padding-right: @spacing-item;
-}
-
-.nav-titleGroup-item img {
-    height: 50px;
-    padding-right: 15px;
-    border-right: 1px solid @sb-gray;
 }
 
 .footer-container {
@@ -106,7 +108,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    width: 100%;
 }
 
 .footer-copyright {
