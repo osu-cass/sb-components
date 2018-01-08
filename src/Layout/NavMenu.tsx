@@ -14,7 +14,7 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
     let content: JSX.Element | undefined;
     if (links) {
       const sbLinks = links.map((l, key) => <SbNavLink {...l} key={key} />);
-      content = <div className="sbNav-linksGroup">{sbLinks}</div>;
+      content = <div className="nav-linksGroup">{sbLinks}</div>;
     }
 
     return content;
@@ -29,9 +29,9 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
           </Link>
         </div>
         <nav className="nav-container" role="navigation">
-          <div className="sbNav">
-            <div className="sbNav-titleGroup">
-              <div className="sbNav-titleGroup-item">
+          <div className="nav-content container">
+            <div className="nav-titleGroup">
+              <div className="nav-titleGroup-item">
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
@@ -41,8 +41,8 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
                   <img alt="Smarter Balanced Logo" src={sbLogo} />
                 </a>
               </div>
-              <div className="sbNav-titleGroup-item">
-                <h3>{this.props.siteName}</h3>
+              <div className="nav-titleGroup-item">
+                <h1 className="application-title">{this.props.siteName}</h1>
               </div>
             </div>
             {this.renderLinks()}

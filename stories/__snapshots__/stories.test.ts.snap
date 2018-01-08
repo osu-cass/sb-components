@@ -17,7 +17,7 @@ exports[`Storyshots About Item Modal default 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -54,7 +54,7 @@ exports[`Storyshots About Item Modal showing no rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -91,7 +91,7 @@ exports[`Storyshots About Item Modal showing rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -128,7 +128,7 @@ exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -165,7 +165,7 @@ exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -307,27 +307,31 @@ exports[`Storyshots About Test Items bad item type 1`] = `
   className="container about-items"
 >
   <div
-    className="aboutitems-parents"
+    className="about-items-info"
   >
+    <h2>
+      About Test Items
+    </h2>
     <div
-      className="aboutitems-info"
+      className="section section-light"
     >
-      <h1>
-        About Test Items
-      </h1>
-      <div
-        className="aboutitems-text"
+      <p
+        className="about-items-text"
       >
         Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </div>
+      </p>
       <p>
         <em>
           Loading...
         </em>
       </p>
     </div>
+  </div>
+  <div
+    className="section about-items-iframe"
+  >
     <div
-      className="no-item"
+      className="section section-light no-item"
     >
       <p>
         No items of the selected type found.
@@ -342,27 +346,31 @@ exports[`Storyshots About Test Items default 1`] = `
   className="container about-items"
 >
   <div
-    className="aboutitems-parents"
+    className="about-items-info"
   >
+    <h2>
+      About Test Items
+    </h2>
     <div
-      className="aboutitems-info"
+      className="section section-light"
     >
-      <h1>
-        About Test Items
-      </h1>
-      <div
-        className="aboutitems-text"
+      <p
+        className="about-items-text"
       >
         Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </div>
+      </p>
       <p>
         <em>
           Loading...
         </em>
       </p>
     </div>
+  </div>
+  <div
+    className="section about-items-iframe"
+  >
     <div
-      className="no-item"
+      className="section section-light no-item"
     >
       <p>
         No items of the selected type found.
@@ -377,27 +385,31 @@ exports[`Storyshots About Test Items default, param 1`] = `
   className="container about-items"
 >
   <div
-    className="aboutitems-parents"
+    className="about-items-info"
   >
+    <h2>
+      About Test Items
+    </h2>
     <div
-      className="aboutitems-info"
+      className="section section-light"
     >
-      <h1>
-        About Test Items
-      </h1>
-      <div
-        className="aboutitems-text"
+      <p
+        className="about-items-text"
       >
         Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </div>
+      </p>
       <p>
         <em>
           Loading...
         </em>
       </p>
     </div>
+  </div>
+  <div
+    className="section about-items-iframe"
+  >
     <div
-      className="no-item"
+      className="section section-light no-item"
     >
       <p>
         No items of the selected type found.
@@ -412,27 +424,31 @@ exports[`Storyshots About Test Items loading, param 1`] = `
   className="container about-items"
 >
   <div
-    className="aboutitems-parents"
+    className="about-items-info"
   >
+    <h2>
+      About Test Items
+    </h2>
     <div
-      className="aboutitems-info"
+      className="section section-light"
     >
-      <h1>
-        About Test Items
-      </h1>
-      <div
-        className="aboutitems-text"
+      <p
+        className="about-items-text"
       >
         Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </div>
+      </p>
       <p>
         <em>
           Loading...
         </em>
       </p>
     </div>
+  </div>
+  <div
+    className="section about-items-iframe"
+  >
     <div
-      className="no-item"
+      className="section section-light no-item"
     >
       <p>
         No items of the selected type found.
@@ -447,27 +463,31 @@ exports[`Storyshots About Test Items reject, param 1`] = `
   className="container about-items"
 >
   <div
-    className="aboutitems-parents"
+    className="about-items-info"
   >
+    <h2>
+      About Test Items
+    </h2>
     <div
-      className="aboutitems-info"
+      className="section section-light"
     >
-      <h1>
-        About Test Items
-      </h1>
-      <div
-        className="aboutitems-text"
+      <p
+        className="about-items-text"
       >
         Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </div>
+      </p>
       <p>
         <em>
           Loading...
         </em>
       </p>
     </div>
+  </div>
+  <div
+    className="section about-items-iframe"
+  >
     <div
-      className="no-item"
+      className="section section-light no-item"
     >
       <p>
         No items of the selected type found.
@@ -930,16 +950,15 @@ exports[`Storyshots Accessibility Modal few options hiding 1`] = `
   <div>
     <button
       aria-label="Open Accessibility Modal"
-      className="accessibility-btn btn btn-primary"
+      className="btn btn-primary"
       onClick={[Function]}
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-collapse-down"
-      >
-        Accessibility
-      </span>
+        className="fa fa-caret-square-o-down"
+      />
+      Accessibility
     </button>
   </div>
 </div>
@@ -962,16 +981,15 @@ exports[`Storyshots Accessibility Modal many options showing  1`] = `
   <div>
     <button
       aria-label="Open Accessibility Modal"
-      className="accessibility-btn btn btn-primary"
+      className="btn btn-primary"
       onClick={[Function]}
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-collapse-down"
-      >
-        Accessibility
-      </span>
+        className="fa fa-caret-square-o-down"
+      />
+      Accessibility
     </button>
   </div>
 </div>
@@ -994,16 +1012,15 @@ exports[`Storyshots Accessibility Modal no options showing  1`] = `
   <div>
     <button
       aria-label="Open Accessibility Modal"
-      className="accessibility-btn btn btn-primary"
+      className="btn btn-primary"
       onClick={[Function]}
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-collapse-down"
-      >
-        Accessibility
-      </span>
+        className="fa fa-caret-square-o-down"
+      />
+      Accessibility
     </button>
   </div>
 </div>
@@ -1905,7 +1922,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       Advanced Filters
     </div>
     <button
-      className="btn btn-white filter-button"
+      className="btn btn-default filter-button"
       onClick={[Function]}
     >
       Show
@@ -2473,7 +2490,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         Advanced Filters
       </div>
       <button
-        className="btn btn-white filter-button"
+        className="btn btn-default filter-button"
         onClick={[Function]}
       >
         Show
@@ -2503,7 +2520,7 @@ exports[`Storyshots Filter Link changed color on hover and click 1`] = `
 >
   <a
     className=" filter-jump-link btn btn-blue"
-    href="javascript:void(0)"
+    onClick={[Function]}
     role="button"
   >
     Jump to Filter
@@ -2536,7 +2553,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
           <tr
             className="primary"
           >
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               onClick={[Function]}
@@ -2657,6 +2676,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -2720,6 +2741,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -2783,6 +2806,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -2846,6 +2871,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -2909,6 +2936,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -2972,6 +3001,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3035,6 +3066,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3098,6 +3131,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3161,6 +3196,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3224,6 +3261,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3287,6 +3326,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3350,6 +3391,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3413,6 +3456,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3476,6 +3521,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3539,6 +3586,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3602,6 +3651,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3665,6 +3716,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3728,6 +3781,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3791,6 +3846,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3854,6 +3911,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3917,6 +3976,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -3980,6 +4041,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4043,6 +4106,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4106,6 +4171,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4169,6 +4236,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4232,6 +4301,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4295,6 +4366,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4358,6 +4431,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4421,6 +4496,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4484,6 +4561,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4547,6 +4626,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4610,6 +4691,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4673,6 +4756,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4736,6 +4821,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4799,6 +4886,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4862,6 +4951,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4925,6 +5016,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -4988,6 +5081,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5051,6 +5146,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5114,6 +5211,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5177,6 +5276,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5240,6 +5341,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5303,6 +5406,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5366,6 +5471,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5429,6 +5536,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5492,6 +5601,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5555,6 +5666,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5618,6 +5731,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5681,6 +5796,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5744,6 +5861,8 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td>
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -5801,7 +5920,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
   </div>
   <a
     className=" filter-jump-link btn btn-blue"
-    href="javascript:void(0)"
+    onClick={[Function]}
     role="button"
   >
     Jump to Filter
@@ -5827,6 +5946,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
     className="card card-block ela"
     onClick={[Function]}
     onKeyUp={[Function]}
+    role="link"
     tabIndex={0}
   >
     <div
@@ -5834,8 +5954,6 @@ exports[`Storyshots Item Card Item Card 1`] = `
     >
       <h4
         className="card-title"
-        onClick={[Function]}
-        onKeyUp={[Function]}
       >
         ELA Grade 4
       </h4>
@@ -5909,8 +6027,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
         <span
           className="card-text-value"
         >
-           
-          Item Type
+           Item Type
         </span>
       </p>
       <p
@@ -6043,7 +6160,7 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
       <div>
         <button
           aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -6063,7 +6180,7 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
       <div>
         <button
           aria-label="More Like This Modal"
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -6083,7 +6200,7 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
       <div>
         <button
           aria-label="Open Share Modal"
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -6104,16 +6221,15 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
       <div>
         <button
           aria-label="Open Accessibility Modal"
-          className="accessibility-btn btn btn-primary"
+          className="btn btn-primary"
           onClick={[Function]}
           tabIndex={0}
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-collapse-down"
-          >
-            Accessibility
-          </span>
+            className="fa fa-caret-square-o-down"
+          />
+          Accessibility
         </button>
       </div>
     </div>
@@ -6122,13 +6238,6 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
     className="itemViewerFrame"
     tabIndex={0}
   >
-    <div
-      className="itemviewer-iframe-spinner"
-    >
-      <img
-        src="/images/spin-large.gif"
-      />
-    </div>
     <iframe
       className="itemviewer-iframe"
       id="itemviewer-iframe"
@@ -6155,7 +6264,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       <div>
         <button
           aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -6175,7 +6284,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       <div>
         <button
           aria-label="More Like This Modal"
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -6195,7 +6304,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       <div>
         <button
           aria-label="Open Share Modal"
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -6216,16 +6325,15 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       <div>
         <button
           aria-label="Open Accessibility Modal"
-          className="accessibility-btn btn btn-primary"
+          className="btn btn-primary"
           onClick={[Function]}
           tabIndex={0}
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-collapse-down"
-          >
-            Accessibility
-          </span>
+            className="fa fa-caret-square-o-down"
+          />
+          Accessibility
         </button>
       </div>
     </div>
@@ -6234,13 +6342,6 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
     className="itemViewerFrame"
     tabIndex={0}
   >
-    <div
-      className="itemviewer-iframe-spinner"
-    >
-      <img
-        src="/images/spin-large.gif"
-      />
-    </div>
     <iframe
       className="itemviewer-iframe"
       id="itemviewer-iframe"
@@ -6391,7 +6492,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
         <tr
           className="primary"
         >
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -6512,6 +6615,8 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -6575,6 +6680,8 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -6638,6 +6745,8 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -6701,11 +6810,349 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
             />
           </td>
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              2928
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Research/Inquiry/Evaluate Information/ sources
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              ELA/literacy
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 4
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multi Select
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Table Container render without chevron and checkbox 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <table
+      className="link-table"
+    >
+      <thead>
+        <tr
+          className="primary"
+        >
+          <th
+            className="item"
+            onClick={[Function]}
+          >
+            <div
+              className="item"
+            >
+              <span>
+                Item
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="subject"
+            onClick={[Function]}
+          >
+            <div
+              className="subject"
+            >
+              <span>
+                Subject
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="grade"
+            onClick={[Function]}
+          >
+            <div
+              className="grade"
+            >
+              <span>
+                Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="interactionType"
+            onClick={[Function]}
+          >
+            <div
+              className="interactionType"
+            >
+              <span>
+                Item Type
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3206
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Concepts and Procedures/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              Math
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 6
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Equation
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3163
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Reading/Key Details
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              ELA/literacy
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 3
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multiple Choice
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
+          <td
+            className="item"
+          >
+            <div
+              className="item"
+            >
+              3615
+            </div>
+          </td>
+          <td
+            className="claimAndTarget"
+          >
+            <div
+              className="claimAndTarget"
+            >
+              Modeling/Data Analysis/
+            </div>
+          </td>
+          <td
+            className="subject"
+          >
+            <div
+              className="subject"
+            >
+              Math
+            </div>
+          </td>
+          <td
+            className="grade"
+          >
+            <div
+              className="grade"
+            >
+              Grade 6
+            </div>
+          </td>
+          <td
+            className="interactionType"
+          >
+            <div
+              className="interactionType"
+            >
+              Multi Select
+            </div>
+          </td>
+        </tr>
+        <tr
+          className=""
+          onClick={[Function]}
+        >
           <td
             className="item"
           >
@@ -6780,7 +7227,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
         <tr
           className="primary"
         >
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -6901,6 +7350,8 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -6964,6 +7415,8 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7027,6 +7480,8 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7090,6 +7545,8 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7169,7 +7626,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
         <tr
           className="primary"
         >
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -7290,6 +7749,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7353,6 +7814,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7416,6 +7879,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7479,6 +7944,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7542,6 +8009,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7605,6 +8074,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7668,6 +8139,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7731,6 +8204,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7794,6 +8269,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7857,6 +8334,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7920,6 +8399,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -7983,6 +8464,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8046,6 +8529,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8109,6 +8594,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8172,6 +8659,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8235,6 +8724,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8298,6 +8789,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8361,6 +8854,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8424,6 +8919,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8487,6 +8984,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8550,6 +9049,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8613,6 +9114,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8676,6 +9179,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8739,6 +9244,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8802,6 +9309,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8865,6 +9374,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8928,6 +9439,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -8991,6 +9504,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9054,6 +9569,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9117,6 +9634,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9180,6 +9699,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9243,6 +9764,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9306,6 +9829,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9369,6 +9894,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9432,6 +9959,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9495,6 +10024,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9558,6 +10089,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9621,6 +10154,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9684,6 +10219,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9747,6 +10284,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9810,6 +10349,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9873,6 +10414,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9936,6 +10479,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -9999,6 +10544,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10062,6 +10609,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10125,6 +10674,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10188,6 +10739,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10251,6 +10804,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10314,6 +10869,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10377,6 +10934,8 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               className="fa fa-square-o fa-sm table-icon"
             />
              
+          </td>
+          <td>
             <i
               aria-hidden="true"
               className="fa fa-chevron-right fa-sm table-icon"
@@ -10456,7 +11015,9 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
         <tr
           className="primary"
         >
-          <th />
+          <th
+            colSpan={2}
+          />
           <th
             className="item"
             onClick={[Function]}
@@ -10574,13 +11135,6 @@ exports[`Storyshots Item Viewer Frame with an item 1`] = `
   className="itemViewerFrame"
   tabIndex={0}
 >
-  <div
-    className="itemviewer-iframe-spinner"
-  >
-    <img
-      src="/images/spin-large.gif"
-    />
-  </div>
   <iframe
     className="itemviewer-iframe"
     id="itemviewer-iframe"
@@ -10619,26 +11173,28 @@ exports[`Storyshots Layout Footer default footer 1`] = `
     className="footer-container"
     role="contentinfo"
   >
-    <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
-    >
-      Practice and training tests are available here.
-    </a>
     <div
-      className="footer-copyright"
+      className="footer-content container"
     >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium
-         
-      </p>
       <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
       >
-         
-        www.SmarterBalanced.org
+        Practice and training tests are available here.
       </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -10678,13 +11234,13 @@ exports[`Storyshots Layout Nav name links 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10699,18 +11255,20 @@ exports[`Storyshots Layout Nav name links 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
-            <h3>
+            <h1
+              className="application-title"
+            >
               Test
-            </h3>
+            </h1>
           </div>
         </div>
         <div
-          className="sbNav-linksGroup"
+          className="nav-linksGroup"
         >
           <a
-            className="sbNav-linksGroup-item"
+            className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
             style={undefined}
@@ -10719,10 +11277,10 @@ exports[`Storyshots Layout Nav name links 1`] = `
               className=""
             />
              
-            link1
+            Home
           </a>
           <a
-            className="sbNav-linksGroup-item"
+            className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
             style={undefined}
@@ -10731,7 +11289,19 @@ exports[`Storyshots Layout Nav name links 1`] = `
               className=""
             />
              
-            link2
+            About Test Items
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url3"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Browse Items
           </a>
         </div>
       </div>
@@ -10774,13 +11344,13 @@ exports[`Storyshots Layout Nav name no links 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10795,11 +11365,13 @@ exports[`Storyshots Layout Nav name no links 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
-            <h3>
+            <h1
+              className="application-title"
+            >
               Test
-            </h3>
+            </h1>
           </div>
         </div>
       </div>
@@ -10808,7 +11380,7 @@ exports[`Storyshots Layout Nav name no links 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout name links and body 1`] = `
+exports[`Storyshots Layout name links body 1`] = `
 <div
   className="site-body"
 >
@@ -10832,13 +11404,13 @@ exports[`Storyshots Layout name links and body 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10853,18 +11425,20 @@ exports[`Storyshots Layout name links and body 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
-            <h3>
-              Test
-            </h3>
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
           </div>
         </div>
         <div
-          className="sbNav-linksGroup"
+          className="nav-linksGroup"
         >
           <a
-            className="sbNav-linksGroup-item"
+            className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
             style={undefined}
@@ -10873,10 +11447,10 @@ exports[`Storyshots Layout name links and body 1`] = `
               className=""
             />
              
-            link1
+            Home
           </a>
           <a
-            className="sbNav-linksGroup-item"
+            className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
             style={undefined}
@@ -10885,7 +11459,19 @@ exports[`Storyshots Layout name links and body 1`] = `
               className=""
             />
              
-            link2
+            About Test Items
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url3"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Browse Items
           </a>
         </div>
       </div>
@@ -10900,12 +11486,10 @@ exports[`Storyshots Layout name links and body 1`] = `
       className="container test-container"
     >
       <div
+        className="section section-light"
         style={
           Object {
-            "backgroundColor": "lightgrey",
-            "height": "100%",
-            "minHeight": "800px",
-            "minWidth": "1200px",
+            "height": "70vh",
             "width": "100%",
           }
         }
@@ -10920,26 +11504,184 @@ exports[`Storyshots Layout name links and body 1`] = `
     className="footer-container"
     role="contentinfo"
   >
-    <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
-    >
-      Practice and training tests are available here.
-    </a>
     <div
-      className="footer-copyright"
+      className="footer-content container"
     >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium
-         
-      </p>
       <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
       >
-         
-        www.SmarterBalanced.org
+        Practice and training tests are available here.
       </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Storyshots Layout name links header and body 1`] = `
+<div
+  className="site-body"
+>
+  <header
+    role="navigation"
+  >
+    <div
+      className="skip-link"
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        href="/#main"
+        onClick={[Function]}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
+          </div>
+        </div>
+        <div
+          className="nav-linksGroup"
+        >
+          <a
+            className="nav-linksGroup-item"
+            href="url1"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Home
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url2"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            About Test Items
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url3"
+            onClick={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Browse Items
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="container test-container"
+    >
+      <h2
+        className="page-title"
+      >
+        Page Title
+      </h2>
+      <div
+        className="section section-light"
+        style={
+          Object {
+            "height": "70vh",
+            "width": "100%",
+          }
+        }
+      >
+        <p>
+          Test Body...
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -10969,13 +11711,13 @@ exports[`Storyshots Layout name no links no body 1`] = `
       role="navigation"
     >
       <div
-        className="sbNav"
+        className="nav-content container"
       >
         <div
-          className="sbNav-titleGroup"
+          className="nav-titleGroup"
         >
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
             <a
               href="http://www.smarterbalanced.org/"
@@ -10990,11 +11732,13 @@ exports[`Storyshots Layout name no links no body 1`] = `
             </a>
           </div>
           <div
-            className="sbNav-titleGroup-item"
+            className="nav-titleGroup-item"
           >
-            <h3>
+            <h1
+              className="application-title"
+            >
               Test
-            </h3>
+            </h1>
           </div>
         </div>
       </div>
@@ -11009,26 +11753,28 @@ exports[`Storyshots Layout name no links no body 1`] = `
     className="footer-container"
     role="contentinfo"
   >
-    <a
-      className="footer-sbLink footer-practiceTests"
-      href="http://practice.smarterbalanced.org/"
-    >
-      Practice and training tests are available here.
-    </a>
     <div
-      className="footer-copyright"
+      className="footer-content container"
     >
-      <p>
-        © The Regents of the University of California – Smarter Balanced Assessment Consortium
-         
-      </p>
       <a
-        className="footer-sbLink"
-        href="//www.smarterbalanced.org"
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
       >
-         
-        www.SmarterBalanced.org
+        Practice and training tests are available here.
       </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -12848,13 +13594,12 @@ exports[`Storyshots Search Result Container normal render 1`] = `
     >
       <div>
         <table
-          className="item-table"
+          className="link-table"
         >
           <thead>
             <tr
               className="primary"
             >
-              <th />
               <th
                 className="item"
                 onClick={[Function]}
@@ -12968,19 +13713,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               onClick={[Function]}
             >
               <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
                 className="item"
               >
                 <div
@@ -13030,19 +13762,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               className=""
               onClick={[Function]}
             >
-              <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
               <td
                 className="item"
               >
@@ -13094,19 +13813,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               onClick={[Function]}
             >
               <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
                 className="item"
               >
                 <div
@@ -13156,19 +13862,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               className=""
               onClick={[Function]}
             >
-              <td
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
               <td
                 className="item"
               >
@@ -13252,5 +13945,301 @@ exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
       className="fa fa-times-circle fa-small"
     />
   </button>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+        disabled={true}
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+        disabled={true}
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+        disabled={true}
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+        disabled={true}
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+        disabled={true}
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+        disabled={true}
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+        disabled={true}
+      >
+        item-nav-btn
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Disabled bg-light 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section section-light"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+        disabled={true}
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+        disabled={true}
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+        disabled={true}
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+        disabled={true}
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+        disabled={true}
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+        disabled={true}
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+        disabled={true}
+      >
+        item-nav-btn
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section section-light"
+  >
+    <button
+      className="btn btn-sm btn-blue"
+    >
+      btn-sm
+    </button>
+    <button
+      className="btn btn-gray"
+    >
+      btn-gray
+    </button>
+    <button
+      className="btn btn-lg btn-green"
+    >
+      btn-lg
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons bg-dark 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+      >
+        item-nav-btn
+      </button>
+      <button
+        className="btn btn-link"
+        onClick={[Function]}
+        role="button"
+      >
+        btn-link
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons bg-light 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section section-light"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+      >
+        item-nav-btn
+      </button>
+      <button
+        className="btn btn-link"
+        onClick={[Function]}
+        role="button"
+      >
+        btn-link
+      </button>
+    </div>
+  </div>
 </div>
 `;

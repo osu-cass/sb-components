@@ -249,7 +249,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
           <tr
             className="primary"
           >
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               key="Item"
@@ -472,6 +474,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
             onClick={[Function]}
           >
             <td
+              key="1"
               onClick={[Function]}
             >
               <i
@@ -479,6 +482,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td
+              key="3"
+            >
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -659,7 +666,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
           <tr
             className="primary"
           >
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               key="Item"
@@ -892,6 +901,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             onClick={[Function]}
           >
             <td
+              key="1"
               onClick={[Function]}
             >
               <i
@@ -899,6 +909,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td
+              key="3"
+            >
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -1089,7 +1103,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
           <tr
             className="primary"
           >
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               key="Item"
@@ -1332,6 +1348,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             onClick={[Function]}
           >
             <td
+              key="1"
               onClick={[Function]}
             >
               <i
@@ -1339,6 +1356,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td
+              key="3"
+            >
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -1539,7 +1560,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
           <tr
             className="primary"
           >
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               key="Item"
@@ -1792,6 +1815,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             onClick={[Function]}
           >
             <td
+              key="1"
               onClick={[Function]}
             >
               <i
@@ -1799,6 +1823,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td
+              key="3"
+            >
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"
@@ -2009,7 +2037,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
           <tr
             className="primary"
           >
-            <th />
+            <th
+              colSpan={2}
+            />
             <th
               className="item"
               key="Item"
@@ -2272,6 +2302,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             onClick={[Function]}
           >
             <td
+              key="1"
               onClick={[Function]}
             >
               <i
@@ -2279,6 +2310,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 className="fa fa-square-o fa-sm table-icon"
               />
                
+            </td>
+            <td
+              key="3"
+            >
               <i
                 aria-hidden="true"
                 className="fa fa-chevron-right fa-sm table-icon"

@@ -1,88 +1,64 @@
 @import "constants";
 
-h1 {
-    letter-spacing: @sb-letter-spacing;
+.about-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-/*body {
-    background-image: none;
-    background-repeat: unset;
-    background-size: unset;
-}*/
-
-.container {
-    align-self: center;
-    width: auto;
+.about-items-info {
+  flex: 1 370px;
+  margin: 0 @spacing-unit/2;
 }
 
-.aboutitems-parents {
-    padding: 1.5em;
-    background-color: @sb-white; // SB
-    border-radius: 6px; // SB
-    box-shadow: @sb-shadow; // SB
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+.about-items-iframe,
+.no-item {
+  flex: 1 @small;
+  padding: 0;
+  margin: @spacing-unit*1.5 @spacing-unit/2;
 }
 
-@media (max-width: @phone-portrait) {
-    .aboutitems-parents {
-        padding: 0;
-        border-radius: 0;
-    }
+.about-items-dropdown {
+  width: inherit;
+  padding-top: 10px;
 }
 
-.aboutitems-info {
-    vertical-align: middle;
-    flex: 1 300px;
-    margin: 1.5em;
+.about-items-dropdown .form-control {
+  padding: @spacing-unit;
+  font-size: @font-size-base;
+  max-width: 100%;
+  height: auto;
 }
 
-.aboutitem-iframe, .no-item {
-    flex: 1 @small;
-    margin: 1.5em;
+.about-items-desc {
+  border-radius: 6px; // SB
+  margin-top: @spacing-unit;
 }
 
-.aboutitems-dropdown {
-    width: inherit;
-    padding-top: 10px;
-}
-
-.aboutitems-dropdown .form-control {
-    padding: 10px;
-    font-size: @font-size-base;
-    max-width: 100%;
-    height: auto;
-}
-
-.aboutitems-desc {
-    background-color: #f2f2f2;
-    padding: @spacing-unit;
-    margin-top: @spacing-unit;
-    border-radius: 6px; // SB
-}
-
-.aboutitems-text {
-    align-content: center;
-    font-size: @font-size-larger; // SB
-}
-
-.about-this-item-btn {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.item-nav-btn {
-    margin-top: auto;
-    font-size: @font-size-smaller;
-    padding: 5px 0px; //SB
-    color: black;
+.about-items-text {
+  align-content: center;
+  font-size: @font-size-larger; // SB
+  margin-bottom: @spacing-unit;
 }
 
 .no-item {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    font-size: @font-size-larger
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: @font-size-larger;
+}
+
+.about-item-modal {
+  max-width: @modal-max-width;
+}
+
+@media screen and (max-width: @small) {
+  .about-items-iframe,
+  .no-item {
+    margin: @spacing-unit*1.5 0;
+  }
+  .about-items-info {
+    margin: 0;
+  }
 }

@@ -35,14 +35,8 @@ export class ItemViewerFrame extends React.Component<FrameProps, FrameState> {
   }
 
   renderItem() {
-    const spinner = this.state.loading ? (
-      <div className="itemviewer-iframe-spinner">
-        <img src="/images/spin-large.gif" />
-      </div>
-    ) : null;
     return (
       <div className="itemViewerFrame" tabIndex={0}>
-        {spinner}
         <iframe
           id="itemviewer-iframe"
           className="itemviewer-iframe"

@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "1.0.1",
+  "version": "1.1.0-alpha.1",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -12,12 +12,13 @@
   "scripts": {
     "webpack:prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "webpack": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "prepare": "npm run clean && npm run test && npm run webpack:prod && cp -r ./src/Assets ./lib/",
+    "copy-assets": "cp -r ./src/Assets ./lib/",
+    "prepare": "npm run clean && npm run test && npm run webpack:prod && npm run copy-assets",
     "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
-    "storybook": "npm run clean && start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
     "storybook-publish": "build-storybook -o gh-site/storybook",
     "build": "npm run clean && npm run storybook-publish && npm run dev",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
@@ -88,7 +89,7 @@
     "less-loader": "~4.0.5",
     "lint-staged": "^6.0.0",
     "postcss-loader": "~2.0.8",
-    "prettier": "~1.8.2",
+    "prettier": "~1.9.2",
     "react": "~16.0.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "~16.0.0",
@@ -103,10 +104,10 @@
     "typedoc": "^0.9.0",
     "typescript": "~2.5.3",
     "url-loader": "0.5.9",
-    "webpack": "~3.8.1",
-    "@sbac/sbac-ui-kit": "github:SmarterApp/SBAC-Global-UI-Kit"
+    "webpack": "~3.8.1"
   },
   "dependencies": {
+    "@sbac/sbac-ui-kit": "github:osu-cass/sbac-global-ui-kit#develop",
     "bootstrap": "^3.3.7",
     "enhanced-resolve": "^4.0.0-beta.2",
     "font-awesome": "~4.7.0",

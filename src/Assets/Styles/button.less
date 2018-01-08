@@ -1,17 +1,16 @@
 //** Global button styles shared
 
 .btn {
-    box-shadow: @sb-shadow;
-    margin: @spacing-item/2;
-    white-space: normal;
-    &:hover {
-      text-decoration: none;
-      cursor: pointer;
-    }
-    &:disabled {
-      cursor: not-allowed;
-    }
-    & > span {
-      padding: 2px;
-    }
+  margin: 0 @spacing-item/2;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
   }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  & > span.fa,
+  > span.glyphicon {
+    margin-right: @spacing-item;
+  }
+}

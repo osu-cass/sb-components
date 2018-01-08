@@ -11,15 +11,17 @@ body {
 
 .container {
   flex: 1 0 auto;
-  max-width: 1400px;
-  margin: 0 1em 1em 1em;
+  max-width: @content-width;
+  margin: (@spacing-unit * 1.5) @spacing-unit;
   align-self: center;
+  width: 100%;
+  padding: @spacing-item;
 }
 
 @media (max-width: @small) {
   .container {
-    margin: 0;
-    padding: 0;
+    margin: @spacing-unit @spacing-item;
+    padding: 0 @spacing-item;
   }
 }
 
@@ -27,7 +29,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: @background-color-base;  
+  background-color: @background-color-base;
 }
 
 .site-content {
@@ -37,8 +39,22 @@ body {
   color: @text-color-dark;
 }
 
+.section {
+  background-color: @background-color-base;
+  padding: @spacing-unit;
+}
+
+.container > .page-title {
+  margin: 0 0 @spacing-item 0;
+  padding: 0;
+}
+
+.section-light {
+  background-color: @sb-white;
+  border-radius: @spacing-item;
+  box-shadow: @sb-shadow;
+}
 
 .form-group {
   margin-bottom: 0px;
 }
-

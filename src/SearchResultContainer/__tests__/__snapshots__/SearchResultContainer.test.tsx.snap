@@ -35,6 +35,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
   >
     <ItemTableContainer
       defaultRenderType={1}
+      isLinkTable={true}
       item={
         Object {
           "kind": "none",
@@ -159,7 +160,11 @@ exports[`SearchResultContainer empty itemCards 1`] = `
   </div>
   <div
     className="search-result-body"
-  />
+  >
+    <div
+      className="loader"
+    />
+  </div>
 </div>
 `;
 
@@ -315,6 +320,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
   >
     <ItemTableContainer
       defaultRenderType={0}
+      isLinkTable={true}
       item={
         Object {
           "kind": "none",

@@ -13,7 +13,9 @@ export interface ItemTableProps {
   sort: HeaderSortModel[];
   columns: SortColumnModel[];
   expandedRow?: ItemCardModel;
-  item: Resource<AboutItemModel>;
+  item?: Resource<AboutItemModel>;
+
+  isLinkTable: boolean;
 }
 /**
  * Renders the table populated from an array of ItemCardModels. Also renders an instance of the ItemCardViewer,
@@ -54,7 +56,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   }
 
   renderRow(rowData: ItemCardModel, index: number): JSX.Element[] {
-    const { expandedRow, columns, item } = this.props;
+    const { expandedRow, columns, item, isLinkTable } = this.props;
     const unChecked = (
       <i className="fa fa-square-o fa-sm table-icon" aria-hidden="true" />
     );
@@ -67,6 +69,20 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         rowData.itemKey === expandedRow.itemKey &&
         rowData.bankKey === expandedRow.bankKey;
     }
+    let controls: JSX.Element[] = [];
+    if (!isLinkTable) {
+      controls.push(
+        <td
+          key={rowData.bankKey}
+          onClick={e => this.handleCheckboxClick(e, rowData)}
+        >
+          {rowData.selected === true ? checked : unChecked}&nbsp;
+        </td>,
+        <td key={rowData.itemKey}>
+          {isExpanded ? this.expand : this.collapse}
+        </td>
+      );
+    }
     const row: JSX.Element[] = [
       <tr
         key={index}
@@ -75,18 +91,15 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
           this.handleRowClick(rowData);
         }}
       >
-        <td onClick={e => this.handleCheckboxClick(e, rowData)}>
-          {rowData.selected === true ? checked : unChecked}&nbsp;
-          {isExpanded ? this.expand : this.collapse}
-        </td>
+        {controls.length > 0 ? controls : undefined}
         {columns.map(col => this.renderCell(col, rowData))}
       </tr>
     ];
 
-    if (item.kind === "success" && isExpanded) {
+    if (item && item.kind === "success" && isExpanded) {
       row.push(
         <tr key="item-card-viewer">
-          <td colSpan={6}>
+          <td colSpan={7}>
             <ItemCardViewer item={item.content} />
           </td>
         </tr>
@@ -97,10 +110,18 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   }
 
   render() {
-    return (
-      <tbody>
-        {this.props.mapRows.map((rowData, idx) => this.renderRow(rowData, idx))}
-      </tbody>
-    );
+    const { mapRows } = this.props;
+    let content = <div>No Items.</div>;
+    if (mapRows) {
+      content = (
+        <tbody>
+          {this.props.mapRows.map((rowData, idx) =>
+            this.renderRow(rowData, idx)
+          )}
+        </tbody>
+      );
+    }
+
+    return content;
   }
 }
