@@ -5,6 +5,7 @@ import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
 import * as ReactTooltip from "react-tooltip";
+import { findDOMNode } from "react-dom";
 
 export interface ItemTableProps {
   mapRows: ItemCardModel[];
@@ -64,6 +65,13 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     }
   };
 
+  handleToolTipKeyUpEnter = (e: React.KeyboardEvent<any>) => {
+    if (e.keyCode === 13) {
+      e.stopPropagation();
+      ReactTooltip.show(findDOMNode(e.currentTarget));
+    }
+  };
+
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
     let tag: JSX.Element;
 
@@ -75,19 +83,23 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         <a
           tabIndex={0}
           onClick={e => e.stopPropagation()}
-          data-event="focus"
-          data-tip="custom show"
+          onKeyUp={e => this.handleToolTipKeyUpEnter(e)}
+          data-for={`${col.className}-${cellData.itemKey}-tooltip`}
+          data-event="click"
+          data-tip="custom tooltip here"
           role="button"
         >
           {col.accessor(cellData)}
         </a>
-        <ReactTooltip globalEventOff="click" />
+        <ReactTooltip
+          id={`${col.className}-${cellData.itemKey}-tooltip`}
+          globalEventOff="focusout"
+        />
       </div>
     );
 
     return (
       <td key={col.header} className={col.className}>
-        {/* <a className={col.className}>{col.accessor(cellData)}</a> */}
         {tag}
       </td>
     );
