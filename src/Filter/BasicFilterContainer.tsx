@@ -112,7 +112,7 @@ export class BasicFilterContainer extends React.Component<
         <div className="basic-filter-button-container">
           <div>Advanced Filters</div>
           <button
-            className="btn btn-white filter-button"
+            className="btn btn-default filter-button"
             onClick={this.handleClick}
           >
             {expanded ? "Hide" : "Show"}&nbsp;

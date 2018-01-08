@@ -66,7 +66,7 @@ export class MoreLikeThisModal extends React.Component<
     return (
       <div>
         <button
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm"
           role="button"
           tabIndex={0}
           onClick={this.handleShowModal}
