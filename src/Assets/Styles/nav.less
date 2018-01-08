@@ -1,168 +1,173 @@
 ﻿@import "constants";
 
 .nav-container {
-    border-radius: 0px; // SB
-    padding: 1em; // SB
-    box-shadow: @sb-shadow; // SB
-    background-color: @sb-white; // SB
-    border-color: @sb-white; // SB
-    font-family: "PT Serif Caption",serif;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: 0;
-    h1, h2, h3 {
-        white-space: nowrap;
-    } 
+  border-radius: 0px; // SB
+  padding: @spacing-unit/2;
+  box-shadow: @sb-shadow; // SB
+  background-color: @sb-white; // SB
+  border-color: @sb-white; // SB
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0;
 }
 
-.nav-content, .nav-content.container {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: flex-start;
+.nav-content,
+.nav-content.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.nav-content,
+.nav-content.container,
+.footer-content,
+.footer-content.container {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .nav-titleGroup,
 .nav-linksGroup {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    flex-grow: 1;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav-linksGroup {
-    justify-content: flex-end;
-}
-
-.nav-titleGroup-item {
-    margin: @spacing-item;
+  justify-content: flex-end;
 }
 
 .nav-linksGroup-item {
-    font-size: @font-size-larger; // SB
-    color: @link-color; //SB
-    margin: @spacing-unit/2 @spacing-unit; 
-    white-space: nowrap;
-    &:hover{
-        text-decoration: none;
-    }
-    &:last-child {
-        margin-right: 0;
-    }
+  font-size: @font-size-larger; // SB
+  color: @link-color; //SB
+  margin: @spacing-unit/2 @spacing-unit;
+  white-space: nowrap;
+  &:hover {
+    text-decoration: none;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-titleGroup-item {
+  margin: @spacing-item;
+
+  h1,
+  h2,
+  h3 {
+    margin: 0 @spacing-unit/2;
+    letter-spacing: @sb-letter-spacing; // SB
+  }
+  img {
+    width: 183px;
+    padding-right: @spacing-unit;
+    border-right: 1px solid @sb-gray;
+  }
 }
 
 @media screen and (max-width: @nav-min-width) {
-    .nav-contnet, .nav-content.container {
-        flex-flow: column;
-    }
-    .nav-titleGroup,  .nav-linksGroup  {
-        flex-flow: column;
-        justify-content: center;
-    }
-    .nav-titleGroup-item img {
-        border-right: none;
-    }
-    .nav-container {
-        margin: 0;
-    }
-}
-
-.nav-titleGroup-item h3 {
-    color: @sb-gray;
-    margin: 0 auto;
-    font-size: 28px;
-    letter-spacing: @sb-letter-spacing; // SB
-    font-family: "PT Sans", Times, serif;
-}
-
-.glyphicon-search {
-    font-size: 80%;
-    padding-right: @spacing-item;
-}
-
-.nav-titleGroup-item img {
-    height: 50px;
-    padding-right: 15px;
-    border-right: 1px solid @sb-gray;
+  .nav-content,
+  .nav-content.container {
+    flex-flow: column;
+  }
+  .nav-titleGroup,
+  .nav-linksGroup {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .nav-titleGroup-item img {
+    border-right: none;
+  }
+  .nav-container {
+    margin: 0;
+  }
 }
 
 .footer-container {
-    border: 1px solid @sb-white;
-    background-color: @sb-white;
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 0;
-    justify-content: center;
+  border: 1px solid @sb-white;
+  background-color: @sb-white;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0; 
+  flex-basis: @footer-height;
+  min-height: @footer-height;
+  justify-content: center;
 }
 
-.footer-content, .footer-content.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    width: 100%;
+.footer-content,
+.footer-content.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .footer-copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: "PT Sans";
-    color: @text-color-gray;
-    font-size: @font-size-smaller;
-    letter-spacing: 0pt;
-    flex-grow: 2;
-    flex-shrink: 1;
-    
-    p {
-        margin: 0;
-    }
-    .footer-sbLink {
-        margin-left: @spacing-unit;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "PT Sans";
+  color: @text-color-gray;
+  font-size: @font-size-smaller;
+  letter-spacing: 0pt;
+  flex-grow: 2;
+  flex-shrink: 1;
+
+  p {
+    margin: 0;
+  }
+  .footer-sbLink {
+    margin-left: @spacing-unit;
+  }
 }
 
 .footer-practiceTests {
-    font-size: @font-size-smaller; // SB
-    text-decoration: underline;
-    flex-grow: 1;
+  font-size: @font-size-smaller; // SB
+  text-decoration: underline;
+  flex-grow: 1;
 }
 
 .footer-sbLink {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a.skip-link {
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    left: 0px;
-    color: @text-color-light;
-    border-right: 1px solid @sb-white;
-    border-bottom: 1px solid @sb-white;
-    border-bottom-right-radius: 8px;
-    background: transparent;
-    -webkit-transition: top 1s ease-out, background 1s linear;
-    transition: top 1s ease-out, background 1s linear;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: @text-color-light;
+  border-right: 1px solid @sb-white;
+  border-bottom: 1px solid @sb-white;
+  border-bottom-right-radius: 8px;
+  background: transparent;
+  -webkit-transition: top 1s ease-out, background 1s linear;
+  transition: top 1s ease-out, background 1s linear;
 
-    &:focus, &:active {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        background: #BF1722;
-        outline: 0;
-        -webkit-transition: top .1s ease-in, background .5s linear;
-        transition: top .1s ease-in, background .5s linear;
-        z-index: 3;
-    }
+  &:focus,
+  &:active {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #bf1722;
+    outline: 0;
+    -webkit-transition: top 0.1s ease-in, background 0.5s linear;
+    transition: top 0.1s ease-in, background 0.5s linear;
+    z-index: 3;
+  }
 }

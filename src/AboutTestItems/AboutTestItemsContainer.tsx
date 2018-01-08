@@ -109,7 +109,7 @@ export class AboutTestItemsContainer extends React.Component<
         aria-live="polite"
         aria-relevant="text"
         dangerouslySetInnerHTML={{ __html: desc }}
-        className="aboutitems-desc"
+        className="section about-items-desc"
       />
     );
   }
@@ -138,7 +138,7 @@ export class AboutTestItemsContainer extends React.Component<
 
   renderNoItem() {
     return (
-      <div className="no-item">
+      <div className="section section-light no-item">
         <p>No items of the selected type found.</p>
       </div>
     );
@@ -153,7 +153,7 @@ export class AboutTestItemsContainer extends React.Component<
     ) {
       return (
         <div
-          className="aboutitem-iframe"
+          className="about-item-iframe"
           aria-live="polite"
           aria-relevant="additions removals"
         >
@@ -181,12 +181,12 @@ export class AboutTestItemsContainer extends React.Component<
   private renderItemTypesGroup() {
     const aboutItems = this.state.aboutItemsViewModel;
     if (
-      (aboutItems.kind == "success" || aboutItems.kind == "reloading") &&
+      (aboutItems.kind === "success" || aboutItems.kind === "reloading") &&
       aboutItems.content
     ) {
       return (
         <div>
-          <div className="aboutitems-dropdown form-group">
+          <div className="about-items-dropdown form-group">
             {this.renderInteractionTypesSelect(
               aboutItems.content.interactionTypes
             )}
@@ -221,21 +221,22 @@ export class AboutTestItemsContainer extends React.Component<
     const itemFrame = this.state.itemUrl
       ? this.renderItemFrame()
       : this.renderNoItem();
+
     return (
       <div className="container about-items">
-        <div className="aboutitems-parents">
-          <div className="aboutitems-info">
-            <h1>About Test Items</h1>
+        <div className="about-items-info">
+          <h2>About Test Items</h2>
+          <div className="section section-light">
             {this.renderError()}
-            <div className="aboutitems-text">
+            <p className="about-items-text">
               Smarter Balanced assessments use a variety of item types to
               accurately measure what students know and can do. To learn more
               and see an example item, select an item type below.
-            </div>
+            </p>
             {this.renderItemTypesGroup()}
           </div>
-          {itemFrame}
         </div>
+        <div className="section about-items-iframe">{itemFrame}</div>
       </div>
     );
   }
