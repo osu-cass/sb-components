@@ -3,18 +3,20 @@ import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
 import { action } from "@storybook/addon-actions";
 
-const buttons = [
-  <button className="btn btn-default">btn-default</button>,
-  <button className="btn btn-primary">btn-primary</button>,
-  <button className="btn btn-success">btn-success</button>,
-  <button className="btn btn-info">btn-info</button>,
-  <button className="btn btn-warning">btn-warning</button>,
-  <button className="btn btn-danger">btn-danger</button>,
-  <button className="item-nav-btn btn btn-link">item-nav-btn</button>,
-  <button className="btn btn-link" role="button" onClick={action("Clicked")}>
-    btn-link
-  </button>
-];
+const buttons = (
+  <div>
+    <button className="btn btn-default">btn-default</button>
+    <button className="btn btn-primary">btn-primary</button>
+    <button className="btn btn-success">btn-success</button>
+    <button className="btn btn-info">btn-info</button>
+    <button className="btn btn-warning">btn-warning</button>
+    <button className="btn btn-danger">btn-danger</button>
+    <button className="item-nav-btn btn btn-link">item-nav-btn</button>
+    <button className="btn btn-link" role="button" onClick={action("Clicked")}>
+      btn-link
+    </button>
+  </div>
+);
 
 const disabledButtons = (
   <div>

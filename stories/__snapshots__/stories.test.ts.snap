@@ -13947,3 +13947,299 @@ exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
   </button>
 </div>
 `;
+
+exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+        disabled={true}
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+        disabled={true}
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+        disabled={true}
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+        disabled={true}
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+        disabled={true}
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+        disabled={true}
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+        disabled={true}
+      >
+        item-nav-btn
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Disabled bg-light 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section section-light"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+        disabled={true}
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+        disabled={true}
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+        disabled={true}
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+        disabled={true}
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+        disabled={true}
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+        disabled={true}
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+        disabled={true}
+      >
+        item-nav-btn
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section section-light"
+  >
+    <button
+      className="btn btn-sm btn-blue"
+    >
+      btn-sm
+    </button>
+    <button
+      className="btn btn-gray"
+    >
+      btn-gray
+    </button>
+    <button
+      className="btn btn-lg btn-green"
+    >
+      btn-lg
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons bg-dark 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+      >
+        item-nav-btn
+      </button>
+      <button
+        className="btn btn-link"
+        onClick={[Function]}
+        role="button"
+      >
+        btn-link
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Style Buttons bg-light 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="section section-light"
+  >
+    <div>
+      <button
+        className="btn btn-default"
+      >
+        btn-default
+      </button>
+      <button
+        className="btn btn-primary"
+      >
+        btn-primary
+      </button>
+      <button
+        className="btn btn-success"
+      >
+        btn-success
+      </button>
+      <button
+        className="btn btn-info"
+      >
+        btn-info
+      </button>
+      <button
+        className="btn btn-warning"
+      >
+        btn-warning
+      </button>
+      <button
+        className="btn btn-danger"
+      >
+        btn-danger
+      </button>
+      <button
+        className="item-nav-btn btn btn-link"
+      >
+        item-nav-btn
+      </button>
+      <button
+        className="btn btn-link"
+        onClick={[Function]}
+        role="button"
+      >
+        btn-link
+      </button>
+    </div>
+  </div>
+</div>
+`;
