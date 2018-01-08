@@ -104,6 +104,39 @@ describe("ItemSearch.filterItemCards", () => {
     expect(result).toHaveLength(expectedCards.length);
     expectedCards.forEach(card => expect(result).toContain(card));
   });
+
+  it("filters for calculator off", () => {
+    const params: SearchAPIParamsModel = {
+      calculatorOnly: false
+    };
+    const result = ItemSearch.filterItemCards(itemCards, params);
+    const expectedCards = itemCards.filter(c => c.calculator === false);
+
+    expect(result).toHaveLength(expectedCards.length);
+    expectedCards.forEach(card => expect(result).toContain(card));
+  });
+
+  it("filters for calculator on", () => {
+    const params: SearchAPIParamsModel = {
+      calculatorOnly: true
+    };
+    const result = ItemSearch.filterItemCards(itemCards, params);
+    const expectedCards = itemCards.filter(c => c.calculator === true);
+
+    expect(result).toHaveLength(expectedCards.length);
+    expectedCards.forEach(card => expect(result).toContain(card));
+  });
+
+  it("filters for calculator undefined", () => {
+    const params: SearchAPIParamsModel = {
+      calculatorOnly: undefined
+    };
+    const result = ItemSearch.filterItemCards(itemCards, params);
+    const expectedCards = itemCards;
+
+    expect(result).toHaveLength(expectedCards.length);
+    expectedCards.forEach(card => expect(result).toContain(card));
+  });
 });
 
 describe("ItemSearch.searchOptionFilterString", () => {

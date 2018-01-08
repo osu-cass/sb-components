@@ -54,6 +54,7 @@ export interface SearchAPIParamsModel {
   performanceOnly?: boolean;
   catOnly?: boolean;
   targets?: number[];
+  calculatorOnly?: boolean;
 }
 
 export interface ItemsSearchModel {
@@ -70,6 +71,7 @@ export interface ItemsSearchFilterModel {
   targets: FilterSearchTargetModel;
   grades: FilterSearchGradeModel;
   technologyTypes: FilterSearchStringModel<SearchBaseModel>;
+  calculator: FilterSearchStringModel<SearchBaseModel>;
 }
 
 export interface FilterSearchModel {
@@ -86,7 +88,8 @@ export interface FilterSearchStringModel<T extends SearchFilterStringTypes>
     | FilterType.Claim
     | FilterType.InteractionType
     | FilterType.Subject
-    | FilterType.TechnologyType;
+    | FilterType.TechnologyType
+    | FilterType.Calculator;
 }
 
 export interface FilterSearchGradeLevelModel extends FilterSearchModel {
