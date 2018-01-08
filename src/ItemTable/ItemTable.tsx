@@ -41,7 +41,10 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     this.props.onRowExpand(rowData);
   };
 
-  handleKeyUpEnter = (e: React.KeyboardEvent<any>, rowData: ItemCardModel) => {
+  handleKeyUpEnter = (
+    e: React.KeyboardEvent<HTMLTableRowElement>,
+    rowData: ItemCardModel
+  ) => {
     if (e.keyCode === 13) {
       this.props.onRowExpand(rowData);
     }
@@ -56,7 +59,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   };
 
   handleCheckboxKeyUpEnter = (
-    e: React.KeyboardEvent<any>,
+    e: React.KeyboardEvent<HTMLTableDataCellElement>,
     rowData: ItemCardModel
   ) => {
     if (e.keyCode === 13) {
@@ -65,7 +68,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     }
   };
 
-  handleToolTipKeyUpEnter = (e: React.KeyboardEvent<any>) => {
+  handleToolTipKeyUpEnter = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
     if (e.keyCode === 13) {
       e.stopPropagation();
       ReactTooltip.show(findDOMNode(e.currentTarget));

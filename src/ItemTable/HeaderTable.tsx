@@ -66,7 +66,7 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
    * @param {(HeaderSortModel | undefined)} hCol
    */
   headerKeyUpHandler = (
-    e: React.KeyboardEvent<any>,
+    e: React.KeyboardEvent<HTMLTableHeaderCellElement>,
     sCol: SortColumnModel,
     hCol: HeaderSortModel | undefined
   ) => {
