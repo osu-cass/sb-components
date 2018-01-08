@@ -48,10 +48,10 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   };
 
   handleCheckboxClick = (
-    event: React.MouseEvent<HTMLTableDataCellElement>,
+    e: React.MouseEvent<HTMLTableDataCellElement>,
     rowData: ItemCardModel
   ) => {
-    event.stopPropagation();
+    e.stopPropagation();
     this.props.onRowSelect(rowData);
   };
 
@@ -75,28 +75,31 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
     let tag: JSX.Element;
 
-    // if(true) {
-    //   tag = <a className={col.className}>{col.accessor(cellData)}</a>;
-    // } else {
-    tag = (
-      <div className={`${col.className}-${cellData.itemKey}`}>
-        <a
-          tabIndex={0}
-          onClick={e => e.stopPropagation()}
-          onKeyUp={e => this.handleToolTipKeyUpEnter(e)}
-          data-for={`${col.className}-${cellData.itemKey}-tooltip`}
-          data-event="click"
-          data-tip="custom tooltip here"
-          role="button"
-        >
-          {col.accessor(cellData)}
-        </a>
-        <ReactTooltip
-          id={`${col.className}-${cellData.itemKey}-tooltip`}
-          globalEventOff="focusout"
-        />
-      </div>
-    );
+    // TODO: implement description API functionality when available.
+    const descriptionAvailable = true;
+    if (descriptionAvailable) {
+      tag = (
+        <div className={`${col.className}-${cellData.itemKey}`}>
+          <a
+            tabIndex={0}
+            onClick={e => e.stopPropagation()}
+            onKeyUp={e => this.handleToolTipKeyUpEnter(e)}
+            data-for={`tooltip-${col.className}-${cellData.itemKey}`}
+            data-event="click"
+            data-tip="custom tooltip here"
+            role="button"
+          >
+            {col.accessor(cellData)}
+          </a>
+          <ReactTooltip
+            id={`tooltip-${col.className}-${cellData.itemKey}`}
+            globalEventOff="focusout"
+          />
+        </div>
+      );
+    } else {
+      tag = <div className={col.className}>{col.accessor(cellData)}</div>;
+    }
 
     return (
       <td key={col.header} className={col.className}>

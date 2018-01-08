@@ -11038,12 +11038,15 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
         <tr
           className="primary"
         >
-          <th
+          <td
             colSpan={2}
           />
           <th
             className="item"
             onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
           >
             <div
               className="item"
@@ -11065,6 +11068,9 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
           <th
             className="claimAndTarget"
             onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
           >
             <div
               className="claimAndTarget"
@@ -11086,6 +11092,9 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
           <th
             className="subject"
             onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
           >
             <div
               className="subject"
@@ -11107,6 +11116,9 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
           <th
             className="grade"
             onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
           >
             <div
               className="grade"
@@ -11128,6 +11140,9 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
           <th
             className="interactionType"
             onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
           >
             <div
               className="interactionType"
