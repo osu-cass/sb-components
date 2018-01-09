@@ -75,13 +75,11 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     }
   };
 
-  renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
-    let tag: JSX.Element;
-
-    // TODO: implement description API functionality when available.
-    const descriptionAvailable = true;
-    if (descriptionAvailable) {
-      tag = (
+  renderTooltipLink(col: SortColumnModel, cellData: ItemCardModel) {
+    return col
+      .accessor(cellData)
+      .filter(x => x !== "")
+      .map((data: string | number) => (
         <div className={`${col.className}-${cellData.itemKey}`}>
           <a
             tabIndex={0}
@@ -92,21 +90,30 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
             data-tip="custom tooltip here"
             role="button"
           >
-            {col.accessor(cellData)}
+            {data}
           </a>
           <ReactTooltip
             id={`tooltip-${col.className}-${cellData.itemKey}`}
             globalEventOff="focusout"
           />
         </div>
-      );
+      ));
+  }
+
+  renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
+    let tags: JSX.Element | JSX.Element[];
+
+    // TODO: implement description API functionality when available.
+    const descriptionAvailable = true;
+    if (descriptionAvailable) {
+      tags = this.renderTooltipLink(col, cellData);
     } else {
-      tag = <div className={col.className}>{col.accessor(cellData)}</div>;
+      tags = <div className={col.className}>{col.accessor(cellData)}</div>;
     }
 
     return (
       <td key={col.header} className={col.className}>
-        {tag}
+        {tags}
       </td>
     );
   }
