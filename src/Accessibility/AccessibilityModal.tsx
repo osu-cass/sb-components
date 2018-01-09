@@ -194,17 +194,13 @@ export class ItemAccessibilityModal extends React.Component<
     return (
       <div>
         <button
-          className="accessibility-btn btn btn-primary"
+          className="btn btn-primary"
           onClick={this.handleShowModal}
           aria-label="Open Accessibility Modal"
           tabIndex={0}
         >
-          <span
-            className="glyphicon glyphicon-collapse-down"
-            aria-hidden="true"
-          >
-            Accessibility
-          </span>
+          <span className="fa fa-caret-square-o-down" aria-hidden="true" />
+          Accessibility
         </button>
         <ReactModal
           isOpen={this.state.showModal}
@@ -246,7 +242,7 @@ export class ItemAccessibilityModal extends React.Component<
             </div>
             <div className="modal-footer">
               <button
-                className="btn btn-primary"
+                className="btn btn-sm btn-primary"
                 aria-label="Update options and reload item"
                 form="accessibility-form"
                 onClick={this.onSave}
@@ -255,14 +251,14 @@ export class ItemAccessibilityModal extends React.Component<
                 Update
               </button>
               <button
-                className="btn btn-primary"
+                className="btn btn-sm btn-primary"
                 aria-label="Reset all options to default and reload item"
                 onClick={this.onReset}
               >
                 Reset to Default
               </button>
               <button
-                className="btn btn-primary btn-cancel"
+                className="btn btn-sm btn-primary"
                 aria-label="Cancel and undo changes"
                 onClick={this.onCancel}
               >

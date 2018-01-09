@@ -119,7 +119,7 @@ export class AboutTestItemsContainer extends React.Component<
         aria-live="polite"
         aria-relevant="text"
         dangerouslySetInnerHTML={{ __html: desc }}
-        className="aboutitems-desc"
+        className="section about-items-desc"
       />
     );
   }
@@ -148,7 +148,7 @@ export class AboutTestItemsContainer extends React.Component<
 
   renderNoItem() {
     return (
-      <div className="no-item">
+      <div className="section section-light no-item">
         <p>No items of the selected type found.</p>
       </div>
     );
@@ -163,7 +163,7 @@ export class AboutTestItemsContainer extends React.Component<
     ) {
       return (
         <div
-          className="aboutitem-iframe"
+          className="about-item-iframe"
           aria-live="polite"
           aria-relevant="additions removals"
         >
@@ -196,7 +196,7 @@ export class AboutTestItemsContainer extends React.Component<
     ) {
       return (
         <div>
-          <div className="aboutitems-dropdown form-group">
+          <div className="about-items-dropdown form-group">
             {this.renderInteractionTypesSelect(
               aboutItems.content.interactionTypes
             )}
