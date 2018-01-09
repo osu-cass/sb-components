@@ -76,7 +76,7 @@ describe("SearchUrl.encodeQuery", () => {
 
   it("encodes calc on", () => {
     const searchParams: SearchAPIParamsModel = {
-      calculatorOnly: true
+      calculator: true
     };
     const encoded = SearchUrl.encodeQuery(searchParams);
     const expected = `?${FilterType.Calculator.toString()}=true`;
@@ -86,7 +86,7 @@ describe("SearchUrl.encodeQuery", () => {
 
   it("encodes calc off", () => {
     const searchParams: SearchAPIParamsModel = {
-      calculatorOnly: false
+      calculator: false
     };
     const encoded = SearchUrl.encodeQuery(searchParams);
     const expected = `?${FilterType.Calculator.toString()}=false`;

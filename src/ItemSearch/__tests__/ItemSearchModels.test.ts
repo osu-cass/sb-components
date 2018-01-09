@@ -107,7 +107,7 @@ describe("ItemSearch.filterItemCards", () => {
 
   it("filters for calculator off", () => {
     const params: SearchAPIParamsModel = {
-      calculatorOnly: false
+      calculator: false
     };
     const result = ItemSearch.filterItemCards(itemCards, params);
     const expectedCards = itemCards.filter(c => c.calculator === false);
@@ -118,7 +118,7 @@ describe("ItemSearch.filterItemCards", () => {
 
   it("filters for calculator on", () => {
     const params: SearchAPIParamsModel = {
-      calculatorOnly: true
+      calculator: true
     };
     const result = ItemSearch.filterItemCards(itemCards, params);
     const expectedCards = itemCards.filter(c => c.calculator === true);
@@ -129,7 +129,7 @@ describe("ItemSearch.filterItemCards", () => {
 
   it("filters for calculator undefined", () => {
     const params: SearchAPIParamsModel = {
-      calculatorOnly: undefined
+      calculator: undefined
     };
     const result = ItemSearch.filterItemCards(itemCards, params);
     const expectedCards = itemCards;
