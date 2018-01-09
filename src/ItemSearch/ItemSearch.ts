@@ -49,9 +49,10 @@ export class ItemSearch {
     const performanceOnly = techTypes
       ? techTypes.some(t => t === FilterType.Performance)
       : undefined;
-    const calculatorOnly = calculatorCodes
-      ? Boolean(calculatorCodes[0])
-      : undefined;
+    const calculator =
+      calculatorCodes && calculatorCodes.length > 0
+        ? calculatorCodes[0] == "true"
+        : undefined;
     const targets = Filter.getSelectedTargets(filterModels);
 
     return {
@@ -62,7 +63,7 @@ export class ItemSearch {
       targets,
       catOnly,
       performanceOnly,
-      calculatorOnly
+      calculator
     };
   }
 
@@ -169,7 +170,7 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          this.getFlagCodes(searchApi.calculatorOnly)
+          this.getFlagCodes(searchApi.calculator)
         );
         break;
       default:
@@ -274,8 +275,8 @@ export class ItemSearch {
     }
 
     // calculator
-    if (filter.calculatorOnly !== undefined) {
-      results = results.filter(i => i.calculator === filter.calculatorOnly);
+    if (filter.calculator !== undefined) {
+      results = results.filter(i => i.calculator === filter.calculator);
     }
 
     return results;

@@ -27,10 +27,10 @@ import {
   resultFilterOptionModeltarget,
   resultFilterOptionModelTechType,
   techtypeSearchStringTypes
-} from "mocks/ItemSearch/mocks";
+} from "../../../mocks/ItemSearch/mocks";
 
-import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
-import { FilterType } from "src/Filter/FilterModels";
+import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
+import { FilterType } from "../../Filter/FilterModels";
 import { filter } from "minimatch";
 
 describe("ItemSearch.filterItemCards", () => {

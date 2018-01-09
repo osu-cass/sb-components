@@ -41,8 +41,8 @@ export class SearchUrl {
     if (search.catOnly) {
       pairs.push(`${FilterType.CAT}=true`);
     }
-    if (search.calculatorOnly !== undefined) {
-      pairs.push(`${FilterType.Calculator}=${search.calculatorOnly}`);
+    if (search.calculator !== undefined) {
+      pairs.push(`${FilterType.Calculator}=${search.calculator}`);
     }
 
     return pairs.length > 0 ? `?${pairs.join("&")}` : "";
@@ -72,10 +72,10 @@ export class SearchUrl {
     const catOnly = this.optionFlag(queryObject[FilterType.CAT]);
     const targetOptions = queryObject[FilterType.Target];
     const targets = targetOptions ? targetOptions.map(t => +t) : undefined;
-    const calculatorOnly = this.optionFlag(queryObject[FilterType.Calculator]);
+    const calculator = this.optionFlag(queryObject[FilterType.Calculator]);
 
     return {
-      calculatorOnly,
+      calculator,
       subjects,
       claims,
       interactionTypes,
@@ -124,12 +124,12 @@ export class SearchUrl {
       FilterType.Performance
     );
     const catOnly = this.getBoolQueryParam(query, FilterType.CAT);
-    const calculatorOnly = this.getBoolQueryParam(query, FilterType.Calculator);
+    const calculator = this.getBoolQueryParam(query, FilterType.Calculator);
 
     return {
       subjects,
       claims,
-      calculatorOnly,
+      calculator,
       interactionTypes,
       performanceOnly,
       catOnly,
@@ -139,6 +139,6 @@ export class SearchUrl {
   }
 
   public static optionFlag(options?: string[]): boolean | undefined {
-    return options ? Boolean(options[0]) : undefined;
+    return options && options.length > 0 ? options[0] == "true" : undefined;
   }
 }

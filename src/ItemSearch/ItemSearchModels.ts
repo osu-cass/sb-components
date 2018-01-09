@@ -54,7 +54,7 @@ export interface SearchAPIParamsModel {
   performanceOnly?: boolean;
   catOnly?: boolean;
   targets?: number[];
-  calculatorOnly?: boolean;
+  calculator?: boolean;
 }
 
 export interface ItemsSearchModel {
