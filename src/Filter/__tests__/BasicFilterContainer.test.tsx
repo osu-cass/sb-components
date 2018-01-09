@@ -2,7 +2,7 @@ import * as React from "react";
 import { BasicFilterContainer } from "../BasicFilterContainer";
 import { BasicFilter } from "../BasicFilter";
 import { BasicFilterCategoryModel } from "../FilterModels";
-import { mockBasicFilterCategories } from "mocks/Filter/mocks";
+import { mockBasicFilterCategories } from "../../../mocks/Filter/mocks";
 import { shallow } from "enzyme";
 import { Select } from "../../Select/Select";
 
