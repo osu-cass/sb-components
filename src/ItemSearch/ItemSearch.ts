@@ -51,7 +51,7 @@ export class ItemSearch {
       : undefined;
     const calculator =
       calculatorCodes && calculatorCodes.length > 0
-        ? calculatorCodes[0] == "true"
+        ? calculatorCodes[0] === "true"
         : undefined;
     const targets = Filter.getSelectedTargets(filterModels);
 

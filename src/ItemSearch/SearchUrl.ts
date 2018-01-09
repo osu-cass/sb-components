@@ -139,6 +139,6 @@ export class SearchUrl {
   }
 
   public static optionFlag(options?: string[]): boolean | undefined {
-    return options && options.length > 0 ? options[0] == "true" : undefined;
+    return options && options.length > 0 ? options[0] === "true" : undefined;
   }
 }
