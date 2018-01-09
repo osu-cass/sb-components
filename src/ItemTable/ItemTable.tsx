@@ -76,11 +76,12 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
   };
 
   renderTooltipLink(col: SortColumnModel, cellData: ItemCardModel) {
-    return col
-      .accessor(cellData)
-      .filter(x => x !== "")
-      .map((data: string | number) => (
-        <div className={`${col.className}-${cellData.itemKey}`}>
+    const tags: JSX.Element[] = [];
+    const labels = col.accessor(cellData).filter(x => x !== "");
+
+    labels.forEach((data: string | number, idx: number) => {
+      tags.push(
+        <span className={`${col.className}-${cellData.itemKey}`}>
           <a
             tabIndex={0}
             onClick={e => e.stopPropagation()}
@@ -96,8 +97,15 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
             id={`tooltip-${col.className}-${cellData.itemKey}`}
             globalEventOff="focusout"
           />
-        </div>
-      ));
+        </span>
+      );
+
+      if (labels.length - 1 > idx) {
+        tags.push(<span> / </span>);
+      }
+    });
+
+    return tags;
   }
 
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
