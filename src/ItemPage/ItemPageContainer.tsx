@@ -19,6 +19,7 @@ import {
 } from "./ItemPageModels";
 import { Resource, getResourceContent, parseQueryString } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
+import { LoadingOverlay } from "../Layout/LoadingOverlay";
 
 export interface ItemPageContainerProps extends RouteComponentProps<ItemModel> {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
@@ -34,6 +35,7 @@ export interface ItemPageState {
   itemAccessibility: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemIdentifierModel;
   item: ItemModel;
+  loading: boolean;
 }
 
 export class ItemPageContainer extends React.Component<
@@ -47,14 +49,15 @@ export class ItemPageContainer extends React.Component<
     const isaap = this.getLocationIsaap() || "";
     const item: ItemIsaapModel = {
       ...itemParams,
-      isaap: isaap
+      isaap
     };
 
     this.state = {
+      item,
       aboutThisItem: { kind: "loading" },
       itemPageVM: { kind: "loading" },
       itemAccessibility: { kind: "loading" },
-      item: item
+      loading: true
     };
   }
 
@@ -77,21 +80,20 @@ export class ItemPageContainer extends React.Component<
     const itemPage = this.getItemPage();
     const itemAcc = this.getItemAccessibility();
 
-    let currentItem: ItemIdentifierModel | undefined = undefined;
+    let currentItem: ItemIdentifierModel | undefined;
     if (itemPage && itemAcc) {
       currentItem = isBrailleEnabled(itemAcc)
         ? itemPage.brailleItem
         : itemPage.nonBrailleItem;
     }
 
-    this.setState({
-      currentItem: currentItem
-    });
+    this.setState({ currentItem });
   }
 
   onGetItemPage(data: ItemPageModel) {
     this.setState({
-      itemPageVM: { kind: "success", content: data }
+      itemPageVM: { kind: "success", content: data },
+      loading: !this.state.loading
     });
   }
 
@@ -101,7 +103,8 @@ export class ItemPageContainer extends React.Component<
     });
   }
 
-  onError(err: any) {
+  onError(err: Error) {
+    this.setState({ loading: false });
     console.error(err);
   }
 
@@ -110,7 +113,7 @@ export class ItemPageContainer extends React.Component<
       const isaap = decodeURIComponent(toiSAAP(accResourceGroups, ""));
       const location = {
         ...this.props.history.location,
-        search: "isaap=" + isaap
+        search: `isaap=${isaap}`
       };
       this.props.history.replace(location);
     } catch (exception) {
@@ -125,18 +128,15 @@ export class ItemPageContainer extends React.Component<
   }
 
   private getItemPage(): ItemPageModel | undefined {
-    const itemPage = this.state.itemPageVM;
-    return getResourceContent(itemPage);
+    return getResourceContent(this.state.itemPageVM);
   }
 
   private getAboutItem(): AboutItemModel | undefined {
-    const aboutItem = this.state.aboutThisItem;
-    return getResourceContent(aboutItem);
+    return getResourceContent(this.state.aboutThisItem);
   }
 
   private getItemAccessibility(): AccResourceGroupModel[] | undefined {
-    const itemAcc = this.state.itemAccessibility;
-    return getResourceContent(itemAcc);
+    return getResourceContent(this.state.itemAccessibility);
   }
 
   onSave = (selections: ResourceSelectionsModel) => {
@@ -144,10 +144,10 @@ export class ItemPageContainer extends React.Component<
     const itemPage = this.getItemPage();
     if (itemPage && itemAcc) {
       const newGroups: AccResourceGroupModel[] = [];
-      for (let group of itemAcc) {
+      for (const group of itemAcc) {
         const newGroup = { ...group };
         const newResources: AccessibilityResourceModel[] = [];
-        for (let res of newGroup.accessibilityResources) {
+        for (const res of newGroup.accessibilityResources) {
           const newRes = { ...res };
           newRes.currentSelectionCode =
             selections[newRes.resourceCode] || newRes.currentSelectionCode;
@@ -170,7 +170,7 @@ export class ItemPageContainer extends React.Component<
     cookieName: string,
     accGroups?: AccResourceGroupModel[]
   ): void {
-    let cookieValue = accGroups ? toCookie(accGroups) : "";
+    const cookieValue = accGroups ? toCookie(accGroups) : "";
     document.cookie = cookieName.concat("=", cookieValue, "; path=/");
   }
 
@@ -187,6 +187,7 @@ export class ItemPageContainer extends React.Component<
         newGroup.accessibilityResources = newGroup.accessibilityResources.map(
           resetResource
         );
+
         return newGroup;
       });
 
@@ -214,10 +215,11 @@ export class ItemPageContainer extends React.Component<
     });
   }
 
-  onFetchUpdatedAboutError(err: any) {
+  onFetchUpdatedAboutError(err: Error) {
     console.error(err);
     this.setState({
-      aboutThisItem: { kind: "failure" }
+      aboutThisItem: { kind: "failure" },
+      loading: false
     });
   }
 
@@ -226,22 +228,24 @@ export class ItemPageContainer extends React.Component<
     const itemDetails = this.state.currentItem;
     const itemPage = this.getItemPage();
     const itemAccessibility = this.getItemAccessibility();
-
+    let content = null;
     if (aboutThisItem && itemPage && itemDetails && itemAccessibility) {
-      return (
-        <div className="container item-page">
-          <ItemPage
-            {...itemPage}
-            aboutThisItemVM={aboutThisItem}
-            onSave={this.onSave}
-            onReset={this.onReset}
-            currentItem={itemDetails}
-            accResourceGroups={itemAccessibility}
-          />
-        </div>
+      content = (
+        <ItemPage
+          {...itemPage}
+          aboutThisItemVM={aboutThisItem}
+          onSave={this.onSave}
+          onReset={this.onReset}
+          currentItem={itemDetails}
+          accResourceGroups={itemAccessibility}
+        />
       );
-    } else {
-      return <div />;
     }
+
+    return (
+      <LoadingOverlay loading={this.state.loading}>
+        <div className="container item-page">{content}</div>
+      </LoadingOverlay>
+    );
   }
 }
