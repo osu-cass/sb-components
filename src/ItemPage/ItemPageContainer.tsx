@@ -128,21 +128,15 @@ export class ItemPageContainer extends React.Component<
   }
 
   private getItemPage(): ItemPageModel | undefined {
-    const itemPage = this.state.itemPageVM;
-
-    return getResourceContent(itemPage);
+    return getResourceContent(this.state.itemPageVM);
   }
 
   private getAboutItem(): AboutItemModel | undefined {
-    const aboutItem = this.state.aboutThisItem;
-
-    return getResourceContent(aboutItem);
+    return getResourceContent(this.state.aboutThisItem);
   }
 
   private getItemAccessibility(): AccResourceGroupModel[] | undefined {
-    const itemAcc = this.state.itemAccessibility;
-
-    return getResourceContent(itemAcc);
+    return getResourceContent(this.state.itemAccessibility);
   }
 
   onSave = (selections: ResourceSelectionsModel) => {
@@ -224,7 +218,8 @@ export class ItemPageContainer extends React.Component<
   onFetchUpdatedAboutError(err: Error) {
     console.error(err);
     this.setState({
-      aboutThisItem: { kind: "failure" }
+      aboutThisItem: { kind: "failure" },
+      loading: false
     });
   }
 
