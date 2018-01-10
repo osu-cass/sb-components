@@ -7,6 +7,7 @@ exports[`ItemCardViewer renders information tab 1`] = `
   <ItemTabs
     changedTab={[Function]}
     selectedTab="information"
+    showRubricTab={false}
   />
   <div>
      
@@ -53,6 +54,7 @@ exports[`ItemCardViewer renders rubric tab 1`] = `
   <ItemTabs
     changedTab={[Function]}
     selectedTab="rubric"
+    showRubricTab={false}
   />
   <div>
      
@@ -68,6 +70,7 @@ exports[`ItemCardViewer renders viewer tab 1`] = `
   <ItemTabs
     changedTab={[Function]}
     selectedTab="viewer"
+    showRubricTab={false}
   />
   <div>
      

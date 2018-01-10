@@ -249,13 +249,16 @@ exports[`ItemPageTable sorts list on header click 1`] = `
           <tr
             className="primary"
           >
-            <th
+            <td
               colSpan={2}
             />
             <th
               className="item"
               key="Item"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="item"
@@ -278,6 +281,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               className="claimAndTarget"
               key="Claim/Target"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="claimAndTarget"
@@ -300,6 +306,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               className="subject"
               key="Subject"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="subject"
@@ -322,6 +331,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               className="grade"
               key="Grade"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="grade"
@@ -344,6 +356,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               className="interactionType"
               key="Item Type"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="interactionType"
@@ -472,10 +487,13 @@ exports[`ItemPageTable sorts list on header click 1`] = `
             className=""
             key="0"
             onClick={[Function]}
+            onKeyUp={[Function]}
           >
             <td
               key="1"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -485,6 +503,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
             </td>
             <td
               key="3"
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -495,46 +514,50 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               className="item"
               key="Item"
             >
-              <div
-                className="item"
+              <span
+                className="item-3"
               >
-                3
-              </div>
+                <a
+                  data-event="click"
+                  data-for="tooltip-item-3"
+                  data-tip="custom tooltip here"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  3
+                </a>
+                <ReactTooltip
+                  globalEventOff="focusout"
+                  id="tooltip-item-3"
+                  insecure={true}
+                  resizeHide={true}
+                  wrapper="div"
+                >
+                  <div
+                    className="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </ReactTooltip>
+              </span>
             </td>
             <td
               className="claimAndTarget"
               key="Claim/Target"
-            >
-              <div
-                className="claimAndTarget"
-              >
-                /
-              </div>
-            </td>
+            />
             <td
               className="subject"
               key="Subject"
-            >
-              <div
-                className="subject"
-              />
-            </td>
+            />
             <td
               className="grade"
               key="Grade"
-            >
-              <div
-                className="grade"
-              />
-            </td>
+            />
             <td
               className="interactionType"
               key="Item Type"
-            >
-              <div
-                className="interactionType"
-              />
-            </td>
+            />
           </tr>
         </tbody>
       </ItemTable>
@@ -666,13 +689,16 @@ exports[`ItemPageTable sorts list on header click 2`] = `
           <tr
             className="primary"
           >
-            <th
+            <td
               colSpan={2}
             />
             <th
               className="item"
               key="Item"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="item"
@@ -695,6 +721,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               className="claimAndTarget"
               key="Claim/Target"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="claimAndTarget"
@@ -717,6 +746,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               className="subject"
               key="Subject"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="subject"
@@ -739,6 +771,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               className="grade"
               key="Grade"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="grade"
@@ -761,6 +796,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               className="interactionType"
               key="Item Type"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="interactionType"
@@ -899,10 +937,13 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             className=""
             key="0"
             onClick={[Function]}
+            onKeyUp={[Function]}
           >
             <td
               key="1"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -912,6 +953,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             </td>
             <td
               key="3"
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -922,46 +964,50 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               className="item"
               key="Item"
             >
-              <div
-                className="item"
+              <span
+                className="item-3"
               >
-                3
-              </div>
+                <a
+                  data-event="click"
+                  data-for="tooltip-item-3"
+                  data-tip="custom tooltip here"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  3
+                </a>
+                <ReactTooltip
+                  globalEventOff="focusout"
+                  id="tooltip-item-3"
+                  insecure={true}
+                  resizeHide={true}
+                  wrapper="div"
+                >
+                  <div
+                    className="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </ReactTooltip>
+              </span>
             </td>
             <td
               className="claimAndTarget"
               key="Claim/Target"
-            >
-              <div
-                className="claimAndTarget"
-              >
-                /
-              </div>
-            </td>
+            />
             <td
               className="subject"
               key="Subject"
-            >
-              <div
-                className="subject"
-              />
-            </td>
+            />
             <td
               className="grade"
               key="Grade"
-            >
-              <div
-                className="grade"
-              />
-            </td>
+            />
             <td
               className="interactionType"
               key="Item Type"
-            >
-              <div
-                className="interactionType"
-              />
-            </td>
+            />
           </tr>
         </tbody>
       </ItemTable>
@@ -1103,13 +1149,16 @@ exports[`ItemPageTable sorts list on header click 3`] = `
           <tr
             className="primary"
           >
-            <th
+            <td
               colSpan={2}
             />
             <th
               className="item"
               key="Item"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="item"
@@ -1132,6 +1181,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               className="claimAndTarget"
               key="Claim/Target"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="claimAndTarget"
@@ -1154,6 +1206,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               className="subject"
               key="Subject"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="subject"
@@ -1176,6 +1231,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               className="grade"
               key="Grade"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="grade"
@@ -1198,6 +1256,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               className="interactionType"
               key="Item Type"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="interactionType"
@@ -1346,10 +1407,13 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             className=""
             key="0"
             onClick={[Function]}
+            onKeyUp={[Function]}
           >
             <td
               key="1"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -1359,6 +1423,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             </td>
             <td
               key="3"
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -1369,46 +1434,50 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               className="item"
               key="Item"
             >
-              <div
-                className="item"
+              <span
+                className="item-3"
               >
-                3
-              </div>
+                <a
+                  data-event="click"
+                  data-for="tooltip-item-3"
+                  data-tip="custom tooltip here"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  3
+                </a>
+                <ReactTooltip
+                  globalEventOff="focusout"
+                  id="tooltip-item-3"
+                  insecure={true}
+                  resizeHide={true}
+                  wrapper="div"
+                >
+                  <div
+                    className="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </ReactTooltip>
+              </span>
             </td>
             <td
               className="claimAndTarget"
               key="Claim/Target"
-            >
-              <div
-                className="claimAndTarget"
-              >
-                /
-              </div>
-            </td>
+            />
             <td
               className="subject"
               key="Subject"
-            >
-              <div
-                className="subject"
-              />
-            </td>
+            />
             <td
               className="grade"
               key="Grade"
-            >
-              <div
-                className="grade"
-              />
-            </td>
+            />
             <td
               className="interactionType"
               key="Item Type"
-            >
-              <div
-                className="interactionType"
-              />
-            </td>
+            />
           </tr>
         </tbody>
       </ItemTable>
@@ -1560,13 +1629,16 @@ exports[`ItemPageTable sorts list on header click 4`] = `
           <tr
             className="primary"
           >
-            <th
+            <td
               colSpan={2}
             />
             <th
               className="item"
               key="Item"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="item"
@@ -1589,6 +1661,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               className="claimAndTarget"
               key="Claim/Target"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="claimAndTarget"
@@ -1611,6 +1686,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               className="subject"
               key="Subject"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="subject"
@@ -1633,6 +1711,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               className="grade"
               key="Grade"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="grade"
@@ -1655,6 +1736,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               className="interactionType"
               key="Item Type"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="interactionType"
@@ -1813,10 +1897,13 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             className=""
             key="0"
             onClick={[Function]}
+            onKeyUp={[Function]}
           >
             <td
               key="1"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -1826,6 +1913,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             </td>
             <td
               key="3"
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -1836,46 +1924,50 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               className="item"
               key="Item"
             >
-              <div
-                className="item"
+              <span
+                className="item-3"
               >
-                3
-              </div>
+                <a
+                  data-event="click"
+                  data-for="tooltip-item-3"
+                  data-tip="custom tooltip here"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  3
+                </a>
+                <ReactTooltip
+                  globalEventOff="focusout"
+                  id="tooltip-item-3"
+                  insecure={true}
+                  resizeHide={true}
+                  wrapper="div"
+                >
+                  <div
+                    className="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </ReactTooltip>
+              </span>
             </td>
             <td
               className="claimAndTarget"
               key="Claim/Target"
-            >
-              <div
-                className="claimAndTarget"
-              >
-                /
-              </div>
-            </td>
+            />
             <td
               className="subject"
               key="Subject"
-            >
-              <div
-                className="subject"
-              />
-            </td>
+            />
             <td
               className="grade"
               key="Grade"
-            >
-              <div
-                className="grade"
-              />
-            </td>
+            />
             <td
               className="interactionType"
               key="Item Type"
-            >
-              <div
-                className="interactionType"
-              />
-            </td>
+            />
           </tr>
         </tbody>
       </ItemTable>
@@ -2037,13 +2129,16 @@ exports[`ItemPageTable sorts list on header click 5`] = `
           <tr
             className="primary"
           >
-            <th
+            <td
               colSpan={2}
             />
             <th
               className="item"
               key="Item"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="item"
@@ -2066,6 +2161,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               className="claimAndTarget"
               key="Claim/Target"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="claimAndTarget"
@@ -2088,6 +2186,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               className="subject"
               key="Subject"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="subject"
@@ -2110,6 +2211,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               className="grade"
               key="Grade"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="grade"
@@ -2132,6 +2236,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               className="interactionType"
               key="Item Type"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
             >
               <div
                 className="interactionType"
@@ -2300,10 +2407,13 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             className=""
             key="0"
             onClick={[Function]}
+            onKeyUp={[Function]}
           >
             <td
               key="1"
               onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -2313,6 +2423,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             </td>
             <td
               key="3"
+              tabIndex={0}
             >
               <i
                 aria-hidden="true"
@@ -2323,46 +2434,50 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               className="item"
               key="Item"
             >
-              <div
-                className="item"
+              <span
+                className="item-3"
               >
-                3
-              </div>
+                <a
+                  data-event="click"
+                  data-for="tooltip-item-3"
+                  data-tip="custom tooltip here"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  3
+                </a>
+                <ReactTooltip
+                  globalEventOff="focusout"
+                  id="tooltip-item-3"
+                  insecure={true}
+                  resizeHide={true}
+                  wrapper="div"
+                >
+                  <div
+                    className="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </ReactTooltip>
+              </span>
             </td>
             <td
               className="claimAndTarget"
               key="Claim/Target"
-            >
-              <div
-                className="claimAndTarget"
-              >
-                /
-              </div>
-            </td>
+            />
             <td
               className="subject"
               key="Subject"
-            >
-              <div
-                className="subject"
-              />
-            </td>
+            />
             <td
               className="grade"
               key="Grade"
-            >
-              <div
-                className="grade"
-              />
-            </td>
+            />
             <td
               className="interactionType"
               key="Item Type"
-            >
-              <div
-                className="interactionType"
-              />
-            </td>
+            />
           </tr>
         </tbody>
       </ItemTable>
