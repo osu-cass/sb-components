@@ -304,196 +304,51 @@ exports[`Storyshots About PT Nothing 1`] = `
 
 exports[`Storyshots About Test Items bad item type 1`] = `
 <div
-  className="container about-items"
+  className="loader-overlay"
 >
   <div
-    className="about-items-info"
-  >
-    <h2>
-      About Test Items
-    </h2>
-    <div
-      className="section section-light"
-    >
-      <p
-        className="about-items-text"
-      >
-        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </p>
-      <p>
-        <em>
-          Loading...
-        </em>
-      </p>
-    </div>
-  </div>
-  <div
-    className="section about-items-iframe"
-  >
-    <div
-      className="section section-light no-item"
-    >
-      <p>
-        No items of the selected type found.
-      </p>
-    </div>
-  </div>
+    className="loader"
+  />
 </div>
 `;
 
 exports[`Storyshots About Test Items default 1`] = `
 <div
-  className="container about-items"
+  className="loader-overlay"
 >
   <div
-    className="about-items-info"
-  >
-    <h2>
-      About Test Items
-    </h2>
-    <div
-      className="section section-light"
-    >
-      <p
-        className="about-items-text"
-      >
-        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </p>
-      <p>
-        <em>
-          Loading...
-        </em>
-      </p>
-    </div>
-  </div>
-  <div
-    className="section about-items-iframe"
-  >
-    <div
-      className="section section-light no-item"
-    >
-      <p>
-        No items of the selected type found.
-      </p>
-    </div>
-  </div>
+    className="loader"
+  />
 </div>
 `;
 
 exports[`Storyshots About Test Items default, param 1`] = `
 <div
-  className="container about-items"
+  className="loader-overlay"
 >
   <div
-    className="about-items-info"
-  >
-    <h2>
-      About Test Items
-    </h2>
-    <div
-      className="section section-light"
-    >
-      <p
-        className="about-items-text"
-      >
-        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </p>
-      <p>
-        <em>
-          Loading...
-        </em>
-      </p>
-    </div>
-  </div>
-  <div
-    className="section about-items-iframe"
-  >
-    <div
-      className="section section-light no-item"
-    >
-      <p>
-        No items of the selected type found.
-      </p>
-    </div>
-  </div>
+    className="loader"
+  />
 </div>
 `;
 
 exports[`Storyshots About Test Items loading, param 1`] = `
 <div
-  className="container about-items"
+  className="loader-overlay"
 >
   <div
-    className="about-items-info"
-  >
-    <h2>
-      About Test Items
-    </h2>
-    <div
-      className="section section-light"
-    >
-      <p
-        className="about-items-text"
-      >
-        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </p>
-      <p>
-        <em>
-          Loading...
-        </em>
-      </p>
-    </div>
-  </div>
-  <div
-    className="section about-items-iframe"
-  >
-    <div
-      className="section section-light no-item"
-    >
-      <p>
-        No items of the selected type found.
-      </p>
-    </div>
-  </div>
+    className="loader"
+  />
 </div>
 `;
 
 exports[`Storyshots About Test Items reject, param 1`] = `
 <div
-  className="container about-items"
+  className="loader-overlay"
 >
   <div
-    className="about-items-info"
-  >
-    <h2>
-      About Test Items
-    </h2>
-    <div
-      className="section section-light"
-    >
-      <p
-        className="about-items-text"
-      >
-        Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
-      </p>
-      <p>
-        <em>
-          Loading...
-        </em>
-      </p>
-    </div>
-  </div>
-  <div
-    className="section about-items-iframe"
-  >
-    <div
-      className="section section-light no-item"
-    >
-      <p>
-        No items of the selected type found.
-      </p>
-    </div>
-  </div>
+    className="loader"
+  />
 </div>
 `;
 
@@ -3870,6 +3725,20 @@ exports[`Storyshots Layout name no links no body 1`] = `
   </footer>
 </div>
 `;
+
+exports[`Storyshots LoadingOverlay renders it's child elements 1`] = `<div />`;
+
+exports[`Storyshots LoadingOverlay renders the loading spinner 1`] = `
+<div
+  className="loader-overlay"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;
+
+exports[`Storyshots LoadingOverlay renders undefined when there are no children 1`] = `null`;
 
 exports[`Storyshots PDF CoverPage Cover Page 1`] = `
 <div

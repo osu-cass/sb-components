@@ -1,7 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as $ from "jquery";
-import { AboutItem, AboutItemModel, ItemViewerFrame } from "../index";
+import {
+  AboutItem,
+  AboutItemModel,
+  ItemViewerFrame,
+  LoadingOverlay
+} from "../index";
 import { Resource, getRequest, getResourceContent } from "../ApiModel";
 import { RouteComponentProps } from "react-router";
 import {
@@ -16,6 +21,7 @@ export interface AboutTestItemContainerState {
   aboutThisItemViewModel: Resource<AboutItemModel>;
   aboutItemsViewModel: Resource<AboutTestItemsModel>;
   hasError: boolean;
+  loading: boolean;
 }
 
 export interface AboutTestItemContainerProps
@@ -35,9 +41,12 @@ export class AboutTestItemsContainer extends React.Component<
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
       selectedCode: this.props.match.params.itemType,
-      hasError: false
+      hasError: false,
+      loading: true
     };
+  }
 
+  componentDidMount() {
     this.fetchUpdatedViewModel(this.state.selectedCode);
   }
 
@@ -67,6 +76,7 @@ export class AboutTestItemsContainer extends React.Component<
     this.setState({
       aboutThisItemViewModel: { kind: "failure" },
       aboutItemsViewModel: { kind: "failure" },
+      loading: false,
       hasError: true
     });
   }
@@ -85,6 +95,7 @@ export class AboutTestItemsContainer extends React.Component<
     }
 
     this.setState({
+      selectedCode,
       itemUrl: viewModel.itemUrl,
       aboutThisItemViewModel: {
         kind: "success",
@@ -92,7 +103,7 @@ export class AboutTestItemsContainer extends React.Component<
       },
       aboutItemsViewModel: { kind: "success", content: viewModel },
       hasError: false,
-      selectedCode: selectedCode
+      loading: false
     });
   };
 
@@ -204,17 +215,18 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   private renderError() {
+    let content = null;
     if (this.state.hasError) {
-      return (
+      content = (
         <div className="page-error">
           <p aria-label="Network error occurred">
             Network failure, please try again
           </p>
         </div>
       );
-    } else {
-      return null;
     }
+
+    return content;
   }
 
   public render() {
@@ -223,21 +235,23 @@ export class AboutTestItemsContainer extends React.Component<
       : this.renderNoItem();
 
     return (
-      <div className="container about-items">
-        <div className="about-items-info">
-          <h2>About Test Items</h2>
-          <div className="section section-light">
-            {this.renderError()}
-            <p className="about-items-text">
-              Smarter Balanced assessments use a variety of item types to
-              accurately measure what students know and can do. To learn more
-              and see an example item, select an item type below.
-            </p>
-            {this.renderItemTypesGroup()}
+      <LoadingOverlay loading={this.state.loading}>
+        <div className="container about-items">
+          <div className="aboutitems-parents">
+            <div className="aboutitems-info">
+              <h1>About Test Items</h1>
+              {this.renderError()}
+              <div className="aboutitems-text">
+                Smarter Balanced assessments use a variety of item types to
+                accurately measure what students know and can do. To learn more
+                and see an example item, select an item type below.
+              </div>
+              {this.renderItemTypesGroup()}
+            </div>
+            {itemFrame}
           </div>
         </div>
-        <div className="section about-items-iframe">{itemFrame}</div>
-      </div>
+      </LoadingOverlay>
     );
   }
 }
