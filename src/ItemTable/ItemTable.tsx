@@ -108,15 +108,30 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     return tags;
   }
 
+  renderNormalLink(col: SortColumnModel, cellData: ItemCardModel) {
+    const tags: JSX.Element[] = [];
+    const labels = col.accessor(cellData).filter(x => x !== "");
+
+    labels.forEach((data: string | number, idx: number) => {
+      tags.push(<span className={col.className}>{data}</span>);
+
+      if (labels.length - 1 > idx) {
+        tags.push(<span> / </span>);
+      }
+    });
+
+    return tags;
+  }
+
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
-    let tags: JSX.Element | JSX.Element[];
+    let tags: JSX.Element[];
 
     // TODO: implement description API functionality when available.
     const descriptionAvailable = true;
     if (descriptionAvailable) {
       tags = this.renderTooltipLink(col, cellData);
     } else {
-      tags = <div className={col.className}>{col.accessor(cellData)}</div>;
+      tags = this.renderNormalLink(col, cellData);
     }
 
     return (
@@ -152,7 +167,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         >
           {rowData.selected === true ? checked : unChecked}&nbsp;
         </td>,
-        <td key={rowData.itemKey}>
+        <td tabIndex={0} key={rowData.itemKey}>
           {isExpanded ? this.expand : this.collapse}
         </td>
       );
@@ -163,7 +178,6 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
         className={isExpanded ? "selected" : ""}
         onClick={() => this.handleRowClick(rowData)}
         onKeyUp={e => this.handleKeyUpEnter(e, rowData)}
-        tabIndex={0}
       >
         {controls.length > 0 ? controls : undefined}
         {columns.map(col => this.renderCell(col, rowData))}
