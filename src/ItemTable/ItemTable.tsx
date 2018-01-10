@@ -81,7 +81,10 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
 
     labels.forEach((data: string | number, idx: number) => {
       tags.push(
-        <span className={`${col.className}-${cellData.itemKey}`}>
+        <span
+          key={`${cellData.bankKey}-${cellData.itemKey}`}
+          className={`${col.className}-${cellData.itemKey}`}
+        >
           <a
             tabIndex={0}
             onClick={e => e.stopPropagation()}
@@ -135,7 +138,10 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     }
 
     return (
-      <td key={col.header} className={col.className}>
+      <td
+        key={`${col.className}-${cellData.bankKey}-${cellData.itemKey}`}
+        className={col.className}
+      >
         {tags}
       </td>
     );
@@ -160,21 +166,21 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     if (!isLinkTable) {
       controls.push(
         <td
-          key={rowData.bankKey}
+          key={`${rowData.bankKey}-${rowData.itemKey}`}
           onClick={e => this.handleCheckboxClick(e, rowData)}
           onKeyUp={e => this.handleCheckboxKeyUpEnter(e, rowData)}
           tabIndex={0}
         >
           {rowData.selected === true ? checked : unChecked}&nbsp;
         </td>,
-        <td tabIndex={0} key={rowData.itemKey}>
+        <td tabIndex={0} key={`${rowData.bankKey}-${rowData.itemKey}-${index}`}>
           {isExpanded ? this.expand : this.collapse}
         </td>
       );
     }
     const row: JSX.Element[] = [
       <tr
-        key={index}
+        key={`${rowData.bankKey}-${rowData.itemKey}`}
         className={isExpanded ? "selected" : ""}
         onClick={() => this.handleRowClick(rowData)}
         onKeyUp={e => this.handleKeyUpEnter(e, rowData)}
