@@ -11,7 +11,7 @@ storiesOf("Item Tab", module)
     <ItemTabs selectedTab="viewer" changedTab={mockFunc} />
   ))
   .add("rubric tab", () => (
-    <ItemTabs selectedTab="rubric" changedTab={mockFunc} />
+    <ItemTabs selectedTab="rubric" showRubricTab={true} changedTab={mockFunc} />
   ))
   .add("information tab", () => (
     <ItemTabs selectedTab="information" changedTab={mockFunc} />

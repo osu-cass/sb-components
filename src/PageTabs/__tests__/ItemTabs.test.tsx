@@ -4,16 +4,25 @@ import { ItemTabs, Tabs } from "../ItemTabs";
 import { shallow, mount, render } from "enzyme";
 
 describe("PageTabs", () => {
-  let tabs: Tabs[] = ["viewer", "rubric", "information"];
+  const tabs: Tabs[] = ["viewer", "rubric", "information"];
+
   const props = {
     changedTab: jest.fn((tab: Tabs) => {
-      return null;
+      return undefined;
     }),
     selectedTab: tabs[0]
   };
 
-  it("matches snapshot for each tab", () => {
-    let wrapper = shallow(<ItemTabs {...props} />);
+  it("matches snapshot for each tab with no rubric", () => {
+    const wrapper = shallow(<ItemTabs {...props} />);
+    tabs.forEach(tab => {
+      wrapper.setProps({ selectedTab: tab });
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  it("matches snapshot for each tab with rubric", () => {
+    const wrapper = shallow(<ItemTabs {...props} showRubricTab={true} />);
     tabs.forEach(tab => {
       wrapper.setProps({ selectedTab: tab });
       expect(wrapper).toMatchSnapshot();
@@ -21,9 +30,9 @@ describe("PageTabs", () => {
   });
 
   it("changes tabs", () => {
-    let wrapper = shallow(<ItemTabs {...props} />);
+    const wrapper = shallow(<ItemTabs {...props} />);
     wrapper
-      .find("div.tabs")
+      .find("ul.nav-tabs")
       .childAt(0)
       .simulate("click");
     expect(props.changedTab).toHaveBeenCalled();

@@ -85,9 +85,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
           </label>
         </div>
         <div
-          className={`nested-btn-group btn-group-sm toggle-group vertical ${
-            className
-          }`}
+          className={`nested-btn-group btn-group-sm toggle-group vertical ${className}`}
           data-toggle="buttons"
         >
           {this.renderAllBtnContainer()}
