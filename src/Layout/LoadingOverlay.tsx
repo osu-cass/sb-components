@@ -19,6 +19,7 @@ export class LoadingOverlay extends React.Component<LoadingOverlayProps, {}> {
       content = children;
     }
 
+    // tslint:disable-next-line:no-null-keyword
     return content ? content : null;
   }
 }
