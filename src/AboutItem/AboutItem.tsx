@@ -32,7 +32,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
   private renderRubrics() {
     const scoring = this.props.sampleItemScoring;
     if (scoring && scoring.rubrics) {
-      // TOOD: add logic for non rubrics
+      // TODO: add logic for non rubrics
       const rubrics = scoring.rubrics.map((ru, i) => (
         <Rubric {...ru} key={String(i)} />
       ));
