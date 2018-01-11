@@ -23,7 +23,7 @@ export function getResource(
 ): AccessibilityResourceModel | null {
   for (const accGroup of resourceGroups) {
     const resource = accGroup.accessibilityResources.find(
-      rg => rg.resourceCode == resourceCode
+      rg => rg.resourceCode === resourceCode
     );
     if (resource) {
       return resource;
