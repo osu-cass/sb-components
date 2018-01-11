@@ -2,7 +2,7 @@ import * as React from "react";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import {
   ItemViewerFrame,
-  Rubric,
+  RubricTable,
   AboutThisItemDetail,
   ItemTabs
 } from "../index";
@@ -45,12 +45,13 @@ export class ItemCardViewer extends React.Component<
     const aboutItem = this.props.item;
 
     if (aboutItem && aboutItem.sampleItemScoring) {
-      //TODO: add logic for non rubric scoring options
+      // TODO: add logic for non rubric scoring options
       if (aboutItem.sampleItemScoring.rubrics) {
-        const rubrics = aboutItem.sampleItemScoring.rubrics.map((ru, i) => (
-          <Rubric {...ru} key={String(i)} />
-        ));
-        return <div className="item-content">{rubrics}</div>;
+        return (
+          <div className="item-content">
+            <RubricTable rubrics={aboutItem.sampleItemScoring.rubrics} />
+          </div>
+        );
       }
     }
   }
@@ -58,6 +59,7 @@ export class ItemCardViewer extends React.Component<
   renderInformation() {
     if (this.props.item) {
       const aboutItem = this.props.item;
+
       return (
         <div className="item-content">
           <div>
@@ -69,31 +71,38 @@ export class ItemCardViewer extends React.Component<
   }
 
   renderChosen() {
-    let selectedTab = null;
     if (this.props.item) {
       const selectedTab = this.state.selectedTab;
       const itemCard = this.props.item.itemCardViewModel;
 
       let resultElement: JSX.Element[] | JSX.Element | undefined;
-      if (selectedTab == "viewer") {
-        const url =
-          "http://ivs.smarterbalanced.org/items?ids=" +
-          itemCard.bankKey.toString() +
-          "-" +
-          itemCard.itemKey.toString();
+      if (selectedTab === "viewer") {
+        // TODO: fix http string.
+        const url = `http://ivs.smarterbalanced.org/items?ids=${itemCard.bankKey.toString()}-${itemCard.itemKey.toString()}`;
         resultElement = <div> {this.renderViewer(url)} </div>;
-      } else if (selectedTab == "rubric") {
+      } else if (selectedTab === "rubric") {
         resultElement = <div> {this.renderRubric()} </div>;
-      } else if (selectedTab == "information") {
+      } else if (selectedTab === "information") {
         resultElement = <div> {this.renderInformation()}</div>;
       }
+
       return resultElement;
     }
   }
   render() {
+    let rubricVisibility = false;
+    if (
+      this.props.item &&
+      this.props.item.sampleItemScoring &&
+      this.props.item.sampleItemScoring.rubrics
+    ) {
+      rubricVisibility = true;
+    }
+
     return (
       <div className="item-card">
         <ItemTabs
+          showRubricTab={rubricVisibility}
           changedTab={tab => this.onTabChange(tab)}
           selectedTab={this.state.selectedTab}
         />

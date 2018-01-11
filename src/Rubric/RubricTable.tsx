@@ -11,11 +11,12 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
       const sample = rubric.samples.find(
         s =>
           s.sampleResponses[0] &&
-          s.sampleResponses[0].scorePoint == entry.scorepoint
+          s.sampleResponses[0].scorePoint === entry.scorepoint
       );
       const sampleHtml = sample
         ? sample.sampleResponses.map(sr => sr.sampleContent).join("<br/>")
         : "";
+
       return {
         score: entry.scorepoint,
         rationale: entry.value,
@@ -41,7 +42,9 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
             dangerouslySetInnerHTML={{ __html: row.sample }}
             style={leftAlign}
           />
-        ) : null}
+        ) : (
+          undefined
+        )}
       </tr>
     ));
 
@@ -51,7 +54,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
           <tr>
             <th>Score</th>
             <th>Rationale</th>
-            {showSample ? <th>Exemplar</th> : null}
+            {showSample ? <th>Exemplar</th> : undefined}
           </tr>
         </thead>
         <tbody>{rowsJsx}</tbody>
