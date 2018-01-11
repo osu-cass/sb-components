@@ -60,7 +60,7 @@ export class ItemAccessibilityModal extends React.Component<
     e: React.KeyboardEvent<HTMLAnchorElement>,
     resourceType: string
   ): void {
-    if (e.keyCode == 23 || e.keyCode == 13) {
+    if (e.keyCode === 23 || e.keyCode === 13) {
       const expandeds = Object.assign(
         {},
         this.state.resourceTypeExpanded || {}
@@ -81,7 +81,7 @@ export class ItemAccessibilityModal extends React.Component<
     );
     newSelections[resourceCode] = selectionCode;
     if (resourceCode === "BrailleType") {
-      if (selectionCode == "TDS_BT0") {
+      if (selectionCode === "TDS_BT0") {
         newSelections["StreamlinedInterface"] = "TDS_SLM0";
       } else {
         newSelections["StreamlinedInterface"] = "TDS_SLM1";
@@ -117,6 +117,14 @@ export class ItemAccessibilityModal extends React.Component<
   handleHideModal = () => {
     this.setState({ showModal: false });
   };
+
+  componentWillMount() {
+    const body = document.getElementById("body");
+
+    if (body) {
+      ReactModal.setAppElement(body);
+    }
+  }
 
   renderResourceType(type: string) {
     let resources = this.props.accResourceGroups.filter(
