@@ -2,7 +2,11 @@
 
 exports[`Select handles on change event 1`] = `
 <label>
-  select
+  <span
+    className="label undefined"
+  >
+    select
+  </span>
   <select
     className="form-control undefined"
     onChange={[Function]}
@@ -26,7 +30,11 @@ exports[`Select handles on change event 1`] = `
 
 exports[`Select handles on change event 2`] = `
 <label>
-  select
+  <span
+    className="label undefined"
+  >
+    select
+  </span>
   <select
     className="form-control undefined"
     onChange={[Function]}
