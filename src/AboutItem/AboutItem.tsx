@@ -8,6 +8,7 @@ import * as ReactModal from "react-modal";
 
 export interface AboutItemProps extends AboutItemModel {
   showModal?: boolean;
+  showRubrics: boolean;
 }
 
 export interface AboutItemState {
@@ -84,7 +85,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
             </div>
             <div className="modal-body">
               <AboutThisItemDetail {...this.props} />
-              {this.renderRubrics()}
+              {this.props.showRubrics ? this.renderRubrics() : undefined}
             </div>
             <div className="modal-footer">
               <button

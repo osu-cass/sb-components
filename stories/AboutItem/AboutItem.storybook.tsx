@@ -13,20 +13,24 @@ import { CenterDecorator } from "../CenterDecorator";
 storiesOf("About Item Modal", module)
   .addDecorator(CenterDecorator)
   .addDecorator(RouterDecorator)
-  .add("default", () => <AboutItem {...AboutItemMockModel} />)
+  .add("default", () => (
+    <AboutItem {...AboutItemMockModel} showRubrics={true} />
+  ))
   .add("showing no rubrics", () => (
-    <AboutItem {...AboutItemMockModel} showModal={true} />
+    <AboutItem {...AboutItemMockModel} showRubrics={true} showModal={true} />
   ))
   .add("showing rubrics", () => (
     <AboutItem
       {...AboutItemMockModel}
+      showRubrics={true}
       showModal={true}
-      sampleItemScoring={{ rubrics: rubrics }}
+      sampleItemScoring={{ rubrics }}
     />
   ))
   .add("showing rubrics ESN", () => (
     <AboutItem
       {...AboutItemMockModel}
+      showRubrics={true}
       showModal={true}
       sampleItemScoring={{ rubrics: rubricsEsn }}
     />
@@ -34,6 +38,7 @@ storiesOf("About Item Modal", module)
   .add("showing rubrics ENU ESN", () => (
     <AboutItem
       {...AboutItemMockModel}
+      showRubrics={true}
       showModal={true}
       sampleItemScoring={{ rubrics: allRubrics }}
     />

@@ -28,6 +28,7 @@ export interface ItemPageProps extends ItemPageModels.ItemPageModel {
   aboutThisItemVM: AboutItemModel;
   currentItem: ItemPageModels.ItemIdentifierModel;
   accResourceGroups: AccResourceGroupModel[];
+  showRubrics: boolean;
 }
 
 export class ItemPage extends React.Component<ItemPageProps, {}> {
@@ -83,7 +84,10 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
         role="group"
         aria-label="First group"
       >
-        <AboutItem {...this.props.aboutThisItemVM} />
+        <AboutItem
+          showRubrics={this.props.showRubrics}
+          {...this.props.aboutThisItemVM}
+        />
 
         <MoreLikeThisModal {...this.props.moreLikeThisVM} />
         <ShareModal iSAAP={isaap} />
