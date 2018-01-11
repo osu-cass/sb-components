@@ -29,14 +29,6 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
     this.setState({ showModal: false });
   };
 
-  componentWillMount() {
-    const body = document.getElementById("react-app");
-
-    if (body) {
-      ReactModal.setAppElement(body);
-    }
-  }
-
   private renderRubrics() {
     const scoring = this.props.sampleItemScoring;
     if (scoring && scoring.rubrics) {

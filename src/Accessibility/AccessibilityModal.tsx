@@ -118,14 +118,6 @@ export class ItemAccessibilityModal extends React.Component<
     this.setState({ showModal: false });
   };
 
-  componentWillMount() {
-    const body = document.getElementById("body");
-
-    if (body) {
-      ReactModal.setAppElement(body);
-    }
-  }
-
   renderResourceType(type: string) {
     let resources = this.props.accResourceGroups.filter(
       group => group.label === type
