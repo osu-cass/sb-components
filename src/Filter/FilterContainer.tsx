@@ -3,14 +3,21 @@ import { AdvancedFilterContainer, BasicFilterContainer } from "../index";
 import {
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,
-  FilterOptionModel
+  FilterOptionModel,
+  FilterType
 } from "./FilterModels";
 
 export interface FilterContainerProps {
   basicFilterCategories: BasicFilterCategoryModel[];
-  onUpdateBasicFilter: (selected: BasicFilterCategoryModel[]) => void;
+  onUpdateBasicFilter: (
+    selected: BasicFilterCategoryModel[],
+    changed: FilterType
+  ) => void;
   advancedFilterCategories: AdvancedFilterCategoryModel[];
-  onUpdateAdvancedFilter: (selected: AdvancedFilterCategoryModel[]) => void;
+  onUpdateAdvancedFilter: (
+    selected: AdvancedFilterCategoryModel[],
+    changed?: FilterType
+  ) => void;
   filterId?: string;
 }
 

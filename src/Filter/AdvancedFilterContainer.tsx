@@ -6,8 +6,10 @@ import {
   AdvancedFilterCategoryModel,
   AdvancedFiltersModel,
   FilterOptionModel,
-  OptionTypeModel
+  OptionTypeModel,
+  FilterType
 } from "./FilterModels";
+import { FilterCategoryModel } from "lib/Filter/FilterModels";
 
 /**
  * AdvancedFilterContainer props
@@ -20,7 +22,10 @@ import {
  */
 export interface AdvancedFilterContainerProps {
   filterCategories: AdvancedFilterCategoryModel[];
-  onUpdateFilter: (selected: AdvancedFilterCategoryModel[] | undefined) => void;
+  onUpdateFilter: (
+    selected?: AdvancedFilterCategoryModel[],
+    changed?: FilterType
+  ) => void;
   isNested?: boolean;
   pageTitle?: string;
   filterId?: string;
@@ -61,7 +66,7 @@ export class AdvancedFilterContainer extends React.Component<
   ) {
     const { onUpdateFilter, filterCategories } = this.props;
     const newFilters = onFilterSelect(filterCategories, category, option);
-    onUpdateFilter(newFilters);
+    onUpdateFilter(newFilters, category.code);
   }
 
   /**
