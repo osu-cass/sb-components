@@ -4,7 +4,7 @@ import { AdvancedFilterCategoryModel } from "../FilterModels";
 import {
   mockAdvancedFilterCategoriesAll,
   mockAdvancedFilterCategoriesSelected
-} from "mocks/Filter/mocks";
+} from "../../../mocks/Filter/mocks";
 import { shallow } from "enzyme";
 
 describe("AdvancedFilterContainer", () => {

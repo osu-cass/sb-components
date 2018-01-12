@@ -104,14 +104,14 @@ export class Filter {
     targets: TargetModel[],
     targetCodes?: number[]
   ): TargetModel[] {
-    let filteredClaims = targets;
+    let filteredTargets: TargetModel[] = [];
 
     if (targetCodes && targetCodes.length > 0) {
-      filteredClaims = filteredClaims.filter(s =>
+      filteredTargets = targets.filter(s =>
         targetCodes.some(ssc => ssc === s.nameHash)
       );
     }
-    return filteredClaims;
+    return filteredTargets;
   }
 
   /** Returns the list of related claims
@@ -145,12 +145,11 @@ export class Filter {
 
   /**
    * Gets the list of current claims from dependent subjects
-   * @param  {ItemsSearchModel} model
-   * @param  {SearchAPIParamsModel} searchApiModel
+   * @param {ClaimModel[]} claims
+   * @param {SubjectModel[]} filteredSubjects
    */
   public static getCurrentClaimsFilter(
     claims: ClaimModel[],
-    searchApiModel: SearchAPIParamsModel,
     filteredSubjects: SubjectModel[]
   ): ClaimModel[] | undefined {
     let filteredClaims: ClaimModel[] | undefined = undefined;
@@ -164,12 +163,11 @@ export class Filter {
 
   /**
    * Gets the list of current interaction types from dependent subjects
-   * @param  {ItemsSearchModel} model
-   * @param  {SearchAPIParamsModel} searchApiModel
+   * @param  {InteractionTypeModel[]} interactionTypes
+   * @param  {SubjectModel[]} filteredSubjects
    */
   public static getCurrentInteractionTypes(
     interactionTypes: InteractionTypeModel[],
-    searchApiModel: SearchAPIParamsModel,
     filteredSubjects: SubjectModel[]
   ): InteractionTypeModel[] | undefined {
     let filteredIntTypes: InteractionTypeModel[] | undefined = undefined;
@@ -197,8 +195,11 @@ export class Filter {
   ): TargetModel[] | undefined {
     let filteredTargets: TargetModel[] | undefined = undefined;
 
-    if (filteredClaims.length > 0) {
-      const targetCodes = this.getClaimTargetCodes(filteredClaims);
+    if (searchApiModel.claims && searchApiModel.claims.length > 0) {
+      const selectedClaims = filteredClaims.filter(
+        c => searchApiModel.claims!.indexOf(c.code) !== -1
+      );
+      const targetCodes = this.getClaimTargetCodes(selectedClaims);
       filteredTargets = this.filterTargets(targets, targetCodes);
     }
 
@@ -234,46 +235,57 @@ export class Filter {
         f => f.code === FilterType.Target
       );
 
+      // claims
       if (claimFilterIdx !== -1 && model.claims) {
         filteredClaims =
-          this.getCurrentClaimsFilter(
-            model.claims,
-            searchAPI,
-            filteredSubjects
-          ) || [];
+          this.getCurrentClaimsFilter(model.claims, filteredSubjects) || [];
 
-        const filterOptions = ItemSearch.searchOptionFilterString(
-          filteredClaims,
-          FilterType.Claim,
-          searchAPI.claims
-        );
+        let filterOptions: FilterOptionModel[] = [];
+        if (searchAPI.subjects && searchAPI.subjects.length > 0) {
+          filterOptions = ItemSearch.searchOptionFilterString(
+            filteredClaims,
+            FilterType.Claim,
+            searchAPI.claims
+          );
+        }
+
         filters[claimFilterIdx].filterOptions = filterOptions;
       }
 
+      // interaction types
       if (interactionFilterIdx !== -1 && model.interactionTypes) {
         const filteredInteractions =
           this.getCurrentInteractionTypes(
             model.interactionTypes,
-            searchAPI,
             filteredSubjects
           ) || [];
-        const filterOptions = ItemSearch.searchOptionFilterString(
-          filteredInteractions,
-          FilterType.InteractionType,
-          searchAPI.interactionTypes
-        );
+
+        let filterOptions: FilterOptionModel[] = [];
+        if (searchAPI.subjects && searchAPI.subjects.length > 0) {
+          filterOptions = ItemSearch.searchOptionFilterString(
+            filteredInteractions,
+            FilterType.InteractionType,
+            searchAPI.interactionTypes
+          );
+        }
+
         filters[interactionFilterIdx].filterOptions = filterOptions;
       }
 
+      // targets
       if (targetFilterIdx !== -1 && model.targets && filteredClaims) {
         const filteredTargets =
           this.getCurrentTargets(model.targets, searchAPI, filteredClaims) ||
           [];
-        const filterOptions = ItemSearch.searchOptionToFilterTarget(
-          filteredTargets,
-          FilterType.InteractionType,
-          searchAPI.targets
-        );
+        let filterOptions: FilterOptionModel[] = [];
+        if (filteredTargets && filteredTargets.length > 0) {
+          filterOptions = ItemSearch.searchOptionToFilterTarget(
+            filteredTargets,
+            FilterType.Target,
+            searchAPI.targets
+          );
+        }
+
         filters[targetFilterIdx].filterOptions = filterOptions;
       }
     }

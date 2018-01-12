@@ -20,6 +20,7 @@ storiesOf("Item Page Container", module)
       render={props => (
         <ItemPageContainer
           {...props}
+          showRubrics={true}
           match={itemPageMatch}
           aboutThisClient={aboutThisClient}
           itemPageClient={itemPageClient}

@@ -37,6 +37,43 @@ exports[`Storyshots About Item Modal default 1`] = `
 </div>
 `;
 
+exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="glyphicon glyphicon-info-sign glyphicon-pad"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots About Item Modal showing no rubrics 1`] = `
 <div
   style={

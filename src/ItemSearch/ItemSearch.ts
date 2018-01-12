@@ -37,13 +37,22 @@ export class ItemSearch {
       FilterType.TechnologyType,
       filterModels
     );
+
+    const calculatorCodes = Filter.getSelectedCodes(
+      FilterType.Calculator,
+      filterModels
+    );
+
     const catOnly = techTypes
       ? techTypes.some(t => t === FilterType.CAT)
       : undefined;
     const performanceOnly = techTypes
       ? techTypes.some(t => t === FilterType.Performance)
       : undefined;
-
+    const calculator =
+      calculatorCodes && calculatorCodes.length > 0
+        ? calculatorCodes[0] === "true"
+        : undefined;
     const targets = Filter.getSelectedTargets(filterModels);
 
     return {
@@ -53,7 +62,8 @@ export class ItemSearch {
       interactionTypes,
       targets,
       catOnly,
-      performanceOnly
+      performanceOnly,
+      calculator
     };
   }
 
@@ -156,6 +166,13 @@ export class ItemSearch {
           this.getTechnologyTypeCodes(searchApi)
         );
         break;
+      case FilterType.Calculator:
+        options = this.searchOptionFilterString(
+          filter.filterOptions,
+          filter.code,
+          this.getFlagCodes(searchApi.calculator)
+        );
+        break;
       default:
         break;
     }
@@ -170,6 +187,15 @@ export class ItemSearch {
     }
     if (search.performanceOnly !== undefined) {
       codes.push(FilterType.Performance);
+    }
+
+    return codes;
+  }
+
+  public static getFlagCodes(searchFlag?: boolean): string[] {
+    const codes: string[] = [];
+    if (searchFlag !== undefined) {
+      codes.push(String(searchFlag));
     }
 
     return codes;
@@ -193,15 +219,15 @@ export class ItemSearch {
     filter: SearchAPIParamsModel
   ): ItemCardModel[] {
     let results = itemCards;
-    //item
+    // item
     if (filter.itemId && filter.itemId !== "") {
       results = results.filter(i =>
         i.itemKey.toString().includes(filter.itemId || "")
       );
     }
 
-    //grade level
-    if (filter.gradeLevels && filter.gradeLevels != GradeLevels.NA) {
+    // grade level
+    if (filter.gradeLevels && filter.gradeLevels !== GradeLevels.NA) {
       results = results.filter(i =>
         GradeLevel.gradeLevelContains(
           filter.gradeLevels || GradeLevels.NA,
@@ -210,14 +236,14 @@ export class ItemSearch {
       );
     }
 
-    //subjects
+    // subjects
     if (filter.subjects && filter.subjects.length > 0) {
       results = results.filter(
         i => filter.subjects!.findIndex(s => s === i.subjectCode) !== -1
       );
     }
 
-    //interaction types
+    // interaction types
     if (filter.interactionTypes && filter.interactionTypes.length > 0) {
       results = results.filter(
         i =>
@@ -227,25 +253,30 @@ export class ItemSearch {
       );
     }
 
-    //claims
+    // claims
     if (filter.claims && filter.claims.length > 0) {
       results = results.filter(
         i => filter.claims!.findIndex(c => c === i.claimCode) !== -1
       );
     }
 
-    //performance & cat
+    // performance & cat
     if (filter.performanceOnly === true || filter.catOnly === true) {
       const performanceTask =
         filter.catOnly !== true || filter.performanceOnly === true;
       results = results.filter(i => i.isPerformanceItem === performanceTask);
     }
 
-    //targets
+    // targets
     if (filter.targets && filter.targets.length > 0) {
       results = results.filter(
         i => filter.targets!.findIndex(t => t === i.targetHash) !== -1
       );
+    }
+
+    // calculator
+    if (filter.calculator !== undefined) {
+      results = results.filter(i => i.calculator === filter.calculator);
     }
 
     return results;

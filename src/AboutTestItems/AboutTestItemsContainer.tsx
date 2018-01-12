@@ -30,6 +30,7 @@ export interface AboutTestItemContainerProps
   aboutClient: (
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
+  showRubrics: boolean;
 }
 
 export class AboutTestItemsContainer extends React.Component<
@@ -180,7 +181,10 @@ export class AboutTestItemsContainer extends React.Component<
               role="group"
               aria-label="First group"
             >
-              <AboutItem {...aboutThisItem} />
+              <AboutItem
+                showRubrics={this.props.showRubrics}
+                {...aboutThisItem}
+              />
             </div>
           </div>
           <ItemViewerFrame url={this.state.itemUrl || ""} />
