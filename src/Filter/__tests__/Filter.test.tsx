@@ -1,7 +1,7 @@
 import { Filter } from "../Filter";
 import * as Mocks from "./Mocks";
 import { FilterType } from "../FilterModels";
-import { GradeLevel, GradeLevels } from "src/GradeLevels/GradeLevels";
+import { GradeLevel, GradeLevels } from "../../GradeLevels/GradeLevels";
 import { filter } from "minimatch";
 
 describe("Filter.getSelectedCodes", () => {
@@ -247,7 +247,6 @@ describe("Filter.getCurrentClaimsFilter", () => {
     const filteredSubjects = [subject];
     const result = Filter.getCurrentClaimsFilter(
       Mocks.searchModel.claims,
-      {},
       filteredSubjects
     );
 
@@ -259,7 +258,6 @@ describe("Filter.getCurrentClaimsFilter", () => {
     const filteredSubjects = Mocks.subjects;
     const result = Filter.getCurrentClaimsFilter(
       Mocks.searchModel.claims,
-      {},
       filteredSubjects
     );
 
@@ -271,7 +269,6 @@ describe("Filter.getCurrentClaimsFilter", () => {
     const filteredSubjects = [];
     const result = Filter.getCurrentClaimsFilter(
       Mocks.searchModel.claims,
-      {},
       filteredSubjects
     );
 
@@ -280,18 +277,14 @@ describe("Filter.getCurrentClaimsFilter", () => {
 
   it("subjects no selections", () => {
     const filteredSubjects = [];
-    const result = Filter.getCurrentClaimsFilter(
-      Mocks.searchModel.claims,
-      {},
-      []
-    );
+    const result = Filter.getCurrentClaimsFilter(Mocks.searchModel.claims, []);
 
     expect(result).toBeUndefined();
   });
 
   it("no search model", () => {
     const filteredSubjects = [];
-    const result = Filter.getCurrentClaimsFilter([], {}, filteredSubjects);
+    const result = Filter.getCurrentClaimsFilter([], filteredSubjects);
 
     expect(result).toBeUndefined();
   });
@@ -304,7 +297,6 @@ describe("Filter.getCurrentInteractionTypes", () => {
     const filteredSubjects = [subject];
     const result = Filter.getCurrentInteractionTypes(
       Mocks.searchModel.interactionTypes,
-      {},
       filteredSubjects
     );
 
@@ -316,7 +308,6 @@ describe("Filter.getCurrentInteractionTypes", () => {
     const filteredSubjects = Mocks.subjects;
     const result = Filter.getCurrentInteractionTypes(
       Mocks.searchModel.interactionTypes,
-      {},
       filteredSubjects
     );
 
@@ -328,7 +319,6 @@ describe("Filter.getCurrentInteractionTypes", () => {
     const filteredSubjects = [];
     const result = Filter.getCurrentInteractionTypes(
       Mocks.searchModel.interactionTypes,
-      {},
       filteredSubjects
     );
 
@@ -338,7 +328,6 @@ describe("Filter.getCurrentInteractionTypes", () => {
   it("subjects no selections", () => {
     const result = Filter.getCurrentInteractionTypes(
       Mocks.searchModel.interactionTypes,
-      {},
       []
     );
 
@@ -347,7 +336,7 @@ describe("Filter.getCurrentInteractionTypes", () => {
 
   it("no search model", () => {
     const filteredSubjects = [];
-    const result = Filter.getCurrentInteractionTypes([], {}, filteredSubjects);
+    const result = Filter.getCurrentInteractionTypes([], filteredSubjects);
 
     expect(result).toBeUndefined();
   });
@@ -356,9 +345,13 @@ describe("Filter.getCurrentTargets", () => {
   it("one claim", () => {
     const claim = Mocks.claims.find(c => c.code === "ELA1");
     const expected = Mocks.targets.find(c => c.name === "ELA1");
-    const result = Filter.getCurrentTargets(Mocks.searchModel.targets, {}, [
-      claim
-    ]);
+    const result = Filter.getCurrentTargets(
+      Mocks.searchModel.targets,
+      {
+        claims: ["ELA1"]
+      },
+      [claim]
+    );
 
     expect(result).toHaveLength(1);
     expect(result).toContainEqual(expected);
@@ -367,7 +360,7 @@ describe("Filter.getCurrentTargets", () => {
   it("all claims", () => {
     const result = Filter.getCurrentTargets(
       Mocks.searchModel.targets,
-      {},
+      { claims: ["ELA1", "MATH1"] },
       Mocks.claims
     );
 

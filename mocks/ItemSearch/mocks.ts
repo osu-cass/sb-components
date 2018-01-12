@@ -24,7 +24,8 @@ export const itemCards: ItemCardModel[] = [
     interactionTypeCode: "EQ",
     interactionTypeLabel: "Equation",
     isPerformanceItem: true,
-    brailleOnlyItem: false
+    brailleOnlyItem: false,
+    calculator: true
   },
   {
     bankKey: 187,
@@ -42,7 +43,8 @@ export const itemCards: ItemCardModel[] = [
     interactionTypeCode: "MC",
     interactionTypeLabel: "Multiple Choice",
     isPerformanceItem: true,
-    brailleOnlyItem: false
+    brailleOnlyItem: false,
+    calculator: false
   },
   {
     bankKey: 187,

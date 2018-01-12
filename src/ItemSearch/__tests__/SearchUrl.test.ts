@@ -74,6 +74,26 @@ describe("SearchUrl.encodeQuery", () => {
     expect(encoded).toEqual("?CAT=true");
   });
 
+  it("encodes calc on", () => {
+    const searchParams: SearchAPIParamsModel = {
+      calculator: true
+    };
+    const encoded = SearchUrl.encodeQuery(searchParams);
+    const expected = `?${FilterType.Calculator.toString()}=true`;
+
+    expect(encoded).toEqual(expected);
+  });
+
+  it("encodes calc off", () => {
+    const searchParams: SearchAPIParamsModel = {
+      calculator: false
+    };
+    const encoded = SearchUrl.encodeQuery(searchParams);
+    const expected = `?${FilterType.Calculator.toString()}=false`;
+
+    expect(encoded).toEqual(expected);
+  });
+
   it("encodes multiple params", () => {
     const searchParams: SearchAPIParamsModel = {
       subjects: ["MATH"],
