@@ -42,4 +42,11 @@ storiesOf("About Item Modal", module)
       showModal={true}
       sampleItemScoring={{ rubrics: allRubrics }}
     />
+  ))
+  .add("showing disabled rubrics", () => (
+    <AboutItem
+      {...AboutItemMockModel}
+      showModal={true}
+      sampleItemScoring={{ rubrics: allRubrics }}
+    />
   ));
