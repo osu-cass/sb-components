@@ -3,11 +3,11 @@ import * as Collapsible from "../Rubric/Collapsible";
 import { AboutItemModel } from "./AboutItemModels";
 import { AboutThisItemDetail } from "./AboutItemDetail";
 import { Rubric } from "../Rubric/Rubric";
-
 import * as ReactModal from "react-modal";
 
 export interface AboutItemProps extends AboutItemModel {
   showModal?: boolean;
+  showRubrics?: boolean;
 }
 
 export interface AboutItemState {
@@ -30,17 +30,20 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
     this.setState({ showModal: false });
   };
 
-  private renderRubrics() {
-    const scoring = this.props.sampleItemScoring;
-    if (scoring && scoring.rubrics) {
-      //TODO: add logic for non rubrics
-      const rubrics = scoring.rubrics.map((ru, i) => (
+  private renderRubrics(): JSX.Element | undefined {
+    const { sampleItemScoring, showRubrics } = this.props;
+    let content: JSX.Element | undefined;
+
+    if (showRubrics && sampleItemScoring && sampleItemScoring.rubrics) {
+      // TODO: add logic for non rubrics
+      const rubrics = sampleItemScoring.rubrics.map((ru, i) => (
         <Rubric {...ru} key={String(i)} />
       ));
-      return <div className="rubric">{rubrics}</div>;
-    } else {
-      return null;
+
+      content = <div className="rubric">{rubrics}</div>;
     }
+
+    return content;
   }
 
   render() {

@@ -41,6 +41,7 @@ export const onReset = ( () => { } ) as ( () => void );
 export const ItemPageMockProps: ItemPageProps = {
   onSave,
   onReset,
+  showRubrics: true,
   aboutThisItemVM: AboutItemMockModel,
   currentItem: {
     itemName: "187-3000",
@@ -94,6 +95,7 @@ export const ItemPageMockProps: ItemPageProps = {
 export const ItemPageMockPropsNoItem: ItemPageProps = {
   onSave,
   onReset,
+  showRubrics: true,
   aboutThisItemVM: AboutItemMockModel,
   itemViewerServiceUrl: "http://ivs.smarterbalanced.org/",
   itemNames: "",

@@ -20,17 +20,15 @@ export interface AccResourceGroupModel {
 export function getResource(
   resourceCode: string,
   resourceGroups: AccResourceGroupModel[]
-): AccessibilityResourceModel | null {
+): AccessibilityResourceModel | undefined {
+  let resource;
   for (const accGroup of resourceGroups) {
-    const resource = accGroup.accessibilityResources.find(
-      rg => rg.resourceCode == resourceCode
+    resource = accGroup.accessibilityResources.find(
+      rg => rg.resourceCode === resourceCode
     );
-    if (resource) {
-      return resource;
-    }
   }
 
-  return null;
+  return resource ? resource : undefined;
 }
 
 export function getBrailleAccommodation(

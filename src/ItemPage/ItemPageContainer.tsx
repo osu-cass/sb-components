@@ -27,6 +27,7 @@ export interface ItemPageContainerProps extends RouteComponentProps<ItemModel> {
   itemAccessibilityClient: (
     params: ItemIsaapModel
   ) => Promise<AccResourceGroupModel[]>;
+  showRubrics: boolean;
 }
 
 export interface ItemPageState {
@@ -238,6 +239,7 @@ export class ItemPageContainer extends React.Component<
           onReset={this.onReset}
           currentItem={itemDetails}
           accResourceGroups={itemAccessibility}
+          showRubrics={this.props.showRubrics}
         />
       );
     }
