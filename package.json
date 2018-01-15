@@ -4,36 +4,33 @@
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "files": [
-    "lib",
-    "README.md",
-    "LICENSE"
-  ],
+  "files": ["lib", "README.md", "LICENSE"],
   "scripts": {
-    "webpack:prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
-    "webpack": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "watch": "./node_modules/.bin/webpack --config webpack.config.js --env.dev --watch",
-    "copy-assets": "cp -r ./src/Assets ./lib/",
-    "prepare": "npm run clean && npm run test && npm run webpack:prod && npm run copy-assets",
+    "webpack:prod":
+      "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
+    "webpack":
+      "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
+    "watch":
+      "./node_modules/.bin/webpack --config webpack.config.js --env.dev --watch",
+    "prepare": "npm run clean && npm run test && npm run webpack:prod",
     "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "start-storybook -p 6006",
     "storybook-publish": "build-storybook -o gh-site/storybook",
-    "build": "npm run clean && npm run storybook-publish && npm run dev",
+    "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
-    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
+    "lint":
+      "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "typedoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
+    "typedoc-publish":
+      "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
-    "{src,stories}/**/*{.tsx,.ts}": [
-      "prettier --write",
-      "git add"
-    ]
+    "{src,stories}/**/*{.tsx,.ts}": ["prettier --write", "git add"]
   },
   "repository": {
     "type": "git",
@@ -41,7 +38,8 @@
   },
   "authors": [
     "Dan Van Horn (danvanhorn)",
-    "Kevin Turkington (zainkai)"
+    "Kevin Turkington (zainkai)",
+    "Alex Lepinski (alexlepinski)"
   ],
   "license": "MPL-2.0",
   "bugs": {
@@ -75,6 +73,7 @@
     "@types/storybook__addon-actions": "~3.0.1",
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
+    "copy-webpack-plugin": "^4.3.1",
     "coveralls": "^3.0.0",
     "css-loader": "^0.28.8",
     "dts-generator": "^2.1.0",
@@ -110,6 +109,7 @@
     "typedoc": "^0.9.0",
     "typescript": "~2.5.3",
     "url-loader": "0.5.9",
+    "watch-ignore-webpack-plugin": "^1.0.0",
     "webpack": "~3.8.1"
   },
   "dependencies": {
@@ -133,9 +133,7 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTest.ts",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
@@ -152,19 +150,14 @@
         "skipBabel": true
       }
     },
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "json",
-      "js",
-      "jsx"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "json", "js", "jsx"],
     "collectCoverage": true,
     "mapCoverage": true,
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
-      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/src/__mocks__/fileMock.js",
       "^src/(.*)": "<rootDir>/src/$1",
       "^mocks/(.*)": "<rootDir>/mocks/$1",
       "^stories/(.*)": "<rootDir>/stories/$1"
