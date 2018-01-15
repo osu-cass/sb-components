@@ -1,7 +1,11 @@
 ## Pull Request Checklist
-Please complete all of these steps for this pull request.
+> Please complete all of these steps for this pull request.
+
+### Updates Made
+TODO: Add summary of changes made and add any issues or tasks
+
 ### Contributing developer checklist
-- [ ] I've updated <YOUR_BRANCH_NAME> with the latest changes from dev.
+- [ ] I've updated source branch with the latest changes from dev.
 - [ ] I've added/changed unit tests for components with functionality.
 - [ ] I've added/updated storybook for any component that I've changed.
 - [ ] I've reviewed each jsdoc header in regards to the changes that I've made and updated them.
