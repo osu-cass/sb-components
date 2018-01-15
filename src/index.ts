@@ -18,6 +18,7 @@ export {
   aboutTestItemsClient,
   AboutTestItemsParams
 } from "./AboutTestItems/AboutTestItemsModels";
+export { AboutTestItemsPage } from "./AboutTestItems/AboutTestItemsPage";
 
 //
 // Accessibility Components, Models and Actions
