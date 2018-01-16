@@ -71,38 +71,55 @@ export class ItemSearch {
     category: FilterCategoryModel,
     currentModel: SearchAPIParamsModel
   ): SearchAPIParamsModel {
+    const newModel = Object.assign({}, currentModel);
     switch (category.code) {
       case FilterType.Grade:
-        currentModel.gradeLevels = Filter.getSelectedGrade([category]);
+        newModel.gradeLevels = Filter.getSelectedGrade([category]);
         break;
       case FilterType.Calculator:
         const calculatorCodes = Filter.getSelectedCodes(FilterType.Calculator, [
           category
         ]);
-        currentModel.calculator =
+        newModel.calculator =
           calculatorCodes && calculatorCodes.length > 0
             ? calculatorCodes[0] === "true"
             : undefined;
+        break;
       case FilterType.CAT:
         const catCodes = Filter.getSelectedCodes(FilterType.TechnologyType, [
           category
         ]);
-        currentModel.catOnly = catCodes
+        newModel.catOnly = catCodes
           ? catCodes.some(t => t === FilterType.CAT)
           : undefined;
+        break;
       case FilterType.Performance:
         const perfCodes = Filter.getSelectedCodes(FilterType.TechnologyType, [
           category
         ]);
-        currentModel.performanceOnly = perfCodes
+        newModel.performanceOnly = perfCodes
           ? perfCodes.some(t => t === FilterType.Performance)
           : undefined;
-      default:
-        const codes = Filter.getSelectedCodes(category.code, [category]);
-        (currentModel as any)[category.code] = codes;
+        break;
+      case FilterType.Claim:
+        const claimCodes = Filter.getSelectedCodes(category.code, [category]);
+        newModel.claims = claimCodes;
+        break;
+      case FilterType.InteractionType:
+        const itCodes = Filter.getSelectedCodes(category.code, [category]);
+        newModel.interactionTypes = itCodes;
+        break;
+      case FilterType.Subject:
+        const subjectCodes = Filter.getSelectedCodes(category.code, [category]);
+        newModel.subjects = subjectCodes;
+        break;
+      case FilterType.Target:
+        const targetCodes = Filter.getSelectedTargets([category]);
+        newModel.targets = targetCodes;
+        break;
     }
 
-    return currentModel;
+    return newModel;
   }
 
   public static searchOptionFilterString(
