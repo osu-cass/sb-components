@@ -11,12 +11,12 @@ import {
 } from "mocks/ItemPage/mocks";
 import { Route } from "react-router";
 
-storiesOf("Item Page Container", module)
+storiesOf("Item View", module)
   .addDecorator(RouterDecorator)
-  .add("just the container", () => (
+  .add("default", () => (
     <Route
       exact
-      path={itemPagePath}
+      path="/"
       render={props => (
         <ItemViewPage
           {...props}

@@ -2631,8 +2631,6 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
 </div>
 `;
 
-exports[`Storyshots Item Page Container just the container 1`] = `null`;
-
 exports[`Storyshots Item Page Item Page returns error 1`] = `
 <div>
   <div
@@ -3130,6 +3128,16 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
       </thead>
     </table>
   </div>
+</div>
+`;
+
+exports[`Storyshots Item View default 1`] = `
+<div
+  className="loader-overlay"
+>
+  <div
+    className="loader"
+  />
 </div>
 `;
 

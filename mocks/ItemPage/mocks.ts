@@ -12,18 +12,18 @@ import {
 import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
+import { mockPromise } from "mocks/promise";
 
-export const aboutThisClient = ( params: ItemModel ) =>
-  new Promise<AboutItemModel>( () => jest.fn() );
-export const itemPageClient = ( params: ItemModel ) =>
-  new Promise<ItemPageModel>( () => jest.fn() );
+export const aboutThisClient = (params: ItemModel) =>
+  mockPromise(AboutItemMockModel);
 
-export const itemAccessibilityClient = ( params: ItemIsaapModel ) =>
-  new Promise<AccResourceGroupModel[]>( () => {
-    return ItemPageMockProps.accResourceGroups;
-  } );
+export const itemPageClient = (params: ItemModel) =>
+  mockPromise<ItemPageModel>(itemPageModelMock);
 
-export const itemPagePath = "/:bankKey/:itemKey";
+export const itemAccessibilityClient = (params: ItemIsaapModel) =>
+  mockPromise(itemPageMockProps.accResourceGroups);
+
+export const itemPagePath = "/:bankKey:itemKey";
 
 export const itemPageMatch: match<ItemModel> = {
   params: { bankKey: 187, itemKey: 4000 },
@@ -32,23 +32,13 @@ export const itemPageMatch: match<ItemModel> = {
   url: "/"
 };
 
-export const onSave = ( ( selections: ResourceSelectionsModel ) => { } ) as ( (
+export const onSave = ((selections: ResourceSelectionsModel) => {}) as ((
   selections: ResourceSelectionsModel
-) => void );
+) => void);
 
-export const onReset = ( () => { } ) as ( () => void );
+export const onReset = () => {};
 
-export const ItemPageMockProps: ItemViewerContainerProps = {
-  onSave,
-  onReset,
-  showRubrics: true,
-  aboutThisItemVM: AboutItemMockModel,
-  currentItem: {
-    itemName: "187-3000",
-    itemKey: 3000,
-    bankKey: 187
-  },
-  accResourceGroups: allAccessibilityResourceGroups,
+export const itemPageModelMock: ItemPageModel = {
   itemViewerServiceUrl: "http://ivs.smarterbalanced.org/",
   itemNames: "187-3000",
   brailleItemNames: "187-3000",
@@ -58,8 +48,8 @@ export const ItemPageMockProps: ItemViewerContainerProps = {
     bankKey: 187
   },
   brailleItem: {
-    itemName: "187-3000",
-    itemKey: 3000,
+    itemName: "187-3001",
+    itemKey: 3001,
     bankKey: 187
   },
   accessibilityCookieName: "accessibilityCookie",
@@ -90,6 +80,20 @@ export const ItemPageMockProps: ItemViewerContainerProps = {
   ],
   braillePassageCodes: [],
   defaultIsaapCodes: "TDS_ITM1;TDS_APC_SCRUBBER;"
+};
+
+export const itemPageMockProps: ItemViewerContainerProps = {
+  ...itemPageModelMock,
+  onSave,
+  onReset,
+  showRubrics: true,
+  aboutThisItemVM: AboutItemMockModel,
+  currentItem: {
+    itemName: "187-3000",
+    itemKey: 3000,
+    bankKey: 187
+  },
+  accResourceGroups: allAccessibilityResourceGroups
 };
 
 export const ItemPageMockPropsNoItem: ItemViewerContainerProps = {
