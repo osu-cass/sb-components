@@ -18,6 +18,7 @@ export {
   aboutTestItemsClient,
   AboutTestItemsParams
 } from "./AboutTestItems/AboutTestItemsModels";
+export { AboutTestItemsPage } from "./AboutTestItems/AboutTestItemsPage";
 
 //
 // Accessibility Components, Models and Actions
@@ -95,7 +96,10 @@ export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 //
 // Item Page
 //
-export { ItemPage, ItemPageProps } from "./ItemPage/ItemPage";
+export {
+  ItemViewerContainer,
+  ItemViewerContainerProps
+} from "./ItemPage/ItemViewerContainer";
 export {
   ItemPageContainerProps,
   ItemPageContainer
@@ -114,6 +118,7 @@ export {
   itemPageClient,
   aboutThisItemViewModelClient
 } from "./ItemPage/ItemPageModels";
+export { ItemViewPage, ItemViewPageProps } from "./ItemPage/ItemViewPage";
 
 //
 // ItemSearchModels models

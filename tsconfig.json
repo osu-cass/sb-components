@@ -45,10 +45,8 @@
   "exclude": [
     "node_modules",
     "wwwroot",
-    "stories",
-    "mocks",
-    "**/__tests__/*",
-    "**/setupTest.ts"
+    "**/setupTest.ts",
+    "**/__tests__/*"
   ],
   "jest": {
     "moduleDirectories": [

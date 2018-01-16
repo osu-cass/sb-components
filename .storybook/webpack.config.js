@@ -14,7 +14,7 @@ module.exports = (baseConfig, env) => {
   config.module.rules.push({
     test: /\.less$/,
     include: [path.resolve(__dirname, "..", "src", "Assets", "Styles")],
-    use: ["style-loader", "css-loader", "less-loader"]
+    use: ["style-loader", "css-loader?sourceMap", "less-loader?sourceMap"]
   });
 
   config.resolve.alias = {
