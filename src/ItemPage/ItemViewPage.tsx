@@ -9,7 +9,7 @@ import {
   ItemPageModel,
   parseQueryString,
   ItemPageContainer
-} from "src/index";
+} from "../index";
 
 export interface ItemViewPageProps extends RouteComponentProps<ItemModel> {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;

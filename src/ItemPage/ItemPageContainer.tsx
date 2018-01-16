@@ -20,7 +20,7 @@ import {
   getResourceContent,
   parseQueryString,
   LoadingOverlay
-} from "src/index";
+} from "../index";
 
 export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
