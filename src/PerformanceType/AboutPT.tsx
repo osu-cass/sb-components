@@ -64,16 +64,13 @@ export class AboutPTModal extends React.Component<
     return (
       <div>
         <button
-          className="item-nav-btn btn btn-link"
+          className="item-nav-btn btn btn-default btn-sm about-pt-btn"
           role="button"
           tabIndex={0}
           onClick={this.handleShowModal}
           aria-label="About Performance Task"
         >
-          <span
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
-            aria-hidden="true"
-          />
+          <span className="fa fa-info-circle" aria-hidden="true" />
           <span className="item-nav-long-label">This is a </span>
           <b> Performance Task</b>
         </button>

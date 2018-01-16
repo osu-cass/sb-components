@@ -55,10 +55,7 @@ export class ShareModal extends React.Component<
           onClick={this.handleShowModal}
           aria-label="Open Share Modal"
         >
-          <span
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
-            aria-hidden="true"
-          />
+          <span className="fa fa-share" aria-hidden="true" />
           Share
         </button>
 

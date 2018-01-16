@@ -56,10 +56,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
           onClick={this.handleShowModal}
           aria-label="Open About This Item Modal"
         >
-          <span
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
-            aria-hidden="true"
-          />
+          <span className="fa fa-info-circle" aria-hidden="true" />
           About <span className="item-nav-long-label">This Item</span>
         </button>
 
