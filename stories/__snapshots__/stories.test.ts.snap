@@ -17,7 +17,7 @@ exports[`Storyshots About Item Modal default 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -54,7 +54,7 @@ exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -91,7 +91,7 @@ exports[`Storyshots About Item Modal showing no rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -128,7 +128,7 @@ exports[`Storyshots About Item Modal showing rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -165,7 +165,7 @@ exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -202,7 +202,7 @@ exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
@@ -2631,8 +2631,6 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
 </div>
 `;
 
-exports[`Storyshots Item Page Container just the container 1`] = `null`;
-
 exports[`Storyshots Item Page Item Page returns error 1`] = `
 <div>
   <div
@@ -2648,7 +2646,7 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
       <div>
         <button
           aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-default btn-sm"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -2752,7 +2750,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       <div>
         <button
           aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-default btn-sm"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
           onClick={[Function]}
           role="button"
           tabIndex={0}
@@ -3130,6 +3128,16 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
       </thead>
     </table>
   </div>
+</div>
+`;
+
+exports[`Storyshots Item View default 1`] = `
+<div
+  className="loader-overlay"
+>
+  <div
+    className="loader"
+  />
 </div>
 `;
 

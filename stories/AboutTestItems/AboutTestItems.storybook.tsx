@@ -1,7 +1,11 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
-import { AboutTestItemsContainer, AboutTestItemsParams } from "src/index";
+import {
+  AboutTestItemsContainer,
+  AboutTestItemsParams,
+  AboutTestItemsPage
+} from "src/index";
 import { RouterDecorator } from "../RouterDecorator";
 import {
   mockAboutTestClient,
@@ -20,7 +24,7 @@ storiesOf("About Test Items", module)
       exact
       path={aboutTestPath}
       render={props => (
-        <AboutTestItemsContainer
+        <AboutTestItemsPage
           {...props}
           showRubrics={true}
           aboutClient={mockAboutTestClient}
@@ -33,7 +37,7 @@ storiesOf("About Test Items", module)
       exact
       path={aboutTestPath}
       render={props => (
-        <AboutTestItemsContainer
+        <AboutTestItemsPage
           {...props}
           showRubrics={true}
           match={aboutTestMatch}
@@ -47,7 +51,7 @@ storiesOf("About Test Items", module)
       exact
       path={aboutTestPath}
       render={props => (
-        <AboutTestItemsContainer
+        <AboutTestItemsPage
           {...props}
           showRubrics={true}
           match={aboutTestMatch}
@@ -61,7 +65,7 @@ storiesOf("About Test Items", module)
       exact
       path={aboutTestPath}
       render={props => (
-        <AboutTestItemsContainer
+        <AboutTestItemsPage
           {...props}
           showRubrics={true}
           match={aboutTestMatch}
@@ -75,7 +79,7 @@ storiesOf("About Test Items", module)
       exact
       path={aboutTestPath}
       render={props => (
-        <AboutTestItemsContainer
+        <AboutTestItemsPage
           {...props}
           showRubrics={true}
           match={aboutTestBadItem}

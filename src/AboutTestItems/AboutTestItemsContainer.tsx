@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import * as $ from "jquery";
 import {
   AboutItem,
   AboutItemModel,
@@ -9,7 +8,6 @@ import {
   Select
 } from "../index";
 import { Resource, getRequest, getResourceContent } from "../ApiModel";
-import { RouteComponentProps } from "react-router";
 import {
   AboutTestItemsModel,
   InteractionTypeModel,
@@ -25,8 +23,8 @@ export interface AboutTestItemContainerState {
   loading: boolean;
 }
 
-export interface AboutTestItemContainerProps
-  extends RouteComponentProps<AboutTestItemsParams> {
+export interface AboutTestItemContainerProps {
+  params: AboutTestItemsParams;
   aboutClient: (
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
@@ -42,7 +40,7 @@ export class AboutTestItemsContainer extends React.Component<
     this.state = {
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
-      selectedCode: this.props.match.params.itemType,
+      selectedCode: this.props.params.itemType,
       hasError: false,
       loading: true
     };

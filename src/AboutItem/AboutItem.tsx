@@ -50,7 +50,7 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
     return (
       <div>
         <button
-          className="item-nav-btn btn btn-default btn-sm"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
           role="button"
           tabIndex={0}
           onClick={this.handleShowModal}

@@ -11,3 +11,4 @@ Developers Guide
    ReactBestPractices
    Usage
    Accessibility
+   NpmLink

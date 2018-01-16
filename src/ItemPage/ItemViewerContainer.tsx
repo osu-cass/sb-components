@@ -22,7 +22,7 @@ import {
   ResourceSelectionsModel
 } from "../Accessibility/AccessibilityModels";
 
-export interface ItemPageProps extends ItemPageModels.ItemPageModel {
+export interface ItemViewerContainerProps extends ItemPageModels.ItemPageModel {
   onSave: (selections: ResourceSelectionsModel) => void;
   onReset: () => void;
   aboutThisItemVM: AboutItemModel;
@@ -31,8 +31,11 @@ export interface ItemPageProps extends ItemPageModels.ItemPageModel {
   showRubrics: boolean;
 }
 
-export class ItemPage extends React.Component<ItemPageProps, {}> {
-  constructor(props: ItemPageProps) {
+export class ItemViewerContainer extends React.Component<
+  ItemViewerContainerProps,
+  {}
+> {
+  constructor(props: ItemViewerContainerProps) {
     super(props);
   }
 

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutTestItemsContainer about item modal 1`] = `null`;
+
+exports[`AboutTestItemsContainer default render 1`] = `
+<LoadingOverlay
+  loading={true}
+>
+  <div
+    className="container about-items"
+  >
+    <div
+      className="about-items-info"
+    >
+      <h2
+        className="page-title"
+      >
+        About Test Items
+      </h2>
+      <div
+        className="section section-light"
+      >
+        <p
+          className="about-items-text"
+        >
+          Smarter Balanced assessments use a variety of item types to accurately measure what students know and can do. To learn more and see an example item, select an item type below.
+        </p>
+      </div>
+    </div>
+    <div
+      className="section about-items-iframe"
+    >
+      <div
+        className="section section-light no-item"
+      >
+        <p>
+          No items of the selected type found.
+        </p>
+      </div>
+    </div>
+  </div>
+</LoadingOverlay>
+`;
+
+exports[`AboutTestItemsContainer item frame 1`] = `null`;
