@@ -67,6 +67,44 @@ export class ItemSearch {
     };
   }
 
+  public static updateSearchApiModel(
+    category: FilterCategoryModel,
+    currentModel: SearchAPIParamsModel
+  ): SearchAPIParamsModel {
+    switch (category.code) {
+      case FilterType.Grade:
+        currentModel.gradeLevels = Filter.getSelectedGrade([category]);
+        break;
+      case FilterType.Calculator:
+        const calculatorCodes = Filter.getSelectedCodes(FilterType.Calculator, [
+          category
+        ]);
+        currentModel.calculator =
+          calculatorCodes && calculatorCodes.length > 0
+            ? calculatorCodes[0] === "true"
+            : undefined;
+      case FilterType.CAT:
+        const catCodes = Filter.getSelectedCodes(FilterType.TechnologyType, [
+          category
+        ]);
+        currentModel.catOnly = catCodes
+          ? catCodes.some(t => t === FilterType.CAT)
+          : undefined;
+      case FilterType.Performance:
+        const perfCodes = Filter.getSelectedCodes(FilterType.TechnologyType, [
+          category
+        ]);
+        currentModel.performanceOnly = perfCodes
+          ? perfCodes.some(t => t === FilterType.Performance)
+          : undefined;
+      default:
+        const codes = Filter.getSelectedCodes(category.code, [category]);
+        (currentModel as any)[category.code] = codes;
+    }
+
+    return currentModel;
+  }
+
   public static searchOptionFilterString(
     options: SearchFilterStringTypes[],
     filterType: FilterType,

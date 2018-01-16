@@ -7,9 +7,9 @@ import {
   AdvancedFiltersModel,
   FilterOptionModel,
   OptionTypeModel,
-  FilterType
+  FilterType,
+  FilterCategoryModel
 } from "./FilterModels";
-import { FilterCategoryModel } from "lib/Filter/FilterModels";
 
 /**
  * AdvancedFilterContainer props
