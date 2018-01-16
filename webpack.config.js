@@ -34,8 +34,13 @@ module.exports = env => {
         rules: [
           {
             test: /\.tsx?$/,
-            include: /src/,
-            use: "ts-loader"
+            include: srcDir,
+            use: {
+              loader:"ts-loader",
+              options: {
+                configFile: path.join(__dirname, 'tsconfig.webpack.json')
+              }
+            }
           },
           {
             test: /\.css$/,
