@@ -1,8 +1,8 @@
 import * as H from "history";
 import { match } from "react-router";
 import {
-  ItemPageProps,
-  ItemPageContainerProps,
+  ItemViewerContainerProps,
+  ItemViewContainerProps,
   ItemModel,
   ItemPageModel,
   ItemIsaapModel,
@@ -38,7 +38,7 @@ export const onSave = ( ( selections: ResourceSelectionsModel ) => { } ) as ( (
 
 export const onReset = ( () => { } ) as ( () => void );
 
-export const ItemPageMockProps: ItemPageProps = {
+export const ItemPageMockProps: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,
@@ -92,7 +92,7 @@ export const ItemPageMockProps: ItemPageProps = {
   defaultIsaapCodes: "TDS_ITM1;TDS_APC_SCRUBBER;"
 };
 
-export const ItemPageMockPropsNoItem: ItemPageProps = {
+export const ItemPageMockPropsNoItem: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,

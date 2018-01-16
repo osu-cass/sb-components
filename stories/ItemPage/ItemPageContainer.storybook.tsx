@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ItemPageContainer } from "../../src/ItemPage/ItemPageContainer";
+import { ItemViewPage } from "src/index";
 import { storiesOf } from "@storybook/react";
 import { RouterDecorator } from "../RouterDecorator";
 import {
@@ -18,7 +18,7 @@ storiesOf("Item Page Container", module)
       exact
       path={itemPagePath}
       render={props => (
-        <ItemPageContainer
+        <ItemViewPage
           {...props}
           showRubrics={true}
           match={itemPageMatch}

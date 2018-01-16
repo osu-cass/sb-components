@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ItemPage } from "../../src/ItemPage/ItemPage";
+import { ItemViewerContainer } from "../../src/ItemPage/ItemViewerContainer";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
 import { RouterDecorator } from "../RouterDecorator";
@@ -10,7 +10,9 @@ import {
 
 storiesOf("Item Page", module)
   .addDecorator(RouterDecorator)
-  .add("Item Page with an item", () => <ItemPage {...ItemPageMockProps} />)
+  .add("Item Page with an item", () => (
+    <ItemViewerContainer {...ItemPageMockProps} />
+  ))
   .add("Item Page returns error", () => (
-    <ItemPage {...ItemPageMockPropsNoItem} />
+    <ItemViewerContainer {...ItemPageMockPropsNoItem} />
   ));
