@@ -1,19 +1,22 @@
 function readCookie(name: string): string | undefined {
   const cookie = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)");
+
   return cookie ? cookie.pop() : "";
 }
 
-export function shouldShowOnLoad(isPerformance: boolean): boolean {
+export function shouldShowOnLoad(
+  isPerformance: boolean,
+  subject: string
+): boolean {
   let visitedBefore = false;
   let shouldShow = false;
 
   if (isPerformance) {
-    //Cookies only store strings
-    if (this.props.subject.toLowerCase() === "math") {
-      visitedBefore = readCookie("visitedMathPerfItem") == "true";
+    if (subject.toLowerCase() === "math") {
+      visitedBefore = readCookie("visitedMathPerfItem") === "true";
       document.cookie = "visitedMathPerfItem=true";
-    } else if (this.props.subject.toLowerCase() === "ela") {
-      visitedBefore = readCookie("visitedELAPerfItem") == "true";
+    } else if (subject.toLowerCase() === "ela") {
+      visitedBefore = readCookie("visitedELAPerfItem") === "true";
       document.cookie = "visitedELAPerfItem=true";
     }
 

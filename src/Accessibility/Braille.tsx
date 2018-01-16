@@ -107,19 +107,19 @@ export class BrailleLink extends React.Component<
 
   render() {
     const brailleUrl = this.buildUrl(this.props.bankKey, this.props.itemKey);
-    if (brailleUrl == "") {
+    if (brailleUrl === "") {
       return null;
     } else {
       return (
         <a
-          className={"item-nav-btn"}
+          className={"item-nav-btn btn btn-default btn-sm about-pt-btn"}
           aria-live="polite"
           aria-relevant="additions removals"
           href={brailleUrl}
           download
           onClick={() => this.watchForDlStart()}
         >
-          <span className="glyphicon glyphicon-download-alt glyphicon-pad" />
+          <span className="fa fa-download" />
           Download Braille Embossing File(s)
           {this.renderLoading()}
         </a>

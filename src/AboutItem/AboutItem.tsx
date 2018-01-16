@@ -50,16 +50,13 @@ export class AboutItem extends React.Component<AboutItemProps, AboutItemState> {
     return (
       <div>
         <button
-          className="item-nav-btn btn btn-default btn-sm"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
           role="button"
           tabIndex={0}
           onClick={this.handleShowModal}
           aria-label="Open About This Item Modal"
         >
-          <span
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
-            aria-hidden="true"
-          />
+          <span className="fa fa-info-circle" aria-hidden="true" />
           About <span className="item-nav-long-label">This Item</span>
         </button>
 

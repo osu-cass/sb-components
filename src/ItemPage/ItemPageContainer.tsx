@@ -1,36 +1,40 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {
-  AccResourceGroupModel,
   isBrailleEnabled,
-  ResourceSelectionsModel,
-  AccessibilityResourceModel
+  ResourceSelectionsModel
 } from "../Accessibility/AccessibilityModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { ItemPage } from "./ItemPage";
 import {
+  AccResourceGroupModel,
+  AccessibilityResourceModel,
+  ItemViewerContainer,
+  AboutItemModel,
   ItemModel,
   ItemIsaapModel,
   ItemPageModel,
   ItemIdentifierModel,
   toCookie,
   toiSAAP,
-  resetResource
-} from "./ItemPageModels";
-import { Resource, getResourceContent, parseQueryString } from "../ApiModel";
-import { RouteComponentProps } from "react-router";
-import { LoadingOverlay } from "../Layout/LoadingOverlay";
+  resetResource,
+  Resource,
+  getResourceContent,
+  parseQueryString,
+  LoadingOverlay
+} from "../index";
 
-export interface ItemPageContainerProps extends RouteComponentProps<ItemModel> {
+export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
   itemPageClient: (params: ItemModel) => Promise<ItemPageModel>;
   itemAccessibilityClient: (
     params: ItemIsaapModel
   ) => Promise<AccResourceGroupModel[]>;
   showRubrics: boolean;
+  itemIsaap: ItemIsaapModel;
+  updateIsaap: (isaap: string) => void;
+  updateCookie: (cookieName: string, cookieValue: string) => void;
 }
 
-export interface ItemPageState {
+export interface ItemPageContainerState {
   aboutThisItem: Resource<AboutItemModel>;
   itemPageVM: Resource<ItemPageModel>;
   itemAccessibility: Resource<AccResourceGroupModel[]>;
@@ -41,20 +45,13 @@ export interface ItemPageState {
 
 export class ItemPageContainer extends React.Component<
   ItemPageContainerProps,
-  ItemPageState
+  ItemPageContainerState
 > {
   constructor(props: ItemPageContainerProps) {
     super(props);
 
-    const itemParams: ItemModel = { ...this.props.match.params };
-    const isaap = this.getLocationIsaap() || "";
-    const item: ItemIsaapModel = {
-      ...itemParams,
-      isaap
-    };
-
     this.state = {
-      item,
+      item: this.props.itemIsaap,
       aboutThisItem: { kind: "loading" },
       itemPageVM: { kind: "loading" },
       itemAccessibility: { kind: "loading" },
@@ -109,25 +106,6 @@ export class ItemPageContainer extends React.Component<
     console.error(err);
   }
 
-  updateLocationIsaap(accResourceGroups: AccResourceGroupModel[]) {
-    try {
-      const isaap = decodeURIComponent(toiSAAP(accResourceGroups, ""));
-      const location = {
-        ...this.props.history.location,
-        search: `isaap=${isaap}`
-      };
-      this.props.history.replace(location);
-    } catch (exception) {
-      console.error("unable to update url", exception);
-    }
-  }
-
-  getLocationIsaap() {
-    const query = parseQueryString(this.props.location.search);
-
-    return (query["isaap"] || [])[0] || "";
-  }
-
   private getItemPage(): ItemPageModel | undefined {
     return getResourceContent(this.state.itemPageVM);
   }
@@ -160,19 +138,24 @@ export class ItemPageContainer extends React.Component<
 
       this.onGetItemAccessibility(newGroups);
       this.setCurrentItem();
-      this.updateCookie(itemPage.accessibilityCookieName, newGroups);
-      this.updateLocationIsaap(newGroups);
+      this.updateIsaapCookieHandler(newGroups);
+      this.updateIsaapHandler(newGroups);
     } else {
       console.error("Error no item to update resources");
     }
   };
 
-  private updateCookie(
-    cookieName: string,
-    accGroups?: AccResourceGroupModel[]
-  ): void {
+  updateIsaapHandler(resources: AccResourceGroupModel[]) {
+    const isaap = decodeURIComponent(toiSAAP(resources, ""));
+    this.props.updateIsaap(isaap);
+  }
+
+  updateIsaapCookieHandler(accGroups?: AccResourceGroupModel[]) {
+    const itemPage = this.getItemPage();
     const cookieValue = accGroups ? toCookie(accGroups) : "";
-    document.cookie = cookieName.concat("=", cookieValue, "; path=/");
+    if (itemPage) {
+      this.props.updateCookie(itemPage.accessibilityCookieName, cookieValue);
+    }
   }
 
   onReset = () => {
@@ -181,7 +164,7 @@ export class ItemPageContainer extends React.Component<
     if (itemPage && itemAcc) {
       const newItemPage = { ...itemPage };
 
-      this.updateCookie(newItemPage.accessibilityCookieName);
+      this.updateIsaapCookieHandler();
 
       const newAccResourceGroups = itemAcc.map(g => {
         const newGroup = { ...g };
@@ -229,10 +212,10 @@ export class ItemPageContainer extends React.Component<
     const itemDetails = this.state.currentItem;
     const itemPage = this.getItemPage();
     const itemAccessibility = this.getItemAccessibility();
-    let content = null;
+    let content: JSX.Element | undefined;
     if (aboutThisItem && itemPage && itemDetails && itemAccessibility) {
       content = (
-        <ItemPage
+        <ItemViewerContainer
           {...itemPage}
           aboutThisItemVM={aboutThisItem}
           onSave={this.onSave}

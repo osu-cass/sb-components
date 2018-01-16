@@ -17,14 +17,14 @@ exports[`Storyshots About Item Modal default 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       About 
       <span
@@ -54,14 +54,14 @@ exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       About 
       <span
@@ -91,14 +91,14 @@ exports[`Storyshots About Item Modal showing no rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       About 
       <span
@@ -128,14 +128,14 @@ exports[`Storyshots About Item Modal showing rubrics 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       About 
       <span
@@ -165,14 +165,14 @@ exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       About 
       <span
@@ -202,14 +202,14 @@ exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
   <div>
     <button
       aria-label="Open About This Item Modal"
-      className="item-nav-btn btn btn-default btn-sm"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       About 
       <span
@@ -239,14 +239,14 @@ exports[`Storyshots About PT About ELA 1`] = `
   <div>
     <button
       aria-label="About Performance Task"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm about-pt-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       <span
         className="item-nav-long-label"
@@ -278,14 +278,14 @@ exports[`Storyshots About PT About Math 1`] = `
   <div>
     <button
       aria-label="About Performance Task"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm about-pt-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       <span
         className="item-nav-long-label"
@@ -317,14 +317,14 @@ exports[`Storyshots About PT Nothing 1`] = `
   <div>
     <button
       aria-label="About Performance Task"
-      className="item-nav-btn btn btn-link"
+      className="item-nav-btn btn btn-default btn-sm about-pt-btn"
       onClick={[Function]}
       role="button"
       tabIndex={0}
     >
       <span
         aria-hidden="true"
-        className="glyphicon glyphicon-info-sign glyphicon-pad"
+        className="fa fa-info-circle"
       />
       <span
         className="item-nav-long-label"
@@ -2631,8 +2631,6 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
 </div>
 `;
 
-exports[`Storyshots Item Page Container just the container 1`] = `null`;
-
 exports[`Storyshots Item Page Item Page returns error 1`] = `
 <div>
   <div
@@ -2648,14 +2646,14 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
       <div>
         <button
           aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-default btn-sm"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
           onClick={[Function]}
           role="button"
           tabIndex={0}
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="fa fa-info-circle"
           />
           About 
           <span
@@ -2675,7 +2673,7 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="glyphicon glyphicon-th-large glyphicon-pad"
           />
           More 
           <span
@@ -2695,7 +2693,7 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="fa fa-share"
           />
           Share
         </button>
@@ -2752,14 +2750,14 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       <div>
         <button
           aria-label="Open About This Item Modal"
-          className="item-nav-btn btn btn-default btn-sm"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
           onClick={[Function]}
           role="button"
           tabIndex={0}
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="fa fa-info-circle"
           />
           About 
           <span
@@ -2779,7 +2777,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="glyphicon glyphicon-th-large glyphicon-pad"
           />
           More 
           <span
@@ -2799,7 +2797,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
         >
           <span
             aria-hidden="true"
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="fa fa-share"
           />
           Share
         </button>
@@ -3130,6 +3128,16 @@ exports[`Storyshots Item Table Header AP_ScoreGuide tabs 1`] = `
       </thead>
     </table>
   </div>
+</div>
+`;
+
+exports[`Storyshots Item View default 1`] = `
+<div
+  className="loader-overlay"
+>
+  <div
+    className="loader"
+  />
 </div>
 `;
 

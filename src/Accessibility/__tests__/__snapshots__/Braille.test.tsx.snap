@@ -6,13 +6,13 @@ exports[`Braille refresh state 1`] = `
 <a
   aria-live="polite"
   aria-relevant="additions removals"
-  className="item-nav-btn"
+  className="item-nav-btn btn btn-default btn-sm about-pt-btn"
   download={true}
   href="/Item/Braille?bankKey=111&itemKey=222&brailleCode=test"
   onClick={[Function]}
 >
   <span
-    className="glyphicon glyphicon-download-alt glyphicon-pad"
+    className="fa fa-download"
   />
   Download Braille Embossing File(s)
   <span
@@ -31,13 +31,13 @@ exports[`Braille renders correctly 1`] = `
 <a
   aria-live="polite"
   aria-relevant="additions removals"
-  className="item-nav-btn"
+  className="item-nav-btn btn btn-default btn-sm about-pt-btn"
   download={true}
   href="/Item/Braille?bankKey=111&itemKey=222&brailleCode=test"
   onClick={[Function]}
 >
   <span
-    className="glyphicon glyphicon-download-alt glyphicon-pad"
+    className="fa fa-download"
   />
   Download Braille Embossing File(s)
 </a>

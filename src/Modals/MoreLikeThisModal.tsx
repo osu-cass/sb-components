@@ -73,7 +73,7 @@ export class MoreLikeThisModal extends React.Component<
           aria-label="More Like This Modal"
         >
           <span
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="glyphicon glyphicon-th-large glyphicon-pad"
             aria-hidden="true"
           />
           More <span className="item-nav-long-label">Like This</span>

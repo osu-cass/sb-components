@@ -2,9 +2,11 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CheckerPlugin = require("awesome-typescript-loader").CheckerPlugin;
-const bundleOutputDir = "./lib";
+const WatchIgnorePlugin = require("watch-ignore-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const libraryName = "sb-components";
+const outDir = path.resolve(__dirname, "./lib");
+const srcDir = path.resolve(__dirname, "./src");
 
 module.exports = env => {
   const isDevBuild = !(env && env.prod);
@@ -17,14 +19,14 @@ module.exports = env => {
         index: "./src/index.ts"
       },
       resolve: {
-        alias : {
-          src: path.resolve(__dirname, "src/index"), 
+        alias: {
+          src: path.resolve(srcDir, "index"),
           mocks: path.resolve(__dirname, "mocks")
-      },
+        },
         extensions: [".js", ".jsx", ".ts", ".tsx"]
       },
       output: {
-        path: path.join(__dirname, bundleOutputDir),
+        path: outDir,
         filename: "[name].js",
         libraryTarget: "commonjs"
       },
@@ -32,8 +34,13 @@ module.exports = env => {
         rules: [
           {
             test: /\.tsx?$/,
-            include: /src/,
-            use: "ts-loader"
+            include: srcDir,
+            use: {
+              loader:"ts-loader",
+              options: {
+                configFile: path.join(__dirname, 'tsconfig.webpack.json')
+              }
+            }
           },
           {
             test: /\.css$/,
@@ -65,22 +72,29 @@ module.exports = env => {
           }
         ]
       },
-      plugins: [new CheckerPlugin()].concat(
+      plugins: [
+        // Plugins that apply for all builds
+        new CheckerPlugin(),
+        new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/, "lib"]),
+        new CopyWebpackPlugin([
+          {
+            from: path.join(srcDir, "Assets"),
+            to: path.join(outDir, "Assets")
+          }
+        ])
+      ].concat(
         isDevBuild
           ? [
               // Plugins that apply in development builds only
               new webpack.SourceMapDevToolPlugin({
                 filename: "[file].map", // Remove this line if you prefer inline source maps
-                moduleFilenameTemplate: path.relative(
-                  bundleOutputDir,
-                  "[resourcePath]"
-                ) // Point sourcemap entries to the original file locations on disk
+                moduleFilenameTemplate: path.relative(outDir, "[resourcePath]") // Point sourcemap entries to the original file locations on disk
               })
             ]
           : [
               // Plugins that apply in production builds only
               new webpack.optimize.UglifyJsPlugin(),
-              new ExtractTextPlugin(libraryName + ".css")
+              new ExtractTextPlugin("[name].css")
             ]
       )
     }
