@@ -1,17 +1,18 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "1.2.0-alpha.2",
+  "version": "1.2.0-alpha.3",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "files": ["lib", "README.md", "LICENSE"],
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "webpack:prod":
-      "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
-    "webpack":
-      "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
-    "watch":
-      "./node_modules/.bin/webpack --config webpack.config.js --env.dev --watch",
+    "webpack:prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
+    "webpack": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
+    "watch": "./node_modules/.bin/webpack --config webpack.config.js --env.dev --watch",
     "prepare": "npm run clean && npm run test && npm run webpack:prod",
     "precommit": "lint-staged",
     "start": "npm run storybook",
@@ -22,15 +23,16 @@
     "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
-    "lint":
-      "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
+    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "typedoc-publish":
-      "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
+    "typedoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
-    "{src,stories}/**/*{.tsx,.ts}": ["prettier --write", "git add"]
+    "{src,stories}/**/*{.tsx,.ts}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -133,7 +135,9 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTest.ts",
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transform": {
       ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
     },
@@ -150,14 +154,19 @@
         "skipBabel": true
       }
     },
-    "moduleFileExtensions": ["ts", "tsx", "json", "js", "jsx"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "json",
+      "js",
+      "jsx"
+    ],
     "collectCoverage": true,
     "mapCoverage": true,
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
-      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/src/__mocks__/fileMock.js",
+      "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
       "^src/(.*)": "<rootDir>/src/$1",
       "^mocks/(.*)": "<rootDir>/mocks/$1",
       "^stories/(.*)": "<rootDir>/stories/$1"
