@@ -12,3 +12,4 @@ Developers Guide
    Usage
    Accessibility
    NpmLink
+   Publish
