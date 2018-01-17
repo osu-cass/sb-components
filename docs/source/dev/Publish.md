@@ -37,7 +37,7 @@ All versions in npm should also be github releases using tags. Tag names are the
 ### Local Dev
 > Develop with npm link instead of pushing versions
 
-- Follow [NpmLink](dev/NpmLink)
+- Follow [NpmLink](NpmLink)
 
 ## Continuous Integration, TravisCI
 
