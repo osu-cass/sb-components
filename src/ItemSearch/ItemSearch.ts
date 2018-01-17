@@ -122,6 +122,37 @@ export class ItemSearch {
     return newModel;
   }
 
+  public static updateSearchParamsDependentFilters(
+    searchParams: SearchAPIParamsModel,
+    model: ItemsSearchModel
+  ) {
+    const selectedSubjects = (model.subjects || []).filter(
+      s => (searchParams.subjects || []).indexOf(s.code) !== -1
+    );
+    const visibleClaims = selectedSubjects
+      .map(s => s.claimCodes || [])
+      .reduce((prev, curr) => prev.concat(curr), []);
+    const visibleInteractions = selectedSubjects
+      .map(s => s.interactionTypeCodes || [])
+      .reduce((prev, curr) => prev.concat(curr), []);
+    const visibleTargets = (model.claims || [])
+      .filter(c => (searchParams.claims || []).indexOf(c.code) !== -1)
+      .map(c => c.targetCodes || [])
+      .reduce((prev, curr) => prev.concat(curr), []);
+
+    searchParams.claims = (searchParams.claims || []).filter(
+      c => visibleClaims.indexOf(c) !== -1
+    );
+    searchParams.interactionTypes = (
+      searchParams.interactionTypes || []
+    ).filter(i => visibleInteractions.indexOf(i) !== -1);
+    searchParams.targets = (searchParams.targets || []).filter(
+      t => visibleTargets.indexOf(t) !== -1
+    );
+
+    return searchParams;
+  }
+
   public static searchOptionFilterString(
     options: SearchFilterStringTypes[],
     filterType: FilterType,
