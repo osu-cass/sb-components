@@ -6,6 +6,8 @@ import {
 } from "src/ItemSearch/ItemSearchModels";
 import { FilterOptionModel, FilterType } from "src/Filter/FilterModels";
 import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
+import { ItemsSearchModel } from "../../src/ItemSearch/ItemSearchModels";
+import { FilterCategoryModel } from "lib/Filter/FilterModels";
 
 export const itemCards: ItemCardModel[] = [
   {
@@ -370,3 +372,47 @@ export const resultFilterOptionModelTechType: FilterOptionModel[] = [
     label: "test3"
   }
 ];
+
+export const itemSearchModel: ItemsSearchModel = {
+  subjects: [
+    {
+      label: "Mathematics",
+      code: "MATH",
+      claimCodes: ["MATH1", "MATH2"],
+      interactionTypeCodes: ["IT1", "IT2", "IT3"]
+    },
+    {
+      label: "English",
+      code: "ELA",
+      claimCodes: ["ELA1", "ELA2"],
+      interactionTypeCodes: ["IT3", "IT4", "IT5"]
+    }
+  ],
+  claims: [
+    {
+      label: "Math 1",
+      code: "MATH1",
+      targetCodes: [1,2,3,4]
+    },
+    {
+      label: "Math 2",
+      code: "MATH2",
+      targetCodes: [5,2,3,4]
+    },
+    {
+      label: "Math 3",
+      code: "MATH3",
+      targetCodes: [6,2,3,4]
+    },
+    {
+      label: "English 1",
+      code: "ELA1",
+      targetCodes: [5,6,7,8]
+    },
+    {
+      label: "English 2",
+      code: "ELA2",
+      targetCodes: [8,9,10,11]
+    }
+  ]
+};

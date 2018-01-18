@@ -122,7 +122,7 @@ export class ItemSearch {
     return newModel;
   }
 
-  public static updateSearchParamsDependentFilters(
+  public static updateDependentSearchParams(
     searchParams: SearchAPIParamsModel,
     model: ItemsSearchModel
   ) {
@@ -135,20 +135,25 @@ export class ItemSearch {
     const visibleInteractions = selectedSubjects
       .map(s => s.interactionTypeCodes || [])
       .reduce((prev, curr) => prev.concat(curr), []);
-    const visibleTargets = (model.claims || [])
+    const visibleClaimModels = visibleClaims.map(c =>
+      (model.claims || []).find(cm => cm.code === c)
+    );
+    const visibleTargets = visibleClaimModels
       .filter(c => (searchParams.claims || []).indexOf(c.code) !== -1)
       .map(c => c.targetCodes || [])
       .reduce((prev, curr) => prev.concat(curr), []);
 
-    searchParams.claims = (searchParams.claims || []).filter(
-      c => visibleClaims.indexOf(c) !== -1
-    );
-    searchParams.interactionTypes = (
-      searchParams.interactionTypes || []
-    ).filter(i => visibleInteractions.indexOf(i) !== -1);
-    searchParams.targets = (searchParams.targets || []).filter(
-      t => visibleTargets.indexOf(t) !== -1
-    );
+    searchParams.claims = searchParams.claims
+      ? searchParams.claims.filter(c => visibleClaims.indexOf(c) !== -1)
+      : undefined;
+    searchParams.interactionTypes = searchParams.interactionTypes
+      ? searchParams.interactionTypes.filter(
+          i => visibleInteractions.indexOf(i) !== -1
+        )
+      : undefined;
+    searchParams.targets = searchParams.targets
+      ? searchParams.targets.filter(t => visibleTargets.indexOf(t) !== -1)
+      : undefined;
 
     return searchParams;
   }

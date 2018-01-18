@@ -31,7 +31,6 @@ import {
 
 import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
 import { FilterType } from "../../Filter/FilterModels";
-import { filter } from "minimatch";
 
 describe("ItemSearch.filterItemCards", () => {
   it("filters with empty filter", () => {
