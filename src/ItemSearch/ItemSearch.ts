@@ -67,6 +67,14 @@ export class ItemSearch {
     };
   }
 
+  /**
+   * Takes a `SearchAPIParamsModel` and the filter category that has been updated,
+   * and updates the search params model accordingly, returning a copy of it with
+   * the updated param added/removed.
+   *
+   * @param {FilterCategoryModel} category
+   * @param {SearchAPIParamsModel} currentModel
+   */
   public static updateSearchApiModel(
     category: FilterCategoryModel,
     currentModel: SearchAPIParamsModel
@@ -122,6 +130,13 @@ export class ItemSearch {
     return newModel;
   }
 
+  /**
+   * Takes a `SearchAPIParamsModel` and modifies it in place, removing the
+   * dependent params whose parents are no longer visible to the user.
+   *
+   * @param {SearchAPIParamsModel} searchParams
+   * @param {ItemsSearchModel} model
+   */
   public static updateDependentSearchParams(
     searchParams: SearchAPIParamsModel,
     model: ItemsSearchModel
