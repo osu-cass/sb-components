@@ -24,53 +24,56 @@ export class ItemCardCondensed extends React.Component<
     return this.state.redirect;
   }
 
-  handleKeyPress(e: React.KeyboardEvent<HTMLElement>) {
+  handleKeyPress = (e: React.KeyboardEvent<HTMLElement>) => {
     if (e.keyCode === 13 || e.keyCode === 23) {
       this.setState({ redirect: true });
     }
-  }
-  handleOnClick() {
+  };
+  handleOnClick = () => {
     this.setState({ redirect: true });
-  }
+  };
 
   render() {
     const { bankKey, itemKey } = this.props;
-    if (this.state.redirect) {
-      return <Redirect push to={`/Item/${bankKey}-${itemKey}`} />;
-    }
-    return (
-      <div
-        className={`card card-block ${this.props.subjectCode.toLowerCase()} condensed`}
-        onClick={() => this.handleOnClick()}
-        onKeyUp={e => this.handleKeyPress(e)}
-        tabIndex={0}
-      >
-        <div className="card-contents">
-          <h4 className="card-title">{this.props.subjectLabel}</h4>
-          <p className="card-text claim">
-            <span className="card-text-label">Claim:</span>
-            <span className="card-text-value"> {this.props.claimLabel}</span>
-          </p>
-          <p className="card-text target">
-            <span className="card-text-label">Target:</span>
-            <span className="card-text-value">
-              {" "}
-              {this.props.targetShortName}
-            </span>
-          </p>
-          <p className="card-text interaction-type">
-            <span className="card-text-label">Item Type:</span>
-            <span className="card-text-value">
-              {" "}
-              {this.props.interactionTypeLabel}
-            </span>
-          </p>
-          <p className="card-text item-id">
-            <span className="card-text-label">Item Id:</span>
-            <span className="card-text-value"> {this.props.itemKey}</span>
-          </p>
+    let content = <Redirect push to={`/Item/${bankKey}-${itemKey}`} />;
+    if (!this.state.redirect) {
+      content = (
+        <div
+          className={`card card-block ${this.props.subjectCode.toLowerCase()} condensed`}
+          onClick={this.handleOnClick}
+          onKeyUp={this.handleKeyPress}
+          tabIndex={0}
+          role="link"
+        >
+          <div className="card-contents">
+            <h4 className="card-title">{this.props.subjectLabel}</h4>
+            <p className="card-text claim">
+              <span className="card-text-label">Claim:</span>
+              <span className="card-text-value"> {this.props.claimLabel}</span>
+            </p>
+            <p className="card-text target">
+              <span className="card-text-label">Target:</span>
+              <span className="card-text-value">
+                {" "}
+                {this.props.targetShortName}
+              </span>
+            </p>
+            <p className="card-text interaction-type">
+              <span className="card-text-label">Item Type:</span>
+              <span className="card-text-value">
+                {" "}
+                {this.props.interactionTypeLabel}
+              </span>
+            </p>
+            <p className="card-text item-id">
+              <span className="card-text-label">Item Id:</span>
+              <span className="card-text-value"> {this.props.itemKey}</span>
+            </p>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
+
+    return content;
   }
 }
