@@ -30,15 +30,30 @@ module.exports = env => {
         filename: "[name].js",
         libraryTarget: "commonjs"
       },
+      externals: {
+        jquery: "jQuery",
+        react: {
+          root: "React",
+          commonjs: "react"
+        },
+        "react-dom": {
+          root: "ReactDOM",
+          commonjs: "react-dom"
+        },
+        "font-awesome": "font-awesome",
+        "react-modal": "react-modal",
+        "react-router-dom": "react-router-dom",
+        "react-router": "react-router"
+      },
       module: {
         rules: [
           {
             test: /\.tsx?$/,
             include: srcDir,
             use: {
-              loader:"ts-loader",
+              loader: "ts-loader",
               options: {
-                configFile: path.join(__dirname, 'tsconfig.webpack.json')
+                configFile: path.join(__dirname, "tsconfig.webpack.json")
               }
             }
           },
