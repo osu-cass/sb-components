@@ -7,6 +7,7 @@ Welcome to Shared Smarter Balanced Docs
    :maxdepth: 1
 
    dev/dev
+   project/project
 
 
 Indices and tables

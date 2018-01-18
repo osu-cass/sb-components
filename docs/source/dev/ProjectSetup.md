@@ -1,8 +1,9 @@
 # Project Setup
 
-## Development environment
+## Development Environment
 - install node, npm included, [here](https://nodejs.org/en/)
 - install vscode [here](https://code.visualstudio.com/) 
+- Checkout [VsCode](VsCode) for extensions
 
 ## Cloning and Branching
 1. Clone the project `git clone https://github.com/osu-cass/sb-components`
