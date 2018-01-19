@@ -134,13 +134,13 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes empty string", () => {
     const decoded = SearchUrl.decodeSearch("");
 
-    expect(decoded).toMatchObject({});
+    expect(decoded).toEqual({});
   });
 
   it("decodes claims only", () => {
     const decoded = SearchUrl.decodeSearch("?Claim=test,test2");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       claims: ["test", "test2"]
     });
   });
@@ -148,7 +148,7 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes subjects only", () => {
     const decoded = SearchUrl.decodeSearch("?Subject=s,s2");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       subjects: ["s", "s2"]
     });
   });
@@ -156,7 +156,7 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes interaction types only", () => {
     const decoded = SearchUrl.decodeSearch("?InteractionType=it,it2");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       interactionTypes: ["it", "it2"]
     });
   });
@@ -164,7 +164,7 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes grade level only", () => {
     const decoded = SearchUrl.decodeSearch("?Grade=4");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       gradeLevels: GradeLevels.Grade5
     });
   });
@@ -172,7 +172,7 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes targets only", () => {
     const decoded = SearchUrl.decodeSearch("?Target=1234,4321");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       targets: [1234, 4321]
     });
   });
@@ -180,7 +180,7 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes CAT types only", () => {
     const decoded = SearchUrl.decodeSearch("?CAT=true");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       catOnly: true
     });
   });
@@ -188,7 +188,7 @@ describe("SearchUrl.decodeSearch", () => {
   it("decodes performance types only", () => {
     const decoded = SearchUrl.decodeSearch("?Performance=true");
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       performanceOnly: true
     });
   });
@@ -198,7 +198,7 @@ describe("SearchUrl.decodeSearch", () => {
       "?Claim=MATH1,MATH2&Subject=MATH&Grade=4&Target=1234,5678&CAT=true"
     );
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       subjects: ["MATH"],
       gradeLevels: GradeLevels.Grade5,
       targets: [1234, 5678],
@@ -212,7 +212,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
   it("decodes empty object", () => {
     const decoded = SearchUrl.decodeExpressQuery({});
 
-    expect(decoded).toMatchObject({});
+    expect(decoded).toEqual({});
   });
 
   it("decodes grades only", () => {
@@ -221,7 +221,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       gradeLevels: GradeLevels.Grade5
     });
   });
@@ -232,7 +232,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       claims: ["test", "test2"]
     });
   });
@@ -243,7 +243,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       subjects: ["MATH", "ELA"]
     });
   });
@@ -254,7 +254,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       interactionTypes: ["1", "2"]
     });
   });
@@ -265,7 +265,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       targets: [1234, 2468]
     });
   });
@@ -276,7 +276,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       performanceOnly: true
     });
   });
@@ -287,7 +287,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       catOnly: true
     });
   });
@@ -302,7 +302,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
-    expect(decoded).toMatchObject({
+    expect(decoded).toEqual({
       catOnly: true,
       subjects: ["MATH", "ELA"],
       claims: ["MATH1", "2", "3"],

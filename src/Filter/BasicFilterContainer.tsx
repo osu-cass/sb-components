@@ -1,5 +1,9 @@
 import * as React from "react";
-import { BasicFilterCategoryModel, FilterOptionModel } from "./FilterModels";
+import {
+  BasicFilterCategoryModel,
+  FilterOptionModel,
+  FilterType
+} from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
 
 /**
@@ -13,7 +17,10 @@ import { BasicFilter } from "./BasicFilter";
  */
 export interface BasicFilterContainerProps {
   filterCategories: BasicFilterCategoryModel[];
-  onUpdateFilter: (selected: BasicFilterCategoryModel[]) => void;
+  onUpdateFilter: (
+    selected: BasicFilterCategoryModel[],
+    changed: FilterType
+  ) => void;
   containsAdvancedFilter: boolean;
   handleAdvancedFilterExpand: () => void;
   filterId?: string;
@@ -68,7 +75,7 @@ export class BasicFilterContainer extends React.Component<
 
         newOptions[optionIdx].isSelected = !option.isSelected;
         filterCategories[index].filterOptions = newOptions;
-        this.props.onUpdateFilter(filterCategories);
+        this.props.onUpdateFilter(filterCategories, category.code);
       }
     }
   }
