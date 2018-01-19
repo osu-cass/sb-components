@@ -81,6 +81,7 @@ export class ItemViewerContainer extends React.Component<
       this.props.accResourceGroups,
       this.props.defaultIsaapCodes
     );
+
     return (
       <div
         className="item-nav-left-group"
@@ -126,7 +127,7 @@ export class ItemViewerContainer extends React.Component<
   }
 
   renderIFrame(): JSX.Element {
-    let isaap = ItemPageModels.toiSAAP(
+    const isaap = ItemPageModels.toiSAAP(
       this.props.accResourceGroups,
       this.props.defaultIsaapCodes
     );
@@ -135,12 +136,12 @@ export class ItemViewerContainer extends React.Component<
     )
       ? this.props.brailleItemNames
       : this.props.itemNames;
-    let scrollTo: string = Accessibility.isStreamlinedEnabled(
+    const scrollTo: string = Accessibility.isStreamlinedEnabled(
       this.props.accResourceGroups
     )
       ? ""
       : "&scrollToId=".concat(this.props.currentItem.itemName);
-    let ivsUrl: string = this.props.itemViewerServiceUrl.concat(
+    const ivsUrl: string = this.props.itemViewerServiceUrl.concat(
       "/items?ids=",
       itemNames,
       "&isaap=",

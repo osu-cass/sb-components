@@ -24,6 +24,8 @@ export const SelectOption: React.SFC<SelectOptionProps> = props => {
       value={props.value}
       label={props.label}
       disabled={props.disabled}
-    />
+    >
+      {props.label}
+    </option>
   );
 };
