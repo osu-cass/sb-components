@@ -60,18 +60,56 @@ export class ItemPageContainer extends React.Component<
   }
 
   componentDidMount() {
+    this.fetchItemPage(this.state.item);
+
+    if (
+      this.state.itemAccessibility.kind === "success" &&
+      this.state.itemAccessibility.content
+    ) {
+      this.updateIsaapHandler(this.state.itemAccessibility.content);
+    }
+  }
+
+  fetchItemPage(item: ItemModel) {
     this.props
-      .itemPageClient(this.state.item)
+      .itemPageClient(item)
       .then(data => this.onGetItemPage(data))
       .then(() =>
         this.props
-          .itemAccessibilityClient(this.state.item)
+          .itemAccessibilityClient(item)
           .then(data => this.onGetItemAccessibility(data))
           .catch(err => this.onError(err))
       )
       .then(() => this.setCurrentItem())
       .then(() => this.fetchUpdatedAboutThisItem())
       .catch(err => this.onError(err));
+  }
+
+  componentWillReceiveProps(nextProps: ItemPageContainerProps) {
+    const nextItem: ItemModel = nextProps.itemIsaap;
+    const currItem: ItemModel = this.props.itemIsaap;
+
+    if (
+      nextItem.bankKey !== currItem.bankKey ||
+      nextItem.itemKey !== currItem.itemKey
+    ) {
+      this.setState({
+        item: nextItem,
+        aboutThisItem: { kind: "loading" },
+        itemPageVM: { kind: "loading" },
+        itemAccessibility: { kind: "loading" },
+        loading: true
+      });
+
+      this.fetchItemPage(nextItem);
+
+      if (
+        this.state.itemAccessibility.kind === "success" &&
+        this.state.itemAccessibility.content
+      ) {
+        this.updateIsaapHandler(this.state.itemAccessibility.content);
+      }
+    }
   }
 
   private setCurrentItem() {
@@ -91,7 +129,7 @@ export class ItemPageContainer extends React.Component<
   onGetItemPage(data: ItemPageModel) {
     this.setState({
       itemPageVM: { kind: "success", content: data },
-      loading: !this.state.loading
+      loading: false
     });
   }
 

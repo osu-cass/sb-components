@@ -1661,25 +1661,33 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
             disabled={false}
             label="Please Select"
             value="default"
-          />
+          >
+            Please Select
+          </option>
           <option
             aria-selected={false}
             disabled={false}
             label="Grades 3-5"
             value="7"
-          />
+          >
+            Grades 3-5
+          </option>
           <option
             aria-selected={false}
             disabled={false}
             label="Grades 6-8"
             value="56"
-          />
+          >
+            Grades 6-8
+          </option>
           <option
             aria-selected={false}
             disabled={false}
             label="High School"
             value="960"
-          />
+          >
+            High School
+          </option>
         </select>
       </label>
     </div>
@@ -1754,25 +1762,33 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
             disabled={false}
             label="Please Select"
             value="default"
-          />
+          >
+            Please Select
+          </option>
           <option
             aria-selected={false}
             disabled={false}
             label="Grades 3-5"
             value="7"
-          />
+          >
+            Grades 3-5
+          </option>
           <option
             aria-selected={false}
             disabled={false}
             label="Grades 6-8"
             value="56"
-          />
+          >
+            Grades 6-8
+          </option>
           <option
             aria-selected={false}
             disabled={false}
             label="High School"
             value="960"
-          />
+          >
+            High School
+          </option>
         </select>
       </label>
     </div>
@@ -1870,31 +1886,41 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
           disabled={false}
           label="Please Select"
           value="default"
-        />
+        >
+          Please Select
+        </option>
         <option
           aria-selected={false}
           disabled={false}
           label="Grade 1"
           value="12346"
-        />
+        >
+          Grade 1
+        </option>
         <option
           aria-selected={false}
           disabled={false}
           label="Grade 2"
           value="12347"
-        />
+        >
+          Grade 2
+        </option>
         <option
           aria-selected={false}
           disabled={false}
           label="Grade"
           value="12345"
-        />
+        >
+          Grade
+        </option>
         <option
           aria-selected={false}
           disabled={false}
           label="Grade 4"
           value="12348"
-        />
+        >
+          Grade 4
+        </option>
       </select>
     </label>
   </div>
@@ -1936,13 +1962,17 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
           disabled={false}
           label="Please Select"
           value="default"
-        />
+        >
+          Please Select
+        </option>
         <option
           aria-selected={false}
           disabled={false}
           label="Grade"
           value="12345"
-        />
+        >
+          Grade
+        </option>
       </select>
     </label>
   </div>
@@ -2334,25 +2364,33 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               disabled={false}
               label="Please Select"
               value="default"
-            />
+            >
+              Please Select
+            </option>
             <option
               aria-selected={false}
               disabled={false}
               label="Grades 3-5"
               value="7"
-            />
+            >
+              Grades 3-5
+            </option>
             <option
               aria-selected={false}
               disabled={false}
               label="Grades 6-8"
               value="56"
-            />
+            >
+              Grades 6-8
+            </option>
             <option
               aria-selected={false}
               disabled={false}
               label="High School"
               value="960"
-            />
+            >
+              High School
+            </option>
           </select>
         </label>
       </div>
@@ -2556,6 +2594,7 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
     className="card card-block ela condensed"
     onClick={[Function]}
     onKeyUp={[Function]}
+    role="link"
     tabIndex={0}
   >
     <div
