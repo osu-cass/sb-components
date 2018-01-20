@@ -81,17 +81,16 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
 
     labels.forEach((data: string | number, idx: number) => {
       tags.push(
-        <span
-          key={`${cellData.bankKey}-${cellData.itemKey}`}
-          className={`${col.className}-${cellData.itemKey}`}
-        >
+        <span className={`${col.className}-${cellData.itemKey}`}>
           <a
             tabIndex={0}
             onClick={e => e.stopPropagation()}
             onKeyUp={e => this.handleToolTipKeyUpEnter(e)}
             data-for={`tooltip-${col.className}-${cellData.itemKey}`}
             data-event="click"
-            data-tip="custom tooltip here"
+            data-tip={
+              col.header === "Claim/Target" ? cellData.targetDescription : ""
+            }
             role="button"
           >
             {data}
@@ -130,7 +129,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     let tags: JSX.Element[];
 
     // TODO: implement description API functionality when available.
-    const descriptionAvailable = true;
+    const descriptionAvailable = col.header === "Claim/Target";
     if (descriptionAvailable) {
       tags = this.renderTooltipLink(col, cellData);
     } else {
