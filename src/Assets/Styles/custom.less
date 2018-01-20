@@ -57,6 +57,24 @@ a.collapsible-label:visited {
   overflow: hidden;
 }
 
+//ToolTipComponent
+.tool-tip {
+  position: relative;
+  left: 50%;
+  bottom: 100%;
+  background: @sb-white;
+  box-shadow: @box-shadow;
+  max-width: 500px;
+}
+
+.tool-tip:after {
+  border-top: 20px solid @sb-white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0px;
+  width: 0px;
+}
+
 //## Tooltips
 .tooltip-label {
   margin-right: @spacing-item;
