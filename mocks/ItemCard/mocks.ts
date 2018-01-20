@@ -15,10 +15,12 @@ export const completeItemCard: ItemCardModel = {
   claimCode: "3",
   claimLabel: "Claim",
   targetHash: 33434,
+  targetDescription: "target description right hereeeee",
   isPerformanceItem: false,
   brailleOnlyItem: false,
   targetId: "dfas",
   depthOfKnowledge: "2",
   commonCoreStandardId: "AB-123",
+  ccssDescription: "this is the common core description",
   domain: "domain"
 };

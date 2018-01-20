@@ -80,6 +80,7 @@ export class ItemSearch {
     currentModel: SearchAPIParamsModel
   ): SearchAPIParamsModel {
     const newModel = Object.assign({}, currentModel);
+    // tslint:disable-next-line:switch-default
     switch (category.code) {
       case FilterType.Grade:
         newModel.gradeLevels = Filter.getSelectedGrade([category]);
@@ -124,7 +125,6 @@ export class ItemSearch {
       case FilterType.Target:
         const targetCodes = Filter.getSelectedTargets([category]);
         newModel.targets = targetCodes;
-        break;
     }
 
     return newModel;
@@ -154,8 +154,8 @@ export class ItemSearch {
       (model.claims || []).find(cm => cm.code === c)
     );
     const visibleTargets = visibleClaimModels
-      .filter(c => (searchParams.claims || []).indexOf(c.code) !== -1)
-      .map(c => c.targetCodes || [])
+      .filter(c => (searchParams.claims || []).indexOf(c!.code) !== -1)
+      .map(c => c!.targetCodes || [])
       .reduce((prev, curr) => prev.concat(curr), []);
 
     searchParams.claims = searchParams.claims

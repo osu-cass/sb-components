@@ -22,6 +22,6 @@ export interface ItemCardModel {
   domain?: string;
   depthOfKnowledge?: string;
   commonCoreStandardId?: string;
-  ccssDescription: string;
+  ccssDescription?: string;
   calculator?: boolean;
 }
