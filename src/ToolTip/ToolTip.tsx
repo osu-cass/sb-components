@@ -25,13 +25,16 @@ export class ToolTip extends React.Component<{}, ToolTipState> {
       <span className="tool-tip">{this.props.children}</span>
     ) : null;
     return (
-      <span
-        className="fa fa-info-circle fa-sm"
-        onMouseEnter={this.showTip}
-        onMouseLeave={this.hideTip}
-        onSelect={this.showTip}
-        onBlur={this.hideTip}
-      />
+      <span>
+        <span
+          className="fa fa-info-circle fa-sm"
+          onMouseEnter={this.showTip}
+          onMouseLeave={this.hideTip}
+          onSelect={this.showTip}
+          onBlur={this.hideTip}
+        />
+        {toolTipJSX}
+      </span>
     );
   }
 }
