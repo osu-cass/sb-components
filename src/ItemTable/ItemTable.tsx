@@ -179,7 +179,7 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     }
     const row: JSX.Element[] = [
       <tr
-        key={`${rowData.bankKey}-${rowData.itemKey}`}
+        key={`${rowData.bankKey}-${rowData.itemKey}-row`}
         className={isExpanded ? "selected" : ""}
         onClick={() => this.handleRowClick(rowData)}
         onKeyUp={e => this.handleKeyUpEnter(e, rowData)}
