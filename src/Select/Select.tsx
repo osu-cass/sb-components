@@ -12,6 +12,7 @@ export interface SelectProps {
   disabled?: boolean;
   options: SelectOptionProps[];
   className?: string;
+  labelClass?: string;
 }
 
 /**
@@ -27,7 +28,7 @@ export const Select: React.SFC<SelectProps> = props => {
 
   return (
     <label>
-      {props.label}
+      <span className={`label ${props.labelClass}`}>{props.label}</span>
       <select
         className={`form-control ${props.className}`}
         onChange={e => props.onChange(e.target.value)}

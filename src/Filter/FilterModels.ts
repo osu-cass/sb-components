@@ -51,6 +51,7 @@ export enum FilterType {
   Target = "Target",
   CAT = "CAT",
   InteractionType = "InteractionType",
+  Calculator = "Calculator",
   TechnologyType = "TechnologyType" //Contains Performance and CAT
 }
 

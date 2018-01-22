@@ -69,6 +69,10 @@ div.filter-status {
   margin: 3px;
 }
 
+div.filter-status > button.btn {
+  margin: @spacing-item/2 @spacing-item/2;
+}
+
 .filter-subheader {
   display: flex;
   flex-direction: column;
@@ -95,6 +99,12 @@ div.filter-status {
   padding: @spacing-unit/2;
 }
 
+.filter-selection button.btn:focus {
+  color: #ffffff;
+  background-color: @sb-gray;
+  border-color: @sb-gray;
+}
+
 .advanced-filter-container-expanded {
   display: flex;
   flex-direction: column;
@@ -116,7 +126,12 @@ div.filter-status {
 div.filter-selection >
 div.nested-btn-group >
 button.btn-primary {
-  max-height: fit-content ;
+  max-height: fit-content;
+}
+
+div.filter-selection >
+div.nested-btn-group {
+  align-items: flex-start;
 }
 
 div.filter-btn-group >

@@ -60,11 +60,8 @@ export class ItemAccessibilityModal extends React.Component<
     e: React.KeyboardEvent<HTMLAnchorElement>,
     resourceType: string
   ): void {
-    if (e.keyCode == 23 || e.keyCode == 13) {
-      const expandeds = Object.assign(
-        {},
-        this.state.resourceTypeExpanded || {}
-      );
+    if (e.keyCode === 23 || e.keyCode === 13) {
+      const expandeds = { ...this.state.resourceTypeExpanded };
       expandeds[resourceType] = !expandeds[resourceType];
 
       this.setState({
@@ -73,15 +70,12 @@ export class ItemAccessibilityModal extends React.Component<
     }
   }
 
-  /** Updates the selection based on user input, if item is braille, streamlined mode needs to be adjusted */
+  // Updates the selection based on user input, if item is braille, streamlined mode needs to be adjusted
   updateSelection = (selectionCode: string, resourceCode: string) => {
-    const newSelections = Object.assign(
-      {},
-      this.state.resourceSelections || {}
-    );
+    const newSelections = { ...this.state.resourceSelections };
     newSelections[resourceCode] = selectionCode;
     if (resourceCode === "BrailleType") {
-      if (selectionCode == "TDS_BT0") {
+      if (selectionCode === "TDS_BT0") {
         newSelections["StreamlinedInterface"] = "TDS_SLM0";
       } else {
         newSelections["StreamlinedInterface"] = "TDS_SLM1";
@@ -118,60 +112,68 @@ export class ItemAccessibilityModal extends React.Component<
     this.setState({ showModal: false });
   };
 
-  renderResourceType(type: string) {
+  renderResourceType(resourceType: string) {
     let resources = this.props.accResourceGroups.filter(
-      group => group.label === type
+      group => group.label === resourceType
     )[0].accessibilityResources;
-    let resourceTypeHeader = <h3>{type}</h3>;
+    const resourceTypeHeader = (
+      <h4 className="green-title">
+        <span className="fa fa-tasks" />&nbsp;
+        {resourceType}
+      </h4>
+    );
 
     const resCount = resources.length;
-    const isExpanded = (this.state.resourceTypeExpanded || {})[type];
+    const isExpanded = (this.state.resourceTypeExpanded || {})[resourceType];
     if (!isExpanded) {
       resources = resources.slice(0, 4);
     }
 
-    let dropdowns = resources.map(res => {
-      let selectedCode =
+    const dropdowns = resources.map(res => {
+      const selectedCode =
         (this.state.resourceSelections || {})[res.resourceCode] ||
         res.currentSelectionCode;
-      let selections = res.selections.filter(s => !s.hidden);
-      let ddprops: DropdownProps = {
+      const selections = res.selections.filter(s => !s.hidden);
+      const ddProps: DropdownProps = {
+        selections,
         defaultSelection: res.currentSelectionCode,
         label: res.label,
-        selections: selections,
         selectionCode: selectedCode,
         disabled: res.disabled,
         updateSelection: this.updateSelection,
         resourceCode: res.resourceCode
       };
-      return <Dropdown {...ddprops} key={res.resourceCode} />;
+
+      return <Dropdown {...ddProps} key={res.resourceCode} />;
     });
 
     let expandButton: JSX.Element | undefined;
     if (resCount <= 4) {
       expandButton = undefined;
     } else if (isExpanded) {
-      let ariaText = "Display fewer " + type + "options";
+      const ariaText = `Display fewer ${resourceType} options`;
       expandButton = (
         <a
+          role="button"
           className="expand-button"
           tabIndex={0}
           aria-label={ariaText}
-          onClick={() => this.toggleResourceType(type)}
-          onKeyUp={e => this.keyboardToggleResourceType(e, type)}
+          onClick={() => this.toggleResourceType(resourceType)}
+          onKeyUp={e => this.keyboardToggleResourceType(e, resourceType)}
         >
           Show less
         </a>
       );
     } else {
-      let ariaText = "Display all " + type + " options";
+      const ariaText = `Display all ${resourceType} options`;
       expandButton = (
         <a
+          role="button"
           className="expand-button"
           tabIndex={0}
           aria-label={ariaText}
-          onClick={() => this.toggleResourceType(type)}
-          onKeyUp={e => this.keyboardToggleResourceType(e, type)}
+          onClick={() => this.toggleResourceType(resourceType)}
+          onKeyUp={e => this.keyboardToggleResourceType(e, resourceType)}
         >
           Show all
         </a>
@@ -179,7 +181,10 @@ export class ItemAccessibilityModal extends React.Component<
     }
 
     return (
-      <div key={type}>
+      <div
+        className="accessibility-resource-type section-light"
+        key={resourceType}
+      >
         {resourceTypeHeader}
         <div className="accessibility-dropdowns">{dropdowns}</div>
         {expandButton}
@@ -230,6 +235,7 @@ export class ItemAccessibilityModal extends React.Component<
                 To experience the <strong>text-to-speech functionality</strong>,&nbsp;
                 please visit the&nbsp;
                 <a
+                  rel="noopener noreferrer"
                   href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ "
                   target="_blank"
                 >

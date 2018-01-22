@@ -1,76 +1,208 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PageTabs matches snapshot for each tab 1`] = `
-<div
-  className="tabs"
+exports[`PageTabs matches snapshot for each tab with no rubric 1`] = `
+<ul
+  className="nav nav-tabs"
 >
-  <div
-    className="selected-tab"
+  <li
+    className="nav-item active"
     onClick={[Function]}
+    role="button"
   >
-    Item Viewer
-  </div>
-  <div
-    className="tab-not-selected"
+    <a
+      className="nav-link"
+    >
+      Item Viewer
+    </a>
+  </li>
+  <li
+    className="nav-item"
     onClick={[Function]}
+    role="button"
   >
-    Rubric and Exemplar
-  </div>
-  <div
-    className="tab-not-selected"
-    onClick={[Function]}
-  >
-    Item Information
-  </div>
-</div>
+    <a
+      className="nav-link"
+    >
+      Item Information
+    </a>
+  </li>
+</ul>
 `;
 
-exports[`PageTabs matches snapshot for each tab 2`] = `
-<div
-  className="tabs"
+exports[`PageTabs matches snapshot for each tab with no rubric 2`] = `
+<ul
+  className="nav nav-tabs"
 >
-  <div
-    className="tab-not-selected"
+  <li
+    className="nav-item"
     onClick={[Function]}
+    role="button"
   >
-    Item Viewer
-  </div>
-  <div
-    className="selected-tab"
+    <a
+      className="nav-link"
+    >
+      Item Viewer
+    </a>
+  </li>
+  <li
+    className="nav-item"
     onClick={[Function]}
+    role="button"
   >
-    Rubric and Exemplar
-  </div>
-  <div
-    className="tab-not-selected"
-    onClick={[Function]}
-  >
-    Item Information
-  </div>
-</div>
+    <a
+      className="nav-link"
+    >
+      Item Information
+    </a>
+  </li>
+</ul>
 `;
 
-exports[`PageTabs matches snapshot for each tab 3`] = `
-<div
-  className="tabs"
+exports[`PageTabs matches snapshot for each tab with no rubric 3`] = `
+<ul
+  className="nav nav-tabs"
 >
-  <div
-    className="tab-not-selected"
+  <li
+    className="nav-item"
     onClick={[Function]}
+    role="button"
   >
-    Item Viewer
-  </div>
-  <div
-    className="tab-not-selected"
+    <a
+      className="nav-link"
+    >
+      Item Viewer
+    </a>
+  </li>
+  <li
+    className="nav-item active"
     onClick={[Function]}
+    role="button"
   >
-    Rubric and Exemplar
-  </div>
-  <div
-    className="selected-tab"
+    <a
+      className="nav-link"
+    >
+      Item Information
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`PageTabs matches snapshot for each tab with rubric 1`] = `
+<ul
+  className="nav nav-tabs"
+>
+  <li
+    className="nav-item active"
     onClick={[Function]}
+    role="button"
   >
-    Item Information
-  </div>
-</div>
+    <a
+      className="nav-link"
+    >
+      Item Viewer
+    </a>
+  </li>
+  <li
+    className="nav-item"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Rubric and Exemplar
+    </a>
+  </li>
+  <li
+    className="nav-item"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Item Information
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`PageTabs matches snapshot for each tab with rubric 2`] = `
+<ul
+  className="nav nav-tabs"
+>
+  <li
+    className="nav-item"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Item Viewer
+    </a>
+  </li>
+  <li
+    className="nav-item active"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Rubric and Exemplar
+    </a>
+  </li>
+  <li
+    className="nav-item"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Item Information
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`PageTabs matches snapshot for each tab with rubric 3`] = `
+<ul
+  className="nav nav-tabs"
+>
+  <li
+    className="nav-item"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Item Viewer
+    </a>
+  </li>
+  <li
+    className="nav-item"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Rubric and Exemplar
+    </a>
+  </li>
+  <li
+    className="nav-item active"
+    onClick={[Function]}
+    role="button"
+  >
+    <a
+      className="nav-link"
+    >
+      Item Information
+    </a>
+  </li>
+</ul>
 `;

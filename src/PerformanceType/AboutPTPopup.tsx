@@ -22,10 +22,11 @@ export class AboutPTPopupModal extends React.Component<
 > {
   constructor(props: AboutPtPopupModalProps) {
     super(props);
+    const { isPerformance, subject } = this.props;
     const skipCookie = this.props.skipCookie || false;
     const cookieShouldShow = skipCookie
       ? false
-      : shouldShowOnLoad(this.props.isPerformance);
+      : shouldShowOnLoad(isPerformance, subject);
 
     this.state = {
       showModal: this.props.showModal || cookieShouldShow || false

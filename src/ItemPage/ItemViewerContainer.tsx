@@ -22,16 +22,20 @@ import {
   ResourceSelectionsModel
 } from "../Accessibility/AccessibilityModels";
 
-export interface ItemPageProps extends ItemPageModels.ItemPageModel {
+export interface ItemViewerContainerProps extends ItemPageModels.ItemPageModel {
   onSave: (selections: ResourceSelectionsModel) => void;
   onReset: () => void;
   aboutThisItemVM: AboutItemModel;
   currentItem: ItemPageModels.ItemIdentifierModel;
   accResourceGroups: AccResourceGroupModel[];
+  showRubrics: boolean;
 }
 
-export class ItemPage extends React.Component<ItemPageProps, {}> {
-  constructor(props: ItemPageProps) {
+export class ItemViewerContainer extends React.Component<
+  ItemViewerContainerProps,
+  {}
+> {
+  constructor(props: ItemViewerContainerProps) {
     super(props);
   }
 
@@ -77,13 +81,17 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
       this.props.accResourceGroups,
       this.props.defaultIsaapCodes
     );
+
     return (
       <div
         className="item-nav-left-group"
         role="group"
         aria-label="First group"
       >
-        <AboutItem {...this.props.aboutThisItemVM} />
+        <AboutItem
+          showRubrics={this.props.showRubrics}
+          {...this.props.aboutThisItemVM}
+        />
 
         <MoreLikeThisModal {...this.props.moreLikeThisVM} />
         <ShareModal iSAAP={isaap} />
@@ -119,7 +127,7 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
   }
 
   renderIFrame(): JSX.Element {
-    let isaap = ItemPageModels.toiSAAP(
+    const isaap = ItemPageModels.toiSAAP(
       this.props.accResourceGroups,
       this.props.defaultIsaapCodes
     );
@@ -128,12 +136,12 @@ export class ItemPage extends React.Component<ItemPageProps, {}> {
     )
       ? this.props.brailleItemNames
       : this.props.itemNames;
-    let scrollTo: string = Accessibility.isStreamlinedEnabled(
+    const scrollTo: string = Accessibility.isStreamlinedEnabled(
       this.props.accResourceGroups
     )
       ? ""
       : "&scrollToId=".concat(this.props.currentItem.itemName);
-    let ivsUrl: string = this.props.itemViewerServiceUrl.concat(
+    const ivsUrl: string = this.props.itemViewerServiceUrl.concat(
       "/items?ids=",
       itemNames,
       "&isaap=",

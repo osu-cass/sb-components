@@ -27,11 +27,10 @@ import {
   resultFilterOptionModeltarget,
   resultFilterOptionModelTechType,
   techtypeSearchStringTypes
-} from "mocks/ItemSearch/mocks";
+} from "../../../mocks/ItemSearch/mocks";
 
-import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
-import { FilterType } from "src/Filter/FilterModels";
-import { filter } from "minimatch";
+import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
+import { FilterType } from "../../Filter/FilterModels";
 
 describe("ItemSearch.filterItemCards", () => {
   it("filters with empty filter", () => {
@@ -100,6 +99,39 @@ describe("ItemSearch.filterItemCards", () => {
     };
     const result = ItemSearch.filterItemCards(itemCards, params);
     const expectedCards = itemCards.filter(c => c.isPerformanceItem);
+
+    expect(result).toHaveLength(expectedCards.length);
+    expectedCards.forEach(card => expect(result).toContain(card));
+  });
+
+  it("filters for calculator off", () => {
+    const params: SearchAPIParamsModel = {
+      calculator: false
+    };
+    const result = ItemSearch.filterItemCards(itemCards, params);
+    const expectedCards = itemCards.filter(c => c.calculator === false);
+
+    expect(result).toHaveLength(expectedCards.length);
+    expectedCards.forEach(card => expect(result).toContain(card));
+  });
+
+  it("filters for calculator on", () => {
+    const params: SearchAPIParamsModel = {
+      calculator: true
+    };
+    const result = ItemSearch.filterItemCards(itemCards, params);
+    const expectedCards = itemCards.filter(c => c.calculator === true);
+
+    expect(result).toHaveLength(expectedCards.length);
+    expectedCards.forEach(card => expect(result).toContain(card));
+  });
+
+  it("filters for calculator undefined", () => {
+    const params: SearchAPIParamsModel = {
+      calculator: undefined
+    };
+    const result = ItemSearch.filterItemCards(itemCards, params);
+    const expectedCards = itemCards;
 
     expect(result).toHaveLength(expectedCards.length);
     expectedCards.forEach(card => expect(result).toContain(card));

@@ -26,10 +26,11 @@ export const FilterLink: React.SFC<FilterLinkProps> = ({ filterId }) => {
 
   return (
     <a
-      className=" filter-jump-link btn btn-blue"
+      className=" filter-jump-link btn btn-primary"
       role="button"
       onClick={handleClick}
     >
+      <span className="fa fa-filter" />
       Jump to Filter
     </a>
   );

@@ -37,7 +37,7 @@ export class MoreLikeThisModal extends React.Component<
   };
 
   renderColumn(column: Column | null) {
-    if (!column || column.label == "NA") {
+    if (!column || column.label === "NA") {
       return undefined;
     }
 
@@ -46,7 +46,7 @@ export class MoreLikeThisModal extends React.Component<
     const items = column.itemCards.length
       ? column.itemCards.map(c => (
           <ItemCardCondensed.ItemCardCondensed
-            key={c.bankKey + "-" + c.itemKey}
+            key={`${c.bankKey}-${c.itemKey}`}
             {...c}
           />
         ))
@@ -73,7 +73,7 @@ export class MoreLikeThisModal extends React.Component<
           aria-label="More Like This Modal"
         >
           <span
-            className="glyphicon glyphicon-info-sign glyphicon-pad"
+            className="glyphicon glyphicon-th-large glyphicon-pad"
             aria-hidden="true"
           />
           More <span className="item-nav-long-label">Like This</span>

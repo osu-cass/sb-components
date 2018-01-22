@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ItemPageContainer } from "../../src/ItemPage/ItemPageContainer";
+import { ItemViewPage } from "src/index";
 import { storiesOf } from "@storybook/react";
 import { RouterDecorator } from "../RouterDecorator";
 import {
@@ -11,15 +11,16 @@ import {
 } from "mocks/ItemPage/mocks";
 import { Route } from "react-router";
 
-storiesOf("Item Page Container", module)
+storiesOf("Item View", module)
   .addDecorator(RouterDecorator)
-  .add("just the container", () => (
+  .add("default", () => (
     <Route
       exact
-      path={itemPagePath}
+      path="/"
       render={props => (
-        <ItemPageContainer
+        <ItemViewPage
           {...props}
+          showRubrics={true}
           match={itemPageMatch}
           aboutThisClient={aboutThisClient}
           itemPageClient={itemPageClient}

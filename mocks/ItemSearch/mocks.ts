@@ -4,8 +4,9 @@ import {
   TargetModel,
   SearchAPIParamsModel
 } from "src/ItemSearch/ItemSearchModels";
-import { FilterOptionModel, FilterType } from "src/Filter/FilterModels";
+import { FilterCategoryModel, FilterOptionModel, FilterType } from "src/Filter/FilterModels";
 import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
+import { ItemsSearchModel } from "../../src/ItemSearch/ItemSearchModels";
 
 export const itemCards: ItemCardModel[] = [
   {
@@ -24,7 +25,8 @@ export const itemCards: ItemCardModel[] = [
     interactionTypeCode: "EQ",
     interactionTypeLabel: "Equation",
     isPerformanceItem: true,
-    brailleOnlyItem: false
+    brailleOnlyItem: false,
+    calculator: true
   },
   {
     bankKey: 187,
@@ -42,7 +44,8 @@ export const itemCards: ItemCardModel[] = [
     interactionTypeCode: "MC",
     interactionTypeLabel: "Multiple Choice",
     isPerformanceItem: true,
-    brailleOnlyItem: false
+    brailleOnlyItem: false,
+    calculator: false
   },
   {
     bankKey: 187,
@@ -368,3 +371,47 @@ export const resultFilterOptionModelTechType: FilterOptionModel[] = [
     label: "test3"
   }
 ];
+
+export const itemSearchModel: ItemsSearchModel = {
+  subjects: [
+    {
+      label: "Mathematics",
+      code: "MATH",
+      claimCodes: ["MATH1", "MATH2"],
+      interactionTypeCodes: ["IT1", "IT2", "IT3"]
+    },
+    {
+      label: "English",
+      code: "ELA",
+      claimCodes: ["ELA1", "ELA2"],
+      interactionTypeCodes: ["IT3", "IT4", "IT5"]
+    }
+  ],
+  claims: [
+    {
+      label: "Math 1",
+      code: "MATH1",
+      targetCodes: [1,2,3,4]
+    },
+    {
+      label: "Math 2",
+      code: "MATH2",
+      targetCodes: [5,2,3,4]
+    },
+    {
+      label: "Math 3",
+      code: "MATH3",
+      targetCodes: [6,2,3,4]
+    },
+    {
+      label: "English 1",
+      code: "ELA1",
+      targetCodes: [5,6,7,8]
+    },
+    {
+      label: "English 2",
+      code: "ELA2",
+      targetCodes: [8,9,10,11]
+    }
+  ]
+};

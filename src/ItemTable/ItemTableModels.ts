@@ -22,7 +22,7 @@ export interface HeaderSortModel {
 export interface SortColumnModel {
   header: HeaderType;
   className: string;
-  accessor: (label: ItemCardModel) => string | number;
+  accessor: (label: ItemCardModel) => (string | number)[];
   compare: (a: ItemCardModel, b: ItemCardModel) => number;
 }
 
@@ -30,13 +30,13 @@ export const headerColumns: SortColumnModel[] = [
   {
     header: "Item",
     className: "item",
-    accessor: label => label.itemKey,
+    accessor: label => [label.itemKey],
     compare: (a, b) => a.itemKey - b.itemKey
   },
   {
     header: "Claim/Target",
     className: "claimAndTarget",
-    accessor: label => label.claimLabel + "/" + label.targetShortName,
+    accessor: label => [label.claimLabel, label.targetShortName],
     compare: (a, b) => {
       if (a.claimCode < b.claimCode || a.targetShortName < b.targetShortName) {
         return SortDirection.Ascending;
@@ -53,19 +53,19 @@ export const headerColumns: SortColumnModel[] = [
   {
     header: "Subject",
     className: "subject",
-    accessor: label => label.subjectLabel,
+    accessor: label => [label.subjectLabel],
     compare: (a, b) => a.subjectCode.localeCompare(b.subjectCode)
   },
   {
     header: "Grade",
     className: "grade",
-    accessor: label => label.gradeLabel,
+    accessor: label => [label.gradeLabel],
     compare: (a, b) => a.grade - b.grade
   },
   {
     header: "Item Type",
     className: "interactionType",
-    accessor: label => label.interactionTypeLabel,
+    accessor: label => [label.interactionTypeLabel],
     compare: (a, b) =>
       a.interactionTypeCode.localeCompare(b.interactionTypeCode)
   }

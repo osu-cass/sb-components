@@ -1,15 +1,29 @@
 import * as React from "react";
 
+/**
+ * Names of the different tab types.
+ * @type {Tabs}
+ */
 export type Tabs = "viewer" | "rubric" | "information";
 
+/**
+ * ItemTabsProps props
+ * @export
+ * @interface ItemTabsProps
+ */
 export interface ItemTabsProps {
   changedTab: (tab: Tabs) => void;
   selectedTab: Tabs;
+  showRubricTab?: boolean;
 }
 
-export interface State {}
-
-export class ItemTabs extends React.Component<ItemTabsProps, State> {
+/**
+ * ItemTabs displays options for view state of a selected item.
+ * @export
+ * @class ItemTabs
+ * @extends {React.Component<ItemTabsProps, {}>}
+ */
+export class ItemTabs extends React.Component<ItemTabsProps, {}> {
   private select: Tabs;
 
   constructor(props: ItemTabsProps) {
@@ -20,44 +34,45 @@ export class ItemTabs extends React.Component<ItemTabsProps, State> {
     };
   }
 
+  /**
+   * event handler for view state.
+   */
   onClick = (selectedVal: Tabs) => {
     this.props.changedTab(selectedVal);
   };
 
-  render() {
+  /**
+   * renders individual tab components
+   * @param {string} label
+   * @param {Tabs} tabType
+   * @returns
+   */
+  renderTab(label: string, tabType: Tabs) {
     return (
-      <div className="tabs">
-        <div
-          className={
-            this.props.selectedTab == "viewer"
-              ? "selected-tab"
-              : "tab-not-selected"
-          }
-          onClick={() => this.onClick("viewer")}
-        >
-          Item Viewer
-        </div>
-        <div
-          className={
-            this.props.selectedTab == "rubric"
-              ? "selected-tab"
-              : "tab-not-selected"
-          }
-          onClick={() => this.onClick("rubric")}
-        >
-          Rubric and Exemplar
-        </div>
-        <div
-          className={
-            this.props.selectedTab == "information"
-              ? "selected-tab"
-              : "tab-not-selected"
-          }
-          onClick={() => this.onClick("information")}
-        >
-          Item Information
-        </div>
-      </div>
+      <li
+        role="button"
+        className={
+          this.props.selectedTab === tabType ? "nav-item active" : "nav-item"
+        }
+        onClick={() => this.onClick(tabType)}
+      >
+        <a className="nav-link">{label}</a>
+      </li>
+    );
+  }
+
+  render() {
+    let rubricTab;
+    if (this.props.showRubricTab && this.props.showRubricTab === true) {
+      rubricTab = this.renderTab("Rubric and Exemplar", "rubric");
+    }
+
+    return (
+      <ul className="nav nav-tabs">
+        {this.renderTab("Item Viewer", "viewer")}
+        {rubricTab}
+        {this.renderTab("Item Information", "information")}
+      </ul>
     );
   }
 }

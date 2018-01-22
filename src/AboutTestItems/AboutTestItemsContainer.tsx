@@ -1,9 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import * as $ from "jquery";
-import { AboutItem, AboutItemModel, ItemViewerFrame } from "../index";
+import {
+  AboutItem,
+  AboutItemModel,
+  ItemViewerFrame,
+  LoadingOverlay,
+  Select
+} from "../index";
 import { Resource, getRequest, getResourceContent } from "../ApiModel";
-import { RouteComponentProps } from "react-router";
 import {
   AboutTestItemsModel,
   InteractionTypeModel,
@@ -16,13 +20,15 @@ export interface AboutTestItemContainerState {
   aboutThisItemViewModel: Resource<AboutItemModel>;
   aboutItemsViewModel: Resource<AboutTestItemsModel>;
   hasError: boolean;
+  loading: boolean;
 }
 
-export interface AboutTestItemContainerProps
-  extends RouteComponentProps<AboutTestItemsParams> {
+export interface AboutTestItemContainerProps {
+  params: AboutTestItemsParams;
   aboutClient: (
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
+  showRubrics: boolean;
 }
 
 export class AboutTestItemsContainer extends React.Component<
@@ -34,15 +40,17 @@ export class AboutTestItemsContainer extends React.Component<
     this.state = {
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
-      selectedCode: this.props.match.params.itemType,
-      hasError: false
+      selectedCode: this.props.params.itemType,
+      hasError: false,
+      loading: true
     };
+  }
 
+  componentDidMount() {
     this.fetchUpdatedViewModel(this.state.selectedCode);
   }
 
-  handleChange = (e: React.FormEvent<HTMLSelectElement>) => {
-    const newCode = e.currentTarget.value;
+  handleChange = (newCode: string) => {
     if (newCode !== this.state.selectedCode) {
       this.setState({
         selectedCode: newCode
@@ -67,6 +75,7 @@ export class AboutTestItemsContainer extends React.Component<
     this.setState({
       aboutThisItemViewModel: { kind: "failure" },
       aboutItemsViewModel: { kind: "failure" },
+      loading: false,
       hasError: true
     });
   }
@@ -85,6 +94,7 @@ export class AboutTestItemsContainer extends React.Component<
     }
 
     this.setState({
+      selectedCode,
       itemUrl: viewModel.itemUrl,
       aboutThisItemViewModel: {
         kind: "success",
@@ -92,7 +102,7 @@ export class AboutTestItemsContainer extends React.Component<
       },
       aboutItemsViewModel: { kind: "success", content: viewModel },
       hasError: false,
-      selectedCode: selectedCode
+      loading: false
     });
   };
 
@@ -105,6 +115,7 @@ export class AboutTestItemsContainer extends React.Component<
     }
 
     return (
+      // tslint:disable-next-line:react-no-dangerous-html
       <div
         aria-live="polite"
         aria-relevant="text"
@@ -114,25 +125,28 @@ export class AboutTestItemsContainer extends React.Component<
     );
   }
 
-  renderInteractionTypesSelect(interactionTypes: InteractionTypeModel[]) {
-    let items: JSX.Element[] = [];
-    for (const i of interactionTypes) {
-      items.push(
-        <option key={i.code} value={i.code}>
-          {" "}
-          {i.label}{" "}
-        </option>
-      );
-    }
+  renderInteractionTypesSelect(
+    interactionTypes: InteractionTypeModel[]
+  ): JSX.Element {
+    const { selectedCode } = this.state;
+
+    const selectOptions = interactionTypes.map(it => {
+      return {
+        label: it.label,
+        value: it.code,
+        disabled: false,
+        selected: selectedCode === it.code
+      };
+    });
 
     return (
-      <select
-        className="form-control"
+      <Select
+        label="Item Types"
+        labelClass="hidden"
+        selected={selectedCode || ""}
+        options={selectOptions}
         onChange={this.handleChange}
-        value={this.state.selectedCode}
-      >
-        {items}
-      </select>
+      />
     );
   }
 
@@ -144,14 +158,12 @@ export class AboutTestItemsContainer extends React.Component<
     );
   }
 
-  renderItemFrame() {
-    const aboutThisItem = this.state.aboutThisItemViewModel;
-    if (
-      (aboutThisItem.kind === "success" ||
-        aboutThisItem.kind === "reloading") &&
-      aboutThisItem.content
-    ) {
-      return (
+  renderItemFrame(): JSX.Element {
+    const aboutThisItem = getResourceContent(this.state.aboutThisItemViewModel);
+    let content: JSX.Element;
+
+    if (aboutThisItem) {
+      content = (
         <div
           className="about-item-iframe"
           aria-live="polite"
@@ -167,54 +179,54 @@ export class AboutTestItemsContainer extends React.Component<
               role="group"
               aria-label="First group"
             >
-              <AboutItem {...aboutThisItem.content} />
+              <AboutItem
+                showRubrics={this.props.showRubrics}
+                {...aboutThisItem}
+              />
             </div>
           </div>
           <ItemViewerFrame url={this.state.itemUrl || ""} />
         </div>
       );
     } else {
-      return this.renderNoItem();
+      content = this.renderNoItem();
     }
+
+    return content;
   }
 
   private renderItemTypesGroup() {
-    const aboutItems = this.state.aboutItemsViewModel;
-    if (
-      (aboutItems.kind === "success" || aboutItems.kind === "reloading") &&
-      aboutItems.content
-    ) {
-      return (
+    const aboutItems = getResourceContent(this.state.aboutItemsViewModel);
+    let content: JSX.Element | undefined;
+
+    if (aboutItems) {
+      const { interactionTypes } = aboutItems;
+      content = (
         <div>
           <div className="about-items-dropdown form-group">
-            {this.renderInteractionTypesSelect(
-              aboutItems.content.interactionTypes
-            )}
+            {this.renderInteractionTypesSelect(interactionTypes)}
           </div>
-          {this.renderDescription(aboutItems.content.interactionTypes)}
+          {this.renderDescription(interactionTypes)}
         </div>
       );
-    } else {
-      return (
-        <p>
-          <em>Loading...</em>
-        </p>
-      );
     }
+
+    return content;
   }
 
-  private renderError() {
+  private renderError(): JSX.Element | undefined {
+    let content: JSX.Element | undefined;
     if (this.state.hasError) {
-      return (
+      content = (
         <div className="page-error">
           <p aria-label="Network error occurred">
             Network failure, please try again
           </p>
         </div>
       );
-    } else {
-      return null;
     }
+
+    return content;
   }
 
   public render() {
@@ -223,21 +235,23 @@ export class AboutTestItemsContainer extends React.Component<
       : this.renderNoItem();
 
     return (
-      <div className="container about-items">
-        <div className="about-items-info">
-          <h2>About Test Items</h2>
-          <div className="section section-light">
-            {this.renderError()}
-            <p className="about-items-text">
-              Smarter Balanced assessments use a variety of item types to
-              accurately measure what students know and can do. To learn more
-              and see an example item, select an item type below.
-            </p>
-            {this.renderItemTypesGroup()}
+      <LoadingOverlay loading={this.state.loading}>
+        <div className="container about-items">
+          <div className="about-items-info">
+            <h2 className="page-title">About Test Items</h2>
+            <div className="section section-light">
+              {this.renderError()}
+              <p className="about-items-text">
+                Smarter Balanced assessments use a variety of item types to
+                accurately measure what students know and can do. To learn more
+                and see an example item, select an item type below.
+              </p>
+              {this.renderItemTypesGroup()}
+            </div>
           </div>
+          <div className="section about-items-iframe">{itemFrame}</div>
         </div>
-        <div className="section about-items-iframe">{itemFrame}</div>
-      </div>
+      </LoadingOverlay>
     );
   }
 }

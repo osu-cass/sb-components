@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noEmitOnError": false,
+    "removeComments": false,
+    "declaration": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "../lib",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": ".",
+    "rootDirs": ["./src"],
+    "paths": {
+      "src": ["src/*"]
+    },
+    "lib": ["es5", "es6", "dom"],
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./typings"]
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "**/setupTest.ts", "**/__tests__/*"]
+}
