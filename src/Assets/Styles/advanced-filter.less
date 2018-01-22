@@ -69,6 +69,10 @@ div.filter-status {
   margin: 3px;
 }
 
+div.filter-status > button.btn {
+  margin: @spacing-item/2 @spacing-item/2;
+}
+
 .filter-subheader {
   display: flex;
   flex-direction: column;
@@ -93,6 +97,12 @@ div.filter-status {
 
 .filter-selection {
   padding: @spacing-unit/2;
+}
+
+.filter-selection button.btn:focus {
+  color: #ffffff;
+  background-color: @sb-gray;
+  border-color: @sb-gray;
 }
 
 .advanced-filter-container-expanded {
