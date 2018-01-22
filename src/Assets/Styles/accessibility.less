@@ -5,10 +5,27 @@
     flex-direction: column;
 }
 
+.green-title{
+    color: @green-dark;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
 .accessibility-dropdowns {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.accessibility-dropdown > .form-control {
+    min-width: 100%;
+}
+
+.accessibility-resource-type {
+    padding-left: @spacing-item;
+    padding-top: @spacing-item;
+    padding-bottom: @spacing-item; 
+    margin-bottom: @spacing-item;
 }
 
 .accessibility-dropdown {

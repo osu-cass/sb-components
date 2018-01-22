@@ -68,6 +68,7 @@ exports[`AccessibilityModal accessibility open 1`] = `
           ,  please visit the 
           <a
             href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ "
+            rel="noopener noreferrer"
             target="_blank"
           >
             Smarter Balanced Practice Test.
@@ -81,11 +82,18 @@ exports[`AccessibilityModal accessibility open 1`] = `
             className="accessibility-groups"
           >
             <div
+              className="accessibility-resource-type section-light"
               key="Universal Tools"
             >
-              <h3>
+              <h4
+                className="green-title"
+              >
+                <span
+                  className="fa fa-tasks"
+                />
+                 
                 Universal Tools
-              </h3>
+              </h4>
               <div
                 className="accessibility-dropdowns"
               >
@@ -255,6 +263,7 @@ exports[`AccessibilityModal defualt render 1`] = `
           ,  please visit the 
           <a
             href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ "
+            rel="noopener noreferrer"
             target="_blank"
           >
             Smarter Balanced Practice Test.
@@ -268,11 +277,18 @@ exports[`AccessibilityModal defualt render 1`] = `
             className="accessibility-groups"
           >
             <div
+              className="accessibility-resource-type section-light"
               key="Universal Tools"
             >
-              <h3>
+              <h4
+                className="green-title"
+              >
+                <span
+                  className="fa fa-tasks"
+                />
+                 
                 Universal Tools
-              </h3>
+              </h4>
               <div
                 className="accessibility-dropdowns"
               >
