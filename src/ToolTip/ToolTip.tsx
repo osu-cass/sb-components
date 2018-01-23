@@ -32,23 +32,32 @@ export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
     }
 
     const position = this.props.position || "top";
-    const shown = this.state.hovered || this.state.focused ? "shown" : "";
+    const shown = this.state.focused || this.state.hovered;
 
     const icon = this.props.displayIcon ? (
       <span className="fa fa-info-circle fa-sm" />
     ) : null;
 
+    const toolTipContent = shown ? (
+      <div className={"tool-tip-before " + position}>{this.props.helpText}</div>
+    ) : null;
+    const toolTipArrow = shown ? (
+      <div className={"tool-tip-after " + position} />
+    ) : null;
+
     return (
-      <span
-        className={"tool-tip " + position + " " + shown}
-        onMouseEnter={this.onHover}
-        onMouseLeave={this.offHover}
-        onFocus={this.onFocus}
-        onBlur={this.offFocus}
-        tabIndex={0}
-        tool-tip-data={this.props.helpText}
-      >
-        {this.props.children} {icon}
+      <span className={"tool-tip " + position}>
+        {toolTipContent}
+        <span
+          onMouseEnter={this.onHover}
+          onMouseLeave={this.offHover}
+          onFocus={this.onFocus}
+          onBlur={this.offFocus}
+          tabIndex={0}
+        >
+          {this.props.children} {icon}
+        </span>
+        {toolTipArrow}
       </span>
     );
   }

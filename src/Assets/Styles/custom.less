@@ -65,9 +65,8 @@ a.collapsible-label:visited {
   padding: @spacing-item;
 }
 
-.tool-tip:before {
-  content: attr(tool-tip-data);
-  display: none;
+.tool-tip-before {
+  display: block;
   z-index: 50;
   position: absolute;
   background: @sb-white;
@@ -77,8 +76,8 @@ a.collapsible-label:visited {
   border-radius: 4px;
 }
 
-.tool-tip.left:before,
-.tool-tip.bottom:before {
+.tool-tip-before.left,
+.tool-tip-before.bottom {
   left: 50%;
   -ms-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -86,19 +85,20 @@ a.collapsible-label:visited {
   transform: translateX(-50%);
 }
 
-.tool-tip.top:before {
+.tool-tip-before.top {
   bottom: 100%;
   margin-bottom: 6px;
 }
 
-.tool-tip.bottom:before {
+.tool-tip-before.bottom {
   top: 100%;
   margin-top: 6px;
 }
 
-.tool-tip:after {
+.tool-tip-after {
   content: "";
-  display: none;
+  display: block;
+  z-index: 50;
   position: absolute;
   width: 0;
   height: 0;
@@ -106,28 +106,22 @@ a.collapsible-label:visited {
   border-style: solid;
 }
 
-.tool-tip.top:after,
-.tool-tip.bottom:after {
+.tool-tip-after.top,
+.tool-tip-after.bottom {
   left: 50%;
   margin-left: -6px;
 }
 
-.tool-tip.top:after {
+.tool-tip-after.top {
   bottom: 100%;
   border-width: 6px 6px 0;
   border-top-color: @sb-white;
 }
 
-.tool-tip.bottom:after {
+.tool-tip-after.bottom {
   top: 100%;
   border-width: 0 6px 6px;
   border-bottom-color: @sb-white;
-}
-
-.tool-tip.shown:before,
-.tool-tip.shown:after {
-  display: block;
-  z-index: 50;
 }
 
 //## Tooltips
