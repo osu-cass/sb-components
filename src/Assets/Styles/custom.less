@@ -59,20 +59,70 @@ a.collapsible-label:visited {
 
 //ToolTipComponent
 .tool-tip {
+  display: inline-block;
   position: relative;
-  left: 50%;
-  bottom: 100%;
+  cursor: help;
+  padding: @spacing-item;
+}
+
+.tool-tip:before {
+  content: attr(data-tooltip);
+  display: block;
+  z-index: 50;
+  position: absolute;
   background: @sb-white;
-  box-shadow: @box-shadow;
-  max-width: 500px;
+  padding: 4px 8px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.tool-tip.left:before,
+.tool-tip.bottom:before {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.tool-tip.top:before {
+  bottom: 100%;
+  margin-bottom: 6px;
+}
+
+.tool-tip.bottom:before {
+  top: 100%;
+  margin-top: 6px;
 }
 
 .tool-tip:after {
-  border-top: 20px solid @sb-white;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  height: 0px;
-  width: 0px;
+  content: "";
+  display: block;
+  z-index: 50;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tool-tip.top:after,
+.tool-tip.bottom:after {
+  left: 50%;
+  margin-left: -6px;
+}
+
+.tool-tip.top:after {
+  bottom: 100%;
+  border-width: 6px 6px 0;
+  border-top-color: @sb-white;
+}
+
+.tool-tip.bottom:after {
+  top: 100%;
+  border-width: 0 6px 6px;
+  border-bottom-color: @sb-white;
 }
 
 //## Tooltips

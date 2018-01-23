@@ -5937,3 +5937,5 @@ exports[`Storyshots Style Buttons bg-light 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots ToolTip with just text 1`] = `null`;

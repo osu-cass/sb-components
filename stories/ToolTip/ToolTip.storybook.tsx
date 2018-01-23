@@ -1,7 +1,8 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { ToolTip } from "src/ToolTip/ToolTip";
+import { CenterDecorator } from "../CenterDecorator";
 
-storiesOf("ToolTip", module).add("with just text", () => (
-  <ToolTip>This is the content of the tool tip.</ToolTip>
-));
+storiesOf("ToolTip", module)
+  .addDecorator(CenterDecorator)
+  .add("with just text", () => <ToolTip helpText="test">Testing</ToolTip>);
