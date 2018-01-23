@@ -1,12 +1,5 @@
 import * as React from "react";
 
-export enum ToolTipPosition {
-  left = "left",
-  right = "right",
-  bottom = "bottom",
-  top = "top"
-}
-
 export interface ToolTipProps {
   helpText?: string;
   displayIcon?: boolean;
@@ -14,7 +7,8 @@ export interface ToolTipProps {
 }
 
 export interface ToolTipState {
-  shown: boolean;
+  hovered: boolean;
+  focused: boolean;
 }
 
 export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
@@ -22,32 +16,39 @@ export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
     super(props);
 
     this.state = {
-      shown: false
+      hovered: false,
+      focused: false
     };
   }
 
-  showTip = () => this.setState({ shown: true });
-  hideTip = () => this.setState({ shown: false });
+  onHover = () => this.setState({ hovered: true });
+  offHover = () => this.setState({ hovered: false });
+  onFocus = () => this.setState({ focused: true });
+  offFocus = () => this.setState({ focused: false });
 
   render() {
     if (!this.props.helpText) {
       return null;
     }
 
-    const toolTipJSX = this.state.shown
-      ? [<span className="tool-tip">{this.props.helpText}</span>]
-      : null;
+    const position = this.props.position || "top";
+    const shown = this.state.hovered || this.state.focused ? "shown" : "";
+
+    const icon = this.props.displayIcon ? (
+      <span className="fa fa-info-circle fa-sm" />
+    ) : null;
+
     return (
       <span
-        // onMouseEnter={this.showTip}
-        // onMouseLeave={this.hideTip}
-        onClick={this.showTip}
-        // onSelect={this.showTip}
-        // onBlur={this.hideTip}
+        className={"tool-tip " + position + " " + shown}
+        onMouseEnter={this.onHover}
+        onMouseLeave={this.offHover}
+        onFocus={this.onFocus}
+        onBlur={this.offFocus}
         tabIndex={0}
+        tool-tip-data={this.props.helpText}
       >
-        {this.props.children} <span className="fa fa-info-circle fa-sm" />
-        {toolTipJSX}
+        {this.props.children} {icon}
       </span>
     );
   }

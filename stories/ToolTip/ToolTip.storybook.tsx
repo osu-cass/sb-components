@@ -5,4 +5,8 @@ import { CenterDecorator } from "../CenterDecorator";
 
 storiesOf("ToolTip", module)
   .addDecorator(CenterDecorator)
-  .add("with just text", () => <ToolTip helpText="test">Testing</ToolTip>);
+  .add("with just text", () => (
+    <ToolTip helpText="test" displayIcon={true}>
+      Testing
+    </ToolTip>
+  ));

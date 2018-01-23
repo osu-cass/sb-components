@@ -66,8 +66,8 @@ a.collapsible-label:visited {
 }
 
 .tool-tip:before {
-  content: attr(data-tooltip);
-  display: block;
+  content: attr(tool-tip-data);
+  display: none;
   z-index: 50;
   position: absolute;
   background: @sb-white;
@@ -98,8 +98,7 @@ a.collapsible-label:visited {
 
 .tool-tip:after {
   content: "";
-  display: block;
-  z-index: 50;
+  display: none;
   position: absolute;
   width: 0;
   height: 0;
@@ -123,6 +122,12 @@ a.collapsible-label:visited {
   top: 100%;
   border-width: 0 6px 6px;
   border-bottom-color: @sb-white;
+}
+
+.tool-tip.shown:before,
+.tool-tip.shown:after {
+  display: block;
+  z-index: 50;
 }
 
 //## Tooltips
