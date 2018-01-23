@@ -51,7 +51,6 @@ export class ItemBank extends React.Component<{}, ItemBankState> {
               <AboutItem showRubrics={false} {...aboutThisItem} />
             </div>
             {this.renderRightNav()}
-            {this.renderRevisionsContainer()}
           </div>
           <ItemViewerFrame url={this.state.itemUrl || ""} />
         </div>
@@ -82,18 +81,38 @@ export class ItemBank extends React.Component<{}, ItemBankState> {
   renderRevisions = (rev: string) => {
     const revision = rev;
     return (
-      <ul>
-        <li>{revision}</li>
-      </ul>
+      <div className="revisions-links">
+        <ul>
+          <li>{revision}</li>
+        </ul>
+      </div>
     );
   };
 
   renderRevisionsContainer() {
     const revisions = this.state.revisions.map(this.renderRevisions);
-    return <div className="revisions">{revisions}</div>;
+    return (
+      <div className="revisions section-light">
+        <h3>Revisions</h3>
+        {revisions}
+      </div>
+    );
+  }
+
+  renderItemBankPage() {
+    return (
+      <div className="revisions-container container">
+        {this.renderRevisionsContainer()}
+        {this.renderItemFrame()}
+      </div>
+    );
   }
 
   render() {
-    return <div className="container">{this.renderItemFrame()}</div>;
+    return (
+      <div className="revisions-container container">
+        {this.renderItemBankPage()}
+      </div>
+    );
   }
 }
