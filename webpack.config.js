@@ -31,7 +31,7 @@ module.exports = env => {
         libraryTarget: "commonjs"
       },
       externals: {
-        jquery: "jQuery",
+        jquery: "jquery",
         react: {
           root: "React",
           commonjs: "react"
