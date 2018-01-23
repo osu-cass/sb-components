@@ -28,7 +28,7 @@ export const Select: React.SFC<SelectProps> = props => {
 
   return (
     <label>
-      <span className={`label ${props.labelClass}`}>{props.label}</span>
+      <span className={`${props.labelClass}`}>{props.label}</span>
       <select
         className={`form-control ${props.className}`}
         onChange={e => props.onChange(e.target.value)}
