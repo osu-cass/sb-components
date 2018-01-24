@@ -15,4 +15,9 @@ storiesOf("ToolTip", module)
     <ToolTip helpText="test" displayIcon={true}>
       <button>Button</button>
     </ToolTip>
+  ))
+  .add("display below text", () => (
+    <ToolTip helpText="test" position="bottom">
+      Testing
+    </ToolTip>
   ));
