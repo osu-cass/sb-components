@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "1.2.0-alpha.5",
+  "version": "1.2.0",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -13,7 +13,7 @@
     "webpack:prod": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "webpack": "./node_modules/.bin/webpack --config webpack.config.js --env.dev",
     "watch": "./node_modules/.bin/webpack --config webpack.config.js --env.dev --watch",
-    "prepare": "npm run clean && npm run test && npm run webpack:prod",
+    "prepublishOnly": "npm run clean && npm run test && npm run webpack:prod",
     "precommit": "lint-staged",
     "start": "npm run storybook",
     "test": "./node_modules/.bin/jest",
