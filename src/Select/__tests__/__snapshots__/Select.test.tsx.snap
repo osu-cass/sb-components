@@ -3,7 +3,7 @@
 exports[`Select handles on change event 1`] = `
 <label>
   <span
-    className="label undefined"
+    className="undefined"
   >
     select
   </span>
@@ -31,7 +31,7 @@ exports[`Select handles on change event 1`] = `
 exports[`Select handles on change event 2`] = `
 <label>
   <span
-    className="label undefined"
+    className="undefined"
   >
     select
   </span>

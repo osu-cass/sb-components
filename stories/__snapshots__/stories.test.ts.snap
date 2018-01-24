@@ -1646,7 +1646,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
     >
       <label>
         <span
-          className="label undefined"
+          className="undefined"
         >
           Grade
         </span>
@@ -1747,7 +1747,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     >
       <label>
         <span
-          className="label undefined"
+          className="undefined"
         >
           Grade
         </span>
@@ -1871,7 +1871,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
   >
     <label>
       <span
-        className="label undefined"
+        className="undefined"
       >
         Grade
       </span>
@@ -1947,7 +1947,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
   >
     <label>
       <span
-        className="label undefined"
+        className="undefined"
       >
         Grade
       </span>
@@ -2349,7 +2349,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       >
         <label>
           <span
-            className="label undefined"
+            className="undefined"
           >
             Grade
           </span>
@@ -5938,4 +5938,106 @@ exports[`Storyshots Style Buttons bg-light 1`] = `
 </div>
 `;
 
-exports[`Storyshots ToolTip with just text 1`] = `null`;
+exports[`Storyshots ToolTip info for button 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip top"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      <button>
+        Button
+      </button>
+       
+      <span
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots ToolTip with icon 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip top"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      Testing
+       
+      <span
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just text 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip top"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      Testing
+       
+    </span>
+  </span>
+</div>
+`;

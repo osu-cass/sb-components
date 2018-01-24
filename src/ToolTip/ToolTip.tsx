@@ -49,6 +49,7 @@ export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
       <span className={"tool-tip " + position}>
         {toolTipContent}
         <span
+          className="tool-tip-hoverable"
           onMouseEnter={this.onHover}
           onMouseLeave={this.offHover}
           onFocus={this.onFocus}
