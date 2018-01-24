@@ -1,3 +1,4 @@
+import { ItemBankPropsMockModel } from "../../mocks/ItemBank/mocks";
 import { Layout } from "../../src/index";
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
@@ -15,5 +16,8 @@ import {
 storiesOf("Item Bank", module)
   .addDecorator(RouterDecorator)
   .add("default", () => (
-    <Layout children={<ItemBank />} siteName="Item Bank" />
+    <Layout
+      children={<ItemBank {...ItemBankPropsMockModel} />}
+      siteName="Item Bank"
+    />
   ));

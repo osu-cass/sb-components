@@ -20,3 +20,33 @@
     -webkit-box-shadow: @box-shadow-light;
     box-shadow: @box-shadow-light;
 }
+
+.revisions-header {
+    font-weight: bold;
+}
+
+.revisions-details {
+    font-size: 10.5px;
+}
+
+.revisions-message {
+    display: none;
+    font-size: 10.5px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    padding: 3px;
+    margin-left: -5px;
+    margin-top: 7px;
+    border-style: solid;
+    border-color: @grey-border-color;
+    border-width: 1px;
+    border-radius: @spacing-item;
+    -moz-box-shadow: @box-shadow-light;
+    -webkit-box-shadow: @box-shadow-light;
+    box-shadow: @box-shadow-light;
+}
+
+.revisions-links:hover  .revisions-message {
+    display: inline-block;
+}

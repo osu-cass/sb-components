@@ -7,23 +7,33 @@ import {
 } from "../index";
 import * as React from "react";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
+// import { RevisionMockModel } from "mocks/ItemBank/mocks";
 import { AccResourceGroupModel } from "../index";
+
+export interface RevisionModel {
+  author: string;
+  date: Date;
+  commitMessage: string;
+  commitHash: string;
+}
+
+export interface ItemBankProps {
+  revisions: RevisionModel[];
+}
 
 export interface ItemBankState {
   itemUrl?: string;
   aboutThisItemViewModel: AboutItemModel;
   accResourceGroups: AccResourceGroupModel[];
-  revisions: string[];
 }
 
-export class ItemBank extends React.Component<{}, ItemBankState> {
-  constructor(props: {}) {
+export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
+  constructor(props: ItemBankProps) {
     super(props);
     this.state = {
       aboutThisItemViewModel: AboutItemMockModel,
       itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377",
-      accResourceGroups: [],
-      revisions: ["sample", "revisions", "for", "styling"]
+      accResourceGroups: []
     };
   }
 
@@ -78,22 +88,30 @@ export class ItemBank extends React.Component<{}, ItemBankState> {
     );
   }
 
-  renderRevisions = (rev: string) => {
-    const revision = rev;
+  renderRevisions = (rev: RevisionModel) => {
     return (
-      <div className="revisions-links">
-        <ul>
-          <li>{revision}</li>
+      <div className="revisions-overview" key={rev.commitHash}>
+        <ul className="revisions-list">
+          <li>
+            <div className="revisions-links">
+              <a>{rev.commitHash}</a>
+              <div className="revisions-message">{rev.commitMessage}</div>
+            </div>
+            <div className="revisions-details">
+              {rev.author}-
+              {rev.date.getMonth() + 1}/{rev.date.getDate()}
+            </div>
+          </li>
         </ul>
       </div>
     );
   };
 
   renderRevisionsContainer() {
-    const revisions = this.state.revisions.map(this.renderRevisions);
+    const revisions = this.props.revisions.map(this.renderRevisions);
     return (
       <div className="revisions section-light">
-        <h3>Revisions</h3>
+        <h3 className="revisions-header">Revisions</h3>
         {revisions}
       </div>
     );
