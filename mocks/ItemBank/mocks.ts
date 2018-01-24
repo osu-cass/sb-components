@@ -10,7 +10,7 @@ export const RevisionMockModelOne: ItemBank.RevisionModel = {
 export const RevisionMockModelTwo: ItemBank.RevisionModel = {
     author: "Pierce Hawthorne",
     date: new Date(),
-    commitMessage: "Fixed component",
+    commitMessage: "I want to see what happens when there is a much longer commit message than all of the rest",
     commitHash: "h4lso6"
 }
 

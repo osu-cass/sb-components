@@ -88,6 +88,25 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     );
   }
 
+  renderCommitMessage(rev: RevisionModel) {
+    return (
+      <div className="revisions-message">
+        <h3 className="revisions-link-header">
+          {rev.date.toDateString()} - {rev.date.toLocaleTimeString()}
+        </h3>
+        <div className="revisions-commit-message">
+          <b>Commit: </b>
+          {rev.commitMessage}
+          <br />
+          <b>Author: </b> {rev.author}
+          <br />
+          <b>Commit Hash: </b>
+          {rev.commitHash}
+        </div>
+      </div>
+    );
+  }
+
   renderRevisions = (rev: RevisionModel) => {
     return (
       <div className="revisions-overview" key={rev.commitHash}>
@@ -95,16 +114,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
           <li>
             <div className="revisions-links">
               <a>{rev.commitHash}</a>
-              <div className="revisions-message">
-                <h3 className="revisions-link-header">
-                  {rev.date.toDateString()} - {rev.date.toLocaleTimeString()}
-                </h3>
-                <div className="revisions-commit-message">
-                  <b>Commit:</b> {rev.commitMessage}
-                  <br />
-                  <b>Author:</b> {rev.author}
-                </div>
-              </div>
+              {this.renderCommitMessage(rev)}
             </div>
             <div className="revisions-details">
               {rev.author}-
