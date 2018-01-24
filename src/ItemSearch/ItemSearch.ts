@@ -20,7 +20,7 @@ import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
 import { Filter } from "../Filter/Filter";
 
-// tslint:disable-next-line:no-stateless-class
+// tslint:disable-next-line:no-stateless-class no-unnecessary-class
 export class ItemSearch {
   public static filterToSearchApiModel(
     filterModels: FilterCategoryModel[]
@@ -79,8 +79,7 @@ export class ItemSearch {
     category: FilterCategoryModel,
     currentModel: SearchAPIParamsModel
   ): SearchAPIParamsModel {
-    const newModel = Object.assign({}, currentModel);
-    // tslint:disable-next-line:switch-default
+    const newModel = { ...currentModel };
     switch (category.code) {
       case FilterType.Grade:
         newModel.gradeLevels = Filter.getSelectedGrade([category]);
@@ -125,6 +124,9 @@ export class ItemSearch {
       case FilterType.Target:
         const targetCodes = Filter.getSelectedTargets([category]);
         newModel.targets = targetCodes;
+        break;
+      default:
+        break;
     }
 
     return newModel;
@@ -154,8 +156,10 @@ export class ItemSearch {
       (model.claims || []).find(cm => cm.code === c)
     );
     const visibleTargets = visibleClaimModels
-      .filter(c => (searchParams.claims || []).indexOf(c!.code) !== -1)
-      .map(c => c!.targetCodes || [])
+      .filter(
+        c => (c ? (searchParams.claims || []).indexOf(c.code) !== -1 : false)
+      )
+      .map(c => (c ? c.targetCodes || [] : []))
       .reduce((prev, curr) => prev.concat(curr), []);
 
     searchParams.claims = searchParams.claims

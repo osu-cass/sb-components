@@ -4,10 +4,9 @@ import {
   TargetModel,
   SearchAPIParamsModel
 } from "src/ItemSearch/ItemSearchModels";
-import { FilterOptionModel, FilterType } from "src/Filter/FilterModels";
+import { FilterCategoryModel, FilterOptionModel, FilterType } from "src/Filter/FilterModels";
 import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
 import { ItemsSearchModel } from "../../src/ItemSearch/ItemSearchModels";
-import { FilterCategoryModel } from "lib/Filter/FilterModels";
 
 export const itemCards: ItemCardModel[] = [
   {

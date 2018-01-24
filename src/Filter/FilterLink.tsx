@@ -30,6 +30,7 @@ export const FilterLink: React.SFC<FilterLinkProps> = ({ filterId }) => {
       role="button"
       onClick={handleClick}
     >
+      <span className="fa fa-filter" />
       Jump to Filter
     </a>
   );
