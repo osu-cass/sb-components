@@ -95,7 +95,16 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
           <li>
             <div className="revisions-links">
               <a>{rev.commitHash}</a>
-              <div className="revisions-message">{rev.commitMessage}</div>
+              <div className="revisions-message">
+                <h3 className="revisions-link-header">
+                  {rev.date.toDateString()} - {rev.date.toLocaleTimeString()}
+                </h3>
+                <div className="revisions-commit-message">
+                  <b>Commit:</b> {rev.commitMessage}
+                  <br />
+                  <b>Author:</b> {rev.author}
+                </div>
+              </div>
             </div>
             <div className="revisions-details">
               {rev.author}-
