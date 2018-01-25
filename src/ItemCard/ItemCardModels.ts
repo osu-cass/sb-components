@@ -25,3 +25,7 @@ export interface ItemCardModel {
   ccssDescription?: string;
   calculator?: boolean;
 }
+
+export function itemIdEqual(a: ItemCardModel, b: ItemCardModel) {
+  return a.itemKey === b.itemKey && a.bankKey === b.bankKey;
+}

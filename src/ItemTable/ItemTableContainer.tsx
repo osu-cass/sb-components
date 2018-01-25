@@ -6,7 +6,8 @@ import {
   HeaderSortModel,
   SortColumnModel,
   SortDirection,
-  headerColumns
+  headerColumns,
+  ColumnGroup
 } from "./ItemTableModels";
 import { ItemModel } from "../ItemPage/ItemPageModels";
 import { HeaderTable } from "./HeaderTable";
@@ -56,9 +57,9 @@ export class ItemTableContainer extends React.Component<
    * sorts array in state or its sort status will be removed.
    * @memberOf {ItemTableContainer}
    * @function {onClickHeader}
-   * @param {SortColumnModel} col
+   * @param {ColumnGroup} col
    */
-  onClickHeader = (col: SortColumnModel) => {
+  onClickHeader = (col: ColumnGroup) => {
     const newSorts = (this.state.sorts || []).slice();
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
@@ -163,7 +164,7 @@ export class ItemTableContainer extends React.Component<
       if (itemCards.length !== 0) {
         content = (
           <ItemTable
-            mapRows={itemCards}
+            cardRows={itemCards}
             onRowExpand={this.handleExpandItem}
             onRowSelect={this.handleSelectItem}
             sort={this.state.sorts}
@@ -181,7 +182,7 @@ export class ItemTableContainer extends React.Component<
 
   render() {
     return (
-      <div>
+      <div className="section section-light">
         <table className={this.props.isLinkTable ? "link-table" : "item-table"}>
           {this.renderTableHeader()}
           {this.renderTable()}

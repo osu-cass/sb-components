@@ -89,7 +89,7 @@ export {
   ItemCardCondensed,
   ItemCardCondensedProps
 } from "./ItemCard/ItemCardCondensed";
-export { ItemCardModel } from "./ItemCard/ItemCardModels";
+export { ItemCardModel, itemIdEqual } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
 
@@ -147,15 +147,17 @@ export {
   ItemTableContainer,
   ItemTableContainerProps
 } from "./ItemTable/ItemTableContainer";
-export { HeaderTable } from "./ItemTable/HeaderTable";
+export { HeaderTable, HeaderTableProps } from "./ItemTable/HeaderTable";
 export {
   SortColumnModel,
   headerColumns,
   HeaderType,
   HeaderSortModel,
-  SortDirection
+  SortDirection,
+  ColumnGroup
 } from "./ItemTable/ItemTableModels";
 
+export { ItemTableRow, ItemTableRowProps } from "./ItemTable/ItemTableRow";
 //
 // ItemViewer Component
 //
@@ -229,6 +231,11 @@ export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 //
 export { Select, SelectProps } from "./Select/Select";
 export { SelectOption, SelectOptionProps } from "./Select/SelectOption";
+
+//
+// ToolTip
+//
+export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
 
 //
 // ApiModel

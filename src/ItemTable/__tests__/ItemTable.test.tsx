@@ -1,79 +1,45 @@
+import "jsdom-global/register";
 import * as React from "react";
-import { ItemTable } from "../ItemTable";
+import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
+
+import { ItemTable, ItemTableProps } from "../ItemTable";
+import { itemCardList } from "../../../mocks/ItemCard/mocks";
+import { tabClassNames } from "../../../mocks/ItemTable/mocks";
+import { itemHandler } from "./mocks";
 
 import {
   ItemCardModel,
   GradeLevels,
   RubricModel,
   AboutItemModel,
-  Resource
+  Resource,
+  headerColumns
 } from "src/index";
 
 describe("ItemTable", () => {
-  const itemCards: ItemCardModel[] = [
-    {
-      bankKey: 1,
-      itemKey: 3,
-      title: "",
-      grade: GradeLevels.All,
-      gradeLabel: "",
-      subjectCode: "",
-      subjectLabel: "",
-      claimCode: "",
-      claimLabel: "",
-      targetShortName: "",
-      interactionTypeCode: "",
-      interactionTypeLabel: "",
-      isPerformanceItem: true,
-      targetHash: 323
-    }
-  ];
-
-  const rubrics: RubricModel[] = [];
-
-  const content: AboutItemModel = {
-    rubrics,
-    itemCardViewModel: itemCards[0],
-    depthOfKnowledge: "depthOfKnowledge",
-    targetDescription: "targetDescription",
-    commonCoreStandardsDescription: "commonCoreStandardsDescription",
-    educationalDifficulty: "educationalDifficulty",
-    evidenceStatement: "evidenceStatement"
-  };
-
-  const item: Resource<AboutItemModel> = {
-    kind: "success",
-    content
-  };
-
-  const props = {
-    tableRef: jest.fn(),
-    mapRows: [],
-    rowOnClick: jest.fn(),
+  const props: ItemTableProps = {
+    cardRows: itemCardList,
+    onRowExpand: itemHandler,
+    onRowSelect: itemHandler,
     sort: [],
-    columns: [],
-    selectedRow: {
-      bankKey: 1,
-      itemKey: 123,
-      title: "test_title",
-      grade: 1,
-      gradeLabel: "1",
-      subjectCode: "Math",
-      subjectLabel: "MTH",
-      claimCode: "claim_1234",
-      claimLabel: "claim_math",
-      targetShortName: "",
-      interactionTypeCode: "type01",
-      interactionTypeLabel: "type01label",
-      isPerformanceItem: false,
-      targetHash: 2323
-    },
-    item
+    columns: headerColumns,
+    isLinkTable: false
   };
+
+  const wrapper = mount(<ItemTable {...props} />);
 
   it("matches snapshot", () => {
-    expect(shallow(<ItemTable {...props} />)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("calls onRowSelection()", () => {
+    const items = wrapper.find("td.item");
+    items.forEach(item => {
+      item.simulate("click");
+      expect(props.onRowSelect).toHaveBeenCalled();
+      expect(props.onRowExpand).toHaveBeenCalled();
+    });
   });
 });

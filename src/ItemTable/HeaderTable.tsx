@@ -2,7 +2,8 @@ import * as React from "react";
 import {
   SortColumnModel,
   HeaderSortModel,
-  SortDirection
+  SortDirection,
+  ColumnGroup
 } from "./ItemTableModels";
 
 /**
@@ -10,10 +11,9 @@ import {
  * @interface HeaderTableProps
  */
 export interface HeaderTableProps {
-  columns: SortColumnModel[];
-  onHeaderClick: (header: SortColumnModel) => void;
+  columns: ColumnGroup[];
+  onHeaderClick: (header: ColumnGroup) => void;
   sorts: HeaderSortModel[];
-
   isLinkTable: boolean;
 }
 
@@ -41,20 +41,14 @@ const noSort = <span style={style} className="fa fa-sort" aria-hidden="true" />;
 export class HeaderTable extends React.Component<HeaderTableProps, {}> {
   constructor(props: HeaderTableProps) {
     super(props);
-    this.state = {
-      dirElem: undefined
-    };
   }
   /**
    * Send the clicked sort column to the parent to be added to the sorts list
    * using onHeaderClick prop.
-   * @param {SortColumnModel} sCol
+   * @param {ColumnGroup} sCol
    * @param {(HeaderSortModel | undefined)} hCol
    */
-  headerClickHandler = (
-    sCol: SortColumnModel,
-    hCol: HeaderSortModel | undefined
-  ) => {
+  headerClickHandler = (sCol: ColumnGroup, hCol?: HeaderSortModel) => {
     this.props.onHeaderClick(sCol);
   };
 
@@ -62,13 +56,13 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
    * Send the clicked sort column to the parent to be added to the sorts list
    * using onHeaderClick prop.
    * @param {React.KeyboardEvent<any>} e
-   * @param {SortColumnModel} sCol
+   * @param {HeaderColumnModel} sCol
    * @param {(HeaderSortModel | undefined)} hCol
    */
   headerKeyUpHandler = (
     e: React.KeyboardEvent<HTMLTableHeaderCellElement>,
-    sCol: SortColumnModel,
-    hCol: HeaderSortModel | undefined
+    sCol: ColumnGroup,
+    hCol?: HeaderSortModel
   ) => {
     if (e.keyCode === 13) {
       this.props.onHeaderClick(sCol);
@@ -97,10 +91,10 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
   /**
    * Renders a single table header element and the corresponding ascending, descending,
    * or 'not-sorted' symbol
-   * @param {SortColumnModel} col
+   * @param {ColumnGroup} col
    * @returns {JSX.Element}
    */
-  renderHeader(col: SortColumnModel): JSX.Element {
+  renderHeader(col: ColumnGroup): JSX.Element {
     const headerSort = this.props.sorts.find(
       hs => hs.col.header === col.header
     );
@@ -111,13 +105,13 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
     return (
       <th
         key={col.header}
-        className={col.className}
+        className={col.headerClassName}
         onClick={() => this.headerClickHandler(col, headerSort)}
         onKeyUp={e => this.headerKeyUpHandler(e, col, headerSort)}
         tabIndex={0}
         scope="col"
       >
-        <div className={col.className}>
+        <div className={col.headerClassName}>
           <span>{col.header}</span>
           {this.setDirElem(headerSort)}
         </div>
