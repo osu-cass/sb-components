@@ -20,7 +20,6 @@ import {
 
 export interface ItemTableContainerProps {
   onRowSelection: (item: ItemModel, reset: boolean) => void;
-
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item?: Resource<AboutItemModel>;

@@ -30,7 +30,7 @@ describe("ItemTableRow", () => {
     onRowSelect: itemHandler
   };
 
-  const wrapper = shallow(<ItemTableRow {...props} />);
+  const wrapper = mount(<ItemTableRow {...props} />);
   const wrapperExpanded = shallow(
     <ItemTableRow {...props} isExpanded={true} />
   );
@@ -41,5 +41,12 @@ describe("ItemTableRow", () => {
 
   it("matches expand snapshot", () => {
     expect(wrapperExpanded).toMatchSnapshot();
+  });
+
+  it("calls row events", () => {
+    const item = wrapper.find("td.item");
+    item.simulate("click");
+    expect(props.onRowSelect).toHaveBeenCalled();
+    expect(props.onRowExpand).toHaveBeenCalled();
   });
 });

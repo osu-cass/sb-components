@@ -15,11 +15,11 @@ import {
   Resource,
   ItemCardModel,
   ItemTableContainerProps,
-  ItemTableContainer
+  ItemTableContainer,
+  ItemCardViewer
 } from "../../index";
 
 describe("ItemPageTable", () => {
-  const rubrics: RubricModel[] = [];
   const selectedItem = itemCardList[0];
   const item: Resource<AboutItemModel> = {
     content: { ...AboutItemMockModel, itemCardViewModel: selectedItem },
@@ -52,6 +52,17 @@ describe("ItemPageTable", () => {
     items.forEach(item => {
       item.simulate("click");
       expect(props.onRowSelection).toHaveBeenCalled();
+      expect(props.onRowSelection).toHaveBeenCalled();
     });
+  });
+
+  it("expands", () => {
+    const item = wrapper.find("td.item").at(0);
+    item.simulate("click");
+    expect(wrapper).toMatchSnapshot();
+    const itemCardViewer = wrapper.findWhere(
+      node => node.type() === ItemCardViewer
+    );
+    expect(itemCardViewer).toBeDefined();
   });
 });

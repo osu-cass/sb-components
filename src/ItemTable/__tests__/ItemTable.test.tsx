@@ -8,6 +8,7 @@ import { ItemTable, ItemTableProps } from "../ItemTable";
 import { itemCardList } from "../../../mocks/ItemCard/mocks";
 import { tabClassNames } from "../../../mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
+import { AboutItemMockModel } from "../../../mocks/AboutItem/mocks";
 
 import {
   ItemCardModel,
@@ -17,8 +18,15 @@ import {
   Resource,
   headerColumns
 } from "src/index";
+import { ItemCardViewer } from "../../index";
 
 describe("ItemTable", () => {
+  const selectedItem = itemCardList[0];
+  const itemResource: Resource<AboutItemModel> = {
+    content: { ...AboutItemMockModel, itemCardViewModel: selectedItem },
+    kind: "success"
+  };
+
   const props: ItemTableProps = {
     cardRows: itemCardList,
     onRowExpand: itemHandler,
@@ -28,7 +36,14 @@ describe("ItemTable", () => {
     isLinkTable: false
   };
 
+  const propsExpanded: ItemTableProps = {
+    ...props,
+    item: itemResource,
+    expandedRow: selectedItem
+  };
+
   const wrapper = mount(<ItemTable {...props} />);
+  const wrapperExpanded = mount(<ItemTable {...propsExpanded} />);
 
   it("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
@@ -41,5 +56,13 @@ describe("ItemTable", () => {
       expect(props.onRowSelect).toHaveBeenCalled();
       expect(props.onRowExpand).toHaveBeenCalled();
     });
+  });
+
+  it("expands matches snapshot", () => {
+    expect(wrapperExpanded).toMatchSnapshot();
+    const itemCardViewer = wrapperExpanded.findWhere(
+      node => node.type() === ItemCardViewer
+    );
+    expect(itemCardViewer).toBeDefined();
   });
 });
