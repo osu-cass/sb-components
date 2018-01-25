@@ -7,7 +7,6 @@ import {
 } from "../index";
 import * as React from "react";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-// import { RevisionMockModel } from "mocks/ItemBank/mocks";
 import { AccResourceGroupModel } from "../index";
 
 export interface RevisionModel {
@@ -32,8 +31,8 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     super(props);
     this.state = {
       aboutThisItemViewModel: AboutItemMockModel,
-      itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377",
-      accResourceGroups: []
+      accResourceGroups: [],
+      itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377"
     };
   }
 
@@ -113,12 +112,12 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
         <ul className="revisions-list">
           <li>
             <div className="revisions-links">
-              <a>{rev.commitHash}</a>
+              <a href="#">{rev.commitHash}</a>
               {this.renderCommitMessage(rev)}
-            </div>
-            <div className="revisions-details">
-              {rev.author}-
-              {rev.date.getMonth() + 1}/{rev.date.getDate()}
+              <div className="revisions-details">
+                {rev.author}-
+                {rev.date.getMonth() + 1}/{rev.date.getDate()}
+              </div>
             </div>
           </li>
         </ul>
