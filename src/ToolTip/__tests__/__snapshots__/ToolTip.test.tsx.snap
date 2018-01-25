@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolTip displays help when hovered 1`] = `
+<span
+  className="tool-tip top"
+>
+  <div
+    className="tool-tip-before top"
+  >
+    test
+  </div>
+  <span
+    className="tool-tip-hoverable"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    tabIndex={0}
+  >
+    Sample text
+     
+    <span
+      className="fa fa-info-circle fa-sm"
+    />
+  </span>
+  <div
+    className="tool-tip-after top"
+  />
+</span>
+`;
+
+exports[`ToolTip matches snapshot 1`] = `
+<span
+  className="tool-tip top"
+>
+  <span
+    className="tool-tip-hoverable"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    tabIndex={0}
+  >
+    Sample text
+     
+    <span
+      className="fa fa-info-circle fa-sm"
+    />
+  </span>
+</span>
+`;

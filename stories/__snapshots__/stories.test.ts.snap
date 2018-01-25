@@ -1032,19 +1032,27 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Disabled
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Disabled
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1100,19 +1108,27 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Disabled Multi
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Disabled Multi
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1168,19 +1184,27 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Multi All Disabled
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi All Disabled
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1244,19 +1268,27 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Disabled
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Disabled
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1312,19 +1344,27 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Multi
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1380,19 +1420,27 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Multi All
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi All
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1456,19 +1504,27 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Multi All
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi All
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1532,19 +1588,27 @@ exports[`Storyshots Advanced Filter no options 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Subjects
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Subjects
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1587,19 +1651,27 @@ exports[`Storyshots Advanced Filter single select 1`] = `
     >
       <label>
         <span
-          className="tooltip-help"
-          data-tooltip="Subject Help"
-          data-tooltip-position="top"
+          className="tool-tip top"
         >
           <span
-            className="tooltip-label"
-            info-label="true"
+            className="tool-tip-hoverable"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            tabIndex={0}
           >
-            Subjects
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Subjects
+            </span>
+             
+            <span
+              className="fa fa-info-circle fa-sm"
+            />
           </span>
-          <span
-            className="fa fa-info-circle fa-sm"
-          />
         </span>
       </label>
     </div>
@@ -1646,7 +1718,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
     >
       <label>
         <span
-          className="label undefined"
+          className="undefined"
         >
           Grade
         </span>
@@ -1747,7 +1819,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     >
       <label>
         <span
-          className="label undefined"
+          className="undefined"
         >
           Grade
         </span>
@@ -1871,7 +1943,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
   >
     <label>
       <span
-        className="label undefined"
+        className="undefined"
       >
         Grade
       </span>
@@ -1947,7 +2019,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
   >
     <label>
       <span
-        className="label undefined"
+        className="undefined"
       >
         Grade
       </span>
@@ -2349,7 +2421,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       >
         <label>
           <span
-            className="label undefined"
+            className="undefined"
           >
             Grade
           </span>
@@ -5935,5 +6007,141 @@ exports[`Storyshots Style Buttons bg-light 1`] = `
       </button>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip display below text 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip bottom"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      Testing
+       
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots ToolTip info for button 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip top"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      <button>
+        Button
+      </button>
+       
+      <span
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots ToolTip with icon 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip top"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      Testing
+       
+      <span
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just text 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <span
+    className="tool-tip top"
+  >
+    <span
+      className="tool-tip-hoverable"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      tabIndex={0}
+    >
+      Testing
+       
+    </span>
+  </span>
 </div>
 `;

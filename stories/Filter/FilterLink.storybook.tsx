@@ -29,7 +29,7 @@ let itemTableLongList: ItemTableContainerProps = itemTableSortProps;
 
 let itemCards: ItemCardModel[] = [];
 
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 50; i += 1) {
   itemCards.push({
     selected: false,
     bankKey: 187,
@@ -43,6 +43,7 @@ for (let i = 0; i < 50; i++) {
     claimLabel: "Delta",
     targetHash: 4,
     targetId: "D",
+    targetDescription: "target D description",
     targetShortName: "",
     interactionTypeCode: "MS",
     interactionTypeLabel: "Multi Select",
