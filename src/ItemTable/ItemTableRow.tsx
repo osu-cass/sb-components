@@ -1,6 +1,5 @@
 import * as React from "react";
-import { ItemCardModel, ToolTip, SortColumnModel } from "../index";
-import { ColumnGroup } from "./ItemTableModels";
+import { ItemCardModel, ToolTip, SortColumnModel, ColumnGroup } from "../index";
 
 export interface ItemTableRowProps {
   rowData: ItemCardModel;

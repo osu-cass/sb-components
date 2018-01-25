@@ -1,18 +1,18 @@
 import * as React from "react";
 import {
+  getResourceContent,
+  ItemCard,
+  ItemTableRow,
+  ToolTip,
+  ItemCardViewer,
+  ItemCardModel,
+  itemIdEqual,
+  AboutItemModel,
+  Resource,
   HeaderSortModel,
   SortColumnModel,
   ColumnGroup
-} from "./ItemTableModels";
-import { Resource } from "../ApiModel";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { ItemCardModel, itemIdEqual } from "../ItemCard/ItemCardModels";
-import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
-import * as ReactTooltip from "react-tooltip";
-import { findDOMNode } from "react-dom";
-import { ToolTip } from "../ToolTip/ToolTip";
-import { ItemTableRow } from "./ItemTableRow";
-import { getResourceContent, ItemCard } from "../";
+} from "../index";
 
 export interface ItemTableProps {
   cardRows: ItemCardModel[];

@@ -1,17 +1,17 @@
 import * as React from "react";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { Resource } from "../ApiModel";
 import {
   HeaderSortModel,
   SortColumnModel,
   SortDirection,
   headerColumns,
-  ColumnGroup
-} from "./ItemTableModels";
-import { ItemModel } from "../ItemPage/ItemPageModels";
-import { HeaderTable } from "./HeaderTable";
-import { ItemTable } from "./ItemTable";
+  ColumnGroup,
+  ItemModel,
+  HeaderTable,
+  ItemTable,
+  Resource,
+  ItemCardModel,
+  AboutItemModel
+} from "../index";
 
 /**
  * Properties for ItemTableContainer

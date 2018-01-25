@@ -1,22 +1,21 @@
 import "jsdom-global/register";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
 import { itemCardList } from "../../../mocks/ItemCard/mocks";
 import { tabClassNames } from "../../../mocks/ItemTable/mocks";
 import { AboutItemMockModel } from "../../../mocks/AboutItem/mocks";
 import { itemHandler } from "./mocks";
-
 import {
   GradeLevels,
   RubricModel,
   AboutItemModel,
   Resource,
   ItemCardModel,
-  headerColumns
+  headerColumns,
+  ItemTableRowProps,
+  ItemTableRow
 } from "../../index";
-import { ItemTableRowProps, ItemTableRow } from "../ItemTableRow";
 
 describe("ItemTableRow", () => {
   const rubrics: RubricModel[] = [];

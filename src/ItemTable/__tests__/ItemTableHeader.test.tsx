@@ -1,14 +1,14 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as TestUtils from "react-dom/test-utils";
+import { shallow, mount, render } from "enzyme";
 import {
   headerColumns,
   HeaderSortModel,
   SortColumnModel,
-  SortDirection
-} from "../ItemTableModels";
-import * as TestUtils from "react-dom/test-utils";
-import { shallow, mount, render } from "enzyme";
-import { HeaderTable, HeaderTableProps } from "../HeaderTable";
+  SortDirection,
+  HeaderTable,
+  HeaderTableProps
+} from "../../index";
 import { tabClassNames } from "../../../mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
 

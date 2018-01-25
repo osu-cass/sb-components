@@ -13,12 +13,10 @@ import {
   RubricModel,
   AboutItemModel,
   Resource,
-  ItemCardModel
-} from "../../index";
-import {
+  ItemCardModel,
   ItemTableContainerProps,
   ItemTableContainer
-} from "../ItemTableContainer";
+} from "../../index";
 
 describe("ItemPageTable", () => {
   const rubrics: RubricModel[] = [];
