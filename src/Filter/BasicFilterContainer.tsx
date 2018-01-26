@@ -14,6 +14,7 @@ import { BasicFilter } from "./BasicFilter";
  * @member {boolean} containsAdvancedFilter
  * @member {() => void} handleAdvancedFilterExpand
  * @member {string?} filterId
+ * @member {(() => void)?} resetHandler
  */
 export interface BasicFilterContainerProps {
   filterCategories: BasicFilterCategoryModel[];
@@ -24,6 +25,7 @@ export interface BasicFilterContainerProps {
   containsAdvancedFilter: boolean;
   handleAdvancedFilterExpand: () => void;
   filterId?: string;
+  resetHandler?: () => void;
 }
 /**
  * State interface for the BasicFilterContainer component.
@@ -117,14 +119,27 @@ export class BasicFilterContainer extends React.Component<
     if (containsAdvancedFilter) {
       advancedFilterButton = (
         <div className="basic-filter-button-container">
-          <div>Advanced Filters</div>
-          <button
-            className="btn btn-default filter-button"
-            onClick={this.handleClick}
-          >
-            {expanded ? "Hide" : "Show"}&nbsp;
-            <span className={`fa fa-chevron-${expanded ? "down" : "right"}`} />
-          </button>
+          <span>
+            <div>&nbsp;</div>
+            <button
+              className="btn btn-default filter-button"
+              onClick={this.props.resetHandler}
+            >
+              Reset Filters
+            </button>
+          </span>
+          <span>
+            <div>Advanced Filters</div>
+            <button
+              className="btn btn-default filter-button"
+              onClick={this.handleClick}
+            >
+              {expanded ? "Hide" : "Show"}&nbsp;
+              <span
+                className={`fa fa-chevron-${expanded ? "down" : "right"}`}
+              />
+            </button>
+          </span>
         </div>
       );
     }

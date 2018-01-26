@@ -132,6 +132,26 @@ export class CombinedFilter extends React.Component<
     onFilterUpdated(searchAPI, basicFilter, advancedFilter);
   };
 
+  onResetFilters = () => {
+    let {
+      advancedFilter,
+      basicFilter,
+      searchAPI,
+      onFilterUpdated,
+      searchModel
+    } = this.props;
+
+    searchAPI = {};
+    advancedFilter.forEach(f =>
+      f.filterOptions.forEach(o => (o.isSelected = false))
+    );
+    basicFilter.forEach(f =>
+      f.filterOptions.forEach(o => (o.isSelected = false))
+    );
+
+    onFilterUpdated(searchAPI, basicFilter, advancedFilter);
+  };
+
   render() {
     const id = this.props.filterId || "";
     let advancedFilter: JSX.Element | undefined;
@@ -153,6 +173,7 @@ export class CombinedFilter extends React.Component<
           onUpdateFilter={this.onBasicFilterUpdated}
           containsAdvancedFilter={true}
           handleAdvancedFilterExpand={this.toggleExpanded}
+          resetHandler={this.onResetFilters}
         />
         {advancedFilter}
       </div>
