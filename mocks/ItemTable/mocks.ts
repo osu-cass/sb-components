@@ -1,6 +1,15 @@
 import { ItemTableProps, ItemTableContainerProps, ItemCardModel } from "src/index";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 
+
+export const tabClassNames = [
+  "item",
+  "claimAndTarget",
+  "subject",
+  "grade",
+  "item-type"
+];
+
 export const itemTableProps: ItemTableContainerProps = {
   isLinkTable: false,
   onRowSelection: () => {},

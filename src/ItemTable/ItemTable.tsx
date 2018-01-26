@@ -1,22 +1,27 @@
 import * as React from "react";
-import { HeaderSortModel, SortColumnModel } from "./ItemTableModels";
-import { Resource } from "../ApiModel";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { ItemCardViewer } from "../ItemCard/ItemCardViewer";
-import * as ReactTooltip from "react-tooltip";
-import { findDOMNode } from "react-dom";
+import {
+  getResourceContent,
+  ItemCard,
+  ItemTableRow,
+  ToolTip,
+  ItemCardViewer,
+  ItemCardModel,
+  itemIdEqual,
+  AboutItemModel,
+  Resource,
+  HeaderSortModel,
+  SortColumnModel,
+  ColumnGroup
+} from "../index";
 
 export interface ItemTableProps {
-  mapRows: ItemCardModel[];
+  cardRows: ItemCardModel[];
   onRowExpand: (item: ItemCardModel) => void;
-
   onRowSelect: (item: ItemCardModel) => void;
   sort: HeaderSortModel[];
-  columns: SortColumnModel[];
+  columns: ColumnGroup[];
   expandedRow?: ItemCardModel;
   item?: Resource<AboutItemModel>;
-
   isLinkTable: boolean;
 }
 /**
@@ -30,189 +35,72 @@ export class ItemTable extends React.Component<ItemTableProps, {}> {
     super(props);
   }
 
-  collapse = (
-    <i className="fa fa-chevron-right fa-sm table-icon" aria-hidden="true" />
-  );
-  expand = (
-    <i className="fa fa-chevron-down fa-sm table-icon" aria-hidden="true" />
-  );
-
-  handleRowClick = (rowData: ItemCardModel) => {
-    this.props.onRowExpand(rowData);
-  };
-
-  handleKeyUpEnter = (
-    e: React.KeyboardEvent<HTMLTableRowElement>,
-    rowData: ItemCardModel
-  ) => {
-    if (e.keyCode === 13) {
-      this.props.onRowExpand(rowData);
-    }
-  };
-
-  handleCheckboxClick = (
-    e: React.MouseEvent<HTMLTableDataCellElement>,
-    rowData: ItemCardModel
-  ) => {
-    e.stopPropagation();
-    this.props.onRowSelect(rowData);
-  };
-
-  handleCheckboxKeyUpEnter = (
-    e: React.KeyboardEvent<HTMLTableDataCellElement>,
-    rowData: ItemCardModel
-  ) => {
-    if (e.keyCode === 13) {
-      e.stopPropagation();
-      this.props.onRowSelect(rowData);
-    }
-  };
-
-  handleToolTipKeyUpEnter = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
-    if (e.keyCode === 13) {
-      e.stopPropagation();
-      ReactTooltip.show(findDOMNode(e.currentTarget));
-    }
-  };
-
-  renderTooltipLink(col: SortColumnModel, cellData: ItemCardModel) {
-    const tags: JSX.Element[] = [];
-    const labels = col.accessor(cellData).filter(x => x !== "");
-
-    labels.forEach((data: string | number, idx: number) => {
-      tags.push(
-        <span className={`${col.className}-${cellData.itemKey}`}>
-          <a
-            tabIndex={0}
-            onClick={e => e.stopPropagation()}
-            onKeyUp={e => this.handleToolTipKeyUpEnter(e)}
-            data-for={`tooltip-${col.className}-${cellData.itemKey}`}
-            data-event="click"
-            data-tip={
-              col.header === "Claim/Target" ? cellData.targetDescription : ""
-            }
-            role="button"
-          >
-            {data}
-          </a>
-          <ReactTooltip
-            id={`tooltip-${col.className}-${cellData.itemKey}`}
-            globalEventOff="focusout"
-          />
-        </span>
-      );
-
-      if (labels.length - 1 > idx) {
-        tags.push(<span> / </span>);
-      }
+  renderAllRows(): JSX.Element[] {
+    const { cardRows } = this.props;
+    let rows: JSX.Element[] = [];
+    cardRows.forEach(item => {
+      rows = rows.concat(this.renderRow(item));
     });
 
-    return tags;
+    return rows;
   }
 
-  renderNormalLink(col: SortColumnModel, cellData: ItemCardModel) {
-    const tags: JSX.Element[] = [];
-    const labels = col.accessor(cellData).filter(x => x !== "");
-
-    labels.forEach((data: string | number, idx: number) => {
-      tags.push(<span className={col.className}>{data}</span>);
-
-      if (labels.length - 1 > idx) {
-        tags.push(<span> / </span>);
-      }
-    });
-
-    return tags;
-  }
-
-  renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
-    let tags: JSX.Element[];
-
-    // TODO: implement description API functionality when available.
-    const descriptionAvailable = col.header === "Claim/Target";
-    if (descriptionAvailable) {
-      tags = this.renderTooltipLink(col, cellData);
-    } else {
-      tags = this.renderNormalLink(col, cellData);
-    }
-
-    return (
-      <td
-        key={`${col.className}-${cellData.bankKey}-${cellData.itemKey}`}
-        className={col.className}
-      >
-        {tags}
-      </td>
-    );
-  }
-
-  renderRow(rowData: ItemCardModel, index: number): JSX.Element[] {
-    const { expandedRow, columns, item, isLinkTable } = this.props;
-    const unChecked = (
-      <i className="fa fa-square-o fa-sm table-icon" aria-hidden="true" />
-    );
-    const checked = (
-      <i className="fa fa-check-square-o fa-sm table-icon" aria-hidden="true" />
-    );
-    let isExpanded = false;
-    if (expandedRow) {
-      isExpanded =
-        rowData.itemKey === expandedRow.itemKey &&
-        rowData.bankKey === expandedRow.bankKey;
-    }
-
-    const controls: JSX.Element[] = [];
-    if (!isLinkTable) {
-      controls.push(
-        <td
-          key={`${rowData.bankKey}-${rowData.itemKey}`}
-          onClick={e => this.handleCheckboxClick(e, rowData)}
-          onKeyUp={e => this.handleCheckboxKeyUpEnter(e, rowData)}
-          tabIndex={0}
-        >
-          {rowData.selected === true ? checked : unChecked}&nbsp;
-        </td>,
-        <td tabIndex={0} key={`${rowData.bankKey}-${rowData.itemKey}-${index}`}>
-          {isExpanded ? this.expand : this.collapse}
-        </td>
-      );
-    }
-    const row: JSX.Element[] = [
-      <tr
-        key={`${rowData.bankKey}-${rowData.itemKey}-row`}
-        className={isExpanded ? "selected" : ""}
-        onClick={() => this.handleRowClick(rowData)}
-        onKeyUp={e => this.handleKeyUpEnter(e, rowData)}
-      >
-        {controls.length > 0 ? controls : undefined}
-        {columns.map(col => this.renderCell(col, rowData))}
-      </tr>
-    ];
-
-    if (item && item.kind === "success" && isExpanded) {
-      row.push(
+  renderExpandedRow(item: Resource<AboutItemModel>): JSX.Element | undefined {
+    let result: JSX.Element | undefined;
+    const itemContent = getResourceContent(item);
+    if (itemContent) {
+      result = (
         <tr key="item-card-viewer">
           <td colSpan={7}>
-            <ItemCardViewer item={item.content} />
+            <ItemCardViewer item={itemContent} />
           </td>
         </tr>
       );
     }
 
-    return row;
+    return result;
+  }
+
+  renderRow(rowData: ItemCardModel): JSX.Element[] {
+    const {
+      expandedRow,
+      columns,
+      item,
+      isLinkTable,
+      onRowExpand,
+      onRowSelect
+    } = this.props;
+    const rows: JSX.Element[] = [];
+    const isExpanded =
+      expandedRow && itemIdEqual(expandedRow, rowData) ? true : false;
+
+    rows.push(
+      <ItemTableRow
+        key={`${rowData.bankKey}-${rowData.itemKey}`}
+        rowData={rowData}
+        hasControls={!isLinkTable}
+        columns={columns}
+        isExpanded={isExpanded}
+        onRowExpand={onRowExpand}
+        onRowSelect={onRowSelect}
+      />
+    );
+
+    if (isExpanded && item) {
+      const expandContent = this.renderExpandedRow(item);
+      if (expandContent) {
+        rows.push(expandContent);
+      }
+    }
+
+    return rows;
   }
 
   render() {
-    const { mapRows } = this.props;
+    const { cardRows } = this.props;
     let content = <div>No Items.</div>;
-    if (mapRows) {
-      content = (
-        <tbody>
-          {this.props.mapRows.map((rowData, idx) =>
-            this.renderRow(rowData, idx)
-          )}
-        </tbody>
-      );
+    if (cardRows) {
+      content = <tbody>{this.renderAllRows()}</tbody>;
     }
 
     return content;

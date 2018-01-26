@@ -16,6 +16,7 @@
     "prepublishOnly": "npm run clean && npm run test && npm run webpack:prod",
     "precommit": "lint-staged",
     "start": "npm run storybook",
+    "update-test": "npm run test -- -u",
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
     "storybook": "start-storybook -p 6006",
