@@ -1834,19 +1834,32 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
   <div
     className="basic-filter-button-container"
   >
-    <div>
-      Advanced Filters
-    </div>
-    <button
-      className="btn btn-default filter-button"
-      onClick={[Function]}
-    >
-      Show
-       
-      <span
-        className="fa fa-chevron-right"
-      />
-    </button>
+    <span>
+      <div>
+         
+      </div>
+      <button
+        className="btn btn-default filter-button"
+        onClick={undefined}
+      >
+        Reset Filters
+      </button>
+    </span>
+    <span>
+      <div>
+        Advanced Filters
+      </div>
+      <button
+        className="btn btn-default filter-button"
+        onClick={[Function]}
+      >
+        Show
+         
+        <span
+          className="fa fa-chevron-right"
+        />
+      </button>
+    </span>
   </div>
 </div>
 `;
@@ -2436,19 +2449,32 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     <div
       className="basic-filter-button-container"
     >
-      <div>
-        Advanced Filters
-      </div>
-      <button
-        className="btn btn-default filter-button"
-        onClick={[Function]}
-      >
-        Show
-         
-        <span
-          className="fa fa-chevron-right"
-        />
-      </button>
+      <span>
+        <div>
+           
+        </div>
+        <button
+          className="btn btn-default filter-button"
+          onClick={undefined}
+        >
+          Reset Filters
+        </button>
+      </span>
+      <span>
+        <div>
+          Advanced Filters
+        </div>
+        <button
+          className="btn btn-default filter-button"
+          onClick={[Function]}
+        >
+          Show
+           
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </span>
     </div>
   </div>
 </div>
