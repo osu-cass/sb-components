@@ -477,7 +477,7 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
         Advanced Filters
       </div>
       <button
-        className="btn btn-default filter-button"
+        className="btn btn-default filter-button af-expand"
         onClick={[Function]}
       >
         Show

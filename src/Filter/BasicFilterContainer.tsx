@@ -131,7 +131,7 @@ export class BasicFilterContainer extends React.Component<
           <span>
             <div>Advanced Filters</div>
             <button
-              className="btn btn-default filter-button"
+              className="btn btn-default filter-button af-expand"
               onClick={this.handleClick}
             >
               {expanded ? "Hide" : "Show"}&nbsp;
