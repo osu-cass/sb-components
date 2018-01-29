@@ -1,16 +1,17 @@
 import * as React from "react";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { Resource } from "../ApiModel";
 import {
   HeaderSortModel,
   SortColumnModel,
   SortDirection,
-  headerColumns
-} from "./ItemTableModels";
-import { ItemModel } from "../ItemPage/ItemPageModels";
-import { HeaderTable } from "./HeaderTable";
-import { ItemTable } from "./ItemTable";
+  headerColumns,
+  ColumnGroup,
+  ItemModel,
+  HeaderTable,
+  ItemTable,
+  Resource,
+  ItemCardModel,
+  AboutItemModel
+} from "../index";
 
 /**
  * Properties for ItemTableContainer
@@ -19,7 +20,6 @@ import { ItemTable } from "./ItemTable";
 
 export interface ItemTableContainerProps {
   onRowSelection: (item: ItemModel, reset: boolean) => void;
-
   onItemSelection: (item: ItemCardModel) => void;
   itemCards?: ItemCardModel[];
   item?: Resource<AboutItemModel>;
@@ -56,9 +56,9 @@ export class ItemTableContainer extends React.Component<
    * sorts array in state or its sort status will be removed.
    * @memberOf {ItemTableContainer}
    * @function {onClickHeader}
-   * @param {SortColumnModel} col
+   * @param {ColumnGroup} col
    */
-  onClickHeader = (col: SortColumnModel) => {
+  onClickHeader = (col: ColumnGroup) => {
     const newSorts = (this.state.sorts || []).slice();
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
@@ -163,7 +163,7 @@ export class ItemTableContainer extends React.Component<
       if (itemCards.length !== 0) {
         content = (
           <ItemTable
-            mapRows={itemCards}
+            cardRows={itemCards}
             onRowExpand={this.handleExpandItem}
             onRowSelect={this.handleSelectItem}
             sort={this.state.sorts}
@@ -181,7 +181,7 @@ export class ItemTableContainer extends React.Component<
 
   render() {
     return (
-      <div>
+      <div className="section section-light">
         <table className={this.props.isLinkTable ? "link-table" : "item-table"}>
           {this.renderTableHeader()}
           {this.renderTable()}

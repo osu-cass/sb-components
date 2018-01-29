@@ -14,6 +14,10 @@ export class ItemCard extends React.Component<ItemCardProps, ItemCardState> {
     this.state = { redirect: false };
   }
 
+  shouldComponentUpdate(nextProps: ItemCardProps, nextState: ItemCardState) {
+    return nextState.redirect;
+  }
+
   handleKeyPress = (e: React.KeyboardEvent<HTMLElement>) => {
     if (e.keyCode === 13 || e.keyCode === 23) {
       this.setState({ redirect: true });

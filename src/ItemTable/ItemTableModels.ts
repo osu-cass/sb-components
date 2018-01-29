@@ -14,29 +14,51 @@ export enum SortDirection {
 }
 
 export interface HeaderSortModel {
-  col: SortColumnModel;
+  col: ColumnGroup;
   direction: SortDirection;
   resetSortCount: number;
 }
 
 export interface SortColumnModel {
-  header: HeaderType;
   className: string;
-  accessor: (label: ItemCardModel) => (string | number)[];
-  compare: (a: ItemCardModel, b: ItemCardModel) => number;
+  accessor: (label: ItemCardModel) => string | number;
+  helpText?: (label: ItemCardModel) => string;
 }
 
-export const headerColumns: SortColumnModel[] = [
+export interface ColumnGroup {
+  header: HeaderType;
+  headerClassName: string;
+  cols: SortColumnModel[];
+  compare: (a: ItemCardModel, b: ItemCardModel) => number;
+  headerHelp?: string;
+}
+
+export const headerColumns: ColumnGroup[] = [
   {
     header: "Item",
-    className: "item",
-    accessor: label => [label.itemKey],
-    compare: (a, b) => a.itemKey - b.itemKey
+    headerClassName: "item",
+    compare: (a, b) => a.itemKey - b.itemKey,
+    cols: [
+      {
+        accessor: label => label.itemKey,
+        className: "item"
+      }
+    ]
   },
   {
     header: "Claim/Target",
-    className: "claimAndTarget",
-    accessor: label => [label.claimLabel, label.targetShortName],
+    headerClassName: "claimAndTarget",
+    cols: [
+      {
+        accessor: card => card.claimLabel,
+        className: "claim"
+      },
+      {
+        accessor: card => `/${card.targetShortName}`,
+        className: "target",
+        helpText: card => card.targetDescription
+      }
+    ],
     compare: (a, b) => {
       if (a.claimCode < b.claimCode || a.targetShortName < b.targetShortName) {
         return SortDirection.Ascending;
@@ -52,20 +74,30 @@ export const headerColumns: SortColumnModel[] = [
   },
   {
     header: "Subject",
-    className: "subject",
-    accessor: label => [label.subjectLabel],
+    headerClassName: "subject",
+    cols: [{ accessor: label => label.subjectLabel, className: "subject" }],
     compare: (a, b) => a.subjectCode.localeCompare(b.subjectCode)
   },
   {
     header: "Grade",
-    className: "grade",
-    accessor: label => [label.gradeLabel],
+    headerClassName: "grade",
+    cols: [
+      {
+        accessor: label => label.gradeLabel,
+        className: "grade"
+      }
+    ],
     compare: (a, b) => a.grade - b.grade
   },
   {
     header: "Item Type",
-    className: "interactionType",
-    accessor: label => [label.interactionTypeLabel],
+    headerClassName: "item-type",
+    cols: [
+      {
+        accessor: label => label.interactionTypeLabel,
+        className: "item-type"
+      }
+    ],
     compare: (a, b) =>
       a.interactionTypeCode.localeCompare(b.interactionTypeCode)
   }

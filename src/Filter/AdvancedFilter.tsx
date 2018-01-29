@@ -5,6 +5,7 @@ import {
   OptionTypeModel
 } from "./FilterModels";
 import { BtnGroupOption } from "../Button/BtnGroupOption";
+import { ToolTip } from "../ToolTip/ToolTip";
 
 export interface AdvancedFilterProps extends AdvancedFilterCategoryModel {
   onFilterOptionSelect: (data?: FilterOptionModel) => void;
@@ -72,16 +73,11 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       >
         <div className="filter-container-header">
           <label>
-            <span
-              className="tooltip-help"
-              data-tooltip={helpText}
-              data-tooltip-position="top"
-            >
+            <ToolTip helpText={helpText} displayIcon={true}>
               <span className="tooltip-label" info-label="true">
                 {label}
               </span>
-              <span className="fa fa-info-circle fa-sm" />
-            </span>
+            </ToolTip>
           </label>
         </div>
         <div

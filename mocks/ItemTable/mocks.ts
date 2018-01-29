@@ -1,6 +1,15 @@
 import { ItemTableProps, ItemTableContainerProps, ItemCardModel } from "src/index";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 
+
+export const tabClassNames = [
+  "item",
+  "claimAndTarget",
+  "subject",
+  "grade",
+  "item-type"
+];
+
 export const itemTableProps: ItemTableContainerProps = {
   isLinkTable: false,
   onRowSelection: () => {},
@@ -19,6 +28,7 @@ export const itemTableProps: ItemTableContainerProps = {
       claimLabel: "Concepts and Procedures",
       targetHash: 100,
       targetId: "A",
+      targetDescription: "target A description",
       targetShortName: "",
       interactionTypeCode: "EQ",
       interactionTypeLabel: "Equation",
@@ -38,6 +48,7 @@ export const itemTableProps: ItemTableContainerProps = {
       claimLabel: "Reading",
       targetHash: 1039,
       targetId: "B",
+      targetDescription: "target B description",
       targetShortName: "Key Details",
       interactionTypeCode: "MC",
       interactionTypeLabel: "Multiple Choice",
@@ -57,6 +68,7 @@ export const itemTableProps: ItemTableContainerProps = {
       claimLabel: "Modeling/Data Analysis",
       targetHash: 0,
       targetId: "C",
+      targetDescription: "target C description",
       targetShortName: "",
       interactionTypeCode: "MS",
       interactionTypeLabel: "Multi Select",
@@ -76,6 +88,7 @@ export const itemTableProps: ItemTableContainerProps = {
       claimLabel: "Research/Inquiry",
       targetHash: 2832,
       targetId: "D",
+      targetDescription: "target D description",
       targetShortName: "Evaluate Information/ sources",
       interactionTypeCode: "MS",
       interactionTypeLabel: "Multi Select",
@@ -106,6 +119,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       claimLabel: "Alpha",
       targetHash: 1,
       targetId: "A",
+      targetDescription: "target A description",
       targetShortName: "",
       interactionTypeCode: "EQ",
       interactionTypeLabel: "Equation",
@@ -125,6 +139,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       claimLabel: "Bravo",
       targetHash: 2,
       targetId: "B",
+      targetDescription: "target B description",
       targetShortName: "",
       interactionTypeCode: "MC",
       interactionTypeLabel: "Multiple Choice",
@@ -144,6 +159,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       claimLabel: "Charlie",
       targetHash: 3,
       targetId: "C",
+      targetDescription: "target C description",
       targetShortName: "",
       interactionTypeCode: "MS",
       interactionTypeLabel: "Multi Select",
@@ -163,6 +179,7 @@ export const itemTableSortProps: ItemTableContainerProps = {
       claimLabel: "Delta",
       targetHash: 4,
       targetId: "D",
+      targetDescription: "target D description",
       targetShortName: "",
       interactionTypeCode: "MS",
       interactionTypeLabel: "Multi Select",
@@ -193,6 +210,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       claimLabel: "Alpha",
       targetHash: 1,
       targetId: "A",
+      targetDescription: "target A description",
       targetShortName: "",
       interactionTypeCode: "EQ",
       interactionTypeLabel: "Equation",
@@ -212,6 +230,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       claimLabel: "Bravo",
       targetHash: 2,
       targetId: "B",
+      targetDescription: "target B description",
       targetShortName: "",
       interactionTypeCode: "MC",
       interactionTypeLabel: "Multiple Choice",
@@ -231,6 +250,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       claimLabel: "Charlie",
       targetHash: 3,
       targetId: "C",
+      targetDescription: "target C description",
       targetShortName: "",
       interactionTypeCode: "MS",
       interactionTypeLabel: "Multi Select",
@@ -250,6 +270,7 @@ export const itemTableSelectProps: ItemTableContainerProps = {
       claimLabel: "Delta",
       targetHash: 4,
       targetId: "D",
+      targetDescription: "target D description",
       targetShortName: "",
       interactionTypeCode: "MS",
       interactionTypeLabel: "Multi Select",

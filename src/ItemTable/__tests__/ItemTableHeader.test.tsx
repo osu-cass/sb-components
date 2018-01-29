@@ -1,24 +1,18 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as TestUtils from "react-dom/test-utils";
+import { shallow, mount, render } from "enzyme";
 import {
   headerColumns,
   HeaderSortModel,
   SortColumnModel,
-  SortDirection
-} from "../ItemTableModels";
-import * as TestUtils from "react-dom/test-utils";
-import { shallow, mount, render } from "enzyme";
-import { HeaderTable } from "../HeaderTable";
+  SortDirection,
+  HeaderTable,
+  HeaderTableProps
+} from "../../index";
+import { tabClassNames } from "../../../mocks/ItemTable/mocks";
+import { itemHandler } from "./mocks";
 
 describe("ItemTableHeader", () => {
-  const tabs = [
-    "item",
-    "claimAndTarget",
-    "subject",
-    "grade",
-    "interactionType"
-  ];
-
   const sorts: Array<HeaderSortModel> = [
     {
       col: headerColumns[0],
@@ -27,32 +21,58 @@ describe("ItemTableHeader", () => {
     }
   ];
 
-  const props = {
+  const props: HeaderTableProps = {
+    sorts,
     columns: headerColumns,
-    onHeaderClick: jest.fn((header: SortColumnModel) => null),
-    sorts
+    onHeaderClick: itemHandler,
+    isLinkTable: false
   };
 
+  const wrapper = shallow(<HeaderTable {...props} />);
+  const wrapperLinkTable = shallow(
+    <HeaderTable {...props} isLinkTable={true} />
+  );
+
   it("matches snapshot", () => {
-    expect(shallow(<HeaderTable {...props} />)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it("calls onHeaderClick", () => {
-    let wrapper = shallow(<HeaderTable {...props} />);
-    tabs.forEach(tab => {
+    tabClassNames.forEach(tab => {
       wrapper.find(`th.${tab}`).simulate("click");
       expect(props.onHeaderClick).toHaveBeenCalled();
     });
   });
 
   it("sorts list on header click", () => {
-    let wrapper = shallow(<HeaderTable {...props} />);
-    tabs.forEach(tab => {
+    tabClassNames.forEach(tab => {
       wrapper.find(`th.${tab}`).simulate("click");
       expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
       wrapper.find(`th.${tab}`).simulate("click");
       expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
       wrapper.find(`th.${tab}`).simulate("click");
+      expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+    });
+  });
+
+  it("matches link table snapshot", () => {
+    expect(wrapperLinkTable).toMatchSnapshot();
+  });
+
+  it("calls onHeaderClick link table", () => {
+    tabClassNames.forEach(tab => {
+      wrapperLinkTable.find(`th.${tab}`).simulate("click");
+      expect(props.onHeaderClick).toHaveBeenCalled();
+    });
+  });
+
+  it("sorts list on header link table", () => {
+    tabClassNames.forEach(tab => {
+      wrapperLinkTable.find(`th.${tab}`).simulate("click");
+      expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+      wrapperLinkTable.find(`th.${tab}`).simulate("click");
+      expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
+      wrapperLinkTable.find(`th.${tab}`).simulate("click");
       expect(JSON.stringify(wrapper.html())).toMatchSnapshot();
     });
   });
