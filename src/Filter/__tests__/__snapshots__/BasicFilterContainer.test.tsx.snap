@@ -466,7 +466,7 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       <button
         className="btn btn-default filter-button"
       >
-        Reset Filters
+        Reset
       </button>
     </span>
     <span>
@@ -556,7 +556,7 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       <button
         className="btn btn-default filter-button"
       >
-        Reset Filters
+        Reset
       </button>
     </span>
     <span>
@@ -646,7 +646,7 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
       <button
         className="btn btn-default filter-button"
       >
-        Reset Filters
+        Reset
       </button>
     </span>
     <span>

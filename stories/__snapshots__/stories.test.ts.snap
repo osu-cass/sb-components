@@ -1915,7 +1915,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         className="btn btn-default filter-button"
         onClick={undefined}
       >
-        Reset Filters
+        Reset
       </button>
     </span>
     <span>
@@ -2531,7 +2531,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           className="btn btn-default filter-button"
           onClick={undefined}
         >
-          Reset Filters
+          Reset
         </button>
       </span>
       <span>

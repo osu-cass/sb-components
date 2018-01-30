@@ -296,10 +296,10 @@ exports[`FilterContainer renders 1`] = `
           >
             <div
               className="basic-filter-selection"
-              id="grade -basic-filter"
+              id="grade-basic-filter"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -308,7 +308,7 @@ exports[`FilterContainer renders 1`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -334,14 +334,16 @@ exports[`FilterContainer renders 1`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -349,17 +351,17 @@ exports[`FilterContainer renders 1`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -411,7 +413,7 @@ exports[`FilterContainer renders 1`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -441,7 +443,7 @@ exports[`FilterContainer renders 1`] = `
           >
             <div
               className="basic-filter-selection"
-              id="subjects -basic-filter"
+              id="subjects-basic-filter"
             >
               <label>
                 Subjects
@@ -489,7 +491,7 @@ exports[`FilterContainer renders 1`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
@@ -808,10 +810,10 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           >
             <div
               className="basic-filter-selection"
-              id="grade -basic-filter"
+              id="grade-basic-filter"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -820,7 +822,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -846,14 +848,16 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -861,17 +865,17 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -923,7 +927,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -953,7 +957,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           >
             <div
               className="basic-filter-selection"
-              id="subjects -basic-filter"
+              id="subjects-basic-filter"
             >
               <label>
                 Subjects
@@ -1001,7 +1005,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
@@ -1320,10 +1324,10 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           >
             <div
               className="basic-filter-selection"
-              id="grade -basic-filter"
+              id="grade-basic-filter"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -1332,7 +1336,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -1358,14 +1362,16 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -1373,17 +1379,17 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -1435,7 +1441,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -1465,7 +1471,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           >
             <div
               className="basic-filter-selection"
-              id="subjects -basic-filter"
+              id="subjects-basic-filter"
             >
               <label>
                 Subjects
@@ -1513,7 +1519,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
@@ -2737,10 +2743,10 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           >
             <div
               className="basic-filter-selection"
-              id="grade -basic-filter"
+              id="grade-basic-filter"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -2749,7 +2755,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -2775,14 +2781,16 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -2790,17 +2798,17 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -2852,7 +2860,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -2882,7 +2890,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           >
             <div
               className="basic-filter-selection"
-              id="subjects -basic-filter"
+              id="subjects-basic-filter"
             >
               <label>
                 Subjects
@@ -2930,7 +2938,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
