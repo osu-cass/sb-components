@@ -59,6 +59,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
             >
               <AboutItem showRubrics={false} {...aboutThisItem} />
             </div>
+            {this.renderMidNav()}
             {this.renderRightNav()}
           </div>
           <ItemViewerFrame url={this.state.itemUrl || ""} />
@@ -83,6 +84,19 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
           onSave={() => {}}
           onReset={() => {}}
         />
+      </div>
+    );
+  }
+
+  renderMidNav() {
+    return (
+      <div className="nav-buttons">
+        <a href="#" className="previous">
+          &#8249; Previous
+        </a>
+        <a href="#" className="next">
+          Next &#8250;
+        </a>
       </div>
     );
   }
