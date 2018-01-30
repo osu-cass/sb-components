@@ -41,7 +41,7 @@ export class AboutTestItemsContainer extends React.Component<
     this.state = {
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
-      selectedCode: "N/A",
+      selectedCode: this.props.params.itemType || "N/A",
       hasError: false,
       loading: true
     };
@@ -161,9 +161,18 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   renderNoItem() {
+    const { selectedCode } = this.state;
+
+    let content: string = "";
+    if (selectedCode && selectedCode !== "N/A") {
+      content = "No Item Found With Selected Type";
+    } else {
+      content = "Please Select an Item Type";
+    }
+
     return (
       <div className="section section-light no-item">
-        <p>No items of the selected type found.</p>
+        <p>{content}</p>
       </div>
     );
   }
