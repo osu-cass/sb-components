@@ -1911,9 +1911,6 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     className="basic-filter-button-container"
   >
     <span>
-      <div>
-         
-      </div>
       <button
         className="btn btn-default filter-button"
         onClick={undefined}
@@ -1922,16 +1919,14 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       </button>
     </span>
     <span>
-      <div>
-        Advanced Filters
-      </div>
       <button
         className="btn btn-default filter-button af-expand"
         onClick={[Function]}
       >
-        Show
+        Advanced Filters
          
         <span
+          aria-hidden="true"
           className="fa fa-chevron-right"
         />
       </button>
@@ -2532,9 +2527,6 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       className="basic-filter-button-container"
     >
       <span>
-        <div>
-           
-        </div>
         <button
           className="btn btn-default filter-button"
           onClick={undefined}
@@ -2543,16 +2535,14 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         </button>
       </span>
       <span>
-        <div>
-          Advanced Filters
-        </div>
         <button
           className="btn btn-default filter-button af-expand"
           onClick={[Function]}
         >
-          Show
+          Advanced Filters
            
           <span
+            aria-hidden="true"
             className="fa fa-chevron-right"
           />
         </button>

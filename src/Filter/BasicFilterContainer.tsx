@@ -120,22 +120,21 @@ export class BasicFilterContainer extends React.Component<
       advancedFilterButton = (
         <div className="basic-filter-button-container">
           <span>
-            <div>&nbsp;</div>
             <button
               className="btn btn-default filter-button"
               onClick={this.props.resetHandler}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
-            <div>Advanced Filters</div>
             <button
               className="btn btn-default filter-button af-expand"
               onClick={this.handleClick}
             >
-              {expanded ? "Hide" : "Show"}&nbsp;
+              {"Advanced Filters"}&nbsp;
               <span
+                aria-hidden="true"
                 className={`fa fa-chevron-${expanded ? "down" : "right"}`}
               />
             </button>
