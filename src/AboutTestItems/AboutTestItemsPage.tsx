@@ -19,7 +19,7 @@ export interface AboutTestItemsPageProps
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
   showRubrics: boolean;
-  appName: string;
+  appName?: string;
 }
 
 export class AboutTestItemsPage extends React.Component<
@@ -31,9 +31,10 @@ export class AboutTestItemsPage extends React.Component<
   }
 
   componentDidMount() {
-    document.title = `About Test Items - Smarter Balanced ${
-      this.props.appName
-    }`;
+    const { appName } = this.props;
+    if (appName) {
+      document.title = `About Test Items - Smarter Balanced ${appName}`;
+    }
   }
 
   render() {
