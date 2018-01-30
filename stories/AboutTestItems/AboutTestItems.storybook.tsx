@@ -1,3 +1,4 @@
+import "jsdom-global/register";
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { CenterDecorator } from "../CenterDecorator";
@@ -28,6 +29,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           aboutClient={mockAboutTestClient}
+          appName="Storybook"
         />
       )}
     />
@@ -42,6 +44,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClient}
+          appName="Storybook"
         />
       )}
     />
@@ -56,6 +59,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClientReject}
+          appName="Storybook"
         />
       )}
     />
@@ -70,6 +74,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClientLoading}
+          appName="Storybook"
         />
       )}
     />
@@ -84,6 +89,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestBadItem}
           aboutClient={mockAboutTestClient}
+          appName="Storybook"
         />
       )}
     />
