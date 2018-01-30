@@ -80,7 +80,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     selectOptions.push({
       disabled,
       selected: selectedValue === defaultValue,
-      label: "Please Select",
+      label: "Select " + label,
       value: defaultValue
     });
 
@@ -103,7 +103,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         options={selectOptions}
         onChange={val => selectedHandler(this.findFilterOption(val))}
         key={code}
-        className={"input-sm"}
+        className={"input-sm med-text"}
       />
     );
   }
@@ -140,7 +140,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
 
     return (
       <div
-        id={`${label} -basic-filter`.toLocaleLowerCase()}
+        id={`${label}-basic-filter`.toLocaleLowerCase()}
         className="basic-filter-selection"
       >
         {this.renderCategory()}
