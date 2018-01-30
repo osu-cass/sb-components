@@ -84,9 +84,15 @@ describe("BasicFilterContainer", () => {
   it("expands the advanced filter", () => {
     expect(wrapper1).toMatchSnapshot();
     wrapper1.setState({ expanded: false });
-    wrapper1.findWhere(node => node.type() === "button").simulate("click");
+    wrapper1
+      .findWhere(node => node.type() === "button")
+      .at(1)
+      .simulate("click");
     expect(wrapper1).toMatchSnapshot();
-    wrapper1.findWhere(node => node.type() === "button").simulate("click");
+    wrapper1
+      .findWhere(node => node.type() === "button")
+      .at(1)
+      .simulate("click");
     expect(wrapper1).toMatchSnapshot();
   });
 });

@@ -181,7 +181,7 @@ export class ItemTableContainer extends React.Component<
 
   render() {
     return (
-      <div className="section section-light">
+      <div className="section">
         <table className={this.props.isLinkTable ? "link-table" : "item-table"}>
           {this.renderTableHeader()}
           {this.renderTable()}

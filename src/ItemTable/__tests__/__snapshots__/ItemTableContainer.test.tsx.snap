@@ -192,7 +192,7 @@ exports[`ItemPageTable expands 1`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -2052,7 +2052,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -3542,7 +3542,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -5068,7 +5068,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -6634,7 +6634,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -8230,7 +8230,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -9856,7 +9856,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
   onRowSelection={[Function]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"

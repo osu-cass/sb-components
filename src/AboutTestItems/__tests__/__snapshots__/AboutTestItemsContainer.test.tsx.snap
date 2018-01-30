@@ -34,7 +34,7 @@ exports[`AboutTestItemsContainer default render 1`] = `
         className="section section-light no-item"
       >
         <p>
-          No items of the selected type found.
+          Please Select an Item Type
         </p>
       </div>
     </div>

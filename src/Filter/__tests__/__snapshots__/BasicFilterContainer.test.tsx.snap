@@ -463,9 +463,6 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
     className="basic-filter-button-container"
   >
     <span>
-      <div>
-         
-      </div>
       <button
         className="btn btn-default filter-button"
       >
@@ -473,14 +470,11 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       </button>
     </span>
     <span>
-      <div>
-        Advanced Filters
-      </div>
       <button
         className="btn btn-default filter-button af-expand"
         onClick={[Function]}
       >
-        Show
+        Advanced Filters
          
         <span
           className="fa fa-chevron-right"
@@ -557,19 +551,25 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
   <div
     className="basic-filter-button-container"
   >
-    <div>
-      Advanced Filters
-    </div>
-    <button
-      className="btn btn-default filter-button"
-      onClick={[Function]}
-    >
-      Hide
-       
-      <span
-        className="fa fa-chevron-down"
-      />
-    </button>
+    <span>
+      <button
+        className="btn btn-default filter-button"
+      >
+        Reset Filters
+      </button>
+    </span>
+    <span>
+      <button
+        className="btn btn-default filter-button af-expand"
+        onClick={[Function]}
+      >
+        Advanced Filters
+         
+        <span
+          className="fa fa-chevron-down"
+        />
+      </button>
+    </span>
   </div>
 </div>
 `;
@@ -640,19 +640,25 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
   <div
     className="basic-filter-button-container"
   >
-    <div>
-      Advanced Filters
-    </div>
-    <button
-      className="btn btn-default filter-button"
-      onClick={[Function]}
-    >
-      Show
-       
-      <span
-        className="fa fa-chevron-right"
-      />
-    </button>
+    <span>
+      <button
+        className="btn btn-default filter-button"
+      >
+        Reset Filters
+      </button>
+    </span>
+    <span>
+      <button
+        className="btn btn-default filter-button af-expand"
+        onClick={[Function]}
+      >
+        Advanced Filters
+         
+        <span
+          className="fa fa-chevron-right"
+        />
+      </button>
+    </span>
   </div>
 </div>
 `;
