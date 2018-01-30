@@ -76,6 +76,7 @@ export {
 } from "./Filter/FilterModels";
 export { Filter } from "./Filter/Filter";
 export { FilterLink } from "./Filter/FilterLink";
+export { CombinedFilter, CombinedFilterProps } from "./Filter/CombinedFilter";
 //
 // Grade Levels
 //

@@ -40,7 +40,7 @@ describe("FilterContainer", () => {
       wrapper
         .findWhere(node => node.type() === BasicFilterContainer)
         .dive()
-        .findWhere(node => node.type() === "button")
+        .find(".af-expand")
         .simulate("click");
       expect(wrapper).toMatchSnapshot();
     }
