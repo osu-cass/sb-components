@@ -489,7 +489,7 @@ exports[`FilterContainer renders 1`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
@@ -1001,7 +1001,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
@@ -1513,7 +1513,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
@@ -2930,7 +2930,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               className="btn btn-default filter-button"
               onClick={[Function]}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>
