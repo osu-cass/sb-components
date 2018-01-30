@@ -124,7 +124,7 @@ export class BasicFilterContainer extends React.Component<
               className="btn btn-default filter-button"
               onClick={this.props.resetHandler}
             >
-              Reset Filters
+              Reset
             </button>
           </span>
           <span>

@@ -21,7 +21,6 @@ export interface AboutTestItemContainerState {
   aboutThisItemViewModel: Resource<AboutItemModel>;
   aboutItemsViewModel: Resource<AboutTestItemsModel>;
   hasError: boolean;
-  loading: boolean;
 }
 
 export interface AboutTestItemContainerProps {
@@ -42,8 +41,7 @@ export class AboutTestItemsContainer extends React.Component<
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
       selectedCode: this.props.params.itemType || "N/A",
-      hasError: false,
-      loading: true
+      hasError: false
     };
   }
 
@@ -77,7 +75,6 @@ export class AboutTestItemsContainer extends React.Component<
     this.setState({
       aboutThisItemViewModel: { kind: "failure" },
       aboutItemsViewModel: { kind: "failure" },
-      loading: false,
       hasError: true
     });
   }
@@ -103,8 +100,7 @@ export class AboutTestItemsContainer extends React.Component<
         content: aboutThisItemViewModel
       },
       aboutItemsViewModel: { kind: "success", content: viewModel },
-      hasError: false,
-      loading: false
+      hasError: false
     });
   };
 
@@ -248,13 +244,19 @@ export class AboutTestItemsContainer extends React.Component<
     return content;
   }
 
+  isLoading(): boolean {
+    const { aboutItemsViewModel, hasError } = this.state;
+    const content = getResourceContent(aboutItemsViewModel);
+    return !hasError && !content;
+  }
+
   public render() {
     const itemFrame = this.state.itemUrl
       ? this.renderItemFrame()
       : this.renderNoItem();
 
     return (
-      <LoadingOverlay loading={this.state.loading}>
+      <LoadingOverlay loading={this.isLoading()}>
         <div className="container about-items">
           <div className="about-items-info">
             <h2 className="page-title">About Test Items</h2>
