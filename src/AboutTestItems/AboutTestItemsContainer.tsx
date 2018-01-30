@@ -13,6 +13,7 @@ import {
   InteractionTypeModel,
   AboutTestItemsParams
 } from "./AboutTestItemsModels";
+import { SelectOptionProps } from "../select/SelectOption";
 
 export interface AboutTestItemContainerState {
   selectedCode?: string;
@@ -40,7 +41,7 @@ export class AboutTestItemsContainer extends React.Component<
     this.state = {
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
-      selectedCode: this.props.params.itemType,
+      selectedCode: "N/A",
       hasError: false,
       loading: true
     };
@@ -55,8 +56,9 @@ export class AboutTestItemsContainer extends React.Component<
       this.setState({
         selectedCode: newCode
       });
-
-      this.fetchUpdatedViewModel(newCode);
+      if (newCode !== "N/A") {
+        this.fetchUpdatedViewModel(newCode);
+      }
     }
   };
 
@@ -86,10 +88,10 @@ export class AboutTestItemsContainer extends React.Component<
 
     if (interactionTypes.length > 0) {
       if (!selectedCode) {
-        selectedCode = interactionTypes[0].code;
+        selectedCode = "N/A";
       } else {
         const validType = interactionTypes.find(it => it.code === selectedCode);
-        selectedCode = validType ? selectedCode : interactionTypes[0].code;
+        selectedCode = validType ? selectedCode : "N/A";
       }
     }
 
@@ -130,13 +132,21 @@ export class AboutTestItemsContainer extends React.Component<
   ): JSX.Element {
     const { selectedCode } = this.state;
 
-    const selectOptions = interactionTypes.map(it => {
-      return {
+    const selectOptions: SelectOptionProps[] = [];
+    selectOptions.push({
+      label: "Select an Item Type",
+      value: "N/A",
+      disabled: false,
+      selected: selectedCode === "N/A"
+    });
+
+    interactionTypes.forEach(it => {
+      selectOptions.push({
         label: it.label,
         value: it.code,
         disabled: false,
         selected: selectedCode === it.code
-      };
+      });
     });
 
     return (
@@ -162,7 +172,7 @@ export class AboutTestItemsContainer extends React.Component<
     const aboutThisItem = getResourceContent(this.state.aboutThisItemViewModel);
     let content: JSX.Element;
 
-    if (aboutThisItem) {
+    if (aboutThisItem && this.state.selectedCode !== "N/A") {
       content = (
         <div
           className="about-item-iframe"

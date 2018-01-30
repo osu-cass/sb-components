@@ -115,7 +115,8 @@ table.item-table > thead > tr > th {
 table.item-table > thead > tr > th:first-child,
 table.item-table > tbody > tr > td:first-child,
 table.item-table > thead > tr > th:nth-child(2),
-table.item-table > tbody > tr > td:nth-child(2) {
+table.item-table > tbody > tr > td:nth-child(2),
+table.item-table > tbody > tr > td:nth-child(3), {
     width: 50px;
     min-width: 50px;
     text-align: center;
@@ -126,7 +127,7 @@ table.link-table > tbody > tr > td,
 table.item-table > tbody > tr > td { 
     width: 200px;
     min-width: 100px;
-    padding: 8px 0px 8px 0px;
+    padding: 4px 8px;
     text-align: left;
     white-space: normal;
 }
@@ -137,31 +138,32 @@ table.link-table > tbody > tr > td.item > span {
 }
 
 table.link-table > tbody > tr:nth-child(even),
-table.item-table > tbody > tr:nth-child(even) {
-    background-color: @background-color-base;
-    border: 1px solid @grey-border-color;
-}
-
+table.item-table > tbody > tr:nth-child(even),
 table.link-table > tbody > tr:nth-child(odd),
 table.item-table > tbody > tr:nth-child(odd) {
-    background-color: @background-color-base;
+    background-color: @sb-white;
     border: 1px solid @grey-border-color;
 }
 
 table.link-table > tbody > tr:hover,
 table.item-table > tbody > tr:hover {
-    background-color: @sb-white;
+    background-color: @background-color-base;
 }
 
 table.link-table > tbody > tr > td > div{
-    padding-left: 5px;
+    padding-left: @spacing-item;
 }
 
-table.link-table > thead > tr > th > div,
-table.item-table > thead > tr > th > div {
+
+table > thead > tr > th > div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+}
+
+table > thead > tr > th > div > span {
+    vertical-align: middle;
+    align-self: center
 }
 
 table.link-table > thead > tr > th:hover,
