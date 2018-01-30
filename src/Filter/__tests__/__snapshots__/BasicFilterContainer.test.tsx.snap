@@ -477,6 +477,7 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
         Advanced Filters
          
         <span
+          aria-hidden="true"
           className="fa fa-chevron-right"
         />
       </button>
@@ -566,6 +567,7 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
         Advanced Filters
          
         <span
+          aria-hidden="true"
           className="fa fa-chevron-down"
         />
       </button>
@@ -655,6 +657,7 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
         Advanced Filters
          
         <span
+          aria-hidden="true"
           className="fa fa-chevron-right"
         />
       </button>

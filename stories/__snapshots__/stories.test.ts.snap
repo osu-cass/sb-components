@@ -1922,6 +1922,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         Advanced Filters
          
         <span
+          aria-hidden="true"
           className="fa fa-chevron-right"
         />
       </button>
@@ -2531,6 +2532,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           Advanced Filters
            
           <span
+            aria-hidden="true"
             className="fa fa-chevron-right"
           />
         </button>

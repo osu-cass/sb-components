@@ -5,6 +5,7 @@ import { BasicFilterCategoryModel } from "../FilterModels";
 import { mockBasicFilterCategories } from "../../../mocks/Filter/mocks";
 import { shallow } from "enzyme";
 import { Select } from "../../Select/Select";
+import { AdvancedFilterContainer } from "../AdvancedFilterContainer";
 
 describe("BasicFilterContainer", () => {
   const AdvFilExpand = jest.fn();
@@ -84,15 +85,20 @@ describe("BasicFilterContainer", () => {
   it("expands the advanced filter", () => {
     expect(wrapper1).toMatchSnapshot();
     wrapper1.setState({ expanded: false });
-    wrapper1
+    const expandButton = wrapper1
       .findWhere(node => node.type() === "button")
-      .at(1)
-      .simulate("click");
+      .at(1);
+
+    expandButton.simulate("click");
     expect(wrapper1).toMatchSnapshot();
-    wrapper1
-      .findWhere(node => node.type() === "button")
-      .at(1)
-      .simulate("click");
+    const advFilter = wrapper1.findWhere(
+      node => node.type() === AdvancedFilterContainer
+    );
+
+    expect(advFilter).toBeDefined();
+    expect(AdvFilExpand).toBeCalled();
+
+    expandButton.simulate("click");
     expect(wrapper1).toMatchSnapshot();
   });
 });
