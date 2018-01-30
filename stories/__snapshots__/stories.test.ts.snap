@@ -1714,16 +1714,18 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
   >
     <div
       className="basic-filter-selection"
-      id="grade -basic-filter"
+      id="grade-basic-filter"
     >
-      <label>
-        <span
-          className="undefined"
-        >
-          Grade
-        </span>
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
         <select
-          className="form-control input-sm"
+          className="form-control input-sm med-text"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -1731,10 +1733,10 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           <option
             aria-selected={true}
             disabled={false}
-            label="Please Select"
+            label="Select Grade"
             value="default"
           >
-            Please Select
+            Select Grade
           </option>
           <option
             aria-selected={false}
@@ -1761,11 +1763,11 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
             High School
           </option>
         </select>
-      </label>
+      </div>
     </div>
     <div
       className="basic-filter-selection"
-      id="subjects -basic-filter"
+      id="subjects-basic-filter"
     >
       <label>
         Subjects
@@ -1815,16 +1817,18 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
   >
     <div
       className="basic-filter-selection"
-      id="grade -basic-filter"
+      id="grade-basic-filter"
     >
-      <label>
-        <span
-          className="undefined"
-        >
-          Grade
-        </span>
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
         <select
-          className="form-control input-sm"
+          className="form-control input-sm med-text"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -1832,10 +1836,10 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
           <option
             aria-selected={true}
             disabled={false}
-            label="Please Select"
+            label="Select Grade"
             value="default"
           >
-            Please Select
+            Select Grade
           </option>
           <option
             aria-selected={false}
@@ -1862,11 +1866,11 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
             High School
           </option>
         </select>
-      </label>
+      </div>
     </div>
     <div
       className="basic-filter-selection"
-      id="subjects -basic-filter"
+      id="subjects-basic-filter"
     >
       <label>
         Subjects
@@ -1952,16 +1956,18 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
-    <label>
-      <span
-        className="undefined"
-      >
-        Grade
-      </span>
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
       <select
-        className="form-control input-sm"
+        className="form-control input-sm med-text"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -1969,10 +1975,10 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         <option
           aria-selected={true}
           disabled={false}
-          label="Please Select"
+          label="Select Grade"
           value="default"
         >
-          Please Select
+          Select Grade
         </option>
         <option
           aria-selected={false}
@@ -2007,7 +2013,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
           Grade 4
         </option>
       </select>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -2028,16 +2034,18 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
-    <label>
-      <span
-        className="undefined"
-      >
-        Grade
-      </span>
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
       <select
-        className="form-control input-sm"
+        className="form-control input-sm med-text"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -2045,10 +2053,10 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
         <option
           aria-selected={true}
           disabled={false}
-          label="Please Select"
+          label="Select Grade"
           value="default"
         >
-          Please Select
+          Select Grade
         </option>
         <option
           aria-selected={false}
@@ -2059,7 +2067,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
           Grade
         </option>
       </select>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -2080,7 +2088,7 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
     <label>
       Grade
@@ -2165,7 +2173,7 @@ exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
     <label>
       Grade
@@ -2430,16 +2438,18 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     >
       <div
         className="basic-filter-selection"
-        id="grade -basic-filter"
+        id="grade-basic-filter"
       >
-        <label>
-          <span
-            className="undefined"
-          >
-            Grade
-          </span>
+        <div>
+          <label>
+            <span
+              className=""
+            >
+              Grade
+            </span>
+          </label>
           <select
-            className="form-control input-sm"
+            className="form-control input-sm med-text"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -2447,10 +2457,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             <option
               aria-selected={true}
               disabled={false}
-              label="Please Select"
+              label="Select Grade"
               value="default"
             >
-              Please Select
+              Select Grade
             </option>
             <option
               aria-selected={false}
@@ -2477,11 +2487,11 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               High School
             </option>
           </select>
-        </label>
+        </div>
       </div>
       <div
         className="basic-filter-selection"
-        id="subjects -basic-filter"
+        id="subjects-basic-filter"
       >
         <label>
           Subjects
