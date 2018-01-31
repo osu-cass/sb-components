@@ -103,210 +103,214 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
 `;
 
 exports[`ItemTableRow matches snapshot 1`] = `
-<ItemTableRow
-  columns={
-    Array [
-      Object {
-        "cols": Array [
+<table>
+  <tbody>
+    <ItemTableRow
+      columns={
+        Array [
           Object {
-            "accessor": [Function],
-            "className": "item",
-          },
-        ],
-        "compare": [Function],
-        "header": "Item",
-        "headerClassName": "item",
-      },
-      Object {
-        "cols": Array [
-          Object {
-            "accessor": [Function],
-            "className": "claim",
+            "cols": Array [
+              Object {
+                "accessor": [Function],
+                "className": "item",
+              },
+            ],
+            "compare": [Function],
+            "header": "Item",
+            "headerClassName": "item",
           },
           Object {
-            "accessor": [Function],
-            "className": "target",
-            "helpText": [Function],
+            "cols": Array [
+              Object {
+                "accessor": [Function],
+                "className": "claim",
+              },
+              Object {
+                "accessor": [Function],
+                "className": "target",
+                "helpText": [Function],
+              },
+            ],
+            "compare": [Function],
+            "header": "Claim/Target",
+            "headerClassName": "claimAndTarget",
           },
-        ],
-        "compare": [Function],
-        "header": "Claim/Target",
-        "headerClassName": "claimAndTarget",
-      },
-      Object {
-        "cols": Array [
           Object {
-            "accessor": [Function],
-            "className": "subject",
+            "cols": Array [
+              Object {
+                "accessor": [Function],
+                "className": "subject",
+              },
+            ],
+            "compare": [Function],
+            "header": "Subject",
+            "headerClassName": "subject",
           },
-        ],
-        "compare": [Function],
-        "header": "Subject",
-        "headerClassName": "subject",
-      },
-      Object {
-        "cols": Array [
           Object {
-            "accessor": [Function],
-            "className": "grade",
+            "cols": Array [
+              Object {
+                "accessor": [Function],
+                "className": "grade",
+              },
+            ],
+            "compare": [Function],
+            "header": "Grade",
+            "headerClassName": "grade",
           },
-        ],
-        "compare": [Function],
-        "header": "Grade",
-        "headerClassName": "grade",
-      },
-      Object {
-        "cols": Array [
           Object {
-            "accessor": [Function],
-            "className": "item-type",
+            "cols": Array [
+              Object {
+                "accessor": [Function],
+                "className": "item-type",
+              },
+            ],
+            "compare": [Function],
+            "header": "Item Type",
+            "headerClassName": "item-type",
           },
-        ],
-        "compare": [Function],
-        "header": "Item Type",
-        "headerClassName": "item-type",
-      },
-    ]
-  }
-  hasControls={true}
-  isExpanded={false}
-  onRowExpand={[Function]}
-  onRowSelect={[Function]}
-  rowData={
-    Object {
-      "bankKey": 187,
-      "brailleOnlyItem": false,
-      "calculator": true,
-      "claimCode": "MATH1",
-      "claimLabel": "Concepts and Procedures",
-      "grade": 8,
-      "gradeLabel": "Grade 6",
-      "interactionTypeCode": "EQ",
-      "interactionTypeLabel": "Equation",
-      "isPerformanceItem": true,
-      "itemKey": 3206,
-      "subjectCode": "MATH",
-      "subjectLabel": "Math",
-      "targetDescription": "Target A description",
-      "targetHash": 100,
-      "targetId": "A",
-      "targetShortName": "",
-      "title": "Math Grade 6 Claim 1",
-    }
-  }
->
-  <tr
-    className=""
-    key="187-3206"
-    onClick={[Function]}
-    onKeyUp={[Function]}
-  >
-    <td
-      key="checkbox-control"
-      onClick={[Function]}
-      onKeyUp={[Function]}
-      tabIndex={0}
+        ]
+      }
+      hasControls={true}
+      isExpanded={false}
+      onRowExpand={[Function]}
+      onRowSelect={[Function]}
+      rowData={
+        Object {
+          "bankKey": 187,
+          "brailleOnlyItem": false,
+          "calculator": true,
+          "claimCode": "MATH1",
+          "claimLabel": "Concepts and Procedures",
+          "grade": 8,
+          "gradeLabel": "Grade 6",
+          "interactionTypeCode": "EQ",
+          "interactionTypeLabel": "Equation",
+          "isPerformanceItem": true,
+          "itemKey": 3206,
+          "subjectCode": "MATH",
+          "subjectLabel": "Math",
+          "targetDescription": "Target A description",
+          "targetHash": 100,
+          "targetId": "A",
+          "targetShortName": "",
+          "title": "Math Grade 6 Claim 1",
+        }
+      }
     >
-      <i
-        aria-hidden="true"
-        className="fa fa-square-o fa-sm table-icon"
-      />
-       
-    </td>
-    <td
-      key="expand-control"
-      tabIndex={0}
-    >
-      <i
-        aria-hidden="true"
-        className="fa fa-chevron-right fa-sm table-icon"
-      />
-    </td>
-    <td
-      className="item"
-      key="item-187-3206"
-    >
-      <span
-        key="item"
+      <tr
+        className=""
+        key="187-3206"
+        onClick={[Function]}
+        onKeyUp={[Function]}
       >
-        <span>
-          3206
-        </span>
-      </span>
-    </td>
-    <td
-      className="claimAndTarget"
-      key="claimAndTarget-187-3206"
-    >
-      <span
-        key="claim"
-      >
-        <span>
-          Concepts and Procedures
-        </span>
-      </span>
-      <span
-        key="target"
-      >
-        <ToolTip
-          displayIcon={false}
-          helpText="Target A description"
-          position="top"
+        <td
+          key="checkbox-control"
+          onClick={[Function]}
+          onKeyUp={[Function]}
+          tabIndex={0}
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-square-o fa-sm table-icon"
+          />
+           
+        </td>
+        <td
+          key="expand-control"
+          tabIndex={0}
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-chevron-right fa-sm table-icon"
+          />
+        </td>
+        <td
+          className="item"
+          key="item-187-3206"
         >
           <span
-            className="tool-tip top"
+            key="item"
           >
-            <span
-              className="tool-tip-hoverable"
-              onBlur={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              tabIndex={0}
-            >
-              /
-               
+            <span>
+              3206
             </span>
           </span>
-        </ToolTip>
-      </span>
-    </td>
-    <td
-      className="subject"
-      key="subject-187-3206"
-    >
-      <span
-        key="subject"
-      >
-        <span>
-          Math
-        </span>
-      </span>
-    </td>
-    <td
-      className="grade"
-      key="grade-187-3206"
-    >
-      <span
-        key="grade"
-      >
-        <span>
-          Grade 6
-        </span>
-      </span>
-    </td>
-    <td
-      className="item-type"
-      key="item-type-187-3206"
-    >
-      <span
-        key="item-type"
-      >
-        <span>
-          Equation
-        </span>
-      </span>
-    </td>
-  </tr>
-</ItemTableRow>
+        </td>
+        <td
+          className="claimAndTarget"
+          key="claimAndTarget-187-3206"
+        >
+          <span
+            key="claim"
+          >
+            <span>
+              Concepts and Procedures
+            </span>
+          </span>
+          <span
+            key="target"
+          >
+            <ToolTip
+              displayIcon={false}
+              helpText="Target A description"
+              position="top"
+            >
+              <span
+                className="tool-tip top"
+              >
+                <span
+                  className="tool-tip-hoverable"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  tabIndex={0}
+                >
+                  /
+                   
+                </span>
+              </span>
+            </ToolTip>
+          </span>
+        </td>
+        <td
+          className="subject"
+          key="subject-187-3206"
+        >
+          <span
+            key="subject"
+          >
+            <span>
+              Math
+            </span>
+          </span>
+        </td>
+        <td
+          className="grade"
+          key="grade-187-3206"
+        >
+          <span
+            key="grade"
+          >
+            <span>
+              Grade 6
+            </span>
+          </span>
+        </td>
+        <td
+          className="item-type"
+          key="item-type-187-3206"
+        >
+          <span
+            key="item-type"
+          >
+            <span>
+              Equation
+            </span>
+          </span>
+        </td>
+      </tr>
+    </ItemTableRow>
+  </tbody>
+</table>
 `;

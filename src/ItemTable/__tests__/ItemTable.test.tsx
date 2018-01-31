@@ -3,13 +3,11 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
-
 import { ItemTable, ItemTableProps } from "../ItemTable";
 import { itemCardList } from "../../../mocks/ItemCard/mocks";
 import { tabClassNames } from "../../../mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
 import { AboutItemMockModel } from "../../../mocks/AboutItem/mocks";
-
 import {
   ItemCardModel,
   GradeLevels,
@@ -42,8 +40,16 @@ describe("ItemTable", () => {
     expandedRow: selectedItem
   };
 
-  const wrapper = mount(<ItemTable {...props} />);
-  const wrapperExpanded = mount(<ItemTable {...propsExpanded} />);
+  const wrapper = mount(
+    <table>
+      <ItemTable {...props} />
+    </table>
+  );
+  const wrapperExpanded = mount(
+    <table>
+      <ItemTable {...propsExpanded} />
+    </table>
+  );
 
   it("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();

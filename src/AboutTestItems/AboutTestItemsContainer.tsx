@@ -46,7 +46,7 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   componentDidMount() {
-    this.fetchUpdatedViewModel(this.state.selectedCode);
+    return () => this.fetchUpdatedViewModel(this.state.selectedCode);
   }
 
   handleChange = (newCode: string) => {

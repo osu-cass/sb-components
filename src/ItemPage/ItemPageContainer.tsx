@@ -60,14 +60,16 @@ export class ItemPageContainer extends React.Component<
   }
 
   componentDidMount() {
-    this.fetchItemPage(this.state.item);
+    return () => {
+      this.fetchItemPage(this.state.item);
 
-    if (
-      this.state.itemAccessibility.kind === "success" &&
-      this.state.itemAccessibility.content
-    ) {
-      this.updateIsaapHandler(this.state.itemAccessibility.content);
-    }
+      if (
+        this.state.itemAccessibility.kind === "success" &&
+        this.state.itemAccessibility.content
+      ) {
+        this.updateIsaapHandler(this.state.itemAccessibility.content);
+      }
+    };
   }
 
   fetchItemPage(item: ItemModel) {
