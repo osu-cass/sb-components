@@ -19,7 +19,9 @@ import {
   Resource,
   getResourceContent,
   parseQueryString,
-  LoadingOverlay
+  LoadingOverlay,
+  PromiseCancelable,
+  Subscription
 } from "../index";
 
 export interface ItemPageContainerProps {
@@ -47,6 +49,8 @@ export class ItemPageContainer extends React.Component<
   ItemPageContainerProps,
   ItemPageContainerState
 > {
+  private subscription = new Subscription();
+
   constructor(props: ItemPageContainerProps) {
     super(props);
 
@@ -60,28 +64,32 @@ export class ItemPageContainer extends React.Component<
   }
 
   componentDidMount() {
-    return () => {
-      this.fetchItemPage(this.state.item);
+    this.fetchItemPage(this.state.item);
+  }
 
-      if (
-        this.state.itemAccessibility.kind === "success" &&
-        this.state.itemAccessibility.content
-      ) {
-        this.updateIsaapHandler(this.state.itemAccessibility.content);
-      }
-    };
+  componentWillUnmount() {
+    this.subscription.cancelAll();
   }
 
   fetchItemPage(item: ItemModel) {
-    this.props
-      .itemPageClient(item)
+    const { itemPageClient, itemAccessibilityClient } = this.props;
+
+    const itemProm = this.subscription.add(
+      "itemPageClient",
+      itemPageClient(item)
+    );
+    const accessProm = this.subscription.add(
+      "accessClient",
+      itemAccessibilityClient(item)
+    );
+
+    itemProm.promise
       .then(data => this.onGetItemPage(data))
-      .then(() =>
-        this.props
-          .itemAccessibilityClient(item)
+      .then(() => {
+        accessProm.promise
           .then(data => this.onGetItemAccessibility(data))
-          .catch(err => this.onError(err))
-      )
+          .catch(err => this.onError(err));
+      })
       .then(() => this.setCurrentItem())
       .then(() => this.fetchUpdatedAboutThisItem())
       .catch(err => this.onError(err));
@@ -104,13 +112,6 @@ export class ItemPageContainer extends React.Component<
       });
 
       this.fetchItemPage(nextItem);
-
-      if (
-        this.state.itemAccessibility.kind === "success" &&
-        this.state.itemAccessibility.content
-      ) {
-        this.updateIsaapHandler(this.state.itemAccessibility.content);
-      }
     }
   }
 
@@ -139,11 +140,14 @@ export class ItemPageContainer extends React.Component<
     this.setState({
       itemAccessibility: { kind: "success", content: data }
     });
+    this.updateIsaapHandler(data);
   }
 
-  onError(err: Error) {
-    this.setState({ loading: false });
-    console.error(err);
+  onError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({ loading: false });
+      console.error(err);
+    }
   }
 
   private getItemPage(): ItemPageModel | undefined {
@@ -179,7 +183,6 @@ export class ItemPageContainer extends React.Component<
       this.onGetItemAccessibility(newGroups);
       this.setCurrentItem();
       this.updateIsaapCookieHandler(newGroups);
-      this.updateIsaapHandler(newGroups);
     } else {
       console.error("Error no item to update resources");
     }
@@ -226,8 +229,11 @@ export class ItemPageContainer extends React.Component<
   fetchUpdatedAboutThisItem() {
     const item = this.state.currentItem;
     if (item) {
-      this.props
-        .aboutThisClient(item)
+      const aboutThisProm = this.subscription.add(
+        "aboutThisClient",
+        this.props.aboutThisClient(item)
+      );
+      aboutThisProm.promise
         .then(data => this.onFetchedUpdatedViewModel(data))
         .catch(err => this.onError(err));
     }
@@ -239,12 +245,13 @@ export class ItemPageContainer extends React.Component<
     });
   }
 
-  onFetchUpdatedAboutError(err: Error) {
-    console.error(err);
-    this.setState({
-      aboutThisItem: { kind: "failure" },
-      loading: false
-    });
+  onFetchUpdatedAboutError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({
+        aboutThisItem: { kind: "failure" },
+        loading: false
+      });
+    }
   }
 
   render() {

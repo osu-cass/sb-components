@@ -5,14 +5,16 @@ import {
   AboutItemModel,
   ItemViewerFrame,
   LoadingOverlay,
-  Select
-} from "../index";
-import { Resource, getRequest, getResourceContent } from "../ApiModel";
-import {
+  Select,
+  PromiseCancelable,
+  Resource,
+  getRequest,
+  getResourceContent,
   AboutTestItemsModel,
   InteractionTypeModel,
-  AboutTestItemsParams
-} from "./AboutTestItemsModels";
+  AboutTestItemsParams,
+  Subscription
+} from "../index";
 import { SelectOptionProps } from "../select/SelectOption";
 
 export interface AboutTestItemContainerState {
@@ -35,6 +37,8 @@ export class AboutTestItemsContainer extends React.Component<
   AboutTestItemContainerProps,
   AboutTestItemContainerState
 > {
+  private subscription = new Subscription();
+
   constructor(props: AboutTestItemContainerProps) {
     super(props);
     this.state = {
@@ -46,7 +50,11 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   componentDidMount() {
-    return () => this.fetchUpdatedViewModel(this.state.selectedCode);
+    this.fetchUpdatedViewModel(this.state.selectedCode);
+  }
+
+  componentWillUnmount() {
+    this.subscription.cancelAll();
   }
 
   handleChange = (newCode: string) => {
@@ -64,22 +72,25 @@ export class AboutTestItemsContainer extends React.Component<
     const params = {
       interactionTypeCode: newCode || ""
     };
+    const prom = this.props.aboutClient(params);
 
-    this.props
-      .aboutClient(params)
+    const promiseWrapper = this.subscription.add("aboutClient", prom);
+    promiseWrapper.promise
       .then(data => this.onFetchedUpdatedViewModel(data))
       .catch(err => this.onError(err));
   }
 
-  onError(err: Error) {
-    this.setState({
-      aboutThisItemViewModel: { kind: "failure" },
-      aboutItemsViewModel: { kind: "failure" },
-      hasError: true
-    });
+  onError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({
+        aboutThisItemViewModel: { kind: "failure" },
+        aboutItemsViewModel: { kind: "failure" },
+        hasError: true
+      });
+    }
   }
 
-  onFetchedUpdatedViewModel = (viewModel: AboutTestItemsModel) => {
+  onFetchedUpdatedViewModel(viewModel: AboutTestItemsModel) {
     const { interactionTypes, aboutThisItemViewModel } = viewModel;
     let selectedCode = this.state.selectedCode;
 
@@ -102,7 +113,7 @@ export class AboutTestItemsContainer extends React.Component<
       aboutItemsViewModel: { kind: "success", content: viewModel },
       hasError: false
     });
-  };
+  }
 
   renderDescription(interactionTypes: InteractionTypeModel[]) {
     let desc = "";
@@ -247,6 +258,7 @@ export class AboutTestItemsContainer extends React.Component<
   isLoading(): boolean {
     const { aboutItemsViewModel, hasError } = this.state;
     const content = getResourceContent(aboutItemsViewModel);
+
     return !hasError && !content;
   }
 
