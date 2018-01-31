@@ -20,9 +20,11 @@ const advancedFilter: AdvancedFilterCategoryModel[] = [
 
 describe("resetFilters", () => {
   it("deselects all filters", () => {
+    const advancedFilterClone = JSON.parse(JSON.stringify(advancedFilter));
+    const basicFilterClone = JSON.parse(JSON.stringify(basicFilter));
     const result = CombinedFilterHelpers.resetFilters(
-      basicFilter,
-      advancedFilter
+      basicFilterClone,
+      advancedFilterClone
     );
 
     expect(result.searchAPI).toEqual({});
@@ -37,16 +39,46 @@ describe("resetFilters", () => {
 
 describe("basicFilterUpdated", () => {
   it("updates search api", () => {
+    const advancedFilterClone: AdvancedFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(advancedFilter)
+    );
+    const basicFilterClone: BasicFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(basicFilter)
+    );
     const result = CombinedFilterHelpers.basicFilterUpdated(
-      basicFilter,
-      { claims: [] },
-      advancedFilter,
+      basicFilterClone,
+      { subjects: ["MATH"] },
+      advancedFilterClone,
       Mocks.searchModel,
       FilterType.Claim
     );
 
-    expect(result.searchAPI).toEqual({});
+    expect(result.searchAPI.claims).toEqual(["MATH1", "MATH2"]);
   });
 
-  it;
+  it("updates corresponding category in advanced filter", () => {
+    const advancedFilterClone: AdvancedFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(advancedFilter)
+    );
+    const basicFilterClone: BasicFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(basicFilter)
+    );
+    advancedFilterClone[0].filterOptions.forEach(o => (o.isSelected = false));
+
+    const result = CombinedFilterHelpers.basicFilterUpdated(
+      basicFilterClone,
+      { subjects: ["MATH"] },
+      advancedFilterClone,
+      Mocks.searchModel,
+      FilterType.Claim
+    );
+
+    expect(result.advancedFilter[0].filterOptions).toHaveLength(1);
+    expect(result.advancedFilter[0].filterOptions[0]).toEqual({
+      isSelected: true,
+      key: "MATH1",
+      label: "MATH1",
+      filterType: FilterType.Claim
+    });
+  });
 });
