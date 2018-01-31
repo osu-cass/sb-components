@@ -9,34 +9,42 @@ body {
   color: @text-color-darkest;
 }
 
+h2 {
+  letter-spacing: -.5px;
+}
+
 .container {
   flex: 1 0 auto;
   max-width: @content-width;
-  margin: (@spacing-unit * 1.5) @spacing-unit;
+  margin: (@spacing-unit *1.5) @spacing-unit;
   align-self: center;
   width: 100%;
-  padding: @spacing-item;
+  padding: @spacing-item @spacing-unit;
 }
 
-@media (max-width: @small) {
-  .container {
-    margin: @spacing-unit @spacing-item;
-    padding: 0 @spacing-item;
-  }
-}
 
+//** https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 .site-body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   background-color: @background-color-base;
+  height: 100%;
 }
 
 .site-content {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   color: @text-color-dark;
+
+}
+
+.site-content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  height: 0px;
+  visibility: hidden;
 }
 
 .section {
@@ -44,7 +52,7 @@ body {
   padding: @spacing-unit;
 }
 
-.container > .page-title {
+.container .page-title {
   margin: 0 0 @spacing-item 0;
   padding: 0;
 }

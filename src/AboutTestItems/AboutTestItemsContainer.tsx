@@ -5,14 +5,16 @@ import {
   AboutItemModel,
   ItemViewerFrame,
   LoadingOverlay,
-  Select
-} from "../index";
-import { Resource, getRequest, getResourceContent } from "../ApiModel";
-import {
+  Select,
+  PromiseCancelable,
+  Resource,
+  getRequest,
+  getResourceContent,
   AboutTestItemsModel,
   InteractionTypeModel,
-  AboutTestItemsParams
-} from "./AboutTestItemsModels";
+  AboutTestItemsParams,
+  Subscription
+} from "../index";
 import { SelectOptionProps } from "../select/SelectOption";
 
 export interface AboutTestItemContainerState {
@@ -21,7 +23,6 @@ export interface AboutTestItemContainerState {
   aboutThisItemViewModel: Resource<AboutItemModel>;
   aboutItemsViewModel: Resource<AboutTestItemsModel>;
   hasError: boolean;
-  loading: boolean;
 }
 
 export interface AboutTestItemContainerProps {
@@ -36,19 +37,24 @@ export class AboutTestItemsContainer extends React.Component<
   AboutTestItemContainerProps,
   AboutTestItemContainerState
 > {
+  private subscription = new Subscription();
+
   constructor(props: AboutTestItemContainerProps) {
     super(props);
     this.state = {
       aboutThisItemViewModel: { kind: "loading" },
       aboutItemsViewModel: { kind: "loading" },
-      selectedCode: "N/A",
-      hasError: false,
-      loading: true
+      selectedCode: this.props.params.itemType || "N/A",
+      hasError: false
     };
   }
 
   componentDidMount() {
     this.fetchUpdatedViewModel(this.state.selectedCode);
+  }
+
+  componentWillUnmount() {
+    this.subscription.cancelAll();
   }
 
   handleChange = (newCode: string) => {
@@ -66,23 +72,25 @@ export class AboutTestItemsContainer extends React.Component<
     const params = {
       interactionTypeCode: newCode || ""
     };
+    const prom = this.props.aboutClient(params);
 
-    this.props
-      .aboutClient(params)
+    const promiseWrapper = this.subscription.add("aboutClient", prom);
+    promiseWrapper.promise
       .then(data => this.onFetchedUpdatedViewModel(data))
       .catch(err => this.onError(err));
   }
 
-  onError(err: Error) {
-    this.setState({
-      aboutThisItemViewModel: { kind: "failure" },
-      aboutItemsViewModel: { kind: "failure" },
-      loading: false,
-      hasError: true
-    });
+  onError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({
+        aboutThisItemViewModel: { kind: "failure" },
+        aboutItemsViewModel: { kind: "failure" },
+        hasError: true
+      });
+    }
   }
 
-  onFetchedUpdatedViewModel = (viewModel: AboutTestItemsModel) => {
+  onFetchedUpdatedViewModel(viewModel: AboutTestItemsModel) {
     const { interactionTypes, aboutThisItemViewModel } = viewModel;
     let selectedCode = this.state.selectedCode;
 
@@ -103,10 +111,9 @@ export class AboutTestItemsContainer extends React.Component<
         content: aboutThisItemViewModel
       },
       aboutItemsViewModel: { kind: "success", content: viewModel },
-      hasError: false,
-      loading: false
+      hasError: false
     });
-  };
+  }
 
   renderDescription(interactionTypes: InteractionTypeModel[]) {
     let desc = "";
@@ -161,9 +168,18 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   renderNoItem() {
+    const { selectedCode } = this.state;
+
+    let content: string = "";
+    if (selectedCode && selectedCode !== "N/A") {
+      content = "No Item Found With Selected Type";
+    } else {
+      content = "Please Select an Item Type";
+    }
+
     return (
       <div className="section section-light no-item">
-        <p>No items of the selected type found.</p>
+        <p>{content}</p>
       </div>
     );
   }
@@ -239,13 +255,20 @@ export class AboutTestItemsContainer extends React.Component<
     return content;
   }
 
+  isLoading(): boolean {
+    const { aboutItemsViewModel, hasError } = this.state;
+    const content = getResourceContent(aboutItemsViewModel);
+
+    return !hasError && !content;
+  }
+
   public render() {
     const itemFrame = this.state.itemUrl
       ? this.renderItemFrame()
       : this.renderNoItem();
 
     return (
-      <LoadingOverlay loading={this.state.loading}>
+      <LoadingOverlay loading={this.isLoading()}>
         <div className="container about-items">
           <div className="about-items-info">
             <h2 className="page-title">About Test Items</h2>

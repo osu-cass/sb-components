@@ -12,7 +12,7 @@
   padding: @spacing-unit;
   border-radius: 0 0 10px 10px;
   color: @text-color-dark;
-  min-width: 300px;
+  flex-basis: 300px;
 }
 
 div.advanced-filter-container *:not(span) {
@@ -97,6 +97,11 @@ div.filter-status > button.btn {
 
 .filter-selection {
   padding: @spacing-unit/2;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+#calculator-filter {
+  flex-basis: 150px;
 }
 
 .filter-selection button.btn:focus {

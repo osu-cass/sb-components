@@ -60,20 +60,6 @@ exports[`AccessibilityModal accessibility open 1`] = `
             Options displayed in grey are not available for this item.
           </span>
         </p>
-        <p>
-          To experience the 
-          <strong>
-            text-to-speech functionality
-          </strong>
-          ,  please visit the 
-          <a
-            href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ "
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Smarter Balanced Practice Test.
-          </a>
-        </p>
         <form
           id="accessibility-form"
           onSubmit={[Function]}
@@ -82,7 +68,7 @@ exports[`AccessibilityModal accessibility open 1`] = `
             className="accessibility-groups"
           >
             <div
-              className="accessibility-resource-type section-light"
+              className="accessibility-resource-type section section-light"
               key="Universal Tools"
             >
               <h4
@@ -255,20 +241,6 @@ exports[`AccessibilityModal defualt render 1`] = `
             Options displayed in grey are not available for this item.
           </span>
         </p>
-        <p>
-          To experience the 
-          <strong>
-            text-to-speech functionality
-          </strong>
-          ,  please visit the 
-          <a
-            href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ "
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Smarter Balanced Practice Test.
-          </a>
-        </p>
         <form
           id="accessibility-form"
           onSubmit={[Function]}
@@ -277,7 +249,7 @@ exports[`AccessibilityModal defualt render 1`] = `
             className="accessibility-groups"
           >
             <div
-              className="accessibility-resource-type section-light"
+              className="accessibility-resource-type section section-light"
               key="Universal Tools"
             >
               <h4

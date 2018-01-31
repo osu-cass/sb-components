@@ -76,6 +76,7 @@ export {
 } from "./Filter/FilterModels";
 export { Filter } from "./Filter/Filter";
 export { FilterLink } from "./Filter/FilterLink";
+export { CombinedFilter, CombinedFilterProps } from "./Filter/CombinedFilter";
 //
 // Grade Levels
 //
@@ -261,3 +262,8 @@ export {
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
 export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";
+
+//
+// Promises and Subscription
+//
+export { Subscription, PromiseCancelable } from "./Subscription";

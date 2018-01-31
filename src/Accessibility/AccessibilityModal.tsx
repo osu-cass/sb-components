@@ -182,7 +182,7 @@ export class ItemAccessibilityModal extends React.Component<
 
     return (
       <div
-        className="accessibility-resource-type section-light"
+        className="accessibility-resource-type section section-light"
         key={resourceType}
       >
         {resourceTypeHeader}
@@ -230,17 +230,6 @@ export class ItemAccessibilityModal extends React.Component<
                 <span>
                   Options displayed in grey are not available for this item.
                 </span>
-              </p>
-              <p>
-                To experience the <strong>text-to-speech functionality</strong>,&nbsp;
-                please visit the&nbsp;
-                <a
-                  rel="noopener noreferrer"
-                  href="http://www.smarterbalanced.org/assessments/practice-and-training-tests/ "
-                  target="_blank"
-                >
-                  Smarter Balanced Practice Test.
-                </a>
               </p>
               <form id="accessibility-form" onSubmit={this.onSave}>
                 <div className="accessibility-groups">{groups}</div>

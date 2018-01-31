@@ -61,7 +61,6 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
 
     return tags;
   }
-
   render() {
     const { disabled, label, helpText } = this.props;
     const className = disabled ? " filter-disabled" : "";

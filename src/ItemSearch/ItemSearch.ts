@@ -93,20 +93,15 @@ export class ItemSearch {
             ? calculatorCodes[0] === "true"
             : undefined;
         break;
-      case FilterType.CAT:
-        const catCodes = Filter.getSelectedCodes(FilterType.TechnologyType, [
+      case FilterType.TechnologyType:
+        const techTypes = Filter.getSelectedCodes(FilterType.TechnologyType, [
           category
         ]);
-        newModel.catOnly = catCodes
-          ? catCodes.some(t => t === FilterType.CAT)
+        newModel.catOnly = techTypes
+          ? techTypes.some(t => t === FilterType.CAT)
           : undefined;
-        break;
-      case FilterType.Performance:
-        const perfCodes = Filter.getSelectedCodes(FilterType.TechnologyType, [
-          category
-        ]);
-        newModel.performanceOnly = perfCodes
-          ? perfCodes.some(t => t === FilterType.Performance)
+        newModel.performanceOnly = techTypes
+          ? techTypes.some(t => t === FilterType.Performance)
           : undefined;
         break;
       case FilterType.Claim:

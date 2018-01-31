@@ -54,7 +54,7 @@ async function mockPromise(params?: { interactionTypeCode: string }) {
 
 async function mockPromiseReject(params?: { interactionTypeCode: string }) {
   return new Promise<AboutTestItemsModel>((resolve, reject) => {
-    reject("Rejected");
+    reject("Canceled");
   });
 }
 
