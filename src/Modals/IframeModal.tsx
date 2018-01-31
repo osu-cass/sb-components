@@ -40,7 +40,7 @@ export class IframeModal extends React.Component<
           role="button"
           tabIndex={0}
           onClick={this.handleShowModal}
-          aria-label="Open Iframe Modal"
+          aria-label={`Open ${this.props.title} Modal`}
         >
           {this.props.btnText ? this.props.btnText : "Open"}
         </button>
