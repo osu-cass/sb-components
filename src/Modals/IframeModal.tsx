@@ -46,6 +46,20 @@ export class IframeModal extends React.Component<
     this.setState({ showModal: false });
   };
 
+  renderOpenButton() {
+    return (
+      <button
+        className="btn btn-default btn-sm"
+        role="button"
+        tabIndex={0}
+        onClick={this.handleShowModal}
+        aria-label={`Open ${this.props.title} Modal`}
+      >
+        {this.props.btnText ? this.props.btnText : "Open"}
+      </button>
+    );
+  }
+
   renderHeader() {
     return (
       <div className="modal-header">
@@ -58,20 +72,6 @@ export class IframeModal extends React.Component<
           <span className="fa fa-times" aria-hidden="true" />
         </button>
       </div>
-    );
-  }
-
-  renderOpenButton() {
-    return (
-      <button
-        className="btn btn-default btn-sm"
-        role="button"
-        tabIndex={0}
-        onClick={this.handleShowModal}
-        aria-label={`Open ${this.props.title} Modal`}
-      >
-        {this.props.btnText ? this.props.btnText : "Open"}
-      </button>
     );
   }
 
@@ -89,6 +89,22 @@ export class IframeModal extends React.Component<
     );
   }
 
+  renderModalWrapper() {
+    return (
+      <div
+        className="modal-wrapper"
+        aria-labelledby={`${this.props.title} Modal`}
+        aria-hidden="true"
+      >
+        {this.renderHeader()}
+        <div className="modal-body">
+          <ItemViewerFrame {...this.props} />
+        </div>
+        {this.renderFooter()}
+      </div>
+    );
+  }
+
   render() {
     return (
       <div>
@@ -100,17 +116,7 @@ export class IframeModal extends React.Component<
           overlayClassName="react-modal-overlay"
           className="react-modal-content iframe-modal"
         >
-          <div
-            className="modal-wrapper"
-            aria-labelledby={`${this.props.title} Modal`}
-            aria-hidden="true"
-          >
-            {this.renderHeader()}
-            <div className="modal-body">
-              <ItemViewerFrame {...this.props} />
-            </div>
-            {this.renderFooter()}
-          </div>
+          {this.renderModalWrapper()}
         </ReactModal>
       </div>
     );
