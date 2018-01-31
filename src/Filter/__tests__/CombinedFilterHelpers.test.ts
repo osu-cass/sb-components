@@ -82,3 +82,50 @@ describe("basicFilterUpdated", () => {
     });
   });
 });
+
+describe("advancedFilterUpdated", () => {
+  it("updates search api", () => {
+    const advancedFilterClone: AdvancedFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(advancedFilter)
+    );
+    const basicFilterClone: BasicFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(basicFilter)
+    );
+    const result = CombinedFilterHelpers.advancedFilterUpdated(
+      basicFilterClone,
+      { subjects: ["MATH"] },
+      advancedFilterClone,
+      Mocks.searchModel,
+      FilterType.Claim
+    );
+
+    expect(result.searchAPI.claims).toEqual(["MATH1", "MATH2"]);
+  });
+
+  it("updates basic filter", () => {
+    const advancedFilterClone: AdvancedFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(advancedFilter)
+    );
+    const basicFilterClone: BasicFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(basicFilter)
+    );
+    basicFilterClone[0].filterOptions.forEach(o => (o.isSelected = false));
+
+    const result = CombinedFilterHelpers.advancedFilterUpdated(
+      basicFilterClone,
+      { subjects: ["MATH"] },
+      advancedFilterClone,
+      Mocks.searchModel,
+      FilterType.Claim
+    );
+
+    expect(result.basicFilter[0].filterOptions).toHaveLength(2);
+    expect(result.basicFilter[0].filterOptions[0]).toEqual({
+      isSelected: true,
+      key: "MATH1",
+      label: "Claim1",
+      filterType: FilterType.Claim
+    });
+    expect(result.basicFilter[0].filterOptions[1].isSelected).toBeTruthy();
+  });
+});
