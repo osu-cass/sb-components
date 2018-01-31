@@ -2,6 +2,10 @@ import * as React from "react";
 import { ItemViewerFrame } from "../index";
 import * as ReactModal from "react-modal";
 
+/**
+ * @export
+ * @interface IframeModalProps
+ */
 export interface IframeModalProps {
   url: string;
   title: string;
@@ -9,10 +13,20 @@ export interface IframeModalProps {
   showModal?: boolean;
 }
 
+/**
+ * @export
+ * @interface IframeModalState
+ */
 export interface IframeModalState {
   showModal: boolean;
 }
 
+/**
+ * Renders Iframe content within a modal component.
+ * @export
+ * @class IframeModal
+ * @extends {React.Component<IframeModalProps, IframeModalState>}
+ */
 export class IframeModal extends React.Component<
   IframeModalProps,
   IframeModalState
