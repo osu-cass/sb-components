@@ -18,11 +18,20 @@ export interface ItemViewPageProps extends RouteComponentProps<ItemModel> {
     params: ItemIsaapModel
   ) => Promise<AccResourceGroupModel[]>;
   showRubrics: boolean;
+  appName?: string;
 }
 
 export class ItemViewPage extends React.Component<ItemViewPageProps, {}> {
   constructor(props: ItemViewPageProps) {
     super(props);
+  }
+
+  componentDidMount() {
+    const { appName } = this.props;
+
+    if (appName) {
+      document.title = `Item Details - Smarter Balanced ${appName}`;
+    }
   }
 
   getLocationIsaap() {

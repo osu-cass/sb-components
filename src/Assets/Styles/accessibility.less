@@ -1,56 +1,57 @@
 @import "constants";
 
 .accessibility-groups {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.green-title{
-    color: @green-dark;
-    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.green-title {
+  color: @green-dark;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 .accessibility-dropdowns {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: auto;
 }
 
 .accessibility-dropdown > .form-control {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 .accessibility-resource-type {
-    padding-left: @spacing-item;
-    padding-top: @spacing-item;
-    padding-bottom: @spacing-item; 
-    margin-bottom: @spacing-item;
+  margin-bottom: @spacing-item;
 }
 
 .accessibility-dropdown {
-    padding: 7px;
-    flex-basis: 250px;
+  padding: 7px;
+  flex-basis: 250px;
+  min-width: 250px;
 }
 
 .accessibility-modal {
-    max-width: @modal-max-width;
+  max-width: @modal-max-width;
 }
 
 .expand-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .option-disabled {
-    background: rgb(128,128,128); /* Fallback for browsers without support for rgba() */
-    background: rgba(128,128,128,0.4);
+  background: rgb(
+    128,
+    128,
+    128
+  ); /* Fallback for browsers without support for rgba() */
+  background: rgba(128, 128, 128, 0.4);
 }
 
 .selection-disabled {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-
 .readonly-select {
-    user-select: all;
+  user-select: all;
 }

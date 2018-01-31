@@ -30,7 +30,13 @@ describe("ItemTableRow", () => {
     onRowSelect: itemHandler
   };
 
-  const wrapper = mount(<ItemTableRow {...props} />);
+  const wrapper = mount(
+    <table>
+      <tbody>
+        <ItemTableRow {...props} />
+      </tbody>
+    </table>
+  );
   const wrapperExpanded = shallow(
     <ItemTableRow {...props} isExpanded={true} />
   );

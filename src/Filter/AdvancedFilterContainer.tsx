@@ -157,7 +157,7 @@ export class AdvancedFilterContainer extends React.Component<
    */
   renderResetButton(): JSX.Element | undefined {
     let content: JSX.Element | undefined;
-    if (this.hasActiveFilterIndicators()) {
+    if (this.hasActiveFilterIndicators() && !this.props.isNested) {
       content = (
         <button
           onClick={() => this.resetFilters()}

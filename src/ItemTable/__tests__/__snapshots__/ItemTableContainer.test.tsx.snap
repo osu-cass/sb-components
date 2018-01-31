@@ -188,11 +188,91 @@ exports[`ItemPageTable expands 1`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3206,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3163,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 2928,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3615,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3206,
+          },
+          false,
+        ],
+      ],
+    }
+  }
+  onRowSelection={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3206,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3163,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 2928,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3615,
+          },
+          false,
+        ],
+        Array [
+          Object {
+            "bankKey": 187,
+            "itemKey": 3206,
+          },
+          false,
+        ],
+      ],
+    }
+  }
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -2048,11 +2128,11 @@ exports[`ItemPageTable matches snapshot 1`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={[MockFunction]}
+  onRowSelection={[MockFunction]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -3538,11 +3618,11 @@ exports[`ItemPageTable sorts list on header click 1`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={[MockFunction]}
+  onRowSelection={[MockFunction]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -5064,11 +5144,11 @@ exports[`ItemPageTable sorts list on header click 2`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={[MockFunction]}
+  onRowSelection={[MockFunction]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -6630,11 +6710,11 @@ exports[`ItemPageTable sorts list on header click 3`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={[MockFunction]}
+  onRowSelection={[MockFunction]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -8226,11 +8306,11 @@ exports[`ItemPageTable sorts list on header click 4`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={[MockFunction]}
+  onRowSelection={[MockFunction]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"
@@ -9852,11 +9932,11 @@ exports[`ItemPageTable sorts list on header click 5`] = `
       },
     ]
   }
-  onItemSelection={[Function]}
-  onRowSelection={[Function]}
+  onItemSelection={[MockFunction]}
+  onRowSelection={[MockFunction]}
 >
   <div
-    className="section section-light"
+    className="section"
   >
     <table
       className="item-table"

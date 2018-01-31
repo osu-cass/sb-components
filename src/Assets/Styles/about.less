@@ -8,15 +8,13 @@
 
 .about-items-info {
   flex: 1 370px;
-  margin: 0 @spacing-unit/2;
 }
 
 .about-items-iframe,
 .no-item {
   flex: 1 @small;
-  padding: 0;
-  margin: @spacing-unit*1.5 @spacing-unit/2;
 }
+
 
 .about-items-dropdown {
   width: inherit;
@@ -24,7 +22,7 @@
 }
 
 .about-items-dropdown .form-control {
-  padding: @spacing-unit;
+  padding: 12px;
   font-size: @font-size-base;
   max-width: 100%;
   height: auto;
@@ -32,7 +30,6 @@
 
 .about-items-desc {
   border-radius: 6px; // SB
-  margin-top: @spacing-unit;
 }
 
 .about-items-text {
@@ -53,12 +50,15 @@
   max-width: @modal-max-width;
 }
 
-@media screen and (max-width: @small) {
+@media screen and (min-width: @small) {
   .about-items-iframe,
   .no-item {
-    margin: @spacing-unit*1.5 0;
+    margin-left: @spacing-unit/2;
+  }
+  .no-item {
+    padding-top: @spacing-unit;
   }
   .about-items-info {
-    margin: 0;
+    margin-right: @spacing-unit/2;
   }
 }

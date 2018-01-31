@@ -292,4 +292,22 @@ export class Filter {
 
     return filters;
   }
+
+  /**
+   * Updates the options in the `filter` based on the options in `basedOn`. This happens in place.
+   *
+   * @param {T extends FilterCategoryModel} filter
+   * @param {FilterCategoryModel} basedOn
+   */
+  public static updateSingleFilter<T extends FilterCategoryModel>(
+    filter: T,
+    basedOn: FilterCategoryModel
+  ): T {
+    filter.filterOptions.forEach(fo => {
+      const updatedOption = basedOn.filterOptions.find(o => o.key === fo.key);
+      fo.isSelected = updatedOption ? updatedOption.isSelected : false;
+    });
+
+    return filter;
+  }
 }

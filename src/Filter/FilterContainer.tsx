@@ -49,7 +49,7 @@ export class FilterContainer extends React.Component<
       onUpdateAdvancedFilter,
       filterId
     } = this.props;
-    const id = filterId ? filterId : "";
+    const id = filterId || "";
     let advancedFilter: JSX.Element | undefined;
     if (this.state.expanded) {
       advancedFilter = (

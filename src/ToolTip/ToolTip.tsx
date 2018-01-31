@@ -28,7 +28,7 @@ export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
 
   render() {
     if (!this.props.helpText) {
-      return null;
+      return <span> {this.props.children}</span>;
     }
 
     const position = this.props.position || "top";
