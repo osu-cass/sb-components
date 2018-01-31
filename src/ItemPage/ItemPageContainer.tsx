@@ -87,11 +87,13 @@ export class ItemPageContainer extends React.Component<
       .then(data => this.onGetItemPage(data))
       .then(() => {
         accessProm.promise
-          .then(data => this.onGetItemAccessibility(data))
+          .then(data => {
+            this.onGetItemAccessibility(data);
+            this.setCurrentItem();
+            this.fetchUpdatedAboutThisItem();
+          })
           .catch(err => this.onError(err));
       })
-      .then(() => this.setCurrentItem())
-      .then(() => this.fetchUpdatedAboutThisItem())
       .catch(err => this.onError(err));
   }
 
