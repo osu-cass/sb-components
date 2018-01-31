@@ -13,9 +13,9 @@ import {
   AboutTestItemsModel,
   InteractionTypeModel,
   AboutTestItemsParams,
-  Subscription
+  Subscription,
+  SelectOptionProps
 } from "../index";
-import { SelectOptionProps } from "../select/SelectOption";
 
 export interface AboutTestItemContainerState {
   selectedCode?: string;
