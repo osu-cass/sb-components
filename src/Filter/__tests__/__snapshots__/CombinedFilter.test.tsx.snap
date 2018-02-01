@@ -194,7 +194,7 @@ exports[`FilterContainer renders 1`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={[Function]}
   searchAPI={Object {}}
 >
   <div
@@ -706,7 +706,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={[Function]}
   searchAPI={Object {}}
 >
   <div
@@ -1218,7 +1218,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={[Function]}
   searchAPI={Object {}}
 >
   <div
@@ -2635,7 +2635,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={[Function]}
   searchAPI={Object {}}
 >
   <div

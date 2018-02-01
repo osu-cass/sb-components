@@ -7104,7 +7104,7 @@ exports[`Storyshots Iframe Modal with an item 1`] = `
   }
 >
   <div>
-    <button
+    <a
       aria-label="Open Item Modal"
       className="btn btn-default btn-sm"
       onClick={[Function]}
@@ -7112,7 +7112,7 @@ exports[`Storyshots Iframe Modal with an item 1`] = `
       tabIndex={0}
     >
       Open
-    </button>
+    </a>
   </div>
 </div>
 `;
@@ -7132,7 +7132,7 @@ exports[`Storyshots Iframe Modal with no contents 1`] = `
   }
 >
   <div>
-    <button
+    <a
       aria-label="Open  Modal"
       className="btn btn-default btn-sm"
       onClick={[Function]}
@@ -7140,7 +7140,7 @@ exports[`Storyshots Iframe Modal with no contents 1`] = `
       tabIndex={0}
     >
       Open
-    </button>
+    </a>
   </div>
 </div>
 `;
