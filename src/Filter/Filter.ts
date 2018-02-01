@@ -98,19 +98,19 @@ export class Filter {
   /**
    * Filters targets with the given codes
    * @param  {TargetModel[]} targets
-   * @param  {number[]} targetCodes?
+   * @param  {number[]} targetCodes
    */
   public static filterTargets(
     targets: TargetModel[],
-    targetCodes?: number[]
+    targetCodes: number[]
   ): TargetModel[] {
     let filteredTargets: TargetModel[] = [];
-
-    if (targetCodes && targetCodes.length > 0) {
-      filteredTargets = targets.filter(s =>
-        targetCodes.some(ssc => ssc === s.nameHash)
-      );
-    }
+    targetCodes.forEach(tc => {
+      const target = targets.find(t => t.nameHash === tc);
+      if (target) {
+        filteredTargets.push(target);
+      }
+    });
     return filteredTargets;
   }
 
@@ -140,7 +140,8 @@ export class Filter {
   public static getClaimTargetCodes(claims: ClaimModel[]): number[] {
     return claims
       .map(c => c.targetCodes || [])
-      .reduce((prev, next) => prev.concat(next), []);
+      .reduce((prev, next) => prev.concat(next), [])
+      .filter((tc, idx, arr) => arr.indexOf(tc) === idx);
   }
 
   /**
