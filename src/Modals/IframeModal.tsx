@@ -10,6 +10,7 @@ export interface IframeModalProps {
   url: string;
   title: string;
   btnText?: string;
+  btnIcon?: string;
   showModal?: boolean;
 }
 
@@ -48,15 +49,20 @@ export class IframeModal extends React.Component<
 
   renderOpenButton() {
     return (
-      <button
+      <a
         className="btn btn-default btn-sm"
         role="button"
         tabIndex={0}
         onClick={this.handleShowModal}
         aria-label={`Open ${this.props.title} Modal`}
       >
+        {this.props.btnIcon ? (
+          <span className={this.props.btnIcon} />
+        ) : (
+          undefined
+        )}
         {this.props.btnText ? this.props.btnText : "Open"}
-      </button>
+      </a>
     );
   }
 
