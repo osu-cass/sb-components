@@ -44,6 +44,9 @@ export function advancedFilterUpdated(
     }
   }
 
+  //show/hide calculator if math selected
+  Filter.hideFiltersBasedOnSearchParams(advancedFilter, searchAPI);
+
   if (searchModel) {
     //remove any searchAPI params that aren't visible anymore
     searchAPI = ItemSearch.updateDependentSearchParams(searchAPI, searchModel);
@@ -76,6 +79,9 @@ export function basicFilterUpdated(
       Filter.updateSingleFilter(changedAdvancedFilter, changedBasicFilter);
     }
   }
+
+  //show/hide calculator if math selected
+  Filter.hideFiltersBasedOnSearchParams(advancedFilter, searchAPI);
 
   if (searchModel) {
     //remove any searchAPI params that aren't visible anymore

@@ -311,4 +311,24 @@ export class Filter {
 
     return filter;
   }
+
+  public static hideFiltersBasedOnSearchParams(
+    advancedFilter: AdvancedFilterCategoryModel[],
+    searchParams: SearchAPIParamsModel
+  ): AdvancedFilterCategoryModel[] {
+    const calculatorFilter = advancedFilter.find(
+      f => f.code === FilterType.Calculator
+    );
+    if (searchParams.subjects && searchParams.subjects.indexOf("MATH") !== -1) {
+      if (calculatorFilter) {
+        calculatorFilter.disabled = false;
+      }
+    } else {
+      if (calculatorFilter) {
+        calculatorFilter.disabled = true;
+      }
+    }
+
+    return advancedFilter;
+  }
 }
