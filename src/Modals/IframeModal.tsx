@@ -49,18 +49,11 @@ export class IframeModal extends React.Component<
   };
 
   renderOpenButton() {
+    const { btnClass, btnIcon, btnText, title } = this.props;
     let iconTag: JSX.Element | undefined;
-    let btnClassText = "";
-    if (this.props.btnIcon) {
-      iconTag = <span aria-hidden="true" className={this.props.btnIcon} />;
-    } else {
-      iconTag = undefined; // this makes tslint happy.
-    }
-
-    if (this.props.btnClass) {
-      btnClassText = this.props.btnClass;
-    } else {
-      btnClassText = "btn btn-default btn-sm";
+    const btnClassText = btnClass || "btn btn-default btn-sm";
+    if (btnIcon) {
+      iconTag = <span aria-hidden="true" className={btnIcon} />;
     }
 
     return (
@@ -69,10 +62,10 @@ export class IframeModal extends React.Component<
         role="button"
         tabIndex={0}
         onClick={this.handleShowModal}
-        aria-label={`Open ${this.props.title} Modal`}
+        aria-label={`Open ${title} Modal`}
       >
         {iconTag}
-        {this.props.btnText ? this.props.btnText : "Open"}
+        {this.props.btnText || "Open"}
       </a>
     );
   }
