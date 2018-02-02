@@ -16,6 +16,17 @@ export interface BothFilterModels {
   advancedFilter?: AdvancedFilterCategoryModel[];
 }
 
+/**
+ * Performs calls to update `SearchAPIParamsModel`, `BasicFilterCategoryModel`s, and
+ * `AdvancedFilterCategoryModel`s based on changes to a the advanced filter, then returns
+ * the updated models in an object
+ *
+ * @param {BasicFilterCategoryModel[]} basicFilter
+ * @param {SearchAPIParamsModel} searchAPI
+ * @param {AdvancedFilterCategoryModel[]} [advancedFilter]
+ * @param {ItemsSearchModel} [searchModel]
+ * @param {FilterType} [changed]
+ */
 export function advancedFilterUpdated(
   basicFilter: BasicFilterCategoryModel[],
   searchAPI: SearchAPIParamsModel,
@@ -61,6 +72,17 @@ export function advancedFilterUpdated(
   return { searchAPI, basicFilter, advancedFilter };
 }
 
+/**
+ * Performs calls to update `SearchAPIParamsModel`, `BasicFilterCategoryModel`s, and
+ * `AdvancedFilterCategoryModel`s based on changes to a the basic filter, then returns
+ * the updated models in an object
+ *
+ * @param {BasicFilterCategoryModel[]} basicFilter
+ * @param {SearchAPIParamsModel} searchAPI
+ * @param {AdvancedFilterCategoryModel[]} [advancedFilter]
+ * @param {ItemsSearchModel} [searchModel]
+ * @param {FilterType} [changed]
+ */
 export function basicFilterUpdated(
   basicFilter: BasicFilterCategoryModel[],
   searchAPI: SearchAPIParamsModel,
@@ -97,6 +119,13 @@ export function basicFilterUpdated(
   return { searchAPI, basicFilter, advancedFilter };
 }
 
+/**
+ * Marks each option on each basic and advanced filter as not selected, then returns the two in an object
+ * along with an empty `SearchAPIParamsModel`
+ *
+ * @param {BasicFilterCategoryModel[]} basicFilter
+ * @param {AdvancedFilterCategoryModel[]} [advancedFilter]
+ */
 export function resetFilters(
   basicFilter: BasicFilterCategoryModel[],
   advancedFilter?: AdvancedFilterCategoryModel[]
