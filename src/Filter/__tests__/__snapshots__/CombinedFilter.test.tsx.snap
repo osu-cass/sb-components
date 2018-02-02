@@ -1801,7 +1801,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <Component
@@ -1939,7 +1939,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <div
@@ -2006,88 +2006,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               key="2"
               label="Disabled"
               onFilterOptionSelect={[Function]}
-            >
-              <div
-                className="filter-selection filter-disabled"
-                id="disabled-filter"
-              >
-                <div
-                  className="filter-container-header"
-                >
-                  <label>
-                    <ToolTip
-                      displayIcon={true}
-                      helpText="Subject Help"
-                    >
-                      <span
-                        className="tool-tip top"
-                      >
-                        <span
-                          className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
-                        >
-                          <span
-                            className="tooltip-label"
-                            info-label="true"
-                          >
-                            Disabled
-                          </span>
-                           
-                          <span
-                            className="fa fa-info-circle fa-sm"
-                          />
-                        </span>
-                      </span>
-                    </ToolTip>
-                  </label>
-                </div>
-                <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-                  data-toggle="buttons"
-                >
-                  <div
-                    className="btn-group filter-btn-group"
-                  >
-                    <Component
-                      disabled={true}
-                      key="Eng"
-                      label="English"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        English
-                      </button>
-                    </Component>
-                    <Component
-                      disabled={true}
-                      key="Chem"
-                      label="Chemistry"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        Chemistry
-                      </button>
-                    </Component>
-                  </div>
-                </div>
-              </div>
-            </AdvancedFilter>
+            />
             <AdvancedFilter
               code="Subject"
               disabled={true}
@@ -2113,88 +2032,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               key="3"
               label="Disabled Multi"
               onFilterOptionSelect={[Function]}
-            >
-              <div
-                className="filter-selection filter-disabled"
-                id="disabled multi-filter"
-              >
-                <div
-                  className="filter-container-header"
-                >
-                  <label>
-                    <ToolTip
-                      displayIcon={true}
-                      helpText="Subject Help"
-                    >
-                      <span
-                        className="tool-tip top"
-                      >
-                        <span
-                          className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
-                        >
-                          <span
-                            className="tooltip-label"
-                            info-label="true"
-                          >
-                            Disabled Multi
-                          </span>
-                           
-                          <span
-                            className="fa fa-info-circle fa-sm"
-                          />
-                        </span>
-                      </span>
-                    </ToolTip>
-                  </label>
-                </div>
-                <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-                  data-toggle="buttons"
-                >
-                  <div
-                    className="btn-group filter-btn-group"
-                  >
-                    <Component
-                      disabled={true}
-                      key="Read"
-                      label="Reading"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        Reading
-                      </button>
-                    </Component>
-                    <Component
-                      disabled={true}
-                      key="Hist"
-                      label="History"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        History
-                      </button>
-                    </Component>
-                  </div>
-                </div>
-              </div>
-            </AdvancedFilter>
+            />
             <AdvancedFilter
               code="Subject"
               disabled={false}
@@ -2260,7 +2098,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <Component
@@ -2382,7 +2220,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <Component
