@@ -38,9 +38,9 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
   renderToolTipHelpText() {
     return (
-      <div className="tool-tip-message">
+      <div className={"tool-tip-message " + this.props.position}>
         {this.renderToolTipHeader()}
-        <div className="tool-tip-commit-message">{this.props.helpText}</div>
+        <div className="tool-tip-help-text">{this.props.helpText}</div>
       </div>
     );
   }

@@ -27,8 +27,23 @@ storiesOf("ToolTip", module)
       <button>Button</button>
     </ToolTip>
   ))
+  .add("display below text large box", () => (
+    <ToolTip helpText={longText} toolTipHeader={header} position="bottom">
+      Testing
+    </ToolTip>
+  ))
   .add("display below text", () => (
     <ToolTip helpText="test" position="bottom">
+      Testing
+    </ToolTip>
+  ))
+  .add("display above text", () => (
+    <ToolTip helpText="test" position="top">
+      Testing
+    </ToolTip>
+  ))
+  .add("display above text large box", () => (
+    <ToolTip helpText={longText} toolTipHeader={header} position="top">
       Testing
     </ToolTip>
   ));

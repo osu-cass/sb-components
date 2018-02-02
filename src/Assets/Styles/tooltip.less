@@ -1,8 +1,17 @@
+.tool-tip-links:hover  .tool-tip-message.top {
+    display: inline-block;
+}
+
+.tool-tip-links:hover  .tool-tip-message.bottom {
+    display: inline-block;
+}
+
 .tool-tip-links:hover  .tool-tip-message {
     display: inline-block;
 }
 
 .tool-tip-links {
+    position: fixed;
     display: flex;
     flex-direction: row;
 }
@@ -28,13 +37,12 @@
 .tool-tip-message {
     max-width: 450px;
     display: none;
-    position: absolute;
+    position: relative;
     font-size: 13px;
     z-index: 100;
     background-color: white;
     padding: 0px;
     margin-left: -5px;
-    margin-top: 7px;
     border-style: solid;
     border-color: @grey-border-color;
     border-width: 1px;
@@ -42,6 +50,16 @@
     -moz-box-shadow: @box-shadow-light;
     -webkit-box-shadow: @box-shadow-light;
     box-shadow: @box-shadow-light;
+}
+
+.bottom {
+    transform: translateY(25px);
+    margin-top: -10px;
+}
+
+.top {
+    transform: translateY(-100%);
+    margin-bottom: -10px;
 }
 
 .tool-tip-header {
