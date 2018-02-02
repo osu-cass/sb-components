@@ -79,7 +79,7 @@ export function advancedFilterUpdated(
  *
  * @param {BasicFilterCategoryModel[]} basicFilter
  * @param {SearchAPIParamsModel} searchAPI
- * @param {AdvancedFilterCategoryModel[]} [advancedFilter]
+ * @param {AdvancedFilterCategoryModel[]} advancedFilter
  * @param {ItemsSearchModel} [searchModel]
  * @param {FilterType} [changed]
  */
