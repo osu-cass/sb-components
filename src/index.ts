@@ -262,3 +262,8 @@ export {
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
 export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";
+
+//
+// Promises and Subscription
+//
+export { Subscription, PromiseCancelable } from "./Subscription";
