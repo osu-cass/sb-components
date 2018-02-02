@@ -172,8 +172,8 @@ exports[`ItemTableRow matches snapshot 1`] = `
       }
       hasControls={true}
       isExpanded={false}
-      onRowExpand={[MockFunction]}
-      onRowSelect={[MockFunction]}
+      onRowExpand={[Function]}
+      onRowSelect={[Function]}
       rowData={
         Object {
           "bankKey": 187,
