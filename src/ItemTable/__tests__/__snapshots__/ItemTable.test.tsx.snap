@@ -771,9 +771,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3206
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -1342,9 +1345,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3163
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -1730,9 +1736,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3615
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -2118,9 +2127,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2928
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -2485,9 +2497,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3206
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -2692,9 +2707,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3163
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -2898,9 +2916,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3615
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -3104,9 +3125,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2928
-              </span>
+              </a>
             </span>
           </td>
           <td

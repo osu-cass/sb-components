@@ -2750,9 +2750,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   5
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -2837,9 +2840,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   6
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -2924,9 +2930,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   7
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3011,9 +3020,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   8
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3098,9 +3110,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   9
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3185,9 +3200,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   10
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3272,9 +3290,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   11
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3359,9 +3380,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   12
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3446,9 +3470,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   13
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3533,9 +3560,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   14
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3620,9 +3650,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   15
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3707,9 +3740,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   16
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3794,9 +3830,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   17
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3881,9 +3920,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   18
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -3968,9 +4010,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   19
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4055,9 +4100,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   20
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4142,9 +4190,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   21
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4229,9 +4280,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   22
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4316,9 +4370,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   23
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4403,9 +4460,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   24
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4490,9 +4550,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   25
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4577,9 +4640,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   26
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4664,9 +4730,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   27
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4751,9 +4820,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   28
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4838,9 +4910,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   29
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -4925,9 +5000,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   30
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5012,9 +5090,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   31
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5099,9 +5180,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   32
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5186,9 +5270,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   33
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5273,9 +5360,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   34
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5360,9 +5450,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   35
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5447,9 +5540,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   36
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5534,9 +5630,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   37
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5621,9 +5720,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   38
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5708,9 +5810,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   39
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5795,9 +5900,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   40
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5882,9 +5990,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   41
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -5969,9 +6080,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   42
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6056,9 +6170,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   43
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6143,9 +6260,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   44
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6230,9 +6350,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   45
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6317,9 +6440,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   46
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6404,9 +6530,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   47
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6491,9 +6620,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   48
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6578,9 +6710,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   49
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6665,9 +6800,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   50
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6752,9 +6890,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   51
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6839,9 +6980,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   52
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -6926,9 +7070,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   53
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -7013,9 +7160,12 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               className="item"
             >
               <span>
-                <span>
+                <a
+                  role="link"
+                  tabIndex={0}
+                >
                   54
-                </span>
+                </a>
               </span>
             </td>
             <td
@@ -7831,9 +7981,12 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3206
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -7918,9 +8071,12 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3163
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8005,9 +8161,12 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3615
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8092,9 +8251,12 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2928
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8313,9 +8475,12 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3206
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8381,9 +8546,12 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3163
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8449,9 +8617,12 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3615
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8517,9 +8688,12 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2928
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8760,9 +8934,12 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 1
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8847,9 +9024,12 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -8934,9 +9114,12 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9021,9 +9204,12 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 4
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9264,9 +9450,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 5
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9351,9 +9540,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 6
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9438,9 +9630,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 7
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9525,9 +9720,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 8
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9612,9 +9810,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 9
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9699,9 +9900,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 10
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9786,9 +9990,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 11
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9873,9 +10080,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 12
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -9960,9 +10170,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 13
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10047,9 +10260,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 14
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10134,9 +10350,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 15
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10221,9 +10440,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 16
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10308,9 +10530,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 17
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10395,9 +10620,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 18
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10482,9 +10710,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 19
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10569,9 +10800,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 20
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10656,9 +10890,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 21
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10743,9 +10980,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 22
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10830,9 +11070,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 23
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -10917,9 +11160,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 24
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11004,9 +11250,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 25
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11091,9 +11340,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 26
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11178,9 +11430,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 27
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11265,9 +11520,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 28
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11352,9 +11610,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 29
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11439,9 +11700,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 30
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11526,9 +11790,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 31
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11613,9 +11880,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 32
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11700,9 +11970,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 33
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11787,9 +12060,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 34
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11874,9 +12150,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 35
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -11961,9 +12240,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 36
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12048,9 +12330,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 37
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12135,9 +12420,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 38
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12222,9 +12510,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 39
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12309,9 +12600,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 40
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12396,9 +12690,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 41
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12483,9 +12780,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 42
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12570,9 +12870,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 43
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12657,9 +12960,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 44
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12744,9 +13050,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 45
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12831,9 +13140,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 46
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -12918,9 +13230,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 47
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13005,9 +13320,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 48
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13092,9 +13410,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 49
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13179,9 +13500,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 50
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13266,9 +13590,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 51
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13353,9 +13680,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 52
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13440,9 +13770,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 53
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -13527,9 +13860,12 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 54
-              </span>
+              </a>
             </span>
           </td>
           <td
@@ -16220,9 +16556,12 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="item"
               >
                 <span>
-                  <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
                     3206
-                  </span>
+                  </a>
                 </span>
               </td>
               <td
@@ -16288,9 +16627,12 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="item"
               >
                 <span>
-                  <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
                     3163
-                  </span>
+                  </a>
                 </span>
               </td>
               <td
@@ -16356,9 +16698,12 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="item"
               >
                 <span>
-                  <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
                     3615
-                  </span>
+                  </a>
                 </span>
               </td>
               <td
@@ -16424,9 +16769,12 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="item"
               >
                 <span>
-                  <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
                     2928
-                  </span>
+                  </a>
                 </span>
               </td>
               <td
