@@ -93,6 +93,12 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
           {displayText}
         </ToolTip>
       );
+    } else if (col.className === "item") {
+      content = (
+        <a tabIndex={0} role="link">
+          {displayText}
+        </a>
+      );
     } else {
       content = <span>{displayText}</span>;
     }
