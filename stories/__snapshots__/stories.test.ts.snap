@@ -1022,67 +1022,7 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
       "width": "100%",
     }
   }
->
-  <div
-    className="filter-selection filter-disabled"
-    id="disabled-filter"
-  >
-    <div
-      className="filter-container-header"
-    >
-      <label>
-        <span
-          className="tool-tip top"
-        >
-          <span
-            className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="tooltip-label"
-              info-label="true"
-            >
-              Disabled
-            </span>
-             
-            <span
-              className="fa fa-info-circle fa-sm"
-            />
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-      data-toggle="buttons"
-    >
-      <div
-        className="btn-group filter-btn-group"
-      >
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          English
-        </button>
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          Chemistry
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+/>
 `;
 
 exports[`Storyshots Advanced Filter disabled multi 1`] = `
@@ -1098,67 +1038,7 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
       "width": "100%",
     }
   }
->
-  <div
-    className="filter-selection filter-disabled"
-    id="disabled multi-filter"
-  >
-    <div
-      className="filter-container-header"
-    >
-      <label>
-        <span
-          className="tool-tip top"
-        >
-          <span
-            className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="tooltip-label"
-              info-label="true"
-            >
-              Disabled Multi
-            </span>
-             
-            <span
-              className="fa fa-info-circle fa-sm"
-            />
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-      data-toggle="buttons"
-    >
-      <div
-        className="btn-group filter-btn-group"
-      >
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          Reading
-        </button>
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          History
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+/>
 `;
 
 exports[`Storyshots Advanced Filter disabled multi all 1`] = `
@@ -1209,7 +1089,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <button
@@ -1258,67 +1138,7 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
       "width": "100%",
     }
   }
->
-  <div
-    className="filter-selection filter-disabled"
-    id="disabled-filter"
-  >
-    <div
-      className="filter-container-header"
-    >
-      <label>
-        <span
-          className="tool-tip top"
-        >
-          <span
-            className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="tooltip-label"
-              info-label="true"
-            >
-              Disabled
-            </span>
-             
-            <span
-              className="fa fa-info-circle fa-sm"
-            />
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-      data-toggle="buttons"
-    >
-      <div
-        className="btn-group filter-btn-group"
-      >
-        <button
-          className="btn btn-primary active"
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          English Literacy & Arts
-        </button>
-        <button
-          className="btn btn-primary active"
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          Maths
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+/>
 `;
 
 exports[`Storyshots Advanced Filter multi select 1`] = `
@@ -1369,7 +1189,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <div
@@ -1445,7 +1265,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <button
@@ -1529,7 +1349,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <button
@@ -1613,7 +1433,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <div
@@ -1676,7 +1496,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <div
@@ -1714,16 +1534,18 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
   >
     <div
       className="basic-filter-selection"
-      id="grade -basic-filter"
+      id="grade-basic-filter"
     >
-      <label>
-        <span
-          className="undefined"
-        >
-          Grade
-        </span>
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
         <select
-          className="form-control input-sm"
+          className="form-control input-sm med-text"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -1731,10 +1553,10 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           <option
             aria-selected={true}
             disabled={false}
-            label="Please Select"
+            label="Select Grade"
             value="default"
           >
-            Please Select
+            Select Grade
           </option>
           <option
             aria-selected={false}
@@ -1761,11 +1583,11 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
             High School
           </option>
         </select>
-      </label>
+      </div>
     </div>
     <div
       className="basic-filter-selection"
-      id="subjects -basic-filter"
+      id="subjects-basic-filter"
     >
       <label>
         Subjects
@@ -1815,16 +1637,18 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
   >
     <div
       className="basic-filter-selection"
-      id="grade -basic-filter"
+      id="grade-basic-filter"
     >
-      <label>
-        <span
-          className="undefined"
-        >
-          Grade
-        </span>
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
         <select
-          className="form-control input-sm"
+          className="form-control input-sm med-text"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -1832,10 +1656,10 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
           <option
             aria-selected={true}
             disabled={false}
-            label="Please Select"
+            label="Select Grade"
             value="default"
           >
-            Please Select
+            Select Grade
           </option>
           <option
             aria-selected={false}
@@ -1862,11 +1686,11 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
             High School
           </option>
         </select>
-      </label>
+      </div>
     </div>
     <div
       className="basic-filter-selection"
-      id="subjects -basic-filter"
+      id="subjects-basic-filter"
     >
       <label>
         Subjects
@@ -1947,16 +1771,18 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
-    <label>
-      <span
-        className="undefined"
-      >
-        Grade
-      </span>
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
       <select
-        className="form-control input-sm"
+        className="form-control input-sm med-text"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -1964,10 +1790,10 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         <option
           aria-selected={true}
           disabled={false}
-          label="Please Select"
+          label="Select Grade"
           value="default"
         >
-          Please Select
+          Select Grade
         </option>
         <option
           aria-selected={false}
@@ -2002,7 +1828,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
           Grade 4
         </option>
       </select>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -2023,16 +1849,18 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
-    <label>
-      <span
-        className="undefined"
-      >
-        Grade
-      </span>
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
       <select
-        className="form-control input-sm"
+        className="form-control input-sm med-text"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -2040,10 +1868,10 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
         <option
           aria-selected={true}
           disabled={false}
-          label="Please Select"
+          label="Select Grade"
           value="default"
         >
-          Please Select
+          Select Grade
         </option>
         <option
           aria-selected={false}
@@ -2054,7 +1882,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
           Grade
         </option>
       </select>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -2075,7 +1903,7 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
     <label>
       Grade
@@ -2160,7 +1988,7 @@ exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
 >
   <div
     className="basic-filter-selection"
-    id="grade -basic-filter"
+    id="grade-basic-filter"
   >
     <label>
       Grade
@@ -2425,16 +2253,18 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     >
       <div
         className="basic-filter-selection"
-        id="grade -basic-filter"
+        id="grade-basic-filter"
       >
-        <label>
-          <span
-            className="undefined"
-          >
-            Grade
-          </span>
+        <div>
+          <label>
+            <span
+              className=""
+            >
+              Grade
+            </span>
+          </label>
           <select
-            className="form-control input-sm"
+            className="form-control input-sm med-text"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -2442,10 +2272,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             <option
               aria-selected={true}
               disabled={false}
-              label="Please Select"
+              label="Select Grade"
               value="default"
             >
-              Please Select
+              Select Grade
             </option>
             <option
               aria-selected={false}
@@ -2472,11 +2302,11 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               High School
             </option>
           </select>
-        </label>
+        </div>
       </div>
       <div
         className="basic-filter-selection"
-        id="subjects -basic-filter"
+        id="subjects-basic-filter"
       >
         <label>
           Subjects

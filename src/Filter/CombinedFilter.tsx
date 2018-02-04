@@ -12,6 +12,7 @@ import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
 import { BasicFilterContainer } from "./BasicFilterContainer";
 import { Filter } from "../Filter/Filter";
 import { ItemSearch } from "../ItemSearch/ItemSearch";
+import * as CombinedFilterHelpers from "./CombinedFilterHelpers";
 
 export interface CombinedFilterProps {
   basicFilter: BasicFilterCategoryModel[];
@@ -48,108 +49,52 @@ export class CombinedFilter extends React.Component<
     advancedFilter?: AdvancedFilterCategoryModel[],
     changed?: FilterType
   ) => {
-    if (!advancedFilter) {
-      return;
-    }
-
-    let { basicFilter, searchAPI, onFilterUpdated, searchModel } = this.props;
-    if (changed) {
-      const changedBasicFilter = basicFilter.find(f => f.code === changed);
-      const changedAdvancedFilter = advancedFilter.find(
-        f => f.code === changed
-      );
-
-      if (changedAdvancedFilter) {
-        //add or remove changed advanced filter item to search params
-        searchAPI = ItemSearch.updateSearchApiModel(
-          changedAdvancedFilter,
-          searchAPI
-        );
-        if (changedBasicFilter) {
-          //update corresponding basic filter category
-          Filter.updateSingleFilter(changedBasicFilter, changedAdvancedFilter);
-        }
-      }
-    }
-
-    if (searchModel) {
-      //remove any searchAPI params that aren't visible anymore
-      searchAPI = ItemSearch.updateDependentSearchParams(
-        searchAPI,
-        searchModel
-      );
-      //update advanced filter based on changes to searchAPIparams
-      advancedFilter = Filter.getUpdatedSearchFilters(
-        searchModel,
-        advancedFilter,
-        searchAPI
+    const updated = CombinedFilterHelpers.advancedFilterUpdated(
+      this.props.basicFilter,
+      this.props.searchAPI,
+      advancedFilter,
+      this.props.searchModel,
+      changed
+    );
+    if (updated.advancedFilter) {
+      this.props.onFilterUpdated(
+        updated.searchAPI,
+        updated.basicFilter,
+        updated.advancedFilter
       );
     }
-
-    onFilterUpdated(searchAPI, basicFilter, advancedFilter);
   };
 
   onBasicFilterUpdated = (
     basicFilter: BasicFilterCategoryModel[],
     changed: FilterType
   ) => {
-    let {
-      advancedFilter,
-      searchAPI,
-      onFilterUpdated,
-      searchModel
-    } = this.props;
+    const updated = CombinedFilterHelpers.basicFilterUpdated(
+      basicFilter,
+      this.props.searchAPI,
+      this.props.advancedFilter,
+      this.props.searchModel,
+      changed
+    );
 
-    const changedBasicFilter = basicFilter.find(f => f.code === changed);
-    const changedAdvancedFilter = advancedFilter.find(f => f.code === changed);
-
-    if (changedBasicFilter) {
-      //update search API based on changes to basic filter
-      searchAPI = ItemSearch.updateSearchApiModel(
-        changedBasicFilter,
-        searchAPI
-      );
-      if (changedAdvancedFilter) {
-        //update corresponding advanced filter category
-        Filter.updateSingleFilter(changedAdvancedFilter, changedBasicFilter);
-      }
-    }
-
-    if (searchModel) {
-      //remove any searchAPI params that aren't visible anymore
-      searchAPI = ItemSearch.updateDependentSearchParams(
-        searchAPI,
-        searchModel
-      );
-      //update advanced filter based on changes to searchAPIparams
-      advancedFilter = Filter.getUpdatedSearchFilters(
-        searchModel,
-        advancedFilter,
-        searchAPI
-      );
-    }
-
-    onFilterUpdated(searchAPI, basicFilter, advancedFilter);
+    this.props.onFilterUpdated(
+      updated.searchAPI,
+      updated.basicFilter,
+      updated.advancedFilter || []
+    );
   };
 
   onResetFilters = () => {
-    let {
-      advancedFilter,
-      basicFilter,
-      searchAPI,
-      onFilterUpdated,
-      searchModel
-    } = this.props;
-
-    searchAPI = {};
-    advancedFilter.forEach(f =>
-      f.filterOptions.forEach(o => (o.isSelected = false))
-    );
-    basicFilter.forEach(f =>
-      f.filterOptions.forEach(o => (o.isSelected = false))
+    const updated = CombinedFilterHelpers.resetFilters(
+      this.props.basicFilter,
+      this.props.advancedFilter
     );
 
-    onFilterUpdated(searchAPI, basicFilter, advancedFilter);
+    this.props.onFilterUpdated(
+      updated.searchAPI,
+      updated.basicFilter,
+      updated.advancedFilter || []
+    );
   };
 
   render() {
