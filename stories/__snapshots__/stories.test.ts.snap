@@ -6919,6 +6919,62 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
 </div>
 `;
 
+exports[`Storyshots Iframe Modal with an item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <a
+      aria-label="Open Item Modal"
+      className="btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Open
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Iframe Modal with no contents 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <a
+      aria-label="Open  Modal"
+      className="btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Open
+    </a>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Item Card Item Card 1`] = `
 <div
   style={
