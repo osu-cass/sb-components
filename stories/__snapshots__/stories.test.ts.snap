@@ -2387,7 +2387,7 @@ exports[`Storyshots Filter Link changed color on hover and click 1`] = `
   }
 >
   <a
-    className=" filter-jump-link btn btn-primary"
+    className=" filter-jump-link btn btn-gray"
     onClick={[Function]}
     role="button"
   >
@@ -6907,7 +6907,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
     </div>
   </div>
   <a
-    className=" filter-jump-link btn btn-primary"
+    className=" filter-jump-link btn btn-gray"
     onClick={[Function]}
     role="button"
   >
