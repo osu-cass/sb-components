@@ -87,7 +87,8 @@ export class CombinedFilter extends React.Component<
   onResetFilters = () => {
     const updated = CombinedFilterHelpers.resetFilters(
       this.props.basicFilter,
-      this.props.advancedFilter
+      this.props.advancedFilter,
+      this.props.searchModel
     );
 
     this.props.onFilterUpdated(

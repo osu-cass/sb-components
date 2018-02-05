@@ -20,33 +20,26 @@ export interface BothFilterModels {
  * Performs calls to update `SearchAPIParamsModel`, `BasicFilterCategoryModel`s, and
  * `AdvancedFilterCategoryModel`s based on changes to a the advanced filter, then returns
  * the updated models in an object
- *
- * @param {BasicFilterCategoryModel[]} basicFilter
- * @param {SearchAPIParamsModel} searchAPI
- * @param {AdvancedFilterCategoryModel[]} [advancedFilter]
- * @param {ItemsSearchModel} [searchModel]
- * @param {FilterType} [changed]
  */
 export function advancedFilterUpdated(
   basicFilter: BasicFilterCategoryModel[],
   searchAPI: SearchAPIParamsModel,
   advancedFilter?: AdvancedFilterCategoryModel[],
   searchModel?: ItemsSearchModel,
-  changed?: FilterType
+  changedFilter?: FilterType
 ): BothFilterModels {
-  if (!advancedFilter) {
-    return { searchAPI, advancedFilter, basicFilter };
-  }
-
-  if (changed) {
-    const changedBasicFilter = basicFilter.find(f => f.code === changed);
-    const changedAdvancedFilter = advancedFilter.find(f => f.code === changed);
-
+  let newAdvFilter = (advancedFilter || []).slice();
+  let newSearchAPI = { ...searchAPI };
+  if (changedFilter) {
+    const changedBasicFilter = basicFilter.find(f => f.code === changedFilter);
+    const changedAdvancedFilter = newAdvFilter.find(
+      f => f.code === changedFilter
+    );
     if (changedAdvancedFilter) {
       //add or remove changed advanced filter item to search params
-      searchAPI = ItemSearch.updateSearchApiModel(
+      newSearchAPI = ItemSearch.updateSearchApiModel(
         changedAdvancedFilter,
-        searchAPI
+        newSearchAPI
       );
       if (changedBasicFilter) {
         //update corresponding basic filter category
@@ -55,33 +48,47 @@ export function advancedFilterUpdated(
     }
   }
 
+  return updateDependentAndSearch(
+    basicFilter,
+    newSearchAPI,
+    newAdvFilter,
+    searchModel
+  );
+}
+
+function updateDependentAndSearch(
+  basicFilter: BasicFilterCategoryModel[],
+  searchAPI: SearchAPIParamsModel,
+  advancedFilter: AdvancedFilterCategoryModel[],
+  searchModel?: ItemsSearchModel
+): BothFilterModels {
+  let newAdvFilter = advancedFilter.slice();
+  let newSearchAPI = { ...searchAPI };
+
   //show/hide calculator if math selected
-  Filter.hideFiltersBasedOnSearchParams(advancedFilter, searchAPI);
+  Filter.hideFiltersBasedOnSearchParams(newAdvFilter, newSearchAPI);
 
   if (searchModel) {
     //remove any searchAPI params that aren't visible anymore
-    searchAPI = ItemSearch.updateDependentSearchParams(searchAPI, searchModel);
+    newSearchAPI = ItemSearch.updateDependentSearchParams(
+      newSearchAPI,
+      searchModel
+    );
     //update advanced filter based on changes to searchAPIparams
-    advancedFilter = Filter.getUpdatedSearchFilters(
+    newAdvFilter = Filter.getUpdatedSearchFilters(
       searchModel,
-      advancedFilter,
-      searchAPI
+      newAdvFilter,
+      newSearchAPI
     );
   }
 
-  return { searchAPI, basicFilter, advancedFilter };
+  return { basicFilter, advancedFilter: newAdvFilter, searchAPI: newSearchAPI };
 }
 
 /**
  * Performs calls to update `SearchAPIParamsModel`, `BasicFilterCategoryModel`s, and
  * `AdvancedFilterCategoryModel`s based on changes to a the basic filter, then returns
  * the updated models in an object
- *
- * @param {BasicFilterCategoryModel[]} basicFilter
- * @param {SearchAPIParamsModel} searchAPI
- * @param {AdvancedFilterCategoryModel[]} advancedFilter
- * @param {ItemsSearchModel} [searchModel]
- * @param {FilterType} [changed]
  */
 export function basicFilterUpdated(
   basicFilter: BasicFilterCategoryModel[],
@@ -90,45 +97,39 @@ export function basicFilterUpdated(
   searchModel?: ItemsSearchModel,
   changed?: FilterType
 ): BothFilterModels {
+  let newAdvFilter = advancedFilter.slice();
+  let newSearchAPI = { ...searchAPI };
   const changedBasicFilter = basicFilter.find(f => f.code === changed);
-  const changedAdvancedFilter = advancedFilter.find(f => f.code === changed);
+  const changedAdvancedFilter = newAdvFilter.find(f => f.code === changed);
 
   if (changedBasicFilter) {
     //update search API based on changes to basic filter
-    searchAPI = ItemSearch.updateSearchApiModel(changedBasicFilter, searchAPI);
+    newSearchAPI = ItemSearch.updateSearchApiModel(
+      changedBasicFilter,
+      newSearchAPI
+    );
     if (changedAdvancedFilter) {
       //update corresponding advanced filter category
       Filter.updateSingleFilter(changedAdvancedFilter, changedBasicFilter);
     }
   }
 
-  //show/hide calculator if math selected
-  Filter.hideFiltersBasedOnSearchParams(advancedFilter, searchAPI);
-
-  if (searchModel) {
-    //remove any searchAPI params that aren't visible anymore
-    searchAPI = ItemSearch.updateDependentSearchParams(searchAPI, searchModel);
-    //update advanced filter based on changes to searchAPIparams
-    advancedFilter = Filter.getUpdatedSearchFilters(
-      searchModel,
-      advancedFilter,
-      searchAPI
-    );
-  }
-
-  return { searchAPI, basicFilter, advancedFilter };
+  return updateDependentAndSearch(
+    basicFilter,
+    newSearchAPI,
+    newAdvFilter,
+    searchModel
+  );
 }
 
 /**
  * Marks each option on each basic and advanced filter as not selected, then returns the two in an object
  * along with an empty `SearchAPIParamsModel`
- *
- * @param {BasicFilterCategoryModel[]} basicFilter
- * @param {AdvancedFilterCategoryModel[]} [advancedFilter]
  */
 export function resetFilters(
   basicFilter: BasicFilterCategoryModel[],
-  advancedFilter?: AdvancedFilterCategoryModel[]
+  advancedFilter?: AdvancedFilterCategoryModel[],
+  searchModel?: ItemsSearchModel
 ): BothFilterModels {
   if (advancedFilter) {
     advancedFilter.forEach(f =>
@@ -138,5 +139,11 @@ export function resetFilters(
   basicFilter.forEach(f =>
     f.filterOptions.forEach(o => (o.isSelected = false))
   );
-  return { advancedFilter, basicFilter, searchAPI: {} };
+
+  return updateDependentAndSearch(
+    basicFilter,
+    {},
+    advancedFilter || [],
+    searchModel
+  );
 }
