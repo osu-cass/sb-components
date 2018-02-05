@@ -44,29 +44,6 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
     </span>
   </td>
   <td
-    className="claimAndTarget"
-    key="claimAndTarget-187-3206"
-  >
-    <span
-      key="claim"
-    >
-      <span>
-        Concepts and Procedures
-      </span>
-    </span>
-    <span
-      key="target"
-    >
-      <ToolTip
-        displayIcon={false}
-        helpText="Target A description"
-        position="top"
-      >
-        /
-      </ToolTip>
-    </span>
-  </td>
-  <td
     className="subject"
     key="subject-187-3206"
   >
@@ -88,6 +65,29 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
       <span>
         Grade 6
       </span>
+    </span>
+  </td>
+  <td
+    className="claimAndTarget"
+    key="claimAndTarget-187-3206"
+  >
+    <span
+      key="claim"
+    >
+      <span>
+        Concepts and Procedures
+      </span>
+    </span>
+    <span
+      key="target"
+    >
+      <ToolTip
+        displayIcon={false}
+        helpText="Target A description"
+        position="top"
+      >
+        /
+      </ToolTip>
     </span>
   </td>
   <td
@@ -126,22 +126,6 @@ exports[`ItemTableRow matches snapshot 1`] = `
             "cols": Array [
               Object {
                 "accessor": [Function],
-                "className": "claim",
-              },
-              Object {
-                "accessor": [Function],
-                "className": "target",
-                "helpText": [Function],
-              },
-            ],
-            "compare": [Function],
-            "header": "Claim/Target",
-            "headerClassName": "claimAndTarget",
-          },
-          Object {
-            "cols": Array [
-              Object {
-                "accessor": [Function],
                 "className": "subject",
               },
             ],
@@ -159,6 +143,22 @@ exports[`ItemTableRow matches snapshot 1`] = `
             "compare": [Function],
             "header": "Grade",
             "headerClassName": "grade",
+          },
+          Object {
+            "cols": Array [
+              Object {
+                "accessor": [Function],
+                "className": "claim",
+              },
+              Object {
+                "accessor": [Function],
+                "className": "target",
+                "helpText": [Function],
+              },
+            ],
+            "compare": [Function],
+            "header": "Claim/Target",
+            "headerClassName": "claimAndTarget",
           },
           Object {
             "cols": Array [
@@ -243,6 +243,30 @@ exports[`ItemTableRow matches snapshot 1`] = `
           </span>
         </td>
         <td
+          className="subject"
+          key="subject-187-3206"
+        >
+          <span
+            key="subject"
+          >
+            <span>
+              Math
+            </span>
+          </span>
+        </td>
+        <td
+          className="grade"
+          key="grade-187-3206"
+        >
+          <span
+            key="grade"
+          >
+            <span>
+              Grade 6
+            </span>
+          </span>
+        </td>
+        <td
           className="claimAndTarget"
           key="claimAndTarget-187-3206"
         >
@@ -277,30 +301,6 @@ exports[`ItemTableRow matches snapshot 1`] = `
                 </span>
               </span>
             </ToolTip>
-          </span>
-        </td>
-        <td
-          className="subject"
-          key="subject-187-3206"
-        >
-          <span
-            key="subject"
-          >
-            <span>
-              Math
-            </span>
-          </span>
-        </td>
-        <td
-          className="grade"
-          key="grade-187-3206"
-        >
-          <span
-            key="grade"
-          >
-            <span>
-              Grade 6
-            </span>
           </span>
         </td>
         <td

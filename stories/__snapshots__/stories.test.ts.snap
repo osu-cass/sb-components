@@ -2454,30 +2454,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               onClick={[Function]}
               onKeyUp={[Function]}
@@ -2513,6 +2489,30 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               >
                 <span>
                   Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
                 </span>
                 <span
                   aria-hidden="true"
@@ -2589,6 +2589,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -2611,24 +2629,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -2679,6 +2679,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -2701,24 +2719,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -2769,6 +2769,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -2791,24 +2809,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -2859,6 +2859,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -2881,24 +2899,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -2949,6 +2949,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -2971,24 +2989,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3039,6 +3039,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3061,24 +3079,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3129,6 +3129,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3151,24 +3169,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3219,6 +3219,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3241,24 +3259,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3309,6 +3309,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3331,24 +3349,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3399,6 +3399,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3421,24 +3439,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3489,6 +3489,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3511,24 +3529,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3579,6 +3579,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3601,24 +3619,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3669,6 +3669,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3691,24 +3709,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3759,6 +3759,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3781,24 +3799,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3849,6 +3849,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3871,24 +3889,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -3939,6 +3939,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -3961,24 +3979,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4029,6 +4029,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4051,24 +4069,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4119,6 +4119,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4141,24 +4159,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4209,6 +4209,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4231,24 +4249,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4299,6 +4299,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4321,24 +4339,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4389,6 +4389,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4411,24 +4429,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4479,6 +4479,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4501,24 +4519,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4569,6 +4569,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4591,24 +4609,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4659,6 +4659,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4681,24 +4699,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4749,6 +4749,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4771,24 +4789,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4839,6 +4839,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4861,24 +4879,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -4929,6 +4929,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -4951,24 +4969,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5019,6 +5019,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5041,24 +5059,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5109,6 +5109,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5131,24 +5149,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5199,6 +5199,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5221,24 +5239,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5289,6 +5289,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5311,24 +5329,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5379,6 +5379,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5401,24 +5419,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5469,6 +5469,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5491,24 +5509,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5559,6 +5559,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5581,24 +5599,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5649,6 +5649,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5671,24 +5689,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5739,6 +5739,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5761,24 +5779,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5829,6 +5829,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5851,24 +5869,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -5919,6 +5919,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -5941,24 +5959,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6009,6 +6009,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6031,24 +6049,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6099,6 +6099,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6121,24 +6139,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6189,6 +6189,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6211,24 +6229,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6279,6 +6279,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6301,24 +6319,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6369,6 +6369,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6391,24 +6409,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6459,6 +6459,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6481,24 +6499,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6549,6 +6549,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6571,24 +6589,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6639,6 +6639,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6661,24 +6679,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6729,6 +6729,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6751,24 +6769,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6819,6 +6819,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6841,24 +6859,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6909,6 +6909,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -6931,24 +6949,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -6999,6 +6999,24 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
             </td>
             <td
+              className="subject"
+            >
+              <span>
+                <span>
+                  ELA/literacy
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 2
+                </span>
+              </span>
+            </td>
+            <td
               className="claimAndTarget"
             >
               <span>
@@ -7021,24 +7039,6 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     /
                      
                   </span>
-                </span>
-              </span>
-            </td>
-            <td
-              className="subject"
-            >
-              <span>
-                <span>
-                  ELA/literacy
-                </span>
-              </span>
-            </td>
-            <td
-              className="grade"
-            >
-              <span>
-                <span>
-                  Grade 2
                 </span>
               </span>
             </td>
@@ -7741,30 +7741,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </div>
           </th>
           <th
-            className="claimAndTarget"
-            onClick={[Function]}
-            onKeyUp={[Function]}
-            scope="col"
-            tabIndex={0}
-          >
-            <div
-              className="claimAndTarget"
-            >
-              <span>
-                Claim/Target
-              </span>
-              <span
-                aria-hidden="true"
-                className="fa fa-sort"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
-              />
-            </div>
-          </th>
-          <th
             className="subject"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -7800,6 +7776,30 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             >
               <span>
                 Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
               </span>
               <span
                 aria-hidden="true"
@@ -7876,6 +7876,24 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 6
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -7898,24 +7916,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 6
               </span>
             </span>
           </td>
@@ -7966,6 +7966,24 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 3
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -7988,24 +8006,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   /Key Details
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 3
               </span>
             </span>
           </td>
@@ -8056,6 +8056,24 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 6
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8078,24 +8096,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 6
               </span>
             </span>
           </td>
@@ -8146,6 +8146,24 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 4
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8168,24 +8186,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   /Evaluate Information/ sources
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 4
               </span>
             </span>
           </td>
@@ -8254,30 +8254,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </div>
           </th>
           <th
-            className="claimAndTarget"
-            onClick={[Function]}
-            onKeyUp={[Function]}
-            scope="col"
-            tabIndex={0}
-          >
-            <div
-              className="claimAndTarget"
-            >
-              <span>
-                Claim/Target
-              </span>
-              <span
-                aria-hidden="true"
-                className="fa fa-sort"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
-              />
-            </div>
-          </th>
-          <th
             className="subject"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -8313,6 +8289,30 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             >
               <span>
                 Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
               </span>
               <span
                 aria-hidden="true"
@@ -8370,6 +8370,24 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 6
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8392,24 +8410,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 6
               </span>
             </span>
           </td>
@@ -8441,6 +8441,24 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 3
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8463,24 +8481,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   /Key Details
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 3
               </span>
             </span>
           </td>
@@ -8512,6 +8512,24 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 6
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8534,24 +8552,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 6
               </span>
             </span>
           </td>
@@ -8583,6 +8583,24 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 4
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8605,24 +8623,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   /Evaluate Information/ sources
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 4
               </span>
             </span>
           </td>
@@ -8694,30 +8694,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </div>
           </th>
           <th
-            className="claimAndTarget"
-            onClick={[Function]}
-            onKeyUp={[Function]}
-            scope="col"
-            tabIndex={0}
-          >
-            <div
-              className="claimAndTarget"
-            >
-              <span>
-                Claim/Target
-              </span>
-              <span
-                aria-hidden="true"
-                className="fa fa-sort"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
-              />
-            </div>
-          </th>
-          <th
             className="subject"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -8753,6 +8729,30 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             >
               <span>
                 Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
               </span>
               <span
                 aria-hidden="true"
@@ -8829,6 +8829,24 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 5
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8851,24 +8869,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 5
               </span>
             </span>
           </td>
@@ -8919,6 +8919,24 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 4
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -8941,24 +8959,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 4
               </span>
             </span>
           </td>
@@ -9009,6 +9009,24 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 3
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9031,24 +9049,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 3
               </span>
             </span>
           </td>
@@ -9099,6 +9099,24 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9121,24 +9139,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9210,30 +9210,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </div>
           </th>
           <th
-            className="claimAndTarget"
-            onClick={[Function]}
-            onKeyUp={[Function]}
-            scope="col"
-            tabIndex={0}
-          >
-            <div
-              className="claimAndTarget"
-            >
-              <span>
-                Claim/Target
-              </span>
-              <span
-                aria-hidden="true"
-                className="fa fa-sort"
-                style={
-                  Object {
-                    "color": "gray",
-                  }
-                }
-              />
-            </div>
-          </th>
-          <th
             className="subject"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -9269,6 +9245,30 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             >
               <span>
                 Grade
+              </span>
+              <span
+                aria-hidden="true"
+                className="fa fa-sort"
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              />
+            </div>
+          </th>
+          <th
+            className="claimAndTarget"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            scope="col"
+            tabIndex={0}
+          >
+            <div
+              className="claimAndTarget"
+            >
+              <span>
+                Claim/Target
               </span>
               <span
                 aria-hidden="true"
@@ -9345,6 +9345,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9367,24 +9385,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9435,6 +9435,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9457,24 +9475,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9525,6 +9525,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9547,24 +9565,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9615,6 +9615,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9637,24 +9655,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9705,6 +9705,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9727,24 +9745,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9795,6 +9795,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9817,24 +9835,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9885,6 +9885,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9907,24 +9925,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -9975,6 +9975,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -9997,24 +10015,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10065,6 +10065,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10087,24 +10105,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10155,6 +10155,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10177,24 +10195,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10245,6 +10245,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10267,24 +10285,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10335,6 +10335,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10357,24 +10375,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10425,6 +10425,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10447,24 +10465,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10515,6 +10515,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10537,24 +10555,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10605,6 +10605,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10627,24 +10645,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10695,6 +10695,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10717,24 +10735,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10785,6 +10785,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10807,24 +10825,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10875,6 +10875,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10897,24 +10915,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -10965,6 +10965,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -10987,24 +11005,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11055,6 +11055,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11077,24 +11095,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11145,6 +11145,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11167,24 +11185,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11235,6 +11235,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11257,24 +11275,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11325,6 +11325,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11347,24 +11365,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11415,6 +11415,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11437,24 +11455,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11505,6 +11505,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11527,24 +11545,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11595,6 +11595,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11617,24 +11635,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11685,6 +11685,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11707,24 +11725,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11775,6 +11775,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11797,24 +11815,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11865,6 +11865,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11887,24 +11905,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -11955,6 +11955,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -11977,24 +11995,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12045,6 +12045,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12067,24 +12085,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12135,6 +12135,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12157,24 +12175,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12225,6 +12225,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12247,24 +12265,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12315,6 +12315,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12337,24 +12355,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12405,6 +12405,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12427,24 +12445,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12495,6 +12495,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12517,24 +12535,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12585,6 +12585,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12607,24 +12625,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12675,6 +12675,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12697,24 +12715,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12765,6 +12765,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12787,24 +12805,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12855,6 +12855,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12877,24 +12895,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -12945,6 +12945,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -12967,24 +12985,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13035,6 +13035,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13057,24 +13075,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13125,6 +13125,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13147,24 +13165,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13215,6 +13215,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13237,24 +13255,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13305,6 +13305,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13327,24 +13345,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13395,6 +13395,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13417,24 +13435,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13485,6 +13485,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13507,24 +13525,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13575,6 +13575,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13597,24 +13615,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13665,6 +13665,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13687,24 +13705,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -13755,6 +13755,24 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
           </td>
           <td
+            className="subject"
+          >
+            <span>
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+          >
+            <span>
+              <span>
+                Grade 2
+              </span>
+            </span>
+          </td>
+          <td
             className="claimAndTarget"
           >
             <span>
@@ -13777,24 +13795,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   /
                    
                 </span>
-              </span>
-            </span>
-          </td>
-          <td
-            className="subject"
-          >
-            <span>
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-          >
-            <span>
-              <span>
-                Grade 2
               </span>
             </span>
           </td>
@@ -16387,30 +16387,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 </div>
               </th>
               <th
-                className="claimAndTarget"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                scope="col"
-                tabIndex={0}
-              >
-                <div
-                  className="claimAndTarget"
-                >
-                  <span>
-                    Claim/Target
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="fa fa-sort"
-                    style={
-                      Object {
-                        "color": "gray",
-                      }
-                    }
-                  />
-                </div>
-              </th>
-              <th
                 className="subject"
                 onClick={[Function]}
                 onKeyUp={[Function]}
@@ -16446,6 +16422,30 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 >
                   <span>
                     Grade
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                      Object {
+                        "color": "gray",
+                      }
+                    }
+                  />
+                </div>
+              </th>
+              <th
+                className="claimAndTarget"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                scope="col"
+                tabIndex={0}
+              >
+                <div
+                  className="claimAndTarget"
+                >
+                  <span>
+                    Claim/Target
                   </span>
                   <span
                     aria-hidden="true"
@@ -16503,6 +16503,24 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
               >
                 <span>
@@ -16525,24 +16543,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       /
                        
                     </span>
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-              >
-                <span>
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-              >
-                <span>
-                  <span>
-                    Grade 6
                   </span>
                 </span>
               </td>
@@ -16574,6 +16574,24 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
               >
                 <span>
@@ -16596,24 +16614,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       /Key Details
                        
                     </span>
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-              >
-                <span>
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-              >
-                <span>
-                  <span>
-                    Grade 3
                   </span>
                 </span>
               </td>
@@ -16645,6 +16645,24 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
               >
                 <span>
@@ -16667,24 +16685,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       /
                        
                     </span>
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-              >
-                <span>
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-              >
-                <span>
-                  <span>
-                    Grade 6
                   </span>
                 </span>
               </td>
@@ -16716,6 +16716,24 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
               >
                 <span>
@@ -16738,24 +16756,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       /Evaluate Information/ sources
                        
                     </span>
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-              >
-                <span>
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-              >
-                <span>
-                  <span>
-                    Grade 4
                   </span>
                 </span>
               </td>

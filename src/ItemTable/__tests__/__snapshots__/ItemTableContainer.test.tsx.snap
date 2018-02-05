@@ -295,22 +295,6 @@ exports[`ItemPageTable expands 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -328,6 +312,22 @@ exports[`ItemPageTable expands 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -462,31 +462,6 @@ exports[`ItemPageTable expands 1`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort-asc"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -524,6 +499,31 @@ exports[`ItemPageTable expands 1`] = `
               >
                 <span>
                   Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
                 </span>
                 <span
                   aria-hidden="true"
@@ -664,22 +664,6 @@ exports[`ItemPageTable expands 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -697,6 +681,22 @@ exports[`ItemPageTable expands 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -943,22 +943,6 @@ exports[`ItemPageTable expands 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -976,6 +960,22 @@ exports[`ItemPageTable expands 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -1061,6 +1061,30 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -1095,30 +1119,6 @@ exports[`ItemPageTable expands 1`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
                 </span>
               </td>
               <td
@@ -1335,22 +1335,6 @@ exports[`ItemPageTable expands 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -1368,6 +1352,22 @@ exports[`ItemPageTable expands 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -1453,6 +1453,30 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -1490,30 +1514,6 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -1545,22 +1545,6 @@ exports[`ItemPageTable expands 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -1578,6 +1562,22 @@ exports[`ItemPageTable expands 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -1662,6 +1662,30 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -1699,30 +1723,6 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-2928"
               >
@@ -1754,22 +1754,6 @@ exports[`ItemPageTable expands 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -1787,6 +1771,22 @@ exports[`ItemPageTable expands 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -1871,6 +1871,30 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -1905,30 +1929,6 @@ exports[`ItemPageTable expands 1`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
                 </span>
               </td>
               <td
@@ -2167,22 +2167,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2200,6 +2184,22 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2251,31 +2251,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -2313,6 +2288,31 @@ exports[`ItemPageTable matches snapshot 1`] = `
               >
                 <span>
                   Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
                 </span>
                 <span
                   aria-hidden="true"
@@ -2453,22 +2453,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2486,6 +2470,22 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2627,22 +2627,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -2660,6 +2644,22 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -2745,6 +2745,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -2782,30 +2806,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3206"
               >
@@ -2837,22 +2837,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -2870,6 +2854,22 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -2955,6 +2955,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -2992,30 +3016,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -3047,22 +3047,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -3080,6 +3064,22 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -3164,6 +3164,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -3201,30 +3225,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3615"
               >
@@ -3256,22 +3256,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -3289,6 +3273,22 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -3373,6 +3373,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -3407,30 +3431,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
                 </span>
               </td>
               <td
@@ -3669,22 +3669,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -3702,6 +3686,22 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -3771,31 +3771,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -3833,6 +3808,31 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               >
                 <span>
                   Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
                 </span>
                 <span
                   aria-hidden="true"
@@ -3973,22 +3973,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -4006,6 +3990,22 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -4165,22 +4165,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -4198,6 +4182,22 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -4282,6 +4282,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -4319,30 +4343,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-2928"
               >
@@ -4374,22 +4374,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -4407,6 +4391,22 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -4492,6 +4492,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -4529,30 +4553,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -4584,22 +4584,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -4617,6 +4601,22 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -4702,6 +4702,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -4739,30 +4763,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3206"
               >
@@ -4794,22 +4794,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -4827,6 +4811,22 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -4911,6 +4911,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -4945,30 +4969,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
                 </span>
               </td>
               <td
@@ -5207,22 +5207,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -5240,6 +5224,22 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -5329,31 +5329,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort-asc"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -5395,6 +5370,31 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   aria-hidden="true"
                   className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
                   style={
                     Object {
                       "color": "gray",
@@ -5531,22 +5531,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -5564,6 +5548,22 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -5743,22 +5743,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -5776,6 +5760,22 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -5860,6 +5860,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -5897,30 +5921,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3615"
               >
@@ -5952,22 +5952,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -5985,6 +5969,22 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -6070,6 +6070,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -6107,30 +6131,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3206"
               >
@@ -6162,22 +6162,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -6195,6 +6179,22 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -6280,6 +6280,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -6317,30 +6341,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -6372,22 +6372,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -6405,6 +6389,22 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -6489,6 +6489,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -6523,30 +6547,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
                 </span>
               </td>
               <td
@@ -6785,22 +6785,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -6818,6 +6802,22 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -6922,31 +6922,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort-asc"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -6988,6 +6963,31 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   aria-hidden="true"
                   className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
                   style={
                     Object {
                       "color": "gray",
@@ -7124,22 +7124,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -7157,6 +7141,22 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -7351,22 +7351,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -7384,6 +7368,22 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -7469,6 +7469,30 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -7506,30 +7530,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -7561,22 +7561,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -7594,6 +7578,22 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -7678,6 +7678,30 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -7715,30 +7739,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-2928"
               >
@@ -7770,22 +7770,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -7803,6 +7787,22 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -7887,6 +7887,30 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -7924,30 +7948,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3615"
               >
@@ -7979,22 +7979,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -8012,6 +7996,22 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -8097,6 +8097,30 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -8131,30 +8155,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
                 </span>
               </td>
               <td
@@ -8393,22 +8393,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -8426,6 +8410,22 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -8545,31 +8545,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort-asc"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -8607,6 +8582,31 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               >
                 <span>
                   Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
                 </span>
                 <span
                   aria-hidden="true"
@@ -8747,22 +8747,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -8780,6 +8764,22 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -8989,22 +8989,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -9022,6 +9006,22 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -9107,6 +9107,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -9144,30 +9168,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -9199,22 +9199,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -9232,6 +9216,22 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -9316,6 +9316,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -9353,30 +9377,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-2928"
               >
@@ -9408,22 +9408,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -9441,6 +9425,22 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -9525,6 +9525,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -9562,30 +9586,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3615"
               >
@@ -9617,22 +9617,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -9650,6 +9634,22 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -9735,6 +9735,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -9769,30 +9793,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
                 </span>
               </td>
               <td
@@ -10031,22 +10031,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -10064,6 +10048,22 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -10198,31 +10198,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               </div>
             </th>
             <th
-              className="claimAndTarget"
-              key="Claim/Target"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-              scope="col"
-              tabIndex={0}
-            >
-              <div
-                className="claimAndTarget"
-              >
-                <span>
-                  Claim/Target
-                </span>
-                <span
-                  aria-hidden="true"
-                  className="fa fa-sort-asc"
-                  style={
-                    Object {
-                      "color": "gray",
-                    }
-                  }
-                />
-              </div>
-            </th>
-            <th
               className="subject"
               key="Subject"
               onClick={[Function]}
@@ -10260,6 +10235,31 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               >
                 <span>
                   Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort-asc"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              key="Claim/Target"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
                 </span>
                 <span
                   aria-hidden="true"
@@ -10400,22 +10400,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -10433,6 +10417,22 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -10657,22 +10657,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -10690,6 +10674,22 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -10775,6 +10775,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3206"
               >
@@ -10812,30 +10836,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3206"
               >
@@ -10867,22 +10867,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -10900,6 +10884,22 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -10985,6 +10985,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3163"
               >
@@ -11022,30 +11046,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-3163"
               >
@@ -11077,22 +11077,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -11110,6 +11094,22 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -11194,6 +11194,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-2928"
               >
@@ -11231,30 +11255,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
                 className="item-type"
                 key="item-type-187-2928"
               >
@@ -11286,22 +11286,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "cols": Array [
                     Object {
                       "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
                       "className": "subject",
                     },
                   ],
@@ -11319,6 +11303,22 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   "compare": [Function],
                   "header": "Grade",
                   "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
                 },
                 Object {
                   "cols": Array [
@@ -11403,6 +11403,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
               </td>
               <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
                 className="claimAndTarget"
                 key="claimAndTarget-187-3615"
               >
@@ -11437,30 +11461,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       </span>
                     </span>
                   </ToolTip>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
                 </span>
               </td>
               <td
