@@ -1057,7 +1057,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 >
   <div
     className="filter-selection"
-    id="multi all disabled-filter"
+    id="multi-all-disabled-filter"
   >
     <div
       className="filter-container-header"
@@ -1233,7 +1233,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
 >
   <div
     className="filter-selection"
-    id="multi all-filter"
+    id="multi-all-filter"
   >
     <div
       className="filter-container-header"
@@ -1317,7 +1317,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 >
   <div
     className="filter-selection"
-    id="multi all-filter"
+    id="multi-all-filter"
   >
     <div
       className="filter-container-header"

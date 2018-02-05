@@ -2061,7 +2061,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             >
               <div
                 className="filter-selection"
-                id="multi all-filter"
+                id="multi-all-filter"
               >
                 <div
                   className="filter-container-header"
@@ -2183,7 +2183,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             >
               <div
                 className="filter-selection"
-                id="multi all disabled-filter"
+                id="multi-all-disabled-filter"
               >
                 <div
                   className="filter-container-header"
