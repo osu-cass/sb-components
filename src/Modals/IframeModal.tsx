@@ -57,7 +57,7 @@ export class IframeModal extends React.Component<
     }
 
     return (
-      <a
+      <button
         className={btnClassText}
         role="button"
         tabIndex={0}
@@ -66,7 +66,7 @@ export class IframeModal extends React.Component<
       >
         {iconTag}
         {this.props.btnText || "Open"}
-      </a>
+      </button>
     );
   }
 

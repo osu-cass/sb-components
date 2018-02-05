@@ -258,7 +258,7 @@ exports[`FilterContainer renders 1`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container"
+        className="bf-container section-light"
         id=""
       >
         <div
@@ -295,8 +295,8 @@ exports[`FilterContainer renders 1`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade-basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
                 className="input-sm med-text"
@@ -442,8 +442,8 @@ exports[`FilterContainer renders 1`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects-basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -484,7 +484,7 @@ exports[`FilterContainer renders 1`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -772,7 +772,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container"
+        className="bf-container section-light"
         id=""
       >
         <div
@@ -809,8 +809,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade-basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
                 className="input-sm med-text"
@@ -956,8 +956,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects-basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -998,7 +998,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -1286,7 +1286,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container-expanded"
+        className="bf-container section-light bf-expanded"
         id=""
       >
         <div
@@ -1323,8 +1323,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade-basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
                 className="input-sm med-text"
@@ -1470,8 +1470,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects-basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -1512,7 +1512,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -1685,17 +1685,17 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       onUpdateFilter={[Function]}
     >
       <div
-        className="advanced-filter-container"
+        className="section-light adv-filter-container"
         id=""
       >
         <div
-          className="filter-sub-header-container"
+          className="adv-filter-group"
         >
           <div
-            className="filter-advanced-filter-header"
+            className="adv-filter-header"
           >
             <div
-              className="filter-advanced-filter-title"
+              className="adv-filter-title"
             >
               <h3>
                 <span
@@ -1723,7 +1723,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           />
         </div>
         <div
-          className="advanced-filter-container-expanded"
+          className="adv-filter-container-expanded"
         >
           <div
             aria-live="polite"
@@ -2543,7 +2543,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container"
+        className="bf-container section-light"
         id=""
       >
         <div
@@ -2580,8 +2580,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade-basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
                 className="input-sm med-text"
@@ -2727,8 +2727,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects-basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -2769,7 +2769,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button

@@ -139,10 +139,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     const { label } = this.props;
 
     return (
-      <div
-        id={`${label}-basic-filter`.toLocaleLowerCase()}
-        className="basic-filter-selection"
-      >
+      <div id={`${label}-bf`.toLocaleLowerCase()} className="bf-selection">
         {this.renderCategory()}
       </div>
     );

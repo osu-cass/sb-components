@@ -31,7 +31,7 @@ exports[`AboutTestItemsContainer default render 1`] = `
       className="section about-items-iframe"
     >
       <div
-        className="section section-light no-item"
+        className="section section-light no-item itemViewerFrame"
       >
         <p>
           Please Select an Item Type

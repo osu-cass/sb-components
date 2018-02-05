@@ -26,6 +26,9 @@ export function getResource(
     resource = accGroup.accessibilityResources.find(
       rg => rg.resourceCode === resourceCode
     );
+    if (resource) {
+      break;
+    }
   }
 
   return resource ? resource : undefined;
@@ -45,23 +48,40 @@ export function getBrailleAccommodation(
 export function isBrailleEnabled(
   accResourceGroups: AccResourceGroupModel[]
 ): boolean {
-  const brailleResource = getResource("BrailleType", accResourceGroups);
-  if (brailleResource && !brailleResource.currentSelectionCode.endsWith("0")) {
+  return isResourceEnabled(accResourceGroups, "BrailleType");
+}
+
+export function isCalculatorEnabled(
+  accResourceGroups: AccResourceGroupModel[]
+): boolean {
+  return isResourceEnabled(accResourceGroups, "Calculator");
+}
+
+export function isResourceEnabled(
+  accResourceGroups: AccResourceGroupModel[],
+  resourceCode: string
+): boolean {
+  const selectedCode = getResouceSelectedCode(resourceCode, accResourceGroups);
+  if (selectedCode && !selectedCode.endsWith("0")) {
     return true;
   }
 
   return false;
 }
 
+export function getResouceSelectedCode(
+  resourceCode: string,
+  accResourceGroups: AccResourceGroupModel[]
+): string | undefined {
+  const resource = getResource(resourceCode, accResourceGroups);
+
+  return resource ? resource.currentSelectionCode : undefined;
+}
+
 export function isStreamlinedEnabled(
   accResourceGroups: AccResourceGroupModel[]
 ): boolean {
-  const resource = getResource("StreamlinedInterface", accResourceGroups);
-  if (resource && !resource.currentSelectionCode.endsWith("0")) {
-    return true;
-  }
-
-  return false;
+  return isResourceEnabled(accResourceGroups, "StreamlinedInterface");
 }
 
 // Returns list of resource group labels, sorted ascending by AccResourceGroup.order
@@ -69,6 +89,7 @@ export function getResourceTypes(
   resourceGroups: AccResourceGroupModel[]
 ): string[] {
   const resourceTypes = resourceGroups.map(t => t.label);
+
   return resourceTypes;
 }
 

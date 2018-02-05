@@ -2,7 +2,7 @@
 
 exports[`BasicFilterContainer can select dropdown filter options 1`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -68,7 +68,7 @@ exports[`BasicFilterContainer can select dropdown filter options 1`] = `
 
 exports[`BasicFilterContainer can select dropdown filter options 2`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -134,7 +134,7 @@ exports[`BasicFilterContainer can select dropdown filter options 2`] = `
 
 exports[`BasicFilterContainer can select dropdown filter options 3`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -200,7 +200,7 @@ exports[`BasicFilterContainer can select dropdown filter options 3`] = `
 
 exports[`BasicFilterContainer can select dropdown filter options 4`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -266,7 +266,7 @@ exports[`BasicFilterContainer can select dropdown filter options 4`] = `
 
 exports[`BasicFilterContainer can select radio button filter options 1`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -332,7 +332,7 @@ exports[`BasicFilterContainer can select radio button filter options 1`] = `
 
 exports[`BasicFilterContainer can select radio button filter options 2`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -398,7 +398,7 @@ exports[`BasicFilterContainer can select radio button filter options 2`] = `
 
 exports[`BasicFilterContainer expands the advanced filter 1`] = `
 <div
-  className="basic-filter-container"
+  className="bf-container section-light"
   id=""
 >
   <div
@@ -460,7 +460,7 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
     />
   </div>
   <div
-    className="basic-filter-button-container"
+    className="bf-button-container"
   >
     <span>
       <button
@@ -488,7 +488,7 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
 
 exports[`BasicFilterContainer expands the advanced filter 2`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -550,7 +550,7 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
     />
   </div>
   <div
-    className="basic-filter-button-container"
+    className="bf-button-container"
   >
     <span>
       <button
@@ -578,7 +578,7 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
 
 exports[`BasicFilterContainer expands the advanced filter 3`] = `
 <div
-  className="basic-filter-container"
+  className="bf-container section-light"
   id=""
 >
   <div
@@ -640,7 +640,7 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
     />
   </div>
   <div
-    className="basic-filter-button-container"
+    className="bf-button-container"
   >
     <span>
       <button
@@ -668,7 +668,7 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
 
 exports[`BasicFilterContainer resets filters on keyboard events 1`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -734,7 +734,7 @@ exports[`BasicFilterContainer resets filters on keyboard events 1`] = `
 
 exports[`BasicFilterContainer resets filters on keyboard events 2`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
@@ -800,7 +800,7 @@ exports[`BasicFilterContainer resets filters on keyboard events 2`] = `
 
 exports[`BasicFilterContainer resets filters on keyboard events 3`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div

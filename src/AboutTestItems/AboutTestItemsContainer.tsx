@@ -115,23 +115,28 @@ export class AboutTestItemsContainer extends React.Component<
     });
   }
 
-  renderDescription(interactionTypes: InteractionTypeModel[]) {
-    let desc = "";
-    for (const it of interactionTypes) {
-      if (it.code === this.state.selectedCode && it.description) {
-        desc = it.description;
-      }
+  renderDescription(
+    interactionTypes: InteractionTypeModel[]
+  ): JSX.Element | undefined {
+    let content: JSX.Element | undefined;
+
+    const selectedIT = interactionTypes.find(
+      i => this.state.selectedCode === i.code
+    );
+
+    if (selectedIT && selectedIT.description) {
+      content = (
+        // tslint:disable-next-line:react-no-dangerous-html
+        <div
+          aria-live="polite"
+          aria-relevant="text"
+          dangerouslySetInnerHTML={{ __html: selectedIT.description }}
+          className="section about-items-desc"
+        />
+      );
     }
 
-    return (
-      // tslint:disable-next-line:react-no-dangerous-html
-      <div
-        aria-live="polite"
-        aria-relevant="text"
-        dangerouslySetInnerHTML={{ __html: desc }}
-        className="section about-items-desc"
-      />
-    );
+    return content;
   }
 
   renderInteractionTypesSelect(
@@ -178,7 +183,7 @@ export class AboutTestItemsContainer extends React.Component<
     }
 
     return (
-      <div className="section section-light no-item">
+      <div className="section section-light no-item itemViewerFrame">
         <p>{content}</p>
       </div>
     );

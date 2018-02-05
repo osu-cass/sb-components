@@ -1,68 +1,60 @@
 @import "constants";
 
-div.basic-filter-container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border: 1px solid @grey-border-color;
-    box-shadow: @box-shadow;
-    padding: 1em;
-    font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
-    background-color: @sb-white;
-}
+div.bf-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
-div.basic-filter-container-expanded{
+  &.bf-expanded {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid @grey-border-color;
-    box-shadow: @box-shadow;
     margin-bottom: 0;
-    padding: 1em;
-    font-family:"PT Serif","Georgia","Times New Roman","Times,serif";
-    background-color: @sb-white;
+  }
 }
 
-div.basic-filter  > .basic-filter-selection {
-    padding: @spacing-unit/2;
-    margin-right: @spacing-unit/2;
+div.basic-filter .bf-selection {
+  padding: @spacing-unit/2;
+  margin-right: @spacing-unit/2;
+  min-width: 125px;
 }
 
-.basic-filter-button-container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    margin-right:@spacing-unit/2;
+.bf-button-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  margin-right: @spacing-unit/2;
 }
 
-.basic-filter-body > select {
-    min-width: 200px;
-    height: 30px;
-    border-radius: @spacing-item;
-    border: 2px solid @grey-border-color;
-    padding: @spacing-item;
+.bf-body > select {
+  min-width: 200px;
+  height: 30px;
+  border-radius: @spacing-item;
+  border: 2px solid @grey-border-color;
+  padding: @spacing-item;
 }
 
-.basic-filter-body > form {
-    display: flex;
-    flex-flow: column;
+.bf-body > form {
+  display: flex;
+  flex-flow: column;
 }
 
-.basic-filter{
-    display: flex;
-    align-items: center;
-    flex-flow: row nowrap;   
-    margin-left: 0px;
+.basic-filter {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: 0px;
+  margin-bottom: @spacing-unit;
 }
 
 .med-text {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .af-expand {
-    width: 100%;
+  width: 100%;
 }

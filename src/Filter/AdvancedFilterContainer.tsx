@@ -161,7 +161,7 @@ export class AdvancedFilterContainer extends React.Component<
       content = (
         <button
           onClick={() => this.resetFilters()}
-          className="btn btn-default filter-reset-btn "
+          className="btn btn-default filter-reset-btn"
         >
           Reset Filters
         </button>
@@ -211,10 +211,10 @@ export class AdvancedFilterContainer extends React.Component<
    */
   renderCollapsedFilterContainer(): JSX.Element {
     return (
-      <div className="filter-sub-header-container">
+      <div className="adv-filter-group">
         {this.renderPageTitle()}
-        <div className="filter-advanced-filter-header">
-          <div className="filter-advanced-filter-title">
+        <div className="adv-filter-header">
+          <div className="adv-filter-title">
             <h3>
               <span className="fa fa-tasks" />&nbsp;Advanced Filters
             </h3>
@@ -236,7 +236,7 @@ export class AdvancedFilterContainer extends React.Component<
     let content: JSX.Element | undefined;
     if (this.state.expanded) {
       content = (
-        <div className="advanced-filter-container-expanded">
+        <div className="adv-filter-container-expanded">
           {this.renderFilterCategories()}
         </div>
       );
@@ -249,7 +249,7 @@ export class AdvancedFilterContainer extends React.Component<
     const id = this.props.filterId ? this.props.filterId : "";
 
     return (
-      <div id={id} className="advanced-filter-container">
+      <div id={id} className="section-light adv-filter-container">
         {this.renderCollapsedFilterContainer()}
         {this.renderExpanded()}
       </div>
