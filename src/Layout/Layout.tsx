@@ -12,8 +12,12 @@ export interface LayoutProps {
 export class Layout extends React.Component<LayoutProps, {}> {
   render() {
     return (
-      <div className="site-body">
-        <NavMenu siteName={this.props.siteName} links={this.props.links} />
+      <div id="site-body" className="site-body">
+        <NavMenu
+          siteName={this.props.siteName}
+          links={this.props.links}
+          mainContentId="main"
+        />
         <main id="main" className="site-content" role="main">
           {this.props.children}
         </main>

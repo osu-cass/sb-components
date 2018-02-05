@@ -32,6 +32,7 @@ export class AboutTestItemsPage extends React.Component<
 
   componentDidMount() {
     const { appName } = this.props;
+
     if (appName) {
       document.title = `About Test Items - Smarter Balanced ${appName}`;
     }
