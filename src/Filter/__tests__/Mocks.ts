@@ -29,13 +29,13 @@ export const subjectSelectedCategory: FilterCategoryModel = {
 export const claimSelectedOptions: FilterOptionModel[] = [
   {
     label: "Claim1",
-    key: "Math1",
+    key: "MATH1",
     isSelected: true,
     filterType: FilterType.Claim
   },
   {
     label: "Claim2",
-    key: "Math2",
+    key: "MATH2",
     isSelected: true,
     filterType: FilterType.Claim
   }

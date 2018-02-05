@@ -47,18 +47,24 @@ h2 {
   visibility: hidden;
 }
 
-.section {
+.section, .section-light, .section-translucent {
   background-color: @background-color-base;
   padding: @spacing-unit;
 }
 
 .container .page-title {
-  margin: 0 0 @spacing-item 0;
+  margin: 0 0 @spacing-item*2 0;
   padding: 0;
 }
 
 .section-light {
   background-color: @sb-white;
+  border-radius: @spacing-item;
+  box-shadow: @sb-shadow;
+}
+
+.section-translucent {
+  background-color: @background-color-lighter-fade;
   border-radius: @spacing-item;
   box-shadow: @sb-shadow;
 }

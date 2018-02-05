@@ -2,17 +2,17 @@
 
 exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
 <div
-  className="advanced-filter-container"
+  className="section-light adv-filter-container"
   id=""
 >
   <div
-    className="filter-sub-header-container"
+    className="adv-filter-group"
   >
     <div
-      className="filter-advanced-filter-header"
+      className="adv-filter-header"
     >
       <div
-        className="filter-advanced-filter-title"
+        className="adv-filter-title"
       >
         <h3>
           <span
@@ -25,7 +25,7 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-default filter-reset-btn "
+          className="btn btn-default filter-reset-btn"
           onClick={[Function]}
         >
           Reset Filters
@@ -123,17 +123,17 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 1`] = `
 
 exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
 <div
-  className="advanced-filter-container"
+  className="section-light adv-filter-container"
   id=""
 >
   <div
-    className="filter-sub-header-container"
+    className="adv-filter-group"
   >
     <div
-      className="filter-advanced-filter-header"
+      className="adv-filter-header"
     >
       <div
-        className="filter-advanced-filter-title"
+        className="adv-filter-title"
       >
         <h3>
           <span
@@ -146,7 +146,7 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
         className="adv-control-btns"
       >
         <button
-          className="btn btn-default filter-reset-btn "
+          className="btn btn-default filter-reset-btn"
           onClick={[Function]}
         >
           Reset Filters
@@ -244,11 +244,11 @@ exports[`AdvancedFilterContainer 'Reset Filters' button resets filters 2`] = `
 
 exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
 <div
-  className="advanced-filter-container"
+  className="section-light adv-filter-container"
   id=""
 >
   <div
-    className="filter-sub-header-container"
+    className="adv-filter-group"
   >
     <h1>
       <span
@@ -258,10 +258,10 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
       </span>
     </h1>
     <div
-      className="filter-advanced-filter-header"
+      className="adv-filter-header"
     >
       <div
-        className="filter-advanced-filter-title"
+        className="adv-filter-title"
       >
         <h3>
           <span
@@ -289,7 +289,7 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
     />
   </div>
   <div
-    className="advanced-filter-container-expanded"
+    className="adv-filter-container-expanded"
   >
     <div
       aria-live="polite"
@@ -465,11 +465,11 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
 
 exports[`AdvancedFilterContainer expands and collapses on click 2`] = `
 <div
-  className="advanced-filter-container"
+  className="section-light adv-filter-container"
   id=""
 >
   <div
-    className="filter-sub-header-container"
+    className="adv-filter-group"
   >
     <h1>
       <span
@@ -479,10 +479,10 @@ exports[`AdvancedFilterContainer expands and collapses on click 2`] = `
       </span>
     </h1>
     <div
-      className="filter-advanced-filter-header"
+      className="adv-filter-header"
     >
       <div
-        className="filter-advanced-filter-title"
+        className="adv-filter-title"
       >
         <h3>
           <span

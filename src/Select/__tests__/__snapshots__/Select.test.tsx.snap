@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select handles on change event 1`] = `
-<label>
-  <span
-    className="undefined"
-  >
-    select
-  </span>
+<div>
+  <label>
+    <span
+      className=""
+    >
+      select
+    </span>
+  </label>
   <select
-    className="form-control undefined"
+    className="form-control "
     onChange={[Function]}
     value="default"
   >
@@ -25,18 +27,20 @@ exports[`Select handles on change event 1`] = `
       value="two"
     />
   </select>
-</label>
+</div>
 `;
 
 exports[`Select handles on change event 2`] = `
-<label>
-  <span
-    className="undefined"
-  >
-    select
-  </span>
+<div>
+  <label>
+    <span
+      className=""
+    >
+      select
+    </span>
+  </label>
   <select
-    className="form-control undefined"
+    className="form-control "
     onChange={[Function]}
     value="default"
   >
@@ -53,5 +57,5 @@ exports[`Select handles on change event 2`] = `
       value="two"
     />
   </select>
-</label>
+</div>
 `;

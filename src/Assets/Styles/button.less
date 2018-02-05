@@ -14,3 +14,19 @@
     margin-right: @spacing-item;
   }
 }
+
+.btn-gray {
+  color: @sb-white;
+  background-color: @sb-gray;
+  border-color: darken(@sb-gray, 5%);
+  &:hover, &:active, &:focus {
+    background-color: darken(@sb-gray, 5%);
+    color: @sb-white;
+    border-color: darken(@sb-gray, 10%);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten(@sb-gray, 10%);
+    color: @sb-white;
+  }
+}

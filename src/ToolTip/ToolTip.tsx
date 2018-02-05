@@ -27,10 +27,6 @@ export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
   offFocus = () => this.setState({ focused: false });
 
   render() {
-    if (!this.props.helpText) {
-      return <span> {this.props.children}</span>;
-    }
-
     const position = this.props.position || "top";
     const shown = this.state.focused || this.state.hovered;
 

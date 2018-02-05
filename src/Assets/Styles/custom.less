@@ -46,6 +46,20 @@ a.collapsible-label:visited {
   text-decoration: none !important;
 }
 
+a:focus,
+button:focus,
+p:focus,
+.card:focus,
+input:focus,
+select:focus,
+label:focus {
+  &:not(hover):not(active) {
+    background-color: #e5f3f7;
+    outline: 2px dotted #008ab1;
+    outline-offset: 3px;
+  }
+}
+
 //## To hide content but allows screen reader,
 //## https://webaim.org/techniques/css/invisiblecontent/
 .hidden {

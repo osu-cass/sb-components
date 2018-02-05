@@ -920,17 +920,17 @@ exports[`Storyshots Accessibility Modal no options showing  1`] = `
 
 exports[`Storyshots Advanced Filter Container normal render 1`] = `
 <div
-  className="advanced-filter-container"
+  className="section-light adv-filter-container"
   id=""
 >
   <div
-    className="filter-sub-header-container"
+    className="adv-filter-group"
   >
     <div
-      className="filter-advanced-filter-header"
+      className="adv-filter-header"
     >
       <div
-        className="filter-advanced-filter-title"
+        className="adv-filter-title"
       >
         <h3>
           <span
@@ -962,11 +962,11 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
 
 exports[`Storyshots Advanced Filter Container with page title 1`] = `
 <div
-  className="advanced-filter-container"
+  className="section-light adv-filter-container"
   id=""
 >
   <div
-    className="filter-sub-header-container"
+    className="adv-filter-group"
   >
     <h1>
       <span
@@ -976,10 +976,10 @@ exports[`Storyshots Advanced Filter Container with page title 1`] = `
       </span>
     </h1>
     <div
-      className="filter-advanced-filter-header"
+      className="adv-filter-header"
     >
       <div
-        className="filter-advanced-filter-title"
+        className="adv-filter-title"
       >
         <h3>
           <span
@@ -1022,67 +1022,7 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
       "width": "100%",
     }
   }
->
-  <div
-    className="filter-selection filter-disabled"
-    id="disabled-filter"
-  >
-    <div
-      className="filter-container-header"
-    >
-      <label>
-        <span
-          className="tool-tip top"
-        >
-          <span
-            className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="tooltip-label"
-              info-label="true"
-            >
-              Disabled
-            </span>
-             
-            <span
-              className="fa fa-info-circle fa-sm"
-            />
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-      data-toggle="buttons"
-    >
-      <div
-        className="btn-group filter-btn-group"
-      >
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          English
-        </button>
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          Chemistry
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+/>
 `;
 
 exports[`Storyshots Advanced Filter disabled multi 1`] = `
@@ -1098,67 +1038,7 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
       "width": "100%",
     }
   }
->
-  <div
-    className="filter-selection filter-disabled"
-    id="disabled multi-filter"
-  >
-    <div
-      className="filter-container-header"
-    >
-      <label>
-        <span
-          className="tool-tip top"
-        >
-          <span
-            className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="tooltip-label"
-              info-label="true"
-            >
-              Disabled Multi
-            </span>
-             
-            <span
-              className="fa fa-info-circle fa-sm"
-            />
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-      data-toggle="buttons"
-    >
-      <div
-        className="btn-group filter-btn-group"
-      >
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          Reading
-        </button>
-        <button
-          className="btn btn-primary "
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          History
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+/>
 `;
 
 exports[`Storyshots Advanced Filter disabled multi all 1`] = `
@@ -1209,7 +1089,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <button
@@ -1258,67 +1138,7 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
       "width": "100%",
     }
   }
->
-  <div
-    className="filter-selection filter-disabled"
-    id="disabled-filter"
-  >
-    <div
-      className="filter-container-header"
-    >
-      <label>
-        <span
-          className="tool-tip top"
-        >
-          <span
-            className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="tooltip-label"
-              info-label="true"
-            >
-              Disabled
-            </span>
-             
-            <span
-              className="fa fa-info-circle fa-sm"
-            />
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-      data-toggle="buttons"
-    >
-      <div
-        className="btn-group filter-btn-group"
-      >
-        <button
-          className="btn btn-primary active"
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          English Literacy & Arts
-        </button>
-        <button
-          className="btn btn-primary active"
-          disabled={true}
-          onClick={[Function]}
-          role="button"
-        >
-          Maths
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+/>
 `;
 
 exports[`Storyshots Advanced Filter multi select 1`] = `
@@ -1369,7 +1189,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <div
@@ -1445,7 +1265,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <button
@@ -1529,7 +1349,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <button
@@ -1613,7 +1433,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <div
@@ -1676,7 +1496,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical "
+      className="nested-btn-group btn-group-sm toggle-group vertical"
       data-toggle="buttons"
     >
       <div
@@ -1706,24 +1526,26 @@ exports[`Storyshots Advanced Filter single select 1`] = `
 
 exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 <div
-  className="basic-filter-container-expanded"
+  className="bf-container section-light bf-expanded"
   id=""
 >
   <div
     className="basic-filter"
   >
     <div
-      className="basic-filter-selection"
-      id="grade -basic-filter"
+      className="bf-selection"
+      id="grade-bf"
     >
-      <label>
-        <span
-          className="undefined"
-        >
-          Grade
-        </span>
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
         <select
-          className="form-control input-sm"
+          className="form-control input-sm med-text"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -1731,10 +1553,10 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           <option
             aria-selected={true}
             disabled={false}
-            label="Please Select"
+            label="Select Grade"
             value="default"
           >
-            Please Select
+            Select Grade
           </option>
           <option
             aria-selected={false}
@@ -1761,11 +1583,11 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
             High School
           </option>
         </select>
-      </label>
+      </div>
     </div>
     <div
-      className="basic-filter-selection"
-      id="subjects -basic-filter"
+      className="bf-selection"
+      id="subjects-bf"
     >
       <label>
         Subjects
@@ -1807,24 +1629,26 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 
 exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
-  className="basic-filter-container"
+  className="bf-container section-light"
   id=""
 >
   <div
     className="basic-filter"
   >
     <div
-      className="basic-filter-selection"
-      id="grade -basic-filter"
+      className="bf-selection"
+      id="grade-bf"
     >
-      <label>
-        <span
-          className="undefined"
-        >
-          Grade
-        </span>
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
         <select
-          className="form-control input-sm"
+          className="form-control input-sm med-text"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -1832,10 +1656,10 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
           <option
             aria-selected={true}
             disabled={false}
-            label="Please Select"
+            label="Select Grade"
             value="default"
           >
-            Please Select
+            Select Grade
           </option>
           <option
             aria-selected={false}
@@ -1862,11 +1686,11 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
             High School
           </option>
         </select>
-      </label>
+      </div>
     </div>
     <div
-      className="basic-filter-selection"
-      id="subjects -basic-filter"
+      className="bf-selection"
+      id="subjects-bf"
     >
       <label>
         Subjects
@@ -1904,7 +1728,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     </div>
   </div>
   <div
-    className="basic-filter-button-container"
+    className="bf-button-container"
   >
     <span>
       <button
@@ -1946,17 +1770,19 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
   }
 >
   <div
-    className="basic-filter-selection"
-    id="grade -basic-filter"
+    className="bf-selection"
+    id="grade-bf"
   >
-    <label>
-      <span
-        className="undefined"
-      >
-        Grade
-      </span>
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
       <select
-        className="form-control input-sm"
+        className="form-control input-sm med-text"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -1964,10 +1790,10 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         <option
           aria-selected={true}
           disabled={false}
-          label="Please Select"
+          label="Select Grade"
           value="default"
         >
-          Please Select
+          Select Grade
         </option>
         <option
           aria-selected={false}
@@ -2002,7 +1828,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
           Grade 4
         </option>
       </select>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -2022,17 +1848,19 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
   }
 >
   <div
-    className="basic-filter-selection"
-    id="grade -basic-filter"
+    className="bf-selection"
+    id="grade-bf"
   >
-    <label>
-      <span
-        className="undefined"
-      >
-        Grade
-      </span>
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
       <select
-        className="form-control input-sm"
+        className="form-control input-sm med-text"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -2040,10 +1868,10 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
         <option
           aria-selected={true}
           disabled={false}
-          label="Please Select"
+          label="Select Grade"
           value="default"
         >
-          Please Select
+          Select Grade
         </option>
         <option
           aria-selected={false}
@@ -2054,7 +1882,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
           Grade
         </option>
       </select>
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -2074,8 +1902,8 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
   }
 >
   <div
-    className="basic-filter-selection"
-    id="grade -basic-filter"
+    className="bf-selection"
+    id="grade-bf"
   >
     <label>
       Grade
@@ -2159,8 +1987,8 @@ exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
   }
 >
   <div
-    className="basic-filter-selection"
-    id="grade -basic-filter"
+    className="bf-selection"
+    id="grade-bf"
   >
     <label>
       Grade
@@ -2417,24 +2245,26 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
   className="filter-component-wrapper"
 >
   <div
-    className="basic-filter-container"
+    className="bf-container section-light"
     id=""
   >
     <div
       className="basic-filter"
     >
       <div
-        className="basic-filter-selection"
-        id="grade -basic-filter"
+        className="bf-selection"
+        id="grade-bf"
       >
-        <label>
-          <span
-            className="undefined"
-          >
-            Grade
-          </span>
+        <div>
+          <label>
+            <span
+              className=""
+            >
+              Grade
+            </span>
+          </label>
           <select
-            className="form-control input-sm"
+            className="form-control input-sm med-text"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -2442,10 +2272,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             <option
               aria-selected={true}
               disabled={false}
-              label="Please Select"
+              label="Select Grade"
               value="default"
             >
-              Please Select
+              Select Grade
             </option>
             <option
               aria-selected={false}
@@ -2472,11 +2302,11 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               High School
             </option>
           </select>
-        </label>
+        </div>
       </div>
       <div
-        className="basic-filter-selection"
-        id="subjects -basic-filter"
+        className="bf-selection"
+        id="subjects-bf"
       >
         <label>
           Subjects
@@ -2514,7 +2344,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       </div>
     </div>
     <div
-      className="basic-filter-button-container"
+      className="bf-button-container"
     >
       <span>
         <button
@@ -7236,6 +7066,62 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
     />
     Jump to Filter
   </a>
+</div>
+`;
+
+exports[`Storyshots Iframe Modal with an item 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open Item Modal"
+      className="btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Open
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Iframe Modal with no contents 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open  Modal"
+      className="btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Open
+    </button>
+  </div>
 </div>
 `;
 
@@ -14002,6 +13888,19 @@ exports[`Storyshots Layout Footer default footer 1`] = `
         >
           www.SmarterBalanced.org
         </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -14333,6 +14232,19 @@ exports[`Storyshots Layout name links body 1`] = `
         >
           www.SmarterBalanced.org
         </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -14489,6 +14401,19 @@ exports[`Storyshots Layout name links header and body 1`] = `
         >
           www.SmarterBalanced.org
         </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -14582,6 +14507,19 @@ exports[`Storyshots Layout name no links no body 1`] = `
         >
           www.SmarterBalanced.org
         </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -16390,7 +16328,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
     >
       <button
         aria-label="table view toggle"
-        className="btn btn-primary"
+        className="btn btn-gray"
         onClick={[Function]}
         value={0}
       >
@@ -16407,7 +16345,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
       >
         <i
           aria-hidden="true"
-          className="fa fa-book"
+          className="glyphicon glyphicon-th-large glyphicon-pad"
         />
       </button>
     </div>
