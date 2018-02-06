@@ -8,5 +8,7 @@ import { SiteLinks } from "mocks/Layout/mocks";
 storiesOf("Layout Nav", module)
   .addDecorator(RouterDecorator)
   .addDecorator(CenterDecorator)
-  .add("name no links", () => <NavMenu siteName="Test" />)
-  .add("name links", () => <NavMenu siteName="Test" links={SiteLinks} />);
+  .add("name no links", () => <NavMenu siteName="Test" mainContentId="" />)
+  .add("name links", () => (
+    <NavMenu siteName="Test" links={SiteLinks} mainContentId="" />
+  ));

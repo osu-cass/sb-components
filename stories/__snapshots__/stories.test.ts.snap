@@ -13925,13 +13925,13 @@ exports[`Storyshots Layout Nav name links 1`] = `
     role="navigation"
   >
     <div
-      className="skip-link"
       id="skip-main"
     >
       <a
         className="skip-link"
-        href="/#main"
-        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
       >
         Skip to main content
       </a>
@@ -13978,6 +13978,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
             className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -13990,6 +13991,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
             className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14002,6 +14004,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
             className="nav-linksGroup-item"
             href="url3"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14035,13 +14038,13 @@ exports[`Storyshots Layout Nav name no links 1`] = `
     role="navigation"
   >
     <div
-      className="skip-link"
       id="skip-main"
     >
       <a
         className="skip-link"
-        href="/#main"
-        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
       >
         Skip to main content
       </a>
@@ -14090,18 +14093,19 @@ exports[`Storyshots Layout Nav name no links 1`] = `
 exports[`Storyshots Layout name links body 1`] = `
 <div
   className="site-body"
+  id="site-body"
 >
   <header
     role="navigation"
   >
     <div
-      className="skip-link"
       id="skip-main"
     >
       <a
         className="skip-link"
-        href="/#main"
-        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
       >
         Skip to main content
       </a>
@@ -14148,6 +14152,7 @@ exports[`Storyshots Layout name links body 1`] = `
             className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14160,6 +14165,7 @@ exports[`Storyshots Layout name links body 1`] = `
             className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14172,6 +14178,7 @@ exports[`Storyshots Layout name links body 1`] = `
             className="nav-linksGroup-item"
             href="url3"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14254,18 +14261,19 @@ exports[`Storyshots Layout name links body 1`] = `
 exports[`Storyshots Layout name links header and body 1`] = `
 <div
   className="site-body"
+  id="site-body"
 >
   <header
     role="navigation"
   >
     <div
-      className="skip-link"
       id="skip-main"
     >
       <a
         className="skip-link"
-        href="/#main"
-        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
       >
         Skip to main content
       </a>
@@ -14312,6 +14320,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14324,6 +14333,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14336,6 +14346,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             className="nav-linksGroup-item"
             href="url3"
             onClick={[Function]}
+            onKeyUp={[Function]}
             style={undefined}
           >
             <span
@@ -14423,18 +14434,19 @@ exports[`Storyshots Layout name links header and body 1`] = `
 exports[`Storyshots Layout name no links no body 1`] = `
 <div
   className="site-body"
+  id="site-body"
 >
   <header
     role="navigation"
   >
     <div
-      className="skip-link"
       id="skip-main"
     >
       <a
         className="skip-link"
-        href="/#main"
-        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
       >
         Skip to main content
       </a>
