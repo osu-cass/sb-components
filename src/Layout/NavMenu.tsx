@@ -6,6 +6,7 @@ const sbLogo = require("@sbac/sbac-ui-kit/src/images/SmarterBalanced-Logo.png");
 export interface NavMenuProps {
   links?: SbNavlinkProps[];
   siteName: string;
+  mainContentId: string;
 }
 
 export class NavMenu extends React.Component<NavMenuProps, {}> {
@@ -20,13 +21,29 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
     return content;
   }
 
+  handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+    if (e.keyCode === 13) {
+      const link = e.target as HTMLElement;
+      const element = document.getElementById(this.props.mainContentId);
+      link.blur();
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  };
+
   render() {
     return (
       <header role="navigation">
-        <div className="skip-link" id="skip-main">
-          <Link className="skip-link" to={{ hash: "main" }}>
+        <div id="skip-main">
+          <a
+            role="link"
+            className="skip-link"
+            tabIndex={0}
+            onKeyDown={this.handleKeyDown}
+          >
             Skip to main content
-          </Link>
+          </a>
         </div>
         <nav className="nav-container" role="navigation">
           <div className="nav-content container">
