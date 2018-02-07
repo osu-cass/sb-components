@@ -41,7 +41,10 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
       return (
         <div className={"tool-tip-message " + this.props.position}>
           {this.renderToolTipHeader()}
-          <div className="tool-tip-help-text">{this.props.helpText}</div>
+          <div
+            className="tool-tip-help-text"
+            dangerouslySetInnerHTML={{ __html: this.props.helpText }}
+          />
         </div>
       );
     }

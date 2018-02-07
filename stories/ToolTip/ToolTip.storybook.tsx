@@ -47,4 +47,9 @@ storiesOf("ToolTip", module)
       Testing
     </ToolTip>
   ))
-  .add("with no help text", () => <ToolTip>Testing</ToolTip>);
+  .add("with no help text", () => <ToolTip>Testing</ToolTip>)
+  .add("with custom help text", () => (
+    <ToolTip helpText="<b>Commit</b>" toolTipHeader={header} position="top">
+      Testing
+    </ToolTip>
+  ));
