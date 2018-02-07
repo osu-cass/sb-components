@@ -46,4 +46,5 @@ storiesOf("ToolTip", module)
     <ToolTip helpText={longText} toolTipHeader={header} position="top">
       Testing
     </ToolTip>
-  ));
+  ))
+  .add("with no help text", () => <ToolTip>Testing</ToolTip>);

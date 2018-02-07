@@ -24,30 +24,32 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
   renderToolTipVisibleText() {
     const icon = this.props.displayIcon ? (
-      <span className="fa fa-info-circle fa-sm" />
+      <span className="fa fa-info-circle fa-sm" aria-hidden="true" />
     ) : (
       undefined
     );
 
     return (
-      <div className="tool-tip-hoverable" tabIndex={0}>
+      <div className="tool-tip-hoverable">
         {this.props.children} {icon}
       </div>
     );
   }
 
   renderToolTipHelpText() {
-    return (
-      <div className={"tool-tip-message " + this.props.position}>
-        {this.renderToolTipHeader()}
-        <div className="tool-tip-help-text">{this.props.helpText}</div>
-      </div>
-    );
+    if (this.props.helpText) {
+      return (
+        <div className={"tool-tip-message " + this.props.position}>
+          {this.renderToolTipHeader()}
+          <div className="tool-tip-help-text">{this.props.helpText}</div>
+        </div>
+      );
+    }
   }
 
   renderToolTip() {
     return (
-      <div className="tool-tip-links">
+      <div className="tool-tip-links" tabIndex={0}>
         {this.renderToolTipVisibleText()}
         <div className="tool-tip-details">{this.renderToolTipHelpText()}</div>
       </div>
