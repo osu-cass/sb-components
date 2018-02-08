@@ -13,3 +13,4 @@ Developers Guide
    Accessibility
    NpmLink
    Publish
+   SiteStyles
