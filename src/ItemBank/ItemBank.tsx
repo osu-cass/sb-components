@@ -8,6 +8,7 @@ import {
 import * as React from "react";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 import { AccResourceGroupModel } from "../index";
+import { ToolTip } from "../index";
 
 export interface RevisionModel {
   author: string;
@@ -101,41 +102,29 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     );
   }
 
-  renderCommitMessage(rev: RevisionModel) {
-    return (
-      <div className="revisions-message">
-        <h3 className="revisions-link-header">
-          {rev.date.toDateString()} - {rev.date.toLocaleTimeString()}
-        </h3>
-        <div className="revisions-commit-message">
-          <b>Commit: </b>
-          {rev.commitMessage}
-          <br />
-          <b>Author: </b> {rev.author}
-          <br />
-          <b>Commit Hash: </b>
-          {rev.commitHash}
-        </div>
-      </div>
-    );
-  }
-
   renderRevisions = (rev: RevisionModel) => {
     return (
-      <div className="revisions-overview" key={rev.commitHash}>
-        <ul className="revisions-list">
-          <li>
-            <div className="revisions-links">
-              <a href="#">{rev.commitHash}</a>
-              {this.renderCommitMessage(rev)}
-              <div className="revisions-details">
-                {rev.author}-
-                {rev.date.getMonth() + 1}/{rev.date.getDate()}
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <li key={rev.commitHash}>
+        <ToolTip
+          toolTipHeader={
+            rev.date.toDateString() + "-" + rev.date.toLocaleTimeString()
+          }
+          helpText={
+            "<b>Commit: </b>" +
+            rev.commitMessage +
+            "</br><b>Author: </b>" +
+            rev.author +
+            "</br><b>CommitHash: </b>" +
+            rev.commitHash
+          }
+        >
+          <a href="#">{rev.commitHash}</a>
+          <div className="revisions-details">
+            {rev.author}-
+            {rev.date.getMonth() + 1}/{rev.date.getDate()}
+          </div>
+        </ToolTip>
+      </li>
     );
   };
 
@@ -144,7 +133,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     return (
       <div className="revisions section-light">
         <h3 className="revisions-header">Revisions</h3>
-        {revisions}
+        <ul>{revisions}</ul>
       </div>
     );
   }

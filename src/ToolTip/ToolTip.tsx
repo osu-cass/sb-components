@@ -15,9 +15,9 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
   renderToolTipHeader() {
     if (this.props.toolTipHeader) {
       return (
-        <div className="tool-tip-header">
+        <span className="tool-tip-header">
           <h3 className="tool-tip-link-header">{this.props.toolTipHeader}</h3>
-        </div>
+        </span>
       );
     }
   }
@@ -30,9 +30,9 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
     );
 
     return (
-      <div className="tool-tip-hoverable">
+      <span className="tool-tip-hoverable">
         {this.props.children} {icon}
-      </div>
+      </span>
     );
   }
 
@@ -50,7 +50,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
     }
   }
 
-  renderToolTip() {
+  render() {
     return (
       <div className="tool-tip-links" tabIndex={0}>
         {this.renderToolTipVisibleText()}
@@ -59,7 +59,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
     );
   }
 
-  render() {
-    return <div>{this.renderToolTip()}</div>;
-  }
+  // render() {
+  //   return <div>{this.renderToolTip()}</div>;
+  // }
 }
