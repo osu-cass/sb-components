@@ -1743,8 +1743,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         className="btn btn-default filter-button af-expand"
         onClick={[Function]}
       >
-        Advanced Filters
-         
+        Advanced Filters 
         <span
           aria-hidden="true"
           className="fa fa-chevron-right"
@@ -2359,8 +2358,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           className="btn btn-default filter-button af-expand"
           onClick={[Function]}
         >
-          Advanced Filters
-           
+          Advanced Filters 
           <span
             aria-hidden="true"
             className="fa fa-chevron-right"

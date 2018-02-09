@@ -122,7 +122,7 @@ export class ItemTableContainer extends React.Component<
    */
   getTableData = (): ItemCardModel[] | undefined => {
     const sorts = this.state.sorts || [];
-    let itemCards = this.props.itemCards || [];
+    let itemCards = (this.props.itemCards || []).slice();
     sorts.forEach(sort => {
       itemCards = itemCards.sort((lhs, rhs) =>
         this.invokeMultiSort(sort, lhs, rhs)
