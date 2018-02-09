@@ -29,7 +29,6 @@ export interface SearchResultContainerProps {
   itemCards?: ItemCardModel[];
   item?: Resource<AboutItemModel>;
   defaultRenderType?: SearchResultType;
-
   isLinkTable: boolean;
 }
 

@@ -499,8 +499,7 @@ exports[`FilterContainer renders 1`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-right"
@@ -1013,8 +1012,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-right"
@@ -1527,8 +1525,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-down"
@@ -2784,8 +2781,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-right"

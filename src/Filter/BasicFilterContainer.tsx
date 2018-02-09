@@ -132,7 +132,7 @@ export class BasicFilterContainer extends React.Component<
               className="btn btn-default filter-button af-expand"
               onClick={this.handleClick}
             >
-              {"Advanced Filters"}&nbsp;
+              Advanced Filters&nbsp;
               <span
                 aria-hidden="true"
                 className={`fa fa-chevron-${expanded ? "down" : "right"}`}
