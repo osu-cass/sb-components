@@ -8,7 +8,6 @@ import {
 } from "./AccessibilityModels";
 import { Dropdown, DropdownProps } from "../index";
 import * as ReactModal from "react-modal";
-import { findDOMNode } from "react-dom";
 
 export interface ItemAccessibilityModalProps {
   accResourceGroups: AccResourceGroupModel[];
@@ -174,7 +173,8 @@ export class ItemAccessibilityModal extends React.Component<
           onClick={() => this.toggleResourceType(resourceType)}
           onKeyUp={e => this.keyboardToggleResourceType(e, resourceType)}
         >
-          Show less
+          <span className="fa fa-compress" aria-hidden="true" />
+          &nbsp;Show less
         </a>
       );
     } else {
@@ -188,7 +188,8 @@ export class ItemAccessibilityModal extends React.Component<
           onClick={() => this.toggleResourceType(resourceType)}
           onKeyUp={e => this.keyboardToggleResourceType(e, resourceType)}
         >
-          Show all
+          <span className="fa fa-expand" aria-hidden="true" />
+          &nbsp;Show all
         </a>
       );
     }
