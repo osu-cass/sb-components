@@ -58,8 +58,4 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
       </div>
     );
   }
-
-  // render() {
-  //   return <div>{this.renderToolTip()}</div>;
-  // }
 }
