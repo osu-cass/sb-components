@@ -1743,8 +1743,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         className="btn btn-default filter-button af-expand"
         onClick={[Function]}
       >
-        Advanced Filters
-         
+        Advanced Filters 
         <span
           aria-hidden="true"
           className="fa fa-chevron-right"
@@ -2359,8 +2358,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           className="btn btn-default filter-button af-expand"
           onClick={[Function]}
         >
-          Advanced Filters
-           
+          Advanced Filters 
           <span
             aria-hidden="true"
             className="fa fa-chevron-right"
@@ -7284,6 +7282,13 @@ exports[`Storyshots Item Page Item Page returns error 1`] = `
     className="itemViewerFrame"
     tabIndex={0}
   >
+    <div
+      className="loader-icon"
+    >
+      <div
+        className="loader"
+      />
+    </div>
     <iframe
       className="itemviewer-iframe"
       id="itemviewer-iframe"
@@ -7388,6 +7393,13 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
     className="itemViewerFrame"
     tabIndex={0}
   >
+    <div
+      className="loader-icon"
+    >
+      <div
+        className="loader"
+      />
+    </div>
     <iframe
       className="itemviewer-iframe"
       id="itemviewer-iframe"
@@ -13493,6 +13505,13 @@ exports[`Storyshots Item Viewer Frame with an item 1`] = `
   className="itemViewerFrame"
   tabIndex={0}
 >
+  <div
+    className="loader-icon"
+  >
+    <div
+      className="loader"
+    />
+  </div>
   <iframe
     className="itemviewer-iframe"
     id="itemviewer-iframe"
