@@ -8,6 +8,7 @@ import {
 } from "./AccessibilityModels";
 import { Dropdown, DropdownProps } from "../index";
 import * as ReactModal from "react-modal";
+import { findDOMNode } from "react-dom";
 
 export interface ItemAccessibilityModalProps {
   accResourceGroups: AccResourceGroupModel[];
@@ -61,6 +62,18 @@ export class ItemAccessibilityModal extends React.Component<
     resourceType: string
   ): void {
     if (e.keyCode === 23 || e.keyCode === 13) {
+      const resources = this.props.accResourceGroups.filter(
+        group => group.label === resourceType
+      )[0].accessibilityResources;
+      const firstDropDownId = resources
+        .filter(res => res.disabled === false)[0]
+        .label.replace(/ /g, "");
+
+      const firstDropDown = document.getElementById(firstDropDownId);
+      if (firstDropDown) {
+        firstDropDown.focus();
+      }
+
       const expandeds = { ...this.state.resourceTypeExpanded };
       expandeds[resourceType] = !expandeds[resourceType];
 
@@ -118,7 +131,7 @@ export class ItemAccessibilityModal extends React.Component<
     )[0].accessibilityResources;
     const resourceTypeHeader = (
       <h4 className="green-title">
-        <span className="fa fa-tasks" />&nbsp;
+        <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
         {resourceType}
       </h4>
     );
@@ -151,7 +164,7 @@ export class ItemAccessibilityModal extends React.Component<
     if (resCount <= 4) {
       expandButton = undefined;
     } else if (isExpanded) {
-      const ariaText = `Display fewer ${resourceType} options`;
+      const ariaText = `Display fewer ${resourceType} options, selecting fewer will go to the top of universal tools.`;
       expandButton = (
         <a
           role="button"
@@ -165,7 +178,7 @@ export class ItemAccessibilityModal extends React.Component<
         </a>
       );
     } else {
-      const ariaText = `Display all ${resourceType} options`;
+      const ariaText = `Display all ${resourceType} options, selecting all will go to the top of universal tools.`;
       expandButton = (
         <a
           role="button"
