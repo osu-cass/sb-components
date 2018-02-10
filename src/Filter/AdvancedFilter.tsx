@@ -63,13 +63,15 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   }
   render() {
     const { disabled, label, helpText } = this.props;
+    // replace "-" with spaces, replace "." with nothing.
+    const id = label.replace(/\ /g, "-").replace(/\./g, "");
     if (disabled) {
       return null;
     }
 
     return (
       <div
-        id={(label + "-filter").toLocaleLowerCase()}
+        id={`${id}-filter`.toLocaleLowerCase()}
         className={"filter-selection"}
       >
         <div className="filter-container-header">
