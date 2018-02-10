@@ -136,7 +136,8 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
    * @returns default render method JSX Element
    */
   render() {
-    const { label } = this.props;
+    let { label } = this.props;
+    label = label.replace(/\ /g, "-");
 
     return (
       <div id={`${label}-bf`.toLocaleLowerCase()} className="bf-selection">
