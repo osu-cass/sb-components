@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { Redirect } from "react-router";
 import {
   AboutItem,
   AboutItemModel,
@@ -31,6 +32,7 @@ export interface AboutTestItemContainerProps {
     params?: { interactionTypeCode: string }
   ) => Promise<AboutTestItemsModel>;
   showRubrics: boolean;
+  errorRedirectPath: string;
 }
 
 export class AboutTestItemsContainer extends React.Component<
@@ -248,13 +250,7 @@ export class AboutTestItemsContainer extends React.Component<
   private renderError(): JSX.Element | undefined {
     let content: JSX.Element | undefined;
     if (this.state.hasError) {
-      content = (
-        <div className="page-error">
-          <p aria-label="Network error occurred">
-            Network failure, please try again
-          </p>
-        </div>
-      );
+      content = <Redirect push to={this.props.errorRedirectPath} />;
     }
 
     return content;
