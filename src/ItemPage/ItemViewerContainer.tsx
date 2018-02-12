@@ -79,7 +79,7 @@ export class ItemViewerContainer extends React.Component<
 
   renderCalculatorNav(): JSX.Element | undefined {
     const enabled = Accessibility.isCalculatorEnabled(
-      this.props.accResourceGroups
+      this.props.aboutThisItemVM.itemCardViewModel
     );
     let content: JSX.Element | undefined;
     if (enabled) {
