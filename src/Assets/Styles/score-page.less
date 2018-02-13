@@ -114,28 +114,20 @@ table.item-table > thead > tr > th {
 }
 
 table.item-table > thead > tr > td:first-child,
-table.item-table > tbody > tr > td:first-child,
-table.item-table > thead > tr > th:nth-child(2),
-table.item-table > tbody > tr > td:nth-child(2),
-table.item-table > tbody > tr > td:nth-child(3), {
+table.item-table > tbody > tr > td:first-child {
     width: 50px;
     text-align: center;
     padding: 0px;
     margin:auto;
 }
 
-table.link-table > thead > tr > th.item,
-table.link-table > tbody > tr > td.item {
+table.item-table > thead > tr > th:nth-child(2),
+table.item-table > tbody > tr > td:nth-child(2),
+table.item-table > tbody > tr > td:nth-child(3), {
     width: 50px;
-    text-align: center;
+    text-align: left;
     padding: 0px;
-}
-
-table.link-table > thead > tr > th.claimAndTarget,
-table.link-table > tbody > tr > td.claimAndTarget {
-    width: 250px;
-    text-align: center;
-    padding: 0px;
+    margin:auto;
 }
 
 table.link-table > tbody > tr > td,
@@ -147,9 +139,15 @@ table.item-table > tbody > tr > td {
     white-space: normal;
 }
 
-//link table specific
-table.link-table > tbody > tr > td.item > span {
-    margin-left: @spacing-item;
+table.link-table > thead > tr > th.item,
+table.link-table > tbody > tr > td.item {
+    width: 50px;
+}
+
+table.link-table > thead > tr > th.claimAndTarget,
+table.link-table > tbody > tr > td.claimAndTarget {
+    width: 250px;
+    padding: 0px;
 }
 
 table.link-table > tbody > tr:nth-child(even),
