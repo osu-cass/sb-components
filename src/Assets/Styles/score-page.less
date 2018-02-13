@@ -104,7 +104,6 @@ table.item-table {
 table.link-table > thead > tr > th,
 table.item-table > thead > tr > th {
     border-right: 1px solid hsla(220,3%,40%,.17);
-    width: 200px;
     min-width: 100px;
     background-color: #E3E3E3;
     text-align: left;
@@ -125,6 +124,7 @@ table.item-table > thead > tr > th:nth-child(2),
 table.item-table > tbody > tr > td:nth-child(2),
 table.item-table > tbody > tr > td:nth-child(3), {
     width: 50px;
+    min-width: 50px;
     text-align: left;
     padding: 0px;
     margin:auto;
@@ -132,7 +132,6 @@ table.item-table > tbody > tr > td:nth-child(3), {
 
 table.link-table > tbody > tr > td,
 table.item-table > tbody > tr > td { 
-    width: 200px;
     min-width: 50px;
     padding: 4px 8px;
     text-align: left;
@@ -146,7 +145,7 @@ table.link-table > tbody > tr > td.item {
 
 table.link-table > thead > tr > th.claimAndTarget,
 table.link-table > tbody > tr > td.claimAndTarget {
-    width: 250px;
+    max-width: 250px;
     padding: 0px;
 }
 

@@ -28,6 +28,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           aboutClient={mockAboutTestClient}
+          errorRedirectPath={""}
         />
       )}
     />
@@ -42,6 +43,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClient}
+          errorRedirectPath={""}
         />
       )}
     />
@@ -56,6 +58,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClientReject}
+          errorRedirectPath={""}
         />
       )}
     />
@@ -70,6 +73,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClientLoading}
+          errorRedirectPath={""}
         />
       )}
     />
@@ -84,6 +88,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestBadItem}
           aboutClient={mockAboutTestClient}
+          errorRedirectPath={""}
         />
       )}
     />
