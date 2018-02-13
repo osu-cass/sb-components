@@ -19,6 +19,7 @@ export interface ItemViewPageProps extends RouteComponentProps<ItemModel> {
   ) => Promise<AccResourceGroupModel[]>;
   showRubrics: boolean;
   appName?: string;
+  errorRedirectPath: string;
 }
 
 export class ItemViewPage extends React.Component<ItemViewPageProps, {}> {
