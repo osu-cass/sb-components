@@ -262,7 +262,10 @@ export {
 // Error Components
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
-export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";
+export {
+  ErrorPageContainer,
+  pageType
+} from "./ErrorPageContainer/ErrorPageContainer";
 
 //
 // Promises and Subscription

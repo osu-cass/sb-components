@@ -4,6 +4,7 @@ import {
   isBrailleEnabled,
   ResourceSelectionsModel
 } from "../Accessibility/AccessibilityModels";
+import { Redirect } from "react-router";
 import {
   AccResourceGroupModel,
   AccessibilityResourceModel,
@@ -34,6 +35,7 @@ export interface ItemPageContainerProps {
   itemIsaap: ItemIsaapModel;
   updateIsaap: (isaap: string) => void;
   updateCookie: (cookieName: string, cookieValue: string) => void;
+  errorRedirectPath: string;
 }
 
 export interface ItemPageContainerState {
@@ -43,6 +45,7 @@ export interface ItemPageContainerState {
   currentItem?: ItemIdentifierModel;
   item: ItemModel;
   loading: boolean;
+  redirect: boolean;
 }
 
 export class ItemPageContainer extends React.Component<
@@ -59,7 +62,8 @@ export class ItemPageContainer extends React.Component<
       aboutThisItem: { kind: "loading" },
       itemPageVM: { kind: "loading" },
       itemAccessibility: { kind: "loading" },
-      loading: true
+      loading: true,
+      redirect: false
     };
   }
 
@@ -147,8 +151,7 @@ export class ItemPageContainer extends React.Component<
 
   onError(err: string) {
     if (err !== "Canceled") {
-      this.setState({ loading: false });
-      console.error(err);
+      this.setState({ loading: false, redirect: true });
     }
   }
 
@@ -257,6 +260,7 @@ export class ItemPageContainer extends React.Component<
   }
 
   render() {
+    const { redirect } = this.state;
     const aboutThisItem = this.getAboutItem();
     const itemDetails = this.state.currentItem;
     const itemPage = this.getItemPage();
@@ -276,7 +280,9 @@ export class ItemPageContainer extends React.Component<
       );
     }
 
-    return (
+    return redirect ? (
+      <Redirect push to={this.props.errorRedirectPath} />
+    ) : (
       <LoadingOverlay loading={this.state.loading}>
         <div className="container item-page">{content}</div>
       </LoadingOverlay>

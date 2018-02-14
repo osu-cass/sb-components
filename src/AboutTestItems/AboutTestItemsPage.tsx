@@ -20,6 +20,7 @@ export interface AboutTestItemsPageProps
   ) => Promise<AboutTestItemsModel>;
   showRubrics: boolean;
   appName?: string;
+  errorRedirectPath: string;
 }
 
 export class AboutTestItemsPage extends React.Component<
