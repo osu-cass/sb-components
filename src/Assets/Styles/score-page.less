@@ -70,9 +70,10 @@ table.item-table {
     display: block;
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 1px solid #EFEFEF;
     border-radius: @spacing-item;
     border-spacing: 1px;
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -103,12 +104,10 @@ table.item-table {
 
 table.link-table > thead > tr > th,
 table.item-table > thead > tr > th {
-    border-right: 1px solid hsla(220,3%,40%,.17);
     min-width: 100px;
-    background-color: #E3E3E3;
     text-align: left;
     white-space: nowrap;
-    border: none;
+    border: 0;
     padding:4px 8px;
 }
 
@@ -154,7 +153,13 @@ table.item-table > tbody > tr:nth-child(even),
 table.link-table > tbody > tr:nth-child(odd),
 table.item-table > tbody > tr:nth-child(odd) {
     background-color: @sb-white;
-    border: 1px solid @grey-border-color;
+    border-top: 1px solid @grey-border-color;
+    border-bottom: 1px solid @grey-border-color;
+}
+
+table.link-table > tbody > tr:last-child,
+table.item-table > tbody > tr:last-child {
+    border: 0;
 }
 
 table.link-table > tbody > tr:hover,
