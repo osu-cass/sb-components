@@ -30,18 +30,20 @@ table.item-table td {
     white-space: normal;
 }
 
-.item {
+table.link-table .item,
+table.item-table .item {
     width: 50px;
-    padding: 0px;
 }
 
-.item-checkbox {
+table.link-table .item-checkbox,
+table.item-table .item-checkbox {
     width: 50px;
     text-align: center;
     margin:auto;
 }
 
-.arrow-indicator {
+table.link-table .arrow-indicator,
+table.item-table .arrow-indicator {
     width: 50px;
     min-width: 50px;
     text-align: left;
@@ -49,7 +51,8 @@ table.item-table td {
     margin:auto;
 }
 
-.claimAndTarget {
+table.link-table .claimAndTarget,
+table.item-table .claimAndTarget {
     max-width: 250px;
     padding: 0px;
 }
@@ -89,8 +92,8 @@ table > thead > tr > th > div > span {
     align-self: center;
 }
 
-table.link-table > thead > tr > th:hover,
-table.item-table > thead > tr > th:hover {
+table.link-table th:hover,
+table.item-table th:hover {
     background-color: #EFEFEF;
     cursor: pointer;
 }
