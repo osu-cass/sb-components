@@ -8,6 +8,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   onKeyUp={[Function]}
 >
   <td
+    className="item-checkbox"
     key="checkbox-control"
     onClick={[Function]}
     onKeyUp={[Function]}
@@ -20,6 +21,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
      
   </td>
   <td
+    className="arrow-indicator"
     key="expand-control"
     tabIndex={0}
   >
@@ -207,6 +209,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         onKeyUp={[Function]}
       >
         <td
+          className="item-checkbox"
           key="checkbox-control"
           onClick={[Function]}
           onKeyUp={[Function]}
@@ -219,6 +222,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
            
         </td>
         <td
+          className="arrow-indicator"
           key="expand-control"
           tabIndex={0}
         >
