@@ -1,4 +1,5 @@
 import { DropDownSelectionModel } from "../DropDown/DropDownModels";
+import { ItemCardModel } from "../ItemCard/ItemCardModels";
 
 export interface AccessibilityResourceModel {
   resourceCode: string; // ID for this resource
@@ -51,10 +52,8 @@ export function isBrailleEnabled(
   return isResourceEnabled(accResourceGroups, "BrailleType");
 }
 
-export function isCalculatorEnabled(
-  accResourceGroups: AccResourceGroupModel[]
-): boolean {
-  return isResourceEnabled(accResourceGroups, "Calculator");
+export function isCalculatorEnabled(itemCard: ItemCardModel): boolean {
+  return itemCard.calculator || false;
 }
 
 export function isResourceEnabled(
@@ -88,9 +87,7 @@ export function isStreamlinedEnabled(
 export function getResourceTypes(
   resourceGroups: AccResourceGroupModel[]
 ): string[] {
-  const resourceTypes = resourceGroups.map(t => t.label);
-
-  return resourceTypes;
+  return resourceGroups.map(t => t.label);
 }
 
 export interface ResourceSelectionsModel {
