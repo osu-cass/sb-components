@@ -6,7 +6,6 @@ import {
   AboutTestItemsParams,
   AboutTestItemsPage
 } from "src/index";
-import { RouterDecorator } from "../RouterDecorator";
 import {
   mockAboutTestClient,
   mockAboutTestClientLoading,
@@ -16,9 +15,10 @@ import {
   aboutTestBadItem
 } from "mocks/AboutTestItems/mocks";
 import { Route, match } from "react-router";
+import { LayoutDecorator } from "../LayoutDecorator";
 
 storiesOf("About Test Items", module)
-  .addDecorator(RouterDecorator)
+  .addDecorator(LayoutDecorator)
   .add("default", () => (
     <Route
       exact

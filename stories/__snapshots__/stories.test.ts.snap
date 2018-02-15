@@ -2,6 +2,7 @@
 
 exports[`Storyshots About Item Modal default 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -39,6 +40,7 @@ exports[`Storyshots About Item Modal default 1`] = `
 
 exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -76,6 +78,7 @@ exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
 
 exports[`Storyshots About Item Modal showing no rubrics 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -113,6 +116,7 @@ exports[`Storyshots About Item Modal showing no rubrics 1`] = `
 
 exports[`Storyshots About Item Modal showing rubrics 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -150,6 +154,7 @@ exports[`Storyshots About Item Modal showing rubrics 1`] = `
 
 exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -187,6 +192,7 @@ exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
 
 exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -224,6 +230,7 @@ exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
 
 exports[`Storyshots About PT About ELA 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -263,6 +270,7 @@ exports[`Storyshots About PT About ELA 1`] = `
 
 exports[`Storyshots About PT About Math 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -302,6 +310,7 @@ exports[`Storyshots About PT About Math 1`] = `
 
 exports[`Storyshots About PT Nothing 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -341,56 +350,582 @@ exports[`Storyshots About PT Nothing 1`] = `
 
 exports[`Storyshots About Test Items bad item type 1`] = `
 <div
-  className="loader-overlay"
+  className="site-body"
+  id="site-body"
 >
-  <div
-    className="loader"
-  />
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="loader-overlay"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
 exports[`Storyshots About Test Items default 1`] = `
 <div
-  className="loader-overlay"
+  className="site-body"
+  id="site-body"
 >
-  <div
-    className="loader"
-  />
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="loader-overlay"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
 exports[`Storyshots About Test Items default, param 1`] = `
 <div
-  className="loader-overlay"
+  className="site-body"
+  id="site-body"
 >
-  <div
-    className="loader"
-  />
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="loader-overlay"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
 exports[`Storyshots About Test Items loading, param 1`] = `
 <div
-  className="loader-overlay"
+  className="site-body"
+  id="site-body"
 >
-  <div
-    className="loader"
-  />
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="loader-overlay"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
 exports[`Storyshots About Test Items reject, param 1`] = `
 <div
-  className="loader-overlay"
+  className="site-body"
+  id="site-body"
 >
-  <div
-    className="loader"
-  />
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              SB-Components
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="loader-overlay"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
 exports[`Storyshots About This Item Detail displays information about an item 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -599,6 +1134,7 @@ exports[`Storyshots About This Item Detail displays information about an item 1`
 
 exports[`Storyshots Accessibility DropDown all disabled 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -663,6 +1199,7 @@ exports[`Storyshots Accessibility DropDown all disabled 1`] = `
 
 exports[`Storyshots Accessibility DropDown default with disabled 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -727,6 +1264,7 @@ exports[`Storyshots Accessibility DropDown default with disabled 1`] = `
 
 exports[`Storyshots Accessibility DropDown dropdown disabled 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -791,6 +1329,7 @@ exports[`Storyshots Accessibility DropDown dropdown disabled 1`] = `
 
 exports[`Storyshots Accessibility DropDown no selections 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -827,6 +1366,7 @@ exports[`Storyshots Accessibility DropDown no selections 1`] = `
 
 exports[`Storyshots Accessibility Modal few options hiding 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -858,6 +1398,7 @@ exports[`Storyshots Accessibility Modal few options hiding 1`] = `
 
 exports[`Storyshots Accessibility Modal many options showing  1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -889,6 +1430,7 @@ exports[`Storyshots Accessibility Modal many options showing  1`] = `
 
 exports[`Storyshots Accessibility Modal no options showing  1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1011,6 +1553,7 @@ exports[`Storyshots Advanced Filter Container with page title 1`] = `
 
 exports[`Storyshots Advanced Filter disabled 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1027,6 +1570,7 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
 
 exports[`Storyshots Advanced Filter disabled multi 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1043,6 +1587,7 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
 
 exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1127,6 +1672,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 
 exports[`Storyshots Advanced Filter disabled with selections 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1143,6 +1689,7 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
 
 exports[`Storyshots Advanced Filter multi select 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1219,6 +1766,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
 
 exports[`Storyshots Advanced Filter multi select all  1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1303,6 +1851,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
 
 exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1387,6 +1936,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 
 exports[`Storyshots Advanced Filter no options 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1450,6 +2000,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
 
 exports[`Storyshots Advanced Filter single select 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1756,6 +2307,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
 
 exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1834,6 +2386,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 
 exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1888,6 +2441,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 
 exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -1973,6 +2527,7 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 
 exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -2134,6 +2689,7 @@ exports[`Storyshots Collapsible No classname of style 1`] = `
 
 exports[`Storyshots Error Boundary shows the fallback ui 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7169,6 +7725,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
 
 exports[`Storyshots Iframe Modal with an item 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7197,6 +7754,7 @@ exports[`Storyshots Iframe Modal with an item 1`] = `
 
 exports[`Storyshots Iframe Modal with no contents 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7225,6 +7783,7 @@ exports[`Storyshots Iframe Modal with no contents 1`] = `
 
 exports[`Storyshots Item Card Item Card 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7347,6 +7906,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
 
 exports[`Storyshots Item Card Item Card Condensed 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7663,6 +8223,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
 
 exports[`Storyshots Item Tab information tab 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7706,6 +8267,7 @@ exports[`Storyshots Item Tab information tab 1`] = `
 
 exports[`Storyshots Item Tab rubric tab 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7760,6 +8322,7 @@ exports[`Storyshots Item Tab rubric tab 1`] = `
 
 exports[`Storyshots Item Tab viewer tab 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -7803,6 +8366,7 @@ exports[`Storyshots Item Tab viewer tab 1`] = `
 
 exports[`Storyshots Item Table Container normal render 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -8327,6 +8891,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 
 exports[`Storyshots Item Table Container render without chevron and checkbox 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -8764,6 +9329,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
 
 exports[`Storyshots Item Table Container selected item 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -9288,6 +9854,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
 
 exports[`Storyshots Item Table Container verify sort order 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -14086,6 +14653,7 @@ exports[`Storyshots Item Viewer Frame with no contents 1`] = `
 
 exports[`Storyshots Layout Footer default footer 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -14144,6 +14712,7 @@ exports[`Storyshots Layout Footer default footer 1`] = `
 
 exports[`Storyshots Layout Nav name links 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -14257,6 +14826,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
 
 exports[`Storyshots Layout Nav name no links 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -16080,6 +16650,7 @@ exports[`Storyshots PDF RubricTable Rubric Table: no Samples 1`] = `
 
 exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -16130,6 +16701,7 @@ exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
 
 exports[`Storyshots Rubric Entry with an empty entry 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -16555,6 +17127,7 @@ exports[`Storyshots Sample Response with a sample response 1`] = `
 
 exports[`Storyshots Search Result Container normal render 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17026,6 +17599,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
 
 exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17058,6 +17632,7 @@ exports[`Storyshots SelectedFilterIndicator selected filter 1`] = `
 
 exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17123,6 +17698,7 @@ exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
 
 exports[`Storyshots Style Buttons Disabled bg-light 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17188,6 +17764,7 @@ exports[`Storyshots Style Buttons Disabled bg-light 1`] = `
 
 exports[`Storyshots Style Buttons Sizes 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17224,6 +17801,7 @@ exports[`Storyshots Style Buttons Sizes 1`] = `
 
 exports[`Storyshots Style Buttons bg-dark 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17289,6 +17867,7 @@ exports[`Storyshots Style Buttons bg-dark 1`] = `
 
 exports[`Storyshots Style Buttons bg-light 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17354,6 +17933,7 @@ exports[`Storyshots Style Buttons bg-light 1`] = `
 
 exports[`Storyshots ToolTip display below text 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17386,6 +17966,7 @@ exports[`Storyshots ToolTip display below text 1`] = `
 
 exports[`Storyshots ToolTip info for button 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17423,6 +18004,7 @@ exports[`Storyshots ToolTip info for button 1`] = `
 
 exports[`Storyshots ToolTip with icon 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
@@ -17458,6 +18040,7 @@ exports[`Storyshots ToolTip with icon 1`] = `
 
 exports[`Storyshots ToolTip with just text 1`] = `
 <div
+  className="section"
   style={
     Object {
       "alignItems": "center",
