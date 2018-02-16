@@ -61,18 +61,6 @@ export class ItemAccessibilityModal extends React.Component<
     resourceType: string
   ): void {
     if (e.keyCode === 23 || e.keyCode === 13) {
-      const resources = this.props.accResourceGroups.filter(
-        group => group.label === resourceType
-      )[0].accessibilityResources;
-      const firstDropDownId = resources
-        .filter(res => res.disabled === false)[0]
-        .label.replace(/ /g, "");
-
-      const firstDropDown = document.getElementById(firstDropDownId);
-      if (firstDropDown) {
-        firstDropDown.focus();
-      }
-
       const expandeds = { ...this.state.resourceTypeExpanded };
       expandeds[resourceType] = !expandeds[resourceType];
 
@@ -199,9 +187,11 @@ export class ItemAccessibilityModal extends React.Component<
         className="accessibility-resource-type section section-light"
         key={resourceType}
       >
-        {resourceTypeHeader}
+        <div className="accessibility-header">
+          {resourceTypeHeader}
+          {expandButton}
+        </div>
         <div className="accessibility-dropdowns">{dropdowns}</div>
-        {expandButton}
       </div>
     );
   }
