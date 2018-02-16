@@ -151,7 +151,7 @@ export class ItemAccessibilityModal extends React.Component<
     if (resCount <= 4) {
       expandButton = undefined;
     } else if (isExpanded) {
-      const ariaText = `Display fewer ${resourceType} options, selecting fewer will go to the top of universal tools.`;
+      const ariaText = `Display fewer ${resourceType} options.`;
       expandButton = (
         <a
           role="button"
@@ -166,7 +166,7 @@ export class ItemAccessibilityModal extends React.Component<
         </a>
       );
     } else {
-      const ariaText = `Display all ${resourceType} options, selecting all will go to the top of universal tools.`;
+      const ariaText = `Display all ${resourceType} options.`;
       expandButton = (
         <a
           role="button"
