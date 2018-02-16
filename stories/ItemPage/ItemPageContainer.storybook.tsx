@@ -25,7 +25,7 @@ storiesOf("Item View", module)
           aboutThisClient={aboutThisClient}
           itemPageClient={itemPageClient}
           itemAccessibilityClient={itemAccessibilityClient}
-          errorRedirectPath=""
+          errorRedirectPath={""}
         />
       )}
     />
