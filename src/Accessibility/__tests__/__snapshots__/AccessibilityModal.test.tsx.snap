@@ -71,16 +71,20 @@ exports[`AccessibilityModal accessibility open 1`] = `
               className="accessibility-resource-type section section-light"
               key="Universal Tools"
             >
-              <h4
-                className="green-title"
+              <div
+                className="accessibility-header"
               >
-                <span
-                  aria-hidden="true"
-                  className="fa fa-tasks"
-                />
-                 
-                Universal Tools
-              </h4>
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Universal Tools
+                </h4>
+              </div>
               <div
                 className="accessibility-dropdowns"
               >
@@ -253,16 +257,20 @@ exports[`AccessibilityModal defualt render 1`] = `
               className="accessibility-resource-type section section-light"
               key="Universal Tools"
             >
-              <h4
-                className="green-title"
+              <div
+                className="accessibility-header"
               >
-                <span
-                  aria-hidden="true"
-                  className="fa fa-tasks"
-                />
-                 
-                Universal Tools
-              </h4>
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Universal Tools
+                </h4>
+              </div>
               <div
                 className="accessibility-dropdowns"
               >
