@@ -7,6 +7,13 @@ export interface ToolTipProps {
   position?: "top" | "bottom";
 }
 
+/**
+ * A11y friendly tooltip
+ * Can display a complicated or a simplified view
+ * @export
+ * @class ToolTip
+ * @extends {React.Component<ToolTipProps, {}>}
+ */
 export class ToolTip extends React.Component<ToolTipProps, {}> {
   constructor(props: ToolTipProps) {
     super(props);

@@ -27,6 +27,12 @@ export interface ItemBankState {
   accResourceGroups: AccResourceGroupModel[];
 }
 
+/**
+ * Item Bank Entry Page for displaying items, revisions, and accessibility
+ * @export
+ * @class ItemBank
+ * @extends {React.Component<ItemBankProps, ItemBankState>}
+ */
 export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
   constructor(props: ItemBankProps) {
     super(props);
