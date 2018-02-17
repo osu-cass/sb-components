@@ -1768,16 +1768,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText="Grade Help"
                     >
-                      <span
-                        className="tool-tip top"
+                      <div
+                        className="tool-tip-links"
+                        tabIndex={0}
                       >
                         <span
                           className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
                         >
                           <span
                             className="tooltip-label"
@@ -1787,10 +1783,27 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           </span>
                            
                           <span
+                            aria-hidden="true"
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                      </span>
+                        <div
+                          className="tool-tip-details"
+                        >
+                          <div
+                            className="tool-tip-message undefined"
+                          >
+                            <div
+                              className="tool-tip-help-text"
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "Grade Help",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </ToolTip>
                   </label>
                 </div>
@@ -1906,16 +1919,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText="Subject Help"
                     >
-                      <span
-                        className="tool-tip top"
+                      <div
+                        className="tool-tip-links"
+                        tabIndex={0}
                       >
                         <span
                           className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
                         >
                           <span
                             className="tooltip-label"
@@ -1925,10 +1934,27 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           </span>
                            
                           <span
+                            aria-hidden="true"
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                      </span>
+                        <div
+                          className="tool-tip-details"
+                        >
+                          <div
+                            className="tool-tip-message undefined"
+                          >
+                            <div
+                              className="tool-tip-help-text"
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "Subject Help",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </ToolTip>
                   </label>
                 </div>
@@ -2013,16 +2039,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText="Subject Help"
                     >
-                      <span
-                        className="tool-tip top"
+                      <div
+                        className="tool-tip-links"
+                        tabIndex={0}
                       >
                         <span
                           className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
                         >
                           <span
                             className="tooltip-label"
@@ -2032,10 +2054,27 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           </span>
                            
                           <span
+                            aria-hidden="true"
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                      </span>
+                        <div
+                          className="tool-tip-details"
+                        >
+                          <div
+                            className="tool-tip-message undefined"
+                          >
+                            <div
+                              className="tool-tip-help-text"
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "Subject Help",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </ToolTip>
                   </label>
                 </div>
@@ -2120,16 +2159,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText="Subject Help"
                     >
-                      <span
-                        className="tool-tip top"
+                      <div
+                        className="tool-tip-links"
+                        tabIndex={0}
                       >
                         <span
                           className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
                         >
                           <span
                             className="tooltip-label"
@@ -2139,10 +2174,27 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           </span>
                            
                           <span
+                            aria-hidden="true"
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                      </span>
+                        <div
+                          className="tool-tip-details"
+                        >
+                          <div
+                            className="tool-tip-message undefined"
+                          >
+                            <div
+                              className="tool-tip-help-text"
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "Subject Help",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </ToolTip>
                   </label>
                 </div>
@@ -2227,16 +2279,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText="Subject Help"
                     >
-                      <span
-                        className="tool-tip top"
+                      <div
+                        className="tool-tip-links"
+                        tabIndex={0}
                       >
                         <span
                           className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
                         >
                           <span
                             className="tooltip-label"
@@ -2246,10 +2294,27 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           </span>
                            
                           <span
+                            aria-hidden="true"
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                      </span>
+                        <div
+                          className="tool-tip-details"
+                        >
+                          <div
+                            className="tool-tip-message undefined"
+                          >
+                            <div
+                              className="tool-tip-help-text"
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "Subject Help",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </ToolTip>
                   </label>
                 </div>
@@ -2349,16 +2414,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText="Subject Help"
                     >
-                      <span
-                        className="tool-tip top"
+                      <div
+                        className="tool-tip-links"
+                        tabIndex={0}
                       >
                         <span
                           className="tool-tip-hoverable"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          tabIndex={0}
                         >
                           <span
                             className="tooltip-label"
@@ -2368,10 +2429,27 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           </span>
                            
                           <span
+                            aria-hidden="true"
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                      </span>
+                        <div
+                          className="tool-tip-details"
+                        >
+                          <div
+                            className="tool-tip-message undefined"
+                          >
+                            <div
+                              className="tool-tip-help-text"
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "Subject Help",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </ToolTip>
                   </label>
                 </div>
