@@ -258,7 +258,7 @@ exports[`FilterContainer renders 1`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container"
+        className="bf-container section-light"
         id=""
       >
         <div
@@ -295,11 +295,11 @@ exports[`FilterContainer renders 1`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade -basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -308,7 +308,7 @@ exports[`FilterContainer renders 1`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -334,14 +334,16 @@ exports[`FilterContainer renders 1`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -349,17 +351,17 @@ exports[`FilterContainer renders 1`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -411,7 +413,7 @@ exports[`FilterContainer renders 1`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -440,8 +442,8 @@ exports[`FilterContainer renders 1`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects -basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -482,7 +484,7 @@ exports[`FilterContainer renders 1`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -497,8 +499,7 @@ exports[`FilterContainer renders 1`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-right"
@@ -770,7 +771,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container"
+        className="bf-container section-light"
         id=""
       >
         <div
@@ -807,11 +808,11 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade -basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -820,7 +821,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -846,14 +847,16 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -861,17 +864,17 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -923,7 +926,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -952,8 +955,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects -basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -994,7 +997,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -1009,8 +1012,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-right"
@@ -1282,7 +1284,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container-expanded"
+        className="bf-container section-light bf-expanded"
         id=""
       >
         <div
@@ -1319,11 +1321,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade -basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -1332,7 +1334,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -1358,14 +1360,16 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -1373,17 +1377,17 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -1435,7 +1439,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -1464,8 +1468,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects -basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -1506,7 +1510,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -1521,8 +1525,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-down"
@@ -1679,17 +1682,17 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       onUpdateFilter={[Function]}
     >
       <div
-        className="advanced-filter-container"
+        className="section-light adv-filter-container"
         id=""
       >
         <div
-          className="filter-sub-header-container"
+          className="adv-filter-group"
         >
           <div
-            className="filter-advanced-filter-header"
+            className="adv-filter-header"
           >
             <div
-              className="filter-advanced-filter-title"
+              className="adv-filter-title"
             >
               <h3>
                 <span
@@ -1717,7 +1720,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           />
         </div>
         <div
-          className="advanced-filter-container-expanded"
+          className="adv-filter-container-expanded"
         >
           <div
             aria-live="polite"
@@ -1808,7 +1811,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <Component
@@ -1959,7 +1962,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <div
@@ -2026,101 +2029,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               key="2"
               label="Disabled"
               onFilterOptionSelect={[Function]}
-            >
-              <div
-                className="filter-selection filter-disabled"
-                id="disabled-filter"
-              >
-                <div
-                  className="filter-container-header"
-                >
-                  <label>
-                    <ToolTip
-                      displayIcon={true}
-                      helpText="Subject Help"
-                    >
-                      <div
-                        className="tool-tip-links"
-                        tabIndex={0}
-                      >
-                        <span
-                          className="tool-tip-hoverable"
-                        >
-                          <span
-                            className="tooltip-label"
-                            info-label="true"
-                          >
-                            Disabled
-                          </span>
-                           
-                          <span
-                            aria-hidden="true"
-                            className="fa fa-info-circle fa-sm"
-                          />
-                        </span>
-                        <div
-                          className="tool-tip-details"
-                        >
-                          <div
-                            className="tool-tip-message undefined"
-                          >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </ToolTip>
-                  </label>
-                </div>
-                <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-                  data-toggle="buttons"
-                >
-                  <div
-                    className="btn-group filter-btn-group"
-                  >
-                    <Component
-                      disabled={true}
-                      key="Eng"
-                      label="English"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        English
-                      </button>
-                    </Component>
-                    <Component
-                      disabled={true}
-                      key="Chem"
-                      label="Chemistry"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        Chemistry
-                      </button>
-                    </Component>
-                  </div>
-                </div>
-              </div>
-            </AdvancedFilter>
+            />
             <AdvancedFilter
               code="Subject"
               disabled={true}
@@ -2146,101 +2055,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               key="3"
               label="Disabled Multi"
               onFilterOptionSelect={[Function]}
-            >
-              <div
-                className="filter-selection filter-disabled"
-                id="disabled multi-filter"
-              >
-                <div
-                  className="filter-container-header"
-                >
-                  <label>
-                    <ToolTip
-                      displayIcon={true}
-                      helpText="Subject Help"
-                    >
-                      <div
-                        className="tool-tip-links"
-                        tabIndex={0}
-                      >
-                        <span
-                          className="tool-tip-hoverable"
-                        >
-                          <span
-                            className="tooltip-label"
-                            info-label="true"
-                          >
-                            Disabled Multi
-                          </span>
-                           
-                          <span
-                            aria-hidden="true"
-                            className="fa fa-info-circle fa-sm"
-                          />
-                        </span>
-                        <div
-                          className="tool-tip-details"
-                        >
-                          <div
-                            className="tool-tip-message undefined"
-                          >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </ToolTip>
-                  </label>
-                </div>
-                <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical  filter-disabled"
-                  data-toggle="buttons"
-                >
-                  <div
-                    className="btn-group filter-btn-group"
-                  >
-                    <Component
-                      disabled={true}
-                      key="Read"
-                      label="Reading"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        Reading
-                      </button>
-                    </Component>
-                    <Component
-                      disabled={true}
-                      key="Hist"
-                      label="History"
-                      onClick={[Function]}
-                      selected={false}
-                    >
-                      <button
-                        className="btn btn-primary "
-                        disabled={true}
-                        onClick={[Function]}
-                        role="button"
-                      >
-                        History
-                      </button>
-                    </Component>
-                  </div>
-                </div>
-              </div>
-            </AdvancedFilter>
+            />
             <AdvancedFilter
               code="Subject"
               disabled={false}
@@ -2269,7 +2084,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             >
               <div
                 className="filter-selection"
-                id="multi all-filter"
+                id="multi-all-filter"
               >
                 <div
                   className="filter-container-header"
@@ -2319,7 +2134,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <Component
@@ -2404,7 +2219,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             >
               <div
                 className="filter-selection"
-                id="multi all disabled-filter"
+                id="multi-all-disabled-filter"
               >
                 <div
                   className="filter-container-header"
@@ -2454,7 +2269,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   </label>
                 </div>
                 <div
-                  className="nested-btn-group btn-group-sm toggle-group vertical "
+                  className="nested-btn-group btn-group-sm toggle-group vertical"
                   data-toggle="buttons"
                 >
                   <Component
@@ -2777,7 +2592,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
       resetHandler={[Function]}
     >
       <div
-        className="basic-filter-container"
+        className="bf-container section-light"
         id=""
       >
         <div
@@ -2814,11 +2629,11 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             type={3}
           >
             <div
-              className="basic-filter-selection"
-              id="grade -basic-filter"
+              className="bf-selection"
+              id="grade-bf"
             >
               <Component
-                className="input-sm"
+                className="input-sm med-text"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -2827,7 +2642,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                   Array [
                     Object {
                       "disabled": false,
-                      "label": "Please Select",
+                      "label": "Select Grade",
                       "selected": true,
                       "value": "default",
                     },
@@ -2853,14 +2668,16 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 }
                 selected="default"
               >
-                <label>
-                  <span
-                    className="undefined"
-                  >
-                    Grade
-                  </span>
+                <div>
+                  <label>
+                    <span
+                      className=""
+                    >
+                      Grade
+                    </span>
+                  </label>
                   <select
-                    className="form-control input-sm"
+                    className="form-control input-sm med-text"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -2868,17 +2685,17 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     <Component
                       disabled={false}
                       key="default"
-                      label="Please Select"
+                      label="Select Grade"
                       selected={true}
                       value="default"
                     >
                       <option
                         aria-selected={true}
                         disabled={false}
-                        label="Please Select"
+                        label="Select Grade"
                         value="default"
                       >
-                        Please Select
+                        Select Grade
                       </option>
                     </Component>
                     <Component
@@ -2930,7 +2747,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                       </option>
                     </Component>
                   </select>
-                </label>
+                </div>
               </Component>
             </div>
           </BasicFilter>
@@ -2959,8 +2776,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             type={2}
           >
             <div
-              className="basic-filter-selection"
-              id="subjects -basic-filter"
+              className="bf-selection"
+              id="subjects-bf"
             >
               <label>
                 Subjects
@@ -3001,7 +2818,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           </BasicFilter>
         </div>
         <div
-          className="basic-filter-button-container"
+          className="bf-button-container"
         >
           <span>
             <button
@@ -3016,8 +2833,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               className="btn btn-default filter-button af-expand"
               onClick={[Function]}
             >
-              Advanced Filters
-               
+              Advanced Filters 
               <span
                 aria-hidden="true"
                 className="fa fa-chevron-right"

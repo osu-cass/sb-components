@@ -118,7 +118,7 @@ export class BasicFilterContainer extends React.Component<
     // with the AdvancedFilterContainer we handle expanding it here
     if (containsAdvancedFilter) {
       advancedFilterButton = (
-        <div className="basic-filter-button-container">
+        <div className="bf-button-container">
           <span>
             <button
               className="btn btn-default filter-button"
@@ -132,7 +132,7 @@ export class BasicFilterContainer extends React.Component<
               className="btn btn-default filter-button af-expand"
               onClick={this.handleClick}
             >
-              {"Advanced Filters"}&nbsp;
+              Advanced Filters&nbsp;
               <span
                 aria-hidden="true"
                 className={`fa fa-chevron-${expanded ? "down" : "right"}`}
@@ -142,9 +142,9 @@ export class BasicFilterContainer extends React.Component<
         </div>
       );
     }
-    let className = "basic-filter-container";
+    let className = "bf-container section-light";
     if (expanded) {
-      className = "basic-filter-container-expanded";
+      className = `${className} bf-expanded`;
     }
 
     return (

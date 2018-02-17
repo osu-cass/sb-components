@@ -29,7 +29,6 @@ export interface SearchResultContainerProps {
   itemCards?: ItemCardModel[];
   item?: Resource<AboutItemModel>;
   defaultRenderType?: SearchResultType;
-
   isLinkTable: boolean;
 }
 
@@ -120,7 +119,7 @@ export class SearchResultContainer extends React.Component<
    */
   renderToggle(viewType: SearchResultType): JSX.Element {
     const { renderType } = this.state;
-    const className = renderType === viewType ? "btn-primary" : "btn-white";
+    const className = renderType === viewType ? "btn-gray" : "btn-white";
     let label = "";
     let iconClass = "";
 
@@ -129,7 +128,7 @@ export class SearchResultContainer extends React.Component<
       iconClass = "fa fa-table";
     } else if (viewType === SearchResultType.ItemCard) {
       label = "item card view toggle";
-      iconClass = "fa fa-book";
+      iconClass = "glyphicon glyphicon-th-large glyphicon-pad";
     }
 
     return (

@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 2;// this should show up on top of other content
 }
 
 .react-modal-content {
@@ -69,4 +70,18 @@
     .react-modal-content {
         min-width: 95%;
     }
+}
+
+.iframe-modal {
+    max-width: @content-width;
+    width: 90%;
+}
+
+.iframe-modal .modal-body {
+    overflow: hidden;
+}
+
+.iframe-modal .itemViewerFrame {
+    overflow: hidden;
+    height: 65vh;
 }

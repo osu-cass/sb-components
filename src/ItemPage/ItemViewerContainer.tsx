@@ -15,13 +15,13 @@ import {
   ShareModal,
   ItemViewerFrame,
   ItemAccessibilityModal,
-  AboutItemModel
-} from "../index";
-import {
+  AboutItemModel,
+  IframeModal,
   AccResourceGroupModel,
   ResourceSelectionsModel
-} from "../Accessibility/AccessibilityModels";
+} from "../index";
 
+const calculatorURL = "http://calculator.smarterbalanced.org";
 export interface ItemViewerContainerProps extends ItemPageModels.ItemPageModel {
   onSave: (selections: ResourceSelectionsModel) => void;
   onReset: () => void;
@@ -44,8 +44,9 @@ export class ItemViewerContainer extends React.Component<
   };
 
   renderPerformanceModals() {
+    let content: JSX.Element | undefined;
     if (this.props.isPerformanceItem) {
-      return (
+      content = (
         <div className="peformance-modals">
           <AboutPTPopupModal
             subject={this.props.subject}
@@ -58,9 +59,9 @@ export class ItemViewerContainer extends React.Component<
           />
         </div>
       );
-    } else {
-      return null;
     }
+
+    return content;
   }
 
   renderNav(): JSX.Element {
@@ -74,6 +75,49 @@ export class ItemViewerContainer extends React.Component<
         {this.renderRightNav()}
       </div>
     );
+  }
+
+  renderCalculatorNav(): JSX.Element | undefined {
+    const enabled = Accessibility.isCalculatorEnabled(
+      this.props.accResourceGroups
+    );
+    let content: JSX.Element | undefined;
+    if (enabled) {
+      content = (
+        <IframeModal
+          url={calculatorURL}
+          title="About Calculators"
+          btnText="About Calculators"
+          btnClass="item-nav-btn btn btn-default btn-sm"
+          btnIcon="fa fa-calculator"
+        />
+      );
+    }
+
+    return content;
+  }
+
+  renderBrailleNav(): JSX.Element | undefined {
+    const enabled = Accessibility.isBrailleEnabled(
+      this.props.accResourceGroups
+    );
+    let content: JSX.Element | undefined;
+
+    if (enabled) {
+      content = (
+        <Braille.BrailleLink
+          currentSelectionCode={Accessibility.getBrailleAccommodation(
+            this.props.accResourceGroups
+          )}
+          brailleItemCodes={this.props.brailleItemCodes}
+          braillePassageCodes={this.props.braillePassageCodes}
+          bankKey={this.props.currentItem.bankKey}
+          itemKey={this.props.currentItem.itemKey}
+        />
+      );
+    }
+
+    return content;
   }
 
   renderLeftNav(): JSX.Element {
@@ -96,16 +140,8 @@ export class ItemViewerContainer extends React.Component<
         <MoreLikeThisModal {...this.props.moreLikeThisVM} />
         <ShareModal iSAAP={isaap} />
         {this.renderPerformanceModals()}
-
-        <Braille.BrailleLink
-          currentSelectionCode={Accessibility.getBrailleAccommodation(
-            this.props.accResourceGroups
-          )}
-          brailleItemCodes={this.props.brailleItemCodes}
-          braillePassageCodes={this.props.braillePassageCodes}
-          bankKey={this.props.currentItem.bankKey}
-          itemKey={this.props.currentItem.itemKey}
-        />
+        {this.renderBrailleNav()}
+        {this.renderCalculatorNav()}
       </div>
     );
   }

@@ -27,7 +27,8 @@ export {
   AccessibilityResourceModel,
   AccResourceGroupModel,
   getResource,
-  getBrailleAccommodation
+  getBrailleAccommodation,
+  ResourceSelectionsModel
 } from "./Accessibility/AccessibilityModels";
 export {
   ItemAccessibilityModalProps,
@@ -178,7 +179,7 @@ export { LoadingOverlay } from "./Layout/LoadingOverlay";
 //
 export { MoreLikeThisModal } from "./Modals/MoreLikeThisModal";
 export { ShareModal } from "./Modals/ShareModal";
-
+export { IframeModal, IframeModalProps } from "./Modals/IframeModal";
 //
 // Page Tabs Components
 //
@@ -261,7 +262,10 @@ export {
 // Error Components
 //
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
-export { ErrorPageContainer } from "./ErrorPageContainer/ErrorPageContainer";
+export {
+  ErrorPageContainer,
+  pageType
+} from "./ErrorPageContainer/ErrorPageContainer";
 
 //
 // Promises and Subscription

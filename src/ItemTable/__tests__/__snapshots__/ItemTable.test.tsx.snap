@@ -102,22 +102,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "cols": Array [
             Object {
               "accessor": [Function],
-              "className": "claim",
-            },
-            Object {
-              "accessor": [Function],
-              "className": "target",
-              "helpText": [Function],
-            },
-          ],
-          "compare": [Function],
-          "header": "Claim/Target",
-          "headerClassName": "claimAndTarget",
-        },
-        Object {
-          "cols": Array [
-            Object {
-              "accessor": [Function],
               "className": "subject",
             },
           ],
@@ -135,6 +119,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "compare": [Function],
           "header": "Grade",
           "headerClassName": "grade",
+        },
+        Object {
+          "cols": Array [
+            Object {
+              "accessor": [Function],
+              "className": "claim",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "target",
+              "helpText": [Function],
+            },
+          ],
+          "compare": [Function],
+          "header": "Claim/Target",
+          "headerClassName": "claimAndTarget",
         },
         Object {
           "cols": Array [
@@ -480,22 +480,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -513,6 +497,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -744,6 +744,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -756,6 +757,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -771,8 +773,35 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3206
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-3206"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-3206"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 6
               </span>
             </span>
           </td>
@@ -823,30 +852,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   </div>
                 </div>
               </ToolTip>
-            </span>
-          </td>
-          <td
-            className="subject"
-            key="subject-187-3206"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-3206"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 6
-              </span>
             </span>
           </td>
           <td
@@ -1029,6 +1034,13 @@ exports[`ItemTable expands matches snapshot 1`] = `
                       className="itemViewerFrame"
                       tabIndex={0}
                     >
+                      <div
+                        className="loader-icon"
+                      >
+                        <div
+                          className="loader"
+                        />
+                      </div>
                       <iframe
                         className="itemviewer-iframe"
                         id="itemviewer-iframe"
@@ -1063,22 +1075,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -1096,6 +1092,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -1327,6 +1339,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -1339,6 +1352,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -1354,8 +1368,35 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3163
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-3163"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-3163"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 3
               </span>
             </span>
           </td>
@@ -1409,30 +1450,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
             </span>
           </td>
           <td
-            className="subject"
-            key="subject-187-3163"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-3163"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 3
-              </span>
-            </span>
-          </td>
-          <td
             className="item-type"
             key="item-type-187-3163"
           >
@@ -1464,22 +1481,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -1497,6 +1498,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -1727,6 +1744,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -1739,6 +1757,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -1754,8 +1773,35 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3615
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-3615"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-3615"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 6
               </span>
             </span>
           </td>
@@ -1809,30 +1855,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
             </span>
           </td>
           <td
-            className="subject"
-            key="subject-187-3615"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-3615"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 6
-              </span>
-            </span>
-          </td>
-          <td
             className="item-type"
             key="item-type-187-3615"
           >
@@ -1864,22 +1886,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -1897,6 +1903,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2127,6 +2149,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2139,6 +2162,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2154,8 +2178,35 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2928
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-2928"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-2928"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 4
               </span>
             </span>
           </td>
@@ -2206,30 +2257,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   </div>
                 </div>
               </ToolTip>
-            </span>
-          </td>
-          <td
-            className="subject"
-            key="subject-187-2928"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-2928"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 4
-              </span>
             </span>
           </td>
           <td
@@ -2353,22 +2380,6 @@ exports[`ItemTable matches snapshot 1`] = `
           "cols": Array [
             Object {
               "accessor": [Function],
-              "className": "claim",
-            },
-            Object {
-              "accessor": [Function],
-              "className": "target",
-              "helpText": [Function],
-            },
-          ],
-          "compare": [Function],
-          "header": "Claim/Target",
-          "headerClassName": "claimAndTarget",
-        },
-        Object {
-          "cols": Array [
-            Object {
-              "accessor": [Function],
               "className": "subject",
             },
           ],
@@ -2386,6 +2397,22 @@ exports[`ItemTable matches snapshot 1`] = `
           "compare": [Function],
           "header": "Grade",
           "headerClassName": "grade",
+        },
+        Object {
+          "cols": Array [
+            Object {
+              "accessor": [Function],
+              "className": "claim",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "target",
+              "helpText": [Function],
+            },
+          ],
+          "compare": [Function],
+          "header": "Claim/Target",
+          "headerClassName": "claimAndTarget",
         },
         Object {
           "cols": Array [
@@ -2424,22 +2451,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2457,6 +2468,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2506,6 +2533,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2518,6 +2546,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2533,8 +2562,35 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3206
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-3206"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-3206"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 6
               </span>
             </span>
           </td>
@@ -2588,30 +2644,6 @@ exports[`ItemTable matches snapshot 1`] = `
             </span>
           </td>
           <td
-            className="subject"
-            key="subject-187-3206"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-3206"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 6
-              </span>
-            </span>
-          </td>
-          <td
             className="item-type"
             key="item-type-187-3206"
           >
@@ -2643,22 +2675,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2676,6 +2692,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2725,6 +2757,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2737,6 +2770,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2752,8 +2786,35 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3163
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-3163"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-3163"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 3
               </span>
             </span>
           </td>
@@ -2807,30 +2868,6 @@ exports[`ItemTable matches snapshot 1`] = `
             </span>
           </td>
           <td
-            className="subject"
-            key="subject-187-3163"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-3163"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 3
-              </span>
-            </span>
-          </td>
-          <td
             className="item-type"
             key="item-type-187-3163"
           >
@@ -2862,22 +2899,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2895,6 +2916,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2943,6 +2980,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2955,6 +2993,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2970,8 +3009,35 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 3615
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-3615"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                Math
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-3615"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 6
               </span>
             </span>
           </td>
@@ -3025,30 +3091,6 @@ exports[`ItemTable matches snapshot 1`] = `
             </span>
           </td>
           <td
-            className="subject"
-            key="subject-187-3615"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                Math
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-3615"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 6
-              </span>
-            </span>
-          </td>
-          <td
             className="item-type"
             key="item-type-187-3615"
           >
@@ -3080,22 +3122,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -3113,6 +3139,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -3161,6 +3203,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -3173,6 +3216,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -3188,8 +3232,35 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
+              <a
+                role="link"
+                tabIndex={0}
+              >
                 2928
+              </a>
+            </span>
+          </td>
+          <td
+            className="subject"
+            key="subject-187-2928"
+          >
+            <span
+              key="subject"
+            >
+              <span>
+                ELA/literacy
+              </span>
+            </span>
+          </td>
+          <td
+            className="grade"
+            key="grade-187-2928"
+          >
+            <span
+              key="grade"
+            >
+              <span>
+                Grade 4
               </span>
             </span>
           </td>
@@ -3240,30 +3311,6 @@ exports[`ItemTable matches snapshot 1`] = `
                   </div>
                 </div>
               </ToolTip>
-            </span>
-          </td>
-          <td
-            className="subject"
-            key="subject-187-2928"
-          >
-            <span
-              key="subject"
-            >
-              <span>
-                ELA/literacy
-              </span>
-            </span>
-          </td>
-          <td
-            className="grade"
-            key="grade-187-2928"
-          >
-            <span
-              key="grade"
-            >
-              <span>
-                Grade 4
-              </span>
             </span>
           </td>
           <td

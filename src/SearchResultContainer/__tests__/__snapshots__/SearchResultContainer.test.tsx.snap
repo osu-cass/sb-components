@@ -9,7 +9,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
   >
     <button
       aria-label="table view toggle"
-      className="btn btn-primary"
+      className="btn btn-gray"
       onClick={[Function]}
       value={0}
     >
@@ -26,7 +26,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
     >
       <i
         aria-hidden="true"
-        className="fa fa-book"
+        className="glyphicon glyphicon-th-large glyphicon-pad"
       />
     </button>
   </div>
@@ -152,13 +152,13 @@ exports[`SearchResultContainer empty itemCards 1`] = `
     </button>
     <button
       aria-label="item card view toggle"
-      className="btn btn-primary"
+      className="btn btn-gray"
       onClick={[Function]}
       value={1}
     >
       <i
         aria-hidden="true"
-        className="fa fa-book"
+        className="glyphicon glyphicon-th-large glyphicon-pad"
       />
     </button>
   </div>
@@ -192,13 +192,13 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
     </button>
     <button
       aria-label="item card view toggle"
-      className="btn btn-primary"
+      className="btn btn-gray"
       onClick={[Function]}
       value={1}
     >
       <i
         aria-hidden="true"
-        className="fa fa-book"
+        className="glyphicon glyphicon-th-large glyphicon-pad"
       />
     </button>
   </div>
@@ -302,7 +302,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
   >
     <button
       aria-label="table view toggle"
-      className="btn btn-primary"
+      className="btn btn-gray"
       onClick={[Function]}
       value={0}
     >
@@ -319,7 +319,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
     >
       <i
         aria-hidden="true"
-        className="fa fa-book"
+        className="glyphicon glyphicon-th-large glyphicon-pad"
       />
     </button>
   </div>
@@ -445,13 +445,13 @@ exports[`SearchResultContainer table to card transition 1`] = `
     </button>
     <button
       aria-label="item card view toggle"
-      className="btn btn-primary"
+      className="btn btn-gray"
       onClick={[Function]}
       value={1}
     >
       <i
         aria-hidden="true"
-        className="fa fa-book"
+        className="glyphicon glyphicon-th-large glyphicon-pad"
       />
     </button>
   </div>

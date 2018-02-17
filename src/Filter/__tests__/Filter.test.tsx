@@ -365,7 +365,9 @@ describe("Filter.getCurrentTargets", () => {
     );
 
     expect(result).toHaveLength(3);
-    expect(result).toEqual(Mocks.targets);
+    expect(result).toContain(Mocks.targets[0]);
+    expect(result).toContain(Mocks.targets[1]);
+    expect(result).toContain(Mocks.targets[2]);
   });
 
   it("no claims", () => {

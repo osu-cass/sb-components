@@ -63,12 +63,16 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   }
   render() {
     const { disabled, label, helpText } = this.props;
-    const className = disabled ? " filter-disabled" : "";
+    // replace "-" with spaces, replace "." with nothing.
+    const id = label.replace(/\ /g, "-").replace(/\./g, "");
+    if (disabled) {
+      return null;
+    }
 
     return (
       <div
-        id={(label + "-filter").toLocaleLowerCase()}
-        className={"filter-selection" + className}
+        id={`${id}-filter`.toLocaleLowerCase()}
+        className={"filter-selection"}
       >
         <div className="filter-container-header">
           <label>
@@ -80,7 +84,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
           </label>
         </div>
         <div
-          className={`nested-btn-group btn-group-sm toggle-group vertical ${className}`}
+          className="nested-btn-group btn-group-sm toggle-group vertical"
           data-toggle="buttons"
         >
           {this.renderAllBtnContainer()}
