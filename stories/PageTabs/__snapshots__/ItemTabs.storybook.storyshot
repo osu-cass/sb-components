@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Item Tab information tab 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <ul
+    className="nav nav-tabs"
+  >
+    <li
+      className="nav-item"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Item Viewer
+      </a>
+    </li>
+    <li
+      className="nav-item active"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Item Information
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Item Tab rubric tab 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <ul
+    className="nav nav-tabs"
+  >
+    <li
+      className="nav-item"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Item Viewer
+      </a>
+    </li>
+    <li
+      className="nav-item active"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Rubric and Exemplar
+      </a>
+    </li>
+    <li
+      className="nav-item"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Item Information
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Item Tab viewer tab 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <ul
+    className="nav nav-tabs"
+  >
+    <li
+      className="nav-item active"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Item Viewer
+      </a>
+    </li>
+    <li
+      className="nav-item"
+      onClick={[Function]}
+      role="button"
+    >
+      <a
+        className="nav-link"
+      >
+        Item Information
+      </a>
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Item View default 1`] = `
+<div
+  className="loader-overlay"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;

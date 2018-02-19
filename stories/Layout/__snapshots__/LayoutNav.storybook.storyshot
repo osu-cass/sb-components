@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layout Nav name links 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              Test
+            </h1>
+          </div>
+        </div>
+        <div
+          className="nav-linksGroup"
+        >
+          <a
+            className="nav-linksGroup-item"
+            href="url1"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Home
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url2"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            About Test Items
+          </a>
+          <a
+            className="nav-linksGroup-item"
+            href="url3"
+            onClick={[Function]}
+            onKeyUp={[Function]}
+            style={undefined}
+          >
+            <span
+              className=""
+            />
+             
+            Browse Items
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Storyshots Layout Nav name no links 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              Test
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;

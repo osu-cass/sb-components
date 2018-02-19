@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Error Page Container empty props render 1`] = `
+<div
+  className="error-page-container"
+>
+  <div
+    className="error-page-header"
+  >
+    <h1>
+      Sorry!
+    </h1>
+    <h4>
+      <strong>
+        Error: 
+      </strong>
+      Something went wrong
+    </h4>
+  </div>
+  <div
+    className="error-page-body"
+  >
+    <p>
+      The page you’re looking for can’t be found. Try searching or returning home!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Error Page Container not found render 1`] = `
+<div
+  className="error-page-container"
+>
+  <div
+    className="error-page-header"
+  >
+    <h1>
+      Not Found: 404
+    </h1>
+    <h4>
+      <strong>
+        Error: 
+      </strong>
+      This item cannot be found
+    </h4>
+  </div>
+  <div
+    className="error-page-body"
+  >
+    <p>
+      Please try another search
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Error Page Container server error render 1`] = `
+<div
+  className="error-page-container"
+>
+  <div
+    className="error-page-header"
+  >
+    <h1>
+      Server Error: 500
+    </h1>
+    <h4>
+      <strong>
+        Error: 
+      </strong>
+      you did a bad thing that caused errors
+    </h4>
+  </div>
+  <div
+    className="error-page-body"
+  >
+    <p>
+      stop doing that thing that caused errors
+    </p>
+  </div>
+</div>
+`;

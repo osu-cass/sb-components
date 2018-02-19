@@ -1,0 +1,603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Advanced Filter disabled 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Advanced Filter disabled multi 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Advanced Filter disabled multi all 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi-all-disabled-filter"
+  >
+    <div
+      className="filter-container-header"
+    >
+      <label>
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
+        >
+          <span
+            className="tool-tip-hoverable"
+          >
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi All Disabled
+            </span>
+             
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      className="nested-btn-group btn-group-sm toggle-group vertical"
+      data-toggle="buttons"
+    >
+      <button
+        className="btn btn-primary active"
+        disabled={false}
+        onClick={[Function]}
+        role="button"
+      >
+        All
+      </button>
+      <div
+        className="btn-group filter-btn-group"
+      >
+        <button
+          className="btn btn-primary "
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          Calculus
+        </button>
+        <button
+          className="btn btn-primary "
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          Geometry
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter disabled with selections 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Advanced Filter multi select 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi-filter"
+  >
+    <div
+      className="filter-container-header"
+    >
+      <label>
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
+        >
+          <span
+            className="tool-tip-hoverable"
+          >
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi
+            </span>
+             
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      className="nested-btn-group btn-group-sm toggle-group vertical"
+      data-toggle="buttons"
+    >
+      <div
+        className="btn-group filter-btn-group"
+      >
+        <button
+          className="btn btn-primary active"
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          English Literacy & Arts
+        </button>
+        <button
+          className="btn btn-primary active"
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          Maths
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter multi select all  1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi-all-filter"
+  >
+    <div
+      className="filter-container-header"
+    >
+      <label>
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
+        >
+          <span
+            className="tool-tip-hoverable"
+          >
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi All
+            </span>
+             
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      className="nested-btn-group btn-group-sm toggle-group vertical"
+      data-toggle="buttons"
+    >
+      <button
+        className="btn btn-primary active"
+        disabled={false}
+        onClick={[Function]}
+        role="button"
+      >
+        All
+      </button>
+      <div
+        className="btn-group filter-btn-group"
+      >
+        <button
+          className="btn btn-primary "
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          US History
+        </button>
+        <button
+          className="btn btn-primary "
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          World History
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter multi select all selected  1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="multi-all-filter"
+  >
+    <div
+      className="filter-container-header"
+    >
+      <label>
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
+        >
+          <span
+            className="tool-tip-hoverable"
+          >
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Multi All
+            </span>
+             
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      className="nested-btn-group btn-group-sm toggle-group vertical"
+      data-toggle="buttons"
+    >
+      <button
+        className="btn btn-primary "
+        disabled={false}
+        onClick={[Function]}
+        role="button"
+      >
+        All
+      </button>
+      <div
+        className="btn-group filter-btn-group"
+      >
+        <button
+          className="btn btn-primary active"
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          English Literacy & Arts
+        </button>
+        <button
+          className="btn btn-primary active"
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          Maths
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter no options 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="subjects-filter"
+  >
+    <div
+      className="filter-container-header"
+    >
+      <label>
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
+        >
+          <span
+            className="tool-tip-hoverable"
+          >
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Subjects
+            </span>
+             
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      className="nested-btn-group btn-group-sm toggle-group vertical"
+      data-toggle="buttons"
+    >
+      <div
+        className="btn-group filter-btn-group"
+      >
+        <div>
+          No options.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter single select 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="filter-selection"
+    id="subjects-filter"
+  >
+    <div
+      className="filter-container-header"
+    >
+      <label>
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
+        >
+          <span
+            className="tool-tip-hoverable"
+          >
+            <span
+              className="tooltip-label"
+              info-label="true"
+            >
+              Subjects
+            </span>
+             
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle fa-sm"
+            />
+          </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      className="nested-btn-group btn-group-sm toggle-group vertical"
+      data-toggle="buttons"
+    >
+      <div
+        className="btn-group filter-btn-group"
+      >
+        <button
+          className="btn btn-primary "
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          English Literacy/ Arts
+        </button>
+        <button
+          className="btn btn-primary "
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          Mathematics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
