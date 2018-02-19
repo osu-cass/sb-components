@@ -72,6 +72,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
   ): JSX.Element {
     const colValues = colGroup.cols.map(c => this.renderCell(c, cellData));
     const { headerClassName } = colGroup;
+
     return (
       <td
         key={`${headerClassName}-${cellData.bankKey}-${cellData.itemKey}`}
@@ -116,14 +117,14 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
       controls = [
         <td
           className="item-checkbox"
-          key={`checkbox-control`}
+          key="checkbox-control"
           onClick={e => this.handleCheckboxClick(e, rowData)}
           onKeyUp={e => this.handleCheckboxKeyUpEnter(e, rowData)}
           tabIndex={0}
         >
           {rowData.selected === true ? checked : unChecked}&nbsp;
         </td>,
-        <td className="arrow-indicator" tabIndex={0} key={`expand-control`}>
+        <td className="arrow-indicator" tabIndex={0} key="expand-control">
           {isExpanded ? expand : collapse}
         </td>
       ];
@@ -134,6 +135,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
 
   render() {
     const { rowData, isExpanded, columns } = this.props;
+
     return (
       <tr
         key={`${rowData.bankKey}-${rowData.itemKey}`}
