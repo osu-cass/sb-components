@@ -1,9 +1,22 @@
 @import "constants";
 
+.item-bank-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 100%;
+}
 .revisions-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.revisions-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
 .about-item-iframe {
@@ -38,4 +51,29 @@
 
 .previous, .next {
     margin: 0px 14px;
+}
+
+.current-items-table {
+    border-style: solid;
+    border-color: @grey-border-color;
+    border-width: 1px;
+    border-radius: @spacing-item;
+    -moz-box-shadow: @box-shadow-light;
+    -webkit-box-shadow: @box-shadow-light;
+    box-shadow: @box-shadow-light;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    table-layout: fixed;
+}
+
+.items-list tr:nth-child(even){
+    background-color: #eee;
+}
+
+.items-list tr:nth-child(odd){
+    background-color: #fff;
+}
+
+.items-list td{
+    width: 350px;
 }

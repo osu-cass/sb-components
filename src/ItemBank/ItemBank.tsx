@@ -144,11 +144,71 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     );
   }
 
+  renderHelpButton() {
+    return (
+      <div className="help-button">
+        <ToolTip
+          helpText="Drag and drop items to add them to the table"
+          position="bottom"
+        >
+          <button>Help</button>
+        </ToolTip>
+      </div>
+    );
+  }
+
+  renderAddItemsButton() {
+    return (
+      <div className="help-button">
+        <ToolTip helpText="Add listed items to the table" position="bottom">
+          <button>Add Items</button>
+        </ToolTip>
+      </div>
+    );
+  }
+
+  renderAddItems() {
+    return <textarea className="csv-add" defaultValue="Drag Items Here" />;
+  }
+
+  renderItemsTable() {
+    return (
+      <div className="current-items-table">
+        <table className="items-list">
+          <tr>
+            <th>Items</th>
+            <th>Bank</th>
+            <th>Item</th>
+            <th>Section</th>
+          </tr>
+          <tr>
+            <td>187-0000</td>
+            <td>Bank # here</td>
+            <td>info about the item goes here</td>
+            <td>the section</td>
+          </tr>
+          <tr>
+            <td>187-0000</td>
+            <td>Bank # here</td>
+            <td>info about the item goes here</td>
+            <td>the section</td>
+          </tr>
+        </table>
+      </div>
+    );
+  }
+
   renderItemBankPage() {
     return (
-      <div className="revisions-container container">
-        {this.renderRevisionsContainer()}
-        {this.renderItemFrame()}
+      <div className="item-bank-page">
+        {this.renderHelpButton()}
+        {this.renderAddItems()}
+        {this.renderAddItemsButton()}
+        {this.renderItemsTable()}
+        <div className="revisions-items">
+          {this.renderRevisionsContainer()}
+          {this.renderItemFrame()}
+        </div>
       </div>
     );
   }
