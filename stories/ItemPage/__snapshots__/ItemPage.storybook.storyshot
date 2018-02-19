@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Item Page Item Page returns error 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-info-circle"
+          />
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="More Like This Modal"
+          className="item-nav-btn btn btn-default btn-sm"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-th-large glyphicon-pad"
+          />
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Share Modal"
+          className="item-nav-btn btn btn-default btn-sm"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-share"
+          />
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-caret-square-o-down"
+          />
+          Accessibility
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="loader-icon"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3B&scrollToId="
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Page Item Page with an item 1`] = `
+<div>
+  <div
+    aria-label="Toolbar with button groups"
+    className="item-nav"
+    role="toolbar"
+  >
+    <div
+      aria-label="First group"
+      className="item-nav-left-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open About This Item Modal"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-info-circle"
+          />
+          About 
+          <span
+            className="item-nav-long-label"
+          >
+            This Item
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="More Like This Modal"
+          className="item-nav-btn btn btn-default btn-sm"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="glyphicon glyphicon-th-large glyphicon-pad"
+          />
+          More 
+          <span
+            className="item-nav-long-label"
+          >
+            Like This
+          </span>
+        </button>
+      </div>
+      <div>
+        <button
+          aria-label="Open Share Modal"
+          className="item-nav-btn btn btn-default btn-sm"
+          onClick={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-share"
+          />
+          Share
+        </button>
+      </div>
+    </div>
+    <div
+      aria-label="Second group"
+      className="item-nav-right-group"
+      role="group"
+    >
+      <div>
+        <button
+          aria-label="Open Accessibility Modal"
+          className="btn btn-primary"
+          onClick={[Function]}
+          tabIndex={0}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-caret-square-o-down"
+          />
+          Accessibility
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="itemViewerFrame"
+    tabIndex={0}
+  >
+    <div
+      className="loader-icon"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+    <iframe
+      className="itemviewer-iframe"
+      id="itemviewer-iframe"
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_Dict_SD2%3BTDS_ExpandablePassages1%3BTDS_GN1%3BTDS_ST1%3BTDS_TH_TA%3BTDS_PS_L0%3BTDS_CCMagenta%3BTDS_Masking1%3BENU%3BTDS_ASL0%3BTDS_BT0%3BTDS_ClosedCap0%3BTDS_SLM0%3B&scrollToId=187-3000"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots LoadingOverlay renders it's child elements 1`] = `<div />`;
+
+exports[`Storyshots LoadingOverlay renders the loading spinner 1`] = `
+<div
+  className="loader-overlay"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;
+
+exports[`Storyshots LoadingOverlay renders undefined when there are no children 1`] = `null`;

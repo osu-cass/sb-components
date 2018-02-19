@@ -6,10 +6,6 @@
         "lib",
         "__tests__"
     ],
-    "docthis.includeMemberOfOnClassMembers": false,
-    "docthis.includeMemberOfOnInterfaceMembers": false,
-    "cSpell.words": [
-        "isaap",
-        "scorepoint"
-    ]
+    "docthis.includeMemberOfOnClassMembers": true,
+    "docthis.includeMemberOfOnInterfaceMembers": true
 }

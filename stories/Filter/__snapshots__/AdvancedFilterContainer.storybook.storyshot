@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Advanced Filter Container normal render 1`] = `
+<div
+  className="section-light adv-filter-container"
+  id=""
+>
+  <div
+    className="adv-filter-group"
+  >
+    <div
+      className="adv-filter-header"
+    >
+      <div
+        className="adv-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div
+        className="adv-control-btns"
+      >
+        <button
+          className="btn btn-default filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-status"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Advanced Filter Container with page title 1`] = `
+<div
+  className="section-light adv-filter-container"
+  id=""
+>
+  <div
+    className="adv-filter-group"
+  >
+    <h1>
+      <span
+        className="filter-page-title"
+      >
+        Search
+      </span>
+    </h1>
+    <div
+      className="adv-filter-header"
+    >
+      <div
+        className="adv-filter-title"
+      >
+        <h3>
+          <span
+            className="fa fa-tasks"
+          />
+           Advanced Filters
+        </h3>
+      </div>
+      <div
+        className="adv-control-btns"
+      >
+        <button
+          className="btn btn-default filter-expand-btn"
+          onClick={[Function]}
+        >
+          Expand 
+          <span
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="filter-status"
+    />
+  </div>
+</div>
+`;

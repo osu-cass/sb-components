@@ -26,7 +26,7 @@ export const FilterLink: React.SFC<FilterLinkProps> = ({ filterId }) => {
 
   return (
     <a
-      className=" filter-jump-link btn btn-primary"
+      className=" filter-jump-link btn btn-gray"
       role="button"
       onClick={handleClick}
     >

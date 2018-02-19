@@ -94,6 +94,12 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
           {displayText}
         </ToolTip>
       );
+    } else if (col.className === "item") {
+      content = (
+        <a tabIndex={0} role="link">
+          {displayText}
+        </a>
+      );
     } else {
       content = <span>{displayText}</span>;
     }
@@ -107,6 +113,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
     if (hasControls) {
       controls = [
         <td
+          className="item-checkbox"
           key="checkbox-control"
           onClick={e => this.handleCheckboxClick(e, rowData)}
           onKeyUp={e => this.handleCheckboxKeyUpEnter(e, rowData)}
@@ -114,7 +121,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
         >
           {rowData.selected === true ? checked : unChecked}&nbsp;
         </td>,
-        <td tabIndex={0} key="expand-control">
+        <td className="arrow-indicator" tabIndex={0} key="expand-control">
           {isExpanded ? expand : collapse}
         </td>
       ];

@@ -15,9 +15,11 @@ import {
   aboutTestBadItem
 } from "mocks/AboutTestItems/mocks";
 import { Route, match } from "react-router";
+import { LayoutDecorator } from "../LayoutDecorator";
 
 storiesOf("About Test Items", module)
   .addDecorator(routerDecorator)
+  .addDecorator(LayoutDecorator)
   .add("default", () => (
     <Route
       exact

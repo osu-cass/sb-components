@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Sample Response with a sample response 1`] = `
+<div
+  aria-expanded={false}
+  className={undefined}
+  style={undefined}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ 1-Point Official Sample Answer
+       (1 point)
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="sample-response"
+    >
+      <b>
+        Purpose: 
+      </b>
+       
+      Exemplar
+       
+      <br />
+      <b>
+        Sample Response: 
+      </b>
+       
+      <br />
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p style=\\"\\">Source #3 would most likely be relevant to students researching new approaches to increasing people's financial literacy. One example of a way people can increase their financial literacy discussed in this source is just-in-time education, where training is provided at \\"crucial moments\\" like right before someone decides on a student loan. Another example is giving people \\"simple rules of thumb\\" to follow.</p>",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

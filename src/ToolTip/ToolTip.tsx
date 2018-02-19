@@ -1,67 +1,68 @@
 import * as React from "react";
 
 export interface ToolTipProps {
+  toolTipHeader?: string;
   helpText?: string;
   displayIcon?: boolean;
   position?: "top" | "bottom";
 }
 
-export interface ToolTipState {
-  hovered: boolean;
-  focused: boolean;
-}
-
-export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
+/**
+ * A11y friendly tooltip
+ * Can display a complicated or a simplified view
+ * @export
+ * @class ToolTip
+ * @extends {React.Component<ToolTipProps, {}>}
+ */
+export class ToolTip extends React.Component<ToolTipProps, {}> {
   constructor(props: ToolTipProps) {
     super(props);
-
-    this.state = {
-      hovered: false,
-      focused: false
-    };
   }
 
-  onHover = () => this.setState({ hovered: true });
-  offHover = () => this.setState({ hovered: false });
-  onFocus = () => this.setState({ focused: true });
-  offFocus = () => this.setState({ focused: false });
+  renderToolTipHeader() {
+    if (this.props.toolTipHeader) {
+      return (
+        <span className="tool-tip-header">
+          <h3 className="tool-tip-link-header">{this.props.toolTipHeader}</h3>
+        </span>
+      );
+    }
+  }
 
-  render() {
-    const position = this.props.position || "top";
-    const shown = this.state.focused || this.state.hovered;
-
+  renderToolTipVisibleText() {
     const icon = this.props.displayIcon ? (
-      <span className="fa fa-info-circle fa-sm" />
-    ) : (
-      undefined
-    );
-
-    const toolTipContent = shown ? (
-      <div className={`tool-tip-before ${position}`}>{this.props.helpText}</div>
-    ) : (
-      undefined
-    );
-    const toolTipArrow = shown ? (
-      <div className={`tool-tip-after ${position}`} />
+      <span className="fa fa-info-circle fa-sm" aria-hidden="true" />
     ) : (
       undefined
     );
 
     return (
-      <span className={`tool-tip ${position}`}>
-        {toolTipContent}
-        <span
-          className="tool-tip-hoverable"
-          onMouseEnter={this.onHover}
-          onMouseLeave={this.offHover}
-          onFocus={this.onFocus}
-          onBlur={this.offFocus}
-          tabIndex={0}
-        >
-          {this.props.children} {icon}
-        </span>
-        {toolTipArrow}
+      <span className="tool-tip-hoverable">
+        {this.props.children} {icon}
       </span>
+    );
+  }
+
+  renderToolTipHelpText() {
+    if (this.props.helpText) {
+      return (
+        <div className={`tool-tip-message ${this.props.position}`}>
+          {this.renderToolTipHeader()}
+          <div
+            className="tool-tip-help-text"
+            dangerouslySetInnerHTML={{ __html: this.props.helpText }}
+          />
+        </div>
+      );
+    }
+  }
+
+  render() {
+    return (
+      <div className="tool-tip-links" tabIndex={0}>
+        {this.renderToolTipVisibleText()}
+        <div className="tool-tip-details">{this.renderToolTipHelpText()}</div>
+      </div>
     );
   }
 }

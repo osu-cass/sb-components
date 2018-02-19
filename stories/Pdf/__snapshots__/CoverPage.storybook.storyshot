@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PDF CoverPage Cover Page 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page first-page"
+  >
+    <div
+      className="first-page-title"
+    >
+      Smarter Balanced
+      <br />
+      Assessment Consortium
+    </div>
+    <div
+      className="first-page-subtitle"
+    >
+      Mathematics
+       Practice Test Scoring Guide
+      <br />
+      <strong>
+        High School
+      </strong>
+    </div>
+    <div
+      className="first-page-date"
+    >
+      10/27/2017
+    </div>
+  </div>
+</div>
+`;
