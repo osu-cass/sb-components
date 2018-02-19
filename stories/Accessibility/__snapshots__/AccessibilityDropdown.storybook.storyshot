@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Accessibility DropDown all disabled 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="accessibility-dropdown form-group selection-enabled"
+  >
+    <label
+      htmlFor="Default"
+    >
+       
+      Notepad
+    </label>
+    <br />
+    <select
+      aria-hidden={false}
+      className="form-control"
+      disabled={false}
+      id="Default"
+      onChange={[Function]}
+      value="TDS_SCNotepad"
+    >
+      <option
+        aria-hidden={true}
+        aria-label="Notepad on"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SCNotepad"
+      >
+        Notepad on
+      </option>
+      <option
+        aria-hidden={true}
+        aria-label="Notepad off"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SC0"
+      >
+        Notepad off
+      </option>
+      <option
+        aria-hidden={true}
+        aria-label="Notepad disabled"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SC9"
+      >
+        Notepad disabled
+      </option>
+    </select>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Accessibility DropDown default with disabled 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="accessibility-dropdown form-group selection-enabled"
+  >
+    <label
+      htmlFor="Default"
+    >
+       
+      Notepad
+    </label>
+    <br />
+    <select
+      aria-hidden={false}
+      className="form-control"
+      disabled={false}
+      id="Default"
+      onChange={[Function]}
+      value="TDS_SCNotepad"
+    >
+      <option
+        aria-hidden={false}
+        aria-label="Notepad on"
+        className="option-enabled"
+        disabled={false}
+        value="TDS_SCNotepad"
+      >
+        Notepad on
+      </option>
+      <option
+        aria-hidden={false}
+        aria-label="Notepad off"
+        className="option-enabled"
+        disabled={false}
+        value="TDS_SC0"
+      >
+        Notepad off
+      </option>
+      <option
+        aria-hidden={true}
+        aria-label="Notepad disabled"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SC9"
+      >
+        Notepad disabled
+      </option>
+    </select>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Accessibility DropDown dropdown disabled 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="accessibility-dropdown form-group selection-disabled"
+  >
+    <label
+      htmlFor="Default"
+    >
+       
+      Notepad
+    </label>
+    <br />
+    <select
+      aria-hidden={true}
+      className="form-control"
+      disabled={true}
+      id="Default"
+      onChange={[Function]}
+      value="TDS_SCNotepad"
+    >
+      <option
+        aria-hidden={true}
+        aria-label="Notepad on"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SCNotepad"
+      >
+        
+      </option>
+      <option
+        aria-hidden={true}
+        aria-label="Notepad off"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SC0"
+      >
+        
+      </option>
+      <option
+        aria-hidden={true}
+        aria-label="Notepad disabled"
+        className="option-disabled"
+        disabled={true}
+        value="TDS_SC9"
+      >
+        
+      </option>
+    </select>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Accessibility DropDown no selections 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="accessibility-dropdown form-group selection-enabled"
+  >
+    <label
+      htmlFor="Default"
+    >
+       
+      Notepad
+    </label>
+    <br />
+    <select
+      aria-hidden={false}
+      className="form-control"
+      disabled={false}
+      id="Default"
+      onChange={[Function]}
+      value="TDS_SCNotepad"
+    />
+  </div>
+</div>
+`;

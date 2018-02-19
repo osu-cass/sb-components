@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layout Footer default footer 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

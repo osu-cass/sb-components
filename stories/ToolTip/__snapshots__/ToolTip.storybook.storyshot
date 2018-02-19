@@ -1,0 +1,529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ToolTip display above text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message top"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip display above text large box 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message top"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip display below text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message bottom"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip display below text large box 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message bottom"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip info for button 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      <button>
+        Button
+      </button>
+       
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with custom help text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message top"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<b>Commit</b>",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with icon 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle fa-sm"
+      />
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just long text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just text and header 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with no help text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    />
+  </div>
+</div>
+`;

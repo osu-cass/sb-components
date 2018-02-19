@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
+<div
+  className="bf-container section-light bf-expanded"
+  id=""
+>
+  <div
+    className="basic-filter"
+  >
+    <div
+      className="bf-selection"
+      id="grade-bf"
+    >
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
+        <select
+          className="form-control input-sm med-text"
+          disabled={false}
+          onChange={[Function]}
+          value="default"
+        >
+          <option
+            aria-selected={true}
+            disabled={false}
+            label="Select Grade"
+            value="default"
+          >
+            Select Grade
+          </option>
+          <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 3-5"
+            value="7"
+          >
+            Grades 3-5
+          </option>
+          <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 6-8"
+            value="56"
+          >
+            Grades 6-8
+          </option>
+          <option
+            aria-selected={false}
+            disabled={false}
+            label="High School"
+            value="960"
+          >
+            High School
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="bf-selection"
+      id="subjects-bf"
+    >
+      <label>
+        Subjects
+        <div
+          className="radio"
+        >
+          <label>
+            <input
+              aria-checked={false}
+              checked={false}
+              name="Subjects"
+              onChange={[Function]}
+              type="radio"
+              value="ELA"
+            />
+            English Literacy/ Arts
+          </label>
+        </div>
+        <div
+          className="radio"
+        >
+          <label>
+            <input
+              aria-checked={false}
+              checked={false}
+              name="Subjects"
+              onChange={[Function]}
+              type="radio"
+              value="Math"
+            />
+            Mathematics
+          </label>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
+<div
+  className="bf-container section-light"
+  id=""
+>
+  <div
+    className="basic-filter"
+  >
+    <div
+      className="bf-selection"
+      id="grade-bf"
+    >
+      <div>
+        <label>
+          <span
+            className=""
+          >
+            Grade
+          </span>
+        </label>
+        <select
+          className="form-control input-sm med-text"
+          disabled={false}
+          onChange={[Function]}
+          value="default"
+        >
+          <option
+            aria-selected={true}
+            disabled={false}
+            label="Select Grade"
+            value="default"
+          >
+            Select Grade
+          </option>
+          <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 3-5"
+            value="7"
+          >
+            Grades 3-5
+          </option>
+          <option
+            aria-selected={false}
+            disabled={false}
+            label="Grades 6-8"
+            value="56"
+          >
+            Grades 6-8
+          </option>
+          <option
+            aria-selected={false}
+            disabled={false}
+            label="High School"
+            value="960"
+          >
+            High School
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="bf-selection"
+      id="subjects-bf"
+    >
+      <label>
+        Subjects
+        <div
+          className="radio"
+        >
+          <label>
+            <input
+              aria-checked={false}
+              checked={false}
+              name="Subjects"
+              onChange={[Function]}
+              type="radio"
+              value="ELA"
+            />
+            English Literacy/ Arts
+          </label>
+        </div>
+        <div
+          className="radio"
+        >
+          <label>
+            <input
+              aria-checked={false}
+              checked={false}
+              name="Subjects"
+              onChange={[Function]}
+              type="radio"
+              value="Math"
+            />
+            Mathematics
+          </label>
+        </div>
+      </label>
+    </div>
+  </div>
+  <div
+    className="bf-button-container"
+  >
+    <span>
+      <button
+        className="btn btn-default filter-button"
+        onClick={undefined}
+      >
+        Reset
+      </button>
+    </span>
+    <span>
+      <button
+        className="btn btn-default filter-button af-expand"
+        onClick={[Function]}
+      >
+        Advanced Filters 
+        <span
+          aria-hidden="true"
+          className="fa fa-chevron-right"
+        />
+      </button>
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,707 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Passage for
+         
+        items
+         
+        187-1234, 187-1235
+      </p>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Together, Bob and Joe have 10 cookies.",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Question #
+        1
+      </p>
+      <table
+        className="item-data-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              187
+              -
+              3434
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              domain
+            </td>
+            <td>
+              dfas
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              AB-123
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="centered-table-container"
+      >
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Evidence Statement
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                This is a sample evidence statement
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "If Bob has 5 cookies, how many does Joe have?",
+          }
+        }
+      />
+      <div>
+        <b>
+          Key:
+        </b>
+         
+        x = 5
+      </div>
+      <div>
+         
+      </div>
+    </div>
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Question #
+        2
+      </p>
+      <table
+        className="item-data-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              187
+              -
+              3434
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              domain
+            </td>
+            <td>
+              dfas
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              AB-123
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="centered-table-container"
+      >
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Evidence Statement
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                This is a sample evidence statement
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Sally has 3 cookies. If she pools her cookies with Bob and Joe, how many do they have together?",
+          }
+        }
+      />
+      <div>
+        <b>
+          Key:
+        </b>
+         
+        x = 5
+      </div>
+      <div>
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF ItemViewContainer no score info 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Question #
+        1
+      </p>
+      <table
+        className="item-data-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              187
+              -
+              3434
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              domain
+            </td>
+            <td>
+              dfas
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              AB-123
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="centered-table-container"
+      >
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Evidence Statement
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                This is a sample evidence statement
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Solve for x</b><p><i>x</i> + 5 = 10</p>",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Passage for
+         
+        item
+         
+        187-1234
+      </p>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Together, Bob and Joe have 10 cookies.",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Question #
+        1
+      </p>
+      <table
+        className="item-data-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              187
+              -
+              3434
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              domain
+            </td>
+            <td>
+              dfas
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              AB-123
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="centered-table-container"
+      >
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Evidence Statement
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                This is a sample evidence statement
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "If Bob has 5 cookies, how many does Joe have?",
+          }
+        }
+      />
+      <div>
+        <b>
+          Key:
+        </b>
+         
+        x = 5
+      </div>
+      <div>
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots PDF ItemViewContainer question only 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px dashed #ccc",
+      "margin": "20px auto",
+      "minHeight": "11in",
+      "padding": ".75in",
+      "width": "8.5in",
+    }
+  }
+>
+  <div
+    className="page"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="question-title"
+      >
+        Question #
+        1
+      </p>
+      <table
+        className="item-data-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Claim
+            </th>
+            <th>
+              Domain
+            </th>
+            <th>
+              Target
+            </th>
+            <th>
+              DOK
+            </th>
+            <th>
+              Standards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              187
+              -
+              3434
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              domain
+            </td>
+            <td>
+              dfas
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              AB-123
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="centered-table-container"
+      >
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Evidence Statement
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                This is a sample evidence statement
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Solve for x</b><p><i>x</i> + 5 = 10</p>",
+          }
+        }
+      />
+      <div>
+        <b>
+          Key:
+        </b>
+         
+        x = 5
+      </div>
+      <div>
+        <table
+          className="item-data-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Score
+              </th>
+              <th>
+                Rationale
+              </th>
+              <th>
+                Exemplar
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                0
+              </td>
+              <td
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Student did not do the problem",
+                  }
+                }
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              />
+              <td
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "x = _",
+                  }
+                }
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              />
+            </tr>
+            <tr>
+              <td>
+                1
+              </td>
+              <td
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Student tried to do the problem, but got it wrong",
+                  }
+                }
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              />
+              <td
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "x = 10 + 5 = 15<br/>x = 10 - 5 = a million",
+                  }
+                }
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              />
+            </tr>
+            <tr>
+              <td>
+                2
+              </td>
+              <td
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Student did the problem correctly",
+                  }
+                }
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              />
+              <td
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "x = 10 - 5 = 5",
+                  }
+                }
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Search Result Container normal render 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="search-result-container"
+  >
+    <div
+      className="search-result-header"
+    >
+      <button
+        aria-label="table view toggle"
+        className="btn btn-gray"
+        onClick={[Function]}
+        value={0}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-table"
+        />
+      </button>
+      <button
+        aria-label="item card view toggle"
+        className="btn btn-white"
+        onClick={[Function]}
+        value={1}
+      >
+        <i
+          aria-hidden="true"
+          className="glyphicon glyphicon-th-large glyphicon-pad"
+        />
+      </button>
+    </div>
+    <div
+      className="search-result-body"
+    >
+      <div
+        className="section"
+      >
+        <table
+          className="link-table"
+        >
+          <thead>
+            <tr
+              className="primary"
+            >
+              <th
+                className="item"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                scope="col"
+                tabIndex={0}
+              >
+                <div
+                  className="item"
+                >
+                  <span>
+                    Item
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                      Object {
+                        "color": "gray",
+                      }
+                    }
+                  />
+                </div>
+              </th>
+              <th
+                className="subject"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                scope="col"
+                tabIndex={0}
+              >
+                <div
+                  className="subject"
+                >
+                  <span>
+                    Subject
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                      Object {
+                        "color": "gray",
+                      }
+                    }
+                  />
+                </div>
+              </th>
+              <th
+                className="grade"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                scope="col"
+                tabIndex={0}
+              >
+                <div
+                  className="grade"
+                >
+                  <span>
+                    Grade
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                      Object {
+                        "color": "gray",
+                      }
+                    }
+                  />
+                </div>
+              </th>
+              <th
+                className="claimAndTarget"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                scope="col"
+                tabIndex={0}
+              >
+                <div
+                  className="claimAndTarget"
+                >
+                  <span>
+                    Claim/Target
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                      Object {
+                        "color": "gray",
+                      }
+                    }
+                  />
+                </div>
+              </th>
+              <th
+                className="item-type"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                scope="col"
+                tabIndex={0}
+              >
+                <div
+                  className="item-type"
+                >
+                  <span>
+                    Item Type
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-sort"
+                    style={
+                      Object {
+                        "color": "gray",
+                      }
+                    }
+                  />
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              className=""
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item"
+              >
+                <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
+                    3206
+                  </a>
+                </span>
+              </td>
+              <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+              >
+                <span>
+                  <span>
+                    Concepts and Procedures
+                  </span>
+                </span>
+                <span>
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
+                  >
+                    <span
+                      className="tool-tip-hoverable"
+                    >
+                      /
+                       
+                    </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target A description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </td>
+              <td
+                className="item-type"
+              >
+                <span>
+                  <span>
+                    Equation
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr
+              className=""
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item"
+              >
+                <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
+                    3163
+                  </a>
+                </span>
+              </td>
+              <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+              >
+                <span>
+                  <span>
+                    Reading
+                  </span>
+                </span>
+                <span>
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
+                  >
+                    <span
+                      className="tool-tip-hoverable"
+                    >
+                      /Key Details
+                       
+                    </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target B description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </td>
+              <td
+                className="item-type"
+              >
+                <span>
+                  <span>
+                    Multiple Choice
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr
+              className=""
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item"
+              >
+                <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
+                    3615
+                  </a>
+                </span>
+              </td>
+              <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+              >
+                <span>
+                  <span>
+                    Modeling/Data Analysis
+                  </span>
+                </span>
+                <span>
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
+                  >
+                    <span
+                      className="tool-tip-hoverable"
+                    >
+                      /
+                       
+                    </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target C description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </td>
+              <td
+                className="item-type"
+              >
+                <span>
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr
+              className=""
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item"
+              >
+                <span>
+                  <a
+                    role="link"
+                    tabIndex={0}
+                  >
+                    2928
+                  </a>
+                </span>
+              </td>
+              <td
+                className="subject"
+              >
+                <span>
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+              >
+                <span>
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+              >
+                <span>
+                  <span>
+                    Research/Inquiry
+                  </span>
+                </span>
+                <span>
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
+                  >
+                    <span
+                      className="tool-tip-hoverable"
+                    >
+                      /Evaluate Information/ sources
+                       
+                    </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target D description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </td>
+              <td
+                className="item-type"
+              >
+                <span>
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

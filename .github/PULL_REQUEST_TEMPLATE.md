@@ -1,6 +1,3 @@
-## Pull Request Checklist
-> Please complete all of these steps for this pull request.
-
 ### Updates Made
 TODO: Add summary of changes made and add any issues or tasks
 
