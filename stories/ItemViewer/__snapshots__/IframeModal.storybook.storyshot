@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Iframe Modal with an item 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open Item Modal"
+      className="btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Open
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Iframe Modal with no contents 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open  Modal"
+      className="btn btn-default btn-sm"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Open
+    </button>
+  </div>
+</div>
+`;

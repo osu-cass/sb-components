@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="bf-selection"
+    id="grade-bf"
+  >
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
+      <select
+        className="form-control input-sm med-text"
+        disabled={false}
+        onChange={[Function]}
+        value="default"
+      >
+        <option
+          aria-selected={true}
+          disabled={false}
+          label="Select Grade"
+          value="default"
+        >
+          Select Grade
+        </option>
+        <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade 1"
+          value="12346"
+        >
+          Grade 1
+        </option>
+        <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade 2"
+          value="12347"
+        >
+          Grade 2
+        </option>
+        <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade"
+          value="12345"
+        >
+          Grade
+        </option>
+        <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade 4"
+          value="12348"
+        >
+          Grade 4
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="bf-selection"
+    id="grade-bf"
+  >
+    <div>
+      <label>
+        <span
+          className=""
+        >
+          Grade
+        </span>
+      </label>
+      <select
+        className="form-control input-sm med-text"
+        disabled={false}
+        onChange={[Function]}
+        value="default"
+      >
+        <option
+          aria-selected={true}
+          disabled={false}
+          label="Select Grade"
+          value="default"
+        >
+          Select Grade
+        </option>
+        <option
+          aria-selected={false}
+          disabled={false}
+          label="Grade"
+          value="12345"
+        >
+          Grade
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="bf-selection"
+    id="grade-bf"
+  >
+    <label>
+      Grade
+      <div
+        className="radio"
+      >
+        <label>
+          <input
+            aria-checked={false}
+            checked={false}
+            name="Grade"
+            onChange={[Function]}
+            type="radio"
+            value="12346"
+          />
+          Grade 1
+        </label>
+      </div>
+      <div
+        className="radio"
+      >
+        <label>
+          <input
+            aria-checked={false}
+            checked={false}
+            name="Grade"
+            onChange={[Function]}
+            type="radio"
+            value="12347"
+          />
+          Grade 2
+        </label>
+      </div>
+      <div
+        className="radio"
+      >
+        <label>
+          <input
+            aria-checked={false}
+            checked={false}
+            name="Grade"
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade
+        </label>
+      </div>
+      <div
+        className="radio"
+      >
+        <label>
+          <input
+            aria-checked={false}
+            checked={false}
+            name="Grade"
+            onChange={[Function]}
+            type="radio"
+            value="12348"
+          />
+          Grade 4
+        </label>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="bf-selection"
+    id="grade-bf"
+  >
+    <label>
+      Grade
+      <div
+        className="radio"
+      >
+        <label>
+          <input
+            aria-checked={false}
+            checked={false}
+            name="Grade"
+            onChange={[Function]}
+            type="radio"
+            value="12345"
+          />
+          Grade
+        </label>
+      </div>
+    </label>
+  </div>
+</div>
+`;

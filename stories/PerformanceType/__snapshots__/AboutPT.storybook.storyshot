@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots About PT About ELA 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-default btn-sm about-pt-btn"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT About Math 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-default btn-sm about-pt-btn"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About PT Nothing 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="About Performance Task"
+      className="item-nav-btn btn btn-default btn-sm about-pt-btn"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle"
+      />
+      <span
+        className="item-nav-long-label"
+      >
+        This is a 
+      </span>
+      <b>
+         Performance Task
+      </b>
+    </button>
+  </div>
+</div>
+`;

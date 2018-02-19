@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Collapsible Collapsible with CSS classname 1`] = `
+<div
+  aria-expanded={false}
+  className="test-collapsible"
+  style={Object {}}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible Collapsible with inline red border 1`] = `
+<div
+  aria-expanded={false}
+  className=""
+  style={
+    Object {
+      "border": "1px solid red",
+    }
+  }
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Collapsible No classname of style 1`] = `
+<div
+  aria-expanded={false}
+  className=""
+  style={Object {}}
+>
+  <a
+    className="collapsible-label link-button"
+    href="javascript:"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ▶ label
+  </a>
+  <div
+    aria-hidden={true}
+    className="collapsible-body"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "height": "300px",
+          "width": "300px",
+        }
+      }
+    >
+      Collapsible Content
+    </div>
+  </div>
+</div>
+`;
