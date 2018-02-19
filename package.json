@@ -30,7 +30,7 @@
     "typedoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
-    "{src,stories}/**/*{.tsx,.ts}": [
+    "{src,stories,mocks}/**/*{.tsx,.ts}": [
       "prettier --write",
       "git add"
     ]
@@ -104,7 +104,6 @@
     "react-router": "^4.2.0",
     "react-router-dom": "4.1.1",
     "react-test-renderer": "~16.2.0",
-    "react-tooltip": "^3.4.0",
     "style-loader": "^0.19.1",
     "ts-jest": "~22.0.2",
     "ts-loader": "^3.4.0",

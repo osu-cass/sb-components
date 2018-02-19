@@ -1608,16 +1608,12 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       className="filter-container-header"
     >
       <label>
-        <span
-          className="tool-tip top"
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
         >
           <span
             className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
           >
             <span
               className="tooltip-label"
@@ -1627,10 +1623,27 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
             </span>
              
             <span
+              aria-hidden="true"
               className="fa fa-info-circle fa-sm"
             />
           </span>
-        </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
       </label>
     </div>
     <div
@@ -1710,16 +1723,12 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       className="filter-container-header"
     >
       <label>
-        <span
-          className="tool-tip top"
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
         >
           <span
             className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
           >
             <span
               className="tooltip-label"
@@ -1729,10 +1738,27 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
             </span>
              
             <span
+              aria-hidden="true"
               className="fa fa-info-circle fa-sm"
             />
           </span>
-        </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
       </label>
     </div>
     <div
@@ -1787,16 +1813,12 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       className="filter-container-header"
     >
       <label>
-        <span
-          className="tool-tip top"
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
         >
           <span
             className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
           >
             <span
               className="tooltip-label"
@@ -1806,10 +1828,27 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
             </span>
              
             <span
+              aria-hidden="true"
               className="fa fa-info-circle fa-sm"
             />
           </span>
-        </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
       </label>
     </div>
     <div
@@ -1872,16 +1911,12 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       className="filter-container-header"
     >
       <label>
-        <span
-          className="tool-tip top"
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
         >
           <span
             className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
           >
             <span
               className="tooltip-label"
@@ -1891,10 +1926,27 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
             </span>
              
             <span
+              aria-hidden="true"
               className="fa fa-info-circle fa-sm"
             />
           </span>
-        </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
       </label>
     </div>
     <div
@@ -1957,16 +2009,12 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       className="filter-container-header"
     >
       <label>
-        <span
-          className="tool-tip top"
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
         >
           <span
             className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
           >
             <span
               className="tooltip-label"
@@ -1976,10 +2024,27 @@ exports[`Storyshots Advanced Filter no options 1`] = `
             </span>
              
             <span
+              aria-hidden="true"
               className="fa fa-info-circle fa-sm"
             />
           </span>
-        </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
       </label>
     </div>
     <div
@@ -2021,16 +2086,12 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       className="filter-container-header"
     >
       <label>
-        <span
-          className="tool-tip top"
+        <div
+          className="tool-tip-links"
+          tabIndex={0}
         >
           <span
             className="tool-tip-hoverable"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            tabIndex={0}
           >
             <span
               className="tooltip-label"
@@ -2040,10 +2101,27 @@ exports[`Storyshots Advanced Filter single select 1`] = `
             </span>
              
             <span
+              aria-hidden="true"
               className="fa fa-info-circle fa-sm"
             />
           </span>
-        </span>
+          <div
+            className="tool-tip-details"
+          >
+            <div
+              className="tool-tip-message undefined"
+            >
+              <div
+                className="tool-tip-help-text"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Subject Help",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
       </label>
     </div>
     <div
@@ -3171,21 +3249,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3263,21 +3353,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3355,21 +3457,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3447,21 +3561,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3539,21 +3665,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3631,21 +3769,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3723,21 +3873,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3815,21 +3977,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3907,21 +4081,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -3999,21 +4185,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4091,21 +4289,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4183,21 +4393,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4275,21 +4497,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4367,21 +4601,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4459,21 +4705,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4551,21 +4809,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4643,21 +4913,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4735,21 +5017,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4827,21 +5121,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -4919,21 +5225,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5011,21 +5329,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5103,21 +5433,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5195,21 +5537,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5287,21 +5641,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5379,21 +5745,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5471,21 +5849,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5563,21 +5953,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5655,21 +6057,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5747,21 +6161,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5839,21 +6265,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -5931,21 +6369,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6023,21 +6473,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6115,21 +6577,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6207,21 +6681,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6299,21 +6785,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6391,21 +6889,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6483,21 +6993,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6575,21 +7097,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6667,21 +7201,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6759,21 +7305,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6851,21 +7409,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -6943,21 +7513,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7035,21 +7617,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7127,21 +7721,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7219,21 +7825,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7311,21 +7929,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7403,21 +8033,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7495,21 +8137,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7587,21 +8241,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7679,21 +8345,33 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                 </span>
               </span>
               <span>
-                <span
-                  className="tool-tip top"
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
                   >
                     /
                      
                   </span>
-                </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
               </span>
             </td>
             <td
@@ -7778,6 +8456,379 @@ exports[`Storyshots Iframe Modal with no contents 1`] = `
       Open
     </button>
   </div>
+</div>
+`;
+
+exports[`Storyshots Item Bank default 1`] = `
+<div
+  className="site-body"
+  id="site-body"
+>
+  <header
+    role="navigation"
+  >
+    <div
+      id="skip-main"
+    >
+      <a
+        className="skip-link"
+        onKeyDown={[Function]}
+        role="link"
+        tabIndex={0}
+      >
+        Skip to main content
+      </a>
+    </div>
+    <nav
+      className="nav-container"
+      role="navigation"
+    >
+      <div
+        className="nav-content container"
+      >
+        <div
+          className="nav-titleGroup"
+        >
+          <div
+            className="nav-titleGroup-item"
+          >
+            <a
+              href="http://www.smarterbalanced.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Smarter Balanced Home"
+            >
+              <img
+                alt="Smarter Balanced Logo"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+          <div
+            className="nav-titleGroup-item"
+          >
+            <h1
+              className="application-title"
+            >
+              Item Bank
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="site-content"
+    id="main"
+    role="main"
+  >
+    <div
+      className="revisions-container container"
+    >
+      <div
+        className="revisions-container container"
+      >
+        <div
+          className="revisions section-light"
+        >
+          <h3
+            className="revisions-header"
+          >
+            Revisions
+          </h3>
+          <ul>
+            <li>
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
+              >
+                <span
+                  className="tool-tip-hoverable"
+                >
+                  <a
+                    href="#"
+                  >
+                    ab65jg
+                  </a>
+                  <div
+                    className="revisions-details"
+                  >
+                    Troy Barnes
+                    -
+                    11
+                    /
+                    11
+                  </div>
+                   
+                </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message undefined"
+                  >
+                    <span
+                      className="tool-tip-header"
+                    >
+                      <h3
+                        className="tool-tip-link-header"
+                      >
+                        Wed Nov 11 2015-00:00:00
+                      </h3>
+                    </span>
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "<b>Commit: </b>Added functionality to the website</br><b>Author: </b>Troy Barnes</br><b>CommitHash: </b>ab65jg",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
+              >
+                <span
+                  className="tool-tip-hoverable"
+                >
+                  <a
+                    href="#"
+                  >
+                    h4lso6
+                  </a>
+                  <div
+                    className="revisions-details"
+                  >
+                    Pierce Hawthorne
+                    -
+                    11
+                    /
+                    11
+                  </div>
+                   
+                </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message undefined"
+                  >
+                    <span
+                      className="tool-tip-header"
+                    >
+                      <h3
+                        className="tool-tip-link-header"
+                      >
+                        Wed Nov 11 2015-00:00:00
+                      </h3>
+                    </span>
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "<b>Commit: </b>I want to see what happens when there is a much longer commit message than all of the rest</br><b>Author: </b>Pierce Hawthorne</br><b>CommitHash: </b>h4lso6",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
+              >
+                <span
+                  className="tool-tip-hoverable"
+                >
+                  <a
+                    href="#"
+                  >
+                    k5ls58
+                  </a>
+                  <div
+                    className="revisions-details"
+                  >
+                    Annie Edison
+                    -
+                    11
+                    /
+                    11
+                  </div>
+                   
+                </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message undefined"
+                  >
+                    <span
+                      className="tool-tip-header"
+                    >
+                      <h3
+                        className="tool-tip-link-header"
+                      >
+                        Wed Nov 11 2015-00:00:00
+                      </h3>
+                    </span>
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "<b>Commit: </b>Changed one of the pages</br><b>Author: </b>Annie Edison</br><b>CommitHash: </b>k5ls58",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          aria-live="polite"
+          aria-relevant="additions removals"
+          className="about-item-iframe"
+        >
+          <div
+            aria-label="Toolbar with button groups"
+            className="item-nav"
+            role="toolbar"
+          >
+            <div
+              aria-label="First group"
+              className="item-nav-left-group"
+              role="group"
+            >
+              <div>
+                <button
+                  aria-label="Open About This Item Modal"
+                  className="item-nav-btn btn btn-default btn-sm about-item-btn"
+                  onClick={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle"
+                  />
+                  About 
+                  <span
+                    className="item-nav-long-label"
+                  >
+                    This Item
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div
+              className="nav-buttons"
+            >
+              <a
+                className="previous"
+                href="#"
+              >
+                ‹ Previous
+              </a>
+              <a
+                className="next"
+                href="#"
+              >
+                Next ›
+              </a>
+            </div>
+            <div
+              aria-label="Second group"
+              className="item-nav-right-group"
+              role="group"
+            >
+              <div>
+                <button
+                  aria-label="Open Accessibility Modal"
+                  className="btn btn-primary"
+                  onClick={[Function]}
+                  tabIndex={0}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-caret-square-o-down"
+                  />
+                  Accessibility
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="itemViewerFrame"
+            tabIndex={0}
+          >
+            <div
+              className="loader-icon"
+            >
+              <div
+                className="loader"
+              />
+            </div>
+            <iframe
+              className="itemviewer-iframe"
+              id="itemviewer-iframe"
+              onLoad={[Function]}
+              onLoadStart={[Function]}
+              src="http://ivs.smarterbalanced.org/items?ids=187-3377"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer
+    className="footer-container"
+    role="contentinfo"
+  >
+    <div
+      className="footer-content container"
+    >
+      <a
+        className="footer-sbLink footer-practiceTests"
+        href="http://practice.smarterbalanced.org/"
+      >
+        Practice and training tests are available here.
+      </a>
+      <div
+        className="footer-copyright"
+      >
+        <p>
+          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+        </p>
+        <a
+          className="footer-sbLink"
+          href="//www.smarterbalanced.org"
+        >
+          www.SmarterBalanced.org
+        </a>
+        <div>
+          <div>
+            <button
+              aria-label="Open Website Privacy Policy Modal"
+              className="btn btn-link btn-sm footer-sbLink"
+              onClick={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Website Privacy Policy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
@@ -8580,21 +9631,33 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target A description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -8672,21 +9735,33 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /Key Details
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target B description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -8764,21 +9839,33 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target C description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -8856,21 +9943,33 @@ exports[`Storyshots Item Table Container normal render 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /Evaluate Information/ sources
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9081,21 +10180,33 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target A description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9152,21 +10263,33 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /Key Details
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target B description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9223,21 +10346,33 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target C description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9294,21 +10429,33 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /Evaluate Information/ sources
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9543,21 +10690,33 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target A description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9635,21 +10794,33 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target B description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9727,21 +10898,33 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target C description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -9819,21 +11002,33 @@ exports[`Storyshots Item Table Container selected item 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10068,21 +11263,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10160,21 +11367,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10252,21 +11471,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10344,21 +11575,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10436,21 +11679,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10528,21 +11783,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10620,21 +11887,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10712,21 +11991,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10804,21 +12095,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10896,21 +12199,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -10988,21 +12303,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11080,21 +12407,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11172,21 +12511,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11264,21 +12615,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11356,21 +12719,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11448,21 +12823,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11540,21 +12927,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11632,21 +13031,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11724,21 +13135,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11816,21 +13239,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -11908,21 +13343,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12000,21 +13447,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12092,21 +13551,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12184,21 +13655,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12276,21 +13759,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12368,21 +13863,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12460,21 +13967,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12552,21 +14071,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12644,21 +14175,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12736,21 +14279,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12828,21 +14383,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -12920,21 +14487,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13012,21 +14591,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13104,21 +14695,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13196,21 +14799,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13288,21 +14903,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13380,21 +15007,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13472,21 +15111,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13564,21 +15215,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13656,21 +15319,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13748,21 +15423,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13840,21 +15527,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -13932,21 +15631,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14024,21 +15735,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14116,21 +15839,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14208,21 +15943,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14300,21 +16047,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14392,21 +16151,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14484,21 +16255,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -14576,21 +16359,33 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
               </span>
             </span>
             <span>
-              <span
-                className="tool-tip top"
+              <div
+                className="tool-tip-links"
+                tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  tabIndex={0}
                 >
                   /
                    
                 </span>
-              </span>
+                <div
+                  className="tool-tip-details"
+                >
+                  <div
+                    className="tool-tip-message top"
+                  >
+                    <div
+                      className="tool-tip-help-text"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "target D description",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
             </span>
           </td>
           <td
@@ -17349,21 +19144,33 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <span
-                    className="tool-tip top"
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      tabIndex={0}
                     >
                       /
                        
                     </span>
-                  </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target A description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </span>
               </td>
               <td
@@ -17420,21 +19227,33 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <span
-                    className="tool-tip top"
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      tabIndex={0}
                     >
                       /Key Details
                        
                     </span>
-                  </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target B description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </span>
               </td>
               <td
@@ -17491,21 +19310,33 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <span
-                    className="tool-tip top"
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      tabIndex={0}
                     >
                       /
                        
                     </span>
-                  </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target C description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </span>
               </td>
               <td
@@ -17562,21 +19393,33 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <span
-                    className="tool-tip top"
+                  <div
+                    className="tool-tip-links"
+                    tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      tabIndex={0}
                     >
                       /Evaluate Information/ sources
                        
                     </span>
-                  </span>
+                    <div
+                      className="tool-tip-details"
+                    >
+                      <div
+                        className="tool-tip-message top"
+                      >
+                        <div
+                          className="tool-tip-help-text"
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "target D description",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </span>
               </td>
               <td
@@ -17931,6 +19774,105 @@ exports[`Storyshots Style Buttons bg-light 1`] = `
 </div>
 `;
 
+exports[`Storyshots ToolTip display above text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message top"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip display above text large box 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message top"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots ToolTip display below text 1`] = `
 <div
   className="section"
@@ -17946,21 +19888,87 @@ exports[`Storyshots ToolTip display below text 1`] = `
     }
   }
 >
-  <span
-    className="tool-tip bottom"
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
   >
     <span
       className="tool-tip-hoverable"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      tabIndex={0}
     >
       Testing
        
     </span>
-  </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message bottom"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip display below text large box 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message bottom"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -17979,26 +19987,93 @@ exports[`Storyshots ToolTip info for button 1`] = `
     }
   }
 >
-  <span
-    className="tool-tip top"
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
   >
     <span
       className="tool-tip-hoverable"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      tabIndex={0}
     >
       <button>
         Button
       </button>
        
       <span
+        aria-hidden="true"
         className="fa fa-info-circle fa-sm"
       />
     </span>
-  </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with custom help text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message top"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<b>Commit</b>",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -18017,24 +20092,82 @@ exports[`Storyshots ToolTip with icon 1`] = `
     }
   }
 >
-  <span
-    className="tool-tip top"
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
   >
     <span
       className="tool-tip-hoverable"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      tabIndex={0}
     >
       Testing
        
       <span
+        aria-hidden="true"
         className="fa fa-info-circle fa-sm"
       />
     </span>
-  </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just long text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -18053,20 +20186,118 @@ exports[`Storyshots ToolTip with just text 1`] = `
     }
   }
 >
-  <span
-    className="tool-tip top"
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
   >
     <span
       className="tool-tip-hoverable"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      tabIndex={0}
     >
       Testing
        
     </span>
-  </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "test",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with just text and header 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    >
+      <div
+        className="tool-tip-message undefined"
+      >
+        <span
+          className="tool-tip-header"
+        >
+          <h3
+            className="tool-tip-link-header"
+          >
+            Header for my tool tip
+          </h3>
+        </span>
+        <div
+          className="tool-tip-help-text"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToolTip with no help text 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="tool-tip-links"
+    tabIndex={0}
+  >
+    <span
+      className="tool-tip-hoverable"
+    >
+      Testing
+       
+    </span>
+    <div
+      className="tool-tip-details"
+    />
+  </div>
 </div>
 `;

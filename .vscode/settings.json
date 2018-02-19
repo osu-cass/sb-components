@@ -6,6 +6,6 @@
         "lib",
         "__tests__"
     ],
-    "docthis.includeMemberOfOnClassMembers": false,
-    "docthis.includeMemberOfOnInterfaceMembers": false
+    "docthis.includeMemberOfOnClassMembers": true,
+    "docthis.includeMemberOfOnInterfaceMembers": true
 }

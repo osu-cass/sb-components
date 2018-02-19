@@ -1105,21 +1105,33 @@ exports[`ItemPageTable expands 1`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -1506,21 +1518,33 @@ exports[`ItemPageTable expands 1`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -1717,21 +1741,33 @@ exports[`ItemPageTable expands 1`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -1928,21 +1964,33 @@ exports[`ItemPageTable expands 1`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -2804,21 +2852,33 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -3016,21 +3076,33 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -3227,21 +3299,33 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -3438,21 +3522,33 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -4349,21 +4445,33 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -4561,21 +4669,33 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -4773,21 +4893,33 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -4984,21 +5116,33 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -5935,21 +6079,33 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -6147,21 +6303,33 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -6359,21 +6527,33 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -6570,21 +6750,33 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -7552,21 +7744,33 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -7763,21 +7967,33 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -7974,21 +8190,33 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -8186,21 +8414,33 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -9198,21 +9438,33 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -9409,21 +9661,33 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -9620,21 +9884,33 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -9832,21 +10108,33 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -10874,21 +11162,33 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     helpText="Target A description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target A description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -11086,21 +11386,33 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     helpText="Target B description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Key Details
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "Target B description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -11297,21 +11609,33 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     helpText="target D description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /Evaluate Information/ sources
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target D description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
@@ -11508,21 +11832,33 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     helpText="target C description"
                     position="top"
                   >
-                    <span
-                      className="tool-tip top"
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        tabIndex={0}
                       >
                         /
                          
                       </span>
-                    </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <div
+                            className="tool-tip-help-text"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "target C description",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </ToolTip>
                 </span>
               </td>
