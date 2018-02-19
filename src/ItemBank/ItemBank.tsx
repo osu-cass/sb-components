@@ -6,6 +6,7 @@ import {
   ItemViewerFrame
 } from "../index";
 import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 import { AccResourceGroupModel } from "../index";
 import { ToolTip } from "../index";
@@ -151,7 +152,14 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
           helpText="Drag and drop items to add them to the table"
           position="bottom"
         >
-          <button>Help</button>
+          <button
+            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            role="button"
+            aria-label="Open help text"
+          >
+            <span className="fa fa-info-circle" aria-hidden="true" />
+            Help
+          </button>
         </ToolTip>
       </div>
     );
@@ -161,7 +169,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     return (
       <div className="help-button">
         <ToolTip helpText="Add listed items to the table" position="bottom">
-          <button>Add Items</button>
+          <button aria-label="Open table of items">Add Items</button>
         </ToolTip>
       </div>
     );
@@ -175,24 +183,28 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     return (
       <div className="current-items-table">
         <table className="items-list">
-          <tr>
-            <th>Items</th>
-            <th>Bank</th>
-            <th>Item</th>
-            <th>Section</th>
-          </tr>
-          <tr>
-            <td>187-0000</td>
-            <td>Bank # here</td>
-            <td>info about the item goes here</td>
-            <td>the section</td>
-          </tr>
-          <tr>
-            <td>187-0000</td>
-            <td>Bank # here</td>
-            <td>info about the item goes here</td>
-            <td>the section</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Items</th>
+              <th>Bank</th>
+              <th>Item</th>
+              <th>Section</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>187-0000</td>
+              <td>Bank # here</td>
+              <td>info about the item goes here</td>
+              <td>the section</td>
+            </tr>
+            <tr>
+              <td>187-0000</td>
+              <td>Bank # here</td>
+              <td>info about the item goes here</td>
+              <td>the section</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );
