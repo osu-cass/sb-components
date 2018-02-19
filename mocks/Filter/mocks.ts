@@ -229,7 +229,7 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
     label: "Grade",
     code: FilterType.Grade,
     filterOptions: gradeFilterOptions,
-    type: OptionTypeModel.DropDown
+    optionType: OptionTypeModel.DropDown
   },
   {
     disabled: false,
@@ -249,7 +249,7 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
         filterType: FilterType.Subject
       }
     ],
-    type: OptionTypeModel.radioBtn
+    optionType: OptionTypeModel.radioBtn
   }
 ];
 
@@ -356,7 +356,7 @@ export const allClaimsFilterOptions: FilterOptionModel[] = [
   { label: "Communicating Reasoning", key: "MATH3", isSelected: false }
 ];
 
-export const FilledAdvancedFilterClaims: AdvancedFilterCategoryModel = {
+export const filledAdvancedFilterClaims: AdvancedFilterCategoryModel = {
   disabled: false,
   isMultiSelect: true,
   label: "Claims",
@@ -404,13 +404,13 @@ export const basicFilterCategoryDropDown: BasicFilterCategoryModel = {
   disabled: false,
   label: "Grade",
   filterOptions: [basicFilterOption],
-  type: OptionTypeModel.DropDown,
+  optionType: OptionTypeModel.DropDown,
   code: FilterType.Grade
 };
 
 export const basicFilterCategoryRadioBtn: BasicFilterCategoryModel = {
   ...basicFilterCategoryDropDown,
-  type: OptionTypeModel.radioBtn
+  optionType: OptionTypeModel.radioBtn
 };
 
 export const selectedHandler = action("clicked filter");

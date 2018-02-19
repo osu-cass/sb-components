@@ -1,10 +1,10 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { ToolTip } from "src/ToolTip/ToolTip";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
 storiesOf("ToolTip", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("with just text", () => <ToolTip helpText="test">Testing</ToolTip>)
   .add("with icon", () => (
     <ToolTip helpText="test" displayIcon={true}>

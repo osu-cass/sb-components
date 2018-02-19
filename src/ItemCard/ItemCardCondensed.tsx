@@ -5,19 +5,20 @@ import { Redirect } from "react-router";
 export interface ItemCardCondensedState {
   redirect: boolean;
 }
-export interface ItemCardCondensedProps extends ItemCardModels.ItemCardModel {}
 
 export class ItemCardCondensed extends React.Component<
-  ItemCardCondensedProps,
+  ItemCardModels.ItemCardModel,
   ItemCardCondensedState
 > {
-  constructor(props: ItemCardCondensedProps) {
+  constructor(props: ItemCardModels.ItemCardModel) {
     super(props);
     this.state = { redirect: false };
   }
 
+  // (nextContext: any) is defined as such in the React types
+  /*tslint:disable: no-any */
   shouldComponentUpdate(
-    nextProps: Readonly<ItemCardCondensedProps>,
+    nextProps: Readonly<ItemCardModels.ItemCardModel>,
     nextState: Readonly<ItemCardCondensedState>,
     nextContext: any
   ): boolean {

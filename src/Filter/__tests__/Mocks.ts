@@ -173,7 +173,7 @@ export const targetEmptyCategory: FilterCategoryModel = {
   ...targetSelectionsCategory,
   filterOptions: []
 };
-//Item Search Models
+// Item Search Models
 
 export const subjects: SubjectModel[] = [
   {
@@ -230,8 +230,8 @@ export const interactionTypes: InteractionTypeModel[] = [
 ];
 
 export const searchModel: ItemsSearchModel = {
-  interactionTypes: interactionTypes,
-  claims: claims,
-  subjects: subjects,
-  targets: targets
+  interactionTypes,
+  claims,
+  subjects,
+  targets
 };

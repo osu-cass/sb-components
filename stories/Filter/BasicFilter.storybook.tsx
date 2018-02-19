@@ -11,11 +11,11 @@ import {
   basicFilterCategoryDropDown,
   basicFilterCategoryRadioBtn
 } from "mocks/Filter/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 import { GradeLevel } from "../../src/GradeLevels/GradeLevels";
 
 storiesOf("Basic Filter", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("DropDown: one filter item", () => <BasicFilter {...propsDropDown} />)
   .add("DropDown: multiple filter items", () => (
     <BasicFilter

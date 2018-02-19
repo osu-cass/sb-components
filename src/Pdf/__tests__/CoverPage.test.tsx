@@ -5,7 +5,7 @@ import { shallow, mount, render } from "enzyme";
 
 describe("First page", () => {
   it("matches snapshot", () => {
-    let wrapper = shallow(
+    const wrapper = shallow(
       <CoverPage subject="math" grade="grade 3" dateString="01/12/2017" />
     );
     expect(wrapper).toMatchSnapshot();

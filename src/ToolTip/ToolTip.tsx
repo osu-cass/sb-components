@@ -32,17 +32,23 @@ export class ToolTip extends React.Component<ToolTipProps, ToolTipState> {
 
     const icon = this.props.displayIcon ? (
       <span className="fa fa-info-circle fa-sm" />
-    ) : null;
+    ) : (
+      undefined
+    );
 
     const toolTipContent = shown ? (
-      <div className={"tool-tip-before " + position}>{this.props.helpText}</div>
-    ) : null;
+      <div className={`tool-tip-before ${position}`}>{this.props.helpText}</div>
+    ) : (
+      undefined
+    );
     const toolTipArrow = shown ? (
-      <div className={"tool-tip-after " + position} />
-    ) : null;
+      <div className={`tool-tip-after ${position}`} />
+    ) : (
+      undefined
+    );
 
     return (
-      <span className={"tool-tip " + position}>
+      <span className={`tool-tip ${position}`}>
         {toolTipContent}
         <span
           className="tool-tip-hoverable"

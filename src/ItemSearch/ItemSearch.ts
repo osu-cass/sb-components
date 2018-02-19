@@ -121,7 +121,6 @@ export class ItemSearch {
         newModel.targets = targetCodes;
         break;
       default:
-        break;
     }
 
     return newModel;
@@ -279,7 +278,6 @@ export class ItemSearch {
         );
         break;
       default:
-        break;
     }
 
     return options;
@@ -342,26 +340,27 @@ export class ItemSearch {
     }
 
     // subjects
-    if (filter.subjects && filter.subjects.length > 0) {
+    if (filter.subjects !== undefined && filter.subjects.length > 0) {
+      const { subjects } = filter;
       results = results.filter(
-        i => filter.subjects!.findIndex(s => s === i.subjectCode) !== -1
+        i => subjects.findIndex(s => s === i.subjectCode) !== -1
       );
     }
 
     // interaction types
     if (filter.interactionTypes && filter.interactionTypes.length > 0) {
+      const { interactionTypes } = filter;
       results = results.filter(
         i =>
-          filter.interactionTypes!.findIndex(
-            it => it === i.interactionTypeCode
-          ) !== -1
+          interactionTypes.findIndex(it => it === i.interactionTypeCode) !== -1
       );
     }
 
     // claims
     if (filter.claims && filter.claims.length > 0) {
+      const { claims } = filter;
       results = results.filter(
-        i => filter.claims!.findIndex(c => c === i.claimCode) !== -1
+        i => claims.findIndex(c => c === i.claimCode) !== -1
       );
     }
 
@@ -374,8 +373,9 @@ export class ItemSearch {
 
     // targets
     if (filter.targets && filter.targets.length > 0) {
+      const { targets } = filter;
       results = results.filter(
-        i => filter.targets!.findIndex(t => t === i.targetHash) !== -1
+        i => targets.findIndex(t => t === i.targetHash) !== -1
       );
     }
 

@@ -11,26 +11,28 @@ import { SearchResultContainer } from "../SearchResultContainer";
 
 describe("SearchResultContainer", () => {
   it("onload matches snapshot table", () => {
-    let wrapper = shallow(
+    const wrapper = shallow(
       <SearchResultContainer {...SearchResultTableProps} />
     );
     expect(wrapper).toMatchSnapshot();
   });
 
   it("onload matches snapshot ItemCards", () => {
-    let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
+    const wrapper = shallow(
+      <SearchResultContainer {...SearchResultCardProps} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   it("empty itemCards", () => {
-    let wrapper = shallow(
+    const wrapper = shallow(
       <SearchResultContainer {...SearchResultEmptyProps} />
     );
     expect(wrapper).toMatchSnapshot();
   });
 
   it("table to card transition", () => {
-    let wrapper = shallow(
+    const wrapper = shallow(
       <SearchResultContainer {...SearchResultTableProps} />
     );
     const eventMock = { currentTarget: { value: "1" } };
@@ -43,7 +45,9 @@ describe("SearchResultContainer", () => {
   });
 
   it("card to table transition", () => {
-    let wrapper = shallow(<SearchResultContainer {...SearchResultCardProps} />);
+    const wrapper = shallow(
+      <SearchResultContainer {...SearchResultCardProps} />
+    );
     const eventMock = { currentTarget: { value: "0" } };
 
     wrapper

@@ -1,20 +1,19 @@
 import * as React from "react";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
-import * as ItemCardModels from "./ItemCardModels";
+import { ItemCardModel } from "./ItemCardModels";
 import { Redirect } from "react-router";
 
 export interface ItemCardState {
   redirect: boolean;
 }
-export interface ItemCardProps extends ItemCardModels.ItemCardModel {}
 
-export class ItemCard extends React.Component<ItemCardProps, ItemCardState> {
-  constructor(props: ItemCardProps) {
+export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
+  constructor(props: ItemCardModel) {
     super(props);
     this.state = { redirect: false };
   }
 
-  shouldComponentUpdate(nextProps: ItemCardProps, nextState: ItemCardState) {
+  shouldComponentUpdate(nextProps: ItemCardModel, nextState: ItemCardState) {
     return nextState.redirect;
   }
 

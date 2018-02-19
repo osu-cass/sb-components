@@ -225,7 +225,7 @@ describe("ItemSearch.searchOptionToFilterGrade", () => {
   it("filled options Selected multiple", () => {
     const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
     const filterParam = FilterType.Grade;
-    const selectedCodeParam = GradeLevels.Grade3 | GradeLevels.Grade4;
+    const selectedCodeParam = GradeLevels.Grade3 || GradeLevels.Grade4;
 
     const result = ItemSearch.searchOptionToFilterGrade(
       optionParam,

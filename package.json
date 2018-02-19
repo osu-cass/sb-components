@@ -24,7 +24,7 @@
     "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
-    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
+    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "typedoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
@@ -50,7 +50,7 @@
   },
   "homepage": "https://github.com/osu-cass/sb-components#readme",
   "devDependencies": {
-    "@osu-cass/tslint-config": "^1.0.4",
+    "@osu-cass/tslint-config": "^1.0.8-alpha.3",
     "@storybook/addon-a11y": "^3.3.11",
     "@storybook/addon-actions": "^3.3.11",
     "@storybook/addon-console": "^1.0.0",

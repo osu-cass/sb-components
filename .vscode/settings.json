@@ -7,5 +7,9 @@
         "__tests__"
     ],
     "docthis.includeMemberOfOnClassMembers": false,
-    "docthis.includeMemberOfOnInterfaceMembers": false
+    "docthis.includeMemberOfOnInterfaceMembers": false,
+    "cSpell.words": [
+        "isaap",
+        "scorepoint"
+    ]
 }

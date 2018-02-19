@@ -40,7 +40,7 @@ describe("SearchUrl.encodeQuery", () => {
 
   it("encodes with only grade levels", () => {
     const searchParams: SearchAPIParamsModel = {
-      gradeLevels: GradeLevels.Grade6 | GradeLevels.Grade8
+      gradeLevels: GradeLevels.Grade6 || GradeLevels.Grade8
     };
     const encoded = SearchUrl.encodeQuery(searchParams);
 

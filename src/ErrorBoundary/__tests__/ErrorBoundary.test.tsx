@@ -4,17 +4,19 @@ import "jsdom-global/register";
 import { shallow, mount, render } from "enzyme";
 import { ErrorBoundary } from "../ErrorBoundary";
 
-const ErrorMssg = () => {
+// tslint:disable: variable-name
+const ErrorMssg: React.SFC = () => {
   return <div>An error occured.</div>;
 };
 
-const ErrorThrower = () => {
-  const handlecClick = () => {
+const ErrorThrower: React.SFC = () => {
+  const handleClick = () => {
     throw new Error("Test Error");
   };
+
   return (
     <div>
-      <button className="test-button" onClick={this.handleClick}>
+      <button className="test-button" onClick={handleClick}>
         Click Me!
       </button>
     </div>
@@ -22,7 +24,7 @@ const ErrorThrower = () => {
 };
 
 describe("ErrorBoundary", () => {
-  let wrapper = mount(
+  const wrapper = mount(
     <ErrorBoundary fallbackUI={<ErrorMssg />}>
       <ErrorThrower />
     </ErrorBoundary>

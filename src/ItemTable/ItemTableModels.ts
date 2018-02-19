@@ -60,16 +60,19 @@ export const headerColumns: ColumnGroup[] = [
       }
     ],
     compare: (a, b) => {
+      let direction;
       if (a.claimCode < b.claimCode || a.targetShortName < b.targetShortName) {
-        return SortDirection.Ascending;
+        direction = SortDirection.Ascending;
       } else if (
         a.claimCode > b.claimCode ||
         a.targetShortName > b.targetShortName
       ) {
-        return SortDirection.Descending;
+        direction = SortDirection.Descending;
       } else {
-        return SortDirection.NoSort;
+        direction = SortDirection.NoSort;
       }
+
+      return direction;
     }
   },
   {

@@ -28,6 +28,7 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
       ? "option-disabled"
       : "option-enabled";
     const label = this.props.disabled ? "" : selection.label;
+
     return (
       <option
         value={selection.selectionCode}
@@ -36,6 +37,7 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
         aria-hidden={selection.disabled}
         key={selection.selectionCode}
         className={disabledCSS}
+        aria-selected={false}
       >
         {label}
       </option>
@@ -47,6 +49,7 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
       this.props.disabled ? "selection-disabled" : "selection-enabled"
     );
     const options = this.props.selections.map(this.renderOption);
+
     return (
       <div className={classes}>
         <label htmlFor={this.props.resourceCode}> {this.props.label}</label>

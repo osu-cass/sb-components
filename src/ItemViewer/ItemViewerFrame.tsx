@@ -61,16 +61,13 @@ export class ItemViewerFrame extends React.Component<FrameProps, FrameState> {
           onLoadStart={this.startLoad}
           onLoad={this.finishLoad}
           src={this.props.url}
+          sandbox=""
         />
       </div>
     );
   }
 
   render() {
-    if (this.props.url) {
-      return this.renderItem();
-    } else {
-      return this.renderNoItem();
-    }
+    return this.props.url ? this.renderItem : this.renderNoItem();
   }
 }

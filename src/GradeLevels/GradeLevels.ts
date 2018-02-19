@@ -18,6 +18,7 @@ export enum GradeLevels {
   All = Elementary | Middle | High
 }
 
+/* tslint:disable: no-unnecessary-class */
 export class GradeLevel {
   public static gradeCaseToString(grade: GradeLevels): string {
     switch (grade) {
@@ -60,12 +61,14 @@ export class GradeLevel {
       return caseString;
     }
 
-    let gradeStrings: string[] = [];
+    const gradeStrings: string[] = [];
+
     for (let i = 0; i < 10; i++) {
       if ((grades & (1 << i)) === 1 << i) {
         gradeStrings.push(this.gradeCaseToString(1 << i));
       }
     }
+
     return gradeStrings.join(", ");
   }
 

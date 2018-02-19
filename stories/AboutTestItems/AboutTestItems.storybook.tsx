@@ -1,12 +1,11 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { CenterDecorator } from "../CenterDecorator";
 import {
   AboutTestItemsContainer,
   AboutTestItemsParams,
   AboutTestItemsPage
 } from "src/index";
-import { RouterDecorator } from "../RouterDecorator";
+import { routerDecorator } from "../RouterDecorator";
 import {
   mockAboutTestClient,
   mockAboutTestClientLoading,
@@ -18,7 +17,7 @@ import {
 import { Route, match } from "react-router";
 
 storiesOf("About Test Items", module)
-  .addDecorator(RouterDecorator)
+  .addDecorator(routerDecorator)
   .add("default", () => (
     <Route
       exact
@@ -28,6 +27,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           aboutClient={mockAboutTestClient}
+          errorRedirectPath=""
         />
       )}
     />
@@ -42,6 +42,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClient}
+          errorRedirectPath=""
         />
       )}
     />
@@ -56,6 +57,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClientReject}
+          errorRedirectPath=""
         />
       )}
     />
@@ -70,6 +72,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestMatch}
           aboutClient={mockAboutTestClientLoading}
+          errorRedirectPath=""
         />
       )}
     />
@@ -84,6 +87,7 @@ storiesOf("About Test Items", module)
           showRubrics={true}
           match={aboutTestBadItem}
           aboutClient={mockAboutTestClient}
+          errorRedirectPath=""
         />
       )}
     />

@@ -48,7 +48,7 @@ export class ItemAccessibilityModal extends React.Component<
   }
 
   toggleResourceType(resourceType: string) {
-    const expandeds = Object.assign({}, this.state.resourceTypeExpanded || {});
+    const expandeds = { ...this.state.resourceTypeExpanded };
     expandeds[resourceType] = !expandeds[resourceType];
 
     this.setState({
@@ -76,9 +76,9 @@ export class ItemAccessibilityModal extends React.Component<
     newSelections[resourceCode] = selectionCode;
     if (resourceCode === "BrailleType") {
       if (selectionCode === "TDS_BT0") {
-        newSelections["StreamlinedInterface"] = "TDS_SLM0";
+        newSelections.StreamlinedInterface = "TDS_SLM0";
       } else {
-        newSelections["StreamlinedInterface"] = "TDS_SLM1";
+        newSelections.StreamlinedInterface = "TDS_SLM1";
       }
     }
     this.setState({ resourceSelections: newSelections });

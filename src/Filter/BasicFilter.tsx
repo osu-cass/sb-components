@@ -65,7 +65,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
   renderDropDown(): JSX.Element {
     const {
       selectedHandler,
-      type,
+      optionType,
       filterOptions,
       disabled,
       label,
@@ -80,7 +80,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     selectOptions.push({
       disabled,
       selected: selectedValue === defaultValue,
-      label: "Select " + label,
+      label: `Select ${label}`,
       value: defaultValue
     });
 
@@ -113,10 +113,10 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
    * @returns {(JSX.Element | undefined)} JSX element of category
    */
   renderCategory(): JSX.Element | undefined {
-    const { type } = this.props;
+    const { optionType } = this.props;
     let content: JSX.Element | undefined;
 
-    switch (type) {
+    switch (optionType) {
       case OptionTypeModel.DropDown:
         content = this.renderDropDown();
         break;
@@ -124,8 +124,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         content = this.renderRadio();
         break;
       default:
-        console.error("Invalid option", type);
-        break;
+        console.error("Invalid option", optionType);
     }
 
     return content;
