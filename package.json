@@ -30,7 +30,7 @@
     "typedoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
-    "{src,stories}/**/*{.tsx,.ts}": [
+    "{src,stories,mocks}/**/*{.tsx,.ts}": [
       "prettier --write",
       "git add"
     ]
