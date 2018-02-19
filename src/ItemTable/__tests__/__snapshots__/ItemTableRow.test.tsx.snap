@@ -37,12 +37,9 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
     <span
       key="item"
     >
-      <a
-        role="link"
-        tabIndex={0}
-      >
+      <span>
         3206
-      </a>
+      </span>
     </span>
   </td>
   <td
@@ -238,12 +235,9 @@ exports[`ItemTableRow matches snapshot 1`] = `
           <span
             key="item"
           >
-            <a
-              role="link"
-              tabIndex={0}
-            >
+            <span>
               3206
-            </a>
+            </span>
           </span>
         </td>
         <td
