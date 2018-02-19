@@ -102,22 +102,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "cols": Array [
             Object {
               "accessor": [Function],
-              "className": "claim",
-            },
-            Object {
-              "accessor": [Function],
-              "className": "target",
-              "helpText": [Function],
-            },
-          ],
-          "compare": [Function],
-          "header": "Claim/Target",
-          "headerClassName": "claimAndTarget",
-        },
-        Object {
-          "cols": Array [
-            Object {
-              "accessor": [Function],
               "className": "subject",
             },
           ],
@@ -135,6 +119,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "compare": [Function],
           "header": "Grade",
           "headerClassName": "grade",
+        },
+        Object {
+          "cols": Array [
+            Object {
+              "accessor": [Function],
+              "className": "claim",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "target",
+              "helpText": [Function],
+            },
+          ],
+          "compare": [Function],
+          "header": "Claim/Target",
+          "headerClassName": "claimAndTarget",
         },
         Object {
           "cols": Array [
@@ -480,22 +480,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -513,6 +497,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -744,6 +744,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -756,6 +757,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -771,46 +773,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                3206
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-3206"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Concepts and Procedures
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="Target A description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                3206
+              </a>
             </span>
           </td>
           <td
@@ -835,6 +803,55 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <span>
                 Grade 6
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-3206"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Concepts and Procedures
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="Target A description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "Target A description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -1058,22 +1075,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -1091,6 +1092,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -1322,6 +1339,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -1334,6 +1352,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -1349,46 +1368,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                3163
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-3163"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Reading
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="Target B description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /Key Details
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                3163
+              </a>
             </span>
           </td>
           <td
@@ -1413,6 +1398,55 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <span>
                 Grade 3
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-3163"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Reading
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="Target B description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /Key Details
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "Target B description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -1447,22 +1481,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -1480,6 +1498,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -1710,6 +1744,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -1722,6 +1757,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -1737,46 +1773,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                3615
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-3615"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Modeling/Data Analysis
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="target C description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                3615
+              </a>
             </span>
           </td>
           <td
@@ -1801,6 +1803,55 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <span>
                 Grade 6
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-3615"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Modeling/Data Analysis
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="target C description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target C description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -1835,22 +1886,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -1868,6 +1903,22 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2098,6 +2149,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2110,6 +2162,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2125,46 +2178,12 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                2928
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-2928"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Research/Inquiry
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="target D description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /Evaluate Information/ sources
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                2928
+              </a>
             </span>
           </td>
           <td
@@ -2189,6 +2208,55 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <span>
                 Grade 4
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-2928"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Research/Inquiry
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="target D description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /Evaluate Information/ sources
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -2312,22 +2380,6 @@ exports[`ItemTable matches snapshot 1`] = `
           "cols": Array [
             Object {
               "accessor": [Function],
-              "className": "claim",
-            },
-            Object {
-              "accessor": [Function],
-              "className": "target",
-              "helpText": [Function],
-            },
-          ],
-          "compare": [Function],
-          "header": "Claim/Target",
-          "headerClassName": "claimAndTarget",
-        },
-        Object {
-          "cols": Array [
-            Object {
-              "accessor": [Function],
               "className": "subject",
             },
           ],
@@ -2345,6 +2397,22 @@ exports[`ItemTable matches snapshot 1`] = `
           "compare": [Function],
           "header": "Grade",
           "headerClassName": "grade",
+        },
+        Object {
+          "cols": Array [
+            Object {
+              "accessor": [Function],
+              "className": "claim",
+            },
+            Object {
+              "accessor": [Function],
+              "className": "target",
+              "helpText": [Function],
+            },
+          ],
+          "compare": [Function],
+          "header": "Claim/Target",
+          "headerClassName": "claimAndTarget",
         },
         Object {
           "cols": Array [
@@ -2383,22 +2451,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2416,6 +2468,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2465,6 +2533,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2477,6 +2546,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2492,46 +2562,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                3206
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-3206"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Concepts and Procedures
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="Target A description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                3206
+              </a>
             </span>
           </td>
           <td
@@ -2556,6 +2592,55 @@ exports[`ItemTable matches snapshot 1`] = `
               <span>
                 Grade 6
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-3206"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Concepts and Procedures
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="Target A description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "Target A description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -2590,22 +2675,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2623,6 +2692,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2672,6 +2757,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2684,6 +2770,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2699,46 +2786,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                3163
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-3163"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Reading
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="Target B description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /Key Details
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                3163
+              </a>
             </span>
           </td>
           <td
@@ -2763,6 +2816,55 @@ exports[`ItemTable matches snapshot 1`] = `
               <span>
                 Grade 3
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-3163"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Reading
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="Target B description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /Key Details
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "Target B description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -2797,22 +2899,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -2830,6 +2916,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -2878,6 +2980,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -2890,6 +2993,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -2905,46 +3009,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                3615
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-3615"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Modeling/Data Analysis
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="target C description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                3615
+              </a>
             </span>
           </td>
           <td
@@ -2969,6 +3039,55 @@ exports[`ItemTable matches snapshot 1`] = `
               <span>
                 Grade 6
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-3615"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Modeling/Data Analysis
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="target C description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target C description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td
@@ -3003,22 +3122,6 @@ exports[`ItemTable matches snapshot 1`] = `
               "cols": Array [
                 Object {
                   "accessor": [Function],
-                  "className": "claim",
-                },
-                Object {
-                  "accessor": [Function],
-                  "className": "target",
-                  "helpText": [Function],
-                },
-              ],
-              "compare": [Function],
-              "header": "Claim/Target",
-              "headerClassName": "claimAndTarget",
-            },
-            Object {
-              "cols": Array [
-                Object {
-                  "accessor": [Function],
                   "className": "subject",
                 },
               ],
@@ -3036,6 +3139,22 @@ exports[`ItemTable matches snapshot 1`] = `
               "compare": [Function],
               "header": "Grade",
               "headerClassName": "grade",
+            },
+            Object {
+              "cols": Array [
+                Object {
+                  "accessor": [Function],
+                  "className": "claim",
+                },
+                Object {
+                  "accessor": [Function],
+                  "className": "target",
+                  "helpText": [Function],
+                },
+              ],
+              "compare": [Function],
+              "header": "Claim/Target",
+              "headerClassName": "claimAndTarget",
             },
             Object {
               "cols": Array [
@@ -3084,6 +3203,7 @@ exports[`ItemTable matches snapshot 1`] = `
           onKeyUp={[Function]}
         >
           <td
+            className="item-checkbox"
             key="checkbox-control"
             onClick={[Function]}
             onKeyUp={[Function]}
@@ -3096,6 +3216,7 @@ exports[`ItemTable matches snapshot 1`] = `
              
           </td>
           <td
+            className="arrow-indicator"
             key="expand-control"
             tabIndex={0}
           >
@@ -3111,46 +3232,12 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <span>
-                2928
-              </span>
-            </span>
-          </td>
-          <td
-            className="claimAndTarget"
-            key="claimAndTarget-187-2928"
-          >
-            <span
-              key="claim"
-            >
-              <span>
-                Research/Inquiry
-              </span>
-            </span>
-            <span
-              key="target"
-            >
-              <ToolTip
-                displayIcon={false}
-                helpText="target D description"
-                position="top"
+              <a
+                role="link"
+                tabIndex={0}
               >
-                <span
-                  className="tool-tip top"
-                >
-                  <span
-                    className="tool-tip-hoverable"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    tabIndex={0}
-                  >
-                    /Evaluate Information/ sources
-                     
-                  </span>
-                </span>
-              </ToolTip>
+                2928
+              </a>
             </span>
           </td>
           <td
@@ -3175,6 +3262,55 @@ exports[`ItemTable matches snapshot 1`] = `
               <span>
                 Grade 4
               </span>
+            </span>
+          </td>
+          <td
+            className="claimAndTarget"
+            key="claimAndTarget-187-2928"
+          >
+            <span
+              key="claim"
+            >
+              <span>
+                Research/Inquiry
+              </span>
+            </span>
+            <span
+              key="target"
+            >
+              <ToolTip
+                displayIcon={false}
+                helpText="target D description"
+                position="top"
+              >
+                <div
+                  className="tool-tip-links"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    /Evaluate Information/ sources
+                     
+                  </span>
+                  <div
+                    className="tool-tip-details"
+                  >
+                    <div
+                      className="tool-tip-message top"
+                    >
+                      <div
+                        className="tool-tip-help-text"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "target D description",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ToolTip>
             </span>
           </td>
           <td

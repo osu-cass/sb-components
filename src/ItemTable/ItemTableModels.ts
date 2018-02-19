@@ -46,6 +46,23 @@ export const headerColumns: ColumnGroup[] = [
     ]
   },
   {
+    header: "Subject",
+    headerClassName: "subject",
+    cols: [{ accessor: label => label.subjectLabel, className: "subject" }],
+    compare: (a, b) => a.subjectCode.localeCompare(b.subjectCode)
+  },
+  {
+    header: "Grade",
+    headerClassName: "grade",
+    cols: [
+      {
+        accessor: label => label.gradeLabel,
+        className: "grade"
+      }
+    ],
+    compare: (a, b) => a.grade - b.grade
+  },
+  {
     header: "Claim/Target",
     headerClassName: "claimAndTarget",
     cols: [
@@ -71,23 +88,6 @@ export const headerColumns: ColumnGroup[] = [
         return SortDirection.NoSort;
       }
     }
-  },
-  {
-    header: "Subject",
-    headerClassName: "subject",
-    cols: [{ accessor: label => label.subjectLabel, className: "subject" }],
-    compare: (a, b) => a.subjectCode.localeCompare(b.subjectCode)
-  },
-  {
-    header: "Grade",
-    headerClassName: "grade",
-    cols: [
-      {
-        accessor: label => label.gradeLabel,
-        className: "grade"
-      }
-    ],
-    compare: (a, b) => a.grade - b.grade
   },
   {
     header: "Item Type",

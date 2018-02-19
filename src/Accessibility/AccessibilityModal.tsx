@@ -118,7 +118,7 @@ export class ItemAccessibilityModal extends React.Component<
     )[0].accessibilityResources;
     const resourceTypeHeader = (
       <h4 className="green-title">
-        <span className="fa fa-tasks" />&nbsp;
+        <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
         {resourceType}
       </h4>
     );
@@ -151,7 +151,7 @@ export class ItemAccessibilityModal extends React.Component<
     if (resCount <= 4) {
       expandButton = undefined;
     } else if (isExpanded) {
-      const ariaText = `Display fewer ${resourceType} options`;
+      const ariaText = `Display fewer ${resourceType} options.`;
       expandButton = (
         <a
           role="button"
@@ -161,11 +161,12 @@ export class ItemAccessibilityModal extends React.Component<
           onClick={() => this.toggleResourceType(resourceType)}
           onKeyUp={e => this.keyboardToggleResourceType(e, resourceType)}
         >
-          Show less
+          <span className="fa fa-compress" aria-hidden="true" />
+          &nbsp;Show less
         </a>
       );
     } else {
-      const ariaText = `Display all ${resourceType} options`;
+      const ariaText = `Display all ${resourceType} options.`;
       expandButton = (
         <a
           role="button"
@@ -175,7 +176,8 @@ export class ItemAccessibilityModal extends React.Component<
           onClick={() => this.toggleResourceType(resourceType)}
           onKeyUp={e => this.keyboardToggleResourceType(e, resourceType)}
         >
-          Show all
+          <span className="fa fa-expand" aria-hidden="true" />
+          &nbsp;Show all
         </a>
       );
     }
@@ -185,9 +187,11 @@ export class ItemAccessibilityModal extends React.Component<
         className="accessibility-resource-type section section-light"
         key={resourceType}
       >
-        {resourceTypeHeader}
+        <div className="accessibility-header">
+          {resourceTypeHeader}
+          {expandButton}
+        </div>
         <div className="accessibility-dropdowns">{dropdowns}</div>
-        {expandButton}
       </div>
     );
   }
