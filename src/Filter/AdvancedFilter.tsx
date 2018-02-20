@@ -66,7 +66,8 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     // replace "-" with spaces, replace "." with nothing.
     const id = label.replace(/\ /g, "-").replace(/\./g, "");
     if (disabled) {
-      return undefined;
+      // tslint:disable-next-line:no-null-keyword
+      return null;
     }
 
     return (

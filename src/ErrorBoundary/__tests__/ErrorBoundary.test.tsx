@@ -16,7 +16,7 @@ const ErrorThrower: React.SFC = () => {
 
   return (
     <div>
-      <button className="test-button" onClick={handleClick}>
+      <button className="test-button" onClick={() => handleClick}>
         Click Me!
       </button>
     </div>

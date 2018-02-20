@@ -42,7 +42,8 @@ export class ShareModal extends React.Component<
 
   render() {
     let url = "";
-    if (window !== undefined && window !== null) {
+    // tslint:disable-next-line:no-typeof-undefined
+    if (typeof window !== "undefined") {
       url = getItemUrl();
     }
 

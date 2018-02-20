@@ -68,6 +68,6 @@ export class ItemViewerFrame extends React.Component<FrameProps, FrameState> {
   }
 
   render() {
-    return this.props.url ? this.renderItem : this.renderNoItem();
+    return this.props.url ? this.renderItem() : this.renderNoItem();
   }
 }
