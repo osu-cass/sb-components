@@ -10,6 +10,7 @@ import * as ReactDOM from "react-dom";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
 import { AccResourceGroupModel } from "../index";
 import { ToolTip } from "../index";
+import { Accordion } from "../Accordion/Accordion";
 
 export interface RevisionModel {
   author: string;
@@ -176,46 +177,58 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
   }
 
   renderAddItems() {
-    return <textarea className="csv-add" defaultValue="Drag Items Here" />;
+    const csvEntry = (): JSX.Element => {
+      return (
+        <div>
+          {this.renderHelpButton()}
+          <textarea className="csv-add" defaultValue="Drag Items Here" />
+          {this.renderAddItemsButton()}
+        </div>
+      );
+    };
+    return <Accordion accordionTitle="CSV Entry" contentItem={csvEntry()} />;
   }
 
   renderItemsTable() {
+    const itemsTable = (): JSX.Element => {
+      return (
+        <div className="current-items-table">
+          <table className="items-list">
+            <thead>
+              <tr>
+                <th>Items</th>
+                <th>Bank</th>
+                <th>Item</th>
+                <th>Section</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>187-0000</td>
+                <td>Bank # here</td>
+                <td>info about the item goes here</td>
+                <td>the section</td>
+              </tr>
+              <tr>
+                <td>187-0000</td>
+                <td>Bank # here</td>
+                <td>info about the item goes here</td>
+                <td>the section</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      );
+    };
     return (
-      <div className="current-items-table">
-        <table className="items-list">
-          <thead>
-            <tr>
-              <th>Items</th>
-              <th>Bank</th>
-              <th>Item</th>
-              <th>Section</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>187-0000</td>
-              <td>Bank # here</td>
-              <td>info about the item goes here</td>
-              <td>the section</td>
-            </tr>
-            <tr>
-              <td>187-0000</td>
-              <td>Bank # here</td>
-              <td>info about the item goes here</td>
-              <td>the section</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <Accordion accordionTitle="Items Table" contentItem={itemsTable()} />
     );
   }
 
   renderItemBankPage() {
     return (
       <div className="item-bank-page">
-        {this.renderHelpButton()}
         {this.renderAddItems()}
-        {this.renderAddItemsButton()}
         {this.renderItemsTable()}
         <div className="revisions-items">
           {this.renderRevisionsContainer()}
