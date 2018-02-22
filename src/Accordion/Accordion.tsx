@@ -47,10 +47,12 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
 
   render() {
     return (
-      <div className="container">
+      <div className="accordion-container">
         <div className="accordion-bar" onClick={this.handleShowContent}>
-          {this.state.title}
-          {this.renderCarat(this.state.isOpen)}
+          <div className="accordion-content">
+            {this.state.title}
+            {this.renderCarat(this.state.isOpen)}
+          </div>
         </div>
         {this.renderContent(this.state.isOpen)}
       </div>
