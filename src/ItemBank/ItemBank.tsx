@@ -171,7 +171,11 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
       return (
         <div className="csv-entry-container">
           {this.renderHelpButton()}
-          <textarea className="csv-add" defaultValue="Drag Items Here" />
+          <textarea
+            className="csv-add"
+            cols={50}
+            defaultValue="Drag Items Here"
+          />
         </div>
       );
     };
@@ -193,7 +197,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
               <tr>
                 <td>187-0000</td>
                 <td>
-                  <select>
+                  <select className="section-options">
                     <option value="math">MATH</option>
                     <option value="math">ENG</option>
                     <option value="math">LIT</option>
@@ -203,7 +207,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
               <tr>
                 <td>187-0000</td>
                 <td>
-                  <select>
+                  <select className="section-options">
                     <option value="math">MATH</option>
                     <option value="math">ENG</option>
                     <option value="math">LIT</option>
@@ -223,7 +227,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
               <tr>
                 <td>187-0000</td>
                 <td>
-                  <select>
+                  <select className="section-options">
                     <option value="math">MATH</option>
                     <option value="math">ENG</option>
                     <option value="math">LIT</option>
@@ -233,7 +237,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
               <tr>
                 <td>187-0000</td>
                 <td>
-                  <select>
+                  <select className="section-options">
                     <option value="math">MATH</option>
                     <option value="math">ENG</option>
                     <option value="math">LIT</option>
