@@ -166,23 +166,12 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
     );
   }
 
-  renderAddItemsButton() {
-    return (
-      <div className="help-button">
-        <ToolTip helpText="Add listed items to the table" position="bottom">
-          <button aria-label="Open table of items">Add Items</button>
-        </ToolTip>
-      </div>
-    );
-  }
-
   renderAddItems() {
     const csvEntry = (): JSX.Element => {
       return (
-        <div>
+        <div className="csv-entry-container">
           {this.renderHelpButton()}
           <textarea className="csv-add" defaultValue="Drag Items Here" />
-          {this.renderAddItemsButton()}
         </div>
       );
     };
