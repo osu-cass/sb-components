@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { RubricTable, RubricTableProps } from "../../src/Rubric/RubricTable";
 import { RubricEntryModel } from "../../src/Rubric/RubricModels";
 
-const RubricTableMockProps: RubricTableProps = {
+const rubricTableMockProps: RubricTableProps = {
   rubrics: [
     {
       language: "English",
@@ -47,5 +47,5 @@ const RubricTableMockProps: RubricTableProps = {
 };
 
 storiesOf("RubricTable", module).add("with a rubric table", () => (
-  <RubricTable {...RubricTableMockProps} />
+  <RubricTable {...rubricTableMockProps} />
 ));

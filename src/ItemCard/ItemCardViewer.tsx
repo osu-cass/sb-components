@@ -45,7 +45,6 @@ export class ItemCardViewer extends React.Component<
     const aboutItem = this.props.item;
 
     if (aboutItem && aboutItem.sampleItemScoring) {
-      // TODO: add logic for non rubric scoring options
       if (aboutItem.sampleItemScoring.rubrics) {
         return (
           <div className="item-content">
@@ -77,8 +76,9 @@ export class ItemCardViewer extends React.Component<
 
       let resultElement: JSX.Element[] | JSX.Element | undefined;
       if (selectedTab === "viewer") {
-        // TODO: fix http string.
-        const url = `http://ivs.smarterbalanced.org/items?ids=${itemCard.bankKey.toString()}-${itemCard.itemKey.toString()}`;
+        const url = `http://ivs.smarterbalanced.org/items?ids=${
+          itemCard.bankKey
+        }-${itemCard.itemKey}`;
         resultElement = <div> {this.renderViewer(url)} </div>;
       } else if (selectedTab === "rubric") {
         resultElement = <div> {this.renderRubric()} </div>;

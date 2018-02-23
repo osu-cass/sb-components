@@ -6,7 +6,6 @@ import {
   ItemTableContainerProps,
   ItemCardModel
 } from "src/index";
-import { CenterDecorator } from "../CenterDecorator";
 import { itemTableSortProps } from "mocks/ItemTable/mocks";
 
 const style: React.CSSProperties = {
@@ -25,9 +24,9 @@ const style1: React.CSSProperties = {
   flexDirection: "column"
 };
 
-let itemTableLongList: ItemTableContainerProps = itemTableSortProps;
+const itemTableLongList: ItemTableContainerProps = itemTableSortProps;
 
-let itemCards: ItemCardModel[] = [];
+const itemCards: ItemCardModel[] = [];
 
 for (let i = 0; i < 50; i += 1) {
   itemCards.push({

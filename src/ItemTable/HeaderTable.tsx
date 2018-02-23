@@ -78,7 +78,7 @@ export class HeaderTable extends React.Component<HeaderTableProps, {}> {
   setDirElem(headerSort: HeaderSortModel | undefined): JSX.Element {
     let dirElem = noSort;
     if (!headerSort) {
-      return dirElem;
+      dirElem = noSort;
     } else if (headerSort.direction === SortDirection.Ascending) {
       dirElem = ascendingArrow;
     } else if (headerSort.direction === SortDirection.Descending) {

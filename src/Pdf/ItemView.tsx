@@ -8,7 +8,7 @@ export interface ItemViewProps {
 
 export class ItemView extends React.Component<ItemViewProps, {}> {
   render() {
-    let item, evidence: JSX.Element;
+    let item: JSX.Element | undefined;
 
     if (this.props.view.type === PdfViewType.html) {
       item = (
@@ -16,7 +16,13 @@ export class ItemView extends React.Component<ItemViewProps, {}> {
       );
     } else if (this.props.view.picturePath) {
       const fileName = Path.basename(this.props.view.picturePath);
-      item = <img src={"images/screenshots/" + fileName} />;
+      item = (
+        <img
+          alt=""
+          role="presentation"
+          src={`images/screenshots/${fileName}`}
+        />
+      );
     }
 
     return item;

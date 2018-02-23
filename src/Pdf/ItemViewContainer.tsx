@@ -18,7 +18,9 @@ export class ItemViewContainer extends React.Component<
         view={this.props.itemData.passage}
         associatedItems={this.props.itemData.questions.map(q => q.id)}
       />
-    ) : null;
+    ) : (
+      undefined
+    );
 
     const questions = this.props.itemData.questions.map(q => (
       <QuestionView
@@ -27,6 +29,7 @@ export class ItemViewContainer extends React.Component<
         displayScoreInfo={this.props.displayScoreInfo}
       />
     ));
+
     return (
       <div className="page">
         {passage}

@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { SampleResponse } from "../../src/Rubric/SampleResponse";
 import { SampleResponseModel } from "../../src/Rubric/RubricModels";
 
-const SampleResponseMockProps: SampleResponseModel = {
+const sampleResponseMockProps: SampleResponseModel = {
   purpose: "Exemplar",
   scorePoint: "1",
   name: "1-Point Official Sample Answer\n      ",
@@ -12,5 +12,5 @@ const SampleResponseMockProps: SampleResponseModel = {
 };
 
 storiesOf("Sample Response", module).add("with a sample response", () => (
-  <SampleResponse {...SampleResponseMockProps} />
+  <SampleResponse {...sampleResponseMockProps} />
 ));

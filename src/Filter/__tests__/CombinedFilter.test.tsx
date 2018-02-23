@@ -20,7 +20,9 @@ describe("FilterContainer", () => {
       searchParams: SearchAPIParamsModel,
       basic: BasicFilterCategoryModel[],
       advanced: AdvancedFilterCategoryModel[]
-    ) => {}
+    ) => {
+      return;
+    }
   );
 
   const wrapper = mount(
@@ -39,19 +41,17 @@ describe("FilterContainer", () => {
   it("toggles the advanced filter", () => {
     expect(wrapper).toMatchSnapshot();
 
-    //expand
     const expandBtn = wrapper
       .findWhere(node => node.type() === BasicFilterContainer)
       .find(".af-expand");
     expandBtn.simulate("click");
     expect(wrapper).toMatchSnapshot();
 
-    let advFilter = wrapper.findWhere(
+    const advFilter = wrapper.findWhere(
       node => node.type() === AdvancedFilterContainer
     );
     expect(advFilter).toBeDefined();
 
-    //close
     expandBtn.simulate("click");
     expect(wrapper).toMatchSnapshot();
   });

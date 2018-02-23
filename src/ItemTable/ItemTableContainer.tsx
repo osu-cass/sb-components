@@ -62,7 +62,7 @@ export class ItemTableContainer extends React.Component<
     const newSorts = (this.state.sorts || []).slice();
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
     if (headIdx !== -1) {
-      const newSort = Object.assign({}, newSorts[headIdx]);
+      const newSort = { ...newSorts[headIdx] };
       if (newSort.direction === SortDirection.Ascending) {
         newSort.direction = SortDirection.Descending;
       } else if (newSort.direction === SortDirection.Descending) {

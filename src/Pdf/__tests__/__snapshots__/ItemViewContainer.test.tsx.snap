@@ -29,46 +29,21 @@ exports[`EvidenceStatement matches snapshot 1`] = `
             "itemKey": 1,
             "subjectCode": "MATH",
             "subjectLabel": "math",
+            "targetDescription": "Description",
             "targetHash": 212,
             "targetId": "23463467",
             "targetShortName": "1-3",
             "title": "",
           },
-          "rubrics": Array [
-            Object {
-              "language": "english",
-              "rubricEntries": Array [
-                Object {
-                  "name": "",
-                  "scorepoint": "",
-                  "value": "",
-                },
-              ],
-              "samples": Array [
-                Object {
-                  "maxValue": "",
-                  "minValue": "",
-                  "sampleResponses": Array [
-                    Object {
-                      "name": "",
-                      "purpose": "",
-                      "sampleContent": "",
-                      "scorePoint": "",
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
           "targetDescription": "string",
         },
         "id": "12334",
         "questionNumber": 1,
         "view": Object {
           "captured": true,
-          "html": null,
+          "html": undefined,
           "id": "12334",
-          "picturePath": null,
+          "picturePath": undefined,
           "type": 1,
         },
       }

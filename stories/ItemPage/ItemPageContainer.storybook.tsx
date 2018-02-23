@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ItemViewPage } from "src/index";
 import { storiesOf } from "@storybook/react";
-import { RouterDecorator } from "../RouterDecorator";
+import { routerDecorator } from "../RouterDecorator";
 import {
   aboutThisClient,
   itemPageClient,
@@ -12,7 +12,7 @@ import {
 import { Route } from "react-router";
 
 storiesOf("Item View", module)
-  .addDecorator(RouterDecorator)
+  .addDecorator(routerDecorator)
   .add("default", () => (
     <Route
       exact
@@ -25,7 +25,7 @@ storiesOf("Item View", module)
           aboutThisClient={aboutThisClient}
           itemPageClient={itemPageClient}
           itemAccessibilityClient={itemAccessibilityClient}
-          errorRedirectPath={""}
+          errorRedirectPath=""
         />
       )}
     />

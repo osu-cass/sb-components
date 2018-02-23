@@ -1043,6 +1043,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                         id="itemviewer-iframe"
                         onLoad={[Function]}
                         onLoadStart={[Function]}
+                        sandbox=""
                         src="http://ivs.smarterbalanced.org/items?ids=187-3206"
                       />
                     </div>

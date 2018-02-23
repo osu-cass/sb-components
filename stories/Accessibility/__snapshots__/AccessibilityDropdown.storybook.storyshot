@@ -36,6 +36,7 @@ exports[`Storyshots Accessibility DropDown all disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad on"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SCNotepad"
@@ -45,6 +46,7 @@ exports[`Storyshots Accessibility DropDown all disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad off"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SC0"
@@ -54,6 +56,7 @@ exports[`Storyshots Accessibility DropDown all disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad disabled"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SC9"
@@ -101,6 +104,7 @@ exports[`Storyshots Accessibility DropDown default with disabled 1`] = `
       <option
         aria-hidden={false}
         aria-label="Notepad on"
+        aria-selected={false}
         className="option-enabled"
         disabled={false}
         value="TDS_SCNotepad"
@@ -110,6 +114,7 @@ exports[`Storyshots Accessibility DropDown default with disabled 1`] = `
       <option
         aria-hidden={false}
         aria-label="Notepad off"
+        aria-selected={false}
         className="option-enabled"
         disabled={false}
         value="TDS_SC0"
@@ -119,6 +124,7 @@ exports[`Storyshots Accessibility DropDown default with disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad disabled"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SC9"
@@ -166,6 +172,7 @@ exports[`Storyshots Accessibility DropDown dropdown disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad on"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SCNotepad"
@@ -175,6 +182,7 @@ exports[`Storyshots Accessibility DropDown dropdown disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad off"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SC0"
@@ -184,6 +192,7 @@ exports[`Storyshots Accessibility DropDown dropdown disabled 1`] = `
       <option
         aria-hidden={true}
         aria-label="Notepad disabled"
+        aria-selected={false}
         className="option-disabled"
         disabled={true}
         value="TDS_SC9"
