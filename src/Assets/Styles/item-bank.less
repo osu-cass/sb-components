@@ -53,7 +53,7 @@
     margin: 0px 14px;
 }
 
-.current-items-table {
+.items-list {
     border-style: solid;
     border-color: @grey-border-color;
     border-width: 1px;
@@ -66,6 +66,18 @@
     table-layout: fixed;
 }
 
+.current-items-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.items-list td {
+    width: 250px;
+    padding: 7px;
+}
+
 .items-list tr:nth-child(even){
     background-color: #eee;
 }
@@ -74,12 +86,12 @@
     background-color: #fff;
 }
 
-.items-list td{
-    width: 350px;
-}
-
 th {
-    background-color: @sb-gray-darker;
+    background-color: @sb-gray;
     color: white;
     padding: 5px;
+}
+
+.csv-add {
+    width: 1000px;
 }

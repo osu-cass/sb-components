@@ -197,23 +197,59 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
             <thead>
               <tr>
                 <th>Items</th>
-                <th>Bank</th>
-                <th>Item</th>
                 <th>Section</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>187-0000</td>
-                <td>Bank # here</td>
-                <td>info about the item goes here</td>
-                <td>the section</td>
+                <td>
+                  <select>
+                    <option value="math">MATH</option>
+                    <option value="math">ENG</option>
+                    <option value="math">LIT</option>
+                  </select>
+                </td>
               </tr>
               <tr>
                 <td>187-0000</td>
-                <td>Bank # here</td>
-                <td>info about the item goes here</td>
-                <td>the section</td>
+                <td>
+                  <select>
+                    <option value="math">MATH</option>
+                    <option value="math">ENG</option>
+                    <option value="math">LIT</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table className="items-list">
+            <thead>
+              <tr>
+                <th>Items</th>
+                <th>Section</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>187-0000</td>
+                <td>
+                  <select>
+                    <option value="math">MATH</option>
+                    <option value="math">ENG</option>
+                    <option value="math">LIT</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>187-0000</td>
+                <td>
+                  <select>
+                    <option value="math">MATH</option>
+                    <option value="math">ENG</option>
+                    <option value="math">LIT</option>
+                  </select>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -221,7 +257,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
       );
     };
     return (
-      <Accordion accordionTitle="Items Table" contentItem={itemsTable()} />
+      <Accordion accordionTitle="Items Entry" contentItem={itemsTable()} />
     );
   }
 
