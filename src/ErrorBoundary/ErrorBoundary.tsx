@@ -6,9 +6,9 @@ export interface ErrorBoundaryProps {
 
 export interface ErrorBoundaryState {
   hasError: boolean;
-  error?: Error | null;
+  error?: Error;
   // tslint:disable-next-line: no-any
-  errorInfo: any | null;
+  errorInfo?: any;
 }
 
 export class ErrorBoundary extends React.Component<
@@ -17,7 +17,7 @@ export class ErrorBoundary extends React.Component<
 > {
   constructor(props: ErrorBoundaryProps) {
     super(props);
-    this.state = { hasError: false, error: undefined, errorInfo: undefined };
+    this.state = { hasError: false };
   }
 
   // tslint:disable-next-line: no-any

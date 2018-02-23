@@ -18,8 +18,8 @@ function getCookie(name: string): string | undefined {
 
 export interface BrailleLinkProps {
   currentSelectionCode: string;
-  brailleItemCodes: string[];
-  braillePassageCodes: string[];
+  brailleItemCodes?: string[];
+  braillePassageCodes?: string[];
   bankKey: number;
   itemKey: number;
 }
@@ -40,15 +40,16 @@ export class BrailleLink extends React.Component<
 
   buildUrl(bankKey: number, itemKey: number): string {
     let url = "";
-    let brailleType = "";
+    const { brailleItemCodes } = this.props;
+
     if (
-      typeof this.props.brailleItemCodes !== undefined &&
-      this.props.brailleItemCodes.indexOf(this.props.currentSelectionCode) > -1
+      brailleItemCodes &&
+      brailleItemCodes.indexOf(this.props.currentSelectionCode) > -1
     ) {
-      const brailleLoc = this.props.brailleItemCodes.indexOf(
+      const brailleLoc = brailleItemCodes.indexOf(
         this.props.currentSelectionCode
       );
-      brailleType = this.props.brailleItemCodes[brailleLoc];
+      const brailleType = brailleItemCodes[brailleLoc];
 
       url = `/Item/Braille?bankKey=${bankKey}&itemKey=${itemKey}&brailleCode=${brailleType}`;
     }
