@@ -2,10 +2,10 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { SearchResultContainer } from "src/index";
 import { SearchResultTableProps } from "mocks/SearchResultContainer/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
 storiesOf("Search Result Container", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("normal render", () => (
     <SearchResultContainer {...SearchResultTableProps} />
   ));

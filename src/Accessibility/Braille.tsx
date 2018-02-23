@@ -1,7 +1,8 @@
 import * as React from "react";
 
-function getCookie(name: string): string | null {
+function getCookie(name: string): string | undefined {
   const nameLenPlus = name.length + 1;
+
   return (
     document.cookie
       .split(";")
@@ -11,14 +12,14 @@ function getCookie(name: string): string | null {
       })
       .map(cookie => {
         return decodeURIComponent(cookie.substring(nameLenPlus));
-      })[0] || null
+      })[0] || undefined
   );
 }
 
 export interface BrailleLinkProps {
   currentSelectionCode: string;
-  brailleItemCodes: string[];
-  braillePassageCodes: string[];
+  brailleItemCodes?: string[];
+  braillePassageCodes?: string[];
   bankKey: number;
   itemKey: number;
 }
@@ -38,25 +39,22 @@ export class BrailleLink extends React.Component<
   }
 
   buildUrl(bankKey: number, itemKey: number): string {
-    let brailleType = "";
+    let url = "";
+    const { brailleItemCodes } = this.props;
+
     if (
-      typeof this.props.brailleItemCodes != "undefined" &&
-      this.props.brailleItemCodes.indexOf(this.props.currentSelectionCode) > -1
+      brailleItemCodes &&
+      brailleItemCodes.indexOf(this.props.currentSelectionCode) > -1
     ) {
-      const brailleLoc = this.props.brailleItemCodes.indexOf(
+      const brailleLoc = brailleItemCodes.indexOf(
         this.props.currentSelectionCode
       );
-      brailleType = this.props.brailleItemCodes[brailleLoc];
-      return (
-        "/Item/Braille?bankKey=" +
-        bankKey +
-        "&itemKey=" +
-        itemKey +
-        "&brailleCode=" +
-        brailleType
-      );
+      const brailleType = brailleItemCodes[brailleLoc];
+
+      url = `/Item/Braille?bankKey=${bankKey}&itemKey=${itemKey}&brailleCode=${brailleType}`;
     }
-    return "";
+
+    return url;
   }
 
   enableSpinner(): void {
@@ -72,21 +70,24 @@ export class BrailleLink extends React.Component<
   }
 
   checkDownloadCookie(count: number) {
-    count++;
-    if (getCookie("brailleDLstarted") == "1") {
+    const innerCount = count + 1;
+    if (getCookie("brailleDLstarted") === "1") {
       this.disableSpinner();
       document.cookie =
         "brailleDLstarted" + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+
       return;
     }
-    if (count > 20) {
+    if (innerCount > 20) {
       document.cookie =
         "brailleDLstarted" + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
       this.disableSpinner();
+
       return;
     }
     const dlCheck = this.checkDownloadCookie;
-    setTimeout(dlCheck.bind(this), 1000, count);
+    setTimeout(dlCheck.bind(this), 1000, innerCount);
+
     return;
   }
 
@@ -96,21 +97,21 @@ export class BrailleLink extends React.Component<
   }
 
   renderLoading() {
-    if (!this.state.displaySpinner) {
-      return null;
-    } else {
-      return (
+    let content;
+    if (this.state.displaySpinner) {
+      content = (
         <span className="glyphicon glyphicon-refresh glyphicon-pad rotating" />
       );
     }
+
+    return content;
   }
 
   render() {
     const brailleUrl = this.buildUrl(this.props.bankKey, this.props.itemKey);
-    if (brailleUrl === "") {
-      return null;
-    } else {
-      return (
+    let content;
+    if (brailleUrl !== "") {
+      content = (
         <a
           className={"item-nav-btn btn btn-default btn-sm about-pt-btn"}
           aria-live="polite"
@@ -125,5 +126,7 @@ export class BrailleLink extends React.Component<
         </a>
       );
     }
+
+    return content;
   }
 }

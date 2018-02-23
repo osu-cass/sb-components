@@ -6,9 +6,9 @@ export class AboutThisItemDetail extends React.Component<AboutItemModel, {}> {
     label: string,
     className: string,
     value?: string | number
-  ): JSX.Element | null {
+  ): JSX.Element | undefined {
     if (!value) {
-      return null;
+      return undefined;
     }
 
     return (

@@ -1,14 +1,14 @@
 import * as React from "react";
 import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
-import { CenterDecorator } from "../CenterDecorator";
-import { RouterDecorator } from "../RouterDecorator";
+import { centerDecorator } from "../CenterDecorator";
+import { routerDecorator } from "../RouterDecorator";
 import { completeItemCard } from "mocks/ItemCard/mocks";
 import { ItemCardCondensed, ItemCard } from "../../src";
 
 storiesOf("Item Card", module)
-  .addDecorator(RouterDecorator)
-  .addDecorator(CenterDecorator)
+  .addDecorator(routerDecorator)
+  .addDecorator(centerDecorator)
   .add("Item Card", () => <ItemCard {...completeItemCard} />)
   .add("Item Card Condensed", () => (
     <ItemCardCondensed {...completeItemCard} />

@@ -21,7 +21,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
         score: entry.scorepoint,
         rationale: entry.value,
         sample: sampleHtml
-      } as RubricTableRowModel;
+      };
     });
 
     const showSample = rubric.samples.length !== 0;

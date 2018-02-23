@@ -24,23 +24,25 @@ export class PdfContainer extends React.Component<PdfContainerProps, {}> {
     ));
 
     return (
-      <html>
+      <html lang="en">
         <head>
           <meta charSet="UTF-8" />
           <link rel="stylesheet" href={this.props.cssUrl} />
           <link
             rel="stylesheet"
-            href={this.props.ivsBaseUrl + "/Shared/CSS/Universal/items.css"}
+            href={`${this.props.ivsBaseUrl}/Shared/CSS/Universal/items.css`}
           />
           <link
             rel="stylesheet"
-            href={this.props.ivsBaseUrl + "/Projects/SBAC/css/modernItems.css"}
+            href={`${this.props.ivsBaseUrl}/Projects/SBAC/css/modernItems.css`}
           />
         </head>
         <body className="pdf-body">
           {this.props.displayTitlePage ? (
             <CoverPage grade={this.props.grade} subject={this.props.subject} />
-          ) : null}
+          ) : (
+            undefined
+          )}
           {itemPages}
         </body>
       </html>

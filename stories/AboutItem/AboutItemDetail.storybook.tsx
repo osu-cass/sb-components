@@ -2,10 +2,10 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { AboutThisItemDetail } from "../../src/index";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
 storiesOf("About This Item Detail", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("displays information about an item", () => (
     <AboutThisItemDetail {...AboutItemMockModel} />
   ));

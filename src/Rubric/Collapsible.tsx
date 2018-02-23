@@ -35,6 +35,7 @@ export class Collapsible extends React.Component<
 
     return (
       <div
+        role="tab"
         className={this.props.className}
         style={this.props.style}
         aria-expanded={!this.state.isCollapsed}

@@ -13,7 +13,7 @@ import { tabClassNames } from "../../../mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
 
 describe("ItemTableHeader", () => {
-  const sorts: Array<HeaderSortModel> = [
+  const sorts: HeaderSortModel[] = [
     {
       col: headerColumns[0],
       direction: SortDirection.Ascending,

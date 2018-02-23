@@ -35,8 +35,8 @@ exports[`BasicFilterContainer can select dropdown filter options 1`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -59,8 +59,8 @@ exports[`BasicFilterContainer can select dropdown filter options 1`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -101,8 +101,8 @@ exports[`BasicFilterContainer can select dropdown filter options 2`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -125,8 +125,8 @@ exports[`BasicFilterContainer can select dropdown filter options 2`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -167,8 +167,8 @@ exports[`BasicFilterContainer can select dropdown filter options 3`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -191,8 +191,8 @@ exports[`BasicFilterContainer can select dropdown filter options 3`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -233,8 +233,8 @@ exports[`BasicFilterContainer can select dropdown filter options 4`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -257,8 +257,8 @@ exports[`BasicFilterContainer can select dropdown filter options 4`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -299,8 +299,8 @@ exports[`BasicFilterContainer can select radio button filter options 1`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -323,8 +323,8 @@ exports[`BasicFilterContainer can select radio button filter options 1`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -365,8 +365,8 @@ exports[`BasicFilterContainer can select radio button filter options 2`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -389,8 +389,8 @@ exports[`BasicFilterContainer can select radio button filter options 2`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -431,8 +431,8 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -455,8 +455,8 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
   <div
@@ -520,8 +520,8 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -544,8 +544,8 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
   <div
@@ -609,8 +609,8 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -633,8 +633,8 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
   <div
@@ -698,8 +698,8 @@ exports[`BasicFilterContainer resets filters on keyboard events 1`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -722,8 +722,8 @@ exports[`BasicFilterContainer resets filters on keyboard events 1`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -764,8 +764,8 @@ exports[`BasicFilterContainer resets filters on keyboard events 2`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -788,8 +788,8 @@ exports[`BasicFilterContainer resets filters on keyboard events 2`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>
@@ -830,8 +830,8 @@ exports[`BasicFilterContainer resets filters on keyboard events 3`] = `
       }
       key="0"
       label="Grade"
+      optionType={3}
       selectedHandler={[Function]}
-      type={3}
     />
     <BasicFilter
       code="Subject"
@@ -854,8 +854,8 @@ exports[`BasicFilterContainer resets filters on keyboard events 3`] = `
       }
       key="1"
       label="Subjects"
+      optionType={2}
       selectedHandler={[Function]}
-      type={2}
     />
   </div>
 </div>

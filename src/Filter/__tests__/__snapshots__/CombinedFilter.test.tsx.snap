@@ -170,7 +170,7 @@ exports[`FilterContainer renders 1`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -190,7 +190,7 @@ exports[`FilterContainer renders 1`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -228,7 +228,7 @@ exports[`FilterContainer renders 1`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -248,7 +248,7 @@ exports[`FilterContainer renders 1`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -291,8 +291,8 @@ exports[`FilterContainer renders 1`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -438,8 +438,8 @@ exports[`FilterContainer renders 1`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
@@ -683,7 +683,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -703,7 +703,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -741,7 +741,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -761,7 +761,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -804,8 +804,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -951,8 +951,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
@@ -1196,7 +1196,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -1216,7 +1216,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -1254,7 +1254,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -1274,7 +1274,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -1317,8 +1317,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -1464,8 +1464,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
@@ -2504,7 +2504,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -2524,7 +2524,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -2562,7 +2562,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -2582,7 +2582,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -2625,8 +2625,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -2772,8 +2772,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
