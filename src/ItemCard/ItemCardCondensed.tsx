@@ -15,7 +15,6 @@ export class ItemCardCondensed extends React.Component<
     this.state = { redirect: false };
   }
 
-  // (nextContext: any) is defined as such in the React types
   shouldComponentUpdate(
     nextProps: Readonly<ItemCardModels.ItemCardModel>,
     nextState: Readonly<ItemCardCondensedState>
