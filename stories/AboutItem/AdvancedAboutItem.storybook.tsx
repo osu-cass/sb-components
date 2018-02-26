@@ -8,6 +8,7 @@ import { CenterDecorator } from "../CenterDecorator";
 storiesOf("About Item Revision Modal", module)
   .addDecorator(CenterDecorator)
   .addDecorator(RouterDecorator)
-  .add("default", () => (
-    <AdvancedAboutItem {...aboutItemRevisionMockModel} showRubrics={true} />
-  ));
+  .add("default open", () => (
+    <AdvancedAboutItem {...aboutItemRevisionMockModel} showModal={true} />
+  ))
+  .add("closed", () => <AdvancedAboutItem {...aboutItemRevisionMockModel} />);
