@@ -3,7 +3,11 @@
 //
 import { onFilterSelect } from "./Filter/FilterModels";
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
-export { AboutItemModel } from "./AboutItem/AboutItemModels";
+export { AboutThisItemRevision } from "./AboutItem/AboutItemRevision";
+export {
+  AboutItemModel,
+  AboutItemRevisionModel
+} from "./AboutItem/AboutItemModels";
 export { AboutItem } from "./AboutItem/AboutItem";
 
 //

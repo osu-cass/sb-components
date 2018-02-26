@@ -1,4 +1,9 @@
-import { AboutItemModel, RubricModel, GradeLevels } from "src/index";
+import {
+  AboutItemModel,
+  AboutItemRevisionModel,
+  RubricModel,
+  GradeLevels
+} from "src/index";
 import { completeItemCard } from "mocks/ItemCard/mocks";
 
 export const rubricsWithSamples: RubricModel[] = [
@@ -153,3 +158,39 @@ export const rubricsEsn: RubricModel[] = [
 ];
 
 export const allRubrics: RubricModel[] = rubrics.concat(rubricsEsn);
+
+export const aboutItemRevisionMockModel: AboutItemRevisionModel = {
+  itemKey: "100",
+  bankKey: "100",
+  revision: "2",
+  section: "section",
+  AboutItemMetadata: {
+    identifier: "100",
+    itemAuthorIdentifier: "Hannah_Hacker",
+    itemSpecFormat: "SmarterApp",
+    lastModifiedBy: "Hannah_Hacker",
+    securityStatus: "Non-secure",
+    smarterAppItemDescriptor: "Describes item 100-100",
+    status: "Released",
+    stimulusFormat: "Standard",
+    subject: "subject type",
+    version: "2",
+    intendedGrade: "NA",
+    minimumGrade: "NA",
+    maximumGrade: "NA",
+    depthOfKnowledge: "",
+    interactionType: "section",
+    maximumNumberOfPoints: "3.5001395902651566",
+    allowCalculator: "false",
+    copyrightAndOtherRestrictions: "NA",
+    brailleType: "NA",
+    enemyItem: "NA",
+    associatedTutorial: "NA",
+    associatedWordlist: "NA",
+    language: "english",
+    standardPublication: {
+      publication: "SBAC-SH-v1",
+      primaryStandard: "SBAC-SH-v1:SH-Undesignated"
+    }
+  }
+};
