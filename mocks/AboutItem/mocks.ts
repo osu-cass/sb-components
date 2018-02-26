@@ -180,7 +180,7 @@ export const aboutItemRevisionMockModel: AboutItemRevisionModel = {
     maximumGrade: "NA",
     depthOfKnowledge: "",
     interactionType: "section",
-    maximumNumberOfPoints: "3.5001395902651566",
+    maximumNumberOfPoints: "100",
     allowCalculator: "false",
     copyrightAndOtherRestrictions: "NA",
     brailleType: "NA",
