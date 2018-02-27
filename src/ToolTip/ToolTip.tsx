@@ -46,7 +46,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
   renderToolTipHelpText() {
     if (this.props.helpText) {
       return (
-        <div className={"tool-tip-message " + this.props.position}>
+        <div className={`tool-tip-message ${this.props.position}`}>
           {this.renderToolTipHeader()}
           <div
             className="tool-tip-help-text"

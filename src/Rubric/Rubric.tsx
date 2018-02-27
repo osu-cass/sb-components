@@ -10,16 +10,15 @@ export class Rubric extends React.Component<RubricModel, {}> {
       <RubricEntry {...re} key={String(i)} />
     ));
     if (rubricEntries.length === 0) {
-      return null;
+      return undefined;
     }
 
-    const rubrics = (
+    return (
       <div>
         <h4>Rubrics</h4>
         {rubricEntries}
       </div>
     );
-    return rubrics;
   }
 
   renderSampleResponses() {
@@ -32,25 +31,24 @@ export class Rubric extends React.Component<RubricModel, {}> {
         <SampleResponse {...sr} key={key + String(idx)} />
       ));
       rubricSamples.push(...responses);
-      i++;
+      i += 1;
     }
 
     if (rubricSamples.length === 0) {
-      return null;
+      return undefined;
     }
 
-    const sampleResponses = (
+    return (
       <div>
         <h4>Sample Responses</h4>
         {rubricSamples}
       </div>
     );
-
-    return sampleResponses;
   }
 
   render() {
     const label = `${this.props.language} Rubric`;
+
     return (
       <Collapsible label={label}>
         {this.renderRubrics()}

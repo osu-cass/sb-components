@@ -383,4 +383,6 @@ describe("Filter.getCurrentTargets", () => {
   });
 });
 
-describe("Filter.getUpdatedSearchFilters", () => {});
+describe("Filter.getUpdatedSearchFilters", () => {
+  return;
+});

@@ -19,7 +19,7 @@ export const onFilterSelect = (
   const allPressed = option === undefined && selectedCat.displayAllButton;
   if (!selectedCat.disabled) {
     const categoryIndex = categories.indexOf(selectedCat);
-    let options = categories[categoryIndex].filterOptions.slice();
+    const options = categories[categoryIndex].filterOptions.slice();
     if (allPressed) {
       options.forEach((opt: FilterOptionModel) => (opt.isSelected = false));
     }
@@ -33,6 +33,7 @@ export const onFilterSelect = (
       }
     }
     categories[categoryIndex].filterOptions = options;
+
     return categories;
   }
 };
@@ -52,7 +53,7 @@ export enum FilterType {
   CAT = "CAT",
   InteractionType = "InteractionType",
   Calculator = "Calculator",
-  TechnologyType = "TechnologyType" //Contains Performance and CAT
+  TechnologyType = "TechnologyType" // Contains Performance and CAT
 }
 
 export interface FilterOptionModel {
@@ -63,7 +64,7 @@ export interface FilterOptionModel {
 }
 
 export interface BasicFilterCategoryModel extends FilterCategoryModel {
-  type: OptionTypeModel;
+  optionType: OptionTypeModel;
 }
 
 export interface FilterCategoryModel {
@@ -79,6 +80,7 @@ export interface AdvancedFilterCategoryModel extends FilterCategoryModel {
   displayAllButton: boolean;
 }
 
+// tslint:disable-next-line: no-empty-interface
 export interface TechType extends SubjectModel {}
 
 export interface AdvancedFiltersModel {

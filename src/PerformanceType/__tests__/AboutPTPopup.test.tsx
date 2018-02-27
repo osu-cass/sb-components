@@ -13,7 +13,7 @@ describe("AboutPTPopupModal", () => {
     { lifecycleExperimental: true }
   );
 
-  const WrapperExpanded = shallow(
+  const wrapperExpanded = shallow(
     <AboutPTPopupModal
       subject="test"
       description="lorem ipsum"
@@ -29,21 +29,23 @@ describe("AboutPTPopupModal", () => {
   });
 
   it("expanded AboutPT", () => {
-    WrapperExpanded.findWhere(node => node.type() === AboutPTPopupModal);
-    expect(WrapperExpanded).toMatchSnapshot();
+    wrapperExpanded.findWhere(node => node.type() === AboutPTPopupModal);
+    expect(wrapperExpanded).toMatchSnapshot();
   });
 
   it("close button header AboutPT", () => {
-    WrapperExpanded.findWhere(node => node.type() === "button")
+    wrapperExpanded
+      .findWhere(node => node.type() === "button")
       .at(0)
       .simulate("click");
-    expect(WrapperExpanded).toMatchSnapshot();
+    expect(wrapperExpanded).toMatchSnapshot();
   });
 
   it("close button footer AboutPT", () => {
-    WrapperExpanded.findWhere(node => node.type() === "button")
+    wrapperExpanded
+      .findWhere(node => node.type() === "button")
       .at(1)
       .simulate("click");
-    expect(WrapperExpanded).toMatchSnapshot();
+    expect(wrapperExpanded).toMatchSnapshot();
   });
 });

@@ -45,7 +45,7 @@ export function toiSAAP(
   for (const group of accResourceGroups) {
     for (const res of group.accessibilityResources) {
       if (res.currentSelectionCode && !res.disabled) {
-        isaapCodes += res.currentSelectionCode + ";";
+        isaapCodes += `${res.currentSelectionCode};`;
       }
     }
   }
@@ -56,8 +56,9 @@ export function toiSAAP(
 export function resetResource(
   model: AccessibilityResourceModel
 ): AccessibilityResourceModel {
-  const newModel = Object.assign({}, model);
+  const newModel = { ...model };
   newModel.currentSelectionCode = model.defaultSelection;
+
   return newModel;
 }
 
@@ -79,33 +80,8 @@ export function toCookie(accGroups: AccResourceGroupModel[]): string {
   }
 
   const json = JSON.stringify(prefs);
-  const cookie = btoa(json);
-  return cookie;
-}
 
-export function addDisabledPlaceholder(
-  resource: AccessibilityResourceModel
-): AccessibilityResourceModel {
-  if (resource.disabled) {
-    const newSelection = { ...resource };
-    const disabledOption: DropDownSelectionModel = {
-      label: "Disabled for item",
-      selectionCode: "",
-      disabled: true,
-      order: 0,
-      hidden: false
-    };
-    newSelection.selections.push(disabledOption);
-    newSelection.currentSelectionCode = "";
-    return newSelection;
-  }
-  return resource;
-  function readCookie(name: string): string | undefined {
-    const cookie = document.cookie.match(
-      "(^|;)\\s*" + name + "\\s*=\\s*([^;]+)"
-    );
-    return cookie ? cookie.pop() : "";
-  }
+  return btoa(json);
 }
 
 export const aboutThisItemViewModelClient = (params: ItemModel) =>

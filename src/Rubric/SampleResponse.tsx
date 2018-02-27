@@ -4,8 +4,9 @@ import { SampleResponseModel } from "./RubricModels";
 
 export class SampleResponse extends React.Component<SampleResponseModel, {}> {
   render() {
-    const pointLabel = this.props.scorePoint == "1" ? "point" : "points";
+    const pointLabel = this.props.scorePoint === "1" ? "point" : "points";
     const label = `${this.props.name} (${this.props.scorePoint} ${pointLabel})`;
+
     return (
       <Collapsible label={label}>
         <div className="sample-response">

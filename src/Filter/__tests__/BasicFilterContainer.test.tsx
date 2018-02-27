@@ -8,28 +8,30 @@ import { Select } from "../../Select/Select";
 import { AdvancedFilterContainer } from "../AdvancedFilterContainer";
 
 describe("BasicFilterContainer", () => {
-  const AdvFilExpand = jest.fn();
+  const advFilExpand = jest.fn();
 
   const updateFilter = (filterCategories: BasicFilterCategoryModel[]) => {
     wrapper.setProps({ filterCategories });
   };
 
-  let wrapper = shallow(
+  const wrapper = shallow(
     <BasicFilterContainer
       filterCategories={mockBasicFilterCategories}
       onUpdateFilter={updateFilter}
       containsAdvancedFilter={false}
-      handleAdvancedFilterExpand={() => {}}
+      handleAdvancedFilterExpand={() => {
+        return;
+      }}
     />,
     { lifecycleExperimental: true }
   );
 
-  let wrapper1 = shallow(
+  const wrapper1 = shallow(
     <BasicFilterContainer
       filterCategories={mockBasicFilterCategories}
       onUpdateFilter={updateFilter}
       containsAdvancedFilter={true}
-      handleAdvancedFilterExpand={AdvFilExpand}
+      handleAdvancedFilterExpand={advFilExpand}
     />,
     { lifecycleExperimental: true }
   );
@@ -96,7 +98,7 @@ describe("BasicFilterContainer", () => {
     );
 
     expect(advFilter).toBeDefined();
-    expect(AdvFilExpand).toBeCalled();
+    expect(advFilExpand).toBeCalled();
 
     expandButton.simulate("click");
     expect(wrapper1).toMatchSnapshot();

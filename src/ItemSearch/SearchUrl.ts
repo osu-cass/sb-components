@@ -7,7 +7,7 @@ export interface ExpressQuery {
   [param: string]: string;
 }
 
-// tslint:disable-next-line:no-stateless-class
+// tslint:disable-next-line:no-stateless-class no-unnecessary-class
 export class SearchUrl {
   /**
    * Encode the search params object into a query string to be set in the url
@@ -104,10 +104,10 @@ export class SearchUrl {
     const grades = this.getQueryParam(query, FilterType.Grade);
     let gradesEnum: GradeLevels | undefined;
     if (grades) {
-      gradesEnum = GradeLevels.NA;
-      grades.forEach(
-        g => (gradesEnum = GradeLevel.gradeLevelAdd(gradesEnum!, g))
-      );
+      grades.forEach(g => {
+        gradesEnum = GradeLevels.NA;
+        gradesEnum = GradeLevel.gradeLevelAdd(gradesEnum, g);
+      });
     }
     const subjects = this.getQueryParam(query, FilterType.Subject);
     const claims = this.getQueryParam(query, FilterType.Claim);
@@ -117,7 +117,7 @@ export class SearchUrl {
     );
     const targetsStrings = this.getQueryParam(query, FilterType.Target);
     const targets = targetsStrings
-      ? targetsStrings.map(t => Number(t))
+      ? targetsStrings.map(t => parseInt(t, 10))
       : undefined;
     const performanceOnly = this.getBoolQueryParam(
       query,

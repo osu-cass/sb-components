@@ -51,8 +51,6 @@ export class AdvFilContainerTestWrapper extends React.Component<
   }
 }
 
-export interface BasFilContainerTestProps extends BasicFilterContainerProps {}
-
 export interface BasFilContainerTestState {
   filterCategories: BasicFilterCategoryModel[];
 }
@@ -61,10 +59,10 @@ export interface BasFilContainerTestState {
 // that we can confirm that it works as expected. It passes the filterCategories into
 // the BasicFilterContainer as props
 export class BasFilContainerTestWrapper extends React.Component<
-  BasFilContainerTestProps,
+  BasicFilterContainerProps,
   BasFilContainerTestState
 > {
-  constructor(props: BasFilContainerTestProps) {
+  constructor(props: BasicFilterContainerProps) {
     super(props);
     this.state = {
       filterCategories: mockBasicFilterCategories
@@ -85,8 +83,6 @@ export class BasFilContainerTestWrapper extends React.Component<
   }
 }
 
-export interface FilterContainerTestProps {}
-
 export interface FilterContainerTestState {
   basicFilterCategories: BasicFilterCategoryModel[];
   advancedFilterCategories: AdvancedFilterCategoryModel[];
@@ -96,10 +92,10 @@ export interface FilterContainerTestState {
 // that we can confirm that it works as expected. It passes the advanced and basic filterCategories into
 // the FilterContainer as props
 export class FilterContainerTestWrapper extends React.Component<
-  FilterContainerTestProps,
+  {},
   FilterContainerTestState
 > {
-  constructor(props: FilterContainerTestProps) {
+  constructor(props: {}) {
     super(props);
     this.state = {
       basicFilterCategories: mockBasicFilterCategories,
@@ -118,6 +114,7 @@ export class FilterContainerTestWrapper extends React.Component<
 
   render() {
     const { basicFilterCategories, advancedFilterCategories } = this.state;
+
     return (
       <FilterContainer
         basicFilterCategories={basicFilterCategories}

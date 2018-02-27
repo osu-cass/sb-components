@@ -13,8 +13,10 @@ export interface QuestionViewProps {
 
 export class QuestionView extends React.Component<QuestionViewProps, {}> {
   renderRubric(data?: AboutItemModel) {
-    if (!this.props.displayScoreInfo) return null;
-    let rubric: JSX.Element | undefined = undefined;
+    if (!this.props.displayScoreInfo) {
+      return undefined;
+    }
+    let rubric: JSX.Element | undefined;
     if (data && data.sampleItemScoring && data.sampleItemScoring.rubrics) {
       const entries = data.sampleItemScoring.rubrics
         .map(r => r.rubricEntries)
@@ -29,15 +31,19 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
         const entriesJsx =
           samples.length > 0 ? (
             <div>
-              <b>Rubric:</b> ({entries[0].scorepoint} point) {entries[0].value}
+              <b>Rubric:</b> ({entries[0].scorepoint}point) {entries[0].value}
             </div>
-          ) : null;
+          ) : (
+            undefined
+          );
         const samplesJsx =
           samples.length > 0 ? (
             <div>
               <b>Exemplar:</b> {samples[0]}
             </div>
-          ) : null;
+          ) : (
+            undefined
+          );
 
         rubric = (
           <div>
@@ -47,7 +53,7 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
       }
     }
 
-    return rubric ? rubric : null;
+    return rubric ? rubric : undefined;
   }
 
   render() {
@@ -56,12 +62,16 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
     const evidenceStatement =
       data && data.evidenceStatement ? (
         <EvidenceStatement statement={data.evidenceStatement} />
-      ) : null;
+      ) : (
+        undefined
+      );
 
     const dataTable =
       data && data.itemCardViewModel ? (
         <ItemCardTable card={data.itemCardViewModel} />
-      ) : null;
+      ) : (
+        undefined
+      );
 
     const key =
       data &&
@@ -71,7 +81,9 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
         <div>
           <b>Key:</b> {data.sampleItemScoring.answerKey}
         </div>
-      ) : null;
+      ) : (
+        undefined
+      );
 
     return (
       <div className="item">

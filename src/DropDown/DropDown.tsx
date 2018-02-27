@@ -37,6 +37,7 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
         aria-hidden={selection.disabled}
         key={selection.selectionCode}
         className={disabledCSS}
+        aria-selected={false}
       >
         {label}
       </option>
