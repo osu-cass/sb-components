@@ -5,15 +5,14 @@ import {
   AdvancedAboutItem,
   ItemAccessibilityModal,
   ItemViewerFrame,
-  ResourceSelectionsModel
-} from "../index";
-import { RevisionContainer } from "../Revisions/RevisionContainer";
-import { RevisionModel } from "../Revisions/Revision";
-import {
+  ResourceSelectionsModel,
+  RevisionContainer,
+  Revision,
   ItemRevisionModel,
   itemRevisionKey,
-  itemBankItem
-} from "./ItemBankModels";
+  getItemBankName,
+  RevisionModel
+} from "../index";
 
 export interface ItemBankViewerProps {
   onAccessibilityUpdate: (accResourceGroups: AccResourceGroupModel[]) => void;
@@ -66,8 +65,8 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderMidNav() {
     const { onItemSelect, nextItem, prevItem } = this.props;
-    const nextItemName = nextItem ? itemBankItem(nextItem) : undefined;
-    const previousItemName = prevItem ? itemBankItem(prevItem) : undefined;
+    const nextItemName = nextItem ? getItemBankName(nextItem) : undefined;
+    const previousItemName = prevItem ? getItemBankName(prevItem) : undefined;
     //TODO: add previous and next items
     //TODO: add icons for prev and next
     return (

@@ -1,7 +1,11 @@
 import * as React from "react";
-import { ItemRevisionModel, SectionModel } from "./ItemBankModels";
-import { Accordion, ToolTip } from "../index";
-import { ItemEntryTable } from "../ItemEntryTable/ItemEntryTable";
+import {
+  Accordion,
+  ToolTip,
+  ItemRevisionModel,
+  SectionModel,
+  ItemEntryTable
+} from "../index";
 
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;

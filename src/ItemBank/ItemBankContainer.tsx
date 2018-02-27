@@ -1,3 +1,5 @@
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import {
   AboutItem,
   AboutItemModel,
@@ -11,20 +13,16 @@ import {
   AboutItemRevisionModel,
   Resource,
   GradeLevels,
-  Subscription
-} from "../index";
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import {
+  Subscription,
   ItemRevisionModel,
   itemRevisionKey,
   SectionModel,
   AccessibilityRevisionModel,
-  validItemRevisionModel
-} from "./ItemBankModels";
-import { ItemBankViewer } from "./ItemBankViewer";
-import { ItemBankEntry } from "./ItemBankEntry";
-import { RevisionModel } from "../Revisions/Revision";
+  validItemRevisionModel,
+  RevisionModel,
+  ItemBankViewer,
+  ItemBankEntry
+} from "../index";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (

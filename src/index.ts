@@ -105,7 +105,11 @@ export {
 export { ItemBankEntry, ItemBankEntryProps } from "./ItemBank/ItemBankEntry";
 export {
   ItemRevisionModel,
-  validItemRevisionModel
+  validItemRevisionModel,
+  AccessibilityRevisionModel,
+  itemRevisionKey,
+  SectionModel,
+  getItemBankName
 } from "./ItemBank/ItemBankModels";
 export { ItemBankViewer, ItemBankViewerProps } from "./ItemBank/ItemBankViewer";
 

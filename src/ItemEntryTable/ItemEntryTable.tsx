@@ -2,10 +2,12 @@ import * as React from "react";
 import {
   ItemRevisionModel,
   itemRevisionKey,
-  SectionModel
-} from "../ItemBank/ItemBankModels";
-import { SelectOptionProps, SelectOption, Select } from "../index";
-import { ItemEntryRow } from "./ItemEntryRow";
+  SectionModel,
+  SelectOptionProps,
+  SelectOption,
+  Select,
+  ItemEntryRow
+} from "../index";
 
 export interface ItemEntryTableProps {
   itemRows: ItemRevisionModel[];
