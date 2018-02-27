@@ -32,7 +32,7 @@ exports[`FilterContainer expands the advanced filter 1`] = `
             },
           ],
           "label": "Grade",
-          "type": 3,
+          "optionType": 3,
         },
         Object {
           "code": "Subject",
@@ -52,7 +52,7 @@ exports[`FilterContainer expands the advanced filter 1`] = `
             },
           ],
           "label": "Subjects",
-          "type": 2,
+          "optionType": 2,
         },
       ]
     }
@@ -94,7 +94,7 @@ exports[`FilterContainer expands the advanced filter 2`] = `
             },
           ],
           "label": "Grade",
-          "type": 3,
+          "optionType": 3,
         },
         Object {
           "code": "Subject",
@@ -114,7 +114,7 @@ exports[`FilterContainer expands the advanced filter 2`] = `
             },
           ],
           "label": "Subjects",
-          "type": 2,
+          "optionType": 2,
         },
       ]
     }
@@ -156,7 +156,7 @@ exports[`FilterContainer expands the advanced filter 3`] = `
             },
           ],
           "label": "Grade",
-          "type": 3,
+          "optionType": 3,
         },
         Object {
           "code": "Subject",
@@ -176,7 +176,7 @@ exports[`FilterContainer expands the advanced filter 3`] = `
             },
           ],
           "label": "Subjects",
-          "type": 2,
+          "optionType": 2,
         },
       ]
     }

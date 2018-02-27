@@ -20,8 +20,9 @@ import {
   ItemSearch
 } from "../index";
 import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
+import { constants } from "fs";
 
-// tslint:disable-next-line:no-stateless-class
+// tslint:disable-next-line:no-stateless-class, no-unnecessary-class
 export class Filter {
   /**
    * Returns a list of selected codes for the given FilterType and Categories
@@ -32,16 +33,13 @@ export class Filter {
     key: FilterType,
     filterModels: FilterCategoryModel[]
   ): string[] | undefined {
-    let filterCategory = filterModels.find(f => f.code === key);
-    if (filterCategory) {
-      return (
-        filterCategory.filterOptions
+    const filterCategory = filterModels.find(f => f.code === key);
+
+    return filterCategory
+      ? filterCategory.filterOptions
           .filter(f => f.isSelected)
           .map(f => f.key) || []
-      );
-    } else {
-      return undefined;
-    }
+      : undefined;
   }
 
   /**
@@ -85,13 +83,14 @@ export class Filter {
   public static filterStringTypes<T extends SearchFilterStringTypes>(
     filterOptions: T[],
     codes?: string[]
-  ): Array<T> {
+  ): T[] {
     let filteredClaims = filterOptions;
     if (codes && codes.length > 0) {
       filteredClaims = filteredClaims.filter(s =>
         codes.some(ssc => ssc === s.code)
       );
     }
+
     return filteredClaims;
   }
 
@@ -104,13 +103,14 @@ export class Filter {
     targets: TargetModel[],
     targetCodes: number[]
   ): TargetModel[] {
-    let filteredTargets: TargetModel[] = [];
+    const filteredTargets: TargetModel[] = [];
     targetCodes.forEach(tc => {
       const target = targets.find(t => t.nameHash === tc);
       if (target) {
         filteredTargets.push(target);
       }
     });
+
     return filteredTargets;
   }
 
@@ -153,12 +153,13 @@ export class Filter {
     claims: ClaimModel[],
     filteredSubjects: SubjectModel[]
   ): ClaimModel[] | undefined {
-    let filteredClaims: ClaimModel[] | undefined = undefined;
+    let filteredClaims: ClaimModel[] | undefined;
 
     if (filteredSubjects && filteredSubjects.length > 0) {
       const subjectClaims = this.getSubjectClaimCodes(filteredSubjects);
       filteredClaims = this.filterStringTypes(claims, subjectClaims);
     }
+
     return filteredClaims;
   }
 
@@ -171,7 +172,7 @@ export class Filter {
     interactionTypes: InteractionTypeModel[],
     filteredSubjects: SubjectModel[]
   ): InteractionTypeModel[] | undefined {
-    let filteredIntTypes: InteractionTypeModel[] | undefined = undefined;
+    let filteredIntTypes: InteractionTypeModel[] | undefined;
     if (filteredSubjects.length > 0) {
       const subjectInteractionTypes = this.getSubjectInteractionTypes(
         filteredSubjects
@@ -181,6 +182,7 @@ export class Filter {
         subjectInteractionTypes
       );
     }
+
     return filteredIntTypes;
   }
 
@@ -194,11 +196,13 @@ export class Filter {
     searchApiModel: SearchAPIParamsModel,
     filteredClaims: ClaimModel[]
   ): TargetModel[] | undefined {
-    let filteredTargets: TargetModel[] | undefined = undefined;
+    let filteredTargets: TargetModel[] | undefined;
 
     if (searchApiModel.claims && searchApiModel.claims.length > 0) {
       const selectedClaims = filteredClaims.filter(
-        c => searchApiModel.claims!.indexOf(c.code) !== -1
+        c =>
+          /* tslint:disable: no-non-null-assertion */
+          searchApiModel.claims!.indexOf(c.code) !== -1
       );
       const targetCodes = this.getClaimTargetCodes(selectedClaims);
       filteredTargets = this.filterTargets(targets, targetCodes);

@@ -322,6 +322,7 @@ exports[`Storyshots Item Bank default 1`] = `
               id="itemviewer-iframe"
               onLoad={[Function]}
               onLoadStart={[Function]}
+              sandbox=""
               src="http://ivs.smarterbalanced.org/items?ids=187-3377"
             />
           </div>

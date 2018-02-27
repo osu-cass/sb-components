@@ -2,10 +2,10 @@ import * as React from "react";
 import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
 import { AboutPTModal } from "src/PerformanceType/AboutPT";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
 storiesOf("About PT", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("About Math", () => (
     <AboutPTModal subject="math" description="description" />
   ))

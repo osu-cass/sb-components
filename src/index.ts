@@ -91,10 +91,7 @@ export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 // ItemCard Components, Models, and Actions
 //
 export { ItemCard } from "./ItemCard/ItemCard";
-export {
-  ItemCardCondensed,
-  ItemCardCondensedProps
-} from "./ItemCard/ItemCardCondensed";
+export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { ItemCardModel, itemIdEqual } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
@@ -118,7 +115,6 @@ export {
   toCookie,
   toiSAAP,
   trimAccResource,
-  addDisabledPlaceholder,
   resetResource,
   itemAccessibilityClient,
   itemPageClient,

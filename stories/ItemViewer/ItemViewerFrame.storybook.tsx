@@ -2,7 +2,6 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { ItemViewerFrame } from "../../src/ItemViewer/ItemViewerFrame";
 
-// url that will return as item
 const url = "http://ivs.smarterbalanced.org/items?ids=187-3246";
 
 storiesOf("Item Viewer Frame", module)

@@ -6,11 +6,11 @@ import {
   mockAccResourceGroups,
   allAccessibilityResourceGroups
 } from "mocks/Accessibility/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 import { ItemAccessibilityModal } from "src/index";
 
 storiesOf("Accessibility Modal", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("few options hiding", () => (
     <ItemAccessibilityModal
       {...accessibilityModalProp}

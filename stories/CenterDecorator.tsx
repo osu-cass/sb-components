@@ -11,7 +11,7 @@ const style: React.CSSProperties = {
 };
 
 // helper component that centers our storybook stories on the screen
-export const CenterDecorator = (storyFn: () => JSX.Element) => (
+export const centerDecorator = (storyFn: () => JSX.Element) => (
   <div style={style} className="section">
     {storyFn()}
   </div>

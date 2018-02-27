@@ -5,16 +5,16 @@ import { storiesOf } from "@storybook/react";
 import { ItemBank } from "src/ItemBank/ItemBank";
 import { AboutItem } from "src/AboutItem/AboutItem";
 import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 import { ItemAccessibilityModal } from "src/";
-import { RouterDecorator } from "../RouterDecorator";
+import { routerDecorator } from "../RouterDecorator";
 import {
   accessibilityModalProp,
   mockAccResourceGroups
 } from "mocks/Accessibility/mocks";
 
 storiesOf("Item Bank", module)
-  .addDecorator(RouterDecorator)
+  .addDecorator(routerDecorator)
   .add("default", () => (
     <Layout
       children={<ItemBank {...ItemBankPropsMockModel} />}

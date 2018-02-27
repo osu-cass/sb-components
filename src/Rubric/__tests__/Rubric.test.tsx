@@ -27,9 +27,9 @@ const sampleResponse: SampleResponseModel = {
 const samples: RubricSampleModel[] = [];
 
 const rubric: RubricModel = {
+  samples,
   language: "english",
-  rubricEntries: [entry],
-  samples
+  rubricEntries: [entry]
 };
 
 describe("RubricEntryComponent", () => {
