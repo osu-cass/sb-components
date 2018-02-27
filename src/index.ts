@@ -1,6 +1,10 @@
 //
 // AboutItem Components and Models
 //
+export {
+  AdvancedAboutItem,
+  AboutItemProps
+} from "./AboutItem/AdvancedAboutItem";
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
 export { AboutThisItemRevision } from "./AboutItem/AboutItemRevision";
 export {
