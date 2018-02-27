@@ -140,7 +140,6 @@ export class ItemBankContainer extends React.Component<
 
   handleChangeViewItem = () => {
     const { currentItem } = this.state;
-    console.log("changed item", currentItem);
     if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem);
       this.fetchRevisions(currentItem);
