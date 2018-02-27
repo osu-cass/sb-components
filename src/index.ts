@@ -96,6 +96,20 @@ export { CombinedFilter, CombinedFilterProps } from "./Filter/CombinedFilter";
 export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 
 //
+// Item Bank
+//
+export {
+  ItemBankContainer,
+  ItemBankContainerProps
+} from "./ItemBank/ItemBankContainer";
+export { ItemBankEntry, ItemBankEntryProps } from "./ItemBank/ItemBankEntry";
+export {
+  ItemRevisionModel,
+  validItemRevisionModel
+} from "./ItemBank/ItemBankModels";
+export { ItemBankViewer, ItemBankViewerProps } from "./ItemBank/ItemBankViewer";
+
+//
 // ItemCard Components, Models, and Actions
 //
 export { ItemCard } from "./ItemCard/ItemCard";
@@ -103,6 +117,15 @@ export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { ItemCardModel, itemIdEqual } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
+
+//
+// Item Entry Table
+//
+export {
+  ItemEntryTable,
+  ItemEntryTableProps
+} from "./ItemEntryTable/ItemEntryTable";
+export { ItemEntryRow, ItemEntryRowProps } from "./ItemEntryTable/ItemEntryRow";
 
 //
 // Item Page
@@ -221,6 +244,19 @@ export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
 //
 export { AboutPTModal } from "./PerformanceType/AboutPT";
 export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
+
+//
+// Revision
+//
+export {
+  RevisionContainer,
+  RevisionContainerProps
+} from "./Revisions/RevisionContainer";
+export {
+  Revision,
+  RevisionModel,
+  RevisionModelProps
+} from "./Revisions/Revision";
 
 //
 // Rubric
