@@ -1102,7 +1102,11 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -1123,12 +1127,10 @@ exports[`ItemPageTable expands 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1516,7 +1518,11 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -1537,12 +1543,10 @@ exports[`ItemPageTable expands 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1739,7 +1743,11 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -1760,12 +1768,10 @@ exports[`ItemPageTable expands 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1962,7 +1968,11 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -1983,12 +1993,10 @@ exports[`ItemPageTable expands 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -2850,7 +2858,11 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -2871,12 +2883,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -3074,7 +3084,11 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -3095,12 +3109,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -3297,7 +3309,11 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -3318,12 +3334,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -3520,7 +3534,11 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -3541,12 +3559,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -4443,7 +4459,11 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -4464,12 +4484,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -4667,7 +4685,11 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -4688,12 +4710,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -4891,7 +4911,11 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -4912,12 +4936,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -5114,7 +5136,11 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -5135,12 +5161,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -6077,7 +6101,11 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -6098,12 +6126,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -6301,7 +6327,11 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -6322,12 +6352,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -6525,7 +6553,11 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -6546,12 +6578,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -6748,7 +6778,11 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -6769,12 +6803,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -7742,7 +7774,11 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -7763,12 +7799,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -7965,7 +7999,11 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -7986,12 +8024,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -8188,7 +8224,11 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -8209,12 +8249,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -8412,7 +8450,11 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -8433,12 +8475,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -9436,7 +9476,11 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -9457,12 +9501,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -9659,7 +9701,11 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -9680,12 +9726,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -9882,7 +9926,11 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -9903,12 +9951,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -10106,7 +10152,11 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -10127,12 +10177,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -11160,7 +11208,11 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target A description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -11181,12 +11233,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target A description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -11384,7 +11434,11 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="Target B description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -11405,12 +11459,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "Target B description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -11607,7 +11659,11 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target D description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -11628,12 +11684,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target D description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -11830,7 +11884,11 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     displayIcon={false}
-                    helpText="target C description"
+                    helpText={
+                      <p>
+                        col.helpText(cellData)
+                      </p>
+                    }
                     position="top"
                   >
                     <div
@@ -11851,12 +11909,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         >
                           <div
                             className="tool-tip-help-text"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "target C description",
-                              }
-                            }
                           />
+                          <p>
+                            col.helpText(cellData)
+                          </p>
                         </div>
                       </div>
                     </div>

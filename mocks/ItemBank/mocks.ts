@@ -1,33 +1,33 @@
-import * as ItemBank from "src/ItemBank/ItemBank";
+import {
+  AccessibilityRevisionModel,
+  ItemRevisionModel,
+  SectionModel
+} from "src/ItemBank/ItemBankModels";
+import { mockPromise } from "mocks/promise";
+import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
+import { AccResourceGroupModel, AboutItemRevisionModel } from "src/index";
+import { aboutItemRevisionMockModel } from "mocks/AboutItem/mocks";
+import { RevisionModel } from "src/Revisions/Revision";
 
-const testDate = new Date("11/11/2015");
+export const mockBankAccessibilityClient = (acc: AccessibilityRevisionModel) =>
+  mockPromise<AccResourceGroupModel[]>(allAccessibilityResourceGroups);
 
-export const RevisionMockModelOne: ItemBank.RevisionModel = {
-  author: "Troy Barnes",
-  date: testDate,
-  commitMessage: "Added functionality to the website",
-  commitHash: "ab65jg"
-};
+export const mockBankAboutItemClient = (item: ItemRevisionModel) =>
+  mockPromise<AboutItemRevisionModel>(aboutItemRevisionMockModel);
 
-export const RevisionMockModelTwo: ItemBank.RevisionModel = {
-  author: "Pierce Hawthorne",
-  date: testDate,
-  commitMessage:
-    "I want to see what happens when there is a much longer commit message than all of the rest",
-  commitHash: "h4lso6"
-};
+export const mockBankRevisionsClient = (item: ItemRevisionModel) =>
+  mockPromise<RevisionModel[]>([]);
 
-export const RevisionMockModelThree: ItemBank.RevisionModel = {
-  author: "Annie Edison",
-  date: testDate,
-  commitMessage: "Changed one of the pages",
-  commitHash: "k5ls58"
-};
+export const mockBankSectionsClient = () =>
+  mockPromise<SectionModel[]>(sectionMocks);
 
-export const ItemBankPropsMockModel: ItemBank.ItemBankProps = {
-  revisions: [
-    RevisionMockModelOne,
-    RevisionMockModelTwo,
-    RevisionMockModelThree
-  ]
-};
+const sectionMocks: SectionModel[] = [
+  {
+    key: "siw",
+    value: "siw"
+  },
+  {
+    key: "math",
+    value: "math"
+  }
+];

@@ -84,12 +84,10 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
             >
               <div
                 className="tool-tip-help-text"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Subject Help",
-                  }
-                }
               />
+              <p>
+                helpText
+              </p>
             </div>
           </div>
         </div>
@@ -199,12 +197,10 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
             >
               <div
                 className="tool-tip-help-text"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Subject Help",
-                  }
-                }
               />
+              <p>
+                helpText
+              </p>
             </div>
           </div>
         </div>
@@ -289,12 +285,10 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
             >
               <div
                 className="tool-tip-help-text"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Subject Help",
-                  }
-                }
               />
+              <p>
+                helpText
+              </p>
             </div>
           </div>
         </div>
@@ -387,12 +381,10 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
             >
               <div
                 className="tool-tip-help-text"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Subject Help",
-                  }
-                }
               />
+              <p>
+                helpText
+              </p>
             </div>
           </div>
         </div>
@@ -485,12 +477,10 @@ exports[`Storyshots Advanced Filter no options 1`] = `
             >
               <div
                 className="tool-tip-help-text"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Subject Help",
-                  }
-                }
               />
+              <p>
+                helpText
+              </p>
             </div>
           </div>
         </div>
@@ -562,12 +552,10 @@ exports[`Storyshots Advanced Filter single select 1`] = `
             >
               <div
                 className="tool-tip-help-text"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Subject Help",
-                  }
-                }
               />
+              <p>
+                helpText
+              </p>
             </div>
           </div>
         </div>
