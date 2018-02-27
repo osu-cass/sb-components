@@ -17,7 +17,7 @@ export interface RevisionModelProps extends RevisionModel {
 export const Revision: React.SFC<RevisionModelProps> = props => {
   const renderHelpText = () => {
     return (
-      <div>
+      <div className="tool-tip-help-text">
         <b>Commit: </b>
         {props.commitMessage}
         <br />
@@ -38,7 +38,9 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         }
         helpText={renderHelpText()}
       >
-        <button className="btn btn-link">{props.commitHash}</button>
+        <button className="btn btn-link revisions-link" onClick={this.onClick}>
+          {props.commitHash}
+        </button>
         <div className="revisions-details">
           {props.author}-
           {props.date.getMonth() + 1}/{props.date.getDate()}
