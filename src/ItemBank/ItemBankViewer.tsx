@@ -9,6 +9,11 @@ import {
 } from "../index";
 import { RevisionContainer } from "../Revisions/RevisionContainer";
 import { RevisionModel } from "../Revisions/Revision";
+import {
+  ItemRevisionModel,
+  itemRevisionKey,
+  itemBankItem
+} from "./ItemBankModels";
 
 export interface ItemBankViewerProps {
   onAccessibilityUpdate: (accResourceGroups: AccResourceGroupModel[]) => void;
@@ -19,6 +24,8 @@ export interface ItemBankViewerProps {
   aboutItemRevisionModel?: AboutItemRevisionModel;
   accResourceGroups?: AccResourceGroupModel[];
   revisions?: RevisionModel[];
+  nextItem?: ItemRevisionModel;
+  prevItem?: ItemRevisionModel;
 }
 
 export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
@@ -58,23 +65,26 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
   }
 
   renderMidNav() {
-    const { onItemSelect } = this.props;
-
+    const { onItemSelect, nextItem, prevItem } = this.props;
+    const nextItemName = nextItem ? itemBankItem(nextItem) : undefined;
+    const previousItemName = prevItem ? itemBankItem(prevItem) : undefined;
     //TODO: add previous and next items
-
+    //TODO: add icons for prev and next
     return (
       <div className="nav-buttons">
         <button
           onClick={() => onItemSelect("previous")}
           className="btn btn-link previous"
+          disabled={prevItem ? false : true}
         >
-          Previous
+          {`Previous ${previousItemName}`}
         </button>
         <button
           onClick={() => onItemSelect("next")}
           className="btn btn-link next"
+          disabled={nextItem ? false : true}
         >
-          Next
+          {`Next ${nextItemName}`}
         </button>
       </div>
     );

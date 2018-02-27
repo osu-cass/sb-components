@@ -140,6 +140,7 @@ export class ItemBankContainer extends React.Component<
 
   handleChangeViewItem = () => {
     const { currentItem } = this.state;
+    console.log("changed item", currentItem);
     if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem);
       this.fetchRevisions(currentItem);
@@ -244,13 +245,16 @@ export class ItemBankContainer extends React.Component<
       itemUrl,
       aboutItemRevisionModel,
       accResourceGroups,
-      revisions
+      revisions,
+      items,
+      currentItem
     } = this.state;
     let content: JSX.Element | undefined;
 
     const aboutItemContent = getResourceContent(aboutItemRevisionModel);
     const accResourceGroupsContent = getResourceContent(accResourceGroups);
     const revisionsContent = getResourceContent(revisions);
+    const currentIdx = this.getItemIndex(currentItem || {}, items);
 
     content = (
       <ItemBankViewer
@@ -262,6 +266,8 @@ export class ItemBankContainer extends React.Component<
         aboutItemRevisionModel={aboutItemContent}
         accResourceGroups={accResourceGroupsContent}
         revisions={revisionsContent}
+        nextItem={items[currentIdx + 1]}
+        prevItem={{}}
       />
     );
 
