@@ -73,6 +73,10 @@ export class ItemBankContainer extends React.Component<
   }
 
   componentDidMount() {
+    this.fetchSections();
+  }
+
+  componentWillUnmount() {
     this.subscription.cancelAll();
   }
 
@@ -248,20 +252,18 @@ export class ItemBankContainer extends React.Component<
     const accResourceGroupsContent = getResourceContent(accResourceGroups);
     const revisionsContent = getResourceContent(revisions);
 
-    if (aboutItemContent && accResourceGroupsContent && revisionsContent) {
-      content = (
-        <ItemBankViewer
-          onAccessibilityUpdate={this.onAccessibilityUpdate}
-          onAccessibilityReset={this.onAccessibilityReset}
-          onItemSelect={this.onItemSelect}
-          onRevisionSelect={this.onRevisionSelect}
-          itemUrl={itemUrl}
-          aboutItemRevisionModel={aboutItemContent}
-          accResourceGroups={accResourceGroupsContent}
-          revisions={revisionsContent}
-        />
-      );
-    }
+    content = (
+      <ItemBankViewer
+        onAccessibilityUpdate={this.onAccessibilityUpdate}
+        onAccessibilityReset={this.onAccessibilityReset}
+        onItemSelect={this.onItemSelect}
+        onRevisionSelect={this.onRevisionSelect}
+        itemUrl={itemUrl}
+        aboutItemRevisionModel={aboutItemContent}
+        accResourceGroups={accResourceGroupsContent}
+        revisions={revisionsContent}
+      />
+    );
 
     return content;
   }

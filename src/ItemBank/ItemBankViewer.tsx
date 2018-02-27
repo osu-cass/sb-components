@@ -16,9 +16,9 @@ export interface ItemBankViewerProps {
   onItemSelect: (direction: "next" | "previous") => void;
   onRevisionSelect: (revision: string) => void;
   itemUrl?: string;
-  aboutItemRevisionModel: AboutItemRevisionModel;
-  accResourceGroups: AccResourceGroupModel[];
-  revisions: RevisionModel[];
+  aboutItemRevisionModel?: AboutItemRevisionModel;
+  accResourceGroups?: AccResourceGroupModel[];
+  revisions?: RevisionModel[];
 }
 
 export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
@@ -30,26 +30,31 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     console.error("Not Implemented");
   };
 
-  renderRightNav(): JSX.Element {
+  renderRightNav(): JSX.Element | undefined {
     const {
       onAccessibilityUpdate,
       onAccessibilityReset,
       accResourceGroups
     } = this.props;
 
-    return (
-      <div
-        className="item-nav-right-group"
-        role="group"
-        aria-label="Second group"
-      >
-        <ItemAccessibilityModal
-          accResourceGroups={accResourceGroups}
-          onSave={this.handleAccessibilityChange}
-          onReset={onAccessibilityReset}
-        />
-      </div>
-    );
+    let content: JSX.Element | undefined;
+    if (accResourceGroups) {
+      content = (
+        <div
+          className="item-nav-right-group"
+          role="group"
+          aria-label="Second group"
+        >
+          <ItemAccessibilityModal
+            accResourceGroups={accResourceGroups}
+            onSave={this.handleAccessibilityChange}
+            onReset={onAccessibilityReset}
+          />
+        </div>
+      );
+    }
+
+    return content;
   }
 
   renderMidNav() {
@@ -75,26 +80,30 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     );
   }
 
-  renderNavBar() {
-    const { aboutItemRevisionModel } = this.props;
-
-    return (
-      <div
-        className="item-nav"
-        role="toolbar"
-        aria-label="Toolbar with button groups"
-      >
+  renderNavBar(): JSX.Element | undefined {
+    const { aboutItemRevisionModel, accResourceGroups } = this.props;
+    let content: JSX.Element | undefined;
+    if (aboutItemRevisionModel && accResourceGroups) {
+      content = (
         <div
-          className="item-nav-left-group"
-          role="group"
-          aria-label="First group"
+          className="item-nav"
+          role="toolbar"
+          aria-label="Toolbar with button groups"
         >
-          <AdvancedAboutItem {...aboutItemRevisionModel} />
+          <div
+            className="item-nav-left-group"
+            role="group"
+            aria-label="First group"
+          >
+            <AdvancedAboutItem {...aboutItemRevisionModel} />
+          </div>
+          {this.renderMidNav()}
+          {this.renderRightNav()}
         </div>
-        {this.renderMidNav()}
-        {this.renderRightNav()}
-      </div>
-    );
+      );
+    }
+
+    return content;
   }
 
   render() {
@@ -103,7 +112,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return (
       <div className="revisions-items">
         <RevisionContainer
-          revisions={revisions}
+          revisions={revisions || []}
           onRevisionSelect={onRevisionSelect}
         />
         <div

@@ -334,7 +334,9 @@ exports[`FilterContainer renders 1`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -847,7 +849,9 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -1360,7 +1364,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -2676,7 +2682,9 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""

@@ -1,101 +1,105 @@
 @import "constants";
 
 .item-bank-page {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 100%;
 }
 .revisions-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .revisions-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 .about-item-iframe {
-    flex-grow: 0.95;
+  flex-grow: 0.95;
 }
 
 .revisions {
-    padding: 5px;
-    border-style: solid;
-    border-color: @grey-border-color;
-    border-width: 1px;
-    border-radius: @spacing-item;
-    -moz-box-shadow: @box-shadow-light;
-    -webkit-box-shadow: @box-shadow-light;
-    box-shadow: @box-shadow-light;
+  padding: 5px;
+  border-style: solid;
+  border-color: @grey-border-color;
+  border-width: 1px;
+  border-radius: @spacing-item;
+  -moz-box-shadow: @box-shadow-light;
+  -webkit-box-shadow: @box-shadow-light;
+  box-shadow: @box-shadow-light;
 }
 
 .revisions-header {
-    font-weight: bold;
-    font-size: 22px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .revisions-details {
-    font-size: 10.5px;
+  font-size: 10.5px;
 }
 
 .nav-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.previous, .next {
-    margin: 0px 14px;
+.previous,
+.next {
+  margin: 0px @spacing-unit;
 }
 
 .items-list {
-    border-style: solid;
-    border-color: @grey-border-color;
-    border-width: 1px;
-    border-radius: @spacing-item;
-    -moz-box-shadow: @box-shadow-light;
-    -webkit-box-shadow: @box-shadow-light;
-    box-shadow: @box-shadow-light;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    table-layout: fixed;
+  border-style: solid;
+  border-color: @grey-border-color;
+  border-width: 1px;
+  border-radius: @spacing-item;
+  -moz-box-shadow: @box-shadow-light;
+  -webkit-box-shadow: @box-shadow-light;
+  box-shadow: @box-shadow-light;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  table-layout: fixed;
 }
 
 .current-items-table {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-
-.items-list td {
+  .items-list td {
     width: 250px;
     padding: 7px;
-}
+  }
 
-.items-list tr:nth-child(even){
+  .items-list tr:nth-child(even) {
     background-color: #eee;
-}
+  }
 
-.items-list tr:nth-child(odd){
+  .items-list tr:nth-child(odd) {
     background-color: #fff;
-}
+  }
 
-th {
+  th {
     background-color: @sb-gray;
     color: white;
     padding: 5px;
+  }
+
+  div.section-dd {
+    display: flex;
+  }
 }
 
 .csv-entry-container {
-    width: 1000px;
+  width: 1000px;
 }
 
 .csv-add {
-    width: 100%;
+  width: 100%;
 }

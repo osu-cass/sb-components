@@ -37,9 +37,11 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
     let content: JSX.Element | undefined;
 
     if (isOpen) {
-      content = <i className="fa fa-chevron-up carat" />;
+      content = <span className="fa fa-chevron-up carat" aria-hidden="true" />;
     } else {
-      content = <i className="fa fa-chevron-down carat" />;
+      content = (
+        <span className="fa fa-chevron-down carat" aria-hidden="true" />
+      );
     }
 
     return content;
@@ -48,7 +50,11 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
   render() {
     return (
       <div className="accordion-container">
-        <div className="accordion-bar" onClick={this.handleShowContent}>
+        <div
+          role="button"
+          className="accordion-bar"
+          onClick={this.handleShowContent}
+        >
           <div className="accordion-content">
             {this.state.title}
             {this.renderCarat(this.state.isOpen)}

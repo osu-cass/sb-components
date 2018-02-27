@@ -91,7 +91,7 @@ export class ItemEntryRow extends React.Component<
       };
     });
 
-    options.push({
+    options.unshift({
       label: "Select a Section",
       value: "N/A",
       disabled: false,
@@ -102,10 +102,11 @@ export class ItemEntryRow extends React.Component<
       <td>
         <Select
           label="Sections"
-          labelClass="hidden"
+          labelClass="display-none"
           selected={row.section || "N/A"}
           options={options}
           onChange={this.handleSection}
+          wrapperClass="section-dd"
         />
       </td>
     );

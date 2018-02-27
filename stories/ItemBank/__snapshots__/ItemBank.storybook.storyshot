@@ -68,7 +68,48 @@ exports[`Storyshots Item Bank default 1`] = `
     >
       <div
         className="item-bank-page"
-      />
+      >
+        <div
+          className="revisions-items"
+        >
+          <div
+            className="revisions section-light"
+          >
+            <h3
+              className="revisions-header"
+            >
+              Revisions
+            </h3>
+            <ul />
+          </div>
+          <div
+            aria-live="polite"
+            aria-relevant="additions removals"
+            className="about-item-iframe"
+          >
+            <div
+              className="itemViewerFrame"
+              tabIndex={0}
+            >
+              <div
+                className="loader-icon"
+              >
+                <div
+                  className="loader"
+                />
+              </div>
+              <iframe
+                className="itemviewer-iframe"
+                id="itemviewer-iframe"
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                sandbox=""
+                src="http://ivs.smarterbalanced.org/items?ids=187-3377"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer
