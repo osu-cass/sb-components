@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 import { action } from "@storybook/addon-actions";
 
 const buttons = (
@@ -45,7 +45,7 @@ const disabledButtons = (
 );
 
 storiesOf("Style", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("Buttons bg-light", () => (
     <div className="section section-light">{buttons}</div>
   ))

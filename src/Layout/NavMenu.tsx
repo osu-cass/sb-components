@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { SbNavLink, SbNavlinkProps } from "./SbNavLink";
+/*tslint:disable: no-require-imports no-var-requires */
 const sbLogo = require("@sbac/sbac-ui-kit/src/images/SmarterBalanced-Logo.png");
 
 export interface NavMenuProps {

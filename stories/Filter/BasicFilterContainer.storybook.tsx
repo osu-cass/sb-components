@@ -9,7 +9,9 @@ const props: BasicFilterContainerProps = {
   filterCategories: mockBasicFilterCategories,
   onUpdateFilter: action("clicked"),
   containsAdvancedFilter: false,
-  handleAdvancedFilterExpand: () => {}
+  handleAdvancedFilterExpand: () => {
+    return;
+  }
 };
 
 storiesOf("Basic Filter Container", module)

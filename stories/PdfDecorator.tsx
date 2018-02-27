@@ -8,6 +8,6 @@ const style: React.CSSProperties = {
   margin: "20px auto"
 };
 
-export const PdfDecorator = (storyFn: () => JSX.Element) => (
+export const pdfDecorator = (storyFn: () => JSX.Element) => (
   <div style={style}>{storyFn()}</div>
 );

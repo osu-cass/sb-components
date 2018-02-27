@@ -10,12 +10,13 @@ import {
   advancedFilterSubjectMultiAllDisabled,
   subjectsFilterOptionsSelected
 } from "mocks/Filter/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
-const action = () => {};
-//Advanced filter select actions won't persist, stories should be checking the rendering and not actions
+const action = () => {
+  return;
+};
 storiesOf("Advanced Filter", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("single select", () => (
     <AdvancedFilter {...advancedFilterSubject} onFilterOptionSelect={action} />
   ))

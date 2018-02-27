@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { RouterDecorator } from "../RouterDecorator";
+import { routerDecorator } from "../RouterDecorator";
 import { AboutItem } from "src/AboutItem/AboutItem";
 import {
   AboutItemMockModel,
@@ -8,11 +8,11 @@ import {
   rubricsEsn,
   allRubrics
 } from "mocks/AboutItem/mocks";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
 storiesOf("About Item Modal", module)
-  .addDecorator(CenterDecorator)
-  .addDecorator(RouterDecorator)
+  .addDecorator(centerDecorator)
+  .addDecorator(routerDecorator)
   .add("default", () => (
     <AboutItem {...AboutItemMockModel} showRubrics={true} />
   ))

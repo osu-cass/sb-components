@@ -33,7 +33,7 @@ export class ShareModal extends React.Component<
     this.setState({ showModal: false });
   };
 
-  copyToClipboard(event: any): void {
+  copyToClipboard(event: React.MouseEvent<HTMLButtonElement>): void {
     event.preventDefault();
     const input = document.getElementById("shareUrl") as HTMLTextAreaElement;
     input.select();
@@ -42,7 +42,8 @@ export class ShareModal extends React.Component<
 
   render() {
     let url = "";
-    if (typeof window !== "undefined" && window !== null) {
+    // tslint:disable-next-line:no-typeof-undefined
+    if (typeof window !== "undefined") {
       url = getItemUrl();
     }
 

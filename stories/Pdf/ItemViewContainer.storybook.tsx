@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { PdfDecorator } from "../PdfDecorator";
+import { pdfDecorator } from "../PdfDecorator";
 import { ItemViewContainer } from "src/index";
 import {
   singleQuestion,
@@ -10,7 +10,7 @@ import {
 import "src/Assets/Styles/pdf.less";
 
 storiesOf("PDF ItemViewContainer", module)
-  .addDecorator(PdfDecorator)
+  .addDecorator(pdfDecorator)
   .add("question only", () => (
     <ItemViewContainer itemData={singleQuestion} displayScoreInfo={true} />
   ))

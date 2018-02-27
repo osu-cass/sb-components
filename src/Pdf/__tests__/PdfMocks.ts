@@ -51,6 +51,7 @@ export const itemVM: ItemCardModel = {
   subjectCode: "MATH",
   claimLabel: "Math Claim",
   targetShortName: "1-3",
+  targetDescription: "Description",
   interactionTypeCode: "",
   interactionTypeLabel: "",
   isPerformanceItem: false,
@@ -59,7 +60,6 @@ export const itemVM: ItemCardModel = {
 
 export const aboutItemVM: AboutItemModel = {
   itemCardViewModel: itemVM,
-  rubrics: [rubric],
   targetDescription: "string",
   depthOfKnowledge: "string",
   commonCoreStandardsDescription: "string",
@@ -70,8 +70,8 @@ export const aboutItemVM: AboutItemModel = {
 
 export const itemView: ItemPdfModel = {
   id: "12334",
-  html: null,
-  picturePath: null,
+  html: undefined,
+  picturePath: undefined,
   captured: true,
   type: PdfViewType.html
 };
@@ -83,10 +83,10 @@ export const question: QuestionModel = {
   questionNumber: 1
 };
 
-export const questionDataNull: QuestionModel = { ...question, data: null };
+export const questionDataNull: QuestionModel = { ...question, data: undefined };
 
 export const itemGroup: ItemGroupModel = {
-  passage: null,
+  passage: undefined,
   questions: [question]
 };
 
@@ -96,7 +96,8 @@ export const pdfContainerProps: PdfContainerProps = {
   subject: "math",
   ivsBaseUrl: "http://example.com",
   cssUrl: "http://example.com/style.css",
-  displayTitlePage: true
+  displayTitlePage: true,
+  displayScoreInfo: false
 };
 
 export const passageViewProps: PassageViewProps = {

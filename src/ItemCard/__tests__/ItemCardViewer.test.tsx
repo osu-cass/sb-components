@@ -37,19 +37,19 @@ describe("ItemCardViewer", () => {
   };
 
   it("renders viewer tab", () => {
-    let wrapper = shallow(<ItemCardViewer item={item} />);
+    const wrapper = shallow(<ItemCardViewer item={item} />);
     wrapper.setState({ selectedTab: "viewer" });
     expect(wrapper).toMatchSnapshot();
   });
 
   it("renders rubric tab", () => {
-    let wrapper = shallow(<ItemCardViewer item={item} />);
+    const wrapper = shallow(<ItemCardViewer item={item} />);
     wrapper.setState({ selectedTab: "rubric" });
     expect(wrapper).toMatchSnapshot();
   });
 
   it("renders information tab", () => {
-    let wrapper = shallow(<ItemCardViewer item={item} />);
+    const wrapper = shallow(<ItemCardViewer item={item} />);
     wrapper.setState({ selectedTab: "information" });
     expect(wrapper).toMatchSnapshot();
   });

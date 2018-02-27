@@ -2,9 +2,9 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { RubricEntry } from "../../src/Rubric/RubricEntry";
 import { RubricEntryModel } from "../../src/Rubric/RubricModels";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
-const RubricEntryMockProps: RubricEntryModel = {
+const rubricEntryMockProps: RubricEntryModel = {
   scorepoint: "",
   name: "\n        Rubric ",
   value:
@@ -12,8 +12,8 @@ const RubricEntryMockProps: RubricEntryModel = {
 };
 
 storiesOf("Rubric Entry", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("with an empty entry", () => (
     <RubricEntry scorepoint="" name="" value="" />
   ))
-  .add("with a rubric entry", () => <RubricEntry {...RubricEntryMockProps} />);
+  .add("with a rubric entry", () => <RubricEntry {...rubricEntryMockProps} />);
