@@ -10,7 +10,8 @@ import {
   AdvancedAboutItem,
   AboutItemRevisionModel,
   Resource,
-  GradeLevels
+  GradeLevels,
+  Subscription
 } from "../index";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
@@ -57,6 +58,8 @@ export class ItemBankContainer extends React.Component<
   ItemBankContainerProps,
   ItemBankContainerState
 > {
+  private subscription = new Subscription();
+
   constructor(props: ItemBankContainerProps) {
     super(props);
     this.state = {
@@ -70,13 +73,17 @@ export class ItemBankContainer extends React.Component<
   }
 
   componentDidMount() {
-    this.fetchSections();
+    this.subscription.cancelAll();
   }
 
   fetchAboutItemRevisionModel(item: ItemRevisionModel) {
-    this.props
-      .aboutItemRevisionClient(item)
-      .then(data => this.onFetchAboutItemSuccess(data));
+    const prom = this.props.aboutItemRevisionClient(item);
+    const promiseWrapper = this.subscription.add(
+      "aboutItemRevisionClient",
+      prom
+    );
+
+    promiseWrapper.promise.then(data => this.onFetchAboutItemSuccess(data));
   }
 
   onFetchAboutItemSuccess(data: AboutItemRevisionModel) {
@@ -86,9 +93,10 @@ export class ItemBankContainer extends React.Component<
   }
 
   fetchAccResourceGroups(acc: AccessibilityRevisionModel) {
-    this.props
-      .accessibilityClient(acc)
-      .then(data => this.onFetchAccResourceSuccess(data));
+    const prom = this.props.accessibilityClient(acc);
+    const promiseWrapper = this.subscription.add("accessibilityClient", prom);
+
+    promiseWrapper.promise.then(data => this.onFetchAccResourceSuccess(data));
   }
 
   onFetchAccResourceSuccess(data: AccResourceGroupModel[]) {
@@ -96,9 +104,10 @@ export class ItemBankContainer extends React.Component<
   }
 
   fetchRevisions(item: ItemRevisionModel) {
-    this.props
-      .revisionsClient(item)
-      .then(data => this.onFetchRevisionsSuccess(data));
+    const prom = this.props.revisionsClient(item);
+    const promiseWrapper = this.subscription.add("revisionsClient", prom);
+
+    promiseWrapper.promise.then(data => this.onFetchRevisionsSuccess(data));
   }
 
   onFetchRevisionsSuccess(data: RevisionModel[]) {
@@ -106,7 +115,10 @@ export class ItemBankContainer extends React.Component<
   }
 
   fetchSections() {
-    this.props.sectionsClient().then(data => this.onFetchSectionsSuccess(data));
+    const prom = this.props.sectionsClient();
+    const promiseWrapper = this.subscription.add("sectionsClient", prom);
+
+    promiseWrapper.promise.then(data => this.onFetchSectionsSuccess(data));
   }
 
   onFetchSectionsSuccess(data: SectionModel[]) {
