@@ -8,6 +8,14 @@ export interface ItemRevisionModel {
   revision?: string;
 }
 
+export function itemBankItem(itemRevisionModel: ItemRevisionModel) {
+  let value = "";
+  if (itemRevisionModel.bankKey && itemRevisionModel.itemKey) {
+    value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
+  }
+  return value;
+}
+
 export function itemRevisionKey(itemRevisionModel: ItemRevisionModel) {
   return `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}-${
     itemRevisionModel.section
