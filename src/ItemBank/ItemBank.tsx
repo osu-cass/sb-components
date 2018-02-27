@@ -3,14 +3,16 @@ import {
   AboutItemModel,
   getResourceContent,
   ItemAccessibilityModal,
-  ItemViewerFrame
+  ItemViewerFrame,
+  ToolTip,
+  AccResourceGroupModel,
+  Accordion,
+  AdvancedAboutItem,
+  AboutItemRevisionModel
 } from "../index";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-import { AccResourceGroupModel } from "../index";
-import { ToolTip } from "../index";
-import { Accordion } from "../Accordion/Accordion";
+import { aboutItemRevisionMockModel } from "mocks/AboutItem/mocks";
 
 export interface RevisionModel {
   author: string;
@@ -25,7 +27,7 @@ export interface ItemBankProps {
 
 export interface ItemBankState {
   itemUrl?: string;
-  aboutThisItemViewModel: AboutItemModel;
+  aboutItemRevisionModel: AboutItemRevisionModel;
   accResourceGroups: AccResourceGroupModel[];
 }
 
@@ -39,14 +41,14 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
   constructor(props: ItemBankProps) {
     super(props);
     this.state = {
-      aboutThisItemViewModel: AboutItemMockModel,
+      aboutItemRevisionModel: aboutItemRevisionMockModel,
       accResourceGroups: [],
       itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377"
     };
   }
 
   renderItemFrame(): JSX.Element {
-    const aboutThisItem = this.state.aboutThisItemViewModel;
+    const aboutThisItem = this.state.aboutItemRevisionModel;
     let content: JSX.Element;
 
     if (aboutThisItem) {
@@ -66,7 +68,7 @@ export class ItemBank extends React.Component<ItemBankProps, ItemBankState> {
               role="group"
               aria-label="First group"
             >
-              <AboutItem showRubrics={false} {...aboutThisItem} />
+              <AdvancedAboutItem {...aboutThisItem} />
             </div>
             {this.renderMidNav()}
             {this.renderRightNav()}

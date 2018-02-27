@@ -1,7 +1,6 @@
 //
 // AboutItem Components and Models
 //
-import { onFilterSelect } from "./Filter/FilterModels";
 export { AboutThisItemDetail } from "./AboutItem/AboutItemDetail";
 export { AboutThisItemRevision } from "./AboutItem/AboutItemRevision";
 export {
@@ -39,6 +38,11 @@ export {
   ItemAccessibilityModal
 } from "./Accessibility/AccessibilityModal";
 export { BrailleLink } from "./Accessibility/Braille";
+
+//
+// Accordion
+//
+export { Accordion, AccordionProps } from "./Accordion/Accordion";
 
 //
 // Button
