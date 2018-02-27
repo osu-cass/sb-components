@@ -28,7 +28,7 @@ export function advancedFilterUpdated(
   searchModel?: ItemsSearchModel,
   changedFilter?: FilterType
 ): BothFilterModels {
-  let newAdvFilter = (advancedFilter || []).slice();
+  const newAdvFilter = (advancedFilter || []).slice();
   let newSearchAPI = { ...searchAPI };
   if (changedFilter) {
     const changedBasicFilter = basicFilter.find(f => f.code === changedFilter);
@@ -36,13 +36,13 @@ export function advancedFilterUpdated(
       f => f.code === changedFilter
     );
     if (changedAdvancedFilter) {
-      //add or remove changed advanced filter item to search params
+      // add or remove changed advanced filter item to search params
       newSearchAPI = ItemSearch.updateSearchApiModel(
         changedAdvancedFilter,
         newSearchAPI
       );
       if (changedBasicFilter) {
-        //update corresponding basic filter category
+        // update corresponding basic filter category
         Filter.updateSingleFilter(changedBasicFilter, changedAdvancedFilter);
       }
     }
@@ -65,16 +65,16 @@ function updateDependentAndSearch(
   let newAdvFilter = advancedFilter.slice();
   let newSearchAPI = { ...searchAPI };
 
-  //show/hide calculator if math selected
+  // show/hide calculator if math selected
   Filter.hideFiltersBasedOnSearchParams(newAdvFilter, newSearchAPI);
 
   if (searchModel) {
-    //remove any searchAPI params that aren't visible anymore
+    // remove any searchAPI params that aren't visible anymore
     newSearchAPI = ItemSearch.updateDependentSearchParams(
       newSearchAPI,
       searchModel
     );
-    //update advanced filter based on changes to searchAPIparams
+    // update advanced filter based on changes to searchAPIparams
     newAdvFilter = Filter.getUpdatedSearchFilters(
       searchModel,
       newAdvFilter,
@@ -97,19 +97,19 @@ export function basicFilterUpdated(
   searchModel?: ItemsSearchModel,
   changed?: FilterType
 ): BothFilterModels {
-  let newAdvFilter = advancedFilter.slice();
+  const newAdvFilter = advancedFilter.slice();
   let newSearchAPI = { ...searchAPI };
   const changedBasicFilter = basicFilter.find(f => f.code === changed);
   const changedAdvancedFilter = newAdvFilter.find(f => f.code === changed);
 
   if (changedBasicFilter) {
-    //update search API based on changes to basic filter
+    // update search API based on changes to basic filter
     newSearchAPI = ItemSearch.updateSearchApiModel(
       changedBasicFilter,
       newSearchAPI
     );
     if (changedAdvancedFilter) {
-      //update corresponding advanced filter category
+      // update corresponding advanced filter category
       Filter.updateSingleFilter(changedAdvancedFilter, changedBasicFilter);
     }
   }

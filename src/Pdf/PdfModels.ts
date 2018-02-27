@@ -12,15 +12,16 @@ export interface QuestionModel {
   questionNumber?: number;
 }
 
+export enum PdfViewType {
+  picture,
+  html
+}
+
+/* tslint:disable: no-reserved-keywords */
 export interface ItemPdfModel {
   id: string;
   html?: string;
   picturePath?: string;
   captured: boolean;
   type: PdfViewType;
-}
-
-export enum PdfViewType {
-  picture,
-  html
 }

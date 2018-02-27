@@ -9,6 +9,7 @@ export interface CoverPageProps {
 export class CoverPage extends React.Component<CoverPageProps, {}> {
   render() {
     const today = this.props.dateString || new Date().toLocaleDateString();
+
     return (
       <div className="page first-page">
         <div className="first-page-title">

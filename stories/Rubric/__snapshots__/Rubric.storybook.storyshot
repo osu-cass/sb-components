@@ -4,6 +4,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
 <div
   aria-expanded={false}
   className={undefined}
+  role="tab"
   style={undefined}
 >
   <a
@@ -31,6 +32,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       <div
         aria-expanded={false}
         className={undefined}
+        role="tab"
         style={undefined}
       >
         <a
@@ -64,6 +66,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       <div
         aria-expanded={false}
         className={undefined}
+        role="tab"
         style={undefined}
       >
         <a
@@ -97,6 +100,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       <div
         aria-expanded={false}
         className={undefined}
+        role="tab"
         style={undefined}
       >
         <a
@@ -135,6 +139,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       <div
         aria-expanded={false}
         className={undefined}
+        role="tab"
         style={undefined}
       >
         <a
@@ -190,6 +195,7 @@ exports[`Storyshots Rubric with an empty model 1`] = `
 <div
   aria-expanded={false}
   className={undefined}
+  role="tab"
   style={undefined}
 >
   <a

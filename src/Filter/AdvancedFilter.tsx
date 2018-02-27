@@ -28,7 +28,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     if (displayAllButton) {
       allBtnContainer = (
         <BtnGroupOption
-          onClick={() => onFilterOptionSelect()}
+          onClick={onFilterOptionSelect}
           disabled={disabled}
           selected={!anySelected}
           label="All"
@@ -66,6 +66,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     // replace "-" with spaces, replace "." with nothing.
     const id = label.replace(/\ /g, "-").replace(/\./g, "");
     if (disabled) {
+      // tslint:disable-next-line:no-null-keyword
       return null;
     }
 

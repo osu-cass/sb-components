@@ -38,6 +38,7 @@ export class ItemViewPage extends React.Component<ItemViewPageProps, {}> {
   getLocationIsaap() {
     const query = parseQueryString(this.props.location.search);
 
+    /*tslint:disable: no-string-literal  */
     return (query["isaap"] || [])[0] || "";
   }
 

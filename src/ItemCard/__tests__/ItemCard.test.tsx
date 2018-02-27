@@ -33,6 +33,4 @@ describe("ItemCard", () => {
   it("renders correctly", () => {
     expect(wrapper).toMatchSnapshot();
   });
-
-  // TODO: test redirects
 });

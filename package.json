@@ -24,10 +24,10 @@
     "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
-    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e '**.snap'",
+    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "typedoc-publish": "npx typedoc --exclude **/__tests__/* --out gh-site/tsdoc src/"
+    "typedoc-publish": "npx typedoc --target ES5 --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
     "{src,stories,mocks}/**/*{.tsx,.ts}": [
@@ -50,7 +50,7 @@
   },
   "homepage": "https://github.com/osu-cass/sb-components#readme",
   "devDependencies": {
-    "@osu-cass/tslint-config": "^1.0.4",
+    "@osu-cass/tslint-config": "^1.0.8-alpha.3",
     "@storybook/addon-a11y": "^3.3.13",
     "@storybook/addon-actions": "^3.3.13",
     "@storybook/addon-console": "^1.0.0",
@@ -87,8 +87,8 @@
     "file-loader": "^1.1.6",
     "husky": "^0.14.3",
     "identity-obj-proxy": "~3.0.0",
-    "jest": "~22.3.0",
-    "jest-cli": "~22.3.0",
+    "jest": "~22.4.2",
+    "jest-cli": "~22.4.2",
     "jsdom": "^11.6.2",
     "jsdom-global": "^3.0.2",
     "less": "~2.7.3",
@@ -108,7 +108,7 @@
     "ts-loader": "^3.5.0",
     "tslint": "^5.9.1",
     "tslint-language-service": "^0.9.8",
-    "typedoc": "^0.9.0",
+    "typedoc": "^0.10.0",
     "typescript": "~2.7.2",
     "url-loader": "0.5.9",
     "watch-ignore-webpack-plugin": "^1.0.0",
@@ -162,7 +162,6 @@
       "jsx"
     ],
     "collectCoverage": true,
-    "mapCoverage": true,
     "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",

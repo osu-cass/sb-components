@@ -65,7 +65,7 @@ export class BasicFilterContainer extends React.Component<
     option?: FilterOptionModel
   ) {
     const index = this.props.filterCategories.indexOf(category);
-    let { filterCategories } = this.props;
+    const { filterCategories } = this.props;
     if (!category.disabled) {
       if (option !== undefined) {
         let newOptions = filterCategories[index].filterOptions.slice();
@@ -87,6 +87,7 @@ export class BasicFilterContainer extends React.Component<
    */
   renderFilters() {
     const { filterCategories } = this.props;
+
     return filterCategories.map((fil, i) => {
       return (
         <BasicFilter
@@ -112,7 +113,7 @@ export class BasicFilterContainer extends React.Component<
     const { filterCategories, containsAdvancedFilter, filterId } = this.props;
     const { expanded } = this.state;
     const id = filterId ? filterId : "";
-    let advancedFilterButton = null;
+    let advancedFilterButton;
 
     // if the component is being used in conjunction
     // with the AdvancedFilterContainer we handle expanding it here
