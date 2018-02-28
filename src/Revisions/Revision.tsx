@@ -10,7 +10,7 @@ export interface RevisionModel {
 
 export interface RevisionModelProps extends RevisionModel {
   selected: boolean;
-  onClick: (revision: string) => void;
+  onClick: () => void;
 }
 
 // tslint:disable-next-line:variable-name
@@ -38,7 +38,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         }
         helpText={renderHelpText()}
       >
-        <button className="btn btn-link revisions-link" onClick={this.onClick}>
+        <button className="btn btn-link revisions-link" onClick={props.onClick}>
           {props.commitHash}
         </button>
         <div className="revisions-details">

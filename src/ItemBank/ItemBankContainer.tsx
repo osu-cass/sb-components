@@ -82,6 +82,7 @@ export class ItemBankContainer extends React.Component<
   componentDidMount() {
     this.fetchSections();
     this.handleChangeViewItem();
+    this.handleChangeRevision();
   }
 
   componentWillUnmount() {
@@ -119,6 +120,7 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
 
+    console.log("updated revisions", item);
     promiseWrapper.promise.then(data => this.onFetchRevisionsSuccess(data));
   }
 
@@ -143,14 +145,20 @@ export class ItemBankContainer extends React.Component<
     if (validItemRevisionModel(lastItem)) {
       items.push({});
     }
-    this.setState({ items, currentItem }, this.handleChangeViewItem);
+    this.setState({ items, currentItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   };
 
+  /**
+   * Updates prev and next items. Updates rubric, about item, and item url
+   * @memberof ItemBankContainer
+   */
   handleChangeViewItem = () => {
     const { currentItem, items } = this.state;
     if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem);
-      this.fetchRevisions(currentItem);
       this.fetchAccResourceGroups({
         interactionType: "",
         subject: "",
@@ -162,6 +170,13 @@ export class ItemBankContainer extends React.Component<
       this.setState({ nextItem, previousItem });
     }
   };
+
+  async handleChangeRevision(): Promise<void> {
+    const { currentItem } = this.state;
+    if (currentItem) {
+      return this.fetchRevisions(currentItem);
+    }
+  }
 
   onAccessibilityUpdate = (accResourceGroups: AccResourceGroupModel[]) => {
     this.setState({
@@ -185,7 +200,10 @@ export class ItemBankContainer extends React.Component<
       nextItem = items[0];
     }
 
-    this.setState({ currentItem: nextItem }, this.handleChangeViewItem);
+    this.setState({ currentItem: nextItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   }
 
   handlePreviousItem() {
@@ -198,7 +216,10 @@ export class ItemBankContainer extends React.Component<
       previousItem = items[0];
     }
 
-    this.setState({ currentItem: previousItem }, this.handleChangeViewItem);
+    this.setState({ currentItem: previousItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   }
 
   onItemSelect = (direction: "next" | "previous") => {
@@ -215,7 +236,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   onRevisionSelect = (revision: string) => {
-    //todo: set?
+    console.log("revision", revision);
   };
 
   renderItemBankEntry() {
