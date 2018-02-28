@@ -185,7 +185,7 @@ export class ItemViewerContainer extends React.Component<
       scrollTo
     );
 
-    return <ItemViewerFrame url={ivsUrl} />;
+    return <ItemViewerFrame url={ivsUrl} title={"item viewer"} />;
   }
 
   render() {

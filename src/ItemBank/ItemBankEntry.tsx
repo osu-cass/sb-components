@@ -45,14 +45,15 @@ export class ItemBankEntry extends React.Component<ItemBankEntryProps, {}> {
 
   renderCsvEntry() {
     const csvEntry: JSX.Element = (
-      <div className="csv-entry-container">
-        {this.renderHelpButton()}
-        <textarea
-          className="csv-add"
-          cols={50}
-          defaultValue="Drag Items Here"
-          onBlur={event => this.handleCsvEntry(event.currentTarget.value)}
-        />
+      <div className="csv-entry-container section">
+        <div className="csv-entry-wrapper">
+          {this.renderHelpButton()}
+          <textarea
+            className="csv-add"
+            placeholder="Copy and Paste Values"
+            onBlur={event => this.handleCsvEntry(event.currentTarget.value)}
+          />
+        </div>
       </div>
     );
 

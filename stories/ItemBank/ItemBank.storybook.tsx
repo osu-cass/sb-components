@@ -11,7 +11,8 @@ import {
   mockBankAboutItemClient,
   mockBankAccessibilityClient,
   mockBankRevisionsClient,
-  mockBankSectionsClient
+  mockBankSectionsClient,
+  itemsMocks
 } from "mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
@@ -25,6 +26,7 @@ storiesOf("Item Bank", module)
           revisionsClient={mockBankRevisionsClient}
           itemViewUrl=""
           sectionsClient={mockBankSectionsClient}
+          items={itemsMocks}
         />
       }
       siteName="Item Bank"

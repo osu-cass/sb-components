@@ -844,9 +844,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -1048,8 +1045,8 @@ exports[`ItemTable expands matches snapshot 1`] = `
                         id="itemviewer-iframe"
                         onLoad={[Function]}
                         onLoadStart={[Function]}
-                        sandbox=""
                         src="http://ivs.smarterbalanced.org/items?ids=187-3206"
+                        title=""
                       />
                     </div>
                   </ItemViewerFrame>
@@ -1442,9 +1439,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -1849,9 +1843,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -2256,9 +2247,6 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -2642,9 +2630,6 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -2868,9 +2853,6 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -3093,9 +3075,6 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>
@@ -3318,9 +3297,6 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                      />
                       <p>
                         col.helpText(cellData)
                       </p>

@@ -64,16 +64,14 @@ exports[`Storyshots Item Bank default 1`] = `
     role="main"
   >
     <div
-      className="revisions-container container"
+      className="item-container container"
     >
-      <div
-        className="item-bank-page"
-      >
+      <div>
         <div
-          className="revisions-items"
+          className="section revisions-items"
         >
           <div
-            className="revisions section-light"
+            className="revisions section-light section-compact"
           >
             <h3
               className="revisions-header"
@@ -85,7 +83,7 @@ exports[`Storyshots Item Bank default 1`] = `
           <div
             aria-live="polite"
             aria-relevant="additions removals"
-            className="about-item-iframe"
+            className="section item-map-iframe"
           >
             <div
               className="itemViewerFrame"
@@ -103,8 +101,8 @@ exports[`Storyshots Item Bank default 1`] = `
                 id="itemviewer-iframe"
                 onLoad={[Function]}
                 onLoadStart={[Function]}
-                sandbox=""
                 src="http://ivs.smarterbalanced.org/items?ids=187-3377"
+                title="item viewer"
               />
             </div>
           </div>

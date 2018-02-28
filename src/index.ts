@@ -109,7 +109,10 @@ export {
   AccessibilityRevisionModel,
   itemRevisionKey,
   SectionModel,
-  getItemBankName
+  getItemBankName,
+  getPreviousItemBank,
+  getNextItemBank,
+  getItemBankIndex
 } from "./ItemBank/ItemBankModels";
 export { ItemBankViewer, ItemBankViewerProps } from "./ItemBank/ItemBankViewer";
 
@@ -275,6 +278,7 @@ export {
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
+export { RubricModal, RubricModalProps } from "./Rubric/RubricModal";
 
 //
 // Select

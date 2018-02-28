@@ -24,11 +24,22 @@ export const mockBankSectionsClient = () =>
 
 const sectionMocks: SectionModel[] = [
   {
-    key: "siw",
-    value: "siw"
+    key: "SIW",
+    value: "SIW"
   },
   {
-    key: "math",
-    value: "math"
+    key: "MATH",
+    value: "MATH"
+  },
+  {
+    key: "IAT",
+    value: "IAT"
   }
+];
+
+export const itemsMocks: ItemRevisionModel[] = [
+  { bankKey: 187, itemKey: 1111, section: "siw" },
+  { bankKey: 1872, itemKey: 2222, section: "math" },
+  { bankKey: 1871, itemKey: 3333, section: "siw" },
+  {}
 ];

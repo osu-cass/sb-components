@@ -1806,9 +1806,6 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                            />
                             <p>
                               helpText
                             </p>
@@ -1959,9 +1956,6 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                            />
                             <p>
                               helpText
                             </p>
@@ -2133,9 +2127,6 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                            />
                             <p>
                               helpText
                             </p>
@@ -2270,9 +2261,6 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                            />
                             <p>
                               helpText
                             </p>

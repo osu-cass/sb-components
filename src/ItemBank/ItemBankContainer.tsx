@@ -21,7 +21,9 @@ import {
   validItemRevisionModel,
   RevisionModel,
   ItemBankViewer,
-  ItemBankEntry
+  ItemBankEntry,
+  getNextItemBank,
+  getPreviousItemBank
 } from "../index";
 
 export interface ItemBankContainerProps {
@@ -34,6 +36,7 @@ export interface ItemBankContainerProps {
   revisionsClient: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
   sectionsClient: () => Promise<SectionModel[]>;
   itemViewUrl: string;
+  items?: ItemRevisionModel[];
 }
 
 export interface ItemBankContainerState {
@@ -44,6 +47,8 @@ export interface ItemBankContainerState {
   items: ItemRevisionModel[];
   sections: Resource<SectionModel[]>;
   revisions: Resource<RevisionModel[]>;
+  nextItem?: ItemRevisionModel;
+  previousItem?: ItemRevisionModel;
 }
 
 /**
@@ -60,11 +65,15 @@ export class ItemBankContainer extends React.Component<
 
   constructor(props: ItemBankContainerProps) {
     super(props);
+    const items = props.items || [{}];
+    const currentItem = validItemRevisionModel(items[0]) ? items[0] : undefined;
+
     this.state = {
+      currentItem,
+      items,
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
       itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377",
-      items: [{}],
       sections: { kind: "loading" },
       revisions: { kind: "loading" }
     };
@@ -72,6 +81,7 @@ export class ItemBankContainer extends React.Component<
 
   componentDidMount() {
     this.fetchSections();
+    this.handleChangeViewItem();
   }
 
   componentWillUnmount() {
@@ -137,7 +147,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   handleChangeViewItem = () => {
-    const { currentItem } = this.state;
+    const { currentItem, items } = this.state;
     if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem);
       this.fetchRevisions(currentItem);
@@ -146,6 +156,10 @@ export class ItemBankContainer extends React.Component<
         subject: "",
         gradeLevel: GradeLevels.All
       });
+      const nextItem = getNextItemBank(currentItem, items);
+      const previousItem = getPreviousItemBank(currentItem, items);
+
+      this.setState({ nextItem, previousItem });
     }
   };
 
@@ -165,41 +179,26 @@ export class ItemBankContainer extends React.Component<
     const { items, currentItem } = this.state;
     let nextItem = currentItem;
     if (currentItem) {
-      const currentIdx = this.getItemIndex(currentItem, items);
-      const nextIdx = currentIdx + 1;
-      if (nextIdx < items.length - 1) {
-        nextItem = items[nextIdx];
-      }
+      const findNext = getNextItemBank(currentItem, items);
+      nextItem = findNext || nextItem;
     } else {
       nextItem = items[0];
     }
 
     this.setState({ currentItem: nextItem }, this.handleChangeViewItem);
-  }
-
-  private getItemIndex(
-    currentItem: ItemRevisionModel,
-    items: ItemRevisionModel[]
-  ) {
-    const key = itemRevisionKey(currentItem);
-
-    return items.findIndex(it => itemRevisionKey(it) === key);
   }
 
   handlePreviousItem() {
     const { items, currentItem } = this.state;
-    let nextItem = currentItem;
+    let previousItem = currentItem;
     if (currentItem) {
-      const currentIdx = this.getItemIndex(currentItem, items);
-      const nextIdx = currentIdx - 1;
-      if (nextIdx >= 0 && nextIdx < items.length - 1) {
-        nextItem = items[nextIdx];
-      }
+      const findPrevious = getPreviousItemBank(currentItem, items);
+      previousItem = findPrevious || previousItem;
     } else {
-      nextItem = items[0];
+      previousItem = items[0];
     }
 
-    this.setState({ currentItem: nextItem }, this.handleChangeViewItem);
+    this.setState({ currentItem: previousItem }, this.handleChangeViewItem);
   }
 
   onItemSelect = (direction: "next" | "previous") => {
@@ -243,15 +242,15 @@ export class ItemBankContainer extends React.Component<
       aboutItemRevisionModel,
       accResourceGroups,
       revisions,
-      items,
-      currentItem
+      currentItem,
+      previousItem,
+      nextItem
     } = this.state;
     let content: JSX.Element | undefined;
 
     const aboutItemContent = getResourceContent(aboutItemRevisionModel);
     const accResourceGroupsContent = getResourceContent(accResourceGroups);
     const revisionsContent = getResourceContent(revisions);
-    const currentIdx = this.getItemIndex(currentItem || {}, items);
 
     content = (
       <ItemBankViewer
@@ -263,8 +262,8 @@ export class ItemBankContainer extends React.Component<
         aboutItemRevisionModel={aboutItemContent}
         accResourceGroups={accResourceGroupsContent}
         revisions={revisionsContent}
-        nextItem={items[currentIdx + 1]}
-        prevItem={{}}
+        nextItem={nextItem}
+        prevItem={previousItem}
       />
     );
 
@@ -281,8 +280,8 @@ export class ItemBankContainer extends React.Component<
     } = this.state;
 
     return (
-      <div className="revisions-container container">
-        <div className="item-bank-page">
+      <div className="item-container container">
+        <div>
           {this.renderItemBankEntry()}
           {this.renderItemBankViewer()}
         </div>

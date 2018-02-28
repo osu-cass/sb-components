@@ -232,9 +232,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -334,9 +331,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -436,9 +430,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -538,9 +529,6 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -773,9 +761,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -854,9 +839,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -935,9 +917,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1016,9 +995,6 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1275,9 +1251,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1377,9 +1350,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1479,9 +1449,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1581,9 +1548,6 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1840,9 +1804,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -1942,9 +1903,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2044,9 +2002,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2146,9 +2101,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2248,9 +2200,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2350,9 +2299,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2452,9 +2398,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2554,9 +2497,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2656,9 +2596,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2758,9 +2695,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2860,9 +2794,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -2962,9 +2893,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3064,9 +2992,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3166,9 +3091,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3268,9 +3190,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3370,9 +3289,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3472,9 +3388,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3574,9 +3487,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3676,9 +3586,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3778,9 +3685,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3880,9 +3784,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -3982,9 +3883,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4084,9 +3982,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4186,9 +4081,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4288,9 +4180,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4390,9 +4279,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4492,9 +4378,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4594,9 +4477,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4696,9 +4576,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4798,9 +4675,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -4900,9 +4774,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5002,9 +4873,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5104,9 +4972,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5206,9 +5071,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5308,9 +5170,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5410,9 +5269,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5512,9 +5368,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5614,9 +5467,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5716,9 +5566,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5818,9 +5665,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -5920,9 +5764,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6022,9 +5863,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6124,9 +5962,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6226,9 +6061,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6328,9 +6160,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6430,9 +6259,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6532,9 +6358,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6634,9 +6457,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6736,9 +6556,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
@@ -6838,9 +6655,6 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>

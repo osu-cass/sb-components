@@ -240,9 +240,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                        />
                         <p>
                           col.helpText(cellData)
                         </p>
@@ -321,9 +318,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                        />
                         <p>
                           col.helpText(cellData)
                         </p>
@@ -402,9 +396,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                        />
                         <p>
                           col.helpText(cellData)
                         </p>
@@ -483,9 +474,6 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                        />
                         <p>
                           col.helpText(cellData)
                         </p>

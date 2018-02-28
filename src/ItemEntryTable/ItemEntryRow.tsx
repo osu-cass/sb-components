@@ -71,6 +71,7 @@ export class ItemEntryRow extends React.Component<
     return (
       <td>
         <input
+          className="form-control"
           aria-valuenow={rowValue || ""}
           aria-valuemin=""
           aria-valuemax="100000"
@@ -95,7 +96,7 @@ export class ItemEntryRow extends React.Component<
     options.unshift({
       label: "Select a Section",
       value: "N/A",
-      disabled: false,
+      disabled: true,
       selected: row.section === "N/A"
     });
 

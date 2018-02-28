@@ -1125,9 +1125,6 @@ exports[`ItemPageTable expands 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -1329,8 +1326,8 @@ exports[`ItemPageTable expands 1`] = `
                             id="itemviewer-iframe"
                             onLoad={[Function]}
                             onLoadStart={[Function]}
-                            sandbox=""
                             src="http://ivs.smarterbalanced.org/items?ids=187-3206"
+                            title=""
                           />
                         </div>
                       </ItemViewerFrame>
@@ -1541,9 +1538,6 @@ exports[`ItemPageTable expands 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -1766,9 +1760,6 @@ exports[`ItemPageTable expands 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -1991,9 +1982,6 @@ exports[`ItemPageTable expands 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -2881,9 +2869,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -3107,9 +3092,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -3332,9 +3314,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -3557,9 +3536,6 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -4482,9 +4458,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -4708,9 +4681,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -4934,9 +4904,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -5159,9 +5126,6 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -6124,9 +6088,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -6350,9 +6311,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -6576,9 +6534,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -6801,9 +6756,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -7797,9 +7749,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -8022,9 +7971,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -8247,9 +8193,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -8473,9 +8416,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -9499,9 +9439,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -9724,9 +9661,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -9949,9 +9883,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -10175,9 +10106,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -11231,9 +11159,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -11457,9 +11382,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -11682,9 +11604,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>
@@ -11907,9 +11826,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         <div
                           className="tool-tip-message top"
                         >
-                          <div
-                            className="tool-tip-help-text"
-                          />
                           <p>
                             col.helpText(cellData)
                           </p>

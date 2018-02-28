@@ -51,4 +51,5 @@ export interface AboutItemRevisionModel {
   revision: string;
   section: string;
   AboutItemMetadata: AboutItemRevision;
+  sampleItemScoring?: SampleItemScoringModel;
 }

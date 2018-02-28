@@ -25,7 +25,7 @@ export class RevisionContainer extends React.Component<
     ));
 
     return (
-      <div className="revisions section-light">
+      <div className="revisions section-light section-compact">
         <h3 className="revisions-header">Revisions</h3>
         <ul>{revisions}</ul>
       </div>

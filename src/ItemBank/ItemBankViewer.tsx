@@ -11,7 +11,8 @@ import {
   ItemRevisionModel,
   itemRevisionKey,
   getItemBankName,
-  RevisionModel
+  RevisionModel,
+  RubricModal
 } from "../index";
 
 export interface ItemBankViewerProps {
@@ -65,10 +66,9 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderMidNav() {
     const { onItemSelect, nextItem, prevItem } = this.props;
-    const nextItemName = nextItem ? getItemBankName(nextItem) : undefined;
-    const previousItemName = prevItem ? getItemBankName(prevItem) : undefined;
-    //TODO: add previous and next items
-    //TODO: add icons for prev and next
+    const nextItemName = nextItem ? getItemBankName(nextItem) : "";
+    const previousItemName = prevItem ? getItemBankName(prevItem) : "";
+
     return (
       <div className="nav-buttons">
         <button
@@ -76,6 +76,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
           className="btn btn-link previous"
           disabled={prevItem ? false : true}
         >
+          <span className="fa fa-arrow-left" aria-hidden="true" />
           {`Previous ${previousItemName}`}
         </button>
         <button
@@ -84,9 +85,25 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
           disabled={nextItem ? false : true}
         >
           {`Next ${nextItemName}`}
+          <span className="fa fa-arrow-right" aria-hidden="true" />
         </button>
       </div>
     );
+  }
+
+  renderRubricModal(): JSX.Element | undefined {
+    const { aboutItemRevisionModel } = this.props;
+    let content: JSX.Element | undefined;
+    if (
+      aboutItemRevisionModel &&
+      aboutItemRevisionModel.sampleItemScoring &&
+      aboutItemRevisionModel.sampleItemScoring.rubrics
+    ) {
+      const rubrics = aboutItemRevisionModel.sampleItemScoring.rubrics;
+      content = <RubricModal rubrics={rubrics} />;
+    }
+
+    return content;
   }
 
   renderNavBar(): JSX.Element | undefined {
@@ -105,6 +122,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
             aria-label="First group"
           >
             <AdvancedAboutItem {...aboutItemRevisionModel} />
+            {this.renderRubricModal()}
           </div>
           {this.renderMidNav()}
           {this.renderRightNav()}
@@ -119,18 +137,18 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     const { itemUrl, revisions, onRevisionSelect } = this.props;
 
     return (
-      <div className="revisions-items">
+      <div className="section revisions-items">
         <RevisionContainer
           revisions={revisions || []}
           onRevisionSelect={onRevisionSelect}
         />
         <div
-          className="about-item-iframe"
+          className="section item-map-iframe"
           aria-live="polite"
           aria-relevant="additions removals"
         >
           {this.renderNavBar()}
-          <ItemViewerFrame url={itemUrl || ""} />
+          <ItemViewerFrame url={itemUrl} title={"item viewer"} />
         </div>
       </div>
     );

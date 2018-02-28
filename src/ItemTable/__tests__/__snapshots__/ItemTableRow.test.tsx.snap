@@ -313,9 +313,6 @@ exports[`ItemTableRow matches snapshot 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                    />
                     <p>
                       col.helpText(cellData)
                     </p>
