@@ -232,14 +232,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target A description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -336,14 +331,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target B description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -440,14 +430,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target C description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -544,14 +529,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -781,14 +761,9 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target A description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -864,14 +839,9 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target B description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -947,14 +917,9 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target C description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1030,14 +995,9 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1291,14 +1251,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target A description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1395,14 +1350,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target B description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1499,14 +1449,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target C description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1603,14 +1548,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1864,14 +1804,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1968,14 +1903,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2072,14 +2002,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2176,14 +2101,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2280,14 +2200,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2384,14 +2299,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2488,14 +2398,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2592,14 +2497,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2696,14 +2596,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2800,14 +2695,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2904,14 +2794,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3008,14 +2893,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3112,14 +2992,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3216,14 +3091,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3320,14 +3190,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3424,14 +3289,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3528,14 +3388,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3632,14 +3487,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3736,14 +3586,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3840,14 +3685,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -3944,14 +3784,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4048,14 +3883,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4152,14 +3982,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4256,14 +4081,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4360,14 +4180,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4464,14 +4279,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4568,14 +4378,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4672,14 +4477,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4776,14 +4576,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4880,14 +4675,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -4984,14 +4774,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5088,14 +4873,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5192,14 +4972,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5296,14 +5071,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5400,14 +5170,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5504,14 +5269,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5608,14 +5368,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5712,14 +5467,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5816,14 +5566,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -5920,14 +5665,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6024,14 +5764,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6128,14 +5863,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6232,14 +5962,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6336,14 +6061,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6440,14 +6160,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6544,14 +6259,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6648,14 +6358,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6752,14 +6457,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6856,14 +6556,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -6960,14 +6655,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "target D description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>

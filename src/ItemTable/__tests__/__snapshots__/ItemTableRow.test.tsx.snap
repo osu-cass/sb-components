@@ -85,7 +85,11 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
     >
       <ToolTip
         displayIcon={false}
-        helpText="Target A description"
+        helpText={
+          <p>
+            col.helpText(cellData)
+          </p>
+        }
         position="top"
       >
         /
@@ -286,7 +290,11 @@ exports[`ItemTableRow matches snapshot 1`] = `
           >
             <ToolTip
               displayIcon={false}
-              helpText="Target A description"
+              helpText={
+                <p>
+                  col.helpText(cellData)
+                </p>
+              }
               position="top"
             >
               <div
@@ -305,14 +313,9 @@ exports[`ItemTableRow matches snapshot 1`] = `
                   <div
                     className="tool-tip-message top"
                   >
-                    <div
-                      className="tool-tip-help-text"
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "Target A description",
-                        }
-                      }
-                    />
+                    <p>
+                      col.helpText(cellData)
+                    </p>
                   </div>
                 </div>
               </div>

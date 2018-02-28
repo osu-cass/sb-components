@@ -77,7 +77,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       >
         <div className="filter-container-header">
           <label>
-            <ToolTip helpText={helpText} displayIcon={true}>
+            <ToolTip helpText={<p>helpText</p>} displayIcon={true}>
               <span className="tooltip-label" info-label="true">
                 {label}
               </span>

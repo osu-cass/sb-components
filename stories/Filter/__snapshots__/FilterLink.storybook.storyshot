@@ -261,14 +261,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -365,14 +360,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -469,14 +459,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -573,14 +558,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -677,14 +657,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -781,14 +756,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -885,14 +855,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -989,14 +954,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1093,14 +1053,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1197,14 +1152,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1301,14 +1251,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1405,14 +1350,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1509,14 +1449,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1613,14 +1548,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1717,14 +1647,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1821,14 +1746,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1925,14 +1845,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2029,14 +1944,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2133,14 +2043,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2237,14 +2142,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2341,14 +2241,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2445,14 +2340,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2549,14 +2439,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2653,14 +2538,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2757,14 +2637,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2861,14 +2736,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2965,14 +2835,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3069,14 +2934,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3173,14 +3033,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3277,14 +3132,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3381,14 +3231,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3485,14 +3330,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3589,14 +3429,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3693,14 +3528,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3797,14 +3627,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3901,14 +3726,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4005,14 +3825,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4109,14 +3924,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4213,14 +4023,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4317,14 +4122,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4421,14 +4221,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4525,14 +4320,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4629,14 +4419,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4733,14 +4518,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4837,14 +4617,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -4941,14 +4716,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -5045,14 +4815,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -5149,14 +4914,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -5253,14 +5013,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -5357,14 +5112,9 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>

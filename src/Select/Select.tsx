@@ -13,6 +13,7 @@ export interface SelectProps {
   options: SelectOptionProps[];
   className?: string;
   labelClass?: string;
+  wrapperClass?: string;
 }
 
 /**
@@ -27,7 +28,7 @@ export const Select: React.SFC<SelectProps> = props => {
   ));
 
   return (
-    <div>
+    <div className={props.wrapperClass || ""}>
       <label>
         <span className={props.labelClass || ""}>{props.label}</span>
       </label>

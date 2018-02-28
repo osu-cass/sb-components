@@ -192,5 +192,11 @@ export const aboutItemRevisionMockModel: AboutItemRevisionModel = {
       publication: "SBAC-SH-v1",
       primaryStandard: "SBAC-SH-v1:SH-Undesignated"
     }
+  },
+  sampleItemScoring: {
+    answerKey: "x = 5",
+    hasMachineRubric: false,
+    scoringOptions: [],
+    rubrics: rubricsWithSamples
   }
 };

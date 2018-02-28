@@ -10,8 +10,8 @@ exports[`ItemViewerFrame after page content is loaded 1`] = `
     id="itemviewer-iframe"
     onLoad={[Function]}
     onLoadStart={[Function]}
-    sandbox=""
     src="http://test.com"
+    title=""
   />
 </div>
 `;
@@ -33,8 +33,8 @@ exports[`ItemViewerFrame matches snapshot while loading 1`] = `
     id="itemviewer-iframe"
     onLoad={[Function]}
     onLoadStart={[Function]}
-    sandbox=""
     src="http://test.com"
+    title=""
   />
 </div>
 `;

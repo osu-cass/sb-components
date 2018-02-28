@@ -44,6 +44,11 @@ export {
 export { BrailleLink } from "./Accessibility/Braille";
 
 //
+// Accordion
+//
+export { Accordion, AccordionProps } from "./Accordion/Accordion";
+
+//
 // Button
 //
 export { BtnGroupOptionProps, BtnGroupOption } from "./Button/BtnGroupOption";
@@ -91,6 +96,27 @@ export { CombinedFilter, CombinedFilterProps } from "./Filter/CombinedFilter";
 export { GradeLevels, GradeLevel } from "./GradeLevels/GradeLevels";
 
 //
+// Item Bank
+//
+export {
+  ItemBankContainer,
+  ItemBankContainerProps
+} from "./ItemBank/ItemBankContainer";
+export { ItemBankEntry, ItemBankEntryProps } from "./ItemBank/ItemBankEntry";
+export {
+  ItemRevisionModel,
+  validItemRevisionModel,
+  AccessibilityRevisionModel,
+  itemRevisionKey,
+  SectionModel,
+  getItemBankName,
+  getPreviousItemBank,
+  getNextItemBank,
+  getItemBankIndex
+} from "./ItemBank/ItemBankModels";
+export { ItemBankViewer, ItemBankViewerProps } from "./ItemBank/ItemBankViewer";
+
+//
 // ItemCard Components, Models, and Actions
 //
 export { ItemCard } from "./ItemCard/ItemCard";
@@ -98,6 +124,15 @@ export { ItemCardCondensed } from "./ItemCard/ItemCardCondensed";
 export { ItemCardModel, itemIdEqual } from "./ItemCard/ItemCardModels";
 export { ItemCardViewer, ItemCardViewerProps } from "./ItemCard/ItemCardViewer";
 export { ItemCardTable, ItemCardTableProps } from "./ItemCard/ItemCardTable";
+
+//
+// Item Entry Table
+//
+export {
+  ItemEntryTable,
+  ItemEntryTableProps
+} from "./ItemEntryTable/ItemEntryTable";
+export { ItemEntryRow, ItemEntryRowProps } from "./ItemEntryTable/ItemEntryRow";
 
 //
 // Item Page
@@ -218,6 +253,19 @@ export { AboutPTModal } from "./PerformanceType/AboutPT";
 export { AboutPTPopupModal } from "./PerformanceType/AboutPTPopup";
 
 //
+// Revision
+//
+export {
+  RevisionContainer,
+  RevisionContainerProps
+} from "./Revisions/RevisionContainer";
+export {
+  Revision,
+  RevisionModel,
+  RevisionModelProps
+} from "./Revisions/Revision";
+
+//
 // Rubric
 //
 export { Collapsible } from "./Rubric/Collapsible";
@@ -230,6 +278,7 @@ export {
 export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
+export { RubricModal, RubricModalProps } from "./Rubric/RubricModal";
 
 //
 // Select

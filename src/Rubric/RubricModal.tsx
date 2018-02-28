@@ -1,23 +1,20 @@
 import * as React from "react";
-import * as Collapsible from "../Rubric/Collapsible";
-import { AboutItemRevisionModel } from "./AboutItemModels";
-import { AboutThisItemRevision } from "./AboutItemRevision";
-import { Rubric } from "../Rubric/Rubric";
 import * as ReactModal from "react-modal";
+import { RubricTableProps, RubricTable } from "../index";
 
-export interface AboutItemProps extends AboutItemRevisionModel {
+export interface RubricModalProps extends RubricTableProps {
   showModal?: boolean;
 }
 
-export interface AboutItemState {
+export interface RubricModalState {
   showModal: boolean;
 }
 
-export class AdvancedAboutItem extends React.Component<
-  AboutItemProps,
-  AboutItemState
+export class RubricModal extends React.Component<
+  RubricModalProps,
+  RubricModalState
 > {
-  constructor(props: AboutItemProps) {
+  constructor(props: RubricModalProps) {
     super(props);
     this.state = {
       showModal: this.props.showModal || false
@@ -36,30 +33,30 @@ export class AdvancedAboutItem extends React.Component<
     return (
       <div>
         <button
-          className="item-nav-btn btn btn-default btn-sm about-item-btn"
+          className="item-nav-btn btn btn-default btn-sm rubric-btn"
           role="button"
           tabIndex={0}
           onClick={this.handleShowModal}
-          aria-label="Open About This Item Modal"
+          aria-label="Open Rubric Modal"
         >
-          <span className="fa fa-info-circle" aria-hidden="true" />
-          About <span className="item-nav-long-label">This Item</span>
+          <span className="fa fa-check-circle-o" aria-hidden="true" />
+          Rubric
         </button>
 
         <ReactModal
           isOpen={this.state.showModal}
-          contentLabel="About This Item"
+          contentLabel="Rubric Information Modal"
           onRequestClose={this.handleHideModal}
           overlayClassName="react-modal-overlay"
-          className="react-modal-content about-item-modal"
+          className="react-modal-content rubric-table-modal"
         >
           <div
             className="modal-wrapper"
-            aria-labelledby="About Item Modal"
+            aria-labelledby="Rubric Information Modal"
             aria-hidden="true"
           >
             <div className="modal-header">
-              <h4 className="modal-title">About This Item</h4>
+              <h4 className="modal-title">Rubric</h4>
               <button
                 className="close"
                 onClick={this.handleHideModal}
@@ -69,7 +66,7 @@ export class AdvancedAboutItem extends React.Component<
               </button>
             </div>
             <div className="modal-body">
-              <AboutThisItemRevision {...this.props} />
+              <RubricTable {...this.props} />
             </div>
             <div className="modal-footer">
               <button

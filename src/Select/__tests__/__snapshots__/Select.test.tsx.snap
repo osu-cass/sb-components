@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select handles on change event 1`] = `
-<div>
+<div
+  className=""
+>
   <label>
     <span
       className=""
@@ -31,7 +33,9 @@ exports[`Select handles on change event 1`] = `
 `;
 
 exports[`Select handles on change event 2`] = `
-<div>
+<div
+  className=""
+>
   <label>
     <span
       className=""
