@@ -157,6 +157,8 @@ export class ItemBankContainer extends React.Component<
    */
   handleChangeViewItem = () => {
     const { currentItem, items } = this.state;
+
+    console.log("change view item", currentItem);
     if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem);
       this.fetchAccResourceGroups({
@@ -236,6 +238,12 @@ export class ItemBankContainer extends React.Component<
   };
 
   onRevisionSelect = (revision: string) => {
+    const { currentItem } = this.state;
+    if (currentItem) {
+      currentItem.revision = revision;
+    }
+    this.setState({ currentItem });
+    this.handleChangeViewItem();
     console.log("revision", revision);
   };
 
