@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots About This Item Revision displays information about an item 1`] = `
+<div
+  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="adv-about-item-details"
+  >
+    <div>
+      <p
+        className="card-text identifier"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Identifier
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          100
+        </span>
+      </p>
+      <p
+        className="card-text item-author"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Author
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Hannah_Hacker
+        </span>
+      </p>
+      <p
+        className="card-text item-spec-format"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          itemSpecFormat
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          SmarterApp
+        </span>
+      </p>
+      <p
+        className="card-text last-modified-by"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Last Modified By
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Hannah_Hacker
+        </span>
+      </p>
+      <p
+        className="card-text security-status"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Security Status
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Non-secure
+        </span>
+      </p>
+      <p
+        className="card-text item-description"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Description
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Describes item 100-100
+        </span>
+      </p>
+      <p
+        className="card-text status"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Status
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Released
+        </span>
+      </p>
+    </div>
+    <div>
+      <p
+        className="card-text stimulus-format"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Stimulus Format
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Standard
+        </span>
+      </p>
+      <p
+        className="card-text subject"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Subject
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          subject type
+        </span>
+      </p>
+      <p
+        className="card-text version"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Version
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          2
+        </span>
+      </p>
+      <p
+        className="card-text intended-grade"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Intended Grade
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text minimum-grade"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Minimum Grade
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text maximum-grade"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Maximum Grade
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text depth-of-knowledge"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Depth of Knowledge
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          
+        </span>
+      </p>
+      <p
+        className="card-text interaction-type"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Interaction Type
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          section
+        </span>
+      </p>
+      <p
+        className="card-text max-points"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Maximum Points
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          100
+        </span>
+      </p>
+    </div>
+    <div>
+      <p
+        className="card-text allow-calculator"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Allow Calculator
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          false
+        </span>
+      </p>
+      <p
+        className="card-text copy-other-restrict"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Copyright and other restrictions
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text braille-type"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          brailleType
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text enemy-item"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          enemyItem
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text publication"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Publication
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          SBAC-SH-v1:SH-Undesignated
+        </span>
+      </p>
+      <p
+        className="card-text primary-standard"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Primary Standard
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          SBAC-SH-v1
+        </span>
+      </p>
+      <p
+        className="card-text associated-tutorial"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          associatedTutorial
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text associated-wordlist"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          Associated Wordlist
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          NA
+        </span>
+      </p>
+      <p
+        className="card-text language"
+        tabIndex={0}
+      >
+        <span
+          className="card-text-label"
+        >
+          language
+          :
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          english
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -90,7 +90,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
     if (col.helpText) {
       content = (
         <ToolTip
-          helpText={col.helpText(cellData)}
+          helpText={<p>col.helpText(cellData)</p>}
           position="top"
           displayIcon={false}
         >

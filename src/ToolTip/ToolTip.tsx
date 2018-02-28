@@ -2,7 +2,7 @@ import * as React from "react";
 
 export interface ToolTipProps {
   toolTipHeader?: string;
-  helpText?: string;
+  helpText?: JSX.Element;
   displayIcon?: boolean;
   position?: "top" | "bottom";
 }
@@ -48,10 +48,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
       return (
         <div className={`tool-tip-message ${this.props.position}`}>
           {this.renderToolTipHeader()}
-          <div
-            className="tool-tip-help-text"
-            dangerouslySetInnerHTML={{ __html: this.props.helpText }}
-          />
+          {this.props.helpText}
         </div>
       );
     }

@@ -334,7 +334,9 @@ exports[`FilterContainer renders 1`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -847,7 +849,9 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -1360,7 +1364,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -1769,7 +1775,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Grade Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -1796,14 +1806,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Grade Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -1920,7 +1925,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Subject Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -1947,14 +1956,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -2092,7 +2096,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Subject Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -2119,14 +2127,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -2227,7 +2230,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Subject Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -2254,14 +2261,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -2668,7 +2670,9 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""

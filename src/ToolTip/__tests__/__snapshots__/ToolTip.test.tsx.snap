@@ -21,14 +21,7 @@ exports[`ToolTip displays help when hovered 1`] = `
     <div
       className="tool-tip-message top"
     >
-      <div
-        className="tool-tip-help-text"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "test",
-          }
-        }
-      />
+      test
     </div>
   </div>
 </div>
@@ -55,14 +48,7 @@ exports[`ToolTip matches snapshot 1`] = `
     <div
       className="tool-tip-message top"
     >
-      <div
-        className="tool-tip-help-text"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "test",
-          }
-        }
-      />
+      test
     </div>
   </div>
 </div>
