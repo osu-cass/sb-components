@@ -242,8 +242,7 @@ export class ItemBankContainer extends React.Component<
     if (currentItem) {
       currentItem.revision = revision;
     }
-    this.setState({ currentItem });
-    this.handleChangeViewItem();
+    this.setState({ currentItem }, this.handleChangeViewItem);
     console.log("revision", revision);
   };
 
