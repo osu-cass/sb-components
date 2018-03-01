@@ -2,7 +2,7 @@
 
 exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -16,7 +16,7 @@ exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
   }
 >
   <div
-    className="section"
+    className="section section-dark"
   >
     <div>
       <button
@@ -68,7 +68,7 @@ exports[`Storyshots Style Buttons Disabled bg-dark 1`] = `
 
 exports[`Storyshots Style Buttons Disabled bg-light 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -134,7 +134,7 @@ exports[`Storyshots Style Buttons Disabled bg-light 1`] = `
 
 exports[`Storyshots Style Buttons Sizes 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -171,7 +171,7 @@ exports[`Storyshots Style Buttons Sizes 1`] = `
 
 exports[`Storyshots Style Buttons bg-dark 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -185,7 +185,7 @@ exports[`Storyshots Style Buttons bg-dark 1`] = `
   }
 >
   <div
-    className="section"
+    className="section section-dark"
   >
     <div>
       <button
@@ -237,7 +237,7 @@ exports[`Storyshots Style Buttons bg-dark 1`] = `
 
 exports[`Storyshots Style Buttons bg-light 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

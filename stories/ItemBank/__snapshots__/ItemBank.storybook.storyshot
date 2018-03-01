@@ -71,7 +71,7 @@ exports[`Storyshots Item Bank default 1`] = `
           className="section revisions-items"
         >
           <div
-            className="revisions section-light section-compact"
+            className="revisions section section-light section-compact"
           >
             <h3
               className="revisions-header"

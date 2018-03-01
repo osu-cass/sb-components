@@ -2,7 +2,7 @@
 
 exports[`Storyshots Search Result Container normal render 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

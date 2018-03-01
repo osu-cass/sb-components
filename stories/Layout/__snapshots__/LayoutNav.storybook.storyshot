@@ -2,7 +2,7 @@
 
 exports[`Storyshots Layout Nav name links 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -116,7 +116,7 @@ exports[`Storyshots Layout Nav name links 1`] = `
 
 exports[`Storyshots Layout Nav name no links 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

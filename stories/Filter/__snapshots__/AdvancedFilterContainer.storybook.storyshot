@@ -2,7 +2,7 @@
 
 exports[`Storyshots Advanced Filter Container normal render 1`] = `
 <div
-  className="section-light adv-filter-container"
+  className="section section-light adv-filter-container"
   id=""
 >
   <div
@@ -44,7 +44,7 @@ exports[`Storyshots Advanced Filter Container normal render 1`] = `
 
 exports[`Storyshots Advanced Filter Container with page title 1`] = `
 <div
-  className="section-light adv-filter-container"
+  className="section section-light adv-filter-container"
   id=""
 >
   <div

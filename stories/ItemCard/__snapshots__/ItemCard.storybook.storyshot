@@ -2,7 +2,7 @@
 
 exports[`Storyshots Item Card Item Card 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -125,7 +125,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
 
 exports[`Storyshots Item Card Item Card Condensed 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
