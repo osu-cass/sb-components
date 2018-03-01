@@ -143,7 +143,7 @@ export class BasicFilterContainer extends React.Component<
         </div>
       );
     }
-    let className = "bf-container section-light";
+    let className = "bf-container section section-light";
     if (expanded) {
       className = `${className} bf-expanded`;
     }
