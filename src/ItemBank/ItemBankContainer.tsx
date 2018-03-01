@@ -73,7 +73,7 @@ export class ItemBankContainer extends React.Component<
       items,
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
-      itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377",
+      itemUrl: "",
       sections: { kind: "loading" },
       revisions: { kind: "loading" }
     };
@@ -170,6 +170,14 @@ export class ItemBankContainer extends React.Component<
       const previousItem = getPreviousItemBank(currentItem, items);
 
       this.setState({ nextItem, previousItem });
+
+      if (currentItem) {
+        this.setState({
+          itemUrl: `http://ivs.smarterbalanced.org/items?ids=${
+            currentItem.bankKey
+          }-${currentItem.itemKey}`
+        });
+      }
     }
   };
 

@@ -61,7 +61,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
 
   render() {
     return (
-      <div>
+      <div className="csv-entry-wrapper">
         {this.renderHelpButton()}
         <textarea
           className="csv-text-entry"
