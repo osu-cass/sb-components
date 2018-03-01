@@ -53,7 +53,7 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
 
   render() {
     return (
-      <div className="section current-items-table">
+      <div className="section section-dark current-items-table">
         <table>
           {this.renderHeader()}
           {this.renderBody()}

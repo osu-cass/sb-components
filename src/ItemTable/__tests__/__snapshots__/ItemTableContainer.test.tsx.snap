@@ -1054,12 +1054,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1467,12 +1464,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1689,12 +1683,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1911,12 +1902,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -2798,12 +2786,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -3021,12 +3006,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -3243,12 +3225,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -3465,12 +3444,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -4387,12 +4363,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -4610,12 +4583,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -4833,12 +4803,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -5055,12 +5022,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6017,12 +5981,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6240,12 +6201,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6463,12 +6421,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6685,12 +6640,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -7678,12 +7630,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -7900,12 +7849,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -8122,12 +8068,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -8345,12 +8288,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -9368,12 +9308,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -9590,12 +9527,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -9812,12 +9746,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -10035,12 +9966,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11088,12 +11016,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11311,12 +11236,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11533,12 +11455,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11755,12 +11674,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td

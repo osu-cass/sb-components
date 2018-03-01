@@ -2,7 +2,7 @@
 
 exports[`Storyshots Item Table Container normal render 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -181,12 +181,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3206
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -280,12 +277,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3163
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -379,12 +373,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3615
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -478,12 +469,9 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 2928
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -555,7 +543,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 
 exports[`Storyshots Item Table Container render without chevron and checkbox 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -1021,7 +1009,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
 
 exports[`Storyshots Item Table Container selected item 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -1200,12 +1188,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 1
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1299,12 +1284,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 2
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1398,12 +1380,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1497,12 +1476,9 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 4
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1574,7 +1550,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
 
 exports[`Storyshots Item Table Container verify sort order 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -1753,12 +1729,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 5
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1852,12 +1825,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 6
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1951,12 +1921,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 7
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2050,12 +2017,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 8
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2149,12 +2113,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 9
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2248,12 +2209,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 10
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2347,12 +2305,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 11
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2446,12 +2401,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 12
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2545,12 +2497,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 13
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2644,12 +2593,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 14
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2743,12 +2689,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 15
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2842,12 +2785,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 16
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2941,12 +2881,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 17
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3040,12 +2977,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 18
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3139,12 +3073,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 19
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3238,12 +3169,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 20
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3337,12 +3265,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 21
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3436,12 +3361,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 22
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3535,12 +3457,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 23
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3634,12 +3553,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 24
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3733,12 +3649,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 25
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3832,12 +3745,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 26
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3931,12 +3841,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 27
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4030,12 +3937,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 28
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4129,12 +4033,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 29
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4228,12 +4129,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 30
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4327,12 +4225,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 31
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4426,12 +4321,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 32
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4525,12 +4417,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 33
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4624,12 +4513,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 34
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4723,12 +4609,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 35
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4822,12 +4705,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 36
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -4921,12 +4801,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 37
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5020,12 +4897,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 38
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5119,12 +4993,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 39
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5218,12 +5089,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 40
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5317,12 +5185,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 41
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5416,12 +5281,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 42
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5515,12 +5377,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 43
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5614,12 +5473,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 44
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5713,12 +5569,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 45
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5812,12 +5665,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 46
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -5911,12 +5761,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 47
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6010,12 +5857,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 48
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6109,12 +5953,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 49
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6208,12 +6049,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 50
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6307,12 +6145,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 51
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6406,12 +6241,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 52
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6505,12 +6337,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 53
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -6604,12 +6433,9 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             className="item"
           >
             <span>
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 54
-              </a>
+              </span>
             </span>
           </td>
           <td

@@ -249,7 +249,7 @@ export class AdvancedFilterContainer extends React.Component<
     const id = this.props.filterId ? this.props.filterId : "";
 
     return (
-      <div id={id} className="section-light adv-filter-container">
+      <div id={id} className="section section-light adv-filter-container">
         {this.renderCollapsedFilterContainer()}
         {this.renderExpanded()}
       </div>

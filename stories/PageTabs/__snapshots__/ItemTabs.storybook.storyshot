@@ -2,7 +2,7 @@
 
 exports[`Storyshots Item Tab information tab 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -46,7 +46,7 @@ exports[`Storyshots Item Tab information tab 1`] = `
 
 exports[`Storyshots Item Tab rubric tab 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -101,7 +101,7 @@ exports[`Storyshots Item Tab rubric tab 1`] = `
 
 exports[`Storyshots Item Tab viewer tab 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
