@@ -2,7 +2,7 @@
 
 exports[`Storyshots Item Table Container normal render 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -543,7 +543,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
 
 exports[`Storyshots Item Table Container render without chevron and checkbox 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -1009,7 +1009,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
 
 exports[`Storyshots Item Table Container selected item 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -1550,7 +1550,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
 
 exports[`Storyshots Item Table Container verify sort order 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

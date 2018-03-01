@@ -2,7 +2,7 @@
 
 exports[`Storyshots Error Boundary shows the fallback ui 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

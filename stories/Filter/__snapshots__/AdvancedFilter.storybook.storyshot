@@ -2,7 +2,7 @@
 
 exports[`Storyshots Advanced Filter disabled 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -19,7 +19,7 @@ exports[`Storyshots Advanced Filter disabled 1`] = `
 
 exports[`Storyshots Advanced Filter disabled multi 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -36,7 +36,7 @@ exports[`Storyshots Advanced Filter disabled multi 1`] = `
 
 exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -129,7 +129,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
 
 exports[`Storyshots Advanced Filter disabled with selections 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -146,7 +146,7 @@ exports[`Storyshots Advanced Filter disabled with selections 1`] = `
 
 exports[`Storyshots Advanced Filter multi select 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -231,7 +231,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
 
 exports[`Storyshots Advanced Filter multi select all  1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -324,7 +324,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
 
 exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -417,7 +417,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
 
 exports[`Storyshots Advanced Filter no options 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -489,7 +489,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
 
 exports[`Storyshots Advanced Filter single select 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

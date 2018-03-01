@@ -2,7 +2,7 @@
 
 exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 <div
-  className="bf-container section-light bf-expanded"
+  className="bf-container section section-light bf-expanded"
   id=""
 >
   <div
@@ -107,7 +107,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
 
 exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter expansion button 1`] = `
 <div
-  className="bf-container section-light"
+  className="bf-container section section-light"
   id=""
 >
   <div

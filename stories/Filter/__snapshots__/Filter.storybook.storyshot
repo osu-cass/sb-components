@@ -5,7 +5,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
   className="filter-component-wrapper"
 >
   <div
-    className="bf-container section-light"
+    className="bf-container section section-light"
     id=""
   >
     <div

@@ -2,7 +2,7 @@
 
 exports[`Storyshots About Item Modal default 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -40,7 +40,7 @@ exports[`Storyshots About Item Modal default 1`] = `
 
 exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -78,7 +78,7 @@ exports[`Storyshots About Item Modal showing disabled rubrics 1`] = `
 
 exports[`Storyshots About Item Modal showing no rubrics 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -116,7 +116,7 @@ exports[`Storyshots About Item Modal showing no rubrics 1`] = `
 
 exports[`Storyshots About Item Modal showing rubrics 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -154,7 +154,7 @@ exports[`Storyshots About Item Modal showing rubrics 1`] = `
 
 exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -192,7 +192,7 @@ exports[`Storyshots About Item Modal showing rubrics ENU ESN 1`] = `
 
 exports[`Storyshots About Item Modal showing rubrics ESN 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

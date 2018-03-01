@@ -2,7 +2,7 @@
 
 exports[`Storyshots About Item Revision Modal closed 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -40,7 +40,7 @@ exports[`Storyshots About Item Revision Modal closed 1`] = `
 
 exports[`Storyshots About Item Revision Modal default open 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
