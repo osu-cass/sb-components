@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { ErrorBoundary } from "../../src/ErrorBoundary/ErrorBoundary";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 
 class ErrorMssg extends React.Component {
   render() {
@@ -9,13 +9,12 @@ class ErrorMssg extends React.Component {
   }
 }
 
-interface Props {}
 interface State {
   clicks: number;
 }
 
-class ErrorThrower extends React.Component<Props, State> {
-  constructor(props: Props) {
+class ErrorThrower extends React.Component<{}, State> {
+  constructor(props: {}) {
     super(props);
     this.state = {
       clicks: 0
@@ -30,6 +29,7 @@ class ErrorThrower extends React.Component<Props, State> {
     if (this.state.clicks > 0) {
       throw new Error("Error");
     }
+
     return (
       <div>
         <button
@@ -45,7 +45,7 @@ class ErrorThrower extends React.Component<Props, State> {
 }
 
 storiesOf("Error Boundary", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("shows the fallback ui", () => (
     <ErrorBoundary fallbackUI={<ErrorMssg />}>
       <ErrorThrower />

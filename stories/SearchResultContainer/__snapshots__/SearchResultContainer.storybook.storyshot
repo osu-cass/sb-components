@@ -2,7 +2,7 @@
 
 exports[`Storyshots Search Result Container normal render 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -240,14 +240,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": "target A description",
-                            }
-                          }
-                        />
+                        <p>
+                          col.helpText(cellData)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -323,14 +318,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": "target B description",
-                            }
-                          }
-                        />
+                        <p>
+                          col.helpText(cellData)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -406,14 +396,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": "target C description",
-                            }
-                          }
-                        />
+                        <p>
+                          col.helpText(cellData)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -489,14 +474,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       <div
                         className="tool-tip-message top"
                       >
-                        <div
-                          className="tool-tip-help-text"
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": "target D description",
-                            }
-                          }
-                        />
+                        <p>
+                          col.helpText(cellData)
+                        </p>
                       </div>
                     </div>
                   </div>

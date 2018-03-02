@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots About Item Revision Modal closed 1`] = `
+<div
+  className="section section-dark"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots About Item Revision Modal default open 1`] = `
+<div
+  className="section section-dark"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open About This Item Modal"
+      className="item-nav-btn btn btn-default btn-sm about-item-btn"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="fa fa-info-circle"
+      />
+      About 
+      <span
+        className="item-nav-long-label"
+      >
+        This Item
+      </span>
+    </button>
+  </div>
+</div>
+`;

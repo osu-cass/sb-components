@@ -18,6 +18,7 @@ exports[`Storyshots Item Viewer Frame with an item 1`] = `
     onLoad={[Function]}
     onLoadStart={[Function]}
     src="http://ivs.smarterbalanced.org/items?ids=187-3246"
+    title=""
   />
 </div>
 `;

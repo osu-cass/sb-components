@@ -2,7 +2,7 @@
 
 exports[`Storyshots ToolTip display above text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -31,14 +31,9 @@ exports[`Storyshots ToolTip display above text 1`] = `
       <div
         className="tool-tip-message top"
       >
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "test",
-            }
-          }
-        />
+        <p>
+          test
+        </p>
       </div>
     </div>
   </div>
@@ -47,7 +42,7 @@ exports[`Storyshots ToolTip display above text 1`] = `
 
 exports[`Storyshots ToolTip display above text large box 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -85,14 +80,10 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
             Header for my tool tip
           </h3>
         </span>
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            }
-          }
-        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           
+        </p>
       </div>
     </div>
   </div>
@@ -101,7 +92,7 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
 
 exports[`Storyshots ToolTip display below text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -130,14 +121,9 @@ exports[`Storyshots ToolTip display below text 1`] = `
       <div
         className="tool-tip-message bottom"
       >
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "test",
-            }
-          }
-        />
+        <p>
+          test
+        </p>
       </div>
     </div>
   </div>
@@ -146,7 +132,7 @@ exports[`Storyshots ToolTip display below text 1`] = `
 
 exports[`Storyshots ToolTip display below text large box 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -184,14 +170,10 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
             Header for my tool tip
           </h3>
         </span>
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            }
-          }
-        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           
+        </p>
       </div>
     </div>
   </div>
@@ -200,7 +182,7 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
 
 exports[`Storyshots ToolTip info for button 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -235,14 +217,9 @@ exports[`Storyshots ToolTip info for button 1`] = `
       <div
         className="tool-tip-message undefined"
       >
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "test",
-            }
-          }
-        />
+        <p>
+          test
+        </p>
       </div>
     </div>
   </div>
@@ -251,7 +228,7 @@ exports[`Storyshots ToolTip info for button 1`] = `
 
 exports[`Storyshots ToolTip with custom help text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -289,14 +266,9 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
             Header for my tool tip
           </h3>
         </span>
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<b>Commit</b>",
-            }
-          }
-        />
+        <b>
+          Commit
+        </b>
       </div>
     </div>
   </div>
@@ -305,7 +277,7 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
 
 exports[`Storyshots ToolTip with icon 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -338,14 +310,9 @@ exports[`Storyshots ToolTip with icon 1`] = `
       <div
         className="tool-tip-message undefined"
       >
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "test",
-            }
-          }
-        />
+        <p>
+          test
+        </p>
       </div>
     </div>
   </div>
@@ -354,7 +321,7 @@ exports[`Storyshots ToolTip with icon 1`] = `
 
 exports[`Storyshots ToolTip with just long text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -383,14 +350,10 @@ exports[`Storyshots ToolTip with just long text 1`] = `
       <div
         className="tool-tip-message undefined"
       >
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            }
-          }
-        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           
+        </p>
       </div>
     </div>
   </div>
@@ -399,7 +362,7 @@ exports[`Storyshots ToolTip with just long text 1`] = `
 
 exports[`Storyshots ToolTip with just text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -428,14 +391,9 @@ exports[`Storyshots ToolTip with just text 1`] = `
       <div
         className="tool-tip-message undefined"
       >
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "test",
-            }
-          }
-        />
+        <p>
+          test
+        </p>
       </div>
     </div>
   </div>
@@ -444,7 +402,7 @@ exports[`Storyshots ToolTip with just text 1`] = `
 
 exports[`Storyshots ToolTip with just text and header 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -482,14 +440,10 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
             Header for my tool tip
           </h3>
         </span>
-        <div
-          className="tool-tip-help-text"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            }
-          }
-        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           
+        </p>
       </div>
     </div>
   </div>
@@ -498,7 +452,7 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
 
 exports[`Storyshots ToolTip with no help text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

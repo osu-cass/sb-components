@@ -11,6 +11,7 @@ exports[`ItemViewerFrame after page content is loaded 1`] = `
     onLoad={[Function]}
     onLoadStart={[Function]}
     src="http://test.com"
+    title=""
   />
 </div>
 `;
@@ -33,6 +34,7 @@ exports[`ItemViewerFrame matches snapshot while loading 1`] = `
     onLoad={[Function]}
     onLoadStart={[Function]}
     src="http://test.com"
+    title=""
   />
 </div>
 `;

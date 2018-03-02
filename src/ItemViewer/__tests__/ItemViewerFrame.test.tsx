@@ -10,13 +10,13 @@ describe("ItemViewerFrame", () => {
   };
 
   it("matches snapshot while loading", () => {
-    let wrapper = shallow(<ItemViewerFrame {...obj} />);
+    const wrapper = shallow(<ItemViewerFrame {...obj} />);
     wrapper.setState({ loading: true });
     expect(wrapper).toMatchSnapshot();
   });
 
   it("after page content is loaded", () => {
-    let wrapper = shallow(<ItemViewerFrame {...obj} />);
+    const wrapper = shallow(<ItemViewerFrame {...obj} />);
     wrapper.setState({ loading: false });
     expect(wrapper).toMatchSnapshot();
   });

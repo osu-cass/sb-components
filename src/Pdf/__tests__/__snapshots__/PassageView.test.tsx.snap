@@ -17,9 +17,9 @@ exports[`EvidenceStatement matches snapshot 1`] = `
     view={
       Object {
         "captured": true,
-        "html": null,
+        "html": undefined,
         "id": "12334",
-        "picturePath": null,
+        "picturePath": undefined,
         "type": 1,
       }
     }

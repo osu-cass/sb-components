@@ -170,7 +170,7 @@ exports[`FilterContainer renders 1`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -190,7 +190,7 @@ exports[`FilterContainer renders 1`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -228,7 +228,7 @@ exports[`FilterContainer renders 1`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -248,7 +248,7 @@ exports[`FilterContainer renders 1`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -258,7 +258,7 @@ exports[`FilterContainer renders 1`] = `
       resetHandler={[Function]}
     >
       <div
-        className="bf-container section-light"
+        className="bf-container section section-light"
         id=""
       >
         <div
@@ -291,8 +291,8 @@ exports[`FilterContainer renders 1`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -334,7 +334,9 @@ exports[`FilterContainer renders 1`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -438,8 +440,8 @@ exports[`FilterContainer renders 1`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
@@ -683,7 +685,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -703,7 +705,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -741,7 +743,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -761,7 +763,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -771,7 +773,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
       resetHandler={[Function]}
     >
       <div
-        className="bf-container section-light"
+        className="bf-container section section-light"
         id=""
       >
         <div
@@ -804,8 +806,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -847,7 +849,9 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -951,8 +955,8 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
@@ -1196,7 +1200,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -1216,7 +1220,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -1254,7 +1258,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -1274,7 +1278,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -1284,7 +1288,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       resetHandler={[Function]}
     >
       <div
-        className="bf-container section-light bf-expanded"
+        className="bf-container section section-light bf-expanded"
         id=""
       >
         <div
@@ -1317,8 +1321,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -1360,7 +1364,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -1464,8 +1470,8 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"
@@ -1682,7 +1688,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       onUpdateFilter={[Function]}
     >
       <div
-        className="section-light adv-filter-container"
+        className="section section-light adv-filter-container"
         id=""
       >
         <div
@@ -1769,7 +1775,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Grade Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -1796,14 +1806,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Grade Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -1920,7 +1925,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Subject Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -1947,14 +1956,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -2092,7 +2096,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Subject Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -2119,14 +2127,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -2227,7 +2230,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
-                      helpText="Subject Help"
+                      helpText={
+                        <p>
+                          helpText
+                        </p>
+                      }
                     >
                       <div
                         className="tool-tip-links"
@@ -2254,14 +2261,9 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                           <div
                             className="tool-tip-message undefined"
                           >
-                            <div
-                              className="tool-tip-help-text"
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "Subject Help",
-                                }
-                              }
-                            />
+                            <p>
+                              helpText
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -2504,7 +2506,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           },
         ],
         "label": "Grade",
-        "type": 3,
+        "optionType": 3,
       },
       Object {
         "code": "Subject",
@@ -2524,7 +2526,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           },
         ],
         "label": "Subjects",
-        "type": 2,
+        "optionType": 2,
       },
     ]
   }
@@ -2562,7 +2564,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               },
             ],
             "label": "Grade",
-            "type": 3,
+            "optionType": 3,
           },
           Object {
             "code": "Subject",
@@ -2582,7 +2584,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               },
             ],
             "label": "Subjects",
-            "type": 2,
+            "optionType": 2,
           },
         ]
       }
@@ -2592,7 +2594,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
       resetHandler={[Function]}
     >
       <div
-        className="bf-container section-light"
+        className="bf-container section section-light"
         id=""
       >
         <div
@@ -2625,8 +2627,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             }
             key="0"
             label="Grade"
+            optionType={3}
             selectedHandler={[Function]}
-            type={3}
           >
             <div
               className="bf-selection"
@@ -2668,7 +2670,9 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 }
                 selected="default"
               >
-                <div>
+                <div
+                  className=""
+                >
                   <label>
                     <span
                       className=""
@@ -2772,8 +2776,8 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             }
             key="1"
             label="Subjects"
+            optionType={2}
             selectedHandler={[Function]}
-            type={2}
           >
             <div
               className="bf-selection"

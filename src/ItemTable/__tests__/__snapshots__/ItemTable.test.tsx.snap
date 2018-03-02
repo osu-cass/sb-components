@@ -773,12 +773,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3206
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -821,7 +818,11 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="Target A description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -840,14 +841,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "Target A description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1047,6 +1043,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                         onLoad={[Function]}
                         onLoadStart={[Function]}
                         src="http://ivs.smarterbalanced.org/items?ids=187-3206"
+                        title=""
                       />
                     </div>
                   </ItemViewerFrame>
@@ -1368,12 +1365,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3163
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1416,7 +1410,11 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="Target B description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -1435,14 +1433,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "Target B description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1773,12 +1766,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3615
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1821,7 +1811,11 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="target C description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -1840,14 +1834,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target C description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2178,12 +2167,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 2928
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2226,7 +2212,11 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="target D description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -2245,14 +2235,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2562,12 +2547,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3206
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2610,7 +2592,11 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="Target A description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -2629,14 +2615,9 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "Target A description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -2786,12 +2767,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3163
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2834,7 +2812,11 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="Target B description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -2853,14 +2835,9 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "Target B description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3009,12 +2986,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3615
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3057,7 +3031,11 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="target C description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -3076,14 +3054,9 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target C description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -3232,12 +3205,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 2928
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3280,7 +3250,11 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 displayIcon={false}
-                helpText="target D description"
+                helpText={
+                  <p>
+                    col.helpText(cellData)
+                  </p>
+                }
                 position="top"
               >
                 <div
@@ -3299,14 +3273,9 @@ exports[`ItemTable matches snapshot 1`] = `
                     <div
                       className="tool-tip-message top"
                     >
-                      <div
-                        className="tool-tip-help-text"
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "target D description",
-                          }
-                        }
-                      />
+                      <p>
+                        col.helpText(cellData)
+                      </p>
                     </div>
                   </div>
                 </div>

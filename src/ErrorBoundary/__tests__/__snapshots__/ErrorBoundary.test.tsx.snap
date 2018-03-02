@@ -8,6 +8,7 @@ exports[`ErrorBoundary after the error is thrown 1`] = `
     <div>
       <button
         className="test-button"
+        onClick={[Function]}
       >
         Click Me!
       </button>
@@ -24,6 +25,7 @@ exports[`ErrorBoundary before error is thrown 1`] = `
     <div>
       <button
         className="test-button"
+        onClick={[Function]}
       >
         Click Me!
       </button>

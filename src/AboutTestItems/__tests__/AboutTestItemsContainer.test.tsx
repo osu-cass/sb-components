@@ -20,19 +20,13 @@ describe("AboutTestItemsContainer", () => {
       showRubrics={true}
       aboutClient={mockAboutTestClient}
       params={{}}
+      errorRedirectPath=""
     />
   );
 
   it("default render", () => {
     expect(wrapper).toMatchSnapshot();
   });
-
-  // TODO: Add test for checking select options and changing
-  // it("select options", () => {
-  //   const select = wrapper.filterWhere(node => node.type() === Select);
-
-  //   expect(select.children()).toHaveLength(3);
-  // });
 
   it("about item modal", () => {
     const aboutItem = wrapper.findWhere(node => node.type() === AboutItem);

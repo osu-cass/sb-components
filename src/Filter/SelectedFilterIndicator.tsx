@@ -7,6 +7,7 @@ export interface SelectedFilterIndicatorProps {
   onClick: () => void;
 }
 
+// tslint:disable-next-line: variable-name
 export const SelectedFilterIndicator: React.SFC<
   SelectedFilterIndicatorProps
 > = props => {

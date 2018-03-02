@@ -4,6 +4,7 @@ exports[`Storyshots Collapsible Collapsible with CSS classname 1`] = `
 <div
   aria-expanded={false}
   className="test-collapsible"
+  role="tab"
   style={Object {}}
 >
   <a
@@ -43,6 +44,7 @@ exports[`Storyshots Collapsible Collapsible with inline red border 1`] = `
 <div
   aria-expanded={false}
   className=""
+  role="tab"
   style={
     Object {
       "border": "1px solid red",
@@ -86,6 +88,7 @@ exports[`Storyshots Collapsible No classname of style 1`] = `
 <div
   aria-expanded={false}
   className=""
+  role="tab"
   style={Object {}}
 >
   <a

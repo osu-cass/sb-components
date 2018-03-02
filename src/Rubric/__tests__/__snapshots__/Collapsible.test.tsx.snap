@@ -3,6 +3,7 @@
 exports[`Collapsible collapses 1`] = `
 <div
   aria-expanded={false}
+  role="tab"
 >
   <a
     className="collapsible-label link-button"
@@ -28,6 +29,7 @@ exports[`Collapsible collapses 1`] = `
 exports[`Collapsible expands 1`] = `
 <div
   aria-expanded={false}
+  role="tab"
 >
   <a
     className="collapsible-label link-button"
@@ -53,6 +55,7 @@ exports[`Collapsible expands 1`] = `
 exports[`Collapsible expands 2`] = `
 <div
   aria-expanded={true}
+  role="tab"
 >
   <a
     className="collapsible-label link-button"

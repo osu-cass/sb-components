@@ -88,9 +88,7 @@ export function isStreamlinedEnabled(
 export function getResourceTypes(
   resourceGroups: AccResourceGroupModel[]
 ): string[] {
-  const resourceTypes = resourceGroups.map(t => t.label);
-
-  return resourceTypes;
+  return resourceGroups.map(t => t.label);
 }
 
 export interface ResourceSelectionsModel {

@@ -1,5 +1,5 @@
 function readCookie(name: string): string | undefined {
-  const cookie = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)");
+  const cookie = document.cookie.match(`(^|;)\\s*${name}\\s*=\\s*([^;]+)`);
 
   return cookie ? cookie.pop() : "";
 }

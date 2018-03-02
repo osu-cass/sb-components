@@ -2,7 +2,7 @@
 
 exports[`Storyshots Iframe Modal with an item 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -31,7 +31,7 @@ exports[`Storyshots Iframe Modal with an item 1`] = `
 
 exports[`Storyshots Iframe Modal with no contents 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

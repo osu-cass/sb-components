@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { CenterDecorator } from "../CenterDecorator";
+import { centerDecorator } from "../CenterDecorator";
 import {
   itemTableProps,
   itemTableSortProps,
@@ -9,7 +9,7 @@ import {
 import { ItemTableContainer } from "src/index";
 
 storiesOf("Item Table Container", module)
-  .addDecorator(CenterDecorator)
+  .addDecorator(centerDecorator)
   .add("normal render", () => <ItemTableContainer {...itemTableProps} />)
   .add("render without chevron and checkbox", () => (
     <ItemTableContainer {...itemTableProps} isLinkTable={true} />

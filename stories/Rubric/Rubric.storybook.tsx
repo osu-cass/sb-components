@@ -2,9 +2,8 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { Rubric } from "src/index";
 import { RubricModel } from "src/Rubric/RubricModels";
-import { CenterDecorator } from "../CenterDecorator";
 
-const RubricMockProps: RubricModel = {
+const rubricMockProps: RubricModel = {
   language: "English",
   rubricEntries: [
     {
@@ -47,4 +46,4 @@ storiesOf("Rubric", module)
   .add("with an empty model", () => (
     <Rubric language="English" rubricEntries={[]} samples={[]} />
   ))
-  .add("with a rubric model", () => <Rubric {...RubricMockProps} />);
+  .add("with a rubric model", () => <Rubric {...rubricMockProps} />);

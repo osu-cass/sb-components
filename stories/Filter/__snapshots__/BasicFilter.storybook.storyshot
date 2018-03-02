@@ -2,7 +2,7 @@
 
 exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -19,7 +19,9 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
     className="bf-selection"
     id="grade-bf"
   >
-    <div>
+    <div
+      className=""
+    >
       <label>
         <span
           className=""
@@ -81,7 +83,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
 
 exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -98,7 +100,9 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
     className="bf-selection"
     id="grade-bf"
   >
-    <div>
+    <div
+      className=""
+    >
       <label>
         <span
           className=""
@@ -136,7 +140,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
 
 exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -222,7 +226,7 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
 
 exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
