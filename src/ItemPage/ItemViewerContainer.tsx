@@ -23,7 +23,7 @@ import {
 
 const calculatorURL = "http://calculator.smarterbalanced.org";
 export interface ItemViewerContainerProps extends ItemPageModels.ItemPageModel {
-  onSave: (selections: ResourceSelectionsModel) => void;
+  onSave: (accGroups: AccResourceGroupModel[]) => void;
   onReset: () => void;
   aboutThisItemVM: AboutItemModel;
   currentItem: ItemPageModels.ItemIdentifierModel;
@@ -38,10 +38,6 @@ export class ItemViewerContainer extends React.Component<
   constructor(props: ItemViewerContainerProps) {
     super(props);
   }
-
-  saveOptions = (resourceSelections: ResourceSelectionsModel): void => {
-    this.props.onSave(resourceSelections);
-  };
 
   renderPerformanceModals() {
     let content: JSX.Element | undefined;

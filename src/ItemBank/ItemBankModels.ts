@@ -6,6 +6,7 @@ export interface ItemRevisionModel {
   bankKey?: number;
   section?: string;
   revision?: string;
+  isaap?: string;
 }
 
 export function getItemBankName(itemRevisionModel: ItemRevisionModel) {

@@ -33,10 +33,6 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     super(props);
   }
 
-  handleAccessibilityChange = (accResource: ResourceSelectionsModel) => {
-    console.error("Not Implemented");
-  };
-
   renderRightNav(): JSX.Element | undefined {
     const {
       onAccessibilityUpdate,
@@ -54,7 +50,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         >
           <ItemAccessibilityModal
             accResourceGroups={accResourceGroups}
-            onSave={this.handleAccessibilityChange}
+            onSave={onAccessibilityUpdate}
             onReset={onAccessibilityReset}
           />
         </div>
@@ -67,14 +63,14 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
   renderNavButton(direction: "next" | "previous") {
     const { onItemSelect, nextItem, prevItem } = this.props;
     let label = "";
-    let ItemName = "";
+    let itemName = "";
     let item = nextItem;
-    if (direction == "previous") {
-      ItemName = prevItem ? getItemBankName(prevItem) : " ";
+    if (direction === "previous") {
+      itemName = prevItem ? getItemBankName(prevItem) : " ";
       label = "Previous";
       item = prevItem;
     } else {
-      ItemName = nextItem ? getItemBankName(nextItem) : " ";
+      itemName = nextItem ? getItemBankName(nextItem) : " ";
       label = "Next";
     }
 
@@ -87,13 +83,15 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         <div className="nav-button-container">
           <span
             className={
-              direction == "previous" ? "fa fa-arrow-left" : "fa fa-arrow-right"
+              direction === "previous"
+                ? "fa fa-arrow-left"
+                : "fa fa-arrow-right"
             }
             aria-hidden="true"
           />
           <div className="nav-item-link">
             <div>{label}</div>
-            <div className="nav-item-name">{ItemName}</div>
+            <div className="nav-item-name">{itemName}</div>
           </div>
         </div>
       </button>

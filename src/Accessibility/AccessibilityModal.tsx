@@ -4,14 +4,15 @@ import {
   AccessibilityResourceModel,
   AccResourceGroupModel,
   ResourceSelectionsModel,
-  getResourceTypes
+  getResourceTypes,
+  updateAccessibilityGroups
 } from "./AccessibilityModels";
 import { Dropdown, DropdownProps } from "../index";
 import * as ReactModal from "react-modal";
 
 export interface ItemAccessibilityModalProps {
   accResourceGroups: AccResourceGroupModel[];
-  onSave(selections: ResourceSelectionsModel): void;
+  onSave: (accGroups: AccResourceGroupModel[]) => void;
   onReset(): void;
   showModal?: boolean;
 }
@@ -85,8 +86,14 @@ export class ItemAccessibilityModal extends React.Component<
   };
 
   onSave = (e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) => {
+    const { onSave, accResourceGroups } = this.props;
+    const { resourceSelections } = this.state;
     e.preventDefault();
-    this.props.onSave(this.state.resourceSelections || {});
+    const newGroups = updateAccessibilityGroups(
+      resourceSelections,
+      accResourceGroups
+    );
+    onSave(newGroups);
     this.setState({ showModal: false });
   };
 

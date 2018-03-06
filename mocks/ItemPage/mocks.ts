@@ -32,10 +32,10 @@ export const itemPageMatch: match<ItemModel> = {
   url: "/"
 };
 
-export const onSave = ((selections: ResourceSelectionsModel) => {}) as ((
-  selections: ResourceSelectionsModel
-) => void);
+// tslint:disable-next-line:no-empty
+export const onSave = (accGRoups: AccResourceGroupModel[]) => {};
 
+// tslint:disable-next-line:no-empty
 export const onReset = () => {};
 
 export const itemPageModelMock: ItemPageModel = {
@@ -96,7 +96,7 @@ export const itemPageMockProps: ItemViewerContainerProps = {
   accResourceGroups: allAccessibilityResourceGroups
 };
 
-export const ItemPageMockPropsNoItem: ItemViewerContainerProps = {
+export const itemPageMockPropsNoItem: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,

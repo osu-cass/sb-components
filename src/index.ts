@@ -35,7 +35,14 @@ export {
   AccResourceGroupModel,
   getResource,
   getBrailleAccommodation,
-  ResourceSelectionsModel
+  ResourceSelectionsModel,
+  updateAccessibilityGroups,
+  isBrailleEnabled,
+  isCalculatorEnabled,
+  isResourceEnabled,
+  isStreamlinedEnabled,
+  getResouceSelectedCode,
+  getResourceTypes
 } from "./Accessibility/AccessibilityModels";
 export {
   ItemAccessibilityModalProps,

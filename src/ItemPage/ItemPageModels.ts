@@ -39,7 +39,7 @@ export interface ItemPageModel {
 
 export function toiSAAP(
   accResourceGroups: AccResourceGroupModel[],
-  defaultIsaap: string
+  defaultIsaap: string = ""
 ): string {
   let isaapCodes = defaultIsaap;
   for (const group of accResourceGroups) {
