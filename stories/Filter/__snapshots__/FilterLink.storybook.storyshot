@@ -45,7 +45,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
     }
   >
     <div
-      className="section"
+      className="section item-table-container"
     >
       <table
         className="item-table"

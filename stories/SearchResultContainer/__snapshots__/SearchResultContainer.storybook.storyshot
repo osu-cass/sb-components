@@ -48,7 +48,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
       className="search-result-body"
     >
       <div
-        className="section"
+        className="section item-table-container"
       >
         <table
           className="link-table"

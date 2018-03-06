@@ -272,7 +272,7 @@ exports[`ItemPageTable expands 1`] = `
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -2192,7 +2192,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -3734,7 +3734,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -5312,7 +5312,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -6930,7 +6930,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -8578,7 +8578,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -10256,7 +10256,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"

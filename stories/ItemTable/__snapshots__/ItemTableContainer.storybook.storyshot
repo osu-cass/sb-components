@@ -16,7 +16,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -557,7 +557,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="link-table"
@@ -1023,7 +1023,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -1564,7 +1564,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
