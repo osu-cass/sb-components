@@ -2,7 +2,7 @@
 
 exports[`Storyshots Layout Footer default footer 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

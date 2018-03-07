@@ -1,5 +1,5 @@
 import { RevisionModel } from "src/Revisions/Revision";
-const testDate = new Date("11/11/2015");
+const testDate = new Date("11/11/2015").toString();
 
 export const revisions: RevisionModel[] = [
   {

@@ -2,7 +2,7 @@
 
 exports[`Storyshots ToolTip display above text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -42,7 +42,7 @@ exports[`Storyshots ToolTip display above text 1`] = `
 
 exports[`Storyshots ToolTip display above text large box 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -92,7 +92,7 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
 
 exports[`Storyshots ToolTip display below text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -132,7 +132,7 @@ exports[`Storyshots ToolTip display below text 1`] = `
 
 exports[`Storyshots ToolTip display below text large box 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -182,7 +182,7 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
 
 exports[`Storyshots ToolTip info for button 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -228,7 +228,7 @@ exports[`Storyshots ToolTip info for button 1`] = `
 
 exports[`Storyshots ToolTip with custom help text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -277,7 +277,7 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
 
 exports[`Storyshots ToolTip with icon 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -321,7 +321,7 @@ exports[`Storyshots ToolTip with icon 1`] = `
 
 exports[`Storyshots ToolTip with just long text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -362,7 +362,7 @@ exports[`Storyshots ToolTip with just long text 1`] = `
 
 exports[`Storyshots ToolTip with just text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -402,7 +402,7 @@ exports[`Storyshots ToolTip with just text 1`] = `
 
 exports[`Storyshots ToolTip with just text and header 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -452,7 +452,7 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
 
 exports[`Storyshots ToolTip with no help text 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

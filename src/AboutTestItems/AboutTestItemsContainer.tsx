@@ -133,7 +133,7 @@ export class AboutTestItemsContainer extends React.Component<
           aria-live="polite"
           aria-relevant="text"
           dangerouslySetInnerHTML={{ __html: selectedIT.description }}
-          className="section about-items-desc"
+          className="section section-dark about-items-desc"
         />
       );
     }

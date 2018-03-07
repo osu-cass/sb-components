@@ -3,7 +3,7 @@ import { ToolTip } from "../index";
 
 export interface RevisionModel {
   author: string;
-  date: Date;
+  date: string;
   commitMessage: string;
   commitHash: string;
 }
@@ -30,12 +30,12 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
     );
   };
 
+  const date = new Date(props.date);
+
   return (
     <li key={props.commitHash}>
       <ToolTip
-        toolTipHeader={
-          props.date.toDateString() + "-" + props.date.toLocaleTimeString()
-        }
+        toolTipHeader={`${date.toDateString()}-${date.toLocaleTimeString()}`}
         helpText={renderHelpText()}
       >
         <button className="btn btn-link revisions-link" onClick={props.onClick}>
@@ -43,7 +43,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         </button>
         <div className="revisions-details">
           {props.author}-
-          {props.date.getMonth() + 1}/{props.date.getDate()}
+          {date.getMonth() + 1}/{date.getDate()}
         </div>
       </ToolTip>
     </li>

@@ -52,9 +52,11 @@ storiesOf("Style", module)
   .add("Buttons Disabled bg-light", () => (
     <div className="section section-light">{disabledButtons}</div>
   ))
-  .add("Buttons bg-dark", () => <div className="section">{buttons}</div>)
+  .add("Buttons bg-dark", () => (
+    <div className="section section-dark">{buttons}</div>
+  ))
   .add("Buttons Disabled bg-dark", () => (
-    <div className="section">{disabledButtons}</div>
+    <div className="section section-dark">{disabledButtons}</div>
   ))
   .add("Buttons Sizes", () => (
     <div className="section section-light">
