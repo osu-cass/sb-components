@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemBankViewer matches snapshot 1`] = `
+<div
+  className="item-container container"
+>
+  <div>
+    <ItemBankViewer
+      itemUrl=""
+      onAccessibilityReset={[Function]}
+      onAccessibilityUpdate={[Function]}
+      onItemSelect={[Function]}
+      onRevisionSelect={[Function]}
+    />
+  </div>
+</div>
+`;
