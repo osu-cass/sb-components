@@ -32,7 +32,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           "author": "Troy",
           "commitHash": "asdh49",
           "commitMessage": "test",
-          "date": 2018-03-06T21:16:15.383Z,
+          "date": 2015-11-16T08:00:00.000Z,
         },
       ]
     }

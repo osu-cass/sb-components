@@ -8,7 +8,7 @@ import {
 } from "../../index";
 import { ItemRevisionModel } from "../ItemBankModels";
 
-const date = new Date();
+const date = new Date("2015-11-16T00:00:00");
 
 const revision: RevisionModel = {
   author: "Troy",
