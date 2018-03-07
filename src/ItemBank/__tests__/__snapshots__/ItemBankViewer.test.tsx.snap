@@ -5,7 +5,7 @@ exports[`ItemBankViewer matches snapshot 1`] = `
   className="section revisions-items"
 >
   <RevisionContainer
-    onRevisionSelect={[Function]}
+    onRevisionSelect={[MockFunction]}
     revisions={Array []}
   />
   <div
@@ -25,14 +25,26 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
   className="section revisions-items"
 >
   <RevisionContainer
-    onRevisionSelect={[Function]}
+    onRevisionSelect={[MockFunction]}
     revisions={
       Array [
         Object {
-          "author": "Troy",
-          "commitHash": "asdh49",
-          "commitMessage": "test",
-          "date": 2015-11-16T08:00:00.000Z,
+          "author": "Troy Barnes",
+          "commitHash": "ab65jg",
+          "commitMessage": "Added functionality to the website",
+          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+        },
+        Object {
+          "author": "Pierce Hawthorne",
+          "commitHash": "h4lso6",
+          "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
+          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+        },
+        Object {
+          "author": "Annie Edison",
+          "commitHash": "k5ls58",
+          "commitMessage": "Changed one of the pages",
+          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
         },
       ]
     }
@@ -53,10 +65,184 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
         role="group"
       >
         <AdvancedAboutItem
-          bankKey="3000"
-          itemKey="187"
-          revision="hello"
-          section="math"
+          AboutItemMetadata={
+            Object {
+              "allowCalculator": "false",
+              "associatedTutorial": "NA",
+              "associatedWordlist": "NA",
+              "brailleType": "NA",
+              "copyrightAndOtherRestrictions": "NA",
+              "depthOfKnowledge": "",
+              "enemyItem": "NA",
+              "identifier": "100",
+              "intendedGrade": "NA",
+              "interactionType": "section",
+              "itemAuthorIdentifier": "Hannah_Hacker",
+              "itemSpecFormat": "SmarterApp",
+              "language": "english",
+              "lastModifiedBy": "Hannah_Hacker",
+              "maximumGrade": "NA",
+              "maximumNumberOfPoints": "100",
+              "minimumGrade": "NA",
+              "securityStatus": "Non-secure",
+              "smarterAppItemDescriptor": "Describes item 100-100",
+              "standardPublication": Object {
+                "primaryStandard": "SBAC-SH-v1:SH-Undesignated",
+                "publication": "SBAC-SH-v1",
+              },
+              "status": "Released",
+              "stimulusFormat": "Standard",
+              "subject": "subject type",
+              "version": "2",
+            }
+          }
+          bankKey="100"
+          itemKey="100"
+          revision="2"
+          sampleItemScoring={
+            Object {
+              "answerKey": "x = 5",
+              "hasMachineRubric": false,
+              "rubrics": Array [
+                Object {
+                  "language": "en-us",
+                  "rubricEntries": Array [
+                    Object {
+                      "name": "No points",
+                      "scorepoint": "0",
+                      "value": "Student did not do the problem",
+                    },
+                    Object {
+                      "name": "Half points",
+                      "scorepoint": "1",
+                      "value": "Student tried to do the problem, but got it wrong",
+                    },
+                    Object {
+                      "name": "No points",
+                      "scorepoint": "2",
+                      "value": "Student did the problem correctly",
+                    },
+                  ],
+                  "samples": Array [
+                    Object {
+                      "maxValue": "0",
+                      "minValue": "0",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "0pts",
+                          "purpose": "idk",
+                          "sampleContent": "x = _",
+                          "scorePoint": "0",
+                        },
+                      ],
+                    },
+                    Object {
+                      "maxValue": "1",
+                      "minValue": "1",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "1pt",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 + 5 = 15",
+                          "scorePoint": "1",
+                        },
+                        Object {
+                          "name": "1pt",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 - 5 = a million",
+                          "scorePoint": "1",
+                        },
+                      ],
+                    },
+                    Object {
+                      "maxValue": "2",
+                      "minValue": "2",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "2pts",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 - 5 = 5",
+                          "scorePoint": "2",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              "scoringOptions": Array [],
+            }
+          }
+          section="section"
+        />
+        <RubricModal
+          rubrics={
+            Array [
+              Object {
+                "language": "en-us",
+                "rubricEntries": Array [
+                  Object {
+                    "name": "No points",
+                    "scorepoint": "0",
+                    "value": "Student did not do the problem",
+                  },
+                  Object {
+                    "name": "Half points",
+                    "scorepoint": "1",
+                    "value": "Student tried to do the problem, but got it wrong",
+                  },
+                  Object {
+                    "name": "No points",
+                    "scorepoint": "2",
+                    "value": "Student did the problem correctly",
+                  },
+                ],
+                "samples": Array [
+                  Object {
+                    "maxValue": "0",
+                    "minValue": "0",
+                    "sampleResponses": Array [
+                      Object {
+                        "name": "0pts",
+                        "purpose": "idk",
+                        "sampleContent": "x = _",
+                        "scorePoint": "0",
+                      },
+                    ],
+                  },
+                  Object {
+                    "maxValue": "1",
+                    "minValue": "1",
+                    "sampleResponses": Array [
+                      Object {
+                        "name": "1pt",
+                        "purpose": "idk",
+                        "sampleContent": "x = 10 + 5 = 15",
+                        "scorePoint": "1",
+                      },
+                      Object {
+                        "name": "1pt",
+                        "purpose": "idk",
+                        "sampleContent": "x = 10 - 5 = a million",
+                        "scorePoint": "1",
+                      },
+                    ],
+                  },
+                  Object {
+                    "maxValue": "2",
+                    "minValue": "2",
+                    "sampleResponses": Array [
+                      Object {
+                        "name": "2pts",
+                        "purpose": "idk",
+                        "sampleContent": "x = 10 - 5 = 5",
+                        "scorePoint": "2",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]
+          }
         />
       </div>
       <div
@@ -83,7 +269,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
               <div
                 className="nav-item-name"
               >
-                3000-187
+                1872-2222
               </div>
             </div>
           </div>
@@ -109,7 +295,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
               <div
                 className="nav-item-name"
               >
-                3000-187
+                187-1111
               </div>
             </div>
           </div>
@@ -124,14 +310,72 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           accResourceGroups={
             Array [
               Object {
-                "accessibilityResources": Array [],
-                "label": "none",
+                "accessibilityResources": Array [
+                  Object {
+                    "currentSelectionCode": "TDS_SCNotepad",
+                    "defaultSelection": "TDS_SCNotepad",
+                    "description": "Digital Notepad",
+                    "disabled": false,
+                    "label": "Digital Notepad",
+                    "order": 1,
+                    "resourceCode": "DigitalNotepad",
+                    "selections": Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad on",
+                        "order": 1,
+                        "selectionCode": "TDS_SCNotepad",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad off",
+                        "order": 2,
+                        "selectionCode": "TDS_SC0",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Notepad disabled",
+                        "order": 3,
+                        "selectionCode": "TDS_SC9",
+                      },
+                    ],
+                  },
+                  Object {
+                    "currentSelectionCode": "TDS_WL_0",
+                    "defaultSelection": "TDS_WL_Glossary",
+                    "description": "English Glossary",
+                    "disabled": false,
+                    "label": "English Glossary",
+                    "order": 1,
+                    "resourceCode": "EnglishGlossary",
+                    "selections": Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary on",
+                        "order": 1,
+                        "selectionCode": "TDS_WL_Glossary",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary off",
+                        "order": 2,
+                        "selectionCode": "TDS_WL_0",
+                      },
+                    ],
+                  },
+                ],
+                "label": "Universal Tools",
                 "order": 1,
               },
             ]
           }
-          onReset={[Function]}
-          onSave={[Function]}
+          onReset={[MockFunction]}
+          onSave={[MockFunction]}
         />
       </div>
     </div>
@@ -147,8 +391,29 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
   className="section revisions-items"
 >
   <RevisionContainer
-    onRevisionSelect={[Function]}
-    revisions={Array []}
+    onRevisionSelect={[MockFunction]}
+    revisions={
+      Array [
+        Object {
+          "author": "Troy Barnes",
+          "commitHash": "ab65jg",
+          "commitMessage": "Added functionality to the website",
+          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+        },
+        Object {
+          "author": "Pierce Hawthorne",
+          "commitHash": "h4lso6",
+          "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
+          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+        },
+        Object {
+          "author": "Annie Edison",
+          "commitHash": "k5ls58",
+          "commitMessage": "Changed one of the pages",
+          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+        },
+      ]
+    }
   />
   <div
     aria-live="polite"
@@ -166,10 +431,184 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
         role="group"
       >
         <AdvancedAboutItem
-          bankKey="3000"
-          itemKey="187"
-          revision="hello"
-          section="math"
+          AboutItemMetadata={
+            Object {
+              "allowCalculator": "false",
+              "associatedTutorial": "NA",
+              "associatedWordlist": "NA",
+              "brailleType": "NA",
+              "copyrightAndOtherRestrictions": "NA",
+              "depthOfKnowledge": "",
+              "enemyItem": "NA",
+              "identifier": "100",
+              "intendedGrade": "NA",
+              "interactionType": "section",
+              "itemAuthorIdentifier": "Hannah_Hacker",
+              "itemSpecFormat": "SmarterApp",
+              "language": "english",
+              "lastModifiedBy": "Hannah_Hacker",
+              "maximumGrade": "NA",
+              "maximumNumberOfPoints": "100",
+              "minimumGrade": "NA",
+              "securityStatus": "Non-secure",
+              "smarterAppItemDescriptor": "Describes item 100-100",
+              "standardPublication": Object {
+                "primaryStandard": "SBAC-SH-v1:SH-Undesignated",
+                "publication": "SBAC-SH-v1",
+              },
+              "status": "Released",
+              "stimulusFormat": "Standard",
+              "subject": "subject type",
+              "version": "2",
+            }
+          }
+          bankKey="100"
+          itemKey="100"
+          revision="2"
+          sampleItemScoring={
+            Object {
+              "answerKey": "x = 5",
+              "hasMachineRubric": false,
+              "rubrics": Array [
+                Object {
+                  "language": "en-us",
+                  "rubricEntries": Array [
+                    Object {
+                      "name": "No points",
+                      "scorepoint": "0",
+                      "value": "Student did not do the problem",
+                    },
+                    Object {
+                      "name": "Half points",
+                      "scorepoint": "1",
+                      "value": "Student tried to do the problem, but got it wrong",
+                    },
+                    Object {
+                      "name": "No points",
+                      "scorepoint": "2",
+                      "value": "Student did the problem correctly",
+                    },
+                  ],
+                  "samples": Array [
+                    Object {
+                      "maxValue": "0",
+                      "minValue": "0",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "0pts",
+                          "purpose": "idk",
+                          "sampleContent": "x = _",
+                          "scorePoint": "0",
+                        },
+                      ],
+                    },
+                    Object {
+                      "maxValue": "1",
+                      "minValue": "1",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "1pt",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 + 5 = 15",
+                          "scorePoint": "1",
+                        },
+                        Object {
+                          "name": "1pt",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 - 5 = a million",
+                          "scorePoint": "1",
+                        },
+                      ],
+                    },
+                    Object {
+                      "maxValue": "2",
+                      "minValue": "2",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "2pts",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 - 5 = 5",
+                          "scorePoint": "2",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              "scoringOptions": Array [],
+            }
+          }
+          section="section"
+        />
+        <RubricModal
+          rubrics={
+            Array [
+              Object {
+                "language": "en-us",
+                "rubricEntries": Array [
+                  Object {
+                    "name": "No points",
+                    "scorepoint": "0",
+                    "value": "Student did not do the problem",
+                  },
+                  Object {
+                    "name": "Half points",
+                    "scorepoint": "1",
+                    "value": "Student tried to do the problem, but got it wrong",
+                  },
+                  Object {
+                    "name": "No points",
+                    "scorepoint": "2",
+                    "value": "Student did the problem correctly",
+                  },
+                ],
+                "samples": Array [
+                  Object {
+                    "maxValue": "0",
+                    "minValue": "0",
+                    "sampleResponses": Array [
+                      Object {
+                        "name": "0pts",
+                        "purpose": "idk",
+                        "sampleContent": "x = _",
+                        "scorePoint": "0",
+                      },
+                    ],
+                  },
+                  Object {
+                    "maxValue": "1",
+                    "minValue": "1",
+                    "sampleResponses": Array [
+                      Object {
+                        "name": "1pt",
+                        "purpose": "idk",
+                        "sampleContent": "x = 10 + 5 = 15",
+                        "scorePoint": "1",
+                      },
+                      Object {
+                        "name": "1pt",
+                        "purpose": "idk",
+                        "sampleContent": "x = 10 - 5 = a million",
+                        "scorePoint": "1",
+                      },
+                    ],
+                  },
+                  Object {
+                    "maxValue": "2",
+                    "minValue": "2",
+                    "sampleResponses": Array [
+                      Object {
+                        "name": "2pts",
+                        "purpose": "idk",
+                        "sampleContent": "x = 10 - 5 = 5",
+                        "scorePoint": "2",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]
+          }
         />
       </div>
       <div
@@ -237,14 +676,72 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           accResourceGroups={
             Array [
               Object {
-                "accessibilityResources": Array [],
-                "label": "none",
+                "accessibilityResources": Array [
+                  Object {
+                    "currentSelectionCode": "TDS_SCNotepad",
+                    "defaultSelection": "TDS_SCNotepad",
+                    "description": "Digital Notepad",
+                    "disabled": false,
+                    "label": "Digital Notepad",
+                    "order": 1,
+                    "resourceCode": "DigitalNotepad",
+                    "selections": Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad on",
+                        "order": 1,
+                        "selectionCode": "TDS_SCNotepad",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad off",
+                        "order": 2,
+                        "selectionCode": "TDS_SC0",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Notepad disabled",
+                        "order": 3,
+                        "selectionCode": "TDS_SC9",
+                      },
+                    ],
+                  },
+                  Object {
+                    "currentSelectionCode": "TDS_WL_0",
+                    "defaultSelection": "TDS_WL_Glossary",
+                    "description": "English Glossary",
+                    "disabled": false,
+                    "label": "English Glossary",
+                    "order": 1,
+                    "resourceCode": "EnglishGlossary",
+                    "selections": Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary on",
+                        "order": 1,
+                        "selectionCode": "TDS_WL_Glossary",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary off",
+                        "order": 2,
+                        "selectionCode": "TDS_WL_0",
+                      },
+                    ],
+                  },
+                ],
+                "label": "Universal Tools",
                 "order": 1,
               },
             ]
           }
-          onReset={[Function]}
-          onSave={[Function]}
+          onReset={[MockFunction]}
+          onSave={[MockFunction]}
         />
       </div>
     </div>
@@ -260,7 +757,7 @@ exports[`ItemBankViewer with revision model matches snapshot 1`] = `
   className="section revisions-items"
 >
   <RevisionContainer
-    onRevisionSelect={[Function]}
+    onRevisionSelect={[MockFunction]}
     revisions={Array []}
   />
   <div

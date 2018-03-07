@@ -10,12 +10,12 @@ import {
   AboutItemModel
 } from "src/index";
 import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
-import { AboutItemMockModel } from "mocks/AboutItem/mocks";
+import { aboutItemMockModel } from "mocks/AboutItem/mocks";
 import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
 import { mockPromise } from "mocks/promise";
 
 export const aboutThisClient = (params: ItemModel) =>
-  mockPromise(AboutItemMockModel);
+  mockPromise(aboutItemMockModel);
 
 export const itemPageClient = (params: ItemModel) =>
   mockPromise<ItemPageModel>(itemPageModelMock);
@@ -87,7 +87,7 @@ export const itemPageMockProps: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,
-  aboutThisItemVM: AboutItemMockModel,
+  aboutThisItemVM: aboutItemMockModel,
   currentItem: {
     itemName: "187-3000",
     itemKey: 3000,
@@ -100,7 +100,7 @@ export const itemPageMockPropsNoItem: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,
-  aboutThisItemVM: AboutItemMockModel,
+  aboutThisItemVM: aboutItemMockModel,
   itemViewerServiceUrl: "http://ivs.smarterbalanced.org/",
   itemNames: "",
   brailleItemNames: "",
