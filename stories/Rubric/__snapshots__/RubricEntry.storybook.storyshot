@@ -2,7 +2,7 @@
 
 exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -54,7 +54,7 @@ exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
 
 exports[`Storyshots Rubric Entry with an empty entry 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

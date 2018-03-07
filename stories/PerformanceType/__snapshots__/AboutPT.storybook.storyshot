@@ -2,7 +2,7 @@
 
 exports[`Storyshots About PT About ELA 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -42,7 +42,7 @@ exports[`Storyshots About PT About ELA 1`] = `
 
 exports[`Storyshots About PT About Math 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",
@@ -82,7 +82,7 @@ exports[`Storyshots About PT About Math 1`] = `
 
 exports[`Storyshots About PT Nothing 1`] = `
 <div
-  className="section"
+  className="section section-dark"
   style={
     Object {
       "alignItems": "center",

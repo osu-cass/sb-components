@@ -12,7 +12,7 @@ const style: React.CSSProperties = {
 
 // helper component that centers our storybook stories on the screen
 export const centerDecorator = (storyFn: () => JSX.Element) => (
-  <div style={style} className="section">
+  <div style={style} className="section section-dark">
     {storyFn()}
   </div>
 );

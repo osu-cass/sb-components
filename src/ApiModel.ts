@@ -69,7 +69,7 @@ export async function getRequest<T>(url: string, params?: object) {
   });
 }
 
-export async function postRequest<T>(url: string, items?: object) {
+export async function postRequest(url: string, items?: object) {
   return new Promise((resolve, reject) => {
     const now = new Date();
     const fileName = `Scoring_Guide${now.getMonth()}-${now.getDay()}-${now.getFullYear()}_${now.getHours()}:${now.getMinutes()}.pdf`;

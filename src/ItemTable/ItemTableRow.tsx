@@ -29,7 +29,10 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
   }
 
   shouldComponentUpdate(nextProps: ItemTableRowProps, nextState: {}) {
-    return this.props.isExpanded !== nextProps.isExpanded;
+    return (
+      this.props.isExpanded !== nextProps.isExpanded ||
+      this.props.rowData.selected !== nextProps.rowData.selected
+    );
   }
 
   handleRowClick = (rowData: ItemCardModel) => {
@@ -87,14 +90,14 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
     if (col.helpText) {
       content = (
         <ToolTip
-          helpText={<p>col.helpText(cellData)</p>}
+          helpText={<p>{col.helpText(cellData)}</p>}
           position="top"
           displayIcon={false}
         >
           {displayText}
         </ToolTip>
       );
-    } else if (col.className === "item") {
+    } else if (col.className === "item" && !this.props.hasControls) {
       content = (
         <a tabIndex={0} role="link">
           {displayText}

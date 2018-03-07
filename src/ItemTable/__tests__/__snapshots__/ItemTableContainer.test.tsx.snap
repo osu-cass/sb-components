@@ -272,7 +272,7 @@ exports[`ItemPageTable expands 1`] = `
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -1054,12 +1054,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1104,7 +1101,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -1126,7 +1123,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -1467,12 +1464,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1517,7 +1511,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -1539,7 +1533,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -1689,12 +1683,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1739,7 +1730,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -1761,7 +1752,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -1911,12 +1902,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -1961,7 +1949,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -1983,7 +1971,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -2204,7 +2192,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -2798,12 +2786,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -2848,7 +2833,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -2870,7 +2855,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -3021,12 +3006,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -3071,7 +3053,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -3093,7 +3075,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -3243,12 +3225,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -3293,7 +3272,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -3315,7 +3294,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -3465,12 +3444,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -3515,7 +3491,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -3537,7 +3513,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -3758,7 +3734,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -4387,12 +4363,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -4437,7 +4410,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -4459,7 +4432,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -4610,12 +4583,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -4660,7 +4630,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -4682,7 +4652,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -4833,12 +4803,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -4883,7 +4850,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -4905,7 +4872,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -5055,12 +5022,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -5105,7 +5069,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -5127,7 +5091,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -5348,7 +5312,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -6017,12 +5981,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6067,7 +6028,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -6089,7 +6050,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -6240,12 +6201,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6290,7 +6248,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -6312,7 +6270,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -6463,12 +6421,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6513,7 +6468,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -6535,7 +6490,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -6685,12 +6640,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -6735,7 +6687,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -6757,7 +6709,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -6978,7 +6930,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -7678,12 +7630,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -7728,7 +7677,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -7750,7 +7699,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -7900,12 +7849,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -7950,7 +7896,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -7972,7 +7918,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -8122,12 +8068,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -8172,7 +8115,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -8194,7 +8137,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -8345,12 +8288,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -8395,7 +8335,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -8417,7 +8357,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -8638,7 +8578,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -9368,12 +9308,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -9418,7 +9355,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -9440,7 +9377,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -9590,12 +9527,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -9640,7 +9574,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -9662,7 +9596,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -9812,12 +9746,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -9862,7 +9793,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -9884,7 +9815,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -10035,12 +9966,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -10085,7 +10013,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -10107,7 +10035,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -10328,7 +10256,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -11088,12 +11016,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3206
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11138,7 +11063,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -11160,7 +11085,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -11311,12 +11236,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3163
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11361,7 +11283,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -11383,7 +11305,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -11533,12 +11455,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     2928
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11583,7 +11502,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -11605,7 +11524,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -11755,12 +11674,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="item"
                 >
-                  <a
-                    role="link"
-                    tabIndex={0}
-                  >
+                  <span>
                     3615
-                  </a>
+                  </span>
                 </span>
               </td>
               <td
@@ -11805,7 +11721,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -11827,7 +11743,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>

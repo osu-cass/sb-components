@@ -773,12 +773,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3206
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -823,7 +820,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    Target A description
                   </p>
                 }
                 position="top"
@@ -845,7 +842,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     </div>
                   </div>
@@ -1368,12 +1365,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3163
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1418,7 +1412,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    Target B description
                   </p>
                 }
                 position="top"
@@ -1440,7 +1434,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     </div>
                   </div>
@@ -1772,12 +1766,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3615
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -1822,7 +1813,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    target C description
                   </p>
                 }
                 position="top"
@@ -1844,7 +1835,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     </div>
                   </div>
@@ -2176,12 +2167,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 2928
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2226,7 +2214,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    target D description
                   </p>
                 }
                 position="top"
@@ -2248,7 +2236,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     </div>
                   </div>
@@ -2559,12 +2547,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3206
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2609,7 +2594,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    Target A description
                   </p>
                 }
                 position="top"
@@ -2631,7 +2616,7 @@ exports[`ItemTable matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     </div>
                   </div>
@@ -2782,12 +2767,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3163
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -2832,7 +2814,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    Target B description
                   </p>
                 }
                 position="top"
@@ -2854,7 +2836,7 @@ exports[`ItemTable matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     </div>
                   </div>
@@ -3004,12 +2986,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 3615
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3054,7 +3033,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    target C description
                   </p>
                 }
                 position="top"
@@ -3076,7 +3055,7 @@ exports[`ItemTable matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     </div>
                   </div>
@@ -3226,12 +3205,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="item"
             >
-              <a
-                role="link"
-                tabIndex={0}
-              >
+              <span>
                 2928
-              </a>
+              </span>
             </span>
           </td>
           <td
@@ -3276,7 +3252,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    col.helpText(cellData)
+                    target D description
                   </p>
                 }
                 position="top"
@@ -3298,7 +3274,7 @@ exports[`ItemTable matches snapshot 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     </div>
                   </div>
