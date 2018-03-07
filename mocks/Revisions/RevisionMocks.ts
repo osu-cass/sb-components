@@ -1,7 +1,7 @@
 import { RevisionModel } from "src/Revisions/Revision";
 const testDate = new Date("11/11/2015").toString();
 
-export const revisions: RevisionModel[] = [
+export const mockRevisions: RevisionModel[] = [
   {
     author: "Troy Barnes",
     date: testDate,

@@ -4,63 +4,31 @@ import { ItemBankViewer } from "../ItemBankViewer";
 import {
   AboutItemRevisionModel,
   AccResourceGroupModel,
-  RevisionModel
+  RevisionModel,
+  ItemBankViewerProps
 } from "../../index";
 import { ItemRevisionModel } from "../ItemBankModels";
+import {
+  aboutItemRevisionMockModel,
+  mockAccResourceGroups,
+  mockRevisions,
+  itemRevisionMocks
+} from "mocks/index";
 
-const date = new Date("2015-11-16T00:00:00");
+const onAccessibilityReset = jest.fn();
+const onAccessibilityUpdate = jest.fn();
+const onItemSelect = jest.fn();
+const onRevisionSelect = jest.fn();
 
-const revision: RevisionModel = {
-  author: "Troy",
-  date: date,
-  commitMessage: "test",
-  commitHash: "asdh49"
-};
-
-const aboutItemRevisionModel: AboutItemRevisionModel = {
-  itemKey: "187",
-  bankKey: "3000",
-  revision: "hello",
-  section: "math",
-  AboutItemMetadata: undefined,
-  sampleItemScoring: undefined
-};
-
-const accResourceGroup: AccResourceGroupModel = {
-  label: "none",
-  order: 1,
-  accessibilityResources: []
-};
-
-const accResourceGroups: AccResourceGroupModel[] = [accResourceGroup];
-
-const revisions: RevisionModel[] = [revision];
-
-const nextItem: ItemRevisionModel = {
-  itemKey: 187,
-  bankKey: 3000,
-  section: "math",
-  revision: "ajweio",
-  isaap: undefined
-};
-
-const prevItem: ItemRevisionModel = {
-  itemKey: 187,
-  bankKey: 3000,
-  section: "math",
-  revision: "ajweio",
-  isaap: undefined
+const defaultProps: ItemBankViewerProps = {
+  onAccessibilityReset,
+  onAccessibilityUpdate,
+  onItemSelect,
+  onRevisionSelect
 };
 
 describe("ItemBankViewer", () => {
-  const wrapper = shallow(
-    <ItemBankViewer
-      onAccessibilityReset={() => {}}
-      onAccessibilityUpdate={() => {}}
-      onItemSelect={() => {}}
-      onRevisionSelect={() => {}}
-    />
-  );
+  const wrapper = shallow(<ItemBankViewer {...defaultProps} />);
 
   it("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
@@ -70,11 +38,8 @@ describe("ItemBankViewer", () => {
 describe("ItemBankViewer with revision model", () => {
   const wrapper = shallow(
     <ItemBankViewer
-      onAccessibilityReset={() => {}}
-      onAccessibilityUpdate={() => {}}
-      onItemSelect={() => {}}
-      onRevisionSelect={() => {}}
-      aboutItemRevisionModel={aboutItemRevisionModel}
+      {...defaultProps}
+      aboutItemRevisionModel={aboutItemRevisionMockModel}
     />
   );
   it("matches snapshot", () => {
@@ -85,12 +50,10 @@ describe("ItemBankViewer with revision model", () => {
 describe("ItemBankViewer with revision model and accResourceGroup", () => {
   const wrapper = shallow(
     <ItemBankViewer
-      onAccessibilityReset={() => {}}
-      onAccessibilityUpdate={() => {}}
-      onItemSelect={() => {}}
-      onRevisionSelect={() => {}}
-      aboutItemRevisionModel={aboutItemRevisionModel}
-      accResourceGroups={accResourceGroups}
+      {...defaultProps}
+      aboutItemRevisionModel={aboutItemRevisionMockModel}
+      accResourceGroups={mockAccResourceGroups}
+      revisions={mockRevisions}
     />
   );
   it("matches snapshot", () => {
@@ -101,15 +64,12 @@ describe("ItemBankViewer with revision model and accResourceGroup", () => {
 describe("ItemBankViewer with all props defined", () => {
   const wrapper = shallow(
     <ItemBankViewer
-      onAccessibilityReset={() => {}}
-      onAccessibilityUpdate={() => {}}
-      onItemSelect={() => {}}
-      onRevisionSelect={() => {}}
-      aboutItemRevisionModel={aboutItemRevisionModel}
-      accResourceGroups={accResourceGroups}
-      revisions={revisions}
-      nextItem={nextItem}
-      prevItem={prevItem}
+      {...defaultProps}
+      aboutItemRevisionModel={aboutItemRevisionMockModel}
+      accResourceGroups={mockAccResourceGroups}
+      revisions={mockRevisions}
+      nextItem={itemRevisionMocks[0]}
+      prevItem={itemRevisionMocks[1]}
     />
   );
   it("matches snapshot", () => {

@@ -3,8 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { routerDecorator } from "../RouterDecorator";
 import { AboutItem } from "src/AboutItem/AboutItem";
 import {
-  AboutItemMockModel,
-  rubrics,
+  aboutItemMockModel,
+  mockRubrics,
   rubricsEsn,
   allRubrics
 } from "mocks/AboutItem/mocks";
@@ -14,22 +14,22 @@ storiesOf("About Item Modal", module)
   .addDecorator(centerDecorator)
   .addDecorator(routerDecorator)
   .add("default", () => (
-    <AboutItem {...AboutItemMockModel} showRubrics={true} />
+    <AboutItem {...aboutItemMockModel} showRubrics={true} />
   ))
   .add("showing no rubrics", () => (
-    <AboutItem {...AboutItemMockModel} showRubrics={true} showModal={true} />
+    <AboutItem {...aboutItemMockModel} showRubrics={true} showModal={true} />
   ))
   .add("showing rubrics", () => (
     <AboutItem
-      {...AboutItemMockModel}
+      {...aboutItemMockModel}
       showRubrics={true}
       showModal={true}
-      sampleItemScoring={{ rubrics }}
+      sampleItemScoring={{ mockRubrics }}
     />
   ))
   .add("showing rubrics ESN", () => (
     <AboutItem
-      {...AboutItemMockModel}
+      {...aboutItemMockModel}
       showRubrics={true}
       showModal={true}
       sampleItemScoring={{ rubrics: rubricsEsn }}
@@ -37,7 +37,7 @@ storiesOf("About Item Modal", module)
   ))
   .add("showing rubrics ENU ESN", () => (
     <AboutItem
-      {...AboutItemMockModel}
+      {...aboutItemMockModel}
       showRubrics={true}
       showModal={true}
       sampleItemScoring={{ rubrics: allRubrics }}
@@ -45,7 +45,7 @@ storiesOf("About Item Modal", module)
   ))
   .add("showing disabled rubrics", () => (
     <AboutItem
-      {...AboutItemMockModel}
+      {...aboutItemMockModel}
       showModal={true}
       sampleItemScoring={{ rubrics: allRubrics }}
     />

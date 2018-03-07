@@ -5,7 +5,7 @@ import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
 import { itemCardList } from "../../../mocks/ItemCard/mocks";
 import { tabClassNames } from "../../../mocks/ItemTable/mocks";
-import { AboutItemMockModel } from "../../../mocks/AboutItem/mocks";
+import { aboutItemMockModel } from "mocks/index";
 import { itemHandler } from "./mocks";
 
 import {
@@ -22,7 +22,7 @@ import {
 describe("ItemPageTable", () => {
   const selectedItem = itemCardList[0];
   const item: Resource<AboutItemModel> = {
-    content: { ...AboutItemMockModel, itemCardViewModel: selectedItem },
+    content: { ...aboutItemMockModel, itemCardViewModel: selectedItem },
     kind: "success"
   };
 

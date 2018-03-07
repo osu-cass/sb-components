@@ -3,7 +3,7 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { ItemBankContainer } from "src/ItemBank/ItemBankContainer";
 import { AboutItem } from "src/AboutItem/AboutItem";
-import { AboutItemMockModel } from "mocks/AboutItem/mocks";
+import { aboutItemMockModel } from "mocks/AboutItem/mocks";
 import { centerDecorator } from "../CenterDecorator";
 import { ItemAccessibilityModal } from "src/";
 import { routerDecorator } from "../RouterDecorator";
@@ -12,7 +12,7 @@ import {
   mockBankAccessibilityClient,
   mockBankRevisionsClient,
   mockBankSectionsClient,
-  itemsMocks
+  itemRevisionMocks
 } from "mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
@@ -26,7 +26,7 @@ storiesOf("Item Bank", module)
           revisionsClient={mockBankRevisionsClient}
           itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
           sectionsClient={mockBankSectionsClient}
-          items={itemsMocks}
+          items={itemRevisionMocks}
           getUrl={item => ""}
         />
       }

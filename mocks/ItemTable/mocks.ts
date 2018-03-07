@@ -1,6 +1,9 @@
-import { ItemTableProps, ItemTableContainerProps, ItemCardModel } from "src/index";
-import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-
+import {
+  ItemTableProps,
+  ItemTableContainerProps,
+  ItemCardModel
+} from "src/index";
+import { aboutItemMockModel } from "mocks/AboutItem/mocks";
 
 export const tabClassNames = [
   "item",
@@ -280,6 +283,6 @@ export const itemTableSelectProps: ItemTableContainerProps = {
   ],
   item: {
     kind: "success",
-    content: AboutItemMockModel
+    content: aboutItemMockModel
   }
 };

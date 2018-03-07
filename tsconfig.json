@@ -13,7 +13,7 @@
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": false,
     "baseUrl": ".",
-    "rootDirs": ["./src", "./mocks"],
+    "rootDirs": ["./src", "./mocks", "./stories"],
     "paths": {
       "src": ["src/*"],
       "mocks": ["mocks/*"]
@@ -27,7 +27,7 @@
       }
     ]
   },
-  "exclude": ["node_modules", "**/setupTest.ts", "**/__tests__/*"],
+  "exclude": ["node_modules", "**/setupTest.ts", "**/__snapshots/*"],
   "jest": {
     "moduleDirectories": ["node_modules", "src", "stories"]
   }
