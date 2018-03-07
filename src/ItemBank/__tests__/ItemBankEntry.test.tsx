@@ -20,7 +20,7 @@ const items: ItemRevisionModel[] = [item];
 
 const sections: SectionModel[] = [section];
 
-describe("ItemBankViewer", () => {
+describe("ItemBankEntry", () => {
   const wrapper = shallow(
     <ItemBankEntry
       updateItems={items => {}}
