@@ -272,7 +272,7 @@ exports[`ItemPageTable expands 1`] = `
   }
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -1101,7 +1101,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -1123,7 +1123,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -1511,7 +1511,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -1533,7 +1533,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -1730,7 +1730,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -1752,7 +1752,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -1949,7 +1949,7 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -1971,7 +1971,7 @@ exports[`ItemPageTable expands 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -2192,7 +2192,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -2833,7 +2833,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -2855,7 +2855,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -3053,7 +3053,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -3075,7 +3075,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -3272,7 +3272,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -3294,7 +3294,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -3491,7 +3491,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -3513,7 +3513,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -3734,7 +3734,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -4410,7 +4410,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -4432,7 +4432,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -4630,7 +4630,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -4652,7 +4652,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -4850,7 +4850,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -4872,7 +4872,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -5069,7 +5069,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -5091,7 +5091,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -5312,7 +5312,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -6028,7 +6028,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -6050,7 +6050,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -6248,7 +6248,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -6270,7 +6270,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -6468,7 +6468,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -6490,7 +6490,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -6687,7 +6687,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -6709,7 +6709,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -6930,7 +6930,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -7677,7 +7677,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -7699,7 +7699,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -7896,7 +7896,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -7918,7 +7918,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -8115,7 +8115,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -8137,7 +8137,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -8335,7 +8335,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -8357,7 +8357,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -8578,7 +8578,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -9355,7 +9355,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -9377,7 +9377,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -9574,7 +9574,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -9596,7 +9596,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -9793,7 +9793,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -9815,7 +9815,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
@@ -10013,7 +10013,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -10035,7 +10035,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -10256,7 +10256,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
   onRowSelection={[MockFunction]}
 >
   <div
-    className="section"
+    className="section item-table-container"
   >
     <table
       className="item-table"
@@ -11063,7 +11063,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target A description
                       </p>
                     }
                     position="top"
@@ -11085,7 +11085,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target A description
                           </p>
                         </div>
                       </div>
@@ -11283,7 +11283,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        Target B description
                       </p>
                     }
                     position="top"
@@ -11305,7 +11305,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            Target B description
                           </p>
                         </div>
                       </div>
@@ -11502,7 +11502,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target D description
                       </p>
                     }
                     position="top"
@@ -11524,7 +11524,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target D description
                           </p>
                         </div>
                       </div>
@@ -11721,7 +11721,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        col.helpText(cellData)
+                        target C description
                       </p>
                     }
                     position="top"
@@ -11743,7 +11743,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                           className="tool-tip-message top"
                         >
                           <p>
-                            col.helpText(cellData)
+                            target C description
                           </p>
                         </div>
                       </div>
