@@ -14,9 +14,7 @@ exports[`EvidenceStatement matches snapshot with html 1`] = `
 <div
   dangerouslySetInnerHTML={
     Object {
-      "__html": <div>
-        hello world
-      </div>,
+      "__html": "<div>hello world</div>",
     }
   }
 />

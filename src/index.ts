@@ -272,6 +272,10 @@ export {
   RevisionModelProps
 } from "./Revisions/Revision";
 
+export {
+  getLongDateFormat,
+  getShortDateFormat
+} from "./Revisions/RevisionUtilities";
 //
 // Rubric
 //

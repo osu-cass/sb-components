@@ -32,6 +32,11 @@ export {
 } from "./ItemBank/mocks";
 
 //
+// Item Card
+//
+export { completeItemCard, itemCardList } from "./ItemCard/mocks";
+
+//
 // Revisions
 //
 export { mockRevisions } from "./Revisions/RevisionMocks";
