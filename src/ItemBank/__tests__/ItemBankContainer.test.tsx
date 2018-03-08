@@ -1,29 +1,94 @@
+import "jsdom-global/register";
 import * as React from "react";
-import { shallow } from "enzyme";
-import { ItemBankContainer } from "../ItemBankContainer";
+import { shallow, mount } from "enzyme";
 import {
-  mockBankAccessibilityClient,
-  mockBankRevisionsClient,
-  mockBankSectionsClient,
-  mockBankAboutItemClient
-} from "mocks/ItemBank/mocks";
+  ItemBankContainer,
+  ItemBankContainerProps,
+  ItemBankContainerState
+} from "../ItemBankContainer";
+import * as BankMocks from "./mocks";
+import { ItemBankViewer, ItemBankViewerProps } from "../ItemBankViewer";
+import { ItemBankEntry } from "../ItemBankEntry";
+import { ItemRevisionModel } from "../../index";
 
-describe("ItemBankViewer", () => {
-  const wrapper = shallow(
-    <ItemBankContainer
-      accessibilityClient={mockBankAccessibilityClient}
-      aboutItemRevisionClient={mockBankAboutItemClient}
-      revisionsClient={mockBankRevisionsClient}
-      sectionsClient={mockBankSectionsClient}
-      itemViewUrl=""
-      items={undefined}
-      getUrl={() => {
-        return "";
-      }}
-    />
-  );
+const item: ItemRevisionModel = {
+  itemKey: 187,
+  bankKey: 3000,
+  section: "math",
+  revision: "asfe",
+  isaap: ""
+};
+const item2 = { ...item, bankKey: 2332 };
 
-  it("matches snapshot", () => {
+describe("ItemBankContainer", () => {
+  const props: ItemBankContainerProps = {
+    aboutItemRevisionClient: BankMocks.mockBankAboutItemClient,
+    accessibilityClient: BankMocks.mockBankAccessibilityClient,
+    revisionsClient: BankMocks.mockBankRevisionsClient,
+    sectionsClient: BankMocks.mockBankSectionsClient,
+    itemViewUrl: "hello",
+    items: [item, item2],
+    getUrl: BankMocks.mockOnItemHandler
+  };
+
+  const wrapper = mount(<ItemBankContainer {...props} />);
+  it("default wrapper", () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it("has item bank viewer", () => {
+    const itemBankViewer = wrapper.findWhere(
+      node => node.type() === ItemBankViewer
+    );
+    expect(itemBankViewer).toBeDefined();
+    expect(itemBankViewer).toMatchSnapshot();
+  });
+
+  it("item bank entry", () => {
+    const itemBankEntry = wrapper.findWhere(
+      node => node.type() === ItemBankEntry
+    );
+    expect(itemBankEntry).toBeDefined();
+    expect(itemBankEntry).toMatchSnapshot();
+  });
+
+  it("updates item url", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    wrapperInstance.handleUpdateIsaap(BankMocks.mockAccessibility);
+    expect(BankMocks.mockOnItemHandler).toHaveBeenCalled();
+  });
+
+  it("has current item", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    expect(wrapperInstance.state.currentItem).toBeDefined();
+    expect(wrapperInstance.state.currentItem).toEqual(item);
+  });
+
+  it("updates next item", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    wrapperInstance.handleNextItem();
+    expect(wrapperInstance.state.currentItem).toBeDefined();
+    expect(wrapperInstance.state.currentItem).toEqual(item2);
+  });
+
+  it("item viewer calls item select next", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    const itemBankViewer = wrapper.findWhere(
+      node => node.type() === ItemBankViewer
+    );
+    const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
+    itemBankViewerInstance.props.onItemSelect("next");
+    expect(wrapperInstance.state.currentItem).toEqual(item2);
+  });
+
+  it("item viewer calls item select previous", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    wrapperInstance.handleNextItem();
+    const itemBankViewer = wrapper.findWhere(
+      node => node.type() === ItemBankViewer
+    );
+    const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
+    itemBankViewerInstance.props.onItemSelect("previous");
+    expect(wrapperInstance.state.currentItem).toEqual(item);
   });
 });
