@@ -4,7 +4,7 @@ import { ToolTip } from "../ToolTip";
 
 describe("ToolTip", () => {
   const wrapper = shallow(
-    <ToolTip helpText="test" displayIcon={true} position="top">
+    <ToolTip helpText={<p>test</p>} displayIcon={true} position="top">
       Sample text
     </ToolTip>
   );

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemBankViewer matches snapshot 1`] = `
+<div>
+  <Accordion
+    accordionTitle="CSV Entry"
+    contentItem={
+      <div
+        className="csv-entry-container section"
+      >
+        <div
+          className="csv-entry-wrapper"
+        >
+          <CsvEntry
+            onItemsUpdate={[Function]}
+          />
+        </div>
+      </div>
+    }
+  />
+  <Accordion
+    accordionTitle="Items Entry"
+    contentItem={
+      <ItemEntryTable
+        itemRows={
+          Array [
+            Object {
+              "bankKey": 3000,
+              "isaap": "",
+              "itemKey": 187,
+              "revision": "asdge",
+              "section": "math",
+            },
+          ]
+        }
+        onItemsUpdate={[Function]}
+        sections={
+          Array [
+            Object {
+              "key": "187-3000",
+              "value": "math",
+            },
+          ]
+        }
+      />
+    }
+  />
+</div>
+`;

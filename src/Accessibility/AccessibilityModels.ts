@@ -17,6 +17,10 @@ export interface AccResourceGroupModel {
   accessibilityResources: AccessibilityResourceModel[];
 }
 
+export interface ResourceSelectionsModel {
+  [resourceName: string]: string;
+}
+
 export function getResource(
   resourceCode: string,
   resourceGroups: AccResourceGroupModel[]
@@ -91,6 +95,23 @@ export function getResourceTypes(
   return resourceGroups.map(t => t.label);
 }
 
-export interface ResourceSelectionsModel {
-  [resourceName: string]: string;
+export function updateAccessibilityGroups(
+  selections: ResourceSelectionsModel,
+  accGroups: AccResourceGroupModel[]
+): AccResourceGroupModel[] {
+  const newGroups: AccResourceGroupModel[] = [];
+  for (const group of accGroups) {
+    const newGroup = { ...group };
+    const newResources: AccessibilityResourceModel[] = [];
+    for (const res of newGroup.accessibilityResources) {
+      const newRes = { ...res };
+      newRes.currentSelectionCode =
+        selections[newRes.resourceCode] || newRes.currentSelectionCode;
+      newResources.push(newRes);
+    }
+    newGroup.accessibilityResources = newResources;
+    newGroups.push(newGroup);
+  }
+
+  return newGroups;
 }

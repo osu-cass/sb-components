@@ -95,14 +95,17 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .csv-entry-wrapper {
   display: flex;
   flex-flow: column nowrap;
+  width: 100%;
 
   .help-button {
     align-self: flex-end;
+    margin-bottom: 5px;
   }
 }
 
@@ -112,7 +115,30 @@
   height: 125px;
 }
 
+.csv-text-entry {
+  width: 100%;
+  height: 150px;
+  max-width: none;
+  box-sizing: border-box;
+}
+
 .revisions-link {
   margin: 0;
   padding: 0;
+}
+
+.nav-item-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-button-container {
+  display: flex;
+  align-content: center;
+}
+
+.nav-item-name {
+  margin: 0;
+  padding: 0;
+  font-size: 10.5px;
 }

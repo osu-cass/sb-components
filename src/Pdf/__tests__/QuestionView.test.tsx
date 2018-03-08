@@ -7,7 +7,9 @@ import { questionDataNull } from "./PdfMocks";
 describe("QuestionDataTable", () => {
   it("matches snapshot", () => {
     expect(
-      shallow(<QuestionView question={questionDataNull} />)
+      shallow(
+        <QuestionView question={questionDataNull} displayScoreInfo={true} />
+      )
     ).toMatchSnapshot();
   });
 });

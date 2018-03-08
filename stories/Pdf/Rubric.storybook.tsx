@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { pdfDecorator } from "../PdfDecorator";
 import { RubricTable } from "src/index";
 import {
-  rubrics,
+  mockRubrics,
   rubricsWithSamples,
   rubricsEsn,
   allRubrics
@@ -13,6 +13,6 @@ import "src/Assets/Styles/pdf.less";
 storiesOf("PDF RubricTable", module)
   .addDecorator(pdfDecorator)
   .add("Rubric Table", () => <RubricTable rubrics={rubricsWithSamples} />)
-  .add("Rubric Table: no Samples", () => <RubricTable rubrics={rubrics} />)
+  .add("Rubric Table: no Samples", () => <RubricTable rubrics={mockRubrics} />)
   .add("Rubric Table: multiple", () => <RubricTable rubrics={allRubrics} />)
   .add("Rubric Table: ESN", () => <RubricTable rubrics={rubricsEsn} />);

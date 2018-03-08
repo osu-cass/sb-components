@@ -35,7 +35,14 @@ export {
   AccResourceGroupModel,
   getResource,
   getBrailleAccommodation,
-  ResourceSelectionsModel
+  ResourceSelectionsModel,
+  updateAccessibilityGroups,
+  isBrailleEnabled,
+  isCalculatorEnabled,
+  isResourceEnabled,
+  isStreamlinedEnabled,
+  getResouceSelectedCode,
+  getResourceTypes
 } from "./Accessibility/AccessibilityModels";
 export {
   ItemAccessibilityModalProps,
@@ -265,6 +272,10 @@ export {
   RevisionModelProps
 } from "./Revisions/Revision";
 
+export {
+  getLongDateFormat,
+  getShortDateFormat
+} from "./Revisions/RevisionUtilities";
 //
 // Rubric
 //

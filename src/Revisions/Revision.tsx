@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ToolTip } from "../index";
+import { ToolTip, getShortDateFormat, getLongDateFormat } from "../index";
 
 export interface RevisionModel {
   author: string;
@@ -10,7 +10,7 @@ export interface RevisionModel {
 
 export interface RevisionModelProps extends RevisionModel {
   selected: boolean;
-  onClick: (revision: string) => void;
+  onClick: () => void;
 }
 
 // tslint:disable-next-line:variable-name
@@ -30,20 +30,17 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
     );
   };
 
-  const date = new Date(props.date);
-
   return (
     <li key={props.commitHash}>
       <ToolTip
-        toolTipHeader={`${date.toDateString()}-${date.toLocaleTimeString()}`}
+        toolTipHeader={getLongDateFormat(props.date)}
         helpText={renderHelpText()}
       >
-        <button className="btn btn-link revisions-link" onClick={this.onClick}>
+        <button className="btn btn-link revisions-link" onClick={props.onClick}>
           {props.commitHash}
         </button>
         <div className="revisions-details">
-          {props.author}-
-          {date.getMonth() + 1}/{date.getDate()}
+          {props.author}-{getShortDateFormat(props.date)}
         </div>
       </ToolTip>
     </li>

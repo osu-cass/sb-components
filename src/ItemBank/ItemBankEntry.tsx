@@ -6,6 +6,7 @@ import {
   SectionModel,
   ItemEntryTable
 } from "../index";
+import { CsvEntry } from "../CsvEntry/CsvEntry";
 
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;
@@ -18,41 +19,11 @@ export class ItemBankEntry extends React.Component<ItemBankEntryProps, {}> {
     super(props);
   }
 
-  handleCsvEntry = (values: string) => {
-    // parse me here
-    console.error("Not Implemented, handleCsvEntry");
-  };
-
-  renderHelpButton() {
-    return (
-      <div className="help-button">
-        <ToolTip
-          helpText={<p>Drag and drop items to add them to the table</p>}
-          position="bottom"
-        >
-          <button
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
-            role="button"
-            aria-label="Open help text"
-          >
-            <span className="fa fa-info-circle" aria-hidden="true" />
-            Help
-          </button>
-        </ToolTip>
-      </div>
-    );
-  }
-
   renderCsvEntry() {
     const csvEntry: JSX.Element = (
       <div className="csv-entry-container section">
         <div className="csv-entry-wrapper">
-          {this.renderHelpButton()}
-          <textarea
-            className="csv-add"
-            placeholder="Copy and Paste Values"
-            onBlur={event => this.handleCsvEntry(event.currentTarget.value)}
-          />
+          <CsvEntry onItemsUpdate={this.props.updateItems} />
         </div>
       </div>
     );

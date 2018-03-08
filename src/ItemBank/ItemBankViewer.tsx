@@ -33,10 +33,6 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     super(props);
   }
 
-  handleAccessibilityChange = (accResource: ResourceSelectionsModel) => {
-    console.error("Not Implemented");
-  };
-
   renderRightNav(): JSX.Element | undefined {
     const {
       onAccessibilityUpdate,
@@ -54,7 +50,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         >
           <ItemAccessibilityModal
             accResourceGroups={accResourceGroups}
-            onSave={this.handleAccessibilityChange}
+            onSave={onAccessibilityUpdate}
             onReset={onAccessibilityReset}
           />
         </div>
@@ -64,29 +60,53 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return content;
   }
 
+  renderNavButton(direction: "next" | "previous") {
+    const { onItemSelect, nextItem, prevItem } = this.props;
+    let label = "";
+    let itemName = "";
+    let item = nextItem;
+    if (direction === "previous") {
+      itemName = prevItem ? getItemBankName(prevItem) : " ";
+      label = "Previous";
+      item = prevItem;
+    } else {
+      itemName = nextItem ? getItemBankName(nextItem) : " ";
+      label = "Next";
+    }
+
+    return (
+      <button
+        onClick={() => onItemSelect(direction)}
+        className={"btn btn-link " + direction}
+        disabled={item ? false : true}
+      >
+        <div className="nav-button-container">
+          <span
+            className={
+              direction === "previous"
+                ? "fa fa-arrow-left"
+                : "fa fa-arrow-right"
+            }
+            aria-hidden="true"
+          />
+          <div className="nav-item-link">
+            <div>{label}</div>
+            <div className="nav-item-name">{itemName}</div>
+          </div>
+        </div>
+      </button>
+    );
+  }
+
   renderMidNav() {
     const { onItemSelect, nextItem, prevItem } = this.props;
-    const nextItemName = nextItem ? getItemBankName(nextItem) : "";
-    const previousItemName = prevItem ? getItemBankName(prevItem) : "";
+    const nextItemName = nextItem ? getItemBankName(nextItem) : " ";
+    const previousItemName = prevItem ? getItemBankName(prevItem) : " ";
 
     return (
       <div className="nav-buttons">
-        <button
-          onClick={() => onItemSelect("previous")}
-          className="btn btn-link previous"
-          disabled={prevItem ? false : true}
-        >
-          <span className="fa fa-arrow-left" aria-hidden="true" />
-          {`Previous ${previousItemName}`}
-        </button>
-        <button
-          onClick={() => onItemSelect("next")}
-          className="btn btn-link next"
-          disabled={nextItem ? false : true}
-        >
-          {`Next ${nextItemName}`}
-          <span className="fa fa-arrow-right" aria-hidden="true" />
-        </button>
+        {this.renderNavButton("previous")}
+        {this.renderNavButton("next")}
       </div>
     );
   }

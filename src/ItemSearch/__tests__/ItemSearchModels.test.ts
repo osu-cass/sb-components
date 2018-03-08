@@ -29,8 +29,7 @@ import {
   techtypeSearchStringTypes
 } from "../../../mocks/ItemSearch/mocks";
 
-import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
-import { FilterType } from "../../Filter/FilterModels";
+import { FilterType, GradeLevels, GradeLevel, TargetModel } from "../../index";
 
 describe("ItemSearch.filterItemCards", () => {
   it("filters with empty filter", () => {
@@ -238,7 +237,7 @@ describe("ItemSearch.searchOptionToFilterGrade", () => {
 
 describe("ItemSearch.searchOptionToFilterTarget", () => {
   it("empty options", () => {
-    const optionParam = [];
+    const optionParam: TargetModel[] = [];
     const filterParam = FilterType.Target;
 
     const result = ItemSearch.searchOptionToFilterTarget(
