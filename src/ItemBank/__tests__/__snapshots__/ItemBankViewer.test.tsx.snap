@@ -32,19 +32,19 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           "author": "Troy Barnes",
           "commitHash": "ab65jg",
           "commitMessage": "Added functionality to the website",
-          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+          "date": "2018–01–30T12:34:56+00:00",
         },
         Object {
           "author": "Pierce Hawthorne",
           "commitHash": "h4lso6",
           "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
-          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+          "date": "2018–01–30T12:34:56+00:00",
         },
         Object {
           "author": "Annie Edison",
           "commitHash": "k5ls58",
           "commitMessage": "Changed one of the pages",
-          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+          "date": "2018–01–30T12:34:56+00:00",
         },
       ]
     }
@@ -398,19 +398,19 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           "author": "Troy Barnes",
           "commitHash": "ab65jg",
           "commitMessage": "Added functionality to the website",
-          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+          "date": "2018–01–30T12:34:56+00:00",
         },
         Object {
           "author": "Pierce Hawthorne",
           "commitHash": "h4lso6",
           "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
-          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+          "date": "2018–01–30T12:34:56+00:00",
         },
         Object {
           "author": "Annie Edison",
           "commitHash": "k5ls58",
           "commitMessage": "Changed one of the pages",
-          "date": "Wed Nov 11 2015 00:00:00 GMT-0800 (Pacific Standard Time)",
+          "date": "2018–01–30T12:34:56+00:00",
         },
       ]
     }
