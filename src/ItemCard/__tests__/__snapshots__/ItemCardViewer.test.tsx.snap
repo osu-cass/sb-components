@@ -7,7 +7,7 @@ exports[`ItemCardViewer renders information tab 1`] = `
   <ItemTabs
     changedTab={[Function]}
     selectedTab="information"
-    showRubricTab={false}
+    showRubricTab={true}
   />
   <div>
      
@@ -16,30 +16,110 @@ exports[`ItemCardViewer renders information tab 1`] = `
     >
       <div>
         <AboutThisItemDetail
-          commonCoreStandardsDescription="commonCoreStandardsDescription"
-          depthOfKnowledge="depthOfKnowledge"
-          educationalDifficulty="educationalDifficulty"
-          evidenceStatement="evidenceStatement"
+          commonCoreStandardsDescription="A-123-BC"
+          depthOfKnowledge="3"
+          educationalDifficulty="5"
+          evidenceStatement="This is a sample evidence statement"
           itemCardViewModel={
             Object {
-              "bankKey": 1,
-              "claimCode": "claim_1234",
-              "claimLabel": "claim_math",
-              "grade": 1,
-              "gradeLabel": "1",
-              "interactionTypeCode": "type01",
-              "interactionTypeLabel": "type01label",
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "ccssDescription": "this is the common core description",
+              "claimCode": "3",
+              "claimLabel": "Claim",
+              "commonCoreStandardId": "AB-123",
+              "depthOfKnowledge": "2",
+              "domain": "domain",
+              "grade": 4,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "GI",
+              "interactionTypeLabel": "Item Type",
               "isPerformanceItem": false,
-              "itemKey": 123,
-              "subjectCode": "Math",
-              "subjectLabel": "MTH",
-              "targetHash": 323,
-              "targetShortName": "something",
-              "title": "test_title",
+              "itemKey": 3434,
+              "selected": false,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA",
+              "targetDescription": "target description right hereeeee",
+              "targetHash": 33434,
+              "targetId": "dfas",
+              "targetShortName": "Short Name",
+              "title": "ELA Grade 4",
             }
           }
-          rubrics={Array []}
-          targetDescription="targetDescription"
+          sampleItemScoring={
+            Object {
+              "answerKey": "x = 5",
+              "hasMachineRubric": false,
+              "rubrics": Array [
+                Object {
+                  "language": "en-us",
+                  "rubricEntries": Array [
+                    Object {
+                      "name": "No points",
+                      "scorepoint": "0",
+                      "value": "Student did not do the problem",
+                    },
+                    Object {
+                      "name": "Half points",
+                      "scorepoint": "1",
+                      "value": "Student tried to do the problem, but got it wrong",
+                    },
+                    Object {
+                      "name": "No points",
+                      "scorepoint": "2",
+                      "value": "Student did the problem correctly",
+                    },
+                  ],
+                  "samples": Array [
+                    Object {
+                      "maxValue": "0",
+                      "minValue": "0",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "0pts",
+                          "purpose": "idk",
+                          "sampleContent": "x = _",
+                          "scorePoint": "0",
+                        },
+                      ],
+                    },
+                    Object {
+                      "maxValue": "1",
+                      "minValue": "1",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "1pt",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 + 5 = 15",
+                          "scorePoint": "1",
+                        },
+                        Object {
+                          "name": "1pt",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 - 5 = a million",
+                          "scorePoint": "1",
+                        },
+                      ],
+                    },
+                    Object {
+                      "maxValue": "2",
+                      "minValue": "2",
+                      "sampleResponses": Array [
+                        Object {
+                          "name": "2pts",
+                          "purpose": "idk",
+                          "sampleContent": "x = 10 - 5 = 5",
+                          "scorePoint": "2",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              "scoringOptions": Array [],
+            }
+          }
+          targetDescription="Solve equations"
         />
       </div>
     </div>
@@ -54,10 +134,84 @@ exports[`ItemCardViewer renders rubric tab 1`] = `
   <ItemTabs
     changedTab={[Function]}
     selectedTab="rubric"
-    showRubricTab={false}
+    showRubricTab={true}
   />
   <div>
      
+    <div
+      className="item-content"
+    >
+      <RubricTable
+        rubrics={
+          Array [
+            Object {
+              "language": "en-us",
+              "rubricEntries": Array [
+                Object {
+                  "name": "No points",
+                  "scorepoint": "0",
+                  "value": "Student did not do the problem",
+                },
+                Object {
+                  "name": "Half points",
+                  "scorepoint": "1",
+                  "value": "Student tried to do the problem, but got it wrong",
+                },
+                Object {
+                  "name": "No points",
+                  "scorepoint": "2",
+                  "value": "Student did the problem correctly",
+                },
+              ],
+              "samples": Array [
+                Object {
+                  "maxValue": "0",
+                  "minValue": "0",
+                  "sampleResponses": Array [
+                    Object {
+                      "name": "0pts",
+                      "purpose": "idk",
+                      "sampleContent": "x = _",
+                      "scorePoint": "0",
+                    },
+                  ],
+                },
+                Object {
+                  "maxValue": "1",
+                  "minValue": "1",
+                  "sampleResponses": Array [
+                    Object {
+                      "name": "1pt",
+                      "purpose": "idk",
+                      "sampleContent": "x = 10 + 5 = 15",
+                      "scorePoint": "1",
+                    },
+                    Object {
+                      "name": "1pt",
+                      "purpose": "idk",
+                      "sampleContent": "x = 10 - 5 = a million",
+                      "scorePoint": "1",
+                    },
+                  ],
+                },
+                Object {
+                  "maxValue": "2",
+                  "minValue": "2",
+                  "sampleResponses": Array [
+                    Object {
+                      "name": "2pts",
+                      "purpose": "idk",
+                      "sampleContent": "x = 10 - 5 = 5",
+                      "scorePoint": "2",
+                    },
+                  ],
+                },
+              ],
+            },
+          ]
+        }
+      />
+    </div>
      
   </div>
 </div>
@@ -70,7 +224,7 @@ exports[`ItemCardViewer renders viewer tab 1`] = `
   <ItemTabs
     changedTab={[Function]}
     selectedTab="viewer"
-    showRubricTab={false}
+    showRubricTab={true}
   />
   <div>
      
@@ -78,7 +232,7 @@ exports[`ItemCardViewer renders viewer tab 1`] = `
       className="item-content"
     >
       <ItemViewerFrame
-        url="http://ivs.smarterbalanced.org/items?ids=1-123"
+        url="http://ivs.smarterbalanced.org/items?ids=187-3434"
       />
     </div>
      

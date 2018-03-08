@@ -5,9 +5,18 @@ import { shallow, mount, render } from "enzyme";
 import { itemGroup } from "./PdfMocks";
 
 describe("EvidenceStatement", () => {
-  it("matches snapshot", () => {
+  it("matches snapshot with score", () => {
     expect(
-      shallow(<ItemViewContainer itemData={itemGroup} />)
+      shallow(
+        <ItemViewContainer itemData={itemGroup} displayScoreInfo={true} />
+      )
+    ).toMatchSnapshot();
+  });
+  it("matches snapshot without score", () => {
+    expect(
+      shallow(
+        <ItemViewContainer itemData={itemGroup} displayScoreInfo={false} />
+      )
     ).toMatchSnapshot();
   });
 });

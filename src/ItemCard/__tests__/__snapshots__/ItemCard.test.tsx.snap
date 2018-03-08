@@ -2,7 +2,7 @@
 
 exports[`ItemCard renders correctly 1`] = `
 <div
-  className="card card-block math"
+  className="card card-block ela"
   onClick={[Function]}
   onKeyUp={[Function]}
   role="link"
@@ -13,7 +13,9 @@ exports[`ItemCard renders correctly 1`] = `
   >
     <h4
       className="card-title"
-    />
+    >
+      ELA Grade 4
+    </h4>
     <p
       className="card-text subject"
     >
@@ -26,7 +28,7 @@ exports[`ItemCard renders correctly 1`] = `
         className="card-text-value"
       >
          
-        math
+        ELA
       </span>
     </p>
     <p
@@ -41,7 +43,7 @@ exports[`ItemCard renders correctly 1`] = `
         className="card-text-value"
       >
          
-        grade 3
+        Grade 4
       </span>
     </p>
     <p
@@ -56,7 +58,7 @@ exports[`ItemCard renders correctly 1`] = `
         className="card-text-value"
       >
          
-        Math Claim
+        Claim
       </span>
     </p>
     <p
@@ -70,7 +72,7 @@ exports[`ItemCard renders correctly 1`] = `
       <span
         className="card-text-value"
       >
-        1-3
+        Short Name
       </span>
     </p>
     <p
@@ -84,7 +86,7 @@ exports[`ItemCard renders correctly 1`] = `
       <span
         className="card-text-value"
       >
-         
+         Item Type
       </span>
     </p>
     <p
@@ -99,7 +101,7 @@ exports[`ItemCard renders correctly 1`] = `
         className="card-text-value"
       >
          
-        1
+        3434
       </span>
     </p>
   </div>

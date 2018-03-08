@@ -14,7 +14,7 @@ const itemView: ItemPdfModel = {
 
 const itemView1: ItemPdfModel = {
   id: "12334",
-  html: <div>hello world</div>,
+  html: "<div>hello world</div>",
   picturePath: undefined,
   captured: true,
   type: PdfViewType.html
@@ -22,7 +22,7 @@ const itemView1: ItemPdfModel = {
 
 const itemView2: ItemPdfModel = {
   id: "12334",
-  html: <div>hello world</div>,
+  html: "<div>hello world</div>",
   picturePath: "filename",
   captured: true,
   type: PdfViewType.picture

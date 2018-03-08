@@ -1,9 +1,5 @@
 import { ItemSearch } from "../ItemSearch";
-import {
-  itemSearchModel,
-  mockSeachAPI,
-  genericCategory
-} from "../../../mocks/ItemSearch/mocks";
+import { itemSearchModel, mockSeachAPI } from "../../../mocks/ItemSearch/mocks";
 import { resetResource } from "../../ItemPage/ItemPageModels";
 import { SearchAPIParamsModel } from "../ItemSearchModels";
 import { GradeLevels } from "../../GradeLevels/GradeLevels";

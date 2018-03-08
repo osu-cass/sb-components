@@ -24,7 +24,7 @@ storiesOf("About Item Modal", module)
       {...aboutItemMockModel}
       showRubrics={true}
       showModal={true}
-      sampleItemScoring={{ mockRubrics }}
+      sampleItemScoring={{ rubrics: mockRubrics }}
     />
   ))
   .add("showing rubrics ESN", () => (
