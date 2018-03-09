@@ -61,6 +61,13 @@ export { Accordion, AccordionProps } from "./Accordion/Accordion";
 export { BtnGroupOptionProps, BtnGroupOption } from "./Button/BtnGroupOption";
 
 //
+// Common
+//
+export { getResourceContent, Resource } from "./Common/ApiResource";
+export { Subscription, PromiseCancelable } from "./Common/Subscription";
+export { parseQueryString } from "./Common/UrlParsing";
+
+//
 // DropDown Components and Models
 //
 export { Dropdown, DropdownProps } from "./DropDown/DropDown";
@@ -305,13 +312,7 @@ export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
 //
 // ApiModel
 //
-export {
-  Resource,
-  parseQueryString,
-  getResourceContent,
-  getRequest,
-  postRequest
-} from "./ApiModel";
+export { getRequest, postRequest } from "./ApiModel";
 
 //
 // Search Result Container
@@ -329,8 +330,3 @@ export {
   ErrorPageContainer,
   pageType
 } from "./ErrorPageContainer/ErrorPageContainer";
-
-//
-// Promises and Subscription
-//
-export { Subscription, PromiseCancelable } from "./Subscription";
