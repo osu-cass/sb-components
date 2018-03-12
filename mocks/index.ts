@@ -12,6 +12,14 @@ export {
 } from "./AboutItem/mocks";
 
 //
+// About Test Items
+//
+export {
+  defaultAboutTestItemsModel,
+  aboutTestBadItem
+} from "./AboutTestItems/mocks";
+
+//
 // Accessibility
 //
 export {
@@ -40,3 +48,9 @@ export { completeItemCard, itemCardList } from "./ItemCard/mocks";
 // Revisions
 //
 export { mockRevisions } from "./Revisions/RevisionMocks";
+
+//
+// Promise
+//
+
+export { mockPromise, mockPromiseLoading, mockPromiseReject } from "./promise";

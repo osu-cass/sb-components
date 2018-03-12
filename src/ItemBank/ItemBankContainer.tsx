@@ -51,6 +51,7 @@ export interface ItemBankContainerState {
   revisions: Resource<RevisionModel[]>;
   nextItem?: ItemRevisionModel;
   previousItem?: ItemRevisionModel;
+  hasError: boolean;
 }
 
 /**
@@ -76,12 +77,13 @@ export class ItemBankContainer extends React.Component<
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
       sections: { kind: "loading" },
-      revisions: { kind: "loading" }
+      revisions: { kind: "loading" },
+      hasError: false
     };
   }
 
   componentDidMount() {
-    this.fetchSections();
+    this.fetchSections().catch(e => this.onError(e));
     this.handleChangeViewItem();
     this.handleChangeRevision();
   }
@@ -156,6 +158,14 @@ export class ItemBankContainer extends React.Component<
     this.setState({ sections: { kind: "success", content: data } });
   }
 
+  onError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({
+        hasError: true
+      });
+    }
+  }
+
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
@@ -176,11 +186,13 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
 
     if (currentItem) {
-      this.fetchAboutItemRevisionModel(currentItem).then(aboutItem => {
-        this.fetchAccResourceGroups(aboutItem).then(accGroups =>
-          this.handleUpdateIsaap(accGroups)
-        );
-      });
+      this.fetchAboutItemRevisionModel(currentItem)
+        .then(aboutItem => {
+          this.fetchAccResourceGroups(aboutItem)
+            .then(accGroups => this.handleUpdateIsaap(accGroups))
+            .catch(e => this.onError(e));
+        })
+        .catch(e => this.onError(e));
 
       const nextItem = getNextItemBank(currentItem, items);
       const previousItem = getPreviousItemBank(currentItem, items);
@@ -203,7 +215,7 @@ export class ItemBankContainer extends React.Component<
   handleChangeRevision = () => {
     const { currentItem } = this.state;
     if (currentItem) {
-      this.fetchRevisions(currentItem);
+      this.fetchRevisions(currentItem).catch(e => this.onError(e));
     }
   };
 

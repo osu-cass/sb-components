@@ -3,11 +3,17 @@ import {
   AboutItemModel,
   AboutTestItemsModel,
   InteractionTypeModel,
-  AboutTestItemsParams
+  AboutTestItemsParams,
+  AboutTestSearchParams
 } from "src/index";
 import { completeItemCard } from "mocks/ItemCard/mocks";
 import { action } from "@storybook/addon-actions";
 import { match } from "react-router";
+import {
+  aboutItemMockModel,
+  mockPromiseLoading,
+  mockPromiseReject
+} from "../index";
 
 const interactionTypes: InteractionTypeModel[] = [
   {
@@ -26,52 +32,31 @@ const interactionTypes: InteractionTypeModel[] = [
   }
 ];
 
-const aboutItemModel: AboutItemModel = {
-  depthOfKnowledge: "",
-  targetDescription: "",
-  commonCoreStandardsDescription: "",
-  itemCardViewModel: completeItemCard,
-  educationalDifficulty: "",
-  evidenceStatement: ""
-};
-
 export const defaultAboutTestItemsModel: AboutTestItemsModel = {
+  interactionTypes,
   itemUrl: "  ",
-  interactionTypes: interactionTypes,
-  aboutThisItemViewModel: aboutItemModel,
+  aboutThisItemViewModel: aboutItemMockModel,
   selectedInteractionTypeCode: "EQ"
 };
 
-async function mockPromise(params?: { interactionTypeCode: string }) {
-  return new Promise<AboutTestItemsModel>((resolve, reject) => {
-    const aboutItems = { ...defaultAboutTestItemsModel };
-    if (params) {
-      aboutItems.selectedInteractionTypeCode = params.interactionTypeCode;
-    }
-    resolve(aboutItems);
-  });
+async function mockAboutClient(
+  params?: AboutTestSearchParams
+): Promise<AboutTestItemsModel> {
+  const aboutItems = { ...defaultAboutTestItemsModel };
+  if (params) {
+    aboutItems.selectedInteractionTypeCode = params.interactionTypeCode;
+  }
+
+  return aboutItems;
 }
 
-async function mockPromiseReject(params?: { interactionTypeCode: string }) {
-  return new Promise<AboutTestItemsModel>((resolve, reject) => {
-    reject("Canceled");
-  });
-}
+export const mockAboutClientSuccess = mockAboutClient;
 
-async function mockPromiseLoading(params?: { interactionTypeCode: string }) {
-  return new Promise<AboutTestItemsModel>((resolve, reject) => {});
-}
+export const mockAboutRejectClient = (params?: AboutTestSearchParams) =>
+  mockPromiseReject<AboutTestItemsModel>("Canceled");
 
-export const mockAboutTestClient = (params?: { interactionTypeCode: string }) =>
-  mockPromise(params);
-
-export const mockAboutTestClientReject = (params?: {
-  interactionTypeCode: string;
-}) => mockPromiseReject(params);
-
-export const mockAboutTestClientLoading = (params?: {
-  interactionTypeCode: string;
-}) => mockPromiseLoading(params);
+export const mockAboutLoading = (params?: AboutTestSearchParams) =>
+  mockPromiseLoading<AboutTestItemsModel>();
 
 export const aboutTestPath = "/:itemType?";
 
@@ -83,8 +68,6 @@ export const aboutTestMatch: match<AboutTestItemsParams> = {
 };
 
 export const aboutTestBadItem: match<AboutTestItemsParams> = {
-  params: { itemType: "somebadtype" },
-  isExact: true,
-  path: "aboutTestPath",
-  url: "/"
+  ...aboutTestMatch,
+  params: { itemType: "somebadtype" }
 };

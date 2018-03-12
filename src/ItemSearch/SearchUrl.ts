@@ -1,7 +1,10 @@
-import { GradeLevel, GradeLevels } from "../GradeLevels/GradeLevels";
-import { FilterType } from "../Filter/FilterModels";
-import { parseQueryString } from "../ApiModel";
-import { SearchAPIParamsModel } from "./ItemSearchModels";
+import {
+  GradeLevel,
+  GradeLevels,
+  FilterType,
+  parseQueryString,
+  SearchAPIParamsModel
+} from "../index";
 
 export interface ExpressQuery {
   [param: string]: string;
