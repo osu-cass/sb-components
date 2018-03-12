@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CsvEntry calls handle csv blur 1`] = `
+<div
+  className="csv-entry-wrapper"
+>
+  <div
+    className="help-button"
+  >
+    <ToolTip
+      helpText={
+        <p>
+          Drag and drop items to add them to the table
+        </p>
+      }
+      position="bottom"
+    >
+      <button
+        aria-label="Open help text"
+        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="fa fa-info-circle"
+        />
+        Help
+      </button>
+    </ToolTip>
+  </div>
+  <textarea
+    className="csv-text-entry"
+    onBlur={[Function]}
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`CsvEntry calls handle csv change 1`] = `
+<div
+  className="csv-entry-wrapper"
+>
+  <div
+    className="help-button"
+  >
+    <ToolTip
+      helpText={
+        <p>
+          Drag and drop items to add them to the table
+        </p>
+      }
+      position="bottom"
+    >
+      <button
+        aria-label="Open help text"
+        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="fa fa-info-circle"
+        />
+        Help
+      </button>
+    </ToolTip>
+  </div>
+  <textarea
+    className="csv-text-entry"
+    onBlur={[Function]}
+    onChange={[Function]}
+    value="hello"
+  />
+</div>
+`;
+
+exports[`CsvEntry matches snapshot 1`] = `
+<div
+  className="csv-entry-wrapper"
+>
+  <div
+    className="help-button"
+  >
+    <ToolTip
+      helpText={
+        <p>
+          Drag and drop items to add them to the table
+        </p>
+      }
+      position="bottom"
+    >
+      <button
+        aria-label="Open help text"
+        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="fa fa-info-circle"
+        />
+        Help
+      </button>
+    </ToolTip>
+  </div>
+  <textarea
+    className="csv-text-entry"
+    onBlur={[Function]}
+    onChange={[Function]}
+  />
+</div>
+`;
