@@ -19,6 +19,10 @@ export interface AboutTestItemsParams {
   itemType?: string;
 }
 
+export interface AboutTestSearchParams {
+  interactionTypeCode: string;
+}
+
 export const aboutTestItemsClient = (params?: {
   interactionTypeCode: string;
 }) => getRequest<AboutTestItemsModel>("/AboutItems/GetItemUrl", params);

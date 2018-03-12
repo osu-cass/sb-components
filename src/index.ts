@@ -23,7 +23,8 @@ export {
   InteractionTypeModel,
   AboutTestItemsModel,
   aboutTestItemsClient,
-  AboutTestItemsParams
+  AboutTestItemsParams,
+  AboutTestSearchParams
 } from "./AboutTestItems/AboutTestItemsModels";
 export { AboutTestItemsPage } from "./AboutTestItems/AboutTestItemsPage";
 
