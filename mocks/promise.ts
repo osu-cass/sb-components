@@ -8,5 +8,7 @@ export async function mockPromiseReject<T>(reason: string): Promise<T> {
 
 export function mockPromiseLoading<T>() {
   // tslint:disable-next-line:promise-must-complete no-empty
-  return new Promise<T>((resolve, reject) => {});
+  return new Promise<T>((resolve, reject) => {
+    return;
+  });
 }
