@@ -252,7 +252,7 @@ describe("Filter.getCurrentClaimsFilter", () => {
   it("one subject", () => {
     const subject = Mocks.subjects.find(s => s.code === "MATH");
     const expected = Mocks.claims.find(c => c.code === "MATH1");
-    const filteredSubjects = [subject];
+    const filteredSubjects = subject ? [subject] : [];
     const result = Filter.getCurrentClaimsFilter(
       searchClaims,
       filteredSubjects
@@ -302,7 +302,7 @@ describe("Filter.getCurrentInteractionTypes", () => {
   it("one subject", () => {
     const subject = Mocks.subjects.find(s => s.code === "MATH");
     const expected = Mocks.interactionTypes.find(c => c.code === "ITM1");
-    const filteredSubjects = [subject];
+    const filteredSubjects = subject ? [subject] : [];
     const result = Filter.getCurrentInteractionTypes(
       searchItemTypes,
       filteredSubjects
@@ -350,12 +350,13 @@ describe("Filter.getCurrentTargets", () => {
   it("one claim", () => {
     const claim = Mocks.claims.find(c => c.code === "ELA1");
     const expected = Mocks.targets.find(c => c.name === "ELA1");
+    const claims = claim ? [claim] : [];
     const result = Filter.getCurrentTargets(
       searchTargets,
       {
         claims: ["ELA1"]
       },
-      [claim]
+      claims
     );
 
     expect(result).toHaveLength(1);
