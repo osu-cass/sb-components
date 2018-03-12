@@ -1,7 +1,6 @@
 import * as React from "react";
 import { shallow } from "enzyme";
 import { Accordion, AccordionProps, AccordionState } from "../Accordion";
-import { CsvEntry } from "../../CsvEntry/CsvEntry";
 
 function getJSXElement() {
   return <div>test</div>;
