@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemBankEntry call handle show content 1`] = `
+<div
+  className="accordion-container"
+>
+  <div
+    className="accordion-bar"
+    onClick={[Function]}
+    role="button"
+  >
+    <div
+      className="accordion-content"
+    >
+      testAccordion
+      <span
+        aria-hidden="true"
+        className="fa fa-chevron-down carat"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ItemBankEntry matches snapshot 1`] = `
+<div
+  className="accordion-container"
+>
+  <div
+    className="accordion-bar"
+    onClick={[Function]}
+    role="button"
+  >
+    <div
+      className="accordion-content"
+    >
+      testAccordion
+      <span
+        aria-hidden="true"
+        className="fa fa-chevron-down carat"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ItemBankEntry renders open accordion 1`] = `
+<div
+  className="accordion-container"
+>
+  <div
+    className="accordion-bar"
+    onClick={[Function]}
+    role="button"
+  >
+    <div
+      className="accordion-content"
+    >
+      testAccordion
+      <span
+        aria-hidden="true"
+        className="fa fa-chevron-down carat"
+      />
+    </div>
+  </div>
+</div>
+`;
