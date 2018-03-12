@@ -6,12 +6,13 @@ import { CsvEntry } from "../../CsvEntry/CsvEntry";
 function getJSXElement() {
   return <div>test</div>;
 }
+
 const accordionProps: AccordionProps = {
   accordionTitle: "testAccordion",
   contentItem: getJSXElement()
 };
 
-const accordionstate: AccordionState = {
+const accordionState: AccordionState = {
   title: "testAccordion",
   isOpen: true
 };
@@ -25,7 +26,7 @@ describe("ItemBankEntry", () => {
 
   it("renders open accordion", () => {
     const wrapperInstance = wrapper.instance() as Accordion;
-    wrapperInstance.setState({ isOpen: accordionstate.isOpen });
+    wrapperInstance.setState({ isOpen: accordionState.isOpen });
 
     expect(wrapper).toMatchSnapshot();
   });
