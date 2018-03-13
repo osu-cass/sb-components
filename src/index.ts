@@ -310,7 +310,8 @@ export {
   parseQueryString,
   getResourceContent,
   getRequest,
-  postRequest
+  downloadPdfGet,
+  downloadPdfPost
 } from "./ApiModel";
 
 //
