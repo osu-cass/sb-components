@@ -51,7 +51,9 @@ export class AboutTestItemsContainer extends React.Component<
   }
 
   componentDidMount() {
-    this.fetchUpdatedViewModel(this.state.selectedCode);
+    this.fetchUpdatedViewModel(this.state.selectedCode).catch(e =>
+      this.onError(e)
+    );
   }
 
   componentWillUnmount() {
@@ -64,7 +66,7 @@ export class AboutTestItemsContainer extends React.Component<
         selectedCode: newCode
       });
       if (newCode !== "N/A") {
-        this.fetchUpdatedViewModel(newCode);
+        this.fetchUpdatedViewModel(newCode).catch(e => this.onError(e));
       }
     }
   };
