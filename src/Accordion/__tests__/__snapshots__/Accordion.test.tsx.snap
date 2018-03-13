@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItemBankEntry call handle show content 1`] = `
+exports[`Accordion call handle show content 1`] = `
 <div
   className="accordion-container"
 >
@@ -22,7 +22,7 @@ exports[`ItemBankEntry call handle show content 1`] = `
 </div>
 `;
 
-exports[`ItemBankEntry matches snapshot 1`] = `
+exports[`Accordion matches snapshot 1`] = `
 <div
   className="accordion-container"
 >
@@ -44,7 +44,7 @@ exports[`ItemBankEntry matches snapshot 1`] = `
 </div>
 `;
 
-exports[`ItemBankEntry renders open accordion 1`] = `
+exports[`Accordion renders open accordion 1`] = `
 <div
   className="accordion-container"
 >

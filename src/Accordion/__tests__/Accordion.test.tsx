@@ -16,7 +16,7 @@ const accordionState: AccordionState = {
   isOpen: true
 };
 
-describe("ItemBankEntry", () => {
+describe("Accordion", () => {
   const wrapper = shallow(<Accordion {...accordionProps} />);
 
   it("matches snapshot", () => {
