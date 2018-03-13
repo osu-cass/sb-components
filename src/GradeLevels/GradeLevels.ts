@@ -55,9 +55,7 @@ export class GradeLevel {
 
   public static gradeLevelToString(grades: GradeLevels): string | undefined {
     const caseString = this.gradeCaseToString(grades);
-    if (caseString !== "") {
-      return caseString;
-    }
+    return caseString;
   }
 
   public static gradeLevelContains(
