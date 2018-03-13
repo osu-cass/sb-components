@@ -18,7 +18,7 @@ const item: ItemRevisionModel = {
   revision: "asfe",
   isaap: ""
 };
-const item2 = { ...item, bankKey: 2332 };
+const item2 = { ...item, bankKey: 2332, revision: "asdf" };
 
 describe("ItemBankContainer", () => {
   const props: ItemBankContainerProps = {
@@ -45,6 +45,7 @@ describe("ItemBankContainer", () => {
   });
 
   it("item bank entry", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
     const itemBankEntry = wrapper.findWhere(
       node => node.type() === ItemBankEntry
     );
@@ -89,6 +90,41 @@ describe("ItemBankContainer", () => {
     );
     const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
     itemBankViewerInstance.props.onItemSelect("previous");
+    expect(wrapperInstance.state.currentItem).toEqual(item);
+  });
+
+  it("item viewer calls item select revision", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    wrapperInstance.handleChangeRevision();
+    const itemBankViewer = wrapper.findWhere(
+      node => node.type() === ItemBankViewer
+    );
+    const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
+    itemBankViewerInstance.props.onRevisionSelect("asdf");
+    item.revision = "asdf";
+    expect(wrapperInstance.state.currentItem).toEqual(item);
+  });
+
+  it("item viewer calls item select previous null item", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    wrapperInstance.setState({ currentItem: undefined });
+    wrapperInstance.handlePreviousItem();
+    const itemBankViewer = wrapper.findWhere(
+      node => node.type() === ItemBankViewer
+    );
+    const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
+    itemBankViewerInstance.props.onItemSelect("previous");
+    expect(wrapperInstance.state.currentItem).toEqual(item);
+  });
+
+  it("item viewer calls item select next null item", () => {
+    const wrapperInstance = wrapper.instance() as ItemBankContainer;
+    wrapperInstance.setState({ currentItem: undefined });
+    const itemBankViewer = wrapper.findWhere(
+      node => node.type() === ItemBankViewer
+    );
+    const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
+    itemBankViewerInstance.props.onItemSelect("next");
     expect(wrapperInstance.state.currentItem).toEqual(item);
   });
 });
