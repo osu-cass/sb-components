@@ -2,6 +2,9 @@ import * as React from "react";
 import { shallow } from "enzyme";
 import { GradeLevel, GradeLevels } from "../GradeLevels";
 
+const gradeLevel3: GradeLevels = GradeLevels.Grade3;
+const gradeLevel4: GradeLevels = GradeLevels.Grade4;
+const gradeLevel5: GradeLevels = GradeLevels.Grade5;
 const gradeLevel6: GradeLevels = GradeLevels.Grade6;
 const gradeLevel7: GradeLevels = GradeLevels.Grade7;
 const gradeLevel8: GradeLevels = GradeLevels.Grade8;
@@ -13,6 +16,21 @@ const gradeLevelNA: GradeLevels = GradeLevels.NA;
 const gradeLevelElementary: GradeLevels = GradeLevels.Elementary;
 const gradeLevelMiddle: GradeLevels = GradeLevels.Middle;
 const gradeLevelHigh: GradeLevels = GradeLevels.High;
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToString(gradeLevel3);
+  expect(value).toEqual("Grade 3");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToString(gradeLevel4);
+  expect(value).toEqual("Grade 4");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToString(gradeLevel5);
+  expect(value).toEqual("Grade 5");
+});
 
 it("Check if grade level to string return correct value", () => {
   const value = GradeLevel.gradeCaseToString(gradeLevel6);

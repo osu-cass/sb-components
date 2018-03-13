@@ -50,8 +50,6 @@ export class GradeLevel {
         return "Middle";
       case GradeLevels.High:
         return "High";
-      default:
-        return "";
     }
   }
 
@@ -60,16 +58,6 @@ export class GradeLevel {
     if (caseString !== "") {
       return caseString;
     }
-
-    const gradeStrings: string[] = [];
-
-    for (let i = 0; i < 10; i++) {
-      if ((grades & (1 << i)) === 1 << i) {
-        gradeStrings.push(this.gradeCaseToString(1 << i));
-      }
-    }
-
-    return gradeStrings.join(", ");
   }
 
   public static gradeLevelContains(
