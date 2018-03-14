@@ -20,7 +20,7 @@ export enum GradeLevels {
 
 /* tslint:disable: no-unnecessary-class */
 export class GradeLevel {
-  public static gradeCaseToString(grade: GradeLevels): string {
+  public static gradeCaseToString(grade: GradeLevels): string | undefined {
     switch (grade) {
       case GradeLevels.NA:
         return "NA";
