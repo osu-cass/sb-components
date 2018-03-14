@@ -62,16 +62,13 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderNavButton(direction: "next" | "previous") {
     const { onItemSelect, nextItem, prevItem } = this.props;
-    let label = "";
     let itemName = "";
     let item = nextItem;
     if (direction === "previous") {
-      itemName = prevItem ? getItemBankName(prevItem) : " ";
-      label = "Previous";
+      itemName = prevItem ? getItemBankName(prevItem) : "Previous";
       item = prevItem;
     } else {
-      itemName = nextItem ? getItemBankName(nextItem) : " ";
-      label = "Next";
+      itemName = nextItem ? getItemBankName(nextItem) : "Next";
     }
 
     return (
@@ -89,10 +86,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
             }
             aria-hidden="true"
           />
-          <div className="nav-item-link">
-            <div>{label}</div>
-            <div className="nav-item-name">{itemName}</div>
-          </div>
+          <div className="nav-item-name">{itemName}</div>
         </div>
       </button>
     );
