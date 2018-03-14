@@ -8,19 +8,22 @@ export const mockRevisions: RevisionModel[] = [
     author: "Troy Barnes",
     date: testDate,
     commitMessage: "Added functionality to the website",
-    commitHash: "ab65jg"
+    commitHash: "ab65jg",
+    selected: false
   },
   {
     author: "Pierce Hawthorne",
     date: testDate,
     commitMessage:
       "I want to see what happens when there is a much longer commit message than all of the rest",
-    commitHash: "h4lso6"
+    commitHash: "h4lso6",
+    selected: false
   },
   {
     author: "Annie Edison",
     date: testDate,
     commitMessage: "Changed one of the pages",
-    commitHash: "k5ls58"
+    commitHash: "k5ls58",
+    selected: false
   }
 ];

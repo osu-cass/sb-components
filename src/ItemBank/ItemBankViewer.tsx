@@ -26,6 +26,7 @@ export interface ItemBankViewerProps {
   revisions?: RevisionModel[];
   nextItem?: ItemRevisionModel;
   prevItem?: ItemRevisionModel;
+  currentItem?: ItemRevisionModel;
 }
 
 export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {

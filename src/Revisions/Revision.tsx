@@ -6,10 +6,10 @@ export interface RevisionModel {
   date: string;
   commitMessage: string;
   commitHash: string;
+  selected: boolean;
 }
 
 export interface RevisionModelProps extends RevisionModel {
-  selected: boolean;
   onClick: () => void;
 }
 
@@ -36,7 +36,14 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         toolTipHeader={getLongDateFormat(props.date)}
         helpText={renderHelpText()}
       >
-        <button className="btn btn-link revisions-link" onClick={props.onClick}>
+        <button
+          className={
+            props.selected
+              ? "btn btn-link revisions-link selected"
+              : "btn btn-link revisions-link"
+          }
+          onClick={props.onClick}
+        >
           {props.commitHash}
         </button>
         <div className="revisions-details">

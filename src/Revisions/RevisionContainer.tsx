@@ -18,7 +18,7 @@ export class RevisionContainer extends React.Component<
     const revisions = this.props.revisions.map(rev => (
       <Revision
         {...rev}
-        selected={false}
+        selected={rev.selected}
         onClick={() => this.props.onRevisionSelect(rev.commitHash)}
         key={rev.commitHash}
       />

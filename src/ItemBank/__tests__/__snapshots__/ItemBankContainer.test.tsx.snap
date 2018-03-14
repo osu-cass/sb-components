@@ -66,6 +66,15 @@ exports[`ItemBankContainer default wrapper 1`] = `
   >
     <div>
       <ItemBankViewer
+        currentItem={
+          Object {
+            "bankKey": 3000,
+            "isaap": "",
+            "itemKey": 187,
+            "revision": "asfe",
+            "section": "math",
+          }
+        }
         itemUrl="hello"
         nextItem={
           Object {
@@ -87,6 +96,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
           <RevisionContainer
             onRevisionSelect={[Function]}
             revisions={Array []}
+            selected={false}
           >
             <div
               className="revisions section section-light section-compact"
@@ -139,6 +149,15 @@ exports[`ItemBankContainer default wrapper 1`] = `
 
 exports[`ItemBankContainer has item bank viewer 1`] = `
 <ItemBankViewer
+  currentItem={
+    Object {
+      "bankKey": 3000,
+      "isaap": "",
+      "itemKey": 187,
+      "revision": "asfe",
+      "section": "math",
+    }
+  }
   itemUrl="hello"
   nextItem={
     Object {
@@ -160,6 +179,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
     <RevisionContainer
       onRevisionSelect={[Function]}
       revisions={Array []}
+      selected={false}
     >
       <div
         className="revisions section section-light section-compact"

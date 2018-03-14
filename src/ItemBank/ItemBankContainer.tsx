@@ -292,11 +292,18 @@ export class ItemBankContainer extends React.Component<
   };
 
   onRevisionSelect = (revision: string) => {
-    const { currentItem } = this.state;
-    if (currentItem) {
+    const { currentItem, revisions } = this.state;
+    let revisionContent = getResourceContent(revisions);
+    if (currentItem && revisionContent) {
       currentItem.revision = revision;
+      revisionContent = revisionContent.map(r => {
+        return { ...r, selected: r.commitHash === revision };
+      });
     }
-    this.setState({ currentItem }, this.handleChangeViewItem);
+    this.setState(
+      { currentItem, revisions: { kind: "success", content: revisionContent } },
+      this.handleChangeViewItem
+    );
   };
 
   renderItemBankEntry() {
@@ -344,6 +351,7 @@ export class ItemBankContainer extends React.Component<
         revisions={revisionsContent}
         nextItem={nextItem}
         prevItem={previousItem}
+        currentItem={currentItem}
       />
     );
 
