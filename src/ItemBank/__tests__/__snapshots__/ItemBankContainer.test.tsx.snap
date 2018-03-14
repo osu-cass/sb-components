@@ -96,7 +96,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
           <RevisionContainer
             onRevisionSelect={[Function]}
             revisions={Array []}
-            selected={false}
           >
             <div
               className="revisions section section-light section-compact"
@@ -179,7 +178,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
     <RevisionContainer
       onRevisionSelect={[Function]}
       revisions={Array []}
-      selected={false}
     >
       <div
         className="revisions section section-light section-compact"

@@ -7,7 +7,6 @@ exports[`ItemBankViewer matches snapshot 1`] = `
   <RevisionContainer
     onRevisionSelect={[MockFunction]}
     revisions={Array []}
-    selected={false}
   />
   <div
     aria-live="polite"
@@ -52,7 +51,6 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
         },
       ]
     }
-    selected={false}
   />
   <div
     aria-live="polite"
@@ -408,7 +406,6 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
         },
       ]
     }
-    selected={false}
   />
   <div
     aria-live="polite"
@@ -740,7 +737,6 @@ exports[`ItemBankViewer with revision model matches snapshot 1`] = `
   <RevisionContainer
     onRevisionSelect={[MockFunction]}
     revisions={Array []}
-    selected={false}
   />
   <div
     aria-live="polite"
