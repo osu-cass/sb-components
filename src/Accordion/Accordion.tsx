@@ -2,7 +2,7 @@ import * as React from "react";
 
 export interface AccordionProps {
   accordionTitle: string;
-  contentItem: JSX.Element;
+  isOpen: boolean;
 }
 
 export interface AccordionState {
@@ -14,7 +14,18 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
   constructor(props: AccordionProps) {
     super(props);
 
-    this.state = { title: this.props.accordionTitle, isOpen: false };
+    this.state = {
+      title: this.props.accordionTitle,
+      isOpen: this.props.isOpen
+    };
+  }
+
+  componentWillReceiveProps(nextProps: AccordionProps) {
+    if (this.state.isOpen !== nextProps.isOpen) {
+      this.setState({
+        isOpen: nextProps.isOpen
+      });
+    }
   }
 
   handleShowContent = () => {
@@ -25,9 +36,7 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
     let content: JSX.Element | undefined;
 
     if (isOpen) {
-      content = (
-        <div className="accordion-content">{this.props.contentItem}</div>
-      );
+      content = <div className="accordion-content">{this.props.children}</div>;
     }
 
     return content;

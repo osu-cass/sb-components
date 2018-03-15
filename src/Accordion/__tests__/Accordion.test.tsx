@@ -8,7 +8,7 @@ function getJSXElement() {
 
 const accordionProps: AccordionProps = {
   accordionTitle: "testAccordion",
-  contentItem: getJSXElement()
+  isOpen: false
 };
 
 const accordionState: AccordionState = {

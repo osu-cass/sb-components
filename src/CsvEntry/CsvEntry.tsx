@@ -6,6 +6,7 @@ import { ToolTip } from "../index";
 
 export interface CsvEntryProps {
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
+  onBlur: () => void;
 }
 
 export interface CsvEntryState {
@@ -55,8 +56,9 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     this.setState({
       csvData
     });
-
+    console.log("in handlecsvblur");
     this.props.onItemsUpdate(csvData);
+    this.props.onBlur();
   };
 
   render() {

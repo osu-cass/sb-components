@@ -4,7 +4,7 @@ export interface CsvRowModel extends ItemRevisionModel {
   index: number;
 }
 
-export function parseCsv(csvValue: string | undefined) {
+export function parseCsv(csvValue?: string): CsvRowModel[] {
   const data: CsvRowModel[] = [];
 
   if (csvValue) {

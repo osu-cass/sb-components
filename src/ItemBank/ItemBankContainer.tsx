@@ -8,7 +8,6 @@ import {
   ItemViewerFrame,
   ToolTip,
   AccResourceGroupModel,
-  Accordion,
   AdvancedAboutItem,
   AboutItemRevisionModel,
   Resource,
@@ -169,7 +168,7 @@ export class ItemBankContainer extends React.Component<
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
-    if (validItemRevisionModel(lastItem)) {
+    if (validItemRevisionModel(lastItem) || items.length === 0) {
       items.push({});
     }
     this.setState({ items, currentItem }, () => {

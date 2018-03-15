@@ -20,7 +20,8 @@ const item2 = { ...item, bankKey: 2332, revision: "asdf" };
 const items: ItemRevisionModel[] = [item, item2];
 
 const csvEntryProps: CsvEntryProps = {
-  onItemsUpdate: onItemsUpdateMock
+  onItemsUpdate: onItemsUpdateMock,
+  onBlur: jest.fn()
 };
 
 const csvData1: CsvRowModel = {
