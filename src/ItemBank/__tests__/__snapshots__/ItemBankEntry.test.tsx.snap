@@ -13,6 +13,7 @@ exports[`ItemBankEntry matches snapshot 1`] = `
         className="csv-entry-wrapper"
       >
         <CsvEntry
+          isOpen={false}
           onBlur={[Function]}
           onClick={[Function]}
           onItemsUpdate={[Function]}

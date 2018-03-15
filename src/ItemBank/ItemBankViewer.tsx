@@ -12,7 +12,9 @@ import {
   itemRevisionKey,
   getItemBankName,
   RevisionModel,
-  RubricModal
+  RubricModal,
+  SelectOptionProps,
+  Select
 } from "../index";
 
 export interface ItemBankViewerProps {
@@ -27,6 +29,7 @@ export interface ItemBankViewerProps {
   nextItem?: ItemRevisionModel;
   prevItem?: ItemRevisionModel;
   currentItem?: ItemRevisionModel;
+  items?: ItemRevisionModel[];
 }
 
 export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
@@ -93,6 +96,38 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     );
   }
 
+  renderItemDropDown() {
+    let options: SelectOptionProps[] | undefined = undefined;
+    if (this.props.items) {
+      options = this.props.items.map(op => {
+        return {
+          label: op.itemKey ? op.itemKey.toString() : "",
+          value: op.itemKey ? op.itemKey.toString() : "",
+          selected: false
+        };
+      });
+    }
+
+    if (options) {
+      options.unshift({
+        label: "Select an Item",
+        value: "N/A",
+        disabled: true,
+        selected: false
+      });
+      return (
+        <Select
+          label="Items"
+          labelClass="display-none"
+          selected="N/A"
+          options={options}
+          onChange={() => {}}
+          wrapperClass="section-dd"
+        />
+      );
+    }
+  }
+
   renderMidNav() {
     const { onItemSelect, nextItem, prevItem } = this.props;
     const nextItemName = nextItem ? getItemBankName(nextItem) : " ";
@@ -101,6 +136,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return (
       <div className="nav-buttons">
         {this.renderNavButton("previous")}
+        {this.renderItemDropDown()}
         {this.renderNavButton("next")}
       </div>
     );

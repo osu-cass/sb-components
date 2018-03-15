@@ -330,7 +330,8 @@ export class ItemBankContainer extends React.Component<
       revisions,
       currentItem,
       previousItem,
-      nextItem
+      nextItem,
+      items
     } = this.state;
     let content: JSX.Element | undefined;
 
@@ -351,6 +352,7 @@ export class ItemBankContainer extends React.Component<
         nextItem={nextItem}
         prevItem={previousItem}
         currentItem={currentItem}
+        items={items}
       />
     );
 
