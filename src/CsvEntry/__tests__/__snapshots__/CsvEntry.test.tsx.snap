@@ -32,6 +32,7 @@ exports[`CsvEntry calls handle csv blur 1`] = `
     className="csv-text-entry"
     onBlur={[Function]}
     onChange={[Function]}
+    onClick={[MockFunction]}
   />
 </div>
 `;
@@ -68,6 +69,7 @@ exports[`CsvEntry calls handle csv change 1`] = `
     className="csv-text-entry"
     onBlur={[Function]}
     onChange={[Function]}
+    onClick={[MockFunction]}
     value="hello"
   />
 </div>
@@ -105,6 +107,7 @@ exports[`CsvEntry matches snapshot 1`] = `
     className="csv-text-entry"
     onBlur={[Function]}
     onChange={[Function]}
+    onClick={[MockFunction]}
   />
 </div>
 `;

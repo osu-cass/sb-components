@@ -21,7 +21,7 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
   }
 
   componentWillReceiveProps(nextProps: AccordionProps) {
-    if (this.state.isOpen !== nextProps.isOpen) {
+    if (this.props.isOpen !== nextProps.isOpen) {
       this.setState({
         isOpen: nextProps.isOpen
       });

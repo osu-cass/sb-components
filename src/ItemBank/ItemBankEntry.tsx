@@ -31,8 +31,13 @@ export class ItemBankEntry extends React.Component<
     };
   }
 
+  onCsvClick = () => {
+    this.setState({
+      csvIsOpen: true
+    });
+  };
+
   onCsvBlur = () => {
-    console.log("blur in itembankentry");
     this.setState({
       csvIsOpen: false,
       itemsEntryIsOpen: true
@@ -47,6 +52,7 @@ export class ItemBankEntry extends React.Component<
             <CsvEntry
               onItemsUpdate={this.props.updateItems}
               onBlur={this.onCsvBlur}
+              onClick={this.onCsvClick}
             />
           </div>
         </div>

@@ -21,7 +21,8 @@ const items: ItemRevisionModel[] = [item, item2];
 
 const csvEntryProps: CsvEntryProps = {
   onItemsUpdate: onItemsUpdateMock,
-  onBlur: jest.fn()
+  onBlur: jest.fn(),
+  onClick: jest.fn()
 };
 
 const csvData1: CsvRowModel = {

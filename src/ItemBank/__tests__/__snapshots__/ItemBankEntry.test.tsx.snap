@@ -14,6 +14,7 @@ exports[`ItemBankEntry matches snapshot 1`] = `
       >
         <CsvEntry
           onBlur={[Function]}
+          onClick={[Function]}
           onItemsUpdate={[Function]}
         />
       </div>
