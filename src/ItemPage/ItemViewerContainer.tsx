@@ -19,7 +19,7 @@ import {
   IframeModal,
   AccResourceGroupModel,
   ResourceSelectionsModel
-} from "../index";
+} from "@src/index";
 
 const calculatorURL = "http://calculator.smarterbalanced.org";
 export interface ItemViewerContainerProps extends ItemPageModels.ItemPageModel {

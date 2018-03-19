@@ -4,7 +4,7 @@ import {
   DropDownSelectionModel,
   DropdownProps,
   ItemAccessibilityModalProps
-} from "src/index";
+} from "@src/index";
 import { action } from "@storybook/addon-actions";
 
 export const accessibilityNotepad: AccessibilityResourceModel = {
@@ -740,4 +740,3 @@ export const allAccessibilityResourceGroups: AccResourceGroupModel[] = [
     ]
   }
 ];
-

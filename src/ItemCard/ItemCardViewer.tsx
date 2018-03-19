@@ -1,12 +1,12 @@
 import * as React from "react";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
 import {
   ItemViewerFrame,
   RubricTable,
   AboutThisItemDetail,
-  ItemTabs
-} from "../index";
-import { Tabs } from "../PageTabs/ItemTabs";
+  ItemTabs,
+  Tabs,
+  AboutItemModel
+} from "@src/index";
 
 export interface ItemCardViewerProps {
   item?: AboutItemModel;

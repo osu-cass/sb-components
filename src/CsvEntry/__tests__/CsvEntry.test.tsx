@@ -1,10 +1,14 @@
 import "jsdom-global/register";
 import * as React from "react";
 import { shallow, mount } from "enzyme";
-import { CsvEntry, CsvEntryProps, CsvEntryState } from "../CsvEntry";
-import { ItemRevisionModel } from "../../index";
-import { CsvRowModel } from "../CsvEntryModels";
+import {
+  CsvEntry,
+  CsvEntryProps,
+  ItemRevisionModel,
+  CsvRowModel
+} from "@src/index";
 
+import { CsvEntryState } from "../CsvEntry";
 const onItemsUpdateMock = jest.fn();
 
 const item: ItemRevisionModel = {

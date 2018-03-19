@@ -1,5 +1,9 @@
-import { ItemModel, AboutItemRevisionModel, GradeLevel } from "../index";
-import { RevisionModel } from "../Revisions/Revision";
+import {
+  ItemModel,
+  AboutItemRevisionModel,
+  GradeLevel,
+  RevisionModel
+} from "@src/index";
 
 export interface ItemRevisionModel {
   itemKey?: number;

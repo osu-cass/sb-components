@@ -4,7 +4,7 @@ import {
   FilterType,
   parseQueryString,
   SearchAPIParamsModel
-} from "../index";
+} from "@src/index";
 
 export interface ExpressQuery {
   [param: string]: string;

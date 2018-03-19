@@ -1,12 +1,12 @@
-import { Filter } from "../Filter";
 import * as Mocks from "./Mocks";
-import { FilterType } from "../FilterModels";
 import {
   GradeLevel,
   GradeLevels,
   SubjectModel,
-  FilterCategoryModel
-} from "../../index";
+  FilterCategoryModel,
+  FilterType,
+  Filter
+} from "@src/index";
 
 const searchTargets = Mocks.searchModel.targets || [];
 const searchClaims = Mocks.searchModel.claims || [];

@@ -1,8 +1,12 @@
-import { ItemViewContainerProps, ItemGroupModel, PdfViewType } from "src/index";
+import {
+  ItemViewContainerProps,
+  ItemGroupModel,
+  PdfViewType
+} from "@src/index";
 import {
   aboutItemMockModel,
   aboutItemMockNoRubric
-} from "mocks/AboutItem/mocks";
+} from "@mocks/AboutItem/mocks";
 
 export const singleQuestion: ItemGroupModel = {
   questions: [

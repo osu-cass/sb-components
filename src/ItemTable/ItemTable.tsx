@@ -12,7 +12,7 @@ import {
   HeaderSortModel,
   SortColumnModel,
   ColumnGroup
-} from "../index";
+} from "@src/index";
 
 export interface ItemTableProps {
   cardRows: ItemCardModel[];

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Rubric } from "src/index";
-import { RubricModel } from "src/Rubric/RubricModels";
+import { Rubric } from "@src/index";
+import { RubricModel } from "@src/Rubric/RubricModels";
 
 const rubricMockProps: RubricModel = {
   language: "English",

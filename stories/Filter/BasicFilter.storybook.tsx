@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { BasicFilter } from "../../src/";
+import { BasicFilter, GradeLevel } from "@src/index";
 import {
   propsRadioBtn,
   propsDropDown,
@@ -10,9 +10,8 @@ import {
   advancedFilterOptionsArray,
   basicFilterCategoryDropDown,
   basicFilterCategoryRadioBtn
-} from "mocks/Filter/mocks";
+} from "@mocks/Filter/mocks";
 import { centerDecorator } from "../CenterDecorator";
-import { GradeLevel } from "../../src/GradeLevels/GradeLevels";
 
 storiesOf("Basic Filter", module)
   .addDecorator(centerDecorator)

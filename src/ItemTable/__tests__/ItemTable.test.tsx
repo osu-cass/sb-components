@@ -3,10 +3,10 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
-import { itemCardList } from "../../../mocks/ItemCard/mocks";
-import { tabClassNames } from "../../../mocks/ItemTable/mocks";
+import { itemCardList } from "@mocks/ItemCard/mocks";
+import { tabClassNames } from "@mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
-import { aboutItemMockModel } from "mocks/index";
+import { aboutItemMockModel } from "@mocks/index";
 import {
   ItemCardModel,
   GradeLevels,
@@ -17,7 +17,7 @@ import {
   ItemCardViewer,
   ItemTable,
   ItemTableProps
-} from "../../index";
+} from "@src/index";
 
 describe("ItemTable", () => {
   const selectedItem = itemCardList[0];

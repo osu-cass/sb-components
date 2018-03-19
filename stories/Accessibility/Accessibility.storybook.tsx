@@ -5,9 +5,9 @@ import {
   accessibilityModalProp,
   mockAccResourceGroups,
   allAccessibilityResourceGroups
-} from "mocks/Accessibility/mocks";
+} from "@mocks/Accessibility/mocks";
 import { centerDecorator } from "../CenterDecorator";
-import { ItemAccessibilityModal } from "src/index";
+import { ItemAccessibilityModal } from "@src/index";
 
 storiesOf("Accessibility Modal", module)
   .addDecorator(centerDecorator)

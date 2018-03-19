@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ItemViewPage } from "src/index";
+import { ItemViewPage } from "@src/index";
 import { storiesOf } from "@storybook/react";
 import { routerDecorator } from "../RouterDecorator";
 import {
@@ -8,7 +8,7 @@ import {
   itemAccessibilityClient,
   itemPagePath,
   itemPageMatch
-} from "mocks/ItemPage/mocks";
+} from "@mocks/ItemPage/mocks";
 import { Route } from "react-router";
 
 storiesOf("Item View", module)
