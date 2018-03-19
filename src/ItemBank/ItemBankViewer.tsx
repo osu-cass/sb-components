@@ -78,7 +78,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return (
       <button
         onClick={() => onItemSelect(direction)}
-        className={"btn btn-link " + direction}
+        className={`btn btn-link ${direction}`}
         disabled={item ? false : true}
       >
         <div className="nav-button-container">
@@ -97,7 +97,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
   }
 
   renderItemDropDown() {
-    let options: SelectOptionProps[] | undefined = undefined;
+    let options: SelectOptionProps[] | undefined;
     if (this.props.items) {
       options = this.props.items.map(op => {
         return {
@@ -115,6 +115,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         disabled: true,
         selected: false
       });
+
       return (
         <Select
           label="Items"

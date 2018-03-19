@@ -1,38 +1,62 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import { Accordion, AccordionProps, AccordionState } from "../Accordion";
+import { Accordion, AccordionProps } from "@src/index";
 
-function getJSXElement() {
-  return <div>test</div>;
-}
+const accordionContent = (
+  <div id="test-content">
+    test<p>I'm open</p>
+  </div>
+);
 
 const accordionProps: AccordionProps = {
   accordionTitle: "testAccordion",
-  isOpen: false
-};
-
-const accordionState: AccordionState = {
-  title: "testAccordion",
-  isOpen: true
+  isOpen: false,
+  toggleExpand: jest.fn()
 };
 
 describe("Accordion", () => {
-  const wrapper = shallow(<Accordion {...accordionProps} />);
+  const wrapper = shallow(
+    <Accordion {...accordionProps}>{accordionContent}</Accordion>
+  );
+  const wrapperOpen = shallow(
+    <Accordion {...accordionProps} isOpen={true}>
+      {accordionContent}
+    </Accordion>
+  );
 
-  it("matches snapshot", () => {
+  it("matches closed snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("renders open accordion", () => {
-    const wrapperInstance = wrapper.instance() as Accordion;
-    wrapperInstance.setState({ isOpen: accordionState.isOpen });
-
-    expect(wrapper).toMatchSnapshot();
+  it("has no content when closed", () => {
+    const content = wrapper.find("#test-content");
+    expect(content).toHaveLength(0);
   });
 
-  it("call handle show content", () => {
-    const wrapperInstance = wrapper.instance() as Accordion;
-    wrapperInstance.handleShowContent();
-    expect(wrapper).toMatchSnapshot();
+  it("matches open snapshot", () => {
+    expect(wrapperOpen).toMatchSnapshot();
+  });
+
+  it("has content when opened", () => {
+    const content = wrapperOpen.find("#test-content");
+    expect(content).toHaveLength(1);
+  });
+
+  it("calls handle show content when closed", () => {
+    const button = wrapper.find(".accordion-bar");
+    button.simulate("click");
+    expect(accordionProps.toggleExpand).toHaveBeenCalled();
+  });
+
+  it("call handle show content when open", () => {
+    const button = wrapperOpen.find(".accordion-bar");
+    button.simulate("click");
+    expect(accordionProps.toggleExpand).toHaveBeenCalled();
+  });
+
+  it("renders closed then open", () => {
+    wrapper.setProps({ isOpen: true });
+    const content = wrapper.find("#test-content");
+    expect(content).toHaveLength(1);
   });
 });

@@ -5,6 +5,7 @@ exports[`ItemBankEntry matches snapshot 1`] = `
   <Accordion
     accordionTitle="CSV Entry"
     isOpen={false}
+    toggleExpand={[Function]}
   >
     <div
       className="csv-entry-container section"
@@ -14,7 +15,6 @@ exports[`ItemBankEntry matches snapshot 1`] = `
       >
         <CsvEntry
           onBlur={[Function]}
-          onClick={[Function]}
           onItemsUpdate={[Function]}
         />
       </div>
@@ -23,6 +23,7 @@ exports[`ItemBankEntry matches snapshot 1`] = `
   <Accordion
     accordionTitle="Items Entry"
     isOpen={false}
+    toggleExpand={[Function]}
   >
     <ItemEntryTable
       itemRows={

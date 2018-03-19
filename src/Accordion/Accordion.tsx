@@ -3,34 +3,13 @@ import * as React from "react";
 export interface AccordionProps {
   accordionTitle: string;
   isOpen: boolean;
+  toggleExpand: () => void;
 }
 
-export interface AccordionState {
-  title: string;
-  isOpen: boolean;
-}
-
-export class Accordion extends React.Component<AccordionProps, AccordionState> {
+export class Accordion extends React.Component<AccordionProps, {}> {
   constructor(props: AccordionProps) {
     super(props);
-
-    this.state = {
-      title: this.props.accordionTitle,
-      isOpen: this.props.isOpen
-    };
   }
-
-  componentWillReceiveProps(nextProps: AccordionProps) {
-    if (this.props.isOpen !== nextProps.isOpen) {
-      this.setState({
-        isOpen: nextProps.isOpen
-      });
-    }
-  }
-
-  handleShowContent = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  };
 
   renderContent(isOpen: boolean): JSX.Element | undefined {
     let content: JSX.Element | undefined;
@@ -57,19 +36,17 @@ export class Accordion extends React.Component<AccordionProps, AccordionState> {
   }
 
   render() {
+    const { isOpen, accordionTitle, toggleExpand } = this.props;
+
     return (
       <div className="accordion-container">
-        <div
-          role="button"
-          className="accordion-bar"
-          onClick={this.handleShowContent}
-        >
+        <div role="button" className="accordion-bar" onClick={toggleExpand}>
           <div className="accordion-content">
-            {this.state.title}
-            {this.renderCarat(this.state.isOpen)}
+            {accordionTitle}
+            {this.renderCarat(isOpen)}
           </div>
         </div>
-        {this.renderContent(this.state.isOpen)}
+        {this.renderContent(isOpen)}
       </div>
     );
   }

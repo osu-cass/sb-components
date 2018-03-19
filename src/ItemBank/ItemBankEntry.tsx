@@ -31,10 +31,13 @@ export class ItemBankEntry extends React.Component<
     };
   }
 
-  onCsvClick = () => {
-    this.setState({
-      csvIsOpen: true
-    });
+  onAccordionToggle = (accordionType: "csv" | "table") => {
+    const { csvIsOpen, itemsEntryIsOpen } = this.state;
+    if (accordionType === "csv") {
+      this.setState({ csvIsOpen: !csvIsOpen });
+    } else {
+      this.setState({ itemsEntryIsOpen: !itemsEntryIsOpen });
+    }
   };
 
   onCsvBlur = () => {
@@ -46,13 +49,16 @@ export class ItemBankEntry extends React.Component<
 
   renderCsvEntry() {
     return (
-      <Accordion accordionTitle="CSV Entry" isOpen={this.state.csvIsOpen}>
+      <Accordion
+        accordionTitle="CSV Entry"
+        isOpen={this.state.csvIsOpen}
+        toggleExpand={() => this.onAccordionToggle("csv")}
+      >
         <div className="csv-entry-container section">
           <div className="csv-entry-wrapper">
             <CsvEntry
               onItemsUpdate={this.props.updateItems}
               onBlur={this.onCsvBlur}
-              onClick={this.onCsvClick}
             />
           </div>
         </div>
@@ -67,6 +73,7 @@ export class ItemBankEntry extends React.Component<
       <Accordion
         accordionTitle="Items Entry"
         isOpen={this.state.itemsEntryIsOpen}
+        toggleExpand={() => this.onAccordionToggle("table")}
       >
         <ItemEntryTable
           itemRows={items}
