@@ -17,8 +17,7 @@
     "paths": {
       "@src/*": ["src/*"],
       "@mocks/*": ["mocks/*"],
-      "src": ["src/*"],
-      "mocks": ["mocks/*"]
+      "@stories": ["stories/*"]
     },
     "lib": ["es5", "es6", "dom"],
     "types": ["storybook__react", "storybook__addon-actions", "node", "jest"],

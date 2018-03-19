@@ -74,7 +74,6 @@
     "@types/react-router-dom": "4.2.5",
     "@types/storybook__addon-actions": "~3.0.3",
     "@types/storybook__react": "^3.0.7",
-    "awesome-typescript-loader": "^3.4.1",
     "copy-webpack-plugin": "^4.3.1",
     "coveralls": "^3.0.0",
     "css-loader": "^0.28.8",
@@ -166,11 +165,9 @@
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
-      "^src/(.*)": "<rootDir>/src/$1",
-      "^mocks/(.*)": "<rootDir>/mocks/$1",
       "^@src/(.*)": "<rootDir>/src/$1",
       "^@mocks/(.*)": "<rootDir>/mocks/$1",
-      "^stories/(.*)": "<rootDir>/stories/$1"
+      "^@stories/(.*)": "<rootDir>/stories/$1"
     }
   }
 }
