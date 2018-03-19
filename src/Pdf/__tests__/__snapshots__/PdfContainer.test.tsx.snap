@@ -8,6 +8,9 @@ exports[`PdfComponent matches snapshot 1`] = `
     <meta
       charSet="UTF-8"
     />
+    <base
+      href="http://localhost:undefined/"
+    />
     <link
       href="http://example.com/style.css"
       rel="stylesheet"
