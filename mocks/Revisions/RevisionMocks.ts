@@ -1,7 +1,7 @@
 import { RevisionModel } from "src/Revisions/Revision";
 import * as moment from "moment";
 
-const testDate = moment("11/11/2014").format();
+const testDate = moment("2018-02-08 24:30:00.000").format();
 
 export const mockRevisions: RevisionModel[] = [
   {
