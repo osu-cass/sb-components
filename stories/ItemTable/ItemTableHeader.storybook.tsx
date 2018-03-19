@@ -1,7 +1,7 @@
 // import * as React from "react";
 // import { storiesOf } from "@storybook/react";
 // import { CenterDecorator } from "../CenterDecorator";
-// import { itemTableProps } from "mocks/ItemTable/mocks";
+// import { itemTableProps } from "@mocks/ItemTable/mocks";
 // import {
 //   headerColumns,
 //   HeaderSortModel,
@@ -10,7 +10,7 @@
 //   SortDirection,
 //   HeaderTableProps,
 //   ColumnGroup
-// } from "src/index";
+// } from "@src/index";
 
 // const sorts: Array<HeaderSortModel> = [
 //   {

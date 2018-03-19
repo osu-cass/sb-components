@@ -5,7 +5,7 @@ import {
   GradeLevel,
   FilterType,
   parseQueryString
-} from "../../index";
+} from "@src/index";
 
 describe("SearchUrl.encodeQuery", () => {
   it("works for empty object", () => {

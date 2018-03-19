@@ -3,14 +3,18 @@ import * as ReactDOM from "react-dom";
 import { shallow, mount, render } from "enzyme";
 import * as TestUtils from "react-dom/test-utils";
 import { MemoryRouter } from "react-router-dom";
-import { AboutTestItemsContainer } from "../AboutTestItemsContainer";
 import {
   aboutTestMatch,
   aboutTestPath,
   aboutTestBadItem,
   defaultAboutTestItemsModel
-} from "mocks/AboutTestItems/mocks";
-import { AboutItem, ItemViewerFrame, Select } from "src/index";
+} from "@mocks/AboutTestItems/mocks";
+import {
+  AboutItem,
+  ItemViewerFrame,
+  Select,
+  AboutTestItemsContainer
+} from "@src/index";
 import * as Mocks from "./mocks";
 
 describe("AboutTestItemsContainer", () => {

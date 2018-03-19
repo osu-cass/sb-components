@@ -4,8 +4,8 @@ import { ItemCardViewer } from "../ItemCardViewer";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
 
-import { ItemCardModel, RubricModel, AboutItemModel } from "../../index";
-import { aboutItemMockModel } from "mocks/index";
+import { ItemCardModel, RubricModel, AboutItemModel } from "@src/index";
+import { aboutItemMockModel } from "@mocks/index";
 
 describe("ItemCardViewer", () => {
   it("renders viewer tab", () => {

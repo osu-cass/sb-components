@@ -1,6 +1,6 @@
 import * as React from "react";
-import { SelectedFilterIndicator } from "../../src/Filter/SelectedFilterIndicator";
-import { mockAdvancedFilterCategoriesSelected } from "mocks/Filter/mocks";
+import { SelectedFilterIndicator } from "@src/index";
+import { mockAdvancedFilterCategoriesSelected } from "@mocks/Filter/mocks";
 import { centerDecorator } from "../CenterDecorator";
 import { storiesOf } from "@storybook/react";
 

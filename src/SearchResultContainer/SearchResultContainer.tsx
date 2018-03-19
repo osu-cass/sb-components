@@ -6,7 +6,7 @@ import {
   ItemTableContainer,
   ItemModel,
   ItemCard
-} from "../index";
+} from "@src/index";
 
 /**
  * SearchResultType enum
@@ -57,9 +57,7 @@ export class SearchResultContainer extends React.Component<
   constructor(props: SearchResultContainerProps) {
     super(props);
     this.state = {
-      renderType: props.defaultRenderType
-        ? props.defaultRenderType
-        : SearchResultType.Table,
+      renderType: props.defaultRenderType || SearchResultType.Table,
       loading: true
     };
   }

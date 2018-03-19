@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { ToolTip } from "src/ToolTip/ToolTip";
+import { ToolTip } from "@src/ToolTip/ToolTip";
 import { centerDecorator } from "../CenterDecorator";
 
 const longText = (

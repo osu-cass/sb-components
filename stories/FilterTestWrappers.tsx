@@ -1,4 +1,3 @@
-import { BasicFilterContainerProps } from "../src/Filter/BasicFilterContainer";
 import * as React from "react";
 import {
   FilterContainer,
@@ -7,12 +6,13 @@ import {
   AdvancedFilterCategoryModel,
   BasicFilterContainer,
   BasicFilterCategoryModel,
-  FilterOptionModel
-} from "src/index";
+  FilterOptionModel,
+  BasicFilterContainerProps
+} from "@src/index";
 import {
   mockAdvancedFilterCategoriesAll,
   mockBasicFilterCategories
-} from "mocks/Filter/mocks";
+} from "@mocks/Filter/mocks";
 
 export interface AdvFilContainerTestProps {
   isNested?: boolean;

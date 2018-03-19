@@ -59,6 +59,7 @@ exports[`Storyshots Layout name links body 1`] = `
           className="nav-linksGroup"
         >
           <a
+            aria-current={false}
             className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
@@ -72,6 +73,7 @@ exports[`Storyshots Layout name links body 1`] = `
             Home
           </a>
           <a
+            aria-current={false}
             className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
@@ -85,6 +87,7 @@ exports[`Storyshots Layout name links body 1`] = `
             About Test Items
           </a>
           <a
+            aria-current={false}
             className="nav-linksGroup-item"
             href="url3"
             onClick={[Function]}
@@ -227,6 +230,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
           className="nav-linksGroup"
         >
           <a
+            aria-current={false}
             className="nav-linksGroup-item"
             href="url1"
             onClick={[Function]}
@@ -240,6 +244,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             Home
           </a>
           <a
+            aria-current={false}
             className="nav-linksGroup-item"
             href="url2"
             onClick={[Function]}
@@ -253,6 +258,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             About Test Items
           </a>
           <a
+            aria-current={false}
             className="nav-linksGroup-item"
             href="url3"
             onClick={[Function]}

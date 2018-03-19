@@ -5,7 +5,7 @@ import {
   validItemRevisionModel,
   SelectOptionProps,
   Select
-} from "../index";
+} from "@src/index";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;

@@ -8,8 +8,8 @@ import {
   SortDirection,
   HeaderTable,
   HeaderTableProps
-} from "../../index";
-import { tabClassNames } from "../../../mocks/ItemTable/mocks";
+} from "@src/index";
+import { tabClassNames } from "@mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
 
 describe("ItemTableHeader", () => {
