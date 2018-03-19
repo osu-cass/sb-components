@@ -69,12 +69,11 @@
     "@types/node": "^9.4.7",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
-    "@types/react-modal": "2.2.2",
-    "@types/react-router": "^4.0.12",
-    "@types/react-router-dom": "4.0.5",
+    "@types/react-modal": "3.1.2",
+    "@types/react-router": "^4.0.23",
+    "@types/react-router-dom": "4.2.5",
     "@types/storybook__addon-actions": "~3.0.3",
     "@types/storybook__react": "^3.0.7",
-    "awesome-typescript-loader": "^3.4.1",
     "copy-webpack-plugin": "^4.3.1",
     "coveralls": "^3.0.0",
     "css-loader": "^0.28.8",
@@ -96,21 +95,21 @@
     "postcss-loader": "^2.0.10",
     "prettier": "~1.9.2",
     "react": "~16.2.0",
-    "react-addons-test-utils": "^15.6.2",
     "react-dom": "~16.2.0",
-    "react-modal": "3.1.2",
+    "react-modal": "3.3.2",
     "react-router": "^4.2.0",
-    "react-router-dom": "4.1.1",
+    "react-router-dom": "4.2.2",
     "react-test-renderer": "~16.2.0",
+    "source-map-support": "^0.5.4",
     "style-loader": "^0.19.1",
     "ts-jest": "~22.4.1",
     "ts-loader": "^3.5.0",
+    "tsconfig-paths-webpack-plugin": "^3.0.2",
     "tslint": "^5.9.1",
     "tslint-language-service": "^0.9.8",
     "typedoc": "^0.10.0",
     "typescript": "~2.7.2",
     "url-loader": "0.5.9",
-    "watch-ignore-webpack-plugin": "^1.0.0",
     "webpack": "~3.8.1"
   },
   "dependencies": {
@@ -131,7 +130,7 @@
     "typeface-pt-sans-caption": "^0.0.44",
     "typeface-pt-serif": "^0.0.44",
     "typeface-pt-serif-caption": "^0.0.44",
-    "@sbac/sbac-ui-kit": "github:SmarterApp/SBAC-Global-UI-Kit"
+    "@sbac/sbac-ui-kit": "github:osu-cass/sbac-global-ui-kit#develop"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTest.ts",
@@ -166,9 +165,9 @@
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
-      "^src/(.*)": "<rootDir>/src/$1",
-      "^mocks/(.*)": "<rootDir>/mocks/$1",
-      "^stories/(.*)": "<rootDir>/stories/$1"
+      "^@src/(.*)": "<rootDir>/src/$1",
+      "^@mocks/(.*)": "<rootDir>/mocks/$1",
+      "^@stories/(.*)": "<rootDir>/stories/$1"
     }
   }
 }

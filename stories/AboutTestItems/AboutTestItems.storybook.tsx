@@ -4,7 +4,7 @@ import {
   AboutTestItemsContainer,
   AboutTestItemsParams,
   AboutTestItemsPage
-} from "src/index";
+} from "@src/index";
 import { routerDecorator } from "../RouterDecorator";
 import {
   aboutTestMatch,
@@ -13,7 +13,7 @@ import {
   mockAboutLoading,
   mockAboutClientSuccess,
   mockAboutRejectClient
-} from "mocks/AboutTestItems/mocks";
+} from "@mocks/AboutTestItems/mocks";
 import { Route, match } from "react-router";
 import { LayoutDecorator } from "../LayoutDecorator";
 

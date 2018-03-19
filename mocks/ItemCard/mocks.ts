@@ -1,4 +1,4 @@
-import { ItemCardModel } from "src/index";
+import { ItemCardModel } from "@src/index";
 
 export const completeItemCard: ItemCardModel = {
   selected: false,
@@ -24,7 +24,6 @@ export const completeItemCard: ItemCardModel = {
   ccssDescription: "this is the common core description",
   domain: "domain"
 };
-
 
 export const itemCardList: ItemCardModel[] = [
   {
@@ -100,6 +99,85 @@ export const itemCardList: ItemCardModel[] = [
     targetId: "D",
     targetDescription: "target D description",
     targetShortName: "Evaluate Information/ sources",
+    interactionTypeCode: "MS",
+    interactionTypeLabel: "Multi Select",
+    isPerformanceItem: false,
+    brailleOnlyItem: false
+  }
+];
+
+export const sortableItemCards: ItemCardModel[] = [
+  {
+    bankKey: 187,
+    itemKey: 1,
+    title: "alpha",
+    grade: 5,
+    gradeLabel: "Grade 5",
+    subjectCode: "MATH",
+    subjectLabel: "Math",
+    claimCode: "MATH1",
+    claimLabel: "Alpha",
+    targetHash: 1,
+    targetId: "A",
+    targetDescription: "target A description",
+    targetShortName: "",
+    interactionTypeCode: "EQ",
+    interactionTypeLabel: "Equation",
+    isPerformanceItem: true,
+    brailleOnlyItem: false
+  },
+  {
+    bankKey: 187,
+    itemKey: 2,
+    title: "bravo",
+    grade: 4,
+    gradeLabel: "Grade 4",
+    subjectCode: "ELA",
+    subjectLabel: "ELA/literacy",
+    claimCode: "ELA1",
+    claimLabel: "Bravo",
+    targetHash: 2,
+    targetId: "B",
+    targetDescription: "target B description",
+    targetShortName: "",
+    interactionTypeCode: "MC",
+    interactionTypeLabel: "Multiple Choice",
+    isPerformanceItem: true,
+    brailleOnlyItem: false
+  },
+  {
+    bankKey: 187,
+    itemKey: 3,
+    title: "charlie",
+    grade: 3,
+    gradeLabel: "Grade 3",
+    subjectCode: "MATH",
+    subjectLabel: "Math",
+    claimCode: "MATH4",
+    claimLabel: "Charlie",
+    targetHash: 3,
+    targetId: "C",
+    targetDescription: "target C description",
+    targetShortName: "",
+    interactionTypeCode: "MS",
+    interactionTypeLabel: "Multi Select",
+    isPerformanceItem: false,
+    brailleOnlyItem: false
+  },
+  {
+    bankKey: 187,
+    itemKey: 4,
+    title: "delta",
+    grade: 2,
+    gradeLabel: "Grade 2",
+    subjectCode: "ELA",
+    subjectLabel: "ELA/literacy",
+    claimCode: "ELA4",
+    claimLabel: "Delta",
+    targetHash: 4,
+    targetId: "D",
+    targetDescription: "target D description",
+    targetShortName: "",
     interactionTypeCode: "MS",
     interactionTypeLabel: "Multi Select",
     isPerformanceItem: false,

@@ -1,12 +1,12 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { pdfDecorator } from "../PdfDecorator";
-import { ItemViewContainer } from "src/index";
+import { ItemViewContainer } from "@src/index";
 import {
   singleQuestion,
   passageAndQuestion,
   multipleQuestions
-} from "mocks/Pdf/mocks";
+} from "@mocks/Pdf/mocks";
 import "src/Assets/Styles/pdf.less";
 
 storiesOf("PDF ItemViewContainer", module)

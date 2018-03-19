@@ -1,6 +1,6 @@
 import { ItemCardModel } from "../ItemCard/ItemCardModels";
 import { RubricModel, SampleItemScoringModel } from "../Rubric/RubricModels";
-import { aboutItemRevisionMockModel } from "mocks/AboutItem/mocks";
+import { aboutItemRevisionMockModel } from "@mocks/AboutItem/mocks";
 
 export interface AboutItemModel {
   itemCardViewModel: ItemCardModel;

@@ -4,13 +4,13 @@ import { shallow, mount } from "enzyme";
 import {
   ItemBankContainer,
   ItemBankContainerProps,
-  ItemBankContainerState
-} from "../ItemBankContainer";
+  ItemBankViewer,
+  ItemBankViewerProps,
+  ItemBankEntry,
+  ItemRevisionModel
+} from "@src/index";
 import * as BankMocks from "./mocks";
-import { ItemBankViewer, ItemBankViewerProps } from "../ItemBankViewer";
-import { ItemBankEntry } from "../ItemBankEntry";
-import { ItemRevisionModel } from "../../index";
-
+import { ItemBankContainerState } from "../ItemBankContainer";
 const item: ItemRevisionModel = {
   itemKey: 187,
   bankKey: 3000,

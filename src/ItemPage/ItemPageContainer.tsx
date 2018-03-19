@@ -1,11 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import {
-  isBrailleEnabled,
-  ResourceSelectionsModel
-} from "../Accessibility/AccessibilityModels";
 import { Redirect } from "react-router";
 import {
+  isBrailleEnabled,
+  ResourceSelectionsModel,
   AccResourceGroupModel,
   AccessibilityResourceModel,
   ItemViewerContainer,
@@ -23,7 +21,7 @@ import {
   LoadingOverlay,
   PromiseCancelable,
   Subscription
-} from "../index";
+} from "@src/index";
 
 export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;

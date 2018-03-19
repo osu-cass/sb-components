@@ -1,14 +1,15 @@
 /// <reference types="google.analytics" />
 import * as React from "react";
+import * as ReactModal from "react-modal";
 import {
   AccessibilityResourceModel,
   AccResourceGroupModel,
   ResourceSelectionsModel,
   getResourceTypes,
-  updateAccessibilityGroups
-} from "./AccessibilityModels";
-import { Dropdown, DropdownProps } from "../index";
-import * as ReactModal from "react-modal";
+  updateAccessibilityGroups,
+  Dropdown,
+  DropdownProps
+} from "@src/index";
 
 export interface ItemAccessibilityModalProps {
   accResourceGroups: AccResourceGroupModel[];

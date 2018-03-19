@@ -17,7 +17,7 @@ import {
   Subscription,
   SelectOptionProps,
   AboutTestSearchParams
-} from "../index";
+} from "@src/index";
 
 export interface AboutTestItemContainerState {
   selectedCode?: string;

@@ -25,7 +25,7 @@ import {
   getPreviousItemBank,
   toiSAAP,
   AccessibilityResourceModel
-} from "../index";
+} from "@src/index";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (

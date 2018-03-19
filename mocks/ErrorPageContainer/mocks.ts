@@ -1,4 +1,4 @@
-import { pageType, ErrorPageContainerProps } from "src/ErrorPageContainer/ErrorPageContainer";
+import { pageType, ErrorPageContainerProps } from "@src/index";
 
 export const serverErrMock: ErrorPageContainerProps = {
   errorCode: pageType.ServerError,

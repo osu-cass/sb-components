@@ -4,9 +4,9 @@ import {
   ToolTip,
   ItemRevisionModel,
   SectionModel,
-  ItemEntryTable
-} from "../index";
-import { CsvEntry } from "../CsvEntry/CsvEntry";
+  ItemEntryTable,
+  CsvEntry
+} from "@src/index";
 
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;

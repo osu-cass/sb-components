@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ToolTip, getShortDateFormat, getLongDateFormat } from "../index";
+import { ToolTip, getShortDateFormat, getLongDateFormat } from "@src/index";
 
 export interface RevisionModel {
   author: string;

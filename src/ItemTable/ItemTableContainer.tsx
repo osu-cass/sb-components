@@ -11,7 +11,7 @@ import {
   Resource,
   ItemCardModel,
   AboutItemModel
-} from "../index";
+} from "@src/index";
 
 /**
  * Properties for ItemTableContainer

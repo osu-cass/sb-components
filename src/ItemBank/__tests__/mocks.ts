@@ -5,14 +5,14 @@ import {
   AccResourceGroupModel,
   AboutItemRevisionModel,
   RevisionModel
-} from "../../index";
+} from "@src/index";
 
 import {
   allAccessibilityResourceGroups,
   aboutItemRevisionMockModel,
   mockRevisions,
   sectionMocks
-} from "mocks/index";
+} from "@mocks/index";
 
 export const mockOnAccessibilityReset = jest.fn();
 export const mockOnAccessibilityUpdate = jest.fn();

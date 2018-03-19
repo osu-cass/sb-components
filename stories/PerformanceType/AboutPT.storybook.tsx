@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
-import { AboutPTModal } from "src/PerformanceType/AboutPT";
+import { AboutPTModal } from "@src/PerformanceType/AboutPT";
 import { centerDecorator } from "../CenterDecorator";
 
 storiesOf("About PT", module)

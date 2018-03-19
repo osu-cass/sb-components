@@ -11,7 +11,7 @@ import {
   ClaimModel,
   TargetModel,
   FilterType
-} from "src/index";
+} from "@src/index";
 import { action } from "@storybook/addon-actions";
 
 // ADVANCED FILTER MOCKS

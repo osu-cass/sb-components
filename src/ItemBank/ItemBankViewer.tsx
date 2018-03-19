@@ -15,7 +15,7 @@ import {
   RubricModal,
   SelectOptionProps,
   Select
-} from "../index";
+} from "@src/index";
 
 export interface ItemBankViewerProps {
   onAccessibilityUpdate: (accResourceGroups: AccResourceGroupModel[]) => void;

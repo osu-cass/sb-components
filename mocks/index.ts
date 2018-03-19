@@ -42,7 +42,11 @@ export {
 //
 // Item Card
 //
-export { completeItemCard, itemCardList } from "./ItemCard/mocks";
+export {
+  completeItemCard,
+  itemCardList,
+  sortableItemCards
+} from "./ItemCard/mocks";
 
 //
 // Revisions

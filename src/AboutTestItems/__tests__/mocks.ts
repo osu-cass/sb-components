@@ -1,10 +1,10 @@
-import { aboutItemMockModel, defaultAboutTestItemsModel } from "mocks/index";
+import { aboutItemMockModel, defaultAboutTestItemsModel } from "@mocks/index";
 import {
   AboutTestSearchParams,
   AboutTestItemsModel,
   AboutItemModel,
   InteractionTypeModel
-} from "../../index";
+} from "@src/index";
 
 export const werAboutItem = {
   ...defaultAboutTestItemsModel,
