@@ -30,6 +30,10 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
     );
   };
 
+  function formatDate(s: string) {
+    return s.slice(0, -4) + s.slice(-2);
+  }
+
   return (
     <li key={props.commitHash}>
       <ToolTip
@@ -47,7 +51,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
           {props.commitHash}
         </button>
         <div className="revisions-details">
-          {props.author}-{getShortDateFormat(props.date)}
+          {props.author}-{formatDate(getShortDateFormat(props.date))}
         </div>
       </ToolTip>
     </li>
