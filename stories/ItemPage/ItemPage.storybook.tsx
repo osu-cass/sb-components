@@ -1,11 +1,11 @@
 import * as React from "react";
-import { ItemViewerContainer } from "../../src/ItemPage/ItemViewerContainer";
+import { ItemViewerContainer } from "@src/index";
 import { storiesOf } from "@storybook/react";
 import { routerDecorator } from "../RouterDecorator";
 import {
   itemPageMockProps,
-  ItemPageMockPropsNoItem
-} from "mocks/ItemPage/mocks";
+  itemPageMockPropsNoItem
+} from "@mocks/ItemPage/mocks";
 
 storiesOf("Item Page", module)
   .addDecorator(routerDecorator)
@@ -13,5 +13,5 @@ storiesOf("Item Page", module)
     <ItemViewerContainer {...itemPageMockProps} />
   ))
   .add("Item Page returns error", () => (
-    <ItemViewerContainer {...ItemPageMockPropsNoItem} />
+    <ItemViewerContainer {...itemPageMockPropsNoItem} />
   ));

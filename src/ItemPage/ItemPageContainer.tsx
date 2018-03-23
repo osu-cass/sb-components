@@ -1,11 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import {
-  isBrailleEnabled,
-  ResourceSelectionsModel
-} from "../Accessibility/AccessibilityModels";
 import { Redirect } from "react-router";
 import {
+  isBrailleEnabled,
+  ResourceSelectionsModel,
   AccResourceGroupModel,
   AccessibilityResourceModel,
   ItemViewerContainer,
@@ -23,7 +21,7 @@ import {
   LoadingOverlay,
   PromiseCancelable,
   Subscription
-} from "../index";
+} from "@src/index";
 
 export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
@@ -167,24 +165,9 @@ export class ItemPageContainer extends React.Component<
     return getResourceContent(this.state.itemAccessibility);
   }
 
-  onSave = (selections: ResourceSelectionsModel) => {
-    const itemAcc = this.getItemAccessibility();
+  onSave = (newGroups: AccResourceGroupModel[]) => {
     const itemPage = this.getItemPage();
-    if (itemPage && itemAcc) {
-      const newGroups: AccResourceGroupModel[] = [];
-      for (const group of itemAcc) {
-        const newGroup = { ...group };
-        const newResources: AccessibilityResourceModel[] = [];
-        for (const res of newGroup.accessibilityResources) {
-          const newRes = { ...res };
-          newRes.currentSelectionCode =
-            selections[newRes.resourceCode] || newRes.currentSelectionCode;
-          newResources.push(newRes);
-        }
-        newGroup.accessibilityResources = newResources;
-        newGroups.push(newGroup);
-      }
-
+    if (itemPage) {
       this.onGetItemAccessibility(newGroups);
       this.setCurrentItem();
       this.updateIsaapCookieHandler(newGroups);

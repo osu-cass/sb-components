@@ -1,19 +1,21 @@
-import { Layout } from "../../src/index";
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { ItemBankContainer } from "src/ItemBank/ItemBankContainer";
-import { AboutItem } from "src/AboutItem/AboutItem";
-import { AboutItemMockModel } from "mocks/AboutItem/mocks";
+import {
+  Layout,
+  AboutItem,
+  ItemAccessibilityModal,
+  ItemBankContainer
+} from "@src/index";
+import { aboutItemMockModel } from "@mocks/AboutItem/mocks";
 import { centerDecorator } from "../CenterDecorator";
-import { ItemAccessibilityModal } from "src/";
 import { routerDecorator } from "../RouterDecorator";
 import {
   mockBankAboutItemClient,
   mockBankAccessibilityClient,
   mockBankRevisionsClient,
   mockBankSectionsClient,
-  itemsMocks
-} from "mocks/ItemBank/mocks";
+  itemRevisionMocks
+} from "@mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
   .addDecorator(routerDecorator)
@@ -24,9 +26,10 @@ storiesOf("Item Bank", module)
           accessibilityClient={mockBankAccessibilityClient}
           aboutItemRevisionClient={mockBankAboutItemClient}
           revisionsClient={mockBankRevisionsClient}
-          itemViewUrl=""
+          itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
           sectionsClient={mockBankSectionsClient}
-          items={itemsMocks}
+          items={itemRevisionMocks}
+          getUrl={item => ""}
         />
       }
       siteName="Item Bank"

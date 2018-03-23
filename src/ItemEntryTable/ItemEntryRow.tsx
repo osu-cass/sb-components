@@ -5,7 +5,7 @@ import {
   validItemRevisionModel,
   SelectOptionProps,
   Select
-} from "../index";
+} from "@src/index";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
@@ -32,7 +32,7 @@ export class ItemEntryRow extends React.Component<
   }
 
   componentWillReceiveProps(nextProps: ItemEntryRowProps) {
-    if (this.state.isModified) {
+    if (!this.state.isModified) {
       this.setState({ editRow: nextProps.row });
     }
   }

@@ -3,8 +3,8 @@ import {
   AboutItemRevisionModel,
   RubricModel,
   GradeLevels
-} from "src/index";
-import { completeItemCard } from "mocks/ItemCard/mocks";
+} from "@src/index";
+import { completeItemCard } from "@mocks/ItemCard/mocks";
 
 export const rubricsWithSamples: RubricModel[] = [
   {
@@ -73,7 +73,7 @@ export const rubricsWithSamples: RubricModel[] = [
   }
 ];
 
-export const AboutItemMockModel: AboutItemModel = {
+export const aboutItemMockModel: AboutItemModel = {
   depthOfKnowledge: "3",
   targetDescription: "Solve equations",
   commonCoreStandardsDescription: "A-123-BC",
@@ -88,7 +88,7 @@ export const AboutItemMockModel: AboutItemModel = {
   }
 };
 
-export const AboutItemMockNoRubric: AboutItemModel = {
+export const aboutItemMockNoRubric: AboutItemModel = {
   depthOfKnowledge: "3",
   targetDescription: "Solve equations",
   commonCoreStandardsDescription: "A-123-BC",
@@ -103,7 +103,7 @@ export const AboutItemMockNoRubric: AboutItemModel = {
   }
 };
 
-export const rubrics: RubricModel[] = [
+export const mockRubrics: RubricModel[] = [
   {
     language: "English",
     rubricEntries: [
@@ -157,7 +157,7 @@ export const rubricsEsn: RubricModel[] = [
   }
 ];
 
-export const allRubrics: RubricModel[] = rubrics.concat(rubricsEsn);
+export const allRubrics: RubricModel[] = mockRubrics.concat(rubricsEsn);
 
 export const aboutItemRevisionMockModel: AboutItemRevisionModel = {
   itemKey: "100",

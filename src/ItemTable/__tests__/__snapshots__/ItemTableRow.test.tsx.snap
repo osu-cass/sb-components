@@ -84,7 +84,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
         displayIcon={false}
         helpText={
           <p>
-            col.helpText(cellData)
+            Target A description
           </p>
         }
         position="top"
@@ -286,7 +286,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
               displayIcon={false}
               helpText={
                 <p>
-                  col.helpText(cellData)
+                  Target A description
                 </p>
               }
               position="top"
@@ -308,7 +308,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
                     className="tool-tip-message top"
                   >
                     <p>
-                      col.helpText(cellData)
+                      Target A description
                     </p>
                   </div>
                 </div>

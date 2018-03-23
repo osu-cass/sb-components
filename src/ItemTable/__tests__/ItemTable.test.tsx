@@ -3,25 +3,26 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
-import { ItemTable, ItemTableProps } from "../ItemTable";
-import { itemCardList } from "../../../mocks/ItemCard/mocks";
-import { tabClassNames } from "../../../mocks/ItemTable/mocks";
+import { itemCardList } from "@mocks/ItemCard/mocks";
+import { tabClassNames } from "@mocks/ItemTable/mocks";
 import { itemHandler } from "./mocks";
-import { AboutItemMockModel } from "../../../mocks/AboutItem/mocks";
+import { aboutItemMockModel } from "@mocks/index";
 import {
   ItemCardModel,
   GradeLevels,
   RubricModel,
   AboutItemModel,
   Resource,
-  headerColumns
-} from "src/index";
-import { ItemCardViewer } from "../../index";
+  headerColumns,
+  ItemCardViewer,
+  ItemTable,
+  ItemTableProps
+} from "@src/index";
 
 describe("ItemTable", () => {
   const selectedItem = itemCardList[0];
   const itemResource: Resource<AboutItemModel> = {
-    content: { ...AboutItemMockModel, itemCardViewModel: selectedItem },
+    content: { ...aboutItemMockModel, itemCardViewModel: selectedItem },
     kind: "success"
   };
 

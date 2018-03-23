@@ -45,7 +45,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
     }
   >
     <div
-      className="section"
+      className="section item-table-container"
     >
       <table
         className="item-table"
@@ -220,7 +220,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -229,7 +229,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -238,7 +238,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -249,7 +249,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -259,7 +259,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -316,7 +316,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -325,7 +325,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -334,7 +334,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -345,7 +345,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -355,7 +355,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -367,7 +367,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -412,7 +412,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -421,7 +421,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -430,7 +430,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -441,7 +441,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -451,7 +451,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -463,7 +463,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -508,7 +508,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -517,7 +517,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -526,7 +526,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -537,7 +537,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -547,7 +547,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -559,7 +559,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -604,7 +604,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -613,7 +613,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -622,7 +622,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -633,7 +633,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -643,7 +643,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -655,7 +655,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -700,7 +700,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -709,7 +709,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -718,7 +718,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -729,7 +729,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -739,7 +739,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -751,7 +751,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -796,7 +796,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -805,7 +805,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -814,7 +814,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -825,7 +825,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -835,7 +835,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -847,7 +847,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -892,7 +892,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -901,7 +901,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -910,7 +910,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -921,7 +921,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -931,7 +931,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -943,7 +943,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -988,7 +988,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -997,7 +997,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1006,7 +1006,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1017,7 +1017,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1027,7 +1027,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1039,7 +1039,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1084,7 +1084,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1093,7 +1093,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1102,7 +1102,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1113,7 +1113,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1123,7 +1123,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1135,7 +1135,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1180,7 +1180,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1189,7 +1189,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1198,7 +1198,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1209,7 +1209,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1219,7 +1219,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1231,7 +1231,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1276,7 +1276,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1285,7 +1285,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1294,7 +1294,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1305,7 +1305,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1315,7 +1315,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1327,7 +1327,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1372,7 +1372,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1381,7 +1381,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1390,7 +1390,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1401,7 +1401,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1411,7 +1411,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1423,7 +1423,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1468,7 +1468,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1477,7 +1477,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1486,7 +1486,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1497,7 +1497,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1507,7 +1507,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1519,7 +1519,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1564,7 +1564,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1573,7 +1573,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1582,7 +1582,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1593,7 +1593,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1603,7 +1603,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1615,7 +1615,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1660,7 +1660,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1669,7 +1669,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1678,7 +1678,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1689,7 +1689,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1699,7 +1699,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1711,7 +1711,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1756,7 +1756,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1765,7 +1765,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1774,7 +1774,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1785,7 +1785,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1795,7 +1795,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1807,7 +1807,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1852,7 +1852,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1861,7 +1861,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1870,7 +1870,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1881,7 +1881,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1891,7 +1891,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1903,7 +1903,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -1948,7 +1948,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -1957,7 +1957,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -1966,7 +1966,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -1977,7 +1977,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -1987,7 +1987,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -1999,7 +1999,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2044,7 +2044,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2053,7 +2053,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2062,7 +2062,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2073,7 +2073,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2083,7 +2083,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2095,7 +2095,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2140,7 +2140,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2149,7 +2149,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2158,7 +2158,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2169,7 +2169,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2179,7 +2179,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2191,7 +2191,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2236,7 +2236,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2245,7 +2245,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2254,7 +2254,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2265,7 +2265,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2275,7 +2275,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2287,7 +2287,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2332,7 +2332,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2341,7 +2341,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2350,7 +2350,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2361,7 +2361,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2371,7 +2371,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2383,7 +2383,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2428,7 +2428,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2437,7 +2437,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2446,7 +2446,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2457,7 +2457,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2467,7 +2467,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2479,7 +2479,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2524,7 +2524,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2533,7 +2533,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2542,7 +2542,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2553,7 +2553,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2563,7 +2563,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2575,7 +2575,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2620,7 +2620,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2629,7 +2629,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2638,7 +2638,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2649,7 +2649,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2659,7 +2659,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2671,7 +2671,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2716,7 +2716,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2725,7 +2725,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2734,7 +2734,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2745,7 +2745,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2755,7 +2755,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2767,7 +2767,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2812,7 +2812,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2821,7 +2821,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2830,7 +2830,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2841,7 +2841,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2851,7 +2851,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2863,7 +2863,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -2908,7 +2908,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -2917,7 +2917,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -2926,7 +2926,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -2937,7 +2937,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -2947,7 +2947,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -2959,7 +2959,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3004,7 +3004,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3013,7 +3013,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3022,7 +3022,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3033,7 +3033,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3043,7 +3043,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3055,7 +3055,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3100,7 +3100,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3109,7 +3109,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3118,7 +3118,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3129,7 +3129,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3139,7 +3139,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3151,7 +3151,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3196,7 +3196,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3205,7 +3205,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3214,7 +3214,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3225,7 +3225,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3235,7 +3235,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3247,7 +3247,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3292,7 +3292,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3301,7 +3301,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3310,7 +3310,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3321,7 +3321,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3331,7 +3331,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3343,7 +3343,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3388,7 +3388,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3397,7 +3397,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3406,7 +3406,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3417,7 +3417,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3427,7 +3427,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3439,7 +3439,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3484,7 +3484,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3493,7 +3493,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3502,7 +3502,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3513,7 +3513,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3523,7 +3523,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3535,7 +3535,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3580,7 +3580,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3589,7 +3589,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3598,7 +3598,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3609,7 +3609,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3619,7 +3619,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3631,7 +3631,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3676,7 +3676,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3685,7 +3685,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3694,7 +3694,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3705,7 +3705,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3715,7 +3715,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3727,7 +3727,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3772,7 +3772,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3781,7 +3781,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3790,7 +3790,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3801,7 +3801,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3811,7 +3811,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3823,7 +3823,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3868,7 +3868,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3877,7 +3877,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3886,7 +3886,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3897,7 +3897,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -3907,7 +3907,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -3919,7 +3919,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -3964,7 +3964,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -3973,7 +3973,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -3982,7 +3982,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -3993,7 +3993,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4003,7 +4003,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4015,7 +4015,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4060,7 +4060,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4069,7 +4069,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4078,7 +4078,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4089,7 +4089,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4099,7 +4099,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4111,7 +4111,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4156,7 +4156,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4165,7 +4165,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4174,7 +4174,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4185,7 +4185,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4195,7 +4195,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4207,7 +4207,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4252,7 +4252,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4261,7 +4261,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4270,7 +4270,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4281,7 +4281,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4291,7 +4291,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4303,7 +4303,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4348,7 +4348,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4357,7 +4357,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4366,7 +4366,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4377,7 +4377,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4387,7 +4387,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4399,7 +4399,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4444,7 +4444,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4453,7 +4453,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4462,7 +4462,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4473,7 +4473,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4483,7 +4483,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4495,7 +4495,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4540,7 +4540,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4549,7 +4549,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4558,7 +4558,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4569,7 +4569,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4579,7 +4579,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4591,7 +4591,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4636,7 +4636,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4645,7 +4645,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4654,7 +4654,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4665,7 +4665,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4675,7 +4675,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4687,7 +4687,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4732,7 +4732,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4741,7 +4741,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4750,7 +4750,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4761,7 +4761,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4771,7 +4771,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4783,7 +4783,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4828,7 +4828,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4837,7 +4837,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4846,7 +4846,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4857,7 +4857,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4867,7 +4867,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4879,7 +4879,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>
@@ -4924,7 +4924,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  ELA/literacy
+                  ELA
                 </span>
               </span>
             </td>
@@ -4933,7 +4933,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Grade 2
+                  Grade 4
                 </span>
               </span>
             </td>
@@ -4942,7 +4942,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Delta
+                  Claim
                 </span>
               </span>
               <span>
@@ -4953,7 +4953,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /Short Name
                      
                   </span>
                   <div
@@ -4963,7 +4963,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                       className="tool-tip-message top"
                     >
                       <p>
-                        col.helpText(cellData)
+                        target description right hereeeee
                       </p>
                     </div>
                   </div>
@@ -4975,7 +4975,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
             >
               <span>
                 <span>
-                  Multi Select
+                  Item Type
                 </span>
               </span>
             </td>

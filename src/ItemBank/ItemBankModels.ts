@@ -1,11 +1,16 @@
-import { ItemModel, AboutItemRevisionModel, GradeLevel } from "../index";
-import { RevisionModel } from "../Revisions/Revision";
+import {
+  ItemModel,
+  AboutItemRevisionModel,
+  GradeLevel,
+  RevisionModel
+} from "@src/index";
 
 export interface ItemRevisionModel {
   itemKey?: number;
   bankKey?: number;
   section?: string;
   revision?: string;
+  isaap?: string;
 }
 
 export function getItemBankName(itemRevisionModel: ItemRevisionModel) {

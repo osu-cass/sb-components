@@ -48,7 +48,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
       className="search-result-body"
     >
       <div
-        className="section"
+        className="section item-table-container"
       >
         <table
           className="link-table"
@@ -241,7 +241,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                         className="tool-tip-message top"
                       >
                         <p>
-                          col.helpText(cellData)
+                          Target A description
                         </p>
                       </div>
                     </div>
@@ -319,7 +319,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                         className="tool-tip-message top"
                       >
                         <p>
-                          col.helpText(cellData)
+                          Target B description
                         </p>
                       </div>
                     </div>
@@ -397,7 +397,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                         className="tool-tip-message top"
                       >
                         <p>
-                          col.helpText(cellData)
+                          target C description
                         </p>
                       </div>
                     </div>
@@ -475,7 +475,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                         className="tool-tip-message top"
                       >
                         <p>
-                          col.helpText(cellData)
+                          target D description
                         </p>
                       </div>
                     </div>

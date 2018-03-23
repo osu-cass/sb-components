@@ -1,9 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { shallow, mount, render } from "enzyme";
-import { mockAccResourceGroups } from "mocks/Accessibility/mocks";
-import { ItemAccessibilityModal } from "../AccessibilityModal";
-import { ResourceSelectionsModel } from "../AccessibilityModels";
+import { mockAccResourceGroups } from "@mocks/Accessibility/mocks";
+import { ItemAccessibilityModal, ResourceSelectionsModel } from "@src/index";
 
 describe("AccessibilityModal", () => {
   const onSaveHandler = jest.fn((selections: ResourceSelectionsModel) => {

@@ -1,93 +1,15 @@
-import { ItemCardModel } from "src/ItemCard/ItemCardModels";
+import { ItemCardModel } from "@src/ItemCard/ItemCardModels";
 import {
   SearchFilterStringTypes,
   TargetModel,
-  SearchAPIParamsModel
-} from "src/ItemSearch/ItemSearchModels";
-import { FilterCategoryModel, FilterOptionModel, FilterType } from "src/Filter/FilterModels";
-import { GradeLevels, GradeLevel } from "src/GradeLevels/GradeLevels";
-import { ItemsSearchModel } from "../../src/ItemSearch/ItemSearchModels";
-
-export const itemCards: ItemCardModel[] = [
-  {
-    bankKey: 187,
-    itemKey: 3206,
-    title: "Math Grade 6 Claim 1",
-    grade: 8,
-    gradeLabel: "Grade 6",
-    subjectCode: "MATH",
-    subjectLabel: "Math",
-    claimCode: "MATH1",
-    claimLabel: "Concepts and Procedures",
-    targetHash: 100,
-    targetId: "A",
-    targetDescription: "Target A description",
-    targetShortName: "",
-    interactionTypeCode: "EQ",
-    interactionTypeLabel: "Equation",
-    isPerformanceItem: true,
-    brailleOnlyItem: false,
-    calculator: true
-  },
-  {
-    bankKey: 187,
-    itemKey: 3163,
-    title: "ELA/ literacy Grade 3 Claim 1",
-    grade: 1,
-    gradeLabel: "Grade 3",
-    subjectCode: "ELA",
-    subjectLabel: "ELA/literacy",
-    claimCode: "ELA1",
-    claimLabel: "Reading",
-    targetHash: 1039,
-    targetId: "B",
-    targetDescription: "Target B description",
-    targetShortName: "Key Details",
-    interactionTypeCode: "MC",
-    interactionTypeLabel: "Multiple Choice",
-    isPerformanceItem: true,
-    brailleOnlyItem: false,
-    calculator: false
-  },
-  {
-    bankKey: 187,
-    itemKey: 3615,
-    title: "Math Grade 6 Claim 4",
-    grade: 8,
-    gradeLabel: "Grade 6",
-    subjectCode: "MATH",
-    subjectLabel: "Math",
-    claimCode: "MATH4",
-    claimLabel: "Modeling/Data Analysis",
-    targetHash: 0,
-    targetId: "C",
-    targetDescription: "target C description",
-    targetShortName: "",
-    interactionTypeCode: "MS",
-    interactionTypeLabel: "Multi Select",
-    isPerformanceItem: false,
-    brailleOnlyItem: false
-  },
-  {
-    bankKey: 187,
-    itemKey: 2928,
-    title: "ELA/ literacy Grade 4 Claim 4",
-    grade: 2,
-    gradeLabel: "Grade 4",
-    subjectCode: "ELA",
-    subjectLabel: "ELA/literacy",
-    claimCode: "ELA4",
-    claimLabel: "Research/Inquiry",
-    targetHash: 2832,
-    targetId: "D",
-    targetDescription: "target D description",
-    targetShortName: "Evaluate Information/ sources",
-    interactionTypeCode: "MS",
-    interactionTypeLabel: "Multi Select",
-    isPerformanceItem: false,
-    brailleOnlyItem: false
-  }
-];
+  SearchAPIParamsModel,
+  ItemsSearchModel,
+  FilterCategoryModel,
+  FilterOptionModel,
+  FilterType,
+  GradeLevels,
+  GradeLevel
+} from "@src/index";
 
 export const genericSearchStringTypes: SearchFilterStringTypes[] = [
   { label: "test", code: "t1" },
@@ -223,6 +145,7 @@ export const resultSearchOptionFilterTargetSelectedMultiple: FilterOptionModel[]
 
 export const mockSeachAPI: SearchAPIParamsModel = {
   itemId: "item1",
+  // tslint:disable-next-line:no-bitwise
   gradeLevels: GradeLevels.Grade3 | GradeLevels.Grade4,
   subjects: ["t1", "t2"],
   claims: ["t1", "t2"],
@@ -395,27 +318,27 @@ export const itemSearchModel: ItemsSearchModel = {
     {
       label: "Math 1",
       code: "MATH1",
-      targetCodes: [1,2,3,4]
+      targetCodes: [1, 2, 3, 4]
     },
     {
       label: "Math 2",
       code: "MATH2",
-      targetCodes: [5,2,3,4]
+      targetCodes: [5, 2, 3, 4]
     },
     {
       label: "Math 3",
       code: "MATH3",
-      targetCodes: [6,2,3,4]
+      targetCodes: [6, 2, 3, 4]
     },
     {
       label: "English 1",
       code: "ELA1",
-      targetCodes: [5,6,7,8]
+      targetCodes: [5, 6, 7, 8]
     },
     {
       label: "English 2",
       code: "ELA2",
-      targetCodes: [8,9,10,11]
+      targetCodes: [8, 9, 10, 11]
     }
   ]
 };

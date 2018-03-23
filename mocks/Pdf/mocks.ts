@@ -1,5 +1,12 @@
-import { ItemViewContainerProps, ItemGroupModel, PdfViewType } from "src/index";
-import { AboutItemMockModel, AboutItemMockNoRubric } from "mocks/AboutItem/mocks";
+import {
+  ItemViewContainerProps,
+  ItemGroupModel,
+  PdfViewType
+} from "@src/index";
+import {
+  aboutItemMockModel,
+  aboutItemMockNoRubric
+} from "@mocks/AboutItem/mocks";
 
 export const singleQuestion: ItemGroupModel = {
   questions: [
@@ -11,7 +18,7 @@ export const singleQuestion: ItemGroupModel = {
         captured: true,
         type: PdfViewType.html
       },
-      data: AboutItemMockModel,
+      data: aboutItemMockModel,
       questionNumber: 1
     }
   ]
@@ -33,7 +40,7 @@ export const passageAndQuestion: ItemGroupModel = {
         captured: true,
         type: PdfViewType.html
       },
-      data: AboutItemMockNoRubric,
+      data: aboutItemMockNoRubric,
       questionNumber: 1
     }
   ]
@@ -55,7 +62,7 @@ export const multipleQuestions: ItemGroupModel = {
         captured: true,
         type: PdfViewType.html
       },
-      data: AboutItemMockNoRubric,
+      data: aboutItemMockNoRubric,
       questionNumber: 1
     },
     {
@@ -67,7 +74,7 @@ export const multipleQuestions: ItemGroupModel = {
         captured: true,
         type: PdfViewType.html
       },
-      data: AboutItemMockNoRubric,
+      data: aboutItemMockNoRubric,
       questionNumber: 2
     }
   ]

@@ -1,7 +1,9 @@
-import { RevisionModel } from "src/Revisions/Revision";
-const testDate = new Date("11/11/2015");
+import { RevisionModel } from "@src/Revisions/Revision";
+import * as moment from "moment";
 
-export const revisions: RevisionModel[] = [
+const testDate = moment("2013-02-08 09:30:26.123").format();
+
+export const mockRevisions: RevisionModel[] = [
   {
     author: "Troy Barnes",
     date: testDate,

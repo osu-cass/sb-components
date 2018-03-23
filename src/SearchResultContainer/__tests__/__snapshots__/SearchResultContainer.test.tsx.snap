@@ -46,6 +46,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
           Object {
             "bankKey": 187,
             "brailleOnlyItem": false,
+            "calculator": true,
             "claimCode": "MATH1",
             "claimLabel": "Concepts and Procedures",
             "grade": 8,
@@ -54,10 +55,9 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Equation",
             "isPerformanceItem": true,
             "itemKey": 3206,
-            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "target A description",
+            "targetDescription": "Target A description",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -66,6 +66,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
           Object {
             "bankKey": 187,
             "brailleOnlyItem": false,
+            "calculator": false,
             "claimCode": "ELA1",
             "claimLabel": "Reading",
             "grade": 1,
@@ -74,10 +75,9 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Multiple Choice",
             "isPerformanceItem": true,
             "itemKey": 3163,
-            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
-            "targetDescription": "target B description",
+            "targetDescription": "Target B description",
             "targetHash": 1039,
             "targetId": "B",
             "targetShortName": "Key Details",
@@ -94,7 +94,6 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 3615,
-            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "target C description",
@@ -114,7 +113,6 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 2928,
-            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetDescription": "target D description",
@@ -208,6 +206,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
     <ItemCard
       bankKey={187}
       brailleOnlyItem={false}
+      calculator={true}
       claimCode="MATH1"
       claimLabel="Concepts and Procedures"
       grade={8}
@@ -217,10 +216,9 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={true}
       itemKey={3206}
       key="187 - 3206"
-      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
-      targetDescription="target A description"
+      targetDescription="Target A description"
       targetHash={100}
       targetId="A"
       targetShortName=""
@@ -229,6 +227,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
     <ItemCard
       bankKey={187}
       brailleOnlyItem={false}
+      calculator={false}
       claimCode="ELA1"
       claimLabel="Reading"
       grade={1}
@@ -238,10 +237,9 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={true}
       itemKey={3163}
       key="187 - 3163"
-      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
-      targetDescription="target B description"
+      targetDescription="Target B description"
       targetHash={1039}
       targetId="B"
       targetShortName="Key Details"
@@ -259,7 +257,6 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={false}
       itemKey={3615}
       key="187 - 3615"
-      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
       targetDescription="target C description"
@@ -280,7 +277,6 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       isPerformanceItem={false}
       itemKey={2928}
       key="187 - 2928"
-      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
       targetDescription="target D description"
@@ -339,6 +335,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
           Object {
             "bankKey": 187,
             "brailleOnlyItem": false,
+            "calculator": true,
             "claimCode": "MATH1",
             "claimLabel": "Concepts and Procedures",
             "grade": 8,
@@ -347,10 +344,9 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Equation",
             "isPerformanceItem": true,
             "itemKey": 3206,
-            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "target A description",
+            "targetDescription": "Target A description",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -359,6 +355,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
           Object {
             "bankKey": 187,
             "brailleOnlyItem": false,
+            "calculator": false,
             "claimCode": "ELA1",
             "claimLabel": "Reading",
             "grade": 1,
@@ -367,10 +364,9 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Multiple Choice",
             "isPerformanceItem": true,
             "itemKey": 3163,
-            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
-            "targetDescription": "target B description",
+            "targetDescription": "Target B description",
             "targetHash": 1039,
             "targetId": "B",
             "targetShortName": "Key Details",
@@ -387,7 +383,6 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 3615,
-            "selected": false,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "target C description",
@@ -407,7 +402,6 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "interactionTypeLabel": "Multi Select",
             "isPerformanceItem": false,
             "itemKey": 2928,
-            "selected": false,
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetDescription": "target D description",
@@ -461,6 +455,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
     <ItemCard
       bankKey={187}
       brailleOnlyItem={false}
+      calculator={true}
       claimCode="MATH1"
       claimLabel="Concepts and Procedures"
       grade={8}
@@ -470,10 +465,9 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={true}
       itemKey={3206}
       key="187 - 3206"
-      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
-      targetDescription="target A description"
+      targetDescription="Target A description"
       targetHash={100}
       targetId="A"
       targetShortName=""
@@ -482,6 +476,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
     <ItemCard
       bankKey={187}
       brailleOnlyItem={false}
+      calculator={false}
       claimCode="ELA1"
       claimLabel="Reading"
       grade={1}
@@ -491,10 +486,9 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={true}
       itemKey={3163}
       key="187 - 3163"
-      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
-      targetDescription="target B description"
+      targetDescription="Target B description"
       targetHash={1039}
       targetId="B"
       targetShortName="Key Details"
@@ -512,7 +506,6 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={false}
       itemKey={3615}
       key="187 - 3615"
-      selected={false}
       subjectCode="MATH"
       subjectLabel="Math"
       targetDescription="target C description"
@@ -533,7 +526,6 @@ exports[`SearchResultContainer table to card transition 1`] = `
       isPerformanceItem={false}
       itemKey={2928}
       key="187 - 2928"
-      selected={false}
       subjectCode="ELA"
       subjectLabel="ELA/literacy"
       targetDescription="target D description"

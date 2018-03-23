@@ -4,16 +4,16 @@ import {
   AboutTestItemsContainer,
   AboutTestItemsParams,
   AboutTestItemsPage
-} from "src/index";
+} from "@src/index";
 import { routerDecorator } from "../RouterDecorator";
 import {
-  mockAboutTestClient,
-  mockAboutTestClientLoading,
-  mockAboutTestClientReject,
   aboutTestMatch,
   aboutTestPath,
-  aboutTestBadItem
-} from "mocks/AboutTestItems/mocks";
+  aboutTestBadItem,
+  mockAboutLoading,
+  mockAboutClientSuccess,
+  mockAboutRejectClient
+} from "@mocks/AboutTestItems/mocks";
 import { Route, match } from "react-router";
 import { LayoutDecorator } from "../LayoutDecorator";
 
@@ -28,7 +28,7 @@ storiesOf("About Test Items", module)
         <AboutTestItemsPage
           {...props}
           showRubrics={true}
-          aboutClient={mockAboutTestClient}
+          aboutClient={mockAboutClientSuccess}
           errorRedirectPath=""
         />
       )}
@@ -43,7 +43,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           match={aboutTestMatch}
-          aboutClient={mockAboutTestClient}
+          aboutClient={mockAboutClientSuccess}
           errorRedirectPath=""
         />
       )}
@@ -58,7 +58,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           match={aboutTestMatch}
-          aboutClient={mockAboutTestClientReject}
+          aboutClient={mockAboutRejectClient}
           errorRedirectPath=""
         />
       )}
@@ -73,7 +73,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           match={aboutTestMatch}
-          aboutClient={mockAboutTestClientLoading}
+          aboutClient={mockAboutLoading}
           errorRedirectPath=""
         />
       )}
@@ -88,7 +88,7 @@ storiesOf("About Test Items", module)
           {...props}
           showRubrics={true}
           match={aboutTestBadItem}
-          aboutClient={mockAboutTestClient}
+          aboutClient={mockAboutClientSuccess}
           errorRedirectPath=""
         />
       )}

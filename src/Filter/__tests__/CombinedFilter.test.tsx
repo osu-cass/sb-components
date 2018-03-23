@@ -4,7 +4,7 @@ import { shallow, mount } from "enzyme";
 import {
   mockBasicFilterCategories,
   mockAdvancedFilterCategoriesAll
-} from "../../../mocks/Filter/mocks";
+} from "@mocks/Filter/mocks";
 import {
   SearchAPIParamsModel,
   AdvancedFilterContainer,
@@ -12,7 +12,7 @@ import {
   CombinedFilter,
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel
-} from "../../index";
+} from "@src/index";
 
 describe("FilterContainer", () => {
   const onFilterUpdated = jest.fn(

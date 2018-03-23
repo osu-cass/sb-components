@@ -1,16 +1,16 @@
 import * as React from "react";
-import { ToolTip } from "../index";
+import { ToolTip, getShortDateFormat, getLongDateFormat } from "@src/index";
 
 export interface RevisionModel {
   author: string;
-  date: Date;
+  date: string;
   commitMessage: string;
   commitHash: string;
 }
 
 export interface RevisionModelProps extends RevisionModel {
   selected: boolean;
-  onClick: (revision: string) => void;
+  onClick: () => void;
 }
 
 // tslint:disable-next-line:variable-name
@@ -33,17 +33,14 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
   return (
     <li key={props.commitHash}>
       <ToolTip
-        toolTipHeader={
-          props.date.toDateString() + "-" + props.date.toLocaleTimeString()
-        }
+        toolTipHeader={getLongDateFormat(props.date)}
         helpText={renderHelpText()}
       >
-        <button className="btn btn-link revisions-link" onClick={this.onClick}>
+        <button className="btn btn-link revisions-link" onClick={props.onClick}>
           {props.commitHash}
         </button>
         <div className="revisions-details">
-          {props.author}-
-          {props.date.getMonth() + 1}/{props.date.getDate()}
+          {props.author}-{getShortDateFormat(props.date)}
         </div>
       </ToolTip>
     </li>

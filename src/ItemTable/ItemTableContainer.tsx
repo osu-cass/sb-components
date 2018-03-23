@@ -11,7 +11,7 @@ import {
   Resource,
   ItemCardModel,
   AboutItemModel
-} from "../index";
+} from "@src/index";
 
 /**
  * Properties for ItemTableContainer
@@ -181,7 +181,7 @@ export class ItemTableContainer extends React.Component<
 
   render() {
     return (
-      <div className="section">
+      <div className="section item-table-container">
         <table className={this.props.isLinkTable ? "link-table" : "item-table"}>
           {this.renderTableHeader()}
           {this.renderTable()}

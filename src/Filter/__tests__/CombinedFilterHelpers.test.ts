@@ -8,7 +8,7 @@ import {
 } from "../FilterModels";
 
 const basicFilter: BasicFilterCategoryModel[] = [
-  { ...Mocks.claimSelectedCategory, type: OptionTypeModel.DropDown }
+  { ...Mocks.claimSelectedCategory, optionType: OptionTypeModel.DropDown }
 ];
 const advancedFilter: AdvancedFilterCategoryModel[] = [
   {
@@ -28,9 +28,13 @@ describe("resetFilters", () => {
     );
 
     expect(result.searchAPI).toEqual({});
-    result.advancedFilter[0].filterOptions.forEach(o =>
-      expect(o.isSelected).toBeFalsy()
-    );
+    const resultAdvancedFilters = result.advancedFilter;
+    expect(resultAdvancedFilters).toBeDefined();
+    if (resultAdvancedFilters) {
+      resultAdvancedFilters[0].filterOptions.forEach(o =>
+        expect(o.isSelected).toBeFalsy()
+      );
+    }
     result.basicFilter[0].filterOptions.forEach(o =>
       expect(o.isSelected).toBeFalsy()
     );
@@ -73,13 +77,18 @@ describe("basicFilterUpdated", () => {
       FilterType.Claim
     );
 
-    expect(result.advancedFilter[0].filterOptions).toHaveLength(1);
-    expect(result.advancedFilter[0].filterOptions[0]).toEqual({
-      isSelected: true,
-      key: "MATH1",
-      label: "MATH1",
-      filterType: FilterType.Claim
-    });
+    const resultAdvancedFilters = result.advancedFilter;
+    expect(resultAdvancedFilters).toBeDefined();
+
+    if (resultAdvancedFilters) {
+      expect(resultAdvancedFilters[0].filterOptions).toHaveLength(1);
+      expect(resultAdvancedFilters[0].filterOptions[0]).toEqual({
+        isSelected: true,
+        key: "MATH1",
+        label: "MATH1",
+        filterType: FilterType.Claim
+      });
+    }
   });
 });
 

@@ -1,5 +1,10 @@
 import * as React from "react";
-import { ItemCardModel, ToolTip, SortColumnModel, ColumnGroup } from "../index";
+import {
+  ItemCardModel,
+  ToolTip,
+  SortColumnModel,
+  ColumnGroup
+} from "@src/index";
 
 export interface ItemTableRowProps {
   rowData: ItemCardModel;
@@ -90,7 +95,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
     if (col.helpText) {
       content = (
         <ToolTip
-          helpText={<p>col.helpText(cellData)</p>}
+          helpText={<p>{col.helpText(cellData)}</p>}
           position="top"
           displayIcon={false}
         >

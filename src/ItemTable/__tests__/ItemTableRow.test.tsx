@@ -2,9 +2,9 @@ import "jsdom-global/register";
 import * as React from "react";
 import * as TestUtils from "react-dom/test-utils";
 import { shallow, mount, render } from "enzyme";
-import { itemCardList } from "../../../mocks/ItemCard/mocks";
-import { tabClassNames } from "../../../mocks/ItemTable/mocks";
-import { AboutItemMockModel } from "../../../mocks/AboutItem/mocks";
+import { itemCardList } from "@mocks/ItemCard/mocks";
+import { tabClassNames } from "@mocks/ItemTable/mocks";
+import { aboutItemMockModel } from "@mocks/index";
 import { itemHandler } from "./mocks";
 import {
   GradeLevels,
@@ -15,7 +15,7 @@ import {
   headerColumns,
   ItemTableRowProps,
   ItemTableRow
-} from "../../index";
+} from "@src/index";
 
 describe("ItemTableRow", () => {
   const rubrics: RubricModel[] = [];

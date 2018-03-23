@@ -7,15 +7,15 @@ import {
   ItemPageModel,
   ItemIsaapModel,
   AccResourceGroupModel,
-  AboutItemModel
-} from "src/index";
-import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
-import { AboutItemMockModel } from "mocks/AboutItem/mocks";
-import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
-import { mockPromise } from "mocks/promise";
+  AboutItemModel,
+  ResourceSelectionsModel
+} from "@src/index";
+import { aboutItemMockModel } from "@mocks/AboutItem/mocks";
+import { allAccessibilityResourceGroups } from "@mocks/Accessibility/mocks";
+import { mockPromise } from "@mocks/promise";
 
 export const aboutThisClient = (params: ItemModel) =>
-  mockPromise(AboutItemMockModel);
+  mockPromise(aboutItemMockModel);
 
 export const itemPageClient = (params: ItemModel) =>
   mockPromise<ItemPageModel>(itemPageModelMock);
@@ -32,10 +32,10 @@ export const itemPageMatch: match<ItemModel> = {
   url: "/"
 };
 
-export const onSave = ((selections: ResourceSelectionsModel) => {}) as ((
-  selections: ResourceSelectionsModel
-) => void);
+// tslint:disable-next-line:no-empty
+export const onSave = (accGRoups: AccResourceGroupModel[]) => {};
 
+// tslint:disable-next-line:no-empty
 export const onReset = () => {};
 
 export const itemPageModelMock: ItemPageModel = {
@@ -87,7 +87,7 @@ export const itemPageMockProps: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,
-  aboutThisItemVM: AboutItemMockModel,
+  aboutThisItemVM: aboutItemMockModel,
   currentItem: {
     itemName: "187-3000",
     itemKey: 3000,
@@ -96,11 +96,11 @@ export const itemPageMockProps: ItemViewerContainerProps = {
   accResourceGroups: allAccessibilityResourceGroups
 };
 
-export const ItemPageMockPropsNoItem: ItemViewerContainerProps = {
+export const itemPageMockPropsNoItem: ItemViewerContainerProps = {
   onSave,
   onReset,
   showRubrics: true,
-  aboutThisItemVM: AboutItemMockModel,
+  aboutThisItemVM: aboutItemMockModel,
   itemViewerServiceUrl: "http://ivs.smarterbalanced.org/",
   itemNames: "",
   brailleItemNames: "",

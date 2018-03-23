@@ -23,8 +23,10 @@ import {
   ItemBankViewer,
   ItemBankEntry,
   getNextItemBank,
-  getPreviousItemBank
-} from "../index";
+  getPreviousItemBank,
+  toiSAAP,
+  AccessibilityResourceModel
+} from "@src/index";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
@@ -35,12 +37,12 @@ export interface ItemBankContainerProps {
   ) => Promise<AboutItemRevisionModel>;
   revisionsClient: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
   sectionsClient: () => Promise<SectionModel[]>;
-  itemViewUrl: string;
+  itemViewUrl?: string;
   items?: ItemRevisionModel[];
+  getUrl: (item: ItemRevisionModel) => string;
 }
 
 export interface ItemBankContainerState {
-  itemUrl?: string;
   aboutItemRevisionModel: Resource<AboutItemRevisionModel>;
   accResourceGroups: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemRevisionModel;
@@ -49,6 +51,7 @@ export interface ItemBankContainerState {
   revisions: Resource<RevisionModel[]>;
   nextItem?: ItemRevisionModel;
   previousItem?: ItemRevisionModel;
+  hasError: boolean;
 }
 
 /**
@@ -73,29 +76,35 @@ export class ItemBankContainer extends React.Component<
       items,
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
-      itemUrl: "http://ivs.smarterbalanced.org/items?ids=187-3377",
       sections: { kind: "loading" },
-      revisions: { kind: "loading" }
+      revisions: { kind: "loading" },
+      hasError: false
     };
   }
 
   componentDidMount() {
-    this.fetchSections();
+    this.fetchSections().catch(e => this.onError(e));
     this.handleChangeViewItem();
+    this.handleChangeRevision();
   }
 
   componentWillUnmount() {
     this.subscription.cancelAll();
   }
 
-  fetchAboutItemRevisionModel(item: ItemRevisionModel) {
+  async fetchAboutItemRevisionModel(
+    item: ItemRevisionModel
+  ): Promise<AboutItemRevisionModel> {
     const prom = this.props.aboutItemRevisionClient(item);
     const promiseWrapper = this.subscription.add(
       "aboutItemRevisionClient",
       prom
     );
 
-    promiseWrapper.promise.then(data => this.onFetchAboutItemSuccess(data));
+    const aboutItemRevisionModel = await promiseWrapper.promise;
+    this.onFetchAboutItemSuccess(aboutItemRevisionModel);
+
+    return aboutItemRevisionModel;
   }
 
   onFetchAboutItemSuccess(data: AboutItemRevisionModel) {
@@ -104,37 +113,57 @@ export class ItemBankContainer extends React.Component<
     });
   }
 
-  fetchAccResourceGroups(acc: AccessibilityRevisionModel) {
-    const prom = this.props.accessibilityClient(acc);
-    const promiseWrapper = this.subscription.add("accessibilityClient", prom);
+  async fetchAccResourceGroups(item: AboutItemRevisionModel) {
+    const props: AccessibilityRevisionModel = {
+      interactionType: "",
+      subject: "",
+      gradeLevel: GradeLevels.All
+    };
 
-    promiseWrapper.promise.then(data => this.onFetchAccResourceSuccess(data));
+    const prom = this.props.accessibilityClient(props);
+    const promiseWrapper = this.subscription.add("accessibilityClient", prom);
+    const accessibilityResources = await promiseWrapper.promise;
+    this.onFetchAccResourceSuccess(accessibilityResources);
+
+    return accessibilityResources;
   }
 
   onFetchAccResourceSuccess(data: AccResourceGroupModel[]) {
     this.setState({ accResourceGroups: { kind: "success", content: data } });
   }
 
-  fetchRevisions(item: ItemRevisionModel) {
+  async fetchRevisions(item: ItemRevisionModel) {
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
+    const revisions = await promiseWrapper.promise;
+    this.onFetchRevisionsSuccess(revisions);
 
-    promiseWrapper.promise.then(data => this.onFetchRevisionsSuccess(data));
+    return revisions;
   }
 
   onFetchRevisionsSuccess(data: RevisionModel[]) {
     this.setState({ revisions: { kind: "success", content: data } });
   }
 
-  fetchSections() {
+  async fetchSections() {
     const prom = this.props.sectionsClient();
     const promiseWrapper = this.subscription.add("sectionsClient", prom);
+    const sections = await promiseWrapper.promise;
+    this.onFetchSectionsSuccess(sections);
 
-    promiseWrapper.promise.then(data => this.onFetchSectionsSuccess(data));
+    return sections;
   }
 
   onFetchSectionsSuccess(data: SectionModel[]) {
     this.setState({ sections: { kind: "success", content: data } });
+  }
+
+  onError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({
+        hasError: true
+      });
+    }
   }
 
   handleUpdateItems = (items: ItemRevisionModel[]) => {
@@ -143,19 +172,28 @@ export class ItemBankContainer extends React.Component<
     if (validItemRevisionModel(lastItem)) {
       items.push({});
     }
-    this.setState({ items, currentItem }, this.handleChangeViewItem);
+    this.setState({ items, currentItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   };
 
+  /**
+   * Updates prev and next items. Updates rubric, about item, and item url
+   * @memberof ItemBankContainer
+   */
   handleChangeViewItem = () => {
     const { currentItem, items } = this.state;
+
     if (currentItem) {
-      this.fetchAboutItemRevisionModel(currentItem);
-      this.fetchRevisions(currentItem);
-      this.fetchAccResourceGroups({
-        interactionType: "",
-        subject: "",
-        gradeLevel: GradeLevels.All
-      });
+      this.fetchAboutItemRevisionModel(currentItem)
+        .then(aboutItem => {
+          this.fetchAccResourceGroups(aboutItem)
+            .then(accGroups => this.handleUpdateIsaap(accGroups))
+            .catch(e => this.onError(e));
+        })
+        .catch(e => this.onError(e));
+
       const nextItem = getNextItemBank(currentItem, items);
       const previousItem = getPreviousItemBank(currentItem, items);
 
@@ -163,16 +201,49 @@ export class ItemBankContainer extends React.Component<
     }
   };
 
-  onAccessibilityUpdate = (accResourceGroups: AccResourceGroupModel[]) => {
-    this.setState({
-      accResourceGroups: { kind: "success", content: accResourceGroups }
-    });
+  handleUpdateIsaap = (accGroups: AccResourceGroupModel[]) => {
+    const { currentItem } = this.state;
 
-    //TODO: update itemUrl
+    if (currentItem) {
+      const isaap = toiSAAP(accGroups);
+      const newItem = { ...currentItem, isaap };
+      this.props.getUrl(currentItem);
+      this.setState({ currentItem });
+    }
+  };
+
+  handleChangeRevision = () => {
+    const { currentItem } = this.state;
+    if (currentItem) {
+      this.fetchRevisions(currentItem).catch(e => this.onError(e));
+    }
+  };
+
+  onAccessibilityUpdate = (accResourceGroups: AccResourceGroupModel[]) => {
+    this.setState(
+      {
+        accResourceGroups: {
+          kind: "success",
+          content: accResourceGroups
+        }
+      },
+      () => this.handleUpdateIsaap(accResourceGroups)
+    );
   };
 
   onAccessibilityReset = () => {
-    //TODO: set acc state to resource
+    const {
+      aboutItemRevisionModel,
+      currentItem,
+      accResourceGroups
+    } = this.state;
+    const aboutItem = getResourceContent(aboutItemRevisionModel);
+    const accResources = getResourceContent(accResourceGroups);
+    if (aboutItem && accResources) {
+      this.setState({ currentItem: { ...currentItem, isaap: undefined } }, () =>
+        this.handleUpdateIsaap(accResources)
+      );
+    }
   };
 
   handleNextItem() {
@@ -185,7 +256,10 @@ export class ItemBankContainer extends React.Component<
       nextItem = items[0];
     }
 
-    this.setState({ currentItem: nextItem }, this.handleChangeViewItem);
+    this.setState({ currentItem: nextItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   }
 
   handlePreviousItem() {
@@ -198,7 +272,10 @@ export class ItemBankContainer extends React.Component<
       previousItem = items[0];
     }
 
-    this.setState({ currentItem: previousItem }, this.handleChangeViewItem);
+    this.setState({ currentItem: previousItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   }
 
   onItemSelect = (direction: "next" | "previous") => {
@@ -215,7 +292,11 @@ export class ItemBankContainer extends React.Component<
   };
 
   onRevisionSelect = (revision: string) => {
-    //todo: set?
+    const { currentItem } = this.state;
+    if (currentItem) {
+      currentItem.revision = revision;
+    }
+    this.setState({ currentItem }, this.handleChangeViewItem);
   };
 
   renderItemBankEntry() {
@@ -238,7 +319,6 @@ export class ItemBankContainer extends React.Component<
 
   renderItemBankViewer() {
     const {
-      itemUrl,
       aboutItemRevisionModel,
       accResourceGroups,
       revisions,
@@ -258,7 +338,7 @@ export class ItemBankContainer extends React.Component<
         onAccessibilityReset={this.onAccessibilityReset}
         onItemSelect={this.onItemSelect}
         onRevisionSelect={this.onRevisionSelect}
-        itemUrl={itemUrl}
+        itemUrl={this.props.itemViewUrl}
         aboutItemRevisionModel={aboutItemContent}
         accResourceGroups={accResourceGroupsContent}
         revisions={revisionsContent}
@@ -272,7 +352,6 @@ export class ItemBankContainer extends React.Component<
 
   render() {
     const {
-      itemUrl,
       aboutItemRevisionModel,
       accResourceGroups,
       sections,
