@@ -28,8 +28,13 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     return (
       <div className="help-button">
         <ToolTip
-          helpText={<p>Drag and drop items to add them to the table</p>}
+          helpText={
+            <p>
+              Enter bank key and item id for the items you would like to add
+            </p>
+          }
           position="bottom"
+          side="left"
         >
           <button
             className="item-nav-btn btn btn-default btn-sm about-item-btn"
