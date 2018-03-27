@@ -2,9 +2,11 @@ import * as React from "react";
 import {
   BasicFilterCategoryModel,
   FilterOptionModel,
-  FilterType
+  FilterType,
+  OptionTypeModel
 } from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
+import { AdvancedFilter } from "./AdvancedFilter";
 
 /**
  * Properties interface for the BasicFilterContainer component.
@@ -89,6 +91,19 @@ export class BasicFilterContainer extends React.Component<
     const { filterCategories } = this.props;
 
     return filterCategories.map((fil, i) => {
+      if (fil.optionType === OptionTypeModel.AdvFilter) {
+        const advProps = {
+          onFilterOptionSelect: (data?: FilterOptionModel) => {
+            console.log(data);
+          },
+          isMultiSelect: true,
+          displayAllButton: true,
+          ...fil
+        };
+
+        return <AdvancedFilter key={i} {...advProps} />;
+      }
+
       return (
         <BasicFilter
           key={i}

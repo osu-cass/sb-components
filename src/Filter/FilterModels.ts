@@ -41,7 +41,8 @@ export enum OptionTypeModel {
   inputBox,
   button,
   radioBtn,
-  DropDown
+  DropDown,
+  AdvFilter
 }
 
 export enum FilterType {

@@ -250,6 +250,26 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
       }
     ],
     optionType: OptionTypeModel.radioBtn
+  },
+  {
+    disabled: false,
+    label: "TechType",
+    code: FilterType.TechnologyType,
+    filterOptions: [
+      {
+        label: "tech1",
+        key: "tech1",
+        isSelected: false,
+        filterType: FilterType.TechnologyType
+      },
+      {
+        label: "tech2",
+        key: "tech2",
+        isSelected: false,
+        filterType: FilterType.TechnologyType
+      }
+    ],
+    optionType: OptionTypeModel.AdvFilter
   }
 ];
 
