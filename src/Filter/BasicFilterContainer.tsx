@@ -93,15 +93,18 @@ export class BasicFilterContainer extends React.Component<
     return filterCategories.map((fil, i) => {
       if (fil.optionType === OptionTypeModel.AdvFilter) {
         const advProps = {
-          onFilterOptionSelect: (data?: FilterOptionModel) => {
-            console.log(data);
-          },
           isMultiSelect: true,
           displayAllButton: true,
           ...fil
         };
 
-        return <AdvancedFilter key={i} {...advProps} />;
+        return (
+          <AdvancedFilter
+            key={i}
+            {...advProps}
+            onFilterOptionSelect={opt => this.onFilterSelect(fil, opt)}
+          />
+        );
       }
 
       return (
