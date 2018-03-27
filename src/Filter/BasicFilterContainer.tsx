@@ -76,8 +76,14 @@ export class BasicFilterContainer extends React.Component<
           ...opt,
           isSelected: false
         }));
+        const allPressed =
+          option.label === undefined &&
+          category.optionType === OptionTypeModel.AdvFilter;
 
-        newOptions[optionIdx].isSelected = !option.isSelected;
+        if (!allPressed) {
+          newOptions[optionIdx].isSelected = !option.isSelected;
+        }
+
         filterCategories[index].filterOptions = newOptions;
         this.props.onUpdateFilter(filterCategories, category.code);
       }

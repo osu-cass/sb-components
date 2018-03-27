@@ -104,6 +104,81 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           </div>
         </label>
       </div>
+      <div
+        className="filter-selection"
+        id="techtype-filter"
+      >
+        <div
+          className="filter-container-header"
+        >
+          <label>
+            <div
+              className="tool-tip-links"
+              tabIndex={0}
+            >
+              <span
+                className="tool-tip-hoverable"
+              >
+                <span
+                  className="tooltip-label"
+                  info-label="true"
+                >
+                  TechType
+                </span>
+                 
+                <span
+                  aria-hidden="true"
+                  className="fa fa-info-circle fa-sm"
+                />
+              </span>
+              <div
+                className="tool-tip-details"
+              >
+                <div
+                  className="tool-tip-message undefined"
+                >
+                  <p>
+                    helpText
+                  </p>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          className="nested-btn-group btn-group-sm toggle-group vertical"
+          data-toggle="buttons"
+        >
+          <button
+            className="btn btn-primary active"
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            All
+          </button>
+          <div
+            className="btn-group filter-btn-group"
+          >
+            <button
+              className="btn btn-primary "
+              disabled={false}
+              onClick={[Function]}
+              role="button"
+            >
+              tech1
+            </button>
+            <button
+              className="btn btn-primary "
+              disabled={false}
+              onClick={[Function]}
+              role="button"
+            >
+              tech2
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <div
       className="bf-button-container"

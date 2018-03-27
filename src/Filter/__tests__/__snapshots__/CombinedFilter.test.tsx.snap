@@ -192,6 +192,26 @@ exports[`FilterContainer renders 1`] = `
         "label": "Subjects",
         "optionType": 2,
       },
+      Object {
+        "code": "TechnologyType",
+        "disabled": false,
+        "filterOptions": Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ],
+        "label": "TechType",
+        "optionType": 4,
+      },
     ]
   }
   onFilterUpdated={[MockFunction]}
@@ -249,6 +269,26 @@ exports[`FilterContainer renders 1`] = `
             ],
             "label": "Subjects",
             "optionType": 2,
+          },
+          Object {
+            "code": "TechnologyType",
+            "disabled": false,
+            "filterOptions": Array [
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech1",
+                "label": "tech1",
+              },
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech2",
+                "label": "tech2",
+              },
+            ],
+            "label": "TechType",
+            "optionType": 4,
           },
         ]
       }
@@ -484,6 +524,140 @@ exports[`FilterContainer renders 1`] = `
               </label>
             </div>
           </BasicFilter>
+          <AdvancedFilter
+            code="TechnologyType"
+            disabled={false}
+            displayAllButton={true}
+            filterOptions={
+              Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+              ]
+            }
+            isMultiSelect={true}
+            key="2"
+            label="TechType"
+            onFilterOptionSelect={[Function]}
+            optionType={4}
+          >
+            <div
+              className="filter-selection"
+              id="techtype-filter"
+            >
+              <div
+                className="filter-container-header"
+              >
+                <label>
+                  <ToolTip
+                    displayIcon={true}
+                    helpText={
+                      <p>
+                        helpText
+                      </p>
+                    }
+                  >
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          TechType
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message undefined"
+                        >
+                          <p>
+                            helpText
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </ToolTip>
+                </label>
+              </div>
+              <div
+                className="nested-btn-group btn-group-sm toggle-group vertical"
+                data-toggle="buttons"
+              >
+                <Component
+                  disabled={false}
+                  label="All"
+                  onClick={[Function]}
+                  selected={true}
+                >
+                  <button
+                    className="btn btn-primary active"
+                    disabled={false}
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    All
+                  </button>
+                </Component>
+                <div
+                  className="btn-group filter-btn-group"
+                >
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech2"
+                    label="tech2"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech2
+                    </button>
+                  </Component>
+                </div>
+              </div>
+            </div>
+          </AdvancedFilter>
         </div>
         <div
           className="bf-button-container"
@@ -707,6 +881,26 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
         "label": "Subjects",
         "optionType": 2,
       },
+      Object {
+        "code": "TechnologyType",
+        "disabled": false,
+        "filterOptions": Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ],
+        "label": "TechType",
+        "optionType": 4,
+      },
     ]
   }
   onFilterUpdated={[MockFunction]}
@@ -764,6 +958,26 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             ],
             "label": "Subjects",
             "optionType": 2,
+          },
+          Object {
+            "code": "TechnologyType",
+            "disabled": false,
+            "filterOptions": Array [
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech1",
+                "label": "tech1",
+              },
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech2",
+                "label": "tech2",
+              },
+            ],
+            "label": "TechType",
+            "optionType": 4,
           },
         ]
       }
@@ -999,6 +1213,140 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               </label>
             </div>
           </BasicFilter>
+          <AdvancedFilter
+            code="TechnologyType"
+            disabled={false}
+            displayAllButton={true}
+            filterOptions={
+              Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+              ]
+            }
+            isMultiSelect={true}
+            key="2"
+            label="TechType"
+            onFilterOptionSelect={[Function]}
+            optionType={4}
+          >
+            <div
+              className="filter-selection"
+              id="techtype-filter"
+            >
+              <div
+                className="filter-container-header"
+              >
+                <label>
+                  <ToolTip
+                    displayIcon={true}
+                    helpText={
+                      <p>
+                        helpText
+                      </p>
+                    }
+                  >
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          TechType
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message undefined"
+                        >
+                          <p>
+                            helpText
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </ToolTip>
+                </label>
+              </div>
+              <div
+                className="nested-btn-group btn-group-sm toggle-group vertical"
+                data-toggle="buttons"
+              >
+                <Component
+                  disabled={false}
+                  label="All"
+                  onClick={[Function]}
+                  selected={true}
+                >
+                  <button
+                    className="btn btn-primary active"
+                    disabled={false}
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    All
+                  </button>
+                </Component>
+                <div
+                  className="btn-group filter-btn-group"
+                >
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech2"
+                    label="tech2"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech2
+                    </button>
+                  </Component>
+                </div>
+              </div>
+            </div>
+          </AdvancedFilter>
         </div>
         <div
           className="bf-button-container"
@@ -1222,6 +1570,26 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
         "label": "Subjects",
         "optionType": 2,
       },
+      Object {
+        "code": "TechnologyType",
+        "disabled": false,
+        "filterOptions": Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ],
+        "label": "TechType",
+        "optionType": 4,
+      },
     ]
   }
   onFilterUpdated={[MockFunction]}
@@ -1279,6 +1647,26 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             ],
             "label": "Subjects",
             "optionType": 2,
+          },
+          Object {
+            "code": "TechnologyType",
+            "disabled": false,
+            "filterOptions": Array [
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech1",
+                "label": "tech1",
+              },
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech2",
+                "label": "tech2",
+              },
+            ],
+            "label": "TechType",
+            "optionType": 4,
           },
         ]
       }
@@ -1514,6 +1902,140 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               </label>
             </div>
           </BasicFilter>
+          <AdvancedFilter
+            code="TechnologyType"
+            disabled={false}
+            displayAllButton={true}
+            filterOptions={
+              Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+              ]
+            }
+            isMultiSelect={true}
+            key="2"
+            label="TechType"
+            onFilterOptionSelect={[Function]}
+            optionType={4}
+          >
+            <div
+              className="filter-selection"
+              id="techtype-filter"
+            >
+              <div
+                className="filter-container-header"
+              >
+                <label>
+                  <ToolTip
+                    displayIcon={true}
+                    helpText={
+                      <p>
+                        helpText
+                      </p>
+                    }
+                  >
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          TechType
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message undefined"
+                        >
+                          <p>
+                            helpText
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </ToolTip>
+                </label>
+              </div>
+              <div
+                className="nested-btn-group btn-group-sm toggle-group vertical"
+                data-toggle="buttons"
+              >
+                <Component
+                  disabled={false}
+                  label="All"
+                  onClick={[Function]}
+                  selected={true}
+                >
+                  <button
+                    className="btn btn-primary active"
+                    disabled={false}
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    All
+                  </button>
+                </Component>
+                <div
+                  className="btn-group filter-btn-group"
+                >
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech2"
+                    label="tech2"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech2
+                    </button>
+                  </Component>
+                </div>
+              </div>
+            </div>
+          </AdvancedFilter>
         </div>
         <div
           className="bf-button-container"
@@ -2528,6 +3050,26 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
         "label": "Subjects",
         "optionType": 2,
       },
+      Object {
+        "code": "TechnologyType",
+        "disabled": false,
+        "filterOptions": Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ],
+        "label": "TechType",
+        "optionType": 4,
+      },
     ]
   }
   onFilterUpdated={[MockFunction]}
@@ -2585,6 +3127,26 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             ],
             "label": "Subjects",
             "optionType": 2,
+          },
+          Object {
+            "code": "TechnologyType",
+            "disabled": false,
+            "filterOptions": Array [
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech1",
+                "label": "tech1",
+              },
+              Object {
+                "filterType": "TechnologyType",
+                "isSelected": false,
+                "key": "tech2",
+                "label": "tech2",
+              },
+            ],
+            "label": "TechType",
+            "optionType": 4,
           },
         ]
       }
@@ -2820,6 +3382,140 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               </label>
             </div>
           </BasicFilter>
+          <AdvancedFilter
+            code="TechnologyType"
+            disabled={false}
+            displayAllButton={true}
+            filterOptions={
+              Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+              ]
+            }
+            isMultiSelect={true}
+            key="2"
+            label="TechType"
+            onFilterOptionSelect={[Function]}
+            optionType={4}
+          >
+            <div
+              className="filter-selection"
+              id="techtype-filter"
+            >
+              <div
+                className="filter-container-header"
+              >
+                <label>
+                  <ToolTip
+                    displayIcon={true}
+                    helpText={
+                      <p>
+                        helpText
+                      </p>
+                    }
+                  >
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          TechType
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message undefined"
+                        >
+                          <p>
+                            helpText
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </ToolTip>
+                </label>
+              </div>
+              <div
+                className="nested-btn-group btn-group-sm toggle-group vertical"
+                data-toggle="buttons"
+              >
+                <Component
+                  disabled={false}
+                  label="All"
+                  onClick={[Function]}
+                  selected={true}
+                >
+                  <button
+                    className="btn btn-primary active"
+                    disabled={false}
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    All
+                  </button>
+                </Component>
+                <div
+                  className="btn-group filter-btn-group"
+                >
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech2"
+                    label="tech2"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech2
+                    </button>
+                  </Component>
+                </div>
+              </div>
+            </div>
+          </AdvancedFilter>
         </div>
         <div
           className="bf-button-container"

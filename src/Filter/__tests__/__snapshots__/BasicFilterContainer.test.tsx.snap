@@ -62,6 +62,32 @@ exports[`BasicFilterContainer can select dropdown filter options 1`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;
@@ -127,6 +153,32 @@ exports[`BasicFilterContainer can select dropdown filter options 2`] = `
       label="Subjects"
       optionType={2}
       selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
     />
   </div>
 </div>
@@ -194,6 +246,32 @@ exports[`BasicFilterContainer can select dropdown filter options 3`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;
@@ -259,6 +337,32 @@ exports[`BasicFilterContainer can select dropdown filter options 4`] = `
       label="Subjects"
       optionType={2}
       selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
     />
   </div>
 </div>
@@ -326,6 +430,32 @@ exports[`BasicFilterContainer can select radio button filter options 1`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;
@@ -392,6 +522,32 @@ exports[`BasicFilterContainer can select radio button filter options 2`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;
@@ -457,6 +613,32 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       label="Subjects"
       optionType={2}
       selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
     />
   </div>
   <div
@@ -547,6 +729,32 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
   <div
     className="bf-button-container"
@@ -635,6 +843,32 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
       label="Subjects"
       optionType={2}
       selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
     />
   </div>
   <div
@@ -725,6 +959,32 @@ exports[`BasicFilterContainer resets filters on keyboard events 1`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;
@@ -791,6 +1051,32 @@ exports[`BasicFilterContainer resets filters on keyboard events 2`] = `
       optionType={2}
       selectedHandler={[Function]}
     />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;
@@ -856,6 +1142,32 @@ exports[`BasicFilterContainer resets filters on keyboard events 3`] = `
       label="Subjects"
       optionType={2}
       selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
     />
   </div>
 </div>

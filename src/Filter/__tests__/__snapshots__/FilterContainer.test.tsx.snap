@@ -54,6 +54,26 @@ exports[`FilterContainer expands the advanced filter 1`] = `
           "label": "Subjects",
           "optionType": 2,
         },
+        Object {
+          "code": "TechnologyType",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "TechnologyType",
+              "isSelected": false,
+              "key": "tech1",
+              "label": "tech1",
+            },
+            Object {
+              "filterType": "TechnologyType",
+              "isSelected": false,
+              "key": "tech2",
+              "label": "tech2",
+            },
+          ],
+          "label": "TechType",
+          "optionType": 4,
+        },
       ]
     }
     handleAdvancedFilterExpand={[Function]}
@@ -116,6 +136,26 @@ exports[`FilterContainer expands the advanced filter 2`] = `
           "label": "Subjects",
           "optionType": 2,
         },
+        Object {
+          "code": "TechnologyType",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "TechnologyType",
+              "isSelected": false,
+              "key": "tech1",
+              "label": "tech1",
+            },
+            Object {
+              "filterType": "TechnologyType",
+              "isSelected": false,
+              "key": "tech2",
+              "label": "tech2",
+            },
+          ],
+          "label": "TechType",
+          "optionType": 4,
+        },
       ]
     }
     handleAdvancedFilterExpand={[Function]}
@@ -177,6 +217,26 @@ exports[`FilterContainer expands the advanced filter 3`] = `
           ],
           "label": "Subjects",
           "optionType": 2,
+        },
+        Object {
+          "code": "TechnologyType",
+          "disabled": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "TechnologyType",
+              "isSelected": false,
+              "key": "tech1",
+              "label": "tech1",
+            },
+            Object {
+              "filterType": "TechnologyType",
+              "isSelected": false,
+              "key": "tech2",
+              "label": "tech2",
+            },
+          ],
+          "label": "TechType",
+          "optionType": 4,
         },
       ]
     }
