@@ -89,6 +89,24 @@ export class BasicFilterContainer extends React.Component<
       }
     }
   }
+
+  renderAdvFilter(fil: BasicFilterCategoryModel, iter: number) {
+    // TODO: add logic for multi and all buttons
+    const advProps = {
+      isMultiSelect: true,
+      displayAllButton: true,
+      ...fil
+    };
+
+    return (
+      <AdvancedFilter
+        key={iter}
+        {...advProps}
+        onFilterOptionSelect={opt => this.onFilterSelect(fil, opt)}
+      />
+    );
+  }
+
   /**
    * Returns an array Basic Filter component for each of the filter categories
    * @method renderFilters
@@ -98,19 +116,7 @@ export class BasicFilterContainer extends React.Component<
 
     return filterCategories.map((fil, i) => {
       if (fil.optionType === OptionTypeModel.AdvFilter) {
-        const advProps = {
-          isMultiSelect: true,
-          displayAllButton: true,
-          ...fil
-        };
-
-        return (
-          <AdvancedFilter
-            key={i}
-            {...advProps}
-            onFilterOptionSelect={opt => this.onFilterSelect(fil, opt)}
-          />
-        );
+        return this.renderAdvFilter(fil, i);
       }
 
       return (
