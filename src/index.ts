@@ -115,6 +115,7 @@ export {
   SelectedFilterIndicator,
   SelectedFilterIndicatorProps
 } from "./Filter/SelectedFilterIndicator";
+export { SIWFilter } from "./Filter/SIWFilter";
 
 //
 // Grade Levels

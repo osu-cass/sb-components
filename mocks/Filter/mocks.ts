@@ -273,6 +273,136 @@ export const mockBasicFilterCategories: BasicFilterCategoryModel[] = [
   }
 ];
 
+export const mockSIWFilterCategories: BasicFilterCategoryModel[] = [
+  {
+    disabled: false,
+    label: "Grade",
+    code: FilterType.Grade,
+    filterOptions: gradeFilterOptions,
+    optionType: OptionTypeModel.DropDown
+  },
+  {
+    disabled: false,
+    label: "Subjects",
+    code: FilterType.Subject,
+    filterOptions: [
+      {
+        label: "English Literacy/ Arts",
+        key: "ELA",
+        isSelected: false,
+        filterType: FilterType.Subject
+      },
+      {
+        label: "Mathematics",
+        key: "Math",
+        isSelected: false,
+        filterType: FilterType.Subject
+      }
+    ],
+    optionType: OptionTypeModel.DropDown
+  },
+  {
+    disabled: false,
+    label: "Claims",
+    code: FilterType.Claim,
+    filterOptions: [
+      {
+        label: "Problem Solving",
+        key: "claim1",
+        isSelected: false,
+        filterType: FilterType.Claim
+      },
+      {
+        label: "Concepts and Procedures",
+        key: "claim2",
+        isSelected: false,
+        filterType: FilterType.Claim
+      }
+    ],
+    optionType: OptionTypeModel.AdvFilter
+  },
+  {
+    disabled: false,
+    label: "Item Types",
+    code: FilterType.InteractionType,
+    filterOptions: [
+      {
+        label: "Equation",
+        key: "equ",
+        isSelected: false,
+        filterType: FilterType.InteractionType
+      },
+      {
+        label: "Grid Item",
+        key: "grid",
+        isSelected: false,
+        filterType: FilterType.InteractionType
+      }
+    ],
+    optionType: OptionTypeModel.AdvFilter
+  },
+  {
+    disabled: false,
+    label: "TechType",
+    code: FilterType.TechnologyType,
+    filterOptions: [
+      {
+        label: "tech1",
+        key: "tech1",
+        isSelected: false,
+        filterType: FilterType.TechnologyType
+      },
+      {
+        label: "tech2",
+        key: "tech2",
+        isSelected: false,
+        filterType: FilterType.TechnologyType
+      }
+    ],
+    optionType: OptionTypeModel.DropDown
+  },
+  {
+    disabled: false,
+    label: "Targets",
+    code: FilterType.Target,
+    filterOptions: [
+      {
+        label: "t1",
+        key: "t1",
+        isSelected: false,
+        filterType: FilterType.Target
+      },
+      {
+        label: "t2",
+        key: "t2",
+        isSelected: false,
+        filterType: FilterType.Target
+      }
+    ],
+    optionType: OptionTypeModel.AdvFilter
+  },
+  {
+    disabled: false,
+    label: "Calculator",
+    code: FilterType.Calculator,
+    filterOptions: [
+      {
+        label: "On",
+        key: "on",
+        isSelected: false,
+        filterType: FilterType.Calculator
+      },
+      {
+        label: "Off",
+        key: "off",
+        isSelected: false,
+        filterType: FilterType.Calculator
+      }
+    ],
+    optionType: OptionTypeModel.DropDown
+  }
+];
+
 export const mockInteractionTypes: InteractionTypeModel[] = [
   {
     code: "EBSR",
