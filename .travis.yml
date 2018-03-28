@@ -8,7 +8,7 @@ cache:
 install:
 - npm install
 script:
-- npm run test:prod -- --runInBand
+- npm run test-ci:prod
 
 after_success:
 - npm run report-coverage
