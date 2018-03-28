@@ -15,10 +15,16 @@ after_success:
 - npm run storybook-publish
 - npm run typedoc-publish
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GIT_API_KEY
-  local_dir: gh-site
-  target_branch: gh-pages
-  on:
-    branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GIT_API_KEY
+    local_dir: gh-site
+    target_branch: gh-pages
+    on:
+      branch: master
+  - provider: npm
+    skip_cleanup: true
+    email: $NPM_EMAIL
+    api_key: $NPM_TOKEN
+    on:
+      tags: true 
