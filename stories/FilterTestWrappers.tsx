@@ -125,3 +125,42 @@ export class FilterContainerTestWrapper extends React.Component<
     );
   }
 }
+
+// This test wrapper serves just to allow the functionality of the FilterContainer so
+// that we can confirm that it works as expected. It passes the advanced and basic filterCategories into
+// the FilterContainer as props
+// tslint:disable-next-line:max-classes-per-file
+export class SIWFilterContainerTestWrapper extends React.Component<
+  {},
+  FilterContainerTestState
+> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      basicFilterCategories: mockBasicFilterCategories,
+      advancedFilterCategories: mockAdvancedFilterCategoriesAll
+    };
+  }
+  updateBasicFilter = (basicFilterCategories: BasicFilterCategoryModel[]) => {
+    this.setState({ basicFilterCategories });
+  };
+
+  updateAdvancedFilter = (
+    advancedFilterCategories: AdvancedFilterCategoryModel[]
+  ) => {
+    this.setState({ advancedFilterCategories });
+  };
+
+  render() {
+    const { basicFilterCategories, advancedFilterCategories } = this.state;
+
+    return (
+      <FilterContainer
+        basicFilterCategories={basicFilterCategories}
+        onUpdateBasicFilter={this.updateBasicFilter}
+        advancedFilterCategories={advancedFilterCategories}
+        onUpdateAdvancedFilter={this.updateAdvancedFilter}
+      />
+    );
+  }
+}
