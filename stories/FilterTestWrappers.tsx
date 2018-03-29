@@ -153,10 +153,12 @@ export class SIWFilterContainerTestWrapper extends React.Component<
     const { basicFilterCategories } = this.state;
 
     return (
-      <SIWFilter
-        basicFilterCategories={basicFilterCategories}
-        onUpdateBasicFilter={this.updateBasicFilter}
-      />
+      // <SIWFilter
+      //   basicFilterCategories={basicFilterCategories}
+      //   advancedFilter={[]}
+      //   onUpdateBasicFilter={this.updateBasicFilter}
+      // />
+      undefined
     );
   }
 }
