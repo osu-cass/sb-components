@@ -9,6 +9,7 @@ install:
 - npm install
 script:
 - npm run test:prod -- --runInBand
+- npm run webpack
 
 after_success:
 - npm run report-coverage

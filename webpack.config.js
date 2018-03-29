@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const WatchIgnorePlugin = require("watch-ignore-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
@@ -86,7 +85,7 @@ module.exports = env => {
       },
       plugins: [
         // Plugins that apply for all builds
-        new webpack.IgnorePlugin([/\.js$/, /\.d\.ts$/, "lib"]),
+        // new webpack.IgnorePlugin(/^*\.[js,d\.ts]$/, "lib"),
         new CopyWebpackPlugin([
           {
             from: path.join(srcDir, "Assets"),
