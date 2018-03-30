@@ -30,6 +30,7 @@ export function siwFilterUpdated(
         changedBasicFilter,
         newSearchAPI
       );
+      Filter.updateSingleFilter(changedBasicFilter, changedBasicFilter);
     }
   }
 

@@ -108,6 +108,10 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     );
   }
 
+  renderInputBox() {
+    let content: JSX.Element | undefined;
+  }
+
   /**
    * Renders the render Category based on the category type
    * @returns {(JSX.Element | undefined)} JSX element of category

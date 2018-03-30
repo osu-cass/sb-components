@@ -30,38 +30,14 @@ export interface SIWFilterProps {
 export class SIWFilter extends React.Component<SIWFilterProps, {}> {
   constructor(props: SIWFilterProps) {
     super(props);
-
-    this.state = {
-      expanded: false
-    };
   }
-
-  onAdvancedFilterUpdated = (
-    advancedFilter?: AdvancedFilterCategoryModel[],
-    changed?: FilterType
-  ) => {
-    const updated = CombinedFilterHelpers.advancedFilterUpdated(
-      this.props.basicFilter,
-      this.props.searchAPI,
-      advancedFilter,
-      this.props.searchModel,
-      changed
-    );
-    if (updated.advancedFilter) {
-      this.props.onFilterUpdated(
-        updated.searchAPI,
-        updated.basicFilter,
-        updated.advancedFilter
-      );
-    }
-  };
 
   onBasicFilterUpdated = (
     basicFilter: BasicFilterCategoryModel[],
     changed: FilterType
   ) => {
     const updated = CombinedFilterHelpers.siwFilterUpdated(
-      basicFilter,
+      this.props.basicFilter,
       this.props.searchAPI,
       this.props.searchModel,
       changed
@@ -69,7 +45,7 @@ export class SIWFilter extends React.Component<SIWFilterProps, {}> {
 
     this.props.onFilterUpdated(
       updated.searchAPI,
-      updated.basicFilter,
+      updated.basicFilter || [],
       updated.advancedFilter || []
     );
   };
@@ -83,23 +59,13 @@ export class SIWFilter extends React.Component<SIWFilterProps, {}> {
 
     this.props.onFilterUpdated(
       updated.searchAPI,
-      updated.basicFilter,
+      updated.basicFilter || [],
       updated.advancedFilter || []
     );
   };
 
   render() {
     const id = this.props.filterId || "";
-    // let advancedFilter: JSX.Element | undefined;
-    // if (this.state.expanded) {
-    //   advancedFilter = (
-    //     <AdvancedFilterContainer
-    //       isNested={true}
-    //       filterCategories={this.props.advancedFilter}
-    //       onUpdateFilter={this.onAdvancedFilterUpdated}
-    //     />
-    //   );
-    // }
 
     return (
       <div className="filter-component-wrapper">
