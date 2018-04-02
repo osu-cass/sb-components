@@ -116,7 +116,7 @@
     "@sbac/sbac-ui-kit": "github:osu-cass/sbac-global-ui-kit#develop",
     "font-awesome": "~4.7.0",
     "jquery": "3.2.1",
-    "moment": "^2.21.0",
+    "moment": "^2.22.0",
     "typeface-pt-sans-caption": "0.0.44",
     "typeface-pt-serif": "0.0.44",
     "typeface-pt-serif-caption": "0.0.44"
