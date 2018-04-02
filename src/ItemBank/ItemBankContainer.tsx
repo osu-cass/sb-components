@@ -295,7 +295,6 @@ export class ItemBankContainer extends React.Component<
     let { currentItem } = this.state;
     let revisionContent = getResourceContent(revisions);
     if (currentItem && revisionContent) {
-      console.log("Items ", items);
       currentItem = items.find(i => i.itemKey === Number(item));
       revisionContent = revisionContent.map(r => {
         return { ...r };

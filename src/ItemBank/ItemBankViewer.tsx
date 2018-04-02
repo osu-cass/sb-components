@@ -104,7 +104,6 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
       this.props.currentItem && this.props.currentItem.itemKey
         ? this.props.currentItem.itemKey.toString()
         : "N/A";
-    console.log(this.props.currentItem);
     if (this.props.items) {
       options = this.props.items.map(op => {
         return {
