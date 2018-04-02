@@ -130,7 +130,8 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
           selected={selected}
           options={options}
           onChange={onItemSelect}
-          wrapperClass="section-dd"
+          wrapperClass="select-dd"
+          className="item-dropdown"
         />
       );
     }
