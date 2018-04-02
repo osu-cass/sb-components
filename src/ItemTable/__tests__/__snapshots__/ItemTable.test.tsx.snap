@@ -839,7 +839,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         Target A description
@@ -1431,7 +1431,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         Target B description
@@ -1832,7 +1832,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         target C description
@@ -2233,7 +2233,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         target D description
@@ -2613,7 +2613,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         Target A description
@@ -2833,7 +2833,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         Target B description
@@ -3052,7 +3052,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         target C description
@@ -3271,7 +3271,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top"
+                      className="tool-tip-message top undefined"
                     >
                       <p>
                         target D description

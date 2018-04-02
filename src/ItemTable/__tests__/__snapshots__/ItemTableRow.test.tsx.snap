@@ -305,7 +305,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
                   className="tool-tip-details"
                 >
                   <div
-                    className="tool-tip-message top"
+                    className="tool-tip-message top undefined"
                   >
                     <p>
                       Target A description
