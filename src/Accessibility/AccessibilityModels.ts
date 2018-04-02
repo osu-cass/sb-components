@@ -79,7 +79,9 @@ export function getResouceSelectedCode(
 ): string | undefined {
   const resource = getResource(resourceCode, accResourceGroups);
 
-  return resource ? resource.currentSelectionCode : undefined;
+  return resource && !resource.disabled
+    ? resource.currentSelectionCode
+    : undefined;
 }
 
 export function isStreamlinedEnabled(
