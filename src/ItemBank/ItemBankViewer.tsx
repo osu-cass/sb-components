@@ -20,7 +20,8 @@ import {
 export interface ItemBankViewerProps {
   onAccessibilityUpdate: (accResourceGroups: AccResourceGroupModel[]) => void;
   onAccessibilityReset: () => void;
-  onItemSelect: (direction: "next" | "previous") => void;
+  onDirectionSelect: (direction: "next" | "previous") => void;
+  onItemSelect: (itemKey: string) => void;
   onRevisionSelect: (revision: string) => void;
   itemUrl?: string;
   aboutItemRevisionModel?: AboutItemRevisionModel;
@@ -65,7 +66,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
   }
 
   renderNavButton(direction: "next" | "previous") {
-    const { onItemSelect, nextItem, prevItem } = this.props;
+    const { onDirectionSelect, nextItem, prevItem } = this.props;
     let itemName = "";
     let item = nextItem;
     if (direction === "previous") {
@@ -77,7 +78,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
     return (
       <button
-        onClick={() => onItemSelect(direction)}
+        onClick={() => onDirectionSelect(direction)}
         className={`btn btn-link ${direction}`}
         disabled={item ? false : true}
       >
@@ -98,6 +99,12 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderItemDropDown() {
     let options: SelectOptionProps[] | undefined;
+    const { onItemSelect } = this.props;
+    const selected =
+      this.props.currentItem && this.props.currentItem.itemKey
+        ? this.props.currentItem.itemKey.toString()
+        : "N/A";
+    console.log(this.props.currentItem);
     if (this.props.items) {
       options = this.props.items.map(op => {
         return {
@@ -120,9 +127,9 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         <Select
           label="Items"
           labelClass="display-none"
-          selected="N/A"
+          selected={selected}
           options={options}
-          onChange={() => {}}
+          onChange={onItemSelect}
           wrapperClass="section-dd"
         />
       );

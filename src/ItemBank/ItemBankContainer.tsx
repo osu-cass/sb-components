@@ -277,7 +277,7 @@ export class ItemBankContainer extends React.Component<
     });
   }
 
-  onItemSelect = (direction: "next" | "previous") => {
+  onDirectionSelect = (direction: "next" | "previous") => {
     switch (direction) {
       case "next":
         this.handleNextItem();
@@ -288,6 +288,23 @@ export class ItemBankContainer extends React.Component<
       default:
         console.error("invalid direction");
     }
+  };
+
+  onItemSelect = (item: string) => {
+    const { revisions, items } = this.state;
+    let { currentItem } = this.state;
+    let revisionContent = getResourceContent(revisions);
+    if (currentItem && revisionContent) {
+      console.log("Items ", items);
+      currentItem = items.find(i => i.itemKey === Number(item));
+      revisionContent = revisionContent.map(r => {
+        return { ...r };
+      });
+    }
+    this.setState(
+      { currentItem, revisions: { kind: "success", content: revisionContent } },
+      this.handleChangeViewItem
+    );
   };
 
   onRevisionSelect = (revision: string) => {
@@ -343,8 +360,9 @@ export class ItemBankContainer extends React.Component<
       <ItemBankViewer
         onAccessibilityUpdate={this.onAccessibilityUpdate}
         onAccessibilityReset={this.onAccessibilityReset}
-        onItemSelect={this.onItemSelect}
+        onDirectionSelect={this.onDirectionSelect}
         onRevisionSelect={this.onRevisionSelect}
+        onItemSelect={this.onItemSelect}
         itemUrl={this.props.itemViewUrl}
         aboutItemRevisionModel={aboutItemContent}
         accResourceGroups={accResourceGroupsContent}
