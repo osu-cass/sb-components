@@ -105,6 +105,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
         }
         onAccessibilityReset={[Function]}
         onAccessibilityUpdate={[Function]}
+        onDirectionSelect={[Function]}
         onItemSelect={[Function]}
         onRevisionSelect={[Function]}
       >
@@ -205,6 +206,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
   }
   onAccessibilityReset={[Function]}
   onAccessibilityUpdate={[Function]}
+  onDirectionSelect={[Function]}
   onItemSelect={[Function]}
   onRevisionSelect={[Function]}
 >

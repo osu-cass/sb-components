@@ -78,7 +78,7 @@ describe("ItemBankContainer", () => {
       node => node.type() === ItemBankViewer
     );
     const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
-    itemBankViewerInstance.props.onItemSelect("next");
+    itemBankViewerInstance.props.onDirectionSelect("next");
     expect(wrapperInstance.state.currentItem).toEqual(item2);
   });
 
@@ -89,7 +89,7 @@ describe("ItemBankContainer", () => {
       node => node.type() === ItemBankViewer
     );
     const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
-    itemBankViewerInstance.props.onItemSelect("previous");
+    itemBankViewerInstance.props.onDirectionSelect("previous");
     expect(wrapperInstance.state.currentItem).toEqual(item);
   });
 
@@ -124,7 +124,7 @@ describe("ItemBankContainer", () => {
       node => node.type() === ItemBankViewer
     );
     const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
-    itemBankViewerInstance.props.onItemSelect("next");
+    itemBankViewerInstance.props.onDirectionSelect("next");
     expect(wrapperInstance.state.currentItem).toEqual(item);
   });
 });
