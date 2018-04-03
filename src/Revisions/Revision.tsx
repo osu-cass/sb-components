@@ -25,13 +25,17 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         {props.author}
         <br />
         <b>CommitHash: </b>
-        {props.commitHash}
+        {props.commitHash.slice(0, 8)}
       </div>
     );
   };
 
   function formatDate(s: string) {
     return s.slice(0, -4) + s.slice(-2);
+  }
+
+  function shortCommit(s: string) {
+    return s.substring(s.length - 4, s.length);
   }
 
   return (
@@ -48,7 +52,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
           }
           onClick={props.onClick}
         >
-          {props.commitHash}
+          {shortCommit(props.commitHash)}
         </button>
         <div className="revisions-details">
           {props.author}-{formatDate(getShortDateFormat(props.date))}

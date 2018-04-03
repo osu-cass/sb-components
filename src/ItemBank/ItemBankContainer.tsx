@@ -69,7 +69,6 @@ export class ItemBankContainer extends React.Component<
     super(props);
     const items = props.items || [{}];
     const currentItem = validItemRevisionModel(items[0]) ? items[0] : undefined;
-
     this.state = {
       currentItem,
       items,
@@ -113,13 +112,13 @@ export class ItemBankContainer extends React.Component<
   }
 
   async fetchAccResourceGroups(item: AboutItemRevisionModel) {
-    const props: AccessibilityRevisionModel = {
-      interactionType: "",
-      subject: "",
-      gradeLevel: GradeLevels.All
+    const params: AccessibilityRevisionModel = {
+      interactionType: item.AboutItemMetadata.interactionType,
+      subject: item.AboutItemMetadata.subject,
+      gradeLevel: item.AboutItemMetadata.intendedGrade
     };
 
-    const prom = this.props.accessibilityClient(props);
+    const prom = this.props.accessibilityClient(params);
     const promiseWrapper = this.subscription.add("accessibilityClient", prom);
     const accessibilityResources = await promiseWrapper.promise;
     this.onFetchAccResourceSuccess(accessibilityResources);
