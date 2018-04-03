@@ -20,10 +20,4 @@ exports[`EvidenceStatement matches snapshot with html 1`] = `
 />
 `;
 
-exports[`EvidenceStatement matches snapshot with picture 1`] = `
-<img
-  alt=""
-  role="presentation"
-  src="images/screenshots/filename"
-/>
-`;
+exports[`EvidenceStatement matches snapshot with picture 1`] = `""`;
