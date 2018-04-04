@@ -11,8 +11,6 @@ export interface ItemCardModel {
   subjectLabel: string;
   claimCode: string;
   claimLabel: string;
-  targetHash: number;
-  targetShortName: string;
   targetId: string;
   targetDescription: string;
   interactionTypeCode: string;

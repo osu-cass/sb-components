@@ -53,7 +53,7 @@ export interface SearchAPIParamsModel {
   interactionTypes?: string[];
   performanceOnly?: boolean;
   catOnly?: boolean;
-  targets?: number[];
+  targets?: string[];
   calculator?: boolean;
 }
 

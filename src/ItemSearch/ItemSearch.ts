@@ -209,7 +209,7 @@ export class ItemSearch {
   public static searchOptionToFilterTarget(
     options: TargetModel[],
     filterType: FilterType,
-    selectedCodes?: number[]
+    selectedCodes?: string[]
   ): FilterOptionModel[] {
     return options.map(o => {
       return {
