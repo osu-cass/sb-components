@@ -5,9 +5,9 @@ import {
   dropDisabledProp,
   dropDisabledAllSelectionsProp,
   mockAccResourceGroups
-} from "mocks/Accessibility/mocks";
+} from "@mocks/Accessibility/mocks";
 import { centerDecorator } from "../CenterDecorator";
-import { Dropdown } from "src/index";
+import { Dropdown } from "@src/index";
 
 storiesOf("Accessibility DropDown", module)
   .addDecorator(centerDecorator)

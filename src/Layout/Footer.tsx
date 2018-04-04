@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IframeModal } from "../index";
+import { IframeModal } from "@src/index";
 
 const privacyUrl = "http://smarterbalanced.org/privacy-policy";
 

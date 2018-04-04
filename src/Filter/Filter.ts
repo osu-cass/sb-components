@@ -1,9 +1,7 @@
 import {
   SearchBaseModel,
   SearchFilterTypes,
-  SearchFilterStringTypes
-} from "../ItemSearch/ItemSearchModels";
-import {
+  SearchFilterStringTypes,
   ItemCardModel,
   ClaimModel,
   ItemsSearchModel,
@@ -17,9 +15,9 @@ import {
   FilterCategoryModel,
   FilterOptionModel,
   FilterType,
-  ItemSearch
-} from "../index";
-import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
+  ItemSearch,
+  InteractionTypeModel
+} from "@src/index";
 import { constants } from "fs";
 
 // tslint:disable-next-line:no-stateless-class, no-unnecessary-class

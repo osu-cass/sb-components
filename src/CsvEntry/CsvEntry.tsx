@@ -1,8 +1,11 @@
 import * as React from "react";
-import { Accordion } from "../Accordion/Accordion";
-import { CsvRowModel, parseCsv } from "./CsvEntryModels";
-import { ItemRevisionModel } from "../ItemBank/ItemBankModels";
-import { ToolTip } from "../index";
+import {
+  ToolTip,
+  ItemRevisionModel,
+  CsvRowModel,
+  parseCsv,
+  Accordion
+} from "@src/index";
 
 export interface CsvEntryProps {
   onItemsUpdate: (items: ItemRevisionModel[]) => void;

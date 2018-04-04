@@ -5,8 +5,9 @@ import {
   ItemTableContainer,
   ItemTableContainerProps,
   ItemCardModel
-} from "src/index";
-import { itemTableSortProps } from "mocks/ItemTable/mocks";
+} from "@src/index";
+import { itemTableSortProps } from "@mocks/ItemTable/mocks";
+import { completeItemCard } from "@mocks/index";
 
 const style: React.CSSProperties = {
   display: "flex",
@@ -24,34 +25,22 @@ const style1: React.CSSProperties = {
   flexDirection: "column"
 };
 
-const itemTableLongList: ItemTableContainerProps = itemTableSortProps;
+const lotsOfCards = () => {
+  const cards: ItemCardModel[] = [];
+  for (let i = 0; i < 50; i += 1) {
+    cards.push({
+      ...completeItemCard,
+      itemKey: i + 5
+    });
+  }
 
-const itemCards: ItemCardModel[] = [];
+  return cards;
+};
 
-for (let i = 0; i < 50; i += 1) {
-  itemCards.push({
-    selected: false,
-    bankKey: 187,
-    itemKey: i + 5,
-    title: "delta",
-    grade: 2,
-    gradeLabel: "Grade 2",
-    subjectCode: "ELA",
-    subjectLabel: "ELA/literacy",
-    claimCode: "ELA4",
-    claimLabel: "Delta",
-    targetHash: 4,
-    targetId: "D",
-    targetDescription: "target D description",
-    targetShortName: "",
-    interactionTypeCode: "MS",
-    interactionTypeLabel: "Multi Select",
-    isPerformanceItem: false,
-    brailleOnlyItem: false
-  });
-}
-
-itemTableLongList.itemCards = itemCards;
+const itemTableLongList: ItemTableContainerProps = {
+  ...itemTableSortProps,
+  itemCards: lotsOfCards()
+};
 
 storiesOf("Filter Link", module)
   .add("changed color on hover and click", () => (

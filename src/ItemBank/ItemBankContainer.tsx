@@ -26,7 +26,7 @@ import {
   getPreviousItemBank,
   toiSAAP,
   AccessibilityResourceModel
-} from "../index";
+} from "@src/index";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
@@ -51,6 +51,7 @@ export interface ItemBankContainerState {
   revisions: Resource<RevisionModel[]>;
   nextItem?: ItemRevisionModel;
   previousItem?: ItemRevisionModel;
+  hasError: boolean;
 }
 
 /**
@@ -69,19 +70,19 @@ export class ItemBankContainer extends React.Component<
     super(props);
     const items = props.items || [{}];
     const currentItem = validItemRevisionModel(items[0]) ? items[0] : undefined;
-
     this.state = {
       currentItem,
       items,
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
       sections: { kind: "loading" },
-      revisions: { kind: "loading" }
+      revisions: { kind: "loading" },
+      hasError: false
     };
   }
 
   componentDidMount() {
-    this.fetchSections();
+    this.fetchSections().catch(e => this.onError(e));
     this.handleChangeViewItem();
     this.handleChangeRevision();
   }
@@ -112,13 +113,13 @@ export class ItemBankContainer extends React.Component<
   }
 
   async fetchAccResourceGroups(item: AboutItemRevisionModel) {
-    const props: AccessibilityRevisionModel = {
-      interactionType: "",
-      subject: "",
-      gradeLevel: GradeLevels.All
+    const params: AccessibilityRevisionModel = {
+      interactionType: item.AboutItemMetadata.interactionType,
+      subject: item.AboutItemMetadata.subject,
+      gradeLevel: item.AboutItemMetadata.intendedGrade
     };
 
-    const prom = this.props.accessibilityClient(props);
+    const prom = this.props.accessibilityClient(params);
     const promiseWrapper = this.subscription.add("accessibilityClient", prom);
     const accessibilityResources = await promiseWrapper.promise;
     this.onFetchAccResourceSuccess(accessibilityResources);
@@ -156,6 +157,14 @@ export class ItemBankContainer extends React.Component<
     this.setState({ sections: { kind: "success", content: data } });
   }
 
+  onError(err: string) {
+    if (err !== "Canceled") {
+      this.setState({
+        hasError: true
+      });
+    }
+  }
+
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
@@ -176,11 +185,13 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
 
     if (currentItem) {
-      this.fetchAboutItemRevisionModel(currentItem).then(aboutItem => {
-        this.fetchAccResourceGroups(aboutItem).then(accGroups =>
-          this.handleUpdateIsaap(accGroups)
-        );
-      });
+      this.fetchAboutItemRevisionModel(currentItem)
+        .then(aboutItem => {
+          this.fetchAccResourceGroups(aboutItem)
+            .then(accGroups => this.handleUpdateIsaap(accGroups))
+            .catch(e => this.onError(e));
+        })
+        .catch(e => this.onError(e));
 
       const nextItem = getNextItemBank(currentItem, items);
       const previousItem = getPreviousItemBank(currentItem, items);
@@ -203,7 +214,7 @@ export class ItemBankContainer extends React.Component<
   handleChangeRevision = () => {
     const { currentItem } = this.state;
     if (currentItem) {
-      this.fetchRevisions(currentItem);
+      this.fetchRevisions(currentItem).catch(e => this.onError(e));
     }
   };
 

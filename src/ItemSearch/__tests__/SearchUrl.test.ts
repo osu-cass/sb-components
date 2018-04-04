@@ -1,7 +1,11 @@
-import { SearchAPIParamsModel } from "../ItemSearchModels";
-import { SearchUrl } from "../SearchUrl";
-import { GradeLevels, GradeLevel } from "../../GradeLevels/GradeLevels";
-import { FilterType } from "../../Filter/FilterModels";
+import {
+  SearchAPIParamsModel,
+  SearchUrl,
+  GradeLevels,
+  GradeLevel,
+  FilterType,
+  parseQueryString
+} from "@src/index";
 
 describe("SearchUrl.encodeQuery", () => {
   it("works for empty object", () => {

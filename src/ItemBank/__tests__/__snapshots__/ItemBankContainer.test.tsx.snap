@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemBankContainer default wrapper 1`] = `
+<ItemBankContainer
+  aboutItemRevisionClient={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "bankKey": 3000,
+            "isaap": "",
+            "itemKey": 187,
+            "revision": "asfe",
+            "section": "math",
+          },
+        ],
+      ],
+    }
+  }
+  accessibilityClient={[MockFunction]}
+  getUrl={[MockFunction]}
+  itemViewUrl="hello"
+  items={
+    Array [
+      Object {
+        "bankKey": 3000,
+        "isaap": "",
+        "itemKey": 187,
+        "revision": "asfe",
+        "section": "math",
+      },
+      Object {
+        "bankKey": 2332,
+        "isaap": "",
+        "itemKey": 187,
+        "revision": "asdf",
+        "section": "math",
+      },
+    ]
+  }
+  revisionsClient={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "bankKey": 3000,
+            "isaap": "",
+            "itemKey": 187,
+            "revision": "asfe",
+            "section": "math",
+          },
+        ],
+      ],
+    }
+  }
+  sectionsClient={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+    }
+  }
+>
+  <div
+    className="item-container container"
+  >
+    <div>
+      <ItemBankViewer
+        itemUrl="hello"
+        nextItem={
+          Object {
+            "bankKey": 2332,
+            "isaap": "",
+            "itemKey": 187,
+            "revision": "asdf",
+            "section": "math",
+          }
+        }
+        onAccessibilityReset={[Function]}
+        onAccessibilityUpdate={[Function]}
+        onItemSelect={[Function]}
+        onRevisionSelect={[Function]}
+      >
+        <div
+          className="section revisions-items"
+        >
+          <RevisionContainer
+            onRevisionSelect={[Function]}
+            revisions={Array []}
+          >
+            <div
+              className="revisions section section-light section-compact"
+            >
+              <h3
+                className="revisions-header"
+              >
+                Revisions
+              </h3>
+              <ul />
+            </div>
+          </RevisionContainer>
+          <div
+            aria-live="polite"
+            aria-relevant="additions removals"
+            className="section item-map-iframe"
+          >
+            <ItemViewerFrame
+              title="item viewer"
+              url="hello"
+            >
+              <div
+                className="itemViewerFrame"
+                tabIndex={0}
+              >
+                <div
+                  className="loader-icon"
+                >
+                  <div
+                    className="loader"
+                  />
+                </div>
+                <iframe
+                  className="itemviewer-iframe"
+                  id="itemviewer-iframe"
+                  onLoad={[Function]}
+                  onLoadStart={[Function]}
+                  src="hello"
+                  title="item viewer"
+                />
+              </div>
+            </ItemViewerFrame>
+          </div>
+        </div>
+      </ItemBankViewer>
+    </div>
+  </div>
+</ItemBankContainer>
+`;
+
+exports[`ItemBankContainer has item bank viewer 1`] = `
+<ItemBankViewer
+  itemUrl="hello"
+  nextItem={
+    Object {
+      "bankKey": 2332,
+      "isaap": "",
+      "itemKey": 187,
+      "revision": "asdf",
+      "section": "math",
+    }
+  }
+  onAccessibilityReset={[Function]}
+  onAccessibilityUpdate={[Function]}
+  onItemSelect={[Function]}
+  onRevisionSelect={[Function]}
+>
+  <div
+    className="section revisions-items"
+  >
+    <RevisionContainer
+      onRevisionSelect={[Function]}
+      revisions={Array []}
+    >
+      <div
+        className="revisions section section-light section-compact"
+      >
+        <h3
+          className="revisions-header"
+        >
+          Revisions
+        </h3>
+        <ul />
+      </div>
+    </RevisionContainer>
+    <div
+      aria-live="polite"
+      aria-relevant="additions removals"
+      className="section item-map-iframe"
+    >
+      <ItemViewerFrame
+        title="item viewer"
+        url="hello"
+      >
+        <div
+          className="itemViewerFrame"
+          tabIndex={0}
+        >
+          <div
+            className="loader-icon"
+          >
+            <div
+              className="loader"
+            />
+          </div>
+          <iframe
+            className="itemviewer-iframe"
+            id="itemviewer-iframe"
+            onLoad={[Function]}
+            onLoadStart={[Function]}
+            src="hello"
+            title="item viewer"
+          />
+        </div>
+      </ItemViewerFrame>
+    </div>
+  </div>
+</ItemBankViewer>
+`;
+
+exports[`ItemBankContainer item bank entry 1`] = `null`;

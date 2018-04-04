@@ -3,22 +3,25 @@ import * as ReactDOM from "react-dom";
 import { shallow, mount, render } from "enzyme";
 import * as TestUtils from "react-dom/test-utils";
 import { MemoryRouter } from "react-router-dom";
-import { AboutTestItemsContainer } from "../AboutTestItemsContainer";
 import {
-  mockAboutTestClient,
-  mockAboutTestClientLoading,
-  mockAboutTestClientReject,
   aboutTestMatch,
   aboutTestPath,
-  aboutTestBadItem
-} from "mocks/AboutTestItems/mocks";
-import { AboutItem, ItemViewerFrame, Select } from "src/index";
+  aboutTestBadItem,
+  defaultAboutTestItemsModel
+} from "@mocks/AboutTestItems/mocks";
+import {
+  AboutItem,
+  ItemViewerFrame,
+  Select,
+  AboutTestItemsContainer
+} from "@src/index";
+import * as Mocks from "./mocks";
 
 describe("AboutTestItemsContainer", () => {
   const wrapper = shallow(
     <AboutTestItemsContainer
       showRubrics={true}
-      aboutClient={mockAboutTestClient}
+      aboutClient={Mocks.mockedAboutClient}
       params={{}}
       errorRedirectPath=""
     />
@@ -39,5 +42,33 @@ describe("AboutTestItemsContainer", () => {
     );
     expect(itemFrame).toBeDefined();
     expect(itemFrame).toMatchSnapshot();
+  });
+
+  it("sets about item", () => {
+    const wrapperInstance = wrapper.instance() as AboutTestItemsContainer;
+    wrapperInstance.onFetchedUpdatedViewModel(defaultAboutTestItemsModel);
+    const {
+      aboutItemsViewModel,
+      aboutThisItemViewModel
+    } = wrapperInstance.state;
+    expect(aboutItemsViewModel.kind).toEqual("success");
+    expect(aboutThisItemViewModel.kind).toEqual("success");
+  });
+
+  it("changes selected code", () => {
+    const wrapperInstance = wrapper.instance() as AboutTestItemsContainer;
+    wrapperInstance.handleChange("WER");
+    expect(wrapperInstance.state.selectedCode).toEqual("WER");
+  });
+
+  it("calls about client", () => {
+    const wrapperInstance = wrapper.instance() as AboutTestItemsContainer;
+    wrapperInstance.fetchUpdatedViewModel("WER");
+    expect(Mocks.mockedAboutClient).toHaveBeenCalled();
+  });
+  it("sets selected code", () => {
+    const wrapperInstance = wrapper.instance() as AboutTestItemsContainer;
+    wrapperInstance.fetchUpdatedViewModel("WER");
+    expect(wrapperInstance.state.selectedCode).toEqual("WER");
   });
 });

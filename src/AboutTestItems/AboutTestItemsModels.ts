@@ -1,5 +1,4 @@
-import { AboutItemModel } from "../index";
-import { getRequest } from "../ApiModel";
+import { AboutItemModel, getRequest } from "@src/index";
 
 export interface InteractionTypeModel {
   code: string;
@@ -17,6 +16,10 @@ export interface AboutTestItemsModel {
 
 export interface AboutTestItemsParams {
   itemType?: string;
+}
+
+export interface AboutTestSearchParams {
+  interactionTypeCode: string;
 }
 
 export const aboutTestItemsClient = (params?: {

@@ -15,8 +15,9 @@ import {
   InteractionTypeModel,
   AboutTestItemsParams,
   Subscription,
-  SelectOptionProps
-} from "../index";
+  SelectOptionProps,
+  AboutTestSearchParams
+} from "@src/index";
 
 export interface AboutTestItemContainerState {
   selectedCode?: string;
@@ -28,9 +29,7 @@ export interface AboutTestItemContainerState {
 
 export interface AboutTestItemContainerProps {
   params: AboutTestItemsParams;
-  aboutClient: (
-    params?: { interactionTypeCode: string }
-  ) => Promise<AboutTestItemsModel>;
+  aboutClient: (params?: AboutTestSearchParams) => Promise<AboutTestItemsModel>;
   showRubrics: boolean;
   errorRedirectPath: string;
 }
@@ -70,16 +69,21 @@ export class AboutTestItemsContainer extends React.Component<
     }
   };
 
-  fetchUpdatedViewModel(newCode?: string) {
+  async fetchUpdatedViewModel(newCode?: string) {
     const params = {
       interactionTypeCode: newCode || ""
     };
     const prom = this.props.aboutClient(params);
-
     const promiseWrapper = this.subscription.add("aboutClient", prom);
-    promiseWrapper.promise
-      .then(data => this.onFetchedUpdatedViewModel(data))
-      .catch(err => this.onError(err));
+
+    try {
+      const result = await promiseWrapper.promise;
+      this.onFetchedUpdatedViewModel(result);
+
+      return result;
+    } catch (e) {
+      this.onError(e);
+    }
   }
 
   onError(err: string) {

@@ -1,11 +1,13 @@
-import { Layout } from "../../src/index";
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { ItemBankContainer } from "src/ItemBank/ItemBankContainer";
-import { AboutItem } from "src/AboutItem/AboutItem";
-import { aboutItemMockModel } from "mocks/AboutItem/mocks";
+import {
+  Layout,
+  AboutItem,
+  ItemAccessibilityModal,
+  ItemBankContainer
+} from "@src/index";
+import { aboutItemMockModel } from "@mocks/AboutItem/mocks";
 import { centerDecorator } from "../CenterDecorator";
-import { ItemAccessibilityModal } from "src/";
 import { routerDecorator } from "../RouterDecorator";
 import {
   mockBankAboutItemClient,
@@ -13,7 +15,7 @@ import {
   mockBankRevisionsClient,
   mockBankSectionsClient,
   itemRevisionMocks
-} from "mocks/ItemBank/mocks";
+} from "@mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
   .addDecorator(routerDecorator)

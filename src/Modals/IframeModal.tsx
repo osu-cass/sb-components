@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ItemViewerFrame } from "../index";
 import * as ReactModal from "react-modal";
+import { ItemViewerFrame } from "@src/index";
 
 /**
  * @export

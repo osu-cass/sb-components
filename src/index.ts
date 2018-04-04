@@ -23,7 +23,8 @@ export {
   InteractionTypeModel,
   AboutTestItemsModel,
   aboutTestItemsClient,
-  AboutTestItemsParams
+  AboutTestItemsParams,
+  AboutTestSearchParams
 } from "./AboutTestItems/AboutTestItemsModels";
 export { AboutTestItemsPage } from "./AboutTestItems/AboutTestItemsPage";
 
@@ -59,6 +60,19 @@ export { Accordion, AccordionProps } from "./Accordion/Accordion";
 // Button
 //
 export { BtnGroupOptionProps, BtnGroupOption } from "./Button/BtnGroupOption";
+
+//
+// Common
+//
+export { getResourceContent, Resource } from "./Common/ApiResource";
+export { Subscription, PromiseCancelable } from "./Common/Subscription";
+export { parseQueryString } from "./Common/UrlParsing";
+
+//
+// CSV Entry
+//
+export { CsvEntry, CsvEntryProps } from "./CsvEntry/CsvEntry";
+export { CsvRowModel, parseCsv } from "./CsvEntry/CsvEntryModels";
 
 //
 // DropDown Components and Models
@@ -97,6 +111,11 @@ export {
 export { Filter } from "./Filter/Filter";
 export { FilterLink } from "./Filter/FilterLink";
 export { CombinedFilter, CombinedFilterProps } from "./Filter/CombinedFilter";
+export {
+  SelectedFilterIndicator,
+  SelectedFilterIndicatorProps
+} from "./Filter/SelectedFilterIndicator";
+
 //
 // Grade Levels
 //
@@ -182,7 +201,11 @@ export {
   FilterSearchStringModel,
   FilterSearchGradeLevelModel,
   FilterSearchModel,
-  FilterSearchTargetModel
+  FilterSearchTargetModel,
+  SearchBaseModel,
+  SearchFilterTypes,
+  SearchFilterStringTypes,
+  SearchFilterModelTypes
 } from "./ItemSearch/ItemSearchModels";
 export { SearchUrl } from "./ItemSearch/SearchUrl";
 
@@ -228,7 +251,7 @@ export { IframeModal, IframeModalProps } from "./Modals/IframeModal";
 //
 // Page Tabs Components
 //
-export { ItemTabs, ItemTabsProps } from "./PageTabs/ItemTabs";
+export { ItemTabs, ItemTabsProps, Tabs } from "./PageTabs/ItemTabs";
 
 //
 // Pdf Components
@@ -305,21 +328,15 @@ export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
 //
 // ApiModel
 //
-export {
-  Resource,
-  parseQueryString,
-  getResourceContent,
-  getRequest,
-  downloadPdfGet,
-  downloadPdfPost
-} from "./ApiModel";
+export { getRequest, downloadPdfGet, downloadPdfPost } from "./ApiModel";
 
 //
 // Search Result Container
 //
 export {
   SearchResultContainer,
-  SearchResultType
+  SearchResultType,
+  SearchResultContainerProps
 } from "./SearchResultContainer/SearchResultContainer";
 
 //
@@ -328,10 +345,6 @@ export {
 export { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
 export {
   ErrorPageContainer,
+  ErrorPageContainerProps,
   pageType
 } from "./ErrorPageContainer/ErrorPageContainer";
-
-//
-// Promises and Subscription
-//
-export { Subscription, PromiseCancelable } from "./Subscription";

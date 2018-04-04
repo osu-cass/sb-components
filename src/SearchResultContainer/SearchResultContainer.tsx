@@ -1,10 +1,12 @@
 import * as React from "react";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { Resource } from "../ApiModel";
-import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
-import { ItemModel } from "../ItemPage/ItemPageModels";
-import { ItemCard } from "../ItemCard/ItemCard";
+import {
+  ItemCardModel,
+  AboutItemModel,
+  Resource,
+  ItemTableContainer,
+  ItemModel,
+  ItemCard
+} from "@src/index";
 
 /**
  * SearchResultType enum
@@ -55,9 +57,7 @@ export class SearchResultContainer extends React.Component<
   constructor(props: SearchResultContainerProps) {
     super(props);
     this.state = {
-      renderType: props.defaultRenderType
-        ? props.defaultRenderType
-        : SearchResultType.Table,
+      renderType: props.defaultRenderType || SearchResultType.Table,
       loading: true
     };
   }
