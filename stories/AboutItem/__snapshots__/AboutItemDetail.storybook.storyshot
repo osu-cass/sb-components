@@ -83,7 +83,7 @@ exports[`Storyshots About This Item Detail displays information about an item 1`
         className="card-text-value"
       >
          
-        Short Name
+        dfas
       </span>
     </p>
     <p

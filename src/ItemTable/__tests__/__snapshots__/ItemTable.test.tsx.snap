@@ -20,9 +20,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         Object {
@@ -40,9 +38,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "subjectCode": "ELA",
           "subjectLabel": "ELA/literacy",
           "targetDescription": "Target B description",
-          "targetHash": 1039,
           "targetId": "B",
-          "targetShortName": "Key Details",
           "title": "ELA/ literacy Grade 3 Claim 1",
         },
         Object {
@@ -59,9 +55,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "target C description",
-          "targetHash": 0,
           "targetId": "C",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 4",
         },
         Object {
@@ -78,9 +72,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "subjectCode": "ELA",
           "subjectLabel": "ELA/literacy",
           "targetDescription": "target D description",
-          "targetHash": 2832,
           "targetId": "D",
-          "targetShortName": "Evaluate Information/ sources",
           "title": "ELA/ literacy Grade 4 Claim 4",
         },
       ]
@@ -165,9 +157,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       }
     }
@@ -194,9 +184,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "Target A description",
-            "targetHash": 100,
             "targetId": "A",
-            "targetShortName": "",
             "title": "Math Grade 6 Claim 1",
           },
           "sampleItemScoring": Object {
@@ -294,9 +282,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
           ],
@@ -316,9 +302,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
           ],
@@ -337,9 +321,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
           ],
@@ -358,9 +340,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ],
@@ -386,9 +366,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
           ],
@@ -408,9 +386,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
           ],
@@ -429,9 +405,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
           ],
@@ -450,9 +424,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ],
@@ -549,9 +521,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -571,9 +541,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -592,9 +560,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -613,9 +579,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -641,9 +605,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -663,9 +625,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -684,9 +644,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -705,9 +663,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -730,9 +686,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "Target A description",
-            "targetHash": 100,
             "targetId": "A",
-            "targetShortName": "",
             "title": "Math Grade 6 Claim 1",
           }
         }
@@ -832,7 +786,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /A
                      
                   </span>
                   <div
@@ -892,9 +846,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
                 "sampleItemScoring": Object {
@@ -1141,9 +1093,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -1163,9 +1113,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -1184,9 +1132,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -1205,9 +1151,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -1233,9 +1177,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -1255,9 +1197,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -1276,9 +1216,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -1297,9 +1235,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -1322,9 +1258,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetDescription": "Target B description",
-            "targetHash": 1039,
             "targetId": "B",
-            "targetShortName": "Key Details",
             "title": "ELA/ literacy Grade 3 Claim 1",
           }
         }
@@ -1424,7 +1358,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Key Details
+                    /B
                      
                   </span>
                   <div
@@ -1543,9 +1477,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -1565,9 +1497,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -1586,9 +1516,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -1607,9 +1535,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -1635,9 +1561,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -1657,9 +1581,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -1678,9 +1600,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -1699,9 +1619,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -1723,9 +1641,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "target C description",
-            "targetHash": 0,
             "targetId": "C",
-            "targetShortName": "",
             "title": "Math Grade 6 Claim 4",
           }
         }
@@ -1825,7 +1741,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /C
                      
                   </span>
                   <div
@@ -1944,9 +1860,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -1966,9 +1880,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -1987,9 +1899,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -2008,9 +1918,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -2036,9 +1944,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "Target A description",
-                  "targetHash": 100,
                   "targetId": "A",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 1",
                 },
               ],
@@ -2058,9 +1964,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "Target B description",
-                  "targetHash": 1039,
                   "targetId": "B",
-                  "targetShortName": "Key Details",
                   "title": "ELA/ literacy Grade 3 Claim 1",
                 },
               ],
@@ -2079,9 +1983,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
                   "targetDescription": "target C description",
-                  "targetHash": 0,
                   "targetId": "C",
-                  "targetShortName": "",
                   "title": "Math Grade 6 Claim 4",
                 },
               ],
@@ -2100,9 +2002,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "subjectCode": "ELA",
                   "subjectLabel": "ELA/literacy",
                   "targetDescription": "target D description",
-                  "targetHash": 2832,
                   "targetId": "D",
-                  "targetShortName": "Evaluate Information/ sources",
                   "title": "ELA/ literacy Grade 4 Claim 4",
                 },
               ],
@@ -2124,9 +2024,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetDescription": "target D description",
-            "targetHash": 2832,
             "targetId": "D",
-            "targetShortName": "Evaluate Information/ sources",
             "title": "ELA/ literacy Grade 4 Claim 4",
           }
         }
@@ -2226,7 +2124,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Evaluate Information/ sources
+                    /D
                      
                   </span>
                   <div
@@ -2283,9 +2181,7 @@ exports[`ItemTable matches snapshot 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         Object {
@@ -2303,9 +2199,7 @@ exports[`ItemTable matches snapshot 1`] = `
           "subjectCode": "ELA",
           "subjectLabel": "ELA/literacy",
           "targetDescription": "Target B description",
-          "targetHash": 1039,
           "targetId": "B",
-          "targetShortName": "Key Details",
           "title": "ELA/ literacy Grade 3 Claim 1",
         },
         Object {
@@ -2322,9 +2216,7 @@ exports[`ItemTable matches snapshot 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "target C description",
-          "targetHash": 0,
           "targetId": "C",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 4",
         },
         Object {
@@ -2341,9 +2233,7 @@ exports[`ItemTable matches snapshot 1`] = `
           "subjectCode": "ELA",
           "subjectLabel": "ELA/literacy",
           "targetDescription": "target D description",
-          "targetHash": 2832,
           "targetId": "D",
-          "targetShortName": "Evaluate Information/ sources",
           "title": "ELA/ literacy Grade 4 Claim 4",
         },
       ]
@@ -2504,9 +2394,7 @@ exports[`ItemTable matches snapshot 1`] = `
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "Target A description",
-            "targetHash": 100,
             "targetId": "A",
-            "targetShortName": "",
             "title": "Math Grade 6 Claim 1",
           }
         }
@@ -2606,7 +2494,7 @@ exports[`ItemTable matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /A
                      
                   </span>
                   <div
@@ -2724,9 +2612,7 @@ exports[`ItemTable matches snapshot 1`] = `
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetDescription": "Target B description",
-            "targetHash": 1039,
             "targetId": "B",
-            "targetShortName": "Key Details",
             "title": "ELA/ literacy Grade 3 Claim 1",
           }
         }
@@ -2826,7 +2712,7 @@ exports[`ItemTable matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Key Details
+                    /B
                      
                   </span>
                   <div
@@ -2943,9 +2829,7 @@ exports[`ItemTable matches snapshot 1`] = `
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "target C description",
-            "targetHash": 0,
             "targetId": "C",
-            "targetShortName": "",
             "title": "Math Grade 6 Claim 4",
           }
         }
@@ -3045,7 +2929,7 @@ exports[`ItemTable matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    /C
                      
                   </span>
                   <div
@@ -3162,9 +3046,7 @@ exports[`ItemTable matches snapshot 1`] = `
             "subjectCode": "ELA",
             "subjectLabel": "ELA/literacy",
             "targetDescription": "target D description",
-            "targetHash": 2832,
             "targetId": "D",
-            "targetShortName": "Evaluate Information/ sources",
             "title": "ELA/ literacy Grade 4 Claim 4",
           }
         }
@@ -3264,7 +3146,7 @@ exports[`ItemTable matches snapshot 1`] = `
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Evaluate Information/ sources
+                    /D
                      
                   </span>
                   <div

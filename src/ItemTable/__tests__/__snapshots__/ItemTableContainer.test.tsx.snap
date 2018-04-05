@@ -25,9 +25,7 @@ exports[`ItemPageTable expands 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -123,9 +121,7 @@ exports[`ItemPageTable expands 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -143,9 +139,7 @@ exports[`ItemPageTable expands 1`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -162,9 +156,7 @@ exports[`ItemPageTable expands 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -181,9 +173,7 @@ exports[`ItemPageTable expands 1`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -582,9 +572,7 @@ exports[`ItemPageTable expands 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
             Object {
@@ -602,9 +590,7 @@ exports[`ItemPageTable expands 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
             Object {
@@ -621,9 +607,7 @@ exports[`ItemPageTable expands 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
@@ -640,9 +624,7 @@ exports[`ItemPageTable expands 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
           ]
@@ -727,9 +709,7 @@ exports[`ItemPageTable expands 1`] = `
             "subjectCode": "MATH",
             "subjectLabel": "Math",
             "targetDescription": "Target A description",
-            "targetHash": 100,
             "targetId": "A",
-            "targetShortName": "",
             "title": "Math Grade 6 Claim 1",
           }
         }
@@ -756,9 +736,7 @@ exports[`ItemPageTable expands 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -1011,9 +989,7 @@ exports[`ItemPageTable expands 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -1113,7 +1089,7 @@ exports[`ItemPageTable expands 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -1173,9 +1149,7 @@ exports[`ItemPageTable expands 1`] = `
                       "subjectCode": "MATH",
                       "subjectLabel": "Math",
                       "targetDescription": "Target A description",
-                      "targetHash": 100,
                       "targetId": "A",
-                      "targetShortName": "",
                       "title": "Math Grade 6 Claim 1",
                     },
                     "sampleItemScoring": Object {
@@ -1421,9 +1395,7 @@ exports[`ItemPageTable expands 1`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "Target B description",
-                "targetHash": 1039,
                 "targetId": "B",
-                "targetShortName": "Key Details",
                 "title": "ELA/ literacy Grade 3 Claim 1",
               }
             }
@@ -1523,7 +1495,7 @@ exports[`ItemPageTable expands 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        /B
                          
                       </span>
                       <div
@@ -1640,9 +1612,7 @@ exports[`ItemPageTable expands 1`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -1742,7 +1712,7 @@ exports[`ItemPageTable expands 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -1859,9 +1829,7 @@ exports[`ItemPageTable expands 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -1961,7 +1929,7 @@ exports[`ItemPageTable expands 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div
@@ -2025,9 +1993,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -2123,9 +2089,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -2143,9 +2107,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -2162,9 +2124,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -2181,9 +2141,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -2419,9 +2377,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
             Object {
@@ -2439,9 +2395,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
             Object {
@@ -2458,9 +2412,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
             Object {
@@ -2477,9 +2429,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ]
@@ -2571,9 +2521,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -2743,9 +2691,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -2845,7 +2791,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -2963,9 +2909,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "Target B description",
-                "targetHash": 1039,
                 "targetId": "B",
-                "targetShortName": "Key Details",
                 "title": "ELA/ literacy Grade 3 Claim 1",
               }
             }
@@ -3065,7 +3009,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        /B
                          
                       </span>
                       <div
@@ -3182,9 +3126,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -3284,7 +3226,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div
@@ -3401,9 +3343,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -3503,7 +3443,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -3567,9 +3507,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -3665,9 +3603,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -3685,9 +3621,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -3704,9 +3638,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -3723,9 +3655,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -3978,9 +3908,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
@@ -3998,9 +3926,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
             Object {
@@ -4018,9 +3944,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
             Object {
@@ -4037,9 +3961,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
           ]
@@ -4131,9 +4053,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -4320,9 +4240,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -4422,7 +4340,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -4540,9 +4458,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "Target B description",
-                "targetHash": 1039,
                 "targetId": "B",
-                "targetShortName": "Key Details",
                 "title": "ELA/ literacy Grade 3 Claim 1",
               }
             }
@@ -4642,7 +4558,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        /B
                          
                       </span>
                       <div
@@ -4760,9 +4676,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -4862,7 +4776,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -4979,9 +4893,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -5081,7 +4993,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div
@@ -5145,9 +5057,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -5243,9 +5153,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -5263,9 +5171,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -5282,9 +5188,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -5301,9 +5205,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -5576,9 +5478,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
             Object {
@@ -5596,10 +5496,25 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetId": "D",
+              "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
               "bankKey": 187,
@@ -5616,29 +5531,8 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ]
         }
@@ -5729,9 +5623,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -5938,9 +5830,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -6040,7 +5930,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div
@@ -6158,9 +6048,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -6260,7 +6148,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -6359,226 +6247,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             }
             hasControls={true}
             isExpanded={false}
-            key="187-3163"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "calculator": false,
-                "claimCode": "ELA1",
-                "claimLabel": "Reading",
-                "grade": 1,
-                "gradeLabel": "Grade 3",
-                "interactionTypeCode": "MC",
-                "interactionTypeLabel": "Multiple Choice",
-                "isPerformanceItem": true,
-                "itemKey": 3163,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "Target B description",
-                "targetHash": 1039,
-                "targetId": "B",
-                "targetShortName": "Key Details",
-                "title": "ELA/ literacy Grade 3 Claim 1",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-3163"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-3163"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    3163
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-3163"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Reading
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    displayIcon={false}
-                    helpText={
-                      <p>
-                        Target B description
-                      </p>
-                    }
-                    position="top"
-                  >
-                    <div
-                      className="tool-tip-links"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        /Key Details
-                         
-                      </span>
-                      <div
-                        className="tool-tip-details"
-                      >
-                        <div
-                          className="tool-tip-message top"
-                        >
-                          <p>
-                            Target B description
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-3163"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multiple Choice
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
             key="187-2928"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -6597,9 +6265,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -6699,7 +6365,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -6726,6 +6392,224 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <span>
                     Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
+            key="187-3163"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "calculator": false,
+                "claimCode": "ELA1",
+                "claimLabel": "Reading",
+                "grade": 1,
+                "gradeLabel": "Grade 3",
+                "interactionTypeCode": "MC",
+                "interactionTypeLabel": "Multiple Choice",
+                "isPerformanceItem": true,
+                "itemKey": 3163,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "Target B description",
+                "targetId": "B",
+                "title": "ELA/ literacy Grade 3 Claim 1",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-3163"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-3163"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    3163
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-3163"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Reading
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    displayIcon={false}
+                    helpText={
+                      <p>
+                        Target B description
+                      </p>
+                    }
+                    position="top"
+                  >
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        /B
+                         
+                      </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <p>
+                            Target B description
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-3163"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multiple Choice
                   </span>
                 </span>
               </td>
@@ -6763,9 +6647,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -6861,9 +6743,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -6881,9 +6761,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -6900,9 +6778,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -6919,9 +6795,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -7198,6 +7072,23 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetId": "D",
+              "title": "ELA/ literacy Grade 4 Claim 4",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
               "calculator": false,
               "claimCode": "ELA1",
               "claimLabel": "Reading",
@@ -7210,29 +7101,8 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
               "bankKey": 187,
@@ -7248,9 +7118,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
             Object {
@@ -7268,9 +7136,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
           ]
@@ -7362,9 +7228,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -7568,226 +7432,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             }
             hasControls={true}
             isExpanded={false}
-            key="187-3163"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "calculator": false,
-                "claimCode": "ELA1",
-                "claimLabel": "Reading",
-                "grade": 1,
-                "gradeLabel": "Grade 3",
-                "interactionTypeCode": "MC",
-                "interactionTypeLabel": "Multiple Choice",
-                "isPerformanceItem": true,
-                "itemKey": 3163,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "Target B description",
-                "targetHash": 1039,
-                "targetId": "B",
-                "targetShortName": "Key Details",
-                "title": "ELA/ literacy Grade 3 Claim 1",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-3163"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-3163"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    3163
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3163"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3163"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 3
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-3163"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Reading
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    displayIcon={false}
-                    helpText={
-                      <p>
-                        Target B description
-                      </p>
-                    }
-                    position="top"
-                  >
-                    <div
-                      className="tool-tip-links"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        /Key Details
-                         
-                      </span>
-                      <div
-                        className="tool-tip-details"
-                      >
-                        <div
-                          className="tool-tip-message top"
-                        >
-                          <p>
-                            Target B description
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-3163"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multiple Choice
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
             key="187-2928"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -7806,9 +7450,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -7908,7 +7550,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -8007,6 +7649,224 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             }
             hasControls={true}
             isExpanded={false}
+            key="187-3163"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "calculator": false,
+                "claimCode": "ELA1",
+                "claimLabel": "Reading",
+                "grade": 1,
+                "gradeLabel": "Grade 3",
+                "interactionTypeCode": "MC",
+                "interactionTypeLabel": "Multiple Choice",
+                "isPerformanceItem": true,
+                "itemKey": 3163,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "Target B description",
+                "targetId": "B",
+                "title": "ELA/ literacy Grade 3 Claim 1",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-3163"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-3163"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    3163
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-3163"
+              >
+                <span
+                  key="subject"
+                >
+                  <span>
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3163"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 3
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-3163"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Reading
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    displayIcon={false}
+                    helpText={
+                      <p>
+                        Target B description
+                      </p>
+                    }
+                    position="top"
+                  >
+                    <div
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        /B
+                         
+                      </span>
+                      <div
+                        className="tool-tip-details"
+                      >
+                        <div
+                          className="tool-tip-message top"
+                        >
+                          <p>
+                            Target B description
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-3163"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multiple Choice
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
             key="187-3615"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -8025,9 +7885,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -8127,7 +7985,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div
@@ -8245,9 +8103,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -8347,7 +8203,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -8411,9 +8267,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -8509,9 +8363,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -8529,9 +8381,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -8548,9 +8398,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -8567,9 +8415,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -8873,9 +8719,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
             Object {
@@ -8892,9 +8736,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
@@ -8911,9 +8753,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
             Object {
@@ -8931,9 +8771,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
           ]
@@ -9025,9 +8863,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -9265,9 +9101,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "Target B description",
-                "targetHash": 1039,
                 "targetId": "B",
-                "targetShortName": "Key Details",
                 "title": "ELA/ literacy Grade 3 Claim 1",
               }
             }
@@ -9367,7 +9201,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        /B
                          
                       </span>
                       <div
@@ -9484,9 +9318,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -9586,7 +9418,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -9703,9 +9535,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -9805,7 +9635,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div
@@ -9923,9 +9753,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -10025,7 +9853,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -10089,9 +9917,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         },
         "sampleItemScoring": Object {
@@ -10187,9 +10013,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "Target A description",
-        "targetHash": 100,
         "targetId": "A",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 1",
       },
       Object {
@@ -10207,9 +10031,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "Target B description",
-        "targetHash": 1039,
         "targetId": "B",
-        "targetShortName": "Key Details",
         "title": "ELA/ literacy Grade 3 Claim 1",
       },
       Object {
@@ -10226,9 +10048,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
         "subjectCode": "MATH",
         "subjectLabel": "Math",
         "targetDescription": "target C description",
-        "targetHash": 0,
         "targetId": "C",
-        "targetShortName": "",
         "title": "Math Grade 6 Claim 4",
       },
       Object {
@@ -10245,9 +10065,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
         "subjectCode": "ELA",
         "subjectLabel": "ELA/literacy",
         "targetDescription": "target D description",
-        "targetHash": 2832,
         "targetId": "D",
-        "targetShortName": "Evaluate Information/ sources",
         "title": "ELA/ literacy Grade 4 Claim 4",
       },
     ]
@@ -10566,9 +10384,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "Target A description",
-              "targetHash": 100,
               "targetId": "A",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
             },
             Object {
@@ -10586,9 +10402,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "Target B description",
-              "targetHash": 1039,
               "targetId": "B",
-              "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
             },
             Object {
@@ -10605,9 +10419,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA/literacy",
               "targetDescription": "target D description",
-              "targetHash": 2832,
               "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
@@ -10624,9 +10436,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "subjectCode": "MATH",
               "subjectLabel": "Math",
               "targetDescription": "target C description",
-              "targetHash": 0,
               "targetId": "C",
-              "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
             },
           ]
@@ -10718,9 +10528,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               },
               "sampleItemScoring": Object {
@@ -10973,9 +10781,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "Target A description",
-                "targetHash": 100,
                 "targetId": "A",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 1",
               }
             }
@@ -11075,7 +10881,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /A
                          
                       </span>
                       <div
@@ -11193,9 +10999,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "Target B description",
-                "targetHash": 1039,
                 "targetId": "B",
-                "targetShortName": "Key Details",
                 "title": "ELA/ literacy Grade 3 Claim 1",
               }
             }
@@ -11295,7 +11099,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        /B
                          
                       </span>
                       <div
@@ -11412,9 +11216,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "subjectCode": "ELA",
                 "subjectLabel": "ELA/literacy",
                 "targetDescription": "target D description",
-                "targetHash": 2832,
                 "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
                 "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
@@ -11514,7 +11316,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        /D
                          
                       </span>
                       <div
@@ -11631,9 +11433,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
                 "targetDescription": "target C description",
-                "targetHash": 0,
                 "targetId": "C",
-                "targetShortName": "",
                 "title": "Math Grade 6 Claim 4",
               }
             }
@@ -11733,7 +11533,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        /C
                          
                       </span>
                       <div

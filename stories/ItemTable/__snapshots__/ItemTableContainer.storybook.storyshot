@@ -220,7 +220,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /A
                    
                 </span>
                 <div
@@ -316,7 +316,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /Key Details
+                  /B
                    
                 </span>
                 <div
@@ -412,7 +412,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /C
                    
                 </span>
                 <div
@@ -508,7 +508,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /Evaluate Information/ sources
+                  /D
                    
                 </span>
                 <div
@@ -740,7 +740,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /A
                    
                 </span>
                 <div
@@ -818,7 +818,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /Key Details
+                  /B
                    
                 </span>
                 <div
@@ -896,7 +896,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /C
                    
                 </span>
                 <div
@@ -974,7 +974,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /Evaluate Information/ sources
+                  /D
                    
                 </span>
                 <div
@@ -1227,7 +1227,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /A
                    
                 </span>
                 <div
@@ -1323,7 +1323,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /Key Details
+                  /B
                    
                 </span>
                 <div
@@ -1419,7 +1419,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /C
                    
                 </span>
                 <div
@@ -1515,7 +1515,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /Evaluate Information/ sources
+                  /D
                    
                 </span>
                 <div
@@ -1768,7 +1768,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /A
                    
                 </span>
                 <div
@@ -1864,7 +1864,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /B
                    
                 </span>
                 <div
@@ -1960,7 +1960,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /C
                    
                 </span>
                 <div
@@ -2056,7 +2056,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /D
                    
                 </span>
                 <div

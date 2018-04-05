@@ -40,9 +40,7 @@ exports[`ItemCardViewer renders information tab 1`] = `
               "subjectCode": "ELA",
               "subjectLabel": "ELA",
               "targetDescription": "target description right hereeeee",
-              "targetHash": 33434,
               "targetId": "dfas",
-              "targetShortName": "Short Name",
               "title": "ELA Grade 4",
             }
           }

@@ -231,7 +231,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /
+                      /A
                        
                     </span>
                     <div
@@ -309,7 +309,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /Key Details
+                      /B
                        
                     </span>
                     <div
@@ -387,7 +387,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /
+                      /C
                        
                     </span>
                     <div
@@ -465,7 +465,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /Evaluate Information/ sources
+                      /D
                        
                     </span>
                     <div

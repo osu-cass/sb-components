@@ -89,7 +89,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
         }
         position="top"
       >
-        /
+        /A
       </ToolTip>
     </span>
   </td>
@@ -196,9 +196,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
           "subjectCode": "MATH",
           "subjectLabel": "Math",
           "targetDescription": "Target A description",
-          "targetHash": 100,
           "targetId": "A",
-          "targetShortName": "",
           "title": "Math Grade 6 Claim 1",
         }
       }
@@ -298,7 +296,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  /A
                    
                 </span>
                 <div
