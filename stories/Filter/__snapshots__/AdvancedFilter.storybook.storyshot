@@ -83,7 +83,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
               className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
             </div>
           </div>
@@ -193,7 +193,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
               className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
             </div>
           </div>
@@ -278,7 +278,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
               className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
             </div>
           </div>
@@ -371,7 +371,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
               className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
             </div>
           </div>
@@ -464,7 +464,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
               className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
             </div>
           </div>
@@ -536,7 +536,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
               className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
             </div>
           </div>
