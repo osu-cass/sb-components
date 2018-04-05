@@ -62,7 +62,11 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     return tags;
   }
   render() {
+    let text = undefined;
     const { disabled, label, helpText } = this.props;
+    if (helpText) {
+      text = <p>{helpText}</p>;
+    }
     // replace "-" with spaces, replace "." with nothing.
     const id = label.replace(/\ /g, "-").replace(/\./g, "");
     if (disabled) {
@@ -77,7 +81,10 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       >
         <div className="filter-container-header">
           <label>
-            <ToolTip helpText={<p>helpText</p>} displayIcon={true}>
+            <ToolTip
+              helpText={text != undefined ? text : undefined}
+              displayIcon={text != undefined ? true : false}
+            >
               <span className="tooltip-label" info-label="true">
                 {label}
               </span>
