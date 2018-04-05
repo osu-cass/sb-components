@@ -44,7 +44,7 @@ export class AboutPTModal extends React.Component<
   renderDescription(ptHeader: string) {
     return (
       <p aria-labelledby={`${ptHeader}`}>
-        <b>{ptHeader}</b>
+        <b>{ptHeader} </b>
         <span dangerouslySetInnerHTML={{ __html: this.props.description }} />
       </p>
     );
