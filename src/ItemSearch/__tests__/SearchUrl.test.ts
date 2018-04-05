@@ -54,7 +54,7 @@ describe("SearchUrl.encodeQuery", () => {
 
   it("encodes with only targets", () => {
     const searchParams: SearchAPIParamsModel = {
-      targets: [1234, 4321]
+      targets: ["1234", "4321"]
     };
     const encoded = SearchUrl.encodeQuery(searchParams);
 
@@ -103,7 +103,7 @@ describe("SearchUrl.encodeQuery", () => {
     const searchParams: SearchAPIParamsModel = {
       subjects: ["MATH"],
       gradeLevels: GradeLevels.Grade5,
-      targets: [1234, 5678],
+      targets: ["1234", "5678"],
       claims: ["MATH1", "MATH2"],
       catOnly: true
     };
@@ -178,7 +178,7 @@ describe("SearchUrl.decodeSearch", () => {
     const decoded = SearchUrl.decodeSearch("?Target=1234,4321");
 
     expect(decoded).toEqual({
-      targets: [1234, 4321]
+      targets: ["1234", "4321"]
     });
   });
 
@@ -200,13 +200,13 @@ describe("SearchUrl.decodeSearch", () => {
 
   it("decodes multiple params", () => {
     const decoded = SearchUrl.decodeSearch(
-      "?Claim=MATH1,MATH2&Subject=MATH&Grade=4&Target=1234,5678&CAT=true"
+      "?Claim=MATH1,MATH2&Subject=MATH&Grade=4&Target=A,B&CAT=true"
     );
 
     expect(decoded).toEqual({
       subjects: ["MATH"],
       gradeLevels: GradeLevels.Grade5,
-      targets: [1234, 5678],
+      targets: ["A", "B"],
       claims: ["MATH1", "MATH2"],
       catOnly: true
     });
@@ -266,12 +266,12 @@ describe("SearchUrl.decodeExpressQuery", () => {
 
   it("decodes target only", () => {
     const query = {
-      Target: "1234,2468"
+      Target: "AB,B"
     };
     const decoded = SearchUrl.decodeExpressQuery(query);
 
     expect(decoded).toEqual({
-      targets: [1234, 2468]
+      targets: ["AB", "B"]
     });
   });
 
@@ -311,7 +311,7 @@ describe("SearchUrl.decodeExpressQuery", () => {
       catOnly: true,
       subjects: ["MATH", "ELA"],
       claims: ["MATH1", "2", "3"],
-      targets: [1, 2, 3],
+      targets: ["1", "2", "3"],
       gradeLevels: GradeLevels.Grade4
     });
   });

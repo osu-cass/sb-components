@@ -117,7 +117,7 @@ describe("Filter.getSelectedTargets", () => {
     const categories = [Mocks.targetSelectionsCategory];
     const result = Filter.getSelectedTargets(categories);
     expect(result).toHaveLength(1);
-    expect(result).toContain(133);
+    expect(result).toContain("133");
   });
 
   it("No selections", () => {
@@ -227,12 +227,12 @@ describe("Filter.getSubjectInteractionTypes", () => {
 describe("Filter.getClaimTargetCodes", () => {
   it("all", () => {
     const result = Filter.getClaimTargetCodes(Mocks.claims);
-    expect(result).toHaveLength(8);
+    expect(result).toHaveLength(4);
   });
 
   it("one", () => {
     const result = Filter.getClaimTargetCodes([Mocks.claims[0]]);
-    expect(result).toHaveLength(4);
+    expect(result).toHaveLength(2);
     expect(result).toEqual(Mocks.claims[0].targetCodes);
   });
 
@@ -349,7 +349,7 @@ describe("Filter.getCurrentInteractionTypes", () => {
 describe("Filter.getCurrentTargets", () => {
   it("one claim", () => {
     const claim = Mocks.claims.find(c => c.code === "ELA1");
-    const expected = Mocks.targets.find(c => c.name === "ELA1");
+    const expected = Mocks.targets.find(c => c.id === "ELA1");
     const claims = claim ? [claim] : [];
     const result = Filter.getCurrentTargets(
       searchTargets,
@@ -359,7 +359,7 @@ describe("Filter.getCurrentTargets", () => {
       claims
     );
 
-    expect(result).toHaveLength(1);
+    expect(result).toHaveLength(2);
     expect(result).toContainEqual(expected);
   });
 
@@ -370,10 +370,11 @@ describe("Filter.getCurrentTargets", () => {
       Mocks.claims
     );
 
-    expect(result).toHaveLength(3);
+    expect(result).toHaveLength(4);
     expect(result).toContain(Mocks.targets[0]);
     expect(result).toContain(Mocks.targets[1]);
     expect(result).toContain(Mocks.targets[2]);
+    expect(result).toContain(Mocks.targets[3]);
   });
 
   it("no claims", () => {

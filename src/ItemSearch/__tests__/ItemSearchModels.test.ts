@@ -56,14 +56,12 @@ describe("ItemSearch.filterItemCards", () => {
     const params: SearchAPIParamsModel = {
       subjects: ["ELA"],
       claims: ["ELA4"],
-      targets: [2832]
+      targets: ["D"]
     };
     const result = ItemSearch.filterItemCards(itemCardList, params);
     const expectedCards = itemCardList.filter(
       c =>
-        c.subjectCode === "ELA" &&
-        c.claimCode === "ELA4" &&
-        c.targetHash === 2832
+        c.subjectCode === "ELA" && c.claimCode === "ELA4" && c.targetId === "D"
     );
 
     expect(result).toHaveLength(1);
@@ -226,6 +224,7 @@ describe("ItemSearch.searchOptionToFilterGrade", () => {
   it("filled options Selected multiple", () => {
     const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
     const filterParam = FilterType.Grade;
+    // tslint:disable-next-line:no-bitwise
     const selectedCodeParam = GradeLevels.Grade3 | GradeLevels.Grade4;
 
     const result = ItemSearch.searchOptionToFilterGrade(
@@ -263,7 +262,7 @@ describe("ItemSearch.searchOptionToFilterTarget", () => {
   it("selected options single", () => {
     const optionParam = searchOptionFilterTarget;
     const filterParam = FilterType.Target;
-    const selectedCodeParam = [1];
+    const selectedCodeParam = ["A"];
 
     const result = ItemSearch.searchOptionToFilterTarget(
       optionParam,
@@ -276,7 +275,7 @@ describe("ItemSearch.searchOptionToFilterTarget", () => {
   it("selected options multiple", () => {
     const optionParam = searchOptionFilterTarget;
     const filterParam = FilterType.Target;
-    const selectedCodeParam = [1, 3];
+    const selectedCodeParam = ["A", "C"];
 
     const result = ItemSearch.searchOptionToFilterTarget(
       optionParam,
