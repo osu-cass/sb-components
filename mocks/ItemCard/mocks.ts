@@ -38,7 +38,8 @@ export const itemCardList: ItemCardModel[] = [
     claimLabel: "Concepts and Procedures",
     targetHash: 100,
     targetId: "A",
-    targetDescription: "Target A description",
+    targetDescription:
+      "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
     targetShortName: "",
     interactionTypeCode: "EQ",
     interactionTypeLabel: "Equation",

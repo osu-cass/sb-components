@@ -1777,7 +1777,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText={
                         <p>
-                          helpText
+                          Grade Help
                         </p>
                       }
                     >
@@ -1807,7 +1807,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
-                              helpText
+                              Grade Help
                             </p>
                           </div>
                         </div>
@@ -1927,7 +1927,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText={
                         <p>
-                          helpText
+                          Subject Help
                         </p>
                       }
                     >
@@ -1957,7 +1957,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
-                              helpText
+                              Subject Help
                             </p>
                           </div>
                         </div>
@@ -2098,7 +2098,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText={
                         <p>
-                          helpText
+                          Subject Help
                         </p>
                       }
                     >
@@ -2128,7 +2128,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
-                              helpText
+                              Subject Help
                             </p>
                           </div>
                         </div>
@@ -2232,7 +2232,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       displayIcon={true}
                       helpText={
                         <p>
-                          helpText
+                          Subject Help
                         </p>
                       }
                     >
@@ -2262,7 +2262,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
-                              helpText
+                              Subject Help
                             </p>
                           </div>
                         </div>

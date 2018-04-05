@@ -19,7 +19,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -164,7 +164,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -193,7 +193,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -293,7 +293,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -385,7 +385,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -548,7 +548,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -640,7 +640,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -729,7 +729,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -820,10 +820,10 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    Target A description
+                    Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -839,10 +839,10 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     </div>
                   </div>
@@ -891,7 +891,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1140,7 +1140,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1232,7 +1232,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1415,7 +1415,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     Target B description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -1431,7 +1431,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         Target B description
@@ -1542,7 +1542,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1634,7 +1634,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1816,7 +1816,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     target C description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -1832,7 +1832,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target C description
@@ -1943,7 +1943,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -2035,7 +2035,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -2217,7 +2217,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     target D description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -2233,7 +2233,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target D description
@@ -2282,7 +2282,7 @@ exports[`ItemTable matches snapshot 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -2503,7 +2503,7 @@ exports[`ItemTable matches snapshot 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -2594,10 +2594,10 @@ exports[`ItemTable matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    Target A description
+                    Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -2613,10 +2613,10 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     </div>
                   </div>
@@ -2817,7 +2817,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     Target B description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -2833,7 +2833,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         Target B description
@@ -3036,7 +3036,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     target C description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -3052,7 +3052,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target C description
@@ -3255,7 +3255,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     target D description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
                 <div
                   className="tool-tip-links"
@@ -3271,7 +3271,7 @@ exports[`ItemTable matches snapshot 1`] = `
                     className="tool-tip-details"
                   >
                     <div
-                      className="tool-tip-message top undefined"
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target D description
