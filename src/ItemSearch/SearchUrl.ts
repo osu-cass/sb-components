@@ -73,8 +73,7 @@ export class SearchUrl {
       queryObject[FilterType.Performance]
     );
     const catOnly = this.optionFlag(queryObject[FilterType.CAT]);
-    const targetOptions = queryObject[FilterType.Target];
-    const targets = targetOptions ? targetOptions.map(t => +t) : undefined;
+    const targets = queryObject[FilterType.Target];
     const calculator = this.optionFlag(queryObject[FilterType.Calculator]);
 
     return {
@@ -118,10 +117,7 @@ export class SearchUrl {
       query,
       FilterType.InteractionType
     );
-    const targetsStrings = this.getQueryParam(query, FilterType.Target);
-    const targets = targetsStrings
-      ? targetsStrings.map(t => parseInt(t, 10))
-      : undefined;
+    const targets = this.getQueryParam(query, FilterType.Target);
     const performanceOnly = this.getBoolQueryParam(
       query,
       FilterType.Performance

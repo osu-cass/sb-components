@@ -142,11 +142,7 @@ export class AdvancedFilterContainer extends React.Component<
     });
 
     return (
-      <div
-        className="filter-body"
-        aria-live="polite"
-        aria-relevant="additions removals"
-      >
+      <div className="filter-body" aria-live="polite" aria-relevant="additions">
         {filterCats}
       </div>
     );

@@ -214,9 +214,9 @@ export class ItemSearch {
     return options.map(o => {
       return {
         filterType,
-        label: o.name,
-        key: o.nameHash.toString(),
-        isSelected: (selectedCodes || []).some(s => s === o.nameHash)
+        label: o.id,
+        key: o.id,
+        isSelected: (selectedCodes || []).some(s => s === o.id)
       };
     });
   }
@@ -375,7 +375,7 @@ export class ItemSearch {
     if (filter.targets && filter.targets.length > 0) {
       const { targets } = filter;
       results = results.filter(
-        i => targets.findIndex(t => t === i.targetHash) !== -1
+        i => targets.findIndex(t => t === i.targetId) !== -1
       );
     }
 

@@ -70,13 +70,8 @@ export class Filter {
    */
   public static getSelectedTargets(
     filterModels: FilterCategoryModel[]
-  ): number[] | undefined {
-    const selectedCodes = this.getSelectedCodes(
-      FilterType.Target,
-      filterModels
-    );
-
-    return selectedCodes ? selectedCodes.map(s => +s) : undefined;
+  ): string[] | undefined {
+    return this.getSelectedCodes(FilterType.Target, filterModels);
   }
   public static filterStringTypes<T extends SearchFilterStringTypes>(
     filterOptions: T[],
@@ -99,11 +94,11 @@ export class Filter {
    */
   public static filterTargets(
     targets: TargetModel[],
-    targetCodes: number[]
+    targetCodes: string[]
   ): TargetModel[] {
     const filteredTargets: TargetModel[] = [];
     targetCodes.forEach(tc => {
-      const target = targets.find(t => t.nameHash === tc);
+      const target = targets.find(t => t.id === tc);
       if (target) {
         filteredTargets.push(target);
       }
@@ -132,10 +127,10 @@ export class Filter {
   }
 
   /**
-   * Returns the list of related target codes
+   * Returns the list of related target codes, filtering out repeats
    * @param  {ClaimModel[]} claims
    */
-  public static getClaimTargetCodes(claims: ClaimModel[]): number[] {
+  public static getClaimTargetCodes(claims: ClaimModel[]): string[] {
     return claims
       .map(c => c.targetCodes || [])
       .reduce((prev, next) => prev.concat(next), [])

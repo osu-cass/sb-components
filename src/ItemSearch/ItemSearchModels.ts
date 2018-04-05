@@ -37,12 +37,12 @@ export interface SubjectModel extends SearchBaseModel {
 }
 
 export interface ClaimModel extends SearchBaseModel {
-  targetCodes?: number[];
+  targetCodes?: string[];
 }
 
 export interface TargetModel {
-  name: string;
-  nameHash: number;
+  id: string;
+  description: string;
 }
 
 export interface SearchAPIParamsModel {

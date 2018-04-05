@@ -204,7 +204,7 @@ export class AboutTestItemsContainer extends React.Component<
         <div
           className="about-item-iframe"
           aria-live="polite"
-          aria-relevant="additions removals"
+          aria-relevant="additions text"
         >
           <div
             className="item-nav"
