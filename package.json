@@ -25,7 +25,8 @@
     "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
-    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
+    "lint-ts": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
+    "lint-less": "stylelint src/**/*.less",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "typedoc-publish": "npx typedoc --target ES5 --exclude **/__tests__/* --out gh-site/tsdoc src/"
