@@ -129,7 +129,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
           </RevisionContainer>
           <div
             aria-live="polite"
-            aria-relevant="additions removals"
+            aria-relevant="additions"
             className="section item-map-iframe"
           >
             <ItemViewerFrame
@@ -230,7 +230,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
     </RevisionContainer>
     <div
       aria-live="polite"
-      aria-relevant="additions removals"
+      aria-relevant="additions"
       className="section item-map-iframe"
     >
       <ItemViewerFrame

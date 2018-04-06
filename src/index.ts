@@ -328,7 +328,7 @@ export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
 //
 // ApiModel
 //
-export { getRequest, postRequest } from "./ApiModel";
+export { getRequest, downloadPdfGet, downloadPdfPost } from "./ApiModel";
 
 //
 // Search Result Container

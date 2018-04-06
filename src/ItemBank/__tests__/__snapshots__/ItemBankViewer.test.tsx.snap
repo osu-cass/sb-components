@@ -10,7 +10,7 @@ exports[`ItemBankViewer matches snapshot 1`] = `
   />
   <div
     aria-live="polite"
-    aria-relevant="additions removals"
+    aria-relevant="additions"
     className="section item-map-iframe"
   >
     <ItemViewerFrame
@@ -54,7 +54,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
   />
   <div
     aria-live="polite"
-    aria-relevant="additions removals"
+    aria-relevant="additions"
     className="section item-map-iframe"
   >
     <div
@@ -409,7 +409,7 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
   />
   <div
     aria-live="polite"
-    aria-relevant="additions removals"
+    aria-relevant="additions"
     className="section item-map-iframe"
   >
     <div
@@ -740,7 +740,7 @@ exports[`ItemBankViewer with revision model matches snapshot 1`] = `
   />
   <div
     aria-live="polite"
-    aria-relevant="additions removals"
+    aria-relevant="additions"
     className="section item-map-iframe"
   >
     <ItemViewerFrame
