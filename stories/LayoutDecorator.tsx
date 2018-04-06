@@ -1,6 +1,6 @@
 import * as React from "react";
 import { MemoryRouter } from "react-router";
-import { Layout } from "src/Layout/Layout";
+import { Layout } from "@src/index";
 
 // tslint:disable-next-line:variable-name
 export const LayoutDecorator = (storyFn: () => JSX.Element) => (

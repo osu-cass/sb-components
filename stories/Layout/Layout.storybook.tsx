@@ -1,8 +1,8 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Layout } from "../../src";
+import { Layout } from "@src/index";
 import { routerDecorator } from "../RouterDecorator";
-import { SiteLinks } from "mocks/Layout/mocks";
+import { mockSiteLinks } from "@mocks/Layout/mocks";
 
 const style: React.CSSProperties = {
   width: "100%",
@@ -30,12 +30,12 @@ storiesOf("Layout", module)
   .addDecorator(routerDecorator)
   .add("name no links no body", () => <Layout siteName="Test" />)
   .add("name links header and body", () => (
-    <Layout children={body} siteName="SB-Components" links={SiteLinks} />
+    <Layout children={body} siteName="SB-Components" links={mockSiteLinks} />
   ))
   .add("name links body", () => (
     <Layout
       children={bodyNoHeader}
       siteName="SB-Components"
-      links={SiteLinks}
+      links={mockSiteLinks}
     />
   ));

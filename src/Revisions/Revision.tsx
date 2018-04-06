@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ToolTip, getShortDateFormat, getLongDateFormat } from "../index";
+import { ToolTip, getShortDateFormat, getLongDateFormat } from "@src/index";
 
 export interface RevisionModel {
   author: string;
@@ -25,7 +25,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         {props.author}
         <br />
         <b>CommitHash: </b>
-        {props.commitHash}
+        {props.commitHash.slice(0, 8)}
       </div>
     );
   };
@@ -37,7 +37,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         helpText={renderHelpText()}
       >
         <button className="btn btn-link revisions-link" onClick={props.onClick}>
-          {props.commitHash}
+          {props.commitHash.slice(0, 8)}
         </button>
         <div className="revisions-details">
           {props.author}-{getShortDateFormat(props.date)}

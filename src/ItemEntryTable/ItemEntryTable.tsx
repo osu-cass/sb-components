@@ -7,7 +7,7 @@ import {
   SelectOption,
   Select,
   ItemEntryRow
-} from "../index";
+} from "@src/index";
 
 export interface ItemEntryTableProps {
   itemRows: ItemRevisionModel[];

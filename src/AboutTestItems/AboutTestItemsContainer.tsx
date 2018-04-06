@@ -17,7 +17,7 @@ import {
   Subscription,
   SelectOptionProps,
   AboutTestSearchParams
-} from "../index";
+} from "@src/index";
 
 export interface AboutTestItemContainerState {
   selectedCode?: string;
@@ -206,7 +206,7 @@ export class AboutTestItemsContainer extends React.Component<
         <div
           className="about-item-iframe"
           aria-live="polite"
-          aria-relevant="additions removals"
+          aria-relevant="additions"
         >
           <div
             className="item-nav"

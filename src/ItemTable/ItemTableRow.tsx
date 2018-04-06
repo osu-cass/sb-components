@@ -1,5 +1,10 @@
 import * as React from "react";
-import { ItemCardModel, ToolTip, SortColumnModel, ColumnGroup } from "../index";
+import {
+  ItemCardModel,
+  ToolTip,
+  SortColumnModel,
+  ColumnGroup
+} from "@src/index";
 
 export interface ItemTableRowProps {
   rowData: ItemCardModel;

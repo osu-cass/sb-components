@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { LoadingOverlay } from "src/index";
+import { LoadingOverlay } from "@src/index";
 
 storiesOf("LoadingOverlay", module)
   .add("renders the loading spinner", () => <LoadingOverlay loading={true} />)

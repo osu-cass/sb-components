@@ -4,7 +4,7 @@ import {
   HeaderSortModel,
   SortDirection,
   ColumnGroup
-} from "../index";
+} from "@src/index";
 
 /**
  * Properties for HeaderTable component

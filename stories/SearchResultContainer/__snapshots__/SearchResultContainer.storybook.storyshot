@@ -241,7 +241,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                         className="tool-tip-message top"
                       >
                         <p>
-                          target A description
+                          Target A description
                         </p>
                       </div>
                     </div>
@@ -319,7 +319,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                         className="tool-tip-message top"
                       >
                         <p>
-                          target B description
+                          Target B description
                         </p>
                       </div>
                     </div>

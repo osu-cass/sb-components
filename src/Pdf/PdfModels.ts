@@ -22,6 +22,7 @@ export interface ItemPdfModel {
   id: string;
   html?: string;
   picturePath?: string;
+  screenshotUrl?: string;
   captured: boolean;
   type: PdfViewType;
 }

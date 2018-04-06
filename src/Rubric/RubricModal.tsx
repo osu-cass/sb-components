@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactModal from "react-modal";
-import { RubricTableProps, RubricTable } from "../index";
+import { RubricTableProps, RubricTable } from "@src/index";
 
 export interface RubricModalProps extends RubricTableProps {
   showModal?: boolean;

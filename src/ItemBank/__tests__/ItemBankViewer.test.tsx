@@ -1,19 +1,19 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import { ItemBankViewer } from "../ItemBankViewer";
 import {
+  ItemBankViewer,
   AboutItemRevisionModel,
   AccResourceGroupModel,
   RevisionModel,
-  ItemBankViewerProps
-} from "../../index";
-import { ItemRevisionModel } from "../ItemBankModels";
+  ItemBankViewerProps,
+  ItemRevisionModel
+} from "@src/index";
 import {
   aboutItemRevisionMockModel,
   mockAccResourceGroups,
   mockRevisions,
   itemRevisionMocks
-} from "mocks/index";
+} from "@mocks/index";
 
 const onAccessibilityReset = jest.fn();
 const onAccessibilityUpdate = jest.fn();

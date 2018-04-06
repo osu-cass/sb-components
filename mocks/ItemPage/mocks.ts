@@ -7,12 +7,12 @@ import {
   ItemPageModel,
   ItemIsaapModel,
   AccResourceGroupModel,
-  AboutItemModel
-} from "src/index";
-import { ResourceSelectionsModel } from "src/Accessibility/AccessibilityModels";
-import { aboutItemMockModel } from "mocks/AboutItem/mocks";
-import { allAccessibilityResourceGroups } from "mocks/Accessibility/mocks";
-import { mockPromise } from "mocks/promise";
+  AboutItemModel,
+  ResourceSelectionsModel
+} from "@src/index";
+import { aboutItemMockModel } from "@mocks/AboutItem/mocks";
+import { allAccessibilityResourceGroups } from "@mocks/Accessibility/mocks";
+import { mockPromise } from "@mocks/promise";
 
 export const aboutThisClient = (params: ItemModel) =>
   mockPromise(aboutItemMockModel);

@@ -5,7 +5,7 @@ import {
   validItemRevisionModel,
   SelectOptionProps,
   Select
-} from "../index";
+} from "@src/index";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
@@ -72,9 +72,9 @@ export class ItemEntryRow extends React.Component<
       <td>
         <input
           className="form-control"
-          aria-valuenow={rowValue || ""}
-          aria-valuemin=""
-          aria-valuemax="100000"
+          aria-valuenow={rowValue || 0}
+          aria-valuemin={0}
+          aria-valuemax={100000}
           type="number"
           value={rowValue || ""}
           onChange={event => onChange(+event.target.value)}

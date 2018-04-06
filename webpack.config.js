@@ -1,9 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CheckerPlugin = require("awesome-typescript-loader").CheckerPlugin;
-const WatchIgnorePlugin = require("watch-ignore-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 const outDir = path.resolve(__dirname, "./lib");
 const srcDir = path.resolve(__dirname, "./src");
@@ -19,11 +18,8 @@ module.exports = env => {
         index: "./src/index.ts"
       },
       resolve: {
-        alias: {
-          src: path.resolve(srcDir, "index"),
-          mocks: path.resolve(__dirname, "mocks")
-        },
-        extensions: [".js", ".jsx", ".ts", ".tsx"]
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })]
       },
       output: {
         path: outDir,
@@ -89,8 +85,6 @@ module.exports = env => {
       },
       plugins: [
         // Plugins that apply for all builds
-        new CheckerPlugin(),
-        new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/, "lib"]),
         new CopyWebpackPlugin([
           {
             from: path.join(srcDir, "Assets"),
