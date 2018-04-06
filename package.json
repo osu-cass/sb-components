@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "1.5.0-alpha.4",
+  "version": "1.5.0-alpha.6",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/src/index.d.ts",
@@ -19,7 +19,7 @@
     "update-test": "npm run test -- -u",
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
-    "test-ci":"npm run test -- --runInBand",
+    "test-ci": "npm run test -- --runInBand",
     "test-ci:prod": "npm run test:prod -- --runInBand",
     "storybook": "start-storybook -p 6006",
     "storybook-publish": "build-storybook -o gh-site/storybook",
