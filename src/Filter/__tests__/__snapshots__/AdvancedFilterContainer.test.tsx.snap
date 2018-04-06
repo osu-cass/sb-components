@@ -293,7 +293,7 @@ exports[`AdvancedFilterContainer expands and collapses on click 1`] = `
   >
     <div
       aria-live="polite"
-      aria-relevant="additions removals"
+      aria-relevant="additions"
       className="filter-body"
     >
       <AdvancedFilter

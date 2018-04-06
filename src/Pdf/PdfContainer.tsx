@@ -11,6 +11,7 @@ export interface PdfContainerProps {
   cssUrl: string;
   displayTitlePage: boolean;
   displayScoreInfo: boolean;
+  port: string;
 }
 
 export class PdfContainer extends React.Component<PdfContainerProps, {}> {
@@ -27,6 +28,7 @@ export class PdfContainer extends React.Component<PdfContainerProps, {}> {
       <html lang="en">
         <head>
           <meta charSet="UTF-8" />
+          <base href={`http://localhost:${this.props.port}/`} />
           <link rel="stylesheet" href={this.props.cssUrl} />
           <link
             rel="stylesheet"
