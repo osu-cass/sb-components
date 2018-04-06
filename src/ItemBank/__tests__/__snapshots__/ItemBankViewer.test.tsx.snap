@@ -33,18 +33,21 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           "commitHash": "ab65jg",
           "commitMessage": "Added functionality to the website",
           "date": "2018–01–30T12:34:56+00:00",
+          "selected": false,
         },
         Object {
           "author": "Pierce Hawthorne",
           "commitHash": "h4lso6",
           "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
           "date": "2018–01–30T12:34:56+00:00",
+          "selected": false,
         },
         Object {
           "author": "Annie Edison",
           "commitHash": "k5ls58",
           "commitMessage": "Changed one of the pages",
           "date": "2018–01–30T12:34:56+00:00",
+          "selected": false,
         },
       ]
     }
@@ -261,16 +264,9 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
               className="fa fa-arrow-left"
             />
             <div
-              className="nav-item-link"
+              className="nav-item-name"
             >
-              <div>
-                Previous
-              </div>
-              <div
-                className="nav-item-name"
-              >
-                1872-2222
-              </div>
+              1872-2222
             </div>
           </div>
         </button>
@@ -287,16 +283,9 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
               className="fa fa-arrow-right"
             />
             <div
-              className="nav-item-link"
+              className="nav-item-name"
             >
-              <div>
-                Next
-              </div>
-              <div
-                className="nav-item-name"
-              >
-                187-1111
-              </div>
+              187-1111
             </div>
           </div>
         </button>
@@ -399,18 +388,21 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           "commitHash": "ab65jg",
           "commitMessage": "Added functionality to the website",
           "date": "2018–01–30T12:34:56+00:00",
+          "selected": false,
         },
         Object {
           "author": "Pierce Hawthorne",
           "commitHash": "h4lso6",
           "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
           "date": "2018–01–30T12:34:56+00:00",
+          "selected": false,
         },
         Object {
           "author": "Annie Edison",
           "commitHash": "k5ls58",
           "commitMessage": "Changed one of the pages",
           "date": "2018–01–30T12:34:56+00:00",
+          "selected": false,
         },
       ]
     }
@@ -627,16 +619,9 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
               className="fa fa-arrow-left"
             />
             <div
-              className="nav-item-link"
+              className="nav-item-name"
             >
-              <div>
-                Previous
-              </div>
-              <div
-                className="nav-item-name"
-              >
-                 
-              </div>
+              Previous
             </div>
           </div>
         </button>
@@ -653,16 +638,9 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
               className="fa fa-arrow-right"
             />
             <div
-              className="nav-item-link"
+              className="nav-item-name"
             >
-              <div>
-                Next
-              </div>
-              <div
-                className="nav-item-name"
-              >
-                 
-              </div>
+              Next
             </div>
           </div>
         </button>

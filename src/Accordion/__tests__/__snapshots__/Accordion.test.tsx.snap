@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItemBankEntry call handle show content 1`] = `
+exports[`Accordion matches closed snapshot 1`] = `
 <div
   className="accordion-container"
 >
   <div
     className="accordion-bar"
-    onClick={[Function]}
+    onClick={[MockFunction]}
     role="button"
   >
     <div
@@ -22,13 +22,13 @@ exports[`ItemBankEntry call handle show content 1`] = `
 </div>
 `;
 
-exports[`ItemBankEntry matches snapshot 1`] = `
+exports[`Accordion matches open snapshot 1`] = `
 <div
   className="accordion-container"
 >
   <div
     className="accordion-bar"
-    onClick={[Function]}
+    onClick={[MockFunction]}
     role="button"
   >
     <div
@@ -37,30 +37,20 @@ exports[`ItemBankEntry matches snapshot 1`] = `
       testAccordion
       <span
         aria-hidden="true"
-        className="fa fa-chevron-down carat"
+        className="fa fa-chevron-up carat"
       />
     </div>
   </div>
-</div>
-`;
-
-exports[`ItemBankEntry renders open accordion 1`] = `
-<div
-  className="accordion-container"
->
   <div
-    className="accordion-bar"
-    onClick={[Function]}
-    role="button"
+    className="accordion-content"
   >
     <div
-      className="accordion-content"
+      id="test-content"
     >
-      testAccordion
-      <span
-        aria-hidden="true"
-        className="fa fa-chevron-down carat"
-      />
+      test
+      <p>
+        I'm open
+      </p>
     </div>
   </div>
 </div>

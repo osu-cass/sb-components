@@ -28,9 +28,10 @@ export function itemRevisionKey(itemRevisionModel: ItemRevisionModel) {
   }`;
 }
 
-export function validItemRevisionModel(itemRevisionModel: ItemRevisionModel) {
+export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
   let value = false;
   if (
+    itemRevisionModel &&
     itemRevisionModel.itemKey &&
     itemRevisionModel.bankKey &&
     itemRevisionModel.section

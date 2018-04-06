@@ -20,7 +20,7 @@ export enum GradeLevels {
 
 /* tslint:disable: no-unnecessary-class */
 export class GradeLevel {
-  public static gradeCaseToString(grade: GradeLevels): string {
+  public static gradeCaseToString(grade: GradeLevels): string | undefined {
     switch (grade) {
       case GradeLevels.NA:
         return "NA";
@@ -50,26 +50,12 @@ export class GradeLevel {
         return "Middle";
       case GradeLevels.High:
         return "High";
-      default:
-        return "";
     }
   }
 
   public static gradeLevelToString(grades: GradeLevels): string | undefined {
     const caseString = this.gradeCaseToString(grades);
-    if (caseString !== "") {
-      return caseString;
-    }
-
-    const gradeStrings: string[] = [];
-
-    for (let i = 0; i < 10; i++) {
-      if ((grades & (1 << i)) === 1 << i) {
-        gradeStrings.push(this.gradeCaseToString(1 << i));
-      }
-    }
-
-    return gradeStrings.join(", ");
+    return caseString;
   }
 
   public static gradeLevelContains(

@@ -66,7 +66,34 @@ exports[`ItemBankContainer default wrapper 1`] = `
   >
     <div>
       <ItemBankViewer
+        currentItem={
+          Object {
+            "bankKey": 3000,
+            "isaap": "",
+            "itemKey": 187,
+            "revision": "asfe",
+            "section": "math",
+          }
+        }
         itemUrl="hello"
+        items={
+          Array [
+            Object {
+              "bankKey": 3000,
+              "isaap": "",
+              "itemKey": 187,
+              "revision": "asfe",
+              "section": "math",
+            },
+            Object {
+              "bankKey": 2332,
+              "isaap": "",
+              "itemKey": 187,
+              "revision": "asdf",
+              "section": "math",
+            },
+          ]
+        }
         nextItem={
           Object {
             "bankKey": 2332,
@@ -78,6 +105,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
         }
         onAccessibilityReset={[Function]}
         onAccessibilityUpdate={[Function]}
+        onDirectionSelect={[Function]}
         onItemSelect={[Function]}
         onRevisionSelect={[Function]}
       >
@@ -139,7 +167,34 @@ exports[`ItemBankContainer default wrapper 1`] = `
 
 exports[`ItemBankContainer has item bank viewer 1`] = `
 <ItemBankViewer
+  currentItem={
+    Object {
+      "bankKey": 3000,
+      "isaap": "",
+      "itemKey": 187,
+      "revision": "asfe",
+      "section": "math",
+    }
+  }
   itemUrl="hello"
+  items={
+    Array [
+      Object {
+        "bankKey": 3000,
+        "isaap": "",
+        "itemKey": 187,
+        "revision": "asfe",
+        "section": "math",
+      },
+      Object {
+        "bankKey": 2332,
+        "isaap": "",
+        "itemKey": 187,
+        "revision": "asdf",
+        "section": "math",
+      },
+    ]
+  }
   nextItem={
     Object {
       "bankKey": 2332,
@@ -151,6 +206,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
   }
   onAccessibilityReset={[Function]}
   onAccessibilityUpdate={[Function]}
+  onDirectionSelect={[Function]}
   onItemSelect={[Function]}
   onRevisionSelect={[Function]}
 >

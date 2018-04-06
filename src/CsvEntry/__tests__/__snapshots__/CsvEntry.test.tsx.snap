@@ -10,10 +10,11 @@ exports[`CsvEntry calls handle csv blur 1`] = `
     <ToolTip
       helpText={
         <p>
-          Drag and drop items to add them to the table
+          Enter bank key and item id for the items you would like to add
         </p>
       }
       position="bottom"
+      side="left"
     >
       <button
         aria-label="Open help text"
@@ -46,10 +47,11 @@ exports[`CsvEntry calls handle csv change 1`] = `
     <ToolTip
       helpText={
         <p>
-          Drag and drop items to add them to the table
+          Enter bank key and item id for the items you would like to add
         </p>
       }
       position="bottom"
+      side="left"
     >
       <button
         aria-label="Open help text"
@@ -83,10 +85,11 @@ exports[`CsvEntry matches snapshot 1`] = `
     <ToolTip
       helpText={
         <p>
-          Drag and drop items to add them to the table
+          Enter bank key and item id for the items you would like to add
         </p>
       }
       position="bottom"
+      side="left"
     >
       <button
         aria-label="Open help text"

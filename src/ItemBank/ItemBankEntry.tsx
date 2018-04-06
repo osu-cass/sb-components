@@ -14,34 +14,74 @@ export interface ItemBankEntryProps {
   items: ItemRevisionModel[];
 }
 
-export class ItemBankEntry extends React.Component<ItemBankEntryProps, {}> {
+export interface ItemBankEntryState {
+  csvIsOpen: boolean;
+  itemsEntryIsOpen: boolean;
+}
+
+export class ItemBankEntry extends React.Component<
+  ItemBankEntryProps,
+  ItemBankEntryState
+> {
   constructor(props: ItemBankEntryProps) {
     super(props);
+    this.state = {
+      csvIsOpen: false,
+      itemsEntryIsOpen: false
+    };
   }
 
-  renderCsvEntry() {
-    const csvEntry: JSX.Element = (
-      <div className="csv-entry-container section">
-        <div className="csv-entry-wrapper">
-          <CsvEntry onItemsUpdate={this.props.updateItems} />
-        </div>
-      </div>
-    );
+  onAccordionToggle = (accordionType: "csv" | "table") => {
+    const { csvIsOpen, itemsEntryIsOpen } = this.state;
+    if (accordionType === "csv") {
+      this.setState({ csvIsOpen: !csvIsOpen });
+    } else {
+      this.setState({ itemsEntryIsOpen: !itemsEntryIsOpen });
+    }
+  };
 
-    return <Accordion accordionTitle="CSV Entry" contentItem={csvEntry} />;
+  onCsvBlur = () => {
+    this.setState({
+      csvIsOpen: false,
+      itemsEntryIsOpen: true
+    });
+  };
+
+  renderCsvEntry() {
+    return (
+      <Accordion
+        accordionTitle="CSV Entry"
+        isOpen={this.state.csvIsOpen}
+        toggleExpand={() => this.onAccordionToggle("csv")}
+      >
+        <div className="csv-entry-container section">
+          <div className="csv-entry-wrapper">
+            <CsvEntry
+              onItemsUpdate={this.props.updateItems}
+              onBlur={this.onCsvBlur}
+            />
+          </div>
+        </div>
+      </Accordion>
+    );
   }
 
   renderTableEntry() {
     const { items, updateItems, sections } = this.props;
-    const itemsTable = (
-      <ItemEntryTable
-        itemRows={items}
-        onItemsUpdate={updateItems}
-        sections={sections}
-      />
-    );
 
-    return <Accordion accordionTitle="Items Entry" contentItem={itemsTable} />;
+    return (
+      <Accordion
+        accordionTitle="Items Entry"
+        isOpen={this.state.itemsEntryIsOpen}
+        toggleExpand={() => this.onAccordionToggle("table")}
+      >
+        <ItemEntryTable
+          itemRows={items}
+          onItemsUpdate={updateItems}
+          sections={sections}
+        />
+      </Accordion>
+    );
   }
 
   render() {

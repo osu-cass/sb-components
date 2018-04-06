@@ -19,7 +19,7 @@ exports[`ToolTip displays help when hovered 1`] = `
     className="tool-tip-details"
   >
     <div
-      className="tool-tip-message top"
+      className="tool-tip-message top undefined"
     >
       <p>
         test
@@ -48,7 +48,7 @@ exports[`ToolTip matches snapshot 1`] = `
     className="tool-tip-details"
   >
     <div
-      className="tool-tip-message top"
+      className="tool-tip-message top undefined"
     >
       <p>
         test
