@@ -11,7 +11,8 @@ install:
 - npm ci
 script:
 - npm run test:prod -- --runInBand
-
+- npm run lint-ts
+- npm run lint-less
 after_success:
 - npm run report-coverage
 - npm run storybook-publish
