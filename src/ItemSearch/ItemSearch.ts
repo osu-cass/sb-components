@@ -214,7 +214,7 @@ export class ItemSearch {
     return options.map(o => {
       return {
         filterType,
-        label: o.name,
+        label: o.idLabel,
         key: o.nameHash.toString(),
         isSelected: (selectedCodes || []).some(s => s === o.nameHash)
       };
