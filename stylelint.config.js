@@ -3,4 +3,4 @@ module.exports = {
     "stylelint-config-recommended",
     "stylelint-config-prettier"
   ]
-}
+};
