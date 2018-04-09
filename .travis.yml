@@ -10,18 +10,24 @@ before_install:
 install:
 - npm ci
 script:
-- npm run test:prod -- --runInBand
-- npm run lint-ts
-- npm run lint-less
+# - npm run test:prod -- --runInBand
+- npx semantic-release -b $TRAVIS_BRANCH -d
+# - npm run lint-ts
+# - npm run lint-less
 after_success:
-- npm run report-coverage
-- npm run storybook-publish
-- npm run typedoc-publish
+# - npm run report-coverage
+# - npm run storybook-publish
+# - npm run typedoc-publish
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GIT_API_KEY
-  local_dir: gh-site
-  target_branch: gh-pages
-  on:
-    branch: master
+  # provider: pages
+  # skip_cleanup: true
+  # github_token: $GH_TOKEN
+  # local_dir: gh-site
+  # target_branch: gh-pages
+  # on:
+  #   branch: master
+  # provider: script
+  # script: npx semantic-release -b $TRAVIS_BRANCH -d
+  # on: 
+  #   all_branches: true
+    # condition: $TRAVIS_BRANCH =~ ^release\/\d*.\d*.\d*$
