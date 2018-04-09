@@ -27,13 +27,14 @@
     "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
-    "lint": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
+    "lint-ts": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
+    "lint-less": "stylelint src/**/*.less",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "typedoc-publish": "npx typedoc --target ES5 --exclude **/__tests__/* --out gh-site/tsdoc src/"
   },
   "lint-staged": {
-    "{src,stories,mocks}/**/*{.tsx,.ts}": [
+    "{src,stories,mocks}/**/*{.tsx,.ts,.less}": [
       "prettier --write",
       "git add"
     ]
@@ -105,6 +106,9 @@
     "react-test-renderer": "~16.2.0",
     "source-map-support": "^0.5.4",
     "style-loader": "^0.19.1",
+    "stylelint": "^9.2.0",
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-recommended": "^2.1.0",
     "ts-jest": "~22.4.1",
     "ts-loader": "^3.5.0",
     "tsconfig-paths-webpack-plugin": "^3.0.2",
