@@ -4,13 +4,12 @@ node_js:
 cache:
   directories:
     - node_modules
-
 before_install:
 - npm i -g npm@latest
 install:
 - npm ci
 script:
-# - npm run test:prod -- --runInBand
+- npm run test-ci:prod
 - npx semantic-release -b $TRAVIS_BRANCH -d
 # - npm run lint-ts
 # - npm run lint-less
@@ -19,15 +18,21 @@ after_success:
 # - npm run storybook-publish
 # - npm run typedoc-publish
 deploy:
-  # provider: pages
-  # skip_cleanup: true
-  # github_token: $GH_TOKEN
-  # local_dir: gh-site
-  # target_branch: gh-pages
-  # on:
-  #   branch: master
-  # provider: script
-  # script: npx semantic-release -b $TRAVIS_BRANCH -d
-  # on: 
-  #   all_branches: true
-    # condition: $TRAVIS_BRANCH =~ ^release\/\d*.\d*.\d*$
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GIT_API_KEY
+    local_dir: gh-site
+    target_branch: gh-pages
+    on:
+      branch: master
+  - provider: npm
+    skip_cleanup: true
+    email: $NPM_EMAIL
+    api_key: $NPM_TOKEN
+    on:
+      tags: true
+  # - provider: script
+  #   script: npx semantic-release -b $TRAVIS_BRANCH -d
+  #   on: 
+  #     all_branches: true
+  #     condition: $TRAVIS_BRANCH =~ ^release\/\d*.\d*.\d*$

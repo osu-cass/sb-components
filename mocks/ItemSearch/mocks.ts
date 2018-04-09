@@ -105,42 +105,42 @@ export const resultFilterGradeModelSelectedMultiple: FilterOptionModel[] = [
 ];
 
 export const searchOptionFilterTarget: TargetModel[] = [
-  { name: "test", nameHash: 1 },
-  { name: "test2", nameHash: 2 },
-  { name: "test3", nameHash: 3 }
+  { idLabel: "A", id: "A-1", name: "steak sauce", nameHash: 1 },
+  { idLabel: "B", id: "B-1", name: "test", nameHash: 2 },
+  { idLabel: "C", id: "C-4", name: "boom", nameHash: 3 }
 ];
 
 export const resultSearchOptionFilterTarget: FilterOptionModel[] = [
-  { label: "test", key: "1", isSelected: false, filterType: FilterType.Target },
+  { label: "A", key: "1", isSelected: false, filterType: FilterType.Target },
   {
-    label: "test2",
+    label: "B",
     key: "2",
     isSelected: false,
     filterType: FilterType.Target
   },
-  { label: "test3", key: "3", isSelected: false, filterType: FilterType.Target }
+  { label: "C", key: "3", isSelected: false, filterType: FilterType.Target }
 ];
 
 export const resultSearchOptionFilterTargetSelectedSingle: FilterOptionModel[] = [
-  { label: "test", key: "1", isSelected: true, filterType: FilterType.Target },
+  { label: "A", key: "1", isSelected: true, filterType: FilterType.Target },
   {
-    label: "test2",
+    label: "B",
     key: "2",
     isSelected: false,
     filterType: FilterType.Target
   },
-  { label: "test3", key: "3", isSelected: false, filterType: FilterType.Target }
+  { label: "C", key: "3", isSelected: false, filterType: FilterType.Target }
 ];
 
 export const resultSearchOptionFilterTargetSelectedMultiple: FilterOptionModel[] = [
-  { label: "test", key: "1", isSelected: true, filterType: FilterType.Target },
+  { label: "A", key: "1", isSelected: true, filterType: FilterType.Target },
   {
-    label: "test2",
+    label: "B",
     key: "2",
     isSelected: false,
     filterType: FilterType.Target
   },
-  { label: "test3", key: "3", isSelected: true, filterType: FilterType.Target }
+  { label: "C", key: "3", isSelected: true, filterType: FilterType.Target }
 ];
 
 export const mockSeachAPI: SearchAPIParamsModel = {
@@ -246,9 +246,9 @@ export const resultFilterOptionModelGrade: FilterOptionModel[] = [
 ];
 
 export const targetSearchStringTypes: TargetModel[] = [
-  { name: "test", nameHash: 1 },
-  { name: "test2", nameHash: 2 },
-  { name: "test3", nameHash: 3 }
+  { idLabel: "A", id: "A-1", name: "steak sauce", nameHash: 1 },
+  { idLabel: "B", id: "B-1", name: "test", nameHash: 2 },
+  { idLabel: "C", id: "C-4", name: "boom", nameHash: 3 }
 ];
 
 export const resultFilterOptionModeltarget: FilterOptionModel[] = [
@@ -256,19 +256,19 @@ export const resultFilterOptionModeltarget: FilterOptionModel[] = [
     filterType: FilterType.Target,
     isSelected: true,
     key: "1",
-    label: "test"
+    label: "A"
   },
   {
     filterType: FilterType.Target,
     isSelected: true,
     key: "2",
-    label: "test2"
+    label: "B"
   },
   {
     filterType: FilterType.Target,
     isSelected: false,
     key: "3",
-    label: "test3"
+    label: "C"
   }
 ];
 

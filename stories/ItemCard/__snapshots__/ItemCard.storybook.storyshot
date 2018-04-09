@@ -86,7 +86,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
         <span
           className="card-text-value"
         >
-          Short Name
+          dfas
         </span>
       </p>
       <p
@@ -180,7 +180,7 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
           className="card-text-value"
         >
            
-          Short Name
+          dfas
         </span>
       </p>
       <p
