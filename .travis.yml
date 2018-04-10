@@ -25,8 +25,8 @@ jobs:
       script: npm i -g npm@latest && npm ci
     - stage: test
       script: npm run test-ci:prod && npm run report-coverage
-      script: npm run lint-ts
-      script: npm run lint-less
+      # script: npm run lint-ts
+      # script: npm run lint-less
     - stage: deploy-docs
       script: npm run storybook-publish
       script: npm run typedoc-publish
