@@ -13,11 +13,11 @@ stages:
   - install
   - test
   - name: deploy-docs
-    if: branch =~ ^staging|master$
+    # if: branch =~ ^staging|master$
   - name: release-staging
     if: branch = staging
   - name: release-production
-    if: branch = master
+    # if: branch = master
 
 jobs:
   include:
@@ -30,16 +30,16 @@ jobs:
     - stage: deploy-docs
       script: npm run storybook-publish
       script: npm run typedoc-publish
-      deploy:
-        provider: pages
-        skip_cleanup: true
-        github_token: $GH_TOKEN
-        local_dir: gh-site
-        target_branch: gh-pages
+      # deploy:
+      #   provider: pages
+      #   skip_cleanup: true
+      #   github_token: $GH_TOKEN
+      #   local_dir: gh-site
+      #   target_branch: gh-pages
     - stage: release-staging
       script: npx semantic-release -b staging
     - stage: release-production
-      script: npx semantic-release
+      script: npx semantic-release -b $TRAVIS_BRANCH -d
       deploy:
         provider: script
-        script: npm dist-tag add sb-components
+        script: npm dist-tag ls
