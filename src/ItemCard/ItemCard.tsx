@@ -2,6 +2,7 @@ import * as React from "react";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
 import { ItemCardModel } from "./ItemCardModels";
 import { Redirect } from "react-router";
+import { ToolTip } from "../index";
 // tslint:disable:no-require-imports
 const claimIcons: { [claimCode: string]: string } = {
   MATH1: require("../Assets/Icons/Claims/math-1.svg"),
@@ -79,7 +80,12 @@ export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
             <p className="card-text target">
               <span className="card-text-label">Target:</span>
               <span className="card-text-value">
-                {this.props.targetShortName}
+                <ToolTip
+                  displayIcon
+                  helpText={<span>{this.props.targetDescription}</span>}
+                >
+                  {this.props.targetShortName}
+                </ToolTip>
               </span>
             </p>
             <p className="card-text interaction-type">

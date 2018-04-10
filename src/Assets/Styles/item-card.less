@@ -90,6 +90,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    .math & {
+        background-color: @sb-green;
+    }
+    .ela & {
+        background-color: @sb-blue;
+    }
 }
 
 .card-icon-container {
@@ -97,14 +104,6 @@
     flex-direction: row;
     align-items: center;
     margin: 5px 7.5px;
-}
-
-.math .card-header {
-    background-color: @sb-green;
-}
-
-.ela .card-header {
-    background-color: @sb-blue;
 }
 
 @media (max-width: 370px) {
