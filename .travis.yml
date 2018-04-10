@@ -1,38 +1,43 @@
 language: node_js
+
 node_js:
 - 'node'
+
 cache:
   directories:
     - node_modules
-before_install:
-- npm i -g npm@latest
-install:
-- npm ci
-script:
-- npm run test-ci:prod
-- npx semantic-release -b $TRAVIS_BRANCH -d
-# - npm run lint-ts
-# - npm run lint-less
-after_success:
-# - npm run report-coverage
-# - npm run storybook-publish
-# - npm run typedoc-publish
-deploy:
-  - provider: pages
-    skip_cleanup: true
-    github_token: $GIT_API_KEY
-    local_dir: gh-site
-    target_branch: gh-pages
-    on:
-      branch: master
-  - provider: npm
-    skip_cleanup: true
-    email: $NPM_EMAIL
-    api_key: $NPM_TOKEN
-    on:
-      tags: true
-  # - provider: script
-  #   script: npx semantic-release -b $TRAVIS_BRANCH -d
-  #   on: 
-  #     all_branches: true
-  #     condition: $TRAVIS_BRANCH =~ ^release\/\d*.\d*.\d*$
+
+stages:
+  - install
+  - test
+  - name: deploy-docs
+    if: branch =~ ^staging|master$
+  - name: release-staging
+    if: branch = staging
+  - name: release-production
+    if: branch = master
+
+jobs:
+  include:
+    - stage: install
+      script: npm i -g npm@latest && npm ci
+    - stage: test
+      script: npm run test-ci:prod && npm run report-coverage
+      script: npm run lint-ts
+      script: npm run lint-less
+    - stage: deploy-docs
+      script: npm run storybook-publish
+      script: npm run typedoc-publish
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GH_TOKEN
+        local_dir: gh-site
+        target_branch: gh-pages
+    - stage: release-staging
+      script: npx semantic-release -b staging
+    - stage: release-production
+      script: npx semantic-release
+      deploy:
+        provider: script
+        script: npm dist-tag add sb-components
