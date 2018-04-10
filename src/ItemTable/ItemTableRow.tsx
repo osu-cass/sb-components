@@ -96,7 +96,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
       content = (
         <ToolTip
           helpText={<p>{col.helpText(cellData)}</p>}
-          position="top"
+          position="bottom"
           displayIcon={false}
         >
           {displayText}

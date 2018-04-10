@@ -82,7 +82,7 @@ exports[`Storyshots Item Bank default 1`] = `
           </div>
           <div
             aria-live="polite"
-            aria-relevant="additions removals"
+            aria-relevant="additions"
             className="section item-map-iframe"
           >
             <div

@@ -47,7 +47,6 @@ a.collapsible-label:visited {
 }
 
 a,
-button,
 p,
 .card,
 input,
@@ -56,6 +55,13 @@ label,
 li {
   &:focus:not(:hover) {
     background-color: #e5f3f7;
+    outline: 2px dotted #008ab1;
+    outline-offset: 3px;
+  }
+}
+
+button {
+  &:focus:not(:hover) {
     outline: 2px dotted #008ab1;
     outline-offset: 3px;
   }
@@ -74,4 +80,8 @@ li {
 
 .display-none {
   display: none;
+}
+
+select:hover {
+  cursor: pointer;
 }

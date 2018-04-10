@@ -8,7 +8,6 @@ import {
   ItemViewerFrame,
   ToolTip,
   AccResourceGroupModel,
-  Accordion,
   AdvancedAboutItem,
   AboutItemRevisionModel,
   Resource,
@@ -70,7 +69,6 @@ export class ItemBankContainer extends React.Component<
     super(props);
     const items = props.items || [{}];
     const currentItem = validItemRevisionModel(items[0]) ? items[0] : undefined;
-
     this.state = {
       currentItem,
       items,
@@ -114,13 +112,13 @@ export class ItemBankContainer extends React.Component<
   }
 
   async fetchAccResourceGroups(item: AboutItemRevisionModel) {
-    const props: AccessibilityRevisionModel = {
-      interactionType: "",
-      subject: "",
-      gradeLevel: GradeLevels.All
+    const params: AccessibilityRevisionModel = {
+      interactionType: item.AboutItemMetadata.interactionType,
+      subject: item.AboutItemMetadata.subject,
+      gradeLevel: item.AboutItemMetadata.intendedGrade
     };
 
-    const prom = this.props.accessibilityClient(props);
+    const prom = this.props.accessibilityClient(params);
     const promiseWrapper = this.subscription.add("accessibilityClient", prom);
     const accessibilityResources = await promiseWrapper.promise;
     this.onFetchAccResourceSuccess(accessibilityResources);
@@ -169,7 +167,7 @@ export class ItemBankContainer extends React.Component<
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
-    if (validItemRevisionModel(lastItem)) {
+    if (validItemRevisionModel(lastItem) || items.length === 0) {
       items.push({});
     }
     this.setState({ items, currentItem }, () => {
@@ -278,7 +276,7 @@ export class ItemBankContainer extends React.Component<
     });
   }
 
-  onItemSelect = (direction: "next" | "previous") => {
+  onDirectionSelect = (direction: "next" | "previous") => {
     switch (direction) {
       case "next":
         this.handleNextItem();
@@ -291,12 +289,35 @@ export class ItemBankContainer extends React.Component<
     }
   };
 
-  onRevisionSelect = (revision: string) => {
-    const { currentItem } = this.state;
-    if (currentItem) {
-      currentItem.revision = revision;
+  onItemSelect = (item: string) => {
+    const { revisions, items } = this.state;
+    let { currentItem } = this.state;
+    let revisionContent = getResourceContent(revisions);
+    if (currentItem && revisionContent) {
+      currentItem = items.find(i => i.itemKey === Number(item));
+      revisionContent = revisionContent.map(r => {
+        return { ...r };
+      });
     }
-    this.setState({ currentItem }, this.handleChangeViewItem);
+    this.setState(
+      { currentItem, revisions: { kind: "success", content: revisionContent } },
+      this.handleChangeViewItem
+    );
+  };
+
+  onRevisionSelect = (revision: string) => {
+    const { currentItem, revisions } = this.state;
+    let revisionContent = getResourceContent(revisions);
+    if (currentItem && revisionContent) {
+      currentItem.revision = revision;
+      revisionContent = revisionContent.map(r => {
+        return { ...r, selected: r.commitHash === revision };
+      });
+    }
+    this.setState(
+      { currentItem, revisions: { kind: "success", content: revisionContent } },
+      this.handleChangeViewItem
+    );
   };
 
   renderItemBankEntry() {
@@ -324,7 +345,8 @@ export class ItemBankContainer extends React.Component<
       revisions,
       currentItem,
       previousItem,
-      nextItem
+      nextItem,
+      items
     } = this.state;
     let content: JSX.Element | undefined;
 
@@ -336,14 +358,17 @@ export class ItemBankContainer extends React.Component<
       <ItemBankViewer
         onAccessibilityUpdate={this.onAccessibilityUpdate}
         onAccessibilityReset={this.onAccessibilityReset}
-        onItemSelect={this.onItemSelect}
+        onDirectionSelect={this.onDirectionSelect}
         onRevisionSelect={this.onRevisionSelect}
+        onItemSelect={this.onItemSelect}
         itemUrl={this.props.itemViewUrl}
         aboutItemRevisionModel={aboutItemContent}
         accResourceGroups={accResourceGroupsContent}
         revisions={revisionsContent}
         nextItem={nextItem}
         prevItem={previousItem}
+        currentItem={currentItem}
+        items={items}
       />
     );
 

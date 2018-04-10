@@ -85,7 +85,6 @@ module.exports = env => {
       },
       plugins: [
         // Plugins that apply for all builds
-        // new webpack.IgnorePlugin(/^*\.[js,d\.ts]$/, "lib"),
         new CopyWebpackPlugin([
           {
             from: path.join(srcDir, "Assets"),

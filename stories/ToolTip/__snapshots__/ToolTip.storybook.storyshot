@@ -29,7 +29,7 @@ exports[`Storyshots ToolTip display above text 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message top"
+        className="tool-tip-message top undefined"
       >
         <p>
           test
@@ -69,7 +69,7 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message top"
+        className="tool-tip-message top undefined"
       >
         <span
           className="tool-tip-header"
@@ -119,7 +119,7 @@ exports[`Storyshots ToolTip display below text 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message bottom"
+        className="tool-tip-message bottom undefined"
       >
         <p>
           test
@@ -159,7 +159,7 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message bottom"
+        className="tool-tip-message bottom undefined"
       >
         <span
           className="tool-tip-header"
@@ -215,7 +215,7 @@ exports[`Storyshots ToolTip info for button 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message undefined"
+        className="tool-tip-message undefined undefined"
       >
         <p>
           test
@@ -255,7 +255,7 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message top"
+        className="tool-tip-message top undefined"
       >
         <span
           className="tool-tip-header"
@@ -308,7 +308,7 @@ exports[`Storyshots ToolTip with icon 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message undefined"
+        className="tool-tip-message undefined undefined"
       >
         <p>
           test
@@ -348,7 +348,7 @@ exports[`Storyshots ToolTip with just long text 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message undefined"
+        className="tool-tip-message undefined undefined"
       >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -389,7 +389,7 @@ exports[`Storyshots ToolTip with just text 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message undefined"
+        className="tool-tip-message undefined undefined"
       >
         <p>
           test
@@ -429,7 +429,7 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
       className="tool-tip-details"
     >
       <div
-        className="tool-tip-message undefined"
+        className="tool-tip-message undefined undefined"
       >
         <span
           className="tool-tip-header"
