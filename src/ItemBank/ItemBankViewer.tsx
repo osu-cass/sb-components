@@ -204,7 +204,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         <div
           className="section item-map-iframe"
           aria-live="polite"
-          aria-relevant="additions removals"
+          aria-relevant="additions"
         >
           {this.renderNavBar()}
           <ItemViewerFrame url={itemUrl} title={"item viewer"} />
