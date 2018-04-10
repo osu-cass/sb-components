@@ -167,6 +167,12 @@ export class ItemBankContainer extends React.Component<
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
+    items.forEach(item => {
+      console.log(item);
+      if (!validItemRevisionModel(item) && item != lastItem) {
+        item.valid = false;
+      }
+    });
     if (validItemRevisionModel(lastItem) || items.length === 0) {
       items.push({});
     }
@@ -321,7 +327,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { sections, items } = this.state;
+    const { sections, items, hasError } = this.state;
     let content: JSX.Element | undefined;
 
     const sectionsContent = getResourceContent(sections);
