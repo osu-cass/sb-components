@@ -12,12 +12,12 @@ install: true
 stages:
   - install
   - test
-  - name: deploy-docs
-    # if: branch =~ ^staging|master$
-  - name: release-staging
+  - name: deploy docs
+    if: branch =~ ^staging|master$
+  - name: release staging
     if: branch = staging
-  - name: release-production
-    # if: branch = master
+  - name: release production
+    if: branch = master
 
 jobs:
   include:
@@ -25,9 +25,9 @@ jobs:
       script: npm i -g npm@latest && npm ci
     - stage: test
       script: npm run test-ci:prod && npm run report-coverage
-    # - script: npm run lint-ts
-    # - script: npm run lint-less
-    - stage: deploy-docs
+    - script: npm run lint-ts
+    - script: npm run lint-less
+    - stage: deploy docs
       script: npm run storybook-publish
     - script: npm run typedoc-publish
       deploy:
@@ -36,10 +36,12 @@ jobs:
         github_token: $GH_TOKEN
         local_dir: gh-site
         target_branch: gh-pages
-    - stage: release-staging
+    - stage: release staging
       script: npx semantic-release -b staging
-    - stage: release-production
-      script: npx semantic-release -b $TRAVIS_BRANCH -d
+    - stage: release production
+      script: npx semantic-release
       deploy:
-        provider: script
-        script: npm dist-tag ls
+        provider: npm
+        skip_cleanup: true
+        email: $NPM_EMAIL
+        api_key: $NPM_TOKEN
