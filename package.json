@@ -180,5 +180,9 @@
       "^@mocks/(.*)": "<rootDir>/mocks/$1",
       "^@stories/(.*)": "<rootDir>/stories/$1"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta"
   }
 }
