@@ -183,14 +183,16 @@ exports[`ItemBankContainer default wrapper 1`] = `
                         "value": "N/A",
                       },
                       Object {
-                        "label": "187",
+                        "key": "3000-187",
+                        "label": "3000-187",
                         "selected": false,
-                        "value": "187",
+                        "value": "3000-187",
                       },
                       Object {
-                        "label": "187",
+                        "key": "2332-187",
+                        "label": "2332-187",
                         "selected": false,
-                        "value": "187",
+                        "value": "2332-187",
                       },
                     ]
                   }
@@ -229,31 +231,31 @@ exports[`ItemBankContainer default wrapper 1`] = `
                         </option>
                       </Component>
                       <Component
-                        key="187"
-                        label="187"
+                        key="3000-187"
+                        label="3000-187"
                         selected={false}
-                        value="187"
+                        value="3000-187"
                       >
                         <option
                           aria-selected={false}
-                          label="187"
-                          value="187"
+                          label="3000-187"
+                          value="3000-187"
                         >
-                          187
+                          3000-187
                         </option>
                       </Component>
                       <Component
-                        key="187"
-                        label="187"
+                        key="2332-187"
+                        label="2332-187"
                         selected={false}
-                        value="187"
+                        value="2332-187"
                       >
                         <option
                           aria-selected={false}
-                          label="187"
-                          value="187"
+                          label="2332-187"
+                          value="2332-187"
                         >
-                          187
+                          2332-187
                         </option>
                       </Component>
                     </select>
@@ -434,14 +436,16 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                   "value": "N/A",
                 },
                 Object {
-                  "label": "187",
+                  "key": "3000-187",
+                  "label": "3000-187",
                   "selected": false,
-                  "value": "187",
+                  "value": "3000-187",
                 },
                 Object {
-                  "label": "187",
+                  "key": "2332-187",
+                  "label": "2332-187",
                   "selected": false,
-                  "value": "187",
+                  "value": "2332-187",
                 },
               ]
             }
@@ -480,31 +484,31 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                   </option>
                 </Component>
                 <Component
-                  key="187"
-                  label="187"
+                  key="3000-187"
+                  label="3000-187"
                   selected={false}
-                  value="187"
+                  value="3000-187"
                 >
                   <option
                     aria-selected={false}
-                    label="187"
-                    value="187"
+                    label="3000-187"
+                    value="3000-187"
                   >
-                    187
+                    3000-187
                   </option>
                 </Component>
                 <Component
-                  key="187"
-                  label="187"
+                  key="2332-187"
+                  label="2332-187"
                   selected={false}
-                  value="187"
+                  value="2332-187"
                 >
                   <option
                     aria-selected={false}
-                    label="187"
-                    value="187"
+                    label="2332-187"
+                    value="2332-187"
                   >
-                    187
+                    2332-187
                   </option>
                 </Component>
               </select>

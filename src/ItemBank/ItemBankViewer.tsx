@@ -109,9 +109,11 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         : "N/A";
     if (this.props.items) {
       options = this.props.items.map(op => {
+        const itemKey = op.bankKey ? `${op.bankKey}-${op.itemKey}` : "";
         return {
-          label: op.itemKey ? op.itemKey.toString() : "",
-          value: op.itemKey ? op.itemKey.toString() : "",
+          key: itemKey,
+          label: itemKey,
+          value: itemKey,
           selected: false
         };
       });
