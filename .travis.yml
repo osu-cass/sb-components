@@ -23,24 +23,24 @@ jobs:
       script: npm i -g npm@latest && npm ci
     - stage: test
       script: npm run test-ci:prod && npm run report-coverage
-      # env:
-      #   - NAME=jest
+      env:
+        - NAME=jest
     - stage: test
       script: npm run lint-ts
-      # env:
-      #   - NAME=tslint
+      env:
+        - NAME=tslint
     - stage: test
       script: npm run lint-less
-      # env:
-      #   - NAME=stylelint
+      env:
+        - NAME=stylelint
     - stage: build docs
       script: npm run storybook-publish
-      # env:
-      #   - NAME=storybook
+      env:
+        - NAME=storybook
     - stage: build docs
       script: npm run typedoc-publish
-      # env:
-      #   - NAME=typedoc
+      env:
+        - NAME=typedoc
       deploy:
         provider: pages
         skip_cleanup: true
