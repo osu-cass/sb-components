@@ -44,9 +44,9 @@ jobs:
         github_token: $GH_TOKEN
         local_dir: gh-site
         target_branch: gh-pages
-        on:
-          all_branches: true
-          if: $TRAVIS_BRANCH =~ ^staging|master$
+        # on:
+        #   all_branches: true
+        #   if: $TRAVIS_BRANCH =~ ^staging|master$
     - stage: release staging
       script: npx semantic-release -b staging
     - stage: release production
