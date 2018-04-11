@@ -72,7 +72,7 @@ exports[`ItemCard renders correctly 1`] = `
       <span
         className="card-text-value"
       >
-        Short Name
+        dfas
       </span>
     </p>
     <p

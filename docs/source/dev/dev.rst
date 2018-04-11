@@ -14,3 +14,4 @@ Developers Guide
    NpmLink
    Publish
    SiteStyles
+   GitCommit

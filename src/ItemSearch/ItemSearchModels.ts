@@ -43,6 +43,8 @@ export interface ClaimModel extends SearchBaseModel {
 export interface TargetModel {
   name: string;
   nameHash: number;
+  idLabel: string;
+  id: string;
 }
 
 export interface SearchAPIParamsModel {
