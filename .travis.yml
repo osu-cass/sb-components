@@ -25,20 +25,17 @@ jobs:
       script: npm run test-ci:prod && npm run report-coverage
       env:
         - NAME=jest
-    - stage: test
-      script: npm run lint-ts
+    - script: npm run lint-ts
       env:
         - NAME=tslint
-    - stage: test
-      script: npm run lint-less
+    - script: npm run lint-less
       env:
         - NAME=stylelint
     - stage: build docs
       script: npm run storybook-publish
       env:
         - NAME=storybook
-    - stage: build docs
-      script: npm run typedoc-publish
+    - script: npm run typedoc-publish
       env:
         - NAME=typedoc
       deploy:
