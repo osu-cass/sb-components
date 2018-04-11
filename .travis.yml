@@ -13,6 +13,8 @@ stages:
   - install
   - test
   - build docs
+  - name: deploy docs
+    if: branch =~ ^staging|master$
   - name: release staging
     if: branch = staging
   - name: release production
@@ -46,6 +48,9 @@ jobs:
       env:
         - NAME=typedoc
       script: npm run typedoc-publish
+
+    - stage: deploy docs
+      script: npm run storybook-publish && npm run typedoc-publish
       deploy:
         provider: pages
         skip_cleanup: true
