@@ -180,8 +180,8 @@ export class BasicFilterContainer extends React.Component<
 
     return (
       <div id={id} className={className}>
-        <div className="basic-filter">{this.renderFilters()}</div>
         {advancedFilterButton}
+        <div className="basic-filter">{this.renderFilters()}</div>
       </div>
     );
   }
