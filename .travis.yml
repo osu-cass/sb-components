@@ -12,7 +12,8 @@ install: true
 stages:
   - install
   - test
-  - build docs
+  - name: deploy docs
+    if: branch =~ ^staging|master$
   - name: release staging
     if: branch = staging
   - name: release production
@@ -31,7 +32,7 @@ jobs:
     - script: npm run lint-less
       env:
         - NAME=stylelint
-    - stage: build docs
+    - stage: deploy docs
       script: npm run storybook-publish
       env:
         - NAME=storybook
@@ -44,9 +45,6 @@ jobs:
         github_token: $GH_TOKEN
         local_dir: gh-site
         target_branch: gh-pages
-        on:
-          all_branches: true
-          if: $TRAVIS_BRANCH =~ ^staging|master$
     - stage: release staging
       script: npx semantic-release -b staging
     - stage: release production
