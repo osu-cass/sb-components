@@ -10,7 +10,7 @@ cache:
 # install: true
 
 stages:
-  - install
+  # - install
   - test
   - build docs
   - name: deploy docs
@@ -22,10 +22,10 @@ stages:
 
 jobs:
   include:
-    - stage: install
-      env:
-        - NAME=install
-      script: npm i -g npm@latest && npm i
+    # - stage: install
+    #   env:
+    #     - NAME=install
+    #   script: npm i -g npm@latest && npm i
 
     - stage: test
       env:
@@ -35,10 +35,10 @@ jobs:
       env:
         - NAME=tslint
       script: npm run lint-ts
-    - stage: test
-      env:
-        - NAME=stylelint
-      script: npm run lint-less
+    # - stage: test
+    #   env:
+    #     - NAME=stylelint
+    #   script: npm run lint-less
 
     - stage: build docs
       env:
