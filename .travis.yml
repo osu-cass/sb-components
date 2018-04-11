@@ -12,8 +12,7 @@ install: true
 stages:
   - install
   - test
-  - name: build docs
-    if: branch =~ ^staging|master$
+  - build docs
   - name: release staging
     if: branch = staging
   - name: release production
@@ -36,6 +35,9 @@ jobs:
         github_token: $GH_TOKEN
         local_dir: gh-site
         target_branch: gh-pages
+        on:
+          all-branches: true
+          conditon: $TRAVIS_BRANCH =~ ^staging|master$
     - stage: release staging
       script: npx semantic-release -b staging
     - stage: release production
