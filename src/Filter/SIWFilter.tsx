@@ -27,9 +27,17 @@ export interface SIWFilterProps {
   ) => void;
 }
 
-export class SIWFilter extends React.Component<SIWFilterProps, {}> {
+export interface SIWFilterState {
+  expanded: boolean;
+}
+
+export class SIWFilter extends React.Component<SIWFilterProps, SIWFilterState> {
   constructor(props: SIWFilterProps) {
     super(props);
+
+    this.state = {
+      expanded: false
+    };
   }
 
   onBasicFilterUpdated = (
@@ -64,8 +72,41 @@ export class SIWFilter extends React.Component<SIWFilterProps, {}> {
     );
   };
 
+  toggleExpanded = () => this.setState({ expanded: !this.state.expanded });
+
+  onAdvancedFilterUpdated = (
+    advancedFilter?: AdvancedFilterCategoryModel[],
+    changed?: FilterType
+  ) => {
+    const updated = CombinedFilterHelpers.advancedFilterUpdated(
+      this.props.basicFilter,
+      this.props.searchAPI,
+      advancedFilter,
+      this.props.searchModel,
+      changed
+    );
+    if (updated.advancedFilter) {
+      this.props.onFilterUpdated(
+        updated.searchAPI,
+        updated.basicFilter,
+        updated.advancedFilter
+      );
+    }
+  };
+
   render() {
     const id = this.props.filterId || "";
+
+    let advancedFilter: JSX.Element | undefined;
+    if (this.state.expanded) {
+      advancedFilter = (
+        <AdvancedFilterContainer
+          isNested={true}
+          filterCategories={this.props.advancedFilter}
+          onUpdateFilter={this.onAdvancedFilterUpdated}
+        />
+      );
+    }
 
     return (
       <div className="filter-component-wrapper">
@@ -73,12 +114,11 @@ export class SIWFilter extends React.Component<SIWFilterProps, {}> {
           filterId={id}
           filterCategories={this.props.basicFilter}
           onUpdateFilter={this.onBasicFilterUpdated}
-          containsAdvancedFilter={false}
-          handleAdvancedFilterExpand={() => {
-            return;
-          }}
+          containsAdvancedFilter={true}
+          handleAdvancedFilterExpand={this.toggleExpanded}
           resetHandler={this.onResetFilters}
         />
+        {advancedFilter}
       </div>
     );
   }

@@ -6,6 +6,7 @@ import {
 } from "./FilterModels";
 import { SelectOptionProps } from "../Select/SelectOption";
 import { Select } from "../Select/Select";
+import { ToolTip } from "../ToolTip/ToolTip";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
@@ -31,18 +32,37 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       key: searchText,
       isSelected: true
     };
+
+    console.log(searchText);
+
     this.props.selectedHandler(newOption);
   };
 
   renderSearch(): JSX.Element {
-    const { selectedHandler, optionType, label } = this.props;
+    const {
+      selectedHandler,
+      optionType,
+      label,
+      helpText,
+      placeholderText
+    } = this.props;
+    const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
 
     return (
-      <div className="searchBox">
+      <div className="input-box">
         <label>
-          <input type="text" onChange={t => this.searchHandler} />
-          {label}
+          <ToolTip helpText={helpTextElement} displayIcon={true}>
+            <span className="tooltip-label" info-label="true">
+              {label}
+            </span>
+          </ToolTip>
         </label>
+        <input
+          className="form-control"
+          type="text"
+          onChange={t => this.searchHandler(t.currentTarget.value)}
+          placeholder={placeholderText}
+        />
       </div>
     );
   }
@@ -144,6 +164,9 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         break;
       case OptionTypeModel.radioBtn:
         content = this.renderRadio();
+        break;
+      case OptionTypeModel.inputBox:
+        content = this.renderSearch();
         break;
       default:
         console.error("Invalid option", optionType);

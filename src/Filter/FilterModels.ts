@@ -54,7 +54,8 @@ export enum FilterType {
   CAT = "CAT",
   InteractionType = "InteractionType",
   Calculator = "Calculator",
-  TechnologyType = "TechnologyType" // Contains Performance and CAT
+  TechnologyType = "TechnologyType", // Contains Performance and CAT
+  SearchItemId = "SearchItemId"
 }
 
 export interface FilterOptionModel {
@@ -66,6 +67,7 @@ export interface FilterOptionModel {
 
 export interface BasicFilterCategoryModel extends FilterCategoryModel {
   optionType: OptionTypeModel;
+  placeholderText?: string;
 }
 
 export interface FilterCategoryModel {
@@ -73,6 +75,7 @@ export interface FilterCategoryModel {
   label: string;
   filterOptions: FilterOptionModel[];
   helpText?: string;
+  emptyOptionsText?: string;
   code: FilterType;
 }
 
