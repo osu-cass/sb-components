@@ -61,8 +61,9 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
 
     return tags;
   }
+
   render() {
-    let text = undefined;
+    let text: JSX.Element | undefined;
     const { disabled, label, helpText } = this.props;
     if (helpText) {
       text = <p>{helpText}</p>;
@@ -81,10 +82,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       >
         <div className="filter-container-header">
           <label>
-            <ToolTip
-              helpText={text != undefined ? text : undefined}
-              displayIcon={text != undefined ? true : false}
-            >
+            <ToolTip helpText={text} displayIcon={text !== undefined}>
               <span className="tooltip-label" info-label="true">
                 {label}
               </span>

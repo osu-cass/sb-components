@@ -50,12 +50,13 @@ export class GradeLevel {
         return "Middle";
       case GradeLevels.High:
         return "High";
+      default:
+        return "";
     }
   }
 
   public static gradeLevelToString(grades: GradeLevels): string | undefined {
-    const caseString = this.gradeCaseToString(grades);
-    return caseString;
+    return this.gradeCaseToString(grades);
   }
 
   public static gradeLevelContains(

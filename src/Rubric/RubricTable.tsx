@@ -30,6 +30,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
       textAlign: "left"
     };
 
+    // tslint:disable:react-no-dangerous-html
     const rowsJsx = rows.map(row => (
       <tr key={row.score}>
         <td>{row.score}</td>
@@ -47,6 +48,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
         )}
       </tr>
     ));
+    // tslint:enable:react-no-dangerous-html
 
     return (
       <table className="item-data-table" key={index}>
