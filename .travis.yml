@@ -12,7 +12,7 @@ install: true
 stages:
   - install
   - test
-  - name: deploy docs
+  - name: build docs
     if: branch =~ ^staging|master$
   - name: release staging
     if: branch = staging
@@ -27,7 +27,7 @@ jobs:
       script: npm run test-ci:prod && npm run report-coverage
     - script: npm run lint-ts
     - script: npm run lint-less
-    - stage: deploy docs
+    - stage: build docs
       script: npm run storybook-publish
     - script: npm run typedoc-publish
       deploy:
