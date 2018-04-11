@@ -21,24 +21,15 @@ stages:
 
 jobs:
   include:
+    - stage: install
       script: npm i -g npm@latest && npm ci
     - stage: test
       script: npm run test-ci:prod && npm run report-coverage
-      env:
-        - NAME=jest
     - script: npm run lint-ts
-      env:
-        - NAME=tslint
     - script: npm run lint-less
-      env:
-        - NAME=stylelint
     - stage: deploy docs
       script: npm run storybook-publish
-      env:
-        - NAME=storybook
     - script: npm run typedoc-publish
-      env:
-        - NAME=typedoc
       deploy:
         provider: pages
         skip_cleanup: true
