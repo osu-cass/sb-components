@@ -108,6 +108,14 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
           {displayText}
         </a>
       );
+    } else if (col.className === "subject") {
+      content = (
+        <span
+          className={`table-subject-highlight ${cellData.subjectCode.toLowerCase()}`}
+        >
+          {displayText}
+        </span>
+      );
     } else {
       content = <span>{displayText}</span>;
     }
