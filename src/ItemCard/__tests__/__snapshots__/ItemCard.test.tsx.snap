@@ -11,26 +11,30 @@ exports[`ItemCard renders correctly 1`] = `
   <div
     className="card-contents"
   >
-    <h4
-      className="card-title"
+    <div
+      className="card-header"
     >
-      ELA Grade 4
-    </h4>
-    <p
-      className="card-text subject"
-    >
-      <span
-        className="card-text-label"
+      <h4
+        className="card-title"
       >
-        Subject:
-      </span>
-      <span
-        className="card-text-value"
-      >
-         
         ELA
-      </span>
-    </p>
+      </h4>
+      <div
+        className="card-icon-container"
+      >
+        <span
+          className="card-grade-tag card-icon"
+        >
+          G5
+        </span>
+        <img
+          alt="Claim"
+          className="card-icon"
+          src="test-file-stub"
+          width="32px"
+        />
+      </div>
+    </div>
     <p
       className="card-text grade"
     >
@@ -72,7 +76,16 @@ exports[`ItemCard renders correctly 1`] = `
       <span
         className="card-text-value"
       >
-        Short Name
+        <ToolTip
+          displayIcon={true}
+          helpText={
+            <span>
+              target description right hereeeee
+            </span>
+          }
+        >
+          Short Name
+        </ToolTip>
       </span>
     </p>
     <p

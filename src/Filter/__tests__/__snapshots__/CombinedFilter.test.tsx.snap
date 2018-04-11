@@ -1781,7 +1781,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                         </p>
                       }
                     >
-                      <div
+                      <span
                         className="tool-tip-links"
                         tabIndex={0}
                       >
@@ -1800,18 +1800,18 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                        <div
+                        <span
                           className="tool-tip-details"
                         >
-                          <div
+                          <span
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
                               Grade Help
                             </p>
-                          </div>
-                        </div>
-                      </div>
+                          </span>
+                        </span>
+                      </span>
                     </ToolTip>
                   </label>
                 </div>
@@ -1931,7 +1931,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                         </p>
                       }
                     >
-                      <div
+                      <span
                         className="tool-tip-links"
                         tabIndex={0}
                       >
@@ -1950,18 +1950,18 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                        <div
+                        <span
                           className="tool-tip-details"
                         >
-                          <div
+                          <span
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
                               Subject Help
                             </p>
-                          </div>
-                        </div>
-                      </div>
+                          </span>
+                        </span>
+                      </span>
                     </ToolTip>
                   </label>
                 </div>
@@ -2102,7 +2102,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                         </p>
                       }
                     >
-                      <div
+                      <span
                         className="tool-tip-links"
                         tabIndex={0}
                       >
@@ -2121,18 +2121,18 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                        <div
+                        <span
                           className="tool-tip-details"
                         >
-                          <div
+                          <span
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
                               Subject Help
                             </p>
-                          </div>
-                        </div>
-                      </div>
+                          </span>
+                        </span>
+                      </span>
                     </ToolTip>
                   </label>
                 </div>
@@ -2236,7 +2236,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                         </p>
                       }
                     >
-                      <div
+                      <span
                         className="tool-tip-links"
                         tabIndex={0}
                       >
@@ -2255,18 +2255,18 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                             className="fa fa-info-circle fa-sm"
                           />
                         </span>
-                        <div
+                        <span
                           className="tool-tip-details"
                         >
-                          <div
+                          <span
                             className="tool-tip-message undefined undefined"
                           >
                             <p>
                               Subject Help
                             </p>
-                          </div>
-                        </div>
-                      </div>
+                          </span>
+                        </span>
+                      </span>
                     </ToolTip>
                   </label>
                 </div>
