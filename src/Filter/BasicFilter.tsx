@@ -25,6 +25,28 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     return this.props.filterOptions.find(fil => fil.key === key);
   }
 
+  searchHandler = (searchText: string) => {
+    const newOption: FilterOptionModel = {
+      label: this.props.label,
+      key: searchText,
+      isSelected: true
+    };
+    this.props.selectedHandler(newOption);
+  };
+
+  renderSearch(): JSX.Element {
+    const { selectedHandler, optionType, label } = this.props;
+
+    return (
+      <div className="searchBox">
+        <label>
+          <input type="text" onChange={t => this.searchHandler} />
+          {label}
+        </label>
+      </div>
+    );
+  }
+
   /**
    * Renders JSX element of radio input category
    * @returns {JSX.Element} radio input category with selections
@@ -106,10 +128,6 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         className={"input-sm med-text"}
       />
     );
-  }
-
-  renderInputBox() {
-    let content: JSX.Element | undefined;
   }
 
   /**
