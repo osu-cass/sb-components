@@ -25,7 +25,7 @@ jobs:
     - stage: install
       env:
         - NAME=install
-      script: npm i -g npm@latest && npm ci
+      script: npm i -g npm@latest && npm i
 
     - stage: test
       env:
