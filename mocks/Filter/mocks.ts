@@ -323,11 +323,16 @@ export const mockClaimModel: ClaimModel[] = [
 ];
 
 export const mockTargetModel: TargetModel[] = [
-  { name: "Word Meanings", nameHash: 1262 },
-  { name: "Reasoning & Evidence", nameHash: 1839 },
-  { name: "Reasoning & Evaluation", nameHash: 2084 },
-  { name: "Analysis Within Or Across Texts", nameHash: 2939 },
-  { name: "Text Structures & Features", nameHash: 247 }
+  { name: "Word Meanings", nameHash: 1262, idLabel: "a", id: "a-b" },
+  { name: "Reasoning & Evidence", nameHash: 1839, idLabel: "b", id: "b-b" },
+  { name: "Reasoning & Evaluation", nameHash: 2084, idLabel: "c", id: "c-b" },
+  {
+    name: "Analysis Within Or Across Texts",
+    nameHash: 2939,
+    idLabel: "a",
+    id: "a-b"
+  },
+  { name: "Text Structures & Features", nameHash: 247, idLabel: "1", id: "1-2" }
 ];
 
 export const mockItemsSearchModel: ItemsSearchModel = {
