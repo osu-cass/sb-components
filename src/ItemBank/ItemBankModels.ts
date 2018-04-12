@@ -11,6 +11,7 @@ export interface ItemRevisionModel {
   section?: string;
   revision?: string;
   isaap?: string;
+  valid?: boolean;
 }
 
 export function getItemBankName(itemRevisionModel: ItemRevisionModel) {
