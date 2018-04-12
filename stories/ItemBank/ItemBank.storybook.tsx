@@ -14,7 +14,10 @@ import {
   mockBankAccessibilityClient,
   mockBankRevisionsClient,
   mockBankSectionsClient,
-  itemRevisionMocks
+  itemRevisionMocks,
+  mockBankAboutItemClientFail,
+  itemRevisionMocksError,
+  mockBankRevisionsClientFail
 } from "@mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
@@ -29,6 +32,22 @@ storiesOf("Item Bank", module)
           itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
+          getUrl={item => ""}
+        />
+      }
+      siteName="Item Bank"
+    />
+  ))
+  .add("default error client", () => (
+    <Layout
+      children={
+        <ItemBankContainer
+          accessibilityClient={mockBankAccessibilityClient}
+          aboutItemRevisionClient={mockBankAboutItemClientFail}
+          revisionsClient={mockBankRevisionsClientFail}
+          itemViewUrl=""
+          sectionsClient={mockBankSectionsClient}
+          items={itemRevisionMocksError}
           getUrl={item => ""}
         />
       }

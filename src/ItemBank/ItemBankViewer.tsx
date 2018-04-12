@@ -44,23 +44,26 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
       onAccessibilityReset,
       accResourceGroups
     } = this.props;
+    const accessibilityModal = accResourceGroups ? (
+      <ItemAccessibilityModal
+        accResourceGroups={accResourceGroups}
+        onSave={onAccessibilityUpdate}
+        onReset={onAccessibilityReset}
+      />
+    ) : (
+      undefined
+    );
 
     let content: JSX.Element | undefined;
-    if (accResourceGroups) {
-      content = (
-        <div
-          className="item-nav-right-group"
-          role="group"
-          aria-label="Second group"
-        >
-          <ItemAccessibilityModal
-            accResourceGroups={accResourceGroups}
-            onSave={onAccessibilityUpdate}
-            onReset={onAccessibilityReset}
-          />
-        </div>
-      );
-    }
+    content = (
+      <div
+        className="item-nav-right-group"
+        role="group"
+        aria-label="Second group"
+      >
+        {accessibilityModal}
+      </div>
+    );
 
     return content;
   }
@@ -106,9 +109,11 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         : "N/A";
     if (this.props.items) {
       options = this.props.items.map(op => {
+        const itemKey = op.bankKey ? `${op.bankKey}-${op.itemKey}` : "";
         return {
-          label: op.itemKey ? op.itemKey.toString() : "",
-          value: op.itemKey ? op.itemKey.toString() : "",
+          key: itemKey,
+          label: itemKey,
+          value: itemKey,
           selected: false
         };
       });
@@ -165,29 +170,37 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return content;
   }
 
+  renderAdvancedAboutItem(): JSX.Element | undefined {
+    const { aboutItemRevisionModel } = this.props;
+    return aboutItemRevisionModel ? (
+      <AdvancedAboutItem {...aboutItemRevisionModel} />
+    ) : (
+      undefined
+    );
+  }
+
   renderNavBar(): JSX.Element | undefined {
     const { aboutItemRevisionModel, accResourceGroups } = this.props;
+    const aboutItemElement = this.renderAdvancedAboutItem();
     let content: JSX.Element | undefined;
-    if (aboutItemRevisionModel && accResourceGroups) {
-      content = (
+    content = (
+      <div
+        className="item-nav"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
         <div
-          className="item-nav"
-          role="toolbar"
-          aria-label="Toolbar with button groups"
+          className="item-nav-left-group"
+          role="group"
+          aria-label="First group"
         >
-          <div
-            className="item-nav-left-group"
-            role="group"
-            aria-label="First group"
-          >
-            <AdvancedAboutItem {...aboutItemRevisionModel} />
-            {this.renderRubricModal()}
-          </div>
-          {this.renderMidNav()}
-          {this.renderRightNav()}
+          {aboutItemElement}
+          {this.renderRubricModal()}
         </div>
-      );
-    }
+        {this.renderMidNav()}
+        {this.renderRightNav()}
+      </div>
+    );
 
     return content;
   }
