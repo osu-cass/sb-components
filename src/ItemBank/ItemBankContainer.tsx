@@ -156,11 +156,14 @@ export class ItemBankContainer extends React.Component<
     this.setState({ sections: { kind: "success", content: data } });
   }
 
-  onError(err: string) {
+  onError(err: string, cb?: () => void) {
     if (err !== "Canceled") {
-      this.setState({
-        hasError: true
-      });
+      this.setState(
+        {
+          hasError: true
+        },
+        cb
+      );
     }
   }
 
@@ -168,7 +171,7 @@ export class ItemBankContainer extends React.Component<
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
     items.forEach(item => {
-      if (!validItemRevisionModel(item) && item != lastItem) {
+      if (!validItemRevisionModel(item) && item !== lastItem) {
         item.valid = false;
       } else {
         item.valid = true;
@@ -188,7 +191,7 @@ export class ItemBankContainer extends React.Component<
    * @memberof ItemBankContainer
    */
   handleChangeViewItem = () => {
-    let { currentItem, items } = this.state;
+    const { currentItem, items } = this.state;
     let index = 0;
 
     if (currentItem) {
@@ -197,14 +200,21 @@ export class ItemBankContainer extends React.Component<
           this.fetchAccResourceGroups(aboutItem)
             .then(accGroups => this.handleUpdateIsaap(accGroups))
             .catch(e => this.onError(e));
+          this.updateNavigationItems();
         })
         .catch(e => {
-          index = items.findIndex(i => i === currentItem);
-          items[index].valid = false;
-          this.setState({ items });
-          this.onError(e);
+          this.onError(e, () => {
+            index = items.findIndex(i => i === currentItem);
+            items[index].valid = false;
+            this.setState({ items }, this.updateNavigationItems);
+          });
         });
+    }
+  };
 
+  updateNavigationItems = () => {
+    const { currentItem, items } = this.state;
+    if (currentItem) {
       const nextItem = getNextItemBank(currentItem, items);
       const previousItem = getPreviousItemBank(currentItem, items);
 
@@ -305,17 +315,13 @@ export class ItemBankContainer extends React.Component<
   onItemSelect = (item: string) => {
     const { revisions, items } = this.state;
     let { currentItem } = this.state;
-    let revisionContent = getResourceContent(revisions);
-    if (currentItem && revisionContent) {
-      currentItem = items.find(i => i.itemKey === Number(item));
-      revisionContent = revisionContent.map(r => {
-        return { ...r };
-      });
+    if (currentItem) {
+      currentItem = items.find(i => itemRevisionKey(i) === item);
     }
-    this.setState(
-      { currentItem, revisions: { kind: "success", content: revisionContent } },
-      this.handleChangeViewItem
-    );
+    this.setState({ currentItem }, () => {
+      this.handleChangeViewItem();
+      this.handleChangeRevision();
+    });
   };
 
   onRevisionSelect = (revision: string) => {

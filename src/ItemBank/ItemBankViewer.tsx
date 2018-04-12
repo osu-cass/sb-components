@@ -14,7 +14,8 @@ import {
   RevisionModel,
   RubricModal,
   SelectOptionProps,
-  Select
+  Select,
+  validItemRevisionModel
 } from "@src/index";
 
 export interface ItemBankViewerProps {
@@ -70,7 +71,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderNavButton(direction: "next" | "previous") {
     const { onDirectionSelect, nextItem, prevItem } = this.props;
-    let itemName = "";
+    let itemName: string | undefined;
     let item = nextItem;
     if (direction === "previous") {
       itemName = prevItem ? getItemBankName(prevItem) : "Previous";
@@ -102,19 +103,17 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderItemDropDown() {
     let options: SelectOptionProps[] | undefined;
-    const { onItemSelect } = this.props;
-    const selected =
-      this.props.currentItem && this.props.currentItem.itemKey
-        ? this.props.currentItem.itemKey.toString()
-        : "N/A";
+    const { onItemSelect, currentItem } = this.props;
+    const selectedKey = currentItem ? itemRevisionKey(currentItem) : "NA";
     if (this.props.items) {
       options = this.props.items.map(op => {
-        const itemKey = op.bankKey ? `${op.bankKey}-${op.itemKey}` : "";
+        const itemKey = itemRevisionKey(op);
+
         return {
           key: itemKey,
-          label: itemKey,
+          label: getItemBankName(op) || "",
           value: itemKey,
-          selected: false
+          selected: selectedKey === itemKey
         };
       });
     }
@@ -131,7 +130,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         <Select
           label="Items"
           labelClass="display-none"
-          selected={selected}
+          selected={selectedKey}
           options={options}
           onChange={onItemSelect}
           wrapperClass="select-dd"
@@ -172,6 +171,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderAdvancedAboutItem(): JSX.Element | undefined {
     const { aboutItemRevisionModel } = this.props;
+
     return aboutItemRevisionModel ? (
       <AdvancedAboutItem {...aboutItemRevisionModel} />
     ) : (

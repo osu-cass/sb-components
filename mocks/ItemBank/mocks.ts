@@ -18,13 +18,13 @@ export const mockBankAboutItemClient = (item: ItemRevisionModel) =>
   mockPromise<AboutItemRevisionModel>(aboutItemRevisionMockModel);
 
 export const mockBankAboutItemClientFail = (item: ItemRevisionModel) =>
-  mockPromiseReject<AboutItemRevisionModel>("bad item");
+  mockPromiseReject<AboutItemRevisionModel>("bad about item");
 
 export const mockBankRevisionsClient = (item: ItemRevisionModel) =>
   mockPromise<RevisionModel[]>(mockRevisions);
 
 export const mockBankRevisionsClientFail = (item: ItemRevisionModel) =>
-  mockPromiseReject<RevisionModel[]>("bad item");
+  mockPromiseReject<RevisionModel[]>("bad revision item");
 
 export const mockBankSectionsClient = () =>
   mockPromise<SectionModel[]>(sectionMocks);

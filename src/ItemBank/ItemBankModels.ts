@@ -14,8 +14,10 @@ export interface ItemRevisionModel {
   valid?: boolean;
 }
 
-export function getItemBankName(itemRevisionModel: ItemRevisionModel) {
-  let value = "";
+export function getItemBankName(
+  itemRevisionModel: ItemRevisionModel
+): string | undefined {
+  let value: string | undefined;
   if (itemRevisionModel.bankKey && itemRevisionModel.itemKey) {
     value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
   }

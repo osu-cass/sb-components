@@ -99,15 +99,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
             },
           ]
         }
-        nextItem={
-          Object {
-            "bankKey": 2332,
-            "isaap": "",
-            "itemKey": 187,
-            "revision": "asdf",
-            "section": "math",
-          }
-        }
         onAccessibilityReset={[Function]}
         onAccessibilityUpdate={[Function]}
         onDirectionSelect={[Function]}
@@ -183,20 +174,20 @@ exports[`ItemBankContainer default wrapper 1`] = `
                         "value": "N/A",
                       },
                       Object {
-                        "key": "3000-187",
+                        "key": "3000-187-math",
                         "label": "3000-187",
-                        "selected": false,
-                        "value": "3000-187",
+                        "selected": true,
+                        "value": "3000-187-math",
                       },
                       Object {
-                        "key": "2332-187",
+                        "key": "2332-187-math",
                         "label": "2332-187",
                         "selected": false,
-                        "value": "2332-187",
+                        "value": "2332-187-math",
                       },
                     ]
                   }
-                  selected="187"
+                  selected="3000-187-math"
                   wrapperClass="select-dd"
                 >
                   <div
@@ -212,7 +203,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                     <select
                       className="form-control item-dropdown"
                       onChange={[Function]}
-                      value="187"
+                      value="3000-187-math"
                     >
                       <Component
                         disabled={true}
@@ -231,29 +222,29 @@ exports[`ItemBankContainer default wrapper 1`] = `
                         </option>
                       </Component>
                       <Component
-                        key="3000-187"
+                        key="3000-187-math"
                         label="3000-187"
-                        selected={false}
-                        value="3000-187"
+                        selected={true}
+                        value="3000-187-math"
                       >
                         <option
-                          aria-selected={false}
+                          aria-selected={true}
                           label="3000-187"
-                          value="3000-187"
+                          value="3000-187-math"
                         >
                           3000-187
                         </option>
                       </Component>
                       <Component
-                        key="2332-187"
+                        key="2332-187-math"
                         label="2332-187"
                         selected={false}
-                        value="2332-187"
+                        value="2332-187-math"
                       >
                         <option
                           aria-selected={false}
                           label="2332-187"
-                          value="2332-187"
+                          value="2332-187-math"
                         >
                           2332-187
                         </option>
@@ -263,7 +254,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                 </Component>
                 <button
                   className="btn btn-link next"
-                  disabled={false}
+                  disabled={true}
                   onClick={[Function]}
                 >
                   <div
@@ -276,7 +267,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                     <div
                       className="nav-item-name"
                     >
-                      2332-187
+                      Next
                     </div>
                   </div>
                 </button>
@@ -351,15 +342,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
         "section": "math",
       },
     ]
-  }
-  nextItem={
-    Object {
-      "bankKey": 2332,
-      "isaap": "",
-      "itemKey": 187,
-      "revision": "asdf",
-      "section": "math",
-    }
   }
   onAccessibilityReset={[Function]}
   onAccessibilityUpdate={[Function]}
@@ -436,20 +418,20 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                   "value": "N/A",
                 },
                 Object {
-                  "key": "3000-187",
+                  "key": "3000-187-math",
                   "label": "3000-187",
-                  "selected": false,
-                  "value": "3000-187",
+                  "selected": true,
+                  "value": "3000-187-math",
                 },
                 Object {
-                  "key": "2332-187",
+                  "key": "2332-187-math",
                   "label": "2332-187",
                   "selected": false,
-                  "value": "2332-187",
+                  "value": "2332-187-math",
                 },
               ]
             }
-            selected="187"
+            selected="3000-187-math"
             wrapperClass="select-dd"
           >
             <div
@@ -465,7 +447,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
               <select
                 className="form-control item-dropdown"
                 onChange={[Function]}
-                value="187"
+                value="3000-187-math"
               >
                 <Component
                   disabled={true}
@@ -484,29 +466,29 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                   </option>
                 </Component>
                 <Component
-                  key="3000-187"
+                  key="3000-187-math"
                   label="3000-187"
-                  selected={false}
-                  value="3000-187"
+                  selected={true}
+                  value="3000-187-math"
                 >
                   <option
-                    aria-selected={false}
+                    aria-selected={true}
                     label="3000-187"
-                    value="3000-187"
+                    value="3000-187-math"
                   >
                     3000-187
                   </option>
                 </Component>
                 <Component
-                  key="2332-187"
+                  key="2332-187-math"
                   label="2332-187"
                   selected={false}
-                  value="2332-187"
+                  value="2332-187-math"
                 >
                   <option
                     aria-selected={false}
                     label="2332-187"
-                    value="2332-187"
+                    value="2332-187-math"
                   >
                     2332-187
                   </option>
@@ -516,7 +498,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
           </Component>
           <button
             className="btn btn-link next"
-            disabled={false}
+            disabled={true}
             onClick={[Function]}
           >
             <div
@@ -529,7 +511,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
               <div
                 className="nav-item-name"
               >
-                2332-187
+                Next
               </div>
             </div>
           </button>
