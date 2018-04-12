@@ -7,7 +7,7 @@ cache:
   directories:
     - node_modules
 
-install: true
+# install: true
 
 stages:
   # - install
@@ -22,10 +22,10 @@ stages:
 
 jobs:
   include:
-    - stage: install
-      env:
-        - NAME=install
-      script: npm i -g npm@latest && npm ci
+    # - stage: install
+    #   env:
+    #     - NAME=install
+    #   script: npm i -g npm@latest && npm ci
     - stage: test
       env:
         - NAME=jest
