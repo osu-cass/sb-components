@@ -71,19 +71,16 @@ export const headerColumns: ColumnGroup[] = [
         className: "claim"
       },
       {
-        accessor: card => `/${card.targetShortName}`,
+        accessor: card => card.targetId,
         className: "target",
         helpText: card => card.targetDescription
       }
     ],
     compare: (a, b) => {
       let direction;
-      if (a.claimCode < b.claimCode || a.targetShortName < b.targetShortName) {
+      if (a.claimCode < b.claimCode || a.targetId < b.targetId) {
         direction = SortDirection.Ascending;
-      } else if (
-        a.claimCode > b.claimCode ||
-        a.targetShortName > b.targetShortName
-      ) {
+      } else if (a.claimCode > b.claimCode || a.targetId > b.targetId) {
         direction = SortDirection.Descending;
       } else {
         direction = SortDirection.NoSort;

@@ -25,7 +25,7 @@ exports[`ItemCardViewer renders information tab 1`] = `
               "bankKey": 187,
               "brailleOnlyItem": false,
               "ccssDescription": "this is the common core description",
-              "claimCode": "3",
+              "claimCode": "ELA3",
               "claimLabel": "Claim",
               "commonCoreStandardId": "AB-123",
               "depthOfKnowledge": "2",

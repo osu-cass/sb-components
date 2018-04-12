@@ -80,6 +80,14 @@ module.exports = env => {
                 }
               }
             ]
+          },
+          {
+            test: /.svg$/,
+            use: [
+              {
+                loader: "file-loader"
+              }
+            ]
           }
         ]
       },

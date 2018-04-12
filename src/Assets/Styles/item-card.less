@@ -14,6 +14,10 @@
     margin: 26px;
     font-size: @font-size-base;
     box-shadow: @card-shadow;
+
+    .math {
+        border-color: @sb-green;
+    }
 }
 
 .card:focus,
@@ -30,46 +34,76 @@
     margin: @spacing-unit/2;
     width: 215px;
     font-size: 95%; // SB
-}
-    
-.card.condensed h4.card-title {
-    padding: @spacing-unit/2;
-}
-    
-.card.condensed .card-contents p {
-    padding: 0px @spacing-unit/2 0px @spacing-unit/2;
-    margin: 0px 0px 5px 0px;
-}
 
-.card.condensed .card-contents p:first-of-type {
-    padding-top: @spacing-item;
+    h4.card-title {
+        padding: @spacing-unit/2;
+    }
+
+    .card-contents {
+        p {
+            padding: 0px @spacing-unit/2 0px @spacing-unit/2;
+            margin: 0px 0px 5px 0px;
+        }
+        p:first-of-type {
+            padding-top: @spacing-item;
+        }
+    }
 }
 
 .card-static {
     cursor: default;
+
+    &:hover {
+        box-shadow: @card-shadow;
+    }
 }
 
-.card-static:hover {
-    box-shadow: @card-shadow;
+.card-icon {
+    filter: drop-shadow(0 0 2px rgb(43, 43, 43));
+    margin: 0px 7.5px;
 }
 
-.ela h4.card-title {
-    background-color: @sb-blue;
-}
-
-.card.math {
-    border-color: @sb-green;
-}
-
-.math h4.card-title {
-    background-color: @sb-green;
-}
-
-h4.card-title {
+.card-grade-tag {
+    background-color: @sb-white;
+    border-radius: 5px;
+    padding: 0px 7px;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
     font-weight: bold;
-    color: @text-color-light;
+    color: black;
+}
+
+.card-title {
+    font-family: 'PT Sans', sans-serif;
+    color: @sb-white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     padding: 15px;
     margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .math & {
+        background-color: @sb-green;
+    }
+    .ela & {
+        background-color: @sb-blue;
+    }
+}
+
+.card-icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 7.5px;
 }
 
 @media (max-width: 370px) {
@@ -80,10 +114,12 @@ h4.card-title {
 
 .card-text-label {
     text-transform: uppercase;
-    font-size: 70%;
+    font-size: 80%;
     font-weight: bold;
-    color: #727477;
+    color: #6d6d6d;
     padding-right: .25em;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: .04em;
 }
 
 .card-text-value {

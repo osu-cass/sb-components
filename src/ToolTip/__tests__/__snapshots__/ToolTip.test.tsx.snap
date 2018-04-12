@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToolTip displays help when hovered 1`] = `
-<div
+<span
   className="tool-tip-links"
   tabIndex={0}
 >
@@ -15,22 +15,22 @@ exports[`ToolTip displays help when hovered 1`] = `
       className="fa fa-info-circle fa-sm"
     />
   </span>
-  <div
+  <span
     className="tool-tip-details"
   >
-    <div
+    <span
       className="tool-tip-message top undefined"
     >
       <p>
         test
       </p>
-    </div>
-  </div>
-</div>
+    </span>
+  </span>
+</span>
 `;
 
 exports[`ToolTip matches snapshot 1`] = `
-<div
+<span
   className="tool-tip-links"
   tabIndex={0}
 >
@@ -44,16 +44,16 @@ exports[`ToolTip matches snapshot 1`] = `
       className="fa fa-info-circle fa-sm"
     />
   </span>
-  <div
+  <span
     className="tool-tip-details"
   >
-    <div
+    <span
       className="tool-tip-message top undefined"
     >
       <p>
         test
       </p>
-    </div>
-  </div>
-</div>
+    </span>
+  </span>
+</span>
 `;
