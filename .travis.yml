@@ -12,7 +12,6 @@ cache:
 stages:
   # - install
   - test
-  - build docs
   - name: deploy docs
     if: branch = master
   - name: release staging
@@ -41,18 +40,18 @@ jobs:
 
     - stage: test
       env:
-        - NAME=webpack-publish
+        - NAME=webpack
       script: npm run webpack
     - stage: test
       env:
         - NAME=storybook
       script: npm run storybook-publish
-    - stage: build docs
+    - stage: test
       env:
         - NAME=typedoc
       script: npm run typedoc-publish
 
-    - stage: test
+    - stage: deploy-docs
       script: npm run storybook-publish && npm run typedoc-publish
       deploy:
         provider: pages
@@ -62,7 +61,7 @@ jobs:
         target_branch: gh-pages
         on:
           all-branches: true
-          conditon: $TRAVIS_BRANCH =~ ^staging|master$
+          conditon: $TRAVIS_BRANCH =~ ^master$
 
     - stage: release staging
       script: npx semantic-release -b staging
