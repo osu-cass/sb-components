@@ -7,12 +7,11 @@ cache:
   directories:
     - node_modules
 
-install: true
+# install: true
 
 stages:
   # - install
   - test
-  - build docs
   - name: deploy docs
     if: branch = master
   - name: release staging
@@ -22,10 +21,10 @@ stages:
 
 jobs:
   include:
-    - stage: install
-      env:
-        - NAME=install
-      script: npm i -g npm@latest && npm ci
+    # - stage: install
+    #   env:
+    #     - NAME=install
+    #   script: npm i -g npm@latest && npm ci
     - stage: test
       env:
         - NAME=jest
@@ -39,11 +38,15 @@ jobs:
     #     - NAME=stylelint
     #   script: npm run lint-less
 
-    - stage: build docs
+    - stage: test
+      env:
+        - NAME=webpack
+      script: npm run webpack
+    - stage: test
       env:
         - NAME=storybook
       script: npm run storybook-publish
-    - stage: build docs
+    - stage: test
       env:
         - NAME=typedoc
       script: npm run typedoc-publish
@@ -58,7 +61,7 @@ jobs:
         target_branch: gh-pages
         on:
           all-branches: true
-          conditon: $TRAVIS_BRANCH =~ ^staging|master$
+          conditon: $TRAVIS_BRANCH =~ ^master$
 
     - stage: release staging
       script: npx semantic-release -b staging
