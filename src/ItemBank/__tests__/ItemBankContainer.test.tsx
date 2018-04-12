@@ -108,12 +108,11 @@ describe("ItemBankContainer", () => {
   it("item viewer calls item select previous null item", () => {
     const wrapperInstance = wrapper.instance() as ItemBankContainer;
     wrapperInstance.setState({ currentItem: undefined });
-    wrapperInstance.handlePreviousItem();
     const itemBankViewer = wrapper.findWhere(
       node => node.type() === ItemBankViewer
     );
     const itemBankViewerInstance = itemBankViewer.instance() as ItemBankViewer;
-    itemBankViewerInstance.props.onItemSelect("previous");
+    itemBankViewerInstance.props.onDirectionSelect("previous");
     expect(wrapperInstance.state.currentItem).toEqual(item);
   });
 

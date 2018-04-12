@@ -15,7 +15,7 @@ exports[`Storyshots ToolTip display above text 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -25,18 +25,18 @@ exports[`Storyshots ToolTip display above text 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message top undefined"
       >
         <p>
           test
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -55,7 +55,7 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -65,10 +65,10 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message top undefined"
       >
         <span
@@ -84,9 +84,9 @@ exports[`Storyshots ToolTip display above text large box 1`] = `
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
            
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -105,7 +105,7 @@ exports[`Storyshots ToolTip display below text 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -115,18 +115,18 @@ exports[`Storyshots ToolTip display below text 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message bottom undefined"
       >
         <p>
           test
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -145,7 +145,7 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -155,10 +155,10 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message bottom undefined"
       >
         <span
@@ -174,9 +174,9 @@ exports[`Storyshots ToolTip display below text large box 1`] = `
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
            
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -195,7 +195,7 @@ exports[`Storyshots ToolTip info for button 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -211,18 +211,18 @@ exports[`Storyshots ToolTip info for button 1`] = `
         className="fa fa-info-circle fa-sm"
       />
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message undefined undefined"
       >
         <p>
           test
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -241,7 +241,7 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -251,10 +251,10 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message top undefined"
       >
         <span
@@ -269,9 +269,9 @@ exports[`Storyshots ToolTip with custom help text 1`] = `
         <b>
           Commit
         </b>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -290,7 +290,7 @@ exports[`Storyshots ToolTip with icon 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -304,18 +304,18 @@ exports[`Storyshots ToolTip with icon 1`] = `
         className="fa fa-info-circle fa-sm"
       />
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message undefined undefined"
       >
         <p>
           test
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -334,7 +334,7 @@ exports[`Storyshots ToolTip with just long text 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -344,19 +344,19 @@ exports[`Storyshots ToolTip with just long text 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message undefined undefined"
       >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
            
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -375,7 +375,7 @@ exports[`Storyshots ToolTip with just text 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -385,18 +385,18 @@ exports[`Storyshots ToolTip with just text 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message undefined undefined"
       >
         <p>
           test
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -415,7 +415,7 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -425,10 +425,10 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     >
-      <div
+      <span
         className="tool-tip-message undefined undefined"
       >
         <span
@@ -444,9 +444,9 @@ exports[`Storyshots ToolTip with just text and header 1`] = `
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
            
         </p>
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 </div>
 `;
 
@@ -465,7 +465,7 @@ exports[`Storyshots ToolTip with no help text 1`] = `
     }
   }
 >
-  <div
+  <span
     className="tool-tip-links"
     tabIndex={0}
   >
@@ -475,9 +475,9 @@ exports[`Storyshots ToolTip with no help text 1`] = `
       Testing
        
     </span>
-    <div
+    <span
       className="tool-tip-details"
     />
-  </div>
+  </span>
 </div>
 `;

@@ -14,7 +14,8 @@ import {
   RevisionModel,
   RubricModal,
   SelectOptionProps,
-  Select
+  Select,
+  validItemRevisionModel
 } from "@src/index";
 
 export interface ItemBankViewerProps {
@@ -44,30 +45,33 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
       onAccessibilityReset,
       accResourceGroups
     } = this.props;
+    const accessibilityModal = accResourceGroups ? (
+      <ItemAccessibilityModal
+        accResourceGroups={accResourceGroups}
+        onSave={onAccessibilityUpdate}
+        onReset={onAccessibilityReset}
+      />
+    ) : (
+      undefined
+    );
 
     let content: JSX.Element | undefined;
-    if (accResourceGroups) {
-      content = (
-        <div
-          className="item-nav-right-group"
-          role="group"
-          aria-label="Second group"
-        >
-          <ItemAccessibilityModal
-            accResourceGroups={accResourceGroups}
-            onSave={onAccessibilityUpdate}
-            onReset={onAccessibilityReset}
-          />
-        </div>
-      );
-    }
+    content = (
+      <div
+        className="item-nav-right-group"
+        role="group"
+        aria-label="Second group"
+      >
+        {accessibilityModal}
+      </div>
+    );
 
     return content;
   }
 
   renderNavButton(direction: "next" | "previous") {
     const { onDirectionSelect, nextItem, prevItem } = this.props;
-    let itemName = "";
+    let itemName: string | undefined;
     let item = nextItem;
     if (direction === "previous") {
       itemName = prevItem ? getItemBankName(prevItem) : "Previous";
@@ -99,17 +103,17 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
   renderItemDropDown() {
     let options: SelectOptionProps[] | undefined;
-    const { onItemSelect } = this.props;
-    const selected =
-      this.props.currentItem && this.props.currentItem.itemKey
-        ? this.props.currentItem.itemKey.toString()
-        : "N/A";
+    const { onItemSelect, currentItem } = this.props;
+    const selectedKey = currentItem ? itemRevisionKey(currentItem) : "NA";
     if (this.props.items) {
       options = this.props.items.map(op => {
+        const itemKey = itemRevisionKey(op);
+
         return {
-          label: op.itemKey ? op.itemKey.toString() : "",
-          value: op.itemKey ? op.itemKey.toString() : "",
-          selected: false
+          key: itemKey,
+          label: getItemBankName(op) || "",
+          value: itemKey,
+          selected: selectedKey === itemKey
         };
       });
     }
@@ -126,7 +130,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         <Select
           label="Items"
           labelClass="display-none"
-          selected={selected}
+          selected={selectedKey}
           options={options}
           onChange={onItemSelect}
           wrapperClass="select-dd"
@@ -165,29 +169,38 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return content;
   }
 
+  renderAdvancedAboutItem(): JSX.Element | undefined {
+    const { aboutItemRevisionModel } = this.props;
+
+    return aboutItemRevisionModel ? (
+      <AdvancedAboutItem {...aboutItemRevisionModel} />
+    ) : (
+      undefined
+    );
+  }
+
   renderNavBar(): JSX.Element | undefined {
     const { aboutItemRevisionModel, accResourceGroups } = this.props;
+    const aboutItemElement = this.renderAdvancedAboutItem();
     let content: JSX.Element | undefined;
-    if (aboutItemRevisionModel && accResourceGroups) {
-      content = (
+    content = (
+      <div
+        className="item-nav"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
         <div
-          className="item-nav"
-          role="toolbar"
-          aria-label="Toolbar with button groups"
+          className="item-nav-left-group"
+          role="group"
+          aria-label="First group"
         >
-          <div
-            className="item-nav-left-group"
-            role="group"
-            aria-label="First group"
-          >
-            <AdvancedAboutItem {...aboutItemRevisionModel} />
-            {this.renderRubricModal()}
-          </div>
-          {this.renderMidNav()}
-          {this.renderRightNav()}
+          {aboutItemElement}
+          {this.renderRubricModal()}
         </div>
-      );
-    }
+        {this.renderMidNav()}
+        {this.renderRightNav()}
+      </div>
+    );
 
     return content;
   }

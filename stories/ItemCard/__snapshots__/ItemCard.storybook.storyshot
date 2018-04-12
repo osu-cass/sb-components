@@ -25,26 +25,30 @@ exports[`Storyshots Item Card Item Card 1`] = `
     <div
       className="card-contents"
     >
-      <h4
-        className="card-title"
+      <div
+        className="card-header"
       >
-        ELA Grade 4
-      </h4>
-      <p
-        className="card-text subject"
-      >
-        <span
-          className="card-text-label"
+        <h4
+          className="card-title"
         >
-          Subject:
-        </span>
-        <span
-          className="card-text-value"
-        >
-           
           ELA
-        </span>
-      </p>
+        </h4>
+        <div
+          className="card-icon-container"
+        >
+          <span
+            className="card-grade-tag card-icon"
+          >
+            G5
+          </span>
+          <img
+            alt="Claim"
+            className="card-icon"
+            src="test-file-stub"
+            width="32px"
+          />
+        </div>
+      </div>
       <p
         className="card-text grade"
       >
@@ -86,7 +90,32 @@ exports[`Storyshots Item Card Item Card 1`] = `
         <span
           className="card-text-value"
         >
-          dfas
+          <span
+            className="tool-tip-links"
+            tabIndex={0}
+          >
+            <span
+              className="tool-tip-hoverable"
+            >
+              dfas
+               
+              <span
+                aria-hidden="true"
+                className="fa fa-info-circle fa-sm"
+              />
+            </span>
+            <span
+              className="tool-tip-details"
+            >
+              <span
+                className="tool-tip-message undefined undefined"
+              >
+                <span>
+                  target description right hereeeee
+                </span>
+              </span>
+            </span>
+          </span>
         </span>
       </p>
       <p
@@ -148,11 +177,30 @@ exports[`Storyshots Item Card Item Card Condensed 1`] = `
     <div
       className="card-contents"
     >
-      <h4
-        className="card-title"
+      <div
+        className="card-header"
       >
-        ELA
-      </h4>
+        <h4
+          className="card-title"
+        >
+          ELA
+        </h4>
+        <div
+          className="card-icon-container"
+        >
+          <span
+            className="card-grade-tag card-icon"
+          >
+            G5
+          </span>
+          <img
+            alt="Claim"
+            className="card-icon"
+            src="test-file-stub"
+            width="32px"
+          />
+        </div>
+      </div>
       <p
         className="card-text claim"
       >

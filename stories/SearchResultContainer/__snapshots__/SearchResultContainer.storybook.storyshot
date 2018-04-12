@@ -201,7 +201,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="subject"
               >
                 <span>
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -224,28 +226,28 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <div
+                  <span
                     className="tool-tip-links"
                     tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /
+                      A
                        
                     </span>
-                    <div
+                    <span
                       className="tool-tip-details"
                     >
-                      <div
+                      <span
                         className="tool-tip-message bottom undefined"
                       >
                         <p>
                           Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                         </p>
-                      </div>
-                    </div>
-                  </div>
+                      </span>
+                    </span>
+                  </span>
                 </span>
               </td>
               <td
@@ -279,7 +281,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="subject"
               >
                 <span>
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -302,28 +306,28 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <div
+                  <span
                     className="tool-tip-links"
                     tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /Key Details
+                      B
                        
                     </span>
-                    <div
+                    <span
                       className="tool-tip-details"
                     >
-                      <div
+                      <span
                         className="tool-tip-message bottom undefined"
                       >
                         <p>
                           Target B description
                         </p>
-                      </div>
-                    </div>
-                  </div>
+                      </span>
+                    </span>
+                  </span>
                 </span>
               </td>
               <td
@@ -357,7 +361,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="subject"
               >
                 <span>
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -380,28 +386,28 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <div
+                  <span
                     className="tool-tip-links"
                     tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /
+                      C
                        
                     </span>
-                    <div
+                    <span
                       className="tool-tip-details"
                     >
-                      <div
+                      <span
                         className="tool-tip-message bottom undefined"
                       >
                         <p>
                           target C description
                         </p>
-                      </div>
-                    </div>
-                  </div>
+                      </span>
+                    </span>
+                  </span>
                 </span>
               </td>
               <td
@@ -435,7 +441,9 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                 className="subject"
               >
                 <span>
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -458,28 +466,28 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                   </span>
                 </span>
                 <span>
-                  <div
+                  <span
                     className="tool-tip-links"
                     tabIndex={0}
                   >
                     <span
                       className="tool-tip-hoverable"
                     >
-                      /Evaluate Information/ sources
+                      D
                        
                     </span>
-                    <div
+                    <span
                       className="tool-tip-details"
                     >
-                      <div
+                      <span
                         className="tool-tip-message bottom undefined"
                       >
                         <p>
                           target D description
                         </p>
-                      </div>
-                    </div>
-                  </div>
+                      </span>
+                    </span>
+                  </span>
                 </span>
               </td>
               <td

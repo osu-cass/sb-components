@@ -7,6 +7,7 @@ export class SampleResponse extends React.Component<SampleResponseModel, {}> {
     const pointLabel = this.props.scorePoint === "1" ? "point" : "points";
     const label = `${this.props.name} (${this.props.scorePoint} ${pointLabel})`;
 
+    // tslint:disable:react-no-dangerous-html
     return (
       <Collapsible label={label}>
         <div className="sample-response">
@@ -16,5 +17,6 @@ export class SampleResponse extends React.Component<SampleResponseModel, {}> {
         </div>
       </Collapsible>
     );
+    // tslint:enable:react-no-dangerous-html
   }
 }

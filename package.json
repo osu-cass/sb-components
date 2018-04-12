@@ -107,6 +107,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "4.2.2",
     "react-test-renderer": "~16.2.0",
+    "semantic-release": "^15.1.5",
     "source-map-support": "^0.5.4",
     "style-loader": "^0.19.1",
     "stylelint": "^9.2.0",
@@ -179,5 +180,9 @@
       "^@mocks/(.*)": "<rootDir>/mocks/$1",
       "^@stories/(.*)": "<rootDir>/stories/$1"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta"
   }
 }

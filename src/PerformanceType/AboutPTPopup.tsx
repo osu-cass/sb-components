@@ -44,6 +44,7 @@ export class AboutPTPopupModal extends React.Component<
   render() {
     const header = getSubjectHeader(this.props.subject);
 
+    // tslint:disable:react-no-dangerous-html
     return (
       <div>
         <ReactModal
@@ -88,5 +89,6 @@ export class AboutPTPopupModal extends React.Component<
         </ReactModal>
       </div>
     );
+    // tslint:enable:react-no-dangerous-html
   }
 }

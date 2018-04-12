@@ -3,6 +3,13 @@
   display: inline-flex;
   flex-direction: row;
 
+  background-color: #e7e7e7;
+  margin-left: 10px;
+  padding: 0px 8px;
+  border-radius: 6px;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.16);
+
   &:hover,
   &:active,
   &:focus {
@@ -35,6 +42,7 @@
 .tool-tip-message {
   width: max-content;
   max-width: 450px;
+  min-width: 200px;
   display: none;
   position: absolute;
   font-size: 13px;
@@ -49,7 +57,7 @@
   -moz-box-shadow: @box-shadow;
   -webkit-box-shadow: @box-shadow;
   box-shadow: @box-shadow;
-  
+
   p {
     margin: 0;
   }
@@ -58,6 +66,7 @@
 .bottom {
   transform: translateY(25px);
   margin-top: -5px;
+  padding: 0.5em 0.75em;
 }
 
 .top {

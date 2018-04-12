@@ -77,7 +77,7 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
               3434
             </td>
             <td>
-              3
+              ELA3
             </td>
             <td>
               domain
@@ -176,7 +176,7 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
               3434
             </td>
             <td>
-              3
+              ELA3
             </td>
             <td>
               domain
@@ -294,7 +294,7 @@ exports[`Storyshots PDF ItemViewContainer no score info 1`] = `
               3434
             </td>
             <td>
-              3
+              ELA3
             </td>
             <td>
               domain
@@ -422,7 +422,7 @@ exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
               3434
             </td>
             <td>
-              3
+              ELA3
             </td>
             <td>
               domain
@@ -540,7 +540,7 @@ exports[`Storyshots PDF ItemViewContainer question only 1`] = `
               3434
             </td>
             <td>
-              3
+              ELA3
             </td>
             <td>
               domain

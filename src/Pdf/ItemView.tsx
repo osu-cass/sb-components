@@ -12,6 +12,7 @@ export class ItemView extends React.Component<ItemViewProps, {}> {
     let item: JSX.Element | undefined;
     const { view } = this.props;
     if (view.type === PdfViewType.html) {
+      // tslint:disable-next-line:react-no-dangerous-html
       item = <div dangerouslySetInnerHTML={{ __html: view.html || "" }} />;
     } else if (view.screenshotUrl) {
       item = <img alt="" role="presentation" src={view.screenshotUrl} />;

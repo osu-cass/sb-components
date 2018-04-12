@@ -23,7 +23,7 @@ const sections: SectionModel[] = [section];
 describe("ItemBankEntry", () => {
   const wrapper = shallow(
     <ItemBankEntry
-      updateItems={items => {}}
+      updateItems={items => jest.fn()}
       sections={sections}
       items={items}
     />
