@@ -226,6 +226,7 @@ describe("ItemSearch.searchOptionToFilterGrade", () => {
   it("filled options Selected multiple", () => {
     const optionParam: GradeLevels[] = [GradeLevels.Grade3, GradeLevels.Grade4];
     const filterParam = FilterType.Grade;
+    // tslint:disable-next-line:no-bitwise
     const selectedCodeParam = GradeLevels.Grade3 | GradeLevels.Grade4;
 
     const result = ItemSearch.searchOptionToFilterGrade(

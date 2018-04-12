@@ -84,7 +84,7 @@ export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
                   displayIcon
                   helpText={<span>{this.props.targetDescription}</span>}
                 >
-                  {this.props.targetShortName}
+                  {this.props.targetId}
                 </ToolTip>
               </span>
             </p>

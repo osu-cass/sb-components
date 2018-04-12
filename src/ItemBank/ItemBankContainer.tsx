@@ -167,6 +167,13 @@ export class ItemBankContainer extends React.Component<
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
     const lastItem = items[items.length - 1];
+    items.forEach(item => {
+      if (!validItemRevisionModel(item) && item != lastItem) {
+        item.valid = false;
+      } else {
+        item.valid = true;
+      }
+    });
     if (validItemRevisionModel(lastItem) || items.length === 0) {
       items.push({});
     }
@@ -181,7 +188,8 @@ export class ItemBankContainer extends React.Component<
    * @memberof ItemBankContainer
    */
   handleChangeViewItem = () => {
-    const { currentItem, items } = this.state;
+    let { currentItem, items } = this.state;
+    let index = 0;
 
     if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem)
@@ -190,12 +198,17 @@ export class ItemBankContainer extends React.Component<
             .then(accGroups => this.handleUpdateIsaap(accGroups))
             .catch(e => this.onError(e));
         })
-        .catch(e => this.onError(e));
+        .catch(e => {
+          index = items.findIndex(i => i === currentItem);
+          items[index].valid = false;
+          this.setState({ items });
+          this.onError(e);
+        });
 
       const nextItem = getNextItemBank(currentItem, items);
       const previousItem = getPreviousItemBank(currentItem, items);
 
-      this.setState({ nextItem, previousItem });
+      this.setState({ currentItem, nextItem, previousItem });
     }
   };
 
@@ -321,7 +334,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { sections, items } = this.state;
+    const { sections, items, hasError } = this.state;
     let content: JSX.Element | undefined;
 
     const sectionsContent = getResourceContent(sections);

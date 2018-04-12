@@ -42,12 +42,14 @@ export class AboutPTModal extends React.Component<
   }
 
   renderDescription(ptHeader: string) {
+    // tslint:disable:react-no-dangerous-html
     return (
       <p aria-labelledby={`${ptHeader}`}>
-        <b>{ptHeader} </b>
+        <b>{ptHeader}</b> &nbsp;
         <span dangerouslySetInnerHTML={{ __html: this.props.description }} />
       </p>
     );
+    // tslint:enable:react-no-dangerous-html
   }
 
   handleShowModal = () => {
