@@ -558,90 +558,6 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
   id=""
 >
   <div
-    className="basic-filter"
-  >
-    <BasicFilter
-      code="Grade"
-      disabled={false}
-      filterOptions={
-        Array [
-          Object {
-            "filterType": "Grade",
-            "isSelected": false,
-            "key": "7",
-            "label": "Grades 3-5",
-          },
-          Object {
-            "filterType": "Grade",
-            "isSelected": false,
-            "key": "56",
-            "label": "Grades 6-8",
-          },
-          Object {
-            "filterType": "Grade",
-            "isSelected": false,
-            "key": "960",
-            "label": "High School",
-          },
-        ]
-      }
-      key="0"
-      label="Grade"
-      optionType={3}
-      selectedHandler={[Function]}
-    />
-    <BasicFilter
-      code="Subject"
-      disabled={false}
-      filterOptions={
-        Array [
-          Object {
-            "filterType": "Subject",
-            "isSelected": false,
-            "key": "ELA",
-            "label": "English Literacy/ Arts",
-          },
-          Object {
-            "filterType": "Subject",
-            "isSelected": false,
-            "key": "Math",
-            "label": "Mathematics",
-          },
-        ]
-      }
-      key="1"
-      label="Subjects"
-      optionType={2}
-      selectedHandler={[Function]}
-    />
-    <AdvancedFilter
-      code="TechnologyType"
-      disabled={false}
-      displayAllButton={true}
-      filterOptions={
-        Array [
-          Object {
-            "filterType": "TechnologyType",
-            "isSelected": false,
-            "key": "tech1",
-            "label": "tech1",
-          },
-          Object {
-            "filterType": "TechnologyType",
-            "isSelected": false,
-            "key": "tech2",
-            "label": "tech2",
-          },
-        ]
-      }
-      isMultiSelect={true}
-      key="2"
-      label="TechType"
-      onFilterOptionSelect={[Function]}
-      optionType={4}
-    />
-  </div>
-  <div
     className="bf-button-container"
   >
     <span>
@@ -664,14 +580,6 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       </button>
     </span>
   </div>
-</div>
-`;
-
-exports[`BasicFilterContainer expands the advanced filter 2`] = `
-<div
-  className="bf-container section section-light bf-expanded"
-  id=""
->
   <div
     className="basic-filter"
   >
@@ -718,7 +626,7 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
           },
           Object {
             "filterType": "Subject",
-            "isSelected": true,
+            "isSelected": false,
             "key": "Math",
             "label": "Mathematics",
           },
@@ -756,6 +664,14 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       optionType={4}
     />
   </div>
+</div>
+`;
+
+exports[`BasicFilterContainer expands the advanced filter 2`] = `
+<div
+  className="bf-container section section-light bf-expanded"
+  id=""
+>
   <div
     className="bf-button-container"
   >
@@ -779,14 +695,6 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       </button>
     </span>
   </div>
-</div>
-`;
-
-exports[`BasicFilterContainer expands the advanced filter 3`] = `
-<div
-  className="bf-container section section-light"
-  id=""
->
   <div
     className="basic-filter"
   >
@@ -871,6 +779,14 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
       optionType={4}
     />
   </div>
+</div>
+`;
+
+exports[`BasicFilterContainer expands the advanced filter 3`] = `
+<div
+  className="bf-container section section-light"
+  id=""
+>
   <div
     className="bf-button-container"
   >
@@ -893,6 +809,90 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
         />
       </button>
     </span>
+  </div>
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      optionType={3}
+      selectedHandler={[Function]}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": true,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      optionType={2}
+      selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
   </div>
 </div>
 `;

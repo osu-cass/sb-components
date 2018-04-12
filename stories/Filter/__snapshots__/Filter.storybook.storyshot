@@ -9,6 +9,30 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     id=""
   >
     <div
+      className="bf-button-container"
+    >
+      <span>
+        <button
+          className="btn btn-default filter-button"
+          onClick={undefined}
+        >
+          Reset
+        </button>
+      </span>
+      <span>
+        <button
+          className="btn btn-default filter-button af-expand"
+          onClick={[Function]}
+        >
+          Advanced Filters 
+          <span
+            aria-hidden="true"
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </span>
+    </div>
+    <div
       className="basic-filter"
     >
       <div
@@ -112,7 +136,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           className="filter-container-header"
         >
           <label>
-            <div
+            <span
               className="tool-tip-links"
               tabIndex={0}
             >
@@ -126,23 +150,11 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
                   TechType
                 </span>
                  
-                <span
-                  aria-hidden="true"
-                  className="fa fa-info-circle fa-sm"
-                />
               </span>
-              <div
+              <span
                 className="tool-tip-details"
-              >
-                <div
-                  className="tool-tip-message undefined"
-                >
-                  <p>
-                    helpText
-                  </p>
-                </div>
-              </div>
-            </div>
+              />
+            </span>
           </label>
         </div>
         <div
@@ -179,30 +191,6 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="bf-button-container"
-    >
-      <span>
-        <button
-          className="btn btn-default filter-button"
-          onClick={undefined}
-        >
-          Reset
-        </button>
-      </span>
-      <span>
-        <button
-          className="btn btn-default filter-button af-expand"
-          onClick={[Function]}
-        >
-          Advanced Filters 
-          <span
-            aria-hidden="true"
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </span>
     </div>
   </div>
 </div>

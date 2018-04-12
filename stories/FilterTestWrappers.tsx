@@ -8,7 +8,8 @@ import {
   BasicFilterCategoryModel,
   FilterOptionModel,
   BasicFilterContainerProps,
-  SIWFilter
+  SIWFilter,
+  SearchAPIParamsModel
 } from "@src/index";
 import {
   mockAdvancedFilterCategoriesAll,
@@ -150,15 +151,17 @@ export class SIWFilterContainerTestWrapper extends React.Component<
   };
 
   render() {
-    const { basicFilterCategories } = this.state;
+    const mockSIWSeachAPI: SearchAPIParamsModel = {};
 
     return (
-      // <SIWFilter
-      //   basicFilterCategories={basicFilterCategories}
-      //   advancedFilter={[]}
-      //   onUpdateBasicFilter={this.updateBasicFilter}
-      // />
-      undefined
+      <SIWFilter
+        basicFilter={mockSIWFilterCategories}
+        advancedFilter={mockAdvancedFilterCategoriesAll}
+        onFilterUpdated={() => {
+          return;
+        }}
+        searchAPI={mockSIWSeachAPI}
+      />
     );
   }
 }
