@@ -39,7 +39,11 @@ jobs:
     #     - NAME=stylelint
     #   script: npm run lint-less
 
-    - stage: build docs
+    - stage: test
+      env:
+        - NAME=webpack-publish
+      script: npm run webpack
+    - stage: test
       env:
         - NAME=storybook
       script: npm run storybook-publish
@@ -48,7 +52,7 @@ jobs:
         - NAME=typedoc
       script: npm run typedoc-publish
 
-    - stage: deploy docs
+    - stage: test
       script: npm run storybook-publish && npm run typedoc-publish
       deploy:
         provider: pages
