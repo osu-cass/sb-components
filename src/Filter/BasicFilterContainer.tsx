@@ -78,18 +78,14 @@ export class BasicFilterContainer extends React.Component<
           isSelected: false
         }));
 
-        if (optionIdx === -1) {
-          // indicates a input box is being used.
-          newOptions = [option];
-
-          // skip the rest of the function
-          filterCategories[index].filterOptions = newOptions;
-          this.props.onUpdateFilter(filterCategories, category.code);
-        }
-
-        const allPressed =
+        let allPressed =
           option.label === undefined &&
           category.optionType === OptionTypeModel.AdvFilter;
+
+        if (option.filterType === FilterType.SearchItemId) {
+          newOptions = [option];
+          allPressed = true;
+        }
 
         if (!allPressed) {
           newOptions[optionIdx].isSelected = !option.isSelected;
