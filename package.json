@@ -1,6 +1,6 @@
 {
   "name": "@osu-cass/sb-components",
-  "version": "1.5.0-alpha.9",
+  "version": "1.5.0",
   "description": "Shared components for Smarter Balanced",
   "main": "./lib/index.js",
   "types": "./lib/src/index.d.ts",
