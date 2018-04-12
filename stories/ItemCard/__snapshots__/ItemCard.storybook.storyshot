@@ -97,7 +97,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
             <span
               className="tool-tip-hoverable"
             >
-              Short Name
+              dfas
                
               <span
                 aria-hidden="true"

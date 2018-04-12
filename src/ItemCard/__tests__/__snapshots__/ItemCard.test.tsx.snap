@@ -84,7 +84,7 @@ exports[`ItemCard renders correctly 1`] = `
             </span>
           }
         >
-          Short Name
+          dfas
         </ToolTip>
       </span>
     </p>
