@@ -51,7 +51,7 @@ jobs:
         - NAME=typedoc
       script: npm run typedoc-publish
 
-    - stage: deploy-docs
+    - stage: deploy docs
       script: npm run storybook-publish && npm run typedoc-publish
       deploy:
         provider: pages
