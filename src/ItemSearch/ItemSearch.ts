@@ -375,7 +375,7 @@ export class ItemSearch {
     if (filter.targets && filter.targets.length > 0) {
       const { targets } = filter;
       results = results.filter(
-        i => targets.findIndex(t => t === i.targetHash) !== -1
+        i => targets.findIndex(t => t === i.targetId) !== -1
       );
     }
 

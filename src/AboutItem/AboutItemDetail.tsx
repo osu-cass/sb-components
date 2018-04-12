@@ -40,7 +40,7 @@ export class AboutThisItemDetail extends React.Component<AboutItemModel, {}> {
         {this.renderField(
           "Target",
           "target",
-          this.props.itemCardViewModel.targetShortName
+          this.props.itemCardViewModel.targetId
         )}
         {this.renderField(
           "Item Type",

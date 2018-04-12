@@ -37,12 +37,10 @@ export interface SubjectModel extends SearchBaseModel {
 }
 
 export interface ClaimModel extends SearchBaseModel {
-  targetCodes?: number[];
+  targetCodes?: string[];
 }
 
 export interface TargetModel {
-  name: string;
-  nameHash: number;
   idLabel: string;
   id: string;
 }
@@ -55,7 +53,7 @@ export interface SearchAPIParamsModel {
   interactionTypes?: string[];
   performanceOnly?: boolean;
   catOnly?: boolean;
-  targets?: number[];
+  targets?: string[];
   calculator?: boolean;
 }
 

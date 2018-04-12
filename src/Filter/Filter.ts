@@ -70,14 +70,10 @@ export class Filter {
    */
   public static getSelectedTargets(
     filterModels: FilterCategoryModel[]
-  ): number[] | undefined {
-    const selectedCodes = this.getSelectedCodes(
-      FilterType.Target,
-      filterModels
-    );
-
-    return selectedCodes ? selectedCodes.map(s => +s) : undefined;
+  ): string[] | undefined {
+    return this.getSelectedCodes(FilterType.Target, filterModels);
   }
+
   public static filterStringTypes<T extends SearchFilterStringTypes>(
     filterOptions: T[],
     codes?: string[]
