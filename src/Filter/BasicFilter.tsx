@@ -7,6 +7,7 @@ import {
 import { SelectOptionProps } from "../Select/SelectOption";
 import { Select } from "../Select/Select";
 import { ToolTip } from "../ToolTip/ToolTip";
+import { FilterType } from "lib/src";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
@@ -30,10 +31,9 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     const newOption: FilterOptionModel = {
       label: this.props.label,
       key: searchText,
-      isSelected: true
+      isSelected: true,
+      filterType: this.props.code
     };
-
-    console.log(searchText);
 
     this.props.selectedHandler(newOption);
   };

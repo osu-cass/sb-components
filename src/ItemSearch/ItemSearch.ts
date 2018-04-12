@@ -80,6 +80,7 @@ export class ItemSearch {
     currentModel: SearchAPIParamsModel
   ): SearchAPIParamsModel {
     const newModel = { ...currentModel };
+
     switch (category.code) {
       case FilterType.Grade:
         newModel.gradeLevels = Filter.getSelectedGrade([category]);
@@ -119,6 +120,10 @@ export class ItemSearch {
       case FilterType.Target:
         const targetCodes = Filter.getSelectedTargets([category]);
         newModel.targets = targetCodes;
+        break;
+      case FilterType.SearchItemId:
+        const newItemID = category.filterOptions[0].key;
+        newModel.itemId = newItemID;
         break;
       default:
     }
