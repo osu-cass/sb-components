@@ -74,9 +74,7 @@ export class BasicFilterContainer extends React.Component<
       if (option !== undefined) {
         let newOptions = filterCategories[index].filterOptions.slice();
         const optionIdx = filterCategories[index].filterOptions.indexOf(option);
-        let allPressed =
-          option.label === undefined &&
-          category.optionType === OptionTypeModel.AdvFilter;
+        let allPressed = option.label === undefined;
 
         if (!category.isMultiSelect || allPressed) {
           newOptions = filterCategories[index].filterOptions.map(opt => ({
