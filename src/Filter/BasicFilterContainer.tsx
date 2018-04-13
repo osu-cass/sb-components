@@ -3,7 +3,9 @@ import {
   BasicFilterCategoryModel,
   FilterOptionModel,
   FilterType,
-  OptionTypeModel
+  OptionTypeModel,
+  AdvancedFilterCategoryModel,
+  FilterCategoryModel
 } from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
 import { AdvancedFilter } from "./AdvancedFilter";
@@ -99,16 +101,12 @@ export class BasicFilterContainer extends React.Component<
 
   renderAdvFilter(fil: BasicFilterCategoryModel, iter: number) {
     // TODO: add logic for multi and all buttons
-    const advProps = {
-      isMultiSelect: true,
-      displayAllButton: true,
-      ...fil
-    };
-
     return (
       <AdvancedFilter
+        {...fil}
+        isMultiSelect={true}
+        displayAllButton={true}
         key={iter}
-        {...advProps}
         onFilterOptionSelect={opt => this.onFilterSelect(fil, opt)}
       />
     );

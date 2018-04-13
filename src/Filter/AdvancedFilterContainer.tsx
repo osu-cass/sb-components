@@ -2,7 +2,7 @@ import * as React from "react";
 import { AdvancedFilter } from "./AdvancedFilter";
 import { SelectedFilterIndicator } from "./SelectedFilterIndicator";
 import {
-  onFilterSelect,
+  advFilterSelect,
   AdvancedFilterCategoryModel,
   AdvancedFiltersModel,
   FilterOptionModel,
@@ -65,7 +65,7 @@ export class AdvancedFilterContainer extends React.Component<
     option?: FilterOptionModel
   ) {
     const { onUpdateFilter, filterCategories } = this.props;
-    const newFilters = onFilterSelect(filterCategories, category, option);
+    const newFilters = advFilterSelect(filterCategories, category, option);
     onUpdateFilter(newFilters, category.code);
   }
 

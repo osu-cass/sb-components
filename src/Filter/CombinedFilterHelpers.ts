@@ -19,6 +19,7 @@ export interface BothFilterModels {
 export function siwFilterUpdated(
   basicFilter: BasicFilterCategoryModel[],
   searchAPI: SearchAPIParamsModel,
+  advancedFilter: AdvancedFilterCategoryModel[],
   searchModel?: ItemsSearchModel,
   changedFilter?: FilterType
 ): BothFilterModels {
@@ -37,7 +38,7 @@ export function siwFilterUpdated(
   return siwUpdateDependentAndSearch(
     basicFilter,
     newSearchAPI,
-    [],
+    advancedFilter,
     searchModel
   );
 }
@@ -68,7 +69,12 @@ function siwUpdateDependentAndSearch(
     );
   }
 
-  return { advancedFilter, basicFilter: newFilter, searchAPI: newSearchAPI };
+  return updateDependentAndSearch(
+    newFilter,
+    newSearchAPI,
+    advancedFilter,
+    searchModel
+  );
 }
 
 /**
