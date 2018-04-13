@@ -1,6 +1,19 @@
 import * as React from "react";
 import * as ItemCardModels from "./ItemCardModels";
 import { Redirect } from "react-router";
+import * as GradeLevels from "../GradeLevels/GradeLevels";
+// tslint:disable:no-require-imports
+const claimIcons: { [claimCode: string]: string } = {
+  MATH1: require("../Assets/Icons/Claims/math-1.svg"),
+  MATH2: require("../Assets/Icons/Claims/math-2.svg"),
+  MATH3: require("../Assets/Icons/Claims/math-3.svg"),
+  MATH4: require("../Assets/Icons/Claims/math-4.svg"),
+  ELA1: require("../Assets/Icons/Claims/ela-1.svg"),
+  ELA2: require("../Assets/Icons/Claims/ela-2.svg"),
+  ELA3: require("../Assets/Icons/Claims/ela-3.svg"),
+  ELA4: require("../Assets/Icons/Claims/ela-4.svg")
+};
+// tslint:enable:no-require-imports
 
 export interface ItemCardCondensedState {
   redirect: boolean;
@@ -44,17 +57,29 @@ export class ItemCardCondensed extends React.Component<
           role="link"
         >
           <div className="card-contents">
-            <h4 className="card-title">{this.props.subjectLabel}</h4>
+            <div className="card-header">
+              <h4 className="card-title">{this.props.subjectLabel}</h4>
+              <div className="card-icon-container">
+                <span className="card-grade-tag card-icon">
+                  {GradeLevels.GradeLevel.gradeCaseToShortString(
+                    this.props.grade
+                  )}
+                </span>
+                <img
+                  src={claimIcons[this.props.claimCode]}
+                  alt={this.props.claimLabel}
+                  className="card-icon"
+                  width="32px"
+                />
+              </div>
+            </div>
             <p className="card-text claim">
               <span className="card-text-label">Claim:</span>
               <span className="card-text-value"> {this.props.claimLabel}</span>
             </p>
             <p className="card-text target">
               <span className="card-text-label">Target:</span>
-              <span className="card-text-value">
-                {" "}
-                {this.props.targetShortName}
-              </span>
+              <span className="card-text-value"> {this.props.targetId}</span>
             </p>
             <p className="card-text interaction-type">
               <span className="card-text-label">Item Type:</span>

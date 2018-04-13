@@ -40,7 +40,12 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   }
 
   renderTags() {
-    const { filterOptions, onFilterOptionSelect, disabled } = this.props;
+    const {
+      filterOptions,
+      onFilterOptionSelect,
+      disabled,
+      emptyOptionsText
+    } = this.props;
     const tags: JSX.Element[] = [];
 
     if (filterOptions.length > 0) {
@@ -56,13 +61,18 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
         );
       });
     } else {
-      tags.push(<div key={0}>No options.</div>);
+      tags.push(<div key={0}>{emptyOptionsText || "No options."}</div>);
     }
 
     return tags;
   }
+
   render() {
+    let text: JSX.Element | undefined;
     const { disabled, label, helpText } = this.props;
+    if (helpText) {
+      text = <p>{helpText}</p>;
+    }
     // replace "-" with spaces, replace "." with nothing.
     const id = label.replace(/\ /g, "-").replace(/\./g, "");
     if (disabled) {
@@ -77,7 +87,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       >
         <div className="filter-container-header">
           <label>
-            <ToolTip helpText={<p>helpText</p>} displayIcon={true}>
+            <ToolTip helpText={text} displayIcon={text !== undefined}>
               <span className="tooltip-label" info-label="true">
                 {label}
               </span>

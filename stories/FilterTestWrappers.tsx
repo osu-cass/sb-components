@@ -7,11 +7,14 @@ import {
   BasicFilterContainer,
   BasicFilterCategoryModel,
   FilterOptionModel,
-  BasicFilterContainerProps
+  BasicFilterContainerProps,
+  SIWFilter,
+  SearchAPIParamsModel
 } from "@src/index";
 import {
   mockAdvancedFilterCategoriesAll,
-  mockBasicFilterCategories
+  mockBasicFilterCategories,
+  mockSIWFilterCategories
 } from "@mocks/Filter/mocks";
 
 export interface AdvFilContainerTestProps {
@@ -121,6 +124,43 @@ export class FilterContainerTestWrapper extends React.Component<
         onUpdateBasicFilter={this.updateBasicFilter}
         advancedFilterCategories={advancedFilterCategories}
         onUpdateAdvancedFilter={this.updateAdvancedFilter}
+      />
+    );
+  }
+}
+
+// This test wrapper serves just to allow the functionality of the FilterContainer so
+// that we can confirm that it works as expected. It passes the advanced and basic filterCategories into
+// the FilterContainer as props
+// TODO: make a custom state for this wrapper.
+// tslint:disable-next-line:max-classes-per-file
+export class SIWFilterContainerTestWrapper extends React.Component<
+  {},
+  FilterContainerTestState
+> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      basicFilterCategories: mockSIWFilterCategories,
+      advancedFilterCategories: []
+    };
+  }
+
+  updateBasicFilter = (basicFilterCategories: BasicFilterCategoryModel[]) => {
+    this.setState({ basicFilterCategories });
+  };
+
+  render() {
+    const mockSIWSeachAPI: SearchAPIParamsModel = {};
+
+    return (
+      <SIWFilter
+        basicFilter={mockSIWFilterCategories}
+        advancedFilter={mockAdvancedFilterCategoriesAll}
+        onFilterUpdated={() => {
+          return;
+        }}
+        searchAPI={mockSIWSeachAPI}
       />
     );
   }

@@ -2,17 +2,22 @@ export class PromiseCancelable<T> {
   private prom: Promise<T>;
   private isCanceled = false;
   public promise: Promise<T>;
+  private canceledString = "Canceled";
 
   constructor(promise: Promise<T>) {
     this.prom = promise;
 
     this.promise = new Promise<T>((resolve, reject) => {
       this.prom
-        .then(val => (this.isCanceled ? reject("Canceled") : resolve(val)))
-        // tslint:disable-next-line:no-unnecessary-callback-wrapper
-        .catch(err => reject(err));
+        .then(val => {
+          this.isCanceled ? reject(this.canceledString) : resolve(val);
+        })
+        .catch(err => {
+          this.isCanceled ? reject(this.canceledString) : reject(err);
+        });
     });
   }
+
   public cancel() {
     this.isCanceled = true;
   }

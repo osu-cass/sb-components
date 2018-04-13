@@ -1,90 +1,105 @@
 @import "constants";
 
 .item-table-container {
-    width: 100%;
-    padding: @spacing-unit 0;
+  width: 100%;
+  padding: @spacing-unit 0;
 }
 
 table.link-table,
 table.item-table {
-    width: 100%;
-    height: 100%;
-    background-color: @grey-border-color;
-    margin: 0;
-    padding: 0;
-    border: 1px solid @grey-border-color;
-    border-radius: @spacing-item;
-    border-spacing: 1px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: @box-shadow;
+  width: 100%;
+  height: 100%;
+  background-color: @grey-border-color;
+  margin: 0;
+  padding: 0;
+  border: 1px solid @grey-border-color;
+  border-radius: @spacing-item;
+  border-spacing: 1px;
+  cursor: pointer;
+  box-shadow: @box-shadow;
 }
 
 table.link-table th,
 table.item-table th {
-    min-width: 50px;
-    white-space: nowrap;
-    border: 0;
-    padding:4px 8px;
+  min-width: 50px;
+  white-space: nowrap;
+  border: 0;
+  padding: 4px 8px;
 }
 
 table.link-table td,
-table.item-table td { 
-    min-width: 50px;
-    padding: 4px 8px;
-    white-space: normal;
+table.item-table td {
+  min-width: 50px;
+  padding: 4px 8px;
+  white-space: normal;
 }
 
 table.link-table .item-checkbox,
-table.item-table .item-checkbox, 
+table.item-table .item-checkbox,
 table.link-table .arrow-indicator,
 table.item-table .arrow-indicator {
-    width: 50px;
-    text-align: center;
-    margin:auto;
+  width: 50px;
+  text-align: center;
+  margin: auto;
 }
 
 table.link-table > tbody > tr:nth-child(even),
 table.item-table > tbody > tr:nth-child(even),
 table.link-table > tbody > tr:nth-child(odd),
 table.item-table > tbody > tr:nth-child(odd) {
-    background-color: @sb-white;
-    border-top: 1px solid @grey-border-color;
-    border-bottom: 1px solid @grey-border-color;
+  background-color: @sb-white;
+  border-top: 1px solid @grey-border-color;
+  border-bottom: 1px solid @grey-border-color;
 }
 
 table.link-table > tbody > tr:last-child,
 table.item-table > tbody > tr:last-child {
-    border: 0;
+  border: 0;
 }
 
 table.link-table > tbody > tr:hover,
 table.item-table > tbody > tr:hover {
-    background-color: @background-color-base;
+  background-color: @background-color-base;
 }
 
-table.link-table > tbody > tr > td > div{
-    padding-left: @spacing-item;
+table.link-table > tbody > tr > td > div {
+  padding-left: @spacing-item;
 }
-
 
 table > thead > tr > th > div {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 table > thead > tr > th > div > span {
-    vertical-align: middle;
-    align-self: center;
+  vertical-align: middle;
+  align-self: center;
 }
 
 table.link-table th:hover,
 table.item-table th:hover {
-    background-color: #EFEFEF;
-    cursor: pointer;
+  background-color: #efefef;
+  cursor: pointer;
 }
 
 table.item-table.table-icon {
-    color: @sb-gray
+  color: @sb-gray;
+}
+
+.table-subject-highlight {
+  color: white;
+  border-radius: 4px;
+  padding: 0px 5px;
+
+  &.ela {
+    background-color: @sb-blue;
+  }
+  &.math {
+    background-color: @sb-green;
+  }
+}
+
+.form-control.error {
+  border-color: red;
 }

@@ -96,7 +96,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
       content = (
         <ToolTip
           helpText={<p>{col.helpText(cellData)}</p>}
-          position="top"
+          position="bottom"
           displayIcon={false}
         >
           {displayText}
@@ -107,6 +107,14 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
         <a tabIndex={0} role="link">
           {displayText}
         </a>
+      );
+    } else if (col.className === "subject") {
+      content = (
+        <span
+          className={`table-subject-highlight ${cellData.subjectCode.toLowerCase()}`}
+        >
+          {displayText}
+        </span>
       );
     } else {
       content = <span>{displayText}</span>;

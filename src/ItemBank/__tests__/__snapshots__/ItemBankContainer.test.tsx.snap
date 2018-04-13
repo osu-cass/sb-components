@@ -12,6 +12,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
             "itemKey": 187,
             "revision": "asfe",
             "section": "math",
+            "valid": false,
           },
         ],
       ],
@@ -28,6 +29,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
         "itemKey": 187,
         "revision": "asfe",
         "section": "math",
+        "valid": false,
       },
       Object {
         "bankKey": 2332,
@@ -48,6 +50,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
             "itemKey": 187,
             "revision": "asfe",
             "section": "math",
+            "valid": false,
           },
         ],
       ],
@@ -66,18 +69,39 @@ exports[`ItemBankContainer default wrapper 1`] = `
   >
     <div>
       <ItemBankViewer
-        itemUrl="hello"
-        nextItem={
+        currentItem={
           Object {
-            "bankKey": 2332,
+            "bankKey": 3000,
             "isaap": "",
             "itemKey": 187,
-            "revision": "asdf",
+            "revision": "asfe",
             "section": "math",
+            "valid": false,
           }
+        }
+        itemUrl="hello"
+        items={
+          Array [
+            Object {
+              "bankKey": 3000,
+              "isaap": "",
+              "itemKey": 187,
+              "revision": "asfe",
+              "section": "math",
+              "valid": false,
+            },
+            Object {
+              "bankKey": 2332,
+              "isaap": "",
+              "itemKey": 187,
+              "revision": "asdf",
+              "section": "math",
+            },
+          ]
         }
         onAccessibilityReset={[Function]}
         onAccessibilityUpdate={[Function]}
+        onDirectionSelect={[Function]}
         onItemSelect={[Function]}
         onRevisionSelect={[Function]}
       >
@@ -101,9 +125,159 @@ exports[`ItemBankContainer default wrapper 1`] = `
           </RevisionContainer>
           <div
             aria-live="polite"
-            aria-relevant="additions removals"
+            aria-relevant="additions"
             className="section item-map-iframe"
           >
+            <div
+              aria-label="Toolbar with button groups"
+              className="item-nav"
+              role="toolbar"
+            >
+              <div
+                aria-label="First group"
+                className="item-nav-left-group"
+                role="group"
+              />
+              <div
+                className="nav-buttons"
+              >
+                <button
+                  className="btn btn-link previous"
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="nav-button-container"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-arrow-left"
+                    />
+                    <div
+                      className="nav-item-name"
+                    >
+                      Previous
+                    </div>
+                  </div>
+                </button>
+                <Component
+                  className="item-dropdown"
+                  label="Items"
+                  labelClass="display-none"
+                  onChange={[Function]}
+                  options={
+                    Array [
+                      Object {
+                        "disabled": true,
+                        "label": "Select an Item",
+                        "selected": false,
+                        "value": "N/A",
+                      },
+                      Object {
+                        "key": "3000-187-math",
+                        "label": "3000-187",
+                        "selected": true,
+                        "value": "3000-187-math",
+                      },
+                      Object {
+                        "key": "2332-187-math",
+                        "label": "2332-187",
+                        "selected": false,
+                        "value": "2332-187-math",
+                      },
+                    ]
+                  }
+                  selected="3000-187-math"
+                  wrapperClass="select-dd"
+                >
+                  <div
+                    className="select-dd"
+                  >
+                    <label>
+                      <span
+                        className="display-none"
+                      >
+                        Items
+                      </span>
+                    </label>
+                    <select
+                      className="form-control item-dropdown"
+                      onChange={[Function]}
+                      value="3000-187-math"
+                    >
+                      <Component
+                        disabled={true}
+                        key="N/A"
+                        label="Select an Item"
+                        selected={false}
+                        value="N/A"
+                      >
+                        <option
+                          aria-selected={false}
+                          disabled={true}
+                          label="Select an Item"
+                          value="N/A"
+                        >
+                          Select an Item
+                        </option>
+                      </Component>
+                      <Component
+                        key="3000-187-math"
+                        label="3000-187"
+                        selected={true}
+                        value="3000-187-math"
+                      >
+                        <option
+                          aria-selected={true}
+                          label="3000-187"
+                          value="3000-187-math"
+                        >
+                          3000-187
+                        </option>
+                      </Component>
+                      <Component
+                        key="2332-187-math"
+                        label="2332-187"
+                        selected={false}
+                        value="2332-187-math"
+                      >
+                        <option
+                          aria-selected={false}
+                          label="2332-187"
+                          value="2332-187-math"
+                        >
+                          2332-187
+                        </option>
+                      </Component>
+                    </select>
+                  </div>
+                </Component>
+                <button
+                  className="btn btn-link next"
+                  disabled={true}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="nav-button-container"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-arrow-right"
+                    />
+                    <div
+                      className="nav-item-name"
+                    >
+                      Next
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div
+                aria-label="Second group"
+                className="item-nav-right-group"
+                role="group"
+              />
+            </div>
             <ItemViewerFrame
               title="item viewer"
               url="hello"
@@ -139,18 +313,39 @@ exports[`ItemBankContainer default wrapper 1`] = `
 
 exports[`ItemBankContainer has item bank viewer 1`] = `
 <ItemBankViewer
-  itemUrl="hello"
-  nextItem={
+  currentItem={
     Object {
-      "bankKey": 2332,
+      "bankKey": 3000,
       "isaap": "",
       "itemKey": 187,
-      "revision": "asdf",
+      "revision": "asfe",
       "section": "math",
+      "valid": false,
     }
+  }
+  itemUrl="hello"
+  items={
+    Array [
+      Object {
+        "bankKey": 3000,
+        "isaap": "",
+        "itemKey": 187,
+        "revision": "asfe",
+        "section": "math",
+        "valid": false,
+      },
+      Object {
+        "bankKey": 2332,
+        "isaap": "",
+        "itemKey": 187,
+        "revision": "asdf",
+        "section": "math",
+      },
+    ]
   }
   onAccessibilityReset={[Function]}
   onAccessibilityUpdate={[Function]}
+  onDirectionSelect={[Function]}
   onItemSelect={[Function]}
   onRevisionSelect={[Function]}
 >
@@ -174,9 +369,159 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
     </RevisionContainer>
     <div
       aria-live="polite"
-      aria-relevant="additions removals"
+      aria-relevant="additions"
       className="section item-map-iframe"
     >
+      <div
+        aria-label="Toolbar with button groups"
+        className="item-nav"
+        role="toolbar"
+      >
+        <div
+          aria-label="First group"
+          className="item-nav-left-group"
+          role="group"
+        />
+        <div
+          className="nav-buttons"
+        >
+          <button
+            className="btn btn-link previous"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <div
+              className="nav-button-container"
+            >
+              <span
+                aria-hidden="true"
+                className="fa fa-arrow-left"
+              />
+              <div
+                className="nav-item-name"
+              >
+                Previous
+              </div>
+            </div>
+          </button>
+          <Component
+            className="item-dropdown"
+            label="Items"
+            labelClass="display-none"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "disabled": true,
+                  "label": "Select an Item",
+                  "selected": false,
+                  "value": "N/A",
+                },
+                Object {
+                  "key": "3000-187-math",
+                  "label": "3000-187",
+                  "selected": true,
+                  "value": "3000-187-math",
+                },
+                Object {
+                  "key": "2332-187-math",
+                  "label": "2332-187",
+                  "selected": false,
+                  "value": "2332-187-math",
+                },
+              ]
+            }
+            selected="3000-187-math"
+            wrapperClass="select-dd"
+          >
+            <div
+              className="select-dd"
+            >
+              <label>
+                <span
+                  className="display-none"
+                >
+                  Items
+                </span>
+              </label>
+              <select
+                className="form-control item-dropdown"
+                onChange={[Function]}
+                value="3000-187-math"
+              >
+                <Component
+                  disabled={true}
+                  key="N/A"
+                  label="Select an Item"
+                  selected={false}
+                  value="N/A"
+                >
+                  <option
+                    aria-selected={false}
+                    disabled={true}
+                    label="Select an Item"
+                    value="N/A"
+                  >
+                    Select an Item
+                  </option>
+                </Component>
+                <Component
+                  key="3000-187-math"
+                  label="3000-187"
+                  selected={true}
+                  value="3000-187-math"
+                >
+                  <option
+                    aria-selected={true}
+                    label="3000-187"
+                    value="3000-187-math"
+                  >
+                    3000-187
+                  </option>
+                </Component>
+                <Component
+                  key="2332-187-math"
+                  label="2332-187"
+                  selected={false}
+                  value="2332-187-math"
+                >
+                  <option
+                    aria-selected={false}
+                    label="2332-187"
+                    value="2332-187-math"
+                  >
+                    2332-187
+                  </option>
+                </Component>
+              </select>
+            </div>
+          </Component>
+          <button
+            className="btn btn-link next"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <div
+              className="nav-button-container"
+            >
+              <span
+                aria-hidden="true"
+                className="fa fa-arrow-right"
+              />
+              <div
+                className="nav-item-name"
+              >
+                Next
+              </div>
+            </div>
+          </button>
+        </div>
+        <div
+          aria-label="Second group"
+          className="item-nav-right-group"
+          role="group"
+        />
+      </div>
       <ItemViewerFrame
         title="item viewer"
         url="hello"

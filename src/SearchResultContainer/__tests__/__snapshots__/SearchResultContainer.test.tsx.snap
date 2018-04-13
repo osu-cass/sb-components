@@ -57,7 +57,7 @@ exports[`SearchResultContainer card to table transition 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -218,7 +218,7 @@ exports[`SearchResultContainer onload matches snapshot ItemCards 1`] = `
       key="187 - 3206"
       subjectCode="MATH"
       subjectLabel="Math"
-      targetDescription="Target A description"
+      targetDescription="Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia"
       targetHash={100}
       targetId="A"
       targetShortName=""
@@ -346,7 +346,7 @@ exports[`SearchResultContainer onload matches snapshot table 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -467,7 +467,7 @@ exports[`SearchResultContainer table to card transition 1`] = `
       key="187 - 3206"
       subjectCode="MATH"
       subjectLabel="Math"
-      targetDescription="Target A description"
+      targetDescription="Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia"
       targetHash={100}
       targetId="A"
       targetShortName=""

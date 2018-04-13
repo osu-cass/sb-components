@@ -2,13 +2,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "install",
+            "label": "install",
             "type": "shell",
             "command": "npm install"
         },
 
         {
-            "taskName": "build",
+            "label": "build",
             "type": "shell",
             "command": "npm run storybook",
             "group": {

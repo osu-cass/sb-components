@@ -2,6 +2,19 @@ import * as React from "react";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
 import { ItemCardModel } from "./ItemCardModels";
 import { Redirect } from "react-router";
+import { ToolTip } from "../index";
+// tslint:disable:no-require-imports
+const claimIcons: { [claimCode: string]: string } = {
+  MATH1: require("../Assets/Icons/Claims/math-1.svg"),
+  MATH2: require("../Assets/Icons/Claims/math-2.svg"),
+  MATH3: require("../Assets/Icons/Claims/math-3.svg"),
+  MATH4: require("../Assets/Icons/Claims/math-4.svg"),
+  ELA1: require("../Assets/Icons/Claims/ela-1.svg"),
+  ELA2: require("../Assets/Icons/Claims/ela-2.svg"),
+  ELA3: require("../Assets/Icons/Claims/ela-3.svg"),
+  ELA4: require("../Assets/Icons/Claims/ela-4.svg")
+};
+// tslint:enable:no-require-imports
 
 export interface ItemCardState {
   redirect: boolean;
@@ -40,14 +53,22 @@ export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
           tabIndex={0}
         >
           <div className="card-contents">
-            <h4 className="card-title">{this.props.title}</h4>
-            <p className="card-text subject">
-              <span className="card-text-label">Subject:</span>
-              <span className="card-text-value">
-                {" "}
-                {this.props.subjectLabel}
-              </span>
-            </p>
+            <div className="card-header">
+              <h4 className="card-title">{this.props.subjectLabel}</h4>
+              <div className="card-icon-container">
+                <span className="card-grade-tag card-icon">
+                  {GradeLevels.GradeLevel.gradeCaseToShortString(
+                    this.props.grade
+                  )}
+                </span>
+                <img
+                  src={claimIcons[this.props.claimCode]}
+                  alt={this.props.claimLabel}
+                  className="card-icon"
+                  width="32px"
+                />
+              </div>
+            </div>
             <p className="card-text grade">
               <span className="card-text-label">Grade:</span>
               <span className="card-text-value"> {this.props.gradeLabel}</span>
@@ -59,7 +80,12 @@ export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
             <p className="card-text target">
               <span className="card-text-label">Target:</span>
               <span className="card-text-value">
-                {this.props.targetShortName}
+                <ToolTip
+                  displayIcon
+                  helpText={<span>{this.props.targetDescription}</span>}
+                >
+                  {this.props.targetId}
+                </ToolTip>
               </span>
             </p>
             <p className="card-text interaction-type">

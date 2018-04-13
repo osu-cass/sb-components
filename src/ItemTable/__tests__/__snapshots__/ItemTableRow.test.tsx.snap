@@ -49,7 +49,9 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
     <span
       key="subject"
     >
-      <span>
+      <span
+        className="table-subject-highlight math"
+      >
         Math
       </span>
     </span>
@@ -84,12 +86,12 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
         displayIcon={false}
         helpText={
           <p>
-            Target A description
+            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
           </p>
         }
-        position="top"
+        position="bottom"
       >
-        /
+        A
       </ToolTip>
     </span>
   </td>
@@ -195,7 +197,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -251,7 +253,9 @@ exports[`ItemTableRow matches snapshot 1`] = `
           <span
             key="subject"
           >
-            <span>
+            <span
+              className="table-subject-highlight math"
+            >
               Math
             </span>
           </span>
@@ -286,33 +290,33 @@ exports[`ItemTableRow matches snapshot 1`] = `
               displayIcon={false}
               helpText={
                 <p>
-                  Target A description
+                  Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                 </p>
               }
-              position="top"
+              position="bottom"
             >
-              <div
+              <span
                 className="tool-tip-links"
                 tabIndex={0}
               >
                 <span
                   className="tool-tip-hoverable"
                 >
-                  /
+                  A
                    
                 </span>
-                <div
+                <span
                   className="tool-tip-details"
                 >
-                  <div
-                    className="tool-tip-message top"
+                  <span
+                    className="tool-tip-message bottom undefined"
                   >
                     <p>
-                      Target A description
+                      Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                     </p>
-                  </div>
-                </div>
-              </div>
+                  </span>
+                </span>
+              </span>
             </ToolTip>
           </span>
         </td>

@@ -20,7 +20,8 @@ export enum GradeLevels {
 
 /* tslint:disable: no-unnecessary-class */
 export class GradeLevel {
-  public static gradeCaseToString(grade: GradeLevels): string {
+  public static gradeCaseToString(grade: GradeLevels): string | undefined {
+    // tslint:disable-next-line:switch-default
     switch (grade) {
       case GradeLevels.NA:
         return "NA";
@@ -55,21 +56,43 @@ export class GradeLevel {
     }
   }
 
+  public static gradeCaseToShortString(grade: GradeLevels): string | undefined {
+    switch (grade) {
+      case GradeLevels.NA:
+        return "NA";
+      case GradeLevels.Grade3:
+        return "G3";
+      case GradeLevels.Grade4:
+        return "G4";
+      case GradeLevels.Grade5:
+        return "G5";
+      case GradeLevels.Grade6:
+        return "G6";
+      case GradeLevels.Grade7:
+        return "G7";
+      case GradeLevels.Grade8:
+        return "G8";
+      case GradeLevels.Grade9:
+        return "G9";
+      case GradeLevels.Grade10:
+        return "G10";
+      case GradeLevels.Grade11:
+        return "G11";
+      case GradeLevels.Grade12:
+        return "G12";
+      case GradeLevels.Elementary:
+        return "Elementary";
+      case GradeLevels.Middle:
+        return "Middle";
+      case GradeLevels.High:
+        return "High";
+      default:
+        return undefined;
+    }
+  }
+
   public static gradeLevelToString(grades: GradeLevels): string | undefined {
-    const caseString = this.gradeCaseToString(grades);
-    if (caseString !== "") {
-      return caseString;
-    }
-
-    const gradeStrings: string[] = [];
-
-    for (let i = 0; i < 10; i++) {
-      if ((grades & (1 << i)) === 1 << i) {
-        gradeStrings.push(this.gradeCaseToString(1 << i));
-      }
-    }
-
-    return gradeStrings.join(", ");
+    return this.gradeCaseToString(grades);
   }
 
   public static gradeLevelContains(

@@ -57,7 +57,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       className="filter-container-header"
     >
       <label>
-        <div
+        <span
           className="tool-tip-links"
           tabIndex={0}
         >
@@ -76,18 +76,18 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
               className="fa fa-info-circle fa-sm"
             />
           </span>
-          <div
+          <span
             className="tool-tip-details"
           >
-            <div
-              className="tool-tip-message undefined"
+            <span
+              className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
       </label>
     </div>
     <div
@@ -167,7 +167,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
       className="filter-container-header"
     >
       <label>
-        <div
+        <span
           className="tool-tip-links"
           tabIndex={0}
         >
@@ -186,18 +186,18 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
               className="fa fa-info-circle fa-sm"
             />
           </span>
-          <div
+          <span
             className="tool-tip-details"
           >
-            <div
-              className="tool-tip-message undefined"
+            <span
+              className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
       </label>
     </div>
     <div
@@ -252,7 +252,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       className="filter-container-header"
     >
       <label>
-        <div
+        <span
           className="tool-tip-links"
           tabIndex={0}
         >
@@ -271,18 +271,18 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
               className="fa fa-info-circle fa-sm"
             />
           </span>
-          <div
+          <span
             className="tool-tip-details"
           >
-            <div
-              className="tool-tip-message undefined"
+            <span
+              className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
       </label>
     </div>
     <div
@@ -345,7 +345,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       className="filter-container-header"
     >
       <label>
-        <div
+        <span
           className="tool-tip-links"
           tabIndex={0}
         >
@@ -364,18 +364,18 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
               className="fa fa-info-circle fa-sm"
             />
           </span>
-          <div
+          <span
             className="tool-tip-details"
           >
-            <div
-              className="tool-tip-message undefined"
+            <span
+              className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
       </label>
     </div>
     <div
@@ -438,7 +438,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       className="filter-container-header"
     >
       <label>
-        <div
+        <span
           className="tool-tip-links"
           tabIndex={0}
         >
@@ -457,18 +457,18 @@ exports[`Storyshots Advanced Filter no options 1`] = `
               className="fa fa-info-circle fa-sm"
             />
           </span>
-          <div
+          <span
             className="tool-tip-details"
           >
-            <div
-              className="tool-tip-message undefined"
+            <span
+              className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
       </label>
     </div>
     <div
@@ -510,7 +510,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       className="filter-container-header"
     >
       <label>
-        <div
+        <span
           className="tool-tip-links"
           tabIndex={0}
         >
@@ -529,18 +529,18 @@ exports[`Storyshots Advanced Filter single select 1`] = `
               className="fa fa-info-circle fa-sm"
             />
           </span>
-          <div
+          <span
             className="tool-tip-details"
           >
-            <div
-              className="tool-tip-message undefined"
+            <span
+              className="tool-tip-message undefined undefined"
             >
               <p>
-                helpText
+                Subject Help
               </p>
-            </div>
-          </div>
-        </div>
+            </span>
+          </span>
+        </span>
       </label>
     </div>
     <div

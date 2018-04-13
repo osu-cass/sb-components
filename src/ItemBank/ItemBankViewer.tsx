@@ -12,13 +12,17 @@ import {
   itemRevisionKey,
   getItemBankName,
   RevisionModel,
-  RubricModal
+  RubricModal,
+  SelectOptionProps,
+  Select,
+  validItemRevisionModel
 } from "@src/index";
 
 export interface ItemBankViewerProps {
   onAccessibilityUpdate: (accResourceGroups: AccResourceGroupModel[]) => void;
   onAccessibilityReset: () => void;
-  onItemSelect: (direction: "next" | "previous") => void;
+  onDirectionSelect: (direction: "next" | "previous") => void;
+  onItemSelect: (itemKey: string) => void;
   onRevisionSelect: (revision: string) => void;
   itemUrl?: string;
   aboutItemRevisionModel?: AboutItemRevisionModel;
@@ -26,6 +30,8 @@ export interface ItemBankViewerProps {
   revisions?: RevisionModel[];
   nextItem?: ItemRevisionModel;
   prevItem?: ItemRevisionModel;
+  currentItem?: ItemRevisionModel;
+  items?: ItemRevisionModel[];
 }
 
 export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
@@ -39,45 +45,45 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
       onAccessibilityReset,
       accResourceGroups
     } = this.props;
+    const accessibilityModal = accResourceGroups ? (
+      <ItemAccessibilityModal
+        accResourceGroups={accResourceGroups}
+        onSave={onAccessibilityUpdate}
+        onReset={onAccessibilityReset}
+      />
+    ) : (
+      undefined
+    );
 
     let content: JSX.Element | undefined;
-    if (accResourceGroups) {
-      content = (
-        <div
-          className="item-nav-right-group"
-          role="group"
-          aria-label="Second group"
-        >
-          <ItemAccessibilityModal
-            accResourceGroups={accResourceGroups}
-            onSave={onAccessibilityUpdate}
-            onReset={onAccessibilityReset}
-          />
-        </div>
-      );
-    }
+    content = (
+      <div
+        className="item-nav-right-group"
+        role="group"
+        aria-label="Second group"
+      >
+        {accessibilityModal}
+      </div>
+    );
 
     return content;
   }
 
   renderNavButton(direction: "next" | "previous") {
-    const { onItemSelect, nextItem, prevItem } = this.props;
-    let label = "";
-    let itemName = "";
+    const { onDirectionSelect, nextItem, prevItem } = this.props;
+    let itemName: string | undefined;
     let item = nextItem;
     if (direction === "previous") {
-      itemName = prevItem ? getItemBankName(prevItem) : " ";
-      label = "Previous";
+      itemName = prevItem ? getItemBankName(prevItem) : "Previous";
       item = prevItem;
     } else {
-      itemName = nextItem ? getItemBankName(nextItem) : " ";
-      label = "Next";
+      itemName = nextItem ? getItemBankName(nextItem) : "Next";
     }
 
     return (
       <button
-        onClick={() => onItemSelect(direction)}
-        className={"btn btn-link " + direction}
+        onClick={() => onDirectionSelect(direction)}
+        className={`btn btn-link ${direction}`}
         disabled={item ? false : true}
       >
         <div className="nav-button-container">
@@ -89,13 +95,49 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
             }
             aria-hidden="true"
           />
-          <div className="nav-item-link">
-            <div>{label}</div>
-            <div className="nav-item-name">{itemName}</div>
-          </div>
+          <div className="nav-item-name">{itemName}</div>
         </div>
       </button>
     );
+  }
+
+  renderItemDropDown() {
+    let options: SelectOptionProps[] | undefined;
+    const { onItemSelect, currentItem } = this.props;
+    const selectedKey = currentItem ? itemRevisionKey(currentItem) : "NA";
+    if (this.props.items) {
+      options = this.props.items.map(op => {
+        const itemKey = itemRevisionKey(op);
+
+        return {
+          key: itemKey,
+          label: getItemBankName(op) || "",
+          value: itemKey,
+          selected: selectedKey === itemKey
+        };
+      });
+    }
+
+    if (options) {
+      options.unshift({
+        label: "Select an Item",
+        value: "N/A",
+        disabled: true,
+        selected: false
+      });
+
+      return (
+        <Select
+          label="Items"
+          labelClass="display-none"
+          selected={selectedKey}
+          options={options}
+          onChange={onItemSelect}
+          wrapperClass="select-dd"
+          className="item-dropdown"
+        />
+      );
+    }
   }
 
   renderMidNav() {
@@ -106,6 +148,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return (
       <div className="nav-buttons">
         {this.renderNavButton("previous")}
+        {this.renderItemDropDown()}
         {this.renderNavButton("next")}
       </div>
     );
@@ -126,29 +169,38 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
     return content;
   }
 
+  renderAdvancedAboutItem(): JSX.Element | undefined {
+    const { aboutItemRevisionModel } = this.props;
+
+    return aboutItemRevisionModel ? (
+      <AdvancedAboutItem {...aboutItemRevisionModel} />
+    ) : (
+      undefined
+    );
+  }
+
   renderNavBar(): JSX.Element | undefined {
     const { aboutItemRevisionModel, accResourceGroups } = this.props;
+    const aboutItemElement = this.renderAdvancedAboutItem();
     let content: JSX.Element | undefined;
-    if (aboutItemRevisionModel && accResourceGroups) {
-      content = (
+    content = (
+      <div
+        className="item-nav"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
         <div
-          className="item-nav"
-          role="toolbar"
-          aria-label="Toolbar with button groups"
+          className="item-nav-left-group"
+          role="group"
+          aria-label="First group"
         >
-          <div
-            className="item-nav-left-group"
-            role="group"
-            aria-label="First group"
-          >
-            <AdvancedAboutItem {...aboutItemRevisionModel} />
-            {this.renderRubricModal()}
-          </div>
-          {this.renderMidNav()}
-          {this.renderRightNav()}
+          {aboutItemElement}
+          {this.renderRubricModal()}
         </div>
-      );
-    }
+        {this.renderMidNav()}
+        {this.renderRightNav()}
+      </div>
+    );
 
     return content;
   }
@@ -165,7 +217,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
         <div
           className="section item-map-iframe"
           aria-live="polite"
-          aria-relevant="additions removals"
+          aria-relevant="additions"
         >
           {this.renderNavBar()}
           <ItemViewerFrame url={itemUrl} title={"item viewer"} />

@@ -24,7 +24,7 @@ exports[`ItemPageTable expands 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -122,7 +122,7 @@ exports[`ItemPageTable expands 1`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -581,7 +581,7 @@ exports[`ItemPageTable expands 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -726,7 +726,7 @@ exports[`ItemPageTable expands 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -755,7 +755,7 @@ exports[`ItemPageTable expands 1`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -1010,7 +1010,7 @@ exports[`ItemPageTable expands 1`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -1066,7 +1066,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -1101,33 +1103,33 @@ exports[`ItemPageTable expands 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -1172,7 +1174,7 @@ exports[`ItemPageTable expands 1`] = `
                       "itemKey": 3206,
                       "subjectCode": "MATH",
                       "subjectLabel": "Math",
-                      "targetDescription": "Target A description",
+                      "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                       "targetHash": 100,
                       "targetId": "A",
                       "targetShortName": "",
@@ -1476,7 +1478,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -1514,30 +1518,30 @@ exports[`ItemPageTable expands 1`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -1695,7 +1699,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -1733,30 +1739,30 @@ exports[`ItemPageTable expands 1`] = `
                         target D description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        D
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target D description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -1914,7 +1920,9 @@ exports[`ItemPageTable expands 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -1952,30 +1960,30 @@ exports[`ItemPageTable expands 1`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -2024,7 +2032,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -2122,7 +2130,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -2418,7 +2426,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -2570,7 +2578,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -2742,7 +2750,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -2798,7 +2806,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -2833,33 +2843,33 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -3018,7 +3028,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -3056,30 +3068,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -3237,7 +3249,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -3275,30 +3289,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -3456,7 +3470,9 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -3494,30 +3510,30 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         target D description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        D
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target D description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -3566,7 +3582,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -3664,7 +3680,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -4017,7 +4033,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -4130,7 +4146,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -4375,7 +4391,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -4413,30 +4431,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         target D description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        D
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target D description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -4595,7 +4613,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -4633,30 +4653,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -4759,7 +4779,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -4815,7 +4835,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -4850,33 +4872,33 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -5034,7 +5056,9 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -5072,30 +5096,30 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -5144,7 +5168,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -5242,7 +5266,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -5595,11 +5619,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetHash": 2832,
+              "targetId": "D",
+              "targetShortName": "Evaluate Information/ sources",
+              "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
               "bankKey": 187,
@@ -5620,25 +5663,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "targetId": "B",
               "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ]
         }
@@ -5728,7 +5752,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -5993,7 +6017,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -6031,30 +6057,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -6157,7 +6183,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -6213,7 +6239,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -6248,33 +6276,33 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -6359,6 +6387,227 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             }
             hasControls={true}
             isExpanded={false}
+            key="187-2928"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "ELA4",
+                "claimLabel": "Research/Inquiry",
+                "grade": 2,
+                "gradeLabel": "Grade 4",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 2928,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "target D description",
+                "targetHash": 2832,
+                "targetId": "D",
+                "targetShortName": "Evaluate Information/ sources",
+                "title": "ELA/ literacy Grade 4 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-2928"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-2928"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    2928
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight ela"
+                  >
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-2928"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Research/Inquiry
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    displayIcon={false}
+                    helpText={
+                      <p>
+                        target D description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        D
+                         
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom undefined"
+                        >
+                          <p>
+                            target D description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-2928"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
             key="187-3163"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -6433,7 +6682,9 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -6471,30 +6722,30 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -6507,225 +6758,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <span>
                     Multiple Choice
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
-            key="187-2928"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "ELA4",
-                "claimLabel": "Research/Inquiry",
-                "grade": 2,
-                "gradeLabel": "Grade 4",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 2928,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "target D description",
-                "targetHash": 2832,
-                "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
-                "title": "ELA/ literacy Grade 4 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-2928"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-2928"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    2928
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-2928"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Research/Inquiry
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    displayIcon={false}
-                    helpText={
-                      <p>
-                        target D description
-                      </p>
-                    }
-                    position="top"
-                  >
-                    <div
-                      className="tool-tip-links"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        /Evaluate Information/ sources
-                         
-                      </span>
-                      <div
-                        className="tool-tip-details"
-                      >
-                        <div
-                          className="tool-tip-message top"
-                        >
-                          <p>
-                            target D description
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-2928"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
                   </span>
                 </span>
               </td>
@@ -6762,7 +6794,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -6860,7 +6892,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -7198,6 +7230,25 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetHash": 2832,
+              "targetId": "D",
+              "targetShortName": "Evaluate Information/ sources",
+              "title": "ELA/ literacy Grade 4 Claim 4",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
               "calculator": false,
               "claimCode": "ELA1",
               "claimLabel": "Reading",
@@ -7214,25 +7265,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "targetId": "B",
               "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
               "bankKey": 187,
@@ -7267,7 +7299,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -7361,7 +7393,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -7568,6 +7600,227 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             }
             hasControls={true}
             isExpanded={false}
+            key="187-2928"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "ELA4",
+                "claimLabel": "Research/Inquiry",
+                "grade": 2,
+                "gradeLabel": "Grade 4",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 2928,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "target D description",
+                "targetHash": 2832,
+                "targetId": "D",
+                "targetShortName": "Evaluate Information/ sources",
+                "title": "ELA/ literacy Grade 4 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-2928"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-2928"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    2928
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight ela"
+                  >
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-2928"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Research/Inquiry
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    displayIcon={false}
+                    helpText={
+                      <p>
+                        target D description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        D
+                         
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom undefined"
+                        >
+                          <p>
+                            target D description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-2928"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
             key="187-3163"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -7642,7 +7895,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -7680,30 +7935,30 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -7716,225 +7971,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <span>
                     Multiple Choice
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
-            key="187-2928"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "ELA4",
-                "claimLabel": "Research/Inquiry",
-                "grade": 2,
-                "gradeLabel": "Grade 4",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 2928,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "target D description",
-                "targetHash": 2832,
-                "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
-                "title": "ELA/ literacy Grade 4 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-2928"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-2928"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    2928
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span>
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-2928"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Research/Inquiry
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    displayIcon={false}
-                    helpText={
-                      <p>
-                        target D description
-                      </p>
-                    }
-                    position="top"
-                  >
-                    <div
-                      className="tool-tip-links"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        /Evaluate Information/ sources
-                         
-                      </span>
-                      <div
-                        className="tool-tip-details"
-                      >
-                        <div
-                          className="tool-tip-message top"
-                        >
-                          <p>
-                            target D description
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-2928"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
                   </span>
                 </span>
               </td>
@@ -8080,7 +8116,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -8118,30 +8156,30 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -8244,7 +8282,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -8300,7 +8338,9 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -8335,33 +8375,33 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -8410,7 +8450,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -8508,7 +8548,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -8930,7 +8970,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -9024,7 +9064,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -9320,7 +9360,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -9358,30 +9400,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -9539,7 +9581,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -9577,30 +9621,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         target D description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        D
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target D description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -9758,7 +9802,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -9796,30 +9842,30 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -9922,7 +9968,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -9978,7 +10024,9 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -10013,33 +10061,33 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -10088,7 +10136,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -10186,7 +10234,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -10565,7 +10613,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -10717,7 +10765,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -10972,7 +11020,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "itemKey": 3206,
                 "subjectCode": "MATH",
                 "subjectLabel": "Math",
-                "targetDescription": "Target A description",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                 "targetHash": 100,
                 "targetId": "A",
                 "targetShortName": "",
@@ -11028,7 +11076,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -11063,33 +11113,33 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     displayIcon={false}
                     helpText={
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        A
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
-                            Target A description
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -11248,7 +11298,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -11286,30 +11338,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         Target B description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Key Details
+                        B
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             Target B description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -11467,7 +11519,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight ela"
+                  >
                     ELA/literacy
                   </span>
                 </span>
@@ -11505,30 +11559,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         target D description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /Evaluate Information/ sources
+                        D
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target D description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>
@@ -11686,7 +11740,9 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 <span
                   key="subject"
                 >
-                  <span>
+                  <span
+                    className="table-subject-highlight math"
+                  >
                     Math
                   </span>
                 </span>
@@ -11724,30 +11780,30 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         target C description
                       </p>
                     }
-                    position="top"
+                    position="bottom"
                   >
-                    <div
+                    <span
                       className="tool-tip-links"
                       tabIndex={0}
                     >
                       <span
                         className="tool-tip-hoverable"
                       >
-                        /
+                        C
                          
                       </span>
-                      <div
+                      <span
                         className="tool-tip-details"
                       >
-                        <div
-                          className="tool-tip-message top"
+                        <span
+                          className="tool-tip-message bottom undefined"
                         >
                           <p>
                             target C description
                           </p>
-                        </div>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </span>
                   </ToolTip>
                 </span>
               </td>

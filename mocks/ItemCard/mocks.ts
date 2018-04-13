@@ -12,7 +12,7 @@ export const completeItemCard: ItemCardModel = {
   gradeLabel: "Grade 4",
   subjectCode: "ELA",
   subjectLabel: "ELA",
-  claimCode: "3",
+  claimCode: "ELA3",
   claimLabel: "Claim",
   targetHash: 33434,
   targetDescription: "target description right hereeeee",
@@ -38,7 +38,8 @@ export const itemCardList: ItemCardModel[] = [
     claimLabel: "Concepts and Procedures",
     targetHash: 100,
     targetId: "A",
-    targetDescription: "Target A description",
+    targetDescription:
+      "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
     targetShortName: "",
     interactionTypeCode: "EQ",
     interactionTypeLabel: "Equation",

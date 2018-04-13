@@ -3,98 +3,134 @@
 @import "constants";
 
 .card {
-    border: 2px solid;
-    border-radius: 6px;
-    background-color: @sb-white;
-    color: #444444;
-    width: 300px;
-    -webkit-transition-duration: 0.2s; // Safari
-    transition-duration: 0.2s;
-    cursor: pointer;
-    margin: 26px;
-    font-size: @font-size-base;
-    box-shadow: @card-shadow;
+  border: 2px solid;
+  border-radius: 6px;
+  background-color: @sb-white;
+  color: #444444;
+  width: 300px;
+  -webkit-transition-duration: 0.2s; // Safari
+  transition-duration: 0.2s;
+  cursor: pointer;
+  margin: 26px;
+  font-size: @font-size-base;
+  box-shadow: @card-shadow;
+
+  .math {
+    border-color: @sb-green;
+  }
 }
 
 .card:focus,
-.card:hover  {
-    color:#ffffff;
-    box-shadow: @card-shadow;
+.card:hover {
+  color: #ffffff;
+  box-shadow: @card-shadow;
 }
 
 .card.ela {
-    border-color: @sb-blue;
+  border-color: @sb-blue;
 }
 
 .card.condensed {
-    margin: @spacing-unit/2;
-    width: 215px;
-    font-size: 95%; // SB
-}
-    
-.card.condensed h4.card-title {
-    padding: @spacing-unit/2;
-}
-    
-.card.condensed .card-contents p {
-    padding: 0px @spacing-unit/2 0px @spacing-unit/2;
-    margin: 0px 0px 5px 0px;
-}
+  margin: @spacing-unit/2;
+  width: 215px;
+  font-size: 95%; // SB
 
-.card.condensed .card-contents p:first-of-type {
-    padding-top: @spacing-item;
+  h4.card-title {
+    padding: @spacing-unit/2;
+  }
+
+  .card-contents {
+    p {
+      padding: 0px @spacing-unit/2 0px @spacing-unit/2;
+      margin: 0px 0px 5px 0px;
+    }
+    p:first-of-type {
+      padding-top: @spacing-item;
+    }
+  }
 }
 
 .card-static {
-    cursor: default;
-}
+  cursor: default;
 
-.card-static:hover {
+  &:hover {
     box-shadow: @card-shadow;
+  }
 }
 
-.ela h4.card-title {
-    background-color: @sb-blue;
+.card-icon {
+  filter: drop-shadow(0 0 2px rgb(43, 43, 43));
+  margin: 0px 7.5px;
 }
 
-.card.math {
-    border-color: @sb-green;
+.card-grade-tag {
+  background-color: @sb-white;
+  border-radius: 5px;
+  padding: 0px 7px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 
-.math h4.card-title {
+.card-title {
+  font-family: "PT Sans", sans-serif;
+  color: @sb-white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .math & {
     background-color: @sb-green;
+  }
+  .ela & {
+    background-color: @sb-blue;
+  }
 }
 
-h4.card-title {
-    font-weight: bold;
-    color: @text-color-light;
-    padding: 15px;
-    margin: 0;
+.card-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 7.5px;
 }
 
 @media (max-width: 370px) {
-    h4.card-title {
-        font-size: 86%;
-    }
+  h4.card-title {
+    font-size: 86%;
+  }
 }
 
 .card-text-label {
-    text-transform: uppercase;
-    font-size: 70%;
-    font-weight: bold;
-    color: #727477;
-    padding-right: .25em;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: bold;
+  color: #6d6d6d;
+  padding-right: 0.25em;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.04em;
 }
 
 .card-text-value {
-    color: #000000;
+  color: #000000;
 }
 
 .card-contents p {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card-contents p:first-of-type {
-    padding-top: @spacing-item;
+  padding-top: @spacing-item;
 }

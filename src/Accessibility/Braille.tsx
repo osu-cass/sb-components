@@ -115,7 +115,7 @@ export class BrailleLink extends React.Component<
         <a
           className={"item-nav-btn btn btn-default btn-sm about-pt-btn"}
           aria-live="polite"
-          aria-relevant="additions removals"
+          aria-relevant="additions"
           href={brailleUrl}
           download
           onClick={() => this.watchForDlStart()}

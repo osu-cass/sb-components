@@ -315,10 +315,10 @@ export class Filter {
   }
 
   public static hideFiltersBasedOnSearchParams(
-    advancedFilter: AdvancedFilterCategoryModel[],
+    filterList: FilterCategoryModel[],
     searchParams: SearchAPIParamsModel
-  ): AdvancedFilterCategoryModel[] {
-    const calculatorFilter = advancedFilter.find(
+  ): FilterCategoryModel[] {
+    const calculatorFilter = filterList.find(
       f => f.code === FilterType.Calculator
     );
     if (searchParams.subjects && searchParams.subjects.indexOf("MATH") !== -1) {
@@ -331,6 +331,6 @@ export class Filter {
       }
     }
 
-    return advancedFilter;
+    return filterList;
   }
 }

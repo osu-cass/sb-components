@@ -115,6 +115,7 @@ export {
   SelectedFilterIndicator,
   SelectedFilterIndicatorProps
 } from "./Filter/SelectedFilterIndicator";
+export { SIWFilter } from "./Filter/SIWFilter";
 
 //
 // Grade Levels
@@ -328,7 +329,7 @@ export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
 //
 // ApiModel
 //
-export { getRequest, postRequest } from "./ApiModel";
+export { getRequest, downloadPdfGet, downloadPdfPost } from "./ApiModel";
 
 //
 // Search Result Container

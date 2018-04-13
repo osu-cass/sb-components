@@ -5,6 +5,7 @@ export interface ToolTipProps {
   helpText?: JSX.Element;
   displayIcon?: boolean;
   position?: "top" | "bottom";
+  side?: "left" | "right";
 }
 
 /**
@@ -46,20 +47,24 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
   renderToolTipHelpText() {
     if (this.props.helpText) {
       return (
-        <div className={`tool-tip-message ${this.props.position}`}>
+        <span
+          className={`tool-tip-message ${this.props.position} ${
+            this.props.side
+          }`}
+        >
           {this.renderToolTipHeader()}
           {this.props.helpText}
-        </div>
+        </span>
       );
     }
   }
 
   render() {
     return (
-      <div className="tool-tip-links" tabIndex={0}>
+      <span className="tool-tip-links" tabIndex={0}>
         {this.renderToolTipVisibleText()}
-        <div className="tool-tip-details">{this.renderToolTipHelpText()}</div>
-      </div>
+        <span className="tool-tip-details">{this.renderToolTipHelpText()}</span>
+      </span>
     );
   }
 }

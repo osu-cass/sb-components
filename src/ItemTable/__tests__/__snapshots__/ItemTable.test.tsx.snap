@@ -19,7 +19,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -164,7 +164,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
         "itemKey": 3206,
         "subjectCode": "MATH",
         "subjectLabel": "Math",
-        "targetDescription": "Target A description",
+        "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
         "targetHash": 100,
         "targetId": "A",
         "targetShortName": "",
@@ -193,7 +193,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -293,7 +293,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -385,7 +385,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               "itemKey": 3206,
               "subjectCode": "MATH",
               "subjectLabel": "Math",
-              "targetDescription": "Target A description",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
               "targetHash": 100,
               "targetId": "A",
               "targetShortName": "",
@@ -548,7 +548,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -640,7 +640,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -729,7 +729,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -785,7 +785,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight math"
+              >
                 Math
               </span>
             </span>
@@ -820,33 +822,33 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    Target A description
+                    Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    A
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -891,7 +893,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1140,7 +1142,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1232,7 +1234,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1377,7 +1379,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight ela"
+              >
                 ELA/literacy
               </span>
             </span>
@@ -1415,30 +1419,30 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     Target B description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Key Details
+                    B
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         Target B description
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -1542,7 +1546,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1634,7 +1638,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -1778,7 +1782,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight math"
+              >
                 Math
               </span>
             </span>
@@ -1816,30 +1822,30 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     target C description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    C
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target C description
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -1943,7 +1949,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -2035,7 +2041,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   "itemKey": 3206,
                   "subjectCode": "MATH",
                   "subjectLabel": "Math",
-                  "targetDescription": "Target A description",
+                  "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
                   "targetHash": 100,
                   "targetId": "A",
                   "targetShortName": "",
@@ -2179,7 +2185,9 @@ exports[`ItemTable expands matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight ela"
+              >
                 ELA/literacy
               </span>
             </span>
@@ -2217,30 +2225,30 @@ exports[`ItemTable expands matches snapshot 1`] = `
                     target D description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Evaluate Information/ sources
+                    D
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target D description
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -2282,7 +2290,7 @@ exports[`ItemTable matches snapshot 1`] = `
           "itemKey": 3206,
           "subjectCode": "MATH",
           "subjectLabel": "Math",
-          "targetDescription": "Target A description",
+          "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
           "targetHash": 100,
           "targetId": "A",
           "targetShortName": "",
@@ -2503,7 +2511,7 @@ exports[`ItemTable matches snapshot 1`] = `
             "itemKey": 3206,
             "subjectCode": "MATH",
             "subjectLabel": "Math",
-            "targetDescription": "Target A description",
+            "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
             "targetHash": 100,
             "targetId": "A",
             "targetShortName": "",
@@ -2559,7 +2567,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight math"
+              >
                 Math
               </span>
             </span>
@@ -2594,33 +2604,33 @@ exports[`ItemTable matches snapshot 1`] = `
                 displayIcon={false}
                 helpText={
                   <p>
-                    Target A description
+                    Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    A
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
-                        Target A description
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -2779,7 +2789,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight ela"
+              >
                 ELA/literacy
               </span>
             </span>
@@ -2817,30 +2829,30 @@ exports[`ItemTable matches snapshot 1`] = `
                     Target B description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Key Details
+                    B
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         Target B description
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -2998,7 +3010,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight math"
+              >
                 Math
               </span>
             </span>
@@ -3036,30 +3050,30 @@ exports[`ItemTable matches snapshot 1`] = `
                     target C description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /
+                    C
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target C description
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>
@@ -3217,7 +3231,9 @@ exports[`ItemTable matches snapshot 1`] = `
             <span
               key="subject"
             >
-              <span>
+              <span
+                className="table-subject-highlight ela"
+              >
                 ELA/literacy
               </span>
             </span>
@@ -3255,30 +3271,30 @@ exports[`ItemTable matches snapshot 1`] = `
                     target D description
                   </p>
                 }
-                position="top"
+                position="bottom"
               >
-                <div
+                <span
                   className="tool-tip-links"
                   tabIndex={0}
                 >
                   <span
                     className="tool-tip-hoverable"
                   >
-                    /Evaluate Information/ sources
+                    D
                      
                   </span>
-                  <div
+                  <span
                     className="tool-tip-details"
                   >
-                    <div
-                      className="tool-tip-message top"
+                    <span
+                      className="tool-tip-message bottom undefined"
                     >
                       <p>
                         target D description
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </ToolTip>
             </span>
           </td>

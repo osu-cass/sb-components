@@ -42,6 +42,10 @@ export class ItemEntryRow extends React.Component<
     if (isModified && validItemRevisionModel(editRow)) {
       this.props.onRowUpdate(editRow);
       this.setState({ isModified: false });
+    } else if (!validItemRevisionModel(editRow)) {
+      editRow.valid = false;
+      this.props.onRowUpdate(editRow);
+      this.setState({ isModified: false });
     }
   };
 
@@ -68,13 +72,15 @@ export class ItemEntryRow extends React.Component<
     onChange: (value: number) => void,
     rowValue?: number
   ) {
+    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
+
     return (
       <td>
         <input
-          className="form-control"
-          aria-valuenow={rowValue || ""}
-          aria-valuemin=""
-          aria-valuemax="100000"
+          className={`form-control ${error}`}
+          aria-valuenow={rowValue || undefined}
+          aria-valuemin={0}
+          aria-valuemax={100000}
           type="number"
           value={rowValue || ""}
           onChange={event => onChange(+event.target.value)}
@@ -100,9 +106,12 @@ export class ItemEntryRow extends React.Component<
       selected: row.section === "N/A"
     });
 
+    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
+
     return (
       <td>
         <Select
+          className={`form-control ${error}`}
           label="Sections"
           labelClass="display-none"
           selected={row.section || "N/A"}

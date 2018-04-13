@@ -11,10 +11,13 @@ export interface ItemRevisionModel {
   section?: string;
   revision?: string;
   isaap?: string;
+  valid?: boolean;
 }
 
-export function getItemBankName(itemRevisionModel: ItemRevisionModel) {
-  let value = "";
+export function getItemBankName(
+  itemRevisionModel: ItemRevisionModel
+): string | undefined {
+  let value: string | undefined;
   if (itemRevisionModel.bankKey && itemRevisionModel.itemKey) {
     value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
   }
@@ -28,9 +31,10 @@ export function itemRevisionKey(itemRevisionModel: ItemRevisionModel) {
   }`;
 }
 
-export function validItemRevisionModel(itemRevisionModel: ItemRevisionModel) {
+export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
   let value = false;
   if (
+    itemRevisionModel &&
     itemRevisionModel.itemKey &&
     itemRevisionModel.bankKey &&
     itemRevisionModel.section

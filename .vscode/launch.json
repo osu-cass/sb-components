@@ -13,6 +13,19 @@
             "outFiles": [
                 "${workspaceFolder}/../lib/**/*.js"
             ]
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug Components",
+            "url": "http://localhost:6006",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./src/*": "${workspaceRoot}/src/*",
+            },
+            "skipFiles": [
+                "node_modules"
+            ]
         }
     ]
 }

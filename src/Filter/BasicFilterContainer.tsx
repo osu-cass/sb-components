@@ -2,9 +2,11 @@ import * as React from "react";
 import {
   BasicFilterCategoryModel,
   FilterOptionModel,
-  FilterType
+  FilterType,
+  OptionTypeModel
 } from "./FilterModels";
 import { BasicFilter } from "./BasicFilter";
+import { AdvancedFilter } from "./AdvancedFilter";
 
 /**
  * Properties interface for the BasicFilterContainer component.
@@ -70,17 +72,48 @@ export class BasicFilterContainer extends React.Component<
       if (option !== undefined) {
         let newOptions = filterCategories[index].filterOptions.slice();
         const optionIdx = filterCategories[index].filterOptions.indexOf(option);
+
         newOptions = filterCategories[index].filterOptions.map(opt => ({
           ...opt,
           isSelected: false
         }));
 
-        newOptions[optionIdx].isSelected = !option.isSelected;
+        let allPressed =
+          option.label === undefined &&
+          category.optionType === OptionTypeModel.AdvFilter;
+
+        if (option.filterType === FilterType.SearchItemId) {
+          newOptions = [option];
+          allPressed = true;
+        }
+
+        if (!allPressed) {
+          newOptions[optionIdx].isSelected = !option.isSelected;
+        }
+
         filterCategories[index].filterOptions = newOptions;
         this.props.onUpdateFilter(filterCategories, category.code);
       }
     }
   }
+
+  renderAdvFilter(fil: BasicFilterCategoryModel, iter: number) {
+    // TODO: add logic for multi and all buttons
+    const advProps = {
+      isMultiSelect: true,
+      displayAllButton: true,
+      ...fil
+    };
+
+    return (
+      <AdvancedFilter
+        key={iter}
+        {...advProps}
+        onFilterOptionSelect={opt => this.onFilterSelect(fil, opt)}
+      />
+    );
+  }
+
   /**
    * Returns an array Basic Filter component for each of the filter categories
    * @method renderFilters
@@ -89,6 +122,10 @@ export class BasicFilterContainer extends React.Component<
     const { filterCategories } = this.props;
 
     return filterCategories.map((fil, i) => {
+      if (fil.optionType === OptionTypeModel.AdvFilter) {
+        return this.renderAdvFilter(fil, i);
+      }
+
       return (
         <BasicFilter
           key={i}
@@ -150,8 +187,8 @@ export class BasicFilterContainer extends React.Component<
 
     return (
       <div id={id} className={className}>
-        <div className="basic-filter">{this.renderFilters()}</div>
         {advancedFilterButton}
+        <div className="basic-filter">{this.renderFilters()}</div>
       </div>
     );
   }

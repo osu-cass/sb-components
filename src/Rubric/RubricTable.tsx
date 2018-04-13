@@ -10,6 +10,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
     const rows = rubric.rubricEntries.map(entry => {
       const sample = rubric.samples.find(
         s =>
+          s.sampleResponses &&
           s.sampleResponses[0] &&
           s.sampleResponses[0].scorePoint === entry.scorepoint
       );
@@ -30,6 +31,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
       textAlign: "left"
     };
 
+    // tslint:disable:react-no-dangerous-html
     const rowsJsx = rows.map(row => (
       <tr key={row.score}>
         <td>{row.score}</td>
@@ -47,6 +49,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
         )}
       </tr>
     ));
+    // tslint:enable:react-no-dangerous-html
 
     return (
       <table className="item-data-table" key={index}>
