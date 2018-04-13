@@ -9,6 +9,30 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     id=""
   >
     <div
+      className="bf-button-container"
+    >
+      <span>
+        <button
+          className="btn btn-default filter-button"
+          onClick={undefined}
+        >
+          Reset
+        </button>
+      </span>
+      <span>
+        <button
+          className="btn btn-default filter-button af-expand"
+          onClick={[Function]}
+        >
+          Advanced Filters 
+          <span
+            aria-hidden="true"
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </span>
+    </div>
+    <div
       className="basic-filter"
     >
       <div
@@ -104,30 +128,69 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           </div>
         </label>
       </div>
-    </div>
-    <div
-      className="bf-button-container"
-    >
-      <span>
-        <button
-          className="btn btn-default filter-button"
-          onClick={undefined}
+      <div
+        className="filter-selection"
+        id="techtype-filter"
+      >
+        <div
+          className="filter-container-header"
         >
-          Reset
-        </button>
-      </span>
-      <span>
-        <button
-          className="btn btn-default filter-button af-expand"
-          onClick={[Function]}
+          <label>
+            <span
+              className="tool-tip-links"
+              tabIndex={0}
+            >
+              <span
+                className="tool-tip-hoverable"
+              >
+                <span
+                  className="tooltip-label"
+                  info-label="true"
+                >
+                  TechType
+                </span>
+                 
+              </span>
+              <span
+                className="tool-tip-details"
+              />
+            </span>
+          </label>
+        </div>
+        <div
+          className="nested-btn-group btn-group-sm toggle-group vertical"
+          data-toggle="buttons"
         >
-          Advanced Filters 
-          <span
-            aria-hidden="true"
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </span>
+          <button
+            className="btn btn-primary active"
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            All
+          </button>
+          <div
+            className="btn-group filter-btn-group"
+          >
+            <button
+              className="btn btn-primary "
+              disabled={false}
+              onClick={[Function]}
+              role="button"
+            >
+              tech1
+            </button>
+            <button
+              className="btn btn-primary "
+              disabled={false}
+              onClick={[Function]}
+              role="button"
+            >
+              tech2
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

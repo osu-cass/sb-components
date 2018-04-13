@@ -40,7 +40,12 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   }
 
   renderTags() {
-    const { filterOptions, onFilterOptionSelect, disabled } = this.props;
+    const {
+      filterOptions,
+      onFilterOptionSelect,
+      disabled,
+      emptyOptionsText
+    } = this.props;
     const tags: JSX.Element[] = [];
 
     if (filterOptions.length > 0) {
@@ -56,7 +61,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
         );
       });
     } else {
-      tags.push(<div key={0}>No options.</div>);
+      tags.push(<div key={0}>{emptyOptionsText || "No options."}</div>);
     }
 
     return tags;

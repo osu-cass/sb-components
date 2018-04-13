@@ -2,10 +2,12 @@ import * as React from "react";
 import {
   BasicFilterCategoryModel,
   FilterOptionModel,
-  OptionTypeModel
-} from "./FilterModels";
-import { SelectOptionProps } from "../Select/SelectOption";
-import { Select } from "../Select/Select";
+  OptionTypeModel,
+  SelectOptionProps,
+  FilterType,
+  ToolTip,
+  Select
+} from "@src/index";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
@@ -23,6 +25,46 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
 
   findFilterOption(key: string) {
     return this.props.filterOptions.find(fil => fil.key === key);
+  }
+
+  searchHandler = (searchText: string) => {
+    const newOption: FilterOptionModel = {
+      label: this.props.label,
+      key: searchText,
+      isSelected: true,
+      filterType: this.props.code
+    };
+
+    this.props.selectedHandler(newOption);
+  };
+
+  renderSearch(): JSX.Element {
+    const {
+      selectedHandler,
+      optionType,
+      label,
+      helpText,
+      placeholderText
+    } = this.props;
+    const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
+
+    return (
+      <div className="input-box">
+        <label>
+          <ToolTip helpText={helpTextElement} displayIcon={true}>
+            <span className="tooltip-label" info-label="true">
+              {label}
+            </span>
+          </ToolTip>
+        </label>
+        <input
+          className="form-control"
+          type="text"
+          onChange={t => this.searchHandler(t.currentTarget.value)}
+          placeholder={placeholderText}
+        />
+      </div>
+    );
   }
 
   /**
@@ -122,6 +164,9 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         break;
       case OptionTypeModel.radioBtn:
         content = this.renderRadio();
+        break;
+      case OptionTypeModel.inputBox:
+        content = this.renderSearch();
         break;
       default:
         console.error("Invalid option", optionType);

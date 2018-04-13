@@ -16,6 +16,61 @@ export interface BothFilterModels {
   advancedFilter?: AdvancedFilterCategoryModel[];
 }
 
+export function siwFilterUpdated(
+  basicFilter: BasicFilterCategoryModel[],
+  searchAPI: SearchAPIParamsModel,
+  searchModel?: ItemsSearchModel,
+  changedFilter?: FilterType
+): BothFilterModels {
+  let newSearchAPI = { ...searchAPI };
+  if (changedFilter) {
+    const changedBasicFilter = basicFilter.find(f => f.code === changedFilter);
+    if (changedBasicFilter) {
+      newSearchAPI = ItemSearch.updateSearchApiModel(
+        changedBasicFilter,
+        newSearchAPI
+      );
+      Filter.updateSingleFilter(changedBasicFilter, changedBasicFilter);
+    }
+  }
+
+  return siwUpdateDependentAndSearch(
+    basicFilter,
+    newSearchAPI,
+    [],
+    searchModel
+  );
+}
+
+function siwUpdateDependentAndSearch(
+  basicFilter: BasicFilterCategoryModel[],
+  searchAPI: SearchAPIParamsModel,
+  advancedFilter: AdvancedFilterCategoryModel[],
+  searchModel?: ItemsSearchModel
+): BothFilterModels {
+  let newFilter = basicFilter.slice();
+  let newSearchAPI = { ...searchAPI };
+
+  // show/hide calculator if math selected
+  Filter.hideFiltersBasedOnSearchParams(newFilter, newSearchAPI);
+
+  if (searchModel) {
+    // remove any searchAPI params that aren't visible anymore
+    newSearchAPI = ItemSearch.updateDependentSearchParams(
+      newSearchAPI,
+      searchModel
+    );
+    // update filter based on changes to searchAPIparams
+    newFilter = Filter.getUpdatedSearchFilters(
+      searchModel,
+      newFilter,
+      newSearchAPI
+    );
+  }
+
+  return { advancedFilter, basicFilter: newFilter, searchAPI: newSearchAPI };
+}
+
 /**
  * Performs calls to update `SearchAPIParamsModel`, `BasicFilterCategoryModel`s, and
  * `AdvancedFilterCategoryModel`s based on changes to a the advanced filter, then returns
