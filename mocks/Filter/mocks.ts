@@ -453,22 +453,26 @@ export const mockClaimModel: ClaimModel[] = [
   {
     code: "MATH1",
     label: "Concepts and Procedures",
-    targetCodes: []
+    targetCodes: [],
+    claimNumber: "1"
   },
   {
     code: "MATH2",
     label: "Problem Solving",
-    targetCodes: []
+    targetCodes: [],
+    claimNumber: "2"
   },
   {
     code: "ELA1",
     label: "Reading",
-    targetCodes: [1262, 1839, 2081, 2939, 2455, 2478, 1137, 1039, 1231, 2455]
+    targetCodes: [1262, 1839, 2081, 2939, 2455, 2478, 1137, 1039, 1231, 2455],
+    claimNumber: "1"
   },
   {
     code: "ELA2",
     label: "Writing",
-    targetCodes: [2312, 1052, 1729, 1617, 2287, 1183]
+    targetCodes: [2312, 1052, 1729, 1617, 2287, 1183],
+    claimNumber: "2"
   }
 ];
 
