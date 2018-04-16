@@ -245,7 +245,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -343,7 +343,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -441,7 +441,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -539,7 +539,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -637,7 +637,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -735,7 +735,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -833,7 +833,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -931,7 +931,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1029,7 +1029,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1127,7 +1127,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1225,7 +1225,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1323,7 +1323,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1421,7 +1421,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1519,7 +1519,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1617,7 +1617,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1715,7 +1715,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1813,7 +1813,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1911,7 +1911,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2009,7 +2009,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2107,7 +2107,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2205,7 +2205,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2303,7 +2303,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2401,7 +2401,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2499,7 +2499,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2597,7 +2597,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2695,7 +2695,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2793,7 +2793,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2891,7 +2891,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2989,7 +2989,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3087,7 +3087,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3185,7 +3185,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3283,7 +3283,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3381,7 +3381,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3479,7 +3479,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3577,7 +3577,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3675,7 +3675,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3773,7 +3773,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3871,7 +3871,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3969,7 +3969,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4067,7 +4067,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4165,7 +4165,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4263,7 +4263,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4361,7 +4361,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4459,7 +4459,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4557,7 +4557,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4655,7 +4655,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4753,7 +4753,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4851,7 +4851,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -4949,7 +4949,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -5047,7 +5047,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
               </span>
               <span>
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span

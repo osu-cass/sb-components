@@ -9,18 +9,19 @@ import {
 } from "../Filter/FilterModels";
 
 export type SearchFilterStringTypes =
-  | ClaimModel
   | SubjectModel
   | InteractionTypeModel
   | SearchBaseModel;
 export type SearchFilterTypes =
   | SearchFilterStringTypes
   | TargetModel
-  | GradeLevels;
+  | GradeLevels
+  | ClaimModel;
 export type SearchFilterModelTypes =
   | FilterSearchGradeLevelModel
   | FilterSearchStringModel<SearchFilterStringTypes>
-  | FilterSearchTargetModel;
+  | FilterSearchTargetModel
+  | FilterSearchClaimModel;
 
 export interface SubjectClaimsModel {
   [subject: string]: { text: string; value: string }[];
@@ -38,6 +39,7 @@ export interface SubjectModel extends SearchBaseModel {
 
 export interface ClaimModel extends SearchBaseModel {
   targetCodes?: number[];
+  claimNumber: string;
 }
 
 export interface TargetModel {
@@ -87,7 +89,6 @@ export interface FilterSearchStringModel<T extends SearchFilterStringTypes>
   extends FilterSearchModel {
   filterOptions: T[];
   code:
-    | FilterType.Claim
     | FilterType.InteractionType
     | FilterType.Subject
     | FilterType.TechnologyType
@@ -107,4 +108,9 @@ export interface FilterSearchTargetModel extends FilterSearchModel {
 export interface FilterSearchGradeModel extends FilterSearchModel {
   filterOptions: GradeLevels[];
   code: FilterType.Grade;
+}
+
+export interface FilterSearchClaimModel extends FilterSearchModel {
+  filterOptions: ClaimModel[];
+  code: FilterType.Claim;
 }

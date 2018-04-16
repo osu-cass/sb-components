@@ -98,7 +98,7 @@ export {
   FilterContainerProps
 } from "./Filter/FilterContainer";
 export {
-  onFilterSelect,
+  advFilterSelect,
   OptionTypeModel,
   FilterOptionModel,
   BasicFilterCategoryModel,

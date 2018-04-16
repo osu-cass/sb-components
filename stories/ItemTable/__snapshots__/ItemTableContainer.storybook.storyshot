@@ -216,7 +216,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -314,7 +314,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -412,7 +412,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -510,7 +510,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -744,7 +744,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -824,7 +824,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -904,7 +904,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -984,7 +984,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1239,7 +1239,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1337,7 +1337,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1435,7 +1435,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1533,7 +1533,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1788,7 +1788,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1886,7 +1886,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -1984,7 +1984,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span
@@ -2082,7 +2082,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
             </span>
             <span>
               <span
-                className="tool-tip-links"
+                className="tool-tip-links box"
                 tabIndex={0}
               >
                 <span

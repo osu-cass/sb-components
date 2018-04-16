@@ -70,7 +70,7 @@ module.exports = env => {
                 })
           },
           {
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|jpg|gif|svg)$/,
             use: [
               {
                 loader: "file-loader",
@@ -78,14 +78,6 @@ module.exports = env => {
                   name: "/Assets/Images/[name].[ext]",
                   emitFile: false
                 }
-              }
-            ]
-          },
-          {
-            test: /.svg$/,
-            use: [
-              {
-                loader: "file-loader"
               }
             ]
           }

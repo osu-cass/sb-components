@@ -45,8 +45,9 @@ export class SIWFilter extends React.Component<SIWFilterProps, SIWFilterState> {
     changed: FilterType
   ) => {
     const updated = CombinedFilterHelpers.siwFilterUpdated(
-      this.props.basicFilter,
+      basicFilter,
       this.props.searchAPI,
+      this.props.advancedFilter,
       this.props.searchModel,
       changed
     );

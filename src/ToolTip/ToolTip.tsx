@@ -6,6 +6,7 @@ export interface ToolTipProps {
   displayIcon?: boolean;
   position?: "top" | "bottom";
   side?: "left" | "right";
+  className?: string;
 }
 
 /**
@@ -61,7 +62,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
   render() {
     return (
-      <span className="tool-tip-links" tabIndex={0}>
+      <span className={`tool-tip-links ${this.props.className}`} tabIndex={0}>
         {this.renderToolTipVisibleText()}
         <span className="tool-tip-details">{this.renderToolTipHelpText()}</span>
       </span>

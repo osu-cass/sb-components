@@ -2,14 +2,14 @@
 
 div.bf-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 
   &.bf-expanded {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -47,8 +47,11 @@ div.basic-filter .bf-selection {
 .basic-filter {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 0px;
   margin-bottom: @spacing-unit;
+  flex-basis: auto;
+  padding: @spacing-unit/2;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .med-text {

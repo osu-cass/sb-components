@@ -194,12 +194,14 @@ export const claims: ClaimModel[] = [
   {
     targetCodes: [11, 12, 13, 14],
     code: "MATH1",
-    label: "MATH1"
+    label: "MATH1",
+    claimNumber: "1"
   },
   {
     targetCodes: [21, 22, 23, 24],
     code: "ELA1",
-    label: "ELA1"
+    label: "ELA1",
+    claimNumber: "1"
   }
 ];
 

@@ -819,6 +819,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -828,7 +829,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1413,6 +1414,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -1422,7 +1424,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -1816,6 +1818,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -1825,7 +1828,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2219,6 +2222,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -2228,7 +2232,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2601,6 +2605,7 @@ exports[`ItemTable matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -2610,7 +2615,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -2823,6 +2828,7 @@ exports[`ItemTable matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -2832,7 +2838,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3044,6 +3050,7 @@ exports[`ItemTable matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -3053,7 +3060,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span
@@ -3265,6 +3272,7 @@ exports[`ItemTable matches snapshot 1`] = `
               key="target"
             >
               <ToolTip
+                className="box"
                 displayIcon={false}
                 helpText={
                   <p>
@@ -3274,7 +3282,7 @@ exports[`ItemTable matches snapshot 1`] = `
                 position="bottom"
               >
                 <span
-                  className="tool-tip-links"
+                  className="tool-tip-links box"
                   tabIndex={0}
                 >
                   <span

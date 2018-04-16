@@ -85,7 +85,7 @@ describe("basicFilterUpdated", () => {
       expect(resultAdvancedFilters[0].filterOptions[0]).toEqual({
         isSelected: true,
         key: "MATH1",
-        label: "MATH1",
+        label: "1: MATH1",
         filterType: FilterType.Claim
       });
     }

@@ -77,6 +77,7 @@ exports[`ItemCard renders correctly 1`] = `
         className="card-text-value"
       >
         <ToolTip
+          className="box"
           displayIcon={true}
           helpText={
             <span>

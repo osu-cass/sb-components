@@ -91,7 +91,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
           className="card-text-value"
         >
           <span
-            className="tool-tip-links"
+            className="tool-tip-links box"
             tabIndex={0}
           >
             <span

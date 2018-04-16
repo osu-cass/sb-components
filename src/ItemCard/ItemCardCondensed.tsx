@@ -4,14 +4,14 @@ import { Redirect } from "react-router";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
 // tslint:disable:no-require-imports
 const claimIcons: { [claimCode: string]: string } = {
-  MATH1: require("../Assets/Icons/Claims/math-1.svg"),
-  MATH2: require("../Assets/Icons/Claims/math-2.svg"),
-  MATH3: require("../Assets/Icons/Claims/math-3.svg"),
-  MATH4: require("../Assets/Icons/Claims/math-4.svg"),
-  ELA1: require("../Assets/Icons/Claims/ela-1.svg"),
-  ELA2: require("../Assets/Icons/Claims/ela-2.svg"),
-  ELA3: require("../Assets/Icons/Claims/ela-3.svg"),
-  ELA4: require("../Assets/Icons/Claims/ela-4.svg")
+  MATH1: require("@sbac/sbac-ui-kit/src/images/math-1.svg"),
+  MATH2: require("@sbac/sbac-ui-kit/src/images/math-2.svg"),
+  MATH3: require("@sbac/sbac-ui-kit/src/images/math-3.svg"),
+  MATH4: require("@sbac/sbac-ui-kit/src/images/math-4.svg"),
+  ELA1: require("@sbac/sbac-ui-kit/src/images/ela-1.svg"),
+  ELA2: require("@sbac/sbac-ui-kit/src/images/ela-2.svg"),
+  ELA3: require("@sbac/sbac-ui-kit/src/images/ela-3.svg"),
+  ELA4: require("@sbac/sbac-ui-kit/src/images/ela-4.svg")
 };
 // tslint:enable:no-require-imports
 

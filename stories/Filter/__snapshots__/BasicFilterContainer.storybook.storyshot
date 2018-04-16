@@ -110,7 +110,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
       >
         <label>
           <span
-            className="tool-tip-links"
+            className="tool-tip-links undefined"
             tabIndex={0}
           >
             <span
@@ -302,7 +302,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       >
         <label>
           <span
-            className="tool-tip-links"
+            className="tool-tip-links undefined"
             tabIndex={0}
           >
             <span

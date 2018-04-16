@@ -11,7 +11,7 @@ import {
  * @param {AdvancedFilterCategoryModel} selectedCat
  * @param {FilterOptionModel} [option]
  */
-export const onFilterSelect = (
+export const advFilterSelect = (
   categories: AdvancedFilterCategoryModel[],
   selectedCat: AdvancedFilterCategoryModel,
   option?: FilterOptionModel
@@ -19,7 +19,25 @@ export const onFilterSelect = (
   const allPressed = option === undefined && selectedCat.displayAllButton;
   if (!selectedCat.disabled) {
     const categoryIndex = categories.indexOf(selectedCat);
-    const options = categories[categoryIndex].filterOptions.slice();
+
+    categories[categoryIndex] = advFilterCategorySelect(
+      categories[categoryIndex],
+      option
+    );
+
+    return categories;
+  }
+};
+
+export function advFilterCategorySelect(
+  selectedCat: AdvancedFilterCategoryModel,
+  option?: FilterOptionModel
+): AdvancedFilterCategoryModel {
+  const newCategory = { ...selectedCat };
+  const options = newCategory.filterOptions.slice();
+  const allPressed = option === undefined && newCategory.displayAllButton;
+
+  if (!newCategory.disabled) {
     if (allPressed) {
       options.forEach((opt: FilterOptionModel) => (opt.isSelected = false));
     }
@@ -32,11 +50,11 @@ export const onFilterSelect = (
         });
       }
     }
-    categories[categoryIndex].filterOptions = options;
-
-    return categories;
   }
-};
+
+  return newCategory;
+}
+
 export enum OptionTypeModel {
   inputBox,
   button,
@@ -77,10 +95,10 @@ export interface FilterCategoryModel {
   helpText?: string;
   emptyOptionsText?: string;
   code: FilterType;
+  isMultiSelect?: boolean;
 }
 
 export interface AdvancedFilterCategoryModel extends FilterCategoryModel {
-  isMultiSelect: boolean;
   displayAllButton: boolean;
 }
 

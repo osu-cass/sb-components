@@ -137,7 +137,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         >
           <label>
             <span
-              className="tool-tip-links"
+              className="tool-tip-links undefined"
               tabIndex={0}
             >
               <span
