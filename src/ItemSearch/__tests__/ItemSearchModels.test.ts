@@ -29,7 +29,8 @@ import {
   targetSearchStringTypes,
   resultFilterOptionModeltarget,
   resultFilterOptionModelTechType,
-  techtypeSearchStringTypes
+  techtypeSearchStringTypes,
+  claimsMocks
 } from "@mocks/ItemSearch/mocks";
 import { itemCardList } from "@mocks/index";
 
@@ -326,7 +327,7 @@ describe("ItemSearch.getFilterOptionModel", () => {
     const filterParam: SearchFilterModelTypes = {
       label: "claims",
       code: FilterType.Claim,
-      filterOptions: genericSearchStringTypes
+      filterOptions: claimsMocks
     };
     const searchApiParam = mockSeachAPI;
 

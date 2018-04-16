@@ -1100,6 +1100,7 @@ exports[`ItemPageTable expands 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -1109,7 +1110,7 @@ exports[`ItemPageTable expands 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -1512,6 +1513,7 @@ exports[`ItemPageTable expands 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -1521,7 +1523,7 @@ exports[`ItemPageTable expands 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -1733,6 +1735,7 @@ exports[`ItemPageTable expands 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -1742,7 +1745,7 @@ exports[`ItemPageTable expands 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -1954,6 +1957,7 @@ exports[`ItemPageTable expands 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -1963,7 +1967,7 @@ exports[`ItemPageTable expands 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -2840,6 +2844,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -2849,7 +2854,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -3062,6 +3067,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -3071,7 +3077,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -3283,6 +3289,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -3292,7 +3299,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -3504,6 +3511,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -3513,7 +3521,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -4425,6 +4433,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -4434,7 +4443,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -4647,6 +4656,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -4656,7 +4666,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -4869,6 +4879,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -4878,7 +4889,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -5090,6 +5101,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -5099,7 +5111,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -6051,6 +6063,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -6060,7 +6073,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -6273,6 +6286,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -6282,7 +6296,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -6494,6 +6508,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -6503,7 +6518,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -6716,6 +6731,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -6725,7 +6741,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -7707,6 +7723,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -7716,7 +7733,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -7929,6 +7946,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -7938,7 +7956,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -8150,6 +8168,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -8159,7 +8178,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -8372,6 +8391,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -8381,7 +8401,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -9394,6 +9414,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -9403,7 +9424,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -9615,6 +9636,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -9624,7 +9646,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -9836,6 +9858,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -9845,7 +9868,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -10058,6 +10081,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -10067,7 +10091,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -11110,6 +11134,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -11119,7 +11144,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -11332,6 +11357,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -11341,7 +11367,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -11553,6 +11579,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -11562,7 +11589,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span
@@ -11774,6 +11801,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   key="target"
                 >
                   <ToolTip
+                    className="box"
                     displayIcon={false}
                     helpText={
                       <p>
@@ -11783,7 +11811,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                     position="bottom"
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links box"
                       tabIndex={0}
                     >
                       <span

@@ -586,7 +586,7 @@ exports[`FilterContainer renders 1`] = `
                     displayIcon={false}
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links undefined"
                       tabIndex={0}
                     >
                       <span
@@ -1258,7 +1258,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     displayIcon={false}
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links undefined"
                       tabIndex={0}
                     >
                       <span
@@ -1930,7 +1930,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     displayIcon={false}
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links undefined"
                       tabIndex={0}
                     >
                       <span
@@ -2253,7 +2253,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       }
                     >
                       <span
-                        className="tool-tip-links"
+                        className="tool-tip-links undefined"
                         tabIndex={0}
                       >
                         <span
@@ -2403,7 +2403,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       }
                     >
                       <span
-                        className="tool-tip-links"
+                        className="tool-tip-links undefined"
                         tabIndex={0}
                       >
                         <span
@@ -2574,7 +2574,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       }
                     >
                       <span
-                        className="tool-tip-links"
+                        className="tool-tip-links undefined"
                         tabIndex={0}
                       >
                         <span
@@ -2708,7 +2708,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       }
                     >
                       <span
-                        className="tool-tip-links"
+                        className="tool-tip-links undefined"
                         tabIndex={0}
                       >
                         <span
@@ -3393,7 +3393,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     displayIcon={false}
                   >
                     <span
-                      className="tool-tip-links"
+                      className="tool-tip-links undefined"
                       tabIndex={0}
                     >
                       <span

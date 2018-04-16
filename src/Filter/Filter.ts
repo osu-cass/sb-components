@@ -245,7 +245,7 @@ export class Filter {
 
         let filterOptions: FilterOptionModel[] = [];
         if (searchAPI.subjects && searchAPI.subjects.length > 0) {
-          filterOptions = ItemSearch.searchOptionFilterString(
+          filterOptions = ItemSearch.searchOptionToFilterClaim(
             filteredClaims,
             FilterType.Claim,
             searchAPI.claims

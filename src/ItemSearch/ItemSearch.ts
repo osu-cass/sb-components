@@ -226,6 +226,21 @@ export class ItemSearch {
     });
   }
 
+  public static searchOptionToFilterClaim(
+    options: ClaimModel[],
+    filterType: FilterType,
+    selectedCodes?: string[]
+  ): FilterOptionModel[] {
+    return options.map(o => {
+      return {
+        filterType,
+        label: `${o.claimNumber}: ${o.label}`,
+        key: o.code,
+        isSelected: (selectedCodes || []).some(s => s === o.code)
+      };
+    });
+  }
+
   public static getFilterOptionModel(
     filter: SearchFilterModelTypes,
     searchApi: SearchAPIParamsModel = {}
@@ -234,7 +249,7 @@ export class ItemSearch {
 
     switch (filter.code) {
       case FilterType.Claim:
-        options = this.searchOptionFilterString(
+        options = this.searchOptionToFilterClaim(
           filter.filterOptions,
           filter.code,
           searchApi.claims
