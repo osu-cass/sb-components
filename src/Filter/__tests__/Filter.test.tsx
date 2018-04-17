@@ -117,7 +117,7 @@ describe("Filter.getSelectedTargets", () => {
     const categories = [Mocks.targetSelectionsCategory];
     const result = Filter.getSelectedTargets(categories);
     expect(result).toHaveLength(1);
-    expect(result).toContain(133);
+    expect(result).toContain("133");
   });
 
   it("No selections", () => {

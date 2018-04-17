@@ -192,13 +192,13 @@ export const subjects: SubjectModel[] = [
 
 export const claims: ClaimModel[] = [
   {
-    targetCodes: [11, 12, 13, 14],
+    targetCodes: ["11", "12", "13", "14"],
     code: "MATH1",
     label: "MATH1",
     claimNumber: "1"
   },
   {
-    targetCodes: [21, 22, 23, 24],
+    targetCodes: ["21", "22", "23", "24"],
     code: "ELA1",
     label: "ELA1",
     claimNumber: "1"
@@ -208,15 +208,18 @@ export const claims: ClaimModel[] = [
 export const targets: TargetModel[] = [
   {
     name: "ELA1",
-    nameHash: 21
+    nameHash: 21,
+    idLabel: "21"
   },
   {
     name: "MATH1",
-    nameHash: 11
+    nameHash: 11,
+    idLabel: "11"
   },
   {
     name: "MATH2",
-    nameHash: 12
+    nameHash: 12,
+    idLabel: "12"
   }
 ];
 

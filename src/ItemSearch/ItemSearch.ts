@@ -214,14 +214,14 @@ export class ItemSearch {
   public static searchOptionToFilterTarget(
     options: TargetModel[],
     filterType: FilterType,
-    selectedCodes?: number[]
+    selectedCodes?: string[]
   ): FilterOptionModel[] {
     return options.map(o => {
       return {
         filterType,
         label: o.idLabel,
-        key: o.nameHash.toString(),
-        isSelected: (selectedCodes || []).some(s => s === o.nameHash)
+        key: o.idLabel,
+        isSelected: (selectedCodes || []).some(s => s === o.idLabel)
       };
     });
   }
@@ -234,7 +234,7 @@ export class ItemSearch {
     return options.map(o => {
       return {
         filterType,
-        label: `${o.claimNumber}: ${o.label}`,
+        label: o.label,
         key: o.code,
         isSelected: (selectedCodes || []).some(s => s === o.code)
       };
@@ -395,7 +395,7 @@ export class ItemSearch {
     if (filter.targets && filter.targets.length > 0) {
       const { targets } = filter;
       results = results.filter(
-        i => targets.findIndex(t => t === i.targetHash) !== -1
+        i => targets.findIndex(t => t === i.targetId) !== -1
       );
     }
 

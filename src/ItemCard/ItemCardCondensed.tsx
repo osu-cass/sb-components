@@ -65,12 +65,12 @@ export class ItemCardCondensed extends React.Component<
                     this.props.grade
                   )}
                 </span>
-                <img
+                {/* <img
                   src={claimIcons[this.props.claimCode]}
                   alt={this.props.claimLabel}
                   className="card-icon"
                   width="32px"
-                />
+                /> */}
               </div>
             </div>
             <p className="card-text claim">

@@ -38,7 +38,7 @@ export interface SubjectModel extends SearchBaseModel {
 }
 
 export interface ClaimModel extends SearchBaseModel {
-  targetCodes?: number[];
+  targetCodes?: string[];
   claimNumber: string;
 }
 
@@ -57,7 +57,7 @@ export interface SearchAPIParamsModel {
   interactionTypes?: string[];
   performanceOnly?: boolean;
   catOnly?: boolean;
-  targets?: number[];
+  targets?: string[];
   calculator?: boolean;
 }
 

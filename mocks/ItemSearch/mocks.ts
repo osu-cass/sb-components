@@ -19,7 +19,7 @@ export const genericSearchStringTypes: SearchFilterStringTypes[] = [
 ];
 
 export const claimsMocks: ClaimModel[] = [
-  { label: "test", code: "t1",claimNumber: "1" },
+  { label: "test", code: "t1", claimNumber: "1" },
   { label: "test2", code: "t2", claimNumber: "2" },
   { label: "test3", code: "t3", claimNumber: "3" }
 ];
@@ -118,36 +118,36 @@ export const searchOptionFilterTarget: TargetModel[] = [
 ];
 
 export const resultSearchOptionFilterTarget: FilterOptionModel[] = [
-  { label: "A", key: "1", isSelected: false, filterType: FilterType.Target },
+  { label: "A", key: "A", isSelected: false, filterType: FilterType.Target },
   {
     label: "B",
-    key: "2",
+    key: "B",
     isSelected: false,
     filterType: FilterType.Target
   },
-  { label: "C", key: "3", isSelected: false, filterType: FilterType.Target }
+  { label: "C", key: "C", isSelected: false, filterType: FilterType.Target }
 ];
 
 export const resultSearchOptionFilterTargetSelectedSingle: FilterOptionModel[] = [
-  { label: "A", key: "1", isSelected: true, filterType: FilterType.Target },
+  { label: "A", key: "A", isSelected: true, filterType: FilterType.Target },
   {
     label: "B",
-    key: "2",
+    key: "B",
     isSelected: false,
     filterType: FilterType.Target
   },
-  { label: "C", key: "3", isSelected: false, filterType: FilterType.Target }
+  { label: "C", key: "C", isSelected: false, filterType: FilterType.Target }
 ];
 
 export const resultSearchOptionFilterTargetSelectedMultiple: FilterOptionModel[] = [
-  { label: "A", key: "1", isSelected: true, filterType: FilterType.Target },
+  { label: "A", key: "A", isSelected: true, filterType: FilterType.Target },
   {
     label: "B",
-    key: "2",
+    key: "B",
     isSelected: false,
     filterType: FilterType.Target
   },
-  { label: "C", key: "3", isSelected: true, filterType: FilterType.Target }
+  { label: "C", key: "C", isSelected: true, filterType: FilterType.Target }
 ];
 
 export const mockSeachAPI: SearchAPIParamsModel = {
@@ -159,7 +159,7 @@ export const mockSeachAPI: SearchAPIParamsModel = {
   interactionTypes: ["t1", "t2"],
   performanceOnly: true,
   catOnly: true,
-  targets: [1, 2]
+  targets: ["A","B"]
 };
 
 export const resultFilterOptionModelClaim: FilterOptionModel[] = [
@@ -167,19 +167,19 @@ export const resultFilterOptionModelClaim: FilterOptionModel[] = [
     filterType: FilterType.Claim,
     isSelected: true,
     key: "t1",
-    label: "1: test"
+    label: "test"
   },
   {
     filterType: FilterType.Claim,
     isSelected: true,
     key: "t2",
-    label: "2: test2"
+    label: "test2"
   },
   {
     filterType: FilterType.Claim,
     isSelected: false,
     key: "t3",
-    label: "3: test3"
+    label: "test3"
   }
 ];
 
@@ -262,19 +262,19 @@ export const resultFilterOptionModeltarget: FilterOptionModel[] = [
   {
     filterType: FilterType.Target,
     isSelected: true,
-    key: "1",
+    key: "A",
     label: "A"
   },
   {
     filterType: FilterType.Target,
     isSelected: true,
-    key: "2",
+    key: "B",
     label: "B"
   },
   {
     filterType: FilterType.Target,
     isSelected: false,
-    key: "3",
+    key: "C",
     label: "C"
   }
 ];
@@ -325,32 +325,31 @@ export const itemSearchModel: ItemsSearchModel = {
     {
       label: "Math 1",
       code: "MATH1",
-      targetCodes: [1, 2, 3, 4],
+      targetCodes: ["1", "2", "3", "4"],
       claimNumber: "1"
     },
     {
       label: "Math 2",
       code: "MATH2",
-      targetCodes: [5, 2, 3, 4],
+      targetCodes: ["5", "2", "3", "4"],
       claimNumber: "2"
     },
     {
       label: "Math 3",
       code: "MATH3",
-      targetCodes: [6, 2, 3, 4],
+      targetCodes: ["6", "2", "3", "4"],
       claimNumber: "3"
     },
     {
       label: "English 1",
       code: "ELA1",
-      targetCodes: [5, 6, 7, 8],
+      targetCodes: ["5", "6", "7", "8"],
       claimNumber: "1"
-
     },
     {
       label: "English 2",
       code: "ELA2",
-      targetCodes: [8, 9, 10, 11],
+      targetCodes: ["8", "9", "10", "11"],
       claimNumber: "2"
     }
   ]

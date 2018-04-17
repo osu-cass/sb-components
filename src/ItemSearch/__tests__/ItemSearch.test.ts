@@ -17,7 +17,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["ELA1", "MATH1"],
       interactionTypes: ["IT1", "IT2", "IT3", "IT4", "IT5"],
-      targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      targets: ["1", "2", "3", "4"]
     };
     const result = ItemSearch.updateDependentSearchParams(
       searchParams,
@@ -28,7 +28,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["MATH1"],
       interactionTypes: ["IT1", "IT2", "IT3"],
-      targets: [1, 2, 3, 4]
+      targets: ["1", "2", "3","4"]
     });
   });
 
@@ -37,7 +37,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["MATH1"],
       interactionTypes: ["IT1", "IT2", "IT4"],
-      targets: [1, 2, 3, 4, 5, 6, 7, 8],
+      targets: ["1", "2", "3","4"],
       catOnly: true,
       calculator: false,
       gradeLevels: GradeLevels.High
@@ -51,7 +51,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["MATH1"],
       interactionTypes: ["IT1", "IT2"],
-      targets: [1, 2, 3, 4],
+      targets: ["1", "2", "3","4"],
       catOnly: true,
       calculator: false,
       gradeLevels: GradeLevels.High

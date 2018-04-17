@@ -27,12 +27,6 @@ exports[`ItemCard renders correctly 1`] = `
         >
           G5
         </span>
-        <img
-          alt="Claim"
-          className="card-icon"
-          src="test-file-stub"
-          width="32px"
-        />
       </div>
     </div>
     <p
