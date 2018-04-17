@@ -1,7 +1,8 @@
 import {
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,
-  FilterType
+  FilterType,
+  OptionTypeModel
 } from "./FilterModels";
 import {
   SearchAPIParamsModel,
@@ -197,9 +198,12 @@ export function resetFilters(
       f.filterOptions.forEach(o => (o.isSelected = false))
     );
   }
-  basicFilter.forEach(f =>
-    f.filterOptions.forEach(o => (o.isSelected = false))
-  );
+  basicFilter.forEach(f => {
+    if (f.optionType === OptionTypeModel.inputBox) {
+      f.filterOptions = [];
+    }
+    f.filterOptions.forEach(o => (o.isSelected = false));
+  });
 
   return updateDependentAndSearch(
     basicFilter,
