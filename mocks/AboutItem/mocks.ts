@@ -4,7 +4,7 @@ import {
   RubricModel,
   GradeLevels
 } from "@src/index";
-import { completeItemCard } from "@mocks/ItemCard/mocks";
+import { completeItemCardELA } from "@mocks/ItemCard/mocks";
 
 export const rubricsWithSamples: RubricModel[] = [
   {
@@ -77,7 +77,7 @@ export const aboutItemMockModel: AboutItemModel = {
   depthOfKnowledge: "3",
   targetDescription: "Solve equations",
   commonCoreStandardsDescription: "A-123-BC",
-  itemCardViewModel: completeItemCard,
+  itemCardViewModel: completeItemCardELA,
   educationalDifficulty: "5",
   evidenceStatement: "This is a sample evidence statement",
   sampleItemScoring: {
@@ -92,7 +92,7 @@ export const aboutItemMockNoRubric: AboutItemModel = {
   depthOfKnowledge: "3",
   targetDescription: "Solve equations",
   commonCoreStandardsDescription: "A-123-BC",
-  itemCardViewModel: completeItemCard,
+  itemCardViewModel: completeItemCardELA,
   educationalDifficulty: "5",
   evidenceStatement: "This is a sample evidence statement",
   sampleItemScoring: {

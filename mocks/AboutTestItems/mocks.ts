@@ -6,7 +6,6 @@ import {
   AboutTestItemsParams,
   AboutTestSearchParams
 } from "@src/index";
-import { completeItemCard } from "@mocks/ItemCard/mocks";
 import { action } from "@storybook/addon-actions";
 import { match } from "react-router";
 import {

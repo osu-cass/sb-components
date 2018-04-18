@@ -7,7 +7,7 @@ import {
   ItemCardModel
 } from "@src/index";
 import { itemTableSortProps } from "@mocks/ItemTable/mocks";
-import { completeItemCard } from "@mocks/index";
+import { completeItemCardELA } from "@mocks/index";
 
 const style: React.CSSProperties = {
   display: "flex",
@@ -29,7 +29,7 @@ const lotsOfCards = () => {
   const cards: ItemCardModel[] = [];
   for (let i = 0; i < 50; i += 1) {
     cards.push({
-      ...completeItemCard,
+      ...completeItemCardELA,
       itemKey: i + 5
     });
   }
