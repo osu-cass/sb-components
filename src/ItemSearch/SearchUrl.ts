@@ -119,9 +119,7 @@ export class SearchUrl {
       FilterType.InteractionType
     );
     const targetsStrings = this.getQueryParam(query, FilterType.Target);
-    const targets = targetsStrings
-      ? targetsStrings.map(t => t)
-      : undefined;
+    const targets = targetsStrings ? targetsStrings.map(t => t) : undefined;
     const performanceOnly = this.getBoolQueryParam(
       query,
       FilterType.Performance

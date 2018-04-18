@@ -84,7 +84,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
     >
       <ToolTip
         className="box"
-        displayIcon={false}
+        displayIcon={true}
         helpText={
           <p>
             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -289,7 +289,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
           >
             <ToolTip
               className="box"
-              displayIcon={false}
+              displayIcon={true}
               helpText={
                 <p>
                   Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -306,6 +306,10 @@ exports[`ItemTableRow matches snapshot 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"

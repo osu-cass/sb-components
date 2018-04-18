@@ -235,6 +235,10 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     >
                       A
                        
+                      <span
+                        aria-hidden="true"
+                        className="fa fa-info-circle fa-sm"
+                      />
                     </span>
                     <span
                       className="tool-tip-details"
@@ -315,6 +319,10 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     >
                       B
                        
+                      <span
+                        aria-hidden="true"
+                        className="fa fa-info-circle fa-sm"
+                      />
                     </span>
                     <span
                       className="tool-tip-details"
@@ -395,6 +403,10 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     >
                       C
                        
+                      <span
+                        aria-hidden="true"
+                        className="fa fa-info-circle fa-sm"
+                      />
                     </span>
                     <span
                       className="tool-tip-details"
@@ -475,6 +487,10 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                     >
                       D
                        
+                      <span
+                        aria-hidden="true"
+                        className="fa fa-info-circle fa-sm"
+                      />
                     </span>
                     <span
                       className="tool-tip-details"
