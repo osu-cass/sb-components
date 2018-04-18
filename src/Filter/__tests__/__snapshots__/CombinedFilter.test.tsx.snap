@@ -302,30 +302,6 @@ exports[`FilterContainer renders 1`] = `
         id=""
       >
         <div
-          className="bf-button-container"
-        >
-          <span>
-            <button
-              className="btn btn-default filter-button"
-              onClick={[Function]}
-            >
-              Reset
-            </button>
-          </span>
-          <span>
-            <button
-              className="btn btn-default filter-button af-expand"
-              onClick={[Function]}
-            >
-              Advanced Filters 
-              <span
-                aria-hidden="true"
-                className="fa fa-chevron-right"
-              />
-            </button>
-          </span>
-        </div>
-        <div
           className="basic-filter"
         >
           <BasicFilter
@@ -665,6 +641,30 @@ exports[`FilterContainer renders 1`] = `
               </div>
             </div>
           </AdvancedFilter>
+        </div>
+        <div
+          className="bf-button-container"
+        >
+          <span>
+            <button
+              className="btn btn-default filter-button"
+              onClick={[Function]}
+            >
+              Reset
+            </button>
+          </span>
+          <span>
+            <button
+              className="btn btn-default filter-button af-expand"
+              onClick={[Function]}
+            >
+              Advanced Filters 
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-right"
+              />
+            </button>
+          </span>
         </div>
       </div>
     </BasicFilterContainer>
@@ -974,30 +974,6 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
         id=""
       >
         <div
-          className="bf-button-container"
-        >
-          <span>
-            <button
-              className="btn btn-default filter-button"
-              onClick={[Function]}
-            >
-              Reset
-            </button>
-          </span>
-          <span>
-            <button
-              className="btn btn-default filter-button af-expand"
-              onClick={[Function]}
-            >
-              Advanced Filters 
-              <span
-                aria-hidden="true"
-                className="fa fa-chevron-right"
-              />
-            </button>
-          </span>
-        </div>
-        <div
           className="basic-filter"
         >
           <BasicFilter
@@ -1337,6 +1313,30 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               </div>
             </div>
           </AdvancedFilter>
+        </div>
+        <div
+          className="bf-button-container"
+        >
+          <span>
+            <button
+              className="btn btn-default filter-button"
+              onClick={[Function]}
+            >
+              Reset
+            </button>
+          </span>
+          <span>
+            <button
+              className="btn btn-default filter-button af-expand"
+              onClick={[Function]}
+            >
+              Advanced Filters 
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-right"
+              />
+            </button>
+          </span>
         </div>
       </div>
     </BasicFilterContainer>
@@ -1646,30 +1646,6 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
         id=""
       >
         <div
-          className="bf-button-container"
-        >
-          <span>
-            <button
-              className="btn btn-default filter-button"
-              onClick={[Function]}
-            >
-              Reset
-            </button>
-          </span>
-          <span>
-            <button
-              className="btn btn-default filter-button af-expand"
-              onClick={[Function]}
-            >
-              Advanced Filters 
-              <span
-                aria-hidden="true"
-                className="fa fa-chevron-down"
-              />
-            </button>
-          </span>
-        </div>
-        <div
           className="basic-filter"
         >
           <BasicFilter
@@ -2009,6 +1985,30 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               </div>
             </div>
           </AdvancedFilter>
+        </div>
+        <div
+          className="bf-button-container"
+        >
+          <span>
+            <button
+              className="btn btn-default filter-button"
+              onClick={[Function]}
+            >
+              Reset
+            </button>
+          </span>
+          <span>
+            <button
+              className="btn btn-default filter-button af-expand"
+              onClick={[Function]}
+            >
+              Advanced Filters 
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down"
+              />
+            </button>
+          </span>
         </div>
       </div>
     </BasicFilterContainer>
@@ -3109,30 +3109,6 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
         id=""
       >
         <div
-          className="bf-button-container"
-        >
-          <span>
-            <button
-              className="btn btn-default filter-button"
-              onClick={[Function]}
-            >
-              Reset
-            </button>
-          </span>
-          <span>
-            <button
-              className="btn btn-default filter-button af-expand"
-              onClick={[Function]}
-            >
-              Advanced Filters 
-              <span
-                aria-hidden="true"
-                className="fa fa-chevron-right"
-              />
-            </button>
-          </span>
-        </div>
-        <div
           className="basic-filter"
         >
           <BasicFilter
@@ -3472,6 +3448,30 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               </div>
             </div>
           </AdvancedFilter>
+        </div>
+        <div
+          className="bf-button-container"
+        >
+          <span>
+            <button
+              className="btn btn-default filter-button"
+              onClick={[Function]}
+            >
+              Reset
+            </button>
+          </span>
+          <span>
+            <button
+              className="btn btn-default filter-button af-expand"
+              onClick={[Function]}
+            >
+              Advanced Filters 
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-right"
+              />
+            </button>
+          </span>
         </div>
       </div>
     </BasicFilterContainer>

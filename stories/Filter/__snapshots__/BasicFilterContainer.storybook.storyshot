@@ -174,30 +174,6 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
   id=""
 >
   <div
-    className="bf-button-container"
-  >
-    <span>
-      <button
-        className="btn btn-default filter-button"
-        onClick={undefined}
-      >
-        Reset
-      </button>
-    </span>
-    <span>
-      <button
-        className="btn btn-default filter-button af-expand"
-        onClick={[Function]}
-      >
-        Advanced Filters 
-        <span
-          aria-hidden="true"
-          className="fa fa-chevron-right"
-        />
-      </button>
-    </span>
-  </div>
-  <div
     className="basic-filter"
   >
     <div
@@ -356,6 +332,30 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="bf-button-container"
+  >
+    <span>
+      <button
+        className="btn btn-default filter-button"
+        onClick={undefined}
+      >
+        Reset
+      </button>
+    </span>
+    <span>
+      <button
+        className="btn btn-default filter-button af-expand"
+        onClick={[Function]}
+      >
+        Advanced Filters 
+        <span
+          aria-hidden="true"
+          className="fa fa-chevron-right"
+        />
+      </button>
+    </span>
   </div>
 </div>
 `;
