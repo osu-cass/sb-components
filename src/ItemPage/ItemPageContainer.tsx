@@ -149,6 +149,7 @@ export class ItemPageContainer extends React.Component<
 
   onError(err: string) {
     if (err !== "Canceled") {
+      console.error(err);
       this.setState({ loading: false, redirect: true });
     }
   }
