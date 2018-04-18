@@ -26,3 +26,5073 @@ exports[`Storyshots Filter Link changed color on hover and click 1`] = `
   </a>
 </div>
 `;
+
+exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100vh",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "flex": "1 0 auto",
+      }
+    }
+  >
+    <div
+      className="section item-table-container"
+    >
+      <table
+        className="item-table"
+      >
+        <thead>
+          <tr
+            className="primary"
+          >
+            <td
+              colSpan={2}
+            />
+            <th
+              className="item"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="item"
+              >
+                <span>
+                  Item
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="subject"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="subject"
+              >
+                <span>
+                  Subject
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="grade"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="grade"
+              >
+                <span>
+                  Grade
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="claimAndTarget"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="claimAndTarget"
+              >
+                <span>
+                  Claim/Target
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+            <th
+              className="item-type"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              scope="col"
+              tabIndex={0}
+            >
+              <div
+                className="item-type"
+              >
+                <span>
+                  Item Type
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                  style={
+                    Object {
+                      "color": "gray",
+                    }
+                  }
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  5
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  6
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  7
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  8
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  9
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  10
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  11
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  12
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  13
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  14
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  15
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  16
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  17
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  18
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  19
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  20
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  21
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  22
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  23
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  24
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  25
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  26
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  27
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  28
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  29
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  30
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  31
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  32
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  33
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  34
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  35
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  36
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  37
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  38
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  39
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  40
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  41
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  42
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  43
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  44
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  45
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  46
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  47
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  48
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  49
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  50
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  51
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  52
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  53
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+            onKeyUp={[Function]}
+          >
+            <td
+              className="item-checkbox"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o fa-sm table-icon"
+              />
+               
+            </td>
+            <td
+              className="arrow-indicator"
+              tabIndex={0}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-right fa-sm table-icon"
+              />
+            </td>
+            <td
+              className="item"
+            >
+              <span>
+                <span>
+                  54
+                </span>
+              </span>
+            </td>
+            <td
+              className="subject"
+            >
+              <span>
+                <span
+                  className="table-subject-highlight ela"
+                >
+                  ELA
+                </span>
+              </span>
+            </td>
+            <td
+              className="grade"
+            >
+              <span>
+                <span>
+                  Grade 4
+                </span>
+              </span>
+            </td>
+            <td
+              className="claimAndTarget"
+            >
+              <span>
+                <span>
+                  Claim
+                </span>
+              </span>
+              <span>
+                <span
+                  className="tool-tip-links box"
+                  tabIndex={0}
+                >
+                  <span
+                    className="tool-tip-hoverable"
+                  >
+                    dfas
+                     
+                  </span>
+                  <span
+                    className="tool-tip-details"
+                  >
+                    <span
+                      className="tool-tip-message bottom undefined"
+                    >
+                      <p>
+                        target description right hereeeee
+                      </p>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </td>
+            <td
+              className="item-type"
+            >
+              <span>
+                <span>
+                  Item Type
+                </span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <a
+    className=" filter-jump-link btn btn-gray"
+    onClick={[Function]}
+    role="button"
+  >
+    <span
+      className="fa fa-filter"
+    />
+    Jump to Filter
+  </a>
+</div>
+`;
