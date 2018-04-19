@@ -59,10 +59,29 @@
   table-layout: fixed;
 }
 
+.item-table-item,
+.item-table-section,
+.item-table-bank {
+  width: 200px;
+}
+
+.item-table-header,
+.item-table-body {
+  width: 600px;
+}
+
+.item-table-body {
+  display: block;
+  height: 240px;
+  overflow-y: auto;
+  table-layout: fixed;
+}
+
 .current-items-table {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
   .items-list td {
     width: 250px;
@@ -148,8 +167,8 @@
 
 .btn.btn-link.next,
 .btn.btn-link.previous {
-    padding: 0;
-    align-self: flex-end;
+  padding: 0;
+  align-self: flex-end;
 }
 
 .item-dropdown {
