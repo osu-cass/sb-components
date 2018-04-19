@@ -333,4 +333,21 @@ export class Filter {
 
     return filterList;
   }
+
+  public static hideTargetOptions<T extends FilterCategoryModel>(
+    filterCategories: T[],
+    itemCards: ItemCardModel[]
+  ): T[] {
+    const targetFilter = filterCategories.find(
+      f => f.code === FilterType.Target
+    );
+
+    if (targetFilter) {
+      targetFilter.filterOptions = targetFilter.filterOptions.filter(
+        opt => itemCards.findIndex(card => card.targetId === opt.label) !== -1
+      );
+    }
+
+    return filterCategories;
+  }
 }
