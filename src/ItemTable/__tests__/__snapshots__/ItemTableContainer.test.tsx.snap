@@ -1101,7 +1101,7 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1118,6 +1118,10 @@ exports[`ItemPageTable expands 1`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -1514,7 +1518,7 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -1531,6 +1535,10 @@ exports[`ItemPageTable expands 1`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -1736,7 +1744,7 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -1753,6 +1761,10 @@ exports[`ItemPageTable expands 1`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -1958,7 +1970,7 @@ exports[`ItemPageTable expands 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -1975,6 +1987,10 @@ exports[`ItemPageTable expands 1`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -2845,7 +2861,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -2862,6 +2878,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -3068,7 +3088,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -3085,6 +3105,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -3290,7 +3314,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -3307,6 +3331,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -3512,7 +3540,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -3529,6 +3557,10 @@ exports[`ItemPageTable matches snapshot 1`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -4434,7 +4466,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -4451,6 +4483,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -4657,7 +4693,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -4674,6 +4710,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -4880,7 +4920,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -4897,6 +4937,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -5102,7 +5146,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -5119,6 +5163,10 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -6064,7 +6112,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -6081,6 +6129,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -6287,7 +6339,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -6304,6 +6356,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -6509,7 +6565,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -6526,6 +6582,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -6732,7 +6792,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -6749,6 +6809,10 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -7724,7 +7788,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -7741,6 +7805,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -7947,7 +8015,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -7964,6 +8032,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -8169,7 +8241,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -8186,6 +8258,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -8392,7 +8468,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -8409,6 +8485,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -9415,7 +9495,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -9432,6 +9512,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -9637,7 +9721,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -9654,6 +9738,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -9859,7 +9947,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -9876,6 +9964,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -10082,7 +10174,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -10099,6 +10191,10 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -11135,7 +11231,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -11152,6 +11248,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       >
                         A
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -11358,7 +11458,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         Target B description
@@ -11375,6 +11475,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       >
                         B
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -11580,7 +11684,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target D description
@@ -11597,6 +11701,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       >
                         D
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"
@@ -11802,7 +11910,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 >
                   <ToolTip
                     className="box"
-                    displayIcon={false}
+                    displayIcon={true}
                     helpText={
                       <p>
                         target C description
@@ -11819,6 +11927,10 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                       >
                         C
                          
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
                       </span>
                       <span
                         className="tool-tip-details"

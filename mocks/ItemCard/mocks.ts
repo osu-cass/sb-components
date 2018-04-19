@@ -1,6 +1,6 @@
 import { ItemCardModel } from "@src/index";
 
-export const completeItemCard: ItemCardModel = {
+export const completeItemCardELA: ItemCardModel = {
   selected: false,
   bankKey: 187,
   itemKey: 3434,
@@ -12,6 +12,31 @@ export const completeItemCard: ItemCardModel = {
   gradeLabel: "Grade 4",
   subjectCode: "ELA",
   subjectLabel: "ELA",
+  claimCode: "ELA3",
+  claimLabel: "Claim",
+  targetHash: 33434,
+  targetDescription: "target description right hereeeee",
+  isPerformanceItem: false,
+  brailleOnlyItem: false,
+  targetId: "dfas",
+  depthOfKnowledge: "2",
+  commonCoreStandardId: "AB-123",
+  ccssDescription: "this is the common core description",
+  domain: "domain"
+};
+
+export const completeItemCardMath: ItemCardModel = {
+  selected: false,
+  bankKey: 187,
+  itemKey: 3434,
+  interactionTypeCode: "GI",
+  interactionTypeLabel: "Item Type",
+  targetShortName: "Short Name",
+  title: "Math Grade 4",
+  grade: 4,
+  gradeLabel: "Grade 4",
+  subjectCode: "MATH",
+  subjectLabel: "MATH",
   claimCode: "ELA3",
   claimLabel: "Claim",
   targetHash: 33434,

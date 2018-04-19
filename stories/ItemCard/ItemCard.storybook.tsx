@@ -3,13 +3,17 @@ import * as $ from "jquery";
 import { storiesOf } from "@storybook/react";
 import { centerDecorator } from "../CenterDecorator";
 import { routerDecorator } from "../RouterDecorator";
-import { completeItemCard } from "@mocks/ItemCard/mocks";
+import {
+  completeItemCardELA,
+  completeItemCardMath
+} from "@mocks/ItemCard/mocks";
 import { ItemCardCondensed, ItemCard } from "@src/index";
 
-storiesOf("Item Card", module)
+storiesOf("Item Card ELA", module)
   .addDecorator(routerDecorator)
   .addDecorator(centerDecorator)
-  .add("Item Card", () => <ItemCard {...completeItemCard} />)
-  .add("Item Card Condensed", () => (
-    <ItemCardCondensed {...completeItemCard} />
+  .add("Item Card ELA", () => <ItemCard {...completeItemCardELA} />)
+  .add("Item Card Math", () => <ItemCard {...completeItemCardMath} />)
+  .add("Item Card ELA Condensed", () => (
+    <ItemCardCondensed {...completeItemCardELA} />
   ));

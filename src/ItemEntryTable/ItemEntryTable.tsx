@@ -28,13 +28,21 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
 
   renderHeader() {
     return (
-      <thead>
-        <tr>
-          <th scope="col">Bank</th>
-          <th scope="col">Item</th>
-          <th scope="col">Section</th>
-        </tr>
-      </thead>
+      <table className="item-table-header">
+        <thead>
+          <tr>
+            <th className="item-table-bank" scope="col">
+              Bank
+            </th>
+            <th className="item-table-item" scope="col">
+              Item
+            </th>
+            <th className="item-table-section" scope="col">
+              Section
+            </th>
+          </tr>
+        </thead>
+      </table>
     );
   }
 
@@ -48,16 +56,20 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
       />
     ));
 
-    return <tbody>{rows}</tbody>;
+    return (
+      <table className="item-table-body">
+        <tbody>{rows}</tbody>
+      </table>
+    );
   }
 
   render() {
     return (
       <div className="section section-dark current-items-table">
-        <table>
-          {this.renderHeader()}
-          {this.renderBody()}
-        </table>
+        {/* <table> */}
+        {this.renderHeader()}
+        {this.renderBody()}
+        {/* </table> */}
       </div>
     );
   }

@@ -28,7 +28,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["MATH1"],
       interactionTypes: ["IT1", "IT2", "IT3"],
-      targets: ["1", "2", "3","4"]
+      targets: ["1", "2", "3", "4"]
     });
   });
 
@@ -37,7 +37,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["MATH1"],
       interactionTypes: ["IT1", "IT2", "IT4"],
-      targets: ["1", "2", "3","4"],
+      targets: ["1", "2", "3", "4"],
       catOnly: true,
       calculator: false,
       gradeLevels: GradeLevels.High
@@ -51,7 +51,7 @@ describe("updateDependentSearchParams", () => {
       subjects: ["MATH"],
       claims: ["MATH1"],
       interactionTypes: ["IT1", "IT2"],
-      targets: ["1", "2", "3","4"],
+      targets: ["1", "2", "3", "4"],
       catOnly: true,
       calculator: false,
       gradeLevels: GradeLevels.High

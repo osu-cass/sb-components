@@ -75,7 +75,7 @@ export class ItemEntryRow extends React.Component<
     const error: string = row.valid !== undefined && !row.valid ? "error" : "";
 
     return (
-      <td>
+      <td className="item-table-item">
         <input
           className={`form-control ${error}`}
           aria-valuenow={rowValue || undefined}
@@ -109,7 +109,7 @@ export class ItemEntryRow extends React.Component<
     const error: string = row.valid !== undefined && !row.valid ? "error" : "";
 
     return (
-      <td>
+      <td className="item-table-section">
         <Select
           className={`form-control ${error}`}
           label="Sections"

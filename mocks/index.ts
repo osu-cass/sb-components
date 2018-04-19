@@ -43,7 +43,7 @@ export {
 // Item Card
 //
 export {
-  completeItemCard,
+  completeItemCardELA,
   itemCardList,
   sortableItemCards
 } from "./ItemCard/mocks";
