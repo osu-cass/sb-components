@@ -1,0 +1,10 @@
+import { AccResourceGroupModel, AccessibilityResourceModel, DropdownProps, ItemAccessibilityModalProps } from "@src/index";
+export declare const accessibilityNotepad: AccessibilityResourceModel;
+export declare const accessibilityEnglishGlossary: AccessibilityResourceModel;
+export declare const mockAccGroup: AccResourceGroupModel;
+export declare const mockAccResourceGroups: AccResourceGroupModel[];
+export declare const accessibilityModalProp: ItemAccessibilityModalProps;
+export declare const dropDefaultProp: DropdownProps;
+export declare const dropDisabledAllSelectionsProp: DropdownProps;
+export declare const dropDisabledProp: DropdownProps;
+export declare const allAccessibilityResourceGroups: AccResourceGroupModel[];

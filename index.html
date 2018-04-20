@@ -1,0 +1,64 @@
+<html>
+<style>
+    .Site {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+    }
+    .site-content {
+        flex: 1;
+    }
+    .site-links {
+        display: flex;
+        flex-direction: column;
+        max-width: 125px;
+    }
+    .site-footer {
+        height: 50px;
+        width: 100%;
+        color: slategray;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    }
+    .site-header {
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    }
+    .site-nav {
+        justify-content: space-between;
+        display: flex;
+    }
+    .container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .footer-content {
+        justify-content: space-between;
+        display: flex;
+    }
+</style>
+
+<body class="site">
+    <header class="site-header">
+        <nav class="site-nav container">
+            <h1>SB-Components</h1>
+        </nav>
+    </header>
+    <main class="site-content container">
+        <h1>Welcome to Smarter Balanced - Shared Components</h1>
+        <div class="site-links">
+            <a href="tsdoc">Code Docs</a>
+            <a href="storybook">Storybook</a>
+            <a href="http://sb-components.rtfd.io/">Read The Docs</a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <p>Smarter Balanced</p>
+        </div>
+    </footer>
+</body>
+</html>

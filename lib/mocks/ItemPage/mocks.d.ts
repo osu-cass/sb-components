@@ -1,0 +1,12 @@
+import { match } from "react-router";
+import { ItemViewerContainerProps, ItemModel, ItemPageModel, ItemIsaapModel, AccResourceGroupModel, AboutItemModel } from "@src/index";
+export declare const aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;
+export declare const itemPageClient: (params: ItemModel) => Promise<ItemPageModel>;
+export declare const itemAccessibilityClient: (params: ItemIsaapModel) => Promise<AccResourceGroupModel[]>;
+export declare const itemPagePath = "/:bankKey:itemKey";
+export declare const itemPageMatch: match<ItemModel>;
+export declare const onSave: (accGRoups: AccResourceGroupModel[]) => void;
+export declare const onReset: () => void;
+export declare const itemPageModelMock: ItemPageModel;
+export declare const itemPageMockProps: ItemViewerContainerProps;
+export declare const itemPageMockPropsNoItem: ItemViewerContainerProps;

@@ -1,0 +1,10 @@
+import { AccessibilityRevisionModel, ItemRevisionModel, SectionModel, AccResourceGroupModel, AboutItemRevisionModel, RevisionModel } from "@src/index";
+export declare const mockBankAccessibilityClient: (acc: AccessibilityRevisionModel) => Promise<AccResourceGroupModel[]>;
+export declare const mockBankAboutItemClient: (item: ItemRevisionModel) => Promise<AboutItemRevisionModel>;
+export declare const mockBankAboutItemClientFail: (item: ItemRevisionModel) => Promise<AboutItemRevisionModel>;
+export declare const mockBankRevisionsClient: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
+export declare const mockBankRevisionsClientFail: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
+export declare const mockBankSectionsClient: () => Promise<SectionModel[]>;
+export declare const sectionMocks: SectionModel[];
+export declare const itemRevisionMocks: ItemRevisionModel[];
+export declare const itemRevisionMocksError: ItemRevisionModel[];
