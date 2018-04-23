@@ -1,15 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { RouteComponentProps } from "react-router";
-import {
-  AccResourceGroupModel,
-  AboutItemModel,
-  ItemModel,
-  ItemIsaapModel,
-  ItemPageModel,
-  parseQueryString,
-  ItemPageContainer
-} from "@src/index";
+import { ItemModel, ItemPageModel, ItemIsaapModel } from "./ItemPageModels";
+import { AboutItemModel } from "../AboutItem/AboutItemModels";
+import { AccResourceGroupModel } from "../Accessibility/AccessibilityModels";
+import { parseQueryString } from "../Common/UrlParsing";
+import { ItemPageContainer } from "./ItemPageContainer";
 
 export interface ItemViewPageProps extends RouteComponentProps<ItemModel> {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;

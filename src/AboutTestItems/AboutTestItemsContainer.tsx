@@ -1,23 +1,20 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Redirect } from "react-router";
+import { AboutItem } from "../AboutItem/AboutItem";
+import { AboutItemModel } from "../AboutItem/AboutItemModels";
+import { Resource, getResourceContent } from "../Common/ApiResource";
 import {
-  AboutItem,
-  AboutItemModel,
-  ItemViewerFrame,
-  LoadingOverlay,
-  Select,
-  PromiseCancelable,
-  Resource,
-  getRequest,
-  getResourceContent,
   AboutTestItemsModel,
-  InteractionTypeModel,
   AboutTestItemsParams,
-  Subscription,
-  SelectOptionProps,
-  AboutTestSearchParams
-} from "@src/index";
+  AboutTestSearchParams,
+  InteractionTypeModel
+} from "./AboutTestItemsModels";
+import { Subscription } from "../Common/Subscription";
+import { SelectOptionProps } from "../Select/SelectOption";
+import { Select } from "../Select/Select";
+import { LoadingOverlay } from "../Layout/LoadingOverlay";
+import { ItemViewerFrame } from "../ItemViewer/ItemViewerFrame";
 
 export interface AboutTestItemContainerState {
   selectedCode?: string;

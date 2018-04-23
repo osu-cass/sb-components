@@ -1,22 +1,19 @@
 import * as React from "react";
+import { AccResourceGroupModel } from "../Accessibility/AccessibilityModels";
+import { AboutItemRevisionModel } from "../AboutItem/AboutItemModels";
+import { RevisionModel } from "../Revisions/Revision";
 import {
-  AboutItemRevisionModel,
-  AccResourceGroupModel,
-  AdvancedAboutItem,
-  ItemAccessibilityModal,
-  ItemViewerFrame,
-  ResourceSelectionsModel,
-  RevisionContainer,
-  Revision,
   ItemRevisionModel,
-  itemRevisionKey,
   getItemBankName,
-  RevisionModel,
-  RubricModal,
-  SelectOptionProps,
-  Select,
-  validItemRevisionModel
-} from "@src/index";
+  itemRevisionKey
+} from "./ItemBankModels";
+import { ItemAccessibilityModal } from "../Accessibility/AccessibilityModal";
+import { SelectOptionProps } from "../Select/SelectOption";
+import { Select } from "../Select/Select";
+import { RubricModal } from "../Rubric/RubricModal";
+import { AdvancedAboutItem } from "../AboutItem/AdvancedAboutItem";
+import { RevisionContainer } from "../Revisions/RevisionContainer";
+import { ItemViewerFrame } from "../ItemViewer/ItemViewerFrame";
 
 export interface ItemBankViewerProps {
   onAccessibilityUpdate: (accResourceGroups: AccResourceGroupModel[]) => void;

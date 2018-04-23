@@ -32,7 +32,7 @@ storiesOf("Item Bank", module)
           itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
-          getUrl={item => ""}
+          setUrl={item => ""}
         />
       }
       siteName="Item Bank"
@@ -48,7 +48,7 @@ storiesOf("Item Bank", module)
           itemViewUrl=""
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocksError}
-          getUrl={item => ""}
+          setUrl={item => ""}
         />
       }
       siteName="Item Bank"

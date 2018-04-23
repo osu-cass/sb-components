@@ -1,31 +1,22 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {
-  AboutItem,
-  AboutItemModel,
-  getResourceContent,
-  ItemAccessibilityModal,
-  ItemViewerFrame,
-  ToolTip,
-  AccResourceGroupModel,
-  AdvancedAboutItem,
-  AboutItemRevisionModel,
-  Resource,
-  GradeLevels,
-  Subscription,
-  ItemRevisionModel,
-  itemRevisionKey,
-  SectionModel,
   AccessibilityRevisionModel,
+  ItemRevisionModel,
+  SectionModel,
   validItemRevisionModel,
-  RevisionModel,
-  ItemBankViewer,
-  ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  toiSAAP,
-  AccessibilityResourceModel
-} from "@src/index";
+  itemRevisionKey
+} from "./ItemBankModels";
+import { AccResourceGroupModel } from "../Accessibility/AccessibilityModels";
+import { AboutItemRevisionModel } from "../AboutItem/AboutItemModels";
+import { RevisionModel } from "../Revisions/Revision";
+import { Resource, getResourceContent } from "../Common/ApiResource";
+import { Subscription } from "../Common/Subscription";
+import { toiSAAP } from "../ItemPage/ItemPageModels";
+import { ItemBankEntry } from "./ItemBankEntry";
+import { ItemBankViewer } from "./ItemBankViewer";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
@@ -38,7 +29,7 @@ export interface ItemBankContainerProps {
   sectionsClient: () => Promise<SectionModel[]>;
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
-  getUrl: (item: ItemRevisionModel) => string;
+  setUrl: (item: ItemRevisionModel) => void;
 }
 
 export interface ItemBankContainerState {
@@ -228,7 +219,7 @@ export class ItemBankContainer extends React.Component<
     if (currentItem) {
       const isaap = toiSAAP(accGroups);
       const newItem = { ...currentItem, isaap };
-      this.props.getUrl(currentItem);
+      this.props.setUrl(currentItem);
       this.setState({ currentItem });
     }
   };
