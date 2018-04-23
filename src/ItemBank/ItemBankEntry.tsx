@@ -1,12 +1,8 @@
 import * as React from "react";
-import {
-  Accordion,
-  ToolTip,
-  ItemRevisionModel,
-  SectionModel,
-  ItemEntryTable,
-  CsvEntry
-} from "@src/index";
+import { ItemRevisionModel, SectionModel } from "./ItemBankModels";
+import { Accordion } from "../Accordion/Accordion";
+import { CsvEntry } from "../CsvEntry/CsvEntry";
+import { ItemEntryTable } from "../ItemEntryTable/ItemEntryTable";
 
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;

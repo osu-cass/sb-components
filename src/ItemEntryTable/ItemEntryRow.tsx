@@ -2,10 +2,10 @@ import * as React from "react";
 import {
   ItemRevisionModel,
   SectionModel,
-  validItemRevisionModel,
-  SelectOptionProps,
-  Select
-} from "@src/index";
+  validItemRevisionModel
+} from "../ItemBank/ItemBankModels";
+import { SelectOptionProps } from "../Select/SelectOption";
+import { Select } from "../Select/Select";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;

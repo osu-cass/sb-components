@@ -1,5 +1,5 @@
 import * as React from "react";
-import { RevisionModel, Revision, ToolTip } from "@src/index";
+import { RevisionModel, Revision } from "./Revision";
 
 export interface RevisionContainerProps {
   revisions: RevisionModel[];
