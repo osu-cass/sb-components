@@ -2,12 +2,11 @@ import * as React from "react";
 import {
   BasicFilterCategoryModel,
   FilterOptionModel,
-  OptionTypeModel,
-  SelectOptionProps,
-  FilterType,
-  ToolTip,
-  Select
-} from "@src/index";
+  OptionTypeModel
+} from "./FilterModels";
+import { ToolTip } from "../ToolTip/ToolTip";
+import { SelectOptionProps } from "../Select/SelectOption";
+import { Select } from "../Select/Select";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
@@ -44,9 +43,12 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       optionType,
       label,
       helpText,
-      placeholderText
+      placeholderText,
+      filterOptions
     } = this.props;
     const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
+    const value =
+      filterOptions && filterOptions.length > 0 ? filterOptions[0].key : "";
 
     return (
       <div className="input-box">
@@ -62,6 +64,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
           type="text"
           onChange={t => this.searchHandler(t.currentTarget.value)}
           placeholder={placeholderText}
+          value={value}
         />
       </div>
     );

@@ -1,0 +1,17 @@
+@import "constants";
+
+// target Internet Explorer 10+
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  // Fixes modal content right shift
+  .react-modal-content {
+    transform: translate(-50%, 0);
+  }
+
+  // Attaches footer to bottom of page.
+  .footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}

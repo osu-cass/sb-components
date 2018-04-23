@@ -62,9 +62,7 @@ describe("ItemSearch.filterItemCards", () => {
     const result = ItemSearch.filterItemCards(itemCardList, params);
     const expectedCards = itemCardList.filter(
       c =>
-        c.subjectCode === "ELA" &&
-        c.claimCode === "ELA4" &&
-        c.targetId === "D"
+        c.subjectCode === "ELA" && c.claimCode === "ELA4" && c.targetId === "D"
     );
 
     expect(result).toHaveLength(1);

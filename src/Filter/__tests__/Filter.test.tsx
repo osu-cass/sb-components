@@ -1,4 +1,5 @@
 import * as Mocks from "./Mocks";
+import * as CardMocks from "../../../mocks/ItemCard/mocks";
 import {
   GradeLevel,
   GradeLevels,
@@ -391,4 +392,54 @@ describe("Filter.getCurrentTargets", () => {
 
 describe("Filter.getUpdatedSearchFilters", () => {
   return;
+});
+
+describe("Filter.hideTargetOptions", () => {
+  it("no target category", () => {
+    const categories = [Mocks.claimCategory, Mocks.subjectSelectedCategory];
+    const cards = CardMocks.sortableItemCards;
+
+    const result = Filter.hideTargetOptions(categories, cards);
+    expect(result).toEqual(categories);
+  });
+
+  it("happy case", () => {
+    const categories = [
+      {
+        ...Mocks.targetCategory,
+        filterOptions: [
+          {
+            label: "A",
+            key: "133",
+            isSelected: true,
+            filterType: FilterType.Target
+          },
+          {
+            label: "E",
+            key: "133",
+            isSelected: true,
+            filterType: FilterType.Target
+          }
+        ]
+      }
+    ];
+    const expectedResult = [
+      {
+        ...Mocks.targetCategory,
+        filterOptions: [
+          {
+            label: "A",
+            key: "133",
+            isSelected: true,
+            filterType: FilterType.Target
+          }
+        ]
+      }
+    ];
+
+    const cards = CardMocks.sortableItemCards;
+
+    const result = Filter.hideTargetOptions(categories, cards);
+    expect(result).toEqual(expectedResult);
+  });
 });
