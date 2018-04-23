@@ -37,7 +37,7 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
         row={row}
         onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
         sections={this.props.sections}
-        key={idx}
+        key={`${row.bankKey}-${row.itemKey}`}
       />
     ));
 
