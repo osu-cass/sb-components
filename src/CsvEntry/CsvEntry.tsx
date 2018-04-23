@@ -3,14 +3,6 @@ import { ItemRevisionModel } from "../ItemBank/ItemBankModels";
 import { CsvRowModel, parseCsv } from "./CsvEntryModels";
 import { ToolTip } from "../ToolTip/ToolTip";
 
-// import {
-//   ToolTip,
-//   ItemRevisionModel,
-//   CsvRowModel,
-//   parseCsv,
-//   Accordion
-// } from "@src/index";
-
 export interface CsvEntryProps {
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onBlur: () => void;
