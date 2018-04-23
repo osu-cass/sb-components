@@ -19,7 +19,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
     }
   }
   accessibilityClient={[MockFunction]}
-  getUrl={[MockFunction]}
   itemViewUrl="hello"
   items={
     Array [
@@ -63,6 +62,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
       ],
     }
   }
+  setUrl={[MockFunction]}
 >
   <div
     className="item-container container"
