@@ -9,7 +9,7 @@ import {
 } from "@mocks/ItemCard/mocks";
 import { ItemCardCondensed, ItemCard } from "@src/index";
 
-storiesOf("Item Card ELA", module)
+storiesOf("Item Card", module)
   .addDecorator(routerDecorator)
   .addDecorator(centerDecorator)
   .add("Item Card ELA", () => <ItemCard {...completeItemCardELA} />)
