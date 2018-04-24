@@ -1,22 +1,31 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {
-  AccessibilityRevisionModel,
+  AboutItem,
+  AboutItemModel,
+  getResourceContent,
+  ItemAccessibilityModal,
+  ItemViewerFrame,
+  ToolTip,
+  AccResourceGroupModel,
+  AdvancedAboutItem,
+  AboutItemRevisionModel,
+  Resource,
+  GradeLevels,
+  Subscription,
   ItemRevisionModel,
+  itemRevisionKey,
   SectionModel,
+  AccessibilityRevisionModel,
   validItemRevisionModel,
+  RevisionModel,
+  ItemBankViewer,
+  ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  itemRevisionKey
-} from "./ItemBankModels";
-import { AccResourceGroupModel } from "../Accessibility/AccessibilityModels";
-import { AboutItemRevisionModel } from "../AboutItem/AboutItemModels";
-import { RevisionModel } from "../Revisions/Revision";
-import { Resource, getResourceContent } from "../Common/ApiResource";
-import { Subscription } from "../Common/Subscription";
-import { toiSAAP } from "../ItemPage/ItemPageModels";
-import { ItemBankEntry } from "./ItemBankEntry";
-import { ItemBankViewer } from "./ItemBankViewer";
+  toiSAAP,
+  AccessibilityResourceModel
+} from "@src/index";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (

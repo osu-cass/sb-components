@@ -1,7 +1,10 @@
-import { SearchAPIParamsModel } from "./ItemSearchModels";
-import { FilterType } from "../Filter/FilterModels";
-import { parseQueryString } from "../Common/UrlParsing";
-import { GradeLevels, GradeLevel } from "../GradeLevels/GradeLevels";
+import {
+  GradeLevel,
+  GradeLevels,
+  FilterType,
+  parseQueryString,
+  SearchAPIParamsModel
+} from "@src/index";
 
 export interface ExpressQuery {
   [param: string]: string;
@@ -16,7 +19,7 @@ export class SearchUrl {
    * @param {SearchAPIParamsModel} search the search params object to be encoded
    * @returns {string}
    */
-  public static encodeQuery(search: SearchAPIParamsModel): string {
+  public static encodeQuery(search: SearchAPIParamsModel) {
     const pairs: string[] = [];
     if (search.claims && search.claims.length > 0) {
       pairs.push(this.encodeFilter(FilterType.Claim, search.claims));

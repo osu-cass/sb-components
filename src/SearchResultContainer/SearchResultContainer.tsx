@@ -1,10 +1,12 @@
 import * as React from "react";
-import { ItemModel } from "../ItemPage/ItemPageModels";
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { Resource } from "../Common/ApiResource";
-import { ItemCard } from "../ItemCard/ItemCard";
-import { ItemTableContainer } from "../ItemTable/ItemTableContainer";
+import {
+  ItemCardModel,
+  AboutItemModel,
+  Resource,
+  ItemTableContainer,
+  ItemModel,
+  ItemCard
+} from "@src/index";
 
 /**
  * SearchResultType enum
