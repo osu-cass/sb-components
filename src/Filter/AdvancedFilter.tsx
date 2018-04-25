@@ -49,17 +49,24 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     const tags: JSX.Element[] = [];
 
     if (filterOptions.length > 0) {
-      filterOptions.forEach((t, i) => {
-        tags.push(
-          <BtnGroupOption
-            onClick={() => onFilterOptionSelect(t)}
-            disabled={disabled}
-            selected={t.isSelected}
-            label={t.label}
-            key={t.key}
-          />
-        );
-      });
+      filterOptions
+        .sort((a, b) =>
+          a.key.localeCompare(b.key, undefined, {
+            numeric: true,
+            sensitivity: "base"
+          })
+        )
+        .forEach((t, i) => {
+          tags.push(
+            <BtnGroupOption
+              onClick={() => onFilterOptionSelect(t)}
+              disabled={disabled}
+              selected={t.isSelected}
+              label={t.label}
+              key={t.key}
+            />
+          );
+        });
     } else {
       tags.push(<div key={0}>{emptyOptionsText || "No options."}</div>);
     }
