@@ -7,22 +7,27 @@ import * as AccessibilityModal from "../Accessibility/AccessibilityModal";
 import * as Dropdown from "../DropDown/DropDown";
 import * as Braille from "../Accessibility/Braille";
 import * as ItemPageModels from "./ItemPageModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import { AboutPTPopupModal } from "../PerformanceType/AboutPTPopup";
-import { AboutPTModal } from "../PerformanceType/AboutPT";
-import { IframeModal } from "../Modals/IframeModal";
-import { AboutItem } from "../AboutItem/AboutItem";
-import { MoreLikeThisModal } from "../Modals/MoreLikeThisModal";
-import { ShareModal } from "../Modals/ShareModal";
-import { ItemViewerFrame } from "../ItemViewer/ItemViewerFrame";
+import {
+  MoreLikeThisModal,
+  AboutItem,
+  AboutPTModal,
+  AboutPTPopupModal,
+  ShareModal,
+  ItemViewerFrame,
+  ItemAccessibilityModal,
+  AboutItemModel,
+  IframeModal,
+  AccResourceGroupModel,
+  ResourceSelectionsModel
+} from "@src/index";
 
 const calculatorURL = "http://calculator.smarterbalanced.org";
 export interface ItemViewerContainerProps extends ItemPageModels.ItemPageModel {
-  onSave: (accGroups: Accessibility.AccResourceGroupModel[]) => void;
+  onSave: (accGroups: AccResourceGroupModel[]) => void;
   onReset: () => void;
   aboutThisItemVM: AboutItemModel;
   currentItem: ItemPageModels.ItemIdentifierModel;
-  accResourceGroups: Accessibility.AccResourceGroupModel[];
+  accResourceGroups: AccResourceGroupModel[];
   showRubrics: boolean;
 }
 
@@ -144,7 +149,7 @@ export class ItemViewerContainer extends React.Component<
         role="group"
         aria-label="Second group"
       >
-        <AccessibilityModal.ItemAccessibilityModal
+        <ItemAccessibilityModal
           accResourceGroups={this.props.accResourceGroups}
           onSave={this.props.onSave}
           onReset={this.props.onReset}

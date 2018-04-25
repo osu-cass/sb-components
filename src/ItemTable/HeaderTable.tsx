@@ -1,5 +1,10 @@
 import * as React from "react";
-import { ColumnGroup, HeaderSortModel, SortDirection } from "./ItemTableModels";
+import {
+  SortColumnModel,
+  HeaderSortModel,
+  SortDirection,
+  ColumnGroup
+} from "@src/index";
 
 /**
  * Properties for HeaderTable component

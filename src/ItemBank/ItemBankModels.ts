@@ -1,4 +1,9 @@
-import { GradeLevel } from "../GradeLevels/GradeLevels";
+import {
+  ItemModel,
+  AboutItemRevisionModel,
+  GradeLevel,
+  RevisionModel
+} from "@src/index";
 
 export interface ItemRevisionModel {
   itemKey?: number;
