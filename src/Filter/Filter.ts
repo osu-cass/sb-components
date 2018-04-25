@@ -311,10 +311,10 @@ export class Filter {
     return filter;
   }
 
-  public static hideFiltersBasedOnSearchParams(
-    filterList: FilterCategoryModel[],
+  public static hideFiltersBasedOnSearchParams<T extends FilterCategoryModel>(
+    filterList: T[],
     searchParams: SearchAPIParamsModel
-  ): FilterCategoryModel[] {
+  ): T[] {
     const calculatorFilter = filterList.find(
       f => f.code === FilterType.Calculator
     );
