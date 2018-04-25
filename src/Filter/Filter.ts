@@ -314,10 +314,10 @@ export class Filter {
     return filter;
   }
 
-  public static hideFiltersBasedOnSearchParams(
-    filterList: FilterCategoryModel[],
+  public static hideFiltersBasedOnSearchParams<T extends FilterCategoryModel>(
+    filterList: T[],
     searchParams: SearchAPIParamsModel
-  ): FilterCategoryModel[] {
+  ): T[] {
     const calculatorFilter = filterList.find(
       f => f.code === FilterType.Calculator
     );
@@ -332,5 +332,22 @@ export class Filter {
     }
 
     return filterList;
+  }
+
+  public static hideTargetOptions<T extends FilterCategoryModel>(
+    filterCategories: T[],
+    itemCards: ItemCardModel[]
+  ): T[] {
+    const targetFilter = filterCategories.find(
+      f => f.code === FilterType.Target
+    );
+
+    if (targetFilter) {
+      targetFilter.filterOptions = targetFilter.filterOptions.filter(
+        opt => itemCards.findIndex(card => card.targetId === opt.label) !== -1
+      );
+    }
+
+    return filterCategories;
   }
 }

@@ -28,7 +28,7 @@ describe("ItemBankContainer", () => {
     sectionsClient: BankMocks.mockBankSectionsClient,
     itemViewUrl: "hello",
     items: [item, item2],
-    getUrl: BankMocks.mockOnItemHandler
+    setUrl: BankMocks.mockOnItemHandler
   };
 
   const wrapper = mount(<ItemBankContainer {...props} />);

@@ -38,7 +38,7 @@ export interface ItemBankContainerProps {
   sectionsClient: () => Promise<SectionModel[]>;
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
-  getUrl: (item: ItemRevisionModel) => string;
+  setUrl: (item: ItemRevisionModel) => void;
 }
 
 export interface ItemBankContainerState {
@@ -228,7 +228,7 @@ export class ItemBankContainer extends React.Component<
     if (currentItem) {
       const isaap = toiSAAP(accGroups);
       const newItem = { ...currentItem, isaap };
-      this.props.getUrl(currentItem);
+      this.props.setUrl(currentItem);
       this.setState({ currentItem });
     }
   };

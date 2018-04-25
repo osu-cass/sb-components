@@ -15,17 +15,18 @@
   font-size: @font-size-base;
   box-shadow: @card-shadow;
 
-  &.math {
-    border-color: @sb-green;
-  }
-  &.ela {
-    border-color: @sb-blue;
-  }
-
   &:focus,
   &:hover {
     box-shadow: 0 0px 20px #959595;
   }
+}
+
+.card.math {
+  border-color: @sb-green;
+}
+
+.card.ela {
+  border-color: @sb-blue;
 }
 
 .card.condensed {

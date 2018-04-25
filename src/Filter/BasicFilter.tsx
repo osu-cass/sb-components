@@ -44,9 +44,12 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       optionType,
       label,
       helpText,
-      placeholderText
+      placeholderText,
+      filterOptions
     } = this.props;
     const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
+    const value =
+      filterOptions && filterOptions.length > 0 ? filterOptions[0].key : "";
 
     return (
       <div className="input-box">
@@ -62,6 +65,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
           type="text"
           onChange={t => this.searchHandler(t.currentTarget.value)}
           placeholder={placeholderText}
+          value={value}
         />
       </div>
     );
