@@ -399,3 +399,403 @@ exports[`Storyshots Item Card ELA Item Card Math 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Item Card Item Card ELA 1`] = `
+<div
+  className="section section-dark"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="card card-block ela"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    <div
+      className="card-contents"
+    >
+      <div
+        className="card-header"
+      >
+        <h4
+          className="card-title"
+        >
+          ELA
+        </h4>
+        <div
+          className="card-icon-container"
+        >
+          <span
+            className="card-grade-tag card-icon"
+          >
+            G5
+          </span>
+        </div>
+      </div>
+      <p
+        className="card-text grade"
+      >
+        <span
+          className="card-text-label"
+        >
+          Grade:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Grade 4
+        </span>
+      </p>
+      <p
+        className="card-text claim"
+      >
+        <span
+          className="card-text-label"
+        >
+          Claim:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Claim
+        </span>
+      </p>
+      <p
+        className="card-text target"
+      >
+        <span
+          className="card-text-label"
+        >
+          Target:
+        </span>
+        <span
+          className="card-text-value"
+        >
+          <span
+            className="tool-tip-links box"
+            tabIndex={0}
+          >
+            <span
+              className="tool-tip-hoverable"
+            >
+              dfas
+               
+              <span
+                aria-hidden="true"
+                className="fa fa-info-circle fa-sm"
+              />
+            </span>
+            <span
+              className="tool-tip-details"
+            >
+              <span
+                className="tool-tip-message undefined undefined"
+              >
+                <span>
+                  target description right hereeeee
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </p>
+      <p
+        className="card-text interaction-type"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Type:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           Item Type
+        </span>
+      </p>
+      <p
+        className="card-text item-id"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Id:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          3434
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Card Item Card ELA Condensed 1`] = `
+<div
+  className="section section-dark"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="card card-block ela condensed"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    <div
+      className="card-contents"
+    >
+      <div
+        className="card-header"
+      >
+        <h4
+          className="card-title"
+        >
+          ELA
+        </h4>
+        <div
+          className="card-icon-container"
+        >
+          <span
+            className="card-grade-tag card-icon"
+          >
+            G5
+          </span>
+        </div>
+      </div>
+      <p
+        className="card-text claim"
+      >
+        <span
+          className="card-text-label"
+        >
+          Claim:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Claim
+        </span>
+      </p>
+      <p
+        className="card-text target"
+      >
+        <span
+          className="card-text-label"
+        >
+          Target:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          dfas
+        </span>
+      </p>
+      <p
+        className="card-text interaction-type"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Type:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Item Type
+        </span>
+      </p>
+      <p
+        className="card-text item-id"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Id:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          3434
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Item Card Item Card Math 1`] = `
+<div
+  className="section section-dark"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="card card-block math"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    <div
+      className="card-contents"
+    >
+      <div
+        className="card-header"
+      >
+        <h4
+          className="card-title"
+        >
+          MATH
+        </h4>
+        <div
+          className="card-icon-container"
+        >
+          <span
+            className="card-grade-tag card-icon"
+          >
+            G5
+          </span>
+        </div>
+      </div>
+      <p
+        className="card-text grade"
+      >
+        <span
+          className="card-text-label"
+        >
+          Grade:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Grade 4
+        </span>
+      </p>
+      <p
+        className="card-text claim"
+      >
+        <span
+          className="card-text-label"
+        >
+          Claim:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          Claim
+        </span>
+      </p>
+      <p
+        className="card-text target"
+      >
+        <span
+          className="card-text-label"
+        >
+          Target:
+        </span>
+        <span
+          className="card-text-value"
+        >
+          <span
+            className="tool-tip-links box"
+            tabIndex={0}
+          >
+            <span
+              className="tool-tip-hoverable"
+            >
+              dfas
+               
+              <span
+                aria-hidden="true"
+                className="fa fa-info-circle fa-sm"
+              />
+            </span>
+            <span
+              className="tool-tip-details"
+            >
+              <span
+                className="tool-tip-message undefined undefined"
+              >
+                <span>
+                  target description right hereeeee
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </p>
+      <p
+        className="card-text interaction-type"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Type:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           Item Type
+        </span>
+      </p>
+      <p
+        className="card-text item-id"
+      >
+        <span
+          className="card-text-label"
+        >
+          Item Id:
+        </span>
+        <span
+          className="card-text-value"
+        >
+           
+          3434
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
