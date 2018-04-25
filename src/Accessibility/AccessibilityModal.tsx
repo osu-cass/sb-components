@@ -2,12 +2,14 @@
 import * as React from "react";
 import * as ReactModal from "react-modal";
 import {
+  AccessibilityResourceModel,
   AccResourceGroupModel,
   ResourceSelectionsModel,
+  getResourceTypes,
   updateAccessibilityGroups,
-  getResourceTypes
-} from "./AccessibilityModels";
-import { DropdownProps, Dropdown } from "../DropDown/DropDown";
+  Dropdown,
+  DropdownProps
+} from "@src/index";
 
 export interface ItemAccessibilityModalProps {
   accResourceGroups: AccResourceGroupModel[];

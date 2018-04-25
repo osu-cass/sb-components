@@ -1,11 +1,12 @@
 import * as React from "react";
 import {
+  AdvancedFilterContainer,
+  BasicFilterContainer,
+  AdvancedFilterCategoryModel,
   BasicFilterCategoryModel,
-  FilterType,
-  AdvancedFilterCategoryModel
-} from "./FilterModels";
-import { AdvancedFilterContainer } from "./AdvancedFilterContainer";
-import { BasicFilterContainer } from "./BasicFilterContainer";
+  FilterOptionModel,
+  FilterType
+} from "@src/index";
 
 export interface FilterContainerProps {
   basicFilterCategories: BasicFilterCategoryModel[];

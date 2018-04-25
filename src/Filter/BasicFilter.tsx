@@ -2,11 +2,12 @@ import * as React from "react";
 import {
   BasicFilterCategoryModel,
   FilterOptionModel,
-  OptionTypeModel
-} from "./FilterModels";
-import { ToolTip } from "../ToolTip/ToolTip";
-import { SelectOptionProps } from "../Select/SelectOption";
-import { Select } from "../Select/Select";
+  OptionTypeModel,
+  SelectOptionProps,
+  FilterType,
+  ToolTip,
+  Select
+} from "@src/index";
 
 export interface BasicFilterProps extends BasicFilterCategoryModel {
   selectedHandler: (data?: FilterOptionModel) => void;
