@@ -224,6 +224,10 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -322,6 +326,10 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -420,6 +428,10 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -518,6 +530,10 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -752,6 +768,10 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -832,6 +852,10 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -912,6 +936,10 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -992,6 +1020,10 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1247,6 +1279,10 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1345,6 +1381,10 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1443,6 +1483,10 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1541,6 +1585,10 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1796,6 +1844,10 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1894,6 +1946,10 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -1992,6 +2048,10 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
@@ -2090,6 +2150,10 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"

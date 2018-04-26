@@ -1,4 +1,4 @@
-import { ItemCardModel } from "../ItemCard/ItemCardModels";
+import { ItemCardModel } from "@src/index";
 
 export interface Column {
   label: string;

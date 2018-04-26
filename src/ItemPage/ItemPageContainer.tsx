@@ -2,23 +2,26 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Redirect } from "react-router";
 import {
-  ItemModel,
-  ItemPageModel,
-  ItemIsaapModel,
-  ItemIdentifierModel,
-  toiSAAP,
-  toCookie,
-  resetResource
-} from "./ItemPageModels";
-import { AboutItemModel } from "../AboutItem/AboutItemModels";
-import {
+  isBrailleEnabled,
+  ResourceSelectionsModel,
   AccResourceGroupModel,
-  isBrailleEnabled
-} from "../Accessibility/AccessibilityModels";
-import { Resource, getResourceContent } from "../Common/ApiResource";
-import { Subscription } from "../Common/Subscription";
-import { ItemViewerContainer } from "./ItemViewerContainer";
-import { LoadingOverlay } from "../Layout/LoadingOverlay";
+  AccessibilityResourceModel,
+  ItemViewerContainer,
+  AboutItemModel,
+  ItemModel,
+  ItemIsaapModel,
+  ItemPageModel,
+  ItemIdentifierModel,
+  toCookie,
+  toiSAAP,
+  resetResource,
+  Resource,
+  getResourceContent,
+  parseQueryString,
+  LoadingOverlay,
+  PromiseCancelable,
+  Subscription
+} from "@src/index";
 
 export interface ItemPageContainerProps {
   aboutThisClient: (params: ItemModel) => Promise<AboutItemModel>;

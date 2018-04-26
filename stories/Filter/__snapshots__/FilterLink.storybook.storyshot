@@ -253,6 +253,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -351,6 +355,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -449,6 +457,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -547,6 +559,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -645,6 +661,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -743,6 +763,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -841,6 +865,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -939,6 +967,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1037,6 +1069,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1135,6 +1171,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1233,6 +1273,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1331,6 +1375,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1429,6 +1477,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1527,6 +1579,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1625,6 +1681,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1723,6 +1783,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1821,6 +1885,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -1919,6 +1987,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2017,6 +2089,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2115,6 +2191,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2213,6 +2293,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2311,6 +2395,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2409,6 +2497,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2507,6 +2599,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2605,6 +2701,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2703,6 +2803,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2801,6 +2905,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2899,6 +3007,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -2997,6 +3109,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3095,6 +3211,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3193,6 +3313,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3291,6 +3415,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3389,6 +3517,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3487,6 +3619,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3585,6 +3721,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3683,6 +3823,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3781,6 +3925,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3879,6 +4027,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -3977,6 +4129,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4075,6 +4231,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4173,6 +4333,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4271,6 +4435,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4369,6 +4537,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4467,6 +4639,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4565,6 +4741,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4663,6 +4843,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4761,6 +4945,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4859,6 +5047,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -4957,6 +5149,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
@@ -5055,6 +5251,10 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                   >
                     dfas
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"

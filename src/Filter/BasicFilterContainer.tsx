@@ -184,8 +184,8 @@ export class BasicFilterContainer extends React.Component<
 
     return (
       <div id={id} className={className}>
-        {advancedFilterButton}
         <div className="basic-filter">{this.renderFilters()}</div>
+        {advancedFilterButton}
       </div>
     );
   }
