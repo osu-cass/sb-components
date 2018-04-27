@@ -2,7 +2,8 @@ import * as React from "react";
 import {
   AdvancedFilterCategoryModel,
   FilterOptionModel,
-  OptionTypeModel
+  OptionTypeModel,
+  FilterType
 } from "./FilterModels";
 import { BtnGroupOption } from "../Button/BtnGroupOption";
 import { ToolTip } from "../ToolTip/ToolTip";
@@ -49,24 +50,40 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     const tags: JSX.Element[] = [];
 
     if (filterOptions.length > 0) {
-      filterOptions
-        .sort((a, b) =>
+      if (
+        filterOptions[0].filterType === FilterType.TechnologyType ||
+        filterOptions[0].filterType === FilterType.Calculator
+      ) {
+        filterOptions.sort((a, b) =>
+          b.label.localeCompare(a.label, undefined, {
+            usage: "sort",
+            sensitivity: "variant"
+          })
+        );
+        if (filterOptions[0].filterType === FilterType.Calculator) {
+          filterOptions.reverse();
+        }
+      } else {
+        filterOptions.sort((a, b) =>
           a.key.localeCompare(b.key, undefined, {
+            usage: "sort",
             numeric: true,
             sensitivity: "base"
           })
-        )
-        .forEach((t, i) => {
-          tags.push(
-            <BtnGroupOption
-              onClick={() => onFilterOptionSelect(t)}
-              disabled={disabled}
-              selected={t.isSelected}
-              label={t.label}
-              key={t.key}
-            />
-          );
-        });
+        );
+      }
+
+      filterOptions.forEach((t, i) => {
+        tags.push(
+          <BtnGroupOption
+            onClick={() => onFilterOptionSelect(t)}
+            disabled={disabled}
+            selected={t.isSelected}
+            label={t.label}
+            key={t.key}
+          />
+        );
+      });
     } else {
       tags.push(<div key={0}>{emptyOptionsText || "No options."}</div>);
     }
