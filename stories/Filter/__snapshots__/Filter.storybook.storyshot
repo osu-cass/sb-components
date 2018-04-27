@@ -154,7 +154,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               onClick={[Function]}
               role="button"
             >
-              tech1
+              tech2
             </button>
             <button
               className="btn btn-primary "
@@ -162,7 +162,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               onClick={[Function]}
               role="button"
             >
-              tech2
+              tech1
             </button>
           </div>
         </div>
