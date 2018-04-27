@@ -50,20 +50,19 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     const tags: JSX.Element[] = [];
 
     if (filterOptions.length > 0) {
-      if (filterOptions[0].filterType === FilterType.TechnologyType) {
+      if (
+        filterOptions[0].filterType === FilterType.TechnologyType ||
+        filterOptions[0].filterType === FilterType.Calculator
+      ) {
         filterOptions.sort((a, b) =>
           b.label.localeCompare(a.label, undefined, {
             usage: "sort",
             sensitivity: "variant"
           })
         );
-      } else if (filterOptions[0].filterType === FilterType.Calculator) {
-        filterOptions.sort((a, b) =>
-          a.label.localeCompare(b.label, undefined, {
-            usage: "sort",
-            sensitivity: "variant"
-          })
-        );
+        if (filterOptions[0].filterType === FilterType.Calculator) {
+          filterOptions.reverse();
+        }
       } else {
         filterOptions.sort((a, b) =>
           a.key.localeCompare(b.key, undefined, {
