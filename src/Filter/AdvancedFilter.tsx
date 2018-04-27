@@ -25,7 +25,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     } = this.props;
     let allBtnContainer: JSX.Element | undefined;
     const anySelected = filterOptions.some(fo => fo.isSelected);
-    if (displayAllButton) {
+    if (filterOptions.length > 0 && displayAllButton) {
       allBtnContainer = (
         <BtnGroupOption
           onClick={onFilterOptionSelect}
