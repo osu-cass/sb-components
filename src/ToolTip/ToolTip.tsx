@@ -4,6 +4,7 @@ export interface ToolTipProps {
   toolTipHeader?: string;
   helpText?: JSX.Element;
   displayIcon?: boolean;
+  displayText?: JSX.Element | string | React.ReactText;
   position?: "top" | "bottom";
   side?: "left" | "right";
   className?: string;
@@ -40,7 +41,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
     return (
       <span className="tool-tip-hoverable">
-        {this.props.children} {icon}
+        {this.props.children || this.props.displayText} {icon}
       </span>
     );
   }
@@ -69,3 +70,11 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
     );
   }
 }
+
+export const generateTooltip = (props: ToolTipProps) => {
+  if (props.helpText) {
+    return <ToolTip {...props} />;
+  }
+
+  return undefined;
+};

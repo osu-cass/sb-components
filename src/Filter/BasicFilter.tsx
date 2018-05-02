@@ -6,6 +6,7 @@ import {
   SelectOptionProps,
   FilterType,
   ToolTip,
+  generateTooltip,
   Select
 } from "@src/index";
 
@@ -50,16 +51,19 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
     const value =
       filterOptions && filterOptions.length > 0 ? filterOptions[0].key : "";
+    const tooltip = generateTooltip({
+      helpText: helpTextElement,
+      displayIcon: true,
+      displayText: (
+        <span className="tooltip-label" info-label="true">
+          {label}
+        </span>
+      )
+    });
 
     return (
       <div className="input-box">
-        <label>
-          <ToolTip helpText={helpTextElement} displayIcon={true}>
-            <span className="tooltip-label" info-label="true">
-              {label}
-            </span>
-          </ToolTip>
-        </label>
+        <label>{tooltip}</label>
         <input
           className="form-control"
           type="text"

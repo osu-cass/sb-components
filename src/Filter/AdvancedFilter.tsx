@@ -3,10 +3,11 @@ import {
   AdvancedFilterCategoryModel,
   FilterOptionModel,
   OptionTypeModel,
-  FilterType
-} from "./FilterModels";
-import { BtnGroupOption } from "../Button/BtnGroupOption";
-import { ToolTip } from "../ToolTip/ToolTip";
+  FilterType,
+  BtnGroupOption,
+  ToolTip,
+  generateTooltip
+} from "../index";
 
 export interface AdvancedFilterProps extends AdvancedFilterCategoryModel {
   onFilterOptionSelect: (data?: FilterOptionModel) => void;
@@ -104,19 +105,23 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
       return null;
     }
 
+    const tooltip = generateTooltip({
+      helpText: text,
+      displayIcon: text !== undefined,
+      displayText: (
+        <span className="tooltip-label" info-label="true">
+          {label}
+        </span>
+      )
+    });
+
     return (
       <div
         id={`${id}-filter`.toLocaleLowerCase()}
         className={"filter-selection"}
       >
         <div className="filter-container-header">
-          <label>
-            <ToolTip helpText={text} displayIcon={text !== undefined}>
-              <span className="tooltip-label" info-label="true">
-                {label}
-              </span>
-            </ToolTip>
-          </label>
+          <label>{tooltip}</label>
         </div>
         <div
           className="nested-btn-group btn-group-sm toggle-group vertical"

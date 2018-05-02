@@ -2,6 +2,7 @@ import * as React from "react";
 import {
   ItemCardModel,
   ToolTip,
+  generateTooltip,
   SortColumnModel,
   ColumnGroup
 } from "@src/index";
@@ -89,24 +90,21 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
   }
 
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
-    const displayText = col.accessor(cellData);
+    const columnText = col.accessor(cellData);
     let content: JSX.Element | undefined;
 
     if (col.helpText) {
-      content = (
-        <ToolTip
-          helpText={<p>{col.helpText(cellData)}</p>}
-          position="bottom"
-          displayIcon={true}
-          className="box"
-        >
-          {displayText}
-        </ToolTip>
-      );
+      content = generateTooltip({
+        helpText: <p>{col.helpText(cellData)}</p>,
+        position: "bottom",
+        displayIcon: true,
+        className: "box",
+        displayText: columnText
+      });
     } else if (col.className === "item" && !this.props.hasControls) {
       content = (
         <a tabIndex={0} role="link">
-          {displayText}
+          {columnText}
         </a>
       );
     } else if (col.className === "subject") {
@@ -114,11 +112,11 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
         <span
           className={`table-subject-highlight ${cellData.subjectCode.toLowerCase()}`}
         >
-          {displayText}
+          {columnText}
         </span>
       );
     } else {
-      content = <span>{displayText}</span>;
+      content = <span>{columnText}</span>;
     }
 
     return <span key={col.className}>{content}</span>;
