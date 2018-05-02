@@ -81,11 +81,11 @@ export class GradeLevel {
       case GradeLevels.Grade12:
         return "G12";
       case GradeLevels.Elementary:
-        return "Elementary";
+        return "E";
       case GradeLevels.Middle:
-        return "Middle";
+        return "M";
       case GradeLevels.High:
-        return "High School";
+        return "HS";
       default:
         return undefined;
     }
