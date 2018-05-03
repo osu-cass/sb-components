@@ -1,9 +1,11 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { RubricTable, RubricTableProps } from "../../src/Rubric/RubricTable";
-import { RubricEntryModel } from "../../src/Rubric/RubricModels";
+import { Rubric } from "@src/index";
+import { RubricModel } from "@src/Rubric/RubricModels";
+import { RubricModal, RubricModalProps } from "@src/Rubric/RubricModal";
 
-const rubricTableMockProps: RubricTableProps = {
+const rubricModalMockProps: RubricModalProps = {
+  showModal: true,
   rubrics: [
     {
       language: "English",
@@ -47,6 +49,6 @@ const rubricTableMockProps: RubricTableProps = {
   ]
 };
 
-storiesOf("Rubric Table", module).add("with a rubric table", () => (
-  <RubricTable {...rubricTableMockProps} />
+storiesOf("Rubric Modal", module).add("with rubric modal", () => (
+  <RubricModal {...rubricModalMockProps} />
 ));
