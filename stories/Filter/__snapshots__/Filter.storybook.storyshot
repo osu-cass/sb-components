@@ -113,23 +113,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  TechType
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              TechType
             </span>
           </label>
         </div>
