@@ -57,8 +57,8 @@ describe("BasicFilterContainer", () => {
 
   it("hide select message if disabled", () => {
     const gradeDropDownModel = mockBasicFilterCategories[0];
-    // tslint:disable-next-line:no-empty
     const view = shallow(
+      // tslint:disable-next-line:no-empty
       <BasicFilter {...gradeDropDownModel} selectedHandler={() => {}} />
     );
     expect(view.findWhere(a => a.text().includes("Select")).length).toEqual(0);
