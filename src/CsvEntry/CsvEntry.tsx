@@ -6,7 +6,6 @@ import {
   parseCsv,
   Accordion
 } from "@src/index";
-import { ToolTipProps } from "lib/src";
 
 export interface CsvEntryProps {
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
