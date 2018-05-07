@@ -821,6 +821,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="A"
                 helpText={
                   <p>
                     Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1420,6 +1421,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="B"
                 helpText={
                   <p>
                     Target B description
@@ -1828,6 +1830,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="C"
                 helpText={
                   <p>
                     target C description
@@ -2236,6 +2239,7 @@ exports[`ItemTable expands matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="D"
                 helpText={
                   <p>
                     target D description
@@ -2623,6 +2627,7 @@ exports[`ItemTable matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="A"
                 helpText={
                   <p>
                     Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -2850,6 +2855,7 @@ exports[`ItemTable matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="B"
                 helpText={
                   <p>
                     Target B description
@@ -3076,6 +3082,7 @@ exports[`ItemTable matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="C"
                 helpText={
                   <p>
                     target C description
@@ -3302,6 +3309,7 @@ exports[`ItemTable matches snapshot 1`] = `
               <ToolTip
                 className="box"
                 displayIcon={true}
+                displayText="D"
                 helpText={
                   <p>
                     target D description

@@ -73,14 +73,13 @@ exports[`ItemCard renders correctly 1`] = `
         <ToolTip
           className="box"
           displayIcon={true}
+          displayText="dfas"
           helpText={
             <span>
               target description right hereeeee
             </span>
           }
-        >
-          dfas
-        </ToolTip>
+        />
       </span>
     </p>
     <p

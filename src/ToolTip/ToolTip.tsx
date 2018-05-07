@@ -76,5 +76,5 @@ export const generateTooltip = (props: ToolTipProps) => {
     return <ToolTip {...props} />;
   }
 
-  return undefined;
+  return props.displayText;
 };

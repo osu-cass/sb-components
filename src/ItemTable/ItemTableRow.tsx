@@ -91,7 +91,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
 
   renderCell(col: SortColumnModel, cellData: ItemCardModel): JSX.Element {
     const columnText = col.accessor(cellData);
-    let content: JSX.Element | undefined;
+    let content: JSX.Element | React.ReactText | undefined;
 
     if (col.helpText) {
       content = generateTooltip({

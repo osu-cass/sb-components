@@ -48,12 +48,12 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       placeholderText,
       filterOptions
     } = this.props;
-    const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
+    const text = helpText ? <p>{helpText}</p> : undefined;
     const value =
       filterOptions && filterOptions.length > 0 ? filterOptions[0].key : "";
     const tooltip = generateTooltip({
-      helpText: helpTextElement,
-      displayIcon: true,
+      helpText: text,
+      displayIcon: text !== undefined,
       displayText: (
         <span className="tooltip-label" info-label="true">
           {label}

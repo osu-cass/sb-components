@@ -93,11 +93,8 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
   }
 
   render() {
-    let text: JSX.Element | undefined;
     const { disabled, label, helpText } = this.props;
-    if (helpText) {
-      text = <p>{helpText}</p>;
-    }
+    const text = helpText ? <p>{helpText}</p> : undefined;
     // replace "-" with spaces, replace "." with nothing.
     const id = label.replace(/\ /g, "-").replace(/\./g, "");
     if (disabled) {
