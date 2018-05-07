@@ -558,29 +558,12 @@ exports[`FilterContainer renders 1`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -1230,29 +1213,12 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -1902,29 +1868,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -2246,6 +2195,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Grade
+                        </span>
+                      }
                       helpText={
                         <p>
                           Grade Help
@@ -2396,6 +2353,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Multi
+                        </span>
+                      }
                       helpText={
                         <p>
                           Subject Help
@@ -2567,6 +2532,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Multi All
+                        </span>
+                      }
                       helpText={
                         <p>
                           Subject Help
@@ -2701,6 +2674,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Multi All Disabled
+                        </span>
+                      }
                       helpText={
                         <p>
                           Subject Help
@@ -3365,29 +3346,12 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div

@@ -122,23 +122,10 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  Claims
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              Claims
             </span>
           </label>
         </div>
@@ -185,23 +172,10 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  Item Types
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              Item Types
             </span>
           </label>
         </div>
@@ -295,23 +269,10 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  Targets
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              Targets
             </span>
           </label>
         </div>
