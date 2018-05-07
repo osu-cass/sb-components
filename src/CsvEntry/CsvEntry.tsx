@@ -1,11 +1,12 @@
 import * as React from "react";
 import {
-  ToolTip,
+  generateTooltip,
   ItemRevisionModel,
   CsvRowModel,
   parseCsv,
   Accordion
 } from "@src/index";
+import { ToolTipProps } from "lib/src";
 
 export interface CsvEntryProps {
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
@@ -25,26 +26,27 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   }
 
   renderHelpButton() {
+    const helpText: JSX.Element = (
+      <p>Enter bank key and item id for the items you would like to add</p>
+    );
+    const displayText: JSX.Element = (
+      <button
+        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        role="button"
+        aria-label="Open help text"
+      >
+        <span className="fa fa-info-circle" aria-hidden="true" />
+        Help
+      </button>
+    );
+
     return (
       <div className="help-button">
-        <ToolTip
-          helpText={
-            <p>
-              Enter bank key and item id for the items you would like to add
-            </p>
-          }
-          position="bottom"
-          side="left"
-        >
-          <button
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
-            role="button"
-            aria-label="Open help text"
-          >
-            <span className="fa fa-info-circle" aria-hidden="true" />
-            Help
-          </button>
-        </ToolTip>
+        {generateTooltip({
+          helpText,
+          displayText,
+          displayIcon: undefined
+        })}
       </div>
     );
   }
