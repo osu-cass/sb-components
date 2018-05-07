@@ -6,7 +6,6 @@ import {
   getResourceContent,
   ItemAccessibilityModal,
   ItemViewerFrame,
-  ToolTip,
   AccResourceGroupModel,
   AdvancedAboutItem,
   AboutItemRevisionModel,

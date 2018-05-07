@@ -85,15 +85,14 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
       <ToolTip
         className="box"
         displayIcon={true}
+        displayText="A"
         helpText={
           <p>
             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
           </p>
         }
         position="bottom"
-      >
-        A
-      </ToolTip>
+      />
     </span>
   </td>
   <td
@@ -290,6 +289,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
             <ToolTip
               className="box"
               displayIcon={true}
+              displayText="A"
               helpText={
                 <p>
                   Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia

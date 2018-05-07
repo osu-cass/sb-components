@@ -110,23 +110,10 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
       >
         <label>
           <span
-            className="tool-tip-links undefined"
-            tabIndex={0}
+            className="tooltip-label"
+            info-label="true"
           >
-            <span
-              className="tool-tip-hoverable"
-            >
-              <span
-                className="tooltip-label"
-                info-label="true"
-              >
-                TechType
-              </span>
-               
-            </span>
-            <span
-              className="tool-tip-details"
-            />
+            TechType
           </span>
         </label>
       </div>
@@ -278,23 +265,10 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
       >
         <label>
           <span
-            className="tool-tip-links undefined"
-            tabIndex={0}
+            className="tooltip-label"
+            info-label="true"
           >
-            <span
-              className="tool-tip-hoverable"
-            >
-              <span
-                className="tooltip-label"
-                info-label="true"
-              >
-                TechType
-              </span>
-               
-            </span>
-            <span
-              className="tool-tip-details"
-            />
+            TechType
           </span>
         </label>
       </div>
