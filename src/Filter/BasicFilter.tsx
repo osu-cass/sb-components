@@ -126,15 +126,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     const selected = filterOptions.find(fil => fil.isSelected === true);
     const selectedValue = selected ? selected.key : defaultValue;
 
-    let selectOptions: SelectOptionProps[] = [];
-    selectOptions.push({
-      disabled,
-      selected: selectedValue === defaultValue,
-      label: `Select ${label}`,
-      value: defaultValue
-    });
-
-    const filterSelectOptions = filterOptions.map(fo => {
+    const selectOptions = filterOptions.map(fo => {
       return {
         disabled,
         selected: selectedValue === fo.key,
@@ -143,7 +135,14 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       };
     });
 
-    selectOptions = selectOptions.concat(filterSelectOptions);
+    if (!this.props.hideSelectMessage) {
+      selectOptions.splice(0, 0, {
+        disabled,
+        selected: selectedValue === defaultValue,
+        label: `Select ${label}`,
+        value: defaultValue
+      });
+    }
 
     return (
       <Select

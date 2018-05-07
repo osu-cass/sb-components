@@ -897,6 +897,50 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
 </div>
 `;
 
+exports[`BasicFilterContainer hide select message if disabled 1`] = `
+<div
+  className="bf-selection"
+  id="grade-bf"
+>
+  <Component
+    className="input-sm med-text"
+    disabled={false}
+    key="Grade"
+    label="Grade"
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "disabled": false,
+          "label": "Select Grade",
+          "selected": true,
+          "value": "default",
+        },
+        Object {
+          "disabled": false,
+          "label": "Grades 3-5",
+          "selected": false,
+          "value": "7",
+        },
+        Object {
+          "disabled": false,
+          "label": "Grades 6-8",
+          "selected": false,
+          "value": "56",
+        },
+        Object {
+          "disabled": false,
+          "label": "High School",
+          "selected": false,
+          "value": "960",
+        },
+      ]
+    }
+    selected="default"
+  />
+</div>
+`;
+
 exports[`BasicFilterContainer resets filters on keyboard events 1`] = `
 <div
   className="bf-container section section-light bf-expanded"
