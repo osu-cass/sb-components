@@ -1,5 +1,5 @@
 import * as React from "react";
-import { RubricModel, RubricTableRowModel } from "./RubricModels";
+import { RubricModel } from "./RubricModels";
 
 export interface RubricTableProps {
   rubrics: RubricModel[];
@@ -34,11 +34,8 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
     // tslint:disable:react-no-dangerous-html
     const rowsJsx = rows.map((row, i) => (
       <tr key={i}>
-        <td dangerouslySetInnerHTML={{ __html: row.score }} />
-        <td
-          dangerouslySetInnerHTML={{ __html: row.rationale }}
-          style={leftAlign}
-        />
+        <td dangerouslySetInnerHTML={{ __html: row.rationale }} />
+        <td dangerouslySetInnerHTML={{ __html: row.score }} style={leftAlign} />
         {showSample ? (
           <td
             dangerouslySetInnerHTML={{ __html: row.sample }}
