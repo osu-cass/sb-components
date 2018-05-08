@@ -9,22 +9,22 @@ const rubricTableMockProps: RubricTableProps = {
       language: "English",
       rubricEntries: [
         {
-          scorepoint:
-            '<p style=""><span style="font-weight:bold; ">Exemplar</span>: <img id="item_3200_Object3" style="vertical-align:middle;" src="item_3200_v0_Object3_png16malpha.png" width="23" height="36" /> or &#xA0;3<img id="item_3200_Object4" style="vertical-align:middle;" src="item_3200_v0_Object4_png16malpha.png" width="12" height="35" /></p><p style="">&#xA0;</p><p style="">For this item, a full-credit response includes:</p><p style="">&#xA0;</p><p style=""><span style="font-weight:bold; ">1 point</span>: correct response of 32/9 or 3 5/9.</p>',
+          scorepoint: "0",
           name: "\n        Rubric 2",
-          value: "0"
+          value:
+            '<p style="text-decoration:underline; font-weight:bold; ">3 point text </p><p style="">&#xA0;</p><p style="">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion. The student may make minor computation errors that do not affect the reasonableness of the explanation. </p><p style="">&#xA0;</p><p style="">&#xA0;</p><p style="text-decoration:underline; font-weight:bold; ">2 point text </p><p style="text-decoration:underline; font-weight:bold; ">&#xA0;</p><p style="">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing an incomplete chain of reasoning that supports this conclusion. (An incomplete chain of reasoning can be defined by missing process steps or unsupported calculations in an otherwise complete chain of reasoning.) </p><p style="">OR </p><p style="">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion, but makes computation errors that affect the reasonableness of the explanation. </p>'
         },
         {
-          scorepoint:
-            '<p style="">The student completes the task and reaches a conclusion. The student\'s explanation attempts to relate distance to time, but contains errors in fundamental mathematical procedures. </p><p style="">&#xA0;</p>',
+          scorepoint: "1",
           name: "\n        Rubric 1",
-          value: "1"
+          value:
+            '<p style="">The student completes the task and reaches a conclusion. The student\'s explanation attempts to relate distance to time, but contains errors in fundamental mathematical procedures. </p><p style="">&#xA0;</p>'
         },
         {
-          scorepoint:
-            '<p style="">The student demonstrates a lack of comprehension in regard to the mathematical content and practices essential to the task. </p>',
+          scorepoint: "0",
           name: "\n        Rubric 0",
-          value: "2"
+          value:
+            '<p style="">The student demonstrates a lack of comprehension in regard to the mathematical content and practices essential to the task. </p>'
         }
       ],
       samples: [

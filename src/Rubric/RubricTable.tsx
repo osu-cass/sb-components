@@ -1,5 +1,5 @@
 import * as React from "react";
-import { RubricModel } from "./RubricModels";
+import { RubricModel, RubricTableRowModel } from "./RubricModels";
 
 export interface RubricTableProps {
   rubrics: RubricModel[];
@@ -7,23 +7,26 @@ export interface RubricTableProps {
 
 export class RubricTable extends React.Component<RubricTableProps, {}> {
   renderRubric(rubric: RubricModel, index: number) {
-    const rows = rubric.rubricEntries.map(entry => {
-      const sample = rubric.samples.find(
-        s =>
-          s.sampleResponses &&
-          s.sampleResponses[0] &&
-          s.sampleResponses[0].scorePoint === entry.scorepoint
-      );
-      const sampleHtml = sample
-        ? sample.sampleResponses.map(sr => sr.sampleContent).join("<br/>")
-        : "";
+    let rows: RubricTableRowModel[] = [];
+    if (rubric.rubricEntries && rubric.rubricEntries.length > 0) {
+      rows = rubric.rubricEntries.map(entry => {
+        const sample = rubric.samples.find(
+          s =>
+            s.sampleResponses &&
+            s.sampleResponses[0] &&
+            s.sampleResponses[0].scorePoint === entry.scorepoint
+        );
+        const sampleHtml = sample
+          ? sample.sampleResponses.map(sr => sr.sampleContent).join("<br/>")
+          : "";
 
-      return {
-        score: entry.scorepoint,
-        rationale: entry.value,
-        sample: sampleHtml
-      };
-    });
+        return {
+          score: entry.scorepoint,
+          rationale: entry.value,
+          sample: sampleHtml
+        };
+      });
+    }
 
     const showSample = rubric.samples.length !== 0;
 
@@ -34,8 +37,11 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
     // tslint:disable:react-no-dangerous-html
     const rowsJsx = rows.map((row, i) => (
       <tr key={i}>
-        <td dangerouslySetInnerHTML={{ __html: row.rationale }} />
-        <td dangerouslySetInnerHTML={{ __html: row.score }} style={leftAlign} />
+        <td>{row.score}</td>
+        <td
+          dangerouslySetInnerHTML={{ __html: row.rationale }}
+          style={leftAlign}
+        />
         {showSample ? (
           <td
             dangerouslySetInnerHTML={{ __html: row.sample }}
