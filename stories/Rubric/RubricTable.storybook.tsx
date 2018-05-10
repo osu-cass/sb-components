@@ -9,7 +9,7 @@ const rubricTableMockProps: RubricTableProps = {
       language: "English",
       rubricEntries: [
         {
-          scorepoint: "0",
+          scorepoint: "2",
           name: "\n        Rubric 2",
           value:
             '<p style="text-decoration:underline; font-weight:bold; ">3 point text </p><p style="">&#xA0;</p><p style="">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion. The student may make minor computation errors that do not affect the reasonableness of the explanation. </p><p style="">&#xA0;</p><p style="">&#xA0;</p><p style="text-decoration:underline; font-weight:bold; ">2 point text </p><p style="text-decoration:underline; font-weight:bold; ">&#xA0;</p><p style="">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing an incomplete chain of reasoning that supports this conclusion. (An incomplete chain of reasoning can be defined by missing process steps or unsupported calculations in an otherwise complete chain of reasoning.) </p><p style="">OR </p><p style="">The student determines that Emily can make it to school on time at her current rate of speed and includes a valid explanation containing a full chain of reasoning that supports this conclusion, but makes computation errors that affect the reasonableness of the explanation. </p>'
