@@ -199,14 +199,14 @@ exports[`FilterContainer renders 1`] = `
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech1",
-            "label": "tech1",
+            "key": "tech2",
+            "label": "tech2",
           },
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech2",
-            "label": "tech2",
+            "key": "tech1",
+            "label": "tech1",
           },
         ],
         "label": "TechType",
@@ -277,14 +277,14 @@ exports[`FilterContainer renders 1`] = `
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech1",
-                "label": "tech1",
+                "key": "tech2",
+                "label": "tech2",
               },
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech2",
-                "label": "tech2",
+                "key": "tech1",
+                "label": "tech1",
               },
             ],
             "label": "TechType",
@@ -533,14 +533,14 @@ exports[`FilterContainer renders 1`] = `
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech1",
-                  "label": "tech1",
+                  "key": "tech2",
+                  "label": "tech2",
                 },
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech2",
-                  "label": "tech2",
+                  "key": "tech1",
+                  "label": "tech1",
                 },
               ]
             }
@@ -558,29 +558,12 @@ exports[`FilterContainer renders 1`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -607,22 +590,6 @@ exports[`FilterContainer renders 1`] = `
                 >
                   <Component
                     disabled={false}
-                    key="tech1"
-                    label="tech1"
-                    onClick={[Function]}
-                    selected={false}
-                  >
-                    <button
-                      className="btn btn-primary "
-                      disabled={false}
-                      onClick={[Function]}
-                      role="button"
-                    >
-                      tech1
-                    </button>
-                  </Component>
-                  <Component
-                    disabled={false}
                     key="tech2"
                     label="tech2"
                     onClick={[Function]}
@@ -635,6 +602,22 @@ exports[`FilterContainer renders 1`] = `
                       role="button"
                     >
                       tech2
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
                     </button>
                   </Component>
                 </div>
@@ -871,14 +854,14 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech1",
-            "label": "tech1",
+            "key": "tech2",
+            "label": "tech2",
           },
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech2",
-            "label": "tech2",
+            "key": "tech1",
+            "label": "tech1",
           },
         ],
         "label": "TechType",
@@ -949,14 +932,14 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech1",
-                "label": "tech1",
+                "key": "tech2",
+                "label": "tech2",
               },
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech2",
-                "label": "tech2",
+                "key": "tech1",
+                "label": "tech1",
               },
             ],
             "label": "TechType",
@@ -1205,14 +1188,14 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech1",
-                  "label": "tech1",
+                  "key": "tech2",
+                  "label": "tech2",
                 },
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech2",
-                  "label": "tech2",
+                  "key": "tech1",
+                  "label": "tech1",
                 },
               ]
             }
@@ -1230,29 +1213,12 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -1279,22 +1245,6 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 >
                   <Component
                     disabled={false}
-                    key="tech1"
-                    label="tech1"
-                    onClick={[Function]}
-                    selected={false}
-                  >
-                    <button
-                      className="btn btn-primary "
-                      disabled={false}
-                      onClick={[Function]}
-                      role="button"
-                    >
-                      tech1
-                    </button>
-                  </Component>
-                  <Component
-                    disabled={false}
                     key="tech2"
                     label="tech2"
                     onClick={[Function]}
@@ -1307,6 +1257,22 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                       role="button"
                     >
                       tech2
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
                     </button>
                   </Component>
                 </div>
@@ -1543,14 +1509,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech1",
-            "label": "tech1",
+            "key": "tech2",
+            "label": "tech2",
           },
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech2",
-            "label": "tech2",
+            "key": "tech1",
+            "label": "tech1",
           },
         ],
         "label": "TechType",
@@ -1621,14 +1587,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech1",
-                "label": "tech1",
+                "key": "tech2",
+                "label": "tech2",
               },
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech2",
-                "label": "tech2",
+                "key": "tech1",
+                "label": "tech1",
               },
             ],
             "label": "TechType",
@@ -1877,14 +1843,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech1",
-                  "label": "tech1",
+                  "key": "tech2",
+                  "label": "tech2",
                 },
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech2",
-                  "label": "tech2",
+                  "key": "tech1",
+                  "label": "tech1",
                 },
               ]
             }
@@ -1902,29 +1868,12 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -1951,22 +1900,6 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 >
                   <Component
                     disabled={false}
-                    key="tech1"
-                    label="tech1"
-                    onClick={[Function]}
-                    selected={false}
-                  >
-                    <button
-                      className="btn btn-primary "
-                      disabled={false}
-                      onClick={[Function]}
-                      role="button"
-                    >
-                      tech1
-                    </button>
-                  </Component>
-                  <Component
-                    disabled={false}
                     key="tech2"
                     label="tech2"
                     onClick={[Function]}
@@ -1979,6 +1912,22 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       role="button"
                     >
                       tech2
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
                     </button>
                   </Component>
                 </div>
@@ -2246,6 +2195,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Grade
+                        </span>
+                      }
                       helpText={
                         <p>
                           Grade Help
@@ -2396,6 +2353,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Multi
+                        </span>
+                      }
                       helpText={
                         <p>
                           Subject Help
@@ -2567,6 +2532,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Multi All
+                        </span>
+                      }
                       helpText={
                         <p>
                           Subject Help
@@ -2701,6 +2674,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   <label>
                     <ToolTip
                       displayIcon={true}
+                      displayText={
+                        <span
+                          className="tooltip-label"
+                          info-label="true"
+                        >
+                          Multi All Disabled
+                        </span>
+                      }
                       helpText={
                         <p>
                           Subject Help
@@ -3006,14 +2987,14 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech1",
-            "label": "tech1",
+            "key": "tech2",
+            "label": "tech2",
           },
           Object {
             "filterType": "TechnologyType",
             "isSelected": false,
-            "key": "tech2",
-            "label": "tech2",
+            "key": "tech1",
+            "label": "tech1",
           },
         ],
         "label": "TechType",
@@ -3084,14 +3065,14 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech1",
-                "label": "tech1",
+                "key": "tech2",
+                "label": "tech2",
               },
               Object {
                 "filterType": "TechnologyType",
                 "isSelected": false,
-                "key": "tech2",
-                "label": "tech2",
+                "key": "tech1",
+                "label": "tech1",
               },
             ],
             "label": "TechType",
@@ -3340,14 +3321,14 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech1",
-                  "label": "tech1",
+                  "key": "tech2",
+                  "label": "tech2",
                 },
                 Object {
                   "filterType": "TechnologyType",
                   "isSelected": false,
-                  "key": "tech2",
-                  "label": "tech2",
+                  "key": "tech1",
+                  "label": "tech1",
                 },
               ]
             }
@@ -3365,29 +3346,12 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 className="filter-container-header"
               >
                 <label>
-                  <ToolTip
-                    displayIcon={false}
+                  <span
+                    className="tooltip-label"
+                    info-label="true"
                   >
-                    <span
-                      className="tool-tip-links undefined"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        <span
-                          className="tooltip-label"
-                          info-label="true"
-                        >
-                          TechType
-                        </span>
-                         
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      />
-                    </span>
-                  </ToolTip>
+                    TechType
+                  </span>
                 </label>
               </div>
               <div
@@ -3414,22 +3378,6 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 >
                   <Component
                     disabled={false}
-                    key="tech1"
-                    label="tech1"
-                    onClick={[Function]}
-                    selected={false}
-                  >
-                    <button
-                      className="btn btn-primary "
-                      disabled={false}
-                      onClick={[Function]}
-                      role="button"
-                    >
-                      tech1
-                    </button>
-                  </Component>
-                  <Component
-                    disabled={false}
                     key="tech2"
                     label="tech2"
                     onClick={[Function]}
@@ -3442,6 +3390,22 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                       role="button"
                     >
                       tech2
+                    </button>
+                  </Component>
+                  <Component
+                    disabled={false}
+                    key="tech1"
+                    label="tech1"
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <button
+                      className="btn btn-primary "
+                      disabled={false}
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      tech1
                     </button>
                   </Component>
                 </div>

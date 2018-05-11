@@ -1102,6 +1102,7 @@ exports[`ItemPageTable expands 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1519,6 +1520,7 @@ exports[`ItemPageTable expands 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -1745,6 +1747,7 @@ exports[`ItemPageTable expands 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -1971,6 +1974,7 @@ exports[`ItemPageTable expands 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description
@@ -2862,6 +2866,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -3089,6 +3094,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -3315,6 +3321,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description
@@ -3541,6 +3548,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -4467,6 +4475,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -4694,6 +4703,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -4921,6 +4931,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -5147,6 +5158,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description
@@ -6113,6 +6125,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description
@@ -6340,6 +6353,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -6566,6 +6580,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -6793,6 +6808,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -7789,6 +7805,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -8016,6 +8033,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -8242,6 +8260,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description
@@ -8469,6 +8488,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -9496,6 +9516,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -9722,6 +9743,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -9948,6 +9970,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description
@@ -10175,6 +10198,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -11232,6 +11256,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="A"
                     helpText={
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -11459,6 +11484,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="B"
                     helpText={
                       <p>
                         Target B description
@@ -11685,6 +11711,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="D"
                     helpText={
                       <p>
                         target D description
@@ -11911,6 +11938,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
+                    displayText="C"
                     helpText={
                       <p>
                         target C description

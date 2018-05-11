@@ -6,6 +6,7 @@ import {
   SelectOptionProps,
   FilterType,
   ToolTip,
+  generateTooltip,
   Select
 } from "@src/index";
 
@@ -47,19 +48,22 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       placeholderText,
       filterOptions
     } = this.props;
-    const helpTextElement = helpText ? <p>{this.props.helpText}</p> : <p />;
+    const text = helpText ? <p>{helpText}</p> : undefined;
     const value =
       filterOptions && filterOptions.length > 0 ? filterOptions[0].key : "";
+    const tooltip = generateTooltip({
+      helpText: text,
+      displayIcon: text !== undefined,
+      displayText: (
+        <span className="tooltip-label" info-label="true">
+          {label}
+        </span>
+      )
+    });
 
     return (
       <div className="input-box">
-        <label>
-          <ToolTip helpText={helpTextElement} displayIcon={true}>
-            <span className="tooltip-label" info-label="true">
-              {label}
-            </span>
-          </ToolTip>
-        </label>
+        <label>{tooltip}</label>
         <input
           className="form-control"
           type="text"
@@ -122,15 +126,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     const selected = filterOptions.find(fil => fil.isSelected === true);
     const selectedValue = selected ? selected.key : defaultValue;
 
-    let selectOptions: SelectOptionProps[] = [];
-    selectOptions.push({
-      disabled,
-      selected: selectedValue === defaultValue,
-      label: `Select ${label}`,
-      value: defaultValue
-    });
-
-    const filterSelectOptions = filterOptions.map(fo => {
+    const selectOptions = filterOptions.map(fo => {
       return {
         disabled,
         selected: selectedValue === fo.key,
@@ -139,7 +135,14 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
       };
     });
 
-    selectOptions = selectOptions.concat(filterSelectOptions);
+    if (!this.props.hideSelectMessage) {
+      selectOptions.splice(0, 0, {
+        disabled,
+        selected: selectedValue === defaultValue,
+        label: `Select ${label}`,
+        value: defaultValue
+      });
+    }
 
     return (
       <Select

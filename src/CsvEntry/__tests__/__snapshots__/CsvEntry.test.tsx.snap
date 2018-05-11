@@ -8,26 +8,25 @@ exports[`CsvEntry calls handle csv blur 1`] = `
     className="help-button"
   >
     <ToolTip
+      displayText={
+        <button
+          aria-label="Open help text"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
+          role="button"
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-info-circle"
+          />
+          Help
+        </button>
+      }
       helpText={
         <p>
           Enter bank key and item id for the items you would like to add
         </p>
       }
-      position="bottom"
-      side="left"
-    >
-      <button
-        aria-label="Open help text"
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="fa fa-info-circle"
-        />
-        Help
-      </button>
-    </ToolTip>
+    />
   </div>
   <textarea
     className="csv-text-entry"
@@ -45,26 +44,25 @@ exports[`CsvEntry calls handle csv change 1`] = `
     className="help-button"
   >
     <ToolTip
+      displayText={
+        <button
+          aria-label="Open help text"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
+          role="button"
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-info-circle"
+          />
+          Help
+        </button>
+      }
       helpText={
         <p>
           Enter bank key and item id for the items you would like to add
         </p>
       }
-      position="bottom"
-      side="left"
-    >
-      <button
-        aria-label="Open help text"
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="fa fa-info-circle"
-        />
-        Help
-      </button>
-    </ToolTip>
+    />
   </div>
   <textarea
     className="csv-text-entry"
@@ -83,26 +81,25 @@ exports[`CsvEntry matches snapshot 1`] = `
     className="help-button"
   >
     <ToolTip
+      displayText={
+        <button
+          aria-label="Open help text"
+          className="item-nav-btn btn btn-default btn-sm about-item-btn"
+          role="button"
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-info-circle"
+          />
+          Help
+        </button>
+      }
       helpText={
         <p>
           Enter bank key and item id for the items you would like to add
         </p>
       }
-      position="bottom"
-      side="left"
-    >
-      <button
-        aria-label="Open help text"
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="fa fa-info-circle"
-        />
-        Help
-      </button>
-    </ToolTip>
+    />
   </div>
   <textarea
     className="csv-text-entry"

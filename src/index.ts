@@ -324,7 +324,7 @@ export { SelectOption, SelectOptionProps } from "./Select/SelectOption";
 //
 // ToolTip
 //
-export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
+export { ToolTip, ToolTipProps, generateTooltip } from "./ToolTip/ToolTip";
 
 //
 // ApiModel
