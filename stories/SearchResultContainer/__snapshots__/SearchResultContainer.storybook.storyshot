@@ -244,7 +244,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       className="tool-tip-details"
                     >
                       <span
-                        className="tool-tip-message bottom undefined"
+                        className="tool-tip-message bottom "
                       >
                         <p>
                           Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -328,7 +328,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       className="tool-tip-details"
                     >
                       <span
-                        className="tool-tip-message bottom undefined"
+                        className="tool-tip-message bottom "
                       >
                         <p>
                           Target B description
@@ -412,7 +412,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       className="tool-tip-details"
                     >
                       <span
-                        className="tool-tip-message bottom undefined"
+                        className="tool-tip-message bottom "
                       >
                         <p>
                           target C description
@@ -496,7 +496,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
                       className="tool-tip-details"
                     >
                       <span
-                        className="tool-tip-message bottom undefined"
+                        className="tool-tip-message bottom "
                       >
                         <p>
                           target D description

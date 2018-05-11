@@ -1128,7 +1128,7 @@ exports[`ItemPageTable expands 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1546,7 +1546,7 @@ exports[`ItemPageTable expands 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -1773,7 +1773,7 @@ exports[`ItemPageTable expands 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -2000,7 +2000,7 @@ exports[`ItemPageTable expands 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
@@ -2892,7 +2892,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -3120,7 +3120,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -3347,7 +3347,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
@@ -3574,7 +3574,7 @@ exports[`ItemPageTable matches snapshot 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -4501,7 +4501,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -4729,7 +4729,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -4957,7 +4957,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -5184,7 +5184,7 @@ exports[`ItemPageTable sorts list on header click 1`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
@@ -6151,7 +6151,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
@@ -6379,7 +6379,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -6606,7 +6606,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -6834,7 +6834,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -7831,7 +7831,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -8059,7 +8059,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -8286,7 +8286,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
@@ -8514,7 +8514,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -9542,7 +9542,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -9769,7 +9769,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -9996,7 +9996,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
@@ -10224,7 +10224,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -11282,7 +11282,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -11510,7 +11510,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             Target B description
@@ -11737,7 +11737,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target D description
@@ -11964,7 +11964,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                         className="tool-tip-details"
                       >
                         <span
-                          className="tool-tip-message bottom undefined"
+                          className="tool-tip-message bottom "
                         >
                           <p>
                             target C description
