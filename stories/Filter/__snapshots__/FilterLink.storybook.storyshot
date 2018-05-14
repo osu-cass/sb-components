@@ -262,7 +262,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -364,7 +364,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -466,7 +466,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -568,7 +568,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -670,7 +670,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -772,7 +772,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -874,7 +874,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -976,7 +976,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1078,7 +1078,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1180,7 +1180,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1282,7 +1282,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1384,7 +1384,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1486,7 +1486,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1588,7 +1588,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1690,7 +1690,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1792,7 +1792,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1894,7 +1894,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -1996,7 +1996,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2098,7 +2098,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2200,7 +2200,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2302,7 +2302,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2404,7 +2404,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2506,7 +2506,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2608,7 +2608,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2710,7 +2710,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2812,7 +2812,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -2914,7 +2914,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3016,7 +3016,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3118,7 +3118,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3220,7 +3220,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3322,7 +3322,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3424,7 +3424,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3526,7 +3526,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3628,7 +3628,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3730,7 +3730,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3832,7 +3832,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -3934,7 +3934,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4036,7 +4036,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4138,7 +4138,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4240,7 +4240,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4342,7 +4342,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4444,7 +4444,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4546,7 +4546,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4648,7 +4648,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4750,7 +4750,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4852,7 +4852,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -4954,7 +4954,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -5056,7 +5056,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -5158,7 +5158,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee
@@ -5260,7 +5260,7 @@ exports[`Storyshots Filter Link remains a fixed footer on scroll 1`] = `
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target description right hereeeee

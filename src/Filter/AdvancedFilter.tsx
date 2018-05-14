@@ -92,16 +92,9 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     return tags;
   }
 
-  render() {
-    const { disabled, label, helpText } = this.props;
+  renderHeader() {
+    const { helpText, label } = this.props;
     const text = helpText ? <p>{helpText}</p> : undefined;
-    // replace "-" with spaces, replace "." with nothing.
-    const id = label.replace(/\ /g, "-").replace(/\./g, "");
-    if (disabled) {
-      // tslint:disable-next-line:no-null-keyword
-      return null;
-    }
-
     const tooltip = generateTooltip({
       helpText: text,
       displayIcon: text !== undefined,
@@ -113,20 +106,48 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
     });
 
     return (
+      <div className="filter-container-header">
+        <label>{tooltip}</label>
+      </div>
+    );
+  }
+
+  renderBody() {
+    const { displayAllButton, isMultiSelect } = this.props;
+    const orientationVertical =
+      displayAllButton === true || isMultiSelect === true;
+
+    return (
+      <div
+        className={`${
+          orientationVertical ? "nested-btn-group" : ""
+        } btn-group-sm toggle-group ${
+          orientationVertical ? "vertical" : "horizontal"
+        }`}
+        data-toggle="buttons"
+      >
+        {this.renderAllBtnContainer()}
+        <div className="btn-group filter-btn-group">{this.renderTags()}</div>
+      </div>
+    );
+  }
+
+  render() {
+    const { disabled, label, helpText } = this.props;
+    // replace "-" with spaces, replace "." with nothing.
+    const id = label.replace(/\ /g, "-").replace(/\./g, "");
+    if (disabled) {
+      // tslint:disable-next-line:no-null-keyword
+      return null;
+    }
+
+    return (
       <div
         id={`${id}-filter`.toLocaleLowerCase()}
         className={"filter-selection"}
       >
-        <div className="filter-container-header">
-          <label>{tooltip}</label>
-        </div>
-        <div
-          className="nested-btn-group btn-group-sm toggle-group vertical"
-          data-toggle="buttons"
-        >
-          {this.renderAllBtnContainer()}
-          <div className="btn-group filter-btn-group">{this.renderTags()}</div>
-        </div>
+        {this.renderHeader()}
+        {this.renderBody()}
       </div>
     );
   }
