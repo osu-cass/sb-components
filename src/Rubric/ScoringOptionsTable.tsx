@@ -7,12 +7,14 @@ export interface ScoringOptionsProps {
 
 // tslint:disable-next-line:variable-name
 export const ScoringOptions: React.SFC<ScoringOptionsProps> = props => {
+  // tslint:disable:react-no-dangerous-html
   const rowsJSX = props.options.map(o => (
     <tr>
       <td>{o.name}</td>
-      <td>{o.feedback}</td>
+      <td dangerouslySetInnerHTML={{ __html: o.feedback }} />
     </tr>
   ));
+  // tslint:enable:react-no-dangerous-html
 
   return (
     <table className="item-data-table">
