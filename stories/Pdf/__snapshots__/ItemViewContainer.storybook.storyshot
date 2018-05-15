@@ -134,21 +134,6 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
       <div>
          
       </div>
-      <table
-        className="item-data-table"
-      >
-        <thead>
-          <tr>
-            <th>
-              Option
-            </th>
-            <th>
-              Feedback
-            </th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
     </div>
     <div
       className="item"
@@ -249,21 +234,6 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
       <div>
          
       </div>
-      <table
-        className="item-data-table"
-      >
-        <thead>
-          <tr>
-            <th>
-              Option
-            </th>
-            <th>
-              Feedback
-            </th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
     </div>
   </div>
 </div>
@@ -373,21 +343,6 @@ exports[`Storyshots PDF ItemViewContainer no score info 1`] = `
         }
       />
       <hr />
-      <table
-        className="item-data-table"
-      >
-        <thead>
-          <tr>
-            <th>
-              Option
-            </th>
-            <th>
-              Feedback
-            </th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
     </div>
   </div>
 </div>
@@ -527,21 +482,6 @@ exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
       <div>
          
       </div>
-      <table
-        className="item-data-table"
-      >
-        <thead>
-          <tr>
-            <th>
-              Option
-            </th>
-            <th>
-              Feedback
-            </th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
     </div>
   </div>
 </div>
@@ -766,21 +706,6 @@ exports[`Storyshots PDF ItemViewContainer question only 1`] = `
           </tbody>
         </table>
       </div>
-      <table
-        className="item-data-table"
-      >
-        <thead>
-          <tr>
-            <th>
-              Option
-            </th>
-            <th>
-              Feedback
-            </th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
     </div>
   </div>
 </div>
