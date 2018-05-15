@@ -233,7 +233,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -335,7 +335,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target B description
@@ -437,7 +437,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -539,7 +539,7 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description
@@ -777,7 +777,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -861,7 +861,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target B description
@@ -945,7 +945,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -1029,7 +1029,7 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description
@@ -1288,7 +1288,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1390,7 +1390,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target B description
@@ -1492,7 +1492,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -1594,7 +1594,7 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description
@@ -1853,7 +1853,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target A description
@@ -1955,7 +1955,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target B description
@@ -2057,7 +2057,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -2159,7 +2159,7 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description

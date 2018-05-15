@@ -315,7 +315,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia

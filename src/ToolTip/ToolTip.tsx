@@ -50,9 +50,8 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
     if (this.props.helpText) {
       return (
         <span
-          className={`tool-tip-message ${this.props.position} ${
-            this.props.side
-          }`}
+          className={`tool-tip-message ${this.props.position || ""} ${this.props
+            .side || ""}`}
         >
           {this.renderToolTipHeader()}
           {this.props.helpText}
@@ -63,7 +62,10 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
   render() {
     return (
-      <span className={`tool-tip-links ${this.props.className}`} tabIndex={0}>
+      <span
+        className={`tool-tip-links ${this.props.className || ""}`}
+        tabIndex={0}
+      >
         {this.renderToolTipVisibleText()}
         <span className="tool-tip-details">{this.renderToolTipHelpText()}</span>
       </span>
