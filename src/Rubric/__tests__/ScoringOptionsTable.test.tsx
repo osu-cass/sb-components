@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { shallow } from "enzyme";
 import { SmarterAppOptionModel } from "../RubricModels";
-import { scoringOptionsMock } from "../../../mocks/Rubric/ScoringOptionsMocks";
+import { scoringOptionsMock } from "@mocks/Rubric/ScoringOptionsMocks";
 import { ScoringOptions } from "../ScoringOptionsTable";
 
 describe("ScoringOptionsTable", () => {
