@@ -314,6 +314,7 @@ export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 export { RubricModal, RubricModalProps } from "./Rubric/RubricModal";
+export { ScoringOptions } from "./Rubric/ScoringOptionsTable";
 
 //
 // Select

@@ -77,7 +77,8 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
     const scoringOptions =
       data &&
       data.sampleItemScoring &&
-      data.sampleItemScoring.scoringOptions ? (
+      data.sampleItemScoring.scoringOptions &&
+      data.sampleItemScoring.scoringOptions.length > 0 ? (
         <ScoringOptions options={data.sampleItemScoring.scoringOptions} />
       ) : (
         undefined
