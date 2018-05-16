@@ -23,7 +23,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           </span>
         </label>
         <select
-          className="form-control input-sm med-text"
+          className="form-control input-sm"
           disabled={false}
           onChange={[Function]}
           value="default"
@@ -178,7 +178,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
           </span>
         </label>
         <select
-          className="form-control input-sm med-text"
+          className="form-control input-sm"
           disabled={false}
           onChange={[Function]}
           value="default"

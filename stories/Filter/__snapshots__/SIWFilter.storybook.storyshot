@@ -26,7 +26,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -81,7 +81,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -228,7 +228,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -325,7 +325,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
