@@ -339,7 +339,7 @@ exports[`FilterContainer renders 1`] = `
               id="grade-bf"
             >
               <Component
-                className="input-sm med-text"
+                className="input-sm"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -385,7 +385,7 @@ exports[`FilterContainer renders 1`] = `
                     </span>
                   </label>
                   <select
-                    className="form-control input-sm med-text"
+                    className="form-control input-sm"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -994,7 +994,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
               id="grade-bf"
             >
               <Component
-                className="input-sm med-text"
+                className="input-sm"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -1040,7 +1040,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     </span>
                   </label>
                   <select
-                    className="form-control input-sm med-text"
+                    className="form-control input-sm"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -1649,7 +1649,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
               id="grade-bf"
             >
               <Component
-                className="input-sm med-text"
+                className="input-sm"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -1695,7 +1695,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     </span>
                   </label>
                   <select
-                    className="form-control input-sm med-text"
+                    className="form-control input-sm"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
@@ -3127,7 +3127,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
               id="grade-bf"
             >
               <Component
-                className="input-sm med-text"
+                className="input-sm"
                 disabled={false}
                 key="Grade"
                 label="Grade"
@@ -3173,7 +3173,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     </span>
                   </label>
                   <select
-                    className="form-control input-sm med-text"
+                    className="form-control input-sm"
                     disabled={false}
                     onChange={[Function]}
                     value="default"
