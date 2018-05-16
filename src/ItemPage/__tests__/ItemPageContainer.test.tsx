@@ -3,11 +3,22 @@ import * as ReactDOM from "react-dom";
 import { shallow, mount, render } from "enzyme";
 import { ItemPageContainer } from "@src/index";
 import {
-  itemPageMockProps,
-  itemPageMockPropsNoItem,
-  itemPageModelMock
+  itemPageContainerPropsMock,
+  itemPageContainerPropsNoItemMock
 } from "@mocks/ItemPage/mocks";
 
 describe("ItemPageContainer", () => {
-  console.log("Hello world");
+  it("renders correctly", () => {
+    const wrapper = shallow(
+      <ItemPageContainer {...itemPageContainerPropsMock} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("It renders correctly when there is no item", () => {
+    const wrapper = shallow(
+      <ItemPageContainer {...itemPageContainerPropsNoItemMock} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });
