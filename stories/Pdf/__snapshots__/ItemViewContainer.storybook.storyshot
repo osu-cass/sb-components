@@ -123,6 +123,7 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
           }
         }
       />
+      <hr />
       <div>
         <b>
           Key:
@@ -222,6 +223,7 @@ exports[`Storyshots PDF ItemViewContainer multiple questions 1`] = `
           }
         }
       />
+      <hr />
       <div>
         <b>
           Key:
@@ -340,6 +342,7 @@ exports[`Storyshots PDF ItemViewContainer no score info 1`] = `
           }
         }
       />
+      <hr />
     </div>
   </div>
 </div>
@@ -468,6 +471,7 @@ exports[`Storyshots PDF ItemViewContainer passage and question 1`] = `
           }
         }
       />
+      <hr />
       <div>
         <b>
           Key:
@@ -586,6 +590,7 @@ exports[`Storyshots PDF ItemViewContainer question only 1`] = `
           }
         }
       />
+      <hr />
       <div>
         <b>
           Key:

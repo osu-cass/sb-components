@@ -152,7 +152,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         options={selectOptions}
         onChange={val => selectedHandler(this.findFilterOption(val))}
         key={code}
-        className={"input-sm med-text"}
+        className={"input-sm"}
       />
     );
   }

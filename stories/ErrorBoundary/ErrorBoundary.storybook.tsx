@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { ErrorBoundary } from "../../src/ErrorBoundary/ErrorBoundary";
+import { ErrorBoundary } from "@src/ErrorBoundary/ErrorBoundary";
 import { centerDecorator } from "../CenterDecorator";
 
 class ErrorMssg extends React.Component {
