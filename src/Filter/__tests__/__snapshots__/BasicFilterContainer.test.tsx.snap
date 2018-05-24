@@ -903,7 +903,7 @@ exports[`BasicFilterContainer hide select message if disabled 1`] = `
   id="grade-bf"
 >
   <Component
-    className="input-sm med-text"
+    className="input-sm"
     disabled={false}
     key="Grade"
     label="Grade"
