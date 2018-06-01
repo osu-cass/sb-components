@@ -35,6 +35,7 @@ export interface SearchBaseModel {
 export interface SubjectModel extends SearchBaseModel {
   claimCodes?: string[];
   interactionTypeCodes?: string[];
+  shortLabel?: string;
 }
 
 export interface ClaimModel extends SearchBaseModel {
