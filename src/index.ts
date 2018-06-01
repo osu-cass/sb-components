@@ -273,7 +273,8 @@ export {
   ItemGroupModel,
   QuestionModel,
   ItemPdfModel,
-  PdfViewType
+  PdfViewType,
+  ScoreGuideViewModel
 } from "./Pdf/PdfModels";
 export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
 
