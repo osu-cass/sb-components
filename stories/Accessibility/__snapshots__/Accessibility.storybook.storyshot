@@ -1,5 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Accessibility Modal Six options showing with out expand button. 1`] = `
+<div
+  className="section section-dark"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexFlow": "column nowrap",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": "300px",
+      "width": "100%",
+    }
+  }
+>
+  <div>
+    <button
+      aria-label="Open Accessibility Modal"
+      className="btn btn-primary"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <span
+        aria-hidden="true"
+        className="fa fa-caret-square-o-down"
+      />
+      Accessibility
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Accessibility Modal few options hiding 1`] = `
 <div
   className="section section-dark"
