@@ -181,6 +181,7 @@ export class ItemSearch {
     filterType: FilterType,
     selectedCodes?: string[]
   ): FilterOptionModel[] {
+    console.log("Selected codes", selectedCodes);
     return options.map(o => {
       return {
         filterType,
@@ -253,14 +254,18 @@ export class ItemSearch {
         options = this.searchOptionToFilterClaim(
           filter.filterOptions,
           filter.code,
-          searchApi.claims === [] ? defaultOptionKeys : searchApi.claims
+          searchApi.claims === undefined || searchApi.claims.length > 1
+            ? defaultOptionKeys
+            : searchApi.claims
         );
         break;
       case FilterType.InteractionType:
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          searchApi.interactionTypes === []
+          searchApi.interactionTypes === undefined ||
+          searchApi.interactionTypes.length < 1 ||
+          searchApi.interactionTypes === undefined
             ? defaultOptionKeys
             : searchApi.interactionTypes
         );
@@ -269,7 +274,9 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          searchApi.subjects === [] ? defaultOptionKeys : searchApi.subjects
+          searchApi.subjects === undefined || searchApi.subjects.length < 1
+            ? defaultOptionKeys
+            : searchApi.subjects
         );
         break;
       case FilterType.Grade:
@@ -283,7 +290,9 @@ export class ItemSearch {
         options = this.searchOptionToFilterTarget(
           filter.filterOptions,
           filter.code,
-          searchApi.targets === [] ? defaultOptionKeys : searchApi.targets
+          searchApi.targets === undefined || searchApi.targets.length < 1
+            ? defaultOptionKeys
+            : searchApi.targets
         );
         break;
       case FilterType.TechnologyType:
@@ -291,15 +300,16 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          techTypesCodes === [] ? defaultOptionKeys : techTypesCodes
+          techTypesCodes.length < 1 ? defaultOptionKeys : techTypesCodes
         );
+        console.log(options);
         break;
       case FilterType.Calculator:
         const flagCodes = this.getFlagCodes(searchApi.calculator);
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          flagCodes === [] ? defaultOptionKeys : flagCodes
+          flagCodes.length < 1 ? defaultOptionKeys : flagCodes
         );
         break;
       default:
