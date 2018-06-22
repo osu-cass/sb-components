@@ -21,5 +21,6 @@ exports[`QuestionDataTable matches snapshot 1`] = `
       }
     }
   />
+  <hr />
 </div>
 `;

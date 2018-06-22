@@ -134,7 +134,7 @@ export class ItemAccessibilityModal extends React.Component<
     const resCount = resources.length;
     const isExpanded = (this.state.resourceTypeExpanded || {})[resourceType];
     if (!isExpanded) {
-      resources = resources.slice(0, 4);
+      resources = resources.slice(0, 6);
     }
 
     const dropdowns = resources.map(res => {
@@ -156,7 +156,7 @@ export class ItemAccessibilityModal extends React.Component<
     });
 
     let expandButton: JSX.Element | undefined;
-    if (resCount <= 4) {
+    if (resCount <= 6) {
       expandButton = undefined;
     } else if (isExpanded) {
       const ariaText = `Display fewer ${resourceType} options.`;

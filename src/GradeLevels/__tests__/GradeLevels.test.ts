@@ -84,5 +84,5 @@ it("Check if grade level to string return correct value", () => {
 
 it("Check if grade level to string return correct value", () => {
   const value = GradeLevel.gradeCaseToString(gradeLevelHigh);
-  expect(value).toEqual("High");
+  expect(value).toEqual("High School");
 });

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemPageContainer It renders correctly when there is no item 1`] = `
+<LoadingOverlay
+  loading={true}
+>
+  <div
+    className="container item-page"
+  />
+</LoadingOverlay>
+`;
+
+exports[`ItemPageContainer renders correctly 1`] = `
+<LoadingOverlay
+  loading={true}
+>
+  <div
+    className="container item-page"
+  />
+</LoadingOverlay>
+`;
