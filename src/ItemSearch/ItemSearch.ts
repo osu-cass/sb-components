@@ -254,9 +254,7 @@ export class ItemSearch {
         options = this.searchOptionToFilterClaim(
           filter.filterOptions,
           filter.code,
-          searchApi.claims === undefined || searchApi.claims.length > 1
-            ? defaultOptionKeys
-            : searchApi.claims
+          searchApi.claims
         );
         break;
       case FilterType.InteractionType:
