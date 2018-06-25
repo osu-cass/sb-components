@@ -181,7 +181,6 @@ export class ItemSearch {
     filterType: FilterType,
     selectedCodes?: string[]
   ): FilterOptionModel[] {
-    console.log("Selected codes", selectedCodes);
     return options.map(o => {
       return {
         filterType,
@@ -300,7 +299,6 @@ export class ItemSearch {
           filter.code,
           techTypesCodes.length < 1 ? defaultOptionKeys : techTypesCodes
         );
-        console.log(options);
         break;
       case FilterType.Calculator:
         const flagCodes = this.getFlagCodes(searchApi.calculator);
