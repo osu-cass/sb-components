@@ -253,16 +253,14 @@ export class ItemSearch {
         options = this.searchOptionToFilterClaim(
           filter.filterOptions,
           filter.code,
-          searchApi.claims
+          searchApi.claims === [] ? defaultOptionKeys : searchApi.claims
         );
         break;
       case FilterType.InteractionType:
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          searchApi.interactionTypes === undefined ||
-          searchApi.interactionTypes.length < 1 ||
-          searchApi.interactionTypes === undefined
+          searchApi.interactionTypes === []
             ? defaultOptionKeys
             : searchApi.interactionTypes
         );
@@ -271,9 +269,7 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          searchApi.subjects === undefined || searchApi.subjects.length < 1
-            ? defaultOptionKeys
-            : searchApi.subjects
+          searchApi.subjects === [] ? defaultOptionKeys : searchApi.subjects
         );
         break;
       case FilterType.Grade:
@@ -287,9 +283,7 @@ export class ItemSearch {
         options = this.searchOptionToFilterTarget(
           filter.filterOptions,
           filter.code,
-          searchApi.targets === undefined || searchApi.targets.length < 1
-            ? defaultOptionKeys
-            : searchApi.targets
+          searchApi.targets === [] ? defaultOptionKeys : searchApi.targets
         );
         break;
       case FilterType.TechnologyType:
@@ -297,7 +291,7 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          techTypesCodes.length < 1 ? defaultOptionKeys : techTypesCodes
+          techTypesCodes === [] ? defaultOptionKeys : techTypesCodes
         );
         break;
       case FilterType.Calculator:
@@ -305,7 +299,7 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          flagCodes.length < 1 ? defaultOptionKeys : flagCodes
+          flagCodes === [] ? defaultOptionKeys : flagCodes
         );
         break;
       default:
