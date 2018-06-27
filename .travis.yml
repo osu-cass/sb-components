@@ -3,14 +3,7 @@ language: node_js
 node_js:
 - 'node'
 
-cache:
-  directories:
-    - node_modules
-
-# install: true
-
 stages:
-  # - install
   - test
   - name: deploy docs
     if: branch = master
@@ -21,10 +14,6 @@ stages:
 
 jobs:
   include:
-    # - stage: install
-    #   env:
-    #     - NAME=install
-    #   script: npm i -g npm@latest && npm ci
     - stage: test
       env:
         - NAME=jest
