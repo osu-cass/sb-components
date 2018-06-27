@@ -1,14 +1,13 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:latest
+
+
 version: 2
 jobs:
   checkout_code:
-    docker:
-      - image: circleci/node:latest
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - checkout
@@ -18,10 +17,7 @@ jobs:
             - ~/repo
 
   install_dependencies:
-    docker:
-      - image: circleci/node:latest
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - restore_cache:
@@ -55,10 +51,7 @@ jobs:
           command: npm run report-coverage
 
   lint_typescript:
-    docker:
-      - image: circleci/node:latest
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - restore_cache:
@@ -70,10 +63,7 @@ jobs:
           command: npm run lint-ts
   
   build_webpack:
-    docker:
-      - image: circleci/node:latest
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - restore_cache:
@@ -85,10 +75,7 @@ jobs:
           command: npm run webpack:prod
 
   build_storybook:
-    docker:
-      - image: circleci/node:latest
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - restore_cache:
@@ -102,10 +89,7 @@ jobs:
           key: v1-storybook-
 
   build_typedoc:
-    docker:
-      - image: circleci/node:latest
-
-    working_directory: ~/repo
+    <<: *defaults
 
     steps:
       - restore_cache:
