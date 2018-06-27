@@ -820,7 +820,8 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="A"
                 helpText={
                   <p>
                     Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -837,12 +838,16 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   >
                     A
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1415,7 +1420,8 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="B"
                 helpText={
                   <p>
                     Target B description
@@ -1432,12 +1438,16 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   >
                     B
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         Target B description
@@ -1819,7 +1829,8 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="C"
                 helpText={
                   <p>
                     target C description
@@ -1836,12 +1847,16 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   >
                     C
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target C description
@@ -2223,7 +2238,8 @@ exports[`ItemTable expands matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="D"
                 helpText={
                   <p>
                     target D description
@@ -2240,12 +2256,16 @@ exports[`ItemTable expands matches snapshot 1`] = `
                   >
                     D
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target D description
@@ -2606,7 +2626,8 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="A"
                 helpText={
                   <p>
                     Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -2623,12 +2644,16 @@ exports[`ItemTable matches snapshot 1`] = `
                   >
                     A
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -2829,7 +2854,8 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="B"
                 helpText={
                   <p>
                     Target B description
@@ -2846,12 +2872,16 @@ exports[`ItemTable matches snapshot 1`] = `
                   >
                     B
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         Target B description
@@ -3051,7 +3081,8 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="C"
                 helpText={
                   <p>
                     target C description
@@ -3068,12 +3099,16 @@ exports[`ItemTable matches snapshot 1`] = `
                   >
                     C
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target C description
@@ -3273,7 +3308,8 @@ exports[`ItemTable matches snapshot 1`] = `
             >
               <ToolTip
                 className="box"
-                displayIcon={false}
+                displayIcon={true}
+                displayText="D"
                 helpText={
                   <p>
                     target D description
@@ -3290,12 +3326,16 @@ exports[`ItemTable matches snapshot 1`] = `
                   >
                     D
                      
+                    <span
+                      aria-hidden="true"
+                      className="fa fa-info-circle fa-sm"
+                    />
                   </span>
                   <span
                     className="tool-tip-details"
                   >
                     <span
-                      className="tool-tip-message bottom undefined"
+                      className="tool-tip-message bottom "
                     >
                       <p>
                         target D description

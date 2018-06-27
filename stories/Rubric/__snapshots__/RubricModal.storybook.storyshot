@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Rubric Modal with rubric modal 1`] = `
+<div>
+  <button
+    aria-label="Open Rubric Modal"
+    className="item-nav-btn btn btn-default btn-sm rubric-btn"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="fa fa-check-circle-o"
+    />
+    Rubric
+  </button>
+</div>
+`;

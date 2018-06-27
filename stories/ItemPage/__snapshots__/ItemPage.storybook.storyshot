@@ -217,7 +217,7 @@ exports[`Storyshots Item Page Item Page with an item 1`] = `
       id="itemviewer-iframe"
       onLoad={[Function]}
       onLoadStart={[Function]}
-      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_Dict_SD2%3BTDS_ExpandablePassages1%3BTDS_GN1%3BTDS_ST1%3BTDS_TH_TA%3BTDS_PS_L0%3BTDS_CCMagenta%3BTDS_Masking1%3BENU%3BTDS_ASL0%3BTDS_BT0%3BTDS_ClosedCap0%3BTDS_SLM0%3B&scrollToId=187-3000"
+      src="http://ivs.smarterbalanced.org//items?ids=187-3000&isaap=TDS_ITM1%3BTDS_APC_SCRUBBER%3BTDS_SCNotepad%3BTDS_WL_Glossary%3BTDS_Highlight1%3BTDS_Dict_SD2%3BTDS_ExpandablePassages1%3BTDS_GN1%3BTDS_ST1%3BTDS_TH_TA%3BTDS_PS_L0%3BTDS_CCMagenta%3BTDS_Masking1%3BENU%3BTDS_ASL0%3BTDS_BT0%3BTDS_ClosedCap0%3BTDS_SLM0%3BTDS_ASL0%3BTDS_ASL0%3B&scrollToId=187-3000"
       title="item viewer"
     />
   </div>

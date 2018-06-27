@@ -30,7 +30,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         </span>
       </label>
       <select
-        className="form-control input-sm med-text"
+        className="form-control input-sm"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -111,7 +111,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
         </span>
       </label>
       <select
-        className="form-control input-sm med-text"
+        className="form-control input-sm"
         disabled={false}
         onChange={[Function]}
         value="default"

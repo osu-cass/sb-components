@@ -86,6 +86,7 @@ export interface FilterOptionModel {
 export interface BasicFilterCategoryModel extends FilterCategoryModel {
   optionType: OptionTypeModel;
   placeholderText?: string;
+  hideSelectMessage?: boolean;
 }
 
 export interface FilterCategoryModel {
