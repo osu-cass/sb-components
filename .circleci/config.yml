@@ -3,7 +3,6 @@ defaults: &defaults
   docker:
     - image: circleci/node:latest
 
-
 version: 2
 jobs:
   checkout_code:
@@ -20,7 +19,7 @@ jobs:
     <<: *defaults
 
     steps:
-      - restore_cache:
+      - restore_cache: &repo
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - run: npm ci
       - save_cache:
@@ -39,9 +38,8 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
+      - restore_cache: *repo
+      - restore_cache: &dependencies
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: Execute Jest unit tests
@@ -54,10 +52,8 @@ jobs:
     <<: *defaults
 
     steps:
-      - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - restore_cache: *repo
+      - restore_cache: *dependencies
       - run:
           name: Run TSLint against sourcefiles
           command: npm run lint-ts
@@ -66,10 +62,8 @@ jobs:
     <<: *defaults
 
     steps:
-      - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - restore_cache: *repo
+      - restore_cache: *dependencies
       - run:
           name: Test that the bundle builds correctly
           command: npm run webpack:prod
@@ -78,10 +72,8 @@ jobs:
     <<: *defaults
 
     steps:
-      - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - restore_cache: *repo
+      - restore_cache: *dependencies
       - run:
           name: Test that storybook builds correctly
           command: npm run storybook-publish
@@ -92,10 +84,8 @@ jobs:
     <<: *defaults
 
     steps:
-      - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
-      - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - restore_cache: *repo
+      - restore_cache: *dependencies
       - run:
           name: Test that typedoc builds correctly
           command: npm run typedoc-publish
