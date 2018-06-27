@@ -4,36 +4,138 @@
 #
 version: 2
 jobs:
-  build:
+  checkout_code:
     docker:
-      # specify the version you desire here
-      - image: node:latest
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
+      - image: node:10-alpine
 
     working_directory: ~/repo
 
     steps:
       - checkout
+      - save_cache:
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/repo
 
-      # Download and cache dependencies
-      # - restore_cache:
-      #     keys:
-      #     - v1-dependencies-{{ checksum "package.json" }}
-      #     # fallback to using the latest cache if no exact match is found
-      #     - v1-dependencies-
+  install_dependencies:
+    docker:
+      - image: node:10-alpine
 
+    working_directory: ~/repo
+
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE-SHA1 }}
       - run: npm ci
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
 
-      # - save_cache:
-      #     paths:
-      #       - node_modules
-      #     key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
-      - run: npm run test-ci
+  unit_tests:
+    docker:
+      - image: node:10-alpine
+        environment:
+          COVERALLS_SERVICE_NAME: CircleCI
+          COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
+          COVERALLS_SERVICE_JOB_ID: $CIRCLE_SHA1
 
+    working_directory: ~/repo
 
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE-SHA1 }}
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Execute Jest unit tests
+          command: npm run test-ci:prod
+      - run:
+          name: Report test coverage to Coveralls
+          command: npm run report-coverage
+
+  lint_typescript:
+    docker:
+      - image: node:10-alpine
+
+    working_directory: ~/repo
+
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE-SHA1 }}
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Run TSLint against sourcefiles
+          command: npm run lint-ts
+  
+  build_webpack:
+    docker:
+      - image: node:10-alpine
+
+    working_directory: ~/repo
+
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE-SHA1 }}
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Test that the bundle builds correctly
+          command: npm run webpack:prod
+
+  build_storybook:
+    docker:
+      - image: node:10-alpine
+
+    working_directory: ~/repo
+
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE-SHA1 }}
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Test that storybook builds correctly
+          command: npm run storybook-publish
+      - save_cache:
+          key: v1-storybook-
+
+  build_typedoc:
+    docker:
+      - image: node:10-alpine
+
+    working_directory: ~/repo
+
+    steps:
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE-SHA1 }}
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Test that typedoc builds correctly
+          command: npm run typedoc-publish
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - checkout_code
+      - install_dependencies
+          requires:
+            - checkout_code
+      - unit_tests
+          requires:
+            - install_dependencies
+      - lint_typescript
+          requires:
+            - install_dependencies
+      - build_webpack
+          requires: 
+            - unit_tests
+      - build_storybook
+          requires:
+            - unit_tests
+      - build_typedoc
+          requires:
+            - unit_tests
