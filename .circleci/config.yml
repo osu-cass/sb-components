@@ -1,3 +1,6 @@
+# Confused about syntax? Read this:
+# >> https://blog.daemonl.com/2016/02/yaml.html
+
 defaults: &defaults
   working_directory: ~/repo
   docker:
