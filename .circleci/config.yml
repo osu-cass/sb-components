@@ -10,7 +10,6 @@ version: 2
 jobs:
   checkout_code:
     <<: *defaults
-
     steps:
       - checkout
       - save_cache:
@@ -20,7 +19,6 @@ jobs:
 
   install_dependencies:
     <<: *defaults
-
     steps:
       - restore_cache: &repo
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
@@ -37,9 +35,7 @@ jobs:
           COVERALLS_SERVICE_NAME: CircleCI
           COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
           COVERALLS_SERVICE_JOB_ID: $CIRCLE_SHA1
-
     working_directory: ~/repo
-
     steps:
       - restore_cache: *repo
       - restore_cache: &dependencies
@@ -53,7 +49,6 @@ jobs:
 
   lint_typescript:
     <<: *defaults
-
     steps:
       - restore_cache: *repo
       - restore_cache: *dependencies
@@ -63,7 +58,6 @@ jobs:
   
   build_webpack:
     <<: *defaults
-
     steps:
       - restore_cache: *repo
       - restore_cache: *dependencies
@@ -73,7 +67,6 @@ jobs:
 
   build_storybook:
     <<: *defaults
-
     steps:
       - restore_cache: *repo
       - restore_cache: *dependencies
@@ -83,7 +76,6 @@ jobs:
 
   build_typedoc:
     <<: *defaults
-
     steps:
       - restore_cache: *repo
       - restore_cache: *dependencies
