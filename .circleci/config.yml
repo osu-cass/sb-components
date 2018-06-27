@@ -121,21 +121,21 @@ workflows:
   build_and_test:
     jobs:
       - checkout_code
-      - install_dependencies
+      - install_dependencies:
           requires:
             - checkout_code
-      - unit_tests
+      - unit_tests:
           requires:
             - install_dependencies
-      - lint_typescript
+      - lint_typescript:
           requires:
             - install_dependencies
-      - build_webpack
+      - build_webpack:
           requires: 
             - unit_tests
-      - build_storybook
+      - build_storybook:
           requires:
             - unit_tests
-      - build_typedoc
+      - build_typedoc:
           requires:
             - unit_tests
