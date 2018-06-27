@@ -6,7 +6,7 @@ version: 2
 jobs:
   checkout_code:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
 
     working_directory: ~/repo
 
@@ -19,7 +19,7 @@ jobs:
 
   install_dependencies:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
 
     working_directory: ~/repo
 
@@ -34,7 +34,7 @@ jobs:
 
   unit_tests:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
         environment:
           COVERALLS_SERVICE_NAME: CircleCI
           COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
@@ -56,7 +56,7 @@ jobs:
 
   lint_typescript:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
 
     working_directory: ~/repo
 
@@ -71,7 +71,7 @@ jobs:
   
   build_webpack:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
 
     working_directory: ~/repo
 
@@ -86,7 +86,7 @@ jobs:
 
   build_storybook:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
 
     working_directory: ~/repo
 
@@ -103,7 +103,7 @@ jobs:
 
   build_typedoc:
     docker:
-      - image: node:10-alpine
+      - image: circleci/node:latest
 
     working_directory: ~/repo
 
