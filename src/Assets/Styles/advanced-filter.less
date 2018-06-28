@@ -130,12 +130,27 @@ div.filter-selection > div.nested-btn-group {
   align-items: flex-start;
 }
 
+@supports (-ms-ime-align: auto) {
+  #subject-filter div.filter-btn-group > button.btn {
+    width: 195px;
+  }
+  #claims-filter div.filter-btn-group > button.btn {
+    width: 150px;
+  }
+}
 div.filter-btn-group > button.btn {
   min-width: fill-available;
+
+  //min-width: auto;
   white-space: normal;
   margin-right: 0 !important; //overwriting bootstrap
 }
-
+#subject-filter div.filter-btn-group > button.btn {
+  width: 195px;
+}
+#claims-filter div.filter-btn-group > button.btn {
+  min-width: fill-available;
+}
 #targets-filter .filter-btn-group {
   flex-wrap: wrap;
   max-height: 30vh;
