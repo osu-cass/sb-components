@@ -23,10 +23,10 @@ jobs:
       - restore_cache: &repo
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - run: npm ci
-      - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: ~/repo
           paths:
-            - ./node_modules
+            - node_modules
 
   unit_tests:
     docker:
@@ -38,8 +38,8 @@ jobs:
     working_directory: ~/repo
     steps:
       - restore_cache: *repo
-      - restore_cache: &dependencies
-          key: v1-dependencies-{{ checksum "package.json" }}
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Execute Jest unit tests
           command: npm run test-ci:prod
@@ -55,7 +55,8 @@ jobs:
     <<: *defaults
     steps:
       - restore_cache: *repo
-      - restore_cache: *dependencies
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Run TSLint against sourcefiles
           command: npm run lint-ts
@@ -68,7 +69,8 @@ jobs:
     <<: *defaults
     steps:
       - restore_cache: *repo
-      - restore_cache: *dependencies
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Test that the bundle builds correctly
           command: npm run webpack:prod
@@ -77,28 +79,30 @@ jobs:
     <<: *defaults
     steps:
       - restore_cache: *repo
-      - restore_cache: *dependencies
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Test that storybook builds correctly
           command: npm run storybook-publish
       - persist_to_workspace:
-          root: ~/repo/gh-site
+          root: ~/repo
           paths:
-            - storybook
-            - lib
+            - gh-site/storybook
+            - gh-site/lib
 
   build_typedoc:
     <<: *defaults
     steps:
       - restore_cache: *repo
-      - restore_cache: *dependencies
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Test that typedoc builds correctly
           command: npm run typedoc-publish
       - persist_to_workspace:
-          root: ~/repo/gh-site
+          root: ~/repo
           paths:
-            - tsdoc
+            - gh-site/tsdoc
 
   deploy_docs:
     docker:
@@ -109,9 +113,8 @@ jobs:
     working_directory: ~/repo
     steps:
       - restore_cache: *repo
-      - restore_cache: *dependencies
       - attach_workspace:
-          at: ~/repo/gh-site
+          at: ~/repo
       - run:
           name: Upload docs to GitHub Pages
           command: |
@@ -141,7 +144,8 @@ jobs:
     <<: *defaults
     steps:
       - restore_cache: *repo
-      - restore_cache: *dependencies
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Deploy beta dist-tag to npm
           command: npx semantic-release -b staging
