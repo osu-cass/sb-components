@@ -47,7 +47,7 @@ jobs:
           name: Report test coverage to Coveralls
           command: npm run report-coverage
       - store_test_results:
-          path: reports/jest
+          path: reports
       - store_artifacts:
           path: reports/jest
 
@@ -61,7 +61,7 @@ jobs:
           name: Run TSLint against sourcefiles
           command: mkdir reports ; mkdir reports/tslint ; npm run lint-ts-ci
       - store_test_results:
-          path: reports/tslint
+          path: reports
       - store_artifacts:
           path: reports/tslint
   
