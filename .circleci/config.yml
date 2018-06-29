@@ -46,6 +46,10 @@ jobs:
       - run:
           name: Report test coverage to Coveralls
           command: npm run report-coverage
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
 
   lint_typescript:
     <<: *defaults
@@ -55,6 +59,10 @@ jobs:
       - run:
           name: Run TSLint against sourcefiles
           command: npm run lint-ts
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
   
   build_webpack:
     <<: *defaults
