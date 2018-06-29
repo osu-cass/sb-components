@@ -28,7 +28,7 @@
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
     "lint-ts": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
-    "lint-ts-ci": "tslint --formatters-dir node_modules/tslint-junit-formatter/formatters -t junit -o reports/junit/ts-lint-results.xml 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
+    "lint-ts-ci": "tslint --formatters-dir node_modules/tslint-junit-formatter/formatters -t junit -o reports/tslint/lint-results.xml 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
     "lint-less": "stylelint src/**/*.less",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
@@ -176,7 +176,7 @@
     ],
     "collectCoverage": true,
     "testEnvironment": "node",
-    "reporters": ["default", ["jest-junit", { "output": "reports/junit/ts-test-results.xml" }]],
+    "reporters": ["default", ["jest-junit", { "output": "reports/jest/test-results.xml" }]],
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
