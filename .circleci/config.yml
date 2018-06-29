@@ -92,9 +92,67 @@ jobs:
           paths:
             - tsdoc
 
+  deploy_docs:
+    docker:
+      - image: circleci/node:latest
+        environment:
+          SOURCE_BRANCH: master
+          TARGET_BRANCH: gh-pages
+    working_directory: ~/repo
+    steps:
+      - restore_cache: *repo
+      - restore_cache: *dependencies
+      - attach_workspace:
+          at: ~/repo/gh-site
+      - run:
+          name: Upload docs to GitHub Pages
+          command: |
+            if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
+              git config --global user.email $GH_EMAIL
+              git config --global user.name $GH_NAME
+
+              git clone $CIRCLE_REPOSITORY_URL out
+
+              cd out
+              git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+              git rm -rf .
+              cd ..
+
+              cp -a gh-site/. out/.
+
+              mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
+              cd out
+
+              git add -A
+              git commit -m "Automated deployment to GitHub Pages ${CIRCLE_SHA1}" --allow-empty
+
+              git push origin $TARGET_BRANCH
+            fi
+  
+  release_beta:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - restore_cache: *dependencies
+      - run:
+          name: Deploy beta dist-tag to npm
+          command: npx semantic-release -b staging
+
+  release_latest:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - restore_cache: *dependencies
+      - run:
+          name: Create NPM credential file
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: Promote beta tag to latest
+          command: npm dist-tag add @osu-cass/sb-components@$(npm dist-tag ls @osu-cass/sb-components | grep 'beta' | grep -Po '\d+\.\d+\.\d+') latest
+
 workflows:
   version: 2
-  build_and_test:
+  build_test_deploy:
     jobs:
       - checkout_code
       - install_dependencies:
@@ -115,3 +173,25 @@ workflows:
       - build_typedoc:
           requires:
             - unit_tests
+      - deploy_docs:
+          requires:
+            - build_storybook
+            - build_typedoc
+          filters:
+            branches:
+              only: master
+      - release_beta:
+          requires:
+            - build_storybook
+            - build_typedoc
+          filters:
+            branches:
+              only: staging
+      - release_latest:
+          requires:
+            - build_storybook
+            - build_typedoc
+          filters:
+            branches:
+              only: master
+      
