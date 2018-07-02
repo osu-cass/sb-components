@@ -277,10 +277,18 @@ export class ItemSearch {
         );
         break;
       case FilterType.Grade:
+        let grade: GradeLevels;
+        if (defaultOptionKeys !== undefined) {
+          grade = GradeLevel.stringToGradeLevel(defaultOptionKeys[0]);
+        } else {
+          grade = GradeLevels.NA;
+        }
         options = this.searchOptionToFilterGrade(
           filter.filterOptions,
           filter.code,
-          searchApi.gradeLevels
+          (searchApi.gradeLevels = !GradeLevels.NA
+            ? searchApi.gradeLevels
+            : grade)
         );
         break;
       case FilterType.Target:
