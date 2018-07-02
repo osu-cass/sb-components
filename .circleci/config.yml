@@ -32,9 +32,8 @@ jobs:
     docker:
       - image: circleci/node:latest
         environment:
-          COVERALLS_SERVICE_NAME: CircleCI
+          COVERALLS_SERVICE_NAME: circle-ci
           COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
-          COVERALLS_SERVICE_JOB_ID: $CIRCLE_SHA1
     working_directory: ~/repo
     steps:
       - restore_cache: *repo
