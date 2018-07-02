@@ -286,9 +286,10 @@ export class ItemSearch {
         options = this.searchOptionToFilterGrade(
           filter.filterOptions,
           filter.code,
-          (searchApi.gradeLevels = !GradeLevels.NA
-            ? searchApi.gradeLevels
-            : grade)
+          searchApi.gradeLevels === undefined ||
+          searchApi.gradeLevels === GradeLevels.NA
+            ? grade
+            : searchApi.gradeLevels
         );
         break;
       case FilterType.Target:
