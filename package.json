@@ -21,13 +21,14 @@
     "test": "./node_modules/.bin/jest",
     "test:prod": "npm run test -- --coverage --no-cache",
     "test-ci": "npm run test -- --runInBand",
-    "test-ci:prod": "npm run test:prod -- --runInBand",
+    "test-ci:prod": "npm run test:prod -- --ci --runInBand",
     "storybook": "start-storybook -p 6006",
     "storybook-publish": "build-storybook -o gh-site/storybook",
     "build": "npm run clean && npm run storybook-publish",
     "clean": "rm -rf ./lib ./gh-site/tsdoc ./gh-site/storybook ? ",
     "prettier": "prettier --write src/**/*.ts* stories/**/*.ts*",
     "lint-ts": "tslint -t codeFrame 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
+    "lint-ts-ci": "tslint --formatters-dir node_modules/tslint-junit-formatter/formatters -t junit -o reports/tslint/results.xml 'src/**/*.ts*' 'stories/**/*.ts*' -e 'stories/**/*.ts.snap' -e 'src/**/*.tsx.snap' -e 'src/**/Polyfill.ts'",
     "lint-less": "stylelint src/**/*.less",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
@@ -94,6 +95,7 @@
     "identity-obj-proxy": "~3.0.0",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
+    "jest-junit": "^5.1.0",
     "jsdom": "^11.10.0",
     "jsdom-global": "^3.0.2",
     "less": "^3.0.4",
@@ -117,6 +119,7 @@
     "ts-loader": "^3.5.0",
     "tsconfig-paths-webpack-plugin": "^3.0.4",
     "tslint": "^5.10.0",
+    "tslint-junit-formatter": "^5.1.0",
     "tslint-language-service": "^0.9.9",
     "typedoc": "^0.10.0",
     "typescript": "~2.7.2",
@@ -173,6 +176,15 @@
     ],
     "collectCoverage": true,
     "testEnvironment": "node",
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "output": "reports/jest/results.xml"
+        }
+      ]
+    ],
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
