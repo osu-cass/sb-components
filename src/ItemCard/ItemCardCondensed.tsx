@@ -32,7 +32,7 @@ export class ItemCardCondensed extends React.Component<
     nextProps: Readonly<ItemCardModels.ItemCardModel>,
     nextState: Readonly<ItemCardCondensedState>
   ): boolean {
-    return this.state.redirect;
+    return nextState.redirect;
   }
 
   handleKeyPress = (e: React.KeyboardEvent<HTMLElement>) => {
@@ -40,6 +40,7 @@ export class ItemCardCondensed extends React.Component<
       this.setState({ redirect: true });
     }
   };
+
   handleOnClick = () => {
     this.setState({ redirect: true });
   };
