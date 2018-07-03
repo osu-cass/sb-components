@@ -208,14 +208,14 @@ exports[`ItemPageTable expands 1`] = `
         Array [
           Object {
             "bankKey": 187,
-            "itemKey": 2928,
+            "itemKey": 3615,
           },
           false,
         ],
         Array [
           Object {
             "bankKey": 187,
-            "itemKey": 3615,
+            "itemKey": 2928,
           },
           false,
         ],
@@ -249,14 +249,14 @@ exports[`ItemPageTable expands 1`] = `
         Array [
           Object {
             "bankKey": 187,
-            "itemKey": 2928,
+            "itemKey": 3615,
           },
           false,
         ],
         Array [
           Object {
             "bankKey": 187,
-            "itemKey": 3615,
+            "itemKey": 2928,
           },
           false,
         ],
@@ -351,71 +351,6 @@ exports[`ItemPageTable expands 1`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "subject",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Subject",
-                "headerClassName": "subject",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "grade",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Grade",
-                "headerClassName": "grade",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "item-type",
                   },
                 ],
@@ -452,7 +387,7 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -477,7 +412,7 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -502,7 +437,7 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -527,7 +462,7 @@ exports[`ItemPageTable expands 1`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -610,25 +545,6 @@ exports[`ItemPageTable expands 1`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
               "claimCode": "MATH4",
               "claimLabel": "Modeling/Data Analysis",
               "grade": 8,
@@ -644,6 +560,25 @@ exports[`ItemPageTable expands 1`] = `
               "targetId": "C",
               "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetHash": 2832,
+              "targetId": "D",
+              "targetShortName": "Evaluate Information/ sources",
+              "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ]
         }
@@ -841,71 +776,6 @@ exports[`ItemPageTable expands 1`] = `
         onRowSelect={[Function]}
         sort={
           Array [
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "subject",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Subject",
-                "headerClassName": "subject",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "grade",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Grade",
-                "headerClassName": "grade",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
             Object {
               "col": Object {
                 "cols": Array [
@@ -1638,233 +1508,6 @@ exports[`ItemPageTable expands 1`] = `
             }
             hasControls={true}
             isExpanded={false}
-            key="187-2928"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "ELA4",
-                "claimLabel": "Research/Inquiry",
-                "grade": 2,
-                "gradeLabel": "Grade 4",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 2928,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "target D description",
-                "targetHash": 2832,
-                "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
-                "title": "ELA/ literacy Grade 4 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-2928"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-2928"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    2928
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span
-                    className="table-subject-highlight ela"
-                  >
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-2928"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Research/Inquiry
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    className="box"
-                    displayIcon={true}
-                    displayText="D"
-                    helpText={
-                      <p>
-                        target D description
-                      </p>
-                    }
-                    position="bottom"
-                  >
-                    <span
-                      className="tool-tip-links box"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        D
-                         
-                        <span
-                          aria-hidden="true"
-                          className="fa fa-info-circle fa-sm"
-                        />
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      >
-                        <span
-                          className="tool-tip-message bottom "
-                        >
-                          <p>
-                            target D description
-                          </p>
-                        </span>
-                      </span>
-                    </span>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-2928"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
             key="187-3615"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -2014,6 +1657,233 @@ exports[`ItemPageTable expands 1`] = `
               <td
                 className="item-type"
                 key="item-type-187-3615"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
+            key="187-2928"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "ELA4",
+                "claimLabel": "Research/Inquiry",
+                "grade": 2,
+                "gradeLabel": "Grade 4",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 2928,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "target D description",
+                "targetHash": 2832,
+                "targetId": "D",
+                "targetShortName": "Evaluate Information/ sources",
+                "title": "ELA/ literacy Grade 4 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-2928"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-2928"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    2928
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight ela"
+                  >
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-2928"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Research/Inquiry
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    className="box"
+                    displayIcon={true}
+                    displayText="D"
+                    helpText={
+                      <p>
+                        target D description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links box"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        D
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom "
+                        >
+                          <p>
+                            target D description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-2928"
               >
                 <span
                   key="item-type"
@@ -5487,21 +5357,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "claim",
                   },
                   Object {
@@ -5543,7 +5398,7 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -5661,45 +5516,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
-              "claimCode": "MATH4",
-              "claimLabel": "Modeling/Data Analysis",
-              "grade": 8,
-              "gradeLabel": "Grade 6",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 3615,
-              "subjectCode": "MATH",
-              "subjectLabel": "Math",
-              "targetDescription": "target C description",
-              "targetHash": 0,
-              "targetId": "C",
-              "targetShortName": "",
-              "title": "Math Grade 6 Claim 4",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
-              "calculator": true,
-              "claimCode": "MATH1",
-              "claimLabel": "Concepts and Procedures",
-              "grade": 8,
-              "gradeLabel": "Grade 6",
-              "interactionTypeCode": "EQ",
-              "interactionTypeLabel": "Equation",
-              "isPerformanceItem": true,
-              "itemKey": 3206,
-              "subjectCode": "MATH",
-              "subjectLabel": "Math",
-              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
-              "targetHash": 100,
-              "targetId": "A",
-              "targetShortName": "",
-              "title": "Math Grade 6 Claim 1",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
               "claimCode": "ELA4",
               "claimLabel": "Research/Inquiry",
               "grade": 2,
@@ -5715,6 +5531,25 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "targetId": "D",
               "targetShortName": "Evaluate Information/ sources",
               "title": "ELA/ literacy Grade 4 Claim 4",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "MATH4",
+              "claimLabel": "Modeling/Data Analysis",
+              "grade": 8,
+              "gradeLabel": "Grade 6",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 3615,
+              "subjectCode": "MATH",
+              "subjectLabel": "Math",
+              "targetDescription": "target C description",
+              "targetHash": 0,
+              "targetId": "C",
+              "targetShortName": "",
+              "title": "Math Grade 6 Claim 4",
             },
             Object {
               "bankKey": 187,
@@ -5735,6 +5570,26 @@ exports[`ItemPageTable sorts list on header click 2`] = `
               "targetId": "B",
               "targetShortName": "Key Details",
               "title": "ELA/ literacy Grade 3 Claim 1",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "calculator": true,
+              "claimCode": "MATH1",
+              "claimLabel": "Concepts and Procedures",
+              "grade": 8,
+              "gradeLabel": "Grade 6",
+              "interactionTypeCode": "EQ",
+              "interactionTypeLabel": "Equation",
+              "isPerformanceItem": true,
+              "itemKey": 3206,
+              "subjectCode": "MATH",
+              "subjectLabel": "Math",
+              "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
+              "targetHash": 100,
+              "targetId": "A",
+              "targetShortName": "",
+              "title": "Math Grade 6 Claim 1",
             },
           ]
         }
@@ -5915,21 +5770,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "claim",
                   },
                   Object {
@@ -5949,461 +5789,6 @@ exports[`ItemPageTable sorts list on header click 2`] = `
         }
       >
         <tbody>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
-            key="187-3615"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "MATH4",
-                "claimLabel": "Modeling/Data Analysis",
-                "grade": 8,
-                "gradeLabel": "Grade 6",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 3615,
-                "subjectCode": "MATH",
-                "subjectLabel": "Math",
-                "targetDescription": "target C description",
-                "targetHash": 0,
-                "targetId": "C",
-                "targetShortName": "",
-                "title": "Math Grade 6 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-3615"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-3615"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    3615
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span
-                    className="table-subject-highlight math"
-                  >
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-3615"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Modeling/Data Analysis
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    className="box"
-                    displayIcon={true}
-                    displayText="C"
-                    helpText={
-                      <p>
-                        target C description
-                      </p>
-                    }
-                    position="bottom"
-                  >
-                    <span
-                      className="tool-tip-links box"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        C
-                         
-                        <span
-                          aria-hidden="true"
-                          className="fa fa-info-circle fa-sm"
-                        />
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      >
-                        <span
-                          className="tool-tip-message bottom "
-                        >
-                          <p>
-                            target C description
-                          </p>
-                        </span>
-                      </span>
-                    </span>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-3615"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
-            key="187-3206"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "calculator": true,
-                "claimCode": "MATH1",
-                "claimLabel": "Concepts and Procedures",
-                "grade": 8,
-                "gradeLabel": "Grade 6",
-                "interactionTypeCode": "EQ",
-                "interactionTypeLabel": "Equation",
-                "isPerformanceItem": true,
-                "itemKey": 3206,
-                "subjectCode": "MATH",
-                "subjectLabel": "Math",
-                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
-                "targetHash": 100,
-                "targetId": "A",
-                "targetShortName": "",
-                "title": "Math Grade 6 Claim 1",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-3206"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-3206"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    3206
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3206"
-              >
-                <span
-                  key="subject"
-                >
-                  <span
-                    className="table-subject-highlight math"
-                  >
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3206"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-3206"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Concepts and Procedures
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    className="box"
-                    displayIcon={true}
-                    displayText="A"
-                    helpText={
-                      <p>
-                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
-                      </p>
-                    }
-                    position="bottom"
-                  >
-                    <span
-                      className="tool-tip-links box"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        A
-                         
-                        <span
-                          aria-hidden="true"
-                          className="fa fa-info-circle fa-sm"
-                        />
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      >
-                        <span
-                          className="tool-tip-message bottom "
-                        >
-                          <p>
-                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
-                          </p>
-                        </span>
-                      </span>
-                    </span>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-3206"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Equation
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
           <ItemTableRow
             columns={
               Array [
@@ -6698,6 +6083,233 @@ exports[`ItemPageTable sorts list on header click 2`] = `
             }
             hasControls={true}
             isExpanded={false}
+            key="187-3615"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "MATH4",
+                "claimLabel": "Modeling/Data Analysis",
+                "grade": 8,
+                "gradeLabel": "Grade 6",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 3615,
+                "subjectCode": "MATH",
+                "subjectLabel": "Math",
+                "targetDescription": "target C description",
+                "targetHash": 0,
+                "targetId": "C",
+                "targetShortName": "",
+                "title": "Math Grade 6 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-3615"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-3615"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    3615
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight math"
+                  >
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-3615"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Modeling/Data Analysis
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    className="box"
+                    displayIcon={true}
+                    displayText="C"
+                    helpText={
+                      <p>
+                        target C description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links box"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        C
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom "
+                        >
+                          <p>
+                            target C description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-3615"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
             key="187-3163"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -6854,6 +6466,234 @@ exports[`ItemPageTable sorts list on header click 2`] = `
                 >
                   <span>
                     Multiple Choice
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
+            key="187-3206"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "calculator": true,
+                "claimCode": "MATH1",
+                "claimLabel": "Concepts and Procedures",
+                "grade": 8,
+                "gradeLabel": "Grade 6",
+                "interactionTypeCode": "EQ",
+                "interactionTypeLabel": "Equation",
+                "isPerformanceItem": true,
+                "itemKey": 3206,
+                "subjectCode": "MATH",
+                "subjectLabel": "Math",
+                "targetDescription": "Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia",
+                "targetHash": 100,
+                "targetId": "A",
+                "targetShortName": "",
+                "title": "Math Grade 6 Claim 1",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-3206"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-3206"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    3206
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-3206"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight math"
+                  >
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3206"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-3206"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Concepts and Procedures
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    className="box"
+                    displayIcon={true}
+                    displayText="A"
+                    helpText={
+                      <p>
+                        Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links box"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        A
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom "
+                        >
+                          <p>
+                            Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-3206"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Equation
                   </span>
                 </span>
               </td>
@@ -7137,41 +6977,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "subject",
                   },
                 ],
@@ -7208,7 +7013,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -7283,7 +7088,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -7326,25 +7131,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
               "calculator": false,
               "claimCode": "ELA1",
               "claimLabel": "Reading",
@@ -7365,21 +7151,21 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
-              "claimCode": "MATH4",
-              "claimLabel": "Modeling/Data Analysis",
-              "grade": 8,
-              "gradeLabel": "Grade 6",
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
               "interactionTypeCode": "MS",
               "interactionTypeLabel": "Multi Select",
               "isPerformanceItem": false,
-              "itemKey": 3615,
-              "subjectCode": "MATH",
-              "subjectLabel": "Math",
-              "targetDescription": "target C description",
-              "targetHash": 0,
-              "targetId": "C",
-              "targetShortName": "",
-              "title": "Math Grade 6 Claim 4",
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetHash": 2832,
+              "targetId": "D",
+              "targetShortName": "Evaluate Information/ sources",
+              "title": "ELA/ literacy Grade 4 Claim 4",
             },
             Object {
               "bankKey": 187,
@@ -7400,6 +7186,25 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               "targetId": "A",
               "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "MATH4",
+              "claimLabel": "Modeling/Data Analysis",
+              "grade": 8,
+              "gradeLabel": "Grade 6",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 3615,
+              "subjectCode": "MATH",
+              "subjectLabel": "Math",
+              "targetDescription": "target C description",
+              "targetHash": 0,
+              "targetId": "C",
+              "targetShortName": "",
+              "title": "Math Grade 6 Claim 4",
             },
           ]
         }
@@ -7580,41 +7385,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "subject",
                   },
                 ],
@@ -7629,233 +7399,6 @@ exports[`ItemPageTable sorts list on header click 3`] = `
         }
       >
         <tbody>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
-            key="187-2928"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "ELA4",
-                "claimLabel": "Research/Inquiry",
-                "grade": 2,
-                "gradeLabel": "Grade 4",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 2928,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "target D description",
-                "targetHash": 2832,
-                "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
-                "title": "ELA/ literacy Grade 4 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-2928"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-2928"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    2928
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span
-                    className="table-subject-highlight ela"
-                  >
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-2928"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Research/Inquiry
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    className="box"
-                    displayIcon={true}
-                    displayText="D"
-                    helpText={
-                      <p>
-                        target D description
-                      </p>
-                    }
-                    position="bottom"
-                  >
-                    <span
-                      className="tool-tip-links box"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        D
-                         
-                        <span
-                          aria-hidden="true"
-                          className="fa fa-info-circle fa-sm"
-                        />
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      >
-                        <span
-                          className="tool-tip-message bottom "
-                        >
-                          <p>
-                            target D description
-                          </p>
-                        </span>
-                      </span>
-                    </span>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-2928"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
           <ItemTableRow
             columns={
               Array [
@@ -8151,34 +7694,34 @@ exports[`ItemPageTable sorts list on header click 3`] = `
             }
             hasControls={true}
             isExpanded={false}
-            key="187-3615"
+            key="187-2928"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
             rowData={
               Object {
                 "bankKey": 187,
                 "brailleOnlyItem": false,
-                "claimCode": "MATH4",
-                "claimLabel": "Modeling/Data Analysis",
-                "grade": 8,
-                "gradeLabel": "Grade 6",
+                "claimCode": "ELA4",
+                "claimLabel": "Research/Inquiry",
+                "grade": 2,
+                "gradeLabel": "Grade 4",
                 "interactionTypeCode": "MS",
                 "interactionTypeLabel": "Multi Select",
                 "isPerformanceItem": false,
-                "itemKey": 3615,
-                "subjectCode": "MATH",
-                "subjectLabel": "Math",
-                "targetDescription": "target C description",
-                "targetHash": 0,
-                "targetId": "C",
-                "targetShortName": "",
-                "title": "Math Grade 6 Claim 4",
+                "itemKey": 2928,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "target D description",
+                "targetHash": 2832,
+                "targetId": "D",
+                "targetShortName": "Evaluate Information/ sources",
+                "title": "ELA/ literacy Grade 4 Claim 4",
               }
             }
           >
             <tr
               className=""
-              key="187-3615"
+              key="187-2928"
               onClick={[Function]}
               onKeyUp={[Function]}
             >
@@ -8207,51 +7750,51 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               </td>
               <td
                 className="item"
-                key="item-187-3615"
+                key="item-187-2928"
               >
                 <span
                   key="item"
                 >
                   <span>
-                    3615
+                    2928
                   </span>
                 </span>
               </td>
               <td
                 className="subject"
-                key="subject-187-3615"
+                key="subject-187-2928"
               >
                 <span
                   key="subject"
                 >
                   <span
-                    className="table-subject-highlight math"
+                    className="table-subject-highlight ela"
                   >
-                    Math
+                    ELA/literacy
                   </span>
                 </span>
               </td>
               <td
                 className="grade"
-                key="grade-187-3615"
+                key="grade-187-2928"
               >
                 <span
                   key="grade"
                 >
                   <span>
-                    Grade 6
+                    Grade 4
                   </span>
                 </span>
               </td>
               <td
                 className="claimAndTarget"
-                key="claimAndTarget-187-3615"
+                key="claimAndTarget-187-2928"
               >
                 <span
                   key="claim"
                 >
                   <span>
-                    Modeling/Data Analysis
+                    Research/Inquiry
                   </span>
                 </span>
                 <span
@@ -8260,10 +7803,10 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                   <ToolTip
                     className="box"
                     displayIcon={true}
-                    displayText="C"
+                    displayText="D"
                     helpText={
                       <p>
-                        target C description
+                        target D description
                       </p>
                     }
                     position="bottom"
@@ -8275,7 +7818,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                       <span
                         className="tool-tip-hoverable"
                       >
-                        C
+                        D
                          
                         <span
                           aria-hidden="true"
@@ -8289,7 +7832,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                           className="tool-tip-message bottom "
                         >
                           <p>
-                            target C description
+                            target D description
                           </p>
                         </span>
                       </span>
@@ -8299,7 +7842,7 @@ exports[`ItemPageTable sorts list on header click 3`] = `
               </td>
               <td
                 className="item-type"
-                key="item-type-187-3615"
+                key="item-type-187-2928"
               >
                 <span
                   key="item-type"
@@ -8534,6 +8077,233 @@ exports[`ItemPageTable sorts list on header click 3`] = `
                 >
                   <span>
                     Equation
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
+            key="187-3615"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "MATH4",
+                "claimLabel": "Modeling/Data Analysis",
+                "grade": 8,
+                "gradeLabel": "Grade 6",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 3615,
+                "subjectCode": "MATH",
+                "subjectLabel": "Math",
+                "targetDescription": "target C description",
+                "targetHash": 0,
+                "targetId": "C",
+                "targetShortName": "",
+                "title": "Math Grade 6 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-3615"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-3615"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    3615
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight math"
+                  >
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-3615"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Modeling/Data Analysis
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    className="box"
+                    displayIcon={true}
+                    displayText="C"
+                    helpText={
+                      <p>
+                        target C description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links box"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        C
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom "
+                        >
+                          <p>
+                            target C description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-3615"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
                   </span>
                 </span>
               </td>
@@ -8817,56 +8587,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "subject",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Subject",
-                "headerClassName": "subject",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "grade",
                   },
                 ],
@@ -8903,7 +8623,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -8928,7 +8648,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -8978,7 +8698,7 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -9060,25 +8780,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
-              "claimCode": "MATH4",
-              "claimLabel": "Modeling/Data Analysis",
-              "grade": 8,
-              "gradeLabel": "Grade 6",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 3615,
-              "subjectCode": "MATH",
-              "subjectLabel": "Math",
-              "targetDescription": "target C description",
-              "targetHash": 0,
-              "targetId": "C",
-              "targetShortName": "",
-              "title": "Math Grade 6 Claim 4",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
               "calculator": true,
               "claimCode": "MATH1",
               "claimLabel": "Concepts and Procedures",
@@ -9095,6 +8796,25 @@ exports[`ItemPageTable sorts list on header click 4`] = `
               "targetId": "A",
               "targetShortName": "",
               "title": "Math Grade 6 Claim 1",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "MATH4",
+              "claimLabel": "Modeling/Data Analysis",
+              "grade": 8,
+              "gradeLabel": "Grade 6",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 3615,
+              "subjectCode": "MATH",
+              "subjectLabel": "Math",
+              "targetDescription": "target C description",
+              "targetHash": 0,
+              "targetId": "C",
+              "targetShortName": "",
+              "title": "Math Grade 6 Claim 4",
             },
           ]
         }
@@ -9270,56 +8990,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
         onRowSelect={[Function]}
         sort={
           Array [
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "subject",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Subject",
-                "headerClassName": "subject",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
             Object {
               "col": Object {
                 "cols": Array [
@@ -9861,233 +9531,6 @@ exports[`ItemPageTable sorts list on header click 4`] = `
             }
             hasControls={true}
             isExpanded={false}
-            key="187-3615"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "MATH4",
-                "claimLabel": "Modeling/Data Analysis",
-                "grade": 8,
-                "gradeLabel": "Grade 6",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 3615,
-                "subjectCode": "MATH",
-                "subjectLabel": "Math",
-                "targetDescription": "target C description",
-                "targetHash": 0,
-                "targetId": "C",
-                "targetShortName": "",
-                "title": "Math Grade 6 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-3615"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-3615"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    3615
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-3615"
-              >
-                <span
-                  key="subject"
-                >
-                  <span
-                    className="table-subject-highlight math"
-                  >
-                    Math
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-3615"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 6
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-3615"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Modeling/Data Analysis
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    className="box"
-                    displayIcon={true}
-                    displayText="C"
-                    helpText={
-                      <p>
-                        target C description
-                      </p>
-                    }
-                    position="bottom"
-                  >
-                    <span
-                      className="tool-tip-links box"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        C
-                         
-                        <span
-                          aria-hidden="true"
-                          className="fa fa-info-circle fa-sm"
-                        />
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      >
-                        <span
-                          className="tool-tip-message bottom "
-                        >
-                          <p>
-                            target C description
-                          </p>
-                        </span>
-                      </span>
-                    </span>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-3615"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
             key="187-3206"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -10244,6 +9687,233 @@ exports[`ItemPageTable sorts list on header click 4`] = `
                 >
                   <span>
                     Equation
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
+            key="187-3615"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "MATH4",
+                "claimLabel": "Modeling/Data Analysis",
+                "grade": 8,
+                "gradeLabel": "Grade 6",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 3615,
+                "subjectCode": "MATH",
+                "subjectLabel": "Math",
+                "targetDescription": "target C description",
+                "targetHash": 0,
+                "targetId": "C",
+                "targetShortName": "",
+                "title": "Math Grade 6 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-3615"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-3615"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    3615
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-3615"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight math"
+                  >
+                    Math
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-3615"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 6
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-3615"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Modeling/Data Analysis
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    className="box"
+                    displayIcon={true}
+                    displayText="C"
+                    helpText={
+                      <p>
+                        target C description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links box"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        C
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom "
+                        >
+                          <p>
+                            target C description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-3615"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
                   </span>
                 </span>
               </td>
@@ -10527,71 +10197,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 "cols": Array [
                   Object {
                     "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "subject",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Subject",
-                "headerClassName": "subject",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "grade",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Grade",
-                "headerClassName": "grade",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
                     "className": "item-type",
                   },
                 ],
@@ -10628,7 +10233,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -10653,7 +10258,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -10678,7 +10283,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -10703,7 +10308,7 @@ exports[`ItemPageTable sorts list on header click 5`] = `
                 </span>
                 <span
                   aria-hidden="true"
-                  className="fa fa-sort-asc"
+                  className="fa fa-sort"
                   style={
                     Object {
                       "color": "gray",
@@ -10786,25 +10391,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             Object {
               "bankKey": 187,
               "brailleOnlyItem": false,
-              "claimCode": "ELA4",
-              "claimLabel": "Research/Inquiry",
-              "grade": 2,
-              "gradeLabel": "Grade 4",
-              "interactionTypeCode": "MS",
-              "interactionTypeLabel": "Multi Select",
-              "isPerformanceItem": false,
-              "itemKey": 2928,
-              "subjectCode": "ELA",
-              "subjectLabel": "ELA/literacy",
-              "targetDescription": "target D description",
-              "targetHash": 2832,
-              "targetId": "D",
-              "targetShortName": "Evaluate Information/ sources",
-              "title": "ELA/ literacy Grade 4 Claim 4",
-            },
-            Object {
-              "bankKey": 187,
-              "brailleOnlyItem": false,
               "claimCode": "MATH4",
               "claimLabel": "Modeling/Data Analysis",
               "grade": 8,
@@ -10820,6 +10406,25 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               "targetId": "C",
               "targetShortName": "",
               "title": "Math Grade 6 Claim 4",
+            },
+            Object {
+              "bankKey": 187,
+              "brailleOnlyItem": false,
+              "claimCode": "ELA4",
+              "claimLabel": "Research/Inquiry",
+              "grade": 2,
+              "gradeLabel": "Grade 4",
+              "interactionTypeCode": "MS",
+              "interactionTypeLabel": "Multi Select",
+              "isPerformanceItem": false,
+              "itemKey": 2928,
+              "subjectCode": "ELA",
+              "subjectLabel": "ELA/literacy",
+              "targetDescription": "target D description",
+              "targetHash": 2832,
+              "targetId": "D",
+              "targetShortName": "Evaluate Information/ sources",
+              "title": "ELA/ literacy Grade 4 Claim 4",
             },
           ]
         }
@@ -10995,71 +10600,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
         onRowSelect={[Function]}
         sort={
           Array [
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "item",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Item",
-                "headerClassName": "item",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "claim",
-                  },
-                  Object {
-                    "accessor": [Function],
-                    "className": "target",
-                    "helpText": [Function],
-                  },
-                ],
-                "compare": [Function],
-                "header": "Claim/Target",
-                "headerClassName": "claimAndTarget",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "subject",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Subject",
-                "headerClassName": "subject",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
-            Object {
-              "col": Object {
-                "cols": Array [
-                  Object {
-                    "accessor": [Function],
-                    "className": "grade",
-                  },
-                ],
-                "compare": [Function],
-                "header": "Grade",
-                "headerClassName": "grade",
-              },
-              "direction": 1,
-              "resetSortCount": 0,
-            },
             Object {
               "col": Object {
                 "cols": Array [
@@ -11602,233 +11142,6 @@ exports[`ItemPageTable sorts list on header click 5`] = `
             }
             hasControls={true}
             isExpanded={false}
-            key="187-2928"
-            onRowExpand={[Function]}
-            onRowSelect={[Function]}
-            rowData={
-              Object {
-                "bankKey": 187,
-                "brailleOnlyItem": false,
-                "claimCode": "ELA4",
-                "claimLabel": "Research/Inquiry",
-                "grade": 2,
-                "gradeLabel": "Grade 4",
-                "interactionTypeCode": "MS",
-                "interactionTypeLabel": "Multi Select",
-                "isPerformanceItem": false,
-                "itemKey": 2928,
-                "subjectCode": "ELA",
-                "subjectLabel": "ELA/literacy",
-                "targetDescription": "target D description",
-                "targetHash": 2832,
-                "targetId": "D",
-                "targetShortName": "Evaluate Information/ sources",
-                "title": "ELA/ literacy Grade 4 Claim 4",
-              }
-            }
-          >
-            <tr
-              className=""
-              key="187-2928"
-              onClick={[Function]}
-              onKeyUp={[Function]}
-            >
-              <td
-                className="item-checkbox"
-                key="checkbox-control"
-                onClick={[Function]}
-                onKeyUp={[Function]}
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o fa-sm table-icon"
-                />
-                 
-              </td>
-              <td
-                className="arrow-indicator"
-                key="expand-control"
-                tabIndex={0}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-chevron-right fa-sm table-icon"
-                />
-              </td>
-              <td
-                className="item"
-                key="item-187-2928"
-              >
-                <span
-                  key="item"
-                >
-                  <span>
-                    2928
-                  </span>
-                </span>
-              </td>
-              <td
-                className="subject"
-                key="subject-187-2928"
-              >
-                <span
-                  key="subject"
-                >
-                  <span
-                    className="table-subject-highlight ela"
-                  >
-                    ELA/literacy
-                  </span>
-                </span>
-              </td>
-              <td
-                className="grade"
-                key="grade-187-2928"
-              >
-                <span
-                  key="grade"
-                >
-                  <span>
-                    Grade 4
-                  </span>
-                </span>
-              </td>
-              <td
-                className="claimAndTarget"
-                key="claimAndTarget-187-2928"
-              >
-                <span
-                  key="claim"
-                >
-                  <span>
-                    Research/Inquiry
-                  </span>
-                </span>
-                <span
-                  key="target"
-                >
-                  <ToolTip
-                    className="box"
-                    displayIcon={true}
-                    displayText="D"
-                    helpText={
-                      <p>
-                        target D description
-                      </p>
-                    }
-                    position="bottom"
-                  >
-                    <span
-                      className="tool-tip-links box"
-                      tabIndex={0}
-                    >
-                      <span
-                        className="tool-tip-hoverable"
-                      >
-                        D
-                         
-                        <span
-                          aria-hidden="true"
-                          className="fa fa-info-circle fa-sm"
-                        />
-                      </span>
-                      <span
-                        className="tool-tip-details"
-                      >
-                        <span
-                          className="tool-tip-message bottom "
-                        >
-                          <p>
-                            target D description
-                          </p>
-                        </span>
-                      </span>
-                    </span>
-                  </ToolTip>
-                </span>
-              </td>
-              <td
-                className="item-type"
-                key="item-type-187-2928"
-              >
-                <span
-                  key="item-type"
-                >
-                  <span>
-                    Multi Select
-                  </span>
-                </span>
-              </td>
-            </tr>
-          </ItemTableRow>
-          <ItemTableRow
-            columns={
-              Array [
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item",
-                  "headerClassName": "item",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "subject",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Subject",
-                  "headerClassName": "subject",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "grade",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Grade",
-                  "headerClassName": "grade",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "claim",
-                    },
-                    Object {
-                      "accessor": [Function],
-                      "className": "target",
-                      "helpText": [Function],
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Claim/Target",
-                  "headerClassName": "claimAndTarget",
-                },
-                Object {
-                  "cols": Array [
-                    Object {
-                      "accessor": [Function],
-                      "className": "item-type",
-                    },
-                  ],
-                  "compare": [Function],
-                  "header": "Item Type",
-                  "headerClassName": "item-type",
-                },
-              ]
-            }
-            hasControls={true}
-            isExpanded={false}
             key="187-3615"
             onRowExpand={[Function]}
             onRowSelect={[Function]}
@@ -11978,6 +11291,233 @@ exports[`ItemPageTable sorts list on header click 5`] = `
               <td
                 className="item-type"
                 key="item-type-187-3615"
+              >
+                <span
+                  key="item-type"
+                >
+                  <span>
+                    Multi Select
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </ItemTableRow>
+          <ItemTableRow
+            columns={
+              Array [
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item",
+                  "headerClassName": "item",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "subject",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Subject",
+                  "headerClassName": "subject",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "grade",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Grade",
+                  "headerClassName": "grade",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "claim",
+                    },
+                    Object {
+                      "accessor": [Function],
+                      "className": "target",
+                      "helpText": [Function],
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Claim/Target",
+                  "headerClassName": "claimAndTarget",
+                },
+                Object {
+                  "cols": Array [
+                    Object {
+                      "accessor": [Function],
+                      "className": "item-type",
+                    },
+                  ],
+                  "compare": [Function],
+                  "header": "Item Type",
+                  "headerClassName": "item-type",
+                },
+              ]
+            }
+            hasControls={true}
+            isExpanded={false}
+            key="187-2928"
+            onRowExpand={[Function]}
+            onRowSelect={[Function]}
+            rowData={
+              Object {
+                "bankKey": 187,
+                "brailleOnlyItem": false,
+                "claimCode": "ELA4",
+                "claimLabel": "Research/Inquiry",
+                "grade": 2,
+                "gradeLabel": "Grade 4",
+                "interactionTypeCode": "MS",
+                "interactionTypeLabel": "Multi Select",
+                "isPerformanceItem": false,
+                "itemKey": 2928,
+                "subjectCode": "ELA",
+                "subjectLabel": "ELA/literacy",
+                "targetDescription": "target D description",
+                "targetHash": 2832,
+                "targetId": "D",
+                "targetShortName": "Evaluate Information/ sources",
+                "title": "ELA/ literacy Grade 4 Claim 4",
+              }
+            }
+          >
+            <tr
+              className=""
+              key="187-2928"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+            >
+              <td
+                className="item-checkbox"
+                key="checkbox-control"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-square-o fa-sm table-icon"
+                />
+                 
+              </td>
+              <td
+                className="arrow-indicator"
+                key="expand-control"
+                tabIndex={0}
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-chevron-right fa-sm table-icon"
+                />
+              </td>
+              <td
+                className="item"
+                key="item-187-2928"
+              >
+                <span
+                  key="item"
+                >
+                  <span>
+                    2928
+                  </span>
+                </span>
+              </td>
+              <td
+                className="subject"
+                key="subject-187-2928"
+              >
+                <span
+                  key="subject"
+                >
+                  <span
+                    className="table-subject-highlight ela"
+                  >
+                    ELA/literacy
+                  </span>
+                </span>
+              </td>
+              <td
+                className="grade"
+                key="grade-187-2928"
+              >
+                <span
+                  key="grade"
+                >
+                  <span>
+                    Grade 4
+                  </span>
+                </span>
+              </td>
+              <td
+                className="claimAndTarget"
+                key="claimAndTarget-187-2928"
+              >
+                <span
+                  key="claim"
+                >
+                  <span>
+                    Research/Inquiry
+                  </span>
+                </span>
+                <span
+                  key="target"
+                >
+                  <ToolTip
+                    className="box"
+                    displayIcon={true}
+                    displayText="D"
+                    helpText={
+                      <p>
+                        target D description
+                      </p>
+                    }
+                    position="bottom"
+                  >
+                    <span
+                      className="tool-tip-links box"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="tool-tip-hoverable"
+                      >
+                        D
+                         
+                        <span
+                          aria-hidden="true"
+                          className="fa fa-info-circle fa-sm"
+                        />
+                      </span>
+                      <span
+                        className="tool-tip-details"
+                      >
+                        <span
+                          className="tool-tip-message bottom "
+                        >
+                          <p>
+                            target D description
+                          </p>
+                        </span>
+                      </span>
+                    </span>
+                  </ToolTip>
+                </span>
+              </td>
+              <td
+                className="item-type"
+                key="item-type-187-2928"
               >
                 <span
                   key="item-type"
