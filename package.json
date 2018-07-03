@@ -75,7 +75,7 @@
     "@types/jquery": "2.0.40",
     "@types/jsdom": "^11.0.4",
     "@types/node": "^9.6.14",
-    "@types/react": "^16.0.40",
+    "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.3",
     "@types/react-modal": "3.1.2",
     "@types/react-router": "4.0.25",
@@ -137,7 +137,7 @@
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16",
-    "react-dom": "^15.0.0 || ^16",
+    "react-dom": "^15.0.0 || ^16.4.0",
     "bootstrap": "^3.3.7 || ^4",
     "jquery": "^3.2.1",
     "font-awesome": "~4.7.0",
@@ -176,7 +176,15 @@
     ],
     "collectCoverage": true,
     "testEnvironment": "node",
-    "reporters": ["default", ["jest-junit", { "output": "reports/jest/results.xml" }]],
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "output": "reports/jest/results.xml"
+        }
+      ]
+    ],
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
       "^.+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",

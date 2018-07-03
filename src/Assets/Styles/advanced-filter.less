@@ -98,7 +98,7 @@ div.filter-status > button.btn {
 .filter-selection {
   padding: @spacing-unit/2;
   flex-shrink: 0;
-  flex-basis: 250px;
+  flex-basis: 300px;
 }
 
 #calculator-filter {
@@ -130,12 +130,27 @@ div.filter-selection > div.nested-btn-group {
   align-items: flex-start;
 }
 
-div.filter-btn-group > button.btn {
-  max-width: fit-content;
-  white-space: normal;
-  // margin-right: 0 !important; //overwriting bootstrap
+@supports (-ms-ime-align: auto) {
+  #subject-filter div.filter-btn-group > button.btn {
+    width: 195px;
+  }
+  #claims-filter div.filter-btn-group > button.btn {
+    width: 150px;
+  }
 }
+div.filter-btn-group > button.btn {
+  min-width: fill-available;
 
+  //min-width: auto;
+  white-space: normal;
+  margin-right: 0 !important; //overwriting bootstrap
+}
+#subject-filter div.filter-btn-group > button.btn {
+  width: 195px;
+}
+#claims-filter div.filter-btn-group > button.btn {
+  min-width: fill-available;
+}
 #targets-filter .filter-btn-group {
   flex-wrap: wrap;
   max-height: 30vh;
