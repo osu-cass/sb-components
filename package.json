@@ -137,7 +137,7 @@
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16",
-    "react-dom": "^15.0.0 || ^16",
+    "react-dom": "^15.0.0 || ^16.4.0",
     "bootstrap": "^3.3.7 || ^4",
     "jquery": "^3.2.1",
     "font-awesome": "~4.7.0",
