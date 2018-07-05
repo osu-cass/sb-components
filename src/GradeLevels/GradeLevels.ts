@@ -25,6 +25,8 @@ export class GradeLevel {
     switch (grade) {
       case GradeLevels.NA:
         return "NA";
+      case GradeLevels.All:
+        return "All Grades";
       case GradeLevels.Grade3:
         return "Grade 3";
       case GradeLevels.Grade4:
@@ -103,7 +105,9 @@ export class GradeLevel {
   }
 
   public static stringToGradeLevel(gradeString: string): GradeLevels {
-    return parseInt(gradeString, 10) || GradeLevels.NA;
+    return gradeString === "All"
+      ? GradeLevels.All
+      : parseInt(gradeString, 10) || GradeLevels.NA;
   }
 
   public static gradeLevelAdd(grade: GradeLevels, gradeString: string) {

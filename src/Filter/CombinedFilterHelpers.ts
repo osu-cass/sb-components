@@ -202,6 +202,15 @@ export function resetFilters(
     if (f.optionType === OptionTypeModel.inputBox) {
       f.filterOptions = [];
     }
+    if (
+      f.isMultiSelect === true &&
+      f.filterOptions !== undefined &&
+      f.filterOptions[0] !== undefined &&
+      f.filterOptions[0].filterType !== undefined &&
+      f.filterOptions[0].filterType !== FilterType.Subject
+    ) {
+      f.filterOptions = [];
+    }
     f.filterOptions.forEach(o => (o.isSelected = false));
   });
 

@@ -1,0 +1,209 @@
+# Confused about syntax? Read this:
+# >> https://blog.daemonl.com/2016/02/yaml.html
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:latest
+
+version: 2
+jobs:
+  checkout_code:
+    <<: *defaults
+    steps:
+      - checkout
+      - save_cache:
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/repo
+
+  install_dependencies:
+    <<: *defaults
+    steps:
+      - restore_cache: &repo
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+      - run: npm ci
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - node_modules
+
+  unit_tests:
+    docker:
+      - image: circleci/node:latest
+        environment:
+          COVERALLS_SERVICE_NAME: circle-ci
+          COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
+    working_directory: ~/repo
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Execute Jest unit tests
+          command: npm run test-ci:prod
+      - run:
+          name: Report test coverage to Coveralls
+          command: npm run report-coverage
+      - store_test_results:
+          path: reports
+      - store_artifacts:
+          path: reports/jest
+
+  lint_typescript:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Run TSLint against sourcefiles
+          command: mkdir reports ; mkdir reports/tslint ; npm run lint-ts-ci
+      - store_test_results:
+          path: reports
+      - store_artifacts:
+          path: reports/tslint
+  
+  build_webpack:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Test that the bundle builds correctly
+          command: npm run webpack:prod
+
+  build_storybook:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Test that storybook builds correctly
+          command: npm run storybook-publish
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - gh-site/storybook
+            - gh-site/lib
+
+  build_typedoc:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Test that typedoc builds correctly
+          command: npm run typedoc-publish
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - gh-site/tsdoc
+
+  deploy_docs:
+    docker:
+      - image: circleci/node:latest
+        environment:
+          SOURCE_BRANCH: master
+          TARGET_BRANCH: gh-pages
+    working_directory: ~/repo
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Upload docs to GitHub Pages
+          command: |
+            if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
+              git config --global user.email $GH_EMAIL
+              git config --global user.name $GH_NAME
+
+              git clone $CIRCLE_REPOSITORY_URL out
+
+              cd out
+              git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+              git rm -rf .
+              cd ..
+
+              cp -a gh-site/. out/.
+
+              mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
+              cd out
+
+              git add -A
+              git commit -m "Automated deployment to GitHub Pages ${CIRCLE_SHA1}" --allow-empty
+
+              git push origin $TARGET_BRANCH
+            fi
+  
+  release_beta:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Deploy beta dist-tag to npm
+          command: npx semantic-release -b staging
+
+  release_latest:
+    <<: *defaults
+    steps:
+      - restore_cache: *repo
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Create NPM credential file
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: Promote beta tag to latest
+          command: npm dist-tag add @osu-cass/sb-components@$(npm dist-tag ls @osu-cass/sb-components | grep 'beta' | grep -Po '\d+\.\d+\.\d+') latest
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - checkout_code
+      - install_dependencies:
+          requires:
+            - checkout_code
+      - unit_tests:
+          requires:
+            - install_dependencies
+      - lint_typescript:
+          requires:
+            - install_dependencies
+      - build_webpack:
+          requires: 
+            - unit_tests
+      - build_storybook:
+          requires:
+            - unit_tests
+      - build_typedoc:
+          requires:
+            - unit_tests
+      - deploy_docs:
+          requires:
+            - build_storybook
+            - build_typedoc
+          filters:
+            branches:
+              only: master
+      - release_beta:
+          requires:
+            - build_storybook
+            - build_typedoc
+          filters:
+            branches:
+              only: staging
+      - release_latest:
+          requires:
+            - build_storybook
+            - build_typedoc
+          filters:
+            branches:
+              only: master
+      
