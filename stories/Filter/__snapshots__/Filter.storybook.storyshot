@@ -125,6 +125,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All TechType"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -136,6 +137,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="tech2"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -144,6 +146,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
               tech2
             </button>
             <button
+              aria-label="tech1"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
