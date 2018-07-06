@@ -224,12 +224,16 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -322,12 +326,16 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target B description
@@ -420,12 +428,16 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -518,12 +530,16 @@ exports[`Storyshots Item Table Container normal render 1`] = `
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description
@@ -752,12 +768,16 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -832,12 +852,16 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target B description
@@ -912,12 +936,16 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -992,12 +1020,16 @@ exports[`Storyshots Item Table Container render without chevron and checkbox 1`]
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description
@@ -1247,12 +1279,16 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -1345,12 +1381,16 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target B description
@@ -1443,12 +1483,16 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -1541,12 +1585,16 @@ exports[`Storyshots Item Table Container selected item 1`] = `
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description
@@ -1796,12 +1844,16 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target A description
@@ -1894,12 +1946,16 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   B
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target B description
@@ -1992,12 +2048,16 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   C
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target C description
@@ -2090,12 +2150,16 @@ exports[`Storyshots Item Table Container verify sort order 1`] = `
                 >
                   D
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       target D description

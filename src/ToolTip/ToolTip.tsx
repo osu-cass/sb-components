@@ -4,6 +4,7 @@ export interface ToolTipProps {
   toolTipHeader?: string;
   helpText?: JSX.Element;
   displayIcon?: boolean;
+  displayText?: JSX.Element | string | React.ReactText;
   position?: "top" | "bottom";
   side?: "left" | "right";
   className?: string;
@@ -40,7 +41,7 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
     return (
       <span className="tool-tip-hoverable">
-        {this.props.children} {icon}
+        {this.props.children || this.props.displayText} {icon}
       </span>
     );
   }
@@ -49,9 +50,8 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
     if (this.props.helpText) {
       return (
         <span
-          className={`tool-tip-message ${this.props.position} ${
-            this.props.side
-          }`}
+          className={`tool-tip-message ${this.props.position || ""} ${this.props
+            .side || ""}`}
         >
           {this.renderToolTipHeader()}
           {this.props.helpText}
@@ -62,10 +62,21 @@ export class ToolTip extends React.Component<ToolTipProps, {}> {
 
   render() {
     return (
-      <span className={`tool-tip-links ${this.props.className}`} tabIndex={0}>
+      <span
+        className={`tool-tip-links ${this.props.className || ""}`}
+        tabIndex={0}
+      >
         {this.renderToolTipVisibleText()}
         <span className="tool-tip-details">{this.renderToolTipHelpText()}</span>
       </span>
     );
   }
 }
+
+export const generateTooltip = (props: ToolTipProps) => {
+  if (props.helpText) {
+    return <ToolTip {...props} />;
+  }
+
+  return props.displayText;
+};

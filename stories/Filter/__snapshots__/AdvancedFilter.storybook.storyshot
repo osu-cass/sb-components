@@ -58,7 +58,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -80,7 +80,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -168,7 +168,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -190,7 +190,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -253,7 +253,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -275,7 +275,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -346,7 +346,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -368,7 +368,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -439,7 +439,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -461,7 +461,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -472,7 +472,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical"
+      className=" btn-group-sm toggle-group horizontal"
       data-toggle="buttons"
     >
       <div
@@ -511,7 +511,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -533,7 +533,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -544,7 +544,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical"
+      className=" btn-group-sm toggle-group horizontal"
       data-toggle="buttons"
     >
       <div

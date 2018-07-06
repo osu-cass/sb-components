@@ -2,7 +2,7 @@
 
 exports[`ToolTip displays help when hovered 1`] = `
 <span
-  className="tool-tip-links undefined"
+  className="tool-tip-links "
   tabIndex={0}
 >
   <span
@@ -19,7 +19,7 @@ exports[`ToolTip displays help when hovered 1`] = `
     className="tool-tip-details"
   >
     <span
-      className="tool-tip-message top undefined"
+      className="tool-tip-message top "
     >
       <p>
         test
@@ -31,7 +31,7 @@ exports[`ToolTip displays help when hovered 1`] = `
 
 exports[`ToolTip matches snapshot 1`] = `
 <span
-  className="tool-tip-links undefined"
+  className="tool-tip-links "
   tabIndex={0}
 >
   <span
@@ -48,7 +48,7 @@ exports[`ToolTip matches snapshot 1`] = `
     className="tool-tip-details"
   >
     <span
-      className="tool-tip-message top undefined"
+      className="tool-tip-message top "
     >
       <p>
         test
