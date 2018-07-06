@@ -337,6 +337,7 @@ exports[`FilterContainer renders 1`] = `
             <div
               className="bf-selection"
               id="grade-bf"
+              tabIndex={0}
             >
               <Component
                 className="input-sm"
@@ -486,6 +487,7 @@ exports[`FilterContainer renders 1`] = `
             <div
               className="bf-selection"
               id="subjects-bf"
+              tabIndex={0}
             >
               <label>
                 Subjects
@@ -992,6 +994,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             <div
               className="bf-selection"
               id="grade-bf"
+              tabIndex={0}
             >
               <Component
                 className="input-sm"
@@ -1141,6 +1144,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
             <div
               className="bf-selection"
               id="subjects-bf"
+              tabIndex={0}
             >
               <label>
                 Subjects
@@ -1647,6 +1651,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             <div
               className="bf-selection"
               id="grade-bf"
+              tabIndex={0}
             >
               <Component
                 className="input-sm"
@@ -1796,6 +1801,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
             <div
               className="bf-selection"
               id="subjects-bf"
+              tabIndex={0}
             >
               <label>
                 Subjects
@@ -3125,6 +3131,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             <div
               className="bf-selection"
               id="grade-bf"
+              tabIndex={0}
             >
               <Component
                 className="input-sm"
@@ -3274,6 +3281,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
             <div
               className="bf-selection"
               id="subjects-bf"
+              tabIndex={0}
             >
               <label>
                 Subjects
