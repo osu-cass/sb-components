@@ -901,6 +901,7 @@ exports[`BasicFilterContainer hide select message if disabled 1`] = `
 <div
   className="bf-selection"
   id="grade-bf"
+  tabIndex={0}
 >
   <Component
     className="input-sm"
