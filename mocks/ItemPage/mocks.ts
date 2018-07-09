@@ -8,7 +8,8 @@ import {
   ItemIsaapModel,
   AccResourceGroupModel,
   AboutItemModel,
-  ResourceSelectionsModel
+  ResourceSelectionsModel,
+  ItemPageContainerProps
 } from "@src/index";
 import { aboutItemMockModel } from "@mocks/AboutItem/mocks";
 import { allAccessibilityResourceGroups } from "@mocks/Accessibility/mocks";
@@ -37,6 +38,16 @@ export const onSave = (accGRoups: AccResourceGroupModel[]) => {};
 
 // tslint:disable-next-line:no-empty
 export const onReset = () => {};
+
+export const itemModelMock: ItemModel = {
+  bankKey: 24,
+  itemKey: 15
+};
+
+export const itemModelMockEmpty: ItemModel = {
+  bankKey: 0,
+  itemKey: 0
+};
 
 export const itemPageModelMock: ItemPageModel = {
   itemViewerServiceUrl: "http://ivs.smarterbalanced.org/",
@@ -148,4 +159,40 @@ export const itemPageMockPropsNoItem: ItemViewerContainerProps = {
   ],
   braillePassageCodes: [],
   defaultIsaapCodes: "TDS_ITM1;TDS_APC_SCRUBBER;"
+};
+
+export const itemPageContainerPropsMock: ItemPageContainerProps = {
+  aboutThisClient,
+  itemPageClient,
+  itemAccessibilityClient,
+  showRubrics: true,
+  itemIsaap: {
+    ...itemModelMock,
+    isaap: "Stuff and things"
+  },
+  updateIsaap: (isaap: string) => {
+    return;
+  },
+  updateCookie: (cookieName: string, cookieValue: string) => {
+    return;
+  },
+  errorRedirectPath: "stuff and things"
+};
+
+export const itemPageContainerPropsNoItemMock: ItemPageContainerProps = {
+  aboutThisClient,
+  itemPageClient,
+  itemAccessibilityClient,
+  showRubrics: true,
+  itemIsaap: {
+    ...itemModelMockEmpty,
+    isaap: ""
+  },
+  updateIsaap: (isaap: string) => {
+    return;
+  },
+  updateCookie: (cookieName: string, cookieValue: string) => {
+    return;
+  },
+  errorRedirectPath: "Stuff and things"
 };

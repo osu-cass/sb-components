@@ -243,7 +243,7 @@ exports[`Storyshots Item Bank default 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"
@@ -492,7 +492,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"

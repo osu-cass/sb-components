@@ -35,7 +35,7 @@ export interface SmarterAppOptionModel {
   value: string;
   feedback: string;
   language: string;
-  answer: string;
+  answer: boolean;
 }
 
 export interface RubricTableRowModel {

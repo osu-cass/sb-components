@@ -1,5 +1,10 @@
 import * as React from "react";
-import { ToolTip, getShortDateFormat, getLongDateFormat } from "@src/index";
+import {
+  ToolTip,
+  generateTooltip,
+  getShortDateFormat,
+  getLongDateFormat
+} from "@src/index";
 
 export interface RevisionModel {
   author: string;
@@ -38,12 +43,11 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
     return s.substring(s.length - 4, s.length);
   }
 
-  return (
-    <li key={props.commitHash}>
-      <ToolTip
-        toolTipHeader={getLongDateFormat(props.date)}
-        helpText={renderHelpText()}
-      >
+  const tooltip = generateTooltip({
+    toolTipHeader: getLongDateFormat(props.date),
+    helpText: renderHelpText(),
+    displayText: (
+      <div>
         <button
           className={
             props.selected
@@ -57,7 +61,9 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
         <div className="revisions-details">
           {props.author}-{formatDate(getShortDateFormat(props.date))}
         </div>
-      </ToolTip>
-    </li>
-  );
+      </div>
+    )
+  });
+
+  return <li key={props.commitHash}>{tooltip}</li>;
 };

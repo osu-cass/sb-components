@@ -144,7 +144,7 @@ exports[`Storyshots Layout name links body 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"
@@ -320,7 +320,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"
@@ -427,7 +427,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"

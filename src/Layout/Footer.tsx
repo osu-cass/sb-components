@@ -15,10 +15,7 @@ export const Footer: React.SFC<{}> = props => {
           Practice and training tests are available here.
         </a>
         <div className="footer-copyright">
-          <p>
-            &copy; The Regents of the University of California – Smarter
-            Balanced Assessment Consortium
-          </p>
+          <p>&copy; The Regents of the University of California.</p>
           <a className="footer-sbLink" href="//www.smarterbalanced.org">
             www.SmarterBalanced.org
           </a>
