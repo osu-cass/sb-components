@@ -55,6 +55,17 @@ describe("BasicFilterContainer", () => {
     });
   });
 
+  it("hide select message if disabled", () => {
+    const gradeDropDownModel = mockBasicFilterCategories[0];
+    const view = shallow(
+      // tslint:disable-next-line:no-empty
+      <BasicFilter {...gradeDropDownModel} selectedHandler={() => {}} />
+    );
+    expect(view.findWhere(a => a.text().includes("Select")).length).toEqual(0);
+    expect(view).toMatchSnapshot();
+    const options = ["default", 7, 56, 960];
+  });
+
   it("can select radio button filter options", () => {
     const options = ["ELA", "Math"];
     let i = 0;

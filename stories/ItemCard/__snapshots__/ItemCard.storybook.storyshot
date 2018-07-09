@@ -102,7 +102,7 @@ exports[`Storyshots Item Card Item Card 1`] = `
               className="tool-tip-details"
             >
               <span
-                className="tool-tip-message undefined undefined"
+                className="tool-tip-message  "
               >
                 <span>
                   target description right hereeeee
