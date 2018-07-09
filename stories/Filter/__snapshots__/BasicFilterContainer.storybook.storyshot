@@ -124,6 +124,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
         data-toggle="buttons"
       >
         <button
+          aria-label="Select All TechType"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
@@ -135,6 +136,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           className="btn-group filter-btn-group"
         >
           <button
+            aria-label="tech2"
             className="btn btn-primary "
             disabled={false}
             onClick={[Function]}
@@ -143,6 +145,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
             tech2
           </button>
           <button
+            aria-label="tech1"
             className="btn btn-primary "
             disabled={false}
             onClick={[Function]}
@@ -281,6 +284,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
         data-toggle="buttons"
       >
         <button
+          aria-label="Select All TechType"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
@@ -292,6 +296,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
           className="btn-group filter-btn-group"
         >
           <button
+            aria-label="tech2"
             className="btn btn-primary "
             disabled={false}
             onClick={[Function]}
@@ -300,6 +305,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
             tech2
           </button>
           <button
+            aria-label="tech1"
             className="btn btn-primary "
             disabled={false}
             onClick={[Function]}

@@ -34,6 +34,7 @@ export class AdvancedFilter extends React.Component<AdvancedFilterProps, {}> {
           disabled={disabled}
           selected={!anySelected}
           label="All"
+          ariaLabel={`Select All ${this.props.label}`}
         />
       );
     }

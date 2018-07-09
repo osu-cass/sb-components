@@ -573,12 +573,14 @@ exports[`FilterContainer renders 1`] = `
                 data-toggle="buttons"
               >
                 <Component
+                  ariaLabel="Select All TechType"
                   disabled={false}
                   label="All"
                   onClick={[Function]}
                   selected={true}
                 >
                   <button
+                    aria-label="Select All TechType"
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
@@ -598,6 +600,7 @@ exports[`FilterContainer renders 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech2"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -614,6 +617,7 @@ exports[`FilterContainer renders 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech1"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -1230,12 +1234,14 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                 data-toggle="buttons"
               >
                 <Component
+                  ariaLabel="Select All TechType"
                   disabled={false}
                   label="All"
                   onClick={[Function]}
                   selected={true}
                 >
                   <button
+                    aria-label="Select All TechType"
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
@@ -1255,6 +1261,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech2"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -1271,6 +1278,7 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech1"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -1887,12 +1895,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                 data-toggle="buttons"
               >
                 <Component
+                  ariaLabel="Select All TechType"
                   disabled={false}
                   label="All"
                   onClick={[Function]}
                   selected={true}
                 >
                   <button
+                    aria-label="Select All TechType"
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
@@ -1912,6 +1922,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech2"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -1928,6 +1939,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech1"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -2254,12 +2266,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   data-toggle="buttons"
                 >
                   <Component
+                    ariaLabel="Select All Grade"
                     disabled={false}
                     label="All"
                     onClick={[Function]}
                     selected={true}
                   >
                     <button
+                      aria-label="Select All Grade"
                       className="btn btn-primary active"
                       disabled={false}
                       onClick={[Function]}
@@ -2279,6 +2293,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="Grades 3-5"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2295,6 +2310,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="Grades 6-8"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2311,6 +2327,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="High School"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2422,6 +2439,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="English Literacy & Arts"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2438,6 +2456,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="Maths"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2591,12 +2610,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   data-toggle="buttons"
                 >
                   <Component
+                    ariaLabel="Select All Multi All"
                     disabled={false}
                     label="All"
                     onClick={[Function]}
                     selected={true}
                   >
                     <button
+                      aria-label="Select All Multi All"
                       className="btn btn-primary active"
                       disabled={false}
                       onClick={[Function]}
@@ -2616,6 +2637,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="US History"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2632,6 +2654,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="World History"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2733,12 +2756,14 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   data-toggle="buttons"
                 >
                   <Component
+                    ariaLabel="Select All Multi All Disabled"
                     disabled={false}
                     label="All"
                     onClick={[Function]}
                     selected={true}
                   >
                     <button
+                      aria-label="Select All Multi All Disabled"
                       className="btn btn-primary active"
                       disabled={false}
                       onClick={[Function]}
@@ -2758,6 +2783,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="Calculus"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -2774,6 +2800,7 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-label="Geometry"
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
@@ -3367,12 +3394,14 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                 data-toggle="buttons"
               >
                 <Component
+                  ariaLabel="Select All TechType"
                   disabled={false}
                   label="All"
                   onClick={[Function]}
                   selected={true}
                 >
                   <button
+                    aria-label="Select All TechType"
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
@@ -3392,6 +3421,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech2"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
@@ -3408,6 +3438,7 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     selected={false}
                   >
                     <button
+                      aria-label="tech1"
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
