@@ -36,7 +36,8 @@ export function advFilterCategorySelect(
   const newCategory = { ...selectedCat };
   const options = newCategory.filterOptions.slice();
   const allPressed =
-    option.filterType === undefined && newCategory.displayAllButton;
+    (option === undefined || option.filterType === undefined) &&
+    newCategory.displayAllButton;
 
   if (!newCategory.disabled) {
     if (allPressed) {
