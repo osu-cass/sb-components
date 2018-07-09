@@ -33,6 +33,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="item"
     key="item-187-3206"
+    role="gridcell"
   >
     <span
       key="item"
@@ -45,6 +46,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="subject"
     key="subject-187-3206"
+    role="gridcell"
   >
     <span
       key="subject"
@@ -59,6 +61,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="grade"
     key="grade-187-3206"
+    role="gridcell"
   >
     <span
       key="grade"
@@ -71,6 +74,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="claimAndTarget"
     key="claimAndTarget-187-3206"
+    role="gridcell"
   >
     <span
       key="claim"
@@ -98,6 +102,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="item-type"
     key="item-type-187-3206"
+    role="gridcell"
   >
     <span
       key="item-type"
@@ -237,6 +242,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="item"
           key="item-187-3206"
+          role="gridcell"
         >
           <span
             key="item"
@@ -249,6 +255,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="subject"
           key="subject-187-3206"
+          role="gridcell"
         >
           <span
             key="subject"
@@ -263,6 +270,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="grade"
           key="grade-187-3206"
+          role="gridcell"
         >
           <span
             key="grade"
@@ -275,6 +283,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="claimAndTarget"
           key="claimAndTarget-187-3206"
+          role="gridcell"
         >
           <span
             key="claim"
@@ -329,6 +338,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="item-type"
           key="item-type-187-3206"
+          role="gridcell"
         >
           <span
             key="item-type"
