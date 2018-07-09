@@ -11,6 +11,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
     <div
       className="bf-selection"
       id="grade-bf"
+      tabIndex={0}
     >
       <div
         className=""
@@ -66,6 +67,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
     <div
       className="bf-selection"
       id="subjects-bf"
+      tabIndex={0}
     >
       <label>
         Subjects
@@ -169,6 +171,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     <div
       className="bf-selection"
       id="grade-bf"
+      tabIndex={0}
     >
       <div
         className=""
@@ -224,6 +227,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     <div
       className="bf-selection"
       id="subjects-bf"
+      tabIndex={0}
     >
       <label>
         Subjects

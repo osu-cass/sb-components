@@ -14,6 +14,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="grade-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -69,6 +70,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="subjects-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -222,6 +224,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="techtype-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -322,6 +325,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="calculator-bf"
+        tabIndex={0}
       >
         <div
           className=""

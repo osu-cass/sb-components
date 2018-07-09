@@ -191,7 +191,11 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
     label = label.replace(/\ /g, "-");
 
     return (
-      <div id={`${label}-bf`.toLocaleLowerCase()} className="bf-selection">
+      <div
+        id={`${label}-bf`.toLocaleLowerCase()}
+        className="bf-selection"
+        tabIndex={0}
+      >
         {this.renderCategory()}
       </div>
     );
