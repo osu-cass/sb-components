@@ -83,6 +83,7 @@ export class ItemTableRow extends React.Component<ItemTableRowProps, {}> {
       <td
         key={`${headerClassName}-${cellData.bankKey}-${cellData.itemKey}`}
         className={headerClassName}
+        role="gridcell"
       >
         {colValues}
       </td>
