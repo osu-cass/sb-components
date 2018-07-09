@@ -12,10 +12,12 @@ exports[`Storyshots Layout name links body 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -183,10 +185,12 @@ exports[`Storyshots Layout name links header and body 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -359,10 +363,12 @@ exports[`Storyshots Layout name no links no body 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
