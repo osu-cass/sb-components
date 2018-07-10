@@ -179,8 +179,14 @@ export class ItemSearch {
   public static searchOptionFilterString(
     options: SearchFilterStringTypes[],
     filterType: FilterType,
-    selectedCodes?: string[]
+    defaultOptionKeys?: string[],
+    searchApi?: string[]
   ): FilterOptionModel[] {
+    let selectedCodes = searchApi;
+    if (searchApi === undefined || searchApi.length < 1) {
+      selectedCodes = defaultOptionKeys;
+    }
+
     return options.map(o => {
       return {
         filterType,
@@ -194,12 +200,18 @@ export class ItemSearch {
   public static searchOptionToFilterGrade(
     options: GradeLevels[],
     filterType: FilterType,
-    selectedCode?: GradeLevels
+    defaultOptionKeys?: GradeLevels,
+    searchApi?: GradeLevels
   ): FilterOptionModel[] {
+    let selectedCodes = searchApi;
+    if (searchApi === undefined || searchApi === GradeLevels.NA) {
+      selectedCodes = defaultOptionKeys;
+    }
+
     return options.map(o => {
       const gradeString = GradeLevel.gradeLevelToString(o) || "";
-      const selected = selectedCode
-        ? GradeLevel.gradeLevelContains(selectedCode, o)
+      const selected = selectedCodes
+        ? GradeLevel.gradeLevelContains(selectedCodes, o)
         : false;
 
       return {
@@ -214,8 +226,14 @@ export class ItemSearch {
   public static searchOptionToFilterTarget(
     options: TargetModel[],
     filterType: FilterType,
-    selectedCodes?: string[]
+    defaultOptionKeys?: string[],
+    searchApi?: string[]
   ): FilterOptionModel[] {
+    let selectedCodes = searchApi;
+    if (searchApi === undefined || searchApi.length < 1) {
+      selectedCodes = defaultOptionKeys;
+    }
+
     return options.map(o => {
       return {
         filterType,
@@ -229,8 +247,14 @@ export class ItemSearch {
   public static searchOptionToFilterClaim(
     options: ClaimModel[],
     filterType: FilterType,
-    selectedCodes?: string[]
+    defaultOptionKeys?: string[],
+    searchApi?: string[]
   ): FilterOptionModel[] {
+    let selectedCodes = searchApi;
+    if (searchApi === undefined || searchApi.length < 1) {
+      selectedCodes = defaultOptionKeys;
+    }
+
     return options.map(o => {
       return {
         filterType,
@@ -253,28 +277,24 @@ export class ItemSearch {
         options = this.searchOptionToFilterClaim(
           filter.filterOptions,
           filter.code,
-          searchApi.claims === undefined || searchApi.claims.length < 1
-            ? defaultOptionKeys
-            : searchApi.claims
+          defaultOptionKeys,
+          searchApi.claims
         );
         break;
       case FilterType.InteractionType:
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          searchApi.interactionTypes === undefined ||
-          searchApi.interactionTypes.length < 1
-            ? defaultOptionKeys
-            : searchApi.interactionTypes
+          defaultOptionKeys,
+          searchApi.interactionTypes
         );
         break;
       case FilterType.Subject:
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          searchApi.subjects === undefined || searchApi.subjects.length < 1
-            ? defaultOptionKeys
-            : searchApi.subjects
+          defaultOptionKeys,
+          searchApi.subjects
         );
         break;
       case FilterType.Grade:
@@ -287,19 +307,16 @@ export class ItemSearch {
         options = this.searchOptionToFilterGrade(
           filter.filterOptions,
           filter.code,
-          searchApi.gradeLevels === undefined ||
-          searchApi.gradeLevels === GradeLevels.NA
-            ? grade
-            : searchApi.gradeLevels
+          grade,
+          searchApi.gradeLevels
         );
         break;
       case FilterType.Target:
         options = this.searchOptionToFilterTarget(
           filter.filterOptions,
           filter.code,
-          searchApi.targets === undefined || searchApi.targets.length < 1
-            ? defaultOptionKeys
-            : searchApi.targets
+          defaultOptionKeys,
+          searchApi.targets
         );
         break;
       case FilterType.TechnologyType:
@@ -307,9 +324,8 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          techTypesCodes === undefined || techTypesCodes.length < 1
-            ? defaultOptionKeys
-            : techTypesCodes
+          defaultOptionKeys,
+          techTypesCodes
         );
         break;
       case FilterType.Calculator:
@@ -317,9 +333,8 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          flagCodes === undefined || flagCodes.length < 1
-            ? defaultOptionKeys
-            : flagCodes
+          defaultOptionKeys,
+          flagCodes
         );
         break;
       default:
