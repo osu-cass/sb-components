@@ -14,6 +14,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="grade-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -69,6 +70,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="subjects-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -134,6 +136,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All Claims"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -145,6 +148,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="Problem Solving"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -153,6 +157,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
               Problem Solving
             </button>
             <button
+              aria-label="Concepts and Procedures"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -184,6 +189,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All Item Types"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -195,6 +201,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="Equation"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -203,6 +210,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
               Equation
             </button>
             <button
+              aria-label="Grid Item"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -216,6 +224,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="techtype-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -281,6 +290,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All Targets"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -292,6 +302,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="t1"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -300,6 +311,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
               t1
             </button>
             <button
+              aria-label="t2"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -313,6 +325,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="calculator-bf"
+        tabIndex={0}
       >
         <div
           className=""
