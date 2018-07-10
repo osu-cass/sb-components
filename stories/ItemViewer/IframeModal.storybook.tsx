@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { centerDecorator } from "../CenterDecorator";
-import { IframeModal } from "../../src/Modals/IframeModal";
+import { IframeModal } from "@src/Modals/IframeModal";
 
 const url = "http://www.smarterbalanced.org/privacy-policy/";
 

@@ -24,11 +24,11 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
 
   handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
     if (e.keyCode === 13) {
-      const link = e.target as HTMLElement;
-      const element = document.getElementById(this.props.mainContentId);
-      link.blur();
-      if (element) {
-        element.scrollIntoView();
+      const elem = e.target as HTMLElement;
+      elem.blur();
+      const body = document.getElementById("enter-item-id-bf");
+      if (body) {
+        body.scrollIntoView();
       }
     }
   };
@@ -37,14 +37,15 @@ export class NavMenu extends React.Component<NavMenuProps, {}> {
     return (
       <header role="navigation">
         <div id="skip-main">
-          <a
-            role="link"
+          <NavLink
+            to="/BrowseItems"
+            exact
+            activeClassName="active"
             className="skip-link"
-            tabIndex={0}
-            onKeyDown={this.handleKeyDown}
+            onKeyUp={this.handleKeyDown}
           >
             Skip to main content
-          </a>
+          </NavLink>
         </div>
         <nav className="nav-container" role="navigation">
           <div className="nav-content container">

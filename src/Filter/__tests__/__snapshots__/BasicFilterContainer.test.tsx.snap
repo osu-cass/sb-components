@@ -558,29 +558,6 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
   id=""
 >
   <div
-    className="bf-button-container"
-  >
-    <span>
-      <button
-        className="btn btn-default filter-button"
-      >
-        Reset
-      </button>
-    </span>
-    <span>
-      <button
-        className="btn btn-default filter-button af-expand"
-        onClick={[Function]}
-      >
-        Advanced Filters 
-        <span
-          aria-hidden="true"
-          className="fa fa-chevron-right"
-        />
-      </button>
-    </span>
-  </div>
-  <div
     className="basic-filter"
   >
     <BasicFilter
@@ -664,6 +641,29 @@ exports[`BasicFilterContainer expands the advanced filter 1`] = `
       optionType={4}
     />
   </div>
+  <div
+    className="bf-button-container"
+  >
+    <span>
+      <button
+        className="btn btn-default filter-button"
+      >
+        Reset
+      </button>
+    </span>
+    <span>
+      <button
+        className="btn btn-default filter-button af-expand"
+        onClick={[Function]}
+      >
+        Advanced Filters 
+        <span
+          aria-hidden="true"
+          className="fa fa-chevron-right"
+        />
+      </button>
+    </span>
+  </div>
 </div>
 `;
 
@@ -672,6 +672,90 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
   className="bf-container section section-light bf-expanded"
   id=""
 >
+  <div
+    className="basic-filter"
+  >
+    <BasicFilter
+      code="Grade"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "7",
+            "label": "Grades 3-5",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "56",
+            "label": "Grades 6-8",
+          },
+          Object {
+            "filterType": "Grade",
+            "isSelected": false,
+            "key": "960",
+            "label": "High School",
+          },
+        ]
+      }
+      key="0"
+      label="Grade"
+      optionType={3}
+      selectedHandler={[Function]}
+    />
+    <BasicFilter
+      code="Subject"
+      disabled={false}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "Subject",
+            "isSelected": false,
+            "key": "ELA",
+            "label": "English Literacy/ Arts",
+          },
+          Object {
+            "filterType": "Subject",
+            "isSelected": true,
+            "key": "Math",
+            "label": "Mathematics",
+          },
+        ]
+      }
+      key="1"
+      label="Subjects"
+      optionType={2}
+      selectedHandler={[Function]}
+    />
+    <AdvancedFilter
+      code="TechnologyType"
+      disabled={false}
+      displayAllButton={true}
+      filterOptions={
+        Array [
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech1",
+            "label": "tech1",
+          },
+          Object {
+            "filterType": "TechnologyType",
+            "isSelected": false,
+            "key": "tech2",
+            "label": "tech2",
+          },
+        ]
+      }
+      isMultiSelect={true}
+      key="2"
+      label="TechType"
+      onFilterOptionSelect={[Function]}
+      optionType={4}
+    />
+  </div>
   <div
     className="bf-button-container"
   >
@@ -695,6 +779,14 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       </button>
     </span>
   </div>
+</div>
+`;
+
+exports[`BasicFilterContainer expands the advanced filter 3`] = `
+<div
+  className="bf-container section section-light"
+  id=""
+>
   <div
     className="basic-filter"
   >
@@ -779,14 +871,6 @@ exports[`BasicFilterContainer expands the advanced filter 2`] = `
       optionType={4}
     />
   </div>
-</div>
-`;
-
-exports[`BasicFilterContainer expands the advanced filter 3`] = `
-<div
-  className="bf-container section section-light"
-  id=""
->
   <div
     className="bf-button-container"
   >
@@ -810,90 +894,51 @@ exports[`BasicFilterContainer expands the advanced filter 3`] = `
       </button>
     </span>
   </div>
-  <div
-    className="basic-filter"
-  >
-    <BasicFilter
-      code="Grade"
-      disabled={false}
-      filterOptions={
-        Array [
-          Object {
-            "filterType": "Grade",
-            "isSelected": false,
-            "key": "7",
-            "label": "Grades 3-5",
-          },
-          Object {
-            "filterType": "Grade",
-            "isSelected": false,
-            "key": "56",
-            "label": "Grades 6-8",
-          },
-          Object {
-            "filterType": "Grade",
-            "isSelected": false,
-            "key": "960",
-            "label": "High School",
-          },
-        ]
-      }
-      key="0"
-      label="Grade"
-      optionType={3}
-      selectedHandler={[Function]}
-    />
-    <BasicFilter
-      code="Subject"
-      disabled={false}
-      filterOptions={
-        Array [
-          Object {
-            "filterType": "Subject",
-            "isSelected": false,
-            "key": "ELA",
-            "label": "English Literacy/ Arts",
-          },
-          Object {
-            "filterType": "Subject",
-            "isSelected": true,
-            "key": "Math",
-            "label": "Mathematics",
-          },
-        ]
-      }
-      key="1"
-      label="Subjects"
-      optionType={2}
-      selectedHandler={[Function]}
-    />
-    <AdvancedFilter
-      code="TechnologyType"
-      disabled={false}
-      displayAllButton={true}
-      filterOptions={
-        Array [
-          Object {
-            "filterType": "TechnologyType",
-            "isSelected": false,
-            "key": "tech1",
-            "label": "tech1",
-          },
-          Object {
-            "filterType": "TechnologyType",
-            "isSelected": false,
-            "key": "tech2",
-            "label": "tech2",
-          },
-        ]
-      }
-      isMultiSelect={true}
-      key="2"
-      label="TechType"
-      onFilterOptionSelect={[Function]}
-      optionType={4}
-    />
-  </div>
+</div>
+`;
+
+exports[`BasicFilterContainer hide select message if disabled 1`] = `
+<div
+  className="bf-selection"
+  id="grade-bf"
+  tabIndex={0}
+>
+  <Component
+    className="input-sm"
+    disabled={false}
+    key="Grade"
+    label="Grade"
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "disabled": false,
+          "label": "Select Grade",
+          "selected": true,
+          "value": "default",
+        },
+        Object {
+          "disabled": false,
+          "label": "Grades 3-5",
+          "selected": false,
+          "value": "7",
+        },
+        Object {
+          "disabled": false,
+          "label": "Grades 6-8",
+          "selected": false,
+          "value": "56",
+        },
+        Object {
+          "disabled": false,
+          "label": "High School",
+          "selected": false,
+          "value": "960",
+        },
+      ]
+    }
+    selected="default"
+  />
 </div>
 `;
 

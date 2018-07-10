@@ -9,35 +9,12 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
     id=""
   >
     <div
-      className="bf-button-container"
-    >
-      <span>
-        <button
-          className="btn btn-default filter-button"
-          onClick={undefined}
-        >
-          Reset
-        </button>
-      </span>
-      <span>
-        <button
-          className="btn btn-default filter-button af-expand"
-          onClick={[Function]}
-        >
-          Advanced Filters 
-          <span
-            aria-hidden="true"
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </span>
-    </div>
-    <div
       className="basic-filter"
     >
       <div
         className="bf-selection"
         id="grade-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -50,7 +27,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -93,6 +70,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       <div
         className="bf-selection"
         id="subjects-bf"
+        tabIndex={0}
       >
         <label>
           Subjects
@@ -137,23 +115,10 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  TechType
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              TechType
             </span>
           </label>
         </div>
@@ -162,6 +127,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All TechType"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -173,14 +139,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             className="btn-group filter-btn-group"
           >
             <button
-              className="btn btn-primary "
-              disabled={false}
-              onClick={[Function]}
-              role="button"
-            >
-              tech1
-            </button>
-            <button
+              aria-label="tech2"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -188,9 +147,42 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             >
               tech2
             </button>
+            <button
+              aria-label="tech1"
+              className="btn btn-primary "
+              disabled={false}
+              onClick={[Function]}
+              role="button"
+            >
+              tech1
+            </button>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="bf-button-container"
+    >
+      <span>
+        <button
+          className="btn btn-default filter-button"
+          onClick={undefined}
+        >
+          Reset
+        </button>
+      </span>
+      <span>
+        <button
+          className="btn btn-default filter-button af-expand"
+          onClick={[Function]}
+        >
+          Advanced Filters 
+          <span
+            aria-hidden="true"
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </span>
     </div>
   </div>
 </div>

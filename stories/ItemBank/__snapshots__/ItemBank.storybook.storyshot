@@ -12,10 +12,12 @@ exports[`Storyshots Item Bank default 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -243,7 +245,7 @@ exports[`Storyshots Item Bank default 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"
@@ -282,10 +284,12 @@ exports[`Storyshots Item Bank default error client 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -492,7 +496,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
         className="footer-copyright"
       >
         <p>
-          © The Regents of the University of California – Smarter Balanced Assessment Consortium
+          © The Regents of the University of California.
         </p>
         <a
           className="footer-sbLink"

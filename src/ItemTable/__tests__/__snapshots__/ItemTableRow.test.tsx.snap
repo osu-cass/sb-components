@@ -33,6 +33,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="item"
     key="item-187-3206"
+    role="gridcell"
   >
     <span
       key="item"
@@ -45,6 +46,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="subject"
     key="subject-187-3206"
+    role="gridcell"
   >
     <span
       key="subject"
@@ -59,6 +61,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="grade"
     key="grade-187-3206"
+    role="gridcell"
   >
     <span
       key="grade"
@@ -71,6 +74,7 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
   <td
     className="claimAndTarget"
     key="claimAndTarget-187-3206"
+    role="gridcell"
   >
     <span
       key="claim"
@@ -84,21 +88,21 @@ exports[`ItemTableRow matches expand snapshot 1`] = `
     >
       <ToolTip
         className="box"
-        displayIcon={false}
+        displayIcon={true}
+        displayText="A"
         helpText={
           <p>
             Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
           </p>
         }
         position="bottom"
-      >
-        A
-      </ToolTip>
+      />
     </span>
   </td>
   <td
     className="item-type"
     key="item-type-187-3206"
+    role="gridcell"
   >
     <span
       key="item-type"
@@ -238,6 +242,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="item"
           key="item-187-3206"
+          role="gridcell"
         >
           <span
             key="item"
@@ -250,6 +255,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="subject"
           key="subject-187-3206"
+          role="gridcell"
         >
           <span
             key="subject"
@@ -264,6 +270,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="grade"
           key="grade-187-3206"
+          role="gridcell"
         >
           <span
             key="grade"
@@ -276,6 +283,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="claimAndTarget"
           key="claimAndTarget-187-3206"
+          role="gridcell"
         >
           <span
             key="claim"
@@ -289,7 +297,8 @@ exports[`ItemTableRow matches snapshot 1`] = `
           >
             <ToolTip
               className="box"
-              displayIcon={false}
+              displayIcon={true}
+              displayText="A"
               helpText={
                 <p>
                   Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -306,12 +315,16 @@ exports[`ItemTableRow matches snapshot 1`] = `
                 >
                   A
                    
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-info-circle fa-sm"
+                  />
                 </span>
                 <span
                   className="tool-tip-details"
                 >
                   <span
-                    className="tool-tip-message bottom undefined"
+                    className="tool-tip-message bottom "
                   >
                     <p>
                       Target A description with extra text for testing fewoiauighruiaebiurbbvnianiuergruia
@@ -325,6 +338,7 @@ exports[`ItemTableRow matches snapshot 1`] = `
         <td
           className="item-type"
           key="item-type-187-3206"
+          role="gridcell"
         >
           <span
             key="item-type"
