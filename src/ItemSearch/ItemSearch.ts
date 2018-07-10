@@ -261,8 +261,7 @@ export class ItemSearch {
           filter.filterOptions,
           filter.code,
           searchApi.interactionTypes === undefined ||
-          searchApi.interactionTypes.length < 1 ||
-          searchApi.interactionTypes === undefined
+          searchApi.interactionTypes.length < 1
             ? defaultOptionKeys
             : searchApi.interactionTypes
         );
