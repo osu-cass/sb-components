@@ -253,7 +253,9 @@ export class ItemSearch {
         options = this.searchOptionToFilterClaim(
           filter.filterOptions,
           filter.code,
-          searchApi.claims
+          searchApi.claims === undefined || searchApi.claims.length < 1
+            ? defaultOptionKeys
+            : searchApi.claims
         );
         break;
       case FilterType.InteractionType:
@@ -261,8 +263,7 @@ export class ItemSearch {
           filter.filterOptions,
           filter.code,
           searchApi.interactionTypes === undefined ||
-          searchApi.interactionTypes.length < 1 ||
-          searchApi.interactionTypes === undefined
+          searchApi.interactionTypes.length < 1
             ? defaultOptionKeys
             : searchApi.interactionTypes
         );
@@ -306,7 +307,9 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          techTypesCodes.length < 1 ? defaultOptionKeys : techTypesCodes
+          techTypesCodes === undefined || techTypesCodes.length < 1
+            ? defaultOptionKeys
+            : techTypesCodes
         );
         break;
       case FilterType.Calculator:
@@ -314,7 +317,9 @@ export class ItemSearch {
         options = this.searchOptionFilterString(
           filter.filterOptions,
           filter.code,
-          flagCodes.length < 1 ? defaultOptionKeys : flagCodes
+          flagCodes === undefined || flagCodes.length < 1
+            ? defaultOptionKeys
+            : flagCodes
         );
         break;
       default:
