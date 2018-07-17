@@ -109,10 +109,6 @@ export class ItemAccessibilityModal extends React.Component<
   };
 
   handleShowModal = () => {
-    if (!this.state.showModal) {
-      ga("send", "event", "button", "OpenAccessibility");
-    }
-
     this.setState({ showModal: true });
   };
 
