@@ -209,17 +209,20 @@ export const targets: TargetModel[] = [
   {
     name: "ELA1",
     nameHash: 21,
-    idLabel: "21"
+    idLabel: "21",
+    id: "21"
   },
   {
     name: "MATH1",
     nameHash: 11,
-    idLabel: "11"
+    idLabel: "11",
+    id: "11"
   },
   {
     name: "MATH2",
     nameHash: 12,
-    idLabel: "12"
+    idLabel: "12",
+    id: "12"
   }
 ];
 
@@ -233,7 +236,17 @@ export const interactionTypes: InteractionTypeModel[] = [
     label: "ELA1"
   }
 ];
-
+export const mockSeachAPI: SearchAPIParamsModel = {
+  itemId: "item1",
+  // tslint:disable-next-line:no-bitwise
+  gradeLevels: GradeLevels.Grade3 | GradeLevels.Grade4,
+  subjects: ["t1", "t2"],
+  claims: ["t1", "t2"],
+  interactionTypes: ["t1", "t2"],
+  performanceOnly: true,
+  catOnly: true,
+  targets: ["A", "B"]
+};
 export const searchModel: ItemsSearchModel = {
   interactionTypes,
   claims,

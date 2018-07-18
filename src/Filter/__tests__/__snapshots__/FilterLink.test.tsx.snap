@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filter link test 1`] = `
+<Component
+  filterId="sb-filter-id"
+>
+  <a
+    className=" filter-jump-link btn btn-gray"
+    onClick={[Function]}
+    role="button"
+  >
+    <span
+      className="fa fa-filter"
+    />
+    Jump to Filter
+  </a>
+</Component>
+`;
