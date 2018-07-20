@@ -11,6 +11,7 @@ import {
   ItemRevisionModel,
   itemRevisionKey,
   getItemBankName,
+  concatNamespaceWith,
   RevisionModel,
   RubricModal,
   SelectOptionProps,
@@ -111,7 +112,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
 
         return {
           key: itemKey,
-          label: getItemBankName(op) || "",
+          label: concatNamespaceWith(getItemBankName(op), op) || "",
           value: itemKey,
           selected: selectedKey === itemKey
         };

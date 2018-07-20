@@ -1,6 +1,7 @@
 import {
   AccessibilityRevisionModel,
   ItemRevisionModel,
+  NamespaceModel,
   SectionModel,
   AccResourceGroupModel,
   AboutItemRevisionModel,
@@ -11,6 +12,7 @@ import {
   allAccessibilityResourceGroups,
   aboutItemRevisionMockModel,
   mockRevisions,
+  namespaceMocks,
   sectionMocks
 } from "@mocks/index";
 
@@ -37,6 +39,10 @@ export const mockBankAboutItemClient: (
 export const mockBankRevisionsClient: (
   item: ItemRevisionModel
 ) => Promise<RevisionModel[]> = jest.fn(item => mockRevisions);
+
+export const mockBankNamespacesClient: () => Promise<
+  NamespaceModel[]
+> = jest.fn(item => namespaceMocks);
 
 export const mockBankSectionsClient: () => Promise<SectionModel[]> = jest.fn(
   item => sectionMocks
