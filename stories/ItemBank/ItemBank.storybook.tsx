@@ -13,6 +13,7 @@ import {
   mockBankAboutItemClient,
   mockBankAccessibilityClient,
   mockBankRevisionsClient,
+  mockBankNamespacesClient,
   mockBankSectionsClient,
   itemRevisionMocks,
   mockBankAboutItemClientFail,
@@ -30,6 +31,7 @@ storiesOf("Item Bank", module)
           aboutItemRevisionClient={mockBankAboutItemClient}
           revisionsClient={mockBankRevisionsClient}
           itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
+          namespacesClient={mockBankNamespacesClient}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
           setUrl={item => ""}
@@ -46,6 +48,7 @@ storiesOf("Item Bank", module)
           aboutItemRevisionClient={mockBankAboutItemClientFail}
           revisionsClient={mockBankRevisionsClientFail}
           itemViewUrl=""
+          namespacesClient={mockBankNamespacesClient}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocksError}
           setUrl={item => ""}

@@ -2,6 +2,7 @@ import * as React from "react";
 import {
   ItemRevisionModel,
   itemRevisionKey,
+  NamespaceModel,
   SectionModel,
   SelectOptionProps,
   SelectOption,
@@ -11,6 +12,7 @@ import {
 
 export interface ItemEntryTableProps {
   itemRows: ItemRevisionModel[];
+  namespaces: NamespaceModel[];
   sections: SectionModel[];
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
 }
@@ -30,6 +32,7 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
     return (
       <thead>
         <tr>
+          <th scope="col">Namespace</th>
           <th scope="col">Bank</th>
           <th scope="col">Item</th>
           <th scope="col">Section</th>
@@ -43,6 +46,7 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
       <ItemEntryRow
         row={row}
         onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
+        namespaces={this.props.namespaces}
         sections={this.props.sections}
         key={idx}
       />
