@@ -37,7 +37,7 @@ export function concatNamespaceWith(
 ): string | undefined {
   let value: string | undefined;
   if (itemRevisionModel.namespace) {
-    value = `${itemRevisionModel.namespace}:` + source;
+    value = `${itemRevisionModel.namespace}:${source}`;
   }
 
   return value;
