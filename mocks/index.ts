@@ -36,6 +36,7 @@ export {
   mockBankRevisionsClient,
   mockBankSectionsClient,
   itemRevisionMocks,
+  namespaceMocks,
   sectionMocks
 } from "./ItemBank/mocks";
 

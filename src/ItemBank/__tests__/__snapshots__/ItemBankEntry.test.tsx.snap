@@ -37,6 +37,16 @@ exports[`ItemBankEntry matches snapshot 1`] = `
           },
         ]
       }
+      namespaces={
+        Array [
+          Object {
+            "bankKey": 0,
+            "hasBankKey": true,
+            "id": "12",
+            "name": "itemreviewviewer",
+          },
+        ]
+      }
       onItemsUpdate={[Function]}
       sections={
         Array [

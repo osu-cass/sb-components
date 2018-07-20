@@ -144,26 +144,26 @@ exports[`Storyshots Item Bank default 1`] = `
                     <option
                       aria-selected={true}
                       disabled={undefined}
-                      label="187-1111"
+                      label="itemreviewviewer:187-1111"
                       value="187-1111-siw"
                     >
-                      187-1111
+                      itemreviewviewer:187-1111
                     </option>
                     <option
                       aria-selected={false}
                       disabled={undefined}
-                      label="1872-2222"
+                      label="itemreviewviewer:1872-2222"
                       value="1872-2222-math"
                     >
-                      1872-2222
+                      itemreviewviewer:1872-2222
                     </option>
                     <option
                       aria-selected={false}
                       disabled={undefined}
-                      label="1871-3333"
+                      label="itemreviewviewer:1871-3333"
                       value="1871-3333-siw"
                     >
-                      1871-3333
+                      itemreviewviewer:1871-3333
                     </option>
                     <option
                       aria-selected={false}
@@ -414,18 +414,18 @@ exports[`Storyshots Item Bank default error client 1`] = `
                     <option
                       aria-selected={true}
                       disabled={undefined}
-                      label="187-1111"
+                      label="itemreviewviewer:187-1111"
                       value="187-1111-siw"
                     >
-                      187-1111
+                      itemreviewviewer:187-1111
                     </option>
                     <option
                       aria-selected={false}
                       disabled={undefined}
-                      label="1872-2222"
+                      label="itemreviewviewer:1872-2222"
                       value="1872-2222-math"
                     >
-                      1872-2222
+                      itemreviewviewer:1872-2222
                     </option>
                     <option
                       aria-selected={false}

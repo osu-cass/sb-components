@@ -8,6 +8,8 @@ import {
 export interface ItemRevisionModel {
   itemKey?: number;
   bankKey?: number;
+  hasBankKey?: boolean;
+  namespace?: string;
   section?: string;
   revision?: string;
   isaap?: string;
@@ -19,7 +21,23 @@ export function getItemBankName(
 ): string | undefined {
   let value: string | undefined;
   if (itemRevisionModel.bankKey && itemRevisionModel.itemKey) {
-    value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
+    if (itemRevisionModel.hasBankKey) {
+      value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
+    } else {
+      value = `${itemRevisionModel.itemKey}`;
+    }
+  }
+
+  return value;
+}
+
+export function concatNamespaceWith(
+  source: string | undefined,
+  itemRevisionModel: ItemRevisionModel
+): string | undefined {
+  let value: string | undefined;
+  if (itemRevisionModel.namespace) {
+    value = `${itemRevisionModel.namespace}:` + source;
   }
 
   return value;
@@ -35,6 +53,7 @@ export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
   let value = false;
   if (
     itemRevisionModel &&
+    itemRevisionModel.namespace &&
     itemRevisionModel.itemKey &&
     itemRevisionModel.bankKey &&
     itemRevisionModel.section
@@ -86,6 +105,13 @@ export function getPreviousItemBank(
   }
 
   return previousItem;
+}
+
+export interface NamespaceModel {
+  id: string;
+  name: string;
+  hasBankKey: boolean;
+  bankKey: number;
 }
 
 export interface SectionModel {

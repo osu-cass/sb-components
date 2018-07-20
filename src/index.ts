@@ -136,7 +136,9 @@ export {
   AccessibilityRevisionModel,
   itemRevisionKey,
   SectionModel,
+  NamespaceModel,
   getItemBankName,
+  concatNamespaceWith,
   getPreviousItemBank,
   getNextItemBank,
   getItemBankIndex
