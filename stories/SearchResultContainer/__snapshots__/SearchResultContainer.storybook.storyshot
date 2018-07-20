@@ -187,6 +187,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
             >
               <td
                 className="item"
+                role="gridcell"
               >
                 <span>
                   <a
@@ -199,6 +200,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="subject"
+                role="gridcell"
               >
                 <span>
                   <span
@@ -210,6 +212,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="grade"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -219,6 +222,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="claimAndTarget"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -256,6 +260,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="item-type"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -271,6 +276,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
             >
               <td
                 className="item"
+                role="gridcell"
               >
                 <span>
                   <a
@@ -283,6 +289,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="subject"
+                role="gridcell"
               >
                 <span>
                   <span
@@ -294,6 +301,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="grade"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -303,6 +311,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="claimAndTarget"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -340,6 +349,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="item-type"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -355,6 +365,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
             >
               <td
                 className="item"
+                role="gridcell"
               >
                 <span>
                   <a
@@ -367,6 +378,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="subject"
+                role="gridcell"
               >
                 <span>
                   <span
@@ -378,6 +390,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="grade"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -387,6 +400,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="claimAndTarget"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -424,6 +438,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="item-type"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -439,6 +454,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
             >
               <td
                 className="item"
+                role="gridcell"
               >
                 <span>
                   <a
@@ -451,6 +467,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="subject"
+                role="gridcell"
               >
                 <span>
                   <span
@@ -462,6 +479,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="grade"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -471,6 +489,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="claimAndTarget"
+                role="gridcell"
               >
                 <span>
                   <span>
@@ -508,6 +527,7 @@ exports[`Storyshots Search Result Container normal render 1`] = `
               </td>
               <td
                 className="item-type"
+                role="gridcell"
               >
                 <span>
                   <span>

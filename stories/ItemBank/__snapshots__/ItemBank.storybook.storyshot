@@ -12,10 +12,12 @@ exports[`Storyshots Item Bank default 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -282,10 +284,12 @@ exports[`Storyshots Item Bank default error client 1`] = `
       id="skip-main"
     >
       <a
+        aria-current={false}
         className="skip-link"
-        onKeyDown={[Function]}
-        role="link"
-        tabIndex={0}
+        href="/BrowseItems"
+        onClick={[Function]}
+        onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>

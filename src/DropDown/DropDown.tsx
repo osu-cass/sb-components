@@ -48,17 +48,22 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
     const classes = "accessibility-dropdown form-group ".concat(
       this.props.disabled ? "selection-disabled" : "selection-enabled"
     );
-    const options = this.props.selections.map(this.renderOption);
+    const options = this.props.disabled
+      ? []
+      : this.props.selections.map(this.renderOption);
+    const disableClass = this.props.disabled ? "disabled" : "";
+    const ariaLabel = this.props.disabled
+      ? `${this.props.label} unavailable`
+      : "";
 
     return (
       <div className={classes}>
         <label htmlFor={this.props.resourceCode}> {this.props.label}</label>
         <br />
         <select
-          className="form-control"
+          className={`form-control ${disableClass}`}
           id={this.props.resourceCode}
-          disabled={this.props.disabled}
-          aria-hidden={this.props.disabled}
+          aria-label={ariaLabel}
           onChange={this.onChange}
           value={this.props.selectionCode}
         >
