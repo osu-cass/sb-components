@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ToolTip } from "@src/ToolTip/ToolTip";
 import { DropDownSelectionModel } from "./DropDownModels";
 
 export interface DropdownProps {
@@ -58,12 +59,15 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
       : "";
     let dropDownRendered;
     if (this.props.infoTag) {
+      const helpText = <p> {this.props.infoTag} </p>;
       dropDownRendered = (
         <div className={classes}>
-          <label htmlFor={this.props.resourceCode}>
-            {" "}
-            {this.props.label} <span className="fa fa-info-circle" />
-          </label>
+          <ToolTip helpText={helpText} displayIcon={true} position="top">
+            <label htmlFor={this.props.resourceCode}>
+              {" "}
+              {this.props.label}{" "}
+            </label>
+          </ToolTip>
           <br />
           <select
             className={`form-control ${disableClass}`}
