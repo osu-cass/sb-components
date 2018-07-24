@@ -9,6 +9,7 @@ export interface DropdownProps {
   updateSelection(selectionCode: string, resourceCode: string): void;
   defaultSelection: string;
   resourceCode: string;
+  infoTag?: string;
 }
 
 export class Dropdown extends React.Component<DropdownProps, {}> {
@@ -55,21 +56,44 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
     const ariaLabel = this.props.disabled
       ? `${this.props.label} unavailable`
       : "";
+    let dropDownRendered;
+    if (this.props.infoTag) {
+      dropDownRendered = (
+        <div className={classes}>
+          <label htmlFor={this.props.resourceCode}>
+            {" "}
+            {this.props.label} <span className="fa fa-info-circle" />
+          </label>
+          <br />
+          <select
+            className={`form-control ${disableClass}`}
+            id={this.props.resourceCode}
+            aria-label={ariaLabel}
+            onChange={this.onChange}
+            value={this.props.selectionCode}
+          >
+            {options}
+          </select>
+        </div>
+      );
+    } else {
+      dropDownRendered = (
+        <div className={classes}>
+          <label htmlFor={this.props.resourceCode}> {this.props.label}</label>
+          <br />
+          <select
+            className={`form-control ${disableClass}`}
+            id={this.props.resourceCode}
+            aria-label={ariaLabel}
+            onChange={this.onChange}
+            value={this.props.selectionCode}
+          >
+            {options}
+          </select>
+        </div>
+      );
+    }
 
-    return (
-      <div className={classes}>
-        <label htmlFor={this.props.resourceCode}> {this.props.label}</label>
-        <br />
-        <select
-          className={`form-control ${disableClass}`}
-          id={this.props.resourceCode}
-          aria-label={ariaLabel}
-          onChange={this.onChange}
-          value={this.props.selectionCode}
-        >
-          {options}
-        </select>
-      </div>
-    );
+    return dropDownRendered;
   }
 }

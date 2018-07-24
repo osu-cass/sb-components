@@ -5,7 +5,8 @@ import {
   accessibilityModalProp,
   mockAccResourceGroups,
   allAccessibilityResourceGroups,
-  accessibilityManyOptionsMock
+  accessibilityManyOptionsMock,
+  accessibilityManyOptionsInfoMock
 } from "@mocks/Accessibility/mocks";
 import { centerDecorator } from "../CenterDecorator";
 import { ItemAccessibilityModal } from "@src/index";
@@ -37,5 +38,12 @@ storiesOf("Accessibility Modal", module)
       {...accessibilityModalProp}
       showModal={true}
       accResourceGroups={accessibilityManyOptionsMock}
+    />
+  ))
+  .add("Many options showing with one info tag", () => (
+    <ItemAccessibilityModal
+      {...accessibilityModalProp}
+      showModal={true}
+      accResourceGroups={accessibilityManyOptionsInfoMock}
     />
   ));

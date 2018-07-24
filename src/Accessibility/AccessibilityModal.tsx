@@ -120,17 +120,27 @@ export class ItemAccessibilityModal extends React.Component<
     this.setState({ showModal: false });
   };
 
-  renderResourceType(resourceType: string) {
+  renderResourceType(resourceType: string, infoTag?: string) {
     let resources = this.props.accResourceGroups.filter(
       group => group.label === resourceType
     )[0].accessibilityResources;
-    const resourceTypeHeader = (
-      <h4 className="green-title">
-        <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
-        {resourceType}
-      </h4>
-    );
-
+    let resourceTypeHeader;
+    if (infoTag) {
+      resourceTypeHeader = (
+        <h4 className="green-title">
+          <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
+          {resourceType}
+          <span className="fa fa-info-circle" />
+        </h4>
+      );
+    } else {
+      resourceTypeHeader = (
+        <h4 className="green-title">
+          <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
+          {resourceType}
+        </h4>
+      );
+    }
     const resCount = resources.length;
     const isExpanded = (this.state.resourceTypeExpanded || {})[resourceType];
     if (!isExpanded) {
@@ -149,7 +159,8 @@ export class ItemAccessibilityModal extends React.Component<
         selectionCode: selectedCode,
         disabled: res.disabled,
         updateSelection: this.updateSelection,
-        resourceCode: res.resourceCode
+        resourceCode: res.resourceCode,
+        infoTag: res.infoTag
       };
 
       return <Dropdown {...ddProps} key={res.resourceCode} />;
