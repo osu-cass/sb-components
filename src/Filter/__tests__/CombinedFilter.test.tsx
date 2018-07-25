@@ -1,5 +1,6 @@
 import "jsdom-global/register";
 import * as React from "react";
+import * as CombinedFilterHelpers from "../CombinedFilterHelpers";
 import { shallow, mount } from "enzyme";
 import {
   mockBasicFilterCategories,
@@ -10,9 +11,11 @@ import {
   AdvancedFilterContainer,
   BasicFilterContainer,
   CombinedFilter,
+  CombinedFilterProps,
   AdvancedFilterCategoryModel,
   BasicFilterCategoryModel
 } from "@src/index";
+import { mockSeachAPI } from "./Mocks";
 
 describe("FilterContainer", () => {
   const onFilterUpdated = jest.fn(
@@ -37,7 +40,15 @@ describe("FilterContainer", () => {
   it("renders", () => {
     expect(wrapper).toMatchSnapshot();
   });
-
+  it("filter updates", () => {
+    expect(
+      onFilterUpdated(
+        mockSeachAPI,
+        mockBasicFilterCategories,
+        mockAdvancedFilterCategoriesAll
+      )
+    ).toMatchSnapshot();
+  });
   it("toggles the advanced filter", () => {
     expect(wrapper).toMatchSnapshot();
 

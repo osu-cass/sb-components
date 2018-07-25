@@ -16,6 +16,7 @@ const gradeLevelNA: GradeLevels = GradeLevels.NA;
 const gradeLevelElementary: GradeLevels = GradeLevels.Elementary;
 const gradeLevelMiddle: GradeLevels = GradeLevels.Middle;
 const gradeLevelHigh: GradeLevels = GradeLevels.High;
+const gradeLevelAll: GradeLevels = GradeLevels.All;
 
 it("Check if grade level to string return correct value", () => {
   const value = GradeLevel.gradeCaseToString(gradeLevel3);
@@ -85,4 +86,78 @@ it("Check if grade level to string return correct value", () => {
 it("Check if grade level to string return correct value", () => {
   const value = GradeLevel.gradeCaseToString(gradeLevelHigh);
   expect(value).toEqual("High School");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel3);
+  expect(value).toEqual("G3");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel4);
+  expect(value).toEqual("G4");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel5);
+  expect(value).toEqual("G5");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel6);
+  expect(value).toEqual("G6");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel7);
+  expect(value).toEqual("G7");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel8);
+  expect(value).toEqual("G8");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel9);
+  expect(value).toEqual("G9");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel10);
+  expect(value).toEqual("G10");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel11);
+  expect(value).toEqual("G11");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevel12);
+  expect(value).toEqual("G12");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevelNA);
+  expect(value).toEqual("NA");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevelElementary);
+  expect(value).toEqual("E");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevelMiddle);
+  expect(value).toEqual("M");
+});
+
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToShortString(gradeLevelHigh);
+  expect(value).toEqual("HS");
+});
+it("Check if grade level to string return correct value", () => {
+  const value = GradeLevel.gradeCaseToString(gradeLevelAll);
+  expect(value).toEqual("All Grades");
 });
