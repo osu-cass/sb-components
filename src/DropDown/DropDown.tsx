@@ -57,47 +57,31 @@ export class Dropdown extends React.Component<DropdownProps, {}> {
     const ariaLabel = this.props.disabled
       ? `${this.props.label} unavailable`
       : "";
-    let dropDownRendered;
-    if (this.props.infoTag) {
-      const helpText = <p> {this.props.infoTag} </p>;
-      dropDownRendered = (
-        <div className={classes}>
+    const helpText = <p> {this.props.infoTag} </p>;
+
+    return (
+      <div className={classes}>
+        {this.props.infoTag ? (
           <ToolTip helpText={helpText} displayIcon={true} position="top">
             <label htmlFor={this.props.resourceCode}>
               {" "}
               {this.props.label}{" "}
             </label>
           </ToolTip>
-          <br />
-          <select
-            className={`form-control ${disableClass}`}
-            id={this.props.resourceCode}
-            aria-label={ariaLabel}
-            onChange={this.onChange}
-            value={this.props.selectionCode}
-          >
-            {options}
-          </select>
-        </div>
-      );
-    } else {
-      dropDownRendered = (
-        <div className={classes}>
-          <label htmlFor={this.props.resourceCode}> {this.props.label}</label>
-          <br />
-          <select
-            className={`form-control ${disableClass}`}
-            id={this.props.resourceCode}
-            aria-label={ariaLabel}
-            onChange={this.onChange}
-            value={this.props.selectionCode}
-          >
-            {options}
-          </select>
-        </div>
-      );
-    }
-
-    return dropDownRendered;
+        ) : (
+          <label htmlFor={this.props.resourceCode}> {this.props.label} </label>
+        )}
+        <br />
+        <select
+          className={`form-control ${disableClass}`}
+          id={this.props.resourceCode}
+          aria-label={ariaLabel}
+          onChange={this.onChange}
+          value={this.props.selectionCode}
+        >
+          {options}
+        </select>
+      </div>
+    );
   }
 }

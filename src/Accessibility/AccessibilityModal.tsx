@@ -125,22 +125,13 @@ export class ItemAccessibilityModal extends React.Component<
       group => group.label === resourceType
     )[0].accessibilityResources;
     let resourceTypeHeader;
-    if (infoTag) {
-      resourceTypeHeader = (
-        <h4 className="green-title">
-          <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
-          {resourceType}
-          <span className="fa fa-info-circle" />
-        </h4>
-      );
-    } else {
-      resourceTypeHeader = (
-        <h4 className="green-title">
-          <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
-          {resourceType}
-        </h4>
-      );
-    }
+    resourceTypeHeader = (
+      <h4 className="green-title">
+        <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
+        {resourceType}
+        <span className="fa fa-info-circle" />
+      </h4>
+    );
     const resCount = resources.length;
     const isExpanded = (this.state.resourceTypeExpanded || {})[resourceType];
     if (!isExpanded) {
