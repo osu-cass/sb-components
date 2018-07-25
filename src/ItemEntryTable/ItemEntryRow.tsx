@@ -1,6 +1,7 @@
 import * as React from "react";
 import {
   ItemRevisionModel,
+  NamespaceModel,
   SectionModel,
   validItemRevisionModel,
   SelectOptionProps,
@@ -10,6 +11,7 @@ import {
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
   row: ItemRevisionModel;
+  namespaces: NamespaceModel[];
   sections: SectionModel[];
 }
 
@@ -59,6 +61,22 @@ export class ItemEntryRow extends React.Component<
     this.setState({ editRow: { ...editRow, bankKey }, isModified: true });
   };
 
+  handleNamespace = (namespace: string) => {
+    const { editRow } = this.state;
+    const namespaceModel = this.props.namespaces.filter(
+      s => s.name === namespace
+    )[0];
+    const hasBankKey = namespaceModel.hasBankKey;
+    const bankKey = namespaceModel.bankKey;
+    this.setState(
+      {
+        editRow: { ...editRow, namespace, hasBankKey, bankKey },
+        isModified: true
+      },
+      this.handleRowUpdate
+    );
+  };
+
   handleSection = (section: string) => {
     const { editRow } = this.state;
     this.setState(
@@ -67,7 +85,31 @@ export class ItemEntryRow extends React.Component<
     );
   };
 
-  renderRowNumberInput(
+  renderRowBankKeyInput(
+    row: ItemRevisionModel,
+    onChange: (value: number) => void,
+    rowValue?: number
+  ) {
+    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
+
+    return (
+      <td>
+        <input
+          className={`form-control ${error}`}
+          aria-valuenow={rowValue || undefined}
+          aria-valuemin={0}
+          aria-valuemax={100000}
+          type="number"
+          value={row.hasBankKey ? rowValue || "" : ""}
+          onChange={event => onChange(+event.target.value)}
+          onBlur={this.handleRowUpdate}
+          disabled={!row.hasBankKey}
+        />
+      </td>
+    );
+  }
+
+  renderRowItemKeyInput(
     row: ItemRevisionModel,
     onChange: (value: number) => void,
     rowValue?: number
@@ -85,6 +127,39 @@ export class ItemEntryRow extends React.Component<
           value={rowValue || ""}
           onChange={event => onChange(+event.target.value)}
           onBlur={this.handleRowUpdate}
+        />
+      </td>
+    );
+  }
+
+  renderRowNamespace(row: ItemRevisionModel) {
+    const options: SelectOptionProps[] = this.props.namespaces.map(op => {
+      return {
+        label: op.name,
+        value: op.name,
+        selected: op.name === row.namespace
+      };
+    });
+
+    options.unshift({
+      label: "Select a Namespace",
+      value: "N/A",
+      disabled: true,
+      selected: row.namespace === "N/A"
+    });
+
+    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
+
+    return (
+      <td>
+        <Select
+          className={`form-control ${error}`}
+          label="Namespaces"
+          labelClass="display-none"
+          selected={row.namespace || "N/A"}
+          options={options}
+          onChange={this.handleNamespace}
+          wrapperClass="section-dd"
         />
       </td>
     );
@@ -128,12 +203,13 @@ export class ItemEntryRow extends React.Component<
 
     return (
       <tr>
-        {this.renderRowNumberInput(
+        {this.renderRowNamespace(editRow)}
+        {this.renderRowBankKeyInput(
           editRow,
           this.handleItemBank,
           editRow.bankKey
         )}
-        {this.renderRowNumberInput(
+        {this.renderRowItemKeyInput(
           editRow,
           this.handleItemKey,
           editRow.itemKey

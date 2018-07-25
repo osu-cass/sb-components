@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`FilterContainer filter updates 1`] = `undefined`;
+
 exports[`FilterContainer renders 1`] = `
 <CombinedFilter
   advancedFilter={
@@ -875,7 +877,244 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "catOnly": true,
+            "claims": Array [
+              "t1",
+              "t2",
+            ],
+            "gradeLevels": 3,
+            "interactionTypes": Array [
+              "t1",
+              "t2",
+            ],
+            "itemId": "item1",
+            "performanceOnly": true,
+            "subjects": Array [
+              "t1",
+              "t2",
+            ],
+            "targets": Array [
+              "A",
+              "B",
+            ],
+          },
+          Array [
+            Object {
+              "code": "Grade",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "7",
+                  "label": "Grades 3-5",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "56",
+                  "label": "Grades 6-8",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "960",
+                  "label": "High School",
+                },
+              ],
+              "label": "Grade",
+              "optionType": 3,
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "ELA",
+                  "label": "English Literacy/ Arts",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Math",
+                  "label": "Mathematics",
+                },
+              ],
+              "label": "Subjects",
+              "optionType": 2,
+            },
+            Object {
+              "code": "TechnologyType",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+              ],
+              "label": "TechType",
+              "optionType": 4,
+            },
+          ],
+          Array [
+            Object {
+              "code": "Grade",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "7",
+                  "label": "Grades 3-5",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "56",
+                  "label": "Grades 6-8",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "960",
+                  "label": "High School",
+                },
+              ],
+              "helpText": "Grade Help",
+              "isMultiSelect": false,
+              "label": "Grade",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "EL&A",
+                  "label": "English Literacy & Arts",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Mth",
+                  "label": "Maths",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": true,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Eng",
+                  "label": "English",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Chem",
+                  "label": "Chemistry",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": false,
+              "label": "Disabled",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": true,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Read",
+                  "label": "Reading",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Hist",
+                  "label": "History",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Disabled Multi",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "USh",
+                  "label": "US History",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Wh",
+                  "label": "World History",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi All",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Calc",
+                  "label": "Calculus",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Geom",
+                  "label": "Geometry",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi All Disabled",
+            },
+          ],
+        ],
+      ],
+    }
+  }
   searchAPI={Object {}}
 >
   <div
@@ -1536,7 +1775,244 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "catOnly": true,
+            "claims": Array [
+              "t1",
+              "t2",
+            ],
+            "gradeLevels": 3,
+            "interactionTypes": Array [
+              "t1",
+              "t2",
+            ],
+            "itemId": "item1",
+            "performanceOnly": true,
+            "subjects": Array [
+              "t1",
+              "t2",
+            ],
+            "targets": Array [
+              "A",
+              "B",
+            ],
+          },
+          Array [
+            Object {
+              "code": "Grade",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "7",
+                  "label": "Grades 3-5",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "56",
+                  "label": "Grades 6-8",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "960",
+                  "label": "High School",
+                },
+              ],
+              "label": "Grade",
+              "optionType": 3,
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "ELA",
+                  "label": "English Literacy/ Arts",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Math",
+                  "label": "Mathematics",
+                },
+              ],
+              "label": "Subjects",
+              "optionType": 2,
+            },
+            Object {
+              "code": "TechnologyType",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+              ],
+              "label": "TechType",
+              "optionType": 4,
+            },
+          ],
+          Array [
+            Object {
+              "code": "Grade",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "7",
+                  "label": "Grades 3-5",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "56",
+                  "label": "Grades 6-8",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "960",
+                  "label": "High School",
+                },
+              ],
+              "helpText": "Grade Help",
+              "isMultiSelect": false,
+              "label": "Grade",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "EL&A",
+                  "label": "English Literacy & Arts",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Mth",
+                  "label": "Maths",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": true,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Eng",
+                  "label": "English",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Chem",
+                  "label": "Chemistry",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": false,
+              "label": "Disabled",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": true,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Read",
+                  "label": "Reading",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Hist",
+                  "label": "History",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Disabled Multi",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "USh",
+                  "label": "US History",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Wh",
+                  "label": "World History",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi All",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Calc",
+                  "label": "Calculus",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Geom",
+                  "label": "Geometry",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi All Disabled",
+            },
+          ],
+        ],
+      ],
+    }
+  }
   searchAPI={Object {}}
 >
   <div
@@ -3035,7 +3511,244 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
       },
     ]
   }
-  onFilterUpdated={[MockFunction]}
+  onFilterUpdated={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "catOnly": true,
+            "claims": Array [
+              "t1",
+              "t2",
+            ],
+            "gradeLevels": 3,
+            "interactionTypes": Array [
+              "t1",
+              "t2",
+            ],
+            "itemId": "item1",
+            "performanceOnly": true,
+            "subjects": Array [
+              "t1",
+              "t2",
+            ],
+            "targets": Array [
+              "A",
+              "B",
+            ],
+          },
+          Array [
+            Object {
+              "code": "Grade",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "7",
+                  "label": "Grades 3-5",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "56",
+                  "label": "Grades 6-8",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "960",
+                  "label": "High School",
+                },
+              ],
+              "label": "Grade",
+              "optionType": 3,
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "ELA",
+                  "label": "English Literacy/ Arts",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Math",
+                  "label": "Mathematics",
+                },
+              ],
+              "label": "Subjects",
+              "optionType": 2,
+            },
+            Object {
+              "code": "TechnologyType",
+              "disabled": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech2",
+                  "label": "tech2",
+                },
+                Object {
+                  "filterType": "TechnologyType",
+                  "isSelected": false,
+                  "key": "tech1",
+                  "label": "tech1",
+                },
+              ],
+              "label": "TechType",
+              "optionType": 4,
+            },
+          ],
+          Array [
+            Object {
+              "code": "Grade",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "7",
+                  "label": "Grades 3-5",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "56",
+                  "label": "Grades 6-8",
+                },
+                Object {
+                  "filterType": "Grade",
+                  "isSelected": false,
+                  "key": "960",
+                  "label": "High School",
+                },
+              ],
+              "helpText": "Grade Help",
+              "isMultiSelect": false,
+              "label": "Grade",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "EL&A",
+                  "label": "English Literacy & Arts",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Mth",
+                  "label": "Maths",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": true,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Eng",
+                  "label": "English",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Chem",
+                  "label": "Chemistry",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": false,
+              "label": "Disabled",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": true,
+              "displayAllButton": false,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Read",
+                  "label": "Reading",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Hist",
+                  "label": "History",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Disabled Multi",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "USh",
+                  "label": "US History",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Wh",
+                  "label": "World History",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi All",
+            },
+            Object {
+              "code": "Subject",
+              "disabled": false,
+              "displayAllButton": true,
+              "filterOptions": Array [
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Calc",
+                  "label": "Calculus",
+                },
+                Object {
+                  "filterType": "Subject",
+                  "isSelected": false,
+                  "key": "Geom",
+                  "label": "Geometry",
+                },
+              ],
+              "helpText": "Subject Help",
+              "isMultiSelect": true,
+              "label": "Multi All Disabled",
+            },
+          ],
+        ],
+      ],
+    }
+  }
   searchAPI={Object {}}
 >
   <div

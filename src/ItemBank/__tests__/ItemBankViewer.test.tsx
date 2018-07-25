@@ -17,12 +17,14 @@ import {
 
 const onAccessibilityReset = jest.fn();
 const onAccessibilityUpdate = jest.fn();
+const onDirectionSelect = jest.fn();
 const onItemSelect = jest.fn();
 const onRevisionSelect = jest.fn();
 
 const defaultProps: ItemBankViewerProps = {
   onAccessibilityReset,
   onAccessibilityUpdate,
+  onDirectionSelect,
   onItemSelect,
   onRevisionSelect
 };

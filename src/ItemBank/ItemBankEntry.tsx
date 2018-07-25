@@ -2,6 +2,7 @@ import * as React from "react";
 import {
   Accordion,
   ItemRevisionModel,
+  NamespaceModel,
   SectionModel,
   ItemEntryTable,
   CsvEntry
@@ -9,6 +10,7 @@ import {
 
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;
+  namespaces: NamespaceModel[];
   sections: SectionModel[];
   items: ItemRevisionModel[];
 }
@@ -66,7 +68,7 @@ export class ItemBankEntry extends React.Component<
   }
 
   renderTableEntry() {
-    const { items, updateItems, sections } = this.props;
+    const { items, updateItems, namespaces, sections } = this.props;
 
     return (
       <Accordion
@@ -77,6 +79,7 @@ export class ItemBankEntry extends React.Component<
         <ItemEntryTable
           itemRows={items}
           onItemsUpdate={updateItems}
+          namespaces={namespaces}
           sections={sections}
         />
       </Accordion>
