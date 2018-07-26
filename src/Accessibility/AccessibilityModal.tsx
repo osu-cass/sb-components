@@ -120,8 +120,7 @@ export class ItemAccessibilityModal extends React.Component<
     let resources = this.props.accResourceGroups.filter(
       group => group.label === resourceType
     )[0].accessibilityResources;
-    let resourceTypeHeader;
-    resourceTypeHeader = (
+    const resourceTypeHeader = (
       <h4 className="green-title">
         <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
         {resourceType}
