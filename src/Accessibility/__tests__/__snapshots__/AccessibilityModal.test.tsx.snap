@@ -83,6 +83,9 @@ exports[`AccessibilityModal accessibility open 1`] = `
                   />
                    
                   Universal Tools
+                  <span
+                    className="fa fa-info-circle"
+                  />
                 </h4>
               </div>
               <div
@@ -269,6 +272,9 @@ exports[`AccessibilityModal defualt render 1`] = `
                   />
                    
                   Universal Tools
+                  <span
+                    className="fa fa-info-circle"
+                  />
                 </h4>
               </div>
               <div
@@ -330,6 +336,1585 @@ exports[`AccessibilityModal defualt render 1`] = `
                         "label": "English Glossary off",
                         "order": 2,
                         "selectionCode": "TDS_WL_0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Update options and reload item"
+          className="btn btn-sm btn-primary"
+          form="accessibility-form"
+          onClick={[Function]}
+        >
+           
+          Update
+        </button>
+        <button
+          aria-label="Reset all options to default and reload item"
+          className="btn btn-sm btn-primary"
+          onClick={[Function]}
+        >
+          Reset to Default
+        </button>
+        <button
+          aria-label="Cancel and undo changes"
+          className="btn btn-sm btn-primary"
+          onClick={[Function]}
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;
+
+exports[`AccessibilityModal with info tag showing renders correctly 1`] = `
+<div>
+  <button
+    aria-label="Open Accessibility Modal"
+    className="btn btn-primary"
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="fa fa-caret-square-o-down"
+    />
+    Accessibility
+  </button>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content accessibility-modal"
+    closeTimeoutMS={0}
+    contentLabel="Accessibility Modal"
+    isOpen={true}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        >
+          Accessibility Options
+        </h4>
+        <button
+          aria-label="Close accessibility options"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p>
+          <span>
+            Options displayed in grey are not available for this item.
+          </span>
+        </p>
+        <form
+          id="accessibility-form"
+          onSubmit={[Function]}
+        >
+          <div
+            className="accessibility-groups"
+          >
+            <div
+              className="accessibility-resource-type section section-light"
+              key="Universal Tools"
+            >
+              <div
+                className="accessibility-header"
+              >
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Universal Tools
+                  <span
+                    className="fa fa-info-circle"
+                  />
+                </h4>
+                <a
+                  aria-label="Display all Universal Tools options."
+                  className="expand-button"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-expand"
+                  />
+                   Show all
+                </a>
+              </div>
+              <div
+                className="accessibility-dropdowns"
+              >
+                <Dropdown
+                  defaultSelection="TDS_SCNotepad"
+                  disabled={false}
+                  infoTag="This is a test"
+                  key="DigitalNotepad"
+                  label="Digital Notepad"
+                  resourceCode="DigitalNotepad"
+                  selectionCode="TDS_SCNotepad"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad on",
+                        "order": 1,
+                        "selectionCode": "TDS_SCNotepad",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad off",
+                        "order": 2,
+                        "selectionCode": "TDS_SC0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_WL_Glossary"
+                  disabled={false}
+                  key="EnglishGlossary"
+                  label="English Glossary"
+                  resourceCode="EnglishGlossary"
+                  selectionCode="TDS_WL_Glossary"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary on",
+                        "order": 1,
+                        "selectionCode": "TDS_WL_Glossary",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary off",
+                        "order": 2,
+                        "selectionCode": "TDS_WL_0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Highlight1"
+                  disabled={false}
+                  key="Highlighter"
+                  label="Highlighter"
+                  resourceCode="Highlighter"
+                  selectionCode="TDS_Highlight1"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Highlight on",
+                        "order": 1,
+                        "selectionCode": "TDS_Highlight1",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Highlight off",
+                        "order": 2,
+                        "selectionCode": "TDS_Highlight0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Calc0"
+                  disabled={true}
+                  key="Calculator"
+                  label="Calculator"
+                  resourceCode="Calculator"
+                  selectionCode="TDS_Calc0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Basic Calculator",
+                        "order": 1,
+                        "selectionCode": "TDS_CalcBasic",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Off",
+                        "order": 2,
+                        "selectionCode": "TDS_Calc0",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Scientific, Graphing & Regression Calculator",
+                        "order": 3,
+                        "selectionCode": "TDS_CalcSciInv&TDS_CalcGraphingInv&TDS_CalcRegress",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Scientific Calculator",
+                        "order": 4,
+                        "selectionCode": "TDS_CalcSciInv",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Dict_SD2"
+                  disabled={false}
+                  key="EnglishDictionary"
+                  label="English Dictionary"
+                  resourceCode="EnglishDictionary"
+                  selectionCode="TDS_Dict_SD2"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "On",
+                        "order": 1,
+                        "selectionCode": "TDS_Dict_SD2",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Off",
+                        "order": 2,
+                        "selectionCode": "TDS_Dict0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ExpandablePassages1"
+                  disabled={false}
+                  key="ExpandablePassages"
+                  label="Expandable Passages"
+                  resourceCode="ExpandablePassages"
+                  selectionCode="TDS_ExpandablePassages1"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Expandable Passages on",
+                        "order": 1,
+                        "selectionCode": "TDS_ExpandablePassages1",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Expandable Passages off",
+                        "order": 2,
+                        "selectionCode": "TDS_ExpandablePassages0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+              </div>
+            </div>
+            <div
+              className="accessibility-resource-type section section-light"
+              key="Designated Supports"
+            >
+              <div
+                className="accessibility-header"
+              >
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Designated Supports
+                  <span
+                    className="fa fa-info-circle"
+                  />
+                </h4>
+              </div>
+              <div
+                className="accessibility-dropdowns"
+              >
+                <Dropdown
+                  defaultSelection="TDS_CCMagenta"
+                  disabled={false}
+                  key="ColorContrast"
+                  label="Color Choices"
+                  resourceCode="ColorContrast"
+                  selectionCode="TDS_CCMagenta"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Black on White",
+                        "order": 1,
+                        "selectionCode": "TDS_CC0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Reverse Contrast",
+                        "order": 2,
+                        "selectionCode": "TDS_CCInvert",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Black on Rose",
+                        "order": 3,
+                        "selectionCode": "TDS_CCMagenta",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Medium Gray on Light Gray",
+                        "order": 4,
+                        "selectionCode": "TDS_CCMedGrayLtGray",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Yellow on Blue",
+                        "order": 5,
+                        "selectionCode": "TDS_CCYellowB",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Masking1"
+                  disabled={false}
+                  key="Masking"
+                  label="Masking"
+                  resourceCode="Masking"
+                  selectionCode="TDS_Masking1"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Masking Not Available",
+                        "order": 1,
+                        "selectionCode": "TDS_Masking0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Masking Available",
+                        "order": 2,
+                        "selectionCode": "TDS_Masking1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_WL_0"
+                  disabled={true}
+                  key="Translation"
+                  label="Translations (Glossaries)"
+                  resourceCode="Translation"
+                  selectionCode="TDS_WL_0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "None",
+                        "order": 1,
+                        "selectionCode": "TDS_WL_0",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Arabic",
+                        "order": 2,
+                        "selectionCode": "TDS_WL_ArabicGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Cantonese",
+                        "order": 3,
+                        "selectionCode": "TDS_WL_CantoneseGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Spanish",
+                        "order": 4,
+                        "selectionCode": "TDS_WL_ESNGlossary",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Korean",
+                        "order": 5,
+                        "selectionCode": "TDS_WL_KoreanGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Mandarin",
+                        "order": 6,
+                        "selectionCode": "TDS_WL_MandarinGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Punjabi",
+                        "order": 7,
+                        "selectionCode": "TDS_WL_PunjabiGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Russian",
+                        "order": 8,
+                        "selectionCode": "TDS_WL_RussianGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Filipino (Ilokano and Tagalog)",
+                        "order": 9,
+                        "selectionCode": "TDS_WL_TagalGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Ukrainian",
+                        "order": 10,
+                        "selectionCode": "TDS_WL_UkrainianGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Vietnamese",
+                        "order": 11,
+                        "selectionCode": "TDS_WL_VietnameseGloss",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="ENU"
+                  disabled={false}
+                  key="Language"
+                  label="Translations (Stacked)"
+                  resourceCode="Language"
+                  selectionCode="ENU"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English",
+                        "order": 1,
+                        "selectionCode": "ENU",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Spanish & English",
+                        "order": 2,
+                        "selectionCode": "ESN",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+              </div>
+            </div>
+            <div
+              className="accessibility-resource-type section section-light"
+              key="Accommodations"
+            >
+              <div
+                className="accessibility-header"
+              >
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Accommodations
+                  <span
+                    className="fa fa-info-circle"
+                  />
+                </h4>
+              </div>
+              <div
+                className="accessibility-dropdowns"
+              >
+                <Dropdown
+                  defaultSelection="TDS_ASL0"
+                  disabled={false}
+                  key="AmericanSignLanguage"
+                  label="American Sign Language"
+                  resourceCode="AmericanSignLanguage"
+                  selectionCode="TDS_ASL0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos off",
+                        "order": 1,
+                        "selectionCode": "TDS_ASL0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos on",
+                        "order": 2,
+                        "selectionCode": "TDS_ASL1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_BT0"
+                  disabled={false}
+                  key="BrailleType"
+                  label="Braille Type"
+                  resourceCode="BrailleType"
+                  selectionCode="TDS_BT0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "No Braille",
+                        "order": 1,
+                        "selectionCode": "TDS_BT0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "EBAE Contracted",
+                        "order": 2,
+                        "selectionCode": "TDS_BT_ECL",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "EBAE Uncontracted",
+                        "order": 3,
+                        "selectionCode": "TDS_BT_EXL",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "EBAE Contracted with Nemeth",
+                        "order": 4,
+                        "selectionCode": "TDS_BT_ECN",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ClosedCap0"
+                  disabled={false}
+                  key="ClosedCaptioning"
+                  label="Closed Captioning"
+                  resourceCode="ClosedCaptioning"
+                  selectionCode="TDS_ClosedCap0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Closed Captioning off",
+                        "order": 1,
+                        "selectionCode": "TDS_ClosedCap0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Closed Captioning on",
+                        "order": 2,
+                        "selectionCode": "TDS_ClosedCap1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_SLM0"
+                  disabled={false}
+                  key="StreamlinedInterface"
+                  label="Streamlined Interface"
+                  resourceCode="StreamlinedInterface"
+                  selectionCode="TDS_SLM0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Standard",
+                        "order": 1,
+                        "selectionCode": "TDS_SLM0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Streamlined",
+                        "order": 2,
+                        "selectionCode": "TDS_SLM1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ASL0"
+                  disabled={false}
+                  key="AmericanSignLanguage"
+                  label="American Sign Language"
+                  resourceCode="AmericanSignLanguage"
+                  selectionCode="TDS_ASL0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos off",
+                        "order": 1,
+                        "selectionCode": "TDS_ASL0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos on",
+                        "order": 2,
+                        "selectionCode": "TDS_ASL1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ASL0"
+                  disabled={false}
+                  key="AmericanSignLanguage"
+                  label="American Sign Language"
+                  resourceCode="AmericanSignLanguage"
+                  selectionCode="TDS_ASL0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos off",
+                        "order": 1,
+                        "selectionCode": "TDS_ASL0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos on",
+                        "order": 2,
+                        "selectionCode": "TDS_ASL1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Update options and reload item"
+          className="btn btn-sm btn-primary"
+          form="accessibility-form"
+          onClick={[Function]}
+        >
+           
+          Update
+        </button>
+        <button
+          aria-label="Reset all options to default and reload item"
+          className="btn btn-sm btn-primary"
+          onClick={[Function]}
+        >
+          Reset to Default
+        </button>
+        <button
+          aria-label="Cancel and undo changes"
+          className="btn btn-sm btn-primary"
+          onClick={[Function]}
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;
+
+exports[`AccessibilityModal with no options Renders No Options correctly 1`] = `
+<div>
+  <button
+    aria-label="Open Accessibility Modal"
+    className="btn btn-primary"
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="fa fa-caret-square-o-down"
+    />
+    Accessibility
+  </button>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content accessibility-modal"
+    closeTimeoutMS={0}
+    contentLabel="Accessibility Modal"
+    isOpen={true}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        >
+          Accessibility Options
+        </h4>
+        <button
+          aria-label="Close accessibility options"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p>
+          <span>
+            Options displayed in grey are not available for this item.
+          </span>
+        </p>
+        <form
+          id="accessibility-form"
+          onSubmit={[Function]}
+        >
+          <div
+            className="accessibility-groups"
+          />
+        </form>
+      </div>
+      <div
+        className="modal-footer"
+      >
+        <button
+          aria-label="Update options and reload item"
+          className="btn btn-sm btn-primary"
+          form="accessibility-form"
+          onClick={[Function]}
+        >
+           
+          Update
+        </button>
+        <button
+          aria-label="Reset all options to default and reload item"
+          className="btn btn-sm btn-primary"
+          onClick={[Function]}
+        >
+          Reset to Default
+        </button>
+        <button
+          aria-label="Cancel and undo changes"
+          className="btn btn-sm btn-primary"
+          onClick={[Function]}
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;
+
+exports[`AccessibilityModal with six options showing renders correctly 1`] = `
+<div>
+  <button
+    aria-label="Open Accessibility Modal"
+    className="btn btn-primary"
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <span
+      aria-hidden="true"
+      className="fa fa-caret-square-o-down"
+    />
+    Accessibility
+  </button>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="react-modal-content accessibility-modal"
+    closeTimeoutMS={0}
+    contentLabel="Accessibility Modal"
+    isOpen={true}
+    onRequestClose={[Function]}
+    overlayClassName="react-modal-overlay"
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      className="modal-wrapper"
+    >
+      <div
+        className="modal-header"
+      >
+        <h4
+          className="modal-title"
+        >
+          Accessibility Options
+        </h4>
+        <button
+          aria-label="Close accessibility options"
+          className="close"
+          onClick={[Function]}
+        >
+          <span
+            aria-hidden="true"
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <p>
+          <span>
+            Options displayed in grey are not available for this item.
+          </span>
+        </p>
+        <form
+          id="accessibility-form"
+          onSubmit={[Function]}
+        >
+          <div
+            className="accessibility-groups"
+          >
+            <div
+              className="accessibility-resource-type section section-light"
+              key="Universal Tools"
+            >
+              <div
+                className="accessibility-header"
+              >
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Universal Tools
+                  <span
+                    className="fa fa-info-circle"
+                  />
+                </h4>
+                <a
+                  aria-label="Display all Universal Tools options."
+                  className="expand-button"
+                  onClick={[Function]}
+                  onKeyUp={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-expand"
+                  />
+                   Show all
+                </a>
+              </div>
+              <div
+                className="accessibility-dropdowns"
+              >
+                <Dropdown
+                  defaultSelection="TDS_SCNotepad"
+                  disabled={false}
+                  infoTag="This is a test"
+                  key="DigitalNotepad"
+                  label="Digital Notepad"
+                  resourceCode="DigitalNotepad"
+                  selectionCode="TDS_SCNotepad"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad on",
+                        "order": 1,
+                        "selectionCode": "TDS_SCNotepad",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Notepad off",
+                        "order": 2,
+                        "selectionCode": "TDS_SC0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_WL_Glossary"
+                  disabled={false}
+                  key="EnglishGlossary"
+                  label="English Glossary"
+                  resourceCode="EnglishGlossary"
+                  selectionCode="TDS_WL_Glossary"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary on",
+                        "order": 1,
+                        "selectionCode": "TDS_WL_Glossary",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English Glossary off",
+                        "order": 2,
+                        "selectionCode": "TDS_WL_0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Highlight1"
+                  disabled={false}
+                  key="Highlighter"
+                  label="Highlighter"
+                  resourceCode="Highlighter"
+                  selectionCode="TDS_Highlight1"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Highlight on",
+                        "order": 1,
+                        "selectionCode": "TDS_Highlight1",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Highlight off",
+                        "order": 2,
+                        "selectionCode": "TDS_Highlight0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Calc0"
+                  disabled={true}
+                  key="Calculator"
+                  label="Calculator"
+                  resourceCode="Calculator"
+                  selectionCode="TDS_Calc0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Basic Calculator",
+                        "order": 1,
+                        "selectionCode": "TDS_CalcBasic",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Off",
+                        "order": 2,
+                        "selectionCode": "TDS_Calc0",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Scientific, Graphing & Regression Calculator",
+                        "order": 3,
+                        "selectionCode": "TDS_CalcSciInv&TDS_CalcGraphingInv&TDS_CalcRegress",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Scientific Calculator",
+                        "order": 4,
+                        "selectionCode": "TDS_CalcSciInv",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Dict_SD2"
+                  disabled={false}
+                  key="EnglishDictionary"
+                  label="English Dictionary"
+                  resourceCode="EnglishDictionary"
+                  selectionCode="TDS_Dict_SD2"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "On",
+                        "order": 1,
+                        "selectionCode": "TDS_Dict_SD2",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Off",
+                        "order": 2,
+                        "selectionCode": "TDS_Dict0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ExpandablePassages1"
+                  disabled={false}
+                  key="ExpandablePassages"
+                  label="Expandable Passages"
+                  resourceCode="ExpandablePassages"
+                  selectionCode="TDS_ExpandablePassages1"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Expandable Passages on",
+                        "order": 1,
+                        "selectionCode": "TDS_ExpandablePassages1",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Expandable Passages off",
+                        "order": 2,
+                        "selectionCode": "TDS_ExpandablePassages0",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+              </div>
+            </div>
+            <div
+              className="accessibility-resource-type section section-light"
+              key="Designated Supports"
+            >
+              <div
+                className="accessibility-header"
+              >
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Designated Supports
+                  <span
+                    className="fa fa-info-circle"
+                  />
+                </h4>
+              </div>
+              <div
+                className="accessibility-dropdowns"
+              >
+                <Dropdown
+                  defaultSelection="TDS_CCMagenta"
+                  disabled={false}
+                  key="ColorContrast"
+                  label="Color Choices"
+                  resourceCode="ColorContrast"
+                  selectionCode="TDS_CCMagenta"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Black on White",
+                        "order": 1,
+                        "selectionCode": "TDS_CC0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Reverse Contrast",
+                        "order": 2,
+                        "selectionCode": "TDS_CCInvert",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Black on Rose",
+                        "order": 3,
+                        "selectionCode": "TDS_CCMagenta",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Medium Gray on Light Gray",
+                        "order": 4,
+                        "selectionCode": "TDS_CCMedGrayLtGray",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Yellow on Blue",
+                        "order": 5,
+                        "selectionCode": "TDS_CCYellowB",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_Masking1"
+                  disabled={false}
+                  key="Masking"
+                  label="Masking"
+                  resourceCode="Masking"
+                  selectionCode="TDS_Masking1"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Masking Not Available",
+                        "order": 1,
+                        "selectionCode": "TDS_Masking0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Masking Available",
+                        "order": 2,
+                        "selectionCode": "TDS_Masking1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_WL_0"
+                  disabled={true}
+                  key="Translation"
+                  label="Translations (Glossaries)"
+                  resourceCode="Translation"
+                  selectionCode="TDS_WL_0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "None",
+                        "order": 1,
+                        "selectionCode": "TDS_WL_0",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Arabic",
+                        "order": 2,
+                        "selectionCode": "TDS_WL_ArabicGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Cantonese",
+                        "order": 3,
+                        "selectionCode": "TDS_WL_CantoneseGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Spanish",
+                        "order": 4,
+                        "selectionCode": "TDS_WL_ESNGlossary",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Korean",
+                        "order": 5,
+                        "selectionCode": "TDS_WL_KoreanGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Mandarin",
+                        "order": 6,
+                        "selectionCode": "TDS_WL_MandarinGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Punjabi",
+                        "order": 7,
+                        "selectionCode": "TDS_WL_PunjabiGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Russian",
+                        "order": 8,
+                        "selectionCode": "TDS_WL_RussianGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Filipino (Ilokano and Tagalog)",
+                        "order": 9,
+                        "selectionCode": "TDS_WL_TagalGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Ukrainian",
+                        "order": 10,
+                        "selectionCode": "TDS_WL_UkrainianGloss",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Vietnamese",
+                        "order": 11,
+                        "selectionCode": "TDS_WL_VietnameseGloss",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="ENU"
+                  disabled={false}
+                  key="Language"
+                  label="Translations (Stacked)"
+                  resourceCode="Language"
+                  selectionCode="ENU"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "English",
+                        "order": 1,
+                        "selectionCode": "ENU",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "Spanish & English",
+                        "order": 2,
+                        "selectionCode": "ESN",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+              </div>
+            </div>
+            <div
+              className="accessibility-resource-type section section-light"
+              key="Accommodations"
+            >
+              <div
+                className="accessibility-header"
+              >
+                <h4
+                  className="green-title"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-tasks"
+                  />
+                   
+                  Accommodations
+                  <span
+                    className="fa fa-info-circle"
+                  />
+                </h4>
+              </div>
+              <div
+                className="accessibility-dropdowns"
+              >
+                <Dropdown
+                  defaultSelection="TDS_ASL0"
+                  disabled={false}
+                  key="AmericanSignLanguage"
+                  label="American Sign Language"
+                  resourceCode="AmericanSignLanguage"
+                  selectionCode="TDS_ASL0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos off",
+                        "order": 1,
+                        "selectionCode": "TDS_ASL0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos on",
+                        "order": 2,
+                        "selectionCode": "TDS_ASL1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_BT0"
+                  disabled={false}
+                  key="BrailleType"
+                  label="Braille Type"
+                  resourceCode="BrailleType"
+                  selectionCode="TDS_BT0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "No Braille",
+                        "order": 1,
+                        "selectionCode": "TDS_BT0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "EBAE Contracted",
+                        "order": 2,
+                        "selectionCode": "TDS_BT_ECL",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "EBAE Uncontracted",
+                        "order": 3,
+                        "selectionCode": "TDS_BT_EXL",
+                      },
+                      Object {
+                        "disabled": true,
+                        "hidden": false,
+                        "label": "EBAE Contracted with Nemeth",
+                        "order": 4,
+                        "selectionCode": "TDS_BT_ECN",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ClosedCap0"
+                  disabled={false}
+                  key="ClosedCaptioning"
+                  label="Closed Captioning"
+                  resourceCode="ClosedCaptioning"
+                  selectionCode="TDS_ClosedCap0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Closed Captioning off",
+                        "order": 1,
+                        "selectionCode": "TDS_ClosedCap0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Closed Captioning on",
+                        "order": 2,
+                        "selectionCode": "TDS_ClosedCap1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_SLM0"
+                  disabled={false}
+                  key="StreamlinedInterface"
+                  label="Streamlined Interface"
+                  resourceCode="StreamlinedInterface"
+                  selectionCode="TDS_SLM0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Standard",
+                        "order": 1,
+                        "selectionCode": "TDS_SLM0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "Streamlined",
+                        "order": 2,
+                        "selectionCode": "TDS_SLM1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ASL0"
+                  disabled={false}
+                  key="AmericanSignLanguage"
+                  label="American Sign Language"
+                  resourceCode="AmericanSignLanguage"
+                  selectionCode="TDS_ASL0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos off",
+                        "order": 1,
+                        "selectionCode": "TDS_ASL0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos on",
+                        "order": 2,
+                        "selectionCode": "TDS_ASL1",
+                      },
+                    ]
+                  }
+                  updateSelection={[Function]}
+                />
+                <Dropdown
+                  defaultSelection="TDS_ASL0"
+                  disabled={false}
+                  key="AmericanSignLanguage"
+                  label="American Sign Language"
+                  resourceCode="AmericanSignLanguage"
+                  selectionCode="TDS_ASL0"
+                  selections={
+                    Array [
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos off",
+                        "order": 1,
+                        "selectionCode": "TDS_ASL0",
+                      },
+                      Object {
+                        "disabled": false,
+                        "hidden": false,
+                        "label": "ASL Videos on",
+                        "order": 2,
+                        "selectionCode": "TDS_ASL1",
                       },
                     ]
                   }

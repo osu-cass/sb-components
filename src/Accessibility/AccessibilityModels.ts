@@ -9,6 +9,7 @@ export interface AccessibilityResourceModel {
   currentSelectionCode: string; // ID of the current selection
   order: number;
   selections: DropDownSelectionModel[];
+  infoTag?: string;
 }
 
 export interface AccResourceGroupModel {
