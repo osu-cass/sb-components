@@ -83,9 +83,6 @@ exports[`AccessibilityModal accessibility open 1`] = `
                   />
                    
                   Universal Tools
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
               </div>
               <div
@@ -272,9 +269,6 @@ exports[`AccessibilityModal defualt render 1`] = `
                   />
                    
                   Universal Tools
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
               </div>
               <div
@@ -461,9 +455,6 @@ exports[`AccessibilityModal with info tag showing renders correctly 1`] = `
                   />
                    
                   Universal Tools
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
                 <a
                   aria-label="Display all Universal Tools options."
@@ -678,9 +669,6 @@ exports[`AccessibilityModal with info tag showing renders correctly 1`] = `
                   />
                    
                   Designated Supports
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
               </div>
               <div
@@ -896,9 +884,6 @@ exports[`AccessibilityModal with info tag showing renders correctly 1`] = `
                   />
                    
                   Accommodations
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
               </div>
               <div
@@ -1301,9 +1286,6 @@ exports[`AccessibilityModal with six options showing renders correctly 1`] = `
                   />
                    
                   Universal Tools
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
                 <a
                   aria-label="Display all Universal Tools options."
@@ -1518,9 +1500,6 @@ exports[`AccessibilityModal with six options showing renders correctly 1`] = `
                   />
                    
                   Designated Supports
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
               </div>
               <div
@@ -1736,9 +1715,6 @@ exports[`AccessibilityModal with six options showing renders correctly 1`] = `
                   />
                    
                   Accommodations
-                  <span
-                    className="fa fa-info-circle"
-                  />
                 </h4>
               </div>
               <div

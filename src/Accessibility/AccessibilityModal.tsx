@@ -124,7 +124,6 @@ export class ItemAccessibilityModal extends React.Component<
       <h4 className="green-title">
         <span className="fa fa-tasks" aria-hidden="true" />&nbsp;
         {resourceType}
-        <span className="fa fa-info-circle" />
       </h4>
     );
     const resCount = resources.length;
