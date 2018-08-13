@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { SampleResponse } from "../../src/Rubric/SampleResponse";
-import { SampleResponseModel } from "../../src/Rubric/RubricModels";
+import { SampleResponse } from "@src/index";
+import { SampleResponseModel } from "@src/Rubric/RubricModels";
 
 const sampleResponseMockProps: SampleResponseModel = {
   purpose: "Exemplar",

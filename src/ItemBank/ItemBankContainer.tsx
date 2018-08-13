@@ -6,7 +6,6 @@ import {
   getResourceContent,
   ItemAccessibilityModal,
   ItemViewerFrame,
-  ToolTip,
   AccResourceGroupModel,
   AdvancedAboutItem,
   AboutItemRevisionModel,
@@ -15,6 +14,7 @@ import {
   Subscription,
   ItemRevisionModel,
   itemRevisionKey,
+  NamespaceModel,
   SectionModel,
   AccessibilityRevisionModel,
   validItemRevisionModel,
@@ -35,10 +35,11 @@ export interface ItemBankContainerProps {
     item: ItemRevisionModel
   ) => Promise<AboutItemRevisionModel>;
   revisionsClient: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
+  namespacesClient: () => Promise<NamespaceModel[]>;
   sectionsClient: () => Promise<SectionModel[]>;
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
-  getUrl: (item: ItemRevisionModel) => string;
+  setUrl: (item: ItemRevisionModel) => void;
 }
 
 export interface ItemBankContainerState {
@@ -46,6 +47,7 @@ export interface ItemBankContainerState {
   accResourceGroups: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemRevisionModel;
   items: ItemRevisionModel[];
+  namespaces: Resource<NamespaceModel[]>;
   sections: Resource<SectionModel[]>;
   revisions: Resource<RevisionModel[]>;
   nextItem?: ItemRevisionModel;
@@ -74,6 +76,7 @@ export class ItemBankContainer extends React.Component<
       items,
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
+      namespaces: { kind: "loading" },
       sections: { kind: "loading" },
       revisions: { kind: "loading" },
       hasError: false
@@ -81,6 +84,7 @@ export class ItemBankContainer extends React.Component<
   }
 
   componentDidMount() {
+    this.fetchNamespaces().catch(e => this.onError(e));
     this.fetchSections().catch(e => this.onError(e));
     this.handleChangeViewItem();
     this.handleChangeRevision();
@@ -141,6 +145,19 @@ export class ItemBankContainer extends React.Component<
 
   onFetchRevisionsSuccess(data: RevisionModel[]) {
     this.setState({ revisions: { kind: "success", content: data } });
+  }
+
+  async fetchNamespaces() {
+    const prom = this.props.namespacesClient();
+    const promiseWrapper = this.subscription.add("namespacesClient", prom);
+    const namespaces = await promiseWrapper.promise;
+    this.onFetchNamespacesSuccess(namespaces);
+
+    return namespaces;
+  }
+
+  onFetchNamespacesSuccess(data: NamespaceModel[]) {
+    this.setState({ namespaces: { kind: "success", content: data } });
   }
 
   async fetchSections() {
@@ -228,7 +245,7 @@ export class ItemBankContainer extends React.Component<
     if (currentItem) {
       const isaap = toiSAAP(accGroups);
       const newItem = { ...currentItem, isaap };
-      this.props.getUrl(currentItem);
+      this.props.setUrl(currentItem);
       this.setState({ currentItem });
     }
   };
@@ -340,14 +357,16 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { sections, items, hasError } = this.state;
+    const { namespaces, sections, items, hasError } = this.state;
     let content: JSX.Element | undefined;
 
+    const namespacesContent = getResourceContent(namespaces);
     const sectionsContent = getResourceContent(sections);
-    if (sectionsContent) {
+    if (namespacesContent && sectionsContent) {
       content = (
         <ItemBankEntry
           updateItems={this.handleUpdateItems}
+          namespaces={namespacesContent}
           sections={sectionsContent}
           items={items}
         />

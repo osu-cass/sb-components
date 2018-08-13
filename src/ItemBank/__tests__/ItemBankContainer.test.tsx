@@ -14,6 +14,8 @@ import { ItemBankContainerState } from "../ItemBankContainer";
 const item: ItemRevisionModel = {
   itemKey: 187,
   bankKey: 3000,
+  hasBankKey: true,
+  namespace: "itemreviewviewer",
   section: "math",
   revision: "asfe",
   isaap: ""
@@ -25,10 +27,11 @@ describe("ItemBankContainer", () => {
     aboutItemRevisionClient: BankMocks.mockBankAboutItemClient,
     accessibilityClient: BankMocks.mockBankAccessibilityClient,
     revisionsClient: BankMocks.mockBankRevisionsClient,
+    namespacesClient: BankMocks.mockBankNamespacesClient,
     sectionsClient: BankMocks.mockBankSectionsClient,
     itemViewUrl: "hello",
     items: [item, item2],
-    getUrl: BankMocks.mockOnItemHandler
+    setUrl: BankMocks.mockOnItemHandler
   };
 
   const wrapper = mount(<ItemBankContainer {...props} />);

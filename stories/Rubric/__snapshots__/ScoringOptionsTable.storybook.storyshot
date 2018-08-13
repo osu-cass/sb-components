@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Scoring Options Table with two options 1`] = `
+<table
+  className="item-data-table"
+>
+  <thead>
+    <tr>
+      <th>
+        Option
+      </th>
+      <th>
+        Feedback
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        A
+      </td>
+      <td
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "CORRECT: Because its the right answer",
+          }
+        }
+      />
+    </tr>
+    <tr>
+      <td>
+        B
+      </td>
+      <td
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "INCORRECT: Because its the wrong answer",
+          }
+        }
+      />
+    </tr>
+  </tbody>
+</table>
+`;
