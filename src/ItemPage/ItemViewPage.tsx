@@ -44,10 +44,9 @@ export class ItemViewPage extends React.Component<ItemViewPageProps, {}> {
 
   updateLocationIsaap = (isaap: string) => {
     try {
-      const search = this.props.history.location.search;
       const location = {
         ...this.props.history.location,
-        search: `${search}&isaap=${isaap}`
+        search: `${this.props.history.location.search}&isaap=${isaap}`
       };
       this.props.history.replace(location);
     } catch (exception) {
