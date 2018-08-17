@@ -176,7 +176,7 @@ export class BasicFilter extends React.Component<BasicFilterProps, {}> {
         content = this.renderSearch();
         break;
       default:
-        console.error("Invalid option", optionType);
+        return content;
     }
 
     return content;

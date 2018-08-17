@@ -72,19 +72,21 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
 
   populatePath(html: string) {
     const { itemModel } = this.props;
-    let rubricElement = document.createElement("div");
+    const rubricElement = document.createElement("div");
+    // tslint:disable-next-line
     rubricElement.innerHTML = html;
-    let imgTags = rubricElement.getElementsByTagName("img");
+    const imgTags = rubricElement.getElementsByTagName("img");
     Array.from(imgTags).forEach(img => {
-      let pos = img.src.indexOf("item_");
+      const pos = img.src.indexOf("item_");
       if (pos && itemModel) {
         const text = img.src;
         const path = "rubricImage/";
-        let params = "?itemId=" + itemModel.bankKey + "-" + itemModel.itemKey;
-        params += itemModel.revision ? "&version=" + itemModel.revision : "";
+        let params = `?itemId=${itemModel.bankKey}-${itemModel.itemKey}`;
+        params += itemModel.revision ? `&version=${itemModel.revision}` : "";
         img.src = [text.slice(0, pos), path, text.slice(pos), params].join("");
       }
     });
+
     return rubricElement.innerHTML;
   }
 

@@ -156,7 +156,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
   }
 
   renderRubricModal(): JSX.Element | undefined {
-    const { aboutItemRevisionModel, currentItem } = this.props;
+    const { aboutItemRevisionModel } = this.props;
     let content: JSX.Element | undefined;
     if (
       aboutItemRevisionModel &&
@@ -164,7 +164,7 @@ export class ItemBankViewer extends React.Component<ItemBankViewerProps, {}> {
       aboutItemRevisionModel.sampleItemScoring.rubrics
     ) {
       const rubrics = aboutItemRevisionModel.sampleItemScoring.rubrics;
-      content = <RubricModal rubrics={rubrics} itemModel={currentItem} />;
+      content = <RubricModal rubrics={rubrics} />;
     }
 
     return content;

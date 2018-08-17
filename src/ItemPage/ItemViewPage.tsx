@@ -50,7 +50,7 @@ export class ItemViewPage extends React.Component<ItemViewPageProps, {}> {
       };
       this.props.history.replace(location);
     } catch (exception) {
-      console.error("unable to update url", exception);
+      throw new Error(`unable to update url ${exception}`);
     }
   };
 
