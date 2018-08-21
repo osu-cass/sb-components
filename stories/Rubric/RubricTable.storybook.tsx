@@ -5,6 +5,6 @@ import { rubricModalMockProps } from "@mocks/Rubric/mocks";
 
 const rubricTableMockProps: RubricTableProps = rubricModalMockProps;
 
-storiesOf("Rubric Table", module).add("with a rubric table", () => (
+storiesOf("Rubric Table DontTest", module).add("with a rubric table", () => (
   <RubricTable {...rubricTableMockProps} />
 ));
