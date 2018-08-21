@@ -23,7 +23,7 @@ exports[`CsvEntry calls handle csv blur 1`] = `
       }
       helpText={
         <p>
-          Enter bank key and item id for the items you would like to add
+          Enter namespace, bank key, item id, and section for the items you would like to add
         </p>
       }
     />
@@ -59,7 +59,7 @@ exports[`CsvEntry calls handle csv change 1`] = `
       }
       helpText={
         <p>
-          Enter bank key and item id for the items you would like to add
+          Enter namespace, bank key, item id, and section for the items you would like to add
         </p>
       }
     />
@@ -96,7 +96,7 @@ exports[`CsvEntry matches snapshot 1`] = `
       }
       helpText={
         <p>
-          Enter bank key and item id for the items you would like to add
+          Enter namespace, bank key, item id, and section for the items you would like to add
         </p>
       }
     />

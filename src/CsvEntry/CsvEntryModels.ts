@@ -1,10 +1,10 @@
-import { ItemRevisionModel } from "../ItemBank/ItemBankModels";
+import { ItemRevisionModel, NamespaceModel } from "../ItemBank/ItemBankModels";
 
 export interface CsvRowModel extends ItemRevisionModel {
   index: number;
 }
 
-export function parseCsv(csvValue?: string): CsvRowModel[] {
+export function parseCsv(csvValue?: string, namespaces?: NamespaceModel[]): CsvRowModel[] {
   const data: CsvRowModel[] = [];
 
   if (csvValue) {
@@ -16,10 +16,20 @@ export function parseCsv(csvValue?: string): CsvRowModel[] {
 
       const row: CsvRowModel = {
         index,
-        itemKey: +values[1],
-        bankKey: +values[0],
-        section: values[2]
+        namespace: values[0]
       };
+
+      if (values.length === 4) {
+        row.hasBankKey = true;
+        row.bankKey = +values[1];
+        row.itemKey = +values[2];
+        row.section = values[3];
+      } else if (values.length === 3) {
+        row.hasBankKey = false;
+        row.bankKey = getBankKeyByNamespace(row.namespace, namespaces);
+        row.itemKey = +values[1];
+        row.section = values[2];
+      }
 
       data.push(row);
       index = index + 1;
@@ -27,4 +37,10 @@ export function parseCsv(csvValue?: string): CsvRowModel[] {
   }
 
   return data;
+}
+
+function getBankKeyByNamespace(namespace?: string, namespaces?: NamespaceModel[]): number | undefined {
+  if (namespaces) {
+    return namespaces.filter(s => s.name === namespace)[0].bankKey;
+  }
 }
