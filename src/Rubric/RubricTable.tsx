@@ -1,8 +1,10 @@
 import * as React from "react";
 import { RubricModel, RubricTableRowModel } from "./RubricModels";
+import { ItemRevisionModel } from "@src/index";
 
 export interface RubricTableProps {
   rubrics: RubricModel[];
+  itemModel?: ItemRevisionModel;
 }
 
 export class RubricTable extends React.Component<RubricTableProps, {}> {
@@ -22,7 +24,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
 
         return {
           score: entry.scorepoint,
-          rationale: entry.value,
+          rationale: this.populatePath(entry.value),
           sample: sampleHtml
         };
       });
@@ -66,6 +68,26 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
         <tbody>{rowsJsx}</tbody>
       </table>
     );
+  }
+
+  populatePath(html: string) {
+    const { itemModel } = this.props;
+    const rubricElement = document.createElement("div");
+    // tslint:disable-next-line
+    rubricElement.innerHTML = html;
+    const imgTags = rubricElement.getElementsByTagName("img");
+    Array.from(imgTags).forEach(img => {
+      const pos = img.src.indexOf("item_");
+      if (pos && itemModel) {
+        const text = img.src;
+        const path = "rubricImage/";
+        let params = `?itemId=${itemModel.bankKey}-${itemModel.itemKey}`;
+        params += itemModel.revision ? `&version=${itemModel.revision}` : "";
+        img.src = [text.slice(0, pos), path, text.slice(pos), params].join("");
+      }
+    });
+
+    return rubricElement.innerHTML;
   }
 
   render() {
