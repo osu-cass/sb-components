@@ -49,7 +49,7 @@ function setNamespace(
   namespace: string,
   namespaces: NamespaceModel[]
 ) {
-  const matchedNamespace: NamespaceModel = namespaces.find(
+  const matchedNamespace: NamespaceModel | undefined = namespaces.find(
     s => s.name === namespace
   );
   if (matchedNamespace) {
@@ -82,7 +82,7 @@ function getBankKeyByNamespace(
   let bankKey: number | undefined;
 
   if (namespaces) {
-    const matchedNamespace: NamespaceModel = namespaces.find(
+    const matchedNamespace: NamespaceModel | undefined = namespaces.find(
       s => s.name === namespace
     );
     if (matchedNamespace) bankKey = matchedNamespace.bankKey;
