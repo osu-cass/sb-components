@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as $ from "jquery";
 import * as ReactDOM from "react-dom";
 import {
   AboutItem,
@@ -119,15 +120,27 @@ export class ItemBankContainer extends React.Component<
     const params: AccessibilityRevisionModel = {
       interactionType: item.AboutItemMetadata.interactionType,
       subject: item.AboutItemMetadata.subject,
-      gradeLevel: item.AboutItemMetadata.intendedGrade
+      gradeLevel: item.AboutItemMetadata.intendedGrade,
+      allowCalculator: this.makeBool(item),
+      itemKey: item.AboutItemMetadata.identifier,
+      bankKey: item.bankKey
     };
-
     const prom = this.props.accessibilityClient(params);
     const promiseWrapper = this.subscription.add("accessibilityClient", prom);
     const accessibilityResources = await promiseWrapper.promise;
     this.onFetchAccResourceSuccess(accessibilityResources);
 
     return accessibilityResources;
+  }
+
+  // Changes allowCalculator from "yes"/"no"/null to bool
+
+  makeBool(item: AboutItemRevisionModel) {
+    if (item.AboutItemMetadata.allowCalculator === "Yes") {
+      return true;
+    }
+
+    return false;
   }
 
   onFetchAccResourceSuccess(data: AccResourceGroupModel[]) {
@@ -247,6 +260,11 @@ export class ItemBankContainer extends React.Component<
       const newItem = { ...currentItem, isaap };
       this.props.setUrl(currentItem);
       this.setState({ currentItem });
+      const x = document.getElementsByTagName("iframe")[0].contentWindow;
+      const event = new CustomEvent("acc-update", { detail: newItem.isaap });
+      if (x !== null) {
+        x.dispatchEvent(event);
+      }
     }
   };
 
