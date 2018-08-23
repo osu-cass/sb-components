@@ -27,14 +27,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   }
 
   renderHelpButton() {
-    const helpText: JSX.Element = (
-      <p>
-        Enter namespace, bank key, item id, and section for the namespace which
-        has a bank key. Or,<br />
-        Enter namespace, item id, and section for the namespace which doesn't
-        have a bank key.
-      </p>
-    );
+    const helpText: JSX.Element = this.renderHelpText();
     const displayText: JSX.Element = (
       <button
         className="item-nav-btn btn btn-default btn-sm about-item-btn"
@@ -54,6 +47,17 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
           displayIcon: undefined
         })}
       </div>
+    );
+  }
+
+  renderHelpText(): JSX.Element {
+    return (
+      <p>
+        Enter namespace, bank key, item id, and section for the namespace which
+        has a bank key. Or,<br />
+        Enter namespace , item id, and section for the namespace which doesn't
+        have a bank key.
+      </p>
     );
   }
 
