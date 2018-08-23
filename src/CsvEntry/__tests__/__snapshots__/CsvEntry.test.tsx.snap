@@ -25,7 +25,7 @@ exports[`CsvEntry calls handle csv blur 1`] = `
         <p>
           Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
           <br />
-          Enter namespace, item id, and section for the namespace which doesn't have a bank key.
+          Enter namespace , item id, and section for the namespace which doesn't have a bank key.
         </p>
       }
     />
@@ -63,7 +63,7 @@ exports[`CsvEntry calls handle csv change 1`] = `
         <p>
           Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
           <br />
-          Enter namespace, item id, and section for the namespace which doesn't have a bank key.
+          Enter namespace , item id, and section for the namespace which doesn't have a bank key.
         </p>
       }
     />
@@ -102,7 +102,7 @@ exports[`CsvEntry matches snapshot 1`] = `
         <p>
           Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
           <br />
-          Enter namespace, item id, and section for the namespace which doesn't have a bank key.
+          Enter namespace , item id, and section for the namespace which doesn't have a bank key.
         </p>
       }
     />
