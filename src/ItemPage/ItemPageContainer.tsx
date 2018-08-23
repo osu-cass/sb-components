@@ -149,7 +149,6 @@ export class ItemPageContainer extends React.Component<
 
   onError(err: string) {
     if (err !== "Canceled") {
-      console.error(err);
       this.setState({ loading: false, redirect: true });
     }
   }
@@ -173,7 +172,7 @@ export class ItemPageContainer extends React.Component<
       this.setCurrentItem();
       this.updateIsaapCookieHandler(newGroups);
     } else {
-      console.error("Error no item to update resources");
+      throw new Error("No item to update resources");
     }
   };
 
@@ -211,7 +210,7 @@ export class ItemPageContainer extends React.Component<
       this.setCurrentItem();
       this.fetchUpdatedAboutThisItem();
     } else {
-      console.error("Error no item to reset");
+      throw new Error("Error no item to reset");
     }
   };
 

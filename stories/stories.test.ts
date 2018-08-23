@@ -8,5 +8,6 @@ import toJSON from "enzyme-to-json";
 initStoryshots({
   renderer: mount,
   serializer: toJSON,
-  test: multiSnapshotWithOptions({})
+  test: multiSnapshotWithOptions({}),
+  storyKindRegex: /^((?!.*?DontTest).)*$/
 });

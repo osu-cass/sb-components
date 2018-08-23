@@ -99,7 +99,6 @@ export class BasicFilterContainer extends React.Component<
   }
 
   renderAdvFilter(fil: BasicFilterCategoryModel, iter: number) {
-    // TODO: add logic for multi and all buttons
     return (
       <AdvancedFilter
         {...fil}
