@@ -28,7 +28,12 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
 
   renderHelpButton() {
     const helpText: JSX.Element = (
-      <p>Enter namespace, bank key, item id, and section for the items you would like to add</p>
+      <p>
+        Enter namespace, bank key, item id, and section for the namespace which
+        has a bank key. Or,<br />
+        Enter namespace, item id, and section for the namespace which doesn't
+        have a bank key.
+      </p>
     );
     const displayText: JSX.Element = (
       <button
