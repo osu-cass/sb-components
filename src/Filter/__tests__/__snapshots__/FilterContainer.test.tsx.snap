@@ -161,6 +161,152 @@ exports[`FilterContainer expands the advanced filter 2`] = `
     handleAdvancedFilterExpand={[Function]}
     onUpdateFilter={[Function]}
   />
+  <AdvancedFilterContainer
+    filterCategories={
+      Array [
+        Object {
+          "code": "Grade",
+          "disabled": false,
+          "displayAllButton": true,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "7",
+              "label": "Grades 3-5",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "56",
+              "label": "Grades 6-8",
+            },
+            Object {
+              "filterType": "Grade",
+              "isSelected": false,
+              "key": "960",
+              "label": "High School",
+            },
+          ],
+          "helpText": "Grade Help",
+          "isMultiSelect": false,
+          "label": "Grade",
+        },
+        Object {
+          "code": "Subject",
+          "disabled": false,
+          "displayAllButton": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "EL&A",
+              "label": "English Literacy & Arts",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Mth",
+              "label": "Maths",
+            },
+          ],
+          "helpText": "Subject Help",
+          "isMultiSelect": true,
+          "label": "Multi",
+        },
+        Object {
+          "code": "Subject",
+          "disabled": true,
+          "displayAllButton": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Eng",
+              "label": "English",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Chem",
+              "label": "Chemistry",
+            },
+          ],
+          "helpText": "Subject Help",
+          "isMultiSelect": false,
+          "label": "Disabled",
+        },
+        Object {
+          "code": "Subject",
+          "disabled": true,
+          "displayAllButton": false,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Read",
+              "label": "Reading",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Hist",
+              "label": "History",
+            },
+          ],
+          "helpText": "Subject Help",
+          "isMultiSelect": true,
+          "label": "Disabled Multi",
+        },
+        Object {
+          "code": "Subject",
+          "disabled": false,
+          "displayAllButton": true,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "USh",
+              "label": "US History",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Wh",
+              "label": "World History",
+            },
+          ],
+          "helpText": "Subject Help",
+          "isMultiSelect": true,
+          "label": "Multi All",
+        },
+        Object {
+          "code": "Subject",
+          "disabled": false,
+          "displayAllButton": true,
+          "filterOptions": Array [
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Calc",
+              "label": "Calculus",
+            },
+            Object {
+              "filterType": "Subject",
+              "isSelected": false,
+              "key": "Geom",
+              "label": "Geometry",
+            },
+          ],
+          "helpText": "Subject Help",
+          "isMultiSelect": true,
+          "label": "Multi All Disabled",
+        },
+      ]
+    }
+    isNested={true}
+    onUpdateFilter={[Function]}
+  />
 </div>
 `;
 

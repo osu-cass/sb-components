@@ -3,9 +3,7 @@
 exports[`Storyshots Rubric with a rubric model 1`] = `
 <div
   aria-expanded={false}
-  className={undefined}
   role="tab"
-  style={undefined}
 >
   <a
     className="collapsible-label link-button"
@@ -31,9 +29,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       </h4>
       <div
         aria-expanded={false}
-        className={undefined}
         role="tab"
-        style={undefined}
       >
         <a
           className="collapsible-label link-button"
@@ -65,9 +61,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       </div>
       <div
         aria-expanded={false}
-        className={undefined}
         role="tab"
-        style={undefined}
       >
         <a
           className="collapsible-label link-button"
@@ -99,9 +93,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       </div>
       <div
         aria-expanded={false}
-        className={undefined}
         role="tab"
-        style={undefined}
       >
         <a
           className="collapsible-label link-button"
@@ -138,9 +130,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
       </h4>
       <div
         aria-expanded={false}
-        className={undefined}
         role="tab"
-        style={undefined}
       >
         <a
           className="collapsible-label link-button"
@@ -194,9 +184,7 @@ exports[`Storyshots Rubric with a rubric model 1`] = `
 exports[`Storyshots Rubric with an empty model 1`] = `
 <div
   aria-expanded={false}
-  className={undefined}
   role="tab"
-  style={undefined}
 >
   <a
     className="collapsible-label link-button"
