@@ -2,31 +2,31 @@
 @import "constants";
 
 .itemViewerFrame {
-    position: relative;
-    background-color: @sb-white;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    height: 70vh;
-    width: 100%;
-    border-style: solid;
-    border-color: @grey-border-color;
-    border-width: 1px;
-    border-radius: @spacing-item;
-    -moz-box-shadow: @box-shadow;
-    -webkit-box-shadow: @box-shadow;
-    box-shadow: @box-shadow;
+  position: relative;
+  background-color: @sb-white;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 70vh;
+  width: 100%;
+  border-style: solid;
+  border-color: @grey-border-color;
+  border-width: 1px;
+  border-radius: @spacing-item;
+  -moz-box-shadow: @box-shadow;
+  -webkit-box-shadow: @box-shadow;
+  box-shadow: @box-shadow;
 }
 
 .itemviewer-iframe {
-    height: 100%;
-    max-height: 99%;
-    width: 100%;
-    border: none;
+  height: 100%;
+  max-height: 99%;
+  width: 100%;
+  border: none;
 }
 
 .itemviewer-iframe-spinner {
-    position: absolute;
-    top: calc(~'50% - 60px');
-    left: calc(~'50% - 60px');
-    z-index: 1;
+  position: absolute;
+  top: calc(~"50% - 60px");
+  left: calc(~"50% - 60px");
+  z-index: 1;
 }
