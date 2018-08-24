@@ -257,14 +257,18 @@ export class ItemBankContainer extends React.Component<
 
     if (currentItem) {
       const isaap = toiSAAP(accGroups);
-      const newItem = { ...currentItem, isaap };
       this.props.setUrl(currentItem);
       this.setState({ currentItem });
-      const x = document.getElementsByTagName("iframe")[0].contentWindow;
-      const event = new CustomEvent("acc-update", { detail: newItem.isaap });
-      if (x !== null) {
-        x.dispatchEvent(event);
-      }
+      this.bubbleEventHandler(currentItem, isaap);
+    }
+  };
+
+  bubbleEventHandler = (currentItem: ItemRevisionModel, isaap: string) => {
+    const newItem = { ...currentItem, isaap };
+    const x = document;
+    const event = new CustomEvent("acc-update", { detail: newItem.isaap });
+    if (x !== null) {
+      x.dispatchEvent(event);
     }
   };
 
