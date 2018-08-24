@@ -49,6 +49,8 @@ export class ItemBankEntry extends React.Component<
   };
 
   renderCsvEntry() {
+    const { namespaces } = this.props;
+
     return (
       <Accordion
         accordionTitle="CSV Entry"
@@ -58,6 +60,7 @@ export class ItemBankEntry extends React.Component<
         <div className="csv-entry-container section">
           <div className="csv-entry-wrapper">
             <CsvEntry
+              namespaces={namespaces}
               onItemsUpdate={this.props.updateItems}
               onBlur={this.onCsvBlur}
             />
