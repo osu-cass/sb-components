@@ -133,7 +133,9 @@
     "moment": "^2.22.1",
     "typeface-pt-sans-caption": "0.0.44",
     "typeface-pt-serif": "0.0.44",
-    "typeface-pt-serif-caption": "0.0.44"
+    "typeface-pt-serif-caption": "0.0.44",
+    "u": "^0.1.0",
+    "update": "^0.7.4"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16",
