@@ -751,3 +751,7 @@ allAccessibilityResourceGroups.forEach(s => {
 });
 
 export const accessibilityManyOptionsMock: AccResourceGroupModel[] = accessibilityManyOptions;
+
+export const accessibilityManyOptionsInfoMock: AccResourceGroupModel[] = accessibilityManyOptions;
+accessibilityManyOptionsInfoMock[0].accessibilityResources[0].infoTag =
+  "This is a test";

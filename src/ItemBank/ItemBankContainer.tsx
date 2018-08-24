@@ -347,7 +347,7 @@ export class ItemBankContainer extends React.Component<
         this.handlePreviousItem();
         break;
       default:
-        console.error("invalid direction");
+        throw new Error("invalid direction");
     }
   };
 

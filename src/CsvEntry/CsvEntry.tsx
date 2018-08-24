@@ -3,11 +3,13 @@ import {
   generateTooltip,
   ItemRevisionModel,
   CsvRowModel,
+  NamespaceModel,
   parseCsv,
   Accordion
 } from "@src/index";
 
 export interface CsvEntryProps {
+  namespaces: NamespaceModel[];
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onBlur: () => void;
 }
@@ -25,9 +27,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   }
 
   renderHelpButton() {
-    const helpText: JSX.Element = (
-      <p>Enter bank key and item id for the items you would like to add</p>
-    );
+    const helpText: JSX.Element = this.renderHelpText();
     const displayText: JSX.Element = (
       <button
         className="item-nav-btn btn btn-default btn-sm about-item-btn"
@@ -50,6 +50,17 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     );
   }
 
+  renderHelpText(): JSX.Element {
+    return (
+      <p>
+        Enter namespace, bank key, item id, and section for the namespace which
+        has a bank key. Or,<br />
+        Enter namespace , item id, and section for the namespace which doesn't
+        have a bank key.
+      </p>
+    );
+  }
+
   handleCsvChange(event: React.FormEvent<HTMLTextAreaElement>) {
     const rawCsv: string = event.currentTarget.value;
 
@@ -60,7 +71,8 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
 
   handleCsvBlur = () => {
     const { csvInputValue } = this.state;
-    const csvData = parseCsv(csvInputValue);
+    const { namespaces } = this.props;
+    const csvData = parseCsv(csvInputValue, namespaces);
 
     this.setState({
       csvData
