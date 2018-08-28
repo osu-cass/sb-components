@@ -17,7 +17,6 @@ exports[`Storyshots About Test Items bad item type 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
-        style={undefined}
       >
         Skip to main content
       </a>
@@ -134,7 +133,6 @@ exports[`Storyshots About Test Items default 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
-        style={undefined}
       >
         Skip to main content
       </a>
@@ -251,7 +249,6 @@ exports[`Storyshots About Test Items default, param 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
-        style={undefined}
       >
         Skip to main content
       </a>
@@ -368,7 +365,6 @@ exports[`Storyshots About Test Items loading, param 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
-        style={undefined}
       >
         Skip to main content
       </a>
@@ -485,7 +481,6 @@ exports[`Storyshots About Test Items reject, param 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
-        style={undefined}
       >
         Skip to main content
       </a>

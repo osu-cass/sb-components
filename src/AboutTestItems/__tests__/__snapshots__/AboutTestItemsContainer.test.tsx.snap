@@ -4,7 +4,7 @@ exports[`AboutTestItemsContainer about item modal 1`] = `null`;
 
 exports[`AboutTestItemsContainer default render 1`] = `
 <LoadingOverlay
-  loading={true}
+  loading={false}
 >
   <div
     className="container about-items"
@@ -20,6 +20,10 @@ exports[`AboutTestItemsContainer default render 1`] = `
       <div
         className="section section-light"
       >
+        <Redirect
+          push={true}
+          to=""
+        />
         <p
           className="about-items-text"
         >

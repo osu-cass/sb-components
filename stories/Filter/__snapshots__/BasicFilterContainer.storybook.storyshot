@@ -323,7 +323,6 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
     <span>
       <button
         className="btn btn-default filter-button"
-        onClick={undefined}
       >
         Reset
       </button>
