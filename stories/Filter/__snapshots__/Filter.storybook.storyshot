@@ -166,6 +166,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
       <span>
         <button
           className="btn btn-default filter-button"
+          onClick={undefined}
         >
           Reset
         </button>

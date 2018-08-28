@@ -17,6 +17,7 @@ exports[`Storyshots Layout name links body 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -65,6 +66,7 @@ exports[`Storyshots Layout name links body 1`] = `
             href="url1"
             onClick={[Function]}
             onKeyUp={[Function]}
+            style={undefined}
           >
             <span
               className=""
@@ -78,6 +80,7 @@ exports[`Storyshots Layout name links body 1`] = `
             href="url2"
             onClick={[Function]}
             onKeyUp={[Function]}
+            style={undefined}
           >
             <span
               className=""
@@ -91,6 +94,7 @@ exports[`Storyshots Layout name links body 1`] = `
             href="url3"
             onClick={[Function]}
             onKeyUp={[Function]}
+            style={undefined}
           >
             <span
               className=""
@@ -186,6 +190,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -234,6 +239,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             href="url1"
             onClick={[Function]}
             onKeyUp={[Function]}
+            style={undefined}
           >
             <span
               className=""
@@ -247,6 +253,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             href="url2"
             onClick={[Function]}
             onKeyUp={[Function]}
+            style={undefined}
           >
             <span
               className=""
@@ -260,6 +267,7 @@ exports[`Storyshots Layout name links header and body 1`] = `
             href="url3"
             onClick={[Function]}
             onKeyUp={[Function]}
+            style={undefined}
           >
             <span
               className=""
@@ -360,6 +368,7 @@ exports[`Storyshots Layout name no links no body 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>

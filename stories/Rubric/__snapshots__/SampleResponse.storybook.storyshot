@@ -3,7 +3,9 @@
 exports[`Storyshots Sample Response with a sample response 1`] = `
 <div
   aria-expanded={false}
+  className={undefined}
   role="tab"
+  style={undefined}
 >
   <a
     className="collapsible-label link-button"

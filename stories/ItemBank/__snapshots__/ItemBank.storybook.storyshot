@@ -17,6 +17,7 @@ exports[`Storyshots Item Bank default 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -130,6 +131,7 @@ exports[`Storyshots Item Bank default 1`] = `
                   </label>
                   <select
                     className="form-control item-dropdown"
+                    disabled={undefined}
                     onChange={[Function]}
                     value="187-1111-siw"
                   >
@@ -143,6 +145,7 @@ exports[`Storyshots Item Bank default 1`] = `
                     </option>
                     <option
                       aria-selected={true}
+                      disabled={undefined}
                       label="itemreviewviewer:187-1111"
                       value="187-1111-siw"
                     >
@@ -150,6 +153,7 @@ exports[`Storyshots Item Bank default 1`] = `
                     </option>
                     <option
                       aria-selected={false}
+                      disabled={undefined}
                       label="itemreviewviewer:1872-2222"
                       value="1872-2222-math"
                     >
@@ -157,6 +161,7 @@ exports[`Storyshots Item Bank default 1`] = `
                     </option>
                     <option
                       aria-selected={false}
+                      disabled={undefined}
                       label="itemreviewviewer:1871-3333"
                       value="1871-3333-siw"
                     >
@@ -164,6 +169,7 @@ exports[`Storyshots Item Bank default 1`] = `
                     </option>
                     <option
                       aria-selected={false}
+                      disabled={undefined}
                       label=""
                       value="undefined-undefined-undefined"
                     >
@@ -283,6 +289,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
         href="/BrowseItems"
         onClick={[Function]}
         onKeyUp={[Function]}
+        style={undefined}
       >
         Skip to main content
       </a>
@@ -396,6 +403,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                   </label>
                   <select
                     className="form-control item-dropdown"
+                    disabled={undefined}
                     onChange={[Function]}
                     value="187-1111-siw"
                   >
@@ -409,6 +417,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                     </option>
                     <option
                       aria-selected={true}
+                      disabled={undefined}
                       label="itemreviewviewer:187-1111"
                       value="187-1111-siw"
                     >
@@ -416,6 +425,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                     </option>
                     <option
                       aria-selected={false}
+                      disabled={undefined}
                       label="itemreviewviewer:1872-2222"
                       value="1872-2222-math"
                     >
@@ -423,6 +433,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                     </option>
                     <option
                       aria-selected={false}
+                      disabled={undefined}
                       label=""
                       value="undefined-undefined-undefined"
                     >

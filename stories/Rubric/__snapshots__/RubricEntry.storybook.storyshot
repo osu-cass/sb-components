@@ -17,7 +17,9 @@ exports[`Storyshots Rubric Entry with a rubric entry 1`] = `
 >
   <div
     aria-expanded={false}
+    className={undefined}
     role="tab"
+    style={undefined}
   >
     <a
       className="collapsible-label link-button"
@@ -67,7 +69,9 @@ exports[`Storyshots Rubric Entry with an empty entry 1`] = `
 >
   <div
     aria-expanded={false}
+    className={undefined}
     role="tab"
+    style={undefined}
   >
     <a
       className="collapsible-label link-button"
