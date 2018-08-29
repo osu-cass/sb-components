@@ -126,4 +126,7 @@ export interface AccessibilityRevisionModel {
   interactionType: string;
   allowCalculator?: boolean;
   isPerformance?: boolean;
+  itemKey?: string;
+  bankKey?: string;
+  brailleType?: string;
 }
