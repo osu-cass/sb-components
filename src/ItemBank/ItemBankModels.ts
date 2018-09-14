@@ -20,12 +20,10 @@ export function getItemBankName(
   itemRevisionModel: ItemRevisionModel
 ): string | undefined {
   let value: string | undefined;
-  if (itemRevisionModel.bankKey && itemRevisionModel.itemKey) {
-    if (itemRevisionModel.hasBankKey) {
-      value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
-    } else {
-      value = `${itemRevisionModel.itemKey}`;
-    }
+  if (itemRevisionModel.hasBankKey) {
+    value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
+  } else {
+    value = `${itemRevisionModel.itemKey}`;
   }
 
   return value;
@@ -55,10 +53,13 @@ export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
     itemRevisionModel &&
     itemRevisionModel.namespace &&
     itemRevisionModel.itemKey &&
-    itemRevisionModel.bankKey &&
     itemRevisionModel.section
   ) {
     value = true;
+
+    if (itemRevisionModel.hasBankKey && !itemRevisionModel.bankKey) {
+      value = false;
+    }
   }
 
   return value;
@@ -125,4 +126,7 @@ export interface AccessibilityRevisionModel {
   interactionType: string;
   allowCalculator?: boolean;
   isPerformance?: boolean;
+  itemKey?: string;
+  bankKey?: string;
+  brailleType?: string;
 }
