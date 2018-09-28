@@ -28,6 +28,11 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
     this.props.onItemsUpdate(itemRows);
   }
 
+  handleDeleteRow(key: number) {
+    delete this.props.itemRows[key];
+    this.forceUpdate();
+  }
+
   renderHeader() {
     return (
       <thead>
@@ -46,9 +51,12 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
       <ItemEntryRow
         row={row}
         onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
+        onDeleteRow={deleteRow => this.handleDeleteRow(idx)}
         namespaces={this.props.namespaces}
         sections={this.props.sections}
         key={idx}
+        id={idx}
+        isLast={idx === this.props.itemRows.length - 1}
       />
     ));
 

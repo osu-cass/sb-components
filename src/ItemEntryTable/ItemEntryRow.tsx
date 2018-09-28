@@ -10,9 +10,12 @@ import {
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
+  onDeleteRow: (row: number) => void;
+  id: number;
   row: ItemRevisionModel;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
+  isLast: boolean;
 }
 
 export interface ItemEntryRowState {
@@ -49,6 +52,10 @@ export class ItemEntryRow extends React.Component<
       this.props.onRowUpdate(editRow);
       this.setState({ isModified: false });
     }
+  };
+
+  deleteRow = () => {
+    this.props.onDeleteRow(this.props.id);
   };
 
   handleItemKey = (itemKey: number) => {
@@ -198,6 +205,20 @@ export class ItemEntryRow extends React.Component<
     );
   }
 
+  renderDeleteButton() {
+    return (
+      <td>
+        <button
+          className={"form-control delete-button"}
+          onClick={this.deleteRow}
+          disabled={this.props.isLast}
+        >
+          X
+        </button>
+      </td>
+    );
+  }
+
   render() {
     const { editRow } = this.state;
 
@@ -215,6 +236,7 @@ export class ItemEntryRow extends React.Component<
           editRow.itemKey
         )}
         {this.renderRowSection(editRow)}
+        {this.renderDeleteButton()}
       </tr>
     );
   }

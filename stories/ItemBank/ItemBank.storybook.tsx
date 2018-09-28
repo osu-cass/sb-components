@@ -30,7 +30,7 @@ storiesOf("Item Bank", module)
           accessibilityClient={mockBankAccessibilityClient}
           aboutItemRevisionClient={mockBankAboutItemClient}
           revisionsClient={mockBankRevisionsClient}
-          itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
+          itemViewUrl="https://ivs.smarterbalanced.org/items?ids=187-3000"
           namespacesClient={mockBankNamespacesClient}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
