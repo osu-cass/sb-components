@@ -41,7 +41,7 @@ export class ItemBankEntry extends React.Component<
     }
   };
 
-  onCsvBlur = () => {
+  onCsvApply = () => {
     this.setState({
       csvIsOpen: false,
       itemsEntryIsOpen: true
@@ -62,7 +62,7 @@ export class ItemBankEntry extends React.Component<
             <CsvEntry
               namespaces={namespaces}
               onItemsUpdate={this.props.updateItems}
-              onBlur={this.onCsvBlur}
+              onApply={this.onCsvApply}
             />
           </div>
         </div>

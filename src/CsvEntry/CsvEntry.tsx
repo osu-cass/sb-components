@@ -11,7 +11,7 @@ import {
 export interface CsvEntryProps {
   namespaces: NamespaceModel[];
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
-  onBlur: () => void;
+  onApply: () => void;
 }
 
 export interface CsvEntryState {
@@ -24,6 +24,17 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     super(props);
 
     this.state = { csvData: [] };
+  }
+
+  renderHelpText(): JSX.Element {
+    return (
+      <p>
+        Enter namespace, bank key, item id, and section for the namespace which
+        has a bank key. Or,<br />
+        Enter namespace , item id, and section for the namespace which doesn't
+        have a bank key.
+      </p>
+    );
   }
 
   renderHelpButton() {
@@ -40,24 +51,29 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     );
 
     return (
-      <div className="help-button">
+      <span className="csv-button-left">
         {generateTooltip({
           helpText,
           displayText,
           displayIcon: undefined
         })}
-      </div>
+      </span>
     );
   }
 
-  renderHelpText(): JSX.Element {
+  renderApplyButton() {
     return (
-      <p>
-        Enter namespace, bank key, item id, and section for the namespace which
-        has a bank key. Or,<br />
-        Enter namespace , item id, and section for the namespace which doesn't
-        have a bank key.
-      </p>
+      <span className="csv-button-right">
+        <button
+          className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+          role="button"
+          aria-label="Apply text"
+          onClick={this.handleCsvApply}
+        >
+          <span className="fa fa-check-circle" aria-hidden="true" />
+          Apply
+        </button>
+      </span>
     );
   }
 
@@ -69,7 +85,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     });
   }
 
-  handleCsvBlur = () => {
+  handleCsvApply = () => {
     const { csvInputValue } = this.state;
     const { namespaces } = this.props;
     const csvData = parseCsv(csvInputValue, namespaces);
@@ -78,18 +94,20 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
       csvData
     });
     this.props.onItemsUpdate(csvData);
-    this.props.onBlur();
+    this.props.onApply();
   };
 
   render() {
     return (
       <div className="csv-entry-wrapper">
-        {this.renderHelpButton()}
+        <div className="csv-button-row">
+          {this.renderHelpButton()}
+          {this.renderApplyButton()}
+        </div>
         <textarea
           className="csv-text-entry"
           onChange={e => this.handleCsvChange(e)}
           value={this.state.csvInputValue}
-          onBlur={this.handleCsvBlur}
         />
       </div>
     );
