@@ -5,34 +5,53 @@ exports[`CsvEntry calls handle csv blur 1`] = `
   className="csv-entry-wrapper"
 >
   <div
-    className="help-button"
+    className="csv-button-row"
   >
-    <ToolTip
-      displayText={
-        <button
-          aria-label="Open help text"
-          className="item-nav-btn btn btn-default btn-sm about-item-btn"
-          role="button"
-        >
-          <span
-            aria-hidden="true"
-            className="fa fa-info-circle"
-          />
-          Help
-        </button>
-      }
-      helpText={
-        <p>
-          Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
-          <br />
-          Enter namespace , item id, and section for the namespace which doesn't have a bank key.
-        </p>
-      }
-    />
+    <span
+      className="csv-button-left"
+    >
+      <ToolTip
+        displayText={
+          <button
+            aria-label="Open help text"
+            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle"
+            />
+            Help
+          </button>
+        }
+        helpText={
+          <p>
+            Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
+            <br />
+            Enter namespace , item id, and section for the namespace which doesn't have a bank key.
+          </p>
+        }
+      />
+    </span>
+    <span
+      className="csv-button-right"
+    >
+      <button
+        aria-label="Apply text"
+        className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+        onClick={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="fa fa-check-circle"
+        />
+        Apply
+      </button>
+    </span>
   </div>
   <textarea
     className="csv-text-entry"
-    onBlur={[Function]}
     onChange={[Function]}
   />
 </div>
@@ -43,34 +62,53 @@ exports[`CsvEntry calls handle csv change 1`] = `
   className="csv-entry-wrapper"
 >
   <div
-    className="help-button"
+    className="csv-button-row"
   >
-    <ToolTip
-      displayText={
-        <button
-          aria-label="Open help text"
-          className="item-nav-btn btn btn-default btn-sm about-item-btn"
-          role="button"
-        >
-          <span
-            aria-hidden="true"
-            className="fa fa-info-circle"
-          />
-          Help
-        </button>
-      }
-      helpText={
-        <p>
-          Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
-          <br />
-          Enter namespace , item id, and section for the namespace which doesn't have a bank key.
-        </p>
-      }
-    />
+    <span
+      className="csv-button-left"
+    >
+      <ToolTip
+        displayText={
+          <button
+            aria-label="Open help text"
+            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle"
+            />
+            Help
+          </button>
+        }
+        helpText={
+          <p>
+            Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
+            <br />
+            Enter namespace , item id, and section for the namespace which doesn't have a bank key.
+          </p>
+        }
+      />
+    </span>
+    <span
+      className="csv-button-right"
+    >
+      <button
+        aria-label="Apply text"
+        className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+        onClick={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="fa fa-check-circle"
+        />
+        Apply
+      </button>
+    </span>
   </div>
   <textarea
     className="csv-text-entry"
-    onBlur={[Function]}
     onChange={[Function]}
     value="hello"
   />
@@ -82,34 +120,53 @@ exports[`CsvEntry matches snapshot 1`] = `
   className="csv-entry-wrapper"
 >
   <div
-    className="help-button"
+    className="csv-button-row"
   >
-    <ToolTip
-      displayText={
-        <button
-          aria-label="Open help text"
-          className="item-nav-btn btn btn-default btn-sm about-item-btn"
-          role="button"
-        >
-          <span
-            aria-hidden="true"
-            className="fa fa-info-circle"
-          />
-          Help
-        </button>
-      }
-      helpText={
-        <p>
-          Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
-          <br />
-          Enter namespace , item id, and section for the namespace which doesn't have a bank key.
-        </p>
-      }
-    />
+    <span
+      className="csv-button-left"
+    >
+      <ToolTip
+        displayText={
+          <button
+            aria-label="Open help text"
+            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle"
+            />
+            Help
+          </button>
+        }
+        helpText={
+          <p>
+            Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
+            <br />
+            Enter namespace , item id, and section for the namespace which doesn't have a bank key.
+          </p>
+        }
+      />
+    </span>
+    <span
+      className="csv-button-right"
+    >
+      <button
+        aria-label="Apply text"
+        className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+        onClick={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="fa fa-check-circle"
+        />
+        Apply
+      </button>
+    </span>
   </div>
   <textarea
     className="csv-text-entry"
-    onBlur={[Function]}
     onChange={[Function]}
   />
 </div>
