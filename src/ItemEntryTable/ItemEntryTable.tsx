@@ -15,6 +15,7 @@ export interface ItemEntryTableProps {
   namespaces: NamespaceModel[];
   sections: SectionModel[];
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
+  onDeleteItem: (items: number) => void;
 }
 
 export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
@@ -29,8 +30,7 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
   }
 
   handleDeleteRow(key: number) {
-    delete this.props.itemRows[key];
-    this.forceUpdate();
+    this.props.onDeleteItem(key);
   }
 
   renderHeader() {
