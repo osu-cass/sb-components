@@ -25,7 +25,7 @@ const items: ItemRevisionModel[] = [item, item2];
 
 const csvEntryProps: CsvEntryProps = {
   onItemsUpdate: onItemsUpdateMock,
-  onBlur: jest.fn(),
+  onApply: jest.fn(),
   onClick: jest.fn()
 };
 
@@ -49,10 +49,13 @@ describe("CsvEntry", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("calls handle csv blur", () => {
+  it("calls handle csv apply", () => {
     const wrapperInstance = wrapper.instance() as CsvEntry;
-    wrapper.find(".csv-text-entry").simulate("focus");
-    wrapper.find(".csv-text-entry").simulate("blur");
+    wrapper
+      .find(".csv-text-entry")
+      .simulate("change", {
+        currentTarget: { value: "itemreviewviewer,187,3000,SIW" }
+      });
     expect(wrapper).toMatchSnapshot();
   });
 

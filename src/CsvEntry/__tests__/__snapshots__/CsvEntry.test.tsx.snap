@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CsvEntry calls handle csv blur 1`] = `
+exports[`CsvEntry calls handle csv apply 1`] = `
 <div
   className="csv-entry-wrapper"
 >
@@ -14,7 +14,7 @@ exports[`CsvEntry calls handle csv blur 1`] = `
         displayText={
           <button
             aria-label="Open help text"
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            className="item-nav-btn btn btn-default btn-sm"
             role="button"
           >
             <span
@@ -38,7 +38,7 @@ exports[`CsvEntry calls handle csv blur 1`] = `
     >
       <button
         aria-label="Apply text"
-        className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+        className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
         onClick={[Function]}
         role="button"
       >
@@ -53,6 +53,7 @@ exports[`CsvEntry calls handle csv blur 1`] = `
   <textarea
     className="csv-text-entry"
     onChange={[Function]}
+    value="itemreviewviewer,187,3000,SIW"
   />
 </div>
 `;
@@ -71,7 +72,7 @@ exports[`CsvEntry calls handle csv change 1`] = `
         displayText={
           <button
             aria-label="Open help text"
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            className="item-nav-btn btn btn-default btn-sm"
             role="button"
           >
             <span
@@ -95,7 +96,7 @@ exports[`CsvEntry calls handle csv change 1`] = `
     >
       <button
         aria-label="Apply text"
-        className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+        className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
         onClick={[Function]}
         role="button"
       >
@@ -129,7 +130,7 @@ exports[`CsvEntry matches snapshot 1`] = `
         displayText={
           <button
             aria-label="Open help text"
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
+            className="item-nav-btn btn btn-default btn-sm"
             role="button"
           >
             <span
@@ -153,7 +154,7 @@ exports[`CsvEntry matches snapshot 1`] = `
     >
       <button
         aria-label="Apply text"
-        className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+        className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
         onClick={[Function]}
         role="button"
       >

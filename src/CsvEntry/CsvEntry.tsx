@@ -41,7 +41,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     const helpText: JSX.Element = this.renderHelpText();
     const displayText: JSX.Element = (
       <button
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        className="item-nav-btn btn btn-default btn-sm"
         role="button"
         aria-label="Open help text"
       >
@@ -65,7 +65,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     return (
       <span className="csv-button-right">
         <button
-          className="item-nav-btn btn btn-primary btn-sm about-item-btn"
+          className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
           role="button"
           aria-label="Apply text"
           onClick={this.handleCsvApply}
