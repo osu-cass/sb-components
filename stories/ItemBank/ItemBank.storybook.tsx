@@ -35,6 +35,9 @@ storiesOf("Item Bank", module)
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
           setUrl={item => ""}
+          resetUrl={() => {
+            const url = "";
+          }}
         />
       }
       siteName="Item Bank"
@@ -52,6 +55,9 @@ storiesOf("Item Bank", module)
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocksError}
           setUrl={item => ""}
+          resetUrl={() => {
+            const url = "";
+          }}
         />
       }
       siteName="Item Bank"

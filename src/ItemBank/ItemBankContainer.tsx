@@ -218,10 +218,10 @@ export class ItemBankContainer extends React.Component<
     });
   };
 
-  componentWillUpdate = (
+  componentWillUpdate(
     props: ItemBankContainerProps,
     state: ItemBankContainerState
-  ) => {
+  ) {
     if (
       state.currentItem !== this.state.currentItem &&
       state.currentItem &&
@@ -231,7 +231,7 @@ export class ItemBankContainer extends React.Component<
     } else if (state.items !== this.state.items && state.items.length > 1) {
       this.handleChangeViewItem();
     }
-  };
+  }
 
   deleteItem = (key: number) => {
     this.setState(state => {
