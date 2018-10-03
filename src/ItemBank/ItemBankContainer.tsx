@@ -27,6 +27,7 @@ import {
   toiSAAP,
   AccessibilityResourceModel
 } from "@src/index";
+import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
@@ -41,6 +42,7 @@ export interface ItemBankContainerProps {
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
   setUrl: (item: ItemRevisionModel) => void;
+  resetUrl: () => void;
 }
 
 export interface ItemBankContainerState {
@@ -216,6 +218,45 @@ export class ItemBankContainer extends React.Component<
     });
   };
 
+  componentWillUpdate = (
+    props: ItemBankContainerProps,
+    state: ItemBankContainerState
+  ) => {
+    if (
+      state.currentItem !== this.state.currentItem &&
+      state.currentItem &&
+      Object.keys(state.currentItem).length === 0
+    ) {
+      this.props.resetUrl();
+    } else if (state.items !== this.state.items && state.items.length > 1) {
+      this.handleChangeViewItem();
+    }
+  };
+
+  deleteItem = (key: number) => {
+    this.setState(state => {
+      let currentItem = state.currentItem;
+      if (itemsAreEqual(state.items[key], currentItem)) {
+        if (state.previousItem) {
+          currentItem = state.previousItem;
+        } else if (state.nextItem) {
+          currentItem = state.nextItem;
+        } else if (state.items.length === 2) {
+          currentItem = {};
+        }
+      }
+
+      return {
+        currentItem,
+        items: state.items.filter((i, index) => key !== index)
+      };
+    });
+  };
+
+  clearItems = () => {
+    this.setState({ items: [{}], previousItem: {}, nextItem: {} });
+  };
+
   /**
    * Updates prev and next items. Updates rubric, about item, and item url
    * @memberof ItemBankContainer
@@ -224,7 +265,7 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
     let index = 0;
 
-    if (currentItem) {
+    if (currentItem && Object.keys(currentItem).length > 0) {
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
           this.fetchAccResourceGroups(aboutItem)
@@ -234,9 +275,11 @@ export class ItemBankContainer extends React.Component<
         })
         .catch(e => {
           this.onError(e, () => {
-            index = items.findIndex(i => i === currentItem);
-            items[index].valid = false;
-            this.setState({ items }, this.updateNavigationItems);
+            if (items.length > 1) {
+              index = items.findIndex(i => i === currentItem);
+              items[index].valid = false;
+              this.setState({ items }, this.updateNavigationItems);
+            }
           });
         });
     }
@@ -255,7 +298,7 @@ export class ItemBankContainer extends React.Component<
   handleUpdateIsaap = (accGroups: AccResourceGroupModel[]) => {
     const { currentItem } = this.state;
 
-    if (currentItem) {
+    if (currentItem && Object.keys(currentItem).length > 0) {
       const isaap = toiSAAP(accGroups);
       this.props.setUrl(currentItem);
       this.setState({ currentItem });
@@ -391,6 +434,7 @@ export class ItemBankContainer extends React.Component<
           namespaces={namespacesContent}
           sections={sectionsContent}
           items={items}
+          deleteItem={this.deleteItem}
         />
       );
     }
