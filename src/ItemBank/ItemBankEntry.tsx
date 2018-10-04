@@ -9,9 +9,11 @@ import {
 } from "@src/index";
 
 export interface ItemBankEntryProps {
+  updateCsvText: (csvText: string) => void;
   updateItems: (items: ItemRevisionModel[]) => void;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
+  csvText: string;
   items: ItemRevisionModel[];
 }
 
@@ -49,7 +51,7 @@ export class ItemBankEntry extends React.Component<
   };
 
   renderCsvEntry() {
-    const { namespaces } = this.props;
+    const { csvText, namespaces } = this.props;
 
     return (
       <Accordion
@@ -60,7 +62,9 @@ export class ItemBankEntry extends React.Component<
         <div className="csv-entry-container section">
           <div className="csv-entry-wrapper">
             <CsvEntry
+              csvText={csvText}
               namespaces={namespaces}
+              onCsvTextUpdate={this.props.updateCsvText}
               onItemsUpdate={this.props.updateItems}
               onApply={this.onCsvApply}
             />

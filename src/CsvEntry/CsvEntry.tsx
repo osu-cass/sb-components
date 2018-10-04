@@ -9,7 +9,9 @@ import {
 } from "@src/index";
 
 export interface CsvEntryProps {
+  csvText: string;
   namespaces: NamespaceModel[];
+  onCsvTextUpdate: (csvText: string) => void;
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onApply: () => void;
 }
@@ -23,7 +25,10 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   constructor(props: CsvEntryProps) {
     super(props);
 
-    this.state = { csvData: [] };
+    this.state = {
+      csvInputValue: props.csvText,
+      csvData: []
+    };
   }
 
   renderHelpText(): JSX.Element {
@@ -83,6 +88,8 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     this.setState({
       csvInputValue: rawCsv
     });
+
+    this.props.onCsvTextUpdate(rawCsv);
   }
 
   handleCsvApply = () => {

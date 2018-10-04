@@ -1,4 +1,8 @@
-import { ItemRevisionModel, NamespaceModel } from "../ItemBank/ItemBankModels";
+import {
+  findNamespace,
+  ItemRevisionModel,
+  NamespaceModel
+} from "../ItemBank/ItemBankModels";
 
 export interface CsvRowModel extends ItemRevisionModel {
   index: number;
@@ -49,9 +53,7 @@ function setNamespace(
   namespace: string,
   namespaces: NamespaceModel[]
 ) {
-  const matchedNamespace: NamespaceModel | undefined = namespaces.find(
-    s => s.name === namespace
-  );
+  const matchedNamespace = findNamespace(namespace, namespaces);
   if (matchedNamespace) {
     row.namespace = matchedNamespace.name;
   }
@@ -61,7 +63,7 @@ function setCsvRowWithBankKey(row: CsvRowModel, values: string[]) {
   row.hasBankKey = true;
   row.bankKey = +values[1];
   row.itemKey = +values[2];
-  row.section = values[3];
+  row.section = values[3].trim();
 }
 
 function setCsvRowWithoutBankKey(
@@ -72,7 +74,7 @@ function setCsvRowWithoutBankKey(
   row.hasBankKey = false;
   row.bankKey = getBankKeyByNamespace(row.namespace, namespaces);
   row.itemKey = +values[1];
-  row.section = values[2];
+  row.section = values[2].trim();
 }
 
 function getBankKeyByNamespace(
@@ -82,9 +84,8 @@ function getBankKeyByNamespace(
   let bankKey: number | undefined;
 
   if (namespaces) {
-    const matchedNamespace: NamespaceModel | undefined = namespaces.find(
-      s => s.name === namespace
-    );
+    if (!namespace) return;
+    const matchedNamespace = findNamespace(namespace, namespaces);
     if (matchedNamespace) bankKey = matchedNamespace.bankKey;
   }
 
