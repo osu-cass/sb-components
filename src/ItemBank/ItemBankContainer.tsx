@@ -191,9 +191,7 @@ export class ItemBankContainer extends React.Component<
   }
 
   handleUpdateCsvText = (csvText: string) => {
-    this.setState({
-      csvText
-    });
+    this.setState({ csvText });
   };
 
   handleUpdateItems = (items: ItemRevisionModel[]) => {
