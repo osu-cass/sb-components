@@ -1,17 +1,9 @@
 import * as React from "react";
-import * as $ from "jquery";
-import * as ReactDOM from "react-dom";
 import {
-  AboutItem,
-  AboutItemModel,
   getResourceContent,
-  ItemAccessibilityModal,
-  ItemViewerFrame,
   AccResourceGroupModel,
-  AdvancedAboutItem,
   AboutItemRevisionModel,
   Resource,
-  GradeLevels,
   Subscription,
   ItemRevisionModel,
   itemRevisionKey,
@@ -24,8 +16,7 @@ import {
   ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  toiSAAP,
-  AccessibilityResourceModel
+  toiSAAP
 } from "@src/index";
 
 export interface ItemBankContainerProps {
@@ -387,7 +378,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { namespaces, sections, items, hasError, csvText } = this.state;
+    const { namespaces, sections, items, csvText } = this.state;
     let content: JSX.Element | undefined;
 
     const namespacesContent = getResourceContent(namespaces);
@@ -446,13 +437,6 @@ export class ItemBankContainer extends React.Component<
   }
 
   render() {
-    const {
-      aboutItemRevisionModel,
-      accResourceGroups,
-      sections,
-      items
-    } = this.state;
-
     return (
       <div className="item-container container">
         <div>
