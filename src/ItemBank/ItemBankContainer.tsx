@@ -223,9 +223,10 @@ export class ItemBankContainer extends React.Component<
     state: ItemBankContainerState
   ) {
     if (
-      state.currentItem !== this.state.currentItem &&
-      state.currentItem &&
-      Object.keys(state.currentItem).length === 0
+      !state.currentItem &&
+      !state.nextItem &&
+      !state.previousItem &&
+      this.state.currentItem
     ) {
       this.props.resetUrl();
     } else if (state.items !== this.state.items && state.items.length > 1) {
@@ -236,25 +237,36 @@ export class ItemBankContainer extends React.Component<
   deleteItem = (key: number) => {
     this.setState(state => {
       let currentItem = state.currentItem;
+      let nextItem = state.nextItem;
+      let previousItem = state.previousItem;
       if (itemsAreEqual(state.items[key], currentItem)) {
         if (state.previousItem) {
           currentItem = state.previousItem;
         } else if (state.nextItem) {
           currentItem = state.nextItem;
         } else if (state.items.length === 2) {
-          currentItem = {};
+          currentItem = undefined;
+          nextItem = undefined;
+          previousItem = undefined;
         }
       }
 
       return {
         currentItem,
+        nextItem,
+        previousItem,
         items: state.items.filter((i, index) => key !== index)
       };
     });
   };
 
   clearItems = () => {
-    this.setState({ items: [{}], previousItem: {}, nextItem: {} });
+    this.setState({
+      items: [{}],
+      previousItem: undefined,
+      nextItem: undefined,
+      currentItem: undefined
+    });
   };
 
   /**
@@ -265,7 +277,7 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
     let index = 0;
 
-    if (currentItem && Object.keys(currentItem).length > 0) {
+    if (currentItem) {
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
           this.fetchAccResourceGroups(aboutItem)
@@ -298,7 +310,7 @@ export class ItemBankContainer extends React.Component<
   handleUpdateIsaap = (accGroups: AccResourceGroupModel[]) => {
     const { currentItem } = this.state;
 
-    if (currentItem && Object.keys(currentItem).length > 0) {
+    if (currentItem) {
       const isaap = toiSAAP(accGroups);
       this.props.setUrl(currentItem);
       this.setState({ currentItem });
@@ -435,6 +447,7 @@ export class ItemBankContainer extends React.Component<
           sections={sectionsContent}
           items={items}
           deleteItem={this.deleteItem}
+          clearItems={this.clearItems}
         />
       );
     }

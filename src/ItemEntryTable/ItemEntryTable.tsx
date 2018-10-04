@@ -16,6 +16,7 @@ export interface ItemEntryTableProps {
   sections: SectionModel[];
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onDeleteItem: (items: number) => void;
+  onClearItems: () => void;
 }
 
 export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
@@ -33,6 +34,10 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
     this.props.onDeleteItem(key);
   }
 
+  handleClearItems() {
+    this.props.onClearItems();
+  }
+
   renderHeader() {
     return (
       <thead>
@@ -41,6 +46,7 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
           <th scope="col">Bank</th>
           <th scope="col">Item</th>
           <th scope="col">Section</th>
+          <th>{this.renderClearButton()}</th>
         </tr>
       </thead>
     );
@@ -61,6 +67,17 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
     ));
 
     return <tbody>{rows}</tbody>;
+  }
+
+  renderClearButton() {
+    return (
+      <input
+        className={"btn btn-primary clear-button bg-light"}
+        onClick={this.props.onClearItems}
+        type="button"
+        value="clear all"
+      />
+    );
   }
 
   render() {

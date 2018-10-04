@@ -11,6 +11,7 @@ import {
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;
   deleteItem: (item: number) => void;
+  clearItems: () => void;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
   items: ItemRevisionModel[];
@@ -72,7 +73,14 @@ export class ItemBankEntry extends React.Component<
   }
 
   renderTableEntry() {
-    const { items, updateItems, namespaces, sections, deleteItem } = this.props;
+    const {
+      items,
+      updateItems,
+      clearItems,
+      namespaces,
+      sections,
+      deleteItem
+    } = this.props;
 
     return (
       <Accordion
@@ -86,6 +94,7 @@ export class ItemBankEntry extends React.Component<
           namespaces={namespaces}
           sections={sections}
           onDeleteItem={deleteItem}
+          onClearItems={clearItems}
         />
       </Accordion>
     );
