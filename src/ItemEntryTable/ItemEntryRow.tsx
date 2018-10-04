@@ -65,8 +65,8 @@ export class ItemEntryRow extends React.Component<
   handleNamespace = (namespace: string) => {
     const { editRow } = this.state;
     const namespaceModel = findNamespace(namespace, this.props.namespaces);
-    const hasBankKey = namespaceModel.hasBankKey;
-    const bankKey = namespaceModel.bankKey;
+    const hasBankKey = namespaceModel ? namespaceModel.hasBankKey : false;
+    const bankKey = namespaceModel ? namespaceModel.bankKey : 0;
     this.setState(
       {
         editRow: { ...editRow, namespace, hasBankKey, bankKey },
