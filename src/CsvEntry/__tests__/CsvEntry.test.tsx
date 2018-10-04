@@ -9,6 +9,7 @@ import {
 } from "@src/index";
 
 import { CsvEntryState } from "../CsvEntry";
+const onCsvTextUpdateMock = jest.fn();
 const onItemsUpdateMock = jest.fn();
 
 const item: ItemRevisionModel = {
@@ -24,9 +25,9 @@ const item2 = { ...item, bankKey: 2332, revision: "asdf" };
 const items: ItemRevisionModel[] = [item, item2];
 
 const csvEntryProps: CsvEntryProps = {
+  onCsvTextUpdate: onCsvTextUpdateMock,
   onItemsUpdate: onItemsUpdateMock,
-  onApply: jest.fn(),
-  onClick: jest.fn()
+  onApply: jest.fn()
 };
 
 const csvData1: CsvRowModel = {
@@ -51,11 +52,9 @@ describe("CsvEntry", () => {
 
   it("calls handle csv apply", () => {
     const wrapperInstance = wrapper.instance() as CsvEntry;
-    wrapper
-      .find(".csv-text-entry")
-      .simulate("change", {
-        currentTarget: { value: "itemreviewviewer,187,3000,SIW" }
-      });
+    wrapper.find(".csv-text-entry").simulate("change", {
+      currentTarget: { value: "itemreviewviewer,187,3000,SIW" }
+    });
     expect(wrapper).toMatchSnapshot();
   });
 
