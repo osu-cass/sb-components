@@ -60,6 +60,7 @@ export class ItemViewerFrame extends React.Component<FrameProps, FrameState> {
           // tslint:disable-next-line:react-iframe-missing-sandbox
           id="itemviewer-iframe"
           className="itemviewer-iframe"
+          scrolling="no"
           onLoadStart={this.startLoad}
           onLoad={this.finishLoad}
           src={this.props.url}
