@@ -1,17 +1,9 @@
 import * as React from "react";
-import * as $ from "jquery";
-import * as ReactDOM from "react-dom";
 import {
-  AboutItem,
-  AboutItemModel,
   getResourceContent,
-  ItemAccessibilityModal,
-  ItemViewerFrame,
   AccResourceGroupModel,
-  AdvancedAboutItem,
   AboutItemRevisionModel,
   Resource,
-  GradeLevels,
   Subscription,
   ItemRevisionModel,
   itemRevisionKey,
@@ -24,8 +16,7 @@ import {
   ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  toiSAAP,
-  AccessibilityResourceModel
+  toiSAAP
 } from "@src/index";
 import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
@@ -49,6 +40,7 @@ export interface ItemBankContainerState {
   aboutItemRevisionModel: Resource<AboutItemRevisionModel>;
   accResourceGroups: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemRevisionModel;
+  csvText: string;
   items: ItemRevisionModel[];
   namespaces: Resource<NamespaceModel[]>;
   sections: Resource<SectionModel[]>;
@@ -77,6 +69,7 @@ export class ItemBankContainer extends React.Component<
     this.state = {
       currentItem,
       items,
+      csvText: "",
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
       namespaces: { kind: "loading" },
@@ -198,6 +191,10 @@ export class ItemBankContainer extends React.Component<
       );
     }
   }
+
+  handleUpdateCsvText = (csvText: string) => {
+    this.setState({ csvText });
+  };
 
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     const currentItem = items.length > 0 ? items[0] : undefined;
@@ -434,7 +431,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { namespaces, sections, items, hasError } = this.state;
+    const { namespaces, sections, items, csvText } = this.state;
     let content: JSX.Element | undefined;
 
     const namespacesContent = getResourceContent(namespaces);
@@ -442,9 +439,11 @@ export class ItemBankContainer extends React.Component<
     if (namespacesContent && sectionsContent) {
       content = (
         <ItemBankEntry
+          updateCsvText={this.handleUpdateCsvText}
           updateItems={this.handleUpdateItems}
           namespaces={namespacesContent}
           sections={sectionsContent}
+          csvText={csvText}
           items={items}
           deleteItem={this.deleteItem}
           clearItems={this.clearItems}
@@ -493,13 +492,6 @@ export class ItemBankContainer extends React.Component<
   }
 
   render() {
-    const {
-      aboutItemRevisionModel,
-      accResourceGroups,
-      sections,
-      items
-    } = this.state;
-
     return (
       <div className="item-container container">
         <div>
