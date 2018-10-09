@@ -207,9 +207,9 @@ export class ItemEntryRow extends React.Component<
 
   renderDeleteButton() {
     return (
-      <td>
+      <td className="delete-row">
         <input
-          className={"delete-button btn btn-primary bg-light"}
+          className="delete-button btn btn-primary bg-light"
           onClick={this.deleteRow}
           disabled={this.props.isLast}
           type="button"
