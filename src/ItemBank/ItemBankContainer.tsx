@@ -236,7 +236,6 @@ export class ItemBankContainer extends React.Component<
       let currentItem = state.currentItem;
       let nextItem = state.nextItem;
       let previousItem = state.previousItem;
-      let revisions = state.revisions;
       if (itemsAreEqual(state.items[key], currentItem)) {
         if (state.previousItem) {
           currentItem = state.previousItem;
@@ -246,7 +245,6 @@ export class ItemBankContainer extends React.Component<
           currentItem = undefined;
           nextItem = undefined;
           previousItem = undefined;
-          revisions = [] as RevisionModel[];
         }
       }
 
@@ -254,7 +252,6 @@ export class ItemBankContainer extends React.Component<
         currentItem,
         nextItem,
         previousItem,
-        revisions,
         items: state.items.filter((i, index) => key !== index)
       };
     });
@@ -265,8 +262,7 @@ export class ItemBankContainer extends React.Component<
       items: [{}],
       previousItem: undefined,
       nextItem: undefined,
-      currentItem: undefined,
-      revisions: [] as RevisionModel[]
+      currentItem: undefined
     });
   };
 
