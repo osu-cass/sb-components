@@ -319,6 +319,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                   id="itemviewer-iframe"
                   onLoad={[Function]}
                   onLoadStart={[Function]}
+                  scrolling="no"
                   src="hello"
                   title="item viewer"
                 />
@@ -569,6 +570,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
             id="itemviewer-iframe"
             onLoad={[Function]}
             onLoadStart={[Function]}
+            scrolling="no"
             src="hello"
             title="item viewer"
           />
