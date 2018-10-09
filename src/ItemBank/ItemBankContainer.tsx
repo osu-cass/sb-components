@@ -239,6 +239,7 @@ export class ItemBankContainer extends React.Component<
       let currentItem = state.currentItem;
       let nextItem = state.nextItem;
       let previousItem = state.previousItem;
+      let revisions = state.revisions;
       if (itemsAreEqual(state.items[key], currentItem)) {
         if (state.previousItem) {
           currentItem = state.previousItem;
@@ -248,6 +249,7 @@ export class ItemBankContainer extends React.Component<
           currentItem = undefined;
           nextItem = undefined;
           previousItem = undefined;
+          revisions = [];
         }
       }
 
@@ -255,6 +257,7 @@ export class ItemBankContainer extends React.Component<
         currentItem,
         nextItem,
         previousItem,
+        revisions,
         items: state.items.filter((i, index) => key !== index)
       };
     });
@@ -265,7 +268,8 @@ export class ItemBankContainer extends React.Component<
       items: [{}],
       previousItem: undefined,
       nextItem: undefined,
-      currentItem: undefined
+      currentItem: undefined,
+      revision: []
     });
   };
 
@@ -277,7 +281,7 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
     let index = 0;
 
-    if (currentItem) {
+    if (currentItem && currentItem.valid) {
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
           this.fetchAccResourceGroups(aboutItem)
@@ -304,6 +308,8 @@ export class ItemBankContainer extends React.Component<
       const previousItem = getPreviousItemBank(currentItem, items);
 
       this.setState({ currentItem, nextItem, previousItem });
+    } else {
+      this.setState({ nextItem: undefined, previousItem: undefined });
     }
   };
 
