@@ -18,6 +18,7 @@ import {
   getPreviousItemBank,
   toiSAAP
 } from "@src/index";
+import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
@@ -32,6 +33,7 @@ export interface ItemBankContainerProps {
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
   setUrl: (item: ItemRevisionModel) => void;
+  resetUrl: () => void;
 }
 
 export interface ItemBankContainerState {
@@ -213,6 +215,57 @@ export class ItemBankContainer extends React.Component<
     });
   };
 
+  componentWillUpdate(
+    props: ItemBankContainerProps,
+    state: ItemBankContainerState
+  ) {
+    if (
+      !state.currentItem &&
+      !state.nextItem &&
+      !state.previousItem &&
+      this.state.currentItem
+    ) {
+      this.props.resetUrl();
+    } else if (state.items !== this.state.items && state.items.length > 1) {
+      this.handleChangeViewItem();
+    }
+  }
+
+  deleteItem = (key: number) => {
+    this.setState(state => {
+      let currentItem = state.currentItem;
+      let nextItem = state.nextItem;
+      let previousItem = state.previousItem;
+      if (itemsAreEqual(state.items[key], currentItem)) {
+        if (state.previousItem) {
+          currentItem = state.previousItem;
+        } else if (state.nextItem) {
+          currentItem = state.nextItem;
+        } else if (state.items.length === 2) {
+          currentItem = undefined;
+          nextItem = undefined;
+          previousItem = undefined;
+        }
+      }
+
+      return {
+        currentItem,
+        nextItem,
+        previousItem,
+        items: state.items.filter((i, index) => key !== index)
+      };
+    });
+  };
+
+  clearItems = () => {
+    this.setState({
+      items: [{}],
+      previousItem: undefined,
+      nextItem: undefined,
+      currentItem: undefined
+    });
+  };
+
   /**
    * Updates prev and next items. Updates rubric, about item, and item url
    * @memberof ItemBankContainer
@@ -221,7 +274,7 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
     let index = 0;
 
-    if (currentItem) {
+    if (currentItem && currentItem.valid) {
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
           this.fetchAccResourceGroups(aboutItem)
@@ -231,9 +284,11 @@ export class ItemBankContainer extends React.Component<
         })
         .catch(e => {
           this.onError(e, () => {
-            index = items.findIndex(i => i === currentItem);
-            items[index].valid = false;
-            this.setState({ items }, this.updateNavigationItems);
+            if (items.length > 1) {
+              index = items.findIndex(i => i === currentItem);
+              items[index].valid = false;
+              this.setState({ items }, this.updateNavigationItems);
+            }
           });
         });
     }
@@ -246,6 +301,8 @@ export class ItemBankContainer extends React.Component<
       const previousItem = getPreviousItemBank(currentItem, items);
 
       this.setState({ currentItem, nextItem, previousItem });
+    } else {
+      this.setState({ nextItem: undefined, previousItem: undefined });
     }
   };
 
@@ -390,6 +447,8 @@ export class ItemBankContainer extends React.Component<
           sections={sectionsContent}
           csvText={csvText}
           items={items}
+          deleteItem={this.deleteItem}
+          clearItems={this.clearItems}
         />
       );
     }

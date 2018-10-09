@@ -2,24 +2,7 @@
 
 exports[`ItemBankContainer default wrapper 1`] = `
 <ItemBankContainer
-  aboutItemRevisionClient={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "bankKey": 3000,
-            "hasBankKey": true,
-            "isaap": "",
-            "itemKey": 187,
-            "namespace": "itemreviewviewer",
-            "revision": "asfe",
-            "section": "math",
-            "valid": false,
-          },
-        ],
-      ],
-    }
-  }
+  aboutItemRevisionClient={[MockFunction]}
   accessibilityClient={[MockFunction]}
   itemViewUrl="hello"
   items={
@@ -32,7 +15,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
         "namespace": "itemreviewviewer",
         "revision": "asfe",
         "section": "math",
-        "valid": false,
       },
       Object {
         "bankKey": 2332,
@@ -52,6 +34,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
       ],
     }
   }
+  resetUrl={[Function]}
   revisionsClient={
     [MockFunction] {
       "calls": Array [
@@ -64,7 +47,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
             "namespace": "itemreviewviewer",
             "revision": "asfe",
             "section": "math",
-            "valid": false,
           },
         ],
       ],
@@ -93,7 +75,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
             "namespace": "itemreviewviewer",
             "revision": "asfe",
             "section": "math",
-            "valid": false,
           }
         }
         itemUrl="hello"
@@ -107,7 +88,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
               "namespace": "itemreviewviewer",
               "revision": "asfe",
               "section": "math",
-              "valid": false,
             },
             Object {
               "bankKey": 2332,
@@ -319,6 +299,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                   id="itemviewer-iframe"
                   onLoad={[Function]}
                   onLoadStart={[Function]}
+                  scrolling="no"
                   src="hello"
                   title="item viewer"
                 />
@@ -343,7 +324,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
       "namespace": "itemreviewviewer",
       "revision": "asfe",
       "section": "math",
-      "valid": false,
     }
   }
   itemUrl="hello"
@@ -357,7 +337,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
         "namespace": "itemreviewviewer",
         "revision": "asfe",
         "section": "math",
-        "valid": false,
       },
       Object {
         "bankKey": 2332,
@@ -569,6 +548,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
             id="itemviewer-iframe"
             onLoad={[Function]}
             onLoadStart={[Function]}
+            scrolling="no"
             src="hello"
             title="item viewer"
           />

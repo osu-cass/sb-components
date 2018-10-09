@@ -11,6 +11,8 @@ import {
 export interface ItemBankEntryProps {
   updateCsvText: (csvText: string) => void;
   updateItems: (items: ItemRevisionModel[]) => void;
+  deleteItem: (item: number) => void;
+  clearItems: () => void;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
   csvText: string;
@@ -75,7 +77,14 @@ export class ItemBankEntry extends React.Component<
   }
 
   renderTableEntry() {
-    const { items, updateItems, namespaces, sections } = this.props;
+    const {
+      items,
+      updateItems,
+      clearItems,
+      namespaces,
+      sections,
+      deleteItem
+    } = this.props;
 
     return (
       <Accordion
@@ -88,6 +97,8 @@ export class ItemBankEntry extends React.Component<
           onItemsUpdate={updateItems}
           namespaces={namespaces}
           sections={sections}
+          onDeleteItem={deleteItem}
+          onClearItems={clearItems}
         />
       </Accordion>
     );
