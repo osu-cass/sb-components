@@ -246,7 +246,7 @@ export class ItemBankContainer extends React.Component<
           currentItem = undefined;
           nextItem = undefined;
           previousItem = undefined;
-          revisions = [{}];
+          revisions = [] as RevisionModel[];
         }
       }
 
@@ -266,7 +266,7 @@ export class ItemBankContainer extends React.Component<
       previousItem: undefined,
       nextItem: undefined,
       currentItem: undefined,
-      revision: []
+      revisions: [] as RevisionModel[]
     });
   };
 
