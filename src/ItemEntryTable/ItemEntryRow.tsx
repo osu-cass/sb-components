@@ -7,6 +7,7 @@ import {
   SelectOptionProps,
   Select
 } from "@src/index";
+import { findNamespace } from "@src/ItemBank/ItemBankModels";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
@@ -63,11 +64,9 @@ export class ItemEntryRow extends React.Component<
 
   handleNamespace = (namespace: string) => {
     const { editRow } = this.state;
-    const namespaceModel = this.props.namespaces.filter(
-      s => s.name === namespace
-    )[0];
-    const hasBankKey = namespaceModel.hasBankKey;
-    const bankKey = namespaceModel.bankKey;
+    const namespaceModel = findNamespace(namespace, this.props.namespaces);
+    const hasBankKey = namespaceModel ? namespaceModel.hasBankKey : false;
+    const bankKey = namespaceModel ? namespaceModel.bankKey : 0;
     this.setState(
       {
         editRow: { ...editRow, namespace, hasBankKey, bankKey },
