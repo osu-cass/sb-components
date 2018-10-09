@@ -7,12 +7,16 @@ import {
   SelectOptionProps,
   Select
 } from "@src/index";
+import { findNamespace } from "@src/ItemBank/ItemBankModels";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
+  onDeleteRow: (row: number) => void;
+  id: number;
   row: ItemRevisionModel;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
+  isLast: boolean;
 }
 
 export interface ItemEntryRowState {
@@ -51,6 +55,10 @@ export class ItemEntryRow extends React.Component<
     }
   };
 
+  deleteRow = () => {
+    this.props.onDeleteRow(this.props.id);
+  };
+
   handleItemKey = (itemKey: number) => {
     const { editRow } = this.state;
     this.setState({ editRow: { ...editRow, itemKey }, isModified: true });
@@ -63,11 +71,9 @@ export class ItemEntryRow extends React.Component<
 
   handleNamespace = (namespace: string) => {
     const { editRow } = this.state;
-    const namespaceModel = this.props.namespaces.filter(
-      s => s.name === namespace
-    )[0];
-    const hasBankKey = namespaceModel.hasBankKey;
-    const bankKey = namespaceModel.bankKey;
+    const namespaceModel = findNamespace(namespace, this.props.namespaces);
+    const hasBankKey = namespaceModel ? namespaceModel.hasBankKey : false;
+    const bankKey = namespaceModel ? namespaceModel.bankKey : 0;
     this.setState(
       {
         editRow: { ...editRow, namespace, hasBankKey, bankKey },
@@ -198,6 +204,20 @@ export class ItemEntryRow extends React.Component<
     );
   }
 
+  renderDeleteButton() {
+    return (
+      <td className="delete-row">
+        <input
+          className="delete-button btn btn-primary bg-light"
+          onClick={this.deleteRow}
+          disabled={this.props.isLast}
+          type="button"
+          value="X"
+        />
+      </td>
+    );
+  }
+
   render() {
     const { editRow } = this.state;
 
@@ -215,6 +235,7 @@ export class ItemEntryRow extends React.Component<
           editRow.itemKey
         )}
         {this.renderRowSection(editRow)}
+        {this.renderDeleteButton()}
       </tr>
     );
   }

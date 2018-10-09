@@ -36,6 +36,8 @@ export const mockBankAboutItemClient: (
   item => aboutItemRevisionMockModel
 );
 
+export const mockResetUrl: () => {};
+
 export const mockBankRevisionsClient: (
   item: ItemRevisionModel
 ) => Promise<RevisionModel[]> = jest.fn(item => mockRevisions);

@@ -16,6 +16,20 @@ export interface ItemRevisionModel {
   valid?: boolean;
 }
 
+export function itemsAreEqual(
+  left: ItemRevisionModel | undefined,
+  right: ItemRevisionModel | undefined
+) {
+  return (
+    left &&
+    right &&
+    left.itemKey === right.itemKey &&
+    left.bankKey === right.bankKey &&
+    left.namespace === right.namespace &&
+    left.section === right.section
+  );
+}
+
 export function getItemBankName(
   itemRevisionModel: ItemRevisionModel
 ): string | undefined {
@@ -129,4 +143,8 @@ export interface AccessibilityRevisionModel {
   itemKey?: string;
   bankKey?: string;
   brailleType?: string;
+}
+
+export function findNamespace(namespace: string, namespaces: NamespaceModel[]) {
+  return namespaces.find(s => s.name.toLowerCase() === namespace.toLowerCase());
 }
