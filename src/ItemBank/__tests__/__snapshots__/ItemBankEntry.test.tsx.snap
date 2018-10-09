@@ -24,7 +24,7 @@ exports[`ItemBankEntry matches snapshot 1`] = `
               },
             ]
           }
-          onBlur={[Function]}
+          onApply={[Function]}
           onItemsUpdate={[Function]}
         />
       </div>

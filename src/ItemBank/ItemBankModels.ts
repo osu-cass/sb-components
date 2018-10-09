@@ -144,3 +144,7 @@ export interface AccessibilityRevisionModel {
   bankKey?: string;
   brailleType?: string;
 }
+
+export function findNamespace(namespace: string, namespaces: NamespaceModel[]) {
+  return namespaces.find(s => s.name.toLowerCase() === namespace.toLowerCase());
+}
