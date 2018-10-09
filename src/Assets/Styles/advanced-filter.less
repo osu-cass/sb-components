@@ -8,6 +8,8 @@
   border-top: 1px solid @grey-border-color;
   box-shadow: @box-shadow;
   flex-basis: 300px;
+  padding: 0;
+  overflow: hidden;
 
   *:not(span) {
     font-family: inherit;
@@ -18,7 +20,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: @background-color-base;
+  background-color: @sb-white;
 }
 
 div.adv-filter-group {
@@ -27,6 +29,9 @@ div.adv-filter-group {
   width: 100%;
   z-index: 1;
   background-color: @sb-white;
+  padding: @spacing-unit @spacing-unit 0 @spacing-unit;
+  background-color: @background-color-base;
+  border-bottom: 1px solid @grey-border-color;
 }
 
 div.filter-title-container {
@@ -93,7 +98,7 @@ div.filter-status > button.btn {
 .filter-selection {
   padding: @spacing-unit/2;
   flex-shrink: 0;
-  flex-basis: 250px;
+  flex-basis: 300px;
 }
 
 #calculator-filter {
@@ -125,16 +130,30 @@ div.filter-selection > div.nested-btn-group {
   align-items: flex-start;
 }
 
-div.filter-btn-group > button.btn {
-  max-width: fit-content;
-  white-space: normal;
-  // margin-right: 0 !important; //overwriting bootstrap
+@supports (-ms-ime-align: auto) {
+  #subject-filter div.filter-btn-group > button.btn {
+    width: 195px;
+  }
+  #claims-filter div.filter-btn-group > button.btn {
+    width: 150px;
+  }
 }
+div.filter-btn-group > button.btn {
+  min-width: fill-available;
 
+  //min-width: auto;
+  white-space: normal;
+  margin-right: 0 !important; //overwriting bootstrap
+}
+#subject-filter div.filter-btn-group > button.btn {
+  width: 195px;
+}
+#claims-filter div.filter-btn-group > button.btn {
+  min-width: fill-available;
+}
 #targets-filter .filter-btn-group {
   flex-wrap: wrap;
   max-height: 30vh;
   flex-basis: 150px;
   align-content: flex-start;
-
 }

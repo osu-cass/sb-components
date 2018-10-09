@@ -1,4 +1,6 @@
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
+import { InteractionTypeModel } from "../AboutTestItems/AboutTestItemsModels";
+import { SubjectModel } from "../ItemSearch/ItemSearchModels";
 
 export interface ItemGroupModel {
   passage?: ItemPdfModel;
@@ -25,4 +27,9 @@ export interface ItemPdfModel {
   screenshotUrl?: string;
   captured: boolean;
   type: PdfViewType;
+}
+
+export interface ScoreGuideViewModel {
+  interactionTypes: InteractionTypeModel[];
+  subjects: SubjectModel[];
 }

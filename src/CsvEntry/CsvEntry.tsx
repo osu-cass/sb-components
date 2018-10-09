@@ -1,13 +1,15 @@
 import * as React from "react";
 import {
-  ToolTip,
+  generateTooltip,
   ItemRevisionModel,
   CsvRowModel,
+  NamespaceModel,
   parseCsv,
   Accordion
 } from "@src/index";
 
 export interface CsvEntryProps {
+  namespaces: NamespaceModel[];
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onBlur: () => void;
 }
@@ -25,27 +27,37 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   }
 
   renderHelpButton() {
+    const helpText: JSX.Element = this.renderHelpText();
+    const displayText: JSX.Element = (
+      <button
+        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        role="button"
+        aria-label="Open help text"
+      >
+        <span className="fa fa-info-circle" aria-hidden="true" />
+        Help
+      </button>
+    );
+
     return (
       <div className="help-button">
-        <ToolTip
-          helpText={
-            <p>
-              Enter bank key and item id for the items you would like to add
-            </p>
-          }
-          position="bottom"
-          side="left"
-        >
-          <button
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
-            role="button"
-            aria-label="Open help text"
-          >
-            <span className="fa fa-info-circle" aria-hidden="true" />
-            Help
-          </button>
-        </ToolTip>
+        {generateTooltip({
+          helpText,
+          displayText,
+          displayIcon: undefined
+        })}
       </div>
+    );
+  }
+
+  renderHelpText(): JSX.Element {
+    return (
+      <p>
+        Enter namespace, bank key, item id, and section for the namespace which
+        has a bank key. Or,<br />
+        Enter namespace , item id, and section for the namespace which doesn't
+        have a bank key.
+      </p>
     );
   }
 
@@ -59,7 +71,8 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
 
   handleCsvBlur = () => {
     const { csvInputValue } = this.state;
-    const csvData = parseCsv(csvInputValue);
+    const { namespaces } = this.props;
+    const csvData = parseCsv(csvInputValue, namespaces);
 
     this.setState({
       csvData

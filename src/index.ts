@@ -136,7 +136,9 @@ export {
   AccessibilityRevisionModel,
   itemRevisionKey,
   SectionModel,
+  NamespaceModel,
   getItemBankName,
+  concatNamespaceWith,
   getPreviousItemBank,
   getNextItemBank,
   getItemBankIndex
@@ -273,7 +275,8 @@ export {
   ItemGroupModel,
   QuestionModel,
   ItemPdfModel,
-  PdfViewType
+  PdfViewType,
+  ScoreGuideViewModel
 } from "./Pdf/PdfModels";
 export { QuestionView, QuestionViewProps } from "./Pdf/QuestionView";
 
@@ -314,6 +317,7 @@ export { RubricEntry } from "./Rubric/RubricEntry";
 export { SampleResponse } from "./Rubric/SampleResponse";
 export { RubricTable, RubricTableProps } from "./Rubric/RubricTable";
 export { RubricModal, RubricModalProps } from "./Rubric/RubricModal";
+export { ScoringOptions } from "./Rubric/ScoringOptionsTable";
 
 //
 // Select
@@ -324,7 +328,7 @@ export { SelectOption, SelectOptionProps } from "./Select/SelectOption";
 //
 // ToolTip
 //
-export { ToolTip, ToolTipProps } from "./ToolTip/ToolTip";
+export { ToolTip, ToolTipProps, generateTooltip } from "./ToolTip/ToolTip";
 
 //
 // ApiModel

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { ItemViewerFrame } from "../../src/ItemViewer/ItemViewerFrame";
+import { ItemViewerFrame } from "@src/ItemViewer/ItemViewerFrame";
 
 const url = "http://ivs.smarterbalanced.org/items?ids=187-3246";
 

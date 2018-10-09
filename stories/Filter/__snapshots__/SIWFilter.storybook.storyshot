@@ -9,35 +9,12 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
     id=""
   >
     <div
-      className="bf-button-container"
-    >
-      <span>
-        <button
-          className="btn btn-default filter-button"
-          onClick={[Function]}
-        >
-          Reset
-        </button>
-      </span>
-      <span>
-        <button
-          className="btn btn-default filter-button af-expand"
-          onClick={[Function]}
-        >
-          Advanced Filters 
-          <span
-            aria-hidden="true"
-            className="fa fa-chevron-right"
-          />
-        </button>
-      </span>
-    </div>
-    <div
       className="basic-filter"
     >
       <div
         className="bf-selection"
         id="grade-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -50,7 +27,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -93,6 +70,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="subjects-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -105,7 +83,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -146,23 +124,10 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  Claims
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              Claims
             </span>
           </label>
         </div>
@@ -171,6 +136,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All Claims"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -182,6 +148,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="Problem Solving"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -190,6 +157,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
               Problem Solving
             </button>
             <button
+              aria-label="Concepts and Procedures"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -209,23 +177,10 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  Item Types
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              Item Types
             </span>
           </label>
         </div>
@@ -234,6 +189,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All Item Types"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -245,6 +201,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="Equation"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -253,6 +210,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
               Equation
             </button>
             <button
+              aria-label="Grid Item"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -266,6 +224,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="techtype-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -278,7 +237,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -319,23 +278,10 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
         >
           <label>
             <span
-              className="tool-tip-links undefined"
-              tabIndex={0}
+              className="tooltip-label"
+              info-label="true"
             >
-              <span
-                className="tool-tip-hoverable"
-              >
-                <span
-                  className="tooltip-label"
-                  info-label="true"
-                >
-                  Targets
-                </span>
-                 
-              </span>
-              <span
-                className="tool-tip-details"
-              />
+              Targets
             </span>
           </label>
         </div>
@@ -344,6 +290,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-label="Select All Targets"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
@@ -355,6 +302,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-label="t1"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -363,6 +311,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
               t1
             </button>
             <button
+              aria-label="t2"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
@@ -376,6 +325,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
       <div
         className="bf-selection"
         id="calculator-bf"
+        tabIndex={0}
       >
         <div
           className=""
@@ -388,7 +338,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             </span>
           </label>
           <select
-            className="form-control input-sm med-text"
+            className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
             value="default"
@@ -420,6 +370,30 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           </select>
         </div>
       </div>
+    </div>
+    <div
+      className="bf-button-container"
+    >
+      <span>
+        <button
+          className="btn btn-default filter-button"
+          onClick={[Function]}
+        >
+          Reset
+        </button>
+      </span>
+      <span>
+        <button
+          className="btn btn-default filter-button af-expand"
+          onClick={[Function]}
+        >
+          Advanced Filters 
+          <span
+            aria-hidden="true"
+            className="fa fa-chevron-right"
+          />
+        </button>
+      </span>
     </div>
   </div>
 </div>

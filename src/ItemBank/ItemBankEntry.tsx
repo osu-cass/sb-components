@@ -1,8 +1,8 @@
 import * as React from "react";
 import {
   Accordion,
-  ToolTip,
   ItemRevisionModel,
+  NamespaceModel,
   SectionModel,
   ItemEntryTable,
   CsvEntry
@@ -10,6 +10,9 @@ import {
 
 export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;
+  deleteItem: (item: number) => void;
+  clearItems: () => void;
+  namespaces: NamespaceModel[];
   sections: SectionModel[];
   items: ItemRevisionModel[];
 }
@@ -48,6 +51,8 @@ export class ItemBankEntry extends React.Component<
   };
 
   renderCsvEntry() {
+    const { namespaces } = this.props;
+
     return (
       <Accordion
         accordionTitle="CSV Entry"
@@ -57,6 +62,7 @@ export class ItemBankEntry extends React.Component<
         <div className="csv-entry-container section">
           <div className="csv-entry-wrapper">
             <CsvEntry
+              namespaces={namespaces}
               onItemsUpdate={this.props.updateItems}
               onBlur={this.onCsvBlur}
             />
@@ -67,7 +73,14 @@ export class ItemBankEntry extends React.Component<
   }
 
   renderTableEntry() {
-    const { items, updateItems, sections } = this.props;
+    const {
+      items,
+      updateItems,
+      clearItems,
+      namespaces,
+      sections,
+      deleteItem
+    } = this.props;
 
     return (
       <Accordion
@@ -78,7 +91,10 @@ export class ItemBankEntry extends React.Component<
         <ItemEntryTable
           itemRows={items}
           onItemsUpdate={updateItems}
+          namespaces={namespaces}
           sections={sections}
+          onDeleteItem={deleteItem}
+          onClearItems={clearItems}
         />
       </Accordion>
     );

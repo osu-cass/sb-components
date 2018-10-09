@@ -8,18 +8,48 @@ import {
 export interface ItemRevisionModel {
   itemKey?: number;
   bankKey?: number;
+  hasBankKey?: boolean;
+  namespace?: string;
   section?: string;
   revision?: string;
   isaap?: string;
   valid?: boolean;
 }
 
+export function itemsAreEqual(
+  left: ItemRevisionModel | undefined,
+  right: ItemRevisionModel | undefined
+) {
+  return (
+    left &&
+    right &&
+    left.itemKey === right.itemKey &&
+    left.bankKey === right.bankKey &&
+    left.namespace === right.namespace &&
+    left.section === right.section
+  );
+}
+
 export function getItemBankName(
   itemRevisionModel: ItemRevisionModel
 ): string | undefined {
   let value: string | undefined;
-  if (itemRevisionModel.bankKey && itemRevisionModel.itemKey) {
+  if (itemRevisionModel.hasBankKey) {
     value = `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
+  } else {
+    value = `${itemRevisionModel.itemKey}`;
+  }
+
+  return value;
+}
+
+export function concatNamespaceWith(
+  source: string | undefined,
+  itemRevisionModel: ItemRevisionModel
+): string | undefined {
+  let value: string | undefined;
+  if (itemRevisionModel.namespace) {
+    value = `${itemRevisionModel.namespace}:${source}`;
   }
 
   return value;
@@ -35,11 +65,15 @@ export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
   let value = false;
   if (
     itemRevisionModel &&
+    itemRevisionModel.namespace &&
     itemRevisionModel.itemKey &&
-    itemRevisionModel.bankKey &&
     itemRevisionModel.section
   ) {
     value = true;
+
+    if (itemRevisionModel.hasBankKey && !itemRevisionModel.bankKey) {
+      value = false;
+    }
   }
 
   return value;
@@ -88,6 +122,13 @@ export function getPreviousItemBank(
   return previousItem;
 }
 
+export interface NamespaceModel {
+  id: string;
+  name: string;
+  hasBankKey: boolean;
+  bankKey: number;
+}
+
 export interface SectionModel {
   key: string;
   value: string;
@@ -99,4 +140,7 @@ export interface AccessibilityRevisionModel {
   interactionType: string;
   allowCalculator?: boolean;
   isPerformance?: boolean;
+  itemKey?: string;
+  bankKey?: string;
+  brailleType?: string;
 }

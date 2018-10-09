@@ -8,8 +8,10 @@ exports[`ItemBankContainer default wrapper 1`] = `
         Array [
           Object {
             "bankKey": 3000,
+            "hasBankKey": true,
             "isaap": "",
             "itemKey": 187,
+            "namespace": "itemreviewviewer",
             "revision": "asfe",
             "section": "math",
             "valid": false,
@@ -19,26 +21,36 @@ exports[`ItemBankContainer default wrapper 1`] = `
     }
   }
   accessibilityClient={[MockFunction]}
-  getUrl={[MockFunction]}
   itemViewUrl="hello"
   items={
     Array [
       Object {
         "bankKey": 3000,
+        "hasBankKey": true,
         "isaap": "",
         "itemKey": 187,
+        "namespace": "itemreviewviewer",
         "revision": "asfe",
         "section": "math",
         "valid": false,
       },
       Object {
         "bankKey": 2332,
+        "hasBankKey": true,
         "isaap": "",
         "itemKey": 187,
+        "namespace": "itemreviewviewer",
         "revision": "asdf",
         "section": "math",
       },
     ]
+  }
+  namespacesClient={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+    }
   }
   revisionsClient={
     [MockFunction] {
@@ -46,8 +58,10 @@ exports[`ItemBankContainer default wrapper 1`] = `
         Array [
           Object {
             "bankKey": 3000,
+            "hasBankKey": true,
             "isaap": "",
             "itemKey": 187,
+            "namespace": "itemreviewviewer",
             "revision": "asfe",
             "section": "math",
             "valid": false,
@@ -63,6 +77,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
       ],
     }
   }
+  setUrl={[MockFunction]}
 >
   <div
     className="item-container container"
@@ -72,8 +87,10 @@ exports[`ItemBankContainer default wrapper 1`] = `
         currentItem={
           Object {
             "bankKey": 3000,
+            "hasBankKey": true,
             "isaap": "",
             "itemKey": 187,
+            "namespace": "itemreviewviewer",
             "revision": "asfe",
             "section": "math",
             "valid": false,
@@ -84,16 +101,20 @@ exports[`ItemBankContainer default wrapper 1`] = `
           Array [
             Object {
               "bankKey": 3000,
+              "hasBankKey": true,
               "isaap": "",
               "itemKey": 187,
+              "namespace": "itemreviewviewer",
               "revision": "asfe",
               "section": "math",
               "valid": false,
             },
             Object {
               "bankKey": 2332,
+              "hasBankKey": true,
               "isaap": "",
               "itemKey": 187,
+              "namespace": "itemreviewviewer",
               "revision": "asdf",
               "section": "math",
             },
@@ -175,13 +196,13 @@ exports[`ItemBankContainer default wrapper 1`] = `
                       },
                       Object {
                         "key": "3000-187-math",
-                        "label": "3000-187",
+                        "label": "itemreviewviewer:3000-187",
                         "selected": true,
                         "value": "3000-187-math",
                       },
                       Object {
                         "key": "2332-187-math",
-                        "label": "2332-187",
+                        "label": "itemreviewviewer:2332-187",
                         "selected": false,
                         "value": "2332-187-math",
                       },
@@ -223,30 +244,30 @@ exports[`ItemBankContainer default wrapper 1`] = `
                       </Component>
                       <Component
                         key="3000-187-math"
-                        label="3000-187"
+                        label="itemreviewviewer:3000-187"
                         selected={true}
                         value="3000-187-math"
                       >
                         <option
                           aria-selected={true}
-                          label="3000-187"
+                          label="itemreviewviewer:3000-187"
                           value="3000-187-math"
                         >
-                          3000-187
+                          itemreviewviewer:3000-187
                         </option>
                       </Component>
                       <Component
                         key="2332-187-math"
-                        label="2332-187"
+                        label="itemreviewviewer:2332-187"
                         selected={false}
                         value="2332-187-math"
                       >
                         <option
                           aria-selected={false}
-                          label="2332-187"
+                          label="itemreviewviewer:2332-187"
                           value="2332-187-math"
                         >
-                          2332-187
+                          itemreviewviewer:2332-187
                         </option>
                       </Component>
                     </select>
@@ -298,6 +319,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                   id="itemviewer-iframe"
                   onLoad={[Function]}
                   onLoadStart={[Function]}
+                  scrolling="no"
                   src="hello"
                   title="item viewer"
                 />
@@ -316,8 +338,10 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
   currentItem={
     Object {
       "bankKey": 3000,
+      "hasBankKey": true,
       "isaap": "",
       "itemKey": 187,
+      "namespace": "itemreviewviewer",
       "revision": "asfe",
       "section": "math",
       "valid": false,
@@ -328,16 +352,20 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
     Array [
       Object {
         "bankKey": 3000,
+        "hasBankKey": true,
         "isaap": "",
         "itemKey": 187,
+        "namespace": "itemreviewviewer",
         "revision": "asfe",
         "section": "math",
         "valid": false,
       },
       Object {
         "bankKey": 2332,
+        "hasBankKey": true,
         "isaap": "",
         "itemKey": 187,
+        "namespace": "itemreviewviewer",
         "revision": "asdf",
         "section": "math",
       },
@@ -419,13 +447,13 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                 },
                 Object {
                   "key": "3000-187-math",
-                  "label": "3000-187",
+                  "label": "itemreviewviewer:3000-187",
                   "selected": true,
                   "value": "3000-187-math",
                 },
                 Object {
                   "key": "2332-187-math",
-                  "label": "2332-187",
+                  "label": "itemreviewviewer:2332-187",
                   "selected": false,
                   "value": "2332-187-math",
                 },
@@ -467,30 +495,30 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                 </Component>
                 <Component
                   key="3000-187-math"
-                  label="3000-187"
+                  label="itemreviewviewer:3000-187"
                   selected={true}
                   value="3000-187-math"
                 >
                   <option
                     aria-selected={true}
-                    label="3000-187"
+                    label="itemreviewviewer:3000-187"
                     value="3000-187-math"
                   >
-                    3000-187
+                    itemreviewviewer:3000-187
                   </option>
                 </Component>
                 <Component
                   key="2332-187-math"
-                  label="2332-187"
+                  label="itemreviewviewer:2332-187"
                   selected={false}
                   value="2332-187-math"
                 >
                   <option
                     aria-selected={false}
-                    label="2332-187"
+                    label="itemreviewviewer:2332-187"
                     value="2332-187-math"
                   >
-                    2332-187
+                    itemreviewviewer:2332-187
                   </option>
                 </Component>
               </select>
@@ -542,6 +570,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
             id="itemviewer-iframe"
             onLoad={[Function]}
             onLoadStart={[Function]}
+            scrolling="no"
             src="hello"
             title="item viewer"
           />

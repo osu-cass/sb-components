@@ -46,16 +46,26 @@ export class ItemViewPage extends React.Component<ItemViewPageProps, {}> {
     try {
       const location = {
         ...this.props.history.location,
-        search: `isaap=${isaap}`
+        search: `${this.props.history.location.search}&isaap=${isaap}`
       };
       this.props.history.replace(location);
     } catch (exception) {
-      console.error("unable to update url", exception);
+      throw new Error(`unable to update url ${exception}`);
     }
   };
 
   getIsaapModel(): ItemIsaapModel {
-    const itemParams: ItemModel = { ...this.props.match.params };
+    let item;
+    let itemMatch;
+    const query = parseQueryString(this.props.location.search);
+    if (query.bankKey && query.itemKey) {
+      item = {
+        bankKey: parseInt(query.bankKey[0], 10),
+        itemKey: parseInt(query.itemKey[0], 10)
+      };
+    }
+    itemMatch = { ...this.props.match.params };
+    const itemParams: ItemModel = item ? item : itemMatch;
     const isaap = this.getLocationIsaap() || "";
 
     return {

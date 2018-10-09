@@ -5,6 +5,7 @@ import { ItemCardTable } from "../ItemCard/ItemCardTable";
 import { RubricTable } from "../Rubric/RubricTable";
 import { QuestionModel } from "./PdfModels";
 import { AboutItemModel } from "../AboutItem/AboutItemModels";
+import { ScoringOptions } from "../Rubric/ScoringOptionsTable";
 
 export interface QuestionViewProps {
   question: QuestionModel;
@@ -73,7 +74,17 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
         undefined
       );
 
-    const key =
+    const scoringOptions =
+      data &&
+      data.sampleItemScoring &&
+      data.sampleItemScoring.scoringOptions &&
+      data.sampleItemScoring.scoringOptions.length > 0 ? (
+        <ScoringOptions options={data.sampleItemScoring.scoringOptions} />
+      ) : (
+        undefined
+      );
+
+    const answerKey =
       data &&
       data.sampleItemScoring &&
       data.sampleItemScoring.answerKey &&
@@ -93,8 +104,10 @@ export class QuestionView extends React.Component<QuestionViewProps, {}> {
         {dataTable}
         {evidenceStatement}
         <ItemView view={this.props.question.view} />
-        {key}
+        <hr />
+        {answerKey}
         {this.renderRubric(data)}
+        {scoringOptions}
       </div>
     );
   }
