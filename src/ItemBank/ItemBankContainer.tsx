@@ -419,7 +419,11 @@ export class ItemBankContainer extends React.Component<
 
   submitItems = (items: ItemRevisionModel[]) => {
     // will need to do more stuff here.
-    this.setState({ items });
+    if (items.length >= 2) {
+      this.setState({ items });
+    } else {
+      this.clearItems();
+    }
   };
 
   onRevisionSelect = (revision: string) => {

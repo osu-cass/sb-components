@@ -7,6 +7,7 @@ import {
   SelectOptionProps,
   SelectOption,
   Select,
+  validItemRevisionModel,
   ItemEntryRow
 } from "@src/index";
 
@@ -36,14 +37,18 @@ export class ItemEntryTable extends React.Component<
   }
 
   handleRowUpdate(row: ItemRevisionModel, key: number) {
-    // TODO: Update this to read in all the rows and pass them to the paren t component.
     const itemRows = this.state.itemRows;
-    itemRows.push(row);
-    this.setState({ itemRows });
-  }
+    itemRows[key] = row;
+    // If the row is valid we want to add another row
+    if (validItemRevisionModel(row)) {
+      row.valid = true;
+      itemRows.push({});
+    } else {
+      row.valid = false;
+    }
+    itemRows[key] = row;
 
-  handleSubmit() {
-    this.props.onSubmit(this.state.itemRows);
+    this.setState({ itemRows });
   }
 
   handleDeleteRow(key: number) {
@@ -59,6 +64,7 @@ export class ItemEntryTable extends React.Component<
 
   handleClearItems() {
     this.props.onClearItems();
+    this.setState({ itemRows: [{}] });
   }
 
   renderHeader() {
@@ -76,7 +82,7 @@ export class ItemEntryTable extends React.Component<
   }
 
   renderBody() {
-    const rows = this.props.itemRows.map((row, idx) => (
+    const rows = this.state.itemRows.map((row, idx) => (
       <ItemEntryRow
         row={row}
         onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
@@ -88,9 +94,13 @@ export class ItemEntryTable extends React.Component<
         isLast={idx === this.props.itemRows.length - 1}
       />
     ));
-    rows.push(this.renderFooter());
 
-    return <tbody>{rows}</tbody>;
+    return (
+      <tbody>
+        {rows}
+        <tr>{this.renderFooter()}</tr>
+      </tbody>
+    );
   }
 
   renderFooter() {
@@ -100,7 +110,7 @@ export class ItemEntryTable extends React.Component<
         <td>
           <input
             className="btn btn-primary submit-button bg-primary"
-            onClick={this.handleSubmit}
+            onClick={apply => this.props.onSubmit(this.state.itemRows)}
             type="button"
             value="apply"
           />
