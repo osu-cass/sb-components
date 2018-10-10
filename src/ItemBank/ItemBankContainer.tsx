@@ -417,6 +417,11 @@ export class ItemBankContainer extends React.Component<
     });
   };
 
+  submitItems = (items: ItemRevisionModel[]) => {
+    // will need to do more stuff here.
+    this.setState({ items });
+  };
+
   onRevisionSelect = (revision: string) => {
     const { currentItem, revisions } = this.state;
     let revisionContent = getResourceContent(revisions);
@@ -449,6 +454,7 @@ export class ItemBankContainer extends React.Component<
           items={items}
           deleteItem={this.deleteItem}
           clearItems={this.clearItems}
+          submitItems={this.submitItems}
         />
       );
     }

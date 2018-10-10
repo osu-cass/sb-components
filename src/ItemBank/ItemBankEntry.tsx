@@ -13,6 +13,7 @@ export interface ItemBankEntryProps {
   updateItems: (items: ItemRevisionModel[]) => void;
   deleteItem: (item: number) => void;
   clearItems: () => void;
+  submitItems: (items: ItemRevisionModel[]) => void;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
   csvText: string;
@@ -83,7 +84,8 @@ export class ItemBankEntry extends React.Component<
       clearItems,
       namespaces,
       sections,
-      deleteItem
+      deleteItem,
+      submitItems
     } = this.props;
 
     return (
@@ -99,6 +101,7 @@ export class ItemBankEntry extends React.Component<
           sections={sections}
           onDeleteItem={deleteItem}
           onClearItems={clearItems}
+          onSubmit={submitItems}
         />
       </Accordion>
     );
