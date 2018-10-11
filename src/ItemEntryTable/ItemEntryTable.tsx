@@ -7,35 +7,78 @@ import {
   SelectOptionProps,
   SelectOption,
   Select,
+  validItemRevisionModel,
   ItemEntryRow
 } from "@src/index";
+
+export interface ItemEntryTableState {
+  itemRows: ItemRevisionModel[];
+}
 
 export interface ItemEntryTableProps {
   itemRows: ItemRevisionModel[];
   namespaces: NamespaceModel[];
   sections: SectionModel[];
-  onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onDeleteItem: (items: number) => void;
   onClearItems: () => void;
+  onSubmit: (items: ItemRevisionModel[]) => void;
 }
 
-export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
+export class ItemEntryTable extends React.Component<
+  ItemEntryTableProps,
+  ItemEntryTableState
+> {
   constructor(props: ItemEntryTableProps) {
     super(props);
+    this.state = {
+      itemRows: props.itemRows
+    };
   }
 
   handleRowUpdate(row: ItemRevisionModel, key: number) {
-    const itemRows = this.props.itemRows.slice();
-    itemRows[key] = row;
-    this.props.onItemsUpdate(itemRows);
+    this.setState((state: ItemEntryTableState) => {
+      const itemRows = state.itemRows;
+      itemRows[key] = row;
+      if (validItemRevisionModel(row)) {
+        row.valid = true;
+        itemRows.push({});
+      } else {
+        row.valid = false;
+      }
+
+      return { itemRows };
+    });
   }
 
   handleDeleteRow(key: number) {
-    this.props.onDeleteItem(key);
+    // if the item is state but not in the props just remove it from the state.
+    if (key >= this.props.itemRows.length) {
+      this.setState({
+        itemRows: this.state.itemRows.filter((item, index) => index !== key)
+      });
+    } else {
+      this.setState((state: ItemEntryTableState) => {
+        this.props.onDeleteItem(key);
+
+        return {
+          itemRows: state.itemRows.filter((item, index) => index !== key)
+        };
+      });
+    }
   }
 
   handleClearItems() {
     this.props.onClearItems();
+    this.setState((state: ItemEntryTableState, props: ItemEntryTableProps) => {
+      return { itemRows: props.itemRows };
+    });
+  }
+
+  handleSubmit() {
+    this.props.onSubmit(this.state.itemRows);
+    this.setState((state: ItemEntryTableState, props: ItemEntryTableProps) => {
+      return { itemRows: props.itemRows };
+    });
   }
 
   renderHeader() {
@@ -46,14 +89,14 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
           <th scope="col">Bank</th>
           <th scope="col">Item</th>
           <th scope="col">Section</th>
-          <th>{this.renderClearButton()}</th>
+          <th />
         </tr>
       </thead>
     );
   }
 
   renderBody() {
-    const rows = this.props.itemRows.map((row, idx) => (
+    const rows = this.state.itemRows.map((row, idx) => (
       <ItemEntryRow
         row={row}
         onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
@@ -62,21 +105,40 @@ export class ItemEntryTable extends React.Component<ItemEntryTableProps, {}> {
         sections={this.props.sections}
         key={idx}
         id={idx}
-        isLast={idx === this.props.itemRows.length - 1}
+        isLast={idx === this.state.itemRows.length - 1}
       />
     ));
 
-    return <tbody>{rows}</tbody>;
+    return (
+      <tbody>
+        {rows}
+        {this.renderFooter()}
+      </tbody>
+    );
   }
 
-  renderClearButton() {
+  renderFooter() {
     return (
-      <input
-        className={"btn btn-primary clear-button bg-light"}
-        onClick={this.props.onClearItems}
-        type="button"
-        value="clear all"
-      />
+      <tr>
+        <td />
+        <td>
+          <input
+            className="btn btn-primary submit-button bg-primary"
+            onClick={click => this.handleSubmit()}
+            type="button"
+            value="apply"
+          />
+        </td>
+        <td>
+          <input
+            className="btn btn-default clear-button bg-light"
+            onClick={click => this.handleClearItems()}
+            type="button"
+            value="clear all"
+          />
+        </td>
+        <td />
+      </tr>
     );
   }
 

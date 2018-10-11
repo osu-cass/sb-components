@@ -197,16 +197,16 @@ export class ItemBankContainer extends React.Component<
   };
 
   handleUpdateItems = (items: ItemRevisionModel[]) => {
-    const currentItem = items.length > 0 ? items[0] : undefined;
-    const lastItem = items[items.length - 1];
-    items.forEach(item => {
-      if (!validItemRevisionModel(item) && item !== lastItem) {
-        item.valid = false;
-      } else {
-        item.valid = true;
-      }
-    });
-    if (validItemRevisionModel(lastItem) || items.length === 0) {
+    let currentItem: ItemRevisionModel | undefined;
+    if (items.length > 1) {
+      const itemMatch = items.filter(
+        item => itemsAreEqual(this.state.currentItem, item) || false
+      );
+      currentItem = itemMatch[0] ? itemMatch[0] : items[0];
+    } else {
+      currentItem = undefined;
+    }
+    if (items[items.length - 1].itemKey) {
       items.push({});
     }
     this.setState({ items, currentItem }, () => {
@@ -442,13 +442,13 @@ export class ItemBankContainer extends React.Component<
       content = (
         <ItemBankEntry
           updateCsvText={this.handleUpdateCsvText}
-          updateItems={this.handleUpdateItems}
           namespaces={namespacesContent}
           sections={sectionsContent}
           csvText={csvText}
           items={items}
           deleteItem={this.deleteItem}
           clearItems={this.clearItems}
+          submitItems={this.handleUpdateItems}
         />
       );
     }

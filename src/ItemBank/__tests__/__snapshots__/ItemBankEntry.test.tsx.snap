@@ -25,7 +25,6 @@ exports[`ItemBankEntry matches snapshot 1`] = `
             ]
           }
           onApply={[Function]}
-          onItemsUpdate={[Function]}
         />
       </div>
     </div>
@@ -57,7 +56,6 @@ exports[`ItemBankEntry matches snapshot 1`] = `
           },
         ]
       }
-      onItemsUpdate={[Function]}
       sections={
         Array [
           Object {
