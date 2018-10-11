@@ -5,7 +5,8 @@ import {
   CsvRowModel,
   NamespaceModel,
   parseCsv,
-  Accordion
+  Accordion,
+  validItemRevisionModel
 } from "@src/index";
 
 export interface CsvEntryProps {
