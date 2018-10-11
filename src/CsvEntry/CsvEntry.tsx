@@ -45,11 +45,8 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
       props.itemRows !== this.props.itemRows ||
       this.props.itemRows.length !== props.itemRows.length
     ) {
-      console.log("props recived\n\n\n");
       const csvData = toCsvModel(props.itemRows);
-      console.log(props.itemRows);
       const csvInputValue = toCsvText(csvData);
-      console.log(csvInputValue);
       this.setState({ csvData, csvInputValue });
     }
   }

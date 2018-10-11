@@ -24,18 +24,25 @@ const item2 = { ...item, bankKey: 2332, revision: "asdf" };
 
 const items: ItemRevisionModel[] = [item, item2];
 
-const csvEntryProps: CsvEntryProps = {
-  onCsvTextUpdate: onCsvTextUpdateMock,
-  onItemsUpdate: onItemsUpdateMock,
-  onApply: jest.fn()
-};
-
 const csvData1: CsvRowModel = {
+  ...item,
   index: 0
 };
 
 const csvData2: CsvRowModel = {
+  ...item2,
   index: 1
+};
+
+const csvData: CsvRowModel[] = [csvData1, csvData2];
+
+const csvEntryProps: CsvEntryProps = {
+  namespaces: [],
+  onItemsUpdate: (items: ItemRevisionModel[]) => {
+    const item = "";
+  },
+  onApply: jest.fn(),
+  itemRows: items
 };
 
 const csvEntryState: CsvEntryState = {
