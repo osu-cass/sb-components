@@ -37,18 +37,18 @@ export class ItemEntryTable extends React.Component<
   }
 
   handleRowUpdate(row: ItemRevisionModel, key: number) {
-    const itemRows = this.state.itemRows;
-    itemRows[key] = row;
-    // If the row is valid we want to add another row
-    if (validItemRevisionModel(row)) {
-      row.valid = true;
-      itemRows.push({});
-    } else {
-      row.valid = false;
-    }
-    itemRows[key] = row;
+    this.setState((state: ItemEntryTableState) => {
+      const itemRows = state.itemRows;
+      itemRows[key] = row;
+      if (validItemRevisionModel(row)) {
+        row.valid = true;
+        itemRows.push({});
+      } else {
+        row.valid = false;
+      }
 
-    this.setState({ itemRows });
+      return { itemRows };
+    });
   }
 
   handleDeleteRow(key: number) {
@@ -58,13 +58,23 @@ export class ItemEntryTable extends React.Component<
         itemRows: this.state.itemRows.filter((item, index) => index !== key)
       });
     } else {
-      this.props.onDeleteItem(key);
+      this.setState((state: ItemEntryTableState) => {
+        this.props.onDeleteItem(key);
+
+        return {
+          itemRows: state.itemRows.filter((item, index) => index !== key)
+        };
+      });
     }
   }
 
   handleClearItems() {
     this.props.onClearItems();
-    this.setState({ itemRows: [{}] });
+    this.setState((state: ItemEntryTableState, props: ItemEntryTableProps) => {
+      console.log(props);
+
+      return { itemRows: props.itemRows };
+    });
   }
 
   renderHeader() {
@@ -91,14 +101,14 @@ export class ItemEntryTable extends React.Component<
         sections={this.props.sections}
         key={idx}
         id={idx}
-        isLast={idx === this.props.itemRows.length - 1}
+        isLast={idx === this.state.itemRows.length - 1}
       />
     ));
 
     return (
       <tbody>
         {rows}
-        <tr>{this.renderFooter()}</tr>
+        {this.renderFooter()}
       </tbody>
     );
   }
@@ -118,7 +128,7 @@ export class ItemEntryTable extends React.Component<
         <td>
           <input
             className="btn btn-default clear-button bg-light"
-            onClick={this.props.onClearItems}
+            onClick={click => this.handleClearItems()}
             type="button"
             value="clear all"
           />
