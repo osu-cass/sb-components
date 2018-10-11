@@ -35,6 +35,18 @@ export class ItemEntryTable extends React.Component<
     };
   }
 
+  componentWillReceiveProps(
+    props: ItemEntryTableProps,
+    state: ItemEntryTableState
+  ) {
+    if (
+      this.props.itemRows !== props.itemRows ||
+      this.props.itemRows.length !== props.itemRows.length
+    ) {
+      this.setState({ itemRows: props.itemRows });
+    }
+  }
+
   handleRowUpdate(row: ItemRevisionModel, key: number) {
     this.setState((state: ItemEntryTableState) => {
       const itemRows = state.itemRows;

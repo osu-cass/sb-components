@@ -24,6 +24,17 @@ export function parseCsv(
   return data;
 }
 
+export function toCsvModel(items: ItemRevisionModel[]): CsvRowModel[] {
+  const csvData: CsvRowModel[] = [];
+  items.forEach((item, index) => {
+    if (item.itemKey) {
+      csvData.push({ ...item, index });
+    }
+  });
+
+  return csvData;
+}
+
 export function toCsvText(items: CsvRowModel[]): string {
   let csvString: string = "";
   items.forEach(item => {

@@ -7,7 +7,8 @@ import {
   parseCsv,
   Accordion,
   validItemRevisionModel,
-  toCsvText
+  toCsvText,
+  toCsvModel
 } from "@src/index";
 
 export interface CsvEntryProps {
@@ -37,6 +38,20 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
       csvInputValue,
       csvData
     };
+  }
+
+  componentWillReceiveProps(props: CsvEntryProps, state: CsvEntryState) {
+    if (
+      props.itemRows !== this.props.itemRows ||
+      this.props.itemRows.length !== props.itemRows.length
+    ) {
+      console.log("props recived\n\n\n");
+      const csvData = toCsvModel(props.itemRows);
+      console.log(props.itemRows);
+      const csvInputValue = toCsvText(csvData);
+      console.log(csvInputValue);
+      this.setState({ csvData, csvInputValue });
+    }
   }
 
   renderHelpText(): JSX.Element {
