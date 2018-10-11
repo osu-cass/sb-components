@@ -19,7 +19,6 @@ export interface ItemEntryTableProps {
   itemRows: ItemRevisionModel[];
   namespaces: NamespaceModel[];
   sections: SectionModel[];
-  onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onDeleteItem: (items: number) => void;
   onClearItems: () => void;
   onSubmit: (items: ItemRevisionModel[]) => void;
@@ -71,8 +70,13 @@ export class ItemEntryTable extends React.Component<
   handleClearItems() {
     this.props.onClearItems();
     this.setState((state: ItemEntryTableState, props: ItemEntryTableProps) => {
-      console.log(props);
+      return { itemRows: props.itemRows };
+    });
+  }
 
+  handleSubmit() {
+    this.props.onSubmit(this.state.itemRows);
+    this.setState((state: ItemEntryTableState, props: ItemEntryTableProps) => {
       return { itemRows: props.itemRows };
     });
   }
@@ -120,7 +124,7 @@ export class ItemEntryTable extends React.Component<
         <td>
           <input
             className="btn btn-primary submit-button bg-primary"
-            onClick={apply => this.props.onSubmit(this.state.itemRows)}
+            onClick={click => this.handleSubmit()}
             type="button"
             value="apply"
           />
