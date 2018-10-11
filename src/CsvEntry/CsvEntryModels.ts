@@ -24,6 +24,20 @@ export function parseCsv(
   return data;
 }
 
+export function toCsvText(items: CsvRowModel[]): string {
+  let csvString: string = "";
+  items.forEach(item => {
+    if (item.itemKey) {
+      const itemString = item.bankKey
+        ? `${item.namespace},${item.bankKey},${item.itemKey},${item.section}\n`
+        : `${item.namespace},${item.itemKey},${item.section}\n`;
+      csvString = `${csvString}${itemString}`;
+    }
+  });
+
+  return csvString;
+}
+
 function parseLines(lines: string[], namespaces: NamespaceModel[]) {
   const data: CsvRowModel[] = [];
   let index = 0;

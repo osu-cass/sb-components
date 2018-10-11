@@ -72,7 +72,7 @@ export { parseQueryString } from "./Common/UrlParsing";
 // CSV Entry
 //
 export { CsvEntry, CsvEntryProps } from "./CsvEntry/CsvEntry";
-export { CsvRowModel, parseCsv } from "./CsvEntry/CsvEntryModels";
+export { CsvRowModel, parseCsv, toCsvText } from "./CsvEntry/CsvEntryModels";
 
 //
 // DropDown Components and Models
