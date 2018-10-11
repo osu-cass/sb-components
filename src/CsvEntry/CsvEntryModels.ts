@@ -4,6 +4,8 @@ import {
   NamespaceModel
 } from "../ItemBank/ItemBankModels";
 
+import { validItemRevisionModel } from "@src/index";
+
 export interface CsvRowModel extends ItemRevisionModel {
   index: number;
 }
@@ -41,6 +43,7 @@ function parseLines(lines: string[], namespaces: NamespaceModel[]) {
       continue;
     }
 
+    row.valid = validItemRevisionModel(row);
     data.push(row);
     index = index + 1;
   }

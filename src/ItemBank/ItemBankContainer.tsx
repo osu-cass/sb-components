@@ -206,6 +206,10 @@ export class ItemBankContainer extends React.Component<
     } else {
       currentItem = undefined;
     }
+    if (items[items.length - 1].itemKey) {
+      items.push({});
+    }
+    console.log(currentItem);
     this.setState({ items, currentItem }, () => {
       this.handleChangeViewItem();
       this.handleChangeRevision();
