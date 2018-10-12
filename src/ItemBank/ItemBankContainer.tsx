@@ -174,12 +174,11 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.itemExistsClient(requestItems);
     const promiseWrapper = this.subscription.add("itemExistsClient", prom);
     const items = await promiseWrapper.promise;
-    console.log(items);
     const validatedItems = existenceResponseModelToRevisionModel(
       this.state.items,
       items
     );
-    console.log(validatedItems);
+
     this.setState({ items: validatedItems });
   }
 

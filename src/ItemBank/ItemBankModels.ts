@@ -79,8 +79,6 @@ export function existenceResponseModelToRevisionModel(
     const match: ItemExistsResponseModel | undefined = responseModel.find(res =>
       responseIsEqual(res, item)
     );
-    console.log(match);
-    console.log(item);
     if (match) {
       item.valid = match.exists;
     }
