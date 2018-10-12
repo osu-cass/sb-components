@@ -16,6 +16,16 @@ export interface ItemRevisionModel {
   valid?: boolean;
 }
 
+export interface ItemExistsRequestModel {
+  namespace: string;
+  bankKey?: string;
+  itemKey: string;
+}
+
+export interface ItemExistsResponseModel extends ItemExistsRequestModel {
+  exists: boolean;
+}
+
 export function itemsAreEqual(
   left: ItemRevisionModel | undefined,
   right: ItemRevisionModel | undefined
@@ -41,6 +51,64 @@ export function getItemBankName(
   }
 
   return value;
+}
+
+export function toExistenceRequestModel(
+  items: ItemRevisionModel[]
+): ItemExistsRequestModel[] {
+  const requestModel: ItemExistsRequestModel[] = [];
+  items.forEach(item => {
+    if (item.itemKey && item.namespace) {
+      requestModel.push({
+        namespace: item.namespace,
+        itemKey: item.itemKey.toString(),
+        bankKey: item.bankKey ? item.bankKey.toString() : undefined
+      });
+    }
+  });
+
+  return requestModel;
+}
+
+export function existenceResponseModelToRevisionModel(
+  currentItems: ItemRevisionModel[],
+  responseModel: ItemExistsResponseModel[]
+): ItemRevisionModel[] {
+  const itemList: ItemRevisionModel[] = [];
+  currentItems.map((item, index) => {
+    const match: ItemExistsResponseModel | undefined = responseModel.find(res =>
+      responseIsEqual(res, item)
+    );
+    console.log(match);
+    console.log(item);
+    if (match) {
+      item.valid = match.exists;
+    }
+
+    return item;
+  });
+
+  return currentItems;
+}
+
+function responseIsEqual(
+  res: ItemExistsResponseModel,
+  item: ItemRevisionModel
+): boolean {
+  let areEqual: boolean =
+    res.namespace === item.namespace &&
+    item.itemKey !== undefined &&
+    res.itemKey === item.itemKey.toString();
+  if (
+    (item.bankKey && res.bankKey === item.bankKey.toString()) ||
+    (!item.bankKey && !res.bankKey)
+  ) {
+    areEqual = areEqual && true;
+  } else {
+    areEqual = false;
+  }
+
+  return areEqual;
 }
 
 export function concatNamespaceWith(
