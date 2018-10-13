@@ -9,7 +9,7 @@ import {
 } from "@mocks/Pdf/mocks";
 import "src/Assets/Styles/pdf.less";
 
-storiesOf("PDF ItemViewContainer", module)
+storiesOf("PDF ItemViewContainer DontTest", module)
   .addDecorator(pdfDecorator)
   .add("question only", () => (
     <ItemViewContainer itemData={singleQuestion} displayScoreInfo={true} />

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { RevisionModel, Revision, ToolTip } from "@src/index";
+import { RevisionModel, Revision } from "@src/index";
 
 export interface RevisionContainerProps {
   revisions: RevisionModel[];
@@ -15,12 +15,13 @@ export class RevisionContainer extends React.Component<
   }
 
   render() {
-    const revisions = this.props.revisions.map(rev => (
+    const revisions = this.props.revisions.map((rev, index) => (
       <Revision
         {...rev}
         selected={rev.selected}
         onClick={() => this.props.onRevisionSelect(rev.commitHash)}
         key={rev.commitHash}
+        updateNumber={index + 1}
       />
     ));
 

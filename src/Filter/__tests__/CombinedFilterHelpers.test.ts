@@ -1,4 +1,5 @@
 import * as CombinedFilterHelpers from "../CombinedFilterHelpers";
+import { ItemSearch } from "../../ItemSearch/ItemSearch";
 import * as Mocks from "./Mocks";
 import {
   BasicFilterCategoryModel,
@@ -6,8 +7,13 @@ import {
   AdvancedFilterCategoryModel,
   FilterType
 } from "../FilterModels";
+import { siwFilterUpdated } from "gh-site/lib/src/Filter/CombinedFilterHelpers";
+import { SearchAPIParamsModel } from "gh-site/lib/src";
 
 const basicFilter: BasicFilterCategoryModel[] = [
+  { ...Mocks.claimSelectedCategory, optionType: OptionTypeModel.DropDown }
+];
+const emptyFilter: BasicFilterCategoryModel[] = [
   { ...Mocks.claimSelectedCategory, optionType: OptionTypeModel.DropDown }
 ];
 const advancedFilter: AdvancedFilterCategoryModel[] = [
@@ -22,6 +28,7 @@ describe("resetFilters", () => {
   it("deselects all filters", () => {
     const advancedFilterClone = JSON.parse(JSON.stringify(advancedFilter));
     const basicFilterClone = JSON.parse(JSON.stringify(basicFilter));
+
     const result = CombinedFilterHelpers.resetFilters(
       basicFilterClone,
       advancedFilterClone
@@ -35,6 +42,14 @@ describe("resetFilters", () => {
         expect(o.isSelected).toBeFalsy()
       );
     }
+
+    emptyFilter.forEach(o => (o.optionType = OptionTypeModel.inputBox));
+    const inputBox = CombinedFilterHelpers.resetFilters(
+      emptyFilter,
+      advancedFilterClone
+    );
+    inputBox.basicFilter.forEach(f => expect(f.filterOptions).toHaveLength(0));
+
     result.basicFilter[0].filterOptions.forEach(o =>
       expect(o.isSelected).toBeFalsy()
     );
@@ -136,5 +151,28 @@ describe("advancedFilterUpdated", () => {
       filterType: FilterType.Claim
     });
     expect(result.basicFilter[0].filterOptions[1].isSelected).toBeTruthy();
+  });
+});
+
+describe("siwUpdateDependentAndSeach", () => {
+  it("updates filter", () => {
+    const basicFilterClone: BasicFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(basicFilter)
+    );
+    const advancedFilterClone: AdvancedFilterCategoryModel[] = JSON.parse(
+      JSON.stringify(advancedFilter)
+    );
+
+    const result = CombinedFilterHelpers.siwFilterUpdated(
+      basicFilterClone,
+      Mocks.mockSeachAPI,
+      advancedFilterClone,
+      Mocks.searchModel
+    );
+    const searchParams = ItemSearch.updateDependentSearchParams(
+      Mocks.mockSeachAPI,
+      Mocks.searchModel
+    );
+    expect(result.searchAPI).toEqual(searchParams);
   });
 });

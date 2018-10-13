@@ -1,16 +1,21 @@
 import * as React from "react";
 import {
   Accordion,
-  ToolTip,
   ItemRevisionModel,
+  NamespaceModel,
   SectionModel,
   ItemEntryTable,
   CsvEntry
 } from "@src/index";
 
 export interface ItemBankEntryProps {
-  updateItems: (items: ItemRevisionModel[]) => void;
+  updateCsvText: (csvText: string) => void;
+  deleteItem: (item: number) => void;
+  clearItems: () => void;
+  submitItems: (items: ItemRevisionModel[]) => void;
+  namespaces: NamespaceModel[];
   sections: SectionModel[];
+  csvText: string;
   items: ItemRevisionModel[];
 }
 
@@ -40,7 +45,7 @@ export class ItemBankEntry extends React.Component<
     }
   };
 
-  onCsvBlur = () => {
+  onCsvApply = () => {
     this.setState({
       csvIsOpen: false,
       itemsEntryIsOpen: true
@@ -48,6 +53,8 @@ export class ItemBankEntry extends React.Component<
   };
 
   renderCsvEntry() {
+    const { csvText, namespaces, submitItems } = this.props;
+
     return (
       <Accordion
         accordionTitle="CSV Entry"
@@ -57,8 +64,11 @@ export class ItemBankEntry extends React.Component<
         <div className="csv-entry-container section">
           <div className="csv-entry-wrapper">
             <CsvEntry
-              onItemsUpdate={this.props.updateItems}
-              onBlur={this.onCsvBlur}
+              csvText={csvText}
+              namespaces={namespaces}
+              onCsvTextUpdate={this.props.updateCsvText}
+              onApply={this.onCsvApply}
+              onItemsUpdate={submitItems}
             />
           </div>
         </div>
@@ -67,7 +77,14 @@ export class ItemBankEntry extends React.Component<
   }
 
   renderTableEntry() {
-    const { items, updateItems, sections } = this.props;
+    const {
+      items,
+      clearItems,
+      namespaces,
+      sections,
+      deleteItem,
+      submitItems
+    } = this.props;
 
     return (
       <Accordion
@@ -77,8 +94,11 @@ export class ItemBankEntry extends React.Component<
       >
         <ItemEntryTable
           itemRows={items}
-          onItemsUpdate={updateItems}
+          namespaces={namespaces}
           sections={sections}
+          onDeleteItem={deleteItem}
+          onClearItems={clearItems}
+          onSubmit={submitItems}
         />
       </Accordion>
     );

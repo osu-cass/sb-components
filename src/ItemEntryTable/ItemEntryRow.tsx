@@ -1,16 +1,22 @@
 import * as React from "react";
 import {
   ItemRevisionModel,
+  NamespaceModel,
   SectionModel,
   validItemRevisionModel,
   SelectOptionProps,
   Select
 } from "@src/index";
+import { findNamespace } from "@src/ItemBank/ItemBankModels";
 
 export interface ItemEntryRowProps {
   onRowUpdate: (row: ItemRevisionModel) => void;
+  onDeleteRow: (row: number) => void;
+  id: number;
   row: ItemRevisionModel;
+  namespaces: NamespaceModel[];
   sections: SectionModel[];
+  isLast: boolean;
 }
 
 export interface ItemEntryRowState {
@@ -49,6 +55,10 @@ export class ItemEntryRow extends React.Component<
     }
   };
 
+  deleteRow = () => {
+    this.props.onDeleteRow(this.props.id);
+  };
+
   handleItemKey = (itemKey: number) => {
     const { editRow } = this.state;
     this.setState({ editRow: { ...editRow, itemKey }, isModified: true });
@@ -59,6 +69,20 @@ export class ItemEntryRow extends React.Component<
     this.setState({ editRow: { ...editRow, bankKey }, isModified: true });
   };
 
+  handleNamespace = (namespace: string) => {
+    const { editRow } = this.state;
+    const namespaceModel = findNamespace(namespace, this.props.namespaces);
+    const hasBankKey = namespaceModel ? namespaceModel.hasBankKey : false;
+    const bankKey = namespaceModel ? namespaceModel.bankKey : 0;
+    this.setState(
+      {
+        editRow: { ...editRow, namespace, hasBankKey, bankKey },
+        isModified: true
+      },
+      this.handleRowUpdate
+    );
+  };
+
   handleSection = (section: string) => {
     const { editRow } = this.state;
     this.setState(
@@ -67,7 +91,31 @@ export class ItemEntryRow extends React.Component<
     );
   };
 
-  renderRowNumberInput(
+  renderRowBankKeyInput(
+    row: ItemRevisionModel,
+    onChange: (value: number) => void,
+    rowValue?: number
+  ) {
+    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
+
+    return (
+      <td>
+        <input
+          className={`form-control ${error}`}
+          aria-valuenow={rowValue || undefined}
+          aria-valuemin={0}
+          aria-valuemax={100000}
+          type="number"
+          value={row.hasBankKey ? rowValue || "" : ""}
+          onChange={event => onChange(+event.target.value)}
+          onBlur={this.handleRowUpdate}
+          disabled={!row.hasBankKey}
+        />
+      </td>
+    );
+  }
+
+  renderRowItemKeyInput(
     row: ItemRevisionModel,
     onChange: (value: number) => void,
     rowValue?: number
@@ -85,6 +133,39 @@ export class ItemEntryRow extends React.Component<
           value={rowValue || ""}
           onChange={event => onChange(+event.target.value)}
           onBlur={this.handleRowUpdate}
+        />
+      </td>
+    );
+  }
+
+  renderRowNamespace(row: ItemRevisionModel) {
+    const options: SelectOptionProps[] = this.props.namespaces.map(op => {
+      return {
+        label: op.name,
+        value: op.name,
+        selected: op.name === row.namespace
+      };
+    });
+
+    options.unshift({
+      label: "Select a Namespace",
+      value: "N/A",
+      disabled: true,
+      selected: row.namespace === "N/A"
+    });
+
+    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
+
+    return (
+      <td>
+        <Select
+          className={`form-control ${error}`}
+          label="Namespaces"
+          labelClass="display-none"
+          selected={row.namespace || "N/A"}
+          options={options}
+          onChange={this.handleNamespace}
+          wrapperClass="section-dd"
         />
       </td>
     );
@@ -123,22 +204,38 @@ export class ItemEntryRow extends React.Component<
     );
   }
 
+  renderDeleteButton() {
+    return (
+      <td className="delete-row">
+        <input
+          className="delete-button btn btn-primary bg-light"
+          onClick={this.deleteRow}
+          disabled={this.props.isLast}
+          type="button"
+          value="X"
+        />
+      </td>
+    );
+  }
+
   render() {
     const { editRow } = this.state;
 
     return (
       <tr>
-        {this.renderRowNumberInput(
+        {this.renderRowNamespace(editRow)}
+        {this.renderRowBankKeyInput(
           editRow,
           this.handleItemBank,
           editRow.bankKey
         )}
-        {this.renderRowNumberInput(
+        {this.renderRowItemKeyInput(
           editRow,
           this.handleItemKey,
           editRow.itemKey
         )}
         {this.renderRowSection(editRow)}
+        {this.renderDeleteButton()}
       </tr>
     );
   }

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { ItemTabs, ItemTabsProps, Tabs } from "../../src/PageTabs/ItemTabs";
+import { ItemTabs, ItemTabsProps, Tabs } from "@src/PageTabs/ItemTabs";
 import { centerDecorator } from "../CenterDecorator";
 
 const mockFunc = (tab: Tabs) => {

@@ -35,13 +35,14 @@ export function advFilterCategorySelect(
 ): AdvancedFilterCategoryModel {
   const newCategory = { ...selectedCat };
   const options = newCategory.filterOptions.slice();
-  const allPressed = option === undefined && newCategory.displayAllButton;
+  const allPressed =
+    (option === undefined || option.filterType === undefined) &&
+    newCategory.displayAllButton;
 
   if (!newCategory.disabled) {
     if (allPressed) {
       options.forEach((opt: FilterOptionModel) => (opt.isSelected = false));
-    }
-    if (option) {
+    } else if (option) {
       const optionIdx = options.indexOf(option);
       options[optionIdx].isSelected = !option.isSelected;
       if (!selectedCat.isMultiSelect) {
@@ -86,6 +87,7 @@ export interface FilterOptionModel {
 export interface BasicFilterCategoryModel extends FilterCategoryModel {
   optionType: OptionTypeModel;
   placeholderText?: string;
+  hideSelectMessage?: boolean;
 }
 
 export interface FilterCategoryModel {

@@ -1,15 +1,20 @@
 import * as React from "react";
 import {
-  ToolTip,
+  generateTooltip,
   ItemRevisionModel,
   CsvRowModel,
+  NamespaceModel,
   parseCsv,
-  Accordion
+  Accordion,
+  validItemRevisionModel
 } from "@src/index";
 
 export interface CsvEntryProps {
+  csvText: string;
+  namespaces: NamespaceModel[];
+  onCsvTextUpdate: (csvText: string) => void;
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
-  onBlur: () => void;
+  onApply: () => void;
 }
 
 export interface CsvEntryState {
@@ -21,31 +26,60 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   constructor(props: CsvEntryProps) {
     super(props);
 
-    this.state = { csvData: [] };
+    this.state = {
+      csvInputValue: props.csvText,
+      csvData: []
+    };
+  }
+
+  renderHelpText(): JSX.Element {
+    return (
+      <p>
+        Enter namespace, bank key, item id, and section for the namespace which
+        has a bank key. Or,<br />
+        Enter namespace , item id, and section for the namespace which doesn't
+        have a bank key.
+      </p>
+    );
   }
 
   renderHelpButton() {
+    const helpText: JSX.Element = this.renderHelpText();
+    const displayText: JSX.Element = (
+      <button
+        className="item-nav-btn btn btn-default btn-sm"
+        role="button"
+        aria-label="Open help text"
+      >
+        <span className="fa fa-info-circle" aria-hidden="true" />
+        Help
+      </button>
+    );
+
     return (
-      <div className="help-button">
-        <ToolTip
-          helpText={
-            <p>
-              Enter bank key and item id for the items you would like to add
-            </p>
-          }
-          position="bottom"
-          side="left"
+      <span className="csv-button-left">
+        {generateTooltip({
+          helpText,
+          displayText,
+          displayIcon: undefined
+        })}
+      </span>
+    );
+  }
+
+  renderApplyButton() {
+    return (
+      <span className="csv-button-right">
+        <button
+          className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
+          role="button"
+          aria-label="Apply text"
+          onClick={this.handleCsvApply}
         >
-          <button
-            className="item-nav-btn btn btn-default btn-sm about-item-btn"
-            role="button"
-            aria-label="Open help text"
-          >
-            <span className="fa fa-info-circle" aria-hidden="true" />
-            Help
-          </button>
-        </ToolTip>
-      </div>
+          <span className="fa fa-check-circle" aria-hidden="true" />
+          Apply
+        </button>
+      </span>
     );
   }
 
@@ -55,28 +89,33 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     this.setState({
       csvInputValue: rawCsv
     });
+
+    this.props.onCsvTextUpdate(rawCsv);
   }
 
-  handleCsvBlur = () => {
+  handleCsvApply = () => {
     const { csvInputValue } = this.state;
-    const csvData = parseCsv(csvInputValue);
+    const { namespaces } = this.props;
+    const csvData = parseCsv(csvInputValue, namespaces);
 
     this.setState({
       csvData
     });
     this.props.onItemsUpdate(csvData);
-    this.props.onBlur();
+    this.props.onApply();
   };
 
   render() {
     return (
       <div className="csv-entry-wrapper">
-        {this.renderHelpButton()}
+        <div className="csv-button-row">
+          {this.renderHelpButton()}
+          {this.renderApplyButton()}
+        </div>
         <textarea
           className="csv-text-entry"
           onChange={e => this.handleCsvChange(e)}
           value={this.state.csvInputValue}
-          onBlur={this.handleCsvBlur}
         />
       </div>
     );

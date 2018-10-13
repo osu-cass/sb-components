@@ -10,7 +10,7 @@ import { checkA11y } from "@storybook/addon-a11y";
 
 const req = require.context("../stories", true, /\.storybook\.tsx$/);
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
-addDecorator(checkA11y)
+addDecorator(checkA11y);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

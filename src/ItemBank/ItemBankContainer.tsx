@@ -1,20 +1,13 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import {
-  AboutItem,
-  AboutItemModel,
   getResourceContent,
-  ItemAccessibilityModal,
-  ItemViewerFrame,
-  ToolTip,
   AccResourceGroupModel,
-  AdvancedAboutItem,
   AboutItemRevisionModel,
   Resource,
-  GradeLevels,
   Subscription,
   ItemRevisionModel,
   itemRevisionKey,
+  NamespaceModel,
   SectionModel,
   AccessibilityRevisionModel,
   validItemRevisionModel,
@@ -23,9 +16,9 @@ import {
   ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  toiSAAP,
-  AccessibilityResourceModel
+  toiSAAP
 } from "@src/index";
+import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
@@ -35,17 +28,21 @@ export interface ItemBankContainerProps {
     item: ItemRevisionModel
   ) => Promise<AboutItemRevisionModel>;
   revisionsClient: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
+  namespacesClient: () => Promise<NamespaceModel[]>;
   sectionsClient: () => Promise<SectionModel[]>;
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
-  getUrl: (item: ItemRevisionModel) => string;
+  setUrl: (item: ItemRevisionModel) => void;
+  resetUrl: () => void;
 }
 
 export interface ItemBankContainerState {
   aboutItemRevisionModel: Resource<AboutItemRevisionModel>;
   accResourceGroups: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemRevisionModel;
+  csvText: string;
   items: ItemRevisionModel[];
+  namespaces: Resource<NamespaceModel[]>;
   sections: Resource<SectionModel[]>;
   revisions: Resource<RevisionModel[]>;
   nextItem?: ItemRevisionModel;
@@ -72,8 +69,10 @@ export class ItemBankContainer extends React.Component<
     this.state = {
       currentItem,
       items,
+      csvText: "",
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
+      namespaces: { kind: "loading" },
       sections: { kind: "loading" },
       revisions: { kind: "loading" },
       hasError: false
@@ -81,6 +80,7 @@ export class ItemBankContainer extends React.Component<
   }
 
   componentDidMount() {
+    this.fetchNamespaces().catch(e => this.onError(e));
     this.fetchSections().catch(e => this.onError(e));
     this.handleChangeViewItem();
     this.handleChangeRevision();
@@ -115,15 +115,27 @@ export class ItemBankContainer extends React.Component<
     const params: AccessibilityRevisionModel = {
       interactionType: item.AboutItemMetadata.interactionType,
       subject: item.AboutItemMetadata.subject,
-      gradeLevel: item.AboutItemMetadata.intendedGrade
+      gradeLevel: item.AboutItemMetadata.intendedGrade,
+      allowCalculator: this.makeBool(item),
+      itemKey: item.AboutItemMetadata.identifier,
+      bankKey: item.bankKey
     };
-
     const prom = this.props.accessibilityClient(params);
     const promiseWrapper = this.subscription.add("accessibilityClient", prom);
     const accessibilityResources = await promiseWrapper.promise;
     this.onFetchAccResourceSuccess(accessibilityResources);
 
     return accessibilityResources;
+  }
+
+  // Changes allowCalculator from "yes"/"no"/null to bool
+
+  makeBool(item: AboutItemRevisionModel) {
+    if (item.AboutItemMetadata.allowCalculator.toLowerCase() === "yes") {
+      return true;
+    }
+
+    return false;
   }
 
   onFetchAccResourceSuccess(data: AccResourceGroupModel[]) {
@@ -134,6 +146,7 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
     const revisions = await promiseWrapper.promise;
+    revisions[revisions.length - 1].selected = true;
     this.onFetchRevisionsSuccess(revisions);
 
     return revisions;
@@ -141,6 +154,19 @@ export class ItemBankContainer extends React.Component<
 
   onFetchRevisionsSuccess(data: RevisionModel[]) {
     this.setState({ revisions: { kind: "success", content: data } });
+  }
+
+  async fetchNamespaces() {
+    const prom = this.props.namespacesClient();
+    const promiseWrapper = this.subscription.add("namespacesClient", prom);
+    const namespaces = await promiseWrapper.promise;
+    this.onFetchNamespacesSuccess(namespaces);
+
+    return namespaces;
+  }
+
+  onFetchNamespacesSuccess(data: NamespaceModel[]) {
+    this.setState({ namespaces: { kind: "success", content: data } });
   }
 
   async fetchSections() {
@@ -167,22 +193,77 @@ export class ItemBankContainer extends React.Component<
     }
   }
 
+  handleUpdateCsvText = (csvText: string) => {
+    this.setState({ csvText });
+  };
+
   handleUpdateItems = (items: ItemRevisionModel[]) => {
-    const currentItem = items.length > 0 ? items[0] : undefined;
-    const lastItem = items[items.length - 1];
-    items.forEach(item => {
-      if (!validItemRevisionModel(item) && item !== lastItem) {
-        item.valid = false;
-      } else {
-        item.valid = true;
-      }
-    });
-    if (validItemRevisionModel(lastItem) || items.length === 0) {
+    let currentItem: ItemRevisionModel | undefined;
+    if (items.length > 1) {
+      const itemMatch = items.filter(
+        item => itemsAreEqual(this.state.currentItem, item) || false
+      );
+      currentItem = itemMatch[0] ? itemMatch[0] : items[0];
+    } else {
+      currentItem = undefined;
+    }
+    if (items[items.length - 1].itemKey) {
       items.push({});
     }
     this.setState({ items, currentItem }, () => {
       this.handleChangeViewItem();
       this.handleChangeRevision();
+    });
+  };
+
+  componentWillUpdate(
+    props: ItemBankContainerProps,
+    state: ItemBankContainerState
+  ) {
+    if (
+      !state.currentItem &&
+      !state.nextItem &&
+      !state.previousItem &&
+      this.state.currentItem
+    ) {
+      this.props.resetUrl();
+    } else if (state.items !== this.state.items && state.items.length > 1) {
+      this.handleChangeViewItem();
+    }
+  }
+
+  deleteItem = (key: number) => {
+    this.setState(state => {
+      let currentItem = state.currentItem;
+      let nextItem = state.nextItem;
+      let previousItem = state.previousItem;
+      if (itemsAreEqual(state.items[key], currentItem)) {
+        if (state.previousItem) {
+          currentItem = state.previousItem;
+        } else if (state.nextItem) {
+          currentItem = state.nextItem;
+        } else if (state.items.length === 2) {
+          currentItem = undefined;
+          nextItem = undefined;
+          previousItem = undefined;
+        }
+      }
+
+      return {
+        currentItem,
+        nextItem,
+        previousItem,
+        items: state.items.filter((i, index) => key !== index)
+      };
+    });
+  };
+
+  clearItems = () => {
+    this.setState({
+      items: [{}],
+      previousItem: undefined,
+      nextItem: undefined,
+      currentItem: undefined
     });
   };
 
@@ -194,7 +275,7 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
     let index = 0;
 
-    if (currentItem) {
+    if (currentItem && currentItem.valid) {
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
           this.fetchAccResourceGroups(aboutItem)
@@ -204,9 +285,11 @@ export class ItemBankContainer extends React.Component<
         })
         .catch(e => {
           this.onError(e, () => {
-            index = items.findIndex(i => i === currentItem);
-            items[index].valid = false;
-            this.setState({ items }, this.updateNavigationItems);
+            if (items.length > 1) {
+              index = items.findIndex(i => i === currentItem);
+              items[index].valid = false;
+              this.setState({ items }, this.updateNavigationItems);
+            }
           });
         });
     }
@@ -219,6 +302,8 @@ export class ItemBankContainer extends React.Component<
       const previousItem = getPreviousItemBank(currentItem, items);
 
       this.setState({ currentItem, nextItem, previousItem });
+    } else {
+      this.setState({ nextItem: undefined, previousItem: undefined });
     }
   };
 
@@ -227,9 +312,18 @@ export class ItemBankContainer extends React.Component<
 
     if (currentItem) {
       const isaap = toiSAAP(accGroups);
-      const newItem = { ...currentItem, isaap };
-      this.props.getUrl(currentItem);
+      this.props.setUrl(currentItem);
       this.setState({ currentItem });
+      this.bubbleEventHandler(currentItem, isaap);
+    }
+  };
+
+  bubbleEventHandler = (currentItem: ItemRevisionModel, isaap: string) => {
+    const newItem = { ...currentItem, isaap };
+    const x = document;
+    const event = new CustomEvent("acc-update", { detail: newItem.isaap });
+    if (x !== null) {
+      x.dispatchEvent(event);
     }
   };
 
@@ -308,7 +402,7 @@ export class ItemBankContainer extends React.Component<
         this.handlePreviousItem();
         break;
       default:
-        console.error("invalid direction");
+        throw new Error("invalid direction");
     }
   };
 
@@ -340,16 +434,22 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { sections, items, hasError } = this.state;
+    const { namespaces, sections, items, csvText } = this.state;
     let content: JSX.Element | undefined;
 
+    const namespacesContent = getResourceContent(namespaces);
     const sectionsContent = getResourceContent(sections);
-    if (sectionsContent) {
+    if (namespacesContent && sectionsContent) {
       content = (
         <ItemBankEntry
-          updateItems={this.handleUpdateItems}
+          updateCsvText={this.handleUpdateCsvText}
+          namespaces={namespacesContent}
           sections={sectionsContent}
+          csvText={csvText}
           items={items}
+          deleteItem={this.deleteItem}
+          clearItems={this.clearItems}
+          submitItems={this.handleUpdateItems}
         />
       );
     }
@@ -395,13 +495,6 @@ export class ItemBankContainer extends React.Component<
   }
 
   render() {
-    const {
-      aboutItemRevisionModel,
-      accResourceGroups,
-      sections,
-      items
-    } = this.state;
-
     return (
       <div className="item-container container">
         <div>
