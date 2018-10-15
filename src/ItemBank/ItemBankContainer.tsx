@@ -16,7 +16,11 @@ import {
   ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  toiSAAP
+  toiSAAP,
+  ItemExistsRequestModel,
+  ItemExistsResponseModel,
+  toExistenceRequestModel,
+  existenceResponseModelToRevisionModel
 } from "@src/index";
 import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
@@ -34,6 +38,9 @@ export interface ItemBankContainerProps {
   items?: ItemRevisionModel[];
   setUrl: (item: ItemRevisionModel) => void;
   resetUrl: () => void;
+  itemExistsClient: (
+    items: ItemExistsRequestModel[]
+  ) => Promise<ItemExistsResponseModel[]>;
 }
 
 export interface ItemBankContainerState {
@@ -163,6 +170,19 @@ export class ItemBankContainer extends React.Component<
     return namespaces;
   }
 
+  async checkValidItems() {
+    const requestItems = toExistenceRequestModel(this.state.items);
+    const prom = this.props.itemExistsClient(requestItems);
+    const promiseWrapper = this.subscription.add("itemExistsClient", prom);
+    const items = await promiseWrapper.promise;
+    const validatedItems = existenceResponseModelToRevisionModel(
+      this.state.items,
+      items
+    );
+
+    this.setState({ items: validatedItems });
+  }
+
   onFetchNamespacesSuccess(data: NamespaceModel[]) {
     this.setState({ namespaces: { kind: "success", content: data } });
   }
@@ -204,7 +224,9 @@ export class ItemBankContainer extends React.Component<
     if (items[items.length - 1].itemKey) {
       items.push({});
     }
+
     this.setState({ items, currentItem }, () => {
+      this.checkValidItems();
       this.handleChangeViewItem();
       this.handleChangeRevision();
     });

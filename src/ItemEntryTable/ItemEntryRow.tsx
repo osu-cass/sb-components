@@ -218,6 +218,17 @@ export class ItemEntryRow extends React.Component<
     );
   }
 
+  renderError() {
+    let errorElement: JSX.Element;
+    if (this.props.row.valid !== undefined || this.props.row.valid) {
+      errorElement = <td className="error-text">Item Not Found</td>;
+    } else {
+      errorElement = <td />;
+    }
+
+    return errorElement;
+  }
+
   render() {
     const { editRow } = this.state;
 
@@ -236,6 +247,7 @@ export class ItemEntryRow extends React.Component<
         )}
         {this.renderRowSection(editRow)}
         {this.renderDeleteButton()}
+        {this.renderError()}
       </tr>
     );
   }

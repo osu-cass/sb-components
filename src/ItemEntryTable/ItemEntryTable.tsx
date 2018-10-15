@@ -53,7 +53,9 @@ export class ItemEntryTable extends React.Component<
       itemRows[key] = row;
       if (validItemRevisionModel(row)) {
         row.valid = true;
-        itemRows.push({});
+        if (key === this.state.itemRows.length - 1) {
+          itemRows.push({});
+        }
       } else {
         row.valid = false;
       }

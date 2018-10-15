@@ -137,6 +137,10 @@ export {
 export { ItemBankEntry, ItemBankEntryProps } from "./ItemBank/ItemBankEntry";
 export {
   ItemRevisionModel,
+  ItemExistsRequestModel,
+  ItemExistsResponseModel,
+  toExistenceRequestModel,
+  existenceResponseModelToRevisionModel,
   validItemRevisionModel,
   AccessibilityRevisionModel,
   itemRevisionKey,
@@ -338,7 +342,12 @@ export { ToolTip, ToolTipProps, generateTooltip } from "./ToolTip/ToolTip";
 //
 // ApiModel
 //
-export { getRequest, downloadPdfGet, downloadPdfPost } from "./ApiModel";
+export {
+  getRequest,
+  postRequest,
+  downloadPdfGet,
+  downloadPdfPost
+} from "./ApiModel";
 
 //
 // Search Result Container

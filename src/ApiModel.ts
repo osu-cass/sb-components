@@ -1,4 +1,5 @@
 import * as $ from "jquery";
+import { resolve } from "path";
 
 export async function getRequest<T>(url: string, params?: object) {
   return new Promise<T>((resolve, reject) => {
@@ -10,6 +11,21 @@ export async function getRequest<T>(url: string, params?: object) {
       success: resolve,
       error: (xhr, status, err) => reject(new Error(err)),
       type: "GET"
+    });
+  });
+}
+
+export async function postRequest<T>(url: string, data: object) {
+  return new Promise<T>((resolve, reject) => {
+    $.ajax({
+      url,
+      data: JSON.stringify(data),
+      dataType: "json",
+      contentType: "application/json",
+      traditional: true,
+      success: resolve,
+      error: (xhr, status, err) => reject(new Error(err)),
+      type: "POST"
     });
   });
 }
