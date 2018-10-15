@@ -5,12 +5,25 @@ import {
   SectionModel,
   AccResourceGroupModel,
   AboutItemRevisionModel,
-  RevisionModel
+  RevisionModel,
+  ItemExistsRequestModel,
+  ItemExistsResponseModel
 } from "@src/index";
 import { mockPromise, mockPromiseReject } from "@mocks/promise";
 import { allAccessibilityResourceGroups } from "@mocks/Accessibility/mocks";
 import { aboutItemRevisionMockModel } from "@mocks/AboutItem/mocks";
 import { mockRevisions } from "@mocks/Revisions/RevisionMocks";
+
+export const mockBankItemExistsClient = (items: ItemExistsRequestModel[]) => {
+  const result: ItemExistsResponseModel[] = [];
+  items.forEach((item, index) => {
+    if (index % 2 === 0) {
+      result.push({ ...item, exists: false });
+    }
+  });
+
+  return mockPromise<ItemExistsResponseModel[]>(result);
+};
 
 export const mockBankAccessibilityClient = (acc: AccessibilityRevisionModel) =>
   mockPromise<AccResourceGroupModel[]>(allAccessibilityResourceGroups);
