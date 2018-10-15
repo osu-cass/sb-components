@@ -35,13 +35,27 @@ export class ItemEntryTable extends React.Component<
     };
   }
 
+  componentWillReceiveProps(
+    props: ItemEntryTableProps,
+    state: ItemEntryTableState
+  ) {
+    if (
+      this.props.itemRows !== props.itemRows ||
+      this.props.itemRows.length !== props.itemRows.length
+    ) {
+      this.setState({ itemRows: props.itemRows });
+    }
+  }
+
   handleRowUpdate(row: ItemRevisionModel, key: number) {
     this.setState((state: ItemEntryTableState) => {
       const itemRows = state.itemRows;
       itemRows[key] = row;
       if (validItemRevisionModel(row)) {
         row.valid = true;
-        itemRows.push({});
+        if (key === this.state.itemRows.length - 1) {
+          itemRows.push({});
+        }
       } else {
         row.valid = false;
       }

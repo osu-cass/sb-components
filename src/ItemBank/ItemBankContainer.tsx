@@ -16,7 +16,11 @@ import {
   ItemBankEntry,
   getNextItemBank,
   getPreviousItemBank,
-  toiSAAP
+  toiSAAP,
+  ItemExistsRequestModel,
+  ItemExistsResponseModel,
+  toExistenceRequestModel,
+  existenceResponseModelToRevisionModel
 } from "@src/index";
 import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
@@ -34,13 +38,15 @@ export interface ItemBankContainerProps {
   items?: ItemRevisionModel[];
   setUrl: (item: ItemRevisionModel) => void;
   resetUrl: () => void;
+  itemExistsClient: (
+    items: ItemExistsRequestModel[]
+  ) => Promise<ItemExistsResponseModel[]>;
 }
 
 export interface ItemBankContainerState {
   aboutItemRevisionModel: Resource<AboutItemRevisionModel>;
   accResourceGroups: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemRevisionModel;
-  csvText: string;
   items: ItemRevisionModel[];
   namespaces: Resource<NamespaceModel[]>;
   sections: Resource<SectionModel[]>;
@@ -69,7 +75,6 @@ export class ItemBankContainer extends React.Component<
     this.state = {
       currentItem,
       items,
-      csvText: "",
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
       namespaces: { kind: "loading" },
@@ -131,7 +136,7 @@ export class ItemBankContainer extends React.Component<
   // Changes allowCalculator from "yes"/"no"/null to bool
 
   makeBool(item: AboutItemRevisionModel) {
-    if (item.AboutItemMetadata.allowCalculator === "Yes") {
+    if (item.AboutItemMetadata.allowCalculator.toLowerCase() === "yes") {
       return true;
     }
 
@@ -146,6 +151,7 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
     const revisions = await promiseWrapper.promise;
+    revisions[revisions.length - 1].selected = true;
     this.onFetchRevisionsSuccess(revisions);
 
     return revisions;
@@ -162,6 +168,19 @@ export class ItemBankContainer extends React.Component<
     this.onFetchNamespacesSuccess(namespaces);
 
     return namespaces;
+  }
+
+  async checkValidItems() {
+    const requestItems = toExistenceRequestModel(this.state.items);
+    const prom = this.props.itemExistsClient(requestItems);
+    const promiseWrapper = this.subscription.add("itemExistsClient", prom);
+    const items = await promiseWrapper.promise;
+    const validatedItems = existenceResponseModelToRevisionModel(
+      this.state.items,
+      items
+    );
+
+    this.setState({ items: validatedItems });
   }
 
   onFetchNamespacesSuccess(data: NamespaceModel[]) {
@@ -192,10 +211,6 @@ export class ItemBankContainer extends React.Component<
     }
   }
 
-  handleUpdateCsvText = (csvText: string) => {
-    this.setState({ csvText });
-  };
-
   handleUpdateItems = (items: ItemRevisionModel[]) => {
     let currentItem: ItemRevisionModel | undefined;
     if (items.length > 1) {
@@ -209,7 +224,9 @@ export class ItemBankContainer extends React.Component<
     if (items[items.length - 1].itemKey) {
       items.push({});
     }
+
     this.setState({ items, currentItem }, () => {
+      this.checkValidItems();
       this.handleChangeViewItem();
       this.handleChangeRevision();
     });
@@ -433,7 +450,7 @@ export class ItemBankContainer extends React.Component<
   };
 
   renderItemBankEntry() {
-    const { namespaces, sections, items, csvText } = this.state;
+    const { namespaces, sections, items } = this.state;
     let content: JSX.Element | undefined;
 
     const namespacesContent = getResourceContent(namespaces);
@@ -441,10 +458,8 @@ export class ItemBankContainer extends React.Component<
     if (namespacesContent && sectionsContent) {
       content = (
         <ItemBankEntry
-          updateCsvText={this.handleUpdateCsvText}
           namespaces={namespacesContent}
           sections={sectionsContent}
-          csvText={csvText}
           items={items}
           deleteItem={this.deleteItem}
           clearItems={this.clearItems}

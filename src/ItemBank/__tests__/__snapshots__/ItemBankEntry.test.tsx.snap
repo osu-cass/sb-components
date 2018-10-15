@@ -14,6 +14,17 @@ exports[`ItemBankEntry matches snapshot 1`] = `
         className="csv-entry-wrapper"
       >
         <CsvEntry
+          itemRows={
+            Array [
+              Object {
+                "bankKey": 3000,
+                "isaap": "",
+                "itemKey": 187,
+                "revision": "asdge",
+                "section": "math",
+              },
+            ]
+          }
           namespaces={
             Array [
               Object {

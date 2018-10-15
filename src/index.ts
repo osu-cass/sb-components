@@ -72,7 +72,12 @@ export { parseQueryString } from "./Common/UrlParsing";
 // CSV Entry
 //
 export { CsvEntry, CsvEntryProps } from "./CsvEntry/CsvEntry";
-export { CsvRowModel, parseCsv } from "./CsvEntry/CsvEntryModels";
+export {
+  CsvRowModel,
+  parseCsv,
+  toCsvText,
+  toCsvModel
+} from "./CsvEntry/CsvEntryModels";
 
 //
 // DropDown Components and Models
@@ -132,6 +137,10 @@ export {
 export { ItemBankEntry, ItemBankEntryProps } from "./ItemBank/ItemBankEntry";
 export {
   ItemRevisionModel,
+  ItemExistsRequestModel,
+  ItemExistsResponseModel,
+  toExistenceRequestModel,
+  existenceResponseModelToRevisionModel,
   validItemRevisionModel,
   AccessibilityRevisionModel,
   itemRevisionKey,
@@ -333,7 +342,12 @@ export { ToolTip, ToolTipProps, generateTooltip } from "./ToolTip/ToolTip";
 //
 // ApiModel
 //
-export { getRequest, downloadPdfGet, downloadPdfPost } from "./ApiModel";
+export {
+  getRequest,
+  postRequest,
+  downloadPdfGet,
+  downloadPdfPost
+} from "./ApiModel";
 
 //
 // Search Result Container
