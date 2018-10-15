@@ -129,7 +129,7 @@ export class ItemBankContainer extends React.Component<
   // Changes allowCalculator from "yes"/"no"/null to bool
 
   makeBool(item: AboutItemRevisionModel) {
-    if (item.AboutItemMetadata.allowCalculator === "Yes") {
+    if (item.AboutItemMetadata.allowCalculator.toLowerCase() === "yes") {
       return true;
     }
 
@@ -144,6 +144,7 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
     const revisions = await promiseWrapper.promise;
+    revisions[revisions.length - 1].selected = true;
     this.onFetchRevisionsSuccess(revisions);
 
     return revisions;
