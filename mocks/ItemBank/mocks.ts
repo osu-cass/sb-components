@@ -75,14 +75,16 @@ export const itemRevisionMocks: ItemRevisionModel[] = [
     hasBankKey: true,
     bankKey: 187,
     itemKey: 1111,
-    section: "siw"
+    section: "siw",
+    valid: true
   },
   {
     namespace: "itemreviewviewer",
     hasBankKey: true,
     bankKey: 1872,
     itemKey: 2222,
-    section: "math"
+    section: "math",
+    valid: false
   },
   {
     namespace: "itemreviewviewer",
