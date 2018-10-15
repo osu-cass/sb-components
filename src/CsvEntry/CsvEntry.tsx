@@ -6,15 +6,16 @@ import {
   NamespaceModel,
   parseCsv,
   Accordion,
-  validItemRevisionModel
+  validItemRevisionModel,
+  toCsvText,
+  toCsvModel
 } from "@src/index";
 
 export interface CsvEntryProps {
-  csvText: string;
   namespaces: NamespaceModel[];
-  onCsvTextUpdate: (csvText: string) => void;
   onItemsUpdate: (items: ItemRevisionModel[]) => void;
   onApply: () => void;
+  itemRows: ItemRevisionModel[];
 }
 
 export interface CsvEntryState {
@@ -25,11 +26,29 @@ export interface CsvEntryState {
 export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   constructor(props: CsvEntryProps) {
     super(props);
-
+    const csvData: CsvRowModel[] = [];
+    let csvInputValue: string = "";
+    if (props.itemRows.length > 1) {
+      props.itemRows.forEach((item, index) => {
+        csvData.push({ ...item, index });
+      });
+      csvInputValue = toCsvText(csvData);
+    }
     this.state = {
-      csvInputValue: props.csvText,
-      csvData: []
+      csvInputValue,
+      csvData
     };
+  }
+
+  componentWillReceiveProps(props: CsvEntryProps, state: CsvEntryState) {
+    if (
+      props.itemRows !== this.props.itemRows ||
+      this.props.itemRows.length !== props.itemRows.length
+    ) {
+      const csvData = toCsvModel(props.itemRows);
+      const csvInputValue = toCsvText(csvData);
+      this.setState({ csvData, csvInputValue });
+    }
   }
 
   renderHelpText(): JSX.Element {
@@ -89,8 +108,6 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     this.setState({
       csvInputValue: rawCsv
     });
-
-    this.props.onCsvTextUpdate(rawCsv);
   }
 
   handleCsvApply = () => {

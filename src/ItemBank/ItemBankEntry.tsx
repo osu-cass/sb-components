@@ -9,13 +9,11 @@ import {
 } from "@src/index";
 
 export interface ItemBankEntryProps {
-  updateCsvText: (csvText: string) => void;
   deleteItem: (item: number) => void;
   clearItems: () => void;
   submitItems: (items: ItemRevisionModel[]) => void;
   namespaces: NamespaceModel[];
   sections: SectionModel[];
-  csvText: string;
   items: ItemRevisionModel[];
 }
 
@@ -53,7 +51,7 @@ export class ItemBankEntry extends React.Component<
   };
 
   renderCsvEntry() {
-    const { csvText, namespaces, submitItems } = this.props;
+    const { namespaces, submitItems } = this.props;
 
     return (
       <Accordion
@@ -64,11 +62,10 @@ export class ItemBankEntry extends React.Component<
         <div className="csv-entry-container section">
           <div className="csv-entry-wrapper">
             <CsvEntry
-              csvText={csvText}
               namespaces={namespaces}
-              onCsvTextUpdate={this.props.updateCsvText}
               onApply={this.onCsvApply}
               onItemsUpdate={submitItems}
+              itemRows={this.props.items}
             />
           </div>
         </div>
