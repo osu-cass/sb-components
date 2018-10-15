@@ -15,12 +15,13 @@ export class RevisionContainer extends React.Component<
   }
 
   render() {
-    const revisions = this.props.revisions.map(rev => (
+    const revisions = this.props.revisions.map((rev, index) => (
       <Revision
         {...rev}
         selected={rev.selected}
         onClick={() => this.props.onRevisionSelect(rev.commitHash)}
         key={rev.commitHash}
+        updateNumber={index + 1}
       />
     ));
 

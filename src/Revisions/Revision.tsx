@@ -12,6 +12,7 @@ export interface RevisionModel {
   commitMessage: string;
   commitHash: string;
   selected: boolean;
+  updateNumber: number;
 }
 
 export interface RevisionModelProps extends RevisionModel {
@@ -23,13 +24,15 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
   const renderHelpText = () => {
     return (
       <div className="tool-tip-help-text">
+        <b>Update {props.updateNumber}</b>
+        <br />
         <b>Commit: </b>
         {props.commitMessage}
         <br />
         <b>Author: </b>
         {props.author}
         <br />
-        <b>CommitHash: </b>
+        <b>CommitHash:</b>
         {props.commitHash.slice(0, 8)}
       </div>
     );
@@ -56,7 +59,7 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
           }
           onClick={props.onClick}
         >
-          {shortCommit(props.commitHash)}
+          Update {props.updateNumber}
         </button>
         <div className="revisions-details">
           {props.author}-{formatDate(getShortDateFormat(props.date))}
