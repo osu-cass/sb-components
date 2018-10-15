@@ -169,6 +169,9 @@ exports[`CsvEntry matches snapshot 1`] = `
   <textarea
     className="csv-text-entry"
     onChange={[Function]}
+    value="undefined,3000,187,math
+undefined,2332,187,math
+"
   />
 </div>
 `;
