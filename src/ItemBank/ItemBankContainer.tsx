@@ -155,7 +155,7 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
     const revisions = await promiseWrapper.promise;
-    revisions[revisions.length - 1].selected = true;
+    revisions[0].selected = true;
     this.onFetchRevisionsSuccess(revisions);
 
     return revisions;
@@ -296,15 +296,11 @@ export class ItemBankContainer extends React.Component<
     const { currentItem, items } = this.state;
     let index = 0;
     if (currentItem && currentItem.valid) {
-      console.log(currentItem);
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
-          console.log(aboutItem);
-
           return this.fetchAccResourceGroups(aboutItem);
         })
         .then(accGroups => {
-          console.log(accGroups);
           this.handleUpdateIsaap(accGroups);
           this.updateNavigationItems();
         })
