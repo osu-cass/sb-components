@@ -207,7 +207,6 @@ export class ItemBankContainer extends React.Component<
 
   onError(err: string, cb?: () => void) {
     if (err !== "Canceled") {
-      console.log(err);
       this.setState(
         {
           hasError: true
