@@ -136,7 +136,11 @@ export class ItemBankContainer extends React.Component<
   // Changes allowCalculator from "yes"/"no"/null to bool
 
   makeBool(item: AboutItemRevisionModel) {
-    if (item.AboutItemMetadata.allowCalculator.toLowerCase() === "yes") {
+    if (
+      item.AboutItemMetadata &&
+      item.AboutItemMetadata.allowCalculator &&
+      item.AboutItemMetadata.allowCalculator.toLowerCase() === "yes"
+    ) {
       return true;
     }
 
@@ -151,7 +155,7 @@ export class ItemBankContainer extends React.Component<
     const prom = this.props.revisionsClient(item);
     const promiseWrapper = this.subscription.add("revisionsClient", prom);
     const revisions = await promiseWrapper.promise;
-    revisions[revisions.length - 1].selected = true;
+    revisions[0].selected = true;
     this.onFetchRevisionsSuccess(revisions);
 
     return revisions;
@@ -170,17 +174,18 @@ export class ItemBankContainer extends React.Component<
     return namespaces;
   }
 
-  async checkValidItems() {
-    const requestItems = toExistenceRequestModel(this.state.items);
+  async checkValidItems(items: ItemRevisionModel[]) {
+    const requestItems = toExistenceRequestModel(items);
     const prom = this.props.itemExistsClient(requestItems);
     const promiseWrapper = this.subscription.add("itemExistsClient", prom);
-    const items = await promiseWrapper.promise;
-    const validatedItems = existenceResponseModelToRevisionModel(
-      this.state.items,
-      items
+    const itemsResponse = await promiseWrapper.promise;
+
+    const validItems = existenceResponseModelToRevisionModel(
+      items,
+      itemsResponse
     );
 
-    this.setState({ items: validatedItems });
+    this.handleUpdateItems(validItems);
   }
 
   onFetchNamespacesSuccess(data: NamespaceModel[]) {
@@ -217,7 +222,7 @@ export class ItemBankContainer extends React.Component<
       const itemMatch = items.filter(
         item => itemsAreEqual(this.state.currentItem, item) || false
       );
-      currentItem = itemMatch[0] ? itemMatch[0] : items[0];
+      currentItem = itemMatch.length > 0 ? itemMatch[0] : items[0];
     } else {
       currentItem = undefined;
     }
@@ -225,8 +230,7 @@ export class ItemBankContainer extends React.Component<
       items.push({});
     }
 
-    this.setState({ items, currentItem }, () => {
-      this.checkValidItems();
+    this.setState({ currentItem, items }, () => {
       this.handleChangeViewItem();
       this.handleChangeRevision();
     });
@@ -290,13 +294,13 @@ export class ItemBankContainer extends React.Component<
   handleChangeViewItem = () => {
     const { currentItem, items } = this.state;
     let index = 0;
-
     if (currentItem && currentItem.valid) {
       this.fetchAboutItemRevisionModel(currentItem)
         .then(aboutItem => {
-          this.fetchAccResourceGroups(aboutItem)
-            .then(accGroups => this.handleUpdateIsaap(accGroups))
-            .catch(e => this.onError(e));
+          return this.fetchAccResourceGroups(aboutItem);
+        })
+        .then(accGroups => {
+          this.handleUpdateIsaap(accGroups);
           this.updateNavigationItems();
         })
         .catch(e => {
@@ -325,7 +329,6 @@ export class ItemBankContainer extends React.Component<
 
   handleUpdateIsaap = (accGroups: AccResourceGroupModel[]) => {
     const { currentItem } = this.state;
-
     if (currentItem) {
       const isaap = toiSAAP(accGroups);
       this.props.setUrl(currentItem);
