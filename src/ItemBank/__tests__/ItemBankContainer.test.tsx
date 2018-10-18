@@ -11,6 +11,7 @@ import {
 } from "@src/index";
 import * as BankMocks from "./mocks";
 import { ItemBankContainerState } from "../ItemBankContainer";
+import { namespaceMocks } from "@mocks/ItemBank/mocks";
 const item: ItemRevisionModel = {
   itemKey: 187,
   bankKey: 3000,
@@ -27,7 +28,7 @@ describe("ItemBankContainer", () => {
     aboutItemRevisionClient: BankMocks.mockBankAboutItemClient,
     accessibilityClient: BankMocks.mockBankAccessibilityClient,
     revisionsClient: BankMocks.mockBankRevisionsClient,
-    namespacesClient: BankMocks.mockBankNamespacesClient,
+    namespaces: namespaceMocks,
     sectionsClient: BankMocks.mockBankSectionsClient,
     itemViewUrl: "hello",
     items: [item, item2],
