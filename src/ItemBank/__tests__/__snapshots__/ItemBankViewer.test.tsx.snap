@@ -92,6 +92,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           "commitMessage": "Added functionality to the website",
           "date": "2018–01–30T12:34:56+00:00",
           "selected": false,
+          "updateNumber": 1,
         },
         Object {
           "author": "Pierce Hawthorne",
@@ -99,6 +100,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
           "date": "2018–01–30T12:34:56+00:00",
           "selected": false,
+          "updateNumber": 2,
         },
         Object {
           "author": "Annie Edison",
@@ -106,6 +108,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           "commitMessage": "Changed one of the pages",
           "date": "2018–01–30T12:34:56+00:00",
           "selected": false,
+          "updateNumber": 3,
         },
       ]
     }
@@ -447,6 +450,7 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           "commitMessage": "Added functionality to the website",
           "date": "2018–01–30T12:34:56+00:00",
           "selected": false,
+          "updateNumber": 1,
         },
         Object {
           "author": "Pierce Hawthorne",
@@ -454,6 +458,7 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           "commitMessage": "I want to see what happens when there is a much longer commit message than all of the rest",
           "date": "2018–01–30T12:34:56+00:00",
           "selected": false,
+          "updateNumber": 2,
         },
         Object {
           "author": "Annie Edison",
@@ -461,6 +466,7 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           "commitMessage": "Changed one of the pages",
           "date": "2018–01–30T12:34:56+00:00",
           "selected": false,
+          "updateNumber": 3,
         },
       ]
     }

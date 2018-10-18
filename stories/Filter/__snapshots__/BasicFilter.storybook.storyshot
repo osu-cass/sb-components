@@ -18,6 +18,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
   <div
     className="bf-selection"
     id="grade-bf"
+    tabIndex={0}
   >
     <div
       className=""
@@ -30,7 +31,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         </span>
       </label>
       <select
-        className="form-control input-sm med-text"
+        className="form-control input-sm"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -99,6 +100,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
   <div
     className="bf-selection"
     id="grade-bf"
+    tabIndex={0}
   >
     <div
       className=""
@@ -111,7 +113,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
         </span>
       </label>
       <select
-        className="form-control input-sm med-text"
+        className="form-control input-sm"
         disabled={false}
         onChange={[Function]}
         value="default"
@@ -156,6 +158,7 @@ exports[`Storyshots Basic Filter RadioBtn: multiple filter items 1`] = `
   <div
     className="bf-selection"
     id="grade-bf"
+    tabIndex={0}
   >
     <label>
       Grade
@@ -242,6 +245,7 @@ exports[`Storyshots Basic Filter RadioBtn: one filter item 1`] = `
   <div
     className="bf-selection"
     id="grade-bf"
+    tabIndex={0}
   >
     <label>
       Grade

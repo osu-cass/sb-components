@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .revisions-items {
@@ -14,11 +15,18 @@
   padding-left: 0px;
   padding-right: 0px;
   align-content: center;
+  height: 100%;
+}
+
+.error-text {
+  font-size: 14px;
+  color: red;
 }
 
 .item-map-iframe {
   flex-grow: 1;
   padding: 0 0 0 @spacing-unit;
+  height: 100%;
 }
 
 .revisions {
@@ -56,6 +64,14 @@
   -moz-box-shadow: @box-shadow-light;
   -webkit-box-shadow: @box-shadow-light;
   box-shadow: @box-shadow-light;
+  table-layout: fixed;
+}
+
+.delete-button {
+  border-style: solid;
+  border-color: @grey-border-color;
+  border-width: 1px;
+  border-radius: @spacing-item;
   table-layout: fixed;
 }
 
@@ -103,9 +119,16 @@
   flex-flow: column nowrap;
   width: 100%;
 
-  .help-button {
-    align-self: flex-end;
+  .csv-button-row {
     margin-bottom: 5px;
+    align-self: auto;
+
+    .csv-button-left {
+      float: left;
+    }
+    .csv-button-right {
+      float: right;
+    }
   }
 }
 
@@ -148,10 +171,19 @@
 
 .btn.btn-link.next,
 .btn.btn-link.previous {
-    padding: 0;
-    align-self: flex-end;
+  padding: 0;
+  align-self: flex-end;
 }
 
 .item-dropdown {
   font-size: 12px;
+  width: 220px;
+}
+
+.delete-row {
+  text-align: center;
+}
+
+.submit-button {
+  float: right;
 }

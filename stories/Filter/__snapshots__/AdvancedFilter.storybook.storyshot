@@ -58,7 +58,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -80,7 +80,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -95,6 +95,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-label="Select All Multi All Disabled"
         className="btn btn-primary active"
         disabled={false}
         onClick={[Function]}
@@ -106,6 +107,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-label="Calculus"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
@@ -114,6 +116,7 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
           Calculus
         </button>
         <button
+          aria-label="Geometry"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
@@ -168,7 +171,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -190,7 +193,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -208,6 +211,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-label="English Literacy & Arts"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
@@ -216,6 +220,7 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
           English Literacy & Arts
         </button>
         <button
+          aria-label="Maths"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
@@ -253,7 +258,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -275,7 +280,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -290,6 +295,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-label="Select All Multi All"
         className="btn btn-primary active"
         disabled={false}
         onClick={[Function]}
@@ -301,6 +307,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-label="US History"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
@@ -309,6 +316,7 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
           US History
         </button>
         <button
+          aria-label="World History"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
@@ -346,7 +354,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -368,7 +376,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -383,6 +391,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-label="Select All Multi All"
         className="btn btn-primary "
         disabled={false}
         onClick={[Function]}
@@ -394,6 +403,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-label="English Literacy & Arts"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
@@ -402,6 +412,7 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
           English Literacy & Arts
         </button>
         <button
+          aria-label="Maths"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
@@ -439,7 +450,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -461,7 +472,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -472,7 +483,7 @@ exports[`Storyshots Advanced Filter no options 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical"
+      className=" btn-group-sm toggle-group horizontal"
       data-toggle="buttons"
     >
       <div
@@ -511,7 +522,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
     >
       <label>
         <span
-          className="tool-tip-links undefined"
+          className="tool-tip-links "
           tabIndex={0}
         >
           <span
@@ -533,7 +544,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
             className="tool-tip-details"
           >
             <span
-              className="tool-tip-message undefined undefined"
+              className="tool-tip-message  "
             >
               <p>
                 Subject Help
@@ -544,13 +555,14 @@ exports[`Storyshots Advanced Filter single select 1`] = `
       </label>
     </div>
     <div
-      className="nested-btn-group btn-group-sm toggle-group vertical"
+      className=" btn-group-sm toggle-group horizontal"
       data-toggle="buttons"
     >
       <div
         className="btn-group filter-btn-group"
       >
         <button
+          aria-label="English Literacy/ Arts"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
@@ -559,6 +571,7 @@ exports[`Storyshots Advanced Filter single select 1`] = `
           English Literacy/ Arts
         </button>
         <button
+          aria-label="Mathematics"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}

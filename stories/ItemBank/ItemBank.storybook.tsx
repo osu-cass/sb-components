@@ -13,11 +13,13 @@ import {
   mockBankAboutItemClient,
   mockBankAccessibilityClient,
   mockBankRevisionsClient,
+  mockBankNamespacesClient,
   mockBankSectionsClient,
   itemRevisionMocks,
   mockBankAboutItemClientFail,
   itemRevisionMocksError,
-  mockBankRevisionsClientFail
+  mockBankRevisionsClientFail,
+  mockBankItemExistsClient
 } from "@mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
@@ -29,10 +31,15 @@ storiesOf("Item Bank", module)
           accessibilityClient={mockBankAccessibilityClient}
           aboutItemRevisionClient={mockBankAboutItemClient}
           revisionsClient={mockBankRevisionsClient}
-          itemViewUrl="http://ivs.smarterbalanced.org/items?ids=187-3000"
+          itemExistsClient={mockBankItemExistsClient}
+          itemViewUrl="https://ivs.smarterbalanced.org/items?ids=187-3000"
+          namespacesClient={mockBankNamespacesClient}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
-          getUrl={item => ""}
+          setUrl={item => ""}
+          resetUrl={() => {
+            const url = "";
+          }}
         />
       }
       siteName="Item Bank"
@@ -45,10 +52,15 @@ storiesOf("Item Bank", module)
           accessibilityClient={mockBankAccessibilityClient}
           aboutItemRevisionClient={mockBankAboutItemClientFail}
           revisionsClient={mockBankRevisionsClientFail}
+          itemExistsClient={mockBankItemExistsClient}
           itemViewUrl=""
+          namespacesClient={mockBankNamespacesClient}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocksError}
-          getUrl={item => ""}
+          setUrl={item => ""}
+          resetUrl={() => {
+            const url = "";
+          }}
         />
       }
       siteName="Item Bank"

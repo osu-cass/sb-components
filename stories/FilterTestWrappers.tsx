@@ -132,7 +132,6 @@ export class FilterContainerTestWrapper extends React.Component<
 // This test wrapper serves just to allow the functionality of the FilterContainer so
 // that we can confirm that it works as expected. It passes the advanced and basic filterCategories into
 // the FilterContainer as props
-// TODO: make a custom state for this wrapper.
 // tslint:disable-next-line:max-classes-per-file
 export class SIWFilterContainerTestWrapper extends React.Component<
   {},

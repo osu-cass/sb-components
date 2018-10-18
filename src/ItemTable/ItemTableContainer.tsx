@@ -59,8 +59,23 @@ export class ItemTableContainer extends React.Component<
    * @param {ColumnGroup} col
    */
   onClickHeader = (col: ColumnGroup) => {
+    const sortCheck = (this.state.sorts || []).slice();
+    const unmatchFound = sortCheck.findIndex(
+      hs => hs.col.header !== col.header
+    );
+    const newSortModel: HeaderSortModel = {
+      col,
+      direction: SortDirection.NoSort,
+      resetSortCount: 0
+    };
+    if (unmatchFound > -1) {
+      this.state = {
+        sorts: [newSortModel]
+      };
+    }
     const newSorts = (this.state.sorts || []).slice();
     const headIdx = newSorts.findIndex(hs => hs.col.header === col.header);
+
     if (headIdx !== -1) {
       const newSort = { ...newSorts[headIdx] };
       if (newSort.direction === SortDirection.Ascending) {

@@ -8,6 +8,7 @@ export interface BtnGroupOptionProps {
   onClick: () => void;
   selected: boolean;
   label: string;
+  ariaLabel?: string;
   disabled?: boolean;
 }
 
@@ -19,6 +20,7 @@ export interface BtnGroupOptionProps {
 // tslint:disable-next-line:variable-name
 export const BtnGroupOption: React.SFC<BtnGroupOptionProps> = props => {
   const className = props.selected ? "active" : "";
+  const ariaLabel = props.ariaLabel ? props.ariaLabel : props.label;
 
   return (
     <button
@@ -26,6 +28,7 @@ export const BtnGroupOption: React.SFC<BtnGroupOptionProps> = props => {
       role="button"
       disabled={props.disabled}
       onClick={props.onClick}
+      aria-label={ariaLabel}
     >
       {props.label}
     </button>

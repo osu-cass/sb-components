@@ -1,38 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CsvEntry calls handle csv blur 1`] = `
+exports[`CsvEntry calls handle csv apply 1`] = `
 <div
   className="csv-entry-wrapper"
 >
   <div
-    className="help-button"
+    className="csv-button-row"
   >
-    <ToolTip
-      helpText={
-        <p>
-          Enter bank key and item id for the items you would like to add
-        </p>
-      }
-      position="bottom"
-      side="left"
+    <span
+      className="csv-button-left"
+    >
+      <ToolTip
+        displayText={
+          <button
+            aria-label="Open help text"
+            className="item-nav-btn btn btn-default btn-sm"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle"
+            />
+            Help
+          </button>
+        }
+        helpText={
+          <p>
+            Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
+            <br />
+            Enter namespace , item id, and section for the namespace which doesn't have a bank key.
+          </p>
+        }
+      />
+    </span>
+    <span
+      className="csv-button-right"
     >
       <button
-        aria-label="Open help text"
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        aria-label="Apply text"
+        className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
+        onClick={[Function]}
         role="button"
       >
         <span
           aria-hidden="true"
-          className="fa fa-info-circle"
+          className="fa fa-check-circle"
         />
-        Help
+        Apply
       </button>
-    </ToolTip>
+    </span>
   </div>
   <textarea
     className="csv-text-entry"
-    onBlur={[Function]}
     onChange={[Function]}
+    value="itemreviewviewer,187,3000,SIW"
   />
 </div>
 `;
@@ -42,33 +63,53 @@ exports[`CsvEntry calls handle csv change 1`] = `
   className="csv-entry-wrapper"
 >
   <div
-    className="help-button"
+    className="csv-button-row"
   >
-    <ToolTip
-      helpText={
-        <p>
-          Enter bank key and item id for the items you would like to add
-        </p>
-      }
-      position="bottom"
-      side="left"
+    <span
+      className="csv-button-left"
+    >
+      <ToolTip
+        displayText={
+          <button
+            aria-label="Open help text"
+            className="item-nav-btn btn btn-default btn-sm"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle"
+            />
+            Help
+          </button>
+        }
+        helpText={
+          <p>
+            Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
+            <br />
+            Enter namespace , item id, and section for the namespace which doesn't have a bank key.
+          </p>
+        }
+      />
+    </span>
+    <span
+      className="csv-button-right"
     >
       <button
-        aria-label="Open help text"
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        aria-label="Apply text"
+        className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
+        onClick={[Function]}
         role="button"
       >
         <span
           aria-hidden="true"
-          className="fa fa-info-circle"
+          className="fa fa-check-circle"
         />
-        Help
+        Apply
       </button>
-    </ToolTip>
+    </span>
   </div>
   <textarea
     className="csv-text-entry"
-    onBlur={[Function]}
     onChange={[Function]}
     value="hello"
   />
@@ -80,34 +121,57 @@ exports[`CsvEntry matches snapshot 1`] = `
   className="csv-entry-wrapper"
 >
   <div
-    className="help-button"
+    className="csv-button-row"
   >
-    <ToolTip
-      helpText={
-        <p>
-          Enter bank key and item id for the items you would like to add
-        </p>
-      }
-      position="bottom"
-      side="left"
+    <span
+      className="csv-button-left"
+    >
+      <ToolTip
+        displayText={
+          <button
+            aria-label="Open help text"
+            className="item-nav-btn btn btn-default btn-sm"
+            role="button"
+          >
+            <span
+              aria-hidden="true"
+              className="fa fa-info-circle"
+            />
+            Help
+          </button>
+        }
+        helpText={
+          <p>
+            Enter namespace, bank key, item id, and section for the namespace which has a bank key. Or,
+            <br />
+            Enter namespace , item id, and section for the namespace which doesn't have a bank key.
+          </p>
+        }
+      />
+    </span>
+    <span
+      className="csv-button-right"
     >
       <button
-        aria-label="Open help text"
-        className="item-nav-btn btn btn-default btn-sm about-item-btn"
+        aria-label="Apply text"
+        className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
+        onClick={[Function]}
         role="button"
       >
         <span
           aria-hidden="true"
-          className="fa fa-info-circle"
+          className="fa fa-check-circle"
         />
-        Help
+        Apply
       </button>
-    </ToolTip>
+    </span>
   </div>
   <textarea
     className="csv-text-entry"
-    onBlur={[Function]}
     onChange={[Function]}
+    value="undefined,3000,187,math
+undefined,2332,187,math
+"
   />
 </div>
 `;

@@ -9,7 +9,8 @@ export const mockRevisions: RevisionModel[] = [
     date: testDate,
     commitMessage: "Added functionality to the website",
     commitHash: "ab65jg",
-    selected: false
+    selected: false,
+    updateNumber: 1
   },
   {
     author: "Pierce Hawthorne",
@@ -17,13 +18,15 @@ export const mockRevisions: RevisionModel[] = [
     commitMessage:
       "I want to see what happens when there is a much longer commit message than all of the rest",
     commitHash: "h4lso6",
-    selected: false
+    selected: false,
+    updateNumber: 2
   },
   {
     author: "Annie Edison",
     date: testDate,
     commitMessage: "Changed one of the pages",
     commitHash: "k5ls58",
-    selected: false
+    selected: false,
+    updateNumber: 3
   }
 ];

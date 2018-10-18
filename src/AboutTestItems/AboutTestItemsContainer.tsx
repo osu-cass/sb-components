@@ -90,7 +90,6 @@ export class AboutTestItemsContainer extends React.Component<
 
   onError(err: string) {
     if (err !== "Canceled") {
-      console.error(err);
       this.setState({
         aboutThisItemViewModel: { kind: "failure" },
         aboutItemsViewModel: { kind: "failure" },

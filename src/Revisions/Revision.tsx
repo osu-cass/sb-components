@@ -1,5 +1,10 @@
 import * as React from "react";
-import { ToolTip, getShortDateFormat, getLongDateFormat } from "@src/index";
+import {
+  ToolTip,
+  generateTooltip,
+  getShortDateFormat,
+  getLongDateFormat
+} from "@src/index";
 
 export interface RevisionModel {
   author: string;
@@ -7,6 +12,7 @@ export interface RevisionModel {
   commitMessage: string;
   commitHash: string;
   selected: boolean;
+  updateNumber: number;
 }
 
 export interface RevisionModelProps extends RevisionModel {
@@ -18,13 +24,15 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
   const renderHelpText = () => {
     return (
       <div className="tool-tip-help-text">
+        <b>Update {props.updateNumber}</b>
+        <br />
         <b>Commit: </b>
         {props.commitMessage}
         <br />
         <b>Author: </b>
         {props.author}
         <br />
-        <b>CommitHash: </b>
+        <b>CommitHash:</b>
         {props.commitHash.slice(0, 8)}
       </div>
     );
@@ -38,12 +46,11 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
     return s.substring(s.length - 4, s.length);
   }
 
-  return (
-    <li key={props.commitHash}>
-      <ToolTip
-        toolTipHeader={getLongDateFormat(props.date)}
-        helpText={renderHelpText()}
-      >
+  const tooltip = generateTooltip({
+    toolTipHeader: getLongDateFormat(props.date),
+    helpText: renderHelpText(),
+    displayText: (
+      <div>
         <button
           className={
             props.selected
@@ -52,12 +59,14 @@ export const Revision: React.SFC<RevisionModelProps> = props => {
           }
           onClick={props.onClick}
         >
-          {shortCommit(props.commitHash)}
+          Update {props.updateNumber}
         </button>
         <div className="revisions-details">
           {props.author}-{formatDate(getShortDateFormat(props.date))}
         </div>
-      </ToolTip>
-    </li>
-  );
+      </div>
+    )
+  });
+
+  return <li key={props.commitHash}>{tooltip}</li>;
 };
