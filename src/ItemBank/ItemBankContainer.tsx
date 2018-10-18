@@ -174,6 +174,10 @@ export class ItemBankContainer extends React.Component<
     return namespaces;
   }
 
+  handleSubmit = (items: ItemRevisionModel[]) => {
+    this.checkValidItems(items);
+  };
+
   async checkValidItems(items: ItemRevisionModel[]) {
     const requestItems = toExistenceRequestModel(items);
     const prom = this.props.itemExistsClient(requestItems);
@@ -445,6 +449,9 @@ export class ItemBankContainer extends React.Component<
       revisionContent = revisionContent.map(r => {
         return { ...r, selected: r.commitHash === revision };
       });
+      if (!currentItem.valid) {
+        currentItem.valid = true;
+      }
     }
     this.setState(
       { currentItem, revisions: { kind: "success", content: revisionContent } },
@@ -466,7 +473,7 @@ export class ItemBankContainer extends React.Component<
           items={items}
           deleteItem={this.deleteItem}
           clearItems={this.clearItems}
-          submitItems={this.handleUpdateItems}
+          submitItems={this.handleSubmit}
         />
       );
     }
