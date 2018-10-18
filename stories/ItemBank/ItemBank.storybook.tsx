@@ -19,7 +19,8 @@ import {
   mockBankAboutItemClientFail,
   itemRevisionMocksError,
   mockBankRevisionsClientFail,
-  mockBankItemExistsClient
+  mockBankItemExistsClient,
+  namespaceMocks
 } from "@mocks/ItemBank/mocks";
 
 storiesOf("Item Bank", module)
@@ -33,7 +34,7 @@ storiesOf("Item Bank", module)
           revisionsClient={mockBankRevisionsClient}
           itemExistsClient={mockBankItemExistsClient}
           itemViewUrl="https://ivs.smarterbalanced.org/items?ids=187-3000"
-          namespacesClient={mockBankNamespacesClient}
+          namespaces={namespaceMocks}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
           setUrl={item => ""}
@@ -54,7 +55,7 @@ storiesOf("Item Bank", module)
           revisionsClient={mockBankRevisionsClientFail}
           itemExistsClient={mockBankItemExistsClient}
           itemViewUrl=""
-          namespacesClient={mockBankNamespacesClient}
+          namespaces={namespaceMocks}
           sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocksError}
           setUrl={item => ""}
