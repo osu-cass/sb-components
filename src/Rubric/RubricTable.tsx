@@ -29,8 +29,7 @@ export class RubricTable extends React.Component<RubricTableProps, {}> {
         };
       });
     }
-
-    const showSample = rubric.samples.length !== 0;
+    const showSample = rubric.samples ? rubric.samples.length !== 0 : false;
 
     const leftAlign: React.CSSProperties = {
       textAlign: "left"
