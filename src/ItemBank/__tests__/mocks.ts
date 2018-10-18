@@ -42,10 +42,6 @@ export const mockBankRevisionsClient: (
   item: ItemRevisionModel
 ) => Promise<RevisionModel[]> = jest.fn(item => mockRevisions);
 
-export const mockBankNamespacesClient: () => Promise<
-  NamespaceModel[]
-> = jest.fn(item => namespaceMocks);
-
 export const mockBankSectionsClient: () => Promise<SectionModel[]> = jest.fn(
   item => sectionMocks
 );
