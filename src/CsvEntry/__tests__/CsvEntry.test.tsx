@@ -9,6 +9,7 @@ import {
 } from "@src/index";
 
 import { CsvEntryState } from "../CsvEntry";
+const onCsvTextUpdateMock = jest.fn();
 const onItemsUpdateMock = jest.fn();
 
 const item: ItemRevisionModel = {
@@ -23,18 +24,25 @@ const item2 = { ...item, bankKey: 2332, revision: "asdf" };
 
 const items: ItemRevisionModel[] = [item, item2];
 
-const csvEntryProps: CsvEntryProps = {
-  onItemsUpdate: onItemsUpdateMock,
-  onBlur: jest.fn(),
-  onClick: jest.fn()
-};
-
 const csvData1: CsvRowModel = {
+  ...item,
   index: 0
 };
 
 const csvData2: CsvRowModel = {
+  ...item2,
   index: 1
+};
+
+const csvData: CsvRowModel[] = [csvData1, csvData2];
+
+const csvEntryProps: CsvEntryProps = {
+  namespaces: [],
+  onItemsUpdate: (items: ItemRevisionModel[]) => {
+    const item = "";
+  },
+  onApply: jest.fn(),
+  itemRows: items
 };
 
 const csvEntryState: CsvEntryState = {
@@ -49,10 +57,11 @@ describe("CsvEntry", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("calls handle csv blur", () => {
+  it("calls handle csv apply", () => {
     const wrapperInstance = wrapper.instance() as CsvEntry;
-    wrapper.find(".csv-text-entry").simulate("focus");
-    wrapper.find(".csv-text-entry").simulate("blur");
+    wrapper.find(".csv-text-entry").simulate("change", {
+      currentTarget: { value: "itemreviewviewer,187,3000,SIW" }
+    });
     expect(wrapper).toMatchSnapshot();
   });
 

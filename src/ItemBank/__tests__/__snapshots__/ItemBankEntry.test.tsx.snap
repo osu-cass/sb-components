@@ -14,8 +14,28 @@ exports[`ItemBankEntry matches snapshot 1`] = `
         className="csv-entry-wrapper"
       >
         <CsvEntry
-          onBlur={[Function]}
-          onItemsUpdate={[Function]}
+          itemRows={
+            Array [
+              Object {
+                "bankKey": 3000,
+                "isaap": "",
+                "itemKey": 187,
+                "revision": "asdge",
+                "section": "math",
+              },
+            ]
+          }
+          namespaces={
+            Array [
+              Object {
+                "bankKey": 0,
+                "hasBankKey": true,
+                "id": "12",
+                "name": "itemreviewviewer",
+              },
+            ]
+          }
+          onApply={[Function]}
         />
       </div>
     </div>
@@ -37,7 +57,16 @@ exports[`ItemBankEntry matches snapshot 1`] = `
           },
         ]
       }
-      onItemsUpdate={[Function]}
+      namespaces={
+        Array [
+          Object {
+            "bankKey": 0,
+            "hasBankKey": true,
+            "id": "12",
+            "name": "itemreviewviewer",
+          },
+        ]
+      }
       sections={
         Array [
           Object {

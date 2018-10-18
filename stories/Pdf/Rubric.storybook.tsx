@@ -10,7 +10,7 @@ import {
 } from "@mocks/AboutItem/mocks";
 import "src/Assets/Styles/pdf.less";
 
-storiesOf("PDF RubricTable", module)
+storiesOf("PDF RubricTable DontTest", module)
   .addDecorator(pdfDecorator)
   .add("Rubric Table", () => <RubricTable rubrics={rubricsWithSamples} />)
   .add("Rubric Table: no Samples", () => <RubricTable rubrics={mockRubrics} />)

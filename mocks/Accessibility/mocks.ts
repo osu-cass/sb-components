@@ -740,3 +740,18 @@ export const allAccessibilityResourceGroups: AccResourceGroupModel[] = [
     ]
   }
 ];
+
+const accessibilityManyOptions: AccResourceGroupModel[] = [];
+allAccessibilityResourceGroups.forEach(s => {
+  accessibilityManyOptions.push(s);
+  if (s.label === "Accommodations") {
+    s.accessibilityResources.push(s.accessibilityResources[0]);
+    s.accessibilityResources.push(s.accessibilityResources[0]);
+  }
+});
+
+export const accessibilityManyOptionsMock: AccResourceGroupModel[] = accessibilityManyOptions;
+
+export const accessibilityManyOptionsInfoMock: AccResourceGroupModel[] = accessibilityManyOptions;
+accessibilityManyOptionsInfoMock[0].accessibilityResources[0].infoTag =
+  "This is a test";

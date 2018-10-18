@@ -2,7 +2,7 @@ import * as React from "react";
 import * as GradeLevels from "../GradeLevels/GradeLevels";
 import { ItemCardModel } from "./ItemCardModels";
 import { Redirect } from "react-router";
-import { ToolTip } from "../index";
+import { ToolTip, generateTooltip } from "../index";
 // tslint:disable:no-require-imports
 const claimIcons: { [claimCode: string]: string } = {
   MATH1: require("@sbac/sbac-ui-kit/src/images/math-1.svg"),
@@ -44,6 +44,13 @@ export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
     const { bankKey, itemKey } = this.props;
     let content = <Redirect push to={`/Item/${bankKey}-${itemKey}`} />;
     if (!this.state.redirect) {
+      const tooltip = generateTooltip({
+        displayIcon: true,
+        className: "box",
+        helpText: <span>{this.props.targetDescription}</span>,
+        displayText: this.props.targetId
+      });
+
       content = (
         <div
           role="link"
@@ -79,15 +86,7 @@ export class ItemCard extends React.Component<ItemCardModel, ItemCardState> {
             </p>
             <p className="card-text target">
               <span className="card-text-label">Target:</span>
-              <span className="card-text-value">
-                <ToolTip
-                  displayIcon
-                  helpText={<span>{this.props.targetDescription}</span>}
-                  className="box"
-                >
-                  {this.props.targetId}
-                </ToolTip>
-              </span>
+              <span className="card-text-value">{tooltip}</span>
             </p>
             <p className="card-text interaction-type">
               <span className="card-text-label">Item Type:</span>

@@ -109,10 +109,6 @@ export class ItemAccessibilityModal extends React.Component<
   };
 
   handleShowModal = () => {
-    if (!this.state.showModal) {
-      ga("send", "event", "button", "OpenAccessibility");
-    }
-
     this.setState({ showModal: true });
   };
 
@@ -120,7 +116,7 @@ export class ItemAccessibilityModal extends React.Component<
     this.setState({ showModal: false });
   };
 
-  renderResourceType(resourceType: string) {
+  renderResourceType(resourceType: string, infoTag?: string) {
     let resources = this.props.accResourceGroups.filter(
       group => group.label === resourceType
     )[0].accessibilityResources;
@@ -130,11 +126,10 @@ export class ItemAccessibilityModal extends React.Component<
         {resourceType}
       </h4>
     );
-
     const resCount = resources.length;
     const isExpanded = (this.state.resourceTypeExpanded || {})[resourceType];
     if (!isExpanded) {
-      resources = resources.slice(0, 4);
+      resources = resources.slice(0, 6);
     }
 
     const dropdowns = resources.map(res => {
@@ -149,14 +144,15 @@ export class ItemAccessibilityModal extends React.Component<
         selectionCode: selectedCode,
         disabled: res.disabled,
         updateSelection: this.updateSelection,
-        resourceCode: res.resourceCode
+        resourceCode: res.resourceCode,
+        infoTag: res.infoTag
       };
 
       return <Dropdown {...ddProps} key={res.resourceCode} />;
     });
 
     let expandButton: JSX.Element | undefined;
-    if (resCount <= 4) {
+    if (resCount <= 6) {
       expandButton = undefined;
     } else if (isExpanded) {
       const ariaText = `Display fewer ${resourceType} options.`;
