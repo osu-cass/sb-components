@@ -202,20 +202,20 @@ exports[`ItemBankContainer default wrapper 1`] = `
                         "value": "N/A",
                       },
                       Object {
-                        "key": "3000-187-math",
+                        "key": "3000-187",
                         "label": "itemreviewviewer:3000-187",
                         "selected": true,
-                        "value": "3000-187-math",
+                        "value": "3000-187",
                       },
                       Object {
-                        "key": "2332-187-math",
+                        "key": "2332-187",
                         "label": "itemreviewviewer:2332-187",
                         "selected": false,
-                        "value": "2332-187-math",
+                        "value": "2332-187",
                       },
                     ]
                   }
-                  selected="3000-187-math"
+                  selected="3000-187"
                   wrapperClass="select-dd"
                 >
                   <div
@@ -231,7 +231,7 @@ exports[`ItemBankContainer default wrapper 1`] = `
                     <select
                       className="form-control item-dropdown"
                       onChange={[Function]}
-                      value="3000-187-math"
+                      value="3000-187"
                     >
                       <Component
                         disabled={true}
@@ -250,29 +250,29 @@ exports[`ItemBankContainer default wrapper 1`] = `
                         </option>
                       </Component>
                       <Component
-                        key="3000-187-math"
+                        key="3000-187"
                         label="itemreviewviewer:3000-187"
                         selected={true}
-                        value="3000-187-math"
+                        value="3000-187"
                       >
                         <option
                           aria-selected={true}
                           label="itemreviewviewer:3000-187"
-                          value="3000-187-math"
+                          value="3000-187"
                         >
                           itemreviewviewer:3000-187
                         </option>
                       </Component>
                       <Component
-                        key="2332-187-math"
+                        key="2332-187"
                         label="itemreviewviewer:2332-187"
                         selected={false}
-                        value="2332-187-math"
+                        value="2332-187"
                       >
                         <option
                           aria-selected={false}
                           label="itemreviewviewer:2332-187"
-                          value="2332-187-math"
+                          value="2332-187"
                         >
                           itemreviewviewer:2332-187
                         </option>
@@ -451,20 +451,20 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                   "value": "N/A",
                 },
                 Object {
-                  "key": "3000-187-math",
+                  "key": "3000-187",
                   "label": "itemreviewviewer:3000-187",
                   "selected": true,
-                  "value": "3000-187-math",
+                  "value": "3000-187",
                 },
                 Object {
-                  "key": "2332-187-math",
+                  "key": "2332-187",
                   "label": "itemreviewviewer:2332-187",
                   "selected": false,
-                  "value": "2332-187-math",
+                  "value": "2332-187",
                 },
               ]
             }
-            selected="3000-187-math"
+            selected="3000-187"
             wrapperClass="select-dd"
           >
             <div
@@ -480,7 +480,7 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
               <select
                 className="form-control item-dropdown"
                 onChange={[Function]}
-                value="3000-187-math"
+                value="3000-187"
               >
                 <Component
                   disabled={true}
@@ -499,29 +499,29 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
                   </option>
                 </Component>
                 <Component
-                  key="3000-187-math"
+                  key="3000-187"
                   label="itemreviewviewer:3000-187"
                   selected={true}
-                  value="3000-187-math"
+                  value="3000-187"
                 >
                   <option
                     aria-selected={true}
                     label="itemreviewviewer:3000-187"
-                    value="3000-187-math"
+                    value="3000-187"
                   >
                     itemreviewviewer:3000-187
                   </option>
                 </Component>
                 <Component
-                  key="2332-187-math"
+                  key="2332-187"
                   label="itemreviewviewer:2332-187"
                   selected={false}
-                  value="2332-187-math"
+                  value="2332-187"
                 >
                   <option
                     aria-selected={false}
                     label="itemreviewviewer:2332-187"
-                    value="2332-187-math"
+                    value="2332-187"
                   >
                     itemreviewviewer:2332-187
                   </option>

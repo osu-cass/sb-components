@@ -35,7 +35,6 @@ storiesOf("Item Bank", module)
           itemExistsClient={mockBankItemExistsClient}
           itemViewUrl="https://ivs.smarterbalanced.org/items?ids=187-3000"
           namespaces={namespaceMocks}
-          sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocks}
           setUrl={item => ""}
           resetUrl={() => {
@@ -56,7 +55,6 @@ storiesOf("Item Bank", module)
           itemExistsClient={mockBankItemExistsClient}
           itemViewUrl=""
           namespaces={namespaceMocks}
-          sectionsClient={mockBankSectionsClient}
           items={itemRevisionMocksError}
           setUrl={item => ""}
           resetUrl={() => {

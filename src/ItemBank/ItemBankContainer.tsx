@@ -33,7 +33,6 @@ export interface ItemBankContainerProps {
   ) => Promise<AboutItemRevisionModel>;
   revisionsClient: (item: ItemRevisionModel) => Promise<RevisionModel[]>;
   namespaces: NamespaceModel[];
-  sectionsClient: () => Promise<SectionModel[]>;
   itemViewUrl?: string;
   items?: ItemRevisionModel[];
   setUrl: (item: ItemRevisionModel) => void;
@@ -48,7 +47,6 @@ export interface ItemBankContainerState {
   accResourceGroups: Resource<AccResourceGroupModel[]>;
   currentItem?: ItemRevisionModel;
   items: ItemRevisionModel[];
-  sections: Resource<SectionModel[]>;
   revisions: Resource<RevisionModel[]>;
   nextItem?: ItemRevisionModel;
   previousItem?: ItemRevisionModel;
@@ -76,14 +74,12 @@ export class ItemBankContainer extends React.Component<
       items,
       aboutItemRevisionModel: { kind: "loading" },
       accResourceGroups: { kind: "loading" },
-      sections: { kind: "loading" },
       revisions: { kind: "loading" },
       hasError: false
     };
   }
 
   componentDidMount() {
-    this.fetchSections().catch(e => this.onError(e));
     this.handleChangeViewItem();
     this.handleChangeRevision();
   }
@@ -178,19 +174,6 @@ export class ItemBankContainer extends React.Component<
     );
 
     this.handleUpdateItems(validItems);
-  }
-
-  async fetchSections() {
-    const prom = this.props.sectionsClient();
-    const promiseWrapper = this.subscription.add("sectionsClient", prom);
-    const sections = await promiseWrapper.promise;
-    this.onFetchSectionsSuccess(sections);
-
-    return sections;
-  }
-
-  onFetchSectionsSuccess(data: SectionModel[]) {
-    this.setState({ sections: { kind: "success", content: data } });
   }
 
   onError(err: string, cb?: () => void) {
@@ -445,24 +428,17 @@ export class ItemBankContainer extends React.Component<
 
   renderItemBankEntry() {
     const { namespaces } = this.props;
-    const { sections, items } = this.state;
-    let content: JSX.Element | undefined;
+    const { items } = this.state;
 
-    const sectionsContent = getResourceContent(sections);
-    if (sectionsContent) {
-      content = (
-        <ItemBankEntry
-          namespaces={namespaces}
-          sections={sectionsContent}
-          items={items}
-          deleteItem={this.deleteItem}
-          clearItems={this.clearItems}
-          submitItems={this.handleSubmit}
-        />
-      );
-    }
-
-    return content;
+    return (
+      <ItemBankEntry
+        namespaces={namespaces}
+        items={items}
+        deleteItem={this.deleteItem}
+        clearItems={this.clearItems}
+        submitItems={this.handleSubmit}
+      />
+    );
   }
 
   renderItemBankViewer() {

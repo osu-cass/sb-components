@@ -18,7 +18,6 @@ export interface ItemEntryTableState {
 export interface ItemEntryTableProps {
   itemRows: ItemRevisionModel[];
   namespaces: NamespaceModel[];
-  sections: SectionModel[];
   onDeleteItem: (items: number) => void;
   onClearItems: () => void;
   onSubmit: (items: ItemRevisionModel[]) => void;
@@ -102,7 +101,7 @@ export class ItemEntryTable extends React.Component<
           <th scope="col">Namespace</th>
           <th scope="col">Bank</th>
           <th scope="col">Item</th>
-          <th scope="col">Section</th>
+          <th scope="col" />
           <th />
         </tr>
       </thead>
@@ -116,7 +115,6 @@ export class ItemEntryTable extends React.Component<
         onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
         onDeleteRow={deleteRow => this.handleDeleteRow(idx)}
         namespaces={this.props.namespaces}
-        sections={this.props.sections}
         key={idx}
         id={idx}
         isLast={idx === this.state.itemRows.length - 1}
@@ -142,8 +140,6 @@ export class ItemEntryTable extends React.Component<
             type="button"
             value="apply"
           />
-        </td>
-        <td>
           <input
             className="btn btn-default clear-button bg-light"
             onClick={click => this.handleClearItems()}
