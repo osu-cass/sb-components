@@ -14,6 +14,7 @@ export interface SelectProps {
   className?: string;
   labelClass?: string;
   wrapperClass?: string;
+  tabIndex?: number;
 }
 
 /**
@@ -37,6 +38,7 @@ export const Select: React.SFC<SelectProps> = props => {
         onChange={e => props.onChange(e.target.value)}
         value={props.selected}
         disabled={props.disabled}
+        tabIndex={props.tabIndex}
       >
         {selectOptions}
       </select>

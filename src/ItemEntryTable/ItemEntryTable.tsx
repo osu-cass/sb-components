@@ -102,34 +102,38 @@ export class ItemEntryTable extends React.Component<
           <th scope="col">Bank</th>
           <th scope="col">Item</th>
           <th scope="col" />
-          <th />
         </tr>
       </thead>
     );
   }
 
   renderBody() {
-    const rows = this.state.itemRows.map((row, idx) => (
-      <ItemEntryRow
-        row={row}
-        onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
-        onDeleteRow={deleteRow => this.handleDeleteRow(idx)}
-        namespaces={this.props.namespaces}
-        key={idx}
-        id={idx}
-        isLast={idx === this.state.itemRows.length - 1}
-      />
-    ));
-
+    let index = 1;
+    const rows = this.state.itemRows.map((row, idx) => {
+      index = idx;
+      return (
+        <ItemEntryRow
+          row={row}
+          onRowUpdate={editRow => this.handleRowUpdate(editRow, idx)}
+          onDeleteRow={deleteRow => this.handleDeleteRow(idx)}
+          namespaces={this.props.namespaces}
+          key={idx}
+          id={idx}
+          isLast={idx === this.state.itemRows.length - 1}
+          tabIndex={idx * 4 + 1}
+        />
+      );
+    });
+    index++;
     return (
       <tbody>
         {rows}
-        {this.renderFooter()}
+        {this.renderFooter(index * 4 + 1)}
       </tbody>
     );
   }
 
-  renderFooter() {
+  renderFooter(tabIndex: number) {
     return (
       <tr>
         <td />
@@ -137,16 +141,17 @@ export class ItemEntryTable extends React.Component<
           <input
             className="btn btn-primary submit-button bg-primary"
             onClick={click => this.handleSubmit()}
-            type="button"
             value="apply"
+            tabIndex={tabIndex}
           />
           <input
             className="btn btn-default clear-button bg-light"
             onClick={click => this.handleClearItems()}
-            type="button"
             value="clear all"
+            tabIndex={tabIndex + 1}
           />
         </td>
+        <td />
         <td />
       </tr>
     );

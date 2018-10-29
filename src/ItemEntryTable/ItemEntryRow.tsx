@@ -16,6 +16,7 @@ export interface ItemEntryRowProps {
   row: ItemRevisionModel;
   namespaces: NamespaceModel[];
   isLast: boolean;
+  tabIndex: number;
 }
 
 export interface ItemEntryRowState {
@@ -104,6 +105,7 @@ export class ItemEntryRow extends React.Component<
           onChange={event => onChange(+event.target.value)}
           onBlur={this.handleRowUpdate}
           disabled={!row.hasBankKey}
+          tabIndex={this.props.tabIndex + 1}
         />
       </td>
     );
@@ -127,6 +129,7 @@ export class ItemEntryRow extends React.Component<
           value={rowValue || ""}
           onChange={event => onChange(+event.target.value)}
           onBlur={this.handleRowUpdate}
+          tabIndex={this.props.tabIndex + 2}
         />
       </td>
     );
@@ -160,6 +163,7 @@ export class ItemEntryRow extends React.Component<
           options={options}
           onChange={this.handleNamespace}
           wrapperClass="section-dd"
+          tabIndex={this.props.tabIndex}
         />
       </td>
     );
@@ -169,11 +173,11 @@ export class ItemEntryRow extends React.Component<
     return (
       <td className="delete-row">
         <input
-          className="delete-button btn btn-primary bg-light"
+          className="from-control delete-button btn btn-primary bg-light"
           onClick={this.deleteRow}
           disabled={this.props.isLast}
-          type="button"
           value="X"
+          tabIndex={this.props.tabIndex + 3}
         />
       </td>
     );
