@@ -111,6 +111,7 @@ export class ItemEntryTable extends React.Component<
     let index = 1;
     const rows = this.state.itemRows.map((row, idx) => {
       index = idx;
+
       return (
         <ItemEntryRow
           row={row}
@@ -125,6 +126,7 @@ export class ItemEntryTable extends React.Component<
       );
     });
     index++;
+
     return (
       <tbody>
         {rows}
