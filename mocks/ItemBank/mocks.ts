@@ -75,7 +75,6 @@ export const itemRevisionMocks: ItemRevisionModel[] = [
     hasBankKey: true,
     bankKey: 187,
     itemKey: 1111,
-    section: "siw",
     valid: true
   },
   {
@@ -83,15 +82,13 @@ export const itemRevisionMocks: ItemRevisionModel[] = [
     hasBankKey: true,
     bankKey: 1872,
     itemKey: 2222,
-    section: "math",
     valid: false
   },
   {
     namespace: "itemreviewviewer",
     hasBankKey: true,
     bankKey: 1871,
-    itemKey: 3333,
-    section: "siw"
+    itemKey: 3333
   },
   {}
 ];
@@ -102,15 +99,13 @@ export const itemRevisionMocksError: ItemRevisionModel[] = [
     hasBankKey: true,
     bankKey: 187,
     itemKey: 1111,
-    section: "siw",
     valid: false
   },
   {
     namespace: "itemreviewviewer",
     hasBankKey: true,
     bankKey: 1872,
-    itemKey: 2222,
-    section: "math"
+    itemKey: 2222
   },
   {}
 ];

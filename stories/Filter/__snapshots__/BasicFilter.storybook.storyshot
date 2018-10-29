@@ -34,6 +34,7 @@ exports[`Storyshots Basic Filter DropDown: multiple filter items 1`] = `
         className="form-control input-sm"
         disabled={false}
         onChange={[Function]}
+        tabIndex={undefined}
         value="default"
       >
         <option
@@ -116,6 +117,7 @@ exports[`Storyshots Basic Filter DropDown: one filter item 1`] = `
         className="form-control input-sm"
         disabled={false}
         onChange={[Function]}
+        tabIndex={undefined}
         value="default"
       >
         <option

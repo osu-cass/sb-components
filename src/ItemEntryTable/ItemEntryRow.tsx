@@ -15,8 +15,8 @@ export interface ItemEntryRowProps {
   id: number;
   row: ItemRevisionModel;
   namespaces: NamespaceModel[];
-  sections: SectionModel[];
   isLast: boolean;
+  tabIndex: number;
 }
 
 export interface ItemEntryRowState {
@@ -61,7 +61,10 @@ export class ItemEntryRow extends React.Component<
 
   handleItemKey = (itemKey: number) => {
     const { editRow } = this.state;
-    this.setState({ editRow: { ...editRow, itemKey }, isModified: true });
+    this.setState(
+      { editRow: { ...editRow, itemKey }, isModified: true },
+      this.handleRowUpdate
+    );
   };
 
   handleItemBank = (bankKey: number) => {
@@ -79,14 +82,6 @@ export class ItemEntryRow extends React.Component<
         editRow: { ...editRow, namespace, hasBankKey, bankKey },
         isModified: true
       },
-      this.handleRowUpdate
-    );
-  };
-
-  handleSection = (section: string) => {
-    const { editRow } = this.state;
-    this.setState(
-      { editRow: { ...editRow, section }, isModified: true },
       this.handleRowUpdate
     );
   };
@@ -110,6 +105,7 @@ export class ItemEntryRow extends React.Component<
           onChange={event => onChange(+event.target.value)}
           onBlur={this.handleRowUpdate}
           disabled={!row.hasBankKey}
+          tabIndex={this.props.tabIndex + 1}
         />
       </td>
     );
@@ -133,6 +129,7 @@ export class ItemEntryRow extends React.Component<
           value={rowValue || ""}
           onChange={event => onChange(+event.target.value)}
           onBlur={this.handleRowUpdate}
+          tabIndex={this.props.tabIndex + 2}
         />
       </td>
     );
@@ -166,39 +163,7 @@ export class ItemEntryRow extends React.Component<
           options={options}
           onChange={this.handleNamespace}
           wrapperClass="section-dd"
-        />
-      </td>
-    );
-  }
-
-  renderRowSection(row: ItemRevisionModel) {
-    const options: SelectOptionProps[] = this.props.sections.map(op => {
-      return {
-        label: op.value,
-        value: op.key,
-        selected: op.key === row.section
-      };
-    });
-
-    options.unshift({
-      label: "Select a Section",
-      value: "N/A",
-      disabled: true,
-      selected: row.section === "N/A"
-    });
-
-    const error: string = row.valid !== undefined && !row.valid ? "error" : "";
-
-    return (
-      <td>
-        <Select
-          className={`form-control ${error}`}
-          label="Sections"
-          labelClass="display-none"
-          selected={row.section || "N/A"}
-          options={options}
-          onChange={this.handleSection}
-          wrapperClass="section-dd"
+          tabIndex={this.props.tabIndex}
         />
       </td>
     );
@@ -208,11 +173,11 @@ export class ItemEntryRow extends React.Component<
     return (
       <td className="delete-row">
         <input
-          className="delete-button btn btn-primary bg-light"
+          className="from-control delete-button btn btn-primary bg-light"
           onClick={this.deleteRow}
           disabled={this.props.isLast}
-          type="button"
           value="X"
+          tabIndex={this.props.tabIndex + 3}
         />
       </td>
     );
@@ -223,8 +188,7 @@ export class ItemEntryRow extends React.Component<
     const hidden =
       this.props.row.valid !== undefined &&
       !this.props.row.valid &&
-      this.props.row.itemKey &&
-      this.props.row.section
+      this.props.row.itemKey
         ? ""
         : "hidden";
 
@@ -241,7 +205,6 @@ export class ItemEntryRow extends React.Component<
           this.handleItemKey,
           editRow.itemKey
         )}
-        {this.renderRowSection(editRow)}
         {this.renderDeleteButton()}
         <td className={`error-text ${hidden}`}>Item Not Found</td>
       </tr>

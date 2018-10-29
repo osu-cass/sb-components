@@ -67,14 +67,6 @@ exports[`ItemBankEntry matches snapshot 1`] = `
           },
         ]
       }
-      sections={
-        Array [
-          Object {
-            "key": "187-3000",
-            "value": "math",
-          },
-        ]
-      }
     />
   </Accordion>
 </div>
