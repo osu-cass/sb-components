@@ -69,6 +69,46 @@ exports[`Storyshots Item Bank default 1`] = `
       className="item-container container"
     >
       <div>
+        <div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                CSV Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                Items Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           className="section revisions-items"
         >
@@ -133,6 +173,7 @@ exports[`Storyshots Item Bank default 1`] = `
                     className="form-control item-dropdown"
                     disabled={undefined}
                     onChange={[Function]}
+                    tabIndex={undefined}
                     value="187-1111"
                   >
                     <option
@@ -342,6 +383,46 @@ exports[`Storyshots Item Bank default error client 1`] = `
       className="item-container container"
     >
       <div>
+        <div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                CSV Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                Items Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           className="section revisions-items"
         >
@@ -406,6 +487,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                     className="form-control item-dropdown"
                     disabled={undefined}
                     onChange={[Function]}
+                    tabIndex={undefined}
                     value="187-1111"
                   >
                     <option

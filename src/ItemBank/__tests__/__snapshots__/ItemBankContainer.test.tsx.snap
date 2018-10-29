@@ -79,19 +79,127 @@ exports[`ItemBankContainer default wrapper 1`] = `
       ],
     }
   }
-  sectionsClient={
-    [MockFunction] {
-      "calls": Array [
-        Array [],
-      ],
-    }
-  }
+  sectionsClient={[MockFunction]}
   setUrl={[MockFunction]}
 >
   <div
     className="item-container container"
   >
     <div>
+      <ItemBankEntry
+        clearItems={[Function]}
+        deleteItem={[Function]}
+        items={
+          Array [
+            Object {
+              "bankKey": 3000,
+              "hasBankKey": true,
+              "isaap": "",
+              "itemKey": 187,
+              "namespace": "itemreviewviewer",
+              "revision": "asfe",
+              "section": "math",
+            },
+            Object {
+              "bankKey": 2332,
+              "hasBankKey": true,
+              "isaap": "",
+              "itemKey": 187,
+              "namespace": "itemreviewviewer",
+              "revision": "asdf",
+              "section": "math",
+            },
+          ]
+        }
+        namespaces={
+          Array [
+            Object {
+              "bankKey": 991,
+              "hasBankKey": false,
+              "id": "37",
+              "name": "iat-staging",
+            },
+            Object {
+              "bankKey": 0,
+              "hasBankKey": true,
+              "id": "26",
+              "name": "ELA",
+            },
+            Object {
+              "bankKey": 992,
+              "hasBankKey": false,
+              "id": "19",
+              "name": "iat-uat",
+            },
+            Object {
+              "bankKey": 990,
+              "hasBankKey": false,
+              "id": "14",
+              "name": "iat-development",
+            },
+            Object {
+              "bankKey": 0,
+              "hasBankKey": true,
+              "id": "12",
+              "name": "itemreviewviewer",
+            },
+          ]
+        }
+        submitItems={[Function]}
+      >
+        <div>
+          <Accordion
+            accordionTitle="CSV Entry"
+            isOpen={false}
+            toggleExpand={[Function]}
+          >
+            <div
+              className="accordion-container"
+            >
+              <div
+                className="accordion-bar"
+                onClick={[Function]}
+                role="button"
+              >
+                <div
+                  className="accordion-content"
+                >
+                  CSV Entry
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-chevron-down carat"
+                  />
+                </div>
+              </div>
+            </div>
+          </Accordion>
+          <Accordion
+            accordionTitle="Items Entry"
+            isOpen={false}
+            toggleExpand={[Function]}
+          >
+            <div
+              className="accordion-container"
+            >
+              <div
+                className="accordion-bar"
+                onClick={[Function]}
+                role="button"
+              >
+                <div
+                  className="accordion-content"
+                >
+                  Items Entry
+                  <span
+                    aria-hidden="true"
+                    className="fa fa-chevron-down carat"
+                  />
+                </div>
+              </div>
+            </div>
+          </Accordion>
+        </div>
+      </ItemBankEntry>
       <ItemBankViewer
         currentItem={
           Object {
@@ -586,4 +694,119 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
 </ItemBankViewer>
 `;
 
-exports[`ItemBankContainer item bank entry 1`] = `null`;
+exports[`ItemBankContainer item bank entry 1`] = `
+<ItemBankEntry
+  clearItems={[Function]}
+  deleteItem={[Function]}
+  items={
+    Array [
+      Object {
+        "bankKey": 3000,
+        "hasBankKey": true,
+        "isaap": "",
+        "itemKey": 187,
+        "namespace": "itemreviewviewer",
+        "revision": "asfe",
+        "section": "math",
+      },
+      Object {
+        "bankKey": 2332,
+        "hasBankKey": true,
+        "isaap": "",
+        "itemKey": 187,
+        "namespace": "itemreviewviewer",
+        "revision": "asdf",
+        "section": "math",
+      },
+    ]
+  }
+  namespaces={
+    Array [
+      Object {
+        "bankKey": 991,
+        "hasBankKey": false,
+        "id": "37",
+        "name": "iat-staging",
+      },
+      Object {
+        "bankKey": 0,
+        "hasBankKey": true,
+        "id": "26",
+        "name": "ELA",
+      },
+      Object {
+        "bankKey": 992,
+        "hasBankKey": false,
+        "id": "19",
+        "name": "iat-uat",
+      },
+      Object {
+        "bankKey": 990,
+        "hasBankKey": false,
+        "id": "14",
+        "name": "iat-development",
+      },
+      Object {
+        "bankKey": 0,
+        "hasBankKey": true,
+        "id": "12",
+        "name": "itemreviewviewer",
+      },
+    ]
+  }
+  submitItems={[Function]}
+>
+  <div>
+    <Accordion
+      accordionTitle="CSV Entry"
+      isOpen={false}
+      toggleExpand={[Function]}
+    >
+      <div
+        className="accordion-container"
+      >
+        <div
+          className="accordion-bar"
+          onClick={[Function]}
+          role="button"
+        >
+          <div
+            className="accordion-content"
+          >
+            CSV Entry
+            <span
+              aria-hidden="true"
+              className="fa fa-chevron-down carat"
+            />
+          </div>
+        </div>
+      </div>
+    </Accordion>
+    <Accordion
+      accordionTitle="Items Entry"
+      isOpen={false}
+      toggleExpand={[Function]}
+    >
+      <div
+        className="accordion-container"
+      >
+        <div
+          className="accordion-bar"
+          onClick={[Function]}
+          role="button"
+        >
+          <div
+            className="accordion-content"
+          >
+            Items Entry
+            <span
+              aria-hidden="true"
+              className="fa fa-chevron-down carat"
+            />
+          </div>
+        </div>
+      </div>
+    </Accordion>
+  </div>
+</ItemBankEntry>
+`;

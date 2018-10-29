@@ -30,6 +30,7 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
+            tabIndex={undefined}
             value="default"
           >
             <option
