@@ -69,6 +69,46 @@ exports[`Storyshots Item Bank default 1`] = `
       className="item-container container"
     >
       <div>
+        <div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                CSV Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                Items Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           className="section revisions-items"
         >
@@ -133,7 +173,8 @@ exports[`Storyshots Item Bank default 1`] = `
                     className="form-control item-dropdown"
                     disabled={undefined}
                     onChange={[Function]}
-                    value="187-1111-siw"
+                    tabIndex={undefined}
+                    value="187-1111"
                   >
                     <option
                       aria-selected={false}
@@ -147,7 +188,7 @@ exports[`Storyshots Item Bank default 1`] = `
                       aria-selected={true}
                       disabled={undefined}
                       label="itemreviewviewer:187-1111"
-                      value="187-1111-siw"
+                      value="187-1111"
                     >
                       itemreviewviewer:187-1111
                     </option>
@@ -155,7 +196,7 @@ exports[`Storyshots Item Bank default 1`] = `
                       aria-selected={false}
                       disabled={undefined}
                       label="itemreviewviewer:1872-2222"
-                      value="1872-2222-math"
+                      value="1872-2222"
                     >
                       itemreviewviewer:1872-2222
                     </option>
@@ -163,7 +204,7 @@ exports[`Storyshots Item Bank default 1`] = `
                       aria-selected={false}
                       disabled={undefined}
                       label="itemreviewviewer:1871-3333"
-                      value="1871-3333-siw"
+                      value="1871-3333"
                     >
                       itemreviewviewer:1871-3333
                     </option>
@@ -171,7 +212,7 @@ exports[`Storyshots Item Bank default 1`] = `
                       aria-selected={false}
                       disabled={undefined}
                       label=""
-                      value="undefined-undefined-undefined"
+                      value="undefined-undefined"
                     >
                       
                     </option>
@@ -342,6 +383,46 @@ exports[`Storyshots Item Bank default error client 1`] = `
       className="item-container container"
     >
       <div>
+        <div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                CSV Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="accordion-container"
+          >
+            <div
+              className="accordion-bar"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="accordion-content"
+              >
+                Items Entry
+                <span
+                  aria-hidden="true"
+                  className="fa fa-chevron-down carat"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           className="section revisions-items"
         >
@@ -406,7 +487,8 @@ exports[`Storyshots Item Bank default error client 1`] = `
                     className="form-control item-dropdown"
                     disabled={undefined}
                     onChange={[Function]}
-                    value="187-1111-siw"
+                    tabIndex={undefined}
+                    value="187-1111"
                   >
                     <option
                       aria-selected={false}
@@ -420,7 +502,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                       aria-selected={true}
                       disabled={undefined}
                       label="itemreviewviewer:187-1111"
-                      value="187-1111-siw"
+                      value="187-1111"
                     >
                       itemreviewviewer:187-1111
                     </option>
@@ -428,7 +510,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                       aria-selected={false}
                       disabled={undefined}
                       label="itemreviewviewer:1872-2222"
-                      value="1872-2222-math"
+                      value="1872-2222"
                     >
                       itemreviewviewer:1872-2222
                     </option>
@@ -436,7 +518,7 @@ exports[`Storyshots Item Bank default error client 1`] = `
                       aria-selected={false}
                       disabled={undefined}
                       label=""
-                      value="undefined-undefined-undefined"
+                      value="undefined-undefined"
                     >
                       
                     </option>

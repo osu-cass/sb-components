@@ -3,7 +3,6 @@ import {
   Accordion,
   ItemRevisionModel,
   NamespaceModel,
-  SectionModel,
   ItemEntryTable,
   CsvEntry
 } from "@src/index";
@@ -13,7 +12,6 @@ export interface ItemBankEntryProps {
   clearItems: () => void;
   submitItems: (items: ItemRevisionModel[]) => void;
   namespaces: NamespaceModel[];
-  sections: SectionModel[];
   items: ItemRevisionModel[];
 }
 
@@ -78,7 +76,6 @@ export class ItemBankEntry extends React.Component<
       items,
       clearItems,
       namespaces,
-      sections,
       deleteItem,
       submitItems
     } = this.props;
@@ -92,7 +89,6 @@ export class ItemBankEntry extends React.Component<
         <ItemEntryTable
           itemRows={items}
           namespaces={namespaces}
-          sections={sections}
           onDeleteItem={deleteItem}
           onClearItems={clearItems}
           onSubmit={submitItems}

@@ -10,7 +10,6 @@ export interface ItemRevisionModel {
   bankKey?: number;
   hasBankKey?: boolean;
   namespace?: string;
-  section?: string;
   revision?: string;
   isaap?: string;
   valid?: boolean;
@@ -35,8 +34,7 @@ export function itemsAreEqual(
     right &&
     left.itemKey === right.itemKey &&
     left.bankKey === right.bankKey &&
-    left.namespace === right.namespace &&
-    left.section === right.section
+    left.namespace === right.namespace
   );
 }
 
@@ -122,9 +120,7 @@ export function concatNamespaceWith(
 }
 
 export function itemRevisionKey(itemRevisionModel: ItemRevisionModel) {
-  return `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}-${
-    itemRevisionModel.section
-  }`;
+  return `${itemRevisionModel.bankKey}-${itemRevisionModel.itemKey}`;
 }
 
 export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
@@ -132,8 +128,7 @@ export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
   if (
     itemRevisionModel &&
     itemRevisionModel.namespace &&
-    itemRevisionModel.itemKey &&
-    itemRevisionModel.section
+    itemRevisionModel.itemKey
   ) {
     value = true;
 

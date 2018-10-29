@@ -40,8 +40,8 @@ export function toCsvText(items: CsvRowModel[]): string {
   items.forEach(item => {
     if (item.itemKey) {
       const itemString = item.bankKey
-        ? `${item.namespace},${item.bankKey},${item.itemKey},${item.section}\n`
-        : `${item.namespace},${item.itemKey},${item.section}\n`;
+        ? `${item.namespace},${item.bankKey},${item.itemKey}\n`
+        : `${item.namespace},${item.itemKey}\n`;
       csvString = `${csvString}${itemString}`;
     }
   });
@@ -60,9 +60,9 @@ function parseLines(lines: string[], namespaces: NamespaceModel[]) {
     // row.namespace = values[0];
     setNamespace(row, values[0], namespaces);
 
-    if (values.length === 4) {
+    if (values.length === 3) {
       setCsvRowWithBankKey(row, values);
-    } else if (values.length === 3) {
+    } else if (values.length === 2) {
       setCsvRowWithoutBankKey(row, values, namespaces);
     } else {
       continue;
@@ -90,8 +90,7 @@ function setNamespace(
 function setCsvRowWithBankKey(row: CsvRowModel, values: string[]) {
   row.hasBankKey = true;
   row.bankKey = +values[1];
-  row.itemKey = +values[2];
-  row.section = values[3].trim();
+  row.itemKey = +values[2].trim();
 }
 
 function setCsvRowWithoutBankKey(
@@ -101,8 +100,7 @@ function setCsvRowWithoutBankKey(
 ) {
   row.hasBankKey = false;
   row.bankKey = getBankKeyByNamespace(row.namespace, namespaces);
-  row.itemKey = +values[1];
-  row.section = values[2].trim();
+  row.itemKey = +values[1].trim();
 }
 
 function getBankKeyByNamespace(

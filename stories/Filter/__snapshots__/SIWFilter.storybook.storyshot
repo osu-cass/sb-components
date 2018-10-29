@@ -30,6 +30,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
+            tabIndex={undefined}
             value="default"
           >
             <option
@@ -86,6 +87,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
+            tabIndex={undefined}
             value="default"
           >
             <option
@@ -240,6 +242,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
+            tabIndex={undefined}
             value="default"
           >
             <option
@@ -341,6 +344,7 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="form-control input-sm"
             disabled={false}
             onChange={[Function]}
+            tabIndex={undefined}
             value="default"
           >
             <option
