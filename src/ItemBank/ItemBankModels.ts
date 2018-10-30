@@ -201,6 +201,7 @@ export interface AccessibilityRevisionModel {
   interactionType: string;
   allowCalculator?: boolean;
   isPerformance?: boolean;
+  namespace?: string;
   itemKey?: string;
   bankKey?: string;
   brailleType?: string;
