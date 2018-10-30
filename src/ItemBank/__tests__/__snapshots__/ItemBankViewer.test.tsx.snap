@@ -162,6 +162,7 @@ exports[`ItemBankViewer with all props defined matches snapshot 1`] = `
           }
           bankKey="100"
           itemKey="100"
+          namespace="Namespace"
           revision="2"
           sampleItemScoring={
             Object {
@@ -520,6 +521,7 @@ exports[`ItemBankViewer with revision model and accResourceGroup matches snapsho
           }
           bankKey="100"
           itemKey="100"
+          namespace="Namespace"
           revision="2"
           sampleItemScoring={
             Object {
@@ -851,6 +853,7 @@ exports[`ItemBankViewer with revision model matches snapshot 1`] = `
           }
           bankKey="100"
           itemKey="100"
+          namespace="Namespace"
           revision="2"
           sampleItemScoring={
             Object {

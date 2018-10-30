@@ -46,6 +46,7 @@ export interface AboutItemRevision {
 }
 
 export interface AboutItemRevisionModel {
+  namespace: string;
   itemKey: string;
   bankKey: string;
   revision: string;

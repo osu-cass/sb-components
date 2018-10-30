@@ -160,6 +160,7 @@ export const rubricsEsn: RubricModel[] = [
 export const allRubrics: RubricModel[] = mockRubrics.concat(rubricsEsn);
 
 export const aboutItemRevisionMockModel: AboutItemRevisionModel = {
+  namespace: "Namespace",
   itemKey: "100",
   bankKey: "100",
   revision: "2",

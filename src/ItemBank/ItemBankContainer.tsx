@@ -116,7 +116,8 @@ export class ItemBankContainer extends React.Component<
       gradeLevel: item.AboutItemMetadata.intendedGrade,
       allowCalculator: this.makeBool(item),
       itemKey: item.AboutItemMetadata.identifier,
-      bankKey: item.bankKey
+      bankKey: item.bankKey,
+      namespace: item.namespace
     };
     const prom = this.props.accessibilityClient(params);
     const promiseWrapper = this.subscription.add("accessibilityClient", prom);
