@@ -152,7 +152,7 @@ export class ItemBankContainer extends React.Component<
     revisions[0].selected = true;
     this.onFetchRevisionsSuccess(revisions);
 
-    return revisions;
+    return revisions.reverse();
   }
 
   onFetchRevisionsSuccess(data: RevisionModel[]) {
