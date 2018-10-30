@@ -17,7 +17,6 @@ const item: ItemRevisionModel = {
   bankKey: 3000,
   hasBankKey: true,
   namespace: "itemreviewviewer",
-  section: "math",
   revision: "asfe",
   isaap: ""
 };

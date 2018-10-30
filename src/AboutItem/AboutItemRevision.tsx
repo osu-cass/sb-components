@@ -8,7 +8,7 @@ export class AboutThisItemRevision extends React.Component<
   renderField(
     label: string,
     className: string,
-    value?: string | number
+    value?: string | number | undefined
   ): JSX.Element | null {
     return (
       <p className={`card-text ${className}`} tabIndex={0}>
@@ -120,12 +120,16 @@ export class AboutThisItemRevision extends React.Component<
           {this.renderField(
             "Publication",
             "publication",
-            AboutItemMetadata.standardPublication.primaryStandard
+            AboutItemMetadata.standardPublication !== null
+              ? AboutItemMetadata.standardPublication.primaryStandard
+              : undefined
           )}
           {this.renderField(
             "Primary Standard",
             "primary-standard",
-            AboutItemMetadata.standardPublication.publication
+            AboutItemMetadata.standardPublication !== null
+              ? AboutItemMetadata.standardPublication.primaryStandard
+              : undefined
           )}
           {this.renderField(
             "associatedTutorial",
