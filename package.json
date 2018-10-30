@@ -101,7 +101,7 @@
     "jsdom-global": "^3.0.2",
     "less": "^3.0.4",
     "less-loader": "~4.0.5",
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^8.0.3",
     "postcss-loader": "^2.1.5",
     "prettier": "~1.9.2",
     "react": "^16.2.0",
