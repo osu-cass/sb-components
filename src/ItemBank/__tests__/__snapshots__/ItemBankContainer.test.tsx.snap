@@ -14,7 +14,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
         "itemKey": 187,
         "namespace": "itemreviewviewer",
         "revision": "asfe",
-        "section": "math",
       },
       Object {
         "bankKey": 2332,
@@ -23,7 +22,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
         "itemKey": 187,
         "namespace": "itemreviewviewer",
         "revision": "asdf",
-        "section": "math",
       },
     ]
   }
@@ -73,7 +71,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
             "itemKey": 187,
             "namespace": "itemreviewviewer",
             "revision": "asfe",
-            "section": "math",
           },
         ],
       ],
@@ -98,7 +95,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
               "itemKey": 187,
               "namespace": "itemreviewviewer",
               "revision": "asfe",
-              "section": "math",
             },
             Object {
               "bankKey": 2332,
@@ -107,7 +103,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
               "itemKey": 187,
               "namespace": "itemreviewviewer",
               "revision": "asdf",
-              "section": "math",
             },
           ]
         }
@@ -209,7 +204,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
             "itemKey": 187,
             "namespace": "itemreviewviewer",
             "revision": "asfe",
-            "section": "math",
           }
         }
         itemUrl="hello"
@@ -222,7 +216,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
               "itemKey": 187,
               "namespace": "itemreviewviewer",
               "revision": "asfe",
-              "section": "math",
             },
             Object {
               "bankKey": 2332,
@@ -231,7 +224,6 @@ exports[`ItemBankContainer default wrapper 1`] = `
               "itemKey": 187,
               "namespace": "itemreviewviewer",
               "revision": "asdf",
-              "section": "math",
             },
           ]
         }
@@ -458,7 +450,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
       "itemKey": 187,
       "namespace": "itemreviewviewer",
       "revision": "asfe",
-      "section": "math",
     }
   }
   itemUrl="hello"
@@ -471,7 +462,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
         "itemKey": 187,
         "namespace": "itemreviewviewer",
         "revision": "asfe",
-        "section": "math",
       },
       Object {
         "bankKey": 2332,
@@ -480,7 +470,6 @@ exports[`ItemBankContainer has item bank viewer 1`] = `
         "itemKey": 187,
         "namespace": "itemreviewviewer",
         "revision": "asdf",
-        "section": "math",
       },
     ]
   }
@@ -707,7 +696,6 @@ exports[`ItemBankContainer item bank entry 1`] = `
         "itemKey": 187,
         "namespace": "itemreviewviewer",
         "revision": "asfe",
-        "section": "math",
       },
       Object {
         "bankKey": 2332,
@@ -716,7 +704,6 @@ exports[`ItemBankContainer item bank entry 1`] = `
         "itemKey": 187,
         "namespace": "itemreviewviewer",
         "revision": "asdf",
-        "section": "math",
       },
     ]
   }
