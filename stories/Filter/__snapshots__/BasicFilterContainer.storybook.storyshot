@@ -27,6 +27,7 @@ exports[`Storyshots Basic Filter Container Basic Filter only 1`] = `
           className="form-control input-sm"
           disabled={false}
           onChange={[Function]}
+          tabIndex={undefined}
           value="default"
         >
           <option
@@ -187,6 +188,7 @@ exports[`Storyshots Basic Filter Container Basic Filter with Advanced filter exp
           className="form-control input-sm"
           disabled={false}
           onChange={[Function]}
+          tabIndex={undefined}
           value="default"
         >
           <option
