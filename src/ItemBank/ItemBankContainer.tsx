@@ -23,7 +23,6 @@ import {
   existenceResponseModelToRevisionModel
 } from "@src/index";
 import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
-import { Accordion } from "gh-site/lib/src";
 
 export interface ItemBankContainerProps {
   accessibilityClient: (
