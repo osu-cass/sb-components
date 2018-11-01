@@ -302,10 +302,10 @@ export class ItemBankContainer extends React.Component<
   handleUpdateIsaap = (accGroups: AccResourceGroupModel[]) => {
     const { currentItem } = this.state;
     if (currentItem) {
-      const isaap = toiSAAP(accGroups);
-      this.props.setUrl(currentItem);
-      this.setState({ currentItem });
-      this.bubbleEventHandler(currentItem, isaap);
+      currentItem.isaap = toiSAAP(accGroups);
+      this.setState({ currentItem }, () => {
+        this.props.setUrl(currentItem);
+      });
     }
   };
 
