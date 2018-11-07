@@ -141,12 +141,14 @@ export class ItemEntryTable extends React.Component<
         <td />
         <td>
           <input
+            type="submit"
             className="btn btn-primary submit-button bg-primary"
             onClick={click => this.handleSubmit()}
             value="apply"
             tabIndex={tabIndex}
           />
           <input
+            type="submit"
             className="btn btn-default clear-button bg-light"
             onClick={click => this.handleClearItems()}
             value="clear all"
