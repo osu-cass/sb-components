@@ -38,13 +38,14 @@ describe("ItemPageTable", () => {
   it("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
-
+  /*
   it("sorts list on header click", () => {
     tabClassNames.forEach(tab => {
       wrapper.find(`th.${tab}`).simulate("click");
       expect(wrapper).toMatchSnapshot();
     });
-  });
+  }
+*/
 
   it("calls onRowSelection()", () => {
     const items = wrapper.find("td.item");
