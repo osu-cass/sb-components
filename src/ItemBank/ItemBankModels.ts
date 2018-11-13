@@ -13,6 +13,7 @@ export interface ItemRevisionModel {
   revision?: string;
   isaap?: string;
   valid?: boolean;
+  error?: string;
 }
 
 export interface ItemExistsRequestModel {
@@ -23,6 +24,7 @@ export interface ItemExistsRequestModel {
 
 export interface ItemExistsResponseModel extends ItemExistsRequestModel {
   exists: boolean;
+  error?: string;
 }
 
 export function itemsAreEqual(
@@ -79,6 +81,7 @@ export function existenceResponseModelToRevisionModel(
     );
     if (match) {
       item.valid = match.exists;
+      item.error = match.error;
     }
 
     return item;

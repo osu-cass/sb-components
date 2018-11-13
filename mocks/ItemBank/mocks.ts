@@ -18,7 +18,13 @@ export const mockBankItemExistsClient = (items: ItemExistsRequestModel[]) => {
   const result: ItemExistsResponseModel[] = [];
   items.forEach((item, index) => {
     if (index % 2 === 0) {
-      result.push({ ...item, exists: false });
+      result.push({
+        ...item,
+        exists: false,
+        error: "Its Raining cats and Dogs"
+      });
+    } else {
+      result.push({ ...item, exists: true });
     }
   });
 
