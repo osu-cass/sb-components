@@ -188,7 +188,8 @@ export class ItemEntryRow extends React.Component<
     const hidden =
       this.props.row.valid !== undefined &&
       !this.props.row.valid &&
-      this.props.row.itemKey
+      this.props.row.itemKey &&
+      this.props.row.error
         ? ""
         : "hidden";
 
@@ -206,7 +207,7 @@ export class ItemEntryRow extends React.Component<
           editRow.itemKey
         )}
         {this.renderDeleteButton()}
-        <td className={`error-text ${hidden}`}>Item Not Found</td>
+        <td className={`error-text ${hidden}`}>{this.props.row.error}</td>
       </tr>
     );
   }
