@@ -116,7 +116,7 @@ export class ItemBankContainer extends React.Component<
       interactionType: item.AboutItemMetadata.interactionType,
       subject: item.AboutItemMetadata.subject,
       gradeLevel: item.AboutItemMetadata.intendedGrade,
-      allowCalculator: this.makeBool(item),
+      allowCalculator: this.calculatorAllowed(item),
       itemKey: item.AboutItemMetadata.identifier,
       bankKey: item.bankKey,
       namespace: item.namespace
@@ -130,8 +130,7 @@ export class ItemBankContainer extends React.Component<
   }
 
   // Changes allowCalculator from "yes"/"no"/null to bool
-
-  makeBool(item: AboutItemRevisionModel) {
+  calculatorAllowed(item: AboutItemRevisionModel) {
     if (
       item.AboutItemMetadata &&
       item.AboutItemMetadata.allowCalculator &&
