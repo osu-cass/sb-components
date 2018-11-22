@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IframeModal } from "@src/index";
 
-const privacyUrl = "http://smarterbalanced.org/privacy-policy";
+const privacyUrl = "https://smarterbalanced.org/privacy-policy";
 
 // tslint:disable-next-line:variable-name
 export const Footer: React.SFC<{}> = props => {

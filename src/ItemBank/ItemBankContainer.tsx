@@ -20,7 +20,9 @@ import {
   ItemExistsRequestModel,
   ItemExistsResponseModel,
   toExistenceRequestModel,
-  existenceResponseModelToRevisionModel
+  existenceResponseModelToRevisionModel,
+  mergeAccessibilityGroups,
+  resetAccessibilityGroups
 } from "@src/index";
 import { itemsAreEqual } from "@src/ItemBank/ItemBankModels";
 
@@ -114,7 +116,7 @@ export class ItemBankContainer extends React.Component<
       interactionType: item.AboutItemMetadata.interactionType,
       subject: item.AboutItemMetadata.subject,
       gradeLevel: item.AboutItemMetadata.intendedGrade,
-      allowCalculator: this.makeBool(item),
+      allowCalculator: this.calculatorAllowed(item),
       itemKey: item.AboutItemMetadata.identifier,
       bankKey: item.bankKey,
       namespace: item.namespace
@@ -128,8 +130,7 @@ export class ItemBankContainer extends React.Component<
   }
 
   // Changes allowCalculator from "yes"/"no"/null to bool
-
-  makeBool(item: AboutItemRevisionModel) {
+  calculatorAllowed(item: AboutItemRevisionModel) {
     if (
       item.AboutItemMetadata &&
       item.AboutItemMetadata.allowCalculator &&
@@ -255,7 +256,8 @@ export class ItemBankContainer extends React.Component<
       items: [{}],
       previousItem: undefined,
       nextItem: undefined,
-      currentItem: undefined
+      currentItem: undefined,
+      revisions: { kind: "none" }
     });
   };
 
@@ -264,7 +266,8 @@ export class ItemBankContainer extends React.Component<
    * @memberof ItemBankContainer
    */
   handleChangeViewItem = () => {
-    const { currentItem, items } = this.state;
+    const { currentItem, items, accResourceGroups } = this.state;
+    const currentAccGroups = getResourceContent(accResourceGroups);
     let index = 0;
     if (currentItem && currentItem.valid) {
       this.fetchAboutItemRevisionModel(currentItem)
@@ -272,8 +275,19 @@ export class ItemBankContainer extends React.Component<
           return this.fetchAccResourceGroups(aboutItem);
         })
         .then(accGroups => {
-          this.handleUpdateIsaap(accGroups);
-          this.updateNavigationItems();
+          let newGroups: AccResourceGroupModel[];
+          if (currentAccGroups) {
+            newGroups = mergeAccessibilityGroups(accGroups, currentAccGroups);
+          } else {
+            newGroups = accGroups;
+          }
+          this.setState(
+            { accResourceGroups: { kind: "success", content: newGroups } },
+            () => {
+              this.handleUpdateIsaap(newGroups);
+              this.updateNavigationItems();
+            }
+          );
         })
         .catch(e => {
           this.onError(e, () => {
@@ -346,8 +360,13 @@ export class ItemBankContainer extends React.Component<
     const aboutItem = getResourceContent(aboutItemRevisionModel);
     const accResources = getResourceContent(accResourceGroups);
     if (aboutItem && accResources) {
-      this.setState({ currentItem: { ...currentItem, isaap: undefined } }, () =>
-        this.handleUpdateIsaap(accResources)
+      const resetResources = resetAccessibilityGroups(accResources);
+      this.setState(
+        {
+          currentItem: { ...currentItem, isaap: undefined },
+          accResourceGroups: { kind: "success", content: resetResources }
+        },
+        () => this.handleUpdateIsaap(resetResources)
       );
     }
   };

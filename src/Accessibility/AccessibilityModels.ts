@@ -116,3 +116,34 @@ export function updateAccessibilityGroups(
 
   return newGroups;
 }
+
+export function mergeAccessibilityGroups(
+  newGroups: AccResourceGroupModel[],
+  currentGroups: AccResourceGroupModel[]
+): AccResourceGroupModel[] {
+  const mergedGroups: AccResourceGroupModel[] = currentGroups;
+  mergedGroups.map((mg, groupIndex) => {
+    return mg.accessibilityResources.map((ar, resourceIndex) => {
+      ar.disabled =
+        newGroups[groupIndex].accessibilityResources[resourceIndex].disabled;
+
+      return ar;
+    });
+  });
+
+  return mergedGroups;
+}
+
+export function resetAccessibilityGroups(
+  accGroups: AccResourceGroupModel[]
+): AccResourceGroupModel[] {
+  accGroups.map(ag => {
+    return ag.accessibilityResources.map(ar => {
+      ar.currentSelectionCode = ar.defaultSelection;
+
+      return ar;
+    });
+  });
+
+  return accGroups;
+}
