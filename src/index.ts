@@ -43,7 +43,9 @@ export {
   isResourceEnabled,
   isStreamlinedEnabled,
   getResouceSelectedCode,
-  getResourceTypes
+  getResourceTypes,
+  mergeAccessibilityGroups,
+  resetAccessibilityGroups
 } from "./Accessibility/AccessibilityModels";
 export {
   ItemAccessibilityModalProps,
