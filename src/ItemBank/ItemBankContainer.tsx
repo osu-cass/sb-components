@@ -255,7 +255,8 @@ export class ItemBankContainer extends React.Component<
       items: [{}],
       previousItem: undefined,
       nextItem: undefined,
-      currentItem: undefined
+      currentItem: undefined,
+      revisions: { kind: "none" }
     });
   };
 
