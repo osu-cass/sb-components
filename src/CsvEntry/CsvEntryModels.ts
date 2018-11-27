@@ -39,7 +39,7 @@ export function toCsvText(items: CsvRowModel[]): string {
   let csvString: string = "";
   items.forEach(item => {
     if (item.itemKey) {
-      const itemString = item.bankKey
+      const itemString = item.hasBankKey
         ? `${item.namespace},${item.bankKey},${item.itemKey}\n`
         : `${item.namespace},${item.itemKey}\n`;
       csvString = `${csvString}${itemString}`;
