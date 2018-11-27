@@ -152,7 +152,8 @@ export {
   concatNamespaceWith,
   getPreviousItemBank,
   getNextItemBank,
-  getItemBankIndex
+  getItemBankIndex,
+  isEmptyRevision
 } from "./ItemBank/ItemBankModels";
 export { ItemBankViewer, ItemBankViewerProps } from "./ItemBank/ItemBankViewer";
 

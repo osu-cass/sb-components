@@ -143,6 +143,10 @@ export function validItemRevisionModel(itemRevisionModel?: ItemRevisionModel) {
   return value;
 }
 
+export function isEmptyRevision(item: ItemRevisionModel): boolean {
+  return !item.bankKey && !item.itemKey && !item.namespace;
+}
+
 export function getItemBankIndex(
   currentItem: ItemRevisionModel,
   items: ItemRevisionModel[]
