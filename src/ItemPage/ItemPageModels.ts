@@ -45,12 +45,26 @@ export function toiSAAP(
   for (const group of accResourceGroups) {
     for (const res of group.accessibilityResources) {
       if (res.currentSelectionCode && !res.disabled) {
-        isaapCodes += `${res.currentSelectionCode};`;
+        isaapCodes += `${findSelection(res)};`;
       }
     }
   }
 
   return encodeURIComponent(isaapCodes);
+}
+
+function findSelection(resource: AccessibilityResourceModel) {
+  let selectionCode: String;
+  const currentSelection = resource.selections.filter(
+    s => s.selectionCode === resource.currentSelectionCode
+  );
+  if (currentSelection[0] && currentSelection[0].disabled) {
+    selectionCode = resource.defaultSelection;
+  } else {
+    selectionCode = resource.currentSelectionCode;
+  }
+
+  return selectionCode;
 }
 
 export function resetResource(
