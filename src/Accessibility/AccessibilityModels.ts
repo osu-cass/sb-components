@@ -127,11 +127,28 @@ export function mergeAccessibilityGroups(
       ar.disabled =
         newGroups[groupIndex].accessibilityResources[resourceIndex].disabled;
 
-      return ar;
+      return mergeSelections(
+        newGroups[groupIndex].accessibilityResources[resourceIndex],
+        ar
+      );
     });
   });
 
   return mergedGroups;
+}
+
+function mergeSelections(
+  newModel: AccessibilityResourceModel,
+  current: AccessibilityResourceModel
+): AccessibilityResourceModel {
+  const newSelection: AccessibilityResourceModel = current;
+  newSelection.selections.map((s, index) => {
+    s.disabled = newModel.selections[index].disabled;
+
+    return s;
+  });
+
+  return current;
 }
 
 export function resetAccessibilityGroups(
