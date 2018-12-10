@@ -69,6 +69,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
         className="item-nav-btn btn btn-default btn-sm"
         role="button"
         aria-label="Open help text"
+        tabIndex={0}
       >
         <span className="fa fa-info-circle" aria-hidden="true" />
         Help
@@ -90,6 +91,7 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
     return (
       <span className="csv-button-right">
         <button
+          tabIndex={0}
           className="item-nav-btn btn btn-primary btn-sm csv-apply-button"
           role="button"
           aria-label="Apply text"
@@ -125,15 +127,16 @@ export class CsvEntry extends React.Component<CsvEntryProps, CsvEntryState> {
   render() {
     return (
       <div className="csv-entry-wrapper">
-        <div className="csv-button-row">
-          {this.renderHelpButton()}
-          {this.renderApplyButton()}
-        </div>
         <textarea
           className="csv-text-entry"
           onChange={e => this.handleCsvChange(e)}
           value={this.state.csvInputValue}
+          tabIndex={0}
         />
+        <div className="csv-button-row">
+          {this.renderHelpButton()}
+          {this.renderApplyButton()}
+        </div>
       </div>
     );
   }
