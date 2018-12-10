@@ -8,7 +8,8 @@ import {
   SelectOption,
   Select,
   validItemRevisionModel,
-  ItemEntryRow
+  ItemEntryRow,
+  isEmptyRevision
 } from "@src/index";
 
 export interface ItemEntryTableState {
@@ -55,8 +56,10 @@ export class ItemEntryTable extends React.Component<
         if (key === this.state.itemRows.length - 1) {
           itemRows.push({});
         }
-      } else {
+      } else if (!isEmptyRevision(row)) {
         row.valid = false;
+      } else {
+        row.valid = true;
       }
 
       return { itemRows };
