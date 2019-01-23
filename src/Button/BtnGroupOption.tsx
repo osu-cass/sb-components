@@ -19,11 +19,12 @@ export interface BtnGroupOptionProps {
 // tslint:disable-next-line:variable-name
 export const BtnGroupOption: React.SFC<BtnGroupOptionProps> = props => {
   const className = props.selected ? "active" : "";
-
+  
   return (
     <button
       className={`btn btn-primary ${className}`}
-      role="button"
+      role="switch"
+      aria-checked={props.selected}
       disabled={props.disabled}
       onClick={props.onClick}
     >
