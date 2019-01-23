@@ -162,10 +162,11 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
           data-toggle="buttons"
         >
           <button
+            aria-checked={true}
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
-            role="button"
+            role="switch"
           >
             All
           </button>
@@ -173,18 +174,20 @@ exports[`Storyshots Filter Container Contains both Basic and Advanced Filter 1`]
             className="btn-group filter-btn-group"
           >
             <button
+              aria-checked={false}
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               tech1
             </button>
             <button
+              aria-checked={false}
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               tech2
             </button>

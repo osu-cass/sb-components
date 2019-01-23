@@ -95,10 +95,11 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-checked={true}
         className="btn btn-primary active"
         disabled={false}
         onClick={[Function]}
-        role="button"
+        role="switch"
       >
         All
       </button>
@@ -106,18 +107,20 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={false}
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Calculus
         </button>
         <button
+          aria-checked={false}
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Geometry
         </button>
@@ -208,18 +211,20 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={true}
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           English Literacy & Arts
         </button>
         <button
+          aria-checked={true}
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Maths
         </button>
@@ -290,10 +295,11 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-checked={true}
         className="btn btn-primary active"
         disabled={false}
         onClick={[Function]}
-        role="button"
+        role="switch"
       >
         All
       </button>
@@ -301,18 +307,20 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={false}
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           US History
         </button>
         <button
+          aria-checked={false}
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           World History
         </button>
@@ -383,10 +391,11 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-checked={false}
         className="btn btn-primary "
         disabled={false}
         onClick={[Function]}
-        role="button"
+        role="switch"
       >
         All
       </button>
@@ -394,18 +403,20 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={true}
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           English Literacy & Arts
         </button>
         <button
+          aria-checked={true}
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Maths
         </button>
@@ -551,18 +562,20 @@ exports[`Storyshots Advanced Filter single select 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={false}
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           English Literacy/ Arts
         </button>
         <button
+          aria-checked={false}
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Mathematics
         </button>

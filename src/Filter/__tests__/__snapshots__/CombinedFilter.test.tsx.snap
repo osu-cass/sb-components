@@ -618,10 +618,11 @@ exports[`FilterContainer renders 1`] = `
                   selected={true}
                 >
                   <button
+                    aria-checked={true}
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
-                    role="button"
+                    role="switch"
                   >
                     All
                   </button>
@@ -637,10 +638,11 @@ exports[`FilterContainer renders 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech1
                     </button>
@@ -653,10 +655,11 @@ exports[`FilterContainer renders 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech2
                     </button>
@@ -1290,10 +1293,11 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                   selected={true}
                 >
                   <button
+                    aria-checked={true}
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
-                    role="button"
+                    role="switch"
                   >
                     All
                   </button>
@@ -1309,10 +1313,11 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech1
                     </button>
@@ -1325,10 +1330,11 @@ exports[`FilterContainer toggles the advanced filter 1`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech2
                     </button>
@@ -1962,10 +1968,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                   selected={true}
                 >
                   <button
+                    aria-checked={true}
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
-                    role="button"
+                    role="switch"
                   >
                     All
                   </button>
@@ -1981,10 +1988,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech1
                     </button>
@@ -1997,10 +2005,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech2
                     </button>
@@ -2297,10 +2306,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={true}
                   >
                     <button
+                      aria-checked={true}
                       className="btn btn-primary active"
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       All
                     </button>
@@ -2316,10 +2326,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         Grades 3-5
                       </button>
@@ -2332,10 +2343,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         Grades 6-8
                       </button>
@@ -2348,10 +2360,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         High School
                       </button>
@@ -2451,10 +2464,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         English Literacy & Arts
                       </button>
@@ -2467,10 +2481,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         Maths
                       </button>
@@ -2618,10 +2633,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={true}
                   >
                     <button
+                      aria-checked={true}
                       className="btn btn-primary active"
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       All
                     </button>
@@ -2637,10 +2653,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         US History
                       </button>
@@ -2653,10 +2670,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         World History
                       </button>
@@ -2752,10 +2770,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                     selected={true}
                   >
                     <button
+                      aria-checked={true}
                       className="btn btn-primary active"
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       All
                     </button>
@@ -2771,10 +2790,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         Calculus
                       </button>
@@ -2787,10 +2807,11 @@ exports[`FilterContainer toggles the advanced filter 2`] = `
                       selected={false}
                     >
                       <button
+                        aria-checked={false}
                         className="btn btn-primary "
                         disabled={false}
                         onClick={[Function]}
-                        role="button"
+                        role="switch"
                       >
                         Geometry
                       </button>
@@ -3425,10 +3446,11 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                   selected={true}
                 >
                   <button
+                    aria-checked={true}
                     className="btn btn-primary active"
                     disabled={false}
                     onClick={[Function]}
-                    role="button"
+                    role="switch"
                   >
                     All
                   </button>
@@ -3444,10 +3466,11 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech1
                     </button>
@@ -3460,10 +3483,11 @@ exports[`FilterContainer toggles the advanced filter 3`] = `
                     selected={false}
                   >
                     <button
+                      aria-checked={false}
                       className="btn btn-primary "
                       disabled={false}
                       onClick={[Function]}
-                      role="button"
+                      role="switch"
                     >
                       tech2
                     </button>
