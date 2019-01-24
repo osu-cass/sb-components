@@ -138,11 +138,12 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-checked={true}
             aria-label="Select All Claims"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
-            role="button"
+            role="switch"
           >
             All
           </button>
@@ -150,20 +151,22 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-checked={false}
               aria-label="Problem Solving"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               Problem Solving
             </button>
             <button
+              aria-checked={false}
               aria-label="Concepts and Procedures"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               Concepts and Procedures
             </button>
@@ -191,11 +194,12 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-checked={true}
             aria-label="Select All Item Types"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
-            role="button"
+            role="switch"
           >
             All
           </button>
@@ -203,20 +207,22 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-checked={false}
               aria-label="Equation"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               Equation
             </button>
             <button
+              aria-checked={false}
               aria-label="Grid Item"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               Grid Item
             </button>
@@ -293,11 +299,12 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
           data-toggle="buttons"
         >
           <button
+            aria-checked={true}
             aria-label="Select All Targets"
             className="btn btn-primary active"
             disabled={false}
             onClick={[Function]}
-            role="button"
+            role="switch"
           >
             All
           </button>
@@ -305,20 +312,22 @@ exports[`Storyshots SIW-Filter Container Default 1`] = `
             className="btn-group filter-btn-group"
           >
             <button
+              aria-checked={false}
               aria-label="t1"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               t1
             </button>
             <button
+              aria-checked={false}
               aria-label="t2"
               className="btn btn-primary "
               disabled={false}
               onClick={[Function]}
-              role="button"
+              role="switch"
             >
               t2
             </button>
