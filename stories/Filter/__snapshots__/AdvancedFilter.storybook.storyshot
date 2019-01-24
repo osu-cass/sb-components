@@ -95,11 +95,12 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-checked={true}
         aria-label="Select All Multi All Disabled"
         className="btn btn-primary active"
         disabled={false}
         onClick={[Function]}
-        role="button"
+        role="switch"
       >
         All
       </button>
@@ -107,20 +108,22 @@ exports[`Storyshots Advanced Filter disabled multi all 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={false}
           aria-label="Calculus"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Calculus
         </button>
         <button
+          aria-checked={false}
           aria-label="Geometry"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Geometry
         </button>
@@ -211,20 +214,22 @@ exports[`Storyshots Advanced Filter multi select 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={true}
           aria-label="English Literacy & Arts"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           English Literacy & Arts
         </button>
         <button
+          aria-checked={true}
           aria-label="Maths"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Maths
         </button>
@@ -295,11 +300,12 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-checked={true}
         aria-label="Select All Multi All"
         className="btn btn-primary active"
         disabled={false}
         onClick={[Function]}
-        role="button"
+        role="switch"
       >
         All
       </button>
@@ -307,20 +313,22 @@ exports[`Storyshots Advanced Filter multi select all  1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={false}
           aria-label="US History"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           US History
         </button>
         <button
+          aria-checked={false}
           aria-label="World History"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           World History
         </button>
@@ -391,11 +399,12 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
       data-toggle="buttons"
     >
       <button
+        aria-checked={false}
         aria-label="Select All Multi All"
         className="btn btn-primary "
         disabled={false}
         onClick={[Function]}
-        role="button"
+        role="switch"
       >
         All
       </button>
@@ -403,20 +412,22 @@ exports[`Storyshots Advanced Filter multi select all selected  1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={true}
           aria-label="English Literacy & Arts"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           English Literacy & Arts
         </button>
         <button
+          aria-checked={true}
           aria-label="Maths"
           className="btn btn-primary active"
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Maths
         </button>
@@ -562,20 +573,22 @@ exports[`Storyshots Advanced Filter single select 1`] = `
         className="btn-group filter-btn-group"
       >
         <button
+          aria-checked={false}
           aria-label="English Literacy/ Arts"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           English Literacy/ Arts
         </button>
         <button
+          aria-checked={false}
           aria-label="Mathematics"
           className="btn btn-primary "
           disabled={false}
           onClick={[Function]}
-          role="button"
+          role="switch"
         >
           Mathematics
         </button>
