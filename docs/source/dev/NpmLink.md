@@ -1,5 +1,7 @@
-# Using NPM Link
-> This is the preferred way to try out changes in dependent projects
+# Using NPM Link for Local Development
+> When making edits to `sb-components` for a new project, the preferred way to develop the new code is to do it locally using `npm link`. 
+
+> [Check out the `npm link` docs](https://docs.npmjs.com/cli/link.html)
 
 ## Setup
 1. Run `npm link` within this project
