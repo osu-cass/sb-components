@@ -19,7 +19,7 @@ npm install --save @osu-cass/sb-components
 Included in lib
 
 ### Usage
-- Please see [docs](http://sb-components.readthedocs.io/en/latest/dev/Usage.html)
+- Our github pages site for this repo will link you to storybook, the project documentation, and component documentation. Access it [here](https://osu-cass.github.io/sb-components/)
 
 ## Scripts
 - `npm install` to setup development environment.
@@ -38,5 +38,5 @@ Included in lib
 * [Submit Pull Request](https://help.github.com/articles/about-pull-requests/)
 
 ## Links
-- [gh-pages](https://osu-cass.github.io/sb-components/)
+
 - [npm](https://www.npmjs.com/package/@osu-cass/sb-components)
